@@ -161,6 +161,15 @@ STORES: list[StoreConfig] = [
         ],
         parser_type="shopify",
     ),
+    StoreConfig(
+        "Ski Depot", "ski-depot.com",
+        scrape_urls=[
+            "https://ski-depot.com/collections/skis",
+            "https://ski-depot.com/collections/ski-boots",
+            "https://ski-depot.com/collections/ski-bindings",
+        ],
+        parser_type="shopify",
+    ),
 
     # BigCommerce — browser-based
     StoreConfig(
