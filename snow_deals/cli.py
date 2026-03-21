@@ -8,8 +8,8 @@ from pathlib import Path
 import click
 from rich.console import Console
 
-from deal.display import display_table, export_csv, export_json
-from deal.scraper import scrape
+from snow_deals.display import display_table, export_csv, export_json
+from snow_deals.scraper import scrape
 
 console = Console()
 

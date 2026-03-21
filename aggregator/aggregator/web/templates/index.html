@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snow-deals aggregator</title>
+    <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1>snow-deals</h1>
+        <div class="header-row">
+            <p class="subtitle">Best ski &amp; snowboard deals across {{ stores|length }} stores</p>
+            <a href="/status" class="status-link">Store Status</a>
+        </div>
+    </header>
+
+    <nav class="filters">
+        <div class="filter-group">
+            <label>Category</label>
+            <select name="category"
+                    hx-get="/deals"
+                    hx-target="#deal-grid"
+                    hx-include="[name='store'],[name='min_discount'],[name='sort'],[name='tax_free']">
+                <option value="">All</option>
+                {% for cat in categories %}
+                <option value="{{ cat }}" {% if cat == current_category %}selected{% endif %}>
+                    {{ cat|title }}
+                </option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label>Store</label>
+            <select name="store"
+                    hx-get="/deals"
+                    hx-target="#deal-grid"
+                    hx-include="[name='category'],[name='min_discount'],[name='sort'],[name='tax_free']">
+                <option value="">All stores</option>
+                {% for s in stores %}
+                <option value="{{ s }}" {% if s == current_store %}selected{% endif %}>
+                    {{ s }}
+                </option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label>Sort by</label>
+            <select name="sort"
+                    hx-get="/deals"
+                    hx-target="#deal-grid"
+                    hx-include="[name='category'],[name='store'],[name='min_discount'],[name='tax_free']">
+                <option value="discount_pct" {% if current_sort == 'discount_pct' %}selected{% endif %}>Biggest discount</option>
+                <option value="price_low" {% if current_sort == 'price_low' %}selected{% endif %}>Price: low to high</option>
+                <option value="price_high" {% if current_sort == 'price_high' %}selected{% endif %}>Price: high to low</option>
+                <option value="store" {% if current_sort == 'store' %}selected{% endif %}>Store</option>
+                <option value="newest" {% if current_sort == 'newest' %}selected{% endif %}>Newest</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label>Min discount: <span id="discount-val">{{ current_min_discount|int }}%</span></label>
+            <input type="range" name="min_discount" min="0" max="80" step="5"
+                   value="{{ current_min_discount|int }}"
+                   hx-get="/deals"
+                   hx-target="#deal-grid"
+                   hx-include="[name='category'],[name='store'],[name='sort'],[name='tax_free']"
+                   hx-trigger="change"
+                   oninput="document.getElementById('discount-val').textContent = this.value + '%'">
+        </div>
+
+        <div class="filter-group">
+            <label class="toggle-label">
+                <input type="checkbox" name="tax_free" value="1"
+                       {% if current_tax_free == '1' %}checked{% endif %}
+                       hx-get="/deals"
+                       hx-target="#deal-grid"
+                       hx-include="[name='category'],[name='store'],[name='sort'],[name='min_discount']">
+                <span class="toggle-text">Tax Free Only</span>
+            </label>
+        </div>
+    </nav>
+
+    <div class="result-count">{{ deal_count }} deals found</div>
+
+    <main id="deal-grid">
+        {% include "partials/deal_cards.html" %}
+    </main>
+</body>
+</html>

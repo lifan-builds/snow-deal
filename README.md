@@ -1,6 +1,6 @@
-# Deal
+# snow-deals
 
-Find the best discounts on e-commerce product listings. Adds discount-percentage badges directly onto product cards in your browser and lets you sort by best deal with one click.
+Find the best discounts on ski and snowboard gear. Adds discount-percentage badges directly onto product cards in your browser and lets you sort by best deal with one click.
 
 ## Tampermonkey Userscript (Primary)
 
@@ -16,7 +16,7 @@ The userscript runs directly on supported retailer pages — no terminal needed.
 
 1. Install [Tampermonkey](https://www.tampermonkey.net/) in your browser
 2. Click the Tampermonkey icon in the toolbar, then **Create a new script**
-3. Delete the template code and paste the contents of [`deal.user.js`](deal.user.js)
+3. Delete the template code and paste the contents of [`tampermonkey/snow-deals.user.js`](tampermonkey/snow-deals.user.js)
 4. Press **Ctrl+S** (or Cmd+S) to save
 5. Navigate to any supported product listing:
    - [bluezonesports.com/skis](https://www.bluezonesports.com/skis)
@@ -35,7 +35,7 @@ For bulk data export across all paginated pages.
 ### Installation
 
 ```bash
-git clone <repo-url> && cd deal
+git clone <repo-url> && cd snow-deals
 python -m venv .venv
 source .venv/bin/activate
 pip install -e .
@@ -45,35 +45,37 @@ pip install -e .
 
 ```bash
 # BlueZone Sports (HTML scraping)
-deal https://www.bluezonesports.com/skis
+snow-deals https://www.bluezonesports.com/skis
 
 # Aspen Ski and Board (Shopify JSON API)
-deal https://www.aspenskiandboard.com/collections/skis
+snow-deals https://www.aspenskiandboard.com/collections/skis
 
 # Only show items with 10%+ discount
-deal https://www.bluezonesports.com/skis --min-discount 10
+snow-deals https://www.bluezonesports.com/skis --min-discount 10
 
 # Export to CSV
-deal https://www.aspenskiandboard.com/collections/skis --format csv --output deals.csv
+snow-deals https://www.aspenskiandboard.com/collections/skis --format csv --output deals.csv
 
 # Export to JSON
-deal https://www.bluezonesports.com/skis --format json --output deals.json
+snow-deals https://www.bluezonesports.com/skis --format json --output deals.json
 ```
 
 ## Project Structure
 
 ```
-deal/
-├── deal.user.js       # Tampermonkey userscript (primary)
-├── deal/              # Python CLI package (secondary)
-│   ├── cli.py         # CLI entry point
-│   ├── scraper.py     # Page fetching and orchestration
-│   ├── models.py      # Product data model
-│   ├── display.py     # Output formatting (table, CSV, JSON)
-│   └── parsers/       # Site-specific parsers
-│       ├── base.py    # Abstract parser interface
-│       ├── bluezone.py # BlueZone Sports (HTML)
-│       └── shopify.py  # Shopify stores (JSON API)
+snow-deals/
+├── tampermonkey/
+│   └── snow-deals.user.js    # Tampermonkey userscript (primary)
+├── snow_deals/               # Python CLI package (secondary)
+│   ├── cli.py                # CLI entry point
+│   ├── scraper.py            # Page fetching and orchestration
+│   ├── models.py             # Product data model
+│   ├── display.py            # Output formatting (table, CSV, JSON)
+│   └── parsers/              # Site-specific parsers
+│       ├── base.py           # Abstract parser interface
+│       ├── bluezone.py       # BlueZone Sports (HTML)
+│       └── shopify.py        # Shopify stores (JSON API)
+├── aggregator/               # Deal aggregator sub-project
 ├── pyproject.toml
 └── README.md
 ```
@@ -91,9 +93,9 @@ deal/
 Shopify stores expose `/collections/{handle}/products.json` with structured pricing data. Adding a new Shopify store usually only requires registering the domain — no custom parser needed.
 
 ### Non-Shopify stores
-1. Create a new parser in `deal/parsers/` inheriting from `BaseParser`
-2. Register the URL pattern in `deal/parsers/__init__.py`
-3. Add a `@match` pattern and site adapter in `deal.user.js`
+1. Create a new parser in `snow_deals/parsers/` inheriting from `BaseParser`
+2. Register the URL pattern in `snow_deals/parsers/__init__.py`
+3. Add a `@match` pattern and site adapter in `tampermonkey/snow-deals.user.js`
 
 ## License
 

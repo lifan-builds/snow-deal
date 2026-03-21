@@ -2,9 +2,9 @@ from __future__ import annotations
 
 from urllib.parse import urlparse
 
-from deal.parsers.base import BaseParser
-from deal.parsers.bluezone import BlueZoneParser
-from deal.parsers.shopify import ShopifyParser
+from snow_deals.parsers.base import BaseParser
+from snow_deals.parsers.bluezone import BlueZoneParser
+from snow_deals.parsers.shopify import ShopifyParser
 
 _REGISTRY: list[tuple[str, type[BaseParser]]] = [
     ("bluezonesports.com", BlueZoneParser),

@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from abc import ABC, abstractmethod
 
-from deal.models import Product
+from snow_deals.models import Product
 
 
 class BaseParser(ABC):

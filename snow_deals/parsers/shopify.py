@@ -5,8 +5,8 @@ import logging
 import re
 from urllib.parse import urlparse
 
-from deal.models import Product
-from deal.parsers.base import BaseParser
+from snow_deals.models import Product
+from snow_deals.parsers.base import BaseParser
 
 log = logging.getLogger(__name__)
 

@@ -5,8 +5,8 @@ import logging
 
 import httpx
 
-from deal.models import Product
-from deal.parsers import get_parser
+from snow_deals.models import Product
+from snow_deals.parsers import get_parser
 
 log = logging.getLogger(__name__)
 
@@ -34,7 +34,7 @@ async def scrape(
 
     Returns a flat list of Product objects across all pages.
     """
-    from deal.parsers.shopify import ShopifyParser
+    from snow_deals.parsers.shopify import ShopifyParser
 
     parser = get_parser(url)
     products: list[Product] = []

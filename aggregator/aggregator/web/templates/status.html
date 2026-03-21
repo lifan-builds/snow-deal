@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Status — snow-deals</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1>snow-deals</h1>
+        <div class="header-row">
+            <p class="subtitle">Store Status Dashboard</p>
+            <a href="/" class="status-link">Back to Deals</a>
+        </div>
+    </header>
+
+    <div class="status-summary">
+        <div class="summary-card">
+            <span class="summary-value">{{ online_count }}/{{ total_count }}</span>
+            <span class="summary-label">Stores Online</span>
+        </div>
+        <div class="summary-card">
+            <span class="summary-value">{{ total_deals }}</span>
+            <span class="summary-label">Total Products</span>
+        </div>
+        <div class="summary-card">
+            <span class="summary-value">{{ total_discounts }}</span>
+            <span class="summary-label">On Sale</span>
+        </div>
+    </div>
+
+    <div class="status-legend">
+        <span class="legend-item"><span class="legend-dot fresh"></span> Fresh (&lt;6h)</span>
+        <span class="legend-item"><span class="legend-dot stale"></span> Stale (6–24h)</span>
+        <span class="legend-item"><span class="legend-dot old"></span> Old (&gt;24h)</span>
+        <span class="legend-item"><span class="legend-dot offline"></span> Offline</span>
+    </div>
+
+    <div class="status-table-wrap">
+        <table class="status-table">
+            <thead>
+                <tr>
+                    <th>Status</th>
+                    <th>Store</th>
+                    <th>Domain</th>
+                    <th class="num">Products</th>
+                    <th class="num">On Sale</th>
+                    <th>Last Scraped</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for s in store_statuses %}
+                <tr class="status-row status-{{ s.freshness }}">
+                    <td><span class="status-dot-lg {{ s.freshness }}"></span></td>
+                    <td class="store-name">{{ s.store }}</td>
+                    <td class="store-domain">{{ s.domain }}</td>
+                    <td class="num">{{ s.deal_count }}</td>
+                    <td class="num">{{ s.discount_count }}</td>
+                    <td class="store-time">{{ s.last_scraped_fmt }}</td>
+                    <td>
+                        {% if s.tax_free %}
+                        <span class="tax-free-tag">Tax Free</span>
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

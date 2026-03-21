@@ -7,7 +7,7 @@ import io
 from rich.console import Console
 from rich.table import Table
 
-from deal.models import Product
+from snow_deals.models import Product
 
 
 def sort_by_discount(products: list[Product], min_discount: float = 0) -> list[Product]:

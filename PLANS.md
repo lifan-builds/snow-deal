@@ -1,4 +1,4 @@
-# Deal — Bootstrap & Tampermonkey Pivot
+# snow-deals — Bootstrap & Tampermonkey Pivot
 
 This ExecPlan is a living document. The sections Progress, Surprises & Discoveries,
 Decision Log, and Outcomes & Retrospective must stay up to date as work proceeds.
@@ -77,7 +77,7 @@ This is a greenfield Python project. The target use case is finding the best dis
 
 ## Validation and Acceptance
 
-- `deal https://www.bluezonesports.com/skis` produces a table of products sorted by discount %.
+- `snow-deals https://www.bluezonesports.com/skis` produces a table of products sorted by discount %.
 - Products with no discount are listed at the bottom (0% discount).
 - `--format csv` and `--format json` produce valid output.
 - `--min-discount 10` filters out products with less than 10% discount.
@@ -90,26 +90,26 @@ The tool is read-only (no state, no database). Re-running the same command produ
 ## Interfaces and Dependencies
 
 ```
-deal/models.py:
+snow_deals/models.py:
   @dataclass Product(name, url, current_price, original_price, image_url)
     @property discount_pct -> float
 
-deal/parsers/base.py:
+snow_deals/parsers/base.py:
   ABC BaseParser
     parse_listing_page(html: str) -> list[Product]
     get_next_page_url(html: str, current_url: str) -> str | None
 
-deal/parsers/__init__.py:
+snow_deals/parsers/__init__.py:
   get_parser(url: str) -> BaseParser
 
-deal/scraper.py:
+snow_deals/scraper.py:
   async scrape(url: str, delay: float = 1.0) -> list[Product]
 
-deal/display.py:
+snow_deals/display.py:
   display_table(products: list[Product], min_discount: float = 0)
   export_csv(products: list[Product], path: str)
   export_json(products: list[Product], path: str)
 
-deal/cli.py:
+snow_deals/cli.py:
   cli() — Click group entry point
 ```

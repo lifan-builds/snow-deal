@@ -16,3 +16,10 @@ build/
 # OS
 .DS_Store
 Thumbs.db
+
+# Data
+*.db
+
+# Claude Code
+.claude/
+CLAUDE.md

@@ -1,6 +1,6 @@
 // ==UserScript==
-// @name         Deal Finder — Discount Ranker
-// @namespace    https://github.com/deal-finder
+// @name         snow-deals — Discount Ranker
+// @namespace    https://github.com/snow-deals
 // @version      0.3.1
 // @description  Adds discount % badges to product cards and lets you sort by best deal across ALL pages
 // @match        *://www.bluezonesports.com/*
