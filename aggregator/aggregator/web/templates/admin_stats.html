@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snow Deals — Analytics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛷️</text></svg>">
+    <style>
+        .stats-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        .stats-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+        }
+        .stats-header h1 { font-size: 1.4rem; color: var(--text); margin: 0; }
+        .stats-header .nav-links { display: flex; gap: 1rem; }
+        .stats-header a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .time-selector {
+            display: flex; gap: 0.5rem; margin-bottom: 1.5rem;
+        }
+        .time-selector a {
+            padding: 0.35rem 0.75rem; border-radius: var(--radius-sm);
+            font-size: 0.8rem; text-decoration: none;
+            border: 1px solid var(--border); color: var(--text-secondary);
+        }
+        .time-selector a.active {
+            background: var(--accent); color: #0b0f19; border-color: var(--accent);
+            font-weight: 600;
+        }
+        .kpi-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem; margin-bottom: 2rem;
+        }
+        .kpi-card {
+            background: var(--card-bg); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 1.25rem;
+            text-align: center;
+        }
+        .kpi-card .value {
+            font-size: 2rem; font-weight: 700; color: var(--accent);
+            line-height: 1;
+        }
+        .kpi-card .label {
+            font-size: 0.75rem; color: var(--muted); text-transform: uppercase;
+            letter-spacing: 0.05em; margin-top: 0.5rem;
+        }
+        .section { margin-bottom: 2rem; }
+        .section h2 {
+            font-size: 1rem; color: var(--text); margin: 0 0 0.75rem;
+            border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;
+        }
+        .stat-table {
+            width: 100%; border-collapse: collapse;
+        }
+        .stat-table th {
+            text-align: left; color: var(--muted); font-size: 0.75rem;
+            text-transform: uppercase; letter-spacing: 0.05em;
+            padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border);
+        }
+        .stat-table td {
+            padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border);
+            font-size: 0.85rem; color: var(--text-secondary);
+        }
+        .stat-table tr:hover td { background: var(--bg-subtle); }
+        .stat-table .num { font-weight: 600; color: var(--text); text-align: right; }
+        .bar-container {
+            display: flex; align-items: center; gap: 0.5rem;
+        }
+        .bar {
+            height: 8px; background: var(--accent); border-radius: 4px;
+            min-width: 4px; transition: width 0.3s;
+        }
+        .bar-label { font-size: 0.8rem; color: var(--text-secondary); white-space: nowrap; }
+        .chart-row {
+            display: flex; align-items: flex-end; gap: 2px;
+            height: 80px; margin-top: 0.5rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 2px;
+        }
+        .chart-bar {
+            flex: 1; background: var(--accent); border-radius: 2px 2px 0 0;
+            min-height: 2px; position: relative;
+        }
+        .chart-bar:hover::after {
+            content: attr(data-label);
+            position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%);
+            background: var(--card-bg); border: 1px solid var(--border);
+            padding: 0.2rem 0.4rem; border-radius: 3px;
+            font-size: 0.7rem; white-space: nowrap; color: var(--text);
+        }
+        .chart-labels {
+            display: flex; gap: 2px; margin-top: 0.25rem;
+        }
+        .chart-labels span {
+            flex: 1; text-align: center; font-size: 0.6rem; color: var(--muted);
+        }
+        .empty-msg {
+            color: var(--muted); font-size: 0.85rem; font-style: italic;
+            padding: 1rem 0;
+        }
+        .deal-link { color: var(--accent); text-decoration: none; }
+        .deal-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="stats-container">
+        <div class="stats-header">
+            <h1>User Analytics</h1>
+            <div class="nav-links">
+                <a href="/admin/codes">Invite Codes</a>
+                <a href="/">Back to deals</a>
+            </div>
+        </div>
+
+        <div class="time-selector">
+            {% for d in [1, 7, 14, 30] %}
+            <a href="/admin/stats?days={{ d }}" class="{% if stats.days == d %}active{% endif %}">
+                {{ d }}d
+            </a>
+            {% endfor %}
+        </div>
+
+        {% set total_clicks = stats.by_type|selectattr('event_type', 'equalto', 'click')|map(attribute='cnt')|first|default(0) %}
+        {% set total_views = stats.by_type|selectattr('event_type', 'equalto', 'page_view')|map(attribute='cnt')|first|default(0) %}
+        {% set total_filters = stats.by_type|selectattr('event_type', 'equalto', 'filter')|map(attribute='cnt')|first|default(0) %}
+        {% set total_searches = stats.by_type|selectattr('event_type', 'equalto', 'search')|map(attribute='cnt')|first|default(0) %}
+
+        <div class="kpi-row">
+            <div class="kpi-card">
+                <div class="value">{{ stats.unique_sessions }}</div>
+                <div class="label">Unique Users</div>
+            </div>
+            <div class="kpi-card">
+                <div class="value">{{ total_views }}</div>
+                <div class="label">Page Views</div>
+            </div>
+            <div class="kpi-card">
+                <div class="value">{{ total_clicks }}</div>
+                <div class="label">Deal Clicks</div>
+            </div>
+            <div class="kpi-card">
+                <div class="value">{{ total_filters }}</div>
+                <div class="label">Filters Used</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Clicks by Day</h2>
+            {% if stats.clicks_by_day %}
+            {% set max_clicks = stats.clicks_by_day|map(attribute='cnt')|max %}
+            <div class="chart-row">
+                {% for d in stats.clicks_by_day %}
+                <div class="chart-bar"
+                     style="height: {{ (d.cnt / max_clicks * 100)|int }}%"
+                     data-label="{{ d.day }}: {{ d.cnt }} clicks"></div>
+                {% endfor %}
+            </div>
+            <div class="chart-labels">
+                {% for d in stats.clicks_by_day %}
+                <span>{{ d.day[5:] }}</span>
+                {% endfor %}
+            </div>
+            {% else %}
+            <p class="empty-msg">No click data yet.</p>
+            {% endif %}
+        </div>
+
+        <div class="section">
+            <h2>Clicks by Store</h2>
+            {% if stats.clicks_by_store %}
+            {% set max_store = stats.clicks_by_store[0].cnt %}
+            <table class="stat-table">
+                <thead><tr><th>Store</th><th></th><th style="text-align:right">Clicks</th></tr></thead>
+                <tbody>
+                {% for s in stats.clicks_by_store %}
+                <tr>
+                    <td>{{ s.store }}</td>
+                    <td><div class="bar-container"><div class="bar" style="width: {{ (s.cnt / max_store * 200)|int }}px"></div></div></td>
+                    <td class="num">{{ s.cnt }}</td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+            <p class="empty-msg">No click data yet.</p>
+            {% endif %}
+        </div>
+
+        <div class="section">
+            <h2>Top Clicked Deals</h2>
+            {% if stats.top_deals %}
+            <table class="stat-table">
+                <thead><tr><th>Deal</th><th>Store</th><th style="text-align:right">Clicks</th></tr></thead>
+                <tbody>
+                {% for d in stats.top_deals %}
+                <tr>
+                    <td><a href="{{ d.deal_url }}" class="deal-link" target="_blank" rel="noopener">{{ d.deal_name[:50] }}{% if d.deal_name|length > 50 %}...{% endif %}</a></td>
+                    <td>{{ d.store }}</td>
+                    <td class="num">{{ d.cnt }}</td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+            <p class="empty-msg">No click data yet.</p>
+            {% endif %}
+        </div>
+
+        <div class="section">
+            <h2>Popular Filters</h2>
+            {% if stats.filter_usage %}
+            <table class="stat-table">
+                <thead><tr><th>Filter</th><th style="text-align:right">Uses</th></tr></thead>
+                <tbody>
+                {% for f in stats.filter_usage %}
+                <tr>
+                    <td>{{ f.metadata }}</td>
+                    <td class="num">{{ f.cnt }}</td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+            <p class="empty-msg">No filter data yet.</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

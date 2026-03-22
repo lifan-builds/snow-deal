@@ -42,6 +42,22 @@ CREATE TABLE IF NOT EXISTS sessions (
     invite_code TEXT NOT NULL,
     created_at  TEXT NOT NULL
 );
+
+CREATE TABLE IF NOT EXISTS events (
+    id         INTEGER PRIMARY KEY AUTOINCREMENT,
+    event_type TEXT    NOT NULL,
+    session    TEXT,
+    deal_url   TEXT,
+    deal_name  TEXT,
+    store      TEXT,
+    category   TEXT,
+    metadata   TEXT,
+    created_at TEXT    NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS idx_events_type ON events (event_type);
+CREATE INDEX IF NOT EXISTS idx_events_time ON events (created_at);
+CREATE INDEX IF NOT EXISTS idx_events_store ON events (store);
 """
 
 MIGRATIONS = [
@@ -225,6 +241,108 @@ async def list_invite_codes(db_path: Path = DB_PATH) -> list[dict]:
         )
         rows = await cursor.fetchall()
     return [dict(row) for row in rows]
+
+
+async def log_event(
+    event_type: str,
+    session: str | None = None,
+    deal_url: str | None = None,
+    deal_name: str | None = None,
+    store: str | None = None,
+    category: str | None = None,
+    metadata: str | None = None,
+    db_path: Path = DB_PATH,
+) -> None:
+    """Log a user event (page view, click, filter, etc.)."""
+    now = datetime.now().isoformat()
+    async with aiosqlite.connect(db_path) as db:
+        await db.execute(
+            "INSERT INTO events (event_type, session, deal_url, deal_name, store, category, metadata, created_at) "
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+            (event_type, session, deal_url, deal_name, store, category, metadata, now),
+        )
+        await db.commit()
+
+
+async def get_click_stats(days: int = 7, db_path: Path = DB_PATH) -> dict:
+    """Get click-through statistics for the admin dashboard."""
+    from datetime import timedelta
+    cutoff = (datetime.now() - timedelta(days=days)).isoformat()
+
+    async with aiosqlite.connect(db_path) as db:
+        db.row_factory = aiosqlite.Row
+
+        # Total events by type
+        cursor = await db.execute(
+            "SELECT event_type, COUNT(*) AS cnt FROM events "
+            "WHERE created_at >= ? GROUP BY event_type ORDER BY cnt DESC",
+            (cutoff,),
+        )
+        by_type = [dict(r) for r in await cursor.fetchall()]
+
+        # Clicks by store
+        cursor = await db.execute(
+            "SELECT store, COUNT(*) AS cnt FROM events "
+            "WHERE event_type = 'click' AND created_at >= ? AND store IS NOT NULL "
+            "GROUP BY store ORDER BY cnt DESC",
+            (cutoff,),
+        )
+        clicks_by_store = [dict(r) for r in await cursor.fetchall()]
+
+        # Top clicked deals
+        cursor = await db.execute(
+            "SELECT deal_name, store, deal_url, COUNT(*) AS cnt FROM events "
+            "WHERE event_type = 'click' AND created_at >= ? AND deal_name IS NOT NULL "
+            "GROUP BY deal_url ORDER BY cnt DESC LIMIT 20",
+            (cutoff,),
+        )
+        top_deals = [dict(r) for r in await cursor.fetchall()]
+
+        # Clicks by day
+        cursor = await db.execute(
+            "SELECT DATE(created_at) AS day, COUNT(*) AS cnt FROM events "
+            "WHERE event_type = 'click' AND created_at >= ? "
+            "GROUP BY day ORDER BY day",
+            (cutoff,),
+        )
+        clicks_by_day = [dict(r) for r in await cursor.fetchall()]
+
+        # Page views by day
+        cursor = await db.execute(
+            "SELECT DATE(created_at) AS day, COUNT(*) AS cnt FROM events "
+            "WHERE event_type = 'page_view' AND created_at >= ? "
+            "GROUP BY day ORDER BY day",
+            (cutoff,),
+        )
+        views_by_day = [dict(r) for r in await cursor.fetchall()]
+
+        # Unique sessions
+        cursor = await db.execute(
+            "SELECT COUNT(DISTINCT session) AS cnt FROM events "
+            "WHERE created_at >= ? AND session IS NOT NULL",
+            (cutoff,),
+        )
+        unique_sessions = (await cursor.fetchone())["cnt"]
+
+        # Filter usage
+        cursor = await db.execute(
+            "SELECT metadata, COUNT(*) AS cnt FROM events "
+            "WHERE event_type = 'filter' AND created_at >= ? AND metadata IS NOT NULL "
+            "GROUP BY metadata ORDER BY cnt DESC LIMIT 15",
+            (cutoff,),
+        )
+        filter_usage = [dict(r) for r in await cursor.fetchall()]
+
+    return {
+        "by_type": by_type,
+        "clicks_by_store": clicks_by_store,
+        "top_deals": top_deals,
+        "clicks_by_day": clicks_by_day,
+        "views_by_day": views_by_day,
+        "unique_sessions": unique_sessions,
+        "filter_usage": filter_usage,
+        "days": days,
+    }
 
 
 async def store_status(db_path: Path = DB_PATH) -> list[dict]:

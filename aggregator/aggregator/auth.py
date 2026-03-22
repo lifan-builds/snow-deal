@@ -13,7 +13,7 @@ ADMIN_KEY = os.environ.get("ADMIN_KEY", "")
 SESSION_COOKIE = "snow_deals_session"
 
 # Paths that don't require authentication
-PUBLIC_PATHS = {"/invite", "/static", "/admin"}
+PUBLIC_PATHS = {"/invite", "/static", "/admin", "/api/event"}
 
 
 def _is_public(path: str) -> bool:

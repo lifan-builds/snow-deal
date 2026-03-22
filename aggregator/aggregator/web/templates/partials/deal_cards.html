@@ -4,7 +4,8 @@
 {% if deals %}
 <div class="deal-grid">
     {% for d in deals %}
-    <a class="deal-card" href="{{ d.url }}" target="_blank" rel="noopener">
+    <a class="deal-card" href="{{ d.url }}" target="_blank" rel="noopener"
+       data-store="{{ d.store }}" data-deal-name="{{ d.name }}" data-category="{{ d.category or '' }}">
         {% if d.discount_pct >= 30 %}
         <span class="badge high">-{{ d.discount_pct|int }}%</span>
         {% elif d.discount_pct >= 15 %}

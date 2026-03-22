@@ -101,5 +101,71 @@
     <main id="deal-grid" class="htmx-settle">
         {% include "partials/deal_cards.html" %}
     </main>
+
+    <script>
+    /* ---- Analytics tracker ---- */
+    (function() {
+        function trackEvent(data) {
+            fetch('/api/event', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(data),
+            }).catch(function() {});
+        }
+
+        // Track page view
+        trackEvent({event_type: 'page_view'});
+
+        // Track deal clicks
+        function attachClickTrackers() {
+            document.querySelectorAll('.deal-card[data-store]').forEach(function(card) {
+                if (card._tracked) return;
+                card._tracked = true;
+                card.addEventListener('click', function() {
+                    trackEvent({
+                        event_type: 'click',
+                        deal_url: card.getAttribute('href'),
+                        deal_name: card.dataset.dealName,
+                        store: card.dataset.store,
+                        category: card.dataset.category || null,
+                    });
+                });
+            });
+        }
+        attachClickTrackers();
+
+        // Track filter changes
+        document.querySelectorAll('.filters select, .filters input').forEach(function(el) {
+            el.addEventListener('change', function() {
+                var label = el.name;
+                var val = el.type === 'checkbox' ? (el.checked ? '1' : '0') : el.value;
+                trackEvent({
+                    event_type: 'filter',
+                    metadata: label + '=' + val,
+                });
+            });
+        });
+
+        // Track search
+        var searchInput = document.querySelector('input[name="q"]');
+        if (searchInput) {
+            var searchTimer;
+            searchInput.addEventListener('input', function() {
+                clearTimeout(searchTimer);
+                var q = searchInput.value;
+                searchTimer = setTimeout(function() {
+                    if (q.length >= 2) {
+                        trackEvent({event_type: 'search', metadata: q});
+                    }
+                }, 1000);
+            });
+        }
+
+        // Re-attach click trackers after HTMX swaps
+        document.body.addEventListener('htmx:afterSwap', function() {
+            attachClickTrackers();
+        });
+    })();
+    </script>
 </body>
 </html>

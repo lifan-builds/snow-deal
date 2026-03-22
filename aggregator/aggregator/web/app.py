@@ -19,6 +19,7 @@ from aggregator.db import init_db
 from aggregator.web.routes import router
 from aggregator.web.invite_routes import invite_router
 from aggregator.web.admin_routes import admin_router
+from aggregator.web.event_routes import event_router
 
 log = logging.getLogger(__name__)
 
@@ -48,5 +49,6 @@ def create_app() -> FastAPI:
     app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
     app.include_router(invite_router)
     app.include_router(admin_router)
+    app.include_router(event_router)
     app.include_router(router)
     return app
