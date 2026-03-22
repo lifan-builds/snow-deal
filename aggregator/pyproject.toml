@@ -19,6 +19,7 @@ dependencies = [
     "rich>=13.0",
     "snow-deals",
     "playwright>=1.40",
+    "python-multipart>=0.0.7",
 ]
 
 [project.optional-dependencies]
