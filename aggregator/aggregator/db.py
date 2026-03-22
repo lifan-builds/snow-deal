@@ -2,13 +2,14 @@
 
 from __future__ import annotations
 
+import os
 import aiosqlite
 from datetime import datetime
 from pathlib import Path
 
 from aggregator.models import AggregatedDeal
 
-DB_PATH = Path(__file__).resolve().parent.parent / "deals.db"
+DB_PATH = Path(os.environ.get("DATABASE_PATH", Path(__file__).resolve().parent.parent / "deals.db"))
 
 SCHEMA = """\
 CREATE TABLE IF NOT EXISTS deals (

@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: snow-deals
+    runtime: docker
+    dockerfilePath: aggregator/Dockerfile
+    dockerContext: .
+    plan: free
+    envVars:
+      - key: DATABASE_PATH
+        value: /app/data/deals.db
+      # Set GITHUB_TOKEN in Render dashboard if repo is private
+      # - key: GITHUB_TOKEN
+      #   sync: false
