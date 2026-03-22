@@ -30,7 +30,7 @@ async def invite_submit(request: Request, code: str = Form(...)):
     if not token:
         return templates.TemplateResponse(
             request=request, name="invite.html",
-            context={"error": "Invalid invite code."},
+            context={"error": "Invalid or exhausted invite code."},
         )
     response = RedirectResponse(url="/", status_code=302)
     response.set_cookie(SESSION_COOKIE, token, httponly=True, max_age=86400 * 365)

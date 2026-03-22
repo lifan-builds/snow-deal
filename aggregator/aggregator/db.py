@@ -32,6 +32,7 @@ CREATE INDEX IF NOT EXISTS idx_store     ON deals (store);
 CREATE TABLE IF NOT EXISTS invite_codes (
     code       TEXT PRIMARY KEY,
     created_at TEXT NOT NULL,
+    max_uses   INTEGER NOT NULL DEFAULT 5,
     used_by    TEXT,
     used_at    TEXT
 );
@@ -43,11 +44,20 @@ CREATE TABLE IF NOT EXISTS sessions (
 );
 """
 
+MIGRATIONS = [
+    "ALTER TABLE invite_codes ADD COLUMN max_uses INTEGER NOT NULL DEFAULT 5",
+]
+
 
 async def init_db(db_path: Path = DB_PATH) -> None:
     """Create the deals table if it doesn't exist."""
     async with aiosqlite.connect(db_path) as db:
         await db.executescript(SCHEMA)
+        for migration in MIGRATIONS:
+            try:
+                await db.execute(migration)
+            except Exception:
+                pass  # column already exists
         await db.commit()
 
 
@@ -145,7 +155,7 @@ async def query_deals(
     ]
 
 
-async def create_invite_codes(codes: list[str], db_path: Path = DB_PATH) -> int:
+async def create_invite_codes(codes: list[str], max_uses: int = 5, db_path: Path = DB_PATH) -> int:
     """Insert invite codes. Returns count created."""
     now = datetime.now().isoformat()
     async with aiosqlite.connect(db_path) as db:
@@ -153,8 +163,8 @@ async def create_invite_codes(codes: list[str], db_path: Path = DB_PATH) -> int:
         for code in codes:
             try:
                 await db.execute(
-                    "INSERT INTO invite_codes (code, created_at) VALUES (?, ?)",
-                    (code, now),
+                    "INSERT INTO invite_codes (code, created_at, max_uses) VALUES (?, ?, ?)",
+                    (code, now, max_uses),
                 )
                 count += 1
             except aiosqlite.IntegrityError:
@@ -164,15 +174,24 @@ async def create_invite_codes(codes: list[str], db_path: Path = DB_PATH) -> int:
 
 
 async def redeem_invite_code(code: str, db_path: Path = DB_PATH) -> str | None:
-    """Redeem an invite code. Codes are reusable. Returns a session token if valid."""
+    """Redeem an invite code. Returns a session token if valid and under max_uses limit."""
     import secrets
     async with aiosqlite.connect(db_path) as db:
         cursor = await db.execute(
-            "SELECT code FROM invite_codes WHERE code = ?", (code,)
+            "SELECT code, max_uses FROM invite_codes WHERE code = ?", (code,)
         )
         row = await cursor.fetchone()
         if not row:
             return None
+
+        max_uses = row[1]
+        # Check current usage count
+        cursor = await db.execute(
+            "SELECT COUNT(*) FROM sessions WHERE invite_code = ?", (code,)
+        )
+        use_count = (await cursor.fetchone())[0]
+        if use_count >= max_uses:
+            return None  # limit reached
 
         token = secrets.token_urlsafe(32)
         now = datetime.now().isoformat()
@@ -198,7 +217,7 @@ async def list_invite_codes(db_path: Path = DB_PATH) -> list[dict]:
     async with aiosqlite.connect(db_path) as db:
         db.row_factory = aiosqlite.Row
         cursor = await db.execute(
-            "SELECT ic.code, ic.created_at, COUNT(s.token) AS use_count "
+            "SELECT ic.code, ic.created_at, ic.max_uses, COUNT(s.token) AS use_count "
             "FROM invite_codes ic "
             "LEFT JOIN sessions s ON s.invite_code = ic.code "
             "GROUP BY ic.code "

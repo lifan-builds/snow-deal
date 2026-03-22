@@ -158,7 +158,7 @@
         </div>
         {% endif %}
 
-        <p class="summary">{{ codes|length }} total codes — codes can be reused by multiple people</p>
+        <p class="summary">{{ codes|length }} total codes — each code allows up to {{ max_uses }} uses</p>
 
         <table class="codes-table">
             <thead>
@@ -173,7 +173,7 @@
                 <tr>
                     <td class="code-cell">{{ c.code }}</td>
                     <td>{{ c.created_at[:16] }}</td>
-                    <td class="use-count">{{ c.use_count }}</td>
+                    <td class="use-count">{{ c.use_count }} / {{ c.max_uses }}</td>
                 </tr>
                 {% endfor %}
             </tbody>
