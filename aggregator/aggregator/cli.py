@@ -9,7 +9,7 @@ import click
 from rich.console import Console
 from rich.table import Table
 
-from aggregator.db import init_db, query_deals, upsert_deals
+from aggregator.db import init_db, query_deals, upsert_deals, create_invite_codes, list_invite_codes
 from aggregator.scraper import scrape_all
 
 console = Console()
@@ -39,6 +39,47 @@ def refresh(delay: float, max_pages: int) -> None:
         if deals:
             count = await upsert_deals(deals)
             console.print(f"[green]Saved {count} deals to database.[/green]")
+
+    asyncio.run(_run())
+
+
+
+@cli.command("generate-codes")
+@click.argument("count", type=int, default=10)
+def generate_codes(count: int) -> None:
+    """Generate invite codes. Usage: snow-deals-agg generate-codes 10"""
+    import secrets
+
+    codes = [secrets.token_hex(4).upper() for _ in range(count)]
+
+    async def _run() -> None:
+        await init_db()
+        created = await create_invite_codes(codes)
+        console.print(f"[green]Created {created} invite codes:[/green]")
+        for code in codes:
+            console.print(f"  [bold cyan]{code}[/bold cyan]")
+
+    asyncio.run(_run())
+
+
+@cli.command("list-codes")
+def list_codes_cmd() -> None:
+    """List all invite codes and their status."""
+    async def _run() -> None:
+        await init_db()
+        codes = await list_invite_codes()
+        if not codes:
+            console.print("[yellow]No invite codes found.[/yellow]")
+            return
+        table = Table(title="Invite Codes", show_lines=True)
+        table.add_column("Code", style="bold cyan")
+        table.add_column("Status", justify="center")
+        table.add_column("Created", style="dim")
+        table.add_column("Used At", style="dim")
+        for c in codes:
+            status = "[red]Used[/red]" if c["used_by"] else "[green]Available[/green]"
+            table.add_row(c["code"], status, c["created_at"][:16], (c["used_at"] or "")[:16])
+        console.print(table)
 
     asyncio.run(_run())
 

@@ -1,3 +1,16 @@
+
+CREATE TABLE IF NOT EXISTS invite_codes (
+    code       TEXT PRIMARY KEY,
+    created_at TEXT NOT NULL,
+    used_by    TEXT,
+    used_at    TEXT
+);
+
+CREATE TABLE IF NOT EXISTS sessions (
+    token       TEXT PRIMARY KEY,
+    invite_code TEXT NOT NULL,
+    created_at  TEXT NOT NULL
+);
 """SQLite schema and CRUD operations via aiosqlite."""
 
 from __future__ import annotations
@@ -130,6 +143,72 @@ async def query_deals(
         )
         for row in rows
     ]
+
+
+
+async def create_invite_codes(codes: list[str], db_path: Path = DB_PATH) -> int:
+    """Insert invite codes. Returns count created."""
+    now = datetime.now().isoformat()
+    async with aiosqlite.connect(db_path) as db:
+        count = 0
+        for code in codes:
+            try:
+                await db.execute(
+                    "INSERT INTO invite_codes (code, created_at) VALUES (?, ?)",
+                    (code, now),
+                )
+                count += 1
+            except aiosqlite.IntegrityError:
+                pass  # duplicate code, skip
+        await db.commit()
+    return count
+
+
+async def redeem_invite_code(code: str, db_path: Path = DB_PATH) -> str | None:
+    """Redeem an invite code. Returns a session token if valid, None otherwise."""
+    import secrets
+    async with aiosqlite.connect(db_path) as db:
+        cursor = await db.execute(
+            "SELECT code, used_by FROM invite_codes WHERE code = ?", (code,)
+        )
+        row = await cursor.fetchone()
+        if not row:
+            return None
+        if row[1] is not None:
+            return None  # already used
+
+        token = secrets.token_urlsafe(32)
+        now = datetime.now().isoformat()
+        await db.execute(
+            "UPDATE invite_codes SET used_by = ?, used_at = ? WHERE code = ?",
+            (token, now, code),
+        )
+        await db.execute(
+            "INSERT INTO sessions (token, invite_code, created_at) VALUES (?, ?, ?)",
+            (token, code, now),
+        )
+        await db.commit()
+    return token
+
+
+async def validate_session(token: str, db_path: Path = DB_PATH) -> bool:
+    """Return True if the session token is valid."""
+    async with aiosqlite.connect(db_path) as db:
+        cursor = await db.execute(
+            "SELECT token FROM sessions WHERE token = ?", (token,)
+        )
+        return await cursor.fetchone() is not None
+
+
+async def list_invite_codes(db_path: Path = DB_PATH) -> list[dict]:
+    """Return all invite codes with their status."""
+    async with aiosqlite.connect(db_path) as db:
+        db.row_factory = aiosqlite.Row
+        cursor = await db.execute(
+            "SELECT code, created_at, used_by, used_at FROM invite_codes ORDER BY created_at"
+        )
+        rows = await cursor.fetchall()
+    return [dict(row) for row in rows]
 
 
 async def store_status(db_path: Path = DB_PATH) -> list[dict]:
