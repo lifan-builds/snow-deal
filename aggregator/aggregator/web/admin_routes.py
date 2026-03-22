@@ -30,7 +30,7 @@ async def admin_codes_page(request: Request):
         return RedirectResponse(url="/invite", status_code=302)
     codes = await list_invite_codes()
     return templates.TemplateResponse(
-        "admin_codes.html", {"request": request, "codes": codes}
+        request=request, name="admin_codes.html", context={"codes": codes}
     )
 
 
@@ -43,6 +43,7 @@ async def admin_create_codes(request: Request, count: int = Form(5)):
     await create_invite_codes(new_codes)
     codes = await list_invite_codes()
     return templates.TemplateResponse(
-        "admin_codes.html",
-        {"request": request, "codes": codes, "new_codes": new_codes},
+        request=request,
+        name="admin_codes.html",
+        context={"codes": codes, "new_codes": new_codes},
     )

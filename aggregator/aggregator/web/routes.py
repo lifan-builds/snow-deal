@@ -76,10 +76,8 @@ async def index(
     )
 
     return templates.TemplateResponse(
-        "index.html",
-        {
-            "request": request,
-            "deals": deals,
+        request=request, name="index.html",
+        context={"deals": deals,
             "deal_count": len(deals),
             "categories": [cat for cat, _ in CATEGORY_RULES],
             "stores": [s.name for s in STORES],
@@ -89,8 +87,7 @@ async def index(
             "current_min_discount": min_discount,
             "current_sort": sort,
             "current_tax_free": tax_free,
-            "current_q": q,
-        },
+            "current_q": q},
     )
 
 
@@ -102,15 +99,12 @@ async def status_page(request: Request):
     total_discounts = sum(s["discount_count"] for s in statuses)
     online = sum(1 for s in statuses if s["freshness"] != "offline")
     return templates.TemplateResponse(
-        "status.html",
-        {
-            "request": request,
-            "store_statuses": statuses,
+        request=request, name="status.html",
+        context={"store_statuses": statuses,
             "total_deals": total_deals,
             "total_discounts": total_discounts,
             "online_count": online,
-            "total_count": len(statuses),
-        },
+            "total_count": len(statuses)},
     )
 
 
@@ -133,7 +127,7 @@ async def deals_fragment(
         q=q,
     )
     return templates.TemplateResponse(
-        "partials/deal_cards.html",
-        {"request": request, "deals": deals, "deal_count": len(deals),
+        request=request, name="partials/deal_cards.html",
+        context={"deals": deals, "deal_count": len(deals),
          "tax_free_stores": TAX_FREE_STORES},
     )
