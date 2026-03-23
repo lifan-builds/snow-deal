@@ -201,7 +201,7 @@ async def index(
         context={
             "deals": deals,
             "deal_count": deal_count,
-            "categories": [cat for cat, _ in CATEGORY_RULES],
+            "categories": list(dict.fromkeys(cat for cat, _ in CATEGORY_RULES if cat != "boots")),
             "stores": [s.name for s in STORES],
             "brands": brands,
             "tax_free_stores": TAX_FREE_STORES,
@@ -219,7 +219,7 @@ async def index(
             "current_size_max": size_max,
             "length_count": length_count,
             "has_more": has_more,
-            "next_offset": PAGE_SIZE
+            "next_offset": PAGE_SIZE,
         },
     )
 
@@ -238,7 +238,7 @@ async def status_page(request: Request):
             "total_deals": total_deals,
             "total_discounts": total_discounts,
             "online_count": online,
-            "total_count": len(statuses)
+            "total_count": len(statuses),
         },
     )
 
@@ -270,7 +270,7 @@ async def deals_fragment(
     return templates.TemplateResponse(
         request=request, name=template,
         context={"deals": deals, "deal_count": deal_count,
-         "tax_free_stores": TAX_FREE_STORES, "cad_stores": CAD_STORES,
-         "review_map": review_map,
-         "has_more": has_more, "next_offset": offset + PAGE_SIZE},
+                 "tax_free_stores": TAX_FREE_STORES, "cad_stores": CAD_STORES,
+                 "review_map": review_map,
+                 "has_more": has_more, "next_offset": offset + PAGE_SIZE},
     )
