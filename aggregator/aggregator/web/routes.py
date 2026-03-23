@@ -197,9 +197,8 @@ async def index(
     length_count = await count_with_length()
 
     return templates.TemplateResponse(
-        "index.html",
-        {
-            "request": request,
+        request=request, name="index.html",
+        context={
             "deals": deals,
             "deal_count": deal_count,
             "categories": [cat for cat, _ in CATEGORY_RULES],
@@ -220,7 +219,7 @@ async def index(
             "current_size_max": size_max,
             "length_count": length_count,
             "has_more": has_more,
-            "next_offset": PAGE_SIZE,
+            "next_offset": PAGE_SIZE
         },
     )
 
@@ -233,14 +232,13 @@ async def status_page(request: Request):
     total_discounts = sum(s["discount_count"] for s in statuses)
     online = sum(1 for s in statuses if s["freshness"] != "offline")
     return templates.TemplateResponse(
-        "status.html",
-        {
-            "request": request,
+        request=request, name="status.html",
+        context={
             "store_statuses": statuses,
             "total_deals": total_deals,
             "total_discounts": total_discounts,
             "online_count": online,
-            "total_count": len(statuses),
+            "total_count": len(statuses)
         },
     )
 
@@ -270,8 +268,8 @@ async def deals_fragment(
 
     template = "partials/more_cards.html" if is_load_more else "partials/deal_cards.html"
     return templates.TemplateResponse(
-        template,
-        {"request": request, "deals": deals, "deal_count": deal_count,
+        request=request, name=template,
+        context={"deals": deals, "deal_count": deal_count,
          "tax_free_stores": TAX_FREE_STORES, "cad_stores": CAD_STORES,
          "review_map": review_map,
          "has_more": has_more, "next_offset": offset + PAGE_SIZE},
