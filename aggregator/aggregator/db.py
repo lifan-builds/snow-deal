@@ -75,6 +75,9 @@ CREATE INDEX IF NOT EXISTS idx_events_store ON events (store);
 
 MIGRATIONS = [
     "ALTER TABLE invite_codes ADD COLUMN max_uses INTEGER NOT NULL DEFAULT 5",
+    "ALTER TABLE deals ADD COLUMN sizes TEXT",
+    "ALTER TABLE deals ADD COLUMN length_min INTEGER",
+    "ALTER TABLE deals ADD COLUMN length_max INTEGER",
 ]
 
 
