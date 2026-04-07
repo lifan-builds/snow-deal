@@ -12,7 +12,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛷️</text></svg>">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-touch-icon.png">
+    <link rel="icon" href="/static/img/favicon.ico" sizes="any">
     <style>
         :root {
             --bg: #0b0f19;
@@ -110,6 +113,17 @@
         .hero {
             padding: 5rem 0 3rem;
             text-align: center;
+            position: relative;
+        }
+        .hero-bg {
+            position: absolute;
+            inset: -80px -200px;
+            background: url('/static/img/hero-bg.jpg') center bottom / cover no-repeat;
+            opacity: 0.35;
+            mask-image: radial-gradient(ellipse 90% 80% at 50% 70%, black 30%, transparent 75%);
+            -webkit-mask-image: radial-gradient(ellipse 90% 80% at 50% 70%, black 30%, transparent 75%);
+            pointer-events: none;
+            z-index: -1;
         }
 
         .hero-badge {
@@ -627,6 +641,7 @@
     <div class="landing">
         <!-- Hero -->
         <section class="hero section">
+            <div class="hero-bg"></div>
             <div class="hero-badge">
                 <span class="pulse-dot"></span>
                 Live deal tracking
