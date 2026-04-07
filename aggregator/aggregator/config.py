@@ -461,7 +461,7 @@ SNOWBOARD_MODEL_NAMES: set[str] = {
     "proto", "orca", "ejack", "skunk",
     # Ride
     "warpig", "psychocandy", "shadowban", "berzerker", "algorythm",
-    "d.o.a.", "twinpig", "hera", "cadence",
+    "d.o.a.", "twinpig",
     "orton", "almanac", "excavator", "heartbreaker",
     # Jones — removed "frontier" (conflicts with Dragon goggles), "storm", "mind", "ultra" (too generic)
     "tweaker", "cultivator", "spellcaster", "hovercraft", "stratos",
@@ -528,7 +528,7 @@ SNOWBOARD_BOOT_MODEL_NAMES: set[str] = {
     # Salomon
     "launch", "echo", "kiana", "dialogue",
     # Ride
-    "jackson",
+    "hera", "cadence", "jackson",
     # K2
     "boundary", "hanford", "overdraft",
     # Various
