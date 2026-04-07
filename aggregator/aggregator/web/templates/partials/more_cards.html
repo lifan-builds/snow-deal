@@ -6,8 +6,8 @@
     <button class="load-more-btn"
             hx-get="/deals?offset={{ next_offset }}"
             hx-include=".filters [name],[name='q']"
-            hx-target="this"
-            hx-swap="outerHTML">
+            hx-swap="outerHTML"
+            hx-target="closest .load-more-wrap">
         Load more deals
     </button>
 </div>
