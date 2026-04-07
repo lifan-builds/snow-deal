@@ -5,7 +5,7 @@ set -euo pipefail
 
 DATABASE_PATH="${DATABASE_PATH:-/app/data/deals.db}"
 MAX_DB_STALENESS_HOURS="${MAX_DB_STALENESS_HOURS:-18}"
-DOWNLOAD_URL="https://github.com/fantasy-cc/snow-deal/releases/download/latest-data/deals.db"
+DOWNLOAD_URL="https://github.com/lifan-builds/snow-deal/releases/download/latest-data/deals.db"
 
 DB_DIR="$(dirname "$DATABASE_PATH")"
 mkdir -p "$DB_DIR"
@@ -89,7 +89,7 @@ download_latest_db() {
         asset_url=$(curl -fsSL \
             -H "Authorization: token $GITHUB_TOKEN" \
             -H "Accept: application/vnd.github+json" \
-            "https://api.github.com/repos/fantasy-cc/snow-deal/releases/tags/latest-data" \
+            "https://api.github.com/repos/lifan-builds/snow-deal/releases/tags/latest-data" \
             | python3 -c "import sys,json; assets=json.load(sys.stdin).get('assets',[]); print(assets[0]['url'] if assets else '')")
 
         if [ -z "$asset_url" ]; then
