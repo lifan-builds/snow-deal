@@ -1,101 +1,92 @@
-# snow-deals
+# FreshPowder
 
-Find the best discounts on ski and snowboard gear. Adds discount-percentage badges directly onto product cards in your browser and lets you sort by best deal with one click.
+The best ski & snowboard deals, curated. FreshPowder tracks prices across 15+ North American retailers every 6 hours, matches expert review scores, and surfaces the best deals so you don't have to check every store.
 
-## Tampermonkey Userscript (Primary)
+**Live at:** https://snow-deals.onrender.com (invite-only)
 
-The userscript runs directly on supported retailer pages — no terminal needed.
+## Features
 
-### What it does
+- **Multi-store aggregation** — Tracks deals across evo, Backcountry, REI, Steep & Cheap, The House, and 10+ more stores
+- **Expert reviews** — Matches products with OutdoorGearLab and GoodRide review scores
+- **Smart filtering** — 10 filter types: category, brand, store, discount, price, length, reviewed, tax-free, search, sort
+- **Quick presets** — One-tap filters: "Under $100", "Top Reviewed", "50%+ Off", "Tax Free", "New Arrivals"
+- **Real-time search** — Search by brand, model, or keyword with term highlighting
+- **Share deals** — Share button copies deal links or uses native share on mobile
+- **Click analytics** — Track which deals and stores get the most engagement
+- **Invite system** — Human-readable invite codes (POWDER-SUMMIT-42), controlled growth
 
-- Adds a **discount % badge** to every product card that's on sale (color-coded: red for 30%+, orange for 15-29%, yellow for 1-14%)
-- Adds a **Sort by Discount** button that reorders the product grid from best to worst deal
-- Shows a summary line: "X of Y on sale (up to Z% off)"
+## Tech Stack
 
-### Installation
+- **Backend:** Python 3.12, FastAPI, aiosqlite
+- **Frontend:** Jinja2, htmx, vanilla JS, custom CSS
+- **Database:** SQLite (deals) + Turso (auth/events)
+- **Scraping:** GitHub Actions cron, httpx, BeautifulSoup4
+- **Deployment:** Docker on Render
 
-1. Install [Tampermonkey](https://www.tampermonkey.net/) in your browser
-2. Click the Tampermonkey icon in the toolbar, then **Create a new script**
-3. Delete the template code and paste the contents of [`tampermonkey/snow-deals.user.js`](tampermonkey/snow-deals.user.js)
-4. Press **Ctrl+S** (or Cmd+S) to save
-5. Navigate to any supported product listing:
-   - [bluezonesports.com/skis](https://www.bluezonesports.com/skis)
-   - [aspenskiandboard.com/collections/skis](https://www.aspenskiandboard.com/collections/skis)
-
-Discount badges and the sort button appear automatically. Clicking "Sort by Discount" fetches ALL pages and ranks every product.
-
-## Python CLI (Secondary)
-
-For bulk data export across all paginated pages.
+## Getting Started
 
 ### Prerequisites
 
-- Python 3.11+
+- Python 3.12+
+- pip
 
 ### Installation
 
 ```bash
-git clone <repo-url> && cd snow-deals
-python -m venv .venv
-source .venv/bin/activate
+cd aggregator
 pip install -e .
 ```
 
-### Usage
+### Run Locally
 
 ```bash
-# BlueZone Sports (HTML scraping)
-snow-deals https://www.bluezonesports.com/skis
+# Set required env vars
+export SECRET_KEY="your-secret"
+export ADMIN_KEY="your-admin-key"
 
-# Aspen Ski and Board (Shopify JSON API)
-snow-deals https://www.aspenskiandboard.com/collections/skis
+# Start the dev server
+uvicorn aggregator.web.app:create_app --factory --reload
+```
 
-# Only show items with 10%+ discount
-snow-deals https://www.bluezonesports.com/skis --min-discount 10
+### Run Tests
 
-# Export to CSV
-snow-deals https://www.aspenskiandboard.com/collections/skis --format csv --output deals.csv
+```bash
+python -m pytest aggregator/tests/ -x -q
+```
 
-# Export to JSON
-snow-deals https://www.bluezonesports.com/skis --format json --output deals.json
+### Admin CLI
+
+```bash
+# Run a manual scrape
+python -m aggregator.cli scrape
+
+# Generate invite codes
+python -m aggregator.cli generate-codes --count 5
+
+# Sync auth DB to Turso
+python -m aggregator.cli sync-auth
 ```
 
 ## Project Structure
 
 ```
-snow-deals/
-├── tampermonkey/
-│   └── snow-deals.user.js    # Tampermonkey userscript (primary)
-├── snow_deals/               # Python CLI package (secondary)
-│   ├── cli.py                # CLI entry point
-│   ├── scraper.py            # Page fetching and orchestration
-│   ├── models.py             # Product data model
-│   ├── display.py            # Output formatting (table, CSV, JSON)
-│   └── parsers/              # Site-specific parsers
-│       ├── base.py           # Abstract parser interface
-│       ├── bluezone.py       # BlueZone Sports (HTML)
-│       └── shopify.py        # Shopify stores (JSON API)
-├── aggregator/               # Awesome Snow Deals — multi-store aggregator with admin panel & analytics
-├── pyproject.toml
-└── README.md
+├── aggregator/              # Main web app
+│   ├── aggregator/
+│   │   ├── config.py        # Store configs, categories, keywords
+│   │   ├── categorizer.py   # Product categorization
+│   │   ├── db.py            # Deal queries
+│   │   ├── auth_db.py       # Auth database (Turso)
+│   │   ├── scraper.py       # Multi-store scraper
+│   │   ├── reviews.py       # Review score matching
+│   │   ├── web/             # FastAPI web app
+│   │   └── parsers/         # Per-store scrapers
+│   └── tests/
+├── tampermonkey/            # Browser userscript (secondary)
+├── snow_deals/              # Python CLI (secondary)
+├── GTM.md                   # Go-to-market strategy
+├── .github/workflows/       # Scrape cron job
+└── Dockerfile
 ```
-
-## Supported Sites
-
-| Site | Type | Userscript | CLI |
-|------|------|-----------|-----|
-| [BlueZone Sports](https://www.bluezonesports.com) | HTML scraping | Yes | Yes |
-| [Aspen Ski and Board](https://www.aspenskiandboard.com) | Shopify JSON API | Yes | Yes |
-
-## Adding a New Site
-
-### Shopify stores
-Shopify stores expose `/collections/{handle}/products.json` with structured pricing data. Adding a new Shopify store usually only requires registering the domain — no custom parser needed.
-
-### Non-Shopify stores
-1. Create a new parser in `snow_deals/parsers/` inheriting from `BaseParser`
-2. Register the URL pattern in `snow_deals/parsers/__init__.py`
-3. Add a `@match` pattern and site adapter in `tampermonkey/snow-deals.user.js`
 
 ## License
 
