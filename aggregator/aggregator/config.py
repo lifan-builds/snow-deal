@@ -463,31 +463,32 @@ SNOWBOARD_MODEL_NAMES: set[str] = {
     "warpig", "psychocandy", "shadowban", "berzerker", "algorythm",
     "d.o.a.", "twinpig", "hera", "cadence",
     "orton", "almanac", "excavator", "heartbreaker",
-    # Jones
-    "tweaker", "cultivator", "spellcaster", "frontier", "mountain",
-    "storm", "hovercraft", "stratos", "mind", "flagship",
-    "aeronaut", "horizon", "passport", "ultra",
-    # CAPiTA
-    "thunderstorm", "pathfinder", "mega", "satori",
-    # Salomon
-    "assassin", "huck", "abstract", "sleepwalker", "super",
+    # Jones — removed "frontier" (conflicts with Dragon goggles), "storm", "mind", "ultra" (too generic)
+    "tweaker", "cultivator", "spellcaster", "hovercraft", "stratos",
+    "aeronaut", "horizon", "passport",
+    # CAPiTA — removed "mega" (too generic, matches traction pads)
+    "thunderstorm", "pathfinder", "satori",
+    # Salomon — removed "super" (too generic)
+    "assassin", "huck", "abstract", "sleepwalker",
     # GNU
     "headspace",
     # Nitro
-    "alternator", "slash", "treeline",
+    "alternator", "treeline",
     # Yes
     "greats", "typo", "jakk",
     # Ride (more)
     "distortia", "trance",
     # Roxy
     "xoxo",
-    # Various
+    # Various — removed "slash" (too generic)
     "rumble", "mercury", "legacy", "dpr", "aura",
     "falcor", "disaster", "meteorite", "strata",
     "cadet", "relapse", "gloss",
 }
 GOGGLE_MODEL_NAMES: set[str] = {
     "squad", "skyline", "i/o", "sagen", "goliath+",
+    # Dragon
+    "nfx2", "rvx", "pxv", "d3",
 }
 BINDING_MODEL_NAMES: set[str] = {
     "re:flex", "est", "cartel", "mission", "supermatic",
@@ -593,9 +594,17 @@ MULTI_WORD_MODEL_NAMES: list[tuple[str, str]] = [
     ("low bridge", "goggles"),
     ("bonus lens", "goggles"),
     ("squad photochromic", "goggles"),
-    # More snowboard models
+    # Goggle models (Dragon)
+    ("lil d", "goggles"),
+    # More snowboard models — use brand-qualified names for ambiguous models
     ("cream halldor", "snowboards"),
-    ("lil d", "snowboards"),
+    ("jones frontier", "snowboards"),
+    ("jones storm", "snowboards"),
+    ("jones mind expander", "snowboards"),
+    ("jones ultra", "snowboards"),
+    ("capita mega", "snowboards"),
+    ("salomon super 8", "snowboards"),
+    ("nitro slash", "snowboards"),
     ("metal machine", "snowboards"),
     ("source pro", "snowboards"),
     ("source fc", "snowboards"),
@@ -654,6 +663,15 @@ NOT_HARDGOODS_KEYWORDS: list[str] = [
     "leash", "scraper", "tool", "bag ", "pack ", "backpack",
     "towel", "blanket", "sandal", "shoe ", "slipper",
     "crew ", "jersey", "short ", "shorts", "dress", "romper",
+    # Accessories that shouldn't be categorized as hardgoods via brand fallback
+    "cable lock", "lock ", "holder", "mount ", "wall mount",
+    "boxer", "brief", "underwear", "sock ", "socks",
+    "hood ", "face mask", "neck gaiter", "balaclava",
+    "wax ", " wax", "tuning", "edge tool",
+    "stomp pad", "traction", "claw",
+    "keychain", "lanyard", "bottle",
+    "pillow", "mattress", "bed ", "blanket", "comforter",
+    "fill double", "double layer",
 ]
 
 # Products matching these patterns are excluded entirely (non-snow-sport items)
