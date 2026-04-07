@@ -180,6 +180,7 @@ async def query_deals(
     brand: str | None = None,
     min_discount: float = 0,
     min_price: float = 0,
+    max_price: float = 0,
     sort_by: str = "discount_pct",
     limit: int = 200,
     offset: int = 0,
@@ -199,6 +200,10 @@ async def query_deals(
     if min_price > 0:
         clauses.append("deals.current_price >= ?")
         params.append(min_price)
+
+    if max_price > 0:
+        clauses.append("deals.current_price <= ?")
+        params.append(max_price)
 
     if category:
         clauses.append("deals.category = ?")

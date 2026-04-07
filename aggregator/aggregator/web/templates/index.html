@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/static/style.css?v=3">
+    <link rel="stylesheet" href="/static/style.css?v=4">
     <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon-16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-touch-icon.png">
@@ -92,6 +92,7 @@
             </div>
 
             <nav class="filters" id="filter-nav">
+                <input type="hidden" name="max_price" value="{{ current_max_price|default(0) }}">
                 <div class="filter-row">
                     <div class="filter-group">
                         <label>Category</label>
@@ -237,6 +238,24 @@
             <div class="active-filters" id="active-filters"></div>
         </div>
 
+        <div class="preset-bar">
+            <button class="preset-btn" data-preset="under100" onclick="applyPreset(this, {max_price:'100'})">
+                <span class="preset-icon">&#x1F4B0;</span> Under $100
+            </button>
+            <button class="preset-btn" data-preset="top-reviewed" onclick="applyPreset(this, {sort:'top_reviewed', reviewed:'1'})">
+                <span class="preset-icon">&#x2B50;</span> Top Reviewed
+            </button>
+            <button class="preset-btn" data-preset="big-savings" onclick="applyPreset(this, {min_discount:'50'})">
+                <span class="preset-icon">&#x1F525;</span> 50%+ Off
+            </button>
+            <button class="preset-btn" data-preset="tax-free" onclick="applyPreset(this, {tax_free:'1'})">
+                <span class="preset-icon">&#x1F3F7;&#xFE0F;</span> Tax Free
+            </button>
+            <button class="preset-btn" data-preset="new-arrivals" onclick="applyPreset(this, {sort:'newest'})">
+                <span class="preset-icon">&#x2728;</span> New Arrivals
+            </button>
+        </div>
+
         <main id="deal-grid">
             {% include "partials/deal_cards.html" %}
         </main>
@@ -254,7 +273,150 @@
         </div>
     </footer>
 
+    <div id="toast-container"></div>
+
+    <button class="scroll-top-btn" id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">
+        <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16">
+            <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd"/>
+        </svg>
+    </button>
+
     <script>
+    // ---- Click tracking ----
+    function trackAndOpen(card) {
+        var payload = {
+            event_type: 'click',
+            deal_url: card.dataset.href,
+            deal_name: card.dataset.name,
+            store: card.dataset.store,
+            category: card.dataset.category
+        };
+        try {
+            if (navigator.sendBeacon) {
+                navigator.sendBeacon('/api/event', new Blob([JSON.stringify(payload)], {type: 'application/json'}));
+            } else {
+                fetch('/api/event', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(payload), keepalive:true}).catch(function(){});
+            }
+        } catch(e) {}
+        window.open(card.dataset.href, '_blank');
+    }
+
+    // ---- Share ----
+    function shareCard(event, btn) {
+        event.stopPropagation();
+        var url = btn.dataset.url;
+        var name = btn.dataset.name;
+        if (navigator.share) {
+            navigator.share({title: name, text: name + ' — deal on FreshPowder', url: url}).catch(function(){});
+        } else {
+            navigator.clipboard.writeText(url).then(function() {
+                showToast('Link copied!');
+            }).catch(function() {
+                var ta = document.createElement('textarea');
+                ta.value = url; ta.style.position = 'fixed'; ta.style.opacity = '0';
+                document.body.appendChild(ta); ta.select(); document.execCommand('copy');
+                document.body.removeChild(ta);
+                showToast('Link copied!');
+            });
+        }
+    }
+
+    function showToast(msg) {
+        var container = document.getElementById('toast-container');
+        var toast = document.createElement('div');
+        toast.className = 'toast';
+        toast.textContent = msg;
+        container.appendChild(toast);
+        requestAnimationFrame(function() { toast.classList.add('show'); });
+        setTimeout(function() {
+            toast.classList.remove('show');
+            toast.addEventListener('transitionend', function() { toast.remove(); });
+        }, 2500);
+    }
+
+    // ---- Quick filter presets ----
+    function applyPreset(btn, params) {
+        var isActive = btn.classList.contains('active');
+        document.querySelectorAll('.preset-btn').forEach(function(b) { b.classList.remove('active'); });
+        if (isActive) {
+            // Reset the params this preset set
+            Object.keys(params).forEach(function(key) {
+                var el = document.querySelector('.filters [name="' + key + '"], [name="' + key + '"]');
+                if (!el) return;
+                if (el.type === 'checkbox') { el.checked = false; }
+                else if (el.type === 'range') { el.value = 0; var ev = new Event('input'); el.dispatchEvent(ev); }
+                else if (el.tagName === 'SELECT') { el.value = el.options[0].value; }
+                else { el.value = el.defaultValue || ''; }
+            });
+        } else {
+            btn.classList.add('active');
+            Object.keys(params).forEach(function(key) {
+                var el = document.querySelector('.filters [name="' + key + '"], [name="' + key + '"]');
+                if (!el) return;
+                if (el.type === 'checkbox') { el.checked = !!params[key]; }
+                else { el.value = params[key]; }
+                if (el.type === 'range') { var ev = new Event('input'); el.dispatchEvent(ev); }
+            });
+        }
+        var trigger = document.querySelector('[name="q"]');
+        htmx.trigger(trigger, 'change');
+    }
+
+    function syncPresets() {
+        var presetDefs = {
+            'under100': {max_price: '100'},
+            'top-reviewed': {sort: 'top_reviewed', reviewed: '1'},
+            'big-savings': {min_discount: '50'},
+            'tax-free': {tax_free: '1'},
+            'new-arrivals': {sort: 'newest'}
+        };
+        document.querySelectorAll('.preset-btn').forEach(function(btn) {
+            var preset = btn.dataset.preset;
+            var def = presetDefs[preset];
+            if (!def) return;
+            var match = Object.keys(def).every(function(key) {
+                var el = document.querySelector('.filters [name="' + key + '"], [name="' + key + '"]');
+                if (!el) return false;
+                if (el.type === 'checkbox') return el.checked == !!def[key];
+                return String(el.value) === String(def[key]);
+            });
+            btn.classList.toggle('active', match);
+        });
+    }
+
+    // ---- Search highlighting ----
+    function highlightSearchTerms() {
+        var q = document.querySelector('[name="q"]').value.trim();
+        if (!q) return;
+        var terms = q.toLowerCase().split(/\s+/).filter(Boolean);
+        document.querySelectorAll('.deal-card .name').forEach(function(el) {
+            var text = el.textContent;
+            var html = text;
+            terms.forEach(function(term) {
+                var escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                html = html.replace(new RegExp('(' + escaped + ')', 'gi'), '<mark class="search-highlight">$1</mark>');
+            });
+            el.innerHTML = html;
+        });
+    }
+
+    // ---- Reset all filters ----
+    function resetAllFilters() {
+        document.querySelectorAll('.filters select').forEach(function(el) { el.value = el.options[0].value; });
+        document.querySelectorAll('.filters input[type="range"]').forEach(function(el) { el.value = 0; el.dispatchEvent(new Event('input')); });
+        document.querySelectorAll('.filters input[type="checkbox"]').forEach(function(el) { el.checked = false; });
+        document.querySelector('[name="q"]').value = '';
+        var mp = document.querySelector('[name="max_price"]');
+        if (mp) mp.value = '0';
+        document.querySelectorAll('.preset-btn').forEach(function(b) { b.classList.remove('active'); });
+        htmx.trigger(document.querySelector('[name="q"]'), 'change');
+    }
+
+    // ---- Scroll to top ----
+    window.addEventListener('scroll', function() {
+        document.getElementById('scroll-top').classList.toggle('visible', window.scrollY > 600);
+    });
+
     // Length range slider
     function updateLengthRange(el, which) {
         var minEl = document.querySelector('.range-min');
@@ -328,7 +490,7 @@
         container.innerHTML = '';
         var labels = {
             category: 'Category', brand: 'Brand', store: 'Store',
-            min_discount: 'Min discount', min_price: 'Min price',
+            min_discount: 'Min discount', min_price: 'Min price', max_price: 'Max price',
             reviewed: 'Reviewed', tax_free: 'Tax Free', q: 'Search'
         };
         document.querySelectorAll('.filters [name], [name="q"]').forEach(function(el) {
@@ -343,6 +505,9 @@
             } else if (el.type === 'range') {
                 if (el.name === 'min_discount') display = el.value + '%+ off';
                 else if (el.name === 'min_price') display = '$' + el.value + '+';
+                else return;
+            } else if (el.type === 'hidden') {
+                if (el.name === 'max_price' && el.value !== '0') display = 'Under $' + el.value;
                 else return;
             } else if (el.tagName === 'SELECT') {
                 display = el.options[el.selectedIndex].text.split(' (')[0];
@@ -380,6 +545,8 @@
         markNewDeals();
         syncFiltersToUrl();
         updateFilterPills();
+        syncPresets();
+        highlightSearchTerms();
         if (localStorage.getItem('viewMode') === 'compact') {
             document.querySelector('#deal-grid').classList.add('compact-view');
         }

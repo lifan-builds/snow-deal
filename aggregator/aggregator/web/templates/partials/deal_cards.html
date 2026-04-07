@@ -4,7 +4,13 @@
 {% if deals %}
 <div class="deal-grid">
     {% for d in deals %}
+    {% if loop.first and not is_load_more %}
+    <div class="featured-card-wrap">
     {% include "partials/_card.html" %}
+    </div>
+    {% else %}
+    {% include "partials/_card.html" %}
+    {% endif %}
     {% endfor %}
     {% if has_more %}
     <div class="load-more-wrap">
@@ -21,7 +27,22 @@
 {% else %}
 <div class="empty-state">
     <img class="empty-icon" src="/static/img/empty-state.png" alt="No deals" width="300" height="225">
-    <div class="empty-title">No deals found</div>
-    <div class="empty-hint">Try adjusting the filters above, or check back after the next scrape.</div>
+    <div class="empty-title">No deals match your filters</div>
+    <div class="empty-hint">
+        {% if current_max_price and current_min_discount and current_min_discount|int >= 20 %}
+            No deals under ${{ current_max_price|int }} with {{ current_min_discount|int }}%+ discount. Try raising the price limit or lowering the discount.
+        {% elif current_max_price %}
+            No deals under ${{ current_max_price|int }}. Try a higher price range.
+        {% elif current_min_discount and current_min_discount|int >= 40 %}
+            No deals with {{ current_min_discount|int }}%+ off right now. Try a lower discount threshold.
+        {% elif current_q %}
+            No results for &ldquo;{{ current_q }}&rdquo;. Try different keywords or remove some filters.
+        {% elif current_category %}
+            No {{ current_category }} deals with current filters. Try broadening your search.
+        {% else %}
+            Try adjusting the filters above, or check back after the next scrape.
+        {% endif %}
+    </div>
+    <button class="reset-filters-btn" onclick="resetAllFilters()">Reset all filters</button>
 </div>
 {% endif %}

@@ -73,6 +73,7 @@ async def _fetch_deals(
     brand: str | None,
     min_discount: float,
     min_price: float = 0,
+    max_price: float = 0,
     sort: str,
     tax_free: str,
     q: str,
@@ -88,7 +89,7 @@ async def _fetch_deals(
 
     deals = await query_deals(
         category=category, store=store, brand=brand, min_discount=min_discount,
-        min_price=min_price,
+        min_price=min_price, max_price=max_price,
         sort_by=sort, limit=PAGE_SIZE + 1, offset=offset,
         tax_free_only=tax_free_only, tax_free_stores=TAX_FREE_STORES,
         q=q, size_min=size_min, size_max=size_max,
@@ -101,7 +102,7 @@ async def _fetch_deals(
     if count:
         deal_count = await query_deals(
             category=category, store=store, brand=brand, min_discount=min_discount,
-            min_price=min_price, sort_by=sort,
+            min_price=min_price, max_price=max_price, sort_by=sort,
             tax_free_only=tax_free_only, tax_free_stores=TAX_FREE_STORES,
             q=q, size_min=size_min, size_max=size_max,
             reviewed_only=reviewed_only, count_only=True,
@@ -118,6 +119,7 @@ async def index(
     brand: str | None = None,
     min_discount: float = Query(0, alias="min_discount"),
     min_price: float = Query(0, alias="min_price"),
+    max_price: float = Query(0, alias="max_price"),
     sort: str = Query("discount_pct", alias="sort"),
     tax_free: str = Query("", alias="tax_free"),
     q: str = Query("", alias="q"),
@@ -127,7 +129,7 @@ async def index(
 ):
     deals, has_more, deal_count = await _fetch_deals(
         category=category, store=store, brand=brand, min_discount=min_discount,
-        min_price=min_price,
+        min_price=min_price, max_price=max_price,
         sort=sort, tax_free=tax_free, q=q, size_min=size_min, size_max=size_max,
         reviewed=reviewed,
     )
@@ -154,6 +156,7 @@ async def index(
             "current_brand": brand,
             "current_min_discount": min_discount,
             "current_min_price": min_price,
+            "current_max_price": max_price,
             "current_sort": sort,
             "current_tax_free": tax_free,
             "current_reviewed": reviewed,
@@ -215,6 +218,7 @@ async def deals_fragment(
     brand: str | None = None,
     min_discount: float = Query(0, alias="min_discount"),
     min_price: float = Query(0, alias="min_price"),
+    max_price: float = Query(0, alias="max_price"),
     sort: str = Query("discount_pct", alias="sort"),
     tax_free: str = Query("", alias="tax_free"),
     q: str = Query("", alias="q"),
@@ -227,7 +231,7 @@ async def deals_fragment(
     is_load_more = offset > 0
     deals, has_more, deal_count = await _fetch_deals(
         category=category, store=store, brand=brand, min_discount=min_discount,
-        min_price=min_price,
+        min_price=min_price, max_price=max_price,
         sort=sort, tax_free=tax_free, q=q, size_min=size_min, size_max=size_max,
         reviewed=reviewed, offset=offset, count=not is_load_more,
     )
@@ -237,5 +241,7 @@ async def deals_fragment(
         request=request, name=template,
         context={"deals": deals, "deal_count": deal_count,
                  "tax_free_stores": TAX_FREE_STORES, "cad_stores": CAD_STORES,
-                 "has_more": has_more, "next_offset": offset + PAGE_SIZE},
+                 "has_more": has_more, "next_offset": offset + PAGE_SIZE,
+                 "current_q": q, "current_min_discount": min_discount,
+                 "current_max_price": max_price, "current_category": category},
     )
