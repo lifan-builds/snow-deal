@@ -746,4 +746,8 @@ EXCLUDE_KEYWORDS: list[str] = [
     "tricycle", "race suit", "training mat",
     "tumbler", "quencher", "keychain", "organizer",
     "whippet attachment", "knob nut",
+    # Used / refurbished / demo gear
+    " used ", "pre-owned", "preowned", "refurbished", "refurb ",
+    "demo ski", "demo board", "demo boot", "demo binding",
+    "previously ridden", "shop worn",
 ]

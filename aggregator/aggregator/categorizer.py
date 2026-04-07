@@ -32,7 +32,8 @@ def _url_path(url: str) -> str:
 
 def is_excluded(name: str, url: str = "") -> bool:
     """Return True if the product is a non-snow-sport item that should be excluded."""
-    text = f"{name} {_url_path(url)}".lower()
+    # Prepend a space so space-prefixed keywords like " used " match at start of string too
+    text = f" {name} {_url_path(url)}".lower()
     return any(kw in text for kw in EXCLUDE_KEYWORDS)
 
 

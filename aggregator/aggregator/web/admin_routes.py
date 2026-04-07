@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import random
 import secrets
 from pathlib import Path
 
@@ -10,8 +11,9 @@ from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.templating import Jinja2Templates
 
 from aggregator.auth import auth_redirect_path, require_invite
-from aggregator.auth_db import create_invite_codes, list_invite_codes
+from aggregator.auth_db import create_invite_codes, list_invite_codes, list_waitlist
 from aggregator.web.rate_limit import SlidingWindowRateLimiter, client_key
+from aggregator.wordlist import SNOW_WORDS
 
 TEMPLATE_DIR = Path(__file__).resolve().parent / "templates"
 templates = Jinja2Templates(directory=str(TEMPLATE_DIR))
@@ -22,6 +24,14 @@ ADMIN_CREATE_CODES_WINDOW_SECONDS = 300
 admin_create_codes_limiter = SlidingWindowRateLimiter(
     window_seconds=ADMIN_CREATE_CODES_WINDOW_SECONDS
 )
+
+
+def _generate_readable_code() -> str:
+    """Generate a human-readable snow-themed invite code like POWDER-FROST-42."""
+    word1 = random.choice(SNOW_WORDS)
+    word2 = random.choice(SNOW_WORDS)
+    num = secrets.randbelow(90) + 10  # 10-99
+    return f"{word1}-{word2}-{num}"
 
 
 async def _require_admin(request: Request) -> bool:
@@ -35,9 +45,10 @@ async def admin_codes_page(request: Request):
     if not await _require_admin(request):
         return RedirectResponse(url=auth_redirect_path(), status_code=302)
     codes = await list_invite_codes()
+    waitlist = await list_waitlist()
     return templates.TemplateResponse(
         request=request, name="admin_codes.html",
-        context={"codes": codes, "max_uses": 5},
+        context={"codes": codes, "max_uses": 5, "waitlist": waitlist},
     )
 
 
@@ -50,11 +61,12 @@ async def admin_create_codes(request: Request, count: int = Form(5)):
     ):
         return HTMLResponse("Too many code generation requests. Please try again later.", status_code=429)
     count = min(count, 50)  # cap at 50
-    new_codes = [secrets.token_hex(4).upper() for _ in range(count)]
+    new_codes = [_generate_readable_code() for _ in range(count)]
     await create_invite_codes(new_codes)
     codes = await list_invite_codes()
+    waitlist = await list_waitlist()
     return templates.TemplateResponse(
         request=request,
         name="admin_codes.html",
-        context={"codes": codes, "new_codes": new_codes, "max_uses": 5},
+        context={"codes": codes, "new_codes": new_codes, "max_uses": 5, "waitlist": waitlist},
     )

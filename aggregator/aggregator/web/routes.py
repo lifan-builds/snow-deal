@@ -72,6 +72,7 @@ async def _fetch_deals(
     store: str | None,
     brand: str | None,
     min_discount: float,
+    min_price: float = 0,
     sort: str,
     tax_free: str,
     q: str,
@@ -87,6 +88,7 @@ async def _fetch_deals(
 
     deals = await query_deals(
         category=category, store=store, brand=brand, min_discount=min_discount,
+        min_price=min_price,
         sort_by=sort, limit=PAGE_SIZE + 1, offset=offset,
         tax_free_only=tax_free_only, tax_free_stores=TAX_FREE_STORES,
         q=q, size_min=size_min, size_max=size_max,
@@ -99,7 +101,7 @@ async def _fetch_deals(
     if count:
         deal_count = await query_deals(
             category=category, store=store, brand=brand, min_discount=min_discount,
-            sort_by=sort,
+            min_price=min_price, sort_by=sort,
             tax_free_only=tax_free_only, tax_free_stores=TAX_FREE_STORES,
             q=q, size_min=size_min, size_max=size_max,
             reviewed_only=reviewed_only, count_only=True,
@@ -115,6 +117,7 @@ async def index(
     store: str | None = None,
     brand: str | None = None,
     min_discount: float = Query(0, alias="min_discount"),
+    min_price: float = Query(0, alias="min_price"),
     sort: str = Query("discount_pct", alias="sort"),
     tax_free: str = Query("", alias="tax_free"),
     q: str = Query("", alias="q"),
@@ -124,6 +127,7 @@ async def index(
 ):
     deals, has_more, deal_count = await _fetch_deals(
         category=category, store=store, brand=brand, min_discount=min_discount,
+        min_price=min_price,
         sort=sort, tax_free=tax_free, q=q, size_min=size_min, size_max=size_max,
         reviewed=reviewed,
     )
@@ -149,6 +153,7 @@ async def index(
             "current_store": store,
             "current_brand": brand,
             "current_min_discount": min_discount,
+            "current_min_price": min_price,
             "current_sort": sort,
             "current_tax_free": tax_free,
             "current_reviewed": reviewed,
@@ -173,7 +178,14 @@ async def robots_txt():
             "Disallow: /invite\n"
             "Disallow: /api/\n"
         )
-    return PlainTextResponse("User-agent: *\nDisallow: /\n")
+    # In private mode, allow the landing/invite page to be indexed but block content
+    return PlainTextResponse(
+        "User-agent: *\n"
+        "Allow: /invite\n"
+        "Disallow: /\n"
+        "Disallow: /admin\n"
+        "Disallow: /api/\n"
+    )
 
 
 @router.get("/status", response_class=HTMLResponse)
@@ -202,6 +214,7 @@ async def deals_fragment(
     store: str | None = None,
     brand: str | None = None,
     min_discount: float = Query(0, alias="min_discount"),
+    min_price: float = Query(0, alias="min_price"),
     sort: str = Query("discount_pct", alias="sort"),
     tax_free: str = Query("", alias="tax_free"),
     q: str = Query("", alias="q"),
@@ -214,6 +227,7 @@ async def deals_fragment(
     is_load_more = offset > 0
     deals, has_more, deal_count = await _fetch_deals(
         category=category, store=store, brand=brand, min_discount=min_discount,
+        min_price=min_price,
         sort=sort, tax_free=tax_free, q=q, size_min=size_min, size_max=size_max,
         reviewed=reviewed, offset=offset, count=not is_load_more,
     )

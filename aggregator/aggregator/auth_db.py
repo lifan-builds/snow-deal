@@ -44,6 +44,10 @@ AUTH_SCHEMA = [
         metadata   TEXT,
         created_at TEXT    NOT NULL
     )""",
+    """CREATE TABLE IF NOT EXISTS waitlist (
+        email      TEXT PRIMARY KEY,
+        created_at TEXT NOT NULL
+    )""",
 ]
 
 # ---------------------------------------------------------------------------
@@ -274,3 +278,34 @@ async def get_click_stats(days: int = 7) -> dict:
         "filter_usage": filter_usage,
         "days": days,
     }
+
+
+# ---------------------------------------------------------------------------
+# Waitlist
+# ---------------------------------------------------------------------------
+
+async def add_to_waitlist(email: str) -> bool:
+    """Add an email to the waitlist. Returns True if added, False if already present."""
+    now = datetime.now().isoformat()
+    conn = _get_conn()
+    try:
+        conn.execute(
+            "INSERT INTO waitlist (email, created_at) VALUES (?, ?)",
+            (email.strip().lower(), now),
+        )
+        conn.commit()
+        _sync()
+        return True
+    except (sqlite3.IntegrityError, Exception) as e:
+        if "UNIQUE" in str(e) or "IntegrityError" in type(e).__name__:
+            return False
+        raise
+
+
+async def list_waitlist() -> list[dict]:
+    """Return all waitlist emails."""
+    conn = _get_conn()
+    rows = conn.execute(
+        "SELECT email, created_at FROM waitlist ORDER BY created_at DESC"
+    ).fetchall()
+    return [{"email": r[0], "created_at": r[1]} for r in rows]

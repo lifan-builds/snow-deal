@@ -65,7 +65,8 @@
 
     <div class="toolbar">
         <div class="toolbar-inner">
-            <div class="search-bar">
+            <div class="search-row" style="display:flex;gap:0.5rem;align-items:center">
+            <div class="search-bar" style="flex:1">
                 <svg class="search-icon" viewBox="0 0 20 20" fill="currentColor" width="15" height="15">
                     <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/>
                 </svg>
@@ -76,8 +77,13 @@
                        hx-include=".filters [name]"
                        hx-trigger="keyup changed delay:400ms">
             </div>
+            <button class="filters-toggle-btn" id="filters-toggle-btn" onclick="toggleFilters()" aria-expanded="true" aria-controls="filter-nav">
+                <svg class="toggle-chevron" viewBox="0 0 16 16" fill="currentColor" width="12" height="12"><path d="M8 10.5L2 4.5h12z"/></svg>
+                Filters
+            </button>
+            </div>
 
-            <nav class="filters">
+            <nav class="filters" id="filter-nav">
                 <div class="filter-row">
                     <div class="filter-group">
                         <label>Category</label>
@@ -158,6 +164,17 @@
                                oninput="document.getElementById('discount-val').textContent = this.value + '%'">
                     </div>
 
+                    <div class="filter-group slider-group">
+                        <label>Min price: <span id="price-val">{{ "$%.0f"|format(current_min_price|default(0)) if current_min_price|default(0) > 0 else "Any" }}</span></label>
+                        <input type="range" name="min_price" min="0" max="500" step="25"
+                               value="{{ current_min_price|default(0)|int }}"
+                               hx-get="/deals"
+                               hx-target="#deal-grid"
+                               hx-include=".filters [name],[name='q']"
+                               hx-trigger="change"
+                               oninput="document.getElementById('price-val').textContent = this.value > 0 ? '$' + this.value : 'Any'">
+                    </div>
+
                     <div class="filter-group length-filter">
                         <label>Length <span class="length-coverage">({{ length_count }} deals)</span>: <span id="length-val">{{ current_size_min or 100 }}&ndash;{{ current_size_max or 210 }} cm</span></label>
                         <div class="dual-range">
@@ -216,11 +233,13 @@
 
     <footer>
         <div class="footer-inner">
-            <span>FreshPowder</span>
+            <span style="font-weight:600;color:var(--text-secondary)">FreshPowder</span>
             <span class="footer-sep">&middot;</span>
-            <span>{{ stores|length }} stores</span>
+            <span>{{ stores|length }} stores monitored</span>
             <span class="footer-sep">&middot;</span>
-            <span>Prices updated periodically</span>
+            <span>Prices updated every 6 hours</span>
+            <span class="footer-sep">&middot;</span>
+            <a href="/status" style="color:var(--muted);text-decoration:none;transition:color var(--transition)" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--muted)'">Status</a>
         </div>
     </footer>
 
@@ -289,6 +308,19 @@
         });
         var url = '/' + (params.toString() ? '?' + params.toString() : '');
         history.replaceState(null, '', url);
+    }
+
+    function toggleFilters() {
+        var nav = document.getElementById('filter-nav');
+        var btn = document.getElementById('filters-toggle-btn');
+        nav.classList.toggle('collapsed');
+        btn.classList.toggle('active');
+        btn.setAttribute('aria-expanded', !nav.classList.contains('collapsed'));
+    }
+    // On mobile, start with filters collapsed
+    if (window.innerWidth <= 768) {
+        document.getElementById('filter-nav').classList.add('collapsed');
+        document.getElementById('filters-toggle-btn').classList.remove('active');
     }
 
     document.body.addEventListener('htmx:afterSwap', function() {

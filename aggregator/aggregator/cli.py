@@ -107,9 +107,17 @@ def fetch_reviews(delay: float, source: str, max_reviews: int | None) -> None:
 @click.argument("count", type=int, default=10)
 def generate_codes(count: int) -> None:
     """Generate invite codes. Usage: snow-deals-agg generate-codes 10"""
+    import random
     import secrets
+    from aggregator.wordlist import SNOW_WORDS
 
-    codes = [secrets.token_hex(4).upper() for _ in range(count)]
+    def _readable_code() -> str:
+        word1 = random.choice(SNOW_WORDS)
+        word2 = random.choice(SNOW_WORDS)
+        num = secrets.randbelow(90) + 10
+        return f"{word1}-{word2}-{num}"
+
+    codes = [_readable_code() for _ in range(count)]
 
     async def _run() -> None:
         await init_auth_db()

@@ -179,6 +179,7 @@ async def query_deals(
     store: str | None = None,
     brand: str | None = None,
     min_discount: float = 0,
+    min_price: float = 0,
     sort_by: str = "discount_pct",
     limit: int = 200,
     offset: int = 0,
@@ -194,6 +195,10 @@ async def query_deals(
     """Query deals with optional filters. If count_only=True, returns int."""
     clauses: list[str] = ["deals.discount_pct >= ?"]
     params: list[object] = [min_discount]
+
+    if min_price > 0:
+        clauses.append("deals.current_price >= ?")
+        params.append(min_price)
 
     if category:
         clauses.append("deals.category = ?")

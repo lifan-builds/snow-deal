@@ -179,5 +179,27 @@
             </tbody>
         </table>
     </div>
+
+    {% if waitlist %}
+    <div class="card" style="margin-top:1.5rem">
+        <h2 style="font-size:1rem;font-weight:700;margin-bottom:1rem;color:var(--text)">Waitlist ({{ waitlist|length }})</h2>
+        <table class="codes-table">
+            <thead>
+                <tr>
+                    <th>Email</th>
+                    <th>Signed up</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for w in waitlist %}
+                <tr>
+                    <td>{{ w.email }}</td>
+                    <td>{{ w.created_at[:16] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% endif %}
 </body>
 </html>
