@@ -46,10 +46,16 @@
             <span class="orig-price">C${{ "%.2f"|format(d.original_price) }}</span>
             {% endif %}
             <span class="currency-tag">CAD</span>
+            {% if d.original_price and d.original_price > d.current_price %}
+            <span class="savings">Save C${{ "%.0f"|format(d.original_price - d.current_price) }}</span>
+            {% endif %}
             {% else %}
             <span class="sale-price">${{ "%.2f"|format(d.current_price) }}</span>
             {% if d.original_price %}
             <span class="orig-price">${{ "%.2f"|format(d.original_price) }}</span>
+            {% endif %}
+            {% if d.original_price and d.original_price > d.current_price %}
+            <span class="savings">Save ${{ "%.0f"|format(d.original_price - d.current_price) }}</span>
             {% endif %}
             {% endif %}
         </div>

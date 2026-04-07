@@ -22,6 +22,11 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛷️</text></svg>">
 </head>
 <body>
+    <!-- Ambient background glow -->
+    <div style="position:fixed;inset:0;pointer-events:none;z-index:0">
+        <div style="position:absolute;width:500px;height:500px;border-radius:50%;filter:blur(120px);opacity:0.4;background:rgba(56,189,248,0.05);top:-150px;left:50%;transform:translateX(-50%)"></div>
+        <div style="position:absolute;width:350px;height:350px;border-radius:50%;filter:blur(100px);opacity:0.3;background:rgba(129,140,248,0.04);bottom:-100px;right:-50px"></div>
+    </div>
     <header>
         <div class="header-inner">
             <div class="header-top">
@@ -222,8 +227,11 @@
     </div>
 
     <div class="content-wrap">
-        <div class="result-count">
-            <span class="result-num">{{ deal_count }}</span> deals found
+        <div class="result-bar">
+            <div class="result-count">
+                <span class="result-num">{{ deal_count }}</span> deals found
+            </div>
+            <div class="active-filters" id="active-filters"></div>
         </div>
 
         <main id="deal-grid">
@@ -308,7 +316,49 @@
         });
         var url = '/' + (params.toString() ? '?' + params.toString() : '');
         history.replaceState(null, '', url);
+        updateFilterPills();
     }
+
+    function updateFilterPills() {
+        var container = document.getElementById('active-filters');
+        if (!container) return;
+        container.innerHTML = '';
+        var labels = {
+            category: 'Category', brand: 'Brand', store: 'Store',
+            min_discount: 'Min discount', min_price: 'Min price',
+            reviewed: 'Reviewed', tax_free: 'Tax Free', q: 'Search'
+        };
+        document.querySelectorAll('.filters [name], [name="q"]').forEach(function(el) {
+            if (!el.name) return;
+            if (el.type === 'checkbox' && !el.checked) return;
+            if (!el.value || el.value === '' || el.value === '0') return;
+            if (el.name === 'sort') return;
+            if (el.name === 'size_min' || el.name === 'size_max') return;
+            var display = '';
+            if (el.type === 'checkbox') {
+                display = labels[el.name] || el.name;
+            } else if (el.type === 'range') {
+                if (el.name === 'min_discount') display = el.value + '%+ off';
+                else if (el.name === 'min_price') display = '$' + el.value + '+';
+                else return;
+            } else if (el.tagName === 'SELECT') {
+                display = el.options[el.selectedIndex].text.split(' (')[0];
+            } else {
+                display = '"' + el.value + '"';
+            }
+            var pill = document.createElement('span');
+            pill.className = 'filter-pill';
+            pill.innerHTML = display + ' <span class="pill-x">&times;</span>';
+            pill.onclick = function() {
+                if (el.type === 'checkbox') { el.checked = false; }
+                else if (el.type === 'range') { el.value = 0; el.dispatchEvent(new Event('input')); }
+                else { el.value = ''; }
+                htmx.trigger(el, 'change');
+            };
+            container.appendChild(pill);
+        });
+    }
+    updateFilterPills();
 
     function toggleFilters() {
         var nav = document.getElementById('filter-nav');
@@ -326,6 +376,7 @@
     document.body.addEventListener('htmx:afterSwap', function() {
         markNewDeals();
         syncFiltersToUrl();
+        updateFilterPills();
         if (localStorage.getItem('viewMode') === 'compact') {
             document.querySelector('#deal-grid').classList.add('compact-view');
         }
