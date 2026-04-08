@@ -129,6 +129,23 @@ def generate_codes(count: int) -> None:
     asyncio.run(_run())
 
 
+@cli.command("add-code")
+@click.argument("code", type=str)
+@click.option("--max-uses", "-n", type=int, default=5, help="Max uses for this code.")
+def add_code(code: str, max_uses: int) -> None:
+    """Add a custom invite code. Usage: snow-deals-agg add-code FRESHPOWDER2026 -n 100"""
+
+    async def _run() -> None:
+        await init_auth_db()
+        created = await create_invite_codes([code.strip().upper()], max_uses=max_uses)
+        if created:
+            console.print(f"[green]Created code [bold cyan]{code.upper()}[/bold cyan] with {max_uses} uses.[/green]")
+        else:
+            console.print(f"[yellow]Code {code.upper()} already exists.[/yellow]")
+
+    asyncio.run(_run())
+
+
 @cli.command("list-codes")
 def list_codes_cmd() -> None:
     """List all invite codes and their usage."""
@@ -141,10 +158,11 @@ def list_codes_cmd() -> None:
         table = Table(title="Invite Codes", show_lines=True)
         table.add_column("Code", style="bold cyan")
         table.add_column("Uses", justify="center")
+        table.add_column("Max", justify="center")
         table.add_column("Created", style="dim")
         for c in codes:
-            uses = str(c["use_count"])
-            table.add_row(c["code"], uses, c["created_at"][:16])
+            uses = f"{c['use_count']}/{c['max_uses']}"
+            table.add_row(c["code"], uses, str(c["max_uses"]), c["created_at"][:16])
         console.print(table)
 
     asyncio.run(_run())

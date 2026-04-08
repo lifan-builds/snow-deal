@@ -891,11 +891,12 @@ h1 {
 }
 
 .empty-state .empty-icon {
-    max-width: 300px;
+    max-width: 450px;
+    width: 100%;
     height: auto;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     border-radius: var(--radius);
-    opacity: 0.85;
+    opacity: 0.9;
 }
 
 .empty-state .empty-title {
@@ -1363,7 +1364,9 @@ input:focus-visible {
     color: white;
     box-shadow: 0 4px 16px rgba(56, 189, 248, 0.3);
 }
-.preset-btn .preset-icon { font-size: 0.85rem; }
+.preset-btn .preset-icon { width: 14px; height: 14px; flex-shrink: 0; opacity: 0.7; }
+.preset-btn:hover .preset-icon { opacity: 1; }
+.preset-btn.active .preset-icon { opacity: 1; }
 
 /* ---- Share Button ---- */
 

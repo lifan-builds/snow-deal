@@ -59,63 +59,90 @@ Keep core deal browsing free. Add paid tier ("FreshPowder Pro", ~$5-8/month or $
 - **Early access** — See deals 1 hour before free users (scrape results held briefly)
 - **No ads** — If we ever add sponsor placements
 
-### Stage 3: Sponsored Placements (5,000+ users)
-- Featured store/brand placements in the deal grid (clearly labeled "Sponsored")
-- Newsletter sponsorships
-- Seasonal campaign partnerships with retailers
+### Stage 3: Non-Intrusive Ads (2,000+ users)
+
+Guiding principle: ads should feel like content, not interruptions. The clean UI is a competitive advantage — protect it.
+
+**Tier 1: Sponsored Deal Cards (2,000+ users)**
+- A single card in the deal grid labeled "Sponsored" — same visual format as organic deals
+- Sold directly to retailers (evo, Backcountry, etc.) as a premium placement
+- Limited to 1 per page load to avoid feed pollution
+- Pricing: flat fee per week or CPM, negotiate directly
+
+**Tier 2: Category Sponsorships (3,000+ users)**
+- Small "Powered by [Brand]" logo/link at the top of a category section
+- Example: "Skis powered by evo" — subtle, relevant, non-disruptive
+- Good fit for brands wanting category association
+
+**Tier 3: Newsletter Sponsor Slot (when email list exists)**
+- Single sponsor block in the weekly "Best Deals" email
+- Format: one featured deal from the sponsor, clearly labeled
+- High open rates in deal-focused emails = good value for advertisers
+
+**Tier 4: Display Ads — Pro Removal Lever Only (5,000+ users)**
+- Only consider traditional display ads (e.g. a single sidebar unit) if needed as a "Pro removes ads" incentive
+- Never: pop-ups, interstitials, autoplay video, or banner ads in the deal grid
+- If implemented, limit to one static unit outside the main content area
+
+**What we will NOT do:**
+- Google AdSense / programmatic ads — low CPM at our scale, ugly, signals "cheap"
+- Any ad that delays page load or blocks interaction
+- Ads before 2,000 users — the revenue is negligible and the UX cost is real
 
 ### Revenue Projection (Conservative)
 | Stage | Users | Monthly Revenue | Source |
 |-------|-------|----------------|--------|
 | Seed | 100 | $0 | Free, no affiliate yet |
 | Early | 500 | $50-150 | Affiliate links |
-| Growth | 2,000 | $300-800 | Affiliate + early Pro subs |
-| Scale | 10,000 | $2,000-5,000 | Affiliate + Pro + sponsors |
+| Growth | 2,000 | $300-800 | Affiliate + early Pro subs + sponsored cards |
+| Scale | 10,000 | $2,000-5,000 | Affiliate + Pro + sponsored cards + category sponsors + newsletter |
 
 ---
 
-## Invitation Model & Virality
+## Invitation Model
 
-### Current System
-- Invite codes are human-readable: `POWDER-SUMMIT-42`
-- Each code allows 5 uses
-- Admin generates codes manually via `/admin/codes`
-- Waitlist captures emails for users without codes
+### Design Principles
+- No user accounts at this stage — invite code sets a session cookie, that's it
+- The invite gate is a **short-term launch tactic** (weeks, not permanent) to gather feedback and create buzz
+- Don't over-engineer virality before 50 people have tried the product
+- More users = more affiliate clicks = more revenue, so remove the gate as soon as feedback is solid
 
-### Proposed Viral Loop
+### How It Works
+1. Admin creates codes via `/admin/codes` (random or custom) or CLI (`snow-deals-agg add-code`)
+2. User enters a code at `/invite` → gets a JWT session cookie → full access
+3. No signup, no email, no account — zero friction
+4. Waitlist captures emails from users who don't have a code (for future outreach)
 
-**"Give 3, Get Perks"**
+### Stage 1: Batch Code Drop (Now)
+- **Seed code:** `FRESHPOWDER2026` — 100 uses, shared across all seed channels
+- One memorable code is easier to spread in group chats than many unique codes
+- When it's used up, natural scarcity kicks in — creates urgency for latecomers to join waitlist
 
-1. New user signs up with an invite code
-2. They immediately receive **3 personal invite codes** to share
-3. When all 3 codes are used, the original user unlocks a perk:
-   - Badge on their profile ("Early Rider" / "Powder Pioneer")
-   - Could unlock Pro features for 1 month when we have them
-4. Their invitees also get 3 codes each → exponential growth
+### Stage 2: Referral Tracking (When ready)
+- After entering a code, show users a share link: `snow-deals.onrender.com/invite?ref=FRESHPOWDER2026`
+- Track which code/link brought in traffic — gives referral data without needing accounts
+- ~10 lines of code, no user registration required
 
-**Implementation:**
-- Link each generated code to the inviter's session
-- Track referral chain: who invited whom
-- Auto-generate 3 codes on successful signup
-- Show "Your invite codes" section in the UI (new route: `/my-codes`)
-- Each code is single-use (not 5) to increase sharing urgency
+### Stage 3: Optional Email Capture (When ready)
+- Add a banner on the main deals page: "Get weekly deal alerts"
+- Collects emails from engaged users who are already in, not as a gate
+- Builds the email list needed for future newsletter and Pro tier
 
-**Viral coefficient math:**
-- Each user gets 3 invites
-- If 50% of invites are used → 1.5 new users per user
-- Viral coefficient K = 1.5 (>1.0 = exponential growth)
-- 100 seed users → 150 → 225 → 337 → 506 → ... ~1,000 in 5 cycles
+### Stage 4: Open Registration (When ready)
+- Remove invite gate entirely (`PUBLIC_MODE=true`)
+- Keep referral tracking infrastructure for future reward programs
+- Build real user accounts only when needed for Pro features (saved searches, price alerts)
 
 ### Code Distribution Strategy
-| Channel | Codes | Format |
-|---------|-------|--------|
-| WeChat groups (personal) | 20 codes | Post with screenshot + code |
-| Rednote post | 10 codes | "Comment to get a code" (engagement bait) |
-| USCardForum thread | 10 codes | Forum post with first-come codes |
-| Reddit r/skideals | 5 codes | Comment drop |
-| Friends & ski buddies | 10 codes | Direct message |
+| Channel | Code | Format |
+|---------|------|--------|
+| WeChat groups (personal) | `FRESHPOWDER2026` | Post with screenshot + code |
+| Rednote post | `FRESHPOWDER2026` | "Comment to get a code" (engagement bait) |
+| USCardForum thread | `FRESHPOWDER2026` | Forum post with the code |
+| Reddit r/skideals | `FRESHPOWDER2026` | Comment drop |
+| Friends & ski buddies | `FRESHPOWDER2026` | Direct message |
 
-**Total seed: ~55 codes → potential reach of 55 × 1.5^n users**
+**Total capacity: 100 uses → covers seed phase, then waitlist takes over**
 
 ---
 
@@ -198,11 +225,11 @@ Keep core deal browsing free. Add paid tier ("FreshPowder Pro", ~$5-8/month or $
 - [ ] Implement viral invite loop (auto-generate codes on signup)
 
 ### Week 3-4: Expand
+- [ ] Set up affiliate link replacement in card URLs (evo, Backcountry, REI via AvantLink)
+- [ ] Track affiliate conversions
 - [ ] Post on Reddit r/skideals
 - [ ] Join Facebook ski deal groups
 - [ ] Create weekly "best deals" content for Rednote
-- [ ] Set up affiliate link replacement in card URLs
-- [ ] Track affiliate conversions
 
 ### Month 2: Content & Growth
 - [ ] Build email list from waitlist signups

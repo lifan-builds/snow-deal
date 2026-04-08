@@ -70,3 +70,29 @@ async def admin_create_codes(request: Request, count: int = Form(5)):
         name="admin_codes.html",
         context={"codes": codes, "new_codes": new_codes, "max_uses": 5, "waitlist": waitlist},
     )
+
+
+@admin_router.post("/codes/custom", response_class=HTMLResponse)
+async def admin_create_custom_code(
+    request: Request,
+    custom_code: str = Form(...),
+    max_uses: int = Form(5),
+):
+    if not await _require_admin(request):
+        return RedirectResponse(url=auth_redirect_path(), status_code=302)
+    if not admin_create_codes_limiter.allow(
+        client_key(request, "admin-create-codes"), ADMIN_CREATE_CODES_LIMIT
+    ):
+        return HTMLResponse("Too many code generation requests. Please try again later.", status_code=429)
+    code = custom_code.strip().upper()
+    max_uses = max(1, min(max_uses, 10000))
+    created = await create_invite_codes([code], max_uses=max_uses)
+    codes = await list_invite_codes()
+    waitlist = await list_waitlist()
+    new_codes = [code] if created else []
+    error = None if created else f"Code {code} already exists."
+    return templates.TemplateResponse(
+        request=request,
+        name="admin_codes.html",
+        context={"codes": codes, "new_codes": new_codes, "max_uses": 5, "waitlist": waitlist, "error": error},
+    )

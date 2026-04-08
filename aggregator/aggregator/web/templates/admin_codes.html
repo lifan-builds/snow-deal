@@ -143,9 +143,26 @@
         <form class="create-form" method="post" action="/admin/codes">
             <label>Generate</label>
             <input type="number" name="count" value="5" min="1" max="50">
-            <label>codes</label>
+            <label>random codes</label>
             <button type="submit">Create</button>
         </form>
+
+        <form class="create-form" method="post" action="/admin/codes/custom">
+            <label>Custom code</label>
+            <input type="text" name="custom_code" placeholder="e.g. FRESHPOWDER2026" required
+                   style="background:var(--bg-subtle);border:1px solid var(--border);border-radius:var(--radius-sm);padding:0.5rem 0.75rem;color:var(--text);font-size:0.9rem;width:180px;outline:none;font-family:monospace;letter-spacing:0.05em;">
+            <label>×</label>
+            <input type="number" name="max_uses" value="100" min="1" max="10000"
+                   style="background:var(--bg-subtle);border:1px solid var(--border);border-radius:var(--radius-sm);padding:0.5rem 0.75rem;color:var(--text);font-size:0.9rem;width:70px;text-align:center;outline:none;">
+            <label>uses</label>
+            <button type="submit">Create</button>
+        </form>
+
+        {% if error %}
+        <div style="background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.3);border-radius:var(--radius);padding:0.75rem 1rem;margin-bottom:1rem;color:#ef4444;font-size:0.85rem;">
+            {{ error }}
+        </div>
+        {% endif %}
 
         {% if new_codes %}
         <div class="new-codes">
@@ -158,7 +175,7 @@
         </div>
         {% endif %}
 
-        <p class="summary">{{ codes|length }} total codes — each code allows up to {{ max_uses }} uses</p>
+        <p class="summary">{{ codes|length }} total codes</p>
 
         <table class="codes-table">
             <thead>

@@ -109,14 +109,18 @@ STORE_CONFIGS: dict[str, tuple[str, str, str | None]] = {
                 if (!data || !data.name || !data.price || seen.has(data.name)) return;
                 seen.add(data.name);
                 const linkEl = t.querySelector('a[href*=".html"]');
-                let originalPrice = null;
-                if (data.percentOff && data.percentOff > 0) {
-                    originalPrice = Math.round(data.price / (1 - data.percentOff / 100) * 100) / 100;
+                // data.price is the ORIGINAL/list price; dimension4 is the sale price
+                const originalPrice = parseFloat(data.price);
+                let salePrice = data.dimension4 ? parseFloat(data.dimension4) : null;
+                if (!salePrice && data.percentOff && data.percentOff > 0) {
+                    salePrice = Math.round(originalPrice * (1 - data.percentOff / 100) * 100) / 100;
                 }
+                const currentPrice = salePrice || originalPrice;
                 const imgEl = t.querySelector('img');
                 results.push({
                     name: data.name, url: linkEl ? linkEl.href : '',
-                    current_price: data.price, original_price: originalPrice,
+                    current_price: currentPrice,
+                    original_price: (originalPrice !== currentPrice) ? originalPrice : null,
                     image_url: imgEl ? (imgEl.getAttribute('data-src') || imgEl.src || null) : null,
                 });
             });
