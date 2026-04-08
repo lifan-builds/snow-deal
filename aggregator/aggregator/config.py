@@ -61,6 +61,18 @@ STORES: list[StoreConfig] = [
         parser_type="shopify",
     ),
 
+    StoreConfig(
+        "Blauer Board Shop", "blauerboardshop.com",
+        scrape_urls=[
+            "https://blauerboardshop.com/collections/discount-snowboards",
+            "https://blauerboardshop.com/collections/discount-boots",
+            "https://blauerboardshop.com/collections/discount-snowboard-bindings",
+            "https://blauerboardshop.com/collections/sale",
+        ],
+        parser_type="shopify",
+        tax_free=True,  # No sales tax + free shipping
+    ),
+
     # BlueZone — has working BS4 parser
     StoreConfig(
         "BlueZone Sports", "bluezonesports.com",
