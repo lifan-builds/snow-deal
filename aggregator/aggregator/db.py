@@ -250,7 +250,7 @@ async def query_deals(
         return row[0]
 
     sort_map = {
-        "discount_pct": "deals.discount_pct DESC",
+        "discount_pct": "(deals.image_url IS NOT NULL AND deals.image_url != '') DESC, deals.discount_pct DESC",
         "top_reviewed": "dr.score DESC NULLS LAST, deals.discount_pct DESC",
         "price_low": "deals.current_price ASC",
         "price_high": "deals.current_price DESC",

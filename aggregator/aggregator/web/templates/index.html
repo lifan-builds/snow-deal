@@ -240,19 +240,19 @@
 
         <div class="preset-bar">
             <button class="preset-btn" data-preset="under100" onclick="applyPreset(this, {max_price:'100'})">
-                <span class="preset-icon">&#x1F4B0;</span> Under $100
+                <svg class="preset-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><circle cx="8" cy="8" r="6.5"/><path d="M8 4.5v7M9.5 6c-.3-.6-1-1-1.7-.9-.9.1-1.5.8-1.4 1.6.1.7.7 1.1 1.4 1.2.8.2 1.5.6 1.6 1.3.1.9-.5 1.6-1.4 1.7-.7.1-1.4-.3-1.7-.9"/></svg> Under $100
             </button>
             <button class="preset-btn" data-preset="top-reviewed" onclick="applyPreset(this, {sort:'top_reviewed', reviewed:'1'})">
-                <span class="preset-icon">&#x2B50;</span> Top Reviewed
+                <svg class="preset-icon" viewBox="0 0 16 16" fill="currentColor" width="14" height="14"><path d="M8 1.5l1.85 3.75 4.15.6-3 2.93.71 4.12L8 10.88 4.29 12.9l.71-4.12-3-2.93 4.15-.6z"/></svg> Top Reviewed
             </button>
             <button class="preset-btn" data-preset="big-savings" onclick="applyPreset(this, {min_discount:'50'})">
-                <span class="preset-icon">&#x1F525;</span> 50%+ Off
+                <svg class="preset-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M8 14c3-2 5.5-5 5.5-8A3.5 3.5 0 0 0 10 2.5 3.46 3.46 0 0 0 8 3.5 3.46 3.46 0 0 0 6 2.5 3.5 3.5 0 0 0 2.5 6C2.5 9 5 12 8 14z"/><path d="M6 7l1.5 1.5L10 6"/></svg> 50%+ Off
             </button>
             <button class="preset-btn" data-preset="tax-free" onclick="applyPreset(this, {tax_free:'1'})">
-                <span class="preset-icon">&#x1F3F7;&#xFE0F;</span> Tax Free
+                <svg class="preset-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M12.5 3.5L7 2 5.5 8l5.5 1.5M5.5 8L4 14l4.5-2.5L13 14l-1.5-5.5"/></svg> Tax Free
             </button>
             <button class="preset-btn" data-preset="new-arrivals" onclick="applyPreset(this, {sort:'newest'})">
-                <span class="preset-icon">&#x2728;</span> New Arrivals
+                <svg class="preset-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M8 1v3M8 12v3M1 8h3M12 8h3M3.5 3.5l2 2M10.5 10.5l2 2M12.5 3.5l-2 2M5.5 10.5l-2 2"/></svg> New Arrivals
             </button>
         </div>
 
@@ -507,7 +507,7 @@
                 else if (el.name === 'min_price') display = '$' + el.value + '+';
                 else return;
             } else if (el.type === 'hidden') {
-                if (el.name === 'max_price' && el.value !== '0') display = 'Under $' + el.value;
+                if (el.name === 'max_price' && parseFloat(el.value) > 0) display = 'Under $' + parseFloat(el.value);
                 else return;
             } else if (el.tagName === 'SELECT') {
                 display = el.options[el.selectedIndex].text.split(' (')[0];

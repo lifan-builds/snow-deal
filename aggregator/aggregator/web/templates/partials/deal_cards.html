@@ -4,7 +4,7 @@
 {% if deals %}
 <div class="deal-grid">
     {% for d in deals %}
-    {% if loop.first and not is_load_more %}
+    {% if loop.first and not is_load_more and d.image_url %}
     <div class="featured-card-wrap">
     {% include "partials/_card.html" %}
     </div>
@@ -26,8 +26,7 @@
 </div>
 {% else %}
 <div class="empty-state">
-    <img class="empty-icon" src="/static/img/empty-state.png" alt="No deals" width="300" height="225">
-    <div class="empty-title">No deals match your filters</div>
+    <img class="empty-icon" src="/static/img/empty-state.png" alt="No deals">
     <div class="empty-hint">
         {% if current_max_price and current_min_discount and current_min_discount|int >= 20 %}
             No deals under ${{ current_max_price|int }} with {{ current_min_discount|int }}%+ discount. Try raising the price limit or lowering the discount.
