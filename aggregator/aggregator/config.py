@@ -794,6 +794,9 @@ EXCLUDE_KEYWORDS: list[str] = [
     " cap", "trucker hat", " snapback",
     # Underwear
     "bn3th ", "boxer brief", "boxer short", "everyday boxer",
+    "hipster", "thong", "panty", "panties", "lingerie", "underwear",
+    # Non-snow boots (fashion/casual)
+    "willowbee", "ugg ", "bearpaw ",
     # Bags / luggage
     "tote bag", "lunch box", "sling bag", "gym bag", "belt bag",
     "travel luggage", "rolling bag", "dry bag", "leg bag", "wash bag",
