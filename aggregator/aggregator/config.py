@@ -429,7 +429,7 @@ CATEGORY_RULES: list[tuple[str, list[str]]] = [
                 "oasis ", "200 oasis", "260 tech", "260 vertex",
                 "260 quantum", "descender ", "rho ",
                 "adult chute", "pull on"]),
-    ("accessories", ["neckwear", "neck gaiter", "balaclava", "beanie", "hat ", "sock", "socks",
+    ("accessories", ["neckwear", "neck warmer", "neckwarmer", "neck gaiter", "balaclava", "beanie", "hat ", "sock", "socks",
                      "facemask", "face mask", "tube ", "hood ", "the hood",
                      "duffel", "trolley", "roller bag", "wheeled bag",
                      "backpack", "daypack", "pack ",
@@ -733,7 +733,7 @@ NOT_HARDGOODS_KEYWORDS: list[str] = [
     # Accessories that shouldn't be categorized as hardgoods via brand fallback
     "cable lock", "lock ", "holder", "mount ", "wall mount",
     "boxer", "brief", "underwear", "sock ", "socks",
-    "hood ", "face mask", "neck gaiter", "balaclava",
+    "hood ", "face mask", "neck gaiter", "neck warmer", "neckwarmer", "balaclava",
     "wax ", " wax", "tuning", "edge tool",
     "stomp pad", "traction", "claw",
     "keychain", "lanyard", "bottle",
