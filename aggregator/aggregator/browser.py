@@ -244,6 +244,43 @@ STORE_CONFIGS: dict[str, tuple[str, str, str | None]] = {
 }
 
 # Aliases — stores sharing the same extraction logic
+    "skiessentials": (
+        '[data-testid="product-card-title"]',
+        """() => {
+            const parsePrice = (el) => {
+                if (!el) return null;
+                const m = el.textContent.match(/[\d,]+\.?\d*/);
+                return m ? parseFloat(m[0].replace(/,/g, '')) : null;
+            };
+            const seen = new Set();
+            const results = [];
+            document.querySelectorAll('.relative.border.border-gray-100').forEach(card => {
+                const linkEl = card.querySelector('a[href*="/products/"]');
+                if (!linkEl) return;
+                const href = linkEl.getAttribute('href');
+                if (seen.has(href)) return;
+                seen.add(href);
+                const nameEl = card.querySelector('[data-testid="product-card-title"]');
+                const currentEl = card.querySelector('[data-testid="product-price"]');
+                const origEl = card.querySelector('[data-testid="compare-at-price"]');
+                const imgEl = card.querySelector('img[alt]');
+                const current = parsePrice(currentEl);
+                if (!current) return;
+                results.push({
+                    name: nameEl ? nameEl.textContent.trim() : '',
+                    url: linkEl.href || '',
+                    current_price: current,
+                    original_price: parsePrice(origEl),
+                    image_url: imgEl ? (imgEl.src || null) : null,
+                });
+            });
+            return results;
+        }""",
+        None,  # No pagination — all products load on one page
+    ),
+}
+
+# Aliases — stores sharing the same extraction logic
 STORE_CONFIGS["corbetts"] = STORE_CONFIGS["bigcommerce"]
 STORE_CONFIGS["peterglenn"] = STORE_CONFIGS["bigcommerce"]
 STORE_CONFIGS["alpineshopvt"] = STORE_CONFIGS["bigcommerce"]

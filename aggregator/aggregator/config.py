@@ -254,8 +254,37 @@ STORES: list[StoreConfig] = [
         tax_free=True, currency="CAD",
     ),
 
+    # Shopify — The Ski Monster
+    StoreConfig(
+        "The Ski Monster", "theskimonster.com",
+        scrape_urls=[
+            "https://theskimonster.com/collections/end-of-season-sale",
+            "https://theskimonster.com/collections/demo-skis",
+            "https://theskimonster.com/collections/ski-outlet",
+            "https://theskimonster.com/collections/ski-boot-outlet",
+            "https://theskimonster.com/collections/snowboard-outlet",
+        ],
+        parser_type="shopify",
+    ),
+
+    # Headless Shopify (Hydrogen/Oxygen) — browser-based
+    StoreConfig(
+        "Ski Essentials", "skiessentials.com",
+        scrape_urls=[
+            "https://www.skiessentials.com/collections/demo-skis",
+            "https://www.skiessentials.com/collections/demo-snowboards",
+            "https://www.skiessentials.com/collections/alpine-skis",
+            "https://www.skiessentials.com/collections/snowboards",
+            "https://www.skiessentials.com/collections/ski-boots",
+            "https://www.skiessentials.com/collections/snowboard-boots",
+            "https://www.skiessentials.com/collections/alpine-ski-bindings",
+            "https://www.skiessentials.com/collections/snowboard-bindings",
+        ],
+        parser_type="skiessentials",
+        use_browser=True,
+    ),
+
     # New Shopify stores
-    # SkiEssentials uses headless Shopify (Hydrogen) — JSON API returns 404
     StoreConfig(
         "Comor Sports", "comorsports.com",
         scrape_urls=[
