@@ -14,6 +14,7 @@ import logging
 import os
 import secrets
 import sqlite3
+import time
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -71,7 +72,17 @@ def _get_conn():
             sync_url=TURSO_URL,
             auth_token=TURSO_AUTH_TOKEN,
         )
-        _conn.sync()
+        for attempt in range(5):
+            try:
+                _conn.sync()
+                break
+            except ValueError as e:
+                if "dns error" in str(e).lower() or "dispatch error" in str(e).lower():
+                    log.warning("Turso sync attempt %d/5 failed (DNS): %s", attempt + 1, e)
+                    if attempt < 4:
+                        time.sleep(2 ** attempt)
+                        continue
+                raise
         log.info("Auth DB connected (Turso: %s)", TURSO_URL)
     else:
         db_path = Path(os.environ.get(
