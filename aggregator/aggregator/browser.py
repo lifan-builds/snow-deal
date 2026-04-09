@@ -318,6 +318,53 @@ STORE_CONFIGS: dict[str, tuple[str, str, str | None]] = {
         }""",
         None,  # Rely on _try_next_page fallback which handles ?page=N URL patterns
     ),
+
+    "mec": (
+        '[class*="hitTitle"]',
+        """() => {
+            const parsePrice = (el) => {
+                if (!el) return null;
+                const m = el.textContent.match(/[\d,]+\.?\d*/);
+                return m ? parseFloat(m[0].replace(/,/g, '')) : null;
+            };
+            const seen = new Set();
+            const results = [];
+            document.querySelectorAll('article').forEach(card => {
+                const linkEl = card.querySelector('a[href*="/product/"]');
+                if (!linkEl) return;
+                const href = linkEl.getAttribute('href');
+                if (seen.has(href)) return;
+                seen.add(href);
+                const nameEl = card.querySelector('[class*="hitTitle"]');
+                const pricesEl = card.querySelector('[class*="hitPrices"]');
+                if (!pricesEl) return;
+                const spans = pricesEl.querySelectorAll('span');
+                let currentPrice = null;
+                let originalPrice = null;
+                for (const span of spans) {
+                    const cls = span.className || '';
+                    const price = parsePrice(span);
+                    if (!price) continue;
+                    if (cls.includes('OldPrice') || cls.includes('oldPrice')) {
+                        originalPrice = price;
+                    } else if (!currentPrice) {
+                        currentPrice = price;
+                    }
+                }
+                const imgEl = card.querySelector('img');
+                if (!currentPrice) return;
+                results.push({
+                    name: nameEl ? nameEl.textContent.trim() : (imgEl ? imgEl.alt : ''),
+                    url: linkEl.href.startsWith('http') ? linkEl.href : 'https://www.mec.ca' + href,
+                    current_price: currentPrice,
+                    original_price: originalPrice,
+                    image_url: imgEl ? imgEl.src : null,
+                });
+            });
+            return results;
+        }""",
+        '.ais-Pagination-item--nextPage a',
+    ),
 }
 
 # Aliases — stores sharing the same extraction logic

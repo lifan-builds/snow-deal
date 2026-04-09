@@ -267,6 +267,17 @@ STORES: list[StoreConfig] = [
         parser_type="shopify",
     ),
 
+    # MEC — Canadian outdoor retailer, Next.js + Algolia InstantSearch
+    StoreConfig(
+        "MEC", "mec.ca",
+        scrape_urls=[
+            "https://www.mec.ca/en/products/ski-and-snowsports/deals",
+        ],
+        parser_type="mec",
+        use_browser=True,
+        tax_free=True, currency="CAD",
+    ),
+
     # REI — custom Vue.js site, browser-based with anti-bot
     StoreConfig(
         "REI", "rei.com",
