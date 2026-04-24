@@ -16,6 +16,11 @@ class StoreConfig:
     use_browser: bool = False  # True = use Playwright headless browser
     tax_free: bool = False  # True = no sales tax for WA buyers (Canadian stores, no-nexus stores)
     currency: str = "USD"   # Price currency (USD or CAD)
+    
+    # Affiliate tracking
+    affiliate_network: str | None = None  # e.g., "avantlink", "impact", "skimlinks"
+    affiliate_merchant_id: str | None = None  # e.g., "12345"
+
 
 
 # ---------------------------------------------------------------------------

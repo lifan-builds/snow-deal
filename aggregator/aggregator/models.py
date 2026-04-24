@@ -2,8 +2,11 @@
 
 from __future__ import annotations
 
+import urllib.parse
 from dataclasses import dataclass
 from datetime import datetime
+
+from aggregator.config import STORES
 
 
 @dataclass
@@ -27,3 +30,18 @@ class AggregatedDeal:
     review_score: int | None = None
     review_award: str | None = None
     review_url: str | None = None
+
+    @property
+    def affiliate_url(self) -> str:
+        """Returns the affiliate URL if configured, otherwise the original URL."""
+        store_config = next((s for s in STORES if s.name == self.store), None)
+        if not store_config or not store_config.affiliate_network:
+            return self.url
+            
+        if store_config.affiliate_network == "avantlink":
+            # https://www.avantlink.com/click.php?tt=cl&merchant_id=[MERCHANT_ID]&website_id=[WEBSITE_ID]&url=[URL]
+            website_id = "YOUR_AVANTLINK_WEBSITE_ID" # Placeholder, user needs to update
+            encoded_url = urllib.parse.quote_plus(self.url)
+            return f"https://www.avantlink.com/click.php?tt=cl&merchant_id={store_config.affiliate_merchant_id}&website_id={website_id}&url={encoded_url}"
+            
+        return self.url
