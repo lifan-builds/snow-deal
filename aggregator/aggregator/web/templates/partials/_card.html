@@ -1,5 +1,5 @@
 <div class="deal-card{% if d.review_score is not none and d.review_score >= 80 %} reviewed-high{% elif d.review_score is not none %} reviewed{% endif %}"
-     data-href="{{ d.affiliate_url }}" data-scraped="{{ d.scraped_at.isoformat() }}"
+     data-href="{{ d.url }}" data-scraped="{{ d.scraped_at.isoformat() }}"
      data-name="{{ d.name }}" data-store="{{ d.store }}" data-category="{{ d.category or '' }}"
      onclick="trackAndOpen(this)" style="cursor:pointer">
     {% if d.discount_pct >= 30 %}
@@ -63,7 +63,7 @@
         {% if d.sizes %}
         <div class="sizes-row">{{ d.sizes }}</div>
         {% endif %}
-        <button class="share-btn" onclick="shareCard(event, this)" data-url="{{ d.affiliate_url }}" data-name="{{ d.name }}" title="Share deal">
+        <button class="share-btn" onclick="shareCard(event, this)" data-url="{{ d.url }}" data-name="{{ d.name }}" title="Share deal">
             <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14"><path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z"/></svg>
         </button>
     </div>
