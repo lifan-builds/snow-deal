@@ -158,10 +158,11 @@ async def get_brands(db_path: Path = DB_PATH) -> list[str]:
     async with aiosqlite.connect(db_path) as db:
         cursor = await db.execute(
             """
-            SELECT DISTINCT brand FROM deals
-            WHERE brand IS NOT NULL AND brand != ''
-              AND scraped_at = (SELECT MAX(d2.scraped_at) FROM deals d2 WHERE d2.store = deals.store)
-            ORDER BY brand
+            SELECT DISTINCT deals.brand FROM deals
+            INNER JOIN (SELECT store, MAX(scraped_at) as max_s FROM deals GROUP BY store) d2 
+              ON deals.store = d2.store AND deals.scraped_at = d2.max_s
+            WHERE deals.brand IS NOT NULL AND deals.brand != ''
+            ORDER BY deals.brand
             """
         )
         rows = await cursor.fetchall()
@@ -173,10 +174,11 @@ async def get_category_counts(db_path: Path = DB_PATH) -> dict[str, int]:
     async with aiosqlite.connect(db_path) as db:
         cursor = await db.execute(
             """
-            SELECT category, COUNT(*) FROM deals
-            WHERE category IS NOT NULL
-              AND scraped_at = (SELECT MAX(d2.scraped_at) FROM deals d2 WHERE d2.store = deals.store)
-            GROUP BY category
+            SELECT deals.category, COUNT(*) FROM deals
+            INNER JOIN (SELECT store, MAX(scraped_at) as max_s FROM deals GROUP BY store) d2 
+              ON deals.store = d2.store AND deals.scraped_at = d2.max_s
+            WHERE deals.category IS NOT NULL
+            GROUP BY deals.category
             """
         )
         rows = await cursor.fetchall()
@@ -206,9 +208,6 @@ async def query_deals(
     """Query deals with optional filters. If count_only=True, returns int."""
     clauses: list[str] = [
         "deals.discount_pct >= ?",
-        # Hide stale deals: a product not re-observed in the latest scrape for its
-        # store has an older scraped_at and is likely out-of-stock or delisted.
-        "deals.scraped_at = (SELECT MAX(d2.scraped_at) FROM deals d2 WHERE d2.store = deals.store)",
     ]
     params: list[object] = [min_discount]
 
@@ -254,11 +253,14 @@ async def query_deals(
         clauses.append("dr.deal_id IS NOT NULL")
 
     where = " AND ".join(clauses)
+    
+    # Hide stale deals by joining against max scraped_at per store
+    latest_join = "INNER JOIN (SELECT store, MAX(scraped_at) as max_s FROM deals GROUP BY store) d2 ON deals.store = d2.store AND deals.scraped_at = d2.max_s"
 
     if count_only:
         async with aiosqlite.connect(db_path) as db:
             cursor = await db.execute(
-                f"SELECT COUNT(*) FROM deals LEFT JOIN deal_reviews dr ON deals.id = dr.deal_id WHERE {where}",
+                f"SELECT COUNT(*) FROM deals {latest_join} LEFT JOIN deal_reviews dr ON deals.id = dr.deal_id WHERE {where}",
                 params,
             )
             row = await cursor.fetchone()
@@ -281,6 +283,7 @@ async def query_deals(
             SELECT deals.*, dr.score AS review_score, dr.award AS review_award,
                    dr.review_url AS review_url
             FROM deals
+            {latest_join}
             LEFT JOIN deal_reviews dr ON deals.id = dr.deal_id
             WHERE {where}
             ORDER BY {order}
