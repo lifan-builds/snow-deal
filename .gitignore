@@ -19,6 +19,7 @@ Thumbs.db
 
 # Data
 *.db
+cookies.json
 
 # Claude Code
 .claude/
