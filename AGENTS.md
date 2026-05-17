@@ -4,7 +4,7 @@
 
 **FreshPowder** (repo: `snow-deal`) is a ski & snowboard deal aggregator that tracks prices across 20+ North American retailers every 6 hours, matches expert review scores from OutdoorGearLab and GoodRide, and surfaces the best deals through a fast, filterable web interface. The app is invite-gated for controlled growth, with a public marketing landing page. A secondary Tampermonkey userscript and Python CLI exist for single-site browsing.
 
-**Live at:** https://snow-deals.onrender.com
+**Live at:** https://snow-deal.vercel.app
 
 ## Tech Stack
 
@@ -13,7 +13,7 @@
 - **Frontend:** Jinja2 templates, htmx 2.0.4, vanilla JS, custom CSS (dark theme)
 - **Database:** SQLite (deals), Turso cloud (auth/sessions/events)
 - **Auth:** JWT-based invite codes, rate limiting
-- **Deployment:** Docker on Render (free tier)
+- **Deployment:** Vercel Python Functions for the primary site; Docker on Render retained as fallback
 - **Scraping:** GitHub Actions cron (every 6h), httpx + BeautifulSoup4/lxml, Playwright (for JS-rendered/anti-bot sites)
 - **Reviews:** OutdoorGearLab + GoodRide score matching
 

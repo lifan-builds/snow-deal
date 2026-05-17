@@ -4,7 +4,7 @@ FreshPowder is an invite-gated ski and snowboard deal aggregator that tracks gea
 
 If you have ever kept 12 retailer tabs open waiting for skis, boots, or boards to drop, this is the app I wanted instead: one live feed, real prices, deep filters, review context, and shareable deals.
 
-**Live app:** https://snow-deals.onrender.com
+**Live app:** https://snow-deal.vercel.app
 
 ![FreshPowder landing page](docs/images/freshpowder-landing.png)
 

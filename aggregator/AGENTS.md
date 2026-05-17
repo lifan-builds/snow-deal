@@ -12,7 +12,7 @@
 - **Database:** SQLite via aiosqlite >= 0.20 for deals/reviews (path configurable via `DATABASE_PATH` env var)
 - **Auth database:** Turso cloud SQLite via libsql >= 0.1 (invite codes, events) — falls back to local SQLite for dev
 - **Auth:** PyJWT >= 2.8 for stateless session cookies
-- **Deployment:** Render (free tier, Docker) + GitHub Actions (cron scraping every 6 hours)
+- **Deployment:** Vercel Python Functions + GitHub Actions (cron scraping); Render Docker support retained as fallback
 - **HTTP client:** httpx >= 0.27 (async)
 - **Browser automation:** Playwright (headless Chromium with anti-bot stealth)
 - **HTML parsing:** BeautifulSoup4 >= 4.12, lxml >= 5.0
@@ -118,7 +118,7 @@ ADMIN_KEY=mysecret uvicorn aggregator.web.app:create_app --factory --reload
 # Access: http://localhost:8000/?admin_key=mysecret
 # Status dashboard: http://localhost:8000/status
 
-# Production: deployed on Render (https://snow-deals.onrender.com)
+# Production: deployed on Vercel (https://snow-deal.vercel.app)
 # Scraping runs via GitHub Actions cron every 6 hours
 ```
 
@@ -148,7 +148,7 @@ ADMIN_KEY=mysecret uvicorn aggregator.web.app:create_app --factory --reload
 - **Scraping:** `asyncio.gather` with per-domain semaphores. Playwright for JS-rendered stores (anti-bot stealth). Shopify/BlueZone parsers reused from parent `snow_deals` package, and Sacred Ride now uses the BS4 parser path again because the live site is static HTML.
 - **Review matching:** OGL (26 categories, 0-100 scores) + TGR (7 sitemaps, qualitative→numeric). Two-pass fuzzy matching: exact (0.78 threshold) then family fallback (0.88). `_MODEL_TO_BRAND` dict for brandless product matching. Results stored in `deal_reviews` table after each `fetch-reviews` run.
 - **Data quality:** Multi-layer pipeline — EXCLUDE_KEYWORDS → URL domain stripping → keyword categorization → boot disambiguation (`_disambiguate_boot()`) → brand/model name fallback → NOT_HARDGOODS_KEYWORDS guard. Uncategorized rate: 0.7%.
-- **Deployment:** GitHub Actions scrapes every 6h, uploads `deals.db` as release asset. Render downloads DB on cold start. Auth data persists in Turso cloud SQLite. Sessions use stateless JWT cookies. Admin panel + analytics dashboard.
+- **Deployment:** GitHub Actions scrapes every 6h, uploads `deals.db` as release asset. Vercel bundles the DB during deployment and serves the FastAPI app as Python Functions. Render downloads DB on cold start as fallback. Auth data persists in Turso cloud SQLite. Sessions use stateless JWT cookies. Admin panel + analytics dashboard.
 - **UI:** Glassmorphism dark theme, sticky toolbar, filter state in URL via `history.replaceState`. Deal cards show product images (4:3 aspect, `object-fit: contain`), discount badge, review score, prices, sizes. Category/store dropdowns show live deal counts. Length filter excludes NULL-length deals when active. Pre-computed reviews enable fast `top_reviewed` sort via SQL `ORDER BY deal_reviews.score DESC`.
 - **Phase 18 schema additions (2026-04-05):** `image_url TEXT`, `brand TEXT`, and `deal_reviews` join table added to `deals` DB. `get_category_counts()` added to `db.py`.
 

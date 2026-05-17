@@ -54,13 +54,23 @@ jobs:
       - name: Trigger Vercel deploy
         env:
           VERCEL_DEPLOY_HOOK_URL: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
         run: |
-          if [ -z "$VERCEL_DEPLOY_HOOK_URL" ]; then
-            echo "VERCEL_DEPLOY_HOOK_URL not set; skipping Vercel redeploy."
+          if [ -n "$VERCEL_DEPLOY_HOOK_URL" ]; then
+            echo "Triggering Vercel deploy hook..."
+            curl -fsS "$VERCEL_DEPLOY_HOOK_URL"
             exit 0
           fi
-          echo "Triggering Vercel deploy hook..."
-          curl -fsS "$VERCEL_DEPLOY_HOOK_URL"
+          if [ -z "$VERCEL_TOKEN" ] || [ -z "$VERCEL_ORG_ID" ] || [ -z "$VERCEL_PROJECT_ID" ]; then
+            echo "Vercel deploy hook/token secrets not set; skipping Vercel redeploy."
+            exit 0
+          fi
+          echo "Triggering Vercel production redeploy via CLI..."
+          npm install -g vercel@latest
+          vercel pull --yes --environment=production --token "$VERCEL_TOKEN"
+          vercel deploy --prod --force --yes --token "$VERCEL_TOKEN"
 
       - name: Trigger Render deploy
         env:

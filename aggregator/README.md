@@ -2,7 +2,7 @@
 
 Multi-store deal aggregator for ski and snowboard gear. Scrapes 24 retailers, integrates 1,200+ review scores from OutdoorGearLab (skis, boots, gear) and The Good Ride (snowboards, bindings, boots, jackets), stores deal snapshots in SQLite, and serves a ranked dashboard via FastAPI + htmx. Two-pass fuzzy matching links reviews to deals with model family fallback. Includes admin panel for invite code management and analytics dashboard for tracking user behavior. Deployed on Vercel with GitHub Actions cron for automated scraping; Render/Docker support is retained as a fallback. Part of the [snow-deals](../) monorepo.
 
-**Live site:** [snow-deals.onrender.com](https://snow-deals.onrender.com)
+**Live site:** [snow-deal.vercel.app](https://snow-deal.vercel.app)
 
 ## Getting Started
 
@@ -137,6 +137,14 @@ Vercel functions cannot rely on persistent writable disk. The scrape workflow sh
 1. In Vercel, create a deploy hook for the production branch.
 2. Store it as a GitHub Actions secret such as `VERCEL_DEPLOY_HOOK_URL`.
 3. After the scrape workflow publishes the `latest-data` release, call the hook.
+
+If a deploy hook is not configured, `.github/workflows/scrape.yml` can redeploy through the Vercel CLI with these GitHub Actions secrets:
+
+| Secret | Purpose |
+|--------|---------|
+| `VERCEL_TOKEN` | Vercel API token used by the workflow |
+| `VERCEL_ORG_ID` | Vercel team/user id |
+| `VERCEL_PROJECT_ID` | Vercel project id for `snow-deal` |
 
 Render remains available as a fallback deployment target.
 
