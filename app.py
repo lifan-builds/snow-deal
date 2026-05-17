@@ -1,9 +1,9 @@
-"""Vercel ASGI entrypoint for FreshPowder."""
+"""Vercel FastAPI entrypoint for FreshPowder."""
 
 from pathlib import Path
 import sys
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parent
 for path in (ROOT, ROOT / "aggregator"):
     path_text = str(path)
     if path_text not in sys.path:

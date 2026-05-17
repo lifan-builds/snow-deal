@@ -94,10 +94,10 @@ uvicorn aggregator.web.app:create_app --factory --reload
 
 ```bash
 python scripts/vercel_build.py
-PUBLIC_MODE=1 uvicorn api.index:app --reload
+PUBLIC_MODE=1 uvicorn app:app --reload
 ```
 
-The build helper copies `aggregator/aggregator/web/static` to `public/static` and downloads the latest public `deals.db` release into `aggregator/deals.db`. Vercel then serves the FastAPI app through `api/index.py` with `DEALS_DB_READ_ONLY=1`.
+The build helper copies `aggregator/aggregator/web/static` to `public/static` and downloads the latest public `deals.db` release into `aggregator/deals.db`. Vercel then serves the FastAPI app through `app.py` with `DEALS_DB_READ_ONLY=1`.
 
 ### Run Tests
 

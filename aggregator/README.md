@@ -99,7 +99,7 @@ The web UI provides:
 The primary website is deployed on **Vercel** with scraping running on **GitHub Actions**:
 
 - **Scraping:** GitHub Actions cron runs on schedule, uses Playwright for JS-rendered stores, uploads `deals.db` as a GitHub Release
-- **Serving:** Vercel installs the root `requirements.txt`, runs `python scripts/vercel_build.py`, bundles the downloaded `aggregator/deals.db`, and serves FastAPI through `api/index.py`
+- **Serving:** Vercel installs the root Python project dependencies, runs `python scripts/vercel_build.py`, bundles the downloaded `aggregator/deals.db`, and serves FastAPI through the root `app.py` entrypoint
 - **Static assets:** The Vercel build copies `aggregator/aggregator/web/static` to `public/static` for direct static serving; FastAPI still mounts the package static directory for local and fallback serving
 - **Deal data:** The bundled SQLite deal database is read-only in Vercel functions. Fresh deal data requires a new Vercel deployment after the scrape workflow publishes a new `latest-data` release
 - **Auth:** Invite codes stored in Turso cloud SQLite (persist across redeploys). Sessions use JWT signed cookies (stateless, no DB lookup). Admin access via `ADMIN_KEY` env var
