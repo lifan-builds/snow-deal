@@ -99,4 +99,4 @@ python -m aggregator.cli generate-codes --count 5
 - **SQLite + Turso split:** Deal data in local SQLite (fast reads, scraped every 6h). Auth/session/event data in Turso cloud DB (persistent across deploys).
 - **Keyword-based categorization:** Products categorized by keyword matching against name/URL, with brand fallback. Not ML-based — fast, deterministic, debuggable. False positives fixed by expanding `NOT_HARDGOODS_KEYWORDS` or moving ambiguous model names.
 - **GitHub Actions scraping:** Runs on cron, not on the web server. Keeps the web app stateless and fast. Scrape results committed to DB.
-- **Repo is private** (changed 2026-04-07): Scraper configs, store selectors, and categorization rules are competitive advantages.
+- **Repo is public** (changed 2026-05-17): Keep the project launch-friendly, but never commit secrets, cookies, credentials, auth databases, scraped `.db` files, or private operational tokens.
