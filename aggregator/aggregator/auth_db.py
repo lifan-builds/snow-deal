@@ -56,40 +56,56 @@ AUTH_SCHEMA = [
 # ---------------------------------------------------------------------------
 
 _conn = None
+_sync_enabled = False
+
+
+def _env_flag(name: str, default: bool = False) -> bool:
+    """Parse a boolean-like environment variable."""
+    value = os.environ.get(name)
+    if value is None:
+        return default
+    return value.strip().lower() in {"1", "true", "yes", "on"}
 
 
 def _get_conn():
     """Return a reusable database connection (created on first call)."""
-    global _conn
+    global _conn, _sync_enabled
     if _conn is not None:
         return _conn
 
     if TURSO_URL:
         import libsql
-        local_path = os.environ.get("AUTH_DB_PATH", "auth_replica.db")
-        _conn = libsql.connect(
-            local_path,
-            sync_url=TURSO_URL,
-            auth_token=TURSO_AUTH_TOKEN,
-        )
-        for attempt in range(5):
-            try:
-                _conn.sync()
-                break
-            except ValueError as e:
-                if "dns error" in str(e).lower() or "dispatch error" in str(e).lower():
-                    log.warning("Turso sync attempt %d/5 failed (DNS): %s", attempt + 1, e)
-                    if attempt < 4:
-                        time.sleep(2 ** attempt)
-                        continue
-                raise
-        log.info("Auth DB connected (Turso: %s)", TURSO_URL)
+        if _env_flag("TURSO_DIRECT_CONNECTION") or os.environ.get("VERCEL"):
+            _conn = libsql.connect(TURSO_URL, auth_token=TURSO_AUTH_TOKEN)
+            _sync_enabled = False
+            log.info("Auth DB connected (Turso direct: %s)", TURSO_URL)
+        else:
+            local_path = os.environ.get("AUTH_DB_PATH", "auth_replica.db")
+            _conn = libsql.connect(
+                local_path,
+                sync_url=TURSO_URL,
+                auth_token=TURSO_AUTH_TOKEN,
+            )
+            _sync_enabled = True
+            for attempt in range(5):
+                try:
+                    _conn.sync()
+                    break
+                except ValueError as e:
+                    if "dns error" in str(e).lower() or "dispatch error" in str(e).lower():
+                        log.warning("Turso sync attempt %d/5 failed (DNS): %s", attempt + 1, e)
+                        if attempt < 4:
+                            time.sleep(2 ** attempt)
+                            continue
+                    raise
+            log.info("Auth DB connected (Turso replica: %s)", TURSO_URL)
     else:
         db_path = Path(os.environ.get(
             "AUTH_DB_PATH",
             Path(__file__).resolve().parent.parent / "auth.db",
         ))
         _conn = sqlite3.connect(str(db_path))
+        _sync_enabled = False
         log.info("Auth DB connected (local: %s)", db_path)
 
     return _conn
@@ -97,7 +113,7 @@ def _get_conn():
 
 def _sync():
     """Push local changes to Turso (no-op for local SQLite)."""
-    if TURSO_URL and _conn is not None:
+    if _sync_enabled and _conn is not None:
         _conn.sync()
 
 

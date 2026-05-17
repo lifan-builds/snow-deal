@@ -120,6 +120,7 @@ The primary website is deployed on **Vercel** with scraping running on **GitHub 
 | `DATABASE_PATH` | Optional override for the deals SQLite database path; normally omit it so the app uses `aggregator/deals.db` |
 | `DEALS_DB_READ_ONLY` | Set for Vercel so startup validates the deal DB without schema writes |
 | `AUTH_DB_PATH` | Local embedded Turso replica path; use `/tmp/auth_replica.db` on Vercel |
+| `TURSO_DIRECT_CONNECTION` | Use direct Turso connections instead of embedded replica sync; set to `1` on Vercel |
 | `DEALS_DB_DOWNLOAD_URL` | Optional build-time URL for the latest `deals.db` snapshot |
 | `VERCEL_SKIP_DB_DOWNLOAD` | Optional local escape hatch; requires an existing valid `aggregator/deals.db` |
 | `PUBLIC_MODE` | Set to disable invite gating and make the deal pages public |

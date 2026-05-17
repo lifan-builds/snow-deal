@@ -3,7 +3,19 @@
   "buildCommand": "python scripts/vercel_build.py",
   "env": {
     "DEALS_DB_READ_ONLY": "1",
+    "TURSO_DIRECT_CONNECTION": "1",
     "AUTH_DB_PATH": "/tmp/auth_replica.db",
     "MAX_DB_STALENESS_HOURS": "18"
-  }
+  },
+  "functions": {
+    "api/index.py": {
+      "excludeFiles": "{aggregator/tests/**,docs/**,tampermonkey/**,.pytest_cache/**,**/__pycache__/**}"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api/index.py"
+    }
+  ]
 }
