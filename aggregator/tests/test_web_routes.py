@@ -106,6 +106,30 @@ def test_public_mode_serves_homepage_and_public_robots(isolated_app, monkeypatch
     assert admin.headers["location"] == "/"
 
 
+def test_vercel_runtime_validates_deals_db_without_migrations(isolated_app, monkeypatch):
+    monkeypatch.setenv("PUBLIC_MODE", "1")
+    monkeypatch.setenv("VERCEL", "1")
+    monkeypatch.delenv("SECRET_KEY", raising=False)
+    asyncio.run(db_module.init_db(isolated_app))
+
+    called = {"ensure": False}
+
+    async def _unexpected_init_db():
+        raise AssertionError("init_db should not run in read-only Vercel runtime")
+
+    async def _ensure_deals_db_ready():
+        called["ensure"] = True
+
+    monkeypatch.setattr(app_module, "init_db", _unexpected_init_db)
+    monkeypatch.setattr(app_module, "ensure_deals_db_ready", _ensure_deals_db_ready)
+
+    with TestClient(app_module.create_app()) as client:
+        response = client.get("/robots.txt")
+
+    assert response.status_code == 200
+    assert called["ensure"] is True
+
+
 def test_invite_submission_sets_session_cookie(isolated_app, monkeypatch):
     monkeypatch.setenv("PUBLIC_MODE", "0")
     monkeypatch.setenv("SECRET_KEY", "test-secret")

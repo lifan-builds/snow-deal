@@ -20,6 +20,7 @@ Thumbs.db
 # Data
 *.db
 cookies.json
+public/static/
 
 # Claude Code
 .claude/
@@ -28,3 +29,4 @@ CLAUDE.md
 # MCP / Playwright
 .mcp.json
 .playwright-mcp/
+.vercel

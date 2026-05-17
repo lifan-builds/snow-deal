@@ -1,6 +1,6 @@
 # FreshPowder — Aggregator
 
-Multi-store deal aggregator for ski and snowboard gear. Scrapes 24 retailers, integrates 1,200+ review scores from OutdoorGearLab (skis, boots, gear) and The Good Ride (snowboards, bindings, boots, jackets), stores deal snapshots in SQLite, and serves a ranked dashboard via FastAPI + htmx. Two-pass fuzzy matching links reviews to deals with model family fallback. Includes admin panel for invite code management and analytics dashboard for tracking user behavior. Deployed on Render with GitHub Actions cron for automated scraping. Part of the [snow-deals](../) monorepo.
+Multi-store deal aggregator for ski and snowboard gear. Scrapes 24 retailers, integrates 1,200+ review scores from OutdoorGearLab (skis, boots, gear) and The Good Ride (snowboards, bindings, boots, jackets), stores deal snapshots in SQLite, and serves a ranked dashboard via FastAPI + htmx. Two-pass fuzzy matching links reviews to deals with model family fallback. Includes admin panel for invite code management and analytics dashboard for tracking user behavior. Deployed on Vercel with GitHub Actions cron for automated scraping; Render/Docker support is retained as a fallback. Part of the [snow-deals](../) monorepo.
 
 **Live site:** [snow-deals.onrender.com](https://snow-deals.onrender.com)
 
@@ -96,12 +96,47 @@ The web UI provides:
 
 ## Deployment
 
-The site is deployed on **Render** (free tier) with scraping running on **GitHub Actions**:
+The primary website is deployed on **Vercel** with scraping running on **GitHub Actions**:
 
-- **Scraping:** GitHub Actions cron runs every 6 hours, uses Playwright for JS-rendered stores, uploads `deals.db` as a GitHub Release
-- **Serving:** Render downloads the latest `deals.db` on startup, warns when the DB is stale, and serves the FastAPI app
+- **Scraping:** GitHub Actions cron runs on schedule, uses Playwright for JS-rendered stores, uploads `deals.db` as a GitHub Release
+- **Serving:** Vercel installs the root `requirements.txt`, runs `python scripts/vercel_build.py`, bundles the downloaded `aggregator/deals.db`, and serves FastAPI through `api/index.py`
+- **Static assets:** The Vercel build copies `aggregator/aggregator/web/static` to `public/static` for direct static serving; FastAPI still mounts the package static directory for local and fallback serving
+- **Deal data:** The bundled SQLite deal database is read-only in Vercel functions. Fresh deal data requires a new Vercel deployment after the scrape workflow publishes a new `latest-data` release
 - **Auth:** Invite codes stored in Turso cloud SQLite (persist across redeploys). Sessions use JWT signed cookies (stateless, no DB lookup). Admin access via `ADMIN_KEY` env var
 - **Admin:** `/admin/codes` for code management, `/admin/stats` for analytics dashboard
+
+### Vercel Setup
+
+1. Import the repository into Vercel.
+2. Leave the project root at the repository root.
+3. Use the committed `vercel.json`; no framework preset is required.
+4. Configure the required environment variables in the Vercel dashboard.
+5. Deploy. The build must be able to download the public `deals.db` release or use `DEALS_DB_DOWNLOAD_URL` to point at another SQLite snapshot.
+
+### Vercel Environment Variables
+
+| Variable | Purpose |
+|----------|---------|
+| `DATABASE_PATH` | Optional override for the deals SQLite database path; normally omit it so the app uses `aggregator/deals.db` |
+| `DEALS_DB_READ_ONLY` | Set for Vercel so startup validates the deal DB without schema writes |
+| `AUTH_DB_PATH` | Local embedded Turso replica path; use `/tmp/auth_replica.db` on Vercel |
+| `DEALS_DB_DOWNLOAD_URL` | Optional build-time URL for the latest `deals.db` snapshot |
+| `VERCEL_SKIP_DB_DOWNLOAD` | Optional local escape hatch; requires an existing valid `aggregator/deals.db` |
+| `PUBLIC_MODE` | Set to disable invite gating and make the deal pages public |
+| `ADMIN_KEY` | Admin access key |
+| `TURSO_URL` | Turso database URL for auth, events, waitlist, and invite code persistence |
+| `TURSO_AUTH_TOKEN` | Turso auth token |
+| `SECRET_KEY` | JWT signing key for session cookies; required whenever `PUBLIC_MODE` is not enabled |
+
+### Updating Deal Data On Vercel
+
+Vercel functions cannot rely on persistent writable disk. The scrape workflow should publish `deals.db`, then trigger a Vercel deployment so the next build bundles the new database. A Vercel deploy hook is the simplest production workflow:
+
+1. In Vercel, create a deploy hook for the production branch.
+2. Store it as a GitHub Actions secret such as `VERCEL_DEPLOY_HOOK_URL`.
+3. After the scrape workflow publishes the `latest-data` release, call the hook.
+
+Render remains available as a fallback deployment target.
 
 ### Render Auto-Redeploy
 

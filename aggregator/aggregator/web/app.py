@@ -15,7 +15,7 @@ from fastapi.templating import Jinja2Templates
 
 import aggregator.auth as auth
 from aggregator.auth import auth_middleware
-from aggregator.db import init_db
+from aggregator.db import ensure_deals_db_ready, init_db
 from aggregator.auth_db import init_auth_db
 from aggregator.web.routes import router
 from aggregator.web.invite_routes import invite_router
@@ -30,10 +30,26 @@ TEMPLATE_DIR = Path(__file__).resolve().parent / "templates"
 templates = Jinja2Templates(directory=str(TEMPLATE_DIR))
 
 
+def _env_flag(name: str, default: bool = False) -> bool:
+    """Parse a boolean-like environment variable."""
+    value = os.environ.get(name)
+    if value is None:
+        return default
+    return value.strip().lower() in {"1", "true", "yes", "on"}
+
+
+def _deals_db_read_only_runtime() -> bool:
+    """Return True when startup should validate, not mutate, the deal DB."""
+    return _env_flag("DEALS_DB_READ_ONLY") or bool(os.environ.get("VERCEL"))
+
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     auth.ensure_auth_config()
-    await init_db()
+    if _deals_db_read_only_runtime():
+        await ensure_deals_db_ready()
+    else:
+        await init_db()
     await init_auth_db()
     # Auto-generate admin key for local development if not set
     if not auth.get_admin_key():

@@ -6,6 +6,7 @@ import os
 import aiosqlite
 from datetime import datetime
 from pathlib import Path
+from urllib.parse import quote
 
 from aggregator.models import AggregatedDeal
 
@@ -66,9 +67,58 @@ MIGRATIONS = [
 ]
 
 
+def _env_flag(name: str, default: bool = False) -> bool:
+    """Parse a boolean-like environment variable."""
+    value = os.environ.get(name)
+    if value is None:
+        return default
+    return value.strip().lower() in {"1", "true", "yes", "on"}
+
+
+def _deal_db_read_only() -> bool:
+    """Return True when deal data should be opened read-only."""
+    return _env_flag("DEALS_DB_READ_ONLY") or bool(os.environ.get("VERCEL"))
+
+
+def _sqlite_uri(db_path: Path, mode: str) -> str:
+    """Build a SQLite file URI for paths that may contain spaces."""
+    path = Path(db_path).resolve().as_posix()
+    return f"file:{quote(path, safe='/')}?mode={mode}"
+
+
+def _connect(db_path: Path, *, read_only: bool = False):
+    """Open a SQLite connection, optionally forcing read-only mode."""
+    if read_only:
+        return aiosqlite.connect(_sqlite_uri(db_path, "ro"), uri=True)
+    return aiosqlite.connect(db_path)
+
+
+async def ensure_deals_db_ready(db_path: Path = DB_PATH) -> None:
+    """Validate the bundled deals database without writing to it."""
+    if not db_path.exists() or db_path.stat().st_size == 0:
+        raise RuntimeError(
+            f"Deal database not found at {db_path}. "
+            "Run scripts/vercel_build.py during deployment or set DATABASE_PATH."
+        )
+
+    async with _connect(db_path, read_only=True) as db:
+        cursor = await db.execute("PRAGMA integrity_check")
+        row = await cursor.fetchone()
+        if not row or str(row[0]).lower() != "ok":
+            raise RuntimeError(f"Deal database integrity check failed: {row!r}")
+
+        try:
+            cursor = await db.execute("SELECT COUNT(*) FROM deals")
+            await cursor.fetchone()
+        except Exception as exc:
+            raise RuntimeError(
+                f"Deal database at {db_path} is missing the deals table."
+            ) from exc
+
+
 async def init_db(db_path: Path = DB_PATH) -> None:
     """Create tables and apply migrations."""
-    async with aiosqlite.connect(db_path) as db:
+    async with _connect(db_path) as db:
         await db.executescript(SCHEMA)
         for migration in MIGRATIONS:
             try:
@@ -80,7 +130,7 @@ async def init_db(db_path: Path = DB_PATH) -> None:
 
 async def upsert_deals(deals: list[AggregatedDeal], db_path: Path = DB_PATH) -> int:
     """Insert or update deals. Returns count of rows affected."""
-    async with aiosqlite.connect(db_path) as db:
+    async with _connect(db_path) as db:
         count = 0
         for d in deals:
             await db.execute(
@@ -117,7 +167,7 @@ async def upsert_deal_reviews(
     db_path: Path = DB_PATH,
 ) -> int:
     """Insert or replace deal→review matches. Each row: deal_id, review_id, score, award, review_url."""
-    async with aiosqlite.connect(db_path) as db:
+    async with _connect(db_path) as db:
         count = 0
         for r in rows:
             await db.execute(
@@ -134,7 +184,7 @@ async def upsert_deal_reviews(
 
 async def get_deal_reviews_map(db_path: Path = DB_PATH) -> dict[int, dict]:
     """Return {deal_id: {score, award, review_url}} for all matched deals."""
-    async with aiosqlite.connect(db_path) as db:
+    async with _connect(db_path, read_only=_deal_db_read_only()) as db:
         db.row_factory = aiosqlite.Row
         cursor = await db.execute(
             "SELECT deal_id, score, award, review_url FROM deal_reviews"
@@ -145,7 +195,7 @@ async def get_deal_reviews_map(db_path: Path = DB_PATH) -> dict[int, dict]:
 
 async def count_with_length(db_path: Path = DB_PATH) -> int:
     """Return count of deals that have length data."""
-    async with aiosqlite.connect(db_path) as db:
+    async with _connect(db_path, read_only=_deal_db_read_only()) as db:
         cursor = await db.execute(
             "SELECT COUNT(*) FROM deals WHERE length_min IS NOT NULL"
         )
@@ -155,7 +205,7 @@ async def count_with_length(db_path: Path = DB_PATH) -> int:
 
 async def get_brands(db_path: Path = DB_PATH) -> list[str]:
     """Return distinct brand names from the brand column, sorted."""
-    async with aiosqlite.connect(db_path) as db:
+    async with _connect(db_path, read_only=_deal_db_read_only()) as db:
         cursor = await db.execute(
             """
             SELECT DISTINCT deals.brand FROM deals
@@ -171,7 +221,7 @@ async def get_brands(db_path: Path = DB_PATH) -> list[str]:
 
 async def get_category_counts(db_path: Path = DB_PATH) -> dict[str, int]:
     """Return {category: deal_count} for all non-null categories."""
-    async with aiosqlite.connect(db_path) as db:
+    async with _connect(db_path, read_only=_deal_db_read_only()) as db:
         cursor = await db.execute(
             """
             SELECT deals.category, COUNT(*) FROM deals
@@ -258,7 +308,7 @@ async def query_deals(
     latest_join = "INNER JOIN (SELECT store, MAX(scraped_at) as max_s FROM deals GROUP BY store) d2 ON deals.store = d2.store AND deals.scraped_at = d2.max_s"
 
     if count_only:
-        async with aiosqlite.connect(db_path) as db:
+        async with _connect(db_path, read_only=_deal_db_read_only()) as db:
             cursor = await db.execute(
                 f"SELECT COUNT(*) FROM deals {latest_join} LEFT JOIN deal_reviews dr ON deals.id = dr.deal_id WHERE {where}",
                 params,
@@ -276,7 +326,7 @@ async def query_deals(
     }
     order = sort_map.get(sort_by, "deals.discount_pct DESC")
 
-    async with aiosqlite.connect(db_path) as db:
+    async with _connect(db_path, read_only=_deal_db_read_only()) as db:
         db.row_factory = aiosqlite.Row
         cursor = await db.execute(
             f"""\
@@ -321,7 +371,7 @@ async def upsert_reviews(reviews: list, db_path: Path = DB_PATH) -> int:
     """Insert or update reviews. Accepts dicts or ReviewData NamedTuples."""
     from datetime import datetime
     now = datetime.now().isoformat()
-    async with aiosqlite.connect(db_path) as db:
+    async with _connect(db_path) as db:
         count = 0
         for r in reviews:
             if isinstance(r, dict):
@@ -353,7 +403,7 @@ async def upsert_reviews(reviews: list, db_path: Path = DB_PATH) -> int:
 
 async def get_all_reviews(db_path: Path = DB_PATH) -> list[dict]:
     """Return all reviews from the database."""
-    async with aiosqlite.connect(db_path) as db:
+    async with _connect(db_path, read_only=_deal_db_read_only()) as db:
         db.row_factory = aiosqlite.Row
         cursor = await db.execute(
             "SELECT id, product_name, brand, score, award, review_url, category FROM reviews ORDER BY score DESC"
@@ -364,7 +414,7 @@ async def get_all_reviews(db_path: Path = DB_PATH) -> list[dict]:
 
 async def store_status(db_path: Path = DB_PATH) -> list[dict]:
     """Return per-store stats: deal count, deals with discounts, last scraped time."""
-    async with aiosqlite.connect(db_path) as db:
+    async with _connect(db_path, read_only=_deal_db_read_only()) as db:
         db.row_factory = aiosqlite.Row
         cursor = await db.execute("""\
             SELECT store,

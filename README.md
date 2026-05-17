@@ -43,7 +43,7 @@ FreshPowder is intentionally boring in the best way: server-rendered pages, fast
 | Auth/events | Turso for invite codes, sessions, waitlist, and click events |
 | Scraping | GitHub Actions cron, httpx, BeautifulSoup4/lxml, Playwright for JS-rendered sites |
 | Reviews | OutdoorGearLab + The Good Ride matching pipeline |
-| Deployment | Docker on Render |
+| Deployment | Vercel Python Functions for the primary web app; Docker on Render kept as a supported fallback |
 
 ## Repository Layout
 
@@ -89,6 +89,15 @@ export ADMIN_KEY="your-admin-key"
 
 uvicorn aggregator.web.app:create_app --factory --reload
 ```
+
+### Run The Vercel Entrypoint Locally
+
+```bash
+python scripts/vercel_build.py
+PUBLIC_MODE=1 uvicorn api.index:app --reload
+```
+
+The build helper copies `aggregator/aggregator/web/static` to `public/static` and downloads the latest public `deals.db` release into `aggregator/deals.db`. Vercel then serves the FastAPI app through `api/index.py` with `DEALS_DB_READ_ONLY=1`.
 
 ### Run Tests
 
