@@ -63,8 +63,10 @@ async def lifespan(app: FastAPI):
     yield
 
 
-def create_app() -> FastAPI:
-    app = FastAPI(title="FreshPowder", lifespan=lifespan)
+def create_app(*, enable_lifespan: bool | None = None) -> FastAPI:
+    if enable_lifespan is None:
+        enable_lifespan = not _env_flag("DISABLE_APP_LIFESPAN")
+    app = FastAPI(title="FreshPowder", lifespan=lifespan if enable_lifespan else None)
     app.add_middleware(BaseHTTPMiddleware, dispatch=auth_middleware)
     app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
     app.include_router(invite_router)

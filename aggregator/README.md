@@ -121,6 +121,7 @@ The primary website is deployed on **Vercel** with scraping running on **GitHub 
 | `DEALS_DB_READ_ONLY` | Set for Vercel so startup validates the deal DB without schema writes |
 | `AUTH_DB_PATH` | Local embedded Turso replica path; use `/tmp/auth_replica.db` on Vercel |
 | `TURSO_DIRECT_CONNECTION` | Use direct Turso connections instead of embedded replica sync; set to `1` on Vercel |
+| `DISABLE_APP_LIFESPAN` | Skip FastAPI startup DB validation/init on Vercel cold starts; set to `1` when the build bundles `deals.db` and Turso schema already exists |
 | `DEALS_DB_DOWNLOAD_URL` | Optional build-time URL for the latest `deals.db` snapshot |
 | `VERCEL_SKIP_DB_DOWNLOAD` | Optional local escape hatch; requires an existing valid `aggregator/deals.db` |
 | `PUBLIC_MODE` | Set to disable invite gating and make the deal pages public |

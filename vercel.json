@@ -4,6 +4,7 @@
   "env": {
     "DEALS_DB_READ_ONLY": "1",
     "TURSO_DIRECT_CONNECTION": "1",
+    "DISABLE_APP_LIFESPAN": "1",
     "AUTH_DB_PATH": "/tmp/auth_replica.db",
     "MAX_DB_STALENESS_HOURS": "18"
   },
