@@ -69,8 +69,14 @@ jobs:
           fi
           echo "Triggering Vercel production redeploy via CLI..."
           npm install -g vercel@latest
-          vercel pull --yes --environment=production --token "$VERCEL_TOKEN"
-          vercel deploy --prod --force --yes --token "$VERCEL_TOKEN"
+          if ! vercel pull --yes --environment=production --token "$VERCEL_TOKEN"; then
+            echo "::warning::Vercel pull failed; check VERCEL_TOKEN/ORG_ID/PROJECT_ID secrets."
+            exit 0
+          fi
+          if ! vercel deploy --prod --force --yes --token "$VERCEL_TOKEN"; then
+            echo "::warning::Vercel deploy failed; scrape data upload already completed."
+            exit 0
+          fi
 
       - name: Trigger Render deploy
         env:
