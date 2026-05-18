@@ -85,12 +85,18 @@ class TestDB:
             deal = _make_deal("Atomic Bent 100", price=499.99, orig=599.99)
             await upsert_deals([deal], db_path)
 
-            # Update price
-            deal_updated = _make_deal("Atomic Bent 100", price=449.99, orig=599.99)
+            # Update price and corrected scraped name for the same product URL.
+            deal_updated = _make_deal(
+                "Atomic Bent 100 Skis",
+                price=449.99,
+                orig=599.99,
+                url=deal.url,
+            )
             await upsert_deals([deal_updated], db_path)
 
             deals = await query_deals(db_path=db_path)
             assert len(deals) == 1
+            assert deals[0].name == "Atomic Bent 100 Skis"
             assert deals[0].current_price == 449.99
 
         asyncio.run(_run())

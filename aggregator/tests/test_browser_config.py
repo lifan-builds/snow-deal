@@ -1,11 +1,10 @@
 """Tests for browser.py store config registry."""
 
 from aggregator.browser import STORE_CONFIGS, _parse_raw_products
-from snow_deals.models import Product
 
 
 def test_all_expected_configs_exist():
-    expected = {"evo", "backcountry", "thehouse", "bigcommerce",
+    expected = {"backcountry", "thehouse", "bigcommerce",
                 "levelnine", "thecircle", "sacredride"}
     assert expected.issubset(set(STORE_CONFIGS.keys()))
 
@@ -43,3 +42,25 @@ def test_parse_raw_products_absolute_url():
             "current_price": 100, "original_price": None}]
     products = _parse_raw_products(raw, "https://example.com")
     assert products[0].url == "https://store.com/product"
+
+
+def test_parse_raw_products_recovers_placeholder_name_from_url():
+    raw = [{
+        "name": "Gearhead Top Pick",
+        "url": "https://www.backcountry.com/nordica-speedmachine-j1-ski-boot-2023-girls",
+        "current_price": 105.0,
+        "original_price": 150.0,
+    }]
+    products = _parse_raw_products(raw, "https://www.backcountry.com")
+    assert products[0].name == "Nordica Speedmachine J1 Ski Boot 2023 Girls"
+
+
+def test_parse_raw_products_prefixes_model_only_name_from_url_brand():
+    raw = [{
+        "name": "DX84 Ski",
+        "url": "https://www.backcountry.com/kastle-dx84-ski",
+        "current_price": 279.5,
+        "original_price": 430.0,
+    }]
+    products = _parse_raw_products(raw, "https://www.backcountry.com")
+    assert products[0].name == "Kastle DX84 Ski"

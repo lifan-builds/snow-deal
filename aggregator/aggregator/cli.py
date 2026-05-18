@@ -11,9 +11,43 @@ from rich.table import Table
 
 from aggregator.db import init_db, query_deals, upsert_deals, upsert_reviews
 from aggregator.auth_db import init_auth_db, create_invite_codes, list_invite_codes
-from aggregator.scraper import scrape_all
+from aggregator.scraper import build_scrape_report, scrape_all
 
 console = Console()
+
+
+def _print_scrape_report(deals: list) -> None:
+    """Render a compact scrape quality report for CI logs."""
+    report = build_scrape_report(deals)
+    table = Table(title="Scrape Quality", show_lines=False)
+    table.add_column("Store", style="cyan")
+    table.add_column("Deals", justify="right")
+    table.add_column("No Cat", justify="right")
+    table.add_column("No Img", justify="right")
+    table.add_column("No Sizes", justify="right")
+    table.add_column("No Length", justify="right")
+
+    for summary in sorted(report.store_summaries, key=lambda s: (s.deals == 0, s.deals, s.store)):
+        style = "red" if summary.deals == 0 else None
+        table.add_row(
+            summary.store,
+            str(summary.deals),
+            str(summary.missing_category),
+            str(summary.missing_image),
+            str(summary.missing_sizes),
+            str(summary.missing_lengths),
+            style=style,
+        )
+
+    console.print(table)
+    console.print(
+        "[bold]Totals:[/bold] "
+        f"{report.total_deals} deals across {report.stores_with_deals}/{report.configured_stores} stores; "
+        f"missing category={report.missing_category}, image={report.missing_image}, "
+        f"sizes={report.missing_sizes}, lengths={report.missing_lengths}."
+    )
+    if report.zero_count_stores:
+        console.print("[red]Zero-count stores:[/red] " + ", ".join(report.zero_count_stores))
 
 
 @click.group()
@@ -36,6 +70,7 @@ def refresh(delay: float, max_pages: int) -> None:
         with console.status("[bold cyan]Scraping all stores...", spinner="dots"):
             deals = await scrape_all(delay=delay, max_pages=max_pages)
         console.print(f"[dim]Scraped {len(deals)} deals total.[/dim]")
+        _print_scrape_report(deals)
 
         if deals:
             count = await upsert_deals(deals)

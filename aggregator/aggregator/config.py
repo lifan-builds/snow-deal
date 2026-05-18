@@ -16,6 +16,7 @@ class StoreConfig:
     use_browser: bool = False  # True = use Playwright headless browser
     tax_free: bool = False  # True = no sales tax for WA buyers (Canadian stores, no-nexus stores)
     currency: str = "USD"   # Price currency (USD or CAD)
+    shopify_products_limit: int = 250  # Lower for stores whose JSON feed fails at 250
     
     # Affiliate tracking
     affiliate_network: str | None = None  # e.g., "avantlink", "impact", "skimlinks"
@@ -139,26 +140,26 @@ STORES: list[StoreConfig] = [
         parser_type="coloradodiscount",
     ),
 
-    # Browser-based (Playwright) — JS-rendered or anti-bot
+    # Structured Shopify feeds
     StoreConfig(
         "Evo", "evo.com",
         scrape_urls=[
-            "https://www.evo.com/shop/ski/skis",
-            "https://www.evo.com/shop/snowboard/snowboards",
-            "https://www.evo.com/shop/sale/ski/skis",
-            "https://www.evo.com/shop/sale/snowboard/snowboards",
-            "https://www.evo.com/shop/ski/ski-gloves",
-            "https://www.evo.com/shop/ski/ski-mittens",
-            "https://www.evo.com/shop/snowboard/gloves",
-            "https://www.evo.com/shop/snowboard/mittens",
-            "https://www.evo.com/shop/sale/ski/ski-gloves",
-            "https://www.evo.com/shop/sale/ski/ski-mittens",
-            "https://www.evo.com/shop/sale/snowboard/gloves",
-            "https://www.evo.com/shop/sale/snowboard/mittens",
+            "https://www.evo.com/collections/sale-skis",
+            "https://www.evo.com/collections/sale-snowboards",
+            "https://www.evo.com/collections/sale-ski-boots",
+            "https://www.evo.com/collections/sale-snowboard-boots",
+            "https://www.evo.com/collections/sale-ski-bindings",
+            "https://www.evo.com/collections/sale-snowboard-bindings",
+            "https://www.evo.com/collections/sale-ski-poles",
+            "https://www.evo.com/collections/sale-goggles",
+            "https://www.evo.com/collections/sale-helmets",
+            "https://www.evo.com/collections/sale-gloves-mittens",
         ],
-        parser_type="evo",
-        use_browser=True,
+        parser_type="shopify",
+        shopify_products_limit=50,
     ),
+
+    # Browser-based (Playwright) — JS-rendered or anti-bot
     StoreConfig(
         "Backcountry", "backcountry.com",
         scrape_urls=[
@@ -291,8 +292,10 @@ STORES: list[StoreConfig] = [
         tax_free=True, currency="CAD",
     ),
 
-    # REI — blocked by Akamai from datacenter/CI IPs (ERR_HTTP2_PROTOCOL_ERROR).
-    # Disabled until a proxy or API-based approach is available.
+    # REI — blocked by Akamai from datacenter/CI IPs.
+    # Rechecked 2026-05-17: HTTP/2 returns a stream/internal error and HTTP/1.1
+    # times out before headers. Keep disabled until REI exposes a stable
+    # unauthenticated API/feed path or an approved proxy strategy exists.
     # StoreConfig(
     #     "REI", "rei.com",
     #     scrape_urls=[

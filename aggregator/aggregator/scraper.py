@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import asyncio
+from collections import Counter
+from dataclasses import dataclass
 import logging
 import re
 from datetime import datetime
@@ -13,6 +15,7 @@ from aggregator.categorizer import categorize, is_excluded
 from aggregator.reviews import _extract_brand
 from aggregator.config import STORES, StoreConfig
 from aggregator.models import AggregatedDeal
+from aggregator.parsers.common import clean_product_name
 from snow_deals.models import Product
 from snow_deals.parsers.base import BaseParser
 
@@ -124,6 +127,33 @@ _KIDS_KEYWORDS = re.compile(
 )
 
 
+@dataclass(frozen=True)
+class StoreScrapeSummary:
+    """Per-store scrape quality counters."""
+
+    store: str
+    deals: int
+    missing_category: int
+    missing_image: int
+    missing_sizes: int
+    missing_lengths: int
+
+
+@dataclass(frozen=True)
+class ScrapeReport:
+    """Aggregate scrape quality report for a refresh run."""
+
+    configured_stores: int
+    stores_with_deals: int
+    total_deals: int
+    zero_count_stores: list[str]
+    store_summaries: list[StoreScrapeSummary]
+    missing_category: int
+    missing_image: int
+    missing_sizes: int
+    missing_lengths: int
+
+
 def _is_kids_product(name: str) -> bool:
     """Return True if the product name indicates kids/junior gear."""
     return bool(_KIDS_KEYWORDS.search(name))
@@ -139,7 +169,10 @@ def _products_to_deals(
     now = datetime.now()
     deals: list[AggregatedDeal] = []
     for p in products:
-        if _is_kids_product(p.name) or is_excluded(p.name, p.url):
+        name = clean_product_name(p.name, p.url)
+        if not name:
+            continue
+        if _is_kids_product(name) or is_excluded(name, p.url):
             continue
         if p.discount_pct <= 0:
             continue
@@ -150,21 +183,61 @@ def _products_to_deals(
             AggregatedDeal(
                 id=None,
                 store=store_name,
-                name=p.name,
+                name=name,
                 url=p.url,
                 current_price=p.current_price,
                 original_price=p.original_price,
                 discount_pct=p.discount_pct,
-                category=categorize(p.name, p.url, p.product_type or ""),
+                category=categorize(name, p.url, p.product_type or ""),
                 sizes=sizes_str,
                 length_min=length_min,
                 length_max=length_max,
                 scraped_at=now,
                 image_url=p.image_url,
-                brand=_extract_brand(p.name) or None,
+                brand=_extract_brand(name) or None,
             )
         )
     return deals
+
+
+def build_scrape_report(
+    deals: list[AggregatedDeal],
+    stores: list[StoreConfig] | None = None,
+) -> ScrapeReport:
+    """Build per-store count and data-completeness metrics for observability."""
+    stores = stores or STORES
+    configured_names = [s.name for s in stores]
+    deals_by_store: dict[str, list[AggregatedDeal]] = {name: [] for name in configured_names}
+    for deal in deals:
+        deals_by_store.setdefault(deal.store, []).append(deal)
+
+    summaries: list[StoreScrapeSummary] = []
+    for store_name in configured_names:
+        store_deals = deals_by_store.get(store_name, [])
+        summaries.append(
+            StoreScrapeSummary(
+                store=store_name,
+                deals=len(store_deals),
+                missing_category=sum(1 for d in store_deals if not d.category),
+                missing_image=sum(1 for d in store_deals if not d.image_url),
+                missing_sizes=sum(1 for d in store_deals if not d.sizes),
+                missing_lengths=sum(1 for d in store_deals if d.length_min is None),
+            )
+        )
+
+    counts = Counter(d.store for d in deals)
+    zero_count_stores = [name for name in configured_names if counts.get(name, 0) == 0]
+    return ScrapeReport(
+        configured_stores=len(configured_names),
+        stores_with_deals=sum(1 for name in configured_names if counts.get(name, 0) > 0),
+        total_deals=len(deals),
+        zero_count_stores=zero_count_stores,
+        store_summaries=summaries,
+        missing_category=sum(1 for d in deals if not d.category),
+        missing_image=sum(1 for d in deals if not d.image_url),
+        missing_sizes=sum(1 for d in deals if not d.sizes),
+        missing_lengths=sum(1 for d in deals if d.length_min is None),
+    )
 
 
 async def scrape_store(
@@ -188,7 +261,10 @@ async def scrape_store(
         page = 0
         # For Shopify stores, convert to API URL
         if store.parser_type == "shopify" and hasattr(parser, "get_api_url"):
-            current_url: str | None = parser.get_api_url(url)
+            current_url: str | None = parser.get_api_url(
+                url,
+                limit=store.shopify_products_limit,
+            )
             if not current_url:
                 log.warning("Could not get API URL for %s", url)
                 continue
@@ -271,10 +347,18 @@ async def scrape_all(
             ]
             results = await asyncio.gather(*tasks, return_exceptions=True)
 
-        for store, result in zip(http_stores, results):
-            if isinstance(result, Exception):
-                log.error("[%s] Scrape failed: %s", store.name, result)
-            else:
+            for store, result in zip(http_stores, results):
+                if isinstance(result, Exception):
+                    log.error("[%s] Scrape failed: %s", store.name, result)
+                    result = []
+                if not result:
+                    log.warning("[%s] Returned zero deals; retrying once", store.name)
+                    try:
+                        result = await scrape_store(store, client, delay=delay, max_pages=max_pages)
+                    except Exception as exc:
+                        log.error("[%s] Retry failed: %s", store.name, exc)
+                        result = []
+                log.info("[%s] Completed: %d deals after filtering", store.name, len(result))
                 all_deals.extend(result)
 
     # Browser-based stores (Playwright)
@@ -289,6 +373,20 @@ async def scrape_all(
             if isinstance(result, Exception):
                 log.error("[%s] Browser scrape failed: %s", store.name, result)
             else:
+                log.info("[%s] Completed: %d deals after filtering", store.name, len(result))
                 all_deals.extend(result)
 
+    report = build_scrape_report(all_deals, stores)
+    if report.zero_count_stores:
+        log.warning("Zero-count stores: %s", ", ".join(report.zero_count_stores))
+    log.info(
+        "Scrape quality: deals=%d stores=%d/%d missing_category=%d missing_image=%d missing_sizes=%d missing_lengths=%d",
+        report.total_deals,
+        report.stores_with_deals,
+        report.configured_stores,
+        report.missing_category,
+        report.missing_image,
+        report.missing_sizes,
+        report.missing_lengths,
+    )
     return all_deals

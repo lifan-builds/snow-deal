@@ -9,6 +9,7 @@ from urllib.parse import urljoin
 
 from playwright.async_api import Page, async_playwright
 
+from aggregator.parsers.common import prefix_brand_from_url
 from snow_deals.models import Product
 
 log = logging.getLogger(__name__)
@@ -20,6 +21,7 @@ USER_AGENT = (
 )
 
 VIEWPORT = {"width": 1440, "height": 900}
+MAX_CONSECUTIVE_DUPLICATE_PAGES = 2
 
 # Shared JS price parser used by most extractors.
 _JS_PARSE_PRICE = """
@@ -80,9 +82,28 @@ STORE_CONFIGS: dict[str, tuple[str, str, str | None]] = {
                 const originalPrice = origMatch ? parseFloat(origMatch[1].replace(/,/g, '')) : null;
                 if (!currentPrice) return;
                 let name = '';
+                const nameSelectors = [
+                    '[data-id="product-title"]',
+                    '[data-testid="product-title"]',
+                    '[class*="productTitle"]',
+                    '[class*="product-title"]',
+                    'h2',
+                    'h3'
+                ];
+                for (const sel of nameSelectors) {
+                    const el = card.querySelector(sel);
+                    if (el && el.textContent.trim().length > 5) {
+                        name = el.textContent.trim();
+                        break;
+                    }
+                }
+                if (!name && link.getAttribute('aria-label')) {
+                    name = link.getAttribute('aria-label').trim();
+                }
                 card.querySelectorAll('img[alt]').forEach(img => {
-                    if (!name && img.alt && img.alt.length > 5) {
-                        name = img.alt.trim();
+                    const alt = (img.alt || '').trim();
+                    if (!name && alt.length > 5 && !/gearhead top pick|top pick|product image/i.test(alt)) {
+                        name = alt;
                     }
                 });
                 if (!name) return;
@@ -248,7 +269,7 @@ STORE_CONFIGS: dict[str, tuple[str, str, str | None]] = {
         """() => {
             const parsePrice = (el) => {
                 if (!el) return null;
-                const m = el.textContent.match(/[\d,]+\.?\d*/);
+                const m = el.textContent.match(/[\\d,]+\\.?\\d*/);
                 return m ? parseFloat(m[0].replace(/,/g, '')) : null;
             };
             const seen = new Set();
@@ -299,7 +320,7 @@ STORE_CONFIGS: dict[str, tuple[str, str, str | None]] = {
                 let originalPrice = null;
                 for (const span of spans) {
                     const text = span.textContent.trim();
-                    if (text.match(/^\$[\d,.]+$/)) {
+                    if (text.match(/^\\$[\\d,.]+$/)) {
                         const price = parseFloat(text.replace(/[$,]/g, ''));
                         if (!currentPrice) currentPrice = price;
                         else if (!originalPrice) originalPrice = price;
@@ -373,8 +394,8 @@ def _parse_raw_products(raw: list[dict], base_url: str) -> list[Product]:
     """Convert raw JS-extracted dicts to Product instances, filtering invalid."""
     products: list[Product] = []
     for item in raw:
-        name = (item.get("name") or "").strip()
         url = (item.get("url") or "").strip()
+        name = prefix_brand_from_url(item.get("name"), url)
         current_price = item.get("current_price")
 
         if not name or current_price is None or current_price <= 0:
@@ -521,6 +542,7 @@ async def scrape_with_browser(
                 if is_anti_bot:
                     await asyncio.sleep(5.0)
 
+                duplicate_pages = 0
                 for page_num in range(1, max_pages + 1):
                     try:
                         # Use "attached" state for non-visible elements (e.g. <script>)
@@ -546,6 +568,18 @@ async def scrape_with_browser(
 
                     if not products or page_num >= max_pages:
                         break
+                    if new_products:
+                        duplicate_pages = 0
+                    else:
+                        duplicate_pages += 1
+                        if duplicate_pages >= MAX_CONSECUTIVE_DUPLICATE_PAGES:
+                            log.warning(
+                                "[%s] Stopping pagination after %d duplicate pages at %s",
+                                store_name,
+                                duplicate_pages,
+                                page.url,
+                            )
+                            break
 
                     await _random_delay(delay)
                     if not await _try_next_page(page, next_selector):

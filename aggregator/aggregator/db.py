@@ -140,6 +140,8 @@ async def upsert_deals(deals: list[AggregatedDeal], db_path: Path = DB_PATH) -> 
                                    scraped_at, image_url, brand)
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 ON CONFLICT(url) DO UPDATE SET
+                    store          = excluded.store,
+                    name           = excluded.name,
                     current_price  = excluded.current_price,
                     original_price = excluded.original_price,
                     discount_pct   = excluded.discount_pct,

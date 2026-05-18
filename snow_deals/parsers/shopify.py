@@ -94,7 +94,9 @@ class ShopifyParser(BaseParser):
             return None
 
         products = data.get("products", [])
-        if len(products) < 250:
+        m_limit = re.search(r"[?&]limit=(\d+)", current_url)
+        limit = int(m_limit.group(1)) if m_limit else 250
+        if len(products) < limit:
             return None
 
         parsed = urlparse(current_url)
@@ -107,12 +109,12 @@ class ShopifyParser(BaseParser):
             return None
 
         base = current_url.split("?")[0]
-        return f"{base}?limit=250&page={next_page}"
+        return f"{base}?limit={limit}&page={next_page}"
 
-    def get_api_url(self, page_url: str) -> str | None:
+    def get_api_url(self, page_url: str, limit: int = 250) -> str | None:
         """Convert a collection URL to the Shopify JSON API URL."""
         handle = self._get_collection_handle(page_url)
         if not handle:
             return None
         parsed = urlparse(page_url)
-        return f"{parsed.scheme}://{parsed.netloc}/collections/{handle}/products.json?limit=250&page=1"
+        return f"{parsed.scheme}://{parsed.netloc}/collections/{handle}/products.json?limit={limit}&page=1"
