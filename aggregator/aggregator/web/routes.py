@@ -10,11 +10,12 @@ from fastapi.templating import Jinja2Templates
 
 from datetime import datetime, timedelta
 
-from aggregator.auth import is_public_mode
+from aggregator.auth import is_public_mode, require_invite
 from aggregator.config import CATEGORY_RULES, STORES
 from aggregator.db import (
     count_with_length, get_brands, get_category_counts, query_deals, store_status,
 )
+from aggregator.web.invite_routes import _landing_context
 
 TEMPLATE_DIR = Path(__file__).resolve().parent / "templates"
 templates = Jinja2Templates(directory=str(TEMPLATE_DIR))
@@ -127,6 +128,12 @@ async def index(
     size_max: int | None = Query(None, alias="size_max"),
     reviewed: str = Query("", alias="reviewed"),
 ):
+    if not is_public_mode() and not await require_invite(request):
+        ctx = await _landing_context()
+        return templates.TemplateResponse(
+            request=request, name="invite.html", context=ctx,
+        )
+
     deals, has_more, deal_count = await _fetch_deals(
         category=category, store=store, brand=brand, min_discount=min_discount,
         min_price=min_price, max_price=max_price,
@@ -184,8 +191,10 @@ async def robots_txt():
     # In private mode, allow the landing/invite page to be indexed but block content
     return PlainTextResponse(
         "User-agent: *\n"
+        "Allow: /$\n"
         "Allow: /invite\n"
-        "Disallow: /\n"
+        "Disallow: /deals\n"
+        "Disallow: /status\n"
         "Disallow: /admin\n"
         "Disallow: /api/\n"
     )

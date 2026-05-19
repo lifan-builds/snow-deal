@@ -65,7 +65,7 @@ def isolated_app(tmp_path, monkeypatch):
     auth_db_module._conn = None
 
 
-def test_private_mode_serves_verification_home_without_session(isolated_app, monkeypatch):
+def test_private_mode_serves_public_landing_without_session(isolated_app, monkeypatch):
     monkeypatch.setenv("PUBLIC_MODE", "0")
     monkeypatch.setenv("SECRET_KEY", "test-secret")
 
@@ -74,8 +74,8 @@ def test_private_mode_serves_verification_home_without_session(isolated_app, mon
         protected = client.get("/deals", follow_redirects=False)
 
     assert home.status_code == 200
-    assert "affiliate_app_confirm.php" in home.text
-    assert "url=/invite" in home.text
+    assert "FreshPowder" in home.text
+    assert "affiliate_app_confirm.php" not in home.text
     assert protected.status_code == 302
     assert protected.headers["location"] == "/invite"
 
