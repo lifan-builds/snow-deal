@@ -6,12 +6,16 @@ import os
 
 import jwt
 from fastapi import Request, Response
-from fastapi.responses import RedirectResponse
+from fastapi.responses import HTMLResponse, RedirectResponse
 
 SESSION_COOKIE = "snow_deals_session"
 
 # Paths that don't require authentication
 PUBLIC_PATHS = {"/invite", "/waitlist", "/static", "/admin", "/api/event", "/robots.txt"}
+AVANTLINK_VERIFICATION_SCRIPT = (
+    '<script type="text/javascript" '
+    'src="https://classic.avantlink.com/affiliate_app_confirm.php?mode=js&authResponse=5678413094d069ddc7387b9bb2f01eab906daaeb"></script>'
+)
 
 
 def _env_flag(name: str, default: bool = False) -> bool:
@@ -122,5 +126,19 @@ async def auth_middleware(request: Request, call_next):
         if session == "admin":
             _maybe_set_admin_cookie(request, response)
         return response
+
+    if request.url.path == "/":
+        return HTMLResponse(
+            f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="refresh" content="0; url=/invite">
+{AVANTLINK_VERIFICATION_SCRIPT}
+<title>FreshPowder</title>
+</head>
+<body><a href="/invite">Continue to FreshPowder</a></body>
+</html>"""
+        )
 
     return RedirectResponse(url=auth_redirect_path(), status_code=302)

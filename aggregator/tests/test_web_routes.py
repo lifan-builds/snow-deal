@@ -65,15 +65,19 @@ def isolated_app(tmp_path, monkeypatch):
     auth_db_module._conn = None
 
 
-def test_private_mode_redirects_home_without_session(isolated_app, monkeypatch):
+def test_private_mode_serves_verification_home_without_session(isolated_app, monkeypatch):
     monkeypatch.setenv("PUBLIC_MODE", "0")
     monkeypatch.setenv("SECRET_KEY", "test-secret")
 
     with TestClient(app_module.create_app()) as client:
-        response = client.get("/", follow_redirects=False)
+        home = client.get("/", follow_redirects=False)
+        protected = client.get("/deals", follow_redirects=False)
 
-    assert response.status_code == 302
-    assert response.headers["location"] == "/invite"
+    assert home.status_code == 200
+    assert "affiliate_app_confirm.php" in home.text
+    assert "url=/invite" in home.text
+    assert protected.status_code == 302
+    assert protected.headers["location"] == "/invite"
 
 
 def test_private_mode_requires_secret_key(isolated_app, monkeypatch):
