@@ -14,7 +14,7 @@ SESSION_COOKIE = "snow_deals_session"
 PUBLIC_PATHS = {"/invite", "/waitlist", "/static", "/admin", "/api/event", "/robots.txt"}
 AVANTLINK_VERIFICATION_SCRIPT = (
     '<script type="text/javascript" '
-    'src="https://classic.avantlink.com/affiliate_app_confirm.php?mode=js&authResponse=5678413094d069ddc7387b9bb2f01eab906daaeb"></script>'
+    'src="http://classic.avantlink.com/affiliate_app_confirm.php?mode=js&authResponse=5678413094d069ddc7387b9bb2f01eab906daaeb"></script>'
 )
 
 
