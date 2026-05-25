@@ -39,3 +39,4 @@ FreshPowder (snow-deal) is a ski & snowboard deal aggregator that tracks prices 
 4. htmx load-more pattern: `hx-target="this"` on the button leaves the wrapper div. Must use `hx-target="closest .load-more-wrap"` with `hx-swap="outerHTML"`.
 5. Headless Shopify (Hydrogen/Oxygen) stores return 404 on JSON API endpoints — must use Playwright browser scraping.
 6. Shared `_JS_PARSE_PRICE` regex `[\d,]+\.\d{2}` fails on whole-dollar prices like "$1,150" — stores with non-decimal prices need custom `[\d,]+\.?\d*` regex.
+7. SQLite Performance: Correlated subqueries (e.g., `scraped_at = (SELECT MAX(d2.scraped_at) FROM deals d2 WHERE d2.store = deals.store)`) degrade to O(N^2) as the table grows. Use an `INNER JOIN (SELECT store, MAX(scraped_at) FROM deals GROUP BY store)` to achieve O(N) performance.

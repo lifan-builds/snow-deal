@@ -18,6 +18,7 @@ FreshPowder focuses on growth: seeding users, enabling virality, and preparing f
 - [ ] Pro tier ($5-8/mo) gating premium features
 - [ ] Custom domain (freshpowder.deals or similar)
 
+- [x] Stale/out-of-stock parser fixes just landed; next step: run scrape to verify. (done 2026-04-26)
 ## Findings
 - BlueZone Sports pagination shows "1 / 5" but actually has 9 pages (2026-03-13)
 - `" used "` keyword with space padding avoids matching "unused"/"refused" — critical for exclusion keywords (2026-04-07)
