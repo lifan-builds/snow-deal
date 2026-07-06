@@ -12,13 +12,10 @@ snow_deals_aggregator.egg-info/
 tests/
 ```
 
-## Rules
+## Operating Constraints
 
-### Never
-1. Never store secrets or credentials in context files.
-
-### Always
-1. Always preserve project-specific instructions when migrating context.
+- Do not store secrets or credentials in context files.
+- Preserve project-specific instructions when migrating context.
 
 ## Workflow
 - Setup: project-specific.

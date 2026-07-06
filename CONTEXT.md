@@ -10,22 +10,15 @@ FreshPowder (snow-deal) is a ski & snowboard deal aggregator that tracks prices 
 - `snow_deals/` - Python CLI (secondary)
 - `.github/workflows/` - Cron scraper (every 6h)
 
-## Rules
+## Operating Constraints
 
-### Never
-1. Never commit secrets (cookies.json, .env, Turso tokens) — they're in-tree and must stay untracked
-2. Never scrape without testing categorization first — mis-categorized products pollute the feed
-3. Never skip the freshness/stock checks when adding a new parser
-
-### Always
-1. Always space-pad exclusion keywords (" used " not "used") to avoid substring false positives
-2. Always run python -m pytest aggregator/tests/ -x -q before commit
-3. Always verify selectors live via Playwright MCP before adding a new store
-
-### Objectives
-1. All tests pass (python -m pytest aggregator/tests/ -x -q exits 0)
-2. Web app boots cleanly (uvicorn aggregator.web.app:create_app --factory exits 0 startup)
-3. Scraper runs without parser errors (python -m aggregator.cli scrape exits 0)
+- Do not commit secrets (cookies.json, .env, Turso tokens) — they're in-tree and must stay untracked.
+- Do not scrape without testing categorization first — mis-categorized products pollute the feed.
+- Do not skip the freshness/stock checks when adding a new parser.
+- Space-pad exclusion keywords (" used " not "used") to avoid substring false positives.
+- Run python -m pytest aggregator/tests/ -x -q before commit.
+- Verify selectors live via Playwright MCP before adding a new store.
+- Web app boots cleanly (uvicorn aggregator.web.app:create_app --factory exits 0 startup).
 
 ## Workflow
 - Setup: `cd aggregator && pip install -e .`
@@ -33,6 +26,9 @@ FreshPowder (snow-deal) is a ski & snowboard deal aggregator that tracks prices 
 - Test: `python -m pytest aggregator/tests/ -x -q`
 - Run Scrape: `python -m aggregator.cli scrape`
 
+### Verification
+- All tests pass (`python -m pytest aggregator/tests/ -x -q` exits 0)
+- Scraper runs without parser errors (`python -m aggregator.cli scrape` exits 0)
 ## Learned Patterns
 1. Exclusion keyword design: space-padded `" used "` prevents matching "unused"/"refused". Prepend space to search string so keywords match at start: `f" {name} {url}".lower()`.
 2. Model name ambiguity: Single-word names like "frontier", "ultra", "hera" are too ambiguous. Must use brand-qualified multi-word entries.

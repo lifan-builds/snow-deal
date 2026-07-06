@@ -1,0 +1,648 @@
+{
+  "schema": 1,
+  "updated_at": "2026-07-06",
+  "source_hash": "0c67ca8c74c636e3fe6a4fd9da48b5f0e6ce3a53805587c2d915d17ddf54bd4f",
+  "sources": [
+    {
+      "path": "CONTEXT.md",
+      "sha256": "532ab1f46b209ee443ce6b8045d4d9c09b4ec9cd885b610ed3ba7f279df90c8f",
+      "lines": 154
+    },
+    {
+      "path": "NOW.md",
+      "sha256": "f64ed8975fb6e8bb962e347560202e2d4bd8168f0bd237a2e9f3b0472e1bb467",
+      "lines": 14
+    },
+    {
+      "path": "PLAN.md",
+      "sha256": "846f54399faa6b031271f31062f5740a7d6943be8973e90ce887dc8bed01f1ef",
+      "lines": 44
+    }
+  ],
+  "cards": [
+    {
+      "id": "ctx-context-project",
+      "title": "CONTEXT.md: Project",
+      "summary": "FreshPowder (snow-deal) is a ski & snowboard deal aggregator that tracks prices across 20+ North American retailers every 6 hours, matches expert review scores from OutdoorGearLab and GoodRide, and surfaces the best d...",
+      "source": "CONTEXT.md#project",
+      "source_path": "CONTEXT.md",
+      "kind": "project",
+      "scope": "project",
+      "importance": 0.65,
+      "confidence": "confirmed",
+      "recency": "2026-07-06",
+      "tokens_est": 96,
+      "tags": [
+        "context",
+        "project"
+      ],
+      "read_when": [
+        "working on project"
+      ],
+      "card_path": ".context-harness/cards/ctx-context-project.md",
+      "chunk_path": "",
+      "content_sha256": "b7120fbb87fceec96377d498d59ffdc0edb498289541c9b28d9931482f8b44c0",
+      "key_facts": [
+        "FreshPowder (snow-deal) is a ski & snowboard deal aggregator that tracks prices across 20+ North American retailers every 6 hours, matches expert review scor..."
+      ]
+    },
+    {
+      "id": "ctx-context-structure",
+      "title": "CONTEXT.md: Structure",
+      "summary": "aggregator/ - Main product: FreshPowder web app (FastAPI, htmx, Turso/SQLite, Playwright)",
+      "source": "CONTEXT.md#structure",
+      "source_path": "CONTEXT.md",
+      "kind": "context",
+      "scope": "project",
+      "importance": 0.65,
+      "confidence": "confirmed",
+      "recency": "2026-07-06",
+      "tokens_est": 59,
+      "tags": [
+        "context",
+        "structure"
+      ],
+      "read_when": [
+        "working on structure"
+      ],
+      "card_path": ".context-harness/cards/ctx-context-structure.md",
+      "chunk_path": "",
+      "content_sha256": "c01aaa6bd68b48a98f5318e0398da7a0320b084dde99319414d813090f45c91a",
+      "key_facts": [
+        "aggregator/ - Main product: FreshPowder web app (FastAPI, htmx, Turso/SQLite, Playwright)",
+        "tampermonkey/ - Browser userscript (secondary)",
+        "snowdeals/ - Python CLI (secondary)",
+        ".github/workflows/ - Cron scraper (every 6h)"
+      ]
+    },
+    {
+      "id": "ctx-context-operating-constraints",
+      "title": "CONTEXT.md: Operating Constraints",
+      "summary": "Do not commit secrets (cookies.json, .env, Turso tokens) — they're in-tree and must stay untracked.",
+      "source": "CONTEXT.md#operating-constraints",
+      "source_path": "CONTEXT.md",
+      "kind": "constraints",
+      "scope": "project",
+      "importance": 0.9,
+      "confidence": "confirmed",
+      "recency": "2026-07-06",
+      "tokens_est": 145,
+      "tags": [
+        "context",
+        "operating-constraints",
+        "constraints"
+      ],
+      "read_when": [
+        "before planning or editing",
+        "checking project constraints",
+        "update context safely"
+      ],
+      "card_path": ".context-harness/cards/ctx-context-operating-constraints.md",
+      "chunk_path": "",
+      "content_sha256": "7b67a60c8692edc443362bcd338a6feb0e1edc4c4523602ae558f7dd0f5a4ce7",
+      "key_facts": [
+        "Do not commit secrets (cookies.json, .env, Turso tokens) — they're in-tree and must stay untracked.",
+        "Do not scrape without testing categorization first — mis-categorized products pollute the feed.",
+        "Do not skip the freshness/stock checks when adding a new parser.",
+        "Space-pad exclusion keywords (\" used \" not \"used\") to avoid substring false positives.",
+        "Run python -m pytest aggregator/tests/ -x -q before commit."
+      ]
+    },
+    {
+      "id": "ctx-context-workflow",
+      "title": "CONTEXT.md: Workflow",
+      "summary": "Setup: cd aggregator && pip install -e .",
+      "source": "CONTEXT.md#workflow",
+      "source_path": "CONTEXT.md",
+      "kind": "workflow",
+      "scope": "project",
+      "importance": 0.9,
+      "confidence": "confirmed",
+      "recency": "2026-07-06",
+      "tokens_est": 95,
+      "tags": [
+        "context",
+        "workflow",
+        "verification"
+      ],
+      "read_when": [
+        "running, testing, linting, deploying, deployment, or verifying changes"
+      ],
+      "card_path": ".context-harness/cards/ctx-context-workflow.md",
+      "chunk_path": "",
+      "content_sha256": "ac5926f3cbf8caf05487b47804d9dfcfbca375e5ecba1c11c082e3331668040f",
+      "key_facts": [
+        "Setup: cd aggregator && pip install -e .",
+        "Run: uvicorn aggregator.web.app:createapp --factory --reload",
+        "Test: python -m pytest aggregator/tests/ -x -q",
+        "Run Scrape: python -m aggregator.cli scrape",
+        "All tests pass (python -m pytest aggregator/tests/ -x -q exits 0)"
+      ]
+    },
+    {
+      "id": "ctx-context-learned-patterns",
+      "title": "CONTEXT.md: Learned Patterns",
+      "summary": "Exclusion keyword design: space-padded \" used \" prevents matching \"unused\"/\"refused\". Prepend space to search string so keywords match at start: f\" {name} {url}\".lower().",
+      "source": "CONTEXT.md#learned-patterns",
+      "source_path": "CONTEXT.md",
+      "kind": "lesson",
+      "scope": "project",
+      "importance": 0.78,
+      "confidence": "confirmed",
+      "recency": "2026-07-06",
+      "tokens_est": 290,
+      "tags": [
+        "context",
+        "learned-patterns",
+        "lesson"
+      ],
+      "read_when": [
+        "avoiding repeated mistakes or applying prior corrections",
+        "update context with durable lessons"
+      ],
+      "card_path": ".context-harness/cards/ctx-context-learned-patterns.md",
+      "chunk_path": "",
+      "content_sha256": "dd4e7a4c62ffe2db84fb946a0e6703db12d615c6460246732b488eb901773796",
+      "key_facts": [
+        "Exclusion keyword design: space-padded \" used \" prevents matching \"unused\"/\"refused\". Prepend space to search string so keywords match at start: f\" {name} {u...",
+        "Model name ambiguity: Single-word names like \"frontier\", \"ultra\", \"hera\" are too ambiguous. Must use brand-qualified multi-word entries.",
+        "Brand fallback categorization catches accessories as hardgoods — NOTHARDGOODSKEYWORDS must be aggressively expanded.",
+        "htmx load-more pattern: hx-target=\"this\" on the button leaves the wrapper div. Must use hx-target=\"closest .load-more-wrap\" with hx-swap=\"outerHTML\".",
+        "Headless Shopify (Hydrogen/Oxygen) stores return 404 on JSON API endpoints — must use Playwright browser scraping."
+      ]
+    },
+    {
+      "id": "ctx-context-language",
+      "title": "CONTEXT.md: Language",
+      "summary": "canonical terms",
+      "source": "CONTEXT.md#language",
+      "source_path": "CONTEXT.md",
+      "kind": "language",
+      "scope": "project",
+      "importance": 0.82,
+      "confidence": "confirmed",
+      "recency": "2026-07-06",
+      "tokens_est": 12,
+      "tags": [
+        "context",
+        "language"
+      ],
+      "read_when": [
+        "using project terms or resolving naming ambiguity",
+        "update context terminology"
+      ],
+      "card_path": ".context-harness/cards/ctx-context-language.md",
+      "chunk_path": "",
+      "content_sha256": "51902124068abada99bf937fb9fdd8cd3788316fc6537bfef79763e9b10bd1bb",
+      "key_facts": []
+    },
+    {
+      "id": "ctx-context-relationships",
+      "title": "CONTEXT.md: Relationships",
+      "summary": "AGENTS.md is the small activation layer; CONTEXT.md is the durable source of truth.",
+      "source": "CONTEXT.md#relationships",
+      "source_path": "CONTEXT.md",
+      "kind": "invariant",
+      "scope": "project",
+      "importance": 0.82,
+      "confidence": "confirmed",
+      "recency": "2026-07-06",
+      "tokens_est": 22,
+      "tags": [
+        "context",
+        "relationships",
+        "invariant"
+      ],
+      "read_when": [
+        "changing architecture or domain relationships",
+        "update context invariants"
+      ],
+      "card_path": ".context-harness/cards/ctx-context-relationships.md",
+      "chunk_path": "",
+      "content_sha256": "b86243e9d63f676255e0313fca751d6b34a5d8770f901f752d907f2a090a560e",
+      "key_facts": [
+        "AGENTS.md is the small activation layer; CONTEXT.md is the durable source of truth."
+      ]
+    },
+    {
+      "id": "ctx-context-flagged-ambiguities",
+      "title": "CONTEXT.md: Flagged Ambiguities",
+      "summary": "Project-specific verification commands may need confirmation.",
+      "source": "CONTEXT.md#flagged-ambiguities",
+      "source_path": "CONTEXT.md",
+      "kind": "context",
+      "scope": "project",
+      "importance": 0.65,
+      "confidence": "confirmed",
+      "recency": "2026-07-06",
+      "tokens_est": 16,
+      "tags": [
+        "context",
+        "flagged-ambiguities"
+      ],
+      "read_when": [
+        "working on flagged ambiguities"
+      ],
+      "card_path": ".context-harness/cards/ctx-context-flagged-ambiguities.md",
+      "chunk_path": "",
+      "content_sha256": "91878c9fb7d8549e914811884d204b26bdd110def1800c824188afc4e0f76a2f",
+      "key_facts": [
+        "Project-specific verification commands may need confirmation."
+      ]
+    },
+    {
+      "id": "ctx-context-imported-agent-notes",
+      "title": "CONTEXT.md: Imported Agent Notes",
+      "summary": "Context for Imported Agent Notes.",
+      "source": "CONTEXT.md#imported-agent-notes",
+      "source_path": "CONTEXT.md",
+      "kind": "context",
+      "scope": "project",
+      "importance": 0.65,
+      "confidence": "confirmed",
+      "recency": "2026-07-06",
+      "tokens_est": 38,
+      "tags": [
+        "context",
+        "imported-agent-notes"
+      ],
+      "read_when": [
+        "working on imported agent notes"
+      ],
+      "card_path": ".context-harness/cards/ctx-context-imported-agent-notes.md",
+      "chunk_path": "",
+      "content_sha256": "a2602c52326c70605f84797b315a86021535d3cc9dff4d6baaacbfbe5c88d7aa",
+      "key_facts": []
+    },
+    {
+      "id": "ctx-context-project-overview",
+      "title": "CONTEXT.md: Project Overview",
+      "summary": "FreshPowder (repo: snow-deal) is a ski & snowboard deal aggregator that tracks prices across 20+ North American retailers every 6 hours, matches expert review scores from OutdoorGearLab and GoodRide, and surfaces the...",
+      "source": "CONTEXT.md#project-overview",
+      "source_path": "CONTEXT.md",
+      "kind": "project",
+      "scope": "project",
+      "importance": 0.65,
+      "confidence": "confirmed",
+      "recency": "2026-07-06",
+      "tokens_est": 122,
+      "tags": [
+        "context",
+        "project-overview",
+        "project"
+      ],
+      "read_when": [
+        "working on project overview"
+      ],
+      "card_path": ".context-harness/cards/ctx-context-project-overview.md",
+      "chunk_path": "",
+      "content_sha256": "41bbcb22c129ee527b4da3e5de4eed2807a93ece8c6e9d5f0cb95c324b63331a",
+      "key_facts": [
+        "FreshPowder (repo: snow-deal) is a ski & snowboard deal aggregator that tracks prices across 20+ North American retailers every 6 hours, matches expert revie...",
+        "Live at: https://snow-deal.vercel.app"
+      ]
+    },
+    {
+      "id": "ctx-context-tech-stack",
+      "title": "CONTEXT.md: Tech Stack",
+      "summary": "Backend: Python 3.12, FastAPI, aiosqlite",
+      "source": "CONTEXT.md#tech-stack",
+      "source_path": "CONTEXT.md",
+      "kind": "context",
+      "scope": "project",
+      "importance": 0.65,
+      "confidence": "confirmed",
+      "recency": "2026-07-06",
+      "tokens_est": 186,
+      "tags": [
+        "context",
+        "tech-stack",
+        "web-aggregator-primary-aggregator",
+        "tampermonkey-userscript-secondary-tampermonkey",
+        "python-cli-secondary-snow-deals"
+      ],
+      "read_when": [
+        "working on tech stack"
+      ],
+      "card_path": ".context-harness/cards/ctx-context-tech-stack.md",
+      "chunk_path": "",
+      "content_sha256": "71177aa7df912a009093abd22fdc9bda867d59ec4dc446ef500bee517c2da885",
+      "key_facts": [
+        "Backend: Python 3.12, FastAPI, aiosqlite",
+        "Frontend: Jinja2 templates, htmx 2.0.4, vanilla JS, custom CSS (dark theme)",
+        "Database: SQLite (deals), Turso cloud (auth/sessions/events)",
+        "Auth: JWT-based invite codes, rate limiting",
+        "Deployment: Vercel Python Functions for the primary site; Docker on Render retained as fallback"
+      ]
+    },
+    {
+      "id": "ctx-context-project-structure",
+      "title": "CONTEXT.md: Project Structure",
+      "summary": "snow-deal/",
+      "source": "CONTEXT.md#project-structure",
+      "source_path": "CONTEXT.md",
+      "kind": "project",
+      "scope": "project",
+      "importance": 0.65,
+      "confidence": "confirmed",
+      "recency": "2026-07-06",
+      "tokens_est": 523,
+      "tags": [
+        "context",
+        "project-structure",
+        "project"
+      ],
+      "read_when": [
+        "working on project structure"
+      ],
+      "card_path": ".context-harness/cards/ctx-context-project-structure.md",
+      "chunk_path": "",
+      "content_sha256": "40babc64e96cb66c31c68bb09248384751e67143e9d0de99cb74ea112d48d0f8",
+      "key_facts": [
+        "snow-deal/",
+        "├── aggregator/                    # Main product — FreshPowder web app",
+        "│   ├── aggregator/",
+        "│   │   ├── config.py              # Stores, categories, keywords, model names, brands",
+        "│   │   ├── browser.py             # Playwright browser scraping (JS-rendered sites)"
+      ]
+    },
+    {
+      "id": "ctx-context-development-workflow",
+      "title": "CONTEXT.md: Development Workflow",
+      "summary": "cd aggregator && pip install -e .",
+      "source": "CONTEXT.md#development-workflow",
+      "source_path": "CONTEXT.md",
+      "kind": "workflow",
+      "scope": "project",
+      "importance": 0.65,
+      "confidence": "confirmed",
+      "recency": "2026-07-06",
+      "tokens_est": 76,
+      "tags": [
+        "context",
+        "development-workflow",
+        "workflow"
+      ],
+      "read_when": [
+        "working on development workflow"
+      ],
+      "card_path": ".context-harness/cards/ctx-context-development-workflow.md",
+      "chunk_path": "",
+      "content_sha256": "53619cfe21bafd24e114e023d3e2a61c692d06d442ab43b6d3e04fc702120f3e",
+      "key_facts": [
+        "cd aggregator && pip install -e .",
+        "uvicorn aggregator.web.app:createapp --factory --reload",
+        "python -m pytest aggregator/tests/ -x -q",
+        "python -m aggregator.cli scrape",
+        "python -m aggregator.cli generate-codes --count 5"
+      ]
+    },
+    {
+      "id": "ctx-context-coding-conventions",
+      "title": "CONTEXT.md: Coding Conventions",
+      "summary": "Templates: Jinja2 + htmx for interactivity, no JS frameworks",
+      "source": "CONTEXT.md#coding-conventions",
+      "source_path": "CONTEXT.md",
+      "kind": "context",
+      "scope": "project",
+      "importance": 0.65,
+      "confidence": "confirmed",
+      "recency": "2026-07-06",
+      "tokens_est": 165,
+      "tags": [
+        "context",
+        "coding-conventions"
+      ],
+      "read_when": [
+        "working on coding conventions"
+      ],
+      "card_path": ".context-harness/cards/ctx-context-coding-conventions.md",
+      "chunk_path": "",
+      "content_sha256": "bb025c5f37a626ddfd35f04c16384b343135c073c207bce4d857fb4b7f412513",
+      "key_facts": [
+        "Templates: Jinja2 + htmx for interactivity, no JS frameworks",
+        "CSS: Custom properties (CSS variables), dark theme only, Inter font",
+        "JavaScript: Vanilla JS inline in templates, no build step",
+        "Python: Type annotations on public functions, async/await throughout",
+        "Categorization: Keyword-based in config.py — use space-padded keywords to avoid substring false positives (e.g., \" used \" not \"used\")"
+      ]
+    },
+    {
+      "id": "ctx-context-architecture-decisions",
+      "title": "CONTEXT.md: Architecture Decisions",
+      "summary": "Invite-gated access: Controlled growth via human-readable invite codes (POWDER-SUMMIT-42). Landing page is public for SEO/marketing, deal content requires authentication.",
+      "source": "CONTEXT.md#architecture-decisions",
+      "source_path": "CONTEXT.md",
+      "kind": "context",
+      "scope": "project",
+      "importance": 0.65,
+      "confidence": "confirmed",
+      "recency": "2026-07-06",
+      "tokens_est": 279,
+      "tags": [
+        "context",
+        "architecture-decisions"
+      ],
+      "read_when": [
+        "working on architecture decisions"
+      ],
+      "card_path": ".context-harness/cards/ctx-context-architecture-decisions.md",
+      "chunk_path": "",
+      "content_sha256": "ba4363e16e1254ba97858ebae0c3a94042fd0d0b7d27698cf91fbd8e57eb414f",
+      "key_facts": [
+        "Invite-gated access: Controlled growth via human-readable invite codes (POWDER-SUMMIT-42). Landing page is public for SEO/marketing, deal content requires au...",
+        "Server-rendered with htmx: No SPA framework. Jinja2 templates + htmx partials give fast interactivity with minimal JS complexity. Cards render server-side, f...",
+        "SQLite + Turso split: Deal data in local SQLite (fast reads, scraped every 6h). Auth/session/event data in Turso cloud DB (persistent across deploys).",
+        "Keyword-based categorization: Products categorized by keyword matching against name/URL, with brand fallback. Not ML-based — fast, deterministic, debuggable....",
+        "GitHub Actions scraping: Runs on cron, not on the web server. Keeps the web app stateless and fast. Scrape results committed to DB."
+      ]
+    },
+    {
+      "id": "ctx-now-now",
+      "title": "NOW.md: Now",
+      "summary": "(none)",
+      "source": "NOW.md#now",
+      "source_path": "NOW.md",
+      "kind": "resume",
+      "scope": "task",
+      "importance": 0.95,
+      "confidence": "confirmed",
+      "recency": "2026-04-28",
+      "tokens_est": 51,
+      "tags": [
+        "now",
+        "resume"
+      ],
+      "read_when": [
+        "resuming the current session",
+        "choosing the immediate next step",
+        "update context after current work"
+      ],
+      "card_path": ".context-harness/cards/ctx-now-now.md",
+      "chunk_path": "",
+      "content_sha256": "f64ed8975fb6e8bb962e347560202e2d4bd8168f0bd237a2e9f3b0472e1bb467",
+      "key_facts": [
+        "(none)",
+        "None.",
+        "Pick a task or review PLAN.md.",
+        "Last modified: 2026-04-26T17:39:10.101Z",
+        "Files touched: (none yet)"
+      ]
+    },
+    {
+      "id": "ctx-plan-goal",
+      "title": "PLAN.md: Goal",
+      "summary": "FreshPowder focuses on growth: seeding users, enabling virality, and preparing for monetization. Target: Seed 100 users and measure viral coefficient.",
+      "source": "PLAN.md#goal",
+      "source_path": "PLAN.md",
+      "kind": "plan",
+      "scope": "task",
+      "importance": 0.85,
+      "confidence": "confirmed",
+      "recency": "2026-05-17",
+      "tokens_est": 38,
+      "tags": [
+        "plan",
+        "goal"
+      ],
+      "read_when": [
+        "continuing the active task",
+        "checking done criteria or decisions",
+        "update context with task-local progress"
+      ],
+      "card_path": ".context-harness/cards/ctx-plan-goal.md",
+      "chunk_path": "",
+      "content_sha256": "003c834e9d759ee6caf992d09e71994a10a4a001ae5ffbde2bfa3019b63f5190",
+      "key_facts": [
+        "FreshPowder focuses on growth: seeding users, enabling virality, and preparing for monetization. Target: Seed 100 users and measure viral coefficient."
+      ]
+    },
+    {
+      "id": "ctx-plan-progress",
+      "title": "PLAN.md: Progress",
+      "summary": "[ ] Monitor analytics and gather feedback from initial users",
+      "source": "PLAN.md#progress",
+      "source_path": "PLAN.md",
+      "kind": "plan",
+      "scope": "task",
+      "importance": 0.85,
+      "confidence": "confirmed",
+      "recency": "2026-05-17",
+      "tokens_est": 207,
+      "tags": [
+        "plan",
+        "progress"
+      ],
+      "read_when": [
+        "continuing the active task",
+        "checking done criteria or decisions",
+        "update context with task-local progress"
+      ],
+      "card_path": ".context-harness/cards/ctx-plan-progress.md",
+      "chunk_path": "",
+      "content_sha256": "4bd2e64e702e0df15c3ef33d0618c4bf452e2c275ad550f07c2e9fcf70f0d01a",
+      "key_facts": [
+        "[ ] Monitor analytics and gather feedback from initial users",
+        "[ ] Implement viral invite loop (auto-generate 3 codes on signup, /my-codes page)",
+        "[ ] Join affiliate programs (AvantLink for evo, Backcountry, REI)",
+        "[ ] Replace direct retailer links with affiliate links",
+        "[ ] Post on Rednote with invite codes"
+      ]
+    },
+    {
+      "id": "ctx-plan-findings",
+      "title": "PLAN.md: Findings",
+      "summary": "BlueZone Sports pagination shows \"1 / 5\" but actually has 9 pages (2026-03-13)",
+      "source": "PLAN.md#findings",
+      "source_path": "PLAN.md",
+      "kind": "plan",
+      "scope": "task",
+      "importance": 0.85,
+      "confidence": "confirmed",
+      "recency": "2026-05-17",
+      "tokens_est": 299,
+      "tags": [
+        "plan",
+        "findings"
+      ],
+      "read_when": [
+        "continuing the active task",
+        "checking done criteria or decisions",
+        "update context with task-local progress"
+      ],
+      "card_path": ".context-harness/cards/ctx-plan-findings.md",
+      "chunk_path": "",
+      "content_sha256": "be97167fd57881920ab495aedeb21316e923ea1a7221228f45489cf169052e72",
+      "key_facts": [
+        "BlueZone Sports pagination shows \"1 / 5\" but actually has 9 pages (2026-03-13)",
+        "\" used \" keyword with space padding avoids matching \"unused\"/\"refused\" — critical for exclusion keywords (2026-04-07)",
+        "Single-word model names like \"frontier\", \"ultra\", \"hera\" are too ambiguous. Must use brand-qualified multi-word entries. (2026-04-07)",
+        "Brand fallback categorization catches accessories as hardgoods — NOTHARDGOODSKEYWORDS must be aggressively expanded. (2026-04-07)",
+        "htmx hx-target=\"this\" on load-more button leaves the wrapper div. Must use hx-target=\"closest .load-more-wrap\" with hx-swap=\"outerHTML\". (2026-04-07)"
+      ]
+    },
+    {
+      "id": "ctx-plan-decisions",
+      "title": "PLAN.md: Decisions",
+      "summary": "Invite-gated access with public landing page to control growth and create exclusivity.",
+      "source": "PLAN.md#decisions",
+      "source_path": "PLAN.md",
+      "kind": "plan",
+      "scope": "task",
+      "importance": 0.85,
+      "confidence": "confirmed",
+      "recency": "2026-05-17",
+      "tokens_est": 109,
+      "tags": [
+        "plan",
+        "decisions"
+      ],
+      "read_when": [
+        "continuing the active task",
+        "checking done criteria or decisions",
+        "update context with task-local progress"
+      ],
+      "card_path": ".context-harness/cards/ctx-plan-decisions.md",
+      "chunk_path": "",
+      "content_sha256": "d33d49c5b55db08752a70dd6f71b58763363e107e51c6e880b9b83bef6bcaccf",
+      "key_facts": [
+        "Invite-gated access with public landing page to control growth and create exclusivity.",
+        "Repo set to private. Scraper configs and categorization rules are competitive advantages.",
+        "Keyword-based categorization over ML. Fast, deterministic, debuggable.",
+        "SQLite for deals + Turso for auth. Fast/ephemeral deals, persistent auth.",
+        "htmx over React/SPA. Server-rendered templates give fast interactivity without JS framework complexity."
+      ]
+    },
+    {
+      "id": "ctx-plan-archive",
+      "title": "PLAN.md: Archive",
+      "summary": "Phase 1: Core Product (Complete)",
+      "source": "PLAN.md#archive",
+      "source_path": "PLAN.md",
+      "kind": "plan",
+      "scope": "task",
+      "importance": 0.85,
+      "confidence": "confirmed",
+      "recency": "2026-05-17",
+      "tokens_est": 44,
+      "tags": [
+        "plan",
+        "archive"
+      ],
+      "read_when": [
+        "continuing the active task",
+        "checking done criteria or decisions",
+        "update context with task-local progress"
+      ],
+      "card_path": ".context-harness/cards/ctx-plan-archive.md",
+      "chunk_path": "",
+      "content_sha256": "eaa50e81c9cb7f29903233413d8f5792f2b6c3f2d25ec687f7e572cf5b5ace04",
+      "key_facts": [
+        "Phase 1: Core Product (Complete)",
+        "Phase 2: Auth & Landing (Complete)",
+        "Phase 3: UI Polish & GTM Readiness (Complete)",
+        "Phase 3b: Store Expansion & Data Quality (Complete)"
+      ]
+    }
+  ]
+}
