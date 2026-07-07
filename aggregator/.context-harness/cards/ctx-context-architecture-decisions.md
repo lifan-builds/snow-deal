@@ -24,5 +24,10 @@ SQLite + htmx: SQLite via aiosqlite for persistence (no re-scraping per page loa
 - Data quality: Multi-layer pipeline — EXCLUDEKEYWORDS → URL domain stripping → keyword categorization → boot disambiguation (disambiguateboot()) → brand/model...
 - Deployment: GitHub Actions scrapes every 6h, uploads deals.db as release asset. Vercel bundles the DB during deployment and serves the FastAPI app as Python...
 
-## Open next
+## Retrieval order
+- Read `NOW.md` and concise `CONTEXT.md` as the always-read layer.
+- Use this card before opening bulky `PLAN.md`, chunks, or raw source sections for this topic.
+- Open raw detail only when this summary is insufficient for the task.
+
+## Open next only if needed
 - `CONTEXT.md#architecture-decisions`

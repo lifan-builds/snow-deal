@@ -26,5 +26,10 @@ Context-harness v3 migration completed for aggregator.
 - Last modified: 2026-06-26T17:31:29.912Z
 - Files touched: AGENTS.md, CONTEXT.md, NOW.md, scripts/
 
-## Open next
+## Retrieval order
+- Read `NOW.md` and concise `CONTEXT.md` as the always-read layer.
+- Use this card before opening bulky `PLAN.md`, chunks, or raw source sections for this topic.
+- Open raw detail only when this summary is insufficient for the task.
+
+## Open next only if needed
 - `NOW.md#now`

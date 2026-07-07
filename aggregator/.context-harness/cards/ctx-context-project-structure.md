@@ -24,6 +24,11 @@ aggregator/
 - ├── PLANS.md                     # Living execution plan
 - ├── README.md                    # Human-oriented project README
 
-## Open next
+## Retrieval order
+- Read `NOW.md` and concise `CONTEXT.md` as the always-read layer.
+- Use this card before opening bulky `PLAN.md`, chunks, or raw source sections for this topic.
+- Open raw detail only when this summary is insufficient for the task.
+
+## Open next only if needed
 - `CONTEXT.md#project-structure`
 - `.context-harness/chunks/ctx-context-project-structure.md`

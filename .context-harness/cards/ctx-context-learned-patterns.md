@@ -25,5 +25,10 @@ Exclusion keyword design: space-padded " used " prevents matching "unused"/"refu
 - htmx load-more pattern: hx-target="this" on the button leaves the wrapper div. Must use hx-target="closest .load-more-wrap" with hx-swap="outerHTML".
 - Headless Shopify (Hydrogen/Oxygen) stores return 404 on JSON API endpoints — must use Playwright browser scraping.
 
-## Open next
+## Retrieval order
+- Read `NOW.md` and concise `CONTEXT.md` as the always-read layer.
+- Use this card before opening bulky `PLAN.md`, chunks, or raw source sections for this topic.
+- Open raw detail only when this summary is insufficient for the task.
+
+## Open next only if needed
 - `CONTEXT.md#learned-patterns`

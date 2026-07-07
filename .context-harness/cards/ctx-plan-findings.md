@@ -26,5 +26,10 @@ BlueZone Sports pagination shows "1 / 5" but actually has 9 pages (2026-03-13)
 - Brand fallback categorization catches accessories as hardgoods — NOTHARDGOODSKEYWORDS must be aggressively expanded. (2026-04-07)
 - htmx hx-target="this" on load-more button leaves the wrapper div. Must use hx-target="closest .load-more-wrap" with hx-swap="outerHTML". (2026-04-07)
 
-## Open next
+## Retrieval order
+- Read `NOW.md` and concise `CONTEXT.md` as the always-read layer.
+- Use this card before opening bulky `PLAN.md`, chunks, or raw source sections for this topic.
+- Open raw detail only when this summary is insufficient for the task.
+
+## Open next only if needed
 - `PLAN.md#findings`
