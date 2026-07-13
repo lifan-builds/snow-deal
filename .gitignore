@@ -23,7 +23,8 @@ cookies.json
 public/static/
 
 # Claude Code
-.claude/
+.claude/settings.local.json
+.claude/skills/project-init-iterate/
 CLAUDE.md
 
 # MCP / Playwright
