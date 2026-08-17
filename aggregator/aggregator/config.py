@@ -17,12 +17,6 @@ class StoreConfig:
     tax_free: bool = False  # True = no sales tax for WA buyers (Canadian stores, no-nexus stores)
     currency: str = "USD"   # Price currency (USD or CAD)
     shopify_products_limit: int = 250  # Lower for stores whose JSON feed fails at 250
-    
-    # Affiliate tracking
-    affiliate_network: str | None = None  # e.g., "avantlink", "impact", "skimlinks"
-    affiliate_merchant_id: str | None = None  # e.g., "12345"
-
-
 
 # ---------------------------------------------------------------------------
 # Store registry — ~16 ski/snowboard retailers sourced from uscardforum.com
