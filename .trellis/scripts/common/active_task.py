@@ -305,11 +305,22 @@ def _detect_platform(platform_input: dict[str, Any] | None, platform: str | None
 def _context_key(platform_name: str, kind: str, value: str) -> str:
     platform_name = _CONTEXT_KEY_PLATFORM_ALIASES.get(platform_name, platform_name)
     if kind == "transcript":
-        return f"{platform_name}_transcript_{_hash_value(value)}"
-    safe_value = _sanitize_key(value)
-    if safe_value:
-        return f"{platform_name}_{safe_value}"
-    return f"{platform_name}_{_hash_value(value)}"
+        context_key = f"{platform_name}_transcript_{_hash_value(value)}"
+    else:
+        safe_value = _sanitize_key(value)
+        context_key = (
+            f"{platform_name}_{safe_value}"
+            if safe_value
+            else f"{platform_name}_{_hash_value(value)}"
+        )
+
+    if _validated_context_key(context_key) is not None:
+        return context_key
+
+    digest = _hash_value(f"{platform_name}\0{kind}\0{value}")
+    label = _sanitize_key(f"{platform_name}_{kind}") or "session"
+    label = label[: 160 - len(digest) - 1].rstrip("._-") or "session"
+    return f"{label}_{digest}"
 
 
 def _iter_env_keys(
@@ -383,6 +394,29 @@ def _shell_ticket_dirs(repo_root: Path) -> tuple[Path, ...]:
     )
 
 
+def _resolved_ticket_dir(repo_root: Path, ticket_dir: Path) -> Path | None:
+    """Resolve a configured ticket directory only inside this repo's runtime."""
+    try:
+        root = repo_root.resolve()
+        runtime_dir = (repo_root / DIR_WORKFLOW / DIR_RUNTIME).resolve()
+        runtime_dir.relative_to(root)
+        resolved_dir = ticket_dir.resolve()
+        resolved_dir.relative_to(runtime_dir)
+    except (OSError, RuntimeError, ValueError):
+        return None
+    return resolved_dir
+
+
+def _resolved_ticket_path(ticket_dir: Path, ticket_path: Path) -> Path | None:
+    """Resolve a discovered ticket only inside its validated ticket directory."""
+    try:
+        resolved_path = ticket_path.resolve()
+        resolved_path.relative_to(ticket_dir)
+    except (OSError, RuntimeError, ValueError):
+        return None
+    return resolved_path
+
+
 def _remove_file(path: Path) -> bool:
     try:
         path.unlink()
@@ -451,7 +485,7 @@ def _ticket_cwd_matches_repo(ticket: dict[str, Any], repo_root: Path) -> bool:
         return True
     try:
         Path(cwd).resolve().relative_to(repo_root)
-    except ValueError:
+    except (OSError, RuntimeError, ValueError):
         return False
     return True
 
@@ -496,10 +530,14 @@ def _lookup_shell_ticket_context_key() -> str | None:
 
     now = time.time()
     candidates: set[str] = set()
-    for ticket_dir in _shell_ticket_dirs(repo_root):
-        if not ticket_dir.is_dir():
+    for configured_dir in _shell_ticket_dirs(repo_root):
+        ticket_dir = _resolved_ticket_dir(repo_root, configured_dir)
+        if ticket_dir is None or not ticket_dir.is_dir():
             continue
-        for ticket_path in ticket_dir.glob("*.json"):
+        for discovered_path in ticket_dir.glob("*.json"):
+            ticket_path = _resolved_ticket_path(ticket_dir, discovered_path)
+            if ticket_path is None:
+                continue
             context_key = _matching_ticket_context_key(ticket_path, repo_root, now)
             if context_key:
                 candidates.add(context_key)
