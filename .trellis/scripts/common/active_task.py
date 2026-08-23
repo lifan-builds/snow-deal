@@ -250,6 +250,13 @@ def _sanitize_key(raw: str) -> str:
     return safe[:160] if safe else ""
 
 
+def _validated_context_key(raw: str) -> str | None:
+    """Return a context key only when it already is one safe filename stem."""
+    if not isinstance(raw, str):
+        return None
+    return raw if _sanitize_key(raw) == raw else None
+
+
 def _hash_value(raw: str) -> str:
     return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:24]
 
@@ -468,7 +475,8 @@ def _matching_ticket_context_key(
         return None
     if not _pending_ticket_matches_args(ticket, repo_root):
         return None
-    return _string_value(ticket.get("context_key"))
+    context_key = ticket.get("context_key")
+    return _validated_context_key(context_key) if isinstance(context_key, str) else None
 
 
 def _lookup_shell_ticket_context_key() -> str | None:
@@ -600,8 +608,21 @@ def _active_from_ref(
     return ActiveTask(canonical, source_type, context_key, stale=not resolved.is_dir())
 
 
-def _context_path(repo_root: Path, context_key: str) -> Path:
-    return _runtime_sessions_dir(repo_root) / f"{context_key}.json"
+def _context_path(repo_root: Path, context_key: str) -> Path | None:
+    """Resolve one validated session file contained by this repository."""
+    safe_key = _validated_context_key(context_key)
+    if safe_key is None:
+        return None
+
+    try:
+        root = repo_root.resolve()
+        sessions_dir = _runtime_sessions_dir(repo_root).resolve()
+        sessions_dir.relative_to(root)
+        context_path = (sessions_dir / f"{safe_key}.json").resolve()
+        context_path.relative_to(sessions_dir)
+    except (OSError, RuntimeError, ValueError):
+        return None
+    return context_path
 
 
 def resolve_active_task(
@@ -627,11 +648,13 @@ def resolve_active_task(
         allow_environment_context=allow_environment_context,
     )
     if context_key:
-        context = _read_json(_context_path(repo_root, context_key)) or {}
-        task_ref = _string_value(context.get("current_task"))
-        active = _active_from_ref(task_ref, repo_root, "session", context_key)
-        if active:
-            return active
+        context_path = _context_path(repo_root, context_key)
+        if context_path is not None:
+            context = _read_json(context_path) or {}
+            task_ref = _string_value(context.get("current_task"))
+            active = _active_from_ref(task_ref, repo_root, "session", context_key)
+            if active:
+                return active
 
     if allow_single_session_fallback:
         fallback = _resolve_single_session_fallback(repo_root)
@@ -656,7 +679,9 @@ def _resolve_single_session_fallback(repo_root: Path) -> ActiveTask | None:
     if len(session_files) != 1:
         return None
 
-    session_file = session_files[0]
+    session_file = _context_path(repo_root, session_files[0].stem)
+    if session_file is None:
+        return None
     context = _read_json(session_file) or {}
     task_ref = _string_value(context.get("current_task"))
     if not task_ref:
@@ -712,6 +737,8 @@ def set_active_task(
         return None
 
     context_path = _context_path(repo_root, context_key)
+    if context_path is None:
+        return None
     context = _read_json(context_path) or {}
     context.update(_context_metadata(platform_input, platform, context_key))
     context["current_task"] = canonical
@@ -736,7 +763,7 @@ def clear_active_task(
         return previous
 
     context_path = _context_path(repo_root, previous.context_key)
-    if context_path.is_file():
+    if context_path is not None and context_path.is_file():
         _remove_file(context_path)
     return previous
 
@@ -752,7 +779,10 @@ def clear_task_from_sessions(task_path: str, repo_root: Path) -> int:
     if not sessions_dir.is_dir():
         return cleared
 
-    for session_path in sessions_dir.glob("*.json"):
+    for discovered_path in sessions_dir.glob("*.json"):
+        session_path = _context_path(repo_root, discovered_path.stem)
+        if session_path is None:
+            continue
         context = _read_json(session_path) or {}
         current = _string_value(context.get("current_task"))
         if not current:

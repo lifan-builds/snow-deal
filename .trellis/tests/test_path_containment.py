@@ -19,6 +19,7 @@ from common.active_task import (  # noqa: E402
     clear_active_task,
     resolve_active_task,
     resolve_task_ref,
+    set_active_task,
 )
 from common.paths import (  # noqa: E402
     get_current_task,
@@ -32,6 +33,33 @@ def _make_repo(tmp_path: Path) -> Path:
     repo = tmp_path / "repo"
     (repo / ".trellis" / "tasks").mkdir(parents=True)
     return repo
+
+
+def _write_shell_ticket(repo: Path, context_key: str, task_ref: str) -> None:
+    tickets = repo / ".trellis" / ".runtime" / "shell-tickets"
+    tickets.mkdir(parents=True, exist_ok=True)
+    (tickets / "ticket.json").write_text(
+        json.dumps(
+            {
+                "context_key": context_key,
+                "cwd": str(repo),
+                "subcommands": [
+                    {"name": "current"},
+                    {"name": "start", "task_ref": task_ref},
+                ],
+            }
+        ),
+        encoding="utf-8",
+    )
+
+
+def _isolate_cursor_ticket_context(monkeypatch: pytest.MonkeyPatch) -> None:
+    for name in (
+        "TRELLIS_CONTEXT_ID",
+        "CURSOR_CONVERSATION_ID",
+        "CURSOR_CONVERSATIONID",
+    ):
+        monkeypatch.delenv(name, raising=False)
 
 
 def _load_hook(relative_path: str):
@@ -107,6 +135,98 @@ def test_finish_clears_an_unsafe_stale_session_without_reading_it(
 
     previous = clear_active_task(repo)
     assert previous.stale and previous.task_path is None
+    assert not session_file.exists()
+
+
+@pytest.mark.parametrize(
+    "malicious_key",
+    ["../../outside", "../outside", "bad/key", r"..\..\outside", " bad"],
+)
+def test_shell_ticket_context_key_cannot_escape_session_store(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    malicious_key: str,
+) -> None:
+    repo = _make_repo(tmp_path)
+    task = repo / ".trellis" / "tasks" / "kept"
+    task.mkdir()
+    task_ref = ".trellis/tasks/kept"
+    _write_shell_ticket(repo, malicious_key, task_ref)
+    _isolate_cursor_ticket_context(monkeypatch)
+    monkeypatch.chdir(repo)
+
+    sessions = repo / ".trellis" / ".runtime" / "sessions"
+    escaped = (sessions / f"{malicious_key}.json").resolve()
+    escaped.parent.mkdir(parents=True, exist_ok=True)
+    escaped.write_text(json.dumps({"current_task": task_ref}), encoding="utf-8")
+
+    monkeypatch.setattr(sys, "argv", ["task.py", "current"])
+    active = resolve_active_task(
+        repo, platform="cursor", allow_single_session_fallback=False
+    )
+    assert active.task_path is None
+    assert active.context_key is None
+
+    before = escaped.read_text(encoding="utf-8")
+    monkeypatch.setattr(sys, "argv", ["task.py", "start", task_ref])
+    assert set_active_task(task_ref, repo, platform="cursor") is None
+    assert escaped.read_text(encoding="utf-8") == before
+
+
+def test_absolute_shell_ticket_context_key_is_rejected(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    repo = _make_repo(tmp_path)
+    task = repo / ".trellis" / "tasks" / "kept"
+    task.mkdir()
+    task_ref = ".trellis/tasks/kept"
+    outside = tmp_path / "absolute-outside.json"
+    outside.write_text(json.dumps({"current_task": task_ref}), encoding="utf-8")
+    _write_shell_ticket(repo, str(outside.with_suffix("")), task_ref)
+    _isolate_cursor_ticket_context(monkeypatch)
+    monkeypatch.chdir(repo)
+
+    monkeypatch.setattr(sys, "argv", ["task.py", "current"])
+    active = resolve_active_task(
+        repo, platform="cursor", allow_single_session_fallback=False
+    )
+    assert active.task_path is None
+    assert active.context_key is None
+
+    before = outside.read_text(encoding="utf-8")
+    monkeypatch.setattr(sys, "argv", ["task.py", "start", task_ref])
+    assert set_active_task(task_ref, repo, platform="cursor") is None
+    assert outside.read_text(encoding="utf-8") == before
+
+
+def test_legitimate_shell_ticket_context_key_reads_writes_and_clears(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    repo = _make_repo(tmp_path)
+    task = repo / ".trellis" / "tasks" / "kept"
+    task.mkdir()
+    task_ref = ".trellis/tasks/kept"
+    context_key = "codex_valid-session.1"
+    _write_shell_ticket(repo, context_key, task_ref)
+    _isolate_cursor_ticket_context(monkeypatch)
+    monkeypatch.chdir(repo)
+
+    monkeypatch.setattr(sys, "argv", ["task.py", "start", task_ref])
+    active = set_active_task(task_ref, repo, platform="cursor")
+    assert active is not None and active.context_key == context_key
+
+    session_file = repo / ".trellis" / ".runtime" / "sessions" / f"{context_key}.json"
+    assert session_file.is_file()
+
+    monkeypatch.setattr(sys, "argv", ["task.py", "current"])
+    current = resolve_active_task(
+        repo, platform="cursor", allow_single_session_fallback=False
+    )
+    assert current.task_path == task_ref
+    assert current.context_key == context_key
+
+    cleared = clear_active_task(repo, platform="cursor")
+    assert cleared.task_path == task_ref
     assert not session_file.exists()
 
 
