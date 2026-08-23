@@ -99,7 +99,6 @@ class ShopifyParser(BaseParser):
         if len(products) < limit:
             return None
 
-        parsed = urlparse(current_url)
         # Increment page parameter
         m = re.search(r"[?&]page=(\d+)", current_url)
         current_page = int(m.group(1)) if m else 1
