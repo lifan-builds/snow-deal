@@ -199,12 +199,14 @@ def normalize_task_ref(task_ref: str) -> str:
 
 
 def resolve_task_ref(task_ref: str, repo_root: Path) -> Path | None:
-    """Resolve a task ref to an absolute task directory inside the repo.
+    """Resolve a task ref to an absolute path inside ``.trellis/tasks``.
 
     Mirrors `paths.resolve_task_ref` (same containment check). Duplicated
     rather than imported because this module is loaded standalone — hooks add
     it to `sys.path` directly — so it stays zero-relative-import on purpose.
     """
+    if not isinstance(task_ref, str):
+        return None
     normalized = normalize_task_ref(task_ref)
     if not normalized:
         return None
@@ -222,12 +224,16 @@ def resolve_task_ref(task_ref: str, repo_root: Path) -> Path | None:
     # instead of leaving it for a lexical relative_to() to wave through.
     try:
         resolved = candidate.resolve()
+        tasks_root = (repo_root / DIR_WORKFLOW / DIR_TASKS).resolve()
         root = repo_root.resolve()
-    except OSError:
+        tasks_root.relative_to(root)
+    except (OSError, RuntimeError):
+        return None
+    except ValueError:
         return None
 
     try:
-        resolved.relative_to(root)
+        resolved.relative_to(tasks_root)
     except ValueError:
         return None
 
@@ -568,7 +574,7 @@ def _canonical_task_ref(task_path: str, repo_root: Path) -> str | None:
         return None
     try:
         return full_path.relative_to(repo_root.resolve()).as_posix()
-    except ValueError:
+    except (OSError, RuntimeError, ValueError):
         # resolve_task_ref already refused everything outside the repo, so this
         # is unreachable. Refuse rather than fall back to an absolute path —
         # that fallback is how an out-of-repo ref used to reach the session
@@ -585,8 +591,13 @@ def _active_from_ref(
     if not task_ref:
         return None
     resolved = resolve_task_ref(task_ref, repo_root)
-    stale = resolved is None or not resolved.is_dir()
-    return ActiveTask(task_ref, source_type, context_key, stale)
+    if resolved is None:
+        return ActiveTask(None, source_type, context_key, stale=True)
+    try:
+        canonical = resolved.relative_to(repo_root.resolve()).as_posix()
+    except (OSError, RuntimeError, ValueError):
+        return ActiveTask(None, source_type, context_key, stale=True)
+    return ActiveTask(canonical, source_type, context_key, stale=not resolved.is_dir())
 
 
 def _context_path(repo_root: Path, context_key: str) -> Path:
@@ -721,7 +732,7 @@ def clear_active_task(
         return ActiveTask(None, "none")
 
     previous = resolve_active_task(repo_root, platform_input, platform)
-    if not previous.task_path or not previous.context_key:
+    if not previous.context_key:
         return previous
 
     context_path = _context_path(repo_root, previous.context_key)

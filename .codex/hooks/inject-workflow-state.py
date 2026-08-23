@@ -155,17 +155,29 @@ def _resolve_active_task(root: Path, input_data: dict):
     return resolve_active_task(root, input_data, platform=_detect_platform(input_data))
 
 
+def _resolve_task_dir(root: Path, task_ref: str) -> Path | None:
+    scripts_dir = root / ".trellis" / "scripts"
+    if str(scripts_dir) not in sys.path:
+        sys.path.insert(0, str(scripts_dir))
+    try:
+        from common.active_task import resolve_task_ref  # type: ignore[import-not-found]
+    except Exception:
+        return None
+    return resolve_task_ref(task_ref, root)
+
+
 def get_active_task(root: Path, input_data: dict) -> Optional[tuple[str, str, str]]:
     """Return (task_id, status, source) from the current active task."""
     active = _resolve_active_task(root, input_data)
+    if active.stale:
+        task_id = Path(active.task_path).name if active.task_path else "invalid-task"
+        return task_id, f"stale_{active.source_type}", active.source
     if not active.task_path:
         return None
 
-    task_dir = Path(active.task_path)
-    if not task_dir.is_absolute():
-        task_dir = root / task_dir
-    if active.stale:
-        return task_dir.name, f"stale_{active.source_type}", active.source
+    task_dir = _resolve_task_dir(root, active.task_path)
+    if task_dir is None:
+        return None
 
     task_json = task_dir / "task.json"
     if not task_json.is_file():

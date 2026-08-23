@@ -159,17 +159,19 @@ def cmd_finish(args: argparse.Namespace) -> int:
     active = clear_active_task(repo_root)
     current = active.task_path
 
-    if not current:
+    if not current and not active.stale:
         print(colored("No current task set", Colors.YELLOW))
         return 0
 
-    # Resolve task.json path before clearing
-    task_json_path = repo_root / current / FILE_TASK_JSON
-
-    print(colored(f"✓ Cleared current task (was: {current})", Colors.GREEN))
+    previous_label = current or "invalid stale pointer"
+    print(colored(f"✓ Cleared current task (was: {previous_label})", Colors.GREEN))
     print(f"Source: {active.source}")
 
-    if task_json_path.is_file():
+    if current and not active.stale:
+        task_json_path = repo_root / current / FILE_TASK_JSON
+    else:
+        task_json_path = None
+    if task_json_path is not None and task_json_path.is_file():
         run_task_hooks("after_finish", task_json_path, repo_root)
     return 0
 
@@ -182,7 +184,11 @@ def cmd_current(args: argparse.Namespace) -> int:
     if getattr(args, "json", False):
         task_obj = None
         if active.task_path:
-            data = read_json(repo_root / active.task_path / FILE_TASK_JSON) or {}
+            data = (
+                read_json(repo_root / active.task_path / FILE_TASK_JSON) or {}
+                if not active.stale
+                else {}
+            )
             task_obj = {
                 "dir": active.task_path,
                 "id": data.get("id") or data.get("name"),

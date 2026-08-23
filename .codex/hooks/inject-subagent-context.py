@@ -161,9 +161,21 @@ def get_current_task(
         allow_single_session_fallback=allow_single_session_fallback,
         allow_environment_context=allow_environment_context,
     )
-    if require_existing and active.stale:
+    if active.stale:
         return None
     return active.task_path
+
+
+def _resolve_task_path(repo_root: str, task_ref: str) -> Path | None:
+    """Resolve a task ref through Trellis' task-store containment boundary."""
+    scripts_dir = Path(repo_root) / DIR_WORKFLOW / "scripts"
+    if str(scripts_dir) not in sys.path:
+        sys.path.insert(0, str(scripts_dir))
+    try:
+        from common.active_task import resolve_task_ref  # type: ignore[import-not-found]
+    except Exception:
+        return None
+    return resolve_task_ref(task_ref, Path(repo_root))
 
 
 # =============================================================================
@@ -248,12 +260,24 @@ class _Budget:
         self.used += size
 
 
+def _resolve_repo_path(base_path: str, file_path: str) -> Path | None:
+    """Resolve a manifest path inside the repository before inspecting it."""
+    scripts_dir = Path(base_path) / DIR_WORKFLOW / "scripts"
+    if str(scripts_dir) not in sys.path:
+        sys.path.insert(0, str(scripts_dir))
+    try:
+        from common.paths import resolve_repo_path  # type: ignore[import-not-found]
+    except Exception:
+        return None
+    return resolve_repo_path(file_path, Path(base_path))
+
+
 def _read_file_bytes(base_path: str, file_path: str) -> bytes | None:
     """Read raw file bytes, return None if file doesn't exist."""
-    full_path = os.path.join(base_path, file_path)
-    if os.path.exists(full_path) and os.path.isfile(full_path):
+    full_path = _resolve_repo_path(base_path, file_path)
+    if full_path is not None and full_path.is_file():
         try:
-            with open(full_path, "rb") as f:
+            with full_path.open("rb") as f:
                 return f.read()
         except Exception:
             return None
@@ -346,8 +370,8 @@ def _materialize_directory(
 ) -> list[str]:
     """Read all .md files in a directory, applying the same per-file and
     total caps as a single-file JSONL entry."""
-    full_path = os.path.join(base_path, dir_path)
-    if not os.path.exists(full_path) or not os.path.isdir(full_path):
+    full_path = _resolve_repo_path(base_path, dir_path)
+    if full_path is None or not full_path.is_dir():
         return []
 
     blocks: list[str] = []
@@ -355,7 +379,7 @@ def _materialize_directory(
         md_files = sorted(
             f
             for f in os.listdir(full_path)
-            if f.endswith(".md") and os.path.isfile(os.path.join(full_path, f))
+            if f.endswith(".md") and (full_path / f).is_file()
         )
         for filename in md_files[:max_files]:
             relative_path = os.path.join(dir_path, filename)
@@ -385,8 +409,8 @@ def read_jsonl_entries(base_path: str, jsonl_path: str) -> list[dict]:
     Returns:
         [{"file": path, "type": "file" | "directory", "reason": reason}, ...]
     """
-    full_path = os.path.join(base_path, jsonl_path)
-    if not os.path.exists(full_path):
+    full_path = _resolve_repo_path(base_path, jsonl_path)
+    if full_path is None or not full_path.is_file():
         print(
             f"[inject-subagent-context] WARN: {jsonl_path} not found — "
             f"sub-agent will receive only task artifacts",
@@ -397,7 +421,7 @@ def read_jsonl_entries(base_path: str, jsonl_path: str) -> list[dict]:
     entries: list[dict] = []
     saw_real_entry = False
     try:
-        with open(full_path, "r", encoding="utf-8") as f:
+        with full_path.open("r", encoding="utf-8") as f:
             for line in f:
                 line = line.strip()
                 if not line:
@@ -406,8 +430,11 @@ def read_jsonl_entries(base_path: str, jsonl_path: str) -> list[dict]:
                     item = json.loads(line)
                     file_path = item.get("file") or item.get("path")
 
-                    if not file_path:
-                        # Seed / comment row — skip silently
+                    if (
+                        not isinstance(file_path, str)
+                        or _resolve_repo_path(base_path, file_path) is None
+                    ):
+                        # Seed, malformed, or out-of-repository row — skip.
                         continue
 
                     saw_real_entry = True
@@ -911,8 +938,8 @@ def _handle_codex_subagent_start(input_data: dict) -> None:
         return
 
     if subagent_type in AGENTS_REQUIRE_TASK:
-        task_dir_full = Path(repo_root) / task_dir
-        if not task_dir_full.is_dir():
+        task_dir_full = _resolve_task_path(repo_root, task_dir)
+        if task_dir_full is None or not task_dir_full.is_dir():
             return
 
     if subagent_type == AGENT_IMPLEMENT:
@@ -1093,22 +1120,10 @@ def main():
     if subagent_type in AGENTS_REQUIRE_TASK:
         if not task_dir:
             sys.exit(0)
-        # Contain the pointer before reading anything through it. `task.py` now
-        # refuses to store a ref that leaves the repo, but a session file
-        # written before that fix can still hold one, and `trellis update`
-        # does not rewrite session files — so a poisoned pointer outlives the
-        # upgrade that closed the writer. This is the last hop before the
-        # task's prd.md/design.md reach the model prompt, so it checks again.
-        try:
-            root_real = os.path.realpath(repo_root)
-            task_dir_full = os.path.realpath(os.path.join(repo_root, task_dir))
-            # ValueError on Windows when the two sit on different drives; that
-            # is outside the repo by definition, so it fails closed below.
-            if os.path.commonpath([root_real, task_dir_full]) != root_real:
-                sys.exit(0)
-        except (OSError, ValueError):
+        task_dir_full = _resolve_task_path(repo_root, task_dir)
+        if task_dir_full is None:
             sys.exit(0)
-        if not os.path.exists(task_dir_full):
+        if not task_dir_full.is_dir():
             sys.exit(0)
 
     # Check for [finish] marker in prompt (check agent with finish context)

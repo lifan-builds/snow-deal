@@ -48,33 +48,15 @@ def _read_json(path: Path) -> dict:
         return {}
 
 
-def _normalize_task_ref(task_ref: str) -> str:
-    normalized = task_ref.strip()
-    if not normalized:
-        return ""
-
-    path_obj = Path(normalized)
-    if path_obj.is_absolute():
-        return str(path_obj)
-
-    normalized = normalized.replace("\\", "/")
-    while normalized.startswith("./"):
-        normalized = normalized[2:]
-
-    if normalized.startswith("tasks/"):
-        return f".trellis/{normalized}"
-
-    return normalized
-
-
-def _resolve_task_dir(trellis_dir: Path, task_ref: str) -> Path:
-    normalized = _normalize_task_ref(task_ref)
-    path_obj = Path(normalized)
-    if path_obj.is_absolute():
-        return path_obj
-    if normalized.startswith(".trellis/"):
-        return trellis_dir.parent / path_obj
-    return trellis_dir / "tasks" / path_obj
+def _resolve_task_dir(trellis_dir: Path, task_ref: str) -> Path | None:
+    scripts_dir = trellis_dir / "scripts"
+    if str(scripts_dir) not in sys.path:
+        sys.path.insert(0, str(scripts_dir))
+    try:
+        from common.active_task import resolve_task_ref  # type: ignore[import-not-found]
+    except Exception:
+        return None
+    return resolve_task_ref(task_ref, trellis_dir.parent)
 
 
 def _find_trellis_dir() -> Path | None:
@@ -103,17 +85,20 @@ def _get_current_task_for_input(trellis_dir: Path, cc_data: dict) -> dict | None
         return None
 
     active = resolve_active_task(trellis_dir.parent, cc_data, platform="claude")
-    if not active.task_path:
-        return None
-
-    task_path = _resolve_task_dir(trellis_dir, active.task_path)
     if active.stale:
+        title = Path(active.task_path).name if active.task_path else "stale task"
         return {
-            "title": task_path.name,
+            "title": title,
             "status": "stale",
             "priority": "P?",
             "source": active.source,
         }
+    if not active.task_path:
+        return None
+
+    task_path = _resolve_task_dir(trellis_dir, active.task_path)
+    if task_path is None:
+        return None
 
     task_data = _read_json(task_path / "task.json")
     if not task_data:

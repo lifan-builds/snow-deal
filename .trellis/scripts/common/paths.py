@@ -232,13 +232,44 @@ def normalize_task_ref(task_ref: str) -> str:
     return normalized
 
 
-def resolve_task_ref(task_ref: str, repo_root: Path | None = None) -> Path | None:
-    """Resolve a task ref to an absolute task directory path inside the repo.
+def resolve_repo_path(path_ref: str, repo_root: Path | None = None) -> Path | None:
+    """Resolve a repository-relative path without allowing path escapes.
 
-    Returns None when the ref resolves outside `repo_root`. Every reader of the
-    active task — `task.py`, the shared hooks, the platform extensions — comes
-    through here, so containment is enforced at this one point rather than at
-    each call site.
+    Context manifests are repository-owned indexes, so their entries must be
+    relative to the repository. Absolute paths, ``..`` traversal, and symlinks
+    that resolve outside the repository are refused before callers inspect
+    metadata or content.
+    """
+    if not isinstance(path_ref, str):
+        return None
+    if repo_root is None:
+        repo_root = get_repo_root()
+
+    normalized = path_ref.strip().replace("\\", "/")
+    if not normalized:
+        return None
+
+    path_obj = Path(normalized)
+    if path_obj.is_absolute() or re.match(r"^[A-Za-z]:/", normalized):
+        return None
+    if ".." in path_obj.parts:
+        return None
+
+    try:
+        resolved = (repo_root / path_obj).resolve()
+        root = repo_root.resolve()
+        resolved.relative_to(root)
+    except (OSError, RuntimeError, ValueError):
+        return None
+    return resolved
+
+
+def resolve_task_ref(task_ref: str, repo_root: Path | None = None) -> Path | None:
+    """Resolve a task ref to an absolute path inside ``.trellis/tasks``.
+
+    Returns None when the ref resolves outside the task store. Every reader of
+    the active task — ``task.py``, shared hooks, and platform extensions —
+    therefore receives either a task-store path or no path at all.
 
     It matters because a ref is not always something the user typed. It round
     trips through the session pointer under `.trellis/.runtime/sessions/`, and
@@ -252,6 +283,8 @@ def resolve_task_ref(task_ref: str, repo_root: Path | None = None) -> Path | Non
     Resolving here also normalises the path, so callers get a ref without `..`
     to store.
     """
+    if not isinstance(task_ref, str):
+        return None
     if repo_root is None:
         repo_root = get_repo_root()
 
@@ -272,12 +305,16 @@ def resolve_task_ref(task_ref: str, repo_root: Path | None = None) -> Path | Non
     # repo_root itself may sit behind a symlink (/tmp on macOS does).
     try:
         resolved = candidate.resolve()
+        tasks_root = (repo_root / DIR_WORKFLOW / DIR_TASKS).resolve()
         root = repo_root.resolve()
-    except OSError:
+        tasks_root.relative_to(root)
+    except (OSError, RuntimeError):
+        return None
+    except ValueError:
         return None
 
     try:
-        resolved.relative_to(root)
+        resolved.relative_to(tasks_root)
     except ValueError:
         return None
 
@@ -302,7 +339,8 @@ def get_current_task(
 
     from .active_task import resolve_active_task
 
-    return resolve_active_task(repo_root, platform_input, platform).task_path
+    active = resolve_active_task(repo_root, platform_input, platform)
+    return None if active.stale else active.task_path
 
 
 def get_current_task_abs(

@@ -25,7 +25,14 @@ from .config import get_context_injection_limits
 from .git import branch_exists_locally
 from .io import read_json
 from .log import Colors, colored
-from .paths import DIR_ARCHIVE, DIR_TASKS, DIR_WORKFLOW, FILE_TASK_JSON, get_repo_root
+from .paths import (
+    DIR_ARCHIVE,
+    DIR_TASKS,
+    DIR_WORKFLOW,
+    FILE_TASK_JSON,
+    get_repo_root,
+    resolve_repo_path,
+)
 from .task_utils import resolve_task_dir
 
 # Extensions that look like code rather than spec/research docs. Entries with
@@ -74,9 +81,12 @@ def cmd_add_context(args: argparse.Namespace) -> int:
         jsonl_name = f"{jsonl_name}.jsonl"
 
     jsonl_file = target_dir / jsonl_name
-    full_path = repo_root / path
+    full_path = resolve_repo_path(path, repo_root)
 
     entry_type = "file"
+    if full_path is None:
+        print(colored(f"Error: Path must stay inside the repository: {path}", Colors.RED))
+        return 1
     if full_path.is_dir():
         entry_type = "directory"
         if not path.endswith("/"):
@@ -178,13 +188,15 @@ def _resolve_context_entry_path(
     Exact historical self-references are remapped only for archived tasks.
     ``None`` means the remapped path traversed or resolved outside that archive.
     """
-    repo_path = repo_root / file_path
+    repo_path = resolve_repo_path(file_path, repo_root)
+    if repo_path is None:
+        return None
     if task_dir is None:
         return repo_path
 
     try:
         task_parts = task_dir.resolve().relative_to(repo_root.resolve()).parts
-    except ValueError:
+    except (OSError, RuntimeError, ValueError):
         return repo_path
 
     archive_prefix = (DIR_WORKFLOW, DIR_TASKS, DIR_ARCHIVE)
