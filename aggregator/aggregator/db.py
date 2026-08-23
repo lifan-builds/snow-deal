@@ -184,17 +184,6 @@ async def upsert_deal_reviews(
     return count
 
 
-async def get_deal_reviews_map(db_path: Path = DB_PATH) -> dict[int, dict]:
-    """Return {deal_id: {score, award, review_url}} for all matched deals."""
-    async with _connect(db_path, read_only=_deal_db_read_only()) as db:
-        db.row_factory = aiosqlite.Row
-        cursor = await db.execute(
-            "SELECT deal_id, score, award, review_url FROM deal_reviews"
-        )
-        rows = await cursor.fetchall()
-    return {row["deal_id"]: dict(row) for row in rows}
-
-
 async def count_with_length(db_path: Path = DB_PATH) -> int:
     """Return count of deals that have length data."""
     async with _connect(db_path, read_only=_deal_db_read_only()) as db:
