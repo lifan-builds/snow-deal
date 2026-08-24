@@ -453,8 +453,8 @@ class CLIAdapter:
             # Headless single-prompt; sub-agents use in-process spawn_subagent.
             cmd = ["grok", "-p", prompt, "--yolo"]
         elif self.platform == "kimi":
-            # Headless single-prompt with auto-approval; sub-agents are the
-            # built-in coder/explore/plan agents dispatched in-session.
+            # Headless single-prompt with auto-approval. Interactive Kimi
+            # sessions dispatch Trellis custom agents from .kimi-code/agents/.
             cmd = ["kimi", "-p", prompt, "--yolo"]
 
         else:  # claude

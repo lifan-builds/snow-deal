@@ -197,37 +197,25 @@ def run_script(script_path: Path, context_key: str | None = None) -> str:
         return "No context available"
 
 
-def _normalize_task_ref(task_ref: str) -> str:
-    normalized = task_ref.strip()
-    if not normalized:
-        return ""
-
-    path_obj = Path(normalized)
-    if path_obj.is_absolute():
-        return str(path_obj)
-
-    normalized = normalized.replace("\\", "/")
-    while normalized.startswith("./"):
-        normalized = normalized[2:]
-
-    if normalized.startswith("tasks/"):
-        return f".trellis/{normalized}"
-
-    return normalized
-
-
-def _resolve_task_dir(trellis_dir: Path, task_ref: str) -> Path:
-    normalized = _normalize_task_ref(task_ref)
-    path_obj = Path(normalized)
-    if path_obj.is_absolute():
-        return path_obj
-    if normalized.startswith(".trellis/"):
-        return trellis_dir.parent / path_obj
-    return trellis_dir / "tasks" / path_obj
+def _resolve_task_dir(trellis_dir: Path, task_ref: str) -> Path | None:
+    scripts_dir = trellis_dir / "scripts"
+    if str(scripts_dir) not in sys.path:
+        sys.path.insert(0, str(scripts_dir))
+    try:
+        from common.active_task import resolve_task_ref  # type: ignore[import-not-found]
+    except Exception:
+        return None
+    return resolve_task_ref(task_ref, trellis_dir.parent)
 
 
 def _get_task_status(trellis_dir: Path, hook_input: dict) -> str:
     active = _resolve_active_task(trellis_dir, hook_input)
+    if active.stale:
+        task_line = f"\nTask: {active.task_path}" if active.task_path else ""
+        return (
+            f"Status: STALE POINTER{task_line}\n"
+            "Next: Run: python3 ./.trellis/scripts/task.py finish"
+        )
     if not active.task_path:
         return (
             "Status: NO ACTIVE TASK\n"
@@ -237,7 +225,7 @@ def _get_task_status(trellis_dir: Path, hook_input: dict) -> str:
 
     task_ref = active.task_path
     task_dir = _resolve_task_dir(trellis_dir, task_ref)
-    if active.stale or not task_dir.is_dir():
+    if task_dir is None or not task_dir.is_dir():
         return (
             f"Status: STALE POINTER\nTask: {task_ref}\n"
             "Next: Task directory not found. Run: python3 ./.trellis/scripts/task.py finish"
@@ -382,18 +370,24 @@ def _build_compact_current_state(
     lines.append(_format_git_state(repo_root))
 
     active = _resolve_active_task(trellis_dir, hook_input)
-    if active.task_path:
+    if active.stale:
+        lines.append("Current task: stale pointer; no task files read.")
+    elif active.task_path:
         task_dir = _resolve_task_dir(trellis_dir, active.task_path)
+        if task_dir is None:
+            lines.append("Current task: invalid pointer; no task files read.")
+            task_dir = None
         status = "unknown"
-        task_json = task_dir / "task.json"
-        if task_json.is_file():
+        task_json = task_dir / "task.json" if task_dir is not None else None
+        if task_json is not None and task_json.is_file():
             try:
                 data = json.loads(task_json.read_text(encoding="utf-8"))
                 if isinstance(data, dict):
                     status = str(data.get("status") or "unknown")
             except (json.JSONDecodeError, OSError):
                 pass  # Optional task metadata; fall back to generic status.
-        lines.append(f"Current task: {_repo_relative(repo_root, task_dir)}; status={status}.")
+        if task_dir is not None:
+            lines.append(f"Current task: {_repo_relative(repo_root, task_dir)}; status={status}.")
     else:
         lines.append("Current task: none.")
 

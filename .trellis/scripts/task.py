@@ -82,16 +82,26 @@ def cmd_start(args: argparse.Namespace) -> int:
     # Resolve task directory (supports task name, relative path, or absolute path)
     full_path = resolve_task_dir(task_input, repo_root)
 
-    if not full_path.is_dir():
+    if not full_path or not full_path.is_dir():
         print(colored(f"Error: Task not found: {task_input}", Colors.RED))
         print("Hint: Use task name (e.g., 'my-task') or full path (e.g., '.trellis/tasks/01-31-my-task')")
         return 1
 
-    # Convert to relative path for storage
+    # Convert to relative path for storage. repo_root is resolved because
+    # full_path already is (resolve_task_dir only returns paths inside the
+    # resolved root), so an unresolved repo_root would mismatch under a
+    # symlink (e.g. /tmp on macOS) and reject a perfectly normal task.
     try:
-        task_dir = full_path.relative_to(repo_root).as_posix()
+        task_dir = full_path.relative_to(repo_root.resolve()).as_posix()
     except ValueError:
-        task_dir = str(full_path)
+        # resolve_task_dir already refused everything outside the repo, so
+        # this is unreachable in practice. Refuse rather than fall back to
+        # str(full_path) — that fallback (a lexical relative_to() paired with
+        # an absolute-path fallback) is exactly the pattern that let a `..`
+        # ref escape into storage before this fix.
+        print(colored(f"Error: Task not found: {task_input}", Colors.RED))
+        print("Hint: Use task name (e.g., 'my-task') or full path (e.g., '.trellis/tasks/01-31-my-task')")
+        return 1
 
     task_json_path = full_path / FILE_TASK_JSON
 
@@ -149,17 +159,19 @@ def cmd_finish(args: argparse.Namespace) -> int:
     active = clear_active_task(repo_root)
     current = active.task_path
 
-    if not current:
+    if not current and not active.stale:
         print(colored("No current task set", Colors.YELLOW))
         return 0
 
-    # Resolve task.json path before clearing
-    task_json_path = repo_root / current / FILE_TASK_JSON
-
-    print(colored(f"✓ Cleared current task (was: {current})", Colors.GREEN))
+    previous_label = current or "invalid stale pointer"
+    print(colored(f"✓ Cleared current task (was: {previous_label})", Colors.GREEN))
     print(f"Source: {active.source}")
 
-    if task_json_path.is_file():
+    if current and not active.stale:
+        task_json_path = repo_root / current / FILE_TASK_JSON
+    else:
+        task_json_path = None
+    if task_json_path is not None and task_json_path.is_file():
         run_task_hooks("after_finish", task_json_path, repo_root)
     return 0
 
@@ -172,7 +184,11 @@ def cmd_current(args: argparse.Namespace) -> int:
     if getattr(args, "json", False):
         task_obj = None
         if active.task_path:
-            data = read_json(repo_root / active.task_path / FILE_TASK_JSON) or {}
+            data = (
+                read_json(repo_root / active.task_path / FILE_TASK_JSON) or {}
+                if not active.stale
+                else {}
+            )
             task_obj = {
                 "dir": active.task_path,
                 "id": data.get("id") or data.get("name"),

@@ -92,9 +92,16 @@ def _detect_platform(input_data: dict) -> str | None:
         return "codex"
     if isinstance(input_data.get("cursor_version"), str):
         return "cursor"
+    # CLAUDE_PROJECT_DIR is a compatibility alias that several hosts set
+    # alongside their own variable — CodeBuddy, ZCode and Trae all do. It must
+    # therefore be checked LAST, or every one of them is detected as claude and
+    # the context key becomes `claude_<their-session-id>`. That key does not
+    # match the session file `task.py start` wrote under the host's real name,
+    # so the sub-agent starts with no task context while the pointer exists on
+    # disk. Same fix as inject-workflow-state.py and session-start.py; this
+    # third copy was missed when those two were corrected.
     env_map = {
         "ZCODE_PROJECT_DIR": "zcode",
-        "CLAUDE_PROJECT_DIR": "claude",
         "CURSOR_PROJECT_DIR": "cursor",
         "CODEBUDDY_PROJECT_DIR": "codebuddy",
         "FACTORY_PROJECT_DIR": "droid",
@@ -102,6 +109,9 @@ def _detect_platform(input_data: dict) -> str | None:
         "QODER_PROJECT_DIR": "qoder",
         "KIRO_PROJECT_DIR": "kiro",
         "COPILOT_PROJECT_DIR": "copilot",
+        "TRAE_PROJECT_DIR": "trae",
+        # Last: the shared alias, only meaningful once no vendor key matched.
+        "CLAUDE_PROJECT_DIR": "claude",
     }
     for env_name, platform in env_map.items():
         if os.environ.get(env_name):
@@ -151,9 +161,21 @@ def get_current_task(
         allow_single_session_fallback=allow_single_session_fallback,
         allow_environment_context=allow_environment_context,
     )
-    if require_existing and active.stale:
+    if active.stale:
         return None
     return active.task_path
+
+
+def _resolve_task_path(repo_root: str, task_ref: str) -> Path | None:
+    """Resolve a task ref through Trellis' task-store containment boundary."""
+    scripts_dir = Path(repo_root) / DIR_WORKFLOW / "scripts"
+    if str(scripts_dir) not in sys.path:
+        sys.path.insert(0, str(scripts_dir))
+    try:
+        from common.active_task import resolve_task_ref  # type: ignore[import-not-found]
+    except Exception:
+        return None
+    return resolve_task_ref(task_ref, Path(repo_root))
 
 
 # =============================================================================
@@ -238,12 +260,24 @@ class _Budget:
         self.used += size
 
 
+def _resolve_repo_path(base_path: str, file_path: str) -> Path | None:
+    """Resolve a manifest path inside the repository before inspecting it."""
+    scripts_dir = Path(base_path) / DIR_WORKFLOW / "scripts"
+    if str(scripts_dir) not in sys.path:
+        sys.path.insert(0, str(scripts_dir))
+    try:
+        from common.paths import resolve_repo_path  # type: ignore[import-not-found]
+    except Exception:
+        return None
+    return resolve_repo_path(file_path, Path(base_path))
+
+
 def _read_file_bytes(base_path: str, file_path: str) -> bytes | None:
     """Read raw file bytes, return None if file doesn't exist."""
-    full_path = os.path.join(base_path, file_path)
-    if os.path.exists(full_path) and os.path.isfile(full_path):
+    full_path = _resolve_repo_path(base_path, file_path)
+    if full_path is not None and full_path.is_file():
         try:
-            with open(full_path, "rb") as f:
+            with full_path.open("rb") as f:
                 return f.read()
         except Exception:
             return None
@@ -336,8 +370,8 @@ def _materialize_directory(
 ) -> list[str]:
     """Read all .md files in a directory, applying the same per-file and
     total caps as a single-file JSONL entry."""
-    full_path = os.path.join(base_path, dir_path)
-    if not os.path.exists(full_path) or not os.path.isdir(full_path):
+    full_path = _resolve_repo_path(base_path, dir_path)
+    if full_path is None or not full_path.is_dir():
         return []
 
     blocks: list[str] = []
@@ -345,7 +379,7 @@ def _materialize_directory(
         md_files = sorted(
             f
             for f in os.listdir(full_path)
-            if f.endswith(".md") and os.path.isfile(os.path.join(full_path, f))
+            if f.endswith(".md") and (full_path / f).is_file()
         )
         for filename in md_files[:max_files]:
             relative_path = os.path.join(dir_path, filename)
@@ -375,8 +409,8 @@ def read_jsonl_entries(base_path: str, jsonl_path: str) -> list[dict]:
     Returns:
         [{"file": path, "type": "file" | "directory", "reason": reason}, ...]
     """
-    full_path = os.path.join(base_path, jsonl_path)
-    if not os.path.exists(full_path):
+    full_path = _resolve_repo_path(base_path, jsonl_path)
+    if full_path is None or not full_path.is_file():
         print(
             f"[inject-subagent-context] WARN: {jsonl_path} not found — "
             f"sub-agent will receive only task artifacts",
@@ -387,7 +421,7 @@ def read_jsonl_entries(base_path: str, jsonl_path: str) -> list[dict]:
     entries: list[dict] = []
     saw_real_entry = False
     try:
-        with open(full_path, "r", encoding="utf-8") as f:
+        with full_path.open("r", encoding="utf-8") as f:
             for line in f:
                 line = line.strip()
                 if not line:
@@ -396,8 +430,11 @@ def read_jsonl_entries(base_path: str, jsonl_path: str) -> list[dict]:
                     item = json.loads(line)
                     file_path = item.get("file") or item.get("path")
 
-                    if not file_path:
-                        # Seed / comment row — skip silently
+                    if (
+                        not isinstance(file_path, str)
+                        or _resolve_repo_path(base_path, file_path) is None
+                    ):
+                        # Seed, malformed, or out-of-repository row — skip.
                         continue
 
                     saw_real_entry = True
@@ -877,8 +914,15 @@ def _handle_codex_subagent_start(input_data: dict) -> None:
     if not subagent_type or not parent_session_id:
         return
 
-    cwd = _string_value(input_data.get("cwd")) or os.getcwd()
-    repo_root = find_repo_root(cwd)
+    # Payload cwd first, then our own — some hosts (CodeBuddy IDE 4.10.4)
+    # report "/" for every hook event. See inject-workflow-state.py.
+    repo_root = None
+    for candidate in (_string_value(input_data.get("cwd")), os.getcwd()):
+        if not candidate:
+            continue
+        repo_root = find_repo_root(candidate)
+        if repo_root:
+            break
     if not repo_root:
         return
 
@@ -894,8 +938,8 @@ def _handle_codex_subagent_start(input_data: dict) -> None:
         return
 
     if subagent_type in AGENTS_REQUIRE_TASK:
-        task_dir_full = Path(repo_root) / task_dir
-        if not task_dir_full.is_dir():
+        task_dir_full = _resolve_task_path(repo_root, task_dir)
+        if task_dir_full is None or not task_dir_full.is_dir():
             return
 
     if subagent_type == AGENT_IMPLEMENT:
@@ -979,6 +1023,8 @@ def _extract_subagent_type(tool_input: dict) -> str:
         "subagentType",
         "subagent_type_name",
         "subagentTypeName",
+        "subagent_name",
+        "subagentName",
         "agent_type",
         "agentType",
         "name",
@@ -994,7 +1040,8 @@ def _parse_hook_input(input_data: dict) -> tuple[str, str, dict]:
 
     Returns (subagent_type, original_prompt, tool_input).
     Handles:
-    - Claude Code / Qoder / CodeBuddy / Droid: tool_name=Task|Agent, tool_input.subagent_type
+    - Claude Code / Qoder / Droid: tool_name=Task|Agent, tool_input.subagent_type
+    - CodeBuddy: tool_name=task (IDE) or Task (CLI), tool_input.subagent_name
     - Cursor: tool_name=Task|Subagent, tool_input.subagent_type
     - Copilot CLI: toolName=task (camelCase key, lowercase value)
     - ZCode: toolName=Agent, toolInput/tool_input.subagent_type
@@ -1073,9 +1120,10 @@ def main():
     if subagent_type in AGENTS_REQUIRE_TASK:
         if not task_dir:
             sys.exit(0)
-        # Check if task directory exists
-        task_dir_full = os.path.join(repo_root, task_dir)
-        if not os.path.exists(task_dir_full):
+        task_dir_full = _resolve_task_path(repo_root, task_dir)
+        if task_dir_full is None:
+            sys.exit(0)
+        if not task_dir_full.is_dir():
             sys.exit(0)
 
     # Check for [finish] marker in prompt (check agent with finish context)
