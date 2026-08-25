@@ -2,7 +2,16 @@
 
 from __future__ import annotations
 
+import os
 from dataclasses import dataclass, field
+
+
+def env_flag(name: str, default: bool = False) -> bool:
+    """Parse a boolean-like environment variable consistently across the app."""
+    value = os.environ.get(name)
+    if value is None:
+        return default
+    return value.strip().lower() in {"1", "true", "yes", "on"}
 
 
 @dataclass

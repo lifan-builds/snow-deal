@@ -8,6 +8,7 @@ from datetime import datetime
 from pathlib import Path
 from urllib.parse import quote
 
+from aggregator.config import env_flag
 from aggregator.models import AggregatedDeal
 
 DB_PATH = Path(os.environ.get("DATABASE_PATH", Path(__file__).resolve().parent.parent / "deals.db"))
@@ -67,17 +68,9 @@ MIGRATIONS = [
 ]
 
 
-def _env_flag(name: str, default: bool = False) -> bool:
-    """Parse a boolean-like environment variable."""
-    value = os.environ.get(name)
-    if value is None:
-        return default
-    return value.strip().lower() in {"1", "true", "yes", "on"}
-
-
 def _deal_db_read_only() -> bool:
     """Return True when deal data should be opened read-only."""
-    return _env_flag("DEALS_DB_READ_ONLY") or bool(os.environ.get("VERCEL"))
+    return env_flag("DEALS_DB_READ_ONLY") or bool(os.environ.get("VERCEL"))
 
 
 def _sqlite_uri(db_path: Path, mode: str) -> str:

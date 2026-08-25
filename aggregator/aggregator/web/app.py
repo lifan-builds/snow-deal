@@ -15,6 +15,7 @@ from fastapi.templating import Jinja2Templates
 
 import aggregator.auth as auth
 from aggregator.auth import auth_middleware
+from aggregator.config import env_flag
 from aggregator.db import ensure_deals_db_ready, init_db
 from aggregator.auth_db import init_auth_db
 from aggregator.web.routes import router
@@ -30,17 +31,9 @@ TEMPLATE_DIR = Path(__file__).resolve().parent / "templates"
 templates = Jinja2Templates(directory=str(TEMPLATE_DIR))
 
 
-def _env_flag(name: str, default: bool = False) -> bool:
-    """Parse a boolean-like environment variable."""
-    value = os.environ.get(name)
-    if value is None:
-        return default
-    return value.strip().lower() in {"1", "true", "yes", "on"}
-
-
 def _deals_db_read_only_runtime() -> bool:
     """Return True when startup should validate, not mutate, the deal DB."""
-    return _env_flag("DEALS_DB_READ_ONLY") or bool(os.environ.get("VERCEL"))
+    return env_flag("DEALS_DB_READ_ONLY") or bool(os.environ.get("VERCEL"))
 
 
 @asynccontextmanager
@@ -65,7 +58,7 @@ async def lifespan(app: FastAPI):
 
 def create_app(*, enable_lifespan: bool | None = None) -> FastAPI:
     if enable_lifespan is None:
-        enable_lifespan = not _env_flag("DISABLE_APP_LIFESPAN")
+        enable_lifespan = not env_flag("DISABLE_APP_LIFESPAN")
     app = FastAPI(title="FreshPowder", lifespan=lifespan if enable_lifespan else None)
     app.add_middleware(BaseHTTPMiddleware, dispatch=auth_middleware)
     app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")

@@ -18,6 +18,8 @@ import time
 from datetime import datetime, timedelta
 from pathlib import Path
 
+from aggregator.config import env_flag
+
 log = logging.getLogger(__name__)
 
 TURSO_URL = os.environ.get("TURSO_URL", "")
@@ -59,14 +61,6 @@ _conn = None
 _sync_enabled = False
 
 
-def _env_flag(name: str, default: bool = False) -> bool:
-    """Parse a boolean-like environment variable."""
-    value = os.environ.get(name)
-    if value is None:
-        return default
-    return value.strip().lower() in {"1", "true", "yes", "on"}
-
-
 def _get_conn():
     """Return a reusable database connection (created on first call)."""
     global _conn, _sync_enabled
@@ -75,7 +69,7 @@ def _get_conn():
 
     if TURSO_URL:
         import libsql
-        if _env_flag("TURSO_DIRECT_CONNECTION") or os.environ.get("VERCEL"):
+        if env_flag("TURSO_DIRECT_CONNECTION") or os.environ.get("VERCEL"):
             _conn = libsql.connect(TURSO_URL, auth_token=TURSO_AUTH_TOKEN)
             _sync_enabled = False
             log.info("Auth DB connected (Turso direct: %s)", TURSO_URL)

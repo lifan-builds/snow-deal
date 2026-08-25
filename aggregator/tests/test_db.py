@@ -1,9 +1,7 @@
 """Tests for SQLite database operations."""
 
 import asyncio
-import tempfile
 from datetime import datetime
-from pathlib import Path
 
 import pytest
 
@@ -42,23 +40,15 @@ def _make_deal(name="Atomic Bent 100", store="Evo", price=499.99, orig=599.99, s
 
 
 class TestDB:
-    def test_init_and_upsert(self, db_path):
-        async def _run():
-            await init_db(db_path)
-            deals = [_make_deal()]
-            count = await upsert_deals(deals, db_path)
-            assert count == 1
-
-        asyncio.run(_run())
-
     def test_query_deals(self, db_path):
         async def _run():
             await init_db(db_path)
-            await upsert_deals([
+            inserted = await upsert_deals([
                 _make_deal("Atomic Bent 100", "Evo", 499.99, 599.99, category="skis"),
                 _make_deal("Burton Custom", "Backcountry", 399.99, 499.99, category="snowboards",
                            url="https://example.com/burton-custom"),
             ], db_path)
+            assert inserted == 2
 
             # Query all
             all_deals = await query_deals(db_path=db_path)

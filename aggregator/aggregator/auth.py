@@ -8,23 +8,17 @@ import jwt
 from fastapi import Request, Response
 from fastapi.responses import RedirectResponse
 
+from aggregator.config import env_flag
+
 SESSION_COOKIE = "snow_deals_session"
 
 # Paths that don't require authentication
 PUBLIC_PATHS = {"/invite", "/waitlist", "/static", "/admin", "/api/event", "/robots.txt"}
 
 
-def _env_flag(name: str, default: bool = False) -> bool:
-    """Parse a boolean-like environment variable."""
-    value = os.environ.get(name)
-    if value is None:
-        return default
-    return value.strip().lower() in {"1", "true", "yes", "on"}
-
-
 def is_public_mode() -> bool:
     """Return True when invite auth is disabled for public access."""
-    return _env_flag("PUBLIC_MODE", default=False)
+    return env_flag("PUBLIC_MODE", default=False)
 
 
 def get_admin_key() -> str:
