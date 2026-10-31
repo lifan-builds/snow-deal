@@ -7,12 +7,15 @@ from collections import Counter
 from dataclasses import dataclass
 import logging
 import re
+import random
+from email.utils import parsedate_to_datetime
+from datetime import timezone
 from datetime import datetime
 
 import httpx
 
 from aggregator.categorizer import categorize, is_excluded
-from aggregator.reviews import _extract_brand
+from aggregator.reviews import _extract_brand, _normalize_brand
 from aggregator.config import STORES, StoreConfig
 from aggregator.models import AggregatedDeal
 from aggregator.parsers.common import clean_product_name
@@ -122,7 +125,7 @@ def _extract_lengths(sizes_str: str | None) -> tuple[int | None, int | None]:
 
 
 _KIDS_KEYWORDS = re.compile(
-    r"\b(junior|jr|kids?|youth|toddler|boys|girls|infant|child|children|grom|little kid|big kid)\b",
+    r"\b(junior|jr|kids?|youth|toddlers?|baby|boys|girls|infant|child|children|grom|little kid|big kid)\b",
     re.IGNORECASE,
 )
 
@@ -166,7 +169,7 @@ def _products_to_deals(
 
     Filters out kids/junior products.
     """
-    now = datetime.now()
+    now = datetime.now(timezone.utc).replace(tzinfo=None)
     deals: list[AggregatedDeal] = []
     for p in products:
         name = clean_product_name(p.name, p.url)
@@ -174,9 +177,13 @@ def _products_to_deals(
             continue
         if _is_kids_product(name) or is_excluded(name, p.url):
             continue
-        if p.discount_pct <= 0:
+        if p.current_price < 1 or p.discount_pct <= 0 or p.discount_pct >= 95:
             continue
+        category = categorize(name, p.url, p.product_type or "")
         raw_sizes = ", ".join(p.sizes) if p.sizes else None
+        if category in {"skis", "snowboards"} and raw_sizes:
+            raw_sizes = re.sub(r"(?<![\d.])\b(1\d{2}|2[01]\d|220)\b(?!\s*cm|[\d.])", r"\1cm", raw_sizes)
+
         length_min, length_max = _extract_lengths(raw_sizes)
         sizes_str = _clean_sizes(raw_sizes)
         deals.append(
@@ -188,13 +195,13 @@ def _products_to_deals(
                 current_price=p.current_price,
                 original_price=p.original_price,
                 discount_pct=p.discount_pct,
-                category=categorize(name, p.url, p.product_type or ""),
+                category=category,
                 sizes=sizes_str,
                 length_min=length_min,
                 length_max=length_max,
                 scraped_at=now,
                 image_url=p.image_url,
-                brand=_extract_brand(name) or None,
+                brand=_normalize_brand(p.brand) if p.brand else (_extract_brand(name) or None),
             )
         )
     return deals
@@ -240,15 +247,45 @@ def build_scrape_report(
     )
 
 
+async def fetch_listing(client: httpx.AsyncClient, url: str, delay: float) -> httpx.Response:
+    """Pace every request, including collection boundaries; retry temporary failures."""
+    for attempt in range(4):
+        await asyncio.sleep(max(delay, 0))
+        try:
+            response = await client.get(url)
+            if response.status_code not in {429, 500, 502, 503, 504} or attempt == 3:
+                response.raise_for_status()
+                return response
+            retry_after = response.headers.get("Retry-After", "")
+            try:
+                seconds = float(retry_after)
+            except ValueError:
+                try:
+                    seconds = (parsedate_to_datetime(retry_after) - datetime.now(timezone.utc)).total_seconds()
+                except (ValueError, TypeError):
+                    seconds = 2 ** (attempt + 2) + random.random()
+            # Do not retry sooner than a retailer requests when the wait exceeds our budget.
+            if seconds > 60:
+                response.raise_for_status()
+            await asyncio.sleep(max(0, seconds))
+        except httpx.TransportError:
+            if attempt == 3:
+                raise
+            await asyncio.sleep(2 ** (attempt + 2))
+    raise RuntimeError("Unreachable retry state")
+
+
 async def scrape_store(
     store: StoreConfig,
     client: httpx.AsyncClient,
     *,
     delay: float = 1.0,
     max_pages: int = 10,
+    outcomes: dict | None = None,
 ) -> list[AggregatedDeal]:
     """Scrape a single store using HTTP + parser and return AggregatedDeals."""
     sem = _get_semaphore(store.domain)
+    outcome = outcomes.setdefault(store.name, {"errors": 0, "pages": 0}) if outcomes is not None else {"errors": 0, "pages": 0}
 
     parser = _get_parser(store.parser_type)
     if parser is None:
@@ -276,24 +313,22 @@ async def scrape_store(
             async with sem:
                 log.info("[%s] Fetching page %d: %s", store.name, page, current_url)
                 try:
-                    resp = await client.get(current_url)
-                    resp.raise_for_status()
+                    resp = await fetch_listing(client, current_url, delay)
+                    outcome["pages"] += 1
                 except httpx.HTTPError as e:
+                    outcome["errors"] += 1
                     log.error("[%s] HTTP error: %s", store.name, e)
                     break
 
             page_products = parser.parse_listing_page(resp.text, current_url)
             products.extend(page_products)
 
-            if not page_products:
-                break
-
             current_url = parser.get_next_page_url(resp.text, current_url)
             if current_url and page < max_pages:
                 await asyncio.sleep(delay)
 
     log.info("[%s] Total products scraped: %d", store.name, len(products))
-    return _products_to_deals(products, store.name)
+    return list({d.url: d for d in _products_to_deals(products, store.name)}.values())
 
 
 async def scrape_store_browser(
@@ -301,6 +336,7 @@ async def scrape_store_browser(
     *,
     delay: float = 2.0,
     max_pages: int = 25,
+    outcomes: dict | None = None,
 ) -> list[AggregatedDeal]:
     """Scrape a single store using Playwright headless browser."""
     try:
@@ -315,9 +351,10 @@ async def scrape_store_browser(
         store_type=store.parser_type,
         max_pages=max_pages,
         delay=delay,
+        outcome=outcomes.setdefault(store.name, {"errors": 0, "pages": 0}) if outcomes is not None else None,
     )
     log.info("[%s] Browser scraped %d products", store.name, len(products))
-    return _products_to_deals(products, store.name)
+    return list({d.url: d for d in _products_to_deals(products, store.name)}.values())
 
 
 async def scrape_all(
@@ -325,14 +362,27 @@ async def scrape_all(
     stores: list[StoreConfig] | None = None,
     delay: float = 1.0,
     max_pages: int = 10,
+    outcomes: dict | None = None,
 ) -> list[AggregatedDeal]:
     """Scrape all configured stores concurrently."""
     stores = stores or STORES
+    _semaphores.clear()
 
     http_stores = [s for s in stores if not s.use_browser]
     browser_stores = [s for s in stores if s.use_browser]
 
     all_deals: list[AggregatedDeal] = []
+    http_limit = asyncio.Semaphore(3)
+    browser_limit = asyncio.Semaphore(3)
+
+    async def bounded_http(store, client):
+        async with http_limit:
+            return await scrape_store(store, client, delay=delay, max_pages=max_pages, outcomes=outcomes)
+
+    async def bounded_browser(store):
+        async with browser_limit:
+            return await scrape_store_browser(store, delay=delay, max_pages=max_pages, outcomes=outcomes)
+
 
     # HTTP-based stores (Shopify JSON, BS4 HTML parsers)
     if http_stores:
@@ -342,7 +392,7 @@ async def scrape_all(
             timeout=30.0,
         ) as client:
             tasks = [
-                scrape_store(store, client, delay=delay, max_pages=max_pages)
+                bounded_http(store, client)
                 for store in http_stores
             ]
             results = await asyncio.gather(*tasks, return_exceptions=True)
@@ -350,11 +400,13 @@ async def scrape_all(
             for store, result in zip(http_stores, results):
                 if isinstance(result, Exception):
                     log.error("[%s] Scrape failed: %s", store.name, result)
+                    if outcomes is not None:
+                        outcomes.setdefault(store.name, {"errors": 0, "pages": 0})["errors"] += 1
                     result = []
                 if not result:
                     log.warning("[%s] Returned zero deals; retrying once", store.name)
                     try:
-                        result = await scrape_store(store, client, delay=delay, max_pages=max_pages)
+                        result = await scrape_store(store, client, delay=delay, max_pages=max_pages, outcomes=outcomes)
                     except Exception as exc:
                         log.error("[%s] Retry failed: %s", store.name, exc)
                         result = []
@@ -364,7 +416,7 @@ async def scrape_all(
     # Browser-based stores (Playwright)
     if browser_stores:
         browser_tasks = [
-            scrape_store_browser(store, delay=delay, max_pages=max_pages)
+            bounded_browser(store)
             for store in browser_stores
         ]
         results = await asyncio.gather(*browser_tasks, return_exceptions=True)
@@ -376,6 +428,7 @@ async def scrape_all(
                 log.info("[%s] Completed: %d deals after filtering", store.name, len(result))
                 all_deals.extend(result)
 
+    all_deals = list({d.url: d for d in all_deals}.values())
     report = build_scrape_report(all_deals, stores)
     if report.zero_count_stores:
         log.warning("Zero-count stores: %s", ", ".join(report.zero_count_stores))

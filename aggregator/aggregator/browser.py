@@ -501,8 +501,10 @@ async def scrape_with_browser(
     *,
     max_pages: int = 25,
     delay: float = 2.0,
+    outcome: dict | None = None,
 ) -> list[Product]:
     """Scrape product listings using a headless Chromium browser."""
+    outcome = outcome if outcome is not None else {"errors": 0, "pages": 0}
     config = STORE_CONFIGS.get(store_type)
     if config is None:
         log.warning("[%s] No browser config for store_type=%r, skipping", store_name, store_type)
@@ -536,6 +538,7 @@ async def scrape_with_browser(
                 try:
                     await page.goto(url, wait_until="domcontentloaded", timeout=nav_timeout)
                 except Exception as exc:
+                    outcome["errors"] += 1
                     log.error("[%s] Failed to load %s: %s", store_name, url, exc)
                     continue
 
@@ -549,6 +552,7 @@ async def scrape_with_browser(
                         wait_state = "attached" if wait_selector.startswith("script") else "visible"
                         await page.wait_for_selector(wait_selector, timeout=selector_timeout, state=wait_state)
                     except Exception:
+                        outcome["errors"] += 1
                         log.warning("[%s] Timeout waiting for products (page %d)", store_name, page_num)
                         break
 
@@ -557,9 +561,11 @@ async def scrape_with_browser(
                     try:
                         raw: list[dict] = await page.evaluate(js_extract)
                     except Exception as exc:
+                        outcome["errors"] += 1
                         log.error("[%s] JS extraction error: %s", store_name, exc)
                         break
 
+                    outcome["pages"] += 1
                     products = _parse_raw_products(raw, page.url)
                     new_products = [p for p in products if p.url not in seen_urls]
                     seen_urls.update(p.url for p in new_products)
@@ -592,6 +598,7 @@ async def scrape_with_browser(
             await browser.close()
 
     except Exception as exc:
+        outcome["errors"] += 1
         log.error("[%s] Browser scraping failed: %s", store_name, exc)
 
     log.info("[%s] Browser scraping complete — %d total products", store_name, len(all_products))

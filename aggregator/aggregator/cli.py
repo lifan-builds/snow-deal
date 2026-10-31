@@ -4,12 +4,17 @@ from __future__ import annotations
 
 import asyncio
 import logging
+import json
+import os
+from dataclasses import asdict
+from datetime import datetime
+from pathlib import Path
 
 import click
 from rich.console import Console
 from rich.table import Table
 
-from aggregator.db import init_db, query_deals, upsert_deals, upsert_reviews
+from aggregator.db import init_db, query_deals, upsert_deals, upsert_reviews, save_scrape_run, store_status
 from aggregator.auth_db import init_auth_db, create_invite_codes, list_invite_codes
 from aggregator.scraper import build_scrape_report, scrape_all
 
@@ -63,17 +68,41 @@ def cli(verbose: bool) -> None:
 @cli.command()
 @click.option("--delay", "-d", type=float, default=1.0, help="Delay between requests.")
 @click.option("--max-pages", type=int, default=25, help="Max pages per store.")
-def refresh(delay: float, max_pages: int) -> None:
+@click.option("--min-stores", type=int, default=1, help="Minimum stores with deals before publishing.")
+@click.option("--report", type=click.Path(), default=None, help="Write machine-readable quality report.")
+def refresh(delay: float, max_pages: int, min_stores: int, report: str | None) -> None:
     """Scrape all stores and update the database."""
     async def _run() -> None:
         await init_db()
+        previous = sum(row["deal_count"] for row in await store_status())
+        outcomes = {}
         with console.status("[bold cyan]Scraping all stores...", spinner="dots"):
-            deals = await scrape_all(delay=delay, max_pages=max_pages)
+            deals = await scrape_all(delay=delay, max_pages=max_pages, outcomes=outcomes)
         console.print(f"[dim]Scraped {len(deals)} deals total.[/dim]")
         _print_scrape_report(deals)
 
+        quality = build_scrape_report(deals)
+        checked_at = datetime.utcnow().isoformat()
+        payload = {**asdict(quality), "checked_at": checked_at, "outcomes": outcomes}
+        if report:
+            Path(report).write_text(json.dumps(payload, indent=2))
+        if quality.stores_with_deals < min_stores or not deals:
+            raise click.ClickException(f"Only {quality.stores_with_deals} stores returned deals; snapshot not published.")
+        if previous and len(deals) < previous * 0.5:
+            raise click.ClickException("Deal count fell by more than 50%; snapshot not published.")
+        if quality.missing_category / len(deals) > 0.10:
+            raise click.ClickException("More than 10% of deals are uncategorized; snapshot not published.")
         if deals:
             count = await upsert_deals(deals)
+            await save_scrape_run(quality, outcomes, checked_at)
+            from aggregator.reviews import compute_and_store_deal_reviews
+            await compute_and_store_deal_reviews()
+            if os.environ.get("GITHUB_STEP_SUMMARY"):
+                partial = [name for name, result in outcomes.items() if result.get("errors")]
+                with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as summary:
+                    summary.write(f"## Scrape quality\n{len(deals)} unique deals across {quality.stores_with_deals}/{quality.configured_stores} stores.\n\nUnavailable: {', '.join(quality.zero_count_stores) or 'none'}.\n\nIncomplete collections: {', '.join(partial) or 'none'}.\n")
+                if partial or quality.zero_count_stores:
+                    console.print("::warning::Some retailer collections are incomplete; see scrape quality report.")
             console.print(f"[green]Saved {count} deals to database.[/green]")
 
     asyncio.run(_run())

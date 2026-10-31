@@ -479,6 +479,8 @@ def _normalize(name: str) -> str:
 _KNOWN_MULTI_WORD_BRANDS = [
     "lib tech", "never summer", "capita spring break", "jones mountain",
     "black crows", "black diamond", "dinosaurs will die",
+    "the north face", "helly hansen", "outdoor research", "boulder gear",
+    "jet set", "sweet protection", "full tilt", "dale of norway",
 ]
 
 # Normalize brand names — strip suffixes and map aliases
@@ -590,7 +592,15 @@ def _extract_brand(name: str) -> str:
     # Check model-to-brand lookup before falling back to first word
     if first in _MODEL_TO_BRAND:
         return _MODEL_TO_BRAND[first]
-    return _normalize_brand(first) if first else ""
+    from aggregator.config import SKI_BRANDS, SNOWBOARD_BRANDS, BOOT_BRANDS, SKI_BOOT_BRANDS, SNOWBOARD_BOOT_BRANDS
+    known = SKI_BRANDS | SNOWBOARD_BRANDS | BOOT_BRANDS | SKI_BOOT_BRANDS | SNOWBOARD_BOOT_BRANDS | {
+        "patagonia", "mammut", "oakley", "smith", "giro", "anon", "poc", "dakine", "hestra", "swix",
+        "flylow", "picture", "spyder", "obermeyer", "burton", "volcom", "roxy", "quiksilver", "686",
+        "orage", "descente", "nils", "sportalm", "bogner", "fusalp", "trew", "strafe", "scott",
+        "marker", "look", "tyrolia", "union", "flux", "spark", "karakoram", "leki", "kerma",
+        "smartwool", "icebreaker", "airblaster", "coal", "bula", "gordini", "swany", "blackstrap",
+    }
+    return _normalize_brand(first) if first in known else ""
 
 
 def _extract_model_key(name: str) -> str:
@@ -743,6 +753,9 @@ async def compute_and_store_deal_reviews(db_path=None) -> int:
                 "review_url": match.url,
             })
 
+    async with aiosqlite.connect(db_path) as db:
+        await db.execute("DELETE FROM deal_reviews")
+        await db.commit()
     if matched:
         await upsert_deal_reviews(matched, db_path)
 

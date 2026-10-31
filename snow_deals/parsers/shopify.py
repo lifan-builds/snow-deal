@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import logging
+import math
 import re
 from urllib.parse import urlparse
 
@@ -45,24 +46,30 @@ class ShopifyParser(BaseParser):
             if variants and not any(v.get("available", True) for v in variants):
                 continue
 
-            # Prefer a live variant for pricing so out-of-stock leads don't skew it.
-            variant = next(
-                (v for v in variants if v.get("available", True)),
-                variants[0] if variants else {},
-            )
-            price = float(variant.get("price", 0))
-            compare = variant.get("compare_at_price")
-            original_price = float(compare) if compare else None
-
-            # Extract available sizes from variants
-            sizes: list[str] = []
-            for v in variants:
-                if not v.get("available", True):
+            # A card represents one actual offer, not unrelated variant prices/sizes.
+            offers = []
+            for candidate in variants:
+                if not candidate.get("available", True):
                     continue
-                # Size is typically option1 or option2; check option names
-                for opt_key in ("option1", "option2", "option3"):
+                try:
+                    price = float(candidate.get("price") or 0)
+                    original = float(candidate.get("compare_at_price") or 0)
+                except (TypeError, ValueError):
+                    continue
+                if math.isfinite(price) and math.isfinite(original) and 0 < price < original:
+                    offers.append((price, original, candidate))
+            if not offers:
+                continue
+            price, original_price, variant = min(offers, key=lambda offer: offer[0])
+            sizes = []
+            option_keys = [f"option{index + 1}" for index, option in enumerate(item.get("options") or [])
+                           if any(word in str(option.get("name", "")).lower() for word in ("size", "length"))]
+            for offer_price, offer_original, v in offers:
+                if (offer_price, offer_original) != (price, original_price):
+                    continue
+                for opt_key in option_keys or ("option1", "option2", "option3"):
                     val = v.get(opt_key)
-                    if val and val not in ("Default Title",) and val not in sizes:
+                    if val and val != "Default Title" and val not in sizes:
                         sizes.append(val)
 
             # Extract first product image URL
@@ -81,6 +88,7 @@ class ShopifyParser(BaseParser):
                 sizes=sizes or None,
                 product_type=item.get("product_type") or None,
                 image_url=image_url,
+                brand=item.get("vendor") or None,
             ))
 
         log.info("Parsed %d products from %s", len(products), page_url)

@@ -96,11 +96,14 @@ STORES: list[StoreConfig] = [
     StoreConfig(
         "Alpine Shop VT", "alpineshopvt.com",
         scrape_urls=[
-            "https://www.alpineshopvt.com/activities/skiing/",
-            "https://www.alpineshopvt.com/activities/snowboard/",
+            "https://alpineshopvt.com/collections/skis",
+            "https://alpineshopvt.com/collections/ski-boots",
+            "https://alpineshopvt.com/collections/alpine-binding",
+            "https://alpineshopvt.com/collections/snowboards",
+            "https://alpineshopvt.com/collections/snowboard-boots-1",
+            "https://alpineshopvt.com/collections/snowboard-bindings",
         ],
-        parser_type="alpineshopvt",
-        use_browser=True,
+        parser_type="shopify",
     ),
     StoreConfig(
         "The Circle Whistler", "thecirclewhistler.com",
@@ -763,6 +766,8 @@ NOT_HARDGOODS_KEYWORDS: list[str] = [
 
 # Products matching these patterns are excluded entirely (non-snow-sport items)
 EXCLUDE_KEYWORDS: list[str] = [
+    " grill ", " fire pit ", " tailgating ", " skirt ", " dress ",
+    " trail short ", " tank ", " carpenter ", " saucony ",
     # Water sports
     "wakeboard", "wakeskate", "wakesurf", "towable ", "water ski", "waterski",
     "kayak", "paddleboard", "sup board", "tube rope", "wake vest",

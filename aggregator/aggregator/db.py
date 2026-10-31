@@ -8,7 +8,7 @@ from datetime import datetime
 from pathlib import Path
 from urllib.parse import quote
 
-from aggregator.config import env_flag
+from aggregator.config import env_flag, STORES
 from aggregator.models import AggregatedDeal
 
 DB_PATH = Path(os.environ.get("DATABASE_PATH", Path(__file__).resolve().parent.parent / "deals.db"))
@@ -53,12 +53,23 @@ CREATE TABLE IF NOT EXISTS deal_reviews (
     PRIMARY KEY (deal_id)
 );
 
+CREATE TABLE IF NOT EXISTS price_history (
+    url TEXT NOT NULL, observed_at TEXT NOT NULL, price REAL NOT NULL,
+    PRIMARY KEY (url, observed_at)
+);
+CREATE INDEX IF NOT EXISTS idx_history_url ON price_history(url, observed_at);
+CREATE TABLE IF NOT EXISTS scrape_runs (
+    store TEXT PRIMARY KEY, checked_at TEXT NOT NULL, status TEXT NOT NULL,
+    deals INTEGER NOT NULL, errors INTEGER NOT NULL, pages INTEGER NOT NULL
+);
 CREATE INDEX IF NOT EXISTS idx_deal_reviews_score ON deal_reviews (score DESC);
 
 """
 
 
 MIGRATIONS = [
+    "ALTER TABLE deals ADD COLUMN first_seen TEXT",
+    "ALTER TABLE deals ADD COLUMN currency TEXT NOT NULL DEFAULT 'USD'",
     "ALTER TABLE deals ADD COLUMN sizes TEXT",
     "ALTER TABLE deals ADD COLUMN length_min INTEGER",
     "ALTER TABLE deals ADD COLUMN length_max INTEGER",
@@ -118,6 +129,9 @@ async def init_db(db_path: Path = DB_PATH) -> None:
                 await db.execute(migration)
             except Exception:
                 pass  # column/index already exists
+        await db.execute("UPDATE deals SET first_seen = scraped_at WHERE first_seen IS NULL")
+        for store in STORES:
+            await db.execute("UPDATE deals SET currency = ? WHERE store = ?", (store.currency, store.name))
         await db.commit()
 
 
@@ -126,12 +140,17 @@ async def upsert_deals(deals: list[AggregatedDeal], db_path: Path = DB_PATH) -> 
     async with _connect(db_path) as db:
         count = 0
         for d in deals:
+            currency = next((store.currency for store in STORES if store.name == d.store), d.currency)
+            prior = await (await db.execute("SELECT current_price, scraped_at FROM deals WHERE url = ?", (d.url,))).fetchone()
+            if prior:
+                await db.execute("INSERT OR IGNORE INTO price_history VALUES (?, ?, ?)", (d.url, prior[1], prior[0]))
+            await db.execute("INSERT OR REPLACE INTO price_history VALUES (?, ?, ?)", (d.url, d.scraped_at.isoformat(), d.current_price))
             await db.execute(
                 """\
                 INSERT INTO deals (store, name, url, current_price, original_price,
                                    discount_pct, category, sizes, length_min, length_max,
-                                   scraped_at, image_url, brand)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                                   scraped_at, image_url, brand, first_seen, currency)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 ON CONFLICT(url) DO UPDATE SET
                     store          = excluded.store,
                     name           = excluded.name,
@@ -144,12 +163,13 @@ async def upsert_deals(deals: list[AggregatedDeal], db_path: Path = DB_PATH) -> 
                     length_max     = excluded.length_max,
                     scraped_at     = excluded.scraped_at,
                     image_url      = excluded.image_url,
-                    brand          = excluded.brand
+                    brand          = excluded.brand,
+                    currency       = excluded.currency
                 """,
                 (
                     d.store, d.name, d.url, d.current_price, d.original_price,
                     d.discount_pct, d.category, d.sizes, d.length_min, d.length_max,
-                    d.scraped_at.isoformat(), d.image_url, d.brand,
+                    d.scraped_at.isoformat(), d.image_url, d.brand, d.scraped_at.isoformat(), currency,
                 ),
             )
             count += 1
@@ -237,13 +257,23 @@ async def query_deals(
     size_max: int | None = None,
     reviewed_only: bool = False,
     count_only: bool = False,
+    currency: str | None = None,
     db_path: Path = DB_PATH,
 ) -> list[AggregatedDeal] | int:
     """Query deals with optional filters. If count_only=True, returns int."""
     clauses: list[str] = [
         "deals.discount_pct >= ?",
+        "deals.current_price >= 1 AND deals.discount_pct < 95",
+        "datetime(deals.scraped_at) >= datetime('now', '-72 hours')",
     ]
     params: list[object] = [min_discount]
+
+    if currency in {"USD", "CAD"}:
+        clauses.append("deals.currency = ?")
+        params.append(currency)
+    # Never compare nominal USD and CAD prices as if they were the same currency.
+    elif sort_by in {"price_low", "price_high"} or min_price > 0 or max_price > 0:
+        clauses.append("deals.currency = 'USD'")
 
     if min_price > 0:
         clauses.append("deals.current_price >= ?")
@@ -306,7 +336,7 @@ async def query_deals(
         "price_low": "deals.current_price ASC",
         "price_high": "deals.current_price DESC",
         "store": "deals.store ASC, deals.discount_pct DESC",
-        "newest": "deals.scraped_at DESC",
+        "newest": "deals.first_seen DESC, deals.id DESC",
     }
     order = sort_map.get(sort_by, "deals.discount_pct DESC")
 
@@ -315,7 +345,9 @@ async def query_deals(
         cursor = await db.execute(
             f"""\
             SELECT deals.*, dr.score AS review_score, dr.award AS review_award,
-                   dr.review_url AS review_url
+                   dr.review_url AS review_url,
+                   (SELECT ph.price FROM price_history ph WHERE ph.url = deals.url
+                    AND ph.observed_at < deals.scraped_at ORDER BY ph.observed_at DESC LIMIT 1) AS previous_price
             FROM deals
             {latest_join}
             LEFT JOIN deal_reviews dr ON deals.id = dr.deal_id
@@ -329,6 +361,7 @@ async def query_deals(
 
     return [
         AggregatedDeal(
+            first_seen=row["first_seen"], previous_price=row["previous_price"], currency=row["currency"],
             id=row["id"],
             store=row["store"],
             name=row["name"],
@@ -405,9 +438,29 @@ async def store_status(db_path: Path = DB_PATH) -> list[dict]:
                    COUNT(*)                          AS deal_count,
                    SUM(CASE WHEN discount_pct > 0 THEN 1 ELSE 0 END) AS discount_count,
                    MAX(scraped_at)                   AS last_scraped
-            FROM deals
+            FROM deals d
+            INNER JOIN (SELECT store AS latest_store, MAX(scraped_at) AS latest_time FROM deals GROUP BY store) latest
+                ON d.store = latest.latest_store AND d.scraped_at = latest.latest_time
             GROUP BY store
             ORDER BY store
         """)
         rows = await cursor.fetchall()
     return [dict(row) for row in rows]
+
+
+async def save_scrape_run(report, outcomes: dict, checked_at: str, db_path: Path = DB_PATH) -> None:
+    async with _connect(db_path) as db:
+        for item in report.store_summaries:
+            result = outcomes.get(item.store, {})
+            errors = result.get("errors", 0)
+            status = "unavailable" if not item.deals else ("partial" if errors else "ok")
+            await db.execute("INSERT OR REPLACE INTO scrape_runs VALUES (?, ?, ?, ?, ?, ?)",
+                             (item.store, checked_at, status, item.deals, errors, result.get("pages", 0)))
+        await db.commit()
+
+
+async def refresh_status(db_path: Path = DB_PATH) -> list[dict]:
+    async with _connect(db_path, read_only=True) as db:
+        db.row_factory = aiosqlite.Row
+        rows = await (await db.execute("SELECT * FROM scrape_runs ORDER BY store")).fetchall()
+        return [dict(row) for row in rows]

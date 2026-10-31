@@ -1,0 +1,1 @@
+{% if has_more %}<div class="load-more-wrap"><button class="button secondary" hx-get="/deals?offset={{ next_offset }}" hx-include="#filters" hx-swap="outerHTML" hx-target="closest .load-more-wrap" hx-disabled-elt="this">Load more finds <span aria-hidden="true">↓</span></button></div>{% endif %}

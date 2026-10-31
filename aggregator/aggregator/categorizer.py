@@ -33,7 +33,7 @@ def _url_path(url: str) -> str:
 def is_excluded(name: str, url: str = "") -> bool:
     """Return True if the product is a non-snow-sport item that should be excluded."""
     # Prepend a space so space-prefixed keywords like " used " match at start of string too
-    text = f" {name} {_url_path(url)}".lower()
+    text = " " + re.sub(r"[-_/]+", " ", f"{name} {_url_path(url)}".lower()) + " "
     return any(kw in text for kw in EXCLUDE_KEYWORDS)
 
 
@@ -111,9 +111,11 @@ def categorize(name: str, url: str = "", product_type: str = "") -> str | None:
     If keyword matching fails and a Shopify ``product_type`` is provided,
     it is used as a fallback signal.
     """
-    text = f"{name} {_url_path(url)}".lower()
+    if is_excluded(name, url):
+        return None
+    text = " " + re.sub(r"[-_/]+", " ", f"{name} {_url_path(url)}".lower()) + " "
     for category, keywords in CATEGORY_RULES:
-        if any(kw in text for kw in keywords):
+        if any(re.search(r"(?<![a-z])" + re.escape(kw.strip()) + r"(?![a-z])", text) for kw in keywords):
             # Disambiguate generic "boots" into ski/snowboard
             if category == "boots":
                 return _disambiguate_boot(name, url)

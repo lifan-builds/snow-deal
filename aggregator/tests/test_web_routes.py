@@ -175,3 +175,40 @@ def test_mutating_routes_are_rate_limited(isolated_app, monkeypatch):
     assert first_event.status_code == 200
     assert second_event.status_code == 429
     assert second_event.json()["error"] == "rate_limited"
+
+
+def test_blank_numeric_filters_and_currency(isolated_app, monkeypatch):
+    monkeypatch.setenv("PUBLIC_MODE", "1")
+    asyncio.run(db_module.init_db(isolated_app))
+    asyncio.run(db_module.upsert_deals([_make_deal()], isolated_app))
+    with TestClient(app_module.create_app()) as client:
+        response = client.get('/?min_price=&max_price=&size_min=&size_max=&currency=USD')
+        assert response.status_code == 200
+        assert 'Atomic Bent 100' in response.text
+        assert client.get('/deals?currency=EUR').status_code == 422
+        assert client.get('/deals?offset=-1').status_code == 422
+
+
+def test_public_health_and_store_report_use_isolated_snapshot(isolated_app, monkeypatch):
+    monkeypatch.setenv("PUBLIC_MODE", "0")
+    monkeypatch.setenv("SECRET_KEY", "test-health-secret-at-least-32-characters")
+    monkeypatch.setattr(routes_module, "refresh_status", partial(db_module.refresh_status, db_path=isolated_app))
+    with TestClient(app_module.create_app()) as client:
+        response = client.get('/healthz')
+        assert response.status_code == 200
+        assert response.json()['status'] == 'stale'
+        assert response.headers['cache-control'] == 'no-store'
+        assert client.get('/status').status_code == 200
+        assert client.get('/deals', follow_redirects=False).status_code == 302
+
+
+def test_waitlist_failure_is_not_reported_as_success(isolated_app, monkeypatch):
+    async def broken_waitlist(email):
+        raise RuntimeError('simulated outage')
+    monkeypatch.setenv("PUBLIC_MODE", "1")
+    monkeypatch.setattr(invite_routes, "add_to_waitlist", broken_waitlist)
+    with TestClient(app_module.create_app()) as client:
+        assert client.post('/waitlist', data={'email':'invalid'}).status_code == 422
+        response = client.post('/waitlist', data={'email':'test@example.com'})
+        assert response.status_code == 503
+        assert response.json()['ok'] is False

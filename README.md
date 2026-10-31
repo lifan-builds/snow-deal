@@ -1,6 +1,6 @@
 # FreshPowder
 
-FreshPowder is an invite-gated ski and snowboard deal aggregator that tracks gear prices across 28+ North American retailers every 6 hours, matches expert review scores, and surfaces the best discounts in one fast, filterable web app.
+FreshPowder is an invite-gated ski and snowboard deal aggregator that tracks gear prices across 28+ North American retailers daily, matches expert review scores, and surfaces the best discounts in one fast, filterable web app.
 
 If you have ever kept 12 retailer tabs open waiting for skis, boots, or boards to drop, this is the app I wanted instead: one live feed, real prices, deep filters, review context, and shareable deals.
 
@@ -16,7 +16,7 @@ Skiing and snowboarding gear is expensive, and the best deals are scattered acro
 
 - **12k+ current and historical deals** from ski and snowboard retailers
 - **28+ monitored stores**, including evo, Backcountry, REI, Steep & Cheap, The House, Ski Essentials, MEC, and more
-- **6-hour refresh cadence** through GitHub Actions scraping
+- **Daily refresh cadence** through GitHub Actions scraping
 - **Expert review context** from OutdoorGearLab and The Good Ride where matches are available
 - **Discount depth, store, category, brand, price, length, review, tax-free, and search filters**
 

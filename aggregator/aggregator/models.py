@@ -27,3 +27,6 @@ class AggregatedDeal:
     review_score: int | None = None
     review_award: str | None = None
     review_url: str | None = None
+    first_seen: str | None = None
+    previous_price: float | None = None
+    currency: str = "USD"

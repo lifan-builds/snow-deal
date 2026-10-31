@@ -73,7 +73,14 @@ def download_deals_db() -> None:
         with urlopen(url, timeout=60) as response:
             with tmp_path.open("wb") as out:
                 shutil.copyfileobj(response, out)
+        # Migrate only the downloaded deal snapshot, never auth data.
+        sys.path.insert(0, str(ROOT / "aggregator"))
+        import asyncio
+        from aggregator.db import init_db
+        asyncio.run(init_db(tmp_path))
         count, latest = validate_sqlite_db(tmp_path)
+        if count == 0:
+            raise RuntimeError("Refusing to deploy an empty deal snapshot")
         tmp_path.replace(DB_DEST)
         log(f"Prepared deals DB with {count} deals, latest={latest}")
     except Exception:

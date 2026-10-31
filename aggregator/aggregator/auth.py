@@ -13,7 +13,7 @@ from aggregator.config import env_flag
 SESSION_COOKIE = "snow_deals_session"
 
 # Paths that don't require authentication
-PUBLIC_PATHS = {"/invite", "/waitlist", "/static", "/admin", "/api/event", "/robots.txt"}
+PUBLIC_PATHS = {"/healthz", "/status","/invite", "/waitlist", "/static", "/admin", "/api/event", "/robots.txt"}
 
 
 def is_public_mode() -> bool:

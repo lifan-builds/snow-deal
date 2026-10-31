@@ -44,6 +44,7 @@ async def _landing_context(error: str | None = None) -> dict:
         "deal_count": deal_count or 0,
         "store_count": len(STORES),
         "sample_deals": sample_deals,
+        "cad_stores": {s.name for s in STORES if s.currency == "CAD"},
     }
 
 
@@ -87,8 +88,13 @@ async def invite_submit(request: Request, code: str = Form(...)):
 async def waitlist_submit(request: Request, email: str = Form(...)):
     """Add an email to the waitlist."""
     from fastapi.responses import JSONResponse
+    import re
+    if not re.fullmatch(r"[^\s@]+@[^\s@]+\.[^\s@]+", email.strip()) or len(email) > 254:
+        return JSONResponse({"ok": False, "error": "Please enter a valid email address."}, status_code=422)
+    if not invite_submit_limiter.allow(client_key(request, "waitlist"), INVITE_SUBMIT_LIMIT):
+        return JSONResponse({"ok": False, "error": "Please wait a few minutes and try again."}, status_code=429)
     try:
-        await add_to_waitlist(email)
+        await add_to_waitlist(email.strip())
     except Exception:
-        pass  # silently swallow DB errors — UX shows success regardless
+        return JSONResponse({"ok": False, "error": "We could not save your email. Please try again."}, status_code=503)
     return JSONResponse({"ok": True})
