@@ -48,3 +48,13 @@ scrolling. Invalid price range showed the browser validation message. No documen
 horizontal overflow was present at measured 320px on the catalog, store report or
 privacy page, or at 1280px on catalog and alerts. Tests use temporary databases;
 preview uses a previously downloaded public deal snapshot.
+
+## Production verification
+
+Commit `9834067` deployed Ready to freshpowder.clifan.com. Live HTTP checks passed
+for all public pages, decimal price preservation, USD selection, full-page
+pagination, 404/422 recovery pages, signup validation, admin protection and health.
+Chrome confirmed a measured 320px viewport had a 320px document width, quick-filter
+toggling worked, and Load more appended 60 cards to 120 before filter reset returned
+60. Desktop and mobile screenshots were visually inspected. Viewport overrides
+were reset after verification. Delivery of alert emails remains disabled.
