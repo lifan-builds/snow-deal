@@ -22,6 +22,18 @@ signup_limiter = SlidingWindowRateLimiter(3600)
 CONSENT_VERSION = "rare-deals-prelaunch-v1"
 
 
+def signup_error(request: Request, message: str, status: int, *, removal: bool = False):
+    if 'application/json' in request.headers.get('accept', ''):
+        response = JSONResponse({'ok': False, 'error': message}, status_code=status)
+    else:
+        response = templates.TemplateResponse(request=request, name='signup_result.html', status_code=status,
+            context={'result_title': 'Please try again', 'message': message, 'noindex': True,
+                     'retry_url': '/alerts/remove' if removal else '/alerts'})
+    response.headers['Cache-Control'] = 'no-store'
+    response.headers['Referrer-Policy'] = 'no-referrer'
+    return response
+
+
 @signup_router.get("/alerts", response_class=HTMLResponse)
 async def alerts(request: Request):
     return templates.TemplateResponse(
@@ -35,19 +47,14 @@ async def alerts(request: Request):
 
 
 @signup_router.post("/alerts/signup")
-async def signup(request: Request, email: str = Form(...), website: str = Form("")):
+async def signup(request: Request, email: str = Form(""), website: str = Form("")):
     email = email.strip().lower()
     if website:
         return JSONResponse({"ok": True, "message": "Thanks for your interest."})
     if len(email) > 254 or not re.fullmatch(r"[^\s@]+@[^\s@]+\.[^\s@]+", email):
-        return JSONResponse(
-            {"ok": False, "error": "Please enter a valid email address."},
-            status_code=422,
-        )
+        return signup_error(request, "Please enter a valid email address.", 422)
     if not signup_limiter.allow(client_key(request, "alerts"), 10):
-        return JSONResponse(
-            {"ok": False, "error": "Please wait before trying again."}, status_code=429
-        )
+        return signup_error(request, "Please wait before trying again.", 429)
     token = secrets.token_urlsafe(32)
     try:
         conn = signup_db()
@@ -65,17 +72,14 @@ async def signup(request: Request, email: str = Form(...), website: str = Form("
         conn.commit()
         _sync()
     except Exception:
-        return JSONResponse(
-            {"ok": False, "error": "We could not save your email. Please try again."},
-            status_code=503,
-        )
+        return signup_error(request, "We could not save your email. Please try again.", 503)
     message = "You’re on the list. Rare-deal alerts are coming soon; no emails are being sent yet."
     context = {
         "message": message,
         "removal_token": token if inserted else None,
         "noindex": True,
     }
-    if request.headers.get("accept") == "application/json":
+    if "application/json" in request.headers.get("accept", ""):
         response = JSONResponse({"ok": True, **context})
     else:
         response = templates.TemplateResponse(
@@ -97,23 +101,19 @@ async def removal_page(request: Request):
 
 
 @signup_router.post("/alerts/remove")
-async def remove_signup(request: Request, token: str = Form(...)):
-    if len(token) > 128:
-        return JSONResponse({"ok": False}, status_code=422)
-    conn = signup_db()
-    conn.execute(
-        "DELETE FROM deal_alert_signups WHERE removal_hash = ?",
-        (sha256(token.encode()).hexdigest(),),
-    )
-    conn.commit()
-    _sync()
-    response = templates.TemplateResponse(
-        request=request,
-        name="signup_result.html",
-        context={
-            "message": "Your signup has been removed.",
-            "noindex": True,
-        },
-    )
-    response.headers["Cache-Control"] = "no-store"
+async def remove_signup(request: Request, token: str = Form("")):
+    token = token.strip()
+    if not re.fullmatch(r'[A-Za-z0-9_-]{43}', token):
+        return signup_error(request, 'Use the complete private code from your removal link.', 422, removal=True)
+    try:
+        conn = signup_db()
+        conn.execute("DELETE FROM deal_alert_signups WHERE removal_hash = ?", (sha256(token.encode()).hexdigest(),))
+        conn.commit()
+        _sync()
+    except Exception:
+        return signup_error(request, 'We could not remove your signup. Please retry using your private link.', 503, removal=True)
+    response = templates.TemplateResponse(request=request, name='signup_result.html',
+        context={'result_title': 'Your signup is removed', 'message': 'Your signup has been removed.', 'noindex': True})
+    response.headers['Cache-Control'] = 'no-store'
+    response.headers['Referrer-Policy'] = 'no-referrer'
     return response

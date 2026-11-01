@@ -10,6 +10,7 @@ function showToast(message) {
   setTimeout(() => toast.remove(), 3500);
 }
 function refreshDeals() {
+  if (!form.reportValidity()) return;
   if (window.htmx) htmx.trigger(form, "submit");
   else form.requestSubmit();
 }
@@ -20,9 +21,37 @@ function resetAllFilters() {
     else if (el.tagName === "SELECT") el.selectedIndex = 0;
     else if (el.tagName === "INPUT") el.value = "";
   }
+  for (const input of form.querySelectorAll('input')) input.setCustomValidity('');
   refreshDeals();
 }
+document.querySelectorAll('.site-header nav a').forEach(link => {
+  if (new URL(link.href).pathname === location.pathname)
+    link.setAttribute('aria-current', 'page');
+});
+document.addEventListener('click', event => {
+  if (form && event.target.closest('[data-reset-filters]')) {
+    event.preventDefault();
+    resetAllFilters();
+  }
+});
 if (form) {
+  function validateRanges() {
+    for (const [min, max] of [['min_price', 'max_price'], ['size_min', 'size_max']]) {
+      const lower = form.elements[min], upper = form.elements[max];
+      const invalid = lower.value && upper.value && Number(upper.value) > 0 && Number(lower.value) > Number(upper.value);
+      upper.setCustomValidity(invalid ? 'The maximum must be at least the minimum.' : '');
+    }
+  }
+  form.addEventListener('input', validateRanges, true);
+  form.addEventListener('change', validateRanges, true);
+  form.addEventListener('submit', validateRanges, true);
+  document.body.addEventListener('htmx:beforeRequest', event => {
+    if (event.detail.target?.id === 'deal-grid' || event.detail.elt.closest('.load-more-wrap'))
+      document.getElementById('deal-grid').setAttribute('aria-busy', 'true');
+  });
+  document.body.addEventListener('htmx:afterRequest', () => {
+    document.getElementById('deal-grid').setAttribute('aria-busy', 'false');
+  });
   document.body.addEventListener("htmx:configRequest", (event) => {
     if (
       !form.contains(event.detail.elt) &&
@@ -62,11 +91,13 @@ if (form) {
   document.querySelectorAll("[data-preset]").forEach((btn) =>
     btn.addEventListener("click", () => {
       const settings = JSON.parse(btn.dataset.preset);
+      const active = btn.getAttribute('aria-pressed') === 'true';
       for (const [key, value] of Object.entries(settings)) {
         const input = form.elements[key];
-        if (input.type === "checkbox") input.checked = Boolean(value);
-        else input.value = value;
+        if (input.type === "checkbox") input.checked = !active && Boolean(value);
+        else input.value = active ? (key === 'sort' ? 'discount_pct' : key === 'min_discount' ? '0' : '') : value;
       }
+      validateRanges();
       refreshDeals();
     }),
   );
@@ -153,7 +184,9 @@ if (waitlist)
         method: "POST",
         body: new FormData(waitlist),
       });
-      const result = await response.json();
+      const result = await response.json().catch(() => {
+        throw new Error('We could not connect. Please try again in a moment.');
+      });
       if (!response.ok || !result.ok)
         throw new Error(result.error || "Please try again.");
       feedback.textContent =
@@ -180,7 +213,9 @@ for (const form of document.querySelectorAll(".alert-signup")) {
         body: new FormData(form),
         headers: { Accept: "application/json" },
       });
-      const result = await response.json();
+      const result = await response.json().catch(() => {
+        throw new Error('We could not connect. Please try again in a moment.');
+      });
       if (!response.ok || !result.ok)
         throw new Error(result.error || "Please try again.");
       feedback.textContent = result.message;
@@ -201,5 +236,7 @@ for (const form of document.querySelectorAll(".alert-signup")) {
   });
 }
 const removal = document.getElementById("removal-token");
-if (removal && location.hash)
-  removal.value = decodeURIComponent(location.hash.slice(1));
+if (removal && location.hash) {
+  try { removal.value = decodeURIComponent(location.hash.slice(1)); }
+  catch (_) { removal.value = ''; }
+}

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+from urllib.parse import urlencode
 from typing import Annotated
 from pydantic import BeforeValidator
 
@@ -76,6 +77,21 @@ async def _build_store_statuses() -> list[dict]:
 
 
 PAGE_SIZE = 60
+
+
+def pagination_context(request: Request, offset: int) -> dict:
+    allowed = {'category', 'store', 'brand', 'min_discount', 'min_price', 'max_price',
+               'sort', 'tax_free', 'q', 'size_min', 'size_max', 'reviewed', 'currency'}
+    params = {key: value for key, value in request.query_params.items() if key in allowed}
+    params['offset'] = offset + PAGE_SIZE
+    query = urlencode({key: value for key, value in params.items() if value != ''})
+    previous = None
+    if offset:
+        params['offset'] = max(0, offset - PAGE_SIZE)
+        previous = '/?' + urlencode(params) + '#catalog-heading'
+    return {'next_page_url': '/?' + query + '#catalog-heading',
+            'next_fragment_url': '/deals?' + query, 'previous_page_url': previous}
+
 Price = Annotated[float, Query(ge=0), BeforeValidator(lambda value: 0 if value == "" else value)]
 Length = Annotated[int | None, Query(ge=100, le=220), BeforeValidator(lambda value: None if value == "" else value)]
 
@@ -99,6 +115,10 @@ async def _fetch_deals(
     currency: str = "",
 ) -> tuple[list, bool, int | None]:
     """Fetch a page of deals. Reviews are pre-joined via deal_reviews table."""
+    if max_price > 0 and min_price > max_price:
+        raise HTTPException(422, 'The maximum price must be at least the minimum price.')
+    if size_min is not None and size_max is not None and size_min > size_max:
+        raise HTTPException(422, 'The maximum length must be at least the minimum length.')
     tax_free_only = tax_free == "1"
     reviewed_only = reviewed == "1"
 
@@ -142,7 +162,10 @@ async def index(
     size_max: Length = None,
     reviewed: str = Query("", alias="reviewed"),
     currency: str = Query("", pattern="^(USD|CAD)?$"),
+    offset: int = Query(0, ge=0, le=100000),
 ):
+    if not currency and (min_price > 0 or max_price > 0 or sort in {'price_low', 'price_high'}):
+        currency = 'USD'
     if not is_public_mode() and not await require_invite(request):
         ctx = await _landing_context()
         return templates.TemplateResponse(
@@ -153,7 +176,7 @@ async def index(
         category=category, store=store, brand=brand, min_discount=min_discount,
         min_price=min_price, max_price=max_price,
         sort=sort, tax_free=tax_free, q=q, size_min=size_min, size_max=size_max,
-        reviewed=reviewed, currency=currency,
+        reviewed=reviewed, currency=currency, offset=offset,
     )
     brands = await get_brands()
     length_count = await count_with_length()
@@ -188,7 +211,7 @@ async def index(
             "current_size_max": size_max,
             "length_count": length_count,
             "has_more": has_more,
-            "next_offset": PAGE_SIZE,
+            **pagination_context(request, offset),
         },
     )
 
@@ -229,6 +252,8 @@ async def status_page(request: Request):
     return templates.TemplateResponse(
         request=request, name="status.html",
         context={
+            "page_title": "Store Report — Retailer Coverage | FreshPowder",
+            "page_description": "See which stores were checked, partial results and the freshness of FreshPowder listings.",
             "store_statuses": statuses,
             "total_deals": total_deals,
             "total_discounts": total_discounts,
@@ -270,7 +295,7 @@ async def deals_fragment(
         request=request, name=template,
         context={"deals": deals, "deal_count": deal_count,
                  "tax_free_stores": TAX_FREE_STORES, "cad_stores": CAD_STORES,
-                 "has_more": has_more, "next_offset": offset + PAGE_SIZE,
+                 "has_more": has_more, **pagination_context(request, offset),
                  "current_currency": currency, "current_q": q, "current_min_discount": min_discount,
                  "current_max_price": max_price, "current_category": category},
     )

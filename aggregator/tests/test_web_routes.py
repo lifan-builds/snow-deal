@@ -276,3 +276,71 @@ def test_signup_validation_storage_failure_and_no_js(isolated_app, monkeypatch):
             raise RuntimeError('test database failure')
         monkeypatch.setattr(signup_routes, 'signup_db', fail)
         assert client.post('/alerts/signup', data={'email':'new@example.com'}).status_code == 503
+
+
+def test_full_page_pagination_and_currency_match_results(isolated_app, monkeypatch):
+    from bs4 import BeautifulSoup
+    from urllib.parse import urlsplit, parse_qs
+    monkeypatch.setenv('PUBLIC_MODE', '1')
+    observed = []
+    asyncio.run(db_module.init_db(isolated_app))
+
+    async def fake_query(**kwargs):
+        observed.append(kwargs)
+        if kwargs.get('count_only'):
+            return 125
+        start = kwargs.get('offset', 0)
+        return [_make_deal(f'Ski {i}') for i in range(start, min(start + kwargs.get('limit', 61), 125))]
+
+    monkeypatch.setattr(routes_module, 'query_deals', fake_query)
+    with TestClient(app_module.create_app(enable_lifespan=False)) as client:
+        first = BeautifulSoup(client.get('/?q=ski&max_price=99.95&sort=price_low&unrelated=private-value').text, 'html.parser')
+        assert first.select_one('input[name=max_price]')['value'] == '99.95'
+        assert first.select_one('select[name=currency] option[selected]')['value'] == 'USD'
+        link = first.select_one('.load-more-wrap a')
+        assert 'private-value' not in link['href']
+        assert parse_qs(urlsplit(link['href']).query)['offset'] == ['60']
+        second = BeautifulSoup(client.get(link['href']).text, 'html.parser')
+        assert len(second.select('.deal-card')) == 60
+        assert 'Ski 60' in second.select_one('.deal-card').text
+        assert 'Previous results' in second.text
+        assert any(row.get('offset') == 60 and row.get('currency') == 'USD' for row in observed)
+        fragment = BeautifulSoup(client.get(link['hx-get']).text, 'html.parser')
+        assert 'offset=120' in fragment.select_one('.load-more-wrap a')['href']
+
+
+def test_browser_errors_are_pages_and_api_errors_remain_json(isolated_app, monkeypatch):
+    monkeypatch.setenv('PUBLIC_MODE', '1')
+    with TestClient(app_module.create_app(enable_lifespan=False)) as client:
+        missing = client.get('/not-a-page', headers={'Accept': 'text/html'})
+        assert missing.status_code == 404
+        assert 'Browse all deals' in missing.text
+        invalid = client.get('/?min_price=invalid', headers={'Accept': 'text/html'})
+        assert invalid.status_code == 422
+        assert 'Check your filters' in invalid.text
+        assert client.get('/?min_price=200&max_price=100').status_code == 422
+        assert client.get('/?size_min=180&size_max=160').status_code == 422
+        assert client.get('/api/not-a-route').headers['content-type'].startswith('application/json')
+
+
+def test_signup_html_errors_and_removal_failure_are_recoverable(isolated_app, monkeypatch):
+    from aggregator.web import signup_routes
+    monkeypatch.setenv('PUBLIC_MODE', '1')
+    with TestClient(app_module.create_app(enable_lifespan=False)) as client:
+        invalid = client.post('/alerts/signup', data={'email': 'invalid'}, headers={'Accept': 'text/html'})
+        assert invalid.status_code == 422
+        assert 'Please enter a valid email address.' in invalid.text
+        assert 'Try again' in invalid.text
+        assert invalid.headers['cache-control'] == 'no-store'
+        invalid_code = client.post('/alerts/remove', data={'token': 'invalid'}, headers={'Accept': 'text/html'})
+        assert invalid_code.status_code == 422
+        assert 'complete private code' in invalid_code.text
+
+        def unavailable():
+            raise RuntimeError('test storage failure')
+
+        monkeypatch.setattr(signup_routes, 'signup_db', unavailable)
+        failed = client.post('/alerts/remove', data={'token': 'a' * 43}, headers={'Accept': 'text/html'})
+        assert failed.status_code == 503
+        assert 'We could not remove your signup' in failed.text
+        assert failed.headers['cache-control'] == 'no-store'

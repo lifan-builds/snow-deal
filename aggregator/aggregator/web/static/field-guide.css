@@ -1272,7 +1272,7 @@ th small {
   margin: 24px 0;
 }
 .category-links a {
-  border: 1px solid var(--line);
+  border: 1px solid var(--border);
   padding: 9px 14px;
   border-radius: 24px;
   font-size: 13px;
@@ -1357,4 +1357,57 @@ th small {
   .catalog-hero h1 {
     font-size: 38px;
   }
+}
+
+/* November usability audit: navigation, reading and controls at narrow widths. */
+.hero-browse { margin-top: 20px; }
+.category-links a:hover, .category-links a[aria-current="page"] { background: var(--text); color: var(--bg); }
+.category-grid { margin-top: 24px; }
+.card-image { text-decoration: none; flex-shrink: 0; }
+.card-body { min-width: 0; }
+.name { overflow-wrap: anywhere; }
+.share-btn, .preset-bar button, .page-links a, .site-header nav a { min-height: 44px; display: inline-flex; align-items: center; }
+.results-toolbar { flex-wrap: wrap; }
+.results-toolbar .result-count { order: -1; }
+.results-toolbar > .text-link { margin-left: 0; }
+.results-toolbar #view-toggle { margin-left: auto; }
+.htmx-indicator { display: none; }
+.htmx-request .htmx-indicator, .htmx-request.htmx-indicator { display: inline; }
+.filter-panel[open] summary span { transform: rotate(45deg); }
+#signup-removal { max-width: 560px; display: grid; gap: 16px; margin: 24px 0; }
+.reading-copy > p, .signup-result > p { margin: 16px 0; }
+.signup-result h1 { font-size: clamp(32px, 4vw, 48px); }
+.status-table-wrap:focus-visible { outline-offset: -3px; }
+.site-header nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 5px; }
+@media (max-width: 700px) {
+  input, select, .search-box input, .filter-fields input, .filter-fields select, .sort-label select { font-size: 16px; }
+  .catalog-hero h1 { font-size: 32px; }
+  .catalog-hero > div { padding: 22px; }
+  .catalog-heading { flex-wrap: wrap; }
+  .alert-banner { gap: 16px; margin: 24px 0 32px; }
+  .alert-banner .button { gap: 8px; padding: 12px; white-space: normal; }
+  .alert-signup .filter-note { padding: 0; }
+  .breadcrumbs, .page-links { flex-wrap: wrap; gap: 12px; }
+  .review-row, .card-bottom { flex-wrap: wrap; }
+  .site-footer > div:nth-child(2) > a { display: inline-flex; align-items: center; min-height: 44px; }
+  .text-link { white-space: normal; }
+  .name { font-size: 14px; }
+  .sizes-row { font-size: 12px; }
+  .toast { width: min(90vw, 440px); }
+}
+@media (max-width: 480px) {
+  .site-header { height: auto; min-height: 108px; flex-wrap: wrap; padding: 14px 20px 8px; gap: 4px; }
+  .site-header nav { width: 100%; justify-content: space-between; gap: 8px; }
+  .site-header nav > a:first-child { display: inline-flex; }
+  .site-header nav a { font-size: 12px; }
+  .site-header .wordmark { font-size: 22px; }
+  .status-summary { grid-template-columns: 1fr; }
+  .status-summary > div { display: flex; align-items: center; gap: 16px; }
+}
+@media (max-width: 379px) {
+  .deal-grid, .preview-grid { grid-template-columns: 1fr; }
+  .card-image { height: 200px; }
+  .card-body { padding: 16px; }
+  .name { font-size: 16px; }
+  .compact-view .card-image { width: 90px; min-width: 90px; }
 }

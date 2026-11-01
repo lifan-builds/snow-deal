@@ -9,7 +9,11 @@ from contextlib import asynccontextmanager
 from pathlib import Path
 
 from starlette.middleware.base import BaseHTTPMiddleware
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
+from fastapi.exceptions import RequestValidationError
+from fastapi.exception_handlers import http_exception_handler, request_validation_exception_handler
+from starlette.exceptions import HTTPException
+from aggregator.web.seo import page_context
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
@@ -29,7 +33,7 @@ log = logging.getLogger(__name__)
 STATIC_DIR = Path(__file__).resolve().parent / "static"
 TEMPLATE_DIR = Path(__file__).resolve().parent / "templates"
 
-templates = Jinja2Templates(directory=str(TEMPLATE_DIR))
+templates = Jinja2Templates(directory=str(TEMPLATE_DIR), context_processors=[page_context])
 
 
 def _deals_db_read_only_runtime() -> bool:
@@ -61,6 +65,23 @@ def create_app(*, enable_lifespan: bool | None = None) -> FastAPI:
     if enable_lifespan is None:
         enable_lifespan = not env_flag("DISABLE_APP_LIFESPAN")
     app = FastAPI(title="FreshPowder", lifespan=lifespan if enable_lifespan else None)
+    @app.exception_handler(HTTPException)
+    async def page_error(request: Request, error: HTTPException):
+        if 'text/html' not in request.headers.get('accept', '') or request.url.path.startswith(('/api/', '/static/')):
+            return await http_exception_handler(request, error)
+        message = 'This page could not be found.' if error.status_code == 404 else 'We could not open this page. Check your filters or try again.'
+        return templates.TemplateResponse(request=request, name='error.html', status_code=error.status_code,
+            context={'error_title': 'Page not found' if error.status_code == 404 else 'Let’s try that again',
+                     'message': message, 'noindex': True, 'page_title': 'Page unavailable | FreshPowder'})
+
+    @app.exception_handler(RequestValidationError)
+    async def invalid_page(request: Request, error: RequestValidationError):
+        if 'text/html' not in request.headers.get('accept', '') or request.url.path.startswith('/api/'):
+            return await request_validation_exception_handler(request, error)
+        return templates.TemplateResponse(request=request, name='error.html', status_code=422,
+            context={'error_title': 'Check your filters', 'message': 'Use valid numbers and a minimum no greater than the maximum. You can start again with all gear.',
+                     'noindex': True, 'page_title': 'Check your filters | FreshPowder'})
+
     app.add_middleware(BaseHTTPMiddleware, dispatch=auth_middleware)
     app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
     app.include_router(invite_router)
