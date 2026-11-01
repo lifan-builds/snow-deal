@@ -10,6 +10,10 @@ on:
         description: Refresh expert reviews as well as prices
         type: boolean
         default: false
+      stores:
+        description: Optional comma-separated retailer names to refresh only those sources
+        type: string
+        default: ''
 
 permissions:
   contents: read
@@ -21,7 +25,7 @@ concurrency:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -42,7 +46,18 @@ jobs:
       - name: Install Playwright Chromium
         run: playwright install chromium --with-deps
       - name: Run scraper
-        run: snow-deals-agg refresh --delay 2 --max-pages 25 --min-stores 20 --report scrape-report.json
+        env:
+          REFRESH_STORES: ${{ inputs.stores }}
+        run: |
+          args=(--delay 2 --max-pages 100 --report scrape-report.json)
+          if [ -n "$REFRESH_STORES" ]; then
+            IFS=',' read -ra selected <<< "$REFRESH_STORES"
+            args+=(--min-stores "${#selected[@]}")
+            for store in "${selected[@]}"; do args+=(--store "$store"); done
+          else
+            args+=(--min-stores 20)
+          fi
+          snow-deals-agg refresh "${args[@]}"
       - name: Refresh expert reviews weekly
         if: ${{ inputs.refresh_reviews || github.event.schedule == '17 5 * * *' }}
         run: |

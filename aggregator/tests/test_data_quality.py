@@ -92,7 +92,11 @@ def test_report_lengths_only_apply_to_boards_and_skis():
     assert report.missing_lengths == 1 and report.length_eligible == 1
     accepted, withheld = protect_partial_snapshots(deals, {'Test':100}, {'Test':{'errors':1}})
     assert not accepted and withheld == ['Test']
-    accepted, withheld = protect_partial_snapshots(deals, {'Test':100}, {'Test':{'errors':0}})
+    silent = {'Test':{'errors':0}}
+    accepted, withheld = protect_partial_snapshots(deals, {'Test':100}, silent)
+    assert not accepted and withheld == ['Test']
+    assert silent['Test']['count_drop'] == {'previous':100,'current':2}
+    accepted, withheld = protect_partial_snapshots(deals, {'Test':5}, {'Test':{'errors':0}})
     assert accepted == deals and not withheld
 
 
@@ -186,3 +190,72 @@ def test_flat_skis_and_compact_length_lists():
     assert (d.category, d.length_min, d.length_max) == ('skis',161,184)
     assert categorize('Atomic Cloud Skis wM12 GW Bindings') == 'skis'
     assert categorize('Marker Griffon Ski Bindings') == 'bindings'
+
+
+@pytest.mark.parametrize(('current','links','expected'), [
+    ('https://s.test/snow/', ['https://s.test/snow/page20.html','https://s.test/snow/page2.html'], 'https://s.test/snow/page2.html'),
+    ('https://s.test/snow/page2.html', ['https://s.test/snow/page2.html','https://s.test/snow/page3.html'], 'https://s.test/snow/page3.html'),
+    ('https://s.test/snow?page=1', ['https://s.test/other?page=2','https://s.test/snow?page=20','https://s.test/snow?page=2'], 'https://s.test/snow?page=2'),
+])
+def test_real_pagination_javascript(current, links, expected):
+    import shutil, subprocess
+    from aggregator.browser import _try_next_page
+    if not shutil.which('node'): pytest.skip('Node is needed to execute the browser selector fixture')
+    class Page:
+        async def evaluate(self, script):
+            setup = 'const window={location:new URL(' + json.dumps(current) + ')};'
+            setup += 'const links=' + json.dumps(links) + ';const document={querySelectorAll:()=>links.map(href=>({href,textContent:"",getAttribute:()=>null}))};'
+            return json.loads(subprocess.check_output(['node','-e',setup+'console.log(JSON.stringify(('+script+')()))'],text=True))
+        async def goto(self,url,**kwargs): self.destination=url
+    async def run():
+        page = Page()
+        assert await _try_next_page(page,None)
+        assert page.destination == expected
+    asyncio.run(run())
+
+
+def test_metadata_can_identify_generic_snow_boot_titles():
+    assert categorize('Vans Infuse', '/products/vans-infuse', 'Snowboard Boots') == 'snowboard boots'
+
+
+def test_targeted_refresh_uses_only_selected_store_baseline(monkeypatch, tmp_path):
+    from click.testing import CliRunner
+    import aggregator.cli as module
+    store = 'Fresh Skis'
+    selected = {}
+    deals = _products_to_deals([Product('Atomic Skis','https://s.test/atomic',300,600)],store)
+    async def init(): pass
+    async def status(): return [{'store':store,'deal_count':1},{'store':'Evo','deal_count':5000}]
+    async def scrape(**kwargs):
+        selected['stores'] = [s.name for s in kwargs['stores']]
+        kwargs['outcomes'][store] = {'errors':0,'pages':1}
+        return deals
+    async def upsert(rows): selected['published'] = len(rows); return len(rows)
+    async def save(*args): pass
+    monkeypatch.setattr(module,'init_db',init)
+    monkeypatch.setattr(module,'store_status',status)
+    monkeypatch.setattr(module,'scrape_all',scrape)
+    monkeypatch.setattr(module,'upsert_deals',upsert)
+    monkeypatch.setattr(module,'save_scrape_run',save)
+    monkeypatch.setattr('aggregator.reviews.compute_and_store_deal_reviews',init)
+    report = tmp_path/'report.json'
+    result = CliRunner().invoke(module.cli,['refresh','--store',store,'--report',str(report)])
+    assert result.exit_code == 0, result.output
+    assert selected == {'stores':[store],'published':1}
+    assert json.loads(report.read_text())['configured_stores'] == 1
+
+
+def test_invisible_retailer_next_grid_url_is_followed():
+    from aggregator.browser import _try_next_page
+    class Element:
+        async def get_attribute(self,key):
+            return 'https://s.test/Search-UpdateGrid?start=240&sz=240' if key == 'data-url' else None
+    class Page:
+        url = 'https://s.test/search?start=0&sz=240'
+        async def query_selector(self,selector): return Element()
+        async def goto(self,url,**kwargs): self.destination = url
+    async def run():
+        page = Page()
+        assert await _try_next_page(page,'button.show-more-observed-element[data-url]')
+        assert page.destination.endswith('start=240&sz=240')
+    asyncio.run(run())

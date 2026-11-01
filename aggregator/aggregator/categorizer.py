@@ -127,7 +127,7 @@ def categorize(name: str, url: str = "", product_type: str = "") -> str | None:
     If keyword matching fails and a Shopify ``product_type`` is provided,
     it is used as a fallback signal.
     """
-    if is_excluded(name, url):
+    if is_excluded(f"{name} {product_type}", url):
         return None
     # A product's name outranks collection paths; "ski sale" must not turn
     # clothing into skis. Explicit retailer product types outrank URL guesses.

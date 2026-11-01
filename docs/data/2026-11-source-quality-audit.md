@@ -14,7 +14,7 @@ Baseline: public snapshot / scrape run 41303625448, checked 2026-11-01T12:16:45Z
 - Backcountry's first image could be a promotional badge. Prefer its product image and retain the explicit retailer brand.
 - Browser conversion discarded extracted metadata and accepted invalid URLs/prices. Preserve sizes/type/brand and reject malformed/non-finite prices and invalid product links.
 - Source outcomes now include collection URLs, pages, product counts and failure types. Length completeness uses skis/snowboards as its denominator. Brand/category/length counts exclude stale and historical rows.
-- A failed store scrape losing over 70% of a prior 20+ item snapshot is withheld from replacement. Retained rows keep their original timestamps and expire after 72 hours; no stale price is relabeled as freshly checked.
+- An unexplained store count drop over 70% against a recent 20+ item snapshot is withheld from replacement. Retained rows keep their original timestamps and expire after 72 hours; no stale price is relabeled as freshly checked.
 
 ## Source connections
 
@@ -26,8 +26,16 @@ The prior CI run had repeated HTTP 429 responses across Shopify feeds. Feed jobs
 
 ## Validation
 
-117 offline regression tests passed before the live refresh. Browser extractor JavaScript syntax checks passed. Tests cover real title/image/size fixtures, source errors, malformed feeds, pagination, exclusions, finite prices, stale filter counts, and failed-snapshot retention. No production auth data is used.
+127 offline regression tests passed, including execution of the actual pagination JavaScript against HTML-style and query-style link fixtures. Browser extractor JavaScript syntax checks passed. Tests cover real title/image/size fixtures, source errors, malformed feeds, pagination, exclusions, finite prices, stale filter counts, and failed-snapshot retention. No production auth data is used.
 
-Live refresh and before/after measurements: pending.
+First full refresh completed and production was verified: [run 41351157773](https://github.com/lifan-builds/snow-deal/actions/runs/41351157773), revision `623f417`, snapshot checked at `2026-11-01T21:50:55.474822`. It published 12,222 deals from 26/27 stores, with 21 missing images, 348 missing categories (2.85%), and 65.0% size coverage. All Shopify collections completed without errors. Earlier audit runs were cancelled before publication.
 
 Additional live catalog check: Skirack's structured `product_type` explicitly identified running shoes and bikes whose model-only names did not. Filtering now uses retailer type/vendor evidence as well as title/URL, including children’s product types. The House exposes ski/snowboard category and stock fields; discard other sports and out-of-stock items, and do not invent prices from "up to" discount percentages. Manual page-offset sources remain exempt from automatic pagination. Brand recovery only prefixes recognized literal brands, preserving numeric and multiword names.
+
+## Follow-up from the live report
+
+The Circle dropped from 190 deals to 8 because the revised page-number fallback did not accept `page2.html`. Restored that format, restricted fallback links to the same collection, and added executed JavaScript fixtures. Large unexplained per-store drops now trigger snapshot retention even when HTTP requests succeed; baselines older than 72 hours are ignored to avoid permanent quarantine.
+
+Backcountry and Peter Glenn reached 25-page limits. The daily workflow now allows 100 pages per collection within a 90-minute job limit. Ski Essentials exposes a SHOW MORE button after its first 48 items (1,142 skis shown by the live catalog); follow it and verify that new cards arrive, reporting partial results on failure. Removed demo-only collection URLs. The House exposes a public next-grid URL; follow it dynamically instead of maintaining guessed page offsets. A live next-grid probe returned 240 products and another next-page link.
+
+The refresh CLI and workflow accept selected retailers. A targeted follow-up for The Circle, Backcountry, Peter Glenn, Ski Essentials and The House is pending. Other store snapshots and price history remain intact.

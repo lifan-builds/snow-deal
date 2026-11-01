@@ -7,7 +7,7 @@ import logging
 import json
 import os
 from dataclasses import asdict
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 
 import click
@@ -17,13 +17,14 @@ from rich.table import Table
 from aggregator.db import init_db, query_deals, upsert_deals, upsert_reviews, save_scrape_run, store_status
 from aggregator.auth_db import init_auth_db, create_invite_codes, list_invite_codes
 from aggregator.scraper import build_scrape_report, scrape_all, protect_partial_snapshots
+from aggregator.config import STORES
 
 console = Console()
 
 
-def _print_scrape_report(deals: list) -> None:
+def _print_scrape_report(deals: list, stores=None) -> None:
     """Render a compact scrape quality report for CI logs."""
-    report = build_scrape_report(deals)
+    report = build_scrape_report(deals, stores)
     table = Table(title="Scrape Quality", show_lines=False)
     table.add_column("Store", style="cyan")
     table.add_column("Deals", justify="right")
@@ -70,19 +71,27 @@ def cli(verbose: bool) -> None:
 @click.option("--max-pages", type=int, default=25, help="Max pages per store.")
 @click.option("--min-stores", type=int, default=1, help="Minimum stores with deals before publishing.")
 @click.option("--report", type=click.Path(), default=None, help="Write machine-readable quality report.")
-def refresh(delay: float, max_pages: int, min_stores: int, report: str | None) -> None:
+@click.option("--store", "store_names", multiple=True, type=click.Choice([s.name for s in STORES]), help="Refresh only these retailers; repeat for multiple stores.")
+def refresh(delay: float, max_pages: int, min_stores: int, report: str | None, store_names: tuple[str, ...]) -> None:
     """Scrape all stores and update the database."""
     async def _run() -> None:
         await init_db()
-        previous_counts = {row["store"]: row["deal_count"] for row in await store_status()}
+        selected = [s for s in STORES if not store_names or s.name in store_names]
+        selected_names = {s.name for s in selected}
+        cutoff = datetime.utcnow() - timedelta(hours=72)
+        previous_counts = {
+            row["store"]: row["deal_count"] for row in await store_status()
+            if row["store"] in selected_names and
+            (not row.get("last_scraped") or datetime.fromisoformat(row["last_scraped"]) >= cutoff)
+        }
         previous = sum(previous_counts.values())
         outcomes = {}
         with console.status("[bold cyan]Scraping all stores...", spinner="dots"):
-            deals = await scrape_all(delay=delay, max_pages=max_pages, outcomes=outcomes)
+            deals = await scrape_all(stores=selected, delay=delay, max_pages=max_pages, outcomes=outcomes)
         console.print(f"[dim]Scraped {len(deals)} deals total.[/dim]")
-        _print_scrape_report(deals)
+        _print_scrape_report(deals, selected)
 
-        quality = build_scrape_report(deals)
+        quality = build_scrape_report(deals, selected)
         publish_deals, withheld = protect_partial_snapshots(deals, previous_counts, outcomes)
         checked_at = datetime.utcnow().isoformat()
         payload = {**asdict(quality), "checked_at": checked_at, "outcomes": outcomes,

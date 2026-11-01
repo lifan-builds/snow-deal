@@ -289,15 +289,19 @@ async def fetch_listing(client: httpx.AsyncClient, url: str, delay: float) -> ht
 
 
 def protect_partial_snapshots(deals: list[AggregatedDeal], previous: dict[str, int], outcomes: dict) -> tuple[list[AggregatedDeal], list[str]]:
-    """Don't replace a substantial prior snapshot with a collapsed, failed scrape.
+    """Don't replace a recent substantial snapshot with an unexplained collapse.
 
     Retained rows keep their original timestamps and expire through the normal
-    72-hour freshness filter. Successful sell-through is not quarantined.
+    72-hour freshness filter. The caller supplies only recent baselines, so a
+    genuine sustained sell-through does not leave a source quarantined forever.
     """
     counts = Counter(d.store for d in deals)
     withheld = [store for store, count in previous.items()
-                if count >= 20 and counts[store] < count * 0.3
-                and outcomes.get(store, {}).get("errors")]
+                if count >= 20 and counts[store] < count * 0.3]
+    for store in withheld:
+        result = outcomes.setdefault(store, {"errors": 0, "pages": 0})
+        result["count_drop"] = {"previous": previous[store], "current": counts[store]}
+        result["errors"] += 1
     return [d for d in deals if d.store not in withheld], withheld
 
 

@@ -155,7 +155,7 @@ STORE_CONFIGS: dict[str, tuple[str, str, str | None]] = {
             });
             return results;
         }""",
-        "",  # Explicit start offsets are configured; do not paginate each again.
+        'button.show-more-observed-element[data-url]',
     ),
 
     # BigCommerce stores (Corbetts, Peter Glenn, Alpine Shop VT) share the same extractor
@@ -304,7 +304,7 @@ STORE_CONFIGS: dict[str, tuple[str, str, str | None]] = {
             });
             return results;
         }""",
-        None,  # No pagination — all products load on one page
+        'button:has-text("SHOW MORE")',
     ),
 
     "rei": (
@@ -461,6 +461,13 @@ async def _try_next_page(page: Page, next_selector: str | None) -> bool:
             if await el.get_attribute("aria-disabled") == "true" or await el.get_attribute("disabled") is not None:
                 continue
             href = await el.get_attribute("href")
+            data_url = await el.get_attribute("data-url")
+            if data_url:
+                target = urljoin(page.url, data_url)
+                if urlparse(target).netloc != urlparse(page.url).netloc:
+                    raise ValueError("Pagination changed retailer")
+                await page.goto(target, wait_until="domcontentloaded")
+                return True
             if href and href.startswith("#"):
                 # SPA hash navigation — click via JS (may be off-screen) and wait
                 await el.evaluate("el => el.click()")
@@ -474,7 +481,13 @@ async def _try_next_page(page: Page, next_selector: str | None) -> bool:
                         continue
                     await page.goto(abs_href or href, wait_until="domcontentloaded")
                     return True
+                before_count = await page.locator('[data-testid="product-card-title"]').count() if 'SHOW MORE' in selector else None
                 await el.click()
+                if before_count is not None:
+                    await page.wait_for_function(
+                        "count => document.querySelectorAll('[data-testid=product-card-title]').length > count",
+                        arg=before_count, timeout=20000,
+                    )
                 await page.wait_for_load_state("domcontentloaded")
                 return True
         except Exception as exc:
@@ -483,12 +496,15 @@ async def _try_next_page(page: Page, next_selector: str | None) -> bool:
     # Fallback: find "Next Page" text link or next page number in pagination
     try:
         next_url = await page.evaluate("""() => {
+            const current = new URL(window.location.href);
+            const basePath = path => path.replace(/\\/page\\d+(?:\\.html)?\\/?$/, '').replace(/\\/$/, '');
+            const sameCollection = target => target.origin === current.origin && basePath(target.pathname) === basePath(current.pathname);
             // Try "Next Page" text link
             for (const a of document.querySelectorAll('a')) {
                 const txt = a.textContent.trim().toLowerCase();
                 if ((txt === 'next page' || txt === 'next' || txt === '›' || txt === '»')
                     && a.getAttribute('aria-disabled') !== 'true'
-                    && a.href && a.href !== window.location.href) {
+                    && a.href && a.href !== current.href && sameCollection(new URL(a.href))) {
                     return a.href;
                 }
             }
@@ -500,8 +516,8 @@ async def _try_next_page(page: Page, next_selector: str | None) -> bool:
             for (const a of document.querySelectorAll('a[href]')) {
                 const href = a.href;
                 const target = new URL(href);
-                const pathPage = target.pathname.match(/\\/page(\\d+)\\/?$/);
-                if (target.origin === window.location.origin &&
+                const pathPage = target.pathname.match(/\\/page(\\d+)(?:\\.html)?\\/?$/);
+                if (sameCollection(target) &&
                     (Number(target.searchParams.get('page')) === nextPage ||
                      (pathPage && Number(pathPage[1]) === nextPage))) {
                     return href;

@@ -191,12 +191,6 @@ STORES: list[StoreConfig] = [
         "The House", "the-house.com",
         scrape_urls=[
             "https://www.the-house.com/search?pmid=on-sale-now&start=0&sz=240",
-            "https://www.the-house.com/search?pmid=on-sale-now&start=240&sz=240",
-            "https://www.the-house.com/search?pmid=on-sale-now&start=480&sz=240",
-            "https://www.the-house.com/search?pmid=on-sale-now&start=720&sz=240",
-            "https://www.the-house.com/search?pmid=on-sale-now&start=960&sz=240",
-            "https://www.the-house.com/search?pmid=on-sale-now&start=1200&sz=240",
-            "https://www.the-house.com/search?pmid=on-sale-now&start=1440&sz=240",
         ],
         parser_type="thehouse",
         use_browser=True,
@@ -273,7 +267,6 @@ STORES: list[StoreConfig] = [
         "The Ski Monster", "theskimonster.com",
         scrape_urls=[
             "https://theskimonster.com/collections/end-of-season-sale",
-            "https://theskimonster.com/collections/demo-skis",
             "https://theskimonster.com/collections/ski-outlet",
             "https://theskimonster.com/collections/ski-boot-outlet",
             "https://theskimonster.com/collections/snowboard-outlet",
@@ -314,8 +307,6 @@ STORES: list[StoreConfig] = [
     StoreConfig(
         "Ski Essentials", "skiessentials.com",
         scrape_urls=[
-            "https://www.skiessentials.com/collections/demo-skis",
-            "https://www.skiessentials.com/collections/demo-snowboards",
             "https://www.skiessentials.com/collections/alpine-skis",
             "https://www.skiessentials.com/collections/snowboards",
             "https://www.skiessentials.com/collections/ski-boots",
