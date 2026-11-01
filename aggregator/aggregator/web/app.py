@@ -27,6 +27,7 @@ from aggregator.web.invite_routes import invite_router
 from aggregator.web.admin_routes import admin_router
 from aggregator.web.event_routes import event_router
 from aggregator.web.signup_routes import signup_router
+from aggregator.web.comparison_routes import comparison_router
 
 log = logging.getLogger(__name__)
 
@@ -89,4 +90,5 @@ def create_app(*, enable_lifespan: bool | None = None) -> FastAPI:
     app.include_router(event_router)
     app.include_router(signup_router)
     app.include_router(router)
+    app.include_router(comparison_router)
     return app

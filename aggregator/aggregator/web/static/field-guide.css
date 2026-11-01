@@ -1411,3 +1411,43 @@ th small {
   .name { font-size: 16px; }
   .compact-view .card-image { width: 90px; min-width: 90px; }
 }
+
+/* Model comparisons keep the catalog's visual language and work without JS. */
+.comparison-directory h1 { max-width: 900px; }
+.comparison-grid { margin-top: 2rem; }
+.model-card h2 { font-size: 1.1rem; }
+.model-price { margin: .3rem 0; }
+.comparison-card-links { display: flex; flex-wrap: wrap; gap: .5rem 1rem; font-size: .85rem; margin: .8rem 0; }
+.product-intro { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 3rem; align-items: center; margin: 2rem 0 3rem; }
+.product-intro h1 { font-size: clamp(2rem, 4vw, 3.7rem); line-height: 1.1; }
+.product-photo { background: var(--surface); border-radius: 24px; padding: 2rem; border: 1px solid var(--border); }
+.product-photo img { display: block; width: 100%; height: 360px; object-fit: contain; }
+.comparison-price { font-size: 1.1rem; }
+.comparison-price strong { font-size: 2.3rem; }
+.comparison-section { border-top: 1px solid var(--border); padding: 2rem 0; scroll-margin-top: 100px; }
+.comparison-section h2 { font-size: 1.7rem; }
+.comparison-filters { display: flex; gap: 1rem; align-items: end; flex-wrap: wrap; margin: 1.5rem 0; }
+.comparison-filters label { display: grid; gap: .5rem; font-weight: 600; }
+.comparison-filters select { min-width: 150px; min-height: 44px; padding: .6rem; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); color: var(--text); font: inherit; }
+.offer-row { display: grid; grid-template-columns: minmax(0,1.5fr) minmax(0,1fr) minmax(0,1fr); gap: 1.5rem; background: var(--surface); padding: 1.5rem; border: 1px solid var(--border); border-radius: 12px; margin: .8rem 0; }
+.offer-row h3 { margin: 0; }
+.offer-row p { margin: .5rem 0; overflow-wrap: anywhere; }
+.offer-checked { font-size: .8rem; color: var(--muted); }
+.offer-price { display: block; font-size: 1.4rem; }
+.offer-price small { font-size: .75rem; }
+.offer-row .button { margin-top: .5rem; }
+.history-chart { display: block; width: 100%; max-width: 780px; background: var(--surface); border-radius: 12px; margin: 1rem 0; }
+.history-note, .empty-offers { background: var(--accent-dim); padding: 1rem; border-radius: 10px; }
+.history-table { width: 100%; max-width: 600px; text-align: left; border-collapse: collapse; margin: 1rem 0; }
+.history-table caption { text-align: left; margin-bottom: .8rem; }
+.history-table td, .history-table th { padding: .7rem; border-bottom: 1px solid var(--border); }
+.methodology { max-width: 850px; }
+.methodology h2 { margin-top: 2.5rem; }
+@media (max-width: 700px) {
+  .product-intro { grid-template-columns: minmax(0,1fr); gap: 1.5rem; }
+  .product-photo img { height: 240px; }
+  .product-photo { padding: 1rem; }
+  .offer-row { grid-template-columns: minmax(0,1fr); gap: .6rem; padding: 1.1rem; }
+  .comparison-filters label { flex: 1; min-width: 130px; }
+  .comparison-filters select { min-width: 0; width: 100%; }
+}

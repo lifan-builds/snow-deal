@@ -35,3 +35,6 @@ snow-deals-agg = "aggregator.cli:cli"
 
 [tool.setuptools.packages.find]
 include = ["aggregator*"]
+
+[tool.setuptools.package-data]
+aggregator = ["comparison_catalog.json"]

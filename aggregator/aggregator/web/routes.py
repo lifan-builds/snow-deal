@@ -21,11 +21,13 @@ from aggregator.db import (
 from aggregator.web.invite_routes import _landing_context
 
 from aggregator.web.seo import CATEGORIES, page_context, site_url
+from aggregator.comparisons import INDEXABLE_BRANDS, PRODUCTS, comparison_path
 
 TEMPLATE_DIR = Path(__file__).resolve().parent / "templates"
 
 templates = Jinja2Templates(directory=str(TEMPLATE_DIR), context_processors=[page_context])
 templates.env.auto_reload = True
+templates.env.globals['comparison_path'] = comparison_path
 
 router = APIRouter()
 
@@ -344,7 +346,10 @@ async def sitemap():
     from xml.sax.saxutils import escape
     if not is_public_mode():
         raise HTTPException(404)
-    paths = ['/', '/alerts', '/status', '/privacy'] + ['/gear/' + slug for slug in CATEGORIES]
+    paths = ['/', '/alerts', '/status', '/privacy', '/products', '/how-it-works']
+    paths += ['/gear/' + slug for slug in CATEGORIES]
+    paths += ['/products/' + slug for slug in PRODUCTS]
+    paths += ['/brands/' + slug for slug in INDEXABLE_BRANDS]
     body = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
     body += ''.join('<url><loc>' + escape(site_url() + path) + '</loc></url>' for path in paths)
     return Response(body + '</urlset>', media_type='application/xml')

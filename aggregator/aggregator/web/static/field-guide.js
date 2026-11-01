@@ -150,8 +150,9 @@ document.addEventListener("click", async (event) => {
     }
   }
   const link = event.target.closest(".product-link");
-  if (link) {
-    const card = link.closest(".deal-card");
+  if (link && new URL(link.href).origin !== location.origin) {
+    const card = link.closest(".deal-card, .retailer-offer");
+    if (!card) return;
     try {
       navigator.sendBeacon(
         "/api/event",

@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% set p = product %}
+{% set symbol = 'C$' if p.currency == 'CAD' else '$' %}
+{% block content %}
+<main id="main" class="shell editorial product-detail">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/products">Compare models</a> / <a href="/brands/{{ brand_slug }}">{{ p.brand }}</a> / {{ p.name }}</nav>
+  <section class="product-intro">
+    <div class="product-photo">{% if p.image %}<img src="{{ p.image }}" alt="{{ p.name }}" width="500" height="400" fetchpriority="high">{% else %}<img src="/static/img/alpine-gear.jpg" alt="" width="500" height="400">{% endif %}</div>
+    <div><span class="eyebrow">{{ p.category }} · {{ p.year }} MODEL</span><h1>{{ p.name }}</h1>
+      <p class="lede">Compare the shops before you commit.</p>
+      {% if p.offers %}<p class="comparison-price">From <strong>{{ symbol }}{{ '%.2f'|format(p.offers[0].current_price) }}</strong> <span class="currency-tag">{{ p.currency }}</span></p><p>{{ p.store_count }} shops · {{ p.offers|length }} recent listings{% if p.size %} reporting {{ p.size }} cm (W = wide){% endif %}</p>
+      {% else %}<p class="empty-offers">No recent offers{% if p.size %} reporting {{ p.size }} cm (W = wide){% endif %} in {{ p.currency }}. Try another currency or all sizes.</p>{% endif %}
+      <p>Retailer listing prices can vary by size. Shipping and taxes are not included. Confirm your chosen size, condition and final total at the shop.</p>
+      <a href="#offers" class="button primary">Compare offers ↓</a> <button class="share-btn" type="button" data-url="{{ canonical_url }}" data-name="{{ p.name }}">Share comparison ↗</button>
+    </div>
+  </section>
+  <section id="offers" class="comparison-section" aria-labelledby="offers-heading">
+    <h2 id="offers-heading">Retailer offers</h2>
+    <form method="get" class="comparison-filters">
+      <label>Currency<select name="currency">{% for code in ['USD','CAD'] %}<option value="{{ code }}" {% if p.currency == code %}selected{% endif %}>{{ code }}</option>{% endfor %}</select></label>
+      <label>Reported size<select name="size"><option value="">All sizes</option>{% for n in p.sizes %}<option value="{{ n }}" {% if p.size == n %}selected{% endif %}>{{ n }} cm{% if n.endswith("W") %} · wide{% endif %}</option>{% endfor %}{% if p.size and p.size not in p.sizes %}<option selected value="{{ p.size }}">{{ p.size }} cm</option>{% endif %}</select></label>
+      <button type="submit" class="button secondary">Apply</button><a href="/products/{{ p.slug }}">Reset</a>
+    </form>
+    <p class="filter-note">Size filters include only explicitly reported sizes. {{ p.unknown_size_count }} {{ p.currency }} listing{{ '' if p.unknown_size_count == 1 else 's' }} have no reported size. Prices are not converted between currencies.</p>
+    {% if p.offers %}<div class="offer-list">{% for o in p.offers %}
+      <article class="offer-row retailer-offer" data-href="{{ o.url }}" data-name="{{ o.name }}" data-store="{{ o.store }}" data-category="{{ p.category }}">
+        <div><h3>{{ o.store }}</h3><p>{{ o.name }}</p><p class="offer-checked">Checked {{ o.scraped_at[:16]|replace('T',' ') }} UTC</p></div>
+        <div><span class="eyebrow">REPORTED SIZES</span><p>{{ o.sizes or 'Not supplied — check the retailer' }}</p></div>
+        <div><strong class="offer-price">{{ symbol }}{{ '%.2f'|format(o.current_price) }} <small>{{ p.currency }}</small></strong>{% if o.original_price and o.original_price > o.current_price %}<p>Retailer list: {{ symbol }}{{ '%.2f'|format(o.original_price) }}</p>{% endif %}<a class="button secondary product-link" href="{{ o.url }}" target="_blank" rel="noopener noreferrer" aria-label="View {{ p.name }} at {{ o.store }} (opens in a new tab)">Visit shop ↗</a></div>
+      </article>
+    {% endfor %}</div>{% else %}<p>No matching offers are currently recent enough to show. <a href="/products/{{ p.slug }}">Clear filters</a> or <a href="/products">compare other models</a>.</p>{% endif %}
+  </section>
+  <section class="comparison-section price-history" aria-labelledby="history-heading">
+    <h2 id="history-heading">Observed price history <span class="currency-tag">{{ p.currency }}</span></h2>
+    <p>The lowest listing price recorded on each observed day, across the matched offers in this view. Available sizes can change; this is not a history of one guaranteed size or a delivered total.</p>
+    {% if p.history %}
+      <p>Lowest observed: <strong>{{ symbol }}{{ '%.2f'|format(p.observed_low) }}</strong> · {{ p.history|length }} observed day{{ '' if p.history|length == 1 else 's' }} since {{ p.history[0].date }}.</p>
+      {% if p.history|length > 1 %}
+      <svg class="history-chart" viewBox="0 0 600 190" role="img" aria-labelledby="chart-title chart-desc"><title id="chart-title">{{ p.name }} observed listing prices in {{ p.currency }}</title><desc id="chart-desc">{{ p.history|length }} observations from {{ p.history[0].date }} to {{ p.history[-1].date }}. Exact values are in the table below. Lines connect observations and do not imply continuous checks.</desc><path d="M30 20V170H575" fill="none" stroke="currentColor" opacity=".25"/><polyline points="{{ p.chart_line }}" fill="none" stroke="currentColor" stroke-width="3"/>{% for point in p.chart %}<circle cx="{{ point.x }}" cy="{{ point.y }}" r="4" fill="currentColor"><title>{{ point.date }}: {{ symbol }}{{ '%.2f'|format(point.price) }}</title></circle>{% endfor %}</svg>
+      {% else %}<p class="history-note">We’re building this model’s history. One observed day is not enough to call this a rare deal or a 30-day low.</p>{% endif %}
+      <details><summary>View recorded prices</summary><table class="history-table"><caption>Observed daily lows for matched {{ p.currency }} listings</caption><thead><tr><th scope="col">Date (UTC)</th><th scope="col">Listing price</th></tr></thead><tbody>{% for point in p.history %}<tr><td>{{ point.date }}</td><td>{{ symbol }}{{ '%.2f'|format(point.price) }} {{ p.currency }}</td></tr>{% endfor %}</tbody></table></details>
+    {% else %}<p>History will appear as we collect verified observations for these offers.</p>{% endif %}
+    <p><a href="/how-it-works">What these prices do—and don’t—tell you →</a></p>
+  </section>
+  {% if related %}<section class="comparison-section"><h2>More from {{ p.brand }}</h2><div class="category-links">{% for other in related %}<a href="/products/{{ other.slug }}">{{ other.name }}</a>{% endfor %}</div><p>Different models are shown separately; they are not equivalent offers for this product.</p></section>{% endif %}
+  {% include 'partials/signup.html' %}
+</main>
+{% endblock %}
