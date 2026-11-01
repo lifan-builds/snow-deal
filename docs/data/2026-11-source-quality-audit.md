@@ -38,4 +38,40 @@ The Circle dropped from 190 deals to 8 because the revised page-number fallback 
 
 Backcountry and Peter Glenn reached 25-page limits. The daily workflow now allows 100 pages per collection within a 90-minute job limit. Ski Essentials exposes a SHOW MORE button after its first 48 items (1,142 skis shown by the live catalog); follow it and verify that new cards arrive, reporting partial results on failure. Removed demo-only collection URLs. The House exposes a public next-grid URL; follow it dynamically instead of maintaining guessed page offsets. A live next-grid probe returned 240 products and another next-page link.
 
-The refresh CLI and workflow accept selected retailers. A targeted follow-up for The Circle, Backcountry, Peter Glenn, Ski Essentials and The House is pending. Other store snapshots and price history remain intact.
+The refresh CLI and workflow accept selected retailers. The targeted follow-up completed successfully: [run 41356291839](https://github.com/lifan-builds/snow-deal/actions/runs/41356291839), revision `ef47d89`, checked at `2026-11-01T22:36:00.412429`. Production `/healthz` independently returned that exact timestamp, and `/status` displayed 25/27 complete recent checks and 13,575 listings.
+
+| Retailer | First full refresh | Targeted refresh | Verified result |
+| --- | ---: | ---: | --- |
+| The Circle Whistler | 8 | 186 | Both collections complete across 35 pages |
+| Backcountry | 1,248 | 1,559 | All five collections complete across 104 pages; sale collection reached page 51 |
+| The House | 719 | 719 | Dynamic pagination complete across six pages; no guessed empty offset |
+| Peter Glenn | 1,112 | 1,976 | All three collections complete across 62 pages; sale collection reached page 54 |
+| Ski Essentials | 137 | 137 | Five collections still fail at SHOW MORE; explicitly marked partial |
+
+## Final production measurements
+
+Measurements use the latest snapshot per retailer within the same 72-hour freshness window as the website. The targeted report covers only five retailers; the following counts come from the complete published database.
+
+| Measure | Baseline | Final |
+| --- | ---: | ---: |
+| Current deal listings | 8,848 | 13,575 |
+| Retailers with current listings | 26 of 28 configured | 26 of 27 configured |
+| Positive retailer checks without reported errors | 14 | 25 |
+| Missing images | 457 | 21 |
+| Listings with reported sizes | 4,854 (54.9%) | 7,945 (58.5%) |
+| Missing categories | 318 (3.59%) | 513 (3.78%) |
+
+The broader browser catalogs add many listings without size/category metadata. Category completeness has not improved overall; do not describe the increased coverage as complete product enrichment. Of 3,191 ski/snowboard listings, 2,199 have length data. The previous length metric is not comparable because it included clothing and accessories.
+
+Published-data checks found zero invalid sale/list-price pairs, zero promotional badge image URLs, and zero shell-pants/bibs classified as jackets. SQLite integrity passed. All prior price-history points survived the targeted refresh, and every unselected retailer row remained unchanged. The database now holds 42,338 price observations. Colorado Discount retains images on all 249 listings, with 205 reported size labels and 197 length ranges.
+
+The stale fixed retailer count was removed from page metadata in `31bab43`; the live homepage title was verified. The 15 web-route tests passed after that copy change, in addition to the 127-test data/parser suite.
+
+## Remaining source gaps
+
+- MEC: HTTP 403 / verification block; unavailable, with no fresh listings fabricated.
+- Ski Essentials: first-page data is usable, but SHOW MORE fails in both the observed browser session and CI. Five affected collections remain partial; 137 deals are published, not a claim of complete catalog coverage.
+- 5,630 current listings lack reported sizes. Backcountry, Peter Glenn and The House account for 4,254 of these. Listing-level sources do not expose usable size data through the current extractors; product-detail or supported-feed enrichment remains future work.
+- 513 listings lack defensible category evidence and 21 lack images. They remain visible as missing fields rather than guessed values.
+
+Daily refreshes now carry collection diagnostics, pagination limits, fresh-snapshot checks and per-retailer count-drop protection. Keep monitoring these outcomes; a successful connection does not guarantee retailer pricing or stock will remain unchanged after the check.
