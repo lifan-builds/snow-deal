@@ -26,10 +26,16 @@ Gear: Original small editorial illustration for the empty state and gear guide. 
 - Exact offer price and corresponding size variants for Shopify; vendor-based brands, numeric ski lengths, false-product exclusions, currency-specific price queries, previous-price annotations and a 72-hour listing age limit.
 - Public store coverage and non-sensitive snapshot health; invite gating for the full deal browser remains enabled.
 
-## Verification so far
+## Verified results
 
-86 offline tests pass, JavaScript syntax and whitespace checks pass. Desktop and 390px landing layouts inspected; custom art loads with no horizontal overflow. Budget preset verified to select USD and return filtered cards.
+- [Full refresh run 41249727608](https://github.com/lifan-builds/snow-deal/actions/runs/41249727608) completed successfully on October 31 at 23:04 UTC, including snapshot publication, deploy-hook execution and production timestamp verification.
+- Production `/healthz` returned `ok`, snapshot `2026-10-31T23:03:22.493515`, with 26 stores reporting deals. The live landing page and store report both show 11,299 listings.
+- The preceding baseline contained 5,586 raw listings across 25 stores. The new run contains 11,299 listings across 26 stores. Size coverage improved from about 29% to 63%; image coverage from 91% to 96%. This is a comparison between runs, not a controlled inventory experiment.
+- Alpine Shop VT is restored with 110 listings. MEC and Level Nine remain unavailable. Ski Pro AZ, Skiis & Biikes, The House and Ski Essentials are explicitly marked partial. Two HTTP failures were retailer rate limits; bounded retries retain useful results without hiding incomplete coverage.
+- 90 offline tests pass, including matching prices to available sizes, pagination through filtered pages, rate-limit retries, price history, currency filters, input parsing, auth gating and waitlist failure handling. JavaScript syntax and whitespace checks pass.
+- Desktop and 390px mobile layouts inspected with no horizontal overflow. Search, the USD budget preset, empty-state reset and pagination from 60 to 120 cards were exercised on the isolated local catalog. Production landing artwork and store report were verified after deployment.
+- Final visual inspection caught review scores being inherited from related but different product variants. Matching now requires the normalized model and gender variant to agree, retaining model numbers and suffixes. Reconciliation on an isolated copy of the published snapshot produced 89 matches and removed the incorrect Lange flex matches. Builds reconcile matches as well, so existing published snapshots receive the correction immediately.
 
-MEC and Level Nine Sports returned access-blocked responses during direct checks. Their availability must remain explicit; this change does not bypass retailer access restrictions. Alpine Shop VT migrated to Shopify and its collection URLs were updated from its own navigation.
+Screenshots: [desktop landing](screenshots/landing-desktop.png), [mobile landing](screenshots/landing-mobile.png), [store report](screenshots/store-report.png).
 
-Deployment and a complete fresh scheduled-workflow run still require verification before the change is considered operationally complete.
+Retailer restrictions, omitted variant information and transient failures remain visible limitations. No retailer access controls were bypassed. Full catalog access remains invite-only.

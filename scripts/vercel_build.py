@@ -77,7 +77,11 @@ def download_deals_db() -> None:
         sys.path.insert(0, str(ROOT / "aggregator"))
         import asyncio
         from aggregator.db import init_db
+        from aggregator.reviews import compute_and_store_deal_reviews
         asyncio.run(init_db(tmp_path))
+        # Reconcile old snapshots with the current model-matching rules.
+        matches = asyncio.run(compute_and_store_deal_reviews(tmp_path))
+        log(f"Verified {matches} model review matches")
         count, latest = validate_sqlite_db(tmp_path)
         if count == 0:
             raise RuntimeError("Refusing to deploy an empty deal snapshot")

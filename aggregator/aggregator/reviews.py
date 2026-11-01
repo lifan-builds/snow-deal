@@ -7,7 +7,6 @@ import json
 import logging
 import re
 import xml.etree.ElementTree as ET
-from difflib import SequenceMatcher
 from typing import NamedTuple
 
 import httpx
@@ -603,105 +602,30 @@ def _extract_brand(name: str) -> str:
     return _normalize_brand(first) if first in known else ""
 
 
-def _extract_model_key(name: str) -> str:
-    """Extract brand + model identifier for comparison.
+def _review_model_key(name: str) -> tuple[str, bool]:
+    """Keep model numbers and variant suffixes; ignore year and gear nouns.
 
-    Keeps the first 2-4 significant words (brand + model name/number).
+    Scores describe the tested model, so a related family is not enough.
+    Keep parenthesized variants and distinguish explicitly women's products.
     """
-    norm = _normalize(name)
-    # Keep only alphanumeric tokens
-    tokens = [t for t in norm.split() if len(t) > 1 or t.isdigit()]
-    # Return first few tokens which typically capture brand + model
-    return " ".join(tokens[:4])
-
-
-def _extract_model_family(name: str) -> str:
-    """Extract brand + model name WITHOUT numbers for family-level matching.
-
-    E.g. 'Atomic Bent 90' and 'Atomic Bent 100' both -> 'atomic bent'
-    """
-    norm = _normalize(name)
-    tokens = [t for t in norm.split() if not t.isdigit() and len(t) > 1]
-    return " ".join(tokens[:3])
-
-
-_NUMBERS = re.compile(r"\d+")
-
-
-def _extract_key_numbers(name: str) -> set[str]:
-    """Extract significant model numbers from a product name.
-
-    Filters out years (2020-2029) and single digits (often brand noise like K2).
-    """
-    nums = set(_NUMBERS.findall(name))
-    # Remove years and single digits
-    nums -= {str(y) for y in range(2020, 2030)}
-    nums = {n for n in nums if len(n) >= 2}
-    return nums
+    name = name.lower().replace("’", "'")
+    womens = bool(re.search(r"\b(?:women'?s?|ladies|w)\b", name))
+    normalized = _normalize(name.replace("(", " ").replace(")", " "))
+    return " ".join(re.findall(r"[a-z0-9]+", normalized)), womens
 
 
 def match_review_to_deal(
-    deal_name: str,
-    reviews: list[ReviewData],
-    threshold: float = 0.78,
-    family_threshold: float = 0.88,
+    deal_name: str, reviews: list[ReviewData],
 ) -> ReviewData | None:
-    """Find the best matching review for a deal name using fuzzy matching.
-
-    Uses a two-pass approach:
-    1. Exact model match (brand + model + numbers must align)
-    2. Family-level fallback (brand + model name, ignoring size/width numbers)
-
-    Returns the best match above the threshold, or None.
-    """
-    deal_norm = _normalize(deal_name)
-    deal_brand = _extract_brand(deal_name)
-    deal_model = _extract_model_key(deal_name)
-    deal_family = _extract_model_family(deal_name)
-    deal_numbers = _extract_key_numbers(deal_name)
-    if not deal_norm or not deal_brand:
+    """Match a tested model conservatively, never borrowing a family score."""
+    brand = _extract_brand(deal_name)
+    model = _review_model_key(deal_name)
+    if not brand or not model[0]:
         return None
-
-    best_score = 0.0
-    best_review: ReviewData | None = None
-    best_family_score = 0.0
-    best_family_review: ReviewData | None = None
-
     for review in reviews:
-        review_norm = _normalize(review.product_name)
         review_brand = _normalize_brand(review.brand) if review.brand else _extract_brand(review.product_name)
-        if not review_norm:
-            continue
-
-        # Brand must match — prevents cross-brand false positives
-        if deal_brand != review_brand:
-            continue
-
-        review_numbers = _extract_key_numbers(review.product_name)
-        review_model = _extract_model_key(review.product_name)
-        review_family = _extract_model_family(review.product_name)
-
-        # Pass 1: exact match (numbers must overlap if both present)
-        if not (deal_numbers and review_numbers and not (deal_numbers & review_numbers)):
-            ratio = SequenceMatcher(None, deal_model, review_model).ratio()
-            full_ratio = SequenceMatcher(None, deal_norm, review_norm).ratio()
-            ratio = max(ratio, full_ratio)
-
-            if ratio > best_score:
-                best_score = ratio
-                best_review = review
-
-        # Pass 2: family-level match (ignore numbers, match model name)
-        family_ratio = SequenceMatcher(None, deal_family, review_family).ratio()
-        if family_ratio > best_family_score:
-            best_family_score = family_ratio
-            best_family_review = review
-
-    # Prefer exact match, fall back to family-level match
-    if best_score >= threshold and best_review is not None:
-        return best_review
-    if best_family_score >= family_threshold and best_family_review is not None:
-        return best_family_review
+        if brand == review_brand and model == _review_model_key(review.product_name):
+            return review
     return None
 
 
