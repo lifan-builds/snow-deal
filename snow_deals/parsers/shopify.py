@@ -4,7 +4,7 @@ import json
 import logging
 import math
 import re
-from urllib.parse import urlparse
+from urllib.parse import urlparse, parse_qsl, urlencode
 
 from snow_deals.models import Product
 from snow_deals.parsers.base import BaseParser
@@ -40,6 +40,10 @@ class ShopifyParser(BaseParser):
 
         products: list[Product] = []
         origin = f"{urlparse(page_url).scheme}://{urlparse(page_url).netloc}"
+        # Shopify Markets can localize both prices and product destinations.
+        prefix = urlparse(page_url).path.split('/collections/', 1)[0] if '/collections/' in urlparse(page_url).path else ''
+        currency = dict(parse_qsl(urlparse(page_url).query)).get('currency')
+        currency_query = '?' + urlencode({'currency': currency}) if currency else ''
 
         for item in items:
             if not item.get("handle") or not item.get("title"):
@@ -92,7 +96,7 @@ class ShopifyParser(BaseParser):
 
             products.append(Product(
                 name=item.get("title", "Unknown"),
-                url=f"{origin}/products/{item.get('handle', '')}",
+                url=f"{origin}{prefix}/products/{item.get('handle', '')}{currency_query}",
                 current_price=price,
                 original_price=original_price,
                 sizes=sizes or None,
@@ -119,7 +123,9 @@ class ShopifyParser(BaseParser):
 
         # The orchestrator owns the page budget and reports truncation.
         base = current_url.split("?")[0]
-        return f"{base}?limit={limit}&page={next_page}"
+        query = dict(parse_qsl(urlparse(current_url).query))
+        query.update(limit=limit, page=next_page)
+        return f"{base}?{urlencode(query)}"
 
     def get_api_url(self, page_url: str, limit: int = 250) -> str | None:
         """Convert a collection URL to the Shopify JSON API URL."""
@@ -127,4 +133,9 @@ class ShopifyParser(BaseParser):
         if not handle:
             return None
         parsed = urlparse(page_url)
-        return f"{parsed.scheme}://{parsed.netloc}/collections/{handle}/products.json?limit={limit}&page=1"
+        prefix = parsed.path.split('/collections/', 1)[0]
+        query = {'limit': limit, 'page': 1}
+        currency = dict(parse_qsl(parsed.query)).get('currency')
+        if currency:
+            query['currency'] = currency
+        return f"{parsed.scheme}://{parsed.netloc}{prefix}/collections/{handle}/products.json?{urlencode(query)}"

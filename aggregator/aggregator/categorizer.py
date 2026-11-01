@@ -20,7 +20,7 @@ _EXCLUSION_PATTERNS = [
     for kw in EXCLUDE_KEYWORDS
 ]
 _CATEGORY_PATTERNS = [
-    (category, re.compile(r"(?<![a-z])(?:" + "|".join(re.escape(kw.strip()) for kw in keywords) + r")(?![a-z])"))
+    (category, re.compile(r"(?<![a-z0-9])(?:" + "|".join(re.escape(kw.strip()) for kw in keywords) + r")(?![a-z0-9])"))
     for category, keywords in CATEGORY_RULES
 ]
 _NOT_HARDGOODS_PATTERN = re.compile(r"\b(?:" + "|".join(re.escape(kw.strip()) for kw in NOT_HARDGOODS_KEYWORDS) + r")\b")

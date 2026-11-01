@@ -1,0 +1,433 @@
+{
+  "utahskis": {
+    "products": [
+      {
+        "title": "Marker Griffon 13 ID Ski Bindings 2026",
+        "handle": "marker-griffon13-id-bindings-2026",
+        "product_type": "H I A",
+        "vendor": "Marker",
+        "options": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Black/Red",
+              "Black",
+              "Black/Powder Blue"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "110MM",
+              "120MM",
+              "90MM",
+              "100MM"
+            ]
+          }
+        ],
+        "images": [
+          {
+            "src": "https://cdn.shopify.com/s/files/1/0580/7410/3867/files/blk_8bc0054a-9169-4f0b-9748-a5acbeb5ef30.jpg?v=1763401832",
+            "variant_ids": [
+              42404829560891,
+              42404829593659
+            ]
+          }
+        ],
+        "variants": [
+          {
+            "id": 42404829429819,
+            "price": "189.97",
+            "compare_at_price": "299.99",
+            "available": true,
+            "option1": "Black/Red",
+            "option2": "110MM",
+            "option3": null
+          },
+          {
+            "id": 42404829462587,
+            "price": "189.97",
+            "compare_at_price": "299.99",
+            "available": true,
+            "option1": "Black/Red",
+            "option2": "120MM",
+            "option3": null
+          },
+          {
+            "id": 42404829495355,
+            "price": "189.97",
+            "compare_at_price": "299.99",
+            "available": false,
+            "option1": "Black/Red",
+            "option2": "90MM",
+            "option3": null
+          },
+          {
+            "id": 42404829560891,
+            "price": "189.97",
+            "compare_at_price": "299.99",
+            "available": true,
+            "option1": "Black",
+            "option2": "110MM",
+            "option3": null
+          },
+          {
+            "id": 42404829593659,
+            "price": "189.97",
+            "compare_at_price": "299.99",
+            "available": true,
+            "option1": "Black",
+            "option2": "120MM",
+            "option3": null
+          },
+          {
+            "id": 42404829659195,
+            "price": "189.97",
+            "compare_at_price": "299.99",
+            "available": false,
+            "option1": "Black/Powder Blue",
+            "option2": "100MM",
+            "option3": null
+          },
+          {
+            "id": 42404829724731,
+            "price": "189.97",
+            "compare_at_price": "299.99",
+            "available": false,
+            "option1": "Black/Powder Blue",
+            "option2": "120MM",
+            "option3": null
+          },
+          {
+            "id": 42404829757499,
+            "price": "189.97",
+            "compare_at_price": "299.99",
+            "available": false,
+            "option1": "Black/Powder Blue",
+            "option2": "90MM",
+            "option3": null
+          }
+        ]
+      }
+    ]
+  },
+  "startingate": {
+    "products": [
+      {
+        "title": "Armada AR One 130 MV Ski Boot 2026",
+        "handle": "armada-ar-one-130-mv-ski-boot-2026",
+        "product_type": "Ski Boots",
+        "vendor": "Armada",
+        "options": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "25/25.5",
+              "26/26.5",
+              "27/27.5"
+            ]
+          }
+        ],
+        "images": [
+          {
+            "src": "https://cdn.shopify.com/s/files/1/1042/5868/files/RE0000000__bc82f12b3de7252bdd2d96565410104c.webp?v=1761321852",
+            "variant_ids": []
+          }
+        ],
+        "variants": [
+          {
+            "id": 51448911626533,
+            "price": "612.50",
+            "compare_at_price": "875.00",
+            "available": false,
+            "option1": "25/25.5",
+            "option2": null,
+            "option3": null
+          },
+          {
+            "id": 51448911659301,
+            "price": "612.50",
+            "compare_at_price": "875.00",
+            "available": false,
+            "option1": "26/26.5",
+            "option2": null,
+            "option3": null
+          },
+          {
+            "id": 51448911692069,
+            "price": "612.50",
+            "compare_at_price": "875.00",
+            "available": true,
+            "option1": "27/27.5",
+            "option2": null,
+            "option3": null
+          }
+        ]
+      }
+    ]
+  },
+  "freeride": {
+    "products": [
+      {
+        "title": "BATALEON Kids' Minishred Snowboard + Bindings Package 2025",
+        "handle": "bataleon-kids-minishred-snowboard-bindings-package-kids-2025",
+        "product_type": "Youth Snowboards",
+        "vendor": "Bataleon",
+        "options": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "85",
+              "95",
+              "105",
+              "115",
+              "120"
+            ]
+          }
+        ],
+        "images": [
+          {
+            "src": "https://cdn.shopify.com/s/files/1/1548/8571/files/Bataleon-Minishred_2025-Bataleon-Snowboards_-product-image-2025-Minishred_2025-Bataleon-Snowboards_-1_8e262ec3-14b4-448a-95e4-5f415e98355c.webp?v=1728605035",
+            "variant_ids": []
+          }
+        ],
+        "variants": [
+          {
+            "id": 42229133705299,
+            "price": "186.00",
+            "compare_at_price": "309.00",
+            "available": true,
+            "option1": "85",
+            "option2": null,
+            "option3": null
+          },
+          {
+            "id": 42229133738067,
+            "price": "186.00",
+            "compare_at_price": "309.00",
+            "available": false,
+            "option1": "95",
+            "option2": null,
+            "option3": null
+          },
+          {
+            "id": 42229133770835,
+            "price": "186.00",
+            "compare_at_price": "309.00",
+            "available": false,
+            "option1": "105",
+            "option2": null,
+            "option3": null
+          },
+          {
+            "id": 42229133803603,
+            "price": "186.00",
+            "compare_at_price": "309.00",
+            "available": false,
+            "option1": "115",
+            "option2": null,
+            "option3": null
+          },
+          {
+            "id": 42229133836371,
+            "price": "186.00",
+            "compare_at_price": "309.00",
+            "available": false,
+            "option1": "120",
+            "option2": null,
+            "option3": null
+          }
+        ]
+      },
+      {
+        "title": "BATALEON Disaster Snowboard 2026",
+        "handle": "bataleon-disaster-snowboard-2028",
+        "product_type": "Men's Snowboards",
+        "vendor": "Bataleon",
+        "options": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "144",
+              "148",
+              "151",
+              "153 WIDE",
+              "154",
+              "156 WIDE",
+              "157"
+            ]
+          }
+        ],
+        "images": [
+          {
+            "src": "https://cdn.shopify.com/s/files/1/1548/8571/files/1_90c8e322-d7f0-4e7e-9f1f-7414ada027c1.png?v=1755900135",
+            "variant_ids": []
+          }
+        ],
+        "variants": [
+          {
+            "id": 42974754013267,
+            "price": "297.00",
+            "compare_at_price": "424.00",
+            "available": false,
+            "option1": "144",
+            "option2": null,
+            "option3": null
+          },
+          {
+            "id": 42977018839123,
+            "price": "297.00",
+            "compare_at_price": "424.00",
+            "available": false,
+            "option1": "148",
+            "option2": null,
+            "option3": null
+          },
+          {
+            "id": 42974754046035,
+            "price": "297.00",
+            "compare_at_price": "424.00",
+            "available": true,
+            "option1": "151",
+            "option2": null,
+            "option3": null
+          },
+          {
+            "id": 42974754078803,
+            "price": "297.00",
+            "compare_at_price": "424.00",
+            "available": false,
+            "option1": "153 WIDE",
+            "option2": null,
+            "option3": null
+          },
+          {
+            "id": 42974754111571,
+            "price": "297.00",
+            "compare_at_price": "424.00",
+            "available": false,
+            "option1": "154",
+            "option2": null,
+            "option3": null
+          },
+          {
+            "id": 42977018871891,
+            "price": "297.00",
+            "compare_at_price": "424.00",
+            "available": false,
+            "option1": "156 WIDE",
+            "option2": null,
+            "option3": null
+          },
+          {
+            "id": 42974754144339,
+            "price": "297.00",
+            "compare_at_price": "424.00",
+            "available": false,
+            "option1": "157",
+            "option2": null,
+            "option3": null
+          }
+        ]
+      }
+    ]
+  },
+  "boardom": {
+    "products": [
+      {
+        "title": "FULL TILT KICKER MENS SKI BOOTS",
+        "handle": "skis-j211601601",
+        "product_type": "men's ski boots",
+        "vendor": "FULL TILT",
+        "options": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "BLACK"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "24.5",
+              "25.5",
+              "26.5",
+              "27.5",
+              "28.5",
+              "29.5"
+            ]
+          }
+        ],
+        "images": [
+          {
+            "src": "https://cdn.shopify.com/s/files/1/0263/6863/9023/products/J211601601_-FULL-TILT-KICKER-MENS-SKI-BOOTS-FULL-TILT-1639097949.jpg?v=1639097951",
+            "variant_ids": []
+          }
+        ],
+        "variants": [
+          {
+            "id": 40233375629359,
+            "price": "279.99",
+            "compare_at_price": "399.99",
+            "available": false,
+            "option1": "BLACK",
+            "option2": "24.5",
+            "option3": null
+          },
+          {
+            "id": 40233375596591,
+            "price": "279.99",
+            "compare_at_price": "399.99",
+            "available": true,
+            "option1": "BLACK",
+            "option2": "25.5",
+            "option3": null
+          },
+          {
+            "id": 40233375465519,
+            "price": "279.99",
+            "compare_at_price": "399.99",
+            "available": false,
+            "option1": "BLACK",
+            "option2": "26.5",
+            "option3": null
+          },
+          {
+            "id": 40233375498287,
+            "price": "279.99",
+            "compare_at_price": "399.99",
+            "available": false,
+            "option1": "BLACK",
+            "option2": "27.5",
+            "option3": null
+          },
+          {
+            "id": 40233375531055,
+            "price": "279.99",
+            "compare_at_price": "399.99",
+            "available": false,
+            "option1": "BLACK",
+            "option2": "28.5",
+            "option3": null
+          },
+          {
+            "id": 40233375563823,
+            "price": "279.99",
+            "compare_at_price": "399.99",
+            "available": false,
+            "option1": "BLACK",
+            "option2": "29.5",
+            "option3": null
+          }
+        ]
+      }
+    ]
+  }
+}

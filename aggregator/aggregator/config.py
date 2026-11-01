@@ -26,9 +26,10 @@ class StoreConfig:
     tax_free: bool = False  # True = no sales tax for WA buyers (Canadian stores, no-nexus stores)
     currency: str = "USD"   # Price currency (USD or CAD)
     shopify_products_limit: int = 250  # Lower for stores whose JSON feed fails at 250
+    verify_shopify_currency: bool = False  # Fail closed if storefront market differs
 
 # ---------------------------------------------------------------------------
-# Store registry — ~16 ski/snowboard retailers sourced from uscardforum.com
+# Store registry — reviewed ski/snowboard retailer connections
 # ---------------------------------------------------------------------------
 
 STORES: list[StoreConfig] = [
@@ -379,6 +380,47 @@ STORES: list[StoreConfig] = [
         ],
         parser_type="shopify",
         tax_free=True,  # Vermont, no WA nexus
+    ),
+
+    # Verified public feeds, November 2026. Keep markets explicit and check
+    # storefront currency before accepting a collection's numeric prices.
+    StoreConfig(
+        "UtahSkis", "utahskis.com",
+        scrape_urls=[
+            "https://utahskis.com/collections/skis-25",
+            "https://utahskis.com/collections/snowboards",
+            "https://utahskis.com/collections/ski-boots",
+            "https://utahskis.com/collections/snowboard-boots",
+            "https://utahskis.com/collections/ski-bindings",
+            "https://utahskis.com/collections/snowboard-bindings",
+        ],
+        verify_shopify_currency=True,
+    ),
+    StoreConfig(
+        "The Startingate", "shopstartingate.com",
+        scrape_urls=[
+            "https://shopstartingate.com/collections/skis-bindings",
+            "https://shopstartingate.com/collections/ski-boots",
+            "https://shopstartingate.com/collections/ski-bindings",
+        ],
+        verify_shopify_currency=True,
+    ),
+    StoreConfig(
+        "Freeride Boardshop", "freerideboardshop.com",
+        scrape_urls=[
+            "https://www.freerideboardshop.com/en-us/collections/sale-snowboards",
+            "https://www.freerideboardshop.com/en-us/collections/winter-sale-boots-all",
+            "https://www.freerideboardshop.com/en-us/collections/snowboard-bindings",
+        ],
+        currency="USD", verify_shopify_currency=True,
+    ),
+    StoreConfig(
+        "Boardom", "boardom.net",
+        scrape_urls=[
+            "https://boardom.net/collections/clearance-skis?currency=CAD",
+            "https://boardom.net/collections/clearance-snow?currency=CAD",
+        ],
+        currency="CAD", verify_shopify_currency=True,
     ),
 
     # Unreachable — site appears down

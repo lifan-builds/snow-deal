@@ -8,6 +8,7 @@ from dataclasses import dataclass
 import logging
 import math
 import hashlib
+import json
 import re
 import random
 from email.utils import parsedate_to_datetime
@@ -76,7 +77,7 @@ def _get_parser(parser_type: str) -> BaseParser | None:
         return None
 
 
-_CM_PATTERN = re.compile(r'(\d+)\s*cm', re.IGNORECASE)
+_CM_PATTERN = re.compile(r'(?<![\d.])(\d+)\s*(?:cm|W(?:IDE)?\b)', re.IGNORECASE)
 _RETAIL_PATTERN = re.compile(r',?\s*Retail(?:\s+Price)?:\s*\$[\d,.]+', re.IGNORECASE)
 _PRICE_PATTERN = re.compile(r'\$[\d,.]+')
 _COLOR_JUNK = re.compile(
@@ -97,7 +98,8 @@ def _clean_sizes(sizes_str: str | None) -> str | None:
     s = _RETAIL_PATTERN.sub('', sizes_str)
     # If the remaining string is mostly prices (e.g. "$0.98, $1.98, ..."), discard it
     parts = [p.strip() for p in s.split(',') if p.strip()]
-    non_price_parts = [p for p in parts if not _PRICE_PATTERN.fullmatch(p.strip())]
+    non_price_parts = [p for p in parts if not _PRICE_PATTERN.fullmatch(p.strip())
+                       and p.upper() not in {'NA', 'N/A', 'N.A.', 'NONE', 'UNKNOWN'}]
     if not non_price_parts:
         return None
     s = ', '.join(non_price_parts)
@@ -330,6 +332,20 @@ async def scrape_store(
         seen_pages: set[str] = set()
         collection = {"url": url, "pages": 0, "products": 0, "status": "complete"}
         outcome.setdefault("collections", []).append(collection)
+        if store.parser_type == "shopify" and store.verify_shopify_currency:
+            try:
+                storefront = await fetch_listing(client, url, delay)
+                match = re.search(r'Shopify\.currency\s*=\s*(\{[^;]+?\})\s*;', storefront.text)
+                observed = json.loads(match.group(1)).get('active') if match else None
+                collection['observed_currency'] = observed
+                if observed != store.currency:
+                    collection['status'] = 'currency_mismatch' if observed else 'currency_unknown'
+                    outcome['errors'] += 1
+                    continue
+            except (httpx.HTTPError, ValueError, TypeError, AttributeError):
+                collection['status'] = 'currency_check_failed'
+                outcome['errors'] += 1
+                continue
         # For Shopify stores, convert to API URL
         if store.parser_type == "shopify" and hasattr(parser, "get_api_url"):
             current_url: str | None = parser.get_api_url(
@@ -383,7 +399,10 @@ async def scrape_store(
                 await asyncio.sleep(delay)
 
     log.info("[%s] Total products scraped: %d", store.name, len(products))
-    return list({d.url: d for d in _products_to_deals(products, store.name)}.values())
+    deals = list({d.url: d for d in _products_to_deals(products, store.name)}.values())
+    for deal in deals:
+        deal.currency = store.currency
+    return deals
 
 
 async def scrape_store_browser(
