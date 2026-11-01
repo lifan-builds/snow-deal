@@ -1,6 +1,6 @@
 # FreshPowder — Aggregator
 
-Multi-store deal aggregator for ski and snowboard gear. Scrapes 28 retailers, integrates 1,200+ review scores from OutdoorGearLab (skis, boots, gear) and The Good Ride (snowboards, bindings, boots, jackets), stores deal snapshots in SQLite, and serves a ranked dashboard via FastAPI + htmx. Conservative model matching links reviews without borrowing scores from different variants. Includes admin panel for invite code management and analytics dashboard for tracking user behavior. Deployed on Vercel with GitHub Actions cron for automated scraping; Render/Docker support is retained as a fallback. Part of the [snow-deals](../) monorepo.
+Multi-store deal aggregator for ski and snowboard gear. Connects to 27 configured retailers, integrates 1,200+ review scores from OutdoorGearLab (skis, boots, gear) and The Good Ride (snowboards, bindings, boots, jackets), stores deal snapshots in SQLite, and serves a ranked dashboard via FastAPI + htmx. Conservative model matching links reviews without borrowing scores from different variants. Includes admin panel for invite code management and analytics dashboard for tracking user behavior. Deployed on Vercel with GitHub Actions cron for automated scraping; Render/Docker support is retained as a fallback. Part of the [snow-deals](../) monorepo.
 
 **Live site:** [freshpowder.clifan.com](https://freshpowder.clifan.com)
 

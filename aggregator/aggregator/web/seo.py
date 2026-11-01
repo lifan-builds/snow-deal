@@ -47,7 +47,7 @@ def page_context(request):
         "site_url": site_url(),
         "seo_defaults": {
             "canonical_url": site_url() + path,
-            "page_title": "Ski & Snowboard Deals Across 28 Stores | FreshPowder",
+            "page_title": "Ski & Snowboard Deals | FreshPowder",
             "page_description": "Compare ski and snowboard deals, available sizes, retailer prices and exact-model review links. Browse free. Join the list for rare-deal alerts, coming soon.",
             "noindex": private or bool(request.url.query),
         },
