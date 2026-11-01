@@ -6,9 +6,9 @@
   <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/products">Compare models</a> / <a href="/brands/{{ brand_slug }}">{{ p.brand }}</a> / {{ p.name }}</nav>
   <section class="product-intro">
     <div class="product-photo">{% if p.image %}<img src="{{ p.image }}" alt="{{ p.name }}" width="500" height="400" fetchpriority="high">{% else %}<img src="/static/img/alpine-gear.jpg" alt="" width="500" height="400">{% endif %}</div>
-    <div><span class="eyebrow">{{ p.category }} · {{ p.year }} MODEL</span><h1>{{ p.name }}</h1>
+    <div><h1>{{ p.name }}</h1>
       <p class="lede">Compare the shops before you commit.</p>
-      {% if p.offers %}<p class="comparison-price">From <strong>{{ symbol }}{{ '%.2f'|format(p.offers[0].current_price) }}</strong> <span class="currency-tag">{{ p.currency }}</span></p><p>{{ p.store_count }} shops · {{ p.offers|length }} recent listings{% if p.size %} reporting {{ p.size }} cm (W = wide){% endif %}</p>
+      {% if p.offers %}<p class="comparison-price">From <strong>{{ symbol }}{{ '%.2f'|format(p.offers[0].current_price) }}</strong> <span class="currency-tag">{{ p.currency }}</span></p><p>{{ p.store_count }} shop{{ '' if p.store_count == 1 else 's' }} · {{ p.offers|length }} recent listing{{ '' if p.offers|length == 1 else 's' }}{% if p.size %} reporting {{ p.size }} cm (W = wide){% endif %}</p>
       {% else %}<p class="empty-offers">No recent offers{% if p.size %} reporting {{ p.size }} cm (W = wide){% endif %} in {{ p.currency }}. Try another currency or all sizes.</p>{% endif %}
       <p>Retailer listing prices can vary by size. Shipping and taxes are not included. Confirm your chosen size, condition and final total at the shop.</p>
       <a href="#offers" class="button primary">Compare offers ↓</a> <button class="share-btn" type="button" data-url="{{ canonical_url }}" data-name="{{ p.name }}">Share comparison ↗</button>
@@ -16,7 +16,7 @@
   </section>
   <section id="offers" class="comparison-section" aria-labelledby="offers-heading">
     <h2 id="offers-heading">Retailer offers</h2>
-    <form method="get" class="comparison-filters">
+    <form method="get" action="/products/{{ p.slug }}#offers" class="comparison-filters">
       <label>Currency<select name="currency">{% for code in ['USD','CAD'] %}<option value="{{ code }}" {% if p.currency == code %}selected{% endif %}>{{ code }}</option>{% endfor %}</select></label>
       <label>Reported size<select name="size"><option value="">All sizes</option>{% for n in p.sizes %}<option value="{{ n }}" {% if p.size == n %}selected{% endif %}>{{ n }} cm{% if n.endswith("W") %} · wide{% endif %}</option>{% endfor %}{% if p.size and p.size not in p.sizes %}<option selected value="{{ p.size }}">{{ p.size }} cm</option>{% endif %}</select></label>
       <button type="submit" class="button secondary">Apply</button><a href="/products/{{ p.slug }}">Reset</a>
@@ -25,7 +25,7 @@
     {% if p.offers %}<div class="offer-list">{% for o in p.offers %}
       <article class="offer-row retailer-offer" data-href="{{ o.url }}" data-name="{{ o.name }}" data-store="{{ o.store }}" data-category="{{ p.category }}">
         <div><h3>{{ o.store }}</h3><p>{{ o.name }}</p><p class="offer-checked">Checked {{ o.scraped_at[:16]|replace('T',' ') }} UTC</p></div>
-        <div><span class="eyebrow">REPORTED SIZES</span><p>{{ o.sizes or 'Not supplied — check the retailer' }}</p></div>
+        <div><span class="offer-label">Reported sizes</span><p>{{ o.sizes or 'Not supplied — check the retailer' }}</p></div>
         <div><strong class="offer-price">{{ symbol }}{{ '%.2f'|format(o.current_price) }} <small>{{ p.currency }}</small></strong>{% if o.original_price and o.original_price > o.current_price %}<p>Retailer list: {{ symbol }}{{ '%.2f'|format(o.original_price) }}</p>{% endif %}<a class="button secondary product-link" href="{{ o.url }}" target="_blank" rel="noopener noreferrer" aria-label="View {{ p.name }} at {{ o.store }} (opens in a new tab)">Visit shop ↗</a></div>
       </article>
     {% endfor %}</div>{% else %}<p>No matching offers are currently recent enough to show. <a href="/products/{{ p.slug }}">Clear filters</a> or <a href="/products">compare other models</a>.</p>{% endif %}

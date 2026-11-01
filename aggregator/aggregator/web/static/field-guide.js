@@ -25,8 +25,11 @@ function resetAllFilters() {
   refreshDeals();
 }
 document.querySelectorAll('.site-header nav a').forEach(link => {
-  if (new URL(link.href).pathname === location.pathname)
-    link.setAttribute('aria-current', 'page');
+  const path = new URL(link.href).pathname;
+  if (path === location.pathname) link.setAttribute('aria-current', 'page');
+  else if ((path === '/products' && /^\/(products|brands)\//.test(location.pathname)) ||
+           (path === '/' && location.pathname.startsWith('/gear/')))
+    link.setAttribute('aria-current', 'location');
 });
 document.addEventListener('click', event => {
   if (form && event.target.closest('[data-reset-filters]')) {
@@ -112,6 +115,59 @@ if (form) {
       btn.classList.toggle("active", active);
       btn.setAttribute("aria-pressed", String(active));
     });
+    syncFilterChips();
+  }
+  function syncFilterChips() {
+    const container = document.getElementById('active-filters');
+    if (!container) return;
+    const focusedFilter = container.contains(document.activeElement)
+      ? document.activeElement.dataset.filter : null;
+    const labels = {
+      q: 'Search', category: 'Gear', brand: 'Brand', store: 'Store',
+      currency: 'Currency', min_discount: 'Minimum discount',
+      min_price: 'Min price', max_price: 'Max price',
+      size_min: 'Length from', size_max: 'Length to', reviewed: 'Expert review available',
+    };
+    container.replaceChildren();
+    for (const [name, label] of Object.entries(labels)) {
+      const input = form.elements[name];
+      if (!input.value || input.value === '0' || (input.type === 'checkbox' && !input.checked)) continue;
+      const chip = document.createElement('button');
+      chip.type = 'button';
+      chip.className = 'filter-chip';
+      chip.dataset.filter = name;
+      let value = input.tagName === 'SELECT' ? input.selectedOptions[0].textContent : input.value;
+      if (name.startsWith('size_')) value += ' cm';
+      if (name === 'min_price' || name === 'max_price') value += ' ' + (form.elements.currency.value || 'USD');
+      const text = input.type === 'checkbox' ? label : `${label}: ${value}`;
+      chip.setAttribute('aria-label', `Remove ${text}`);
+      const caption = document.createElement('span');
+      caption.textContent = text;
+      const cross = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      cross.setAttribute('viewBox', '0 0 16 16');
+      cross.setAttribute('aria-hidden', 'true');
+      const path = document.createElementNS(cross.namespaceURI, 'path');
+      path.setAttribute('d', 'm4 4 8 8M12 4l-8 8');
+      cross.append(path);
+      chip.append(caption, cross);
+      chip.addEventListener('click', () => {
+        if (input.type === 'checkbox') input.checked = false;
+        else input.value = name === 'min_discount' ? '0' : '';
+        validateRanges();
+        syncPresets();
+        // Removing a chip must not strand keyboard focus on the document body.
+        (container.querySelector('button') || form.elements.q).focus({preventScroll: true});
+        refreshDeals();
+      });
+      container.append(chip);
+    }
+    container.hidden = !container.childElementCount;
+    document.getElementById('filter-summary').textContent = container.childElementCount
+      ? `${container.childElementCount} selected` : '';
+    if (focusedFilter) {
+      const nextFocus = [...container.children].find(chip => chip.dataset.filter === focusedFilter);
+      (nextFocus || container.querySelector('button') || form.elements.q).focus({preventScroll: true});
+    }
   }
   syncPresets();
   const toggle = document.getElementById("view-toggle");
@@ -128,8 +184,6 @@ if (form) {
   try {
     if (localStorage.getItem("fp-view") === "compact") toggle.click();
   } catch (_) {}
-  if (matchMedia("(max-width:700px)").matches)
-    document.querySelector(".filter-panel").open = false;
 }
 document.addEventListener("click", async (event) => {
   const share = event.target.closest(".share-btn");
