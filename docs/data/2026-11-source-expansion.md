@@ -29,3 +29,11 @@ Existing unresolved connections remain visible: MEC is blocked by verification, 
 ## Verification
 
 145 offline tests passed, including public feed excerpts from all four retailers, market-preserving pagination and destinations, fail-closed currency checks, available-price/size handling, child-product exclusion and the metadata edge cases above. Python compilation and whitespace checks passed. The production refresh is scoped to these four retailers to preserve other retailers and existing price history.
+
+## Verified production result
+
+[Run 41362079607](https://github.com/lifan-builds/snow-deal/actions/runs/41362079607) succeeded on revision `e5e6da5`. Production `/healthz` independently returned the exact snapshot timestamp `2026-11-01T23:28:08.392435`, with 30 retailers holding current listings. The store report showed 13,969 listings and 29/31 complete recent checks; all four new retailers were marked OK with the counts above.
+
+All 14 new collections completed without errors, publishing 394 deals. They have zero missing categories, three missing images, 11 missing sizes and 12 missing lengths among 146 skis/snowboards. The remaining missing values are not fabricated. The public snapshot passed SQLite integrity checks and price/currency/link assertions. All 14,036 preexisting deal rows were unchanged, and all 42,338 prior price observations survived; history now contains 42,732 observations.
+
+Live retailer-filter responses returned only the selected retailer, showed USD for UtahSkis, The Startingate and Freeride, and CAD for Boardom. Freeride's US-market product paths and Boardom's CAD query selection were preserved in rendered deal links. These sources are included in the existing daily refresh schedule.
