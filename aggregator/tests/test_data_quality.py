@@ -152,3 +152,27 @@ def test_filter_counts_exclude_stale_and_historical_rows(tmp_path):
         assert await get_category_counts(path) == {}
         assert await count_with_length(path) == 0
     asyncio.run(run())
+
+
+def test_retailer_metadata_filters_unrecognizable_non_snow_and_kids_models():
+    products = [
+        Product("Men's Clifton 10", 'https://s.test/clifton',100,150,product_type='Running Shoes - Cushion Shoes',brand='Hoka'),
+        Product('Sirrus X 2.0 Step-Through','https://s.test/sirrus',500,750,product_type='Hybrid Bike - Cross Bikes Over $600',brand='Specialized'),
+        Product('Nordica SPEEDMACHINE J3 GIRL','https://s.test/j3',100,200,product_type='Ski Boots'),
+        Product('Winter Jacket','https://s.test/jacket',100,200,product_type='Kids Clothing - Infant - Toddler Clothing'),
+        Product('CAPiTA Mercury Snowboard','https://s.test/mercury',300,600,product_type='Snowboards',brand='CAPiTA'),
+    ]
+    deals = _products_to_deals(products,'Test')
+    assert [d.name for d in deals] == ['CAPiTA Mercury Snowboard']
+
+
+def test_manual_page_offsets_do_not_trigger_auto_pagination():
+    from aggregator.browser import _try_next_page
+    assert asyncio.run(_try_next_page(None, '')) is False
+
+
+def test_brand_recovery_preserves_numeric_and_multiword_brands():
+    from aggregator.parsers.common import prefix_brand_from_url
+    assert prefix_brand_from_url('686 GORE-TEX Core Pant', 'https://s.test/686-gore-tex-core-pant') == '686 GORE-TEX Core Pant'
+    assert prefix_brand_from_url('Sogn Bib Pant', 'https://s.test/helly-hansen-sogn-bib-pant') == 'Helly Hansen Sogn Bib Pant'
+    assert prefix_brand_from_url('Knit Top', 'https://s.test/cashmere-knit-top') == 'Knit Top'

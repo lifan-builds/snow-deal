@@ -29,3 +29,5 @@ The prior CI run had repeated HTTP 429 responses across Shopify feeds. Feed jobs
 117 offline regression tests passed before the live refresh. Browser extractor JavaScript syntax checks passed. Tests cover real title/image/size fixtures, source errors, malformed feeds, pagination, exclusions, finite prices, stale filter counts, and failed-snapshot retention. No production auth data is used.
 
 Live refresh and before/after measurements: pending.
+
+Additional live catalog check: Skirack's structured `product_type` explicitly identified running shoes and bikes whose model-only names did not. Filtering now uses retailer type/vendor evidence as well as title/URL, including children’s product types. The House exposes ski/snowboard category and stock fields; discard other sports and out-of-stock items, and do not invent prices from "up to" discount percentages. Manual page-offset sources remain exempt from automatic pagination. Brand recovery only prefixes recognized literal brands, preserving numeric and multiword names.

@@ -128,7 +128,7 @@ def _extract_lengths(sizes_str: str | None) -> tuple[int | None, int | None]:
 
 
 _KIDS_KEYWORDS = re.compile(
-    r"\b(junior|jr|kids?|youth|toddlers?|baby|boys|girls|infant|child|children|grom|little kid|big kid)\b",
+    r"\b(junior|jr|kids?|youth|toddlers?|baby|boys?|girls?|infant|child|children|grom|little kid|big kid)\b",
     re.IGNORECASE,
 )
 
@@ -180,7 +180,8 @@ def _products_to_deals(
         name = clean_product_name(p.name, p.url)
         if not name:
             continue
-        if _is_kids_product(name) or is_excluded(name, p.url):
+        source_description = f"{name} {p.product_type or ''} {p.brand or ''}"
+        if _is_kids_product(source_description) or is_excluded(source_description, p.url):
             continue
         if (not math.isfinite(p.current_price) or p.original_price is None
                 or not math.isfinite(p.original_price)

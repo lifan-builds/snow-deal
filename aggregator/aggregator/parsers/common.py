@@ -72,17 +72,22 @@ def prefix_brand_from_url(name: str | None, url: str) -> str:
         return ""
 
     words = product_slug_words(url)
-    while words and words[0].isdigit():
+    while words and re.fullmatch(r"20\d{2}", words[0]):
         words = words[1:]
     if len(words) < 2:
         return cleaned
 
-    candidate = words[0].lower()
+    from aggregator.reviews import _extract_brand
+    slug_name = " ".join(words).lower()
+    candidate = _extract_brand(slug_name)
+    # Recover only a recognized literal brand, never an arbitrary URL word
+    # (e.g. "Gore" from a 686 GORE-TEX product or a model-name inference).
+    if not candidate or not slug_name.startswith(candidate + " "):
+        return cleaned
     name_lower = cleaned.lower()
     if (
         candidate in _GENERIC_URL_PREFIXES
-        or not candidate.isalpha()
-        or candidate in name_lower.split()
+        or name_lower.startswith(candidate + " ")
     ):
         return cleaned
 

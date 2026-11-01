@@ -133,26 +133,29 @@ STORE_CONFIGS: dict[str, tuple[str, str, str | None]] = {
                 let data;
                 try { data = JSON.parse(t.getAttribute('data-gtmdata')); } catch(e) { return; }
                 if (!data || !data.name || !data.price || seen.has(data.name)) return;
+                // This sale listing also contains boats, bikes and camping gear.
+                if (!['ski', 'snowboard'].includes(data.category)) return;
+                if (data.dimension20 && data.dimension20 !== 'IN_STOCK') return;
                 seen.add(data.name);
                 const linkEl = t.querySelector('a[href*=".html"]');
                 // data.price is the ORIGINAL/list price; dimension4 is the sale price
                 const originalPrice = parseFloat(data.price);
                 let salePrice = data.dimension4 ? parseFloat(data.dimension4) : null;
-                if (!salePrice && data.percentOff && data.percentOff > 0) {
-                    salePrice = Math.round(originalPrice * (1 - data.percentOff / 100) * 100) / 100;
-                }
+                // Marketing "up to" percentages do not establish an offer price.
                 const currentPrice = salePrice || originalPrice;
                 const imgEl = t.querySelector('img');
                 results.push({
                     name: data.name, url: linkEl ? linkEl.href : '',
                     current_price: currentPrice,
+                    brand: data.brand || null,
+                    product_type: data.subcategory || null,
                     original_price: (originalPrice !== currentPrice) ? originalPrice : null,
                     image_url: imgEl ? (imgEl.getAttribute('data-src') || imgEl.src || null) : null,
                 });
             });
             return results;
         }""",
-        None,
+        "",  # Explicit start offsets are configured; do not paginate each again.
     ),
 
     # BigCommerce stores (Corbetts, Peter Glenn, Alpine Shop VT) share the same extractor
@@ -444,6 +447,8 @@ async def _random_delay(base: float = 1.0, jitter: float = 2.0) -> None:
 
 async def _try_next_page(page: Page, next_selector: str | None) -> bool:
     """Attempt to navigate to the next page. Returns True if navigation happened."""
+    if next_selector == "":
+        return False
     # Try explicit CSS selectors first
     for selector in (next_selector or "").split(","):
         selector = selector.strip()
