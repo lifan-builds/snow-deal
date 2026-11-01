@@ -45,3 +45,16 @@ Only this subdomain was added; portfolio, mail and nameserver records were prese
 ## Validation
 
 93 offline tests pass, including public category rendering, canonical URLs, sitemap/robots, admin protection, signup validation, persistence, duplicate handling, consent recording, token hashing, removal, non-JavaScript submission and database failure reporting. Initial browser inspection of the local public catalog confirmed navigation, visible forms, categories and cards. Production deployment `bb269fe` is Ready. Live HTTP verification confirmed 60 anonymous catalog cards, category title/canonical/structured data, a 10-URL sitemap, robots discovery, admin redirects and healthy data. A unique synthetic address completed signup, duplicate detection and removal against the production service; no email was sent and the test signup was removed. Final screenshot validation was unavailable because browser control was disabled in Work settings.
+
+### Custom-domain verification — November 1, 2026
+
+Deployment `9099801` is Ready. Valid HTTPS serves the public catalog at
+https://freshpowder.clifan.com with 60 initial cards. Homepage and category
+canonicals, the 10-URL sitemap and robots discovery use the custom domain.
+The old homepage, filtered homepage and paginated category URL return 308
+redirects preserving path and query. `/admin/codes` still redirects anonymous
+visitors. A synthetic signup passed creation, duplicate detection and removal
+on the custom origin; its test record was removed and no email was sent.
+The 12 focused web route tests passed. Health reports 26 stores with deals and
+the November 1 snapshot. The Northwest CNAME row and live browser rendering
+were also inspected. Search Console submission is not yet completed.
