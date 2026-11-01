@@ -27,7 +27,7 @@ def verify(url: str, expected: str, timeout: int = 600) -> bool:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("report")
-    parser.add_argument("--url", default="https://snow-deal.vercel.app/healthz")
+    parser.add_argument("--url", default="https://freshpowder.clifan.com/healthz")
     args = parser.parse_args()
     with open(args.report) as source:
         expected = json.load(source)["checked_at"]

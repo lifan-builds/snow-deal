@@ -4,7 +4,7 @@ FreshPowder is a public ski and snowboard deal aggregator that tracks gear price
 
 If you have ever kept 12 retailer tabs open waiting for skis, boots, or boards to drop, this is the app I wanted instead: one live feed, real prices, deep filters, review context, and shareable deals.
 
-**Live app:** https://snow-deal.vercel.app
+**Live app:** https://freshpowder.clifan.com
 
 ![FreshPowder landing page](docs/images/freshpowder-landing.png)
 

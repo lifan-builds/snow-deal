@@ -18,5 +18,18 @@
       "source": "/(.*)",
       "destination": "/api/index.py"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "snow-deal.vercel.app"
+        }
+      ],
+      "destination": "https://freshpowder.clifan.com/:path*",
+      "permanent": true
+    }
   ]
 }
