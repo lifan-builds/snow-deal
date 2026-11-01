@@ -201,7 +201,10 @@ async def count_with_length(db_path: Path = DB_PATH) -> int:
     """Return count of deals that have length data."""
     async with _connect(db_path, read_only=_deal_db_read_only()) as db:
         cursor = await db.execute(
-            "SELECT COUNT(*) FROM deals WHERE length_min IS NOT NULL"
+            """SELECT COUNT(*) FROM deals d
+               WHERE length_min IS NOT NULL AND category IN ('skis', 'snowboards')
+               AND scraped_at = (SELECT MAX(scraped_at) FROM deals WHERE store = d.store)
+               AND datetime(scraped_at) >= datetime('now', '-72 hours')"""
         )
         row = await cursor.fetchone()
     return row[0]
@@ -216,6 +219,7 @@ async def get_brands(db_path: Path = DB_PATH) -> list[str]:
             INNER JOIN (SELECT store, MAX(scraped_at) as max_s FROM deals GROUP BY store) d2 
               ON deals.store = d2.store AND deals.scraped_at = d2.max_s
             WHERE deals.brand IS NOT NULL AND deals.brand != ''
+            AND datetime(deals.scraped_at) >= datetime('now', '-72 hours')
             ORDER BY deals.brand
             """
         )
@@ -232,6 +236,7 @@ async def get_category_counts(db_path: Path = DB_PATH) -> dict[str, int]:
             INNER JOIN (SELECT store, MAX(scraped_at) as max_s FROM deals GROUP BY store) d2 
               ON deals.store = d2.store AND deals.scraped_at = d2.max_s
             WHERE deals.category IS NOT NULL
+            AND datetime(deals.scraped_at) >= datetime('now', '-72 hours')
             GROUP BY deals.category
             """
         )

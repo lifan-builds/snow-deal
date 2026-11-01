@@ -6,11 +6,14 @@ import asyncio
 from collections import Counter
 from dataclasses import dataclass
 import logging
+import math
+import hashlib
 import re
 import random
 from email.utils import parsedate_to_datetime
 from datetime import timezone
 from datetime import datetime
+from urllib.parse import urlparse
 
 import httpx
 
@@ -140,6 +143,7 @@ class StoreScrapeSummary:
     missing_image: int
     missing_sizes: int
     missing_lengths: int
+    length_eligible: int
 
 
 @dataclass(frozen=True)
@@ -155,6 +159,7 @@ class ScrapeReport:
     missing_image: int
     missing_sizes: int
     missing_lengths: int
+    length_eligible: int
 
 
 def _is_kids_product(name: str) -> bool:
@@ -177,6 +182,11 @@ def _products_to_deals(
             continue
         if _is_kids_product(name) or is_excluded(name, p.url):
             continue
+        if (not math.isfinite(p.current_price) or p.original_price is None
+                or not math.isfinite(p.original_price)
+                or urlparse(p.url).scheme not in {"https", "http"}
+                or not urlparse(p.url).netloc):
+            continue
         if p.current_price < 1 or p.discount_pct <= 0 or p.discount_pct >= 95:
             continue
         category = categorize(name, p.url, p.product_type or "")
@@ -184,7 +194,7 @@ def _products_to_deals(
         if category in {"skis", "snowboards"} and raw_sizes:
             raw_sizes = re.sub(r"(?<![\d.])\b(1\d{2}|2[01]\d|220)\b(?!\s*cm|[\d.])", r"\1cm", raw_sizes)
 
-        length_min, length_max = _extract_lengths(raw_sizes)
+        length_min, length_max = _extract_lengths(raw_sizes) if category in {"skis", "snowboards"} else (None, None)
         sizes_str = _clean_sizes(raw_sizes)
         deals.append(
             AggregatedDeal(
@@ -228,7 +238,8 @@ def build_scrape_report(
                 missing_category=sum(1 for d in store_deals if not d.category),
                 missing_image=sum(1 for d in store_deals if not d.image_url),
                 missing_sizes=sum(1 for d in store_deals if not d.sizes),
-                missing_lengths=sum(1 for d in store_deals if d.length_min is None),
+                missing_lengths=sum(1 for d in store_deals if d.category in {"skis", "snowboards"} and d.length_min is None),
+                length_eligible=sum(d.category in {"skis", "snowboards"} for d in store_deals),
             )
         )
 
@@ -243,7 +254,8 @@ def build_scrape_report(
         missing_category=sum(1 for d in deals if not d.category),
         missing_image=sum(1 for d in deals if not d.image_url),
         missing_sizes=sum(1 for d in deals if not d.sizes),
-        missing_lengths=sum(1 for d in deals if d.length_min is None),
+        missing_lengths=sum(1 for d in deals if d.category in {"skis", "snowboards"} and d.length_min is None),
+        length_eligible=sum(d.category in {"skis", "snowboards"} for d in deals),
     )
 
 
@@ -275,6 +287,19 @@ async def fetch_listing(client: httpx.AsyncClient, url: str, delay: float) -> ht
     raise RuntimeError("Unreachable retry state")
 
 
+def protect_partial_snapshots(deals: list[AggregatedDeal], previous: dict[str, int], outcomes: dict) -> tuple[list[AggregatedDeal], list[str]]:
+    """Don't replace a substantial prior snapshot with a collapsed, failed scrape.
+
+    Retained rows keep their original timestamps and expire through the normal
+    72-hour freshness filter. Successful sell-through is not quarantined.
+    """
+    counts = Counter(d.store for d in deals)
+    withheld = [store for store, count in previous.items()
+                if count >= 20 and counts[store] < count * 0.3
+                and outcomes.get(store, {}).get("errors")]
+    return [d for d in deals if d.store not in withheld], withheld
+
+
 async def scrape_store(
     store: StoreConfig,
     client: httpx.AsyncClient,
@@ -289,6 +314,7 @@ async def scrape_store(
 
     parser = _get_parser(store.parser_type)
     if parser is None:
+        outcome["errors"] += 1
         log.warning("No parser for %s (type=%s), skipping", store.name, store.parser_type)
         return []
 
@@ -296,6 +322,9 @@ async def scrape_store(
 
     for url in store.scrape_urls:
         page = 0
+        seen_pages: set[str] = set()
+        collection = {"url": url, "pages": 0, "products": 0, "status": "complete"}
+        outcome.setdefault("collections", []).append(collection)
         # For Shopify stores, convert to API URL
         if store.parser_type == "shopify" and hasattr(parser, "get_api_url"):
             current_url: str | None = parser.get_api_url(
@@ -303,6 +332,8 @@ async def scrape_store(
                 limit=store.shopify_products_limit,
             )
             if not current_url:
+                outcome["errors"] += 1
+                collection["status"] = "invalid_url"
                 log.warning("Could not get API URL for %s", url)
                 continue
         else:
@@ -315,15 +346,34 @@ async def scrape_store(
                 try:
                     resp = await fetch_listing(client, current_url, delay)
                     outcome["pages"] += 1
+                    collection["pages"] += 1
                 except httpx.HTTPError as e:
                     outcome["errors"] += 1
+                    collection["status"] = "http_error"
+                    if isinstance(e, httpx.HTTPStatusError):
+                        collection["http_status"] = e.response.status_code
                     log.error("[%s] HTTP error: %s", store.name, e)
                     break
 
-            page_products = parser.parse_listing_page(resp.text, current_url)
-            products.extend(page_products)
-
-            current_url = parser.get_next_page_url(resp.text, current_url)
+            fingerprint = hashlib.sha256(resp.content).hexdigest()
+            if fingerprint in seen_pages:
+                outcome["errors"] += 1
+                collection["status"] = "repeated_page"
+                break
+            seen_pages.add(fingerprint)
+            try:
+                page_products = parser.parse_listing_page(resp.text, current_url)
+                products.extend(page_products)
+                collection["products"] += len(page_products)
+                current_url = parser.get_next_page_url(resp.text, current_url)
+            except (ValueError, TypeError, KeyError, AttributeError) as exc:
+                outcome["errors"] += 1
+                collection["status"] = "parse_error"
+                log.error("[%s] Invalid listing at %s: %s", store.name, current_url, type(exc).__name__)
+                break
+            if current_url and page >= max_pages:
+                outcome["errors"] += 1
+                collection["status"] = "page_limit"
             if current_url and page < max_pages:
                 await asyncio.sleep(delay)
 
@@ -373,10 +423,16 @@ async def scrape_all(
 
     all_deals: list[AggregatedDeal] = []
     http_limit = asyncio.Semaphore(3)
+    # Shopify stores share infrastructure. Avoid concurrent feed bursts across
+    # domains even though their individual per-domain limits allow them.
+    shopify_limit = asyncio.Semaphore(1)
     browser_limit = asyncio.Semaphore(3)
 
     async def bounded_http(store, client):
         async with http_limit:
+            if store.parser_type == "shopify":
+                async with shopify_limit:
+                    return await scrape_store(store, client, delay=delay, max_pages=max_pages, outcomes=outcomes)
             return await scrape_store(store, client, delay=delay, max_pages=max_pages, outcomes=outcomes)
 
     async def bounded_browser(store):
@@ -424,6 +480,8 @@ async def scrape_all(
         for store, result in zip(browser_stores, results):
             if isinstance(result, Exception):
                 log.error("[%s] Browser scrape failed: %s", store.name, result)
+                if outcomes is not None:
+                    outcomes.setdefault(store.name, {"errors": 0, "pages": 0})["errors"] += 1
             else:
                 log.info("[%s] Completed: %d deals after filtering", store.name, len(result))
                 all_deals.extend(result)

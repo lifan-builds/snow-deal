@@ -11,7 +11,14 @@ from snow_deals.parsers.base import BaseParser
 
 log = logging.getLogger(__name__)
 
-MAX_API_PAGES = 10
+def _products_json(body: str) -> list[dict]:
+    """A malformed feed is a connection failure, not an empty collection."""
+    data = json.loads(body)
+    if not isinstance(data, dict) or not isinstance(data.get("products"), list):
+        raise ValueError("Shopify feed is missing its products array")
+    if any(not isinstance(item, dict) for item in data["products"]):
+        raise ValueError("Shopify feed contains malformed products")
+    return data["products"]
 
 
 class ShopifyParser(BaseParser):
@@ -29,16 +36,14 @@ class ShopifyParser(BaseParser):
 
     def parse_listing_page(self, html: str, page_url: str) -> list[Product]:
         """Parse a Shopify products.json response (not HTML)."""
-        try:
-            data = json.loads(html)
-        except json.JSONDecodeError:
-            log.warning("Response is not JSON, skipping: %s", page_url)
-            return []
+        items = _products_json(html)
 
         products: list[Product] = []
         origin = f"{urlparse(page_url).scheme}://{urlparse(page_url).netloc}"
 
-        for item in data.get("products", []):
+        for item in items:
+            if not item.get("handle") or not item.get("title"):
+                continue
             variants = item.get("variants") or []
             # Skip products with no available variants — they're sold out.
             # Shopify variants have `available: bool`; if the field is missing
@@ -67,8 +72,11 @@ class ShopifyParser(BaseParser):
             for offer_price, offer_original, v in offers:
                 if (offer_price, offer_original) != (price, original_price):
                     continue
-                for opt_key in option_keys or ("option1", "option2", "option3"):
+                # Only use unnamed options when the value clearly looks like a size.
+                for opt_key in option_keys or (() if item.get("options") else ("option1", "option2", "option3")):
                     val = v.get(opt_key)
+                    if not option_keys and val and not re.fullmatch(r"(?:\d+(?:\.\d+)?\s*(?:cm|mm)?|[2-6]?X{0,3}[SML]|Small|Medium|Large)", str(val), re.I):
+                        continue
                     if val and val != "Default Title" and val not in sizes:
                         sizes.append(val)
 
@@ -76,7 +84,9 @@ class ShopifyParser(BaseParser):
             image_url = None
             images = item.get("images") or []
             if images:
-                image_url = images[0].get("src")
+                offer_image = next((image for image in images
+                                    if variant.get("id") in (image.get("variant_ids") or [])), images[0])
+                image_url = offer_image.get("src")
             elif item.get("image"):
                 image_url = item["image"].get("src")
 
@@ -96,12 +106,7 @@ class ShopifyParser(BaseParser):
 
     def get_next_page_url(self, html: str, current_url: str) -> str | None:
         """Check if there are more pages of JSON results."""
-        try:
-            data = json.loads(html)
-        except json.JSONDecodeError:
-            return None
-
-        products = data.get("products", [])
+        products = _products_json(html)
         m_limit = re.search(r"[?&]limit=(\d+)", current_url)
         limit = int(m_limit.group(1)) if m_limit else 250
         if len(products) < limit:
@@ -112,9 +117,7 @@ class ShopifyParser(BaseParser):
         current_page = int(m.group(1)) if m else 1
         next_page = current_page + 1
 
-        if next_page > MAX_API_PAGES:
-            return None
-
+        # The orchestrator owns the page budget and reports truncation.
         base = current_url.split("?")[0]
         return f"{base}?limit={limit}&page={next_page}"
 

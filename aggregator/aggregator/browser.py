@@ -4,8 +4,9 @@ from __future__ import annotations
 
 import asyncio
 import logging
+import math
 import random
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 
 from playwright.async_api import Page, async_playwright
 
@@ -21,7 +22,6 @@ USER_AGENT = (
 )
 
 VIEWPORT = {"width": 1440, "height": 900}
-MAX_CONSECUTIVE_DUPLICATE_PAGES = 2
 
 # Shared JS price parser used by most extractors.
 _JS_PARSE_PRICE = """
@@ -83,6 +83,7 @@ STORE_CONFIGS: dict[str, tuple[str, str, str | None]] = {
                 if (!currentPrice) return;
                 let name = '';
                 const nameSelectors = [
+                    '[data-id="title"]',
                     '[data-id="product-title"]',
                     '[data-testid="product-title"]',
                     '[class*="productTitle"]',
@@ -107,16 +108,20 @@ STORE_CONFIGS: dict[str, tuple[str, str, str | None]] = {
                     }
                 });
                 if (!name) return;
-                const imgEl = card.querySelector('img[alt]') || card.querySelector('img');
+                const brand = card.querySelector('[data-id="brandName"]')?.textContent.trim() || '';
+                if (brand && !name.toLowerCase().startsWith(brand.toLowerCase())) name = brand + ' ' + name;
+                const imgEl = card.querySelector('img[data-id="image"]') ||
+                    Array.from(card.querySelectorAll('img[alt]')).find(img => !/top pick|badge/i.test(img.alt));
                 results.push({
                     name, url: link.href, current_price: currentPrice,
+                    brand,
                     original_price: originalPrice !== currentPrice ? originalPrice : null,
                     image_url: imgEl ? (imgEl.getAttribute('data-src') || imgEl.src || null) : null,
                 });
             });
             return results;
         }""",
-        'a[rel="next"], a:has-text("Next Page"), a[href*="?page="], .pagination .next a, [class*="next-page"]',
+        'a[rel="next"], a:has-text("Next Page"), .pagination .next a, [class*="next-page"]',
     ),
 
     "thehouse": (
@@ -398,17 +403,25 @@ def _parse_raw_products(raw: list[dict], base_url: str) -> list[Product]:
         name = prefix_brand_from_url(item.get("name"), url)
         current_price = item.get("current_price")
 
-        if not name or current_price is None or current_price <= 0:
+        try:
+            current_price = float(current_price)
+            original_price = float(item["original_price"]) if item.get("original_price") is not None else None
+        except (TypeError, ValueError):
+            continue
+        if not name or not url or not math.isfinite(current_price) or current_price <= 0:
             continue
 
         if url and not url.startswith("http"):
             url = urljoin(base_url, url)
 
-        original_price = item.get("original_price")
-        if original_price is not None and original_price <= 0:
+        if urlparse(url).scheme not in {"http", "https"} or not urlparse(url).netloc:
+            continue
+        if original_price is not None and (not math.isfinite(original_price) or original_price <= 0):
             original_price = None
 
         image_url = (item.get("image_url") or "").strip() or None
+        if image_url:
+            image_url = urljoin(base_url, image_url)
 
         products.append(
             Product(
@@ -417,6 +430,9 @@ def _parse_raw_products(raw: list[dict], base_url: str) -> list[Product]:
                 current_price=round(current_price, 2),
                 original_price=round(original_price, 2) if original_price else None,
                 image_url=image_url,
+                sizes=[str(size) for size in item["sizes"]] if isinstance(item.get("sizes"), list) else None,
+                product_type=item.get("product_type") or None,
+                brand=item.get("brand") or None,
             )
         )
     return products
@@ -428,15 +444,16 @@ async def _random_delay(base: float = 1.0, jitter: float = 2.0) -> None:
 
 async def _try_next_page(page: Page, next_selector: str | None) -> bool:
     """Attempt to navigate to the next page. Returns True if navigation happened."""
-    if not next_selector:
-        return False
-
     # Try explicit CSS selectors first
-    for selector in next_selector.split(","):
+    for selector in (next_selector or "").split(","):
         selector = selector.strip()
+        if not selector:
+            continue
         try:
             el = await page.query_selector(selector)
             if not el:
+                continue
+            if await el.get_attribute("aria-disabled") == "true" or await el.get_attribute("disabled") is not None:
                 continue
             href = await el.get_attribute("href")
             if href and href.startswith("#"):
@@ -448,13 +465,15 @@ async def _try_next_page(page: Page, next_selector: str | None) -> bool:
                 if href:
                     # Resolve relative URLs via the element's .href property
                     abs_href = await el.evaluate("el => el.href")
+                    if abs_href == page.url:
+                        continue
                     await page.goto(abs_href or href, wait_until="domcontentloaded")
                     return True
                 await el.click()
                 await page.wait_for_load_state("domcontentloaded")
                 return True
-        except Exception:
-            continue
+        except Exception as exc:
+            raise RuntimeError("Next-page navigation failed") from exc
 
     # Fallback: find "Next Page" text link or next page number in pagination
     try:
@@ -463,6 +482,7 @@ async def _try_next_page(page: Page, next_selector: str | None) -> bool:
             for (const a of document.querySelectorAll('a')) {
                 const txt = a.textContent.trim().toLowerCase();
                 if ((txt === 'next page' || txt === 'next' || txt === '›' || txt === '»')
+                    && a.getAttribute('aria-disabled') !== 'true'
                     && a.href && a.href !== window.location.href) {
                     return a.href;
                 }
@@ -474,7 +494,11 @@ async def _try_next_page(page: Page, next_selector: str | None) -> bool:
             const nextPage = currentPage + 1;
             for (const a of document.querySelectorAll('a[href]')) {
                 const href = a.href;
-                if (href.includes('page=' + nextPage) || href.includes('/page' + nextPage)) {
+                const target = new URL(href);
+                const pathPage = target.pathname.match(/\\/page(\\d+)\\/?$/);
+                if (target.origin === window.location.origin &&
+                    (Number(target.searchParams.get('page')) === nextPage ||
+                     (pathPage && Number(pathPage[1]) === nextPage))) {
                     return href;
                 }
             }
@@ -483,8 +507,8 @@ async def _try_next_page(page: Page, next_selector: str | None) -> bool:
         if next_url:
             await page.goto(next_url, wait_until="domcontentloaded")
             return True
-    except Exception:
-        pass
+    except Exception as exc:
+        raise RuntimeError("Next-page navigation failed") from exc
 
     return False
 
@@ -507,6 +531,7 @@ async def scrape_with_browser(
     outcome = outcome if outcome is not None else {"errors": 0, "pages": 0}
     config = STORE_CONFIGS.get(store_type)
     if config is None:
+        outcome["errors"] += 1
         log.warning("[%s] No browser config for store_type=%r, skipping", store_name, store_type)
         return []
 
@@ -534,18 +559,29 @@ async def scrape_with_browser(
             page = await context.new_page()
 
             for url in urls:
+                collection = {"url": url, "pages": 0, "products": 0, "status": "complete"}
+                outcome.setdefault("collections", []).append(collection)
+                seen_pages: set[tuple[str, ...]] = set()
                 log.info("[%s] Browser navigating to %s", store_name, url)
                 try:
-                    await page.goto(url, wait_until="domcontentloaded", timeout=nav_timeout)
+                    response = await page.goto(url, wait_until="domcontentloaded", timeout=nav_timeout)
+                    if response and response.status >= 400:
+                        outcome["errors"] += 1
+                        collection.update(status="http_error", http_status=response.status)
+                        continue
+                    if urlparse(page.url).netloc.removeprefix("www.") != urlparse(url).netloc.removeprefix("www."):
+                        outcome["errors"] += 1
+                        collection.update(status="unexpected_redirect", final_url=page.url)
+                        continue
                 except Exception as exc:
                     outcome["errors"] += 1
+                    collection["status"] = "navigation_error"
                     log.error("[%s] Failed to load %s: %s", store_name, url, exc)
                     continue
 
                 if is_anti_bot:
                     await asyncio.sleep(5.0)
 
-                duplicate_pages = 0
                 for page_num in range(1, max_pages + 1):
                     try:
                         # Use "attached" state for non-visible elements (e.g. <script>)
@@ -553,6 +589,7 @@ async def scrape_with_browser(
                         await page.wait_for_selector(wait_selector, timeout=selector_timeout, state=wait_state)
                     except Exception:
                         outcome["errors"] += 1
+                        collection["status"] = "selector_missing"
                         log.warning("[%s] Timeout waiting for products (page %d)", store_name, page_num)
                         break
 
@@ -562,34 +599,42 @@ async def scrape_with_browser(
                         raw: list[dict] = await page.evaluate(js_extract)
                     except Exception as exc:
                         outcome["errors"] += 1
+                        collection["status"] = "extraction_error"
                         log.error("[%s] JS extraction error: %s", store_name, exc)
                         break
 
                     outcome["pages"] += 1
+                    collection["pages"] += 1
                     products = _parse_raw_products(raw, page.url)
+                    collection["products"] += len(products)
                     new_products = [p for p in products if p.url not in seen_urls]
                     seen_urls.update(p.url for p in new_products)
                     log.info("[%s] Page %d: %d products (%d new) from %s", store_name, page_num, len(products), len(new_products), page.url)
                     all_products.extend(new_products)
 
-                    if not products or page_num >= max_pages:
+                    if not products:
+                        outcome["errors"] += 1
+                        collection["status"] = "empty_extraction"
                         break
-                    if new_products:
-                        duplicate_pages = 0
-                    else:
-                        duplicate_pages += 1
-                        if duplicate_pages >= MAX_CONSECUTIVE_DUPLICATE_PAGES:
-                            log.warning(
-                                "[%s] Stopping pagination after %d duplicate pages at %s",
-                                store_name,
-                                duplicate_pages,
-                                page.url,
-                            )
-                            break
+                    fingerprint = tuple(sorted(p.url for p in products))
+                    if fingerprint in seen_pages:
+                        outcome["errors"] += 1
+                        collection["status"] = "repeated_page"
+                        break
+                    seen_pages.add(fingerprint)
 
                     await _random_delay(delay)
-                    if not await _try_next_page(page, next_selector):
+                    try:
+                        has_next = await _try_next_page(page, next_selector)
+                    except RuntimeError:
+                        outcome["errors"] += 1
+                        collection["status"] = "pagination_error"
                         break
+                    if not has_next:
+                        break
+                    if page_num >= max_pages:
+                        outcome["errors"] += 1
+                        collection["status"] = "page_limit"
 
                 if url != urls[-1]:
                     await _random_delay(delay)

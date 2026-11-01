@@ -16,7 +16,7 @@ from rich.table import Table
 
 from aggregator.db import init_db, query_deals, upsert_deals, upsert_reviews, save_scrape_run, store_status
 from aggregator.auth_db import init_auth_db, create_invite_codes, list_invite_codes
-from aggregator.scraper import build_scrape_report, scrape_all
+from aggregator.scraper import build_scrape_report, scrape_all, protect_partial_snapshots
 
 console = Console()
 
@@ -74,7 +74,8 @@ def refresh(delay: float, max_pages: int, min_stores: int, report: str | None) -
     """Scrape all stores and update the database."""
     async def _run() -> None:
         await init_db()
-        previous = sum(row["deal_count"] for row in await store_status())
+        previous_counts = {row["store"]: row["deal_count"] for row in await store_status()}
+        previous = sum(previous_counts.values())
         outcomes = {}
         with console.status("[bold cyan]Scraping all stores...", spinner="dots"):
             deals = await scrape_all(delay=delay, max_pages=max_pages, outcomes=outcomes)
@@ -82,8 +83,10 @@ def refresh(delay: float, max_pages: int, min_stores: int, report: str | None) -
         _print_scrape_report(deals)
 
         quality = build_scrape_report(deals)
+        publish_deals, withheld = protect_partial_snapshots(deals, previous_counts, outcomes)
         checked_at = datetime.utcnow().isoformat()
-        payload = {**asdict(quality), "checked_at": checked_at, "outcomes": outcomes}
+        payload = {**asdict(quality), "checked_at": checked_at, "outcomes": outcomes,
+                   "withheld_stores": withheld, "published_deals": len(publish_deals)}
         if report:
             Path(report).write_text(json.dumps(payload, indent=2))
         if quality.stores_with_deals < min_stores or not deals:
@@ -92,8 +95,10 @@ def refresh(delay: float, max_pages: int, min_stores: int, report: str | None) -
             raise click.ClickException("Deal count fell by more than 50%; snapshot not published.")
         if quality.missing_category / len(deals) > 0.10:
             raise click.ClickException("More than 10% of deals are uncategorized; snapshot not published.")
+        if len({d.store for d in publish_deals}) < min_stores:
+            raise click.ClickException("Too few reliable store snapshots after partial-source checks; snapshot not published.")
         if deals:
-            count = await upsert_deals(deals)
+            count = await upsert_deals(publish_deals)
             await save_scrape_run(quality, outcomes, checked_at)
             from aggregator.reviews import compute_and_store_deal_reviews
             await compute_and_store_deal_reviews()
@@ -101,6 +106,7 @@ def refresh(delay: float, max_pages: int, min_stores: int, report: str | None) -
                 partial = [name for name, result in outcomes.items() if result.get("errors")]
                 with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as summary:
                     summary.write(f"## Scrape quality\n{len(deals)} unique deals across {quality.stores_with_deals}/{quality.configured_stores} stores.\n\nUnavailable: {', '.join(quality.zero_count_stores) or 'none'}.\n\nIncomplete collections: {', '.join(partial) or 'none'}.\n")
+                    summary.write(f"\nRetained previous snapshot without changing its age: {', '.join(withheld) or 'none'}.\n")
                 if partial or quality.zero_count_stores:
                     console.print("::warning::Some retailer collections are incomplete; see scrape quality report.")
             console.print(f"[green]Saved {count} deals to database.[/green]")

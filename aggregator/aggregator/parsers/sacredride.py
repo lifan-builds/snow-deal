@@ -81,4 +81,6 @@ class SacredRideParser(BaseParser):
             url=url,
             current_price=current_price,
             original_price=original_price,
+            image_url=urljoin(page_url, img.get("data-src") or img.get("src") or "")
+            if (img := card.select_one("img[data-src], img[src]")) else None,
         )

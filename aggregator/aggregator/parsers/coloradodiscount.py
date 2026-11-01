@@ -48,7 +48,10 @@ class ColoradoDiscountParser(BaseParser):
 
         # Product name: prefer second <a> text, fall back to title attr
         name: str | None = None
-        if len(links) >= 2:
+        name_link = li.select_one("a.bb-prodnme")
+        if name_link:
+            name = name_link.get_text(strip=True)
+        elif len(links) >= 2:
             name = links[1].get_text(strip=True)
         if not name and titled_link:
             name = titled_link.get("title", "").strip()
@@ -92,4 +95,7 @@ class ColoradoDiscountParser(BaseParser):
             url=url,
             current_price=current_price,
             original_price=original_price,
+            image_url=urljoin(page_url, img.get("data-src") or img.get("src") or "")
+            if (img := li.select_one("img[data-src], img[src]")) else None,
+            sizes=re.findall(r"\b\d{3}\s*cm\b", name, re.I) or None,
         )

@@ -172,6 +172,8 @@ STORES: list[StoreConfig] = [
             "https://www.backcountry.com/rc/skis",
             "https://www.backcountry.com/rc/snowboards",
             "https://www.backcountry.com/rc/ski-snowboard-on-sale",
+            "https://www.backcountry.com/rc/outlet-ski-on-sale",
+            "https://www.backcountry.com/rc/outlet-snowboard-on-sale",
         ],
         parser_type="backcountry",
         use_browser=True,
@@ -211,16 +213,8 @@ STORES: list[StoreConfig] = [
         use_browser=True,
         tax_free=True, currency="CAD",
     ),
-    StoreConfig(
-        "Level Nine Sports", "levelninesports.com",
-        scrape_urls=[
-            "https://www.levelninesports.com/cat/ski",
-            "https://www.levelninesports.com/cat/snowboards",
-            "https://www.levelninesports.com/shop/promos/clearance-sale",
-        ],
-        parser_type="levelnine",
-        use_browser=True,
-    ),
+    # Level Nine redirects to Backcountry Outlet (verified 2026-11-01).
+    # Its snow collections are covered under Backcountry, not a separate store.
     # Powder7 removed — site primarily sells used items
 
     # Shopify — new additions
@@ -428,10 +422,10 @@ CATEGORY_RULES: list[tuple[str, list[str]]] = [
     ("goggles", ["goggle", "goggles", " otg ", "bonus lens", " mag ", "chromapop",
                  "replacement lens", "flight deck", "flight path",
                  "flight tracker", "line miner", "zonula"]),
+    ("pants", ["pant", "pants", "bibs", "bib", "bottom "]),
     ("jackets", ["jacket", "jackets", "shell", "parka", "anorak", "insulated jacket",
                  "powder town jkt", "gore-tex suit", " jkt",
                  "coat ", "coat", "raincoat", "puffer coat"]),
-    ("pants", ["pant", "pants", "bibs", "bib", "bottom "]),
     ("gloves", ["glove", "gloves", "mitten", "mittens", "mitt", "mitts"]),
     ("layers", ["baselayer", "base layer", "midlayer", "mid layer", "fleece",
                 "ninja suit", "pullover hood", "hoodie", "hoody", "long sleeve",

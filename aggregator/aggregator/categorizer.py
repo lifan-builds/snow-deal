@@ -15,6 +15,16 @@ from aggregator.config import (
     MULTI_WORD_MODEL_NAMES,
 )
 
+_EXCLUSION_PATTERNS = [
+    (kw.strip(), re.compile(r"\b" + re.escape(re.sub(r"[-_/]+", " ", kw).strip()) + r"(?:s)?\b"))
+    for kw in EXCLUDE_KEYWORDS
+]
+_CATEGORY_PATTERNS = [
+    (category, re.compile(r"(?<![a-z])(?:" + "|".join(re.escape(kw.strip()) for kw in keywords) + r")(?![a-z])"))
+    for category, keywords in CATEGORY_RULES
+]
+_NOT_HARDGOODS_PATTERN = re.compile(r"\b(?:" + "|".join(re.escape(kw.strip()) for kw in NOT_HARDGOODS_KEYWORDS) + r")\b")
+
 
 def _url_path(url: str) -> str:
     """Extract just the path from a URL, ignoring the domain.
@@ -34,7 +44,13 @@ def is_excluded(name: str, url: str = "") -> bool:
     """Return True if the product is a non-snow-sport item that should be excluded."""
     # Prepend a space so space-prefixed keywords like " used " match at start of string too
     text = " " + re.sub(r"[-_/]+", " ", f"{name} {_url_path(url)}".lower()) + " "
-    return any(kw in text for kw in EXCLUDE_KEYWORDS)
+    for kw, pattern in _EXCLUSION_PATTERNS:
+        # These brands also make genuine snowboard boots.
+        if kw in {"vans", "adidas"} and re.search(r"\bsnowboard boots?\b", text):
+            continue
+        if pattern.search(text):
+            return True
+    return False
 
 
 def _disambiguate_boot(name: str, url: str = "") -> str:
@@ -44,7 +60,7 @@ def _disambiguate_boot(name: str, url: str = "") -> str:
     Returns 'ski boots', 'snowboard boots', or 'boots' if uncertain.
     """
     name_lower = name.lower()
-    url_lower = url.lower() if url else ""
+    url_lower = _url_path(url).lower()
 
     # URL clues
     if "snowboard" in url_lower:
@@ -113,19 +129,17 @@ def categorize(name: str, url: str = "", product_type: str = "") -> str | None:
     """
     if is_excluded(name, url):
         return None
-    text = " " + re.sub(r"[-_/]+", " ", f"{name} {_url_path(url)}".lower()) + " "
-    for category, keywords in CATEGORY_RULES:
-        if any(re.search(r"(?<![a-z])" + re.escape(kw.strip()) + r"(?![a-z])", text) for kw in keywords):
-            # Disambiguate generic "boots" into ski/snowboard
-            if category == "boots":
-                return _disambiguate_boot(name, url)
-            return category
-
-    # Fallback: try product_type from Shopify JSON API
-    if product_type:
-        pt = product_type.lower()
-        for category, keywords in CATEGORY_RULES:
-            if any(kw in pt for kw in keywords):
+    # A product's name outranks collection paths; "ski sale" must not turn
+    # clothing into skis. Explicit retailer product types outrank URL guesses.
+    for signal in (name, product_type, _url_path(url)):
+        text = " " + re.sub(r"[-_/]+", " ", signal.lower()) + " "
+        if re.search(r"\b(?:ski|snow|insulated|power|freedom) suit\b", text):
+            return "jackets"
+        # Packaged skis with bindings belong with skis, not standalone bindings.
+        if re.search(r"\bskis?\s+(?:with|w|and|\+)\b", text) and "binding" in text:
+            return "skis"
+        for category, pattern in _CATEGORY_PATTERNS:
+            if pattern.search(text):
                 if category == "boots":
                     return _disambiguate_boot(name, url)
                 return category
@@ -133,7 +147,7 @@ def categorize(name: str, url: str = "", product_type: str = "") -> str | None:
     # Fallback: brand-name matching (first word of product name)
     # Skip if the product looks like clothing/accessories, not hardgoods
     name_lower = name.lower()
-    if any(kw in name_lower for kw in NOT_HARDGOODS_KEYWORDS):
+    if _NOT_HARDGOODS_PATTERN.search(name_lower):
         return None
 
     first_word = name_lower.split()[0] if name_lower else ""
