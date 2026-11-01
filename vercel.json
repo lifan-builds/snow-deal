@@ -21,6 +21,17 @@
   ],
   "redirects": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "snow-deal.vercel.app"
+        }
+      ],
+      "destination": "https://freshpowder.clifan.com/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {
