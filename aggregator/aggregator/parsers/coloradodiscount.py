@@ -97,5 +97,6 @@ class ColoradoDiscountParser(BaseParser):
             original_price=original_price,
             image_url=urljoin(page_url, img.get("data-src") or img.get("src") or "")
             if (img := li.select_one("img[data-src], img[src]")) else None,
-            sizes=re.findall(r"\b\d{3}\s*cm\b", name, re.I) or None,
+            sizes=[length + "cm" for group in re.findall(r"\b((?:\d{3}\s*[,/]\s*)*\d{3})\s*cm\b", name, re.I)
+                   for length in re.findall(r"\d{3}", group)] or None,
         )

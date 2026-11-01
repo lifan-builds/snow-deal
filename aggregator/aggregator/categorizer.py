@@ -136,7 +136,8 @@ def categorize(name: str, url: str = "", product_type: str = "") -> str | None:
         if re.search(r"\b(?:ski|snow|insulated|power|freedom) suit\b", text):
             return "jackets"
         # Packaged skis with bindings belong with skis, not standalone bindings.
-        if re.search(r"\bskis?\s+(?:with|w|and|\+)\b", text) and "binding" in text:
+        if (re.search(r"\bskis\b.*\bbindings?\b", text)
+                or (re.search(r"\bski\s+(?:with|w|and)\b", text) and "binding" in text)):
             return "skis"
         for category, pattern in _CATEGORY_PATTERNS:
             if pattern.search(text):

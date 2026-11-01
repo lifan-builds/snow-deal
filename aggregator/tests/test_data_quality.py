@@ -176,3 +176,13 @@ def test_brand_recovery_preserves_numeric_and_multiword_brands():
     assert prefix_brand_from_url('686 GORE-TEX Core Pant', 'https://s.test/686-gore-tex-core-pant') == '686 GORE-TEX Core Pant'
     assert prefix_brand_from_url('Sogn Bib Pant', 'https://s.test/helly-hansen-sogn-bib-pant') == 'Helly Hansen Sogn Bib Pant'
     assert prefix_brand_from_url('Knit Top', 'https://s.test/cashmere-knit-top') == 'Knit Top'
+
+
+def test_flat_skis_and_compact_length_lists():
+    name = 'Atomic Maverick 88 TI Skis (Without Bindings / Flat) NEW 161,184cm'
+    html = f'<li><a href="/ski" title="Maverick">Image</a><a class="bb-prodnme">{name}</a>$600$300</li>'
+    p = ColoradoDiscountParser().parse_listing_page(html,'https://s.test/list')[0]
+    d = _products_to_deals([p],'Test')[0]
+    assert (d.category, d.length_min, d.length_max) == ('skis',161,184)
+    assert categorize('Atomic Cloud Skis wM12 GW Bindings') == 'skis'
+    assert categorize('Marker Griffon Ski Bindings') == 'bindings'
