@@ -330,3 +330,21 @@ async def list_waitlist() -> list[dict]:
         "SELECT email, created_at FROM waitlist ORDER BY created_at DESC"
     ).fetchall()
     return [{"email": r[0], "created_at": r[1]} for r in rows]
+
+
+def alert_signup_db():
+    conn = _get_conn()
+    conn.execute('''CREATE TABLE IF NOT EXISTS deal_alert_signups (
+        email TEXT PRIMARY KEY, created_at TEXT NOT NULL,
+        consent_version TEXT NOT NULL, removal_hash TEXT NOT NULL
+    )''')
+    conn.commit()
+    return conn
+
+
+async def list_alert_signups() -> list[dict]:
+    """Admin-only launch list; never combine with legacy invite waitlist."""
+    rows = alert_signup_db().execute(
+        'SELECT email, created_at FROM deal_alert_signups ORDER BY created_at DESC'
+    ).fetchall()
+    return [{'email': row[0], 'created_at': row[1]} for row in rows]

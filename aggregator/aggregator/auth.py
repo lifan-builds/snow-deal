@@ -18,7 +18,7 @@ PUBLIC_PATHS = {"/healthz", "/status","/invite", "/waitlist", "/static", "/admin
 
 def is_public_mode() -> bool:
     """Return True when invite auth is disabled for public access."""
-    return env_flag("PUBLIC_MODE", default=False)
+    return env_flag("PUBLIC_MODE", default=True)
 
 
 def get_admin_key() -> str:

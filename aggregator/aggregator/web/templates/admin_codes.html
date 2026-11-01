@@ -197,6 +197,9 @@
         </table>
     </div>
 
+    {% if alert_signups %}
+    <section style="margin-top:2rem"><h2>Rare-deal alert signups ({{ alert_signups|length }})</h2><p>Prelaunch list only. Email ownership is not yet verified; confirm before activating delivery.</p><table><thead><tr><th>Email</th><th>Signed up</th></tr></thead><tbody>{% for signup in alert_signups %}<tr><td>{{ signup.email }}</td><td>{{ signup.created_at }}</td></tr>{% endfor %}</tbody></table></section>
+    {% endif %}
     {% if waitlist %}
     <div class="card" style="margin-top:1.5rem">
         <h2 style="font-size:1rem;font-weight:700;margin-bottom:1rem;color:var(--text)">Waitlist ({{ waitlist|length }})</h2>

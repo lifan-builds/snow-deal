@@ -11,7 +11,7 @@ from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.templating import Jinja2Templates
 
 from aggregator.auth import auth_redirect_path, require_invite
-from aggregator.auth_db import create_invite_codes, list_invite_codes, list_waitlist
+from aggregator.auth_db import create_invite_codes, list_invite_codes, list_waitlist, list_alert_signups
 from aggregator.web.rate_limit import SlidingWindowRateLimiter, client_key
 from aggregator.wordlist import SNOW_WORDS
 
@@ -46,9 +46,10 @@ async def admin_codes_page(request: Request):
         return RedirectResponse(url=auth_redirect_path(), status_code=302)
     codes = await list_invite_codes()
     waitlist = await list_waitlist()
+    alert_signups = await list_alert_signups()
     return templates.TemplateResponse(
         request=request, name="admin_codes.html",
-        context={"codes": codes, "max_uses": 5, "waitlist": waitlist},
+        context={"codes": codes, "max_uses": 5, "waitlist": waitlist, "alert_signups": alert_signups},
     )
 
 
@@ -65,10 +66,11 @@ async def admin_create_codes(request: Request, count: int = Form(5)):
     await create_invite_codes(new_codes)
     codes = await list_invite_codes()
     waitlist = await list_waitlist()
+    alert_signups = await list_alert_signups()
     return templates.TemplateResponse(
         request=request,
         name="admin_codes.html",
-        context={"codes": codes, "new_codes": new_codes, "max_uses": 5, "waitlist": waitlist},
+        context={"codes": codes, "new_codes": new_codes, "max_uses": 5, "waitlist": waitlist, "alert_signups": alert_signups},
     )
 
 
@@ -89,10 +91,11 @@ async def admin_create_custom_code(
     created = await create_invite_codes([code], max_uses=max_uses)
     codes = await list_invite_codes()
     waitlist = await list_waitlist()
+    alert_signups = await list_alert_signups()
     new_codes = [code] if created else []
     error = None if created else f"Code {code} already exists."
     return templates.TemplateResponse(
         request=request,
         name="admin_codes.html",
-        context={"codes": codes, "new_codes": new_codes, "max_uses": 5, "waitlist": waitlist, "error": error},
+        context={"codes": codes, "new_codes": new_codes, "max_uses": 5, "waitlist": waitlist, "alert_signups": alert_signups, "error": error},
     )

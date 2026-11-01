@@ -166,3 +166,40 @@ if (waitlist)
       button.disabled = false;
     }
   });
+
+for (const form of document.querySelectorAll(".alert-signup")) {
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const feedback = form.querySelector(".form-feedback");
+    const button = form.querySelector("button");
+    button.disabled = true;
+    feedback.textContent = "Saving your signup…";
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      });
+      const result = await response.json();
+      if (!response.ok || !result.ok)
+        throw new Error(result.error || "Please try again.");
+      feedback.textContent = result.message;
+      if (result.removal_token) {
+        const link = document.createElement("a");
+        link.href =
+          "/alerts/remove#" + encodeURIComponent(result.removal_token);
+        link.textContent = " Save your private removal link.";
+        feedback.append(link);
+      }
+      form.reset();
+    } catch (error) {
+      feedback.textContent =
+        error.message || "Could not connect. Please try again.";
+    } finally {
+      button.disabled = false;
+    }
+  });
+}
+const removal = document.getElementById("removal-token");
+if (removal && location.hash)
+  removal.value = decodeURIComponent(location.hash.slice(1));

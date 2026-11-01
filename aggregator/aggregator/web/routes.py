@@ -6,8 +6,8 @@ from pathlib import Path
 from typing import Annotated
 from pydantic import BeforeValidator
 
-from fastapi import APIRouter, Query, Request
-from fastapi.responses import HTMLResponse, PlainTextResponse
+from fastapi import APIRouter, HTTPException, Query, Request
+from fastapi.responses import HTMLResponse, PlainTextResponse, Response
 from fastapi.templating import Jinja2Templates
 
 from datetime import datetime, timedelta
@@ -19,8 +19,11 @@ from aggregator.db import (
 )
 from aggregator.web.invite_routes import _landing_context
 
+from aggregator.web.seo import CATEGORIES, page_context, site_url
+
 TEMPLATE_DIR = Path(__file__).resolve().parent / "templates"
-templates = Jinja2Templates(directory=str(TEMPLATE_DIR))
+
+templates = Jinja2Templates(directory=str(TEMPLATE_DIR), context_processors=[page_context])
 templates.env.auto_reload = True
 
 router = APIRouter()
@@ -200,6 +203,9 @@ async def robots_txt():
             "Disallow: /admin\n"
             "Disallow: /invite\n"
             "Disallow: /api/\n"
+            "Disallow: /deals\n"
+            "Disallow: /alerts/remove\n"
+            f"Sitemap: {site_url()}/sitemap.xml\n"
         )
     # In private mode, allow the landing/invite page to be indexed but block content
     return PlainTextResponse(
@@ -284,3 +290,44 @@ async def healthz():
     except Exception:
         return JSONResponse({"status": "unavailable", "checked_at": None}, status_code=503,
                             headers={"Cache-Control": "no-store"})
+
+
+@router.get('/gear/{slug}', response_class=HTMLResponse)
+async def category_page(request: Request, slug: str, page: int = Query(1, ge=1, le=1000)):
+    if slug not in CATEGORIES:
+        raise HTTPException(404)
+    title, category, intro = CATEGORIES[slug]
+    deals = await query_deals(category=category, limit=61, offset=(page - 1) * 60)
+    count = await query_deals(category=category, count_only=True)
+    if page > 1 and not deals:
+        raise HTTPException(404)
+    canonical = site_url() + '/gear/' + slug + (f'?page={page}' if page > 1 else '')
+    return templates.TemplateResponse(request=request, name='category.html', context={
+        'category_title': title, 'category_intro': intro, 'category': category,
+        'slug': slug, 'page': page, 'deals': deals[:60], 'has_more': len(deals) > 60,
+        'deal_count': count, 'cad_stores': CAD_STORES, 'tax_free_stores': TAX_FREE_STORES,
+        'page_title': title + ' — Compare Prices & Sizes | FreshPowder',
+        'page_description': intro, 'canonical_url': canonical,
+        'noindex': any(key != 'page' for key in request.query_params),
+        'structured_data': {'@context': 'https://schema.org', '@type': 'CollectionPage',
+                            'name': title, 'description': intro, 'url': canonical},
+    })
+
+
+@router.get('/sitemap.xml')
+async def sitemap():
+    from xml.sax.saxutils import escape
+    if not is_public_mode():
+        raise HTTPException(404)
+    paths = ['/', '/alerts', '/status', '/privacy'] + ['/gear/' + slug for slug in CATEGORIES]
+    body = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+    body += ''.join('<url><loc>' + escape(site_url() + path) + '</loc></url>' for path in paths)
+    return Response(body + '</urlset>', media_type='application/xml')
+
+
+@router.get('/privacy', response_class=HTMLResponse)
+async def privacy_page(request: Request):
+    return templates.TemplateResponse(request=request, name='privacy.html', context={
+        'page_title': 'Email Signup & Privacy | FreshPowder',
+        'page_description': 'How FreshPowder handles optional email signups, withdrawal and browsing information.',
+    })

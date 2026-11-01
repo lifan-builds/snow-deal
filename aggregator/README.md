@@ -1,6 +1,6 @@
 # FreshPowder — Aggregator
 
-Multi-store deal aggregator for ski and snowboard gear. Scrapes 24 retailers, integrates 1,200+ review scores from OutdoorGearLab (skis, boots, gear) and The Good Ride (snowboards, bindings, boots, jackets), stores deal snapshots in SQLite, and serves a ranked dashboard via FastAPI + htmx. Two-pass fuzzy matching links reviews to deals with model family fallback. Includes admin panel for invite code management and analytics dashboard for tracking user behavior. Deployed on Vercel with GitHub Actions cron for automated scraping; Render/Docker support is retained as a fallback. Part of the [snow-deals](../) monorepo.
+Multi-store deal aggregator for ski and snowboard gear. Scrapes 28 retailers, integrates 1,200+ review scores from OutdoorGearLab (skis, boots, gear) and The Good Ride (snowboards, bindings, boots, jackets), stores deal snapshots in SQLite, and serves a ranked dashboard via FastAPI + htmx. Conservative model matching links reviews without borrowing scores from different variants. Includes admin panel for invite code management and analytics dashboard for tracking user behavior. Deployed on Vercel with GitHub Actions cron for automated scraping; Render/Docker support is retained as a fallback. Part of the [snow-deals](../) monorepo.
 
 **Live site:** [snow-deal.vercel.app](https://snow-deal.vercel.app)
 
@@ -124,7 +124,7 @@ The primary website is deployed on **Vercel** with scraping running on **GitHub 
 | `DISABLE_APP_LIFESPAN` | Skip FastAPI startup DB validation/init on Vercel cold starts; set to `1` when the build bundles `deals.db` and Turso schema already exists |
 | `DEALS_DB_DOWNLOAD_URL` | Optional build-time URL for the latest `deals.db` snapshot |
 | `VERCEL_SKIP_DB_DOWNLOAD` | Optional local escape hatch; requires an existing valid `aggregator/deals.db` |
-| `PUBLIC_MODE` | Set to disable invite gating and make the deal pages public |
+| `PUBLIC_MODE` | Defaults to public; set to `0` only to restore legacy invite gating |
 | `ADMIN_KEY` | Admin access key |
 | `TURSO_URL` | Turso database URL for auth, events, waitlist, and invite code persistence |
 | `TURSO_AUTH_TOKEN` | Turso auth token |
@@ -164,7 +164,7 @@ When that secret is present, `.github/workflows/scrape.yml` triggers Render afte
 |----------|---------|
 | `DATABASE_PATH` | Path to deals SQLite database (default: `./deals.db`) |
 | `MAX_DB_STALENESS_HOURS` | Startup warning threshold for the downloaded `deals.db` freshness (default: `18`) |
-| `PUBLIC_MODE` | Set to `1` to disable invite gating and make the site public |
+| `PUBLIC_MODE` | Defaults to `1` for public browsing; `0` restores legacy invite gating |
 | `ADMIN_KEY` | Admin access key (visit `/?admin_key=VALUE` to authenticate) |
 | `TURSO_URL` | Turso database URL for auth persistence (e.g. `libsql://mydb.turso.io`) |
 | `TURSO_AUTH_TOKEN` | Turso auth token (from Turso dashboard) |

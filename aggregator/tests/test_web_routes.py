@@ -212,3 +212,67 @@ def test_waitlist_failure_is_not_reported_as_success(isolated_app, monkeypatch):
         response = client.post('/waitlist', data={'email':'test@example.com'})
         assert response.status_code == 503
         assert response.json()['ok'] is False
+
+
+def test_public_category_seo_and_pagination(isolated_app, monkeypatch):
+    monkeypatch.setenv('PUBLIC_MODE', '1')
+    monkeypatch.setenv('SITE_URL', 'https://freshpowder.clifan.com')
+    with TestClient(app_module.create_app()) as client:
+        asyncio.run(db_module.upsert_deals([_make_deal()], db_path=isolated_app))
+        home = client.get('/')
+        category = client.get('/gear/skis')
+        filtered = client.get('/?q=Atomic')
+        assert home.status_code == category.status_code == 200
+        assert 'No invite or account needed' in home.text
+        assert 'Ski deals — Compare Prices &amp; Sizes' in category.text
+        assert 'https://freshpowder.clifan.com/gear/skis' in category.text
+        assert 'application/ld+json' in category.text
+        assert 'Atomic Bent 100' in category.text
+        assert 'noindex,follow' not in category.text
+        assert 'noindex,follow' in filtered.text
+        assert client.get('/gear/not-a-category').status_code == 404
+        assert client.get('/gear/skis?page=1000').status_code == 404
+        assert client.get('/admin/codes', follow_redirects=False).status_code == 302
+        assert 'https://freshpowder.clifan.com/sitemap.xml' in client.get('/robots.txt').text
+        assert '/gear/snowboards' in client.get('/sitemap.xml').text
+
+
+def test_prelaunch_signup_persistence_dedup_and_removal(isolated_app, monkeypatch):
+    from aggregator.web.signup_routes import signup_limiter
+    signup_limiter.clear()
+    monkeypatch.setenv('PUBLIC_MODE', '1')
+    with TestClient(app_module.create_app()) as client:
+        response = client.post('/alerts/signup', data={'email':'  TEST@example.com  '}, headers={'accept':'application/json'})
+        assert response.status_code == 200
+        data = response.json()
+        assert 'coming soon' in data['message']
+        assert response.headers['cache-control'] == 'no-store'
+        token = data['removal_token']
+        duplicate = client.post('/alerts/signup', data={'email':'test@example.com'}, headers={'accept':'application/json'})
+        assert duplicate.json()['removal_token'] is None
+        import sqlite3, os
+        conn = sqlite3.connect(os.environ['AUTH_DB_PATH'])
+        row = conn.execute('SELECT email, consent_version, removal_hash FROM deal_alert_signups').fetchone()
+        assert row[0] == 'test@example.com'
+        assert row[1] == 'rare-deals-prelaunch-v1'
+        assert row[2] != token
+        assert conn.execute('SELECT count(*) FROM waitlist').fetchone()[0] == 0
+        assert client.post('/alerts/remove', data={'token':token}).status_code == 200
+        assert conn.execute('SELECT count(*) FROM deal_alert_signups').fetchone()[0] == 0
+        conn.close()
+
+
+def test_signup_validation_storage_failure_and_no_js(isolated_app, monkeypatch):
+    from aggregator.web import signup_routes
+    signup_routes.signup_limiter.clear()
+    monkeypatch.setenv('PUBLIC_MODE', '1')
+    with TestClient(app_module.create_app()) as client:
+        assert client.post('/alerts/signup', data={'email':'bad'}).status_code == 422
+        assert client.post('/alerts/signup', data={'email':'test@example.com','website':'spam'}).status_code == 200
+        response = client.post('/alerts/signup', data={'email':'test@example.com'})
+        assert response.status_code == 200
+        assert 'Your private removal link' in response.text
+        def fail():
+            raise RuntimeError('test database failure')
+        monkeypatch.setattr(signup_routes, 'signup_db', fail)
+        assert client.post('/alerts/signup', data={'email':'new@example.com'}).status_code == 503

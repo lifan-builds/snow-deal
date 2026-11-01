@@ -1264,3 +1264,97 @@ th small {
     padding-right: 16px;
   }
 }
+
+.category-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 24px 0;
+}
+.category-links a {
+  border: 1px solid var(--line);
+  padding: 9px 14px;
+  border-radius: 24px;
+  font-size: 13px;
+  text-decoration: none;
+}
+.alert-banner {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  background: #e5ebe1;
+  border-radius: 18px;
+  padding: 30px;
+  margin: 32px 0 48px;
+}
+.alert-banner h2 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+.alert-banner p {
+  line-height: 1.6;
+}
+.alert-signup {
+  display: grid;
+  align-content: center;
+  gap: 10px;
+}
+.alert-signup input,
+#signup-removal input {
+  border: 1px solid #87978b;
+  border-radius: 6px;
+  padding: 13px;
+  background: #fffdf7;
+  font: inherit;
+  width: 100%;
+}
+.signup-trap {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.editorial {
+  padding-top: 48px;
+  padding-bottom: 64px;
+}
+.editorial h1 {
+  font-size: clamp(36px, 5vw, 64px);
+  line-height: 1.08;
+  max-width: 900px;
+  margin: 22px 0;
+}
+.lede {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 800px;
+}
+.reading-copy {
+  max-width: 850px;
+  line-height: 1.8;
+}
+.reading-copy h2 {
+  margin-top: 36px;
+}
+.breadcrumbs,
+.page-links {
+  margin: 20px 0;
+  display: flex;
+  gap: 24px;
+}
+.form-feedback a {
+  display: block;
+  text-decoration: underline;
+  margin-top: 8px;
+}
+@media (max-width: 700px) {
+  .alert-banner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 22px;
+  }
+  .catalog-hero h1 {
+    font-size: 38px;
+  }
+}
