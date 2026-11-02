@@ -8,7 +8,7 @@ from datetime import datetime
 from pathlib import Path
 from urllib.parse import quote
 
-from aggregator.config import env_flag, STORES
+from aggregator.config import env_flag, STORES, CLOTHING_CATEGORIES
 from aggregator.models import AggregatedDeal
 
 DB_PATH = Path(os.environ.get("DATABASE_PATH", Path(__file__).resolve().parent.parent / "deals.db"))
@@ -262,6 +262,7 @@ async def query_deals(
     size_max: int | None = None,
     reviewed_only: bool = False,
     count_only: bool = False,
+    include_clothing: bool = True,
     currency: str | None = None,
     db_path: Path = DB_PATH,
 ) -> list[AggregatedDeal] | int:
@@ -287,6 +288,11 @@ async def query_deals(
     if max_price > 0:
         clauses.append("deals.current_price <= ?")
         params.append(max_price)
+
+    if not include_clothing and category not in CLOTHING_CATEGORIES:
+        placeholders = ", ".join("?" for _ in CLOTHING_CATEGORIES)
+        clauses.append(f"(deals.category IS NULL OR deals.category NOT IN ({placeholders}))")
+        params.extend(CLOTHING_CATEGORIES)
 
     if category:
         clauses.append("deals.category = ?")

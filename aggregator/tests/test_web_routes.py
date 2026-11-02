@@ -237,6 +237,42 @@ def test_public_category_seo_and_pagination(isolated_app, monkeypatch):
         assert '/gear/snowboards' in client.get('/sitemap.xml').text
 
 
+def test_catalog_clothing_preference_counts_and_pagination(isolated_app, monkeypatch):
+    from bs4 import BeautifulSoup
+    monkeypatch.setenv('PUBLIC_MODE', '1')
+    now = datetime.now()
+    deals = [_make_deal(f'Ski {i}') for i in range(61)]
+    for category in ('jackets', 'pants', 'layers', 'helmets', 'goggles', None):
+        deal = _make_deal(f'Item {category}')
+        deal.category = category
+        deal.discount_pct = 80
+        deals.append(deal)
+    for deal in deals:
+        deal.scraped_at = now
+    def cards(response):
+        assert response.status_code == 200
+        return BeautifulSoup(response.text, 'html.parser').select('.deal-card')
+    with TestClient(app_module.create_app()) as client:
+        asyncio.run(db_module.upsert_deals(deals, db_path=isolated_app))
+        for path in ('/', '/deals'):
+            default = client.get(path)
+            assert not {'jackets', 'pants', 'layers'} & {c['data-category'] for c in cards(default)}
+            assert {'helmets', 'goggles', ''} <= {c['data-category'] for c in cards(default)}
+            assert '64 deals found' in default.text
+            included = client.get(path + '?include_clothing=1')
+            assert {'jackets', 'pants', 'layers'} <= {c['data-category'] for c in cards(included)}
+            assert '67 deals found' in included.text
+            assert 'include_clothing=1&amp;offset=60' in included.text
+            assert len(cards(client.get(path + '?include_clothing=1&offset=60'))) == 7
+            assert len(cards(client.get(path + '?offset=60'))) == 4
+            assert {c['data-category'] for c in cards(client.get(path + '?category=jackets'))} == {'jackets'}
+        checkbox = BeautifulSoup(client.get('/?category=jackets').text, 'html.parser').select_one('[name=include_clothing]')
+        assert checkbox.has_attr('checked')
+        assert not BeautifulSoup(client.get('/').text, 'html.parser').select_one('[name=include_clothing]').has_attr('checked')
+        # Other query consumers retain the full catalog by default.
+        assert asyncio.run(db_module.query_deals(count_only=True, db_path=isolated_app)) == 67
+
+
 def test_prelaunch_signup_persistence_dedup_and_removal(isolated_app, monkeypatch):
     from aggregator.web.signup_routes import signup_limiter
     signup_limiter.clear()

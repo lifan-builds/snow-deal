@@ -14,7 +14,7 @@ from fastapi.templating import Jinja2Templates
 from datetime import datetime, timedelta
 
 from aggregator.auth import is_public_mode, require_invite
-from aggregator.config import CATEGORY_RULES, STORES
+from aggregator.config import CATEGORY_RULES, STORES, CLOTHING_CATEGORIES
 from aggregator.db import (
     count_with_length, get_brands, get_category_counts, query_deals, store_status, refresh_status,
 )
@@ -83,7 +83,7 @@ PAGE_SIZE = 60
 
 def pagination_context(request: Request, offset: int) -> dict:
     allowed = {'category', 'store', 'brand', 'min_discount', 'min_price', 'max_price',
-               'sort', 'tax_free', 'q', 'size_min', 'size_max', 'reviewed', 'currency'}
+               'sort', 'tax_free', 'q', 'size_min', 'size_max', 'reviewed', 'currency', 'include_clothing'}
     params = {key: value for key, value in request.query_params.items() if key in allowed}
     params['offset'] = offset + PAGE_SIZE
     query = urlencode({key: value for key, value in params.items() if value != ''})
@@ -115,6 +115,7 @@ async def _fetch_deals(
     offset: int = 0,
     count: bool = True,
     currency: str = "",
+    include_clothing: bool = False,
 ) -> tuple[list, bool, int | None]:
     """Fetch a page of deals. Reviews are pre-joined via deal_reviews table."""
     if max_price > 0 and min_price > max_price:
@@ -130,7 +131,7 @@ async def _fetch_deals(
         sort_by=sort, limit=PAGE_SIZE + 1, offset=offset,
         tax_free_only=tax_free_only, tax_free_stores=TAX_FREE_STORES,
         q=q, size_min=size_min, size_max=size_max,
-        reviewed_only=reviewed_only, currency=currency,
+        reviewed_only=reviewed_only, currency=currency, include_clothing=include_clothing,
     )
     has_more = len(deals) > PAGE_SIZE
     deals = deals[:PAGE_SIZE]
@@ -142,7 +143,7 @@ async def _fetch_deals(
             min_price=min_price, max_price=max_price, sort_by=sort,
             tax_free_only=tax_free_only, tax_free_stores=TAX_FREE_STORES,
             q=q, size_min=size_min, size_max=size_max,
-            reviewed_only=reviewed_only, currency=currency, count_only=True,
+            reviewed_only=reviewed_only, currency=currency, include_clothing=include_clothing, count_only=True,
         )
 
     return deals, has_more, deal_count
@@ -164,6 +165,7 @@ async def index(
     size_max: Length = None,
     reviewed: str = Query("", alias="reviewed"),
     currency: str = Query("", pattern="^(USD|CAD)?$"),
+    include_clothing: bool = False,
     offset: int = Query(0, ge=0, le=100000),
 ):
     if not currency and (min_price > 0 or max_price > 0 or sort in {'price_low', 'price_high'}):
@@ -178,7 +180,7 @@ async def index(
         category=category, store=store, brand=brand, min_discount=min_discount,
         min_price=min_price, max_price=max_price,
         sort=sort, tax_free=tax_free, q=q, size_min=size_min, size_max=size_max,
-        reviewed=reviewed, currency=currency, offset=offset,
+        reviewed=reviewed, currency=currency, include_clothing=include_clothing, offset=offset,
     )
     brands = await get_brands()
     length_count = await count_with_length()
@@ -199,6 +201,8 @@ async def index(
             "category_counts": category_counts,
             "store_counts": store_counts,
             "current_currency": currency,
+            "current_include_clothing": include_clothing or category in CLOTHING_CATEGORIES,
+            "clothing_categories": CLOTHING_CATEGORIES,
             "current_category": category,
             "current_store": store,
             "current_brand": brand,
@@ -281,6 +285,7 @@ async def deals_fragment(
     size_max: Length = None,
     reviewed: str = Query("", alias="reviewed"),
     currency: str = Query("", pattern="^(USD|CAD)?$"),
+    include_clothing: bool = False,
     offset: int = Query(0, alias="offset", ge=0),
 ):
     """htmx partial — returns deal cards for dynamic filtering."""
@@ -289,7 +294,7 @@ async def deals_fragment(
         category=category, store=store, brand=brand, min_discount=min_discount,
         min_price=min_price, max_price=max_price,
         sort=sort, tax_free=tax_free, q=q, size_min=size_min, size_max=size_max,
-        reviewed=reviewed, currency=currency, offset=offset, count=not is_load_more,
+        reviewed=reviewed, currency=currency, include_clothing=include_clothing, offset=offset, count=not is_load_more,
     )
 
     template = "partials/more_cards.html" if is_load_more else "partials/deal_cards.html"

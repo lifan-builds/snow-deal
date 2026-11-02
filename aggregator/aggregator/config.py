@@ -891,3 +891,6 @@ EXCLUDE_KEYWORDS: list[str] = [
     "demo ski", "demo board", "demo boot", "demo binding",
     "previously ridden", "shop worn",
 ]
+
+# Apparel hidden by default in the main shopping feed.
+CLOTHING_CATEGORIES = ("jackets", "pants", "layers")

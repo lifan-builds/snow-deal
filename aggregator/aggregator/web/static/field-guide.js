@@ -38,6 +38,14 @@ document.addEventListener('click', event => {
   }
 });
 if (form) {
+  const clothing = form.elements.include_clothing;
+  const category = form.elements.category;
+  form.addEventListener('change', event => {
+    if (event.target === category && category.selectedOptions[0]?.dataset.clothing)
+      clothing.checked = true;
+    if (event.target === clothing && !clothing.checked && category.selectedOptions[0]?.dataset.clothing)
+      category.value = '';
+  }, true);
   function validateRanges() {
     for (const [min, max] of [['min_price', 'max_price'], ['size_min', 'size_max']]) {
       const lower = form.elements[min], upper = form.elements[max];
@@ -127,6 +135,7 @@ if (form) {
       currency: 'Currency', min_discount: 'Minimum discount',
       min_price: 'Min price', max_price: 'Max price',
       size_min: 'Length from', size_max: 'Length to', reviewed: 'Expert review available',
+      include_clothing: 'Clothing included',
     };
     container.replaceChildren();
     for (const [name, label] of Object.entries(labels)) {
@@ -151,7 +160,10 @@ if (form) {
       cross.append(path);
       chip.append(caption, cross);
       chip.addEventListener('click', () => {
-        if (input.type === 'checkbox') input.checked = false;
+        if (input.type === 'checkbox') {
+          input.checked = false;
+          if (name === 'include_clothing' && category.selectedOptions[0]?.dataset.clothing) category.value = '';
+        }
         else input.value = name === 'min_discount' ? '0' : '';
         validateRanges();
         syncPresets();
