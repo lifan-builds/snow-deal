@@ -1,6 +1,6 @@
 # Catalog category audit — November 1, 2026 (Pacific)
 
-All **13,969 current listings from 30 retailers** were reclassified. Fresh retailer taxonomy or individually reviewed product-family evidence matched **8,825** listings by exact URL and stored title. **1,265 category values changed** relative to the raw public snapshot, including rows moved to an exclusion status. **353 current listings are excluded**: 77 children's items and 276 non-snow, casual, or otherwise out-of-scope items. Those counts overlap; do not add them together.
+All **13,969 current listings from 30 retailers** were reclassified. Fresh retailer taxonomy or individually reviewed product-family evidence matched **8,825** listings by exact URL and stored title. **1,266 category values changed** relative to the raw public snapshot, including rows moved to an exclusion status. **353 current listings are excluded**: 77 children's items and 276 non-snow, casual, or otherwise out-of-scope items. Those counts overlap; do not add them together.
 
 There are **10 unresolved listings** and **5 generic boots** without sufficient evidence for a subtype. They remain outside the default equipment feed. The audit is not a claim that every item was manually examined or that retailer metadata is infallible.
 
@@ -10,7 +10,7 @@ There are **10 unresolved listings** and **5 generic boots** without sufficient 
 - Evaluated every current record against explicit product nouns, category metadata, bundle structure, exclusion rules and known model names; reviewed category transitions and title/type conflicts.
 - Retrieved 8,668 exact product matches across 20 Shopify retailers and 137 across Sacred Ride's specific winter collections. Additional detail/manufacturer checks bring the final match count to 8,825. A further 90 product-detail requests were attempted; 32 Peter Glenn requests failed, and some Backcountry pages supplied no usable description. Failed or empty responses were not treated as evidence.
 - Decoded readable Shopify breadcrumb and `Gear:` tags instead of treating internal codes as category names. Preserved meaningful product types for future refreshes. Metadata is reused only for an unchanged URL and title; a renamed listing loses the prior type.
-- Reclassified all historical rows as well: 1,643 category/exclusion changes overall. Rebuilt affected model-review associations. The offline audit asserts identical prices, discounts, original check times, first-seen values, URLs, IDs, inventory sizes and complete price history. Length ranges and brands may change when supported by classification/retailer evidence.
+- Reclassified all historical rows as well: 1,644 category/exclusion changes overall. Rebuilt affected model-review associations. The offline audit asserts identical prices, discounts, original check times, first-seen values, URLs, IDs, inventory sizes and complete price history. Length ranges and brands may change when supported by classification/retailer evidence.
 - Re-downloaded the release before publication and verified it still matched the starting hash, preventing an overwrite of intervening price updates.
 
 Full row-level reports and the metadata needed to reproduce the classifications are in [the audit archive](https://github.com/lifan-builds/snow-deal-data/releases/download/latest-data/category-audit-2026-11-01.zip). The archive contains public product data only.
@@ -34,6 +34,8 @@ Examples of primary evidence used for ambiguous model families:
 - [Yakima FreshTrack ski carrier](https://yakima.com/products/freshtrack-6)
 - [Dakine Banked Slalom tuning kit](https://ce.dakine.com/collections/bike-gloves-backpacks/products/banked-slalom-race-kit)
 
+[Flaxta’s decorative helmet top](https://www.backcountry.com/flaxta-deep-space-hardshell-top-helmet) is an accessory, even though its retailer places it in a helmet collection.
+
 Product-family evidence establishes category only; it does not verify an older listing's price, model year or availability.
 
 ## Retailer coverage
@@ -44,7 +46,7 @@ Product-family evidence establishes category only; it does not verify an older l
 | --- | ---: | ---: | ---: | ---: | ---: |
 | Alpine Shop VT | 116 | 116 | 0 | 0 | 0 |
 | Aspen Ski and Board | 834 | 834 | 97 | 11 | 0 |
-| Backcountry | 1559 | 6 | 178 | 14 | 4 |
+| Backcountry | 1559 | 6 | 179 | 14 | 4 |
 | Blauer Board Shop | 856 | 855 | 44 | 35 | 0 |
 | BlueZone Sports | 64 | 1 | 1 | 0 | 0 |
 | Boardom | 146 | 146 | 1 | 0 | 0 |
@@ -90,8 +92,8 @@ The five generic boots are Moon Boot EVX Nylon Mule, Helly Hansen Garibaldi VL, 
 
 ## Verification
 
-- 211 offline tests passed, including 47 new evidence and persistence regressions.
-- Python compilation and whitespace checks passed.
+- 213 offline tests passed, including 49 new evidence and persistence regressions.
+- Python compilation and whitespace checks passed. A build-only import failure was fixed by sharing size parsing without importing the scraping package; an isolated regression test covers that dependency boundary.
 - Full-snapshot repair is idempotent and preserves all price observations.
 - Public category routes and screenshot examples checked against the audited snapshot before publication.
 

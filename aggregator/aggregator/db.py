@@ -125,7 +125,7 @@ async def ensure_deals_db_ready(db_path: Path = DB_PATH) -> None:
 async def repair_deal_categories(db_path: Path) -> int:
     """Reclassify the downloaded snapshot while preserving price evidence and age."""
     from aggregator.categorizer import categorize, exclusion_reason
-    from aggregator.scraper import _extract_lengths
+    from aggregator.sizes import extract_lengths
 
     async with _connect(db_path) as db:
         rows = await (await db.execute(
@@ -136,7 +136,7 @@ async def repair_deal_categories(db_path: Path) -> int:
             reason = exclusion_reason(name, url, product_type or '')
             corrected = None if reason else categorize(name, url, product_type or '', brand=brand or '')
             if corrected != category or reason != old_reason:
-                lengths = _extract_lengths(sizes) if corrected in {'skis', 'snowboards'} else (None, None)
+                lengths = extract_lengths(sizes) if corrected in {'skis', 'snowboards'} else (None, None)
                 corrections.append((corrected, reason, *lengths, deal_id))
         await db.executemany(
             "UPDATE deals SET category = ?, exclusion_reason = ?, length_min = ?, length_max = ? WHERE id = ?",
@@ -166,7 +166,7 @@ async def init_db(db_path: Path = DB_PATH) -> None:
 async def upsert_deals(deals: list[AggregatedDeal], db_path: Path = DB_PATH) -> int:
     """Insert or update deals. Returns count of rows affected."""
     from aggregator.categorizer import categorize, category_from_product_type, exclusion_reason
-    from aggregator.scraper import _extract_lengths
+    from aggregator.sizes import extract_lengths
     async with _connect(db_path) as db:
         count = 0
         for d in deals:
@@ -185,7 +185,7 @@ async def upsert_deals(deals: list[AggregatedDeal], db_path: Path = DB_PATH) -> 
                 if not product_type and prior[3]:
                     product_type = prior[3]
                     category = categorize(d.name, d.url, product_type, brand=brand or '')
-                    lengths = _extract_lengths(d.sizes) if category in {'skis', 'snowboards'} else (None, None)
+                    lengths = extract_lengths(d.sizes) if category in {'skis', 'snowboards'} else (None, None)
             reason = exclusion_reason(d.name, d.url, product_type or '')
             if reason:
                 category, lengths = None, (None, None)

@@ -22,6 +22,7 @@ from aggregator.categorizer import categorize, exclusion_reason
 from aggregator.reviews import _extract_brand, _normalize_brand
 from aggregator.config import STORES, StoreConfig
 from aggregator.models import AggregatedDeal
+from aggregator.sizes import extract_lengths as _extract_lengths
 from aggregator.parsers.common import clean_product_name
 from snow_deals.models import Product
 from snow_deals.parsers.base import BaseParser
@@ -77,7 +78,6 @@ def _get_parser(parser_type: str) -> BaseParser | None:
         return None
 
 
-_CM_PATTERN = re.compile(r'(?<![\d.])(\d+)\s*(?:cm|W(?:IDE)?\b)', re.IGNORECASE)
 _RETAIL_PATTERN = re.compile(r',?\s*Retail(?:\s+Price)?:\s*\$[\d,.]+', re.IGNORECASE)
 _PRICE_PATTERN = re.compile(r'\$[\d,.]+')
 _COLOR_JUNK = re.compile(
@@ -110,23 +110,6 @@ def _clean_sizes(sizes_str: str | None) -> str | None:
     if len(s) > 120:
         s = s[:117] + '...'
     return s if s else None
-
-
-def _extract_lengths(sizes_str: str | None) -> tuple[int | None, int | None]:
-    """Extract min/max ski/snowboard lengths in cm from a sizes string.
-
-    Returns (length_min, length_max) or (None, None) if no lengths found.
-    Filters to plausible ski/board lengths (100-220cm).
-    """
-    if not sizes_str:
-        return None, None
-    lengths = [
-        int(m) for m in _CM_PATTERN.findall(sizes_str)
-        if 100 <= int(m) <= 220
-    ]
-    if not lengths:
-        return None, None
-    return min(lengths), max(lengths)
 
 
 @dataclass(frozen=True)

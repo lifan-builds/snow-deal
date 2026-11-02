@@ -22,6 +22,7 @@ from snow_deals.parsers.shopify import ShopifyParser, product_type_from_item
     ('Nordica HF 110', 'SkiBoots', 'ski boots'),
     ('Head Freeflex 14', 'Ski Bindings', 'bindings'),
     ('Vantage 2 MIPS Round Contour', 'Goggles', 'helmets'),
+    ('Flaxta Deep Space Hardshell Helmet Top', 'Helmets', 'accessories'),
     ('Flight Deck M Rep Lens', 'Helmets', 'accessories'),
     ('Squad MAG + Bonus Lens', 'Snow Accessories - Goggles', 'goggles'),
     ('Model 42', 'Snow Accessories - Helmets', 'helmets'),
@@ -149,3 +150,27 @@ def test_offline_audit_requires_matching_title_and_preserves_source(tmp_path):
     assert source.read_bytes() == original
     with pytest.raises(ValueError):
         audit(source, target, {}, tmp_path / 'reports')
+
+
+def test_snapshot_repair_does_not_import_scraping_package(tmp_path):
+    """Vercel build imports only aggregator; no editable snow_deals installation."""
+    import subprocess
+    import sys
+    from pathlib import Path
+    package_root = Path(__file__).resolve().parents[1]
+    code = '''
+import asyncio, importlib.abc, sys
+from pathlib import Path
+sys.path.insert(0, sys.argv[1])
+class NoScraper(importlib.abc.MetaPathFinder):
+    def find_spec(self, fullname, path=None, target=None):
+        if fullname == 'snow_deals' or fullname.startswith('snow_deals.'):
+            raise ImportError('scraping package is unavailable in build context')
+sys.meta_path.insert(0, NoScraper())
+from aggregator.db import init_db, repair_deal_categories
+path = Path(sys.argv[2])
+asyncio.run(init_db(path))
+assert asyncio.run(repair_deal_categories(path)) == 0
+'''
+    result = subprocess.run([sys.executable, '-I', '-c', code, str(package_root), str(tmp_path / 'build.db')], capture_output=True, text=True)
+    assert result.returncode == 0, result.stderr
