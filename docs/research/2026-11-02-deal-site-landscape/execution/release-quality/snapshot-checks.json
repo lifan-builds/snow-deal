@@ -1,0 +1,119 @@
+{
+  "snapshot_asset": 703257183,
+  "integrity": "ok",
+  "offer_rows": 25980,
+  "observation_rows": 25980,
+  "checks": [
+    {
+      "filters": {
+        "category": "skis",
+        "size": "180"
+      },
+      "count": 91,
+      "first": [
+        {
+          "name": "Atomic Bent Chetler 110 Skis 2026",
+          "store": "Ski Pro AZ",
+          "size": "180",
+          "price": 449.95,
+          "reference": 900.0,
+          "discount": 50.0,
+          "url": "https://skipro.com/products/bent-110-flat-56w?variant=46081304133809"
+        },
+        {
+          "name": "K2 Disruption MTI Skis with MXC 12 Bindings 2024",
+          "store": "Ski Pro AZ",
+          "size": "180",
+          "price": 499.98,
+          "reference": 949.95,
+          "discount": 47.4,
+          "url": "https://skipro.com/products/disruption-mti-mxc-12-34w?variant=43449283805361"
+        }
+      ]
+    },
+    {
+      "filters": {
+        "category": "skis",
+        "size": "180",
+        "year_from": 2025,
+        "min_reference": 1000,
+        "currency": "USD"
+      },
+      "count": 21,
+      "first": [
+        {
+          "name": "Stockli Montero AR Skis - 2026",
+          "store": "Colorado Ski Shop",
+          "size": "180cm",
+          "price": 1029.99,
+          "reference": 1489.0,
+          "discount": 30.8,
+          "url": "https://coloradoskishop.com/products/stockli-montero-ar-skis-2025?variant=46701917765806"
+        },
+        {
+          "name": "Blizzard Stormbird 82 Dti + TPX 12 2027",
+          "store": "Ski Depot",
+          "size": "180 cm",
+          "price": 899.99,
+          "reference": 1150.0,
+          "discount": 21.7,
+          "url": "https://ski-depot.com/products/stormbird-82-dti-tpx-12?variant=51006026744089"
+        }
+      ]
+    },
+    {
+      "filters": {
+        "category": "ski boots",
+        "size": "24.5"
+      },
+      "count": 449,
+      "first": [
+        {
+          "name": "Dalbello DS Asolo 115 Factory GW LS Womens Ski Boot",
+          "store": "Aspen Ski and Board",
+          "size": "24.5",
+          "price": 198.94,
+          "reference": 950.0,
+          "discount": 79.1,
+          "url": "https://www.aspenskiandboard.com/products/dalbello-ds-asolo-115-factory-gw-ls-womens-ski-boot-2022?variant=50304003735840"
+        },
+        {
+          "name": "Lange XT3 Free 85 LV GW Alpine Touring Ski Boots - Women's 2024",
+          "store": "Evo",
+          "size": "24.5",
+          "price": 119.95,
+          "reference": 549.95,
+          "discount": 78.2,
+          "url": "https://www.evo.com/products/264269-lange-xt3-free-85-lv-gw-alpine-touring-ski-boots-women-s-2024?variant=46151332790422"
+        }
+      ]
+    },
+    {
+      "filters": {
+        "category": "snowboards",
+        "size": "156"
+      },
+      "count": 95,
+      "first": [
+        {
+          "name": "Arbor Element Decon Snowboard 2026",
+          "store": "Evo",
+          "size": "156 cm",
+          "price": 224.98,
+          "reference": 449.95,
+          "discount": 50.0,
+          "url": "https://www.evo.com/products/265169-arbor-element-decon-snowboard-2026?variant=46151565279382"
+        },
+        {
+          "name": "Arbor Element Snowboard 2026",
+          "store": "Evo",
+          "size": "156 cm",
+          "price": 274.98,
+          "reference": 549.95,
+          "discount": 50.0,
+          "url": "https://www.evo.com/products/265162-arbor-element-snowboard-2026?variant=46151564689558"
+        }
+      ]
+    }
+  ]
+}

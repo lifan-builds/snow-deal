@@ -1,6 +1,10 @@
-# Prepared Fresh Powder release
+# Fresh Powder release plan and status
 
 Destination repository: `lifan-builds/snow-deal` (public). Application: https://freshpowder.clifan.com/. Local release branch: `codex/deal-aggregator-release`, based on production `a0a611b`.
+
+## Approved rollout status
+
+The user approved publication of prepared release `4b26de3`, merge after passing checks, and the existing full refresh/deploy pipeline. [PR #2](https://github.com/lifan-builds/snow-deal/pull/2) passed its Vercel preview checks and merged as `758e13c94f9b14ffdecd637e1d417221c9b999aa` on November 2, 2026 at 21:06 UTC. The updated interface is live. [Full refresh run 41525351684](https://github.com/lifan-builds/snow-deal/actions/runs/41525351684) completed successfully, including publication, deployment, and production timestamp verification. Live size/price/link, pagination, combined-filter, and mobile checks passed. See the [rollout receipt](RELEASE-RECEIPT.md).
 
 ## Proposed change
 
@@ -10,7 +14,7 @@ Destination repository: `lifan-builds/snow-deal` (public). Application: https://
 
 Shared ingestion, parser utilities, offer models, and throttling move into `common/`; the existing snow application, tests, and deployment assets move into `catalogs/fresh-powder/`. Root deployment adapters continue serving Fresh Powder. Optional original-price and model-year filters, compact offer cards, and browser-local saved searches improve the shopping path. The refresh report exposes variant and confirmed-size coverage.
 
-**Validation:** 237 Python tests, 2 JavaScript tests, targeted lint and syntax checks, browser size/year/save/restore flows, package checks, and a bounded real Aspen feed/merchant check. No full refreshed variant snapshot has been published. Retailer reference prices remain unverified historical selling prices; stock is a merchant report, not a checkout guarantee.
+**Validation:** 237 Python tests, 2 JavaScript tests, targeted lint and syntax checks, browser size/year/save/restore flows, package checks, and a bounded real Aspen feed/merchant check. The full refreshed snapshot is published: 13,171 listings, 25,980 variant offers, and 7,836 products with a size reported in stock. Retailer reference prices remain unverified historical selling prices; stock is a merchant report, not a checkout guarantee.
 
 ## Proposed publication actions
 
@@ -19,7 +23,7 @@ Shared ingestion, parser utilities, offer models, and throttling move into `comm
 3. Let the existing Vercel integration/deploy hook update https://freshpowder.clifan.com/. A merge may start a Vercel build before the refreshed snapshot exists; schema migration permits browsing, but exact-size coverage may be limited during that interval. Do not claim full variant coverage until the refresh report and live checks support it.
 4. Verify production snapshot identity, size/year filters, counts, merchant links, and mobile layout. If validation fails, investigate without bypassing the gates; restore the prior app/snapshot pair if needed.
 
-The scope excludes unrelated tooling edits, credentials, browser/auth state, existing local databases, private research-chat evidence, outreach, email delivery, and cycling deployment. Original local edits are preserved. This plan has not been executed externally; publication awaits the user's approval.
+The scope excludes unrelated tooling edits, credentials, browser/auth state, existing local databases, private research-chat evidence, outreach, email delivery, and cycling deployment. Original local edits are preserved. The approved publication and rollout checks are complete; the receipt records coverage and remaining product-research limits.
 
 ## Remaining product validation
 

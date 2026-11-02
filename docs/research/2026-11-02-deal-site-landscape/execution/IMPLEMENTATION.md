@@ -1,6 +1,6 @@
 # Fresh Powder: first execution milestone
 
-Implemented locally on November 2, 2026. Target for a later approved rollout: https://freshpowder.clifan.com/. Screenshots use synthetic examples, not verified retailer inventory.
+Implemented and released on November 2, 2026 at https://freshpowder.clifan.com/. The [rollout receipt](../../../RELEASE-RECEIPT.md) records the successful full refresh, production checks, and real-data screenshots. Earlier screenshots in this document use synthetic examples, not verified retailer inventory.
 
 ## Delivered
 

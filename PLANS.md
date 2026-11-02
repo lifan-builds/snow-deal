@@ -61,3 +61,10 @@ Final verification: 84 tests passed; Python compilation and `git diff --check` p
 - 237 Python tests and 2 JavaScript tests pass in the clean release checkout. Source relocations preserve production files, with the newer production README retained separately in catalog history.
 - Prepared `codex/deal-aggregator-release` in a Codex-managed worktree based on current public `main` (`a0a611b`). Original local changes remain in place. Unrelated tooling edits and private research-chat evidence are excluded from the release.
 - Publishing the prepared release, running the full refresh, verifying the deployed site, and conducting a consented user pilot remain outstanding. See `docs/RELEASE-PLAN.md` for the exact proposed publication.
+
+## Approved release execution
+
+- The user approved prepared release `4b26de3`, its PR/merge, and the existing full refresh/deploy pipeline.
+- PR #2 merged as `758e13c` after successful Vercel checks. The updated production interface is live and category/year/reference filters, pagination, browser-local saved searches, and mobile layout have been checked.
+- The prior public snapshot is backed up under the original project's ignored `.local/release-rollback/2026-11-02/` directory. The existing production checkout and operational databases remain unchanged.
+- Full refresh run `41525351684` succeeded. The new snapshot is live with 13,171 listings, 25,980 variant offers, and 7,836 products with a reported in-stock size. Production timestamp, exact-size counts/ranking/link consistency, combined filters, pagination, and mobile checks passed. See `docs/RELEASE-RECEIPT.md` for evidence and remaining product-validation limits.

@@ -1,0 +1,34 @@
+{
+  "url": "https://skipro.com/products/bent-110-flat-56w?variant=46081304133809",
+  "observed_at": "2026-11-02T21:40:22.938Z",
+  "variant": {
+    "id": "gid://shopify/ProductVariant/46081304133809",
+    "title": "MULTI / 180",
+    "options": [
+      {
+        "name": "Color",
+        "value": "MULTI"
+      },
+      {
+        "name": "Size",
+        "value": "180"
+      }
+    ],
+    "price": {
+      "amount": 44995,
+      "currency": "USD",
+      "display": "$449.95"
+    },
+    "list_price": {
+      "amount": 90000,
+      "currency": "USD",
+      "display": "$900.00"
+    },
+    "availability": {
+      "available": true
+    },
+    "sku": "543193"
+  },
+  "cart_button_enabled": true,
+  "note": "Merchant page radio accessibility labels also contained generic sold-out wording. The selected variant lookup reports available and its Add to cart control is enabled. No cart or checkout action occurred."
+}
