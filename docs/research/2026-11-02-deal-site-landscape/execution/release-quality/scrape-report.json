@@ -1,0 +1,1772 @@
+{
+  "configured_stores": 31,
+  "stores_with_deals": 30,
+  "total_deals": 13171,
+  "zero_count_stores": [
+    "MEC"
+  ],
+  "store_summaries": [
+    {
+      "store": "Aspen Ski and Board",
+      "deals": 820,
+      "missing_category": 0,
+      "missing_image": 10,
+      "missing_sizes": 96,
+      "missing_lengths": 1,
+      "length_eligible": 216,
+      "variant_offers": 2458,
+      "deals_with_variants": 820,
+      "confirmed_size_deals": 798
+    },
+    {
+      "store": "PRFO",
+      "deals": 41,
+      "missing_category": 0,
+      "missing_image": 0,
+      "missing_sizes": 3,
+      "missing_lengths": 4,
+      "length_eligible": 41,
+      "variant_offers": 69,
+      "deals_with_variants": 41,
+      "confirmed_size_deals": 41
+    },
+    {
+      "store": "Sports Basement",
+      "deals": 1422,
+      "missing_category": 5,
+      "missing_image": 0,
+      "missing_sizes": 187,
+      "missing_lengths": 2,
+      "length_eligible": 104,
+      "variant_offers": 7223,
+      "deals_with_variants": 1422,
+      "confirmed_size_deals": 1422
+    },
+    {
+      "store": "Blauer Board Shop",
+      "deals": 823,
+      "missing_category": 3,
+      "missing_image": 0,
+      "missing_sizes": 75,
+      "missing_lengths": 2,
+      "length_eligible": 106,
+      "variant_offers": 2294,
+      "deals_with_variants": 823,
+      "confirmed_size_deals": 748
+    },
+    {
+      "store": "BlueZone Sports",
+      "deals": 63,
+      "missing_category": 1,
+      "missing_image": 0,
+      "missing_sizes": 63,
+      "missing_lengths": 62,
+      "length_eligible": 62,
+      "variant_offers": 0,
+      "deals_with_variants": 0,
+      "confirmed_size_deals": 0
+    },
+    {
+      "store": "Alpine Shop VT",
+      "deals": 115,
+      "missing_category": 0,
+      "missing_image": 0,
+      "missing_sizes": 1,
+      "missing_lengths": 1,
+      "length_eligible": 49,
+      "variant_offers": 210,
+      "deals_with_variants": 115,
+      "confirmed_size_deals": 114
+    },
+    {
+      "store": "The Circle Whistler",
+      "deals": 154,
+      "missing_category": 10,
+      "missing_image": 0,
+      "missing_sizes": 154,
+      "missing_lengths": 14,
+      "length_eligible": 14,
+      "variant_offers": 0,
+      "deals_with_variants": 0,
+      "confirmed_size_deals": 0
+    },
+    {
+      "store": "Colorado Discount Skis",
+      "deals": 248,
+      "missing_category": 0,
+      "missing_image": 0,
+      "missing_sizes": 44,
+      "missing_lengths": 0,
+      "length_eligible": 197,
+      "variant_offers": 0,
+      "deals_with_variants": 0,
+      "confirmed_size_deals": 0
+    },
+    {
+      "store": "Evo",
+      "deals": 956,
+      "missing_category": 0,
+      "missing_image": 0,
+      "missing_sizes": 0,
+      "missing_lengths": 9,
+      "length_eligible": 473,
+      "variant_offers": 3690,
+      "deals_with_variants": 956,
+      "confirmed_size_deals": 956
+    },
+    {
+      "store": "Backcountry",
+      "deals": 1524,
+      "missing_category": 10,
+      "missing_image": 0,
+      "missing_sizes": 1524,
+      "missing_lengths": 320,
+      "length_eligible": 320,
+      "variant_offers": 0,
+      "deals_with_variants": 0,
+      "confirmed_size_deals": 0
+    },
+    {
+      "store": "Steep & Cheap",
+      "deals": 206,
+      "missing_category": 0,
+      "missing_image": 0,
+      "missing_sizes": 206,
+      "missing_lengths": 203,
+      "length_eligible": 203,
+      "variant_offers": 0,
+      "deals_with_variants": 0,
+      "confirmed_size_deals": 0
+    },
+    {
+      "store": "The House",
+      "deals": 695,
+      "missing_category": 0,
+      "missing_image": 0,
+      "missing_sizes": 695,
+      "missing_lengths": 204,
+      "length_eligible": 204,
+      "variant_offers": 0,
+      "deals_with_variants": 0,
+      "confirmed_size_deals": 0
+    },
+    {
+      "store": "Corbetts",
+      "deals": 63,
+      "missing_category": 0,
+      "missing_image": 0,
+      "missing_sizes": 63,
+      "missing_lengths": 16,
+      "length_eligible": 16,
+      "variant_offers": 0,
+      "deals_with_variants": 0,
+      "confirmed_size_deals": 0
+    },
+    {
+      "store": "Colorado Ski Shop",
+      "deals": 374,
+      "missing_category": 0,
+      "missing_image": 2,
+      "missing_sizes": 18,
+      "missing_lengths": 18,
+      "length_eligible": 325,
+      "variant_offers": 1017,
+      "deals_with_variants": 374,
+      "confirmed_size_deals": 356
+    },
+    {
+      "store": "Ski Depot",
+      "deals": 738,
+      "missing_category": 0,
+      "missing_image": 1,
+      "missing_sizes": 71,
+      "missing_lengths": 0,
+      "length_eligible": 315,
+      "variant_offers": 2946,
+      "deals_with_variants": 738,
+      "confirmed_size_deals": 672
+    },
+    {
+      "store": "Peter Glenn",
+      "deals": 1885,
+      "missing_category": 7,
+      "missing_image": 0,
+      "missing_sizes": 1885,
+      "missing_lengths": 158,
+      "length_eligible": 158,
+      "variant_offers": 0,
+      "deals_with_variants": 0,
+      "confirmed_size_deals": 0
+    },
+    {
+      "store": "Sacred Ride",
+      "deals": 131,
+      "missing_category": 0,
+      "missing_image": 0,
+      "missing_sizes": 131,
+      "missing_lengths": 59,
+      "length_eligible": 59,
+      "variant_offers": 0,
+      "deals_with_variants": 0,
+      "confirmed_size_deals": 0
+    },
+    {
+      "store": "The Ski Monster",
+      "deals": 63,
+      "missing_category": 1,
+      "missing_image": 0,
+      "missing_sizes": 1,
+      "missing_lengths": 0,
+      "length_eligible": 2,
+      "variant_offers": 107,
+      "deals_with_variants": 63,
+      "confirmed_size_deals": 62
+    },
+    {
+      "store": "MEC",
+      "deals": 0,
+      "missing_category": 0,
+      "missing_image": 0,
+      "missing_sizes": 0,
+      "missing_lengths": 0,
+      "length_eligible": 0,
+      "variant_offers": 0,
+      "deals_with_variants": 0,
+      "confirmed_size_deals": 0
+    },
+    {
+      "store": "Ski Essentials",
+      "deals": 137,
+      "missing_category": 0,
+      "missing_image": 0,
+      "missing_sizes": 137,
+      "missing_lengths": 30,
+      "length_eligible": 30,
+      "variant_offers": 0,
+      "deals_with_variants": 0,
+      "confirmed_size_deals": 0
+    },
+    {
+      "store": "Comor Sports",
+      "deals": 28,
+      "missing_category": 0,
+      "missing_image": 0,
+      "missing_sizes": 0,
+      "missing_lengths": 0,
+      "length_eligible": 14,
+      "variant_offers": 62,
+      "deals_with_variants": 28,
+      "confirmed_size_deals": 28
+    },
+    {
+      "store": "Ski Pro AZ",
+      "deals": 1245,
+      "missing_category": 0,
+      "missing_image": 6,
+      "missing_sizes": 1,
+      "missing_lengths": 6,
+      "length_eligible": 270,
+      "variant_offers": 3201,
+      "deals_with_variants": 1245,
+      "confirmed_size_deals": 1245
+    },
+    {
+      "store": "First Stop Board Barn",
+      "deals": 174,
+      "missing_category": 1,
+      "missing_image": 0,
+      "missing_sizes": 1,
+      "missing_lengths": 14,
+      "length_eligible": 61,
+      "variant_offers": 316,
+      "deals_with_variants": 174,
+      "confirmed_size_deals": 173
+    },
+    {
+      "store": "Fresh Skis",
+      "deals": 17,
+      "missing_category": 0,
+      "missing_image": 0,
+      "missing_sizes": 1,
+      "missing_lengths": 1,
+      "length_eligible": 17,
+      "variant_offers": 21,
+      "deals_with_variants": 17,
+      "confirmed_size_deals": 16
+    },
+    {
+      "store": "Rude Boys",
+      "deals": 321,
+      "missing_category": 0,
+      "missing_image": 0,
+      "missing_sizes": 0,
+      "missing_lengths": 3,
+      "length_eligible": 97,
+      "variant_offers": 773,
+      "deals_with_variants": 321,
+      "confirmed_size_deals": 321
+    },
+    {
+      "store": "Skiis & Biikes",
+      "deals": 412,
+      "missing_category": 0,
+      "missing_image": 0,
+      "missing_sizes": 52,
+      "missing_lengths": 1,
+      "length_eligible": 60,
+      "variant_offers": 749,
+      "deals_with_variants": 412,
+      "confirmed_size_deals": 393
+    },
+    {
+      "store": "Skirack",
+      "deals": 146,
+      "missing_category": 9,
+      "missing_image": 0,
+      "missing_sizes": 24,
+      "missing_lengths": 0,
+      "length_eligible": 24,
+      "variant_offers": 232,
+      "deals_with_variants": 146,
+      "confirmed_size_deals": 122
+    },
+    {
+      "store": "UtahSkis",
+      "deals": 102,
+      "missing_category": 0,
+      "missing_image": 0,
+      "missing_sizes": 10,
+      "missing_lengths": 10,
+      "length_eligible": 56,
+      "variant_offers": 228,
+      "deals_with_variants": 102,
+      "confirmed_size_deals": 102
+    },
+    {
+      "store": "The Startingate",
+      "deals": 77,
+      "missing_category": 0,
+      "missing_image": 0,
+      "missing_sizes": 0,
+      "missing_lengths": 0,
+      "length_eligible": 31,
+      "variant_offers": 99,
+      "deals_with_variants": 77,
+      "confirmed_size_deals": 77
+    },
+    {
+      "store": "Freeride Boardshop",
+      "deals": 45,
+      "missing_category": 0,
+      "missing_image": 0,
+      "missing_sizes": 0,
+      "missing_lengths": 0,
+      "length_eligible": 15,
+      "variant_offers": 62,
+      "deals_with_variants": 45,
+      "confirmed_size_deals": 45
+    },
+    {
+      "store": "Boardom",
+      "deals": 146,
+      "missing_category": 0,
+      "missing_image": 3,
+      "missing_sizes": 1,
+      "missing_lengths": 2,
+      "length_eligible": 44,
+      "variant_offers": 223,
+      "deals_with_variants": 146,
+      "confirmed_size_deals": 145
+    }
+  ],
+  "missing_category": 47,
+  "missing_image": 22,
+  "missing_sizes": 5444,
+  "missing_lengths": 1140,
+  "length_eligible": 3583,
+  "variant_offers": 25980,
+  "deals_with_variants": 8065,
+  "confirmed_size_deals": 7836,
+  "checked_at": "2026-11-02T21:35:36.450747",
+  "outcomes": {
+    "Aspen Ski and Board": {
+      "errors": 0,
+      "pages": 10,
+      "collections": [
+        {
+          "url": "https://www.aspenskiandboard.com/collections/skis",
+          "pages": 2,
+          "products": 249,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.aspenskiandboard.com/collections/outlet",
+          "pages": 5,
+          "products": 911,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.aspenskiandboard.com/collections/snowboards",
+          "pages": 1,
+          "products": 21,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.aspenskiandboard.com/collections/sale-ski-boots",
+          "pages": 1,
+          "products": 166,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.aspenskiandboard.com/collections/sale-snowboard-boots",
+          "pages": 1,
+          "products": 54,
+          "status": "complete"
+        }
+      ]
+    },
+    "PRFO": {
+      "errors": 0,
+      "pages": 5,
+      "collections": [
+        {
+          "url": "https://www.prfo.com/collections/sales",
+          "pages": 1,
+          "products": 42,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.prfo.com/collections/ski-skis",
+          "pages": 1,
+          "products": 9,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.prfo.com/collections/snowboard-snowboards",
+          "pages": 1,
+          "products": 33,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.prfo.com/collections/ski-ski-bindings",
+          "pages": 1,
+          "products": 0,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.prfo.com/collections/snowboard-snowboard-bindings",
+          "pages": 1,
+          "products": 0,
+          "status": "complete"
+        }
+      ]
+    },
+    "Sports Basement": {
+      "errors": 0,
+      "pages": 22,
+      "collections": [
+        {
+          "url": "https://www.sportsbasement.com/collections/skis",
+          "pages": 2,
+          "products": 43,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.sportsbasement.com/collections/snow",
+          "pages": 18,
+          "products": 1711,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.sportsbasement.com/collections/ski-deals",
+          "pages": 1,
+          "products": 27,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.sportsbasement.com/collections/snowboard-gear-deals",
+          "pages": 1,
+          "products": 117,
+          "status": "complete"
+        }
+      ]
+    },
+    "BlueZone Sports": {
+      "errors": 0,
+      "pages": 15,
+      "collections": [
+        {
+          "url": "https://www.bluezonesports.com/skis",
+          "pages": 11,
+          "products": 264,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.bluezonesports.com/snowboards",
+          "pages": 4,
+          "products": 90,
+          "status": "complete"
+        }
+      ]
+    },
+    "Blauer Board Shop": {
+      "errors": 0,
+      "pages": 11,
+      "collections": [
+        {
+          "url": "https://blauerboardshop.com/collections/discount-snowboards",
+          "pages": 1,
+          "products": 121,
+          "status": "complete"
+        },
+        {
+          "url": "https://blauerboardshop.com/collections/discount-boots",
+          "pages": 2,
+          "products": 110,
+          "status": "complete"
+        },
+        {
+          "url": "https://blauerboardshop.com/collections/discount-snowboard-bindings",
+          "pages": 2,
+          "products": 58,
+          "status": "complete"
+        },
+        {
+          "url": "https://blauerboardshop.com/collections/sale",
+          "pages": 6,
+          "products": 1313,
+          "status": "complete"
+        }
+      ]
+    },
+    "Colorado Discount Skis": {
+      "errors": 0,
+      "pages": 24,
+      "collections": [
+        {
+          "url": "https://www.coloradodiscountskis.com/store/Atomic_2026.html",
+          "pages": 1,
+          "products": 35,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.coloradodiscountskis.com/store/Atomic_2025.html",
+          "pages": 1,
+          "products": 25,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.coloradodiscountskis.com/store/Atomic_2024.html",
+          "pages": 1,
+          "products": 19,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.coloradodiscountskis.com/store/Head_2026.html",
+          "pages": 1,
+          "products": 30,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.coloradodiscountskis.com/store/Head_2025.html",
+          "pages": 1,
+          "products": 6,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.coloradodiscountskis.com/store/Head_2024.html",
+          "pages": 1,
+          "products": 3,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.coloradodiscountskis.com/store/Salomon_2026.html",
+          "pages": 1,
+          "products": 13,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.coloradodiscountskis.com/store/Salomon_2025.html",
+          "pages": 1,
+          "products": 3,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.coloradodiscountskis.com/store/Salomon_2024.html",
+          "pages": 1,
+          "products": 4,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.coloradodiscountskis.com/store/Rossignol.html",
+          "pages": 1,
+          "products": 13,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.coloradodiscountskis.com/store/Volkl_2026.html",
+          "pages": 1,
+          "products": 10,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.coloradodiscountskis.com/store/Volkl_2025.html",
+          "pages": 1,
+          "products": 6,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.coloradodiscountskis.com/store/Volkl_2024.html",
+          "pages": 1,
+          "products": 5,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.coloradodiscountskis.com/store/Fischer_2026.html",
+          "pages": 1,
+          "products": 20,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.coloradodiscountskis.com/store/Fischer_2025.html",
+          "pages": 1,
+          "products": 10,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.coloradodiscountskis.com/store/Fischer_2024.html",
+          "pages": 1,
+          "products": 3,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.coloradodiscountskis.com/store/Nordica_2026.html",
+          "pages": 1,
+          "products": 13,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.coloradodiscountskis.com/store/Nordica_2025.html",
+          "pages": 1,
+          "products": 8,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.coloradodiscountskis.com/store/Nordica_2024.html",
+          "pages": 1,
+          "products": 0,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.coloradodiscountskis.com/store/Blizzard_2026.html",
+          "pages": 1,
+          "products": 8,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.coloradodiscountskis.com/store/Blizzard_2025.html",
+          "pages": 1,
+          "products": 4,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.coloradodiscountskis.com/store/Blizzard_2024.html",
+          "pages": 1,
+          "products": 7,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.coloradodiscountskis.com/store/Ogasaka.html",
+          "pages": 1,
+          "products": 5,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.coloradodiscountskis.com/store/FIS_Skis.html",
+          "pages": 1,
+          "products": 24,
+          "status": "complete"
+        }
+      ]
+    },
+    "Alpine Shop VT": {
+      "errors": 0,
+      "pages": 6,
+      "collections": [
+        {
+          "url": "https://alpineshopvt.com/collections/skis",
+          "pages": 1,
+          "products": 33,
+          "status": "complete"
+        },
+        {
+          "url": "https://alpineshopvt.com/collections/ski-boots",
+          "pages": 1,
+          "products": 28,
+          "status": "complete"
+        },
+        {
+          "url": "https://alpineshopvt.com/collections/alpine-binding",
+          "pages": 1,
+          "products": 8,
+          "status": "complete"
+        },
+        {
+          "url": "https://alpineshopvt.com/collections/snowboards",
+          "pages": 1,
+          "products": 16,
+          "status": "complete"
+        },
+        {
+          "url": "https://alpineshopvt.com/collections/snowboard-boots-1",
+          "pages": 1,
+          "products": 15,
+          "status": "complete"
+        },
+        {
+          "url": "https://alpineshopvt.com/collections/snowboard-bindings",
+          "pages": 1,
+          "products": 15,
+          "status": "complete"
+        }
+      ]
+    },
+    "Evo": {
+      "errors": 3,
+      "pages": 32,
+      "collections": [
+        {
+          "url": "https://www.evo.com/collections/sale-skis",
+          "pages": 4,
+          "products": 191,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.evo.com/collections/sale-snowboards",
+          "pages": 10,
+          "products": 423,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.evo.com/collections/sale-ski-boots",
+          "pages": 8,
+          "products": 319,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.evo.com/collections/sale-snowboard-boots",
+          "pages": 3,
+          "products": 143,
+          "status": "http_error",
+          "http_status": 503
+        },
+        {
+          "url": "https://www.evo.com/collections/sale-ski-bindings",
+          "pages": 1,
+          "products": 26,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.evo.com/collections/sale-snowboard-bindings",
+          "pages": 3,
+          "products": 141,
+          "status": "http_error",
+          "http_status": 503
+        },
+        {
+          "url": "https://www.evo.com/collections/sale-ski-poles",
+          "pages": 0,
+          "products": 0,
+          "status": "http_error",
+          "http_status": 503
+        },
+        {
+          "url": "https://www.evo.com/collections/sale-goggles",
+          "pages": 1,
+          "products": 0,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.evo.com/collections/sale-helmets",
+          "pages": 1,
+          "products": 0,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.evo.com/collections/sale-gloves-mittens",
+          "pages": 1,
+          "products": 0,
+          "status": "complete"
+        }
+      ]
+    },
+    "Colorado Ski Shop": {
+      "errors": 0,
+      "pages": 5,
+      "collections": [
+        {
+          "url": "https://coloradoskishop.com/collections/clearance",
+          "pages": 1,
+          "products": 0,
+          "status": "complete"
+        },
+        {
+          "url": "https://coloradoskishop.com/collections/skis",
+          "pages": 2,
+          "products": 355,
+          "status": "complete"
+        },
+        {
+          "url": "https://coloradoskishop.com/collections/snowboards",
+          "pages": 1,
+          "products": 13,
+          "status": "complete"
+        },
+        {
+          "url": "https://coloradoskishop.com/collections/ski-bindings",
+          "pages": 1,
+          "products": 21,
+          "status": "complete"
+        }
+      ]
+    },
+    "Sacred Ride": {
+      "errors": 0,
+      "pages": 19,
+      "collections": [
+        {
+          "url": "https://sacredride.ca/product-category/winter/skis/",
+          "pages": 3,
+          "products": 69,
+          "status": "complete"
+        },
+        {
+          "url": "https://sacredride.ca/product-category/winter/snowboards/",
+          "pages": 2,
+          "products": 47,
+          "status": "complete"
+        },
+        {
+          "url": "https://sacredride.ca/product-category/winter/boots/",
+          "pages": 4,
+          "products": 79,
+          "status": "complete"
+        },
+        {
+          "url": "https://sacredride.ca/product-category/winter/snowboard-boots/",
+          "pages": 2,
+          "products": 31,
+          "status": "complete"
+        },
+        {
+          "url": "https://sacredride.ca/product-category/winter/bindings/",
+          "pages": 2,
+          "products": 35,
+          "status": "complete"
+        },
+        {
+          "url": "https://sacredride.ca/product-category/winter/snowboard-bindings/",
+          "pages": 2,
+          "products": 31,
+          "status": "complete"
+        },
+        {
+          "url": "https://sacredride.ca/product-category/winter/helmets/",
+          "pages": 3,
+          "products": 50,
+          "status": "complete"
+        },
+        {
+          "url": "https://sacredride.ca/product-category/winter/goggles/",
+          "pages": 1,
+          "products": 3,
+          "status": "complete"
+        }
+      ]
+    },
+    "Ski Depot": {
+      "errors": 0,
+      "pages": 6,
+      "collections": [
+        {
+          "url": "https://ski-depot.com/collections/skis",
+          "pages": 2,
+          "products": 407,
+          "status": "complete"
+        },
+        {
+          "url": "https://ski-depot.com/collections/ski-boots",
+          "pages": 2,
+          "products": 315,
+          "status": "complete"
+        },
+        {
+          "url": "https://ski-depot.com/collections/ski-bindings",
+          "pages": 1,
+          "products": 127,
+          "status": "complete"
+        },
+        {
+          "url": "https://ski-depot.com/collections/summer-sizzler-deals",
+          "pages": 1,
+          "products": 39,
+          "status": "complete"
+        }
+      ]
+    },
+    "The Ski Monster": {
+      "errors": 0,
+      "pages": 4,
+      "collections": [
+        {
+          "url": "https://theskimonster.com/collections/end-of-season-sale",
+          "pages": 1,
+          "products": 65,
+          "status": "complete"
+        },
+        {
+          "url": "https://theskimonster.com/collections/ski-outlet",
+          "pages": 1,
+          "products": 2,
+          "status": "complete"
+        },
+        {
+          "url": "https://theskimonster.com/collections/ski-boot-outlet",
+          "pages": 1,
+          "products": 34,
+          "status": "complete"
+        },
+        {
+          "url": "https://theskimonster.com/collections/snowboard-outlet",
+          "pages": 1,
+          "products": 2,
+          "status": "complete"
+        }
+      ]
+    },
+    "Comor Sports": {
+      "errors": 0,
+      "pages": 3,
+      "collections": [
+        {
+          "url": "https://comorsports.com/collections/ski-sale",
+          "pages": 1,
+          "products": 30,
+          "status": "complete"
+        },
+        {
+          "url": "https://comorsports.com/collections/snowboard-snowboards",
+          "pages": 1,
+          "products": 0,
+          "status": "complete"
+        },
+        {
+          "url": "https://comorsports.com/collections/ski-boots-sale",
+          "pages": 1,
+          "products": 10,
+          "status": "complete"
+        }
+      ]
+    },
+    "Ski Pro AZ": {
+      "errors": 2,
+      "pages": 12,
+      "collections": [
+        {
+          "url": "https://skipro.com/collections/sale",
+          "pages": 8,
+          "products": 1622,
+          "status": "http_error",
+          "http_status": 503
+        },
+        {
+          "url": "https://skipro.com/collections/previous-season-sale",
+          "pages": 4,
+          "products": 485,
+          "status": "http_error",
+          "http_status": 503
+        }
+      ]
+    },
+    "First Stop Board Barn": {
+      "errors": 0,
+      "pages": 4,
+      "collections": [
+        {
+          "url": "https://www.firststopboardbarn.com/collections/sale",
+          "pages": 2,
+          "products": 294,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.firststopboardbarn.com/collections/clearance-mens-snowboard",
+          "pages": 1,
+          "products": 1,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.firststopboardbarn.com/collections/clearance-snowboard-gear",
+          "pages": 1,
+          "products": 0,
+          "status": "complete"
+        }
+      ]
+    },
+    "Fresh Skis": {
+      "errors": 0,
+      "pages": 1,
+      "collections": [
+        {
+          "url": "https://www.freshskis.com/collections/clearance",
+          "pages": 1,
+          "products": 17,
+          "status": "complete"
+        }
+      ]
+    },
+    "Rude Boys": {
+      "errors": 0,
+      "pages": 2,
+      "collections": [
+        {
+          "url": "https://rudeboys.com/collections/sale-bindings",
+          "pages": 2,
+          "products": 332,
+          "status": "complete"
+        }
+      ]
+    },
+    "Skiis & Biikes": {
+      "errors": 1,
+      "pages": 9,
+      "collections": [
+        {
+          "url": "https://skiisandbiikes.com/collections/all-sale",
+          "pages": 9,
+          "products": 645,
+          "status": "http_error",
+          "http_status": 503
+        }
+      ]
+    },
+    "Skirack": {
+      "errors": 0,
+      "pages": 2,
+      "collections": [
+        {
+          "url": "https://www.skirack.com/collections/sale",
+          "pages": 2,
+          "products": 359,
+          "status": "complete"
+        }
+      ]
+    },
+    "UtahSkis": {
+      "errors": 2,
+      "pages": 4,
+      "collections": [
+        {
+          "url": "https://utahskis.com/collections/skis-25",
+          "pages": 1,
+          "products": 38,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://utahskis.com/collections/snowboards",
+          "pages": 1,
+          "products": 26,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://utahskis.com/collections/ski-boots",
+          "pages": 1,
+          "products": 30,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://utahskis.com/collections/snowboard-boots",
+          "pages": 0,
+          "products": 0,
+          "status": "http_error",
+          "observed_currency": "USD",
+          "http_status": 503
+        },
+        {
+          "url": "https://utahskis.com/collections/ski-bindings",
+          "pages": 0,
+          "products": 0,
+          "status": "currency_check_failed"
+        },
+        {
+          "url": "https://utahskis.com/collections/snowboard-bindings",
+          "pages": 1,
+          "products": 23,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ]
+    },
+    "The Startingate": {
+      "errors": 0,
+      "pages": 3,
+      "collections": [
+        {
+          "url": "https://shopstartingate.com/collections/skis-bindings",
+          "pages": 1,
+          "products": 31,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://shopstartingate.com/collections/ski-boots",
+          "pages": 1,
+          "products": 46,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://shopstartingate.com/collections/ski-bindings",
+          "pages": 1,
+          "products": 0,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ]
+    },
+    "Freeride Boardshop": {
+      "errors": 0,
+      "pages": 3,
+      "collections": [
+        {
+          "url": "https://www.freerideboardshop.com/en-us/collections/sale-snowboards",
+          "pages": 1,
+          "products": 19,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://www.freerideboardshop.com/en-us/collections/winter-sale-boots-all",
+          "pages": 1,
+          "products": 17,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://www.freerideboardshop.com/en-us/collections/snowboard-bindings",
+          "pages": 1,
+          "products": 16,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ]
+    },
+    "Boardom": {
+      "errors": 0,
+      "pages": 4,
+      "collections": [
+        {
+          "url": "https://boardom.net/collections/clearance-skis?currency=CAD",
+          "pages": 1,
+          "products": 11,
+          "status": "complete",
+          "observed_currency": "CAD"
+        },
+        {
+          "url": "https://boardom.net/collections/clearance-snow?currency=CAD",
+          "pages": 3,
+          "products": 153,
+          "status": "complete",
+          "observed_currency": "CAD"
+        }
+      ]
+    },
+    "The Circle Whistler": {
+      "errors": 0,
+      "pages": 36,
+      "collections": [
+        {
+          "url": "https://www.thecirclewhistler.com/sale/",
+          "pages": 18,
+          "products": 415,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/snow/",
+          "pages": 18,
+          "products": 421,
+          "status": "complete"
+        }
+      ]
+    },
+    "Backcountry": {
+      "errors": 0,
+      "pages": 102,
+      "collections": [
+        {
+          "url": "https://www.backcountry.com/rc/skis",
+          "pages": 10,
+          "products": 182,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.backcountry.com/rc/snowboards",
+          "pages": 12,
+          "products": 215,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.backcountry.com/rc/ski-snowboard-on-sale",
+          "pages": 50,
+          "products": 1655,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.backcountry.com/rc/outlet-ski-on-sale",
+          "pages": 16,
+          "products": 505,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.backcountry.com/rc/outlet-snowboard-on-sale",
+          "pages": 14,
+          "products": 427,
+          "status": "complete"
+        }
+      ]
+    },
+    "Steep & Cheap": {
+      "errors": 0,
+      "pages": 7,
+      "collections": [
+        {
+          "url": "https://www.steepandcheap.com/cat/skis",
+          "pages": 4,
+          "products": 140,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.steepandcheap.com/cat/snowboards",
+          "pages": 3,
+          "products": 91,
+          "status": "complete"
+        }
+      ]
+    },
+    "The House": {
+      "errors": 0,
+      "pages": 6,
+      "collections": [
+        {
+          "url": "https://www.the-house.com/search?pmid=on-sale-now&start=0&sz=240",
+          "pages": 6,
+          "products": 831,
+          "status": "complete"
+        }
+      ]
+    },
+    "Corbetts": {
+      "errors": 0,
+      "pages": 4,
+      "collections": [
+        {
+          "url": "https://www.corbetts.com/categories/ski/skis.html",
+          "pages": 1,
+          "products": 72,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.corbetts.com/snowboards/",
+          "pages": 1,
+          "products": 72,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.corbetts.com/ski-boots/",
+          "pages": 1,
+          "products": 72,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.corbetts.com/categories/clearance.html",
+          "pages": 1,
+          "products": 72,
+          "status": "complete"
+        }
+      ]
+    },
+    "Peter Glenn": {
+      "errors": 0,
+      "pages": 62,
+      "collections": [
+        {
+          "url": "https://peterglenn.com/sale/",
+          "pages": 54,
+          "products": 2566,
+          "status": "complete"
+        },
+        {
+          "url": "https://peterglenn.com/ski/skis/",
+          "pages": 4,
+          "products": 161,
+          "status": "complete"
+        },
+        {
+          "url": "https://peterglenn.com/ski/ski-boots/",
+          "pages": 4,
+          "products": 170,
+          "status": "complete"
+        }
+      ]
+    },
+    "MEC": {
+      "errors": 1,
+      "pages": 0,
+      "collections": [
+        {
+          "url": "https://www.mec.ca/en/products/ski-and-snowsports/deals",
+          "pages": 0,
+          "products": 0,
+          "status": "http_error",
+          "http_status": 403
+        }
+      ]
+    },
+    "Ski Essentials": {
+      "errors": 5,
+      "pages": 6,
+      "collections": [
+        {
+          "url": "https://www.skiessentials.com/collections/alpine-skis",
+          "pages": 1,
+          "products": 48,
+          "status": "pagination_error"
+        },
+        {
+          "url": "https://www.skiessentials.com/collections/snowboards",
+          "pages": 1,
+          "products": 48,
+          "status": "pagination_error"
+        },
+        {
+          "url": "https://www.skiessentials.com/collections/ski-boots",
+          "pages": 1,
+          "products": 48,
+          "status": "pagination_error"
+        },
+        {
+          "url": "https://www.skiessentials.com/collections/snowboard-boots",
+          "pages": 1,
+          "products": 39,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.skiessentials.com/collections/alpine-ski-bindings",
+          "pages": 1,
+          "products": 48,
+          "status": "pagination_error"
+        },
+        {
+          "url": "https://www.skiessentials.com/collections/snowboard-bindings",
+          "pages": 1,
+          "products": 48,
+          "status": "pagination_error"
+        }
+      ]
+    }
+  },
+  "withheld_stores": [],
+  "published_deals": 13171,
+  "publish_candidate_quality": {
+    "configured_stores": 31,
+    "stores_with_deals": 30,
+    "total_deals": 13171,
+    "zero_count_stores": [
+      "MEC"
+    ],
+    "store_summaries": [
+      {
+        "store": "Aspen Ski and Board",
+        "deals": 820,
+        "missing_category": 0,
+        "missing_image": 10,
+        "missing_sizes": 96,
+        "missing_lengths": 1,
+        "length_eligible": 216,
+        "variant_offers": 2458,
+        "deals_with_variants": 820,
+        "confirmed_size_deals": 798
+      },
+      {
+        "store": "PRFO",
+        "deals": 41,
+        "missing_category": 0,
+        "missing_image": 0,
+        "missing_sizes": 3,
+        "missing_lengths": 4,
+        "length_eligible": 41,
+        "variant_offers": 69,
+        "deals_with_variants": 41,
+        "confirmed_size_deals": 41
+      },
+      {
+        "store": "Sports Basement",
+        "deals": 1422,
+        "missing_category": 5,
+        "missing_image": 0,
+        "missing_sizes": 187,
+        "missing_lengths": 2,
+        "length_eligible": 104,
+        "variant_offers": 7223,
+        "deals_with_variants": 1422,
+        "confirmed_size_deals": 1422
+      },
+      {
+        "store": "Blauer Board Shop",
+        "deals": 823,
+        "missing_category": 3,
+        "missing_image": 0,
+        "missing_sizes": 75,
+        "missing_lengths": 2,
+        "length_eligible": 106,
+        "variant_offers": 2294,
+        "deals_with_variants": 823,
+        "confirmed_size_deals": 748
+      },
+      {
+        "store": "BlueZone Sports",
+        "deals": 63,
+        "missing_category": 1,
+        "missing_image": 0,
+        "missing_sizes": 63,
+        "missing_lengths": 62,
+        "length_eligible": 62,
+        "variant_offers": 0,
+        "deals_with_variants": 0,
+        "confirmed_size_deals": 0
+      },
+      {
+        "store": "Alpine Shop VT",
+        "deals": 115,
+        "missing_category": 0,
+        "missing_image": 0,
+        "missing_sizes": 1,
+        "missing_lengths": 1,
+        "length_eligible": 49,
+        "variant_offers": 210,
+        "deals_with_variants": 115,
+        "confirmed_size_deals": 114
+      },
+      {
+        "store": "The Circle Whistler",
+        "deals": 154,
+        "missing_category": 10,
+        "missing_image": 0,
+        "missing_sizes": 154,
+        "missing_lengths": 14,
+        "length_eligible": 14,
+        "variant_offers": 0,
+        "deals_with_variants": 0,
+        "confirmed_size_deals": 0
+      },
+      {
+        "store": "Colorado Discount Skis",
+        "deals": 248,
+        "missing_category": 0,
+        "missing_image": 0,
+        "missing_sizes": 44,
+        "missing_lengths": 0,
+        "length_eligible": 197,
+        "variant_offers": 0,
+        "deals_with_variants": 0,
+        "confirmed_size_deals": 0
+      },
+      {
+        "store": "Evo",
+        "deals": 956,
+        "missing_category": 0,
+        "missing_image": 0,
+        "missing_sizes": 0,
+        "missing_lengths": 9,
+        "length_eligible": 473,
+        "variant_offers": 3690,
+        "deals_with_variants": 956,
+        "confirmed_size_deals": 956
+      },
+      {
+        "store": "Backcountry",
+        "deals": 1524,
+        "missing_category": 10,
+        "missing_image": 0,
+        "missing_sizes": 1524,
+        "missing_lengths": 320,
+        "length_eligible": 320,
+        "variant_offers": 0,
+        "deals_with_variants": 0,
+        "confirmed_size_deals": 0
+      },
+      {
+        "store": "Steep & Cheap",
+        "deals": 206,
+        "missing_category": 0,
+        "missing_image": 0,
+        "missing_sizes": 206,
+        "missing_lengths": 203,
+        "length_eligible": 203,
+        "variant_offers": 0,
+        "deals_with_variants": 0,
+        "confirmed_size_deals": 0
+      },
+      {
+        "store": "The House",
+        "deals": 695,
+        "missing_category": 0,
+        "missing_image": 0,
+        "missing_sizes": 695,
+        "missing_lengths": 204,
+        "length_eligible": 204,
+        "variant_offers": 0,
+        "deals_with_variants": 0,
+        "confirmed_size_deals": 0
+      },
+      {
+        "store": "Corbetts",
+        "deals": 63,
+        "missing_category": 0,
+        "missing_image": 0,
+        "missing_sizes": 63,
+        "missing_lengths": 16,
+        "length_eligible": 16,
+        "variant_offers": 0,
+        "deals_with_variants": 0,
+        "confirmed_size_deals": 0
+      },
+      {
+        "store": "Colorado Ski Shop",
+        "deals": 374,
+        "missing_category": 0,
+        "missing_image": 2,
+        "missing_sizes": 18,
+        "missing_lengths": 18,
+        "length_eligible": 325,
+        "variant_offers": 1017,
+        "deals_with_variants": 374,
+        "confirmed_size_deals": 356
+      },
+      {
+        "store": "Ski Depot",
+        "deals": 738,
+        "missing_category": 0,
+        "missing_image": 1,
+        "missing_sizes": 71,
+        "missing_lengths": 0,
+        "length_eligible": 315,
+        "variant_offers": 2946,
+        "deals_with_variants": 738,
+        "confirmed_size_deals": 672
+      },
+      {
+        "store": "Peter Glenn",
+        "deals": 1885,
+        "missing_category": 7,
+        "missing_image": 0,
+        "missing_sizes": 1885,
+        "missing_lengths": 158,
+        "length_eligible": 158,
+        "variant_offers": 0,
+        "deals_with_variants": 0,
+        "confirmed_size_deals": 0
+      },
+      {
+        "store": "Sacred Ride",
+        "deals": 131,
+        "missing_category": 0,
+        "missing_image": 0,
+        "missing_sizes": 131,
+        "missing_lengths": 59,
+        "length_eligible": 59,
+        "variant_offers": 0,
+        "deals_with_variants": 0,
+        "confirmed_size_deals": 0
+      },
+      {
+        "store": "The Ski Monster",
+        "deals": 63,
+        "missing_category": 1,
+        "missing_image": 0,
+        "missing_sizes": 1,
+        "missing_lengths": 0,
+        "length_eligible": 2,
+        "variant_offers": 107,
+        "deals_with_variants": 63,
+        "confirmed_size_deals": 62
+      },
+      {
+        "store": "MEC",
+        "deals": 0,
+        "missing_category": 0,
+        "missing_image": 0,
+        "missing_sizes": 0,
+        "missing_lengths": 0,
+        "length_eligible": 0,
+        "variant_offers": 0,
+        "deals_with_variants": 0,
+        "confirmed_size_deals": 0
+      },
+      {
+        "store": "Ski Essentials",
+        "deals": 137,
+        "missing_category": 0,
+        "missing_image": 0,
+        "missing_sizes": 137,
+        "missing_lengths": 30,
+        "length_eligible": 30,
+        "variant_offers": 0,
+        "deals_with_variants": 0,
+        "confirmed_size_deals": 0
+      },
+      {
+        "store": "Comor Sports",
+        "deals": 28,
+        "missing_category": 0,
+        "missing_image": 0,
+        "missing_sizes": 0,
+        "missing_lengths": 0,
+        "length_eligible": 14,
+        "variant_offers": 62,
+        "deals_with_variants": 28,
+        "confirmed_size_deals": 28
+      },
+      {
+        "store": "Ski Pro AZ",
+        "deals": 1245,
+        "missing_category": 0,
+        "missing_image": 6,
+        "missing_sizes": 1,
+        "missing_lengths": 6,
+        "length_eligible": 270,
+        "variant_offers": 3201,
+        "deals_with_variants": 1245,
+        "confirmed_size_deals": 1245
+      },
+      {
+        "store": "First Stop Board Barn",
+        "deals": 174,
+        "missing_category": 1,
+        "missing_image": 0,
+        "missing_sizes": 1,
+        "missing_lengths": 14,
+        "length_eligible": 61,
+        "variant_offers": 316,
+        "deals_with_variants": 174,
+        "confirmed_size_deals": 173
+      },
+      {
+        "store": "Fresh Skis",
+        "deals": 17,
+        "missing_category": 0,
+        "missing_image": 0,
+        "missing_sizes": 1,
+        "missing_lengths": 1,
+        "length_eligible": 17,
+        "variant_offers": 21,
+        "deals_with_variants": 17,
+        "confirmed_size_deals": 16
+      },
+      {
+        "store": "Rude Boys",
+        "deals": 321,
+        "missing_category": 0,
+        "missing_image": 0,
+        "missing_sizes": 0,
+        "missing_lengths": 3,
+        "length_eligible": 97,
+        "variant_offers": 773,
+        "deals_with_variants": 321,
+        "confirmed_size_deals": 321
+      },
+      {
+        "store": "Skiis & Biikes",
+        "deals": 412,
+        "missing_category": 0,
+        "missing_image": 0,
+        "missing_sizes": 52,
+        "missing_lengths": 1,
+        "length_eligible": 60,
+        "variant_offers": 749,
+        "deals_with_variants": 412,
+        "confirmed_size_deals": 393
+      },
+      {
+        "store": "Skirack",
+        "deals": 146,
+        "missing_category": 9,
+        "missing_image": 0,
+        "missing_sizes": 24,
+        "missing_lengths": 0,
+        "length_eligible": 24,
+        "variant_offers": 232,
+        "deals_with_variants": 146,
+        "confirmed_size_deals": 122
+      },
+      {
+        "store": "UtahSkis",
+        "deals": 102,
+        "missing_category": 0,
+        "missing_image": 0,
+        "missing_sizes": 10,
+        "missing_lengths": 10,
+        "length_eligible": 56,
+        "variant_offers": 228,
+        "deals_with_variants": 102,
+        "confirmed_size_deals": 102
+      },
+      {
+        "store": "The Startingate",
+        "deals": 77,
+        "missing_category": 0,
+        "missing_image": 0,
+        "missing_sizes": 0,
+        "missing_lengths": 0,
+        "length_eligible": 31,
+        "variant_offers": 99,
+        "deals_with_variants": 77,
+        "confirmed_size_deals": 77
+      },
+      {
+        "store": "Freeride Boardshop",
+        "deals": 45,
+        "missing_category": 0,
+        "missing_image": 0,
+        "missing_sizes": 0,
+        "missing_lengths": 0,
+        "length_eligible": 15,
+        "variant_offers": 62,
+        "deals_with_variants": 45,
+        "confirmed_size_deals": 45
+      },
+      {
+        "store": "Boardom",
+        "deals": 146,
+        "missing_category": 0,
+        "missing_image": 3,
+        "missing_sizes": 1,
+        "missing_lengths": 2,
+        "length_eligible": 44,
+        "variant_offers": 223,
+        "deals_with_variants": 146,
+        "confirmed_size_deals": 145
+      }
+    ],
+    "missing_category": 47,
+    "missing_image": 22,
+    "missing_sizes": 5444,
+    "missing_lengths": 1140,
+    "length_eligible": 3583,
+    "variant_offers": 25980,
+    "deals_with_variants": 8065,
+    "confirmed_size_deals": 7836
+  }
+}
