@@ -17,9 +17,10 @@ from urllib.request import urlopen
 
 
 ROOT = Path(__file__).resolve().parents[1]
-STATIC_SRC = ROOT / "aggregator" / "aggregator" / "web" / "static"
+CATALOG = ROOT / "catalogs" / "fresh-powder"
+STATIC_SRC = CATALOG / "src" / "aggregator" / "web" / "static"
 STATIC_DEST = ROOT / "public" / "static"
-DB_DEST = ROOT / "aggregator" / "deals.db"
+DB_DEST = CATALOG / "data" / "deals.db"
 DEFAULT_DB_URL = (
     "https://github.com/lifan-builds/snow-deal-data/"
     "releases/download/latest-data/deals.db"
@@ -74,7 +75,8 @@ def download_deals_db() -> None:
             with tmp_path.open("wb") as out:
                 shutil.copyfileobj(response, out)
         # Migrate only the downloaded deal snapshot, never auth data.
-        sys.path.insert(0, str(ROOT / "aggregator"))
+        sys.path.insert(0, str(ROOT / "common"))
+        sys.path.insert(0, str(ROOT / "catalogs/fresh-powder/src"))
         import asyncio
         from aggregator.db import init_db, repair_deal_categories
         from aggregator.reviews import compute_and_store_deal_reviews

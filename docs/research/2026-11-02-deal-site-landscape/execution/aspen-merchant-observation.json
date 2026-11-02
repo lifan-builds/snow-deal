@@ -1,0 +1,267 @@
+{
+  "checked_at": "2026-11-02T20:12:28.824Z",
+  "url": "https://www.aspenskiandboard.com/products/dalbello-ds-asolo-115-factory-gw-ls-womens-ski-boot-2022",
+  "method": "merchant WebMCP and rendered page; no checkout",
+  "product": {
+    "id": "gid://shopify/Product/9975605887264",
+    "title": "Dalbello DS Asolo 115 Factory GW LS Womens Ski Boot",
+    "handle": "dalbello-ds-asolo-115-factory-gw-ls-womens-ski-boot-2022",
+    "url": "/products/dalbello-ds-asolo-115-factory-gw-ls-womens-ski-boot-2022",
+    "price_range": {
+      "min": {
+        "amount": 19894,
+        "currency": "USD",
+        "display": "$198.94"
+      },
+      "max": {
+        "amount": 19894,
+        "currency": "USD",
+        "display": "$198.94"
+      }
+    },
+    "image": "https://cdn.shopify.com/s/files/1/0965/4642/files/2022-dalbello-ds-asolo-factory-115-w-gw-ls-womens-ski-boots-23003685__46463.jpg?v=1750105708",
+    "available": true,
+    "variant_count": 2,
+    "options": [
+      {
+        "name": "Color",
+        "values": [
+          "Black/Black"
+        ]
+      },
+      {
+        "name": "Size",
+        "values": [
+          "23.5",
+          "24.5"
+        ]
+      },
+      {
+        "name": "MSRP",
+        "values": [
+          "Retail Price: $950.00"
+        ]
+      }
+    ],
+    "product_type": "Narrow Ski Boots",
+    "vendor": "Dalbello",
+    "description": {
+      "html": "<p>An extremely light, high-end Women's Dalbello DS Asolo Factory Ski Boot model with all new liners, specifically developed for women: slightly softer, impressive power transfer, and pre-fitted GripWalk soles. Only the best ARE good enough for the DS Asolo Factory Women's edition! Get fit into yours at Aspen Ski and Board in Columbus, OH today! Or call our experts at 614-848-6600 with questions!</p>"
+    },
+    "type": "Narrow Ski Boots",
+    "tags": [
+      "2022",
+      "Adult",
+      "Discounted",
+      "product-complete",
+      "Ski Boots",
+      "Womens"
+    ],
+    "variants": [
+      {
+        "id": "gid://shopify/ProductVariant/50304003703072",
+        "title": "Black/Black / 23.5 / Retail Price: $950.00",
+        "options": [
+          {
+            "name": "Color",
+            "value": "Black/Black"
+          },
+          {
+            "name": "Size",
+            "value": "23.5"
+          },
+          {
+            "name": "MSRP",
+            "value": "Retail Price: $950.00"
+          }
+        ],
+        "price": {
+          "amount": 19894,
+          "currency": "USD",
+          "display": "$198.94"
+        },
+        "list_price": {
+          "amount": 95000,
+          "currency": "USD",
+          "display": "$950.00"
+        },
+        "availability": {
+          "available": true
+        },
+        "sku": "616438795892"
+      }
+    ],
+    "available_options": [
+      [
+        {
+          "name": "Color",
+          "value": "Black/Black"
+        },
+        {
+          "name": "Size",
+          "value": "23.5"
+        },
+        {
+          "name": "MSRP",
+          "value": "Retail Price: $950.00"
+        }
+      ],
+      [
+        {
+          "name": "Color",
+          "value": "Black/Black"
+        },
+        {
+          "name": "Size",
+          "value": "24.5"
+        },
+        {
+          "name": "MSRP",
+          "value": "Retail Price: $950.00"
+        }
+      ]
+    ],
+    "available_options_count": 2,
+    "available_options_truncated": false,
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0965/4642/files/2022-dalbello-ds-asolo-factory-115-w-gw-ls-womens-ski-boots-23003685__46463.jpg?v=1750105708"
+    ]
+  },
+  "second_size": {
+    "id": "gid://shopify/Product/9975605887264",
+    "title": "Dalbello DS Asolo 115 Factory GW LS Womens Ski Boot",
+    "handle": "dalbello-ds-asolo-115-factory-gw-ls-womens-ski-boot-2022",
+    "url": "/products/dalbello-ds-asolo-115-factory-gw-ls-womens-ski-boot-2022",
+    "price_range": {
+      "min": {
+        "amount": 19894,
+        "currency": "USD",
+        "display": "$198.94"
+      },
+      "max": {
+        "amount": 19894,
+        "currency": "USD",
+        "display": "$198.94"
+      }
+    },
+    "image": "https://cdn.shopify.com/s/files/1/0965/4642/files/2022-dalbello-ds-asolo-factory-115-w-gw-ls-womens-ski-boots-23003685__46463.jpg?v=1750105708",
+    "available": true,
+    "variant_count": 2,
+    "options": [
+      {
+        "name": "Color",
+        "values": [
+          "Black/Black"
+        ]
+      },
+      {
+        "name": "Size",
+        "values": [
+          "23.5",
+          "24.5"
+        ]
+      },
+      {
+        "name": "MSRP",
+        "values": [
+          "Retail Price: $950.00"
+        ]
+      }
+    ],
+    "product_type": "Narrow Ski Boots",
+    "vendor": "Dalbello",
+    "description": {
+      "html": "<p>An extremely light, high-end Women's Dalbello DS Asolo Factory Ski Boot model with all new liners, specifically developed for women: slightly softer, impressive power transfer, and pre-fitted GripWalk soles. Only the best ARE good enough for the DS Asolo Factory Women's edition! Get fit into yours at Aspen Ski and Board in Columbus, OH today! Or call our experts at 614-848-6600 with questions!</p>"
+    },
+    "type": "Narrow Ski Boots",
+    "tags": [
+      "2022",
+      "Adult",
+      "Discounted",
+      "product-complete",
+      "Ski Boots",
+      "Womens"
+    ],
+    "variants": [
+      {
+        "id": "gid://shopify/ProductVariant/50304003735840",
+        "title": "Black/Black / 24.5 / Retail Price: $950.00",
+        "options": [
+          {
+            "name": "Color",
+            "value": "Black/Black"
+          },
+          {
+            "name": "Size",
+            "value": "24.5"
+          },
+          {
+            "name": "MSRP",
+            "value": "Retail Price: $950.00"
+          }
+        ],
+        "price": {
+          "amount": 19894,
+          "currency": "USD",
+          "display": "$198.94"
+        },
+        "list_price": {
+          "amount": 95000,
+          "currency": "USD",
+          "display": "$950.00"
+        },
+        "availability": {
+          "available": true
+        },
+        "sku": "616438795908"
+      }
+    ],
+    "available_options": [
+      [
+        {
+          "name": "Color",
+          "value": "Black/Black"
+        },
+        {
+          "name": "Size",
+          "value": "24.5"
+        },
+        {
+          "name": "MSRP",
+          "value": "Retail Price: $950.00"
+        }
+      ]
+    ],
+    "available_options_count": 1,
+    "available_options_truncated": false,
+    "available_options_filter": [
+      {
+        "name": "Color",
+        "value": "Black/Black"
+      },
+      {
+        "name": "Size",
+        "value": "24.5"
+      },
+      {
+        "name": "MSRP",
+        "value": "Retail Price: $950.00"
+      }
+    ],
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0965/4642/files/2022-dalbello-ds-asolo-factory-115-w-gw-ls-womens-ski-boots-23003685__46463.jpg?v=1750105708"
+    ]
+  },
+  "returns": {
+    "policies": [
+      {
+        "type": "refund",
+        "title": "Refund Policy",
+        "url": "https://checkout.shopify.com/9654642/policies/3995844.html?locale=en-US",
+        "body": "<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\"><strong>Returns are easy, no phone call or email needed.</strong></p>\n<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">You have 14 days from the day your order arrives to start a return. Just open your order from your account (or the link in your confirmation email) and request a return. <meta charset=\"utf-8\">You're responsible for return shipping, after you have requested your return, please mail the item back to us at: <meta charset=\"utf-8\">Aspen Ski and Board, 1170 E Powell Rd, Lewis Center, OH 43035</p>\n<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">To be eligible for a full refund, items must be:</p>\n<ul class=\"[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3\">\n<li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Unused and in original condition</li>\n<li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Returned with tags on and in the original packaging</li>\n<li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Packed inside a shipping box or poly mailer as you received it — please don't place the return label directly on the product's packaging</li>\n</ul>\n<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">Once we receive and inspect your return, we'll refund your original payment method!<br></p>"
+      }
+    ],
+    "articles": [],
+    "pages": []
+  }
+}

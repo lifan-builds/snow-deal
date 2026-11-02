@@ -16,3 +16,8 @@ cookies.json
 .codex/
 .mcp.json
 .playwright-mcp/
+
+# Local package verification artifacts
+build/
+dist/
+.local/verification/

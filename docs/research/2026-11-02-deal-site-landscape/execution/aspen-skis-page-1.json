@@ -1,0 +1,2652 @@
+{
+  "products": [
+    {
+      "id": 10570493559072,
+      "title": "Atomic Maverick 78 (with M 10 GW System Bindings) Mens Skis 2027",
+      "handle": "atomic-maverick-78-with-m-10-gw-system-bindings-mens-skis-2027",
+      "vendor": "Atomic",
+      "product_type": "System Skis",
+      "tags": [
+        "2027",
+        "Adult",
+        "All Mountain Skis",
+        "Full-Price",
+        "Mens",
+        "product-complete",
+        "Skis"
+      ],
+      "variants": [
+        {
+          "id": 52267419336992,
+          "option1": "Grey/Black",
+          "option2": "146cm",
+          "option3": "Retail: $550.00",
+          "sku": "887445550587",
+          "available": true,
+          "price": "329.95",
+          "compare_at_price": "550.00"
+        },
+        {
+          "id": 52267419369760,
+          "option1": "Grey/Black",
+          "option2": "154cm",
+          "option3": "Retail: $550.00",
+          "sku": "887445550600",
+          "available": true,
+          "price": "329.95",
+          "compare_at_price": "550.00"
+        },
+        {
+          "id": 52267419402528,
+          "option1": "Grey/Black",
+          "option2": "162cm",
+          "option3": "Retail: $550.00",
+          "sku": "887445550570",
+          "available": true,
+          "price": "329.95",
+          "compare_at_price": "550.00"
+        },
+        {
+          "id": 52267419435296,
+          "option1": "Grey/Black",
+          "option2": "170cm",
+          "option3": "Retail: $550.00",
+          "sku": "887445550617",
+          "available": true,
+          "price": "329.95",
+          "compare_at_price": "550.00"
+        },
+        {
+          "id": 52267419468064,
+          "option1": "Grey/Black",
+          "option2": "178cm",
+          "option3": "Retail: $550.00",
+          "sku": "887445550594",
+          "available": true,
+          "price": "329.95",
+          "compare_at_price": "550.00"
+        }
+      ],
+      "images": [
+        {
+          "id": 53855247237408,
+          "variant_ids": [
+            52267419336992,
+            52267419369760,
+            52267419402528,
+            52267419435296,
+            52267419468064
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/Maverick78.jpg?v=1790372915"
+        },
+        {
+          "id": 53855247204640,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/Maverick782.jpg?v=1790372915"
+        },
+        {
+          "id": 53855247171872,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/Maverick781.jpg?v=1790372915"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Grey/Black"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "146cm",
+            "154cm",
+            "162cm",
+            "170cm",
+            "178cm"
+          ]
+        },
+        {
+          "name": "MSRP",
+          "position": 3,
+          "values": [
+            "Retail: $550.00"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10570493722912,
+      "title": "Atomic Maven 78 (with M 10 GW System Bindings) Womens Skis 2027",
+      "handle": "atomic-maven-78-with-m-10-gw-system-bindings-womens-skis-2027",
+      "vendor": "Atomic",
+      "product_type": "System Skis",
+      "tags": [
+        "2027",
+        "Adult",
+        "All Mountain Skis",
+        "Full-Price",
+        "product-complete",
+        "Skis",
+        "Womens"
+      ],
+      "variants": [
+        {
+          "id": 52267419762976,
+          "option1": "Green",
+          "option2": "138cm",
+          "option3": "Retail: $550.00",
+          "sku": "887445550501",
+          "available": true,
+          "price": "329.95",
+          "compare_at_price": "550.00"
+        },
+        {
+          "id": 52267419795744,
+          "option1": "Green",
+          "option2": "146cm",
+          "option3": "Retail: $550.00",
+          "sku": "887445550518",
+          "available": true,
+          "price": "329.95",
+          "compare_at_price": "550.00"
+        },
+        {
+          "id": 52267419828512,
+          "option1": "Green",
+          "option2": "154cm",
+          "option3": "Retail: $550.00",
+          "sku": "887445550488",
+          "available": true,
+          "price": "329.95",
+          "compare_at_price": "550.00"
+        },
+        {
+          "id": 52267419861280,
+          "option1": "Green",
+          "option2": "162cm",
+          "option3": "Retail: $550.00",
+          "sku": "887445550495",
+          "available": true,
+          "price": "329.95",
+          "compare_at_price": "550.00"
+        }
+      ],
+      "images": [
+        {
+          "id": 53845941387552,
+          "variant_ids": [
+            52267419762976,
+            52267419795744,
+            52267419828512,
+            52267419861280
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/70405195.jpg?v=1790306496"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Green"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "138cm",
+            "146cm",
+            "154cm",
+            "162cm"
+          ]
+        },
+        {
+          "name": "MSRP",
+          "position": 3,
+          "values": [
+            "Retail: $550.00"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10304441778464,
+      "title": "Blizzard Black Pearl 88 Womens Skis 2027 | 614-848-6600",
+      "handle": "blizzard-black-pearl-88-womens-skis-2027",
+      "vendor": "Blizzard",
+      "product_type": "Flat Skis",
+      "tags": [
+        "2027",
+        "Adult",
+        "All Mountain Skis",
+        "Full-Price",
+        "product-complete",
+        "Skis",
+        "Womens"
+      ],
+      "variants": [
+        {
+          "id": 51569545576736,
+          "option1": "Blue",
+          "option2": "146cm",
+          "option3": "Retail: $900.00",
+          "sku": "194488141192",
+          "available": true,
+          "price": "749.99",
+          "compare_at_price": "900.00"
+        },
+        {
+          "id": 51569545609504,
+          "option1": "Blue",
+          "option2": "152cm",
+          "option3": "Retail: $900.00",
+          "sku": "194488141208",
+          "available": true,
+          "price": "749.99",
+          "compare_at_price": "900.00"
+        },
+        {
+          "id": 51569545642272,
+          "option1": "Blue",
+          "option2": "158cm",
+          "option3": "Retail: $900.00",
+          "sku": "194488141215",
+          "available": true,
+          "price": "749.99",
+          "compare_at_price": "900.00"
+        },
+        {
+          "id": 51569545675040,
+          "option1": "Blue",
+          "option2": "164cm",
+          "option3": "Retail: $900.00",
+          "sku": "194488141222",
+          "available": true,
+          "price": "749.99",
+          "compare_at_price": "900.00"
+        },
+        {
+          "id": 51569545707808,
+          "option1": "Blue",
+          "option2": "170cm",
+          "option3": "Retail: $900.00",
+          "sku": "194488141239",
+          "available": true,
+          "price": "749.99",
+          "compare_at_price": "900.00"
+        },
+        {
+          "id": 51569545740576,
+          "option1": "Blue",
+          "option2": "176cm",
+          "option3": "Retail: $900.00",
+          "sku": "194488141246",
+          "available": false,
+          "price": "749.99",
+          "compare_at_price": "900.00"
+        }
+      ],
+      "images": [
+        {
+          "id": 52161222181152,
+          "variant_ids": [
+            51569545576736,
+            51569545609504,
+            51569545642272,
+            51569545675040,
+            51569545707808,
+            51569545740576
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/BlackPearl88.jpg?v=1778017556"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Blue"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "146cm",
+            "152cm",
+            "158cm",
+            "164cm",
+            "170cm",
+            "176cm"
+          ]
+        },
+        {
+          "name": "MSRP",
+          "position": 3,
+          "values": [
+            "Retail: $900.00"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10321169809696,
+      "title": "Fischer Lite 72 (RS 9 SLR GW System Binding) Adult Skis 2027",
+      "handle": "fischer-lite-72-rs-9-slr-gw-system-binding-adult-skis-2027",
+      "vendor": "Fischer",
+      "product_type": "System Skis",
+      "tags": [
+        "2027",
+        "Adult",
+        "Carving Skis",
+        "Full-Price",
+        "Mens",
+        "product-complete",
+        "Skis",
+        "Womens"
+      ],
+      "variants": [
+        {
+          "id": 51678211244320,
+          "option1": "140cm",
+          "option2": "Retail: $449.95",
+          "option3": null,
+          "sku": "9002973175076",
+          "available": true,
+          "price": "359.95",
+          "compare_at_price": "449.95"
+        },
+        {
+          "id": 51678211277088,
+          "option1": "145cm",
+          "option2": "Retail: $449.95",
+          "option3": null,
+          "sku": "9002973175083",
+          "available": true,
+          "price": "359.95",
+          "compare_at_price": "449.95"
+        },
+        {
+          "id": 51678211309856,
+          "option1": "150cm",
+          "option2": "Retail: $449.95",
+          "option3": null,
+          "sku": "9002973175090",
+          "available": true,
+          "price": "359.95",
+          "compare_at_price": "449.95"
+        },
+        {
+          "id": 51678211342624,
+          "option1": "155cm",
+          "option2": "Retail: $449.95",
+          "option3": null,
+          "sku": "9002973175106",
+          "available": true,
+          "price": "359.95",
+          "compare_at_price": "449.95"
+        },
+        {
+          "id": 51678211375392,
+          "option1": "160cm",
+          "option2": "Retail: $449.95",
+          "option3": null,
+          "sku": "9002973175113",
+          "available": true,
+          "price": "359.95",
+          "compare_at_price": "449.95"
+        }
+      ],
+      "images": [
+        {
+          "id": 52467840155936,
+          "variant_ids": [
+            51678211244320,
+            51678211277088,
+            51678211309856,
+            51678211342624,
+            51678211375392
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/fischer-lite-72--rs-9-slra15225--t51125.webp?v=1781055730"
+        }
+      ],
+      "options": [
+        {
+          "name": "Size",
+          "position": 1,
+          "values": [
+            "140cm",
+            "145cm",
+            "150cm",
+            "155cm",
+            "160cm"
+          ]
+        },
+        {
+          "name": "MSRP",
+          "position": 2,
+          "values": [
+            "Retail: $449.95"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10282459332896,
+      "title": "Elan Ripstick 88 W Womens Skis 2027 | 614-848-6600",
+      "handle": "elan-ripstick-88-w-womens-skis-2027",
+      "vendor": "Elan",
+      "product_type": "Flat Skis",
+      "tags": [
+        "2027",
+        "Adult",
+        "All Mountain Skis",
+        "Full-Price",
+        "product-complete",
+        "Skis",
+        "Womens"
+      ],
+      "variants": [
+        {
+          "id": 51494515540256,
+          "option1": "Multicolor",
+          "option2": "147cm",
+          "option3": "Retail: $699.99",
+          "sku": "194050166721",
+          "available": true,
+          "price": "699.99",
+          "compare_at_price": "699.99"
+        },
+        {
+          "id": 51494515573024,
+          "option1": "Multicolor",
+          "option2": "154cm",
+          "option3": "Retail: $699.99",
+          "sku": "194050166738",
+          "available": true,
+          "price": "699.99",
+          "compare_at_price": "699.99"
+        },
+        {
+          "id": 51494515605792,
+          "option1": "Multicolor",
+          "option2": "161cm",
+          "option3": "Retail: $699.99",
+          "sku": "194050166745",
+          "available": true,
+          "price": "699.99",
+          "compare_at_price": "699.99"
+        },
+        {
+          "id": 51494515638560,
+          "option1": "Multicolor",
+          "option2": "168cm",
+          "option3": "Retail: $699.99",
+          "sku": "194050166752",
+          "available": true,
+          "price": "699.99",
+          "compare_at_price": "699.99"
+        }
+      ],
+      "images": [
+        {
+          "id": 52107474338080,
+          "variant_ids": [
+            51494515540256,
+            51494515573024,
+            51494515605792,
+            51494515638560
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/Ripstick88W.jpg?v=1777490338"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Multicolor"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "147cm",
+            "154cm",
+            "161cm",
+            "168cm"
+          ]
+        },
+        {
+          "name": "MSRP",
+          "position": 3,
+          "values": [
+            "Retail: $699.99"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10282459463968,
+      "title": "Elan Ripstick 88 Black Edition Skis 2027 | 614-848-6600",
+      "handle": "elan-ripstick-88-black-edition-mens-skis-2027",
+      "vendor": "Elan",
+      "product_type": "Flat Skis",
+      "tags": [
+        "2027",
+        "Adult",
+        "All Mountain Skis",
+        "Full-Price",
+        "Mens",
+        "product-complete",
+        "Skis"
+      ],
+      "variants": [
+        {
+          "id": 51494516097312,
+          "option1": "Multicolor",
+          "option2": "154cm",
+          "option3": "Retail: $899.99",
+          "sku": "194050168312",
+          "available": true,
+          "price": "899.99",
+          "compare_at_price": "899.99"
+        },
+        {
+          "id": 51494516130080,
+          "option1": "Multicolor",
+          "option2": "161cm",
+          "option3": "Retail: $899.99",
+          "sku": "194050168329",
+          "available": true,
+          "price": "899.99",
+          "compare_at_price": "899.99"
+        },
+        {
+          "id": 51494516162848,
+          "option1": "Multicolor",
+          "option2": "168cm",
+          "option3": "Retail: $899.99",
+          "sku": "194050168336",
+          "available": false,
+          "price": "899.99",
+          "compare_at_price": "899.99"
+        },
+        {
+          "id": 51494516195616,
+          "option1": "Multicolor",
+          "option2": "175cm",
+          "option3": "Retail: $899.99",
+          "sku": "194050168343",
+          "available": true,
+          "price": "899.99",
+          "compare_at_price": "899.99"
+        },
+        {
+          "id": 51494516228384,
+          "option1": "Multicolor",
+          "option2": "182cm",
+          "option3": "Retail: $899.99",
+          "sku": "194050168350",
+          "available": true,
+          "price": "899.99",
+          "compare_at_price": "899.99"
+        },
+        {
+          "id": 51494516261152,
+          "option1": "Multicolor",
+          "option2": "189cm",
+          "option3": "Retail: $899.99",
+          "sku": "194050168367",
+          "available": true,
+          "price": "899.99",
+          "compare_at_price": "899.99"
+        }
+      ],
+      "images": [
+        {
+          "id": 52107486298400,
+          "variant_ids": [
+            51494516097312,
+            51494516130080,
+            51494516162848,
+            51494516195616,
+            51494516228384,
+            51494516261152
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/Ripstick88BlackEdition.jpg?v=1777490572"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Multicolor"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "154cm",
+            "161cm",
+            "168cm",
+            "175cm",
+            "182cm",
+            "189cm"
+          ]
+        },
+        {
+          "name": "MSRP",
+          "position": 3,
+          "values": [
+            "Retail: $899.99"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10282459365664,
+      "title": "Elan Ripstick 84 W Womens Skis 2027 | 614-848-6600",
+      "handle": "elan-ripstick-84-w-womens-skis-2027",
+      "vendor": "Elan",
+      "product_type": "Flat Skis",
+      "tags": [
+        "2027",
+        "Adult",
+        "All Mountain Skis",
+        "Full-Price",
+        "product-complete",
+        "Skis",
+        "Womens"
+      ],
+      "variants": [
+        {
+          "id": 51494515704096,
+          "option1": "Multicolor",
+          "option2": "147cm",
+          "option3": "Retail: $549.99",
+          "sku": "194050174191",
+          "available": true,
+          "price": "549.99",
+          "compare_at_price": "549.99"
+        },
+        {
+          "id": 51494515736864,
+          "option1": "Multicolor",
+          "option2": "154cm",
+          "option3": "Retail: $549.99",
+          "sku": "194050174207",
+          "available": true,
+          "price": "549.99",
+          "compare_at_price": "549.99"
+        },
+        {
+          "id": 51494515769632,
+          "option1": "Multicolor",
+          "option2": "161cm",
+          "option3": "Retail: $549.99",
+          "sku": "194050174214",
+          "available": true,
+          "price": "549.99",
+          "compare_at_price": "549.99"
+        },
+        {
+          "id": 51494515802400,
+          "option1": "Multicolor",
+          "option2": "168cm",
+          "option3": "Retail: $549.99",
+          "sku": "194050174221",
+          "available": true,
+          "price": "549.99",
+          "compare_at_price": "549.99"
+        }
+      ],
+      "images": [
+        {
+          "id": 52107477090592,
+          "variant_ids": [
+            51494515704096,
+            51494515736864,
+            51494515769632,
+            51494515802400
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/Ripstick84W.jpg?v=1777490400"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Multicolor"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "147cm",
+            "154cm",
+            "161cm",
+            "168cm"
+          ]
+        },
+        {
+          "name": "MSRP",
+          "position": 3,
+          "values": [
+            "Retail: $549.99"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9976775835936,
+      "title": "Line Chronic 94 Adult Skis 2026",
+      "handle": "line-chronic-94-adult-skis-2026",
+      "vendor": "Line Skis",
+      "product_type": "Flat Skis",
+      "tags": [
+        "2026",
+        "Adult",
+        "Discounted",
+        "Mens",
+        "product-complete",
+        "Skis",
+        "Twin Tip/Freeride Skis",
+        "Womens"
+      ],
+      "variants": [
+        {
+          "id": 50310757220640,
+          "option1": "Multicolor",
+          "option2": "164cm",
+          "option3": "Retail: $599.95",
+          "sku": "196222945769",
+          "available": false,
+          "price": "359.97",
+          "compare_at_price": "599.95"
+        },
+        {
+          "id": 50310757253408,
+          "option1": "Multicolor",
+          "option2": "171cm",
+          "option3": "Retail: $599.95",
+          "sku": "196222945752",
+          "available": true,
+          "price": "359.97",
+          "compare_at_price": "599.95"
+        },
+        {
+          "id": 50310757286176,
+          "option1": "Multicolor",
+          "option2": "178cm",
+          "option3": "Retail: $599.95",
+          "sku": "196222945745",
+          "available": true,
+          "price": "359.97",
+          "compare_at_price": "599.95"
+        },
+        {
+          "id": 51112449081632,
+          "option1": "Multicolor",
+          "option2": "185cm",
+          "option3": "Retail: $599.95",
+          "sku": "196222945738",
+          "available": false,
+          "price": "359.97",
+          "compare_at_price": "599.95"
+        }
+      ],
+      "images": [
+        {
+          "id": 49796707352864,
+          "variant_ids": [
+            50310757220640,
+            50310757253408,
+            50310757286176,
+            51112449081632
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/LN2509301398Large.jpg?v=1750706966"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Multicolor"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "164cm",
+            "171cm",
+            "178cm",
+            "185cm"
+          ]
+        },
+        {
+          "name": "MSRP",
+          "position": 3,
+          "values": [
+            "Retail: $599.95"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10282459201824,
+      "title": "Elan Ripstick 88 Mens Skis 2027 | 614-848-6600",
+      "handle": "elan-ripstick-88-mens-skis-2027",
+      "vendor": "Elan",
+      "product_type": "Flat Skis",
+      "tags": [
+        "2027",
+        "Adult",
+        "All Mountain Skis",
+        "Full-Price",
+        "Mens",
+        "product-complete",
+        "Skis"
+      ],
+      "variants": [
+        {
+          "id": 51494515048736,
+          "option1": "Multicolor",
+          "option2": "161cm",
+          "option3": "Retail: $749.99",
+          "sku": "194050166578",
+          "available": true,
+          "price": "749.99",
+          "compare_at_price": "749.99"
+        },
+        {
+          "id": 51494515081504,
+          "option1": "Multicolor",
+          "option2": "168cm",
+          "option3": "Retail: $749.99",
+          "sku": "194050166585",
+          "available": true,
+          "price": "749.99",
+          "compare_at_price": "749.99"
+        },
+        {
+          "id": 51494515114272,
+          "option1": "Multicolor",
+          "option2": "175cm",
+          "option3": "Retail: $749.99",
+          "sku": "194050166592",
+          "available": true,
+          "price": "749.99",
+          "compare_at_price": "749.99"
+        },
+        {
+          "id": 51494515147040,
+          "option1": "Multicolor",
+          "option2": "182cm",
+          "option3": "Retail: $749.99",
+          "sku": "194050166608",
+          "available": true,
+          "price": "749.99",
+          "compare_at_price": "749.99"
+        },
+        {
+          "id": 67979510808864,
+          "option1": "Multicolor",
+          "option2": "189cm",
+          "option3": "Retail: $749.99",
+          "sku": "194050166615",
+          "available": false,
+          "price": "749.99",
+          "compare_at_price": "749.99"
+        }
+      ],
+      "images": [
+        {
+          "id": 52107463786784,
+          "variant_ids": [
+            51494515048736,
+            51494515081504,
+            51494515114272,
+            51494515147040,
+            67979510808864
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/Ripstick88.jpg?v=1777490144"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Multicolor"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "161cm",
+            "168cm",
+            "175cm",
+            "182cm",
+            "189cm"
+          ]
+        },
+        {
+          "name": "MSRP",
+          "position": 3,
+          "values": [
+            "Retail: $749.99"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10533854478624,
+      "title": "Blizzard Pearl JR (Marker JR 4.5 System Binding) Girls Skis 2027",
+      "handle": "blizzard-pearl-jr-marker-45-system-binding-girls-skis-2027",
+      "vendor": "Blizzard",
+      "product_type": "System Skis",
+      "tags": [
+        "2027",
+        "Discounted",
+        "Girls",
+        "Kids",
+        "product-complete",
+        "Skis"
+      ],
+      "variants": [
+        {
+          "id": 52157273211168,
+          "option1": "Blue",
+          "option2": "70cm",
+          "option3": "Retail: $330.00",
+          "sku": "194488143172",
+          "available": true,
+          "price": "299.95",
+          "compare_at_price": "330.00"
+        },
+        {
+          "id": 52157273243936,
+          "option1": "Blue",
+          "option2": "80cm",
+          "option3": "Retail: $330.00",
+          "sku": "194488143189",
+          "available": true,
+          "price": "299.95",
+          "compare_at_price": "330.00"
+        },
+        {
+          "id": 52157273276704,
+          "option1": "Blue",
+          "option2": "90cm",
+          "option3": "Retail: $330.00",
+          "sku": "194488143196",
+          "available": true,
+          "price": "299.95",
+          "compare_at_price": "330.00"
+        },
+        {
+          "id": 52157273309472,
+          "option1": "Blue",
+          "option2": "100cm",
+          "option3": "Retail: $330.00",
+          "sku": "194488143202",
+          "available": true,
+          "price": "299.95",
+          "compare_at_price": "330.00"
+        },
+        {
+          "id": 52157273342240,
+          "option1": "Blue",
+          "option2": "110cm",
+          "option3": "Retail: $330.00",
+          "sku": "194488143219",
+          "available": true,
+          "price": "299.95",
+          "compare_at_price": "330.00"
+        },
+        {
+          "id": 52157273375008,
+          "option1": "Blue",
+          "option2": "120cm",
+          "option3": "Retail: $330.00",
+          "sku": "194488143226",
+          "available": true,
+          "price": "299.95",
+          "compare_at_price": "330.00"
+        },
+        {
+          "id": 52157273407776,
+          "option1": "Blue",
+          "option2": "130cm",
+          "option3": "Retail: $330.00",
+          "sku": "194488143233",
+          "available": true,
+          "price": "299.95",
+          "compare_at_price": "330.00"
+        },
+        {
+          "id": 52157273440544,
+          "option1": "Blue",
+          "option2": "140cm",
+          "option3": "Retail: $330.00",
+          "sku": "194488143240",
+          "available": true,
+          "price": "299.95",
+          "compare_at_price": "330.00"
+        }
+      ],
+      "images": [
+        {
+          "id": 53191030866208,
+          "variant_ids": [
+            52157273211168,
+            52157273243936,
+            52157273276704,
+            52157273309472,
+            52157273342240,
+            52157273375008,
+            52157273407776,
+            52157273440544
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/PearlJr_4.5.jpg?v=1786226704"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Blue"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "70cm",
+            "80cm",
+            "90cm",
+            "100cm",
+            "110cm",
+            "120cm",
+            "130cm",
+            "140cm"
+          ]
+        },
+        {
+          "name": "MSRP",
+          "position": 3,
+          "values": [
+            "Retail: $330.00"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9921656783136,
+      "title": "Atomic Redster J2 (C5 GW System Binding) Kids Skis 2027",
+      "handle": "atomic-redster-j2-c5-gw-system-binding-kids-skis-2027",
+      "vendor": "Atomic",
+      "product_type": "System Skis",
+      "tags": [
+        "2027",
+        "Boys",
+        "Carving Skis",
+        "Full-Price",
+        "Girls",
+        "Kids",
+        "product-complete",
+        "Race",
+        "Skis"
+      ],
+      "variants": [
+        {
+          "id": 51349466775840,
+          "option1": "Red Tension/Black",
+          "option2": "70cm",
+          "option3": "Retail: $360.00",
+          "sku": "887445458173",
+          "available": true,
+          "price": "299.95",
+          "compare_at_price": "360.00"
+        },
+        {
+          "id": 51371158110496,
+          "option1": "Red Tension/Black",
+          "option2": "80cm",
+          "option3": "Retail: $360.00",
+          "sku": "887445458166",
+          "available": true,
+          "price": "299.95",
+          "compare_at_price": "360.00"
+        },
+        {
+          "id": 51344185622816,
+          "option1": "Red Tension/Black",
+          "option2": "90cm",
+          "option3": "Retail: $360.00",
+          "sku": "887445458159",
+          "available": true,
+          "price": "299.95",
+          "compare_at_price": "360.00"
+        },
+        {
+          "id": 50144574046496,
+          "option1": "Red Tension/Black",
+          "option2": "100cm",
+          "option3": "Retail: $360.00",
+          "sku": "887445458128",
+          "available": true,
+          "price": "299.95",
+          "compare_at_price": "360.00"
+        },
+        {
+          "id": 50144574079264,
+          "option1": "Red Tension/Black",
+          "option2": "110cm",
+          "option3": "Retail: $360.00",
+          "sku": "887445458104",
+          "available": false,
+          "price": "299.95",
+          "compare_at_price": "360.00"
+        },
+        {
+          "id": 50144574112032,
+          "option1": "Red Tension/Black",
+          "option2": "120cm",
+          "option3": "Retail: $360.00",
+          "sku": "887445458098",
+          "available": true,
+          "price": "299.95",
+          "compare_at_price": "360.00"
+        },
+        {
+          "id": 51039322308896,
+          "option1": "Red Tension/Black",
+          "option2": "130cm",
+          "option3": "Retail: $360.00",
+          "sku": "887445454670",
+          "available": false,
+          "price": "299.95",
+          "compare_at_price": "360.00"
+        },
+        {
+          "id": 51371159748896,
+          "option1": "Red Tension/Black",
+          "option2": "140cm",
+          "option3": "Retail: $360.00",
+          "sku": "887445458036",
+          "available": true,
+          "price": "299.95",
+          "compare_at_price": "360.00"
+        }
+      ],
+      "images": [
+        {
+          "id": 49294424736032,
+          "variant_ids": [
+            50144574046496,
+            50144574079264,
+            50144574112032,
+            51039322308896,
+            51344185622816,
+            51349466775840,
+            51371158110496,
+            51371159748896
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/AASS03644_2_GHO_REDSTER_J2_100_120_C5_GW.png.high-res.jpg?v=1755030102"
+        },
+        {
+          "id": 49294424932640,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/AASS03644_5_GHO_REDSTER_J2_100_120_C5_GW.png.high-res.jpg?v=1755030102"
+        },
+        {
+          "id": 49294424834336,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/AASS03644_0_GHO_REDSTER_J2_100_120_C5_GW.png.high-res.jpg?v=1755030102"
+        },
+        {
+          "id": 49294424703264,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/AASS03644_3_GHO_REDSTER_J2_100_120_C5_GW.png.high-res.jpg?v=1755030102"
+        },
+        {
+          "id": 49294424768800,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/AASS03644_1_GHO_REDSTER_J2_100_120_C5_GW.png.high-res.jpg?v=1755030102"
+        },
+        {
+          "id": 49294424965408,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/AASS03644_4_GHO_REDSTER_J2_100_120_C5_GW.png.high-res.jpg?v=1755030103"
+        },
+        {
+          "id": 49294424899872,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/AASS03644_7_GHO_REDSTER_J2_100_120_C5_GW.png.high-res.jpg?v=1755030102"
+        },
+        {
+          "id": 49294424867104,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/AASS03644_6_GHO_REDSTER_J2_100_120_C5_GW.png.high-res.jpg?v=1755030102"
+        },
+        {
+          "id": 49294424801568,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/AASS03644_8_GHO_REDSTER_J2_100_120_C5_GW.png.high-res.jpg?v=1755030102"
+        },
+        {
+          "id": 49294424998176,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/AASS03644_9_GHO_REDSTER_J2_100_120_C5_GW.png.high-res.jpg?v=1755030102"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Red Tension/Black"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "70cm",
+            "80cm",
+            "90cm",
+            "100cm",
+            "110cm",
+            "120cm",
+            "130cm",
+            "140cm"
+          ]
+        },
+        {
+          "name": "MSRP",
+          "position": 3,
+          "values": [
+            "Retail: $360.00"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10282459169056,
+      "title": "Elan Ripstick 96 Mens Skis 2027 | 614-848-6600",
+      "handle": "elan-ripstick-96-mens-skis-2027",
+      "vendor": "Elan",
+      "product_type": "Flat Skis",
+      "tags": [
+        "2027",
+        "Adult",
+        "All Mountain Skis",
+        "Full-Price",
+        "Mens",
+        "product-complete",
+        "Skis"
+      ],
+      "variants": [
+        {
+          "id": 51494514917664,
+          "option1": "Multicolor",
+          "option2": "161cm",
+          "option3": "Retail: $799.99",
+          "sku": "194050168138",
+          "available": true,
+          "price": "799.99",
+          "compare_at_price": "799.99"
+        },
+        {
+          "id": 51494514950432,
+          "option1": "Multicolor",
+          "option2": "168cm",
+          "option3": "Retail: $799.99",
+          "sku": "194050168145",
+          "available": true,
+          "price": "799.99",
+          "compare_at_price": "799.99"
+        },
+        {
+          "id": 51494514983200,
+          "option1": "Multicolor",
+          "option2": "175cm",
+          "option3": "Retail: $799.99",
+          "sku": "194050168152",
+          "available": true,
+          "price": "799.99",
+          "compare_at_price": "799.99"
+        },
+        {
+          "id": 51494515015968,
+          "option1": "Multicolor",
+          "option2": "182cm",
+          "option3": "Retail: $799.99",
+          "sku": "194050168169",
+          "available": true,
+          "price": "799.99",
+          "compare_at_price": "799.99"
+        },
+        {
+          "id": 67979510776096,
+          "option1": "Multicolor",
+          "option2": "189cm",
+          "option3": "Retail: $799.99",
+          "sku": "194050168176",
+          "available": false,
+          "price": "799.99",
+          "compare_at_price": "799.99"
+        }
+      ],
+      "images": [
+        {
+          "id": 52107460018464,
+          "variant_ids": [
+            51494514917664,
+            51494514950432,
+            51494514983200,
+            51494515015968,
+            67979510776096
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/Ripstick96.jpg?v=1777490088"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Multicolor"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "161cm",
+            "168cm",
+            "175cm",
+            "182cm",
+            "189cm"
+          ]
+        },
+        {
+          "name": "MSRP",
+          "position": 3,
+          "values": [
+            "Retail: $799.99"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10316461736224,
+      "title": "Atomic Bent 100 Adult Skis 2027",
+      "handle": "atomic-bent-100-adult-skis-2027",
+      "vendor": "Atomic",
+      "product_type": "Flat Skis",
+      "tags": [
+        "2027",
+        "Adult",
+        "All Mountain Skis",
+        "Full-Price",
+        "product-complete",
+        "Skis",
+        "Twin Tip/Freeride Skis"
+      ],
+      "variants": [
+        {
+          "id": 51667073564960,
+          "option1": "Multicolor",
+          "option2": "165cm",
+          "option3": "Retail: $850.00",
+          "sku": "887445516354",
+          "available": true,
+          "price": "699.95",
+          "compare_at_price": "850.00"
+        },
+        {
+          "id": 51667073597728,
+          "option1": "Multicolor",
+          "option2": "172cm",
+          "option3": "Retail: $850.00",
+          "sku": "887445516330",
+          "available": true,
+          "price": "699.95",
+          "compare_at_price": "850.00"
+        },
+        {
+          "id": 51667073630496,
+          "option1": "Multicolor",
+          "option2": "179cm",
+          "option3": "Retail: $850.00",
+          "sku": "887445516361",
+          "available": true,
+          "price": "699.95",
+          "compare_at_price": "850.00"
+        },
+        {
+          "id": 51667073663264,
+          "option1": "Multicolor",
+          "option2": "186cm",
+          "option3": "Retail: $850.00",
+          "sku": "887445516347",
+          "available": true,
+          "price": "699.95",
+          "compare_at_price": "850.00"
+        }
+      ],
+      "images": [
+        {
+          "id": 52265643147552,
+          "variant_ids": [
+            51667073564960,
+            51667073597728,
+            51667073630496,
+            51667073663264
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/Bent1002.jpg?v=1779123363"
+        },
+        {
+          "id": 52265643245856,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/Bent1005.jpg?v=1779123363"
+        },
+        {
+          "id": 52265643278624,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/Bent1006.jpg?v=1779123363"
+        },
+        {
+          "id": 52265643311392,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/Bent1007.jpg?v=1779123363"
+        },
+        {
+          "id": 52265643344160,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/Bent1008.jpg?v=1779123363"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Multicolor"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "165cm",
+            "172cm",
+            "179cm",
+            "186cm"
+          ]
+        },
+        {
+          "name": "MSRP",
+          "position": 3,
+          "values": [
+            "Retail: $850.00"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9976631722272,
+      "title": "Elan Maxx (EL 4.5 System Binding) Kids Skis 2027",
+      "handle": "elan-maxx-el-4-5-system-binding-kids-skis-2027",
+      "vendor": "Elan",
+      "product_type": "System Skis",
+      "tags": [
+        "2027",
+        "Boys",
+        "Carving Skis",
+        "Full-Price",
+        "Girls",
+        "Kids",
+        "product-complete",
+        "Skis"
+      ],
+      "variants": [
+        {
+          "id": 50310040224032,
+          "option1": "Blue",
+          "option2": "70cm",
+          "option3": "Retail: $249.99",
+          "sku": "194050134522",
+          "available": true,
+          "price": "249.99",
+          "compare_at_price": "249.99"
+        },
+        {
+          "id": 50310040256800,
+          "option1": "Blue",
+          "option2": "80cm",
+          "option3": "Retail: $249.99",
+          "sku": "194050134539",
+          "available": true,
+          "price": "249.99",
+          "compare_at_price": "249.99"
+        },
+        {
+          "id": 50310040289568,
+          "option1": "Blue",
+          "option2": "90cm",
+          "option3": "Retail: $249.99",
+          "sku": "194050134546",
+          "available": true,
+          "price": "249.99",
+          "compare_at_price": "249.99"
+        },
+        {
+          "id": 50310040322336,
+          "option1": "Blue",
+          "option2": "100cm",
+          "option3": "Retail: $249.99",
+          "sku": "194050134553",
+          "available": true,
+          "price": "249.99",
+          "compare_at_price": "249.99"
+        },
+        {
+          "id": 50310040355104,
+          "option1": "Blue",
+          "option2": "110cm",
+          "option3": "Retail: $249.99",
+          "sku": "194050134560",
+          "available": true,
+          "price": "249.99",
+          "compare_at_price": "249.99"
+        },
+        {
+          "id": 50310040387872,
+          "option1": "Blue",
+          "option2": "120cm",
+          "option3": "Retail: $249.99",
+          "sku": "194050134577",
+          "available": true,
+          "price": "249.99",
+          "compare_at_price": "249.99"
+        },
+        {
+          "id": 50310040420640,
+          "option1": "Blue",
+          "option2": "130cm",
+          "option3": "Retail: $249.99",
+          "sku": "194050134614",
+          "available": true,
+          "price": "249.99",
+          "compare_at_price": "249.99"
+        }
+      ],
+      "images": [
+        {
+          "id": 49754526843168,
+          "variant_ids": [
+            50310040224032,
+            50310040256800,
+            50310040289568,
+            50310040322336,
+            50310040355104,
+            50310040387872,
+            50310040420640
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/MaxxBlueJREL4.5GW_AFDMAH25.jpg?v=1750185270"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Blue"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "70cm",
+            "80cm",
+            "90cm",
+            "100cm",
+            "110cm",
+            "120cm",
+            "130cm"
+          ]
+        },
+        {
+          "name": "MSRP",
+          "position": 3,
+          "values": [
+            "Retail: $249.99"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10282459267360,
+      "title": "Elan Ripstick 84 (with ShiftX EL 10.0 GW System Bindings) Mens Skis 2027",
+      "handle": "elan-ripstick-r4-with-shiftx-el-100-gw-system-bindings-mens-skis-2027",
+      "vendor": "Elan",
+      "product_type": "System Skis",
+      "tags": [
+        "2027",
+        "Adult",
+        "All Mountain Skis",
+        "Full-Price",
+        "Mens",
+        "product-complete",
+        "Skis"
+      ],
+      "variants": [
+        {
+          "id": 51494515245344,
+          "option1": "Multicolor",
+          "option2": "154cm",
+          "option3": "Retail: $699.99",
+          "sku": "194050174146",
+          "available": false,
+          "price": "699.99",
+          "compare_at_price": "699.99"
+        },
+        {
+          "id": 51494515278112,
+          "option1": "Multicolor",
+          "option2": "161cm",
+          "option3": "Retail: $699.99",
+          "sku": "194050174153",
+          "available": true,
+          "price": "699.99",
+          "compare_at_price": "699.99"
+        },
+        {
+          "id": 51494515310880,
+          "option1": "Multicolor",
+          "option2": "168cm",
+          "option3": "Retail: $699.99",
+          "sku": "194050174160",
+          "available": true,
+          "price": "699.99",
+          "compare_at_price": "699.99"
+        },
+        {
+          "id": 51494515343648,
+          "option1": "Multicolor",
+          "option2": "175cm",
+          "option3": "Retail: $699.99",
+          "sku": "194050174177",
+          "available": true,
+          "price": "699.99",
+          "compare_at_price": "699.99"
+        },
+        {
+          "id": 51494515376416,
+          "option1": "Multicolor",
+          "option2": "182cm",
+          "option3": "Retail: $699.99",
+          "sku": "194050174184",
+          "available": false,
+          "price": "699.99",
+          "compare_at_price": "699.99"
+        }
+      ],
+      "images": [
+        {
+          "id": 52107722490144,
+          "variant_ids": [
+            51494515245344,
+            51494515278112,
+            51494515310880,
+            51494515343648,
+            51494515376416
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/RipstickR4EL10GWShiftcopy.jpg?v=1777494030"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Multicolor"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "154cm",
+            "161cm",
+            "168cm",
+            "175cm",
+            "182cm"
+          ]
+        },
+        {
+          "name": "MSRP",
+          "position": 3,
+          "values": [
+            "Retail: $699.99"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9909546320160,
+      "title": "K2 Omen 85 Mens Skis 2027",
+      "handle": "k2-omen-85-mens-skis-2027",
+      "vendor": "K2 Skis",
+      "product_type": "Flat Skis",
+      "tags": [
+        "2027",
+        "Adult",
+        "Full-Price",
+        "Mens",
+        "product-complete",
+        "Skis",
+        "Twin Tip/Freeride Skis"
+      ],
+      "variants": [
+        {
+          "id": 50125082296608,
+          "option1": "Multicolor",
+          "option2": "149cm",
+          "option3": "Retail: $600.00",
+          "sku": "196222944656",
+          "available": true,
+          "price": "449.95",
+          "compare_at_price": "600.00"
+        },
+        {
+          "id": 50125082362144,
+          "option1": "Multicolor",
+          "option2": "169cm",
+          "option3": "Retail: $600.00",
+          "sku": "196222944632",
+          "available": true,
+          "price": "449.95",
+          "compare_at_price": "600.00"
+        },
+        {
+          "id": 50125082329376,
+          "option1": "Multicolor",
+          "option2": "159cm",
+          "option3": "Retail: $600.00",
+          "sku": "196222944649",
+          "available": true,
+          "price": "449.95",
+          "compare_at_price": "600.00"
+        }
+      ],
+      "images": [
+        {
+          "id": 49263078670624,
+          "variant_ids": [
+            50125082296608,
+            50125082329376,
+            50125082362144
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/KS2509571398Large.jpg?v=1745609085"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Multicolor"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "149cm",
+            "169cm",
+            "159cm"
+          ]
+        },
+        {
+          "name": "MSRP",
+          "position": 3,
+          "values": [
+            "Retail: $600.00"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10282459431200,
+      "title": "Elan Ripstick 96 Black Edition Mens Skis 2027 | 614-848-6600",
+      "handle": "elan-ripstick-96-black-edition-mens-skis-2027",
+      "vendor": "Elan",
+      "product_type": "Flat Skis",
+      "tags": [
+        "2027",
+        "Adult",
+        "All Mountain Skis",
+        "Full-Price",
+        "Mens",
+        "product-complete",
+        "Skis"
+      ],
+      "variants": [
+        {
+          "id": 51494515933472,
+          "option1": "Multicolor",
+          "option2": "161cm",
+          "option3": "Retail: $949.99",
+          "sku": "194050170254",
+          "available": true,
+          "price": "949.99",
+          "compare_at_price": "949.99"
+        },
+        {
+          "id": 51494515966240,
+          "option1": "Multicolor",
+          "option2": "168cm",
+          "option3": "Retail: $949.99",
+          "sku": "194050170261",
+          "available": true,
+          "price": "949.99",
+          "compare_at_price": "949.99"
+        },
+        {
+          "id": 51494515999008,
+          "option1": "Multicolor",
+          "option2": "175cm",
+          "option3": "Retail: $949.99",
+          "sku": "194050170278",
+          "available": true,
+          "price": "949.99",
+          "compare_at_price": "949.99"
+        },
+        {
+          "id": 51494516031776,
+          "option1": "Multicolor",
+          "option2": "182cm",
+          "option3": "Retail: $949.99",
+          "sku": "194050170285",
+          "available": true,
+          "price": "949.99",
+          "compare_at_price": "949.99"
+        },
+        {
+          "id": 51494516064544,
+          "option1": "Multicolor",
+          "option2": "189cm",
+          "option3": "Retail: $949.99",
+          "sku": "194050170292",
+          "available": true,
+          "price": "949.99",
+          "compare_at_price": "949.99"
+        }
+      ],
+      "images": [
+        {
+          "id": 52107483152672,
+          "variant_ids": [
+            51494515933472,
+            51494515966240,
+            51494515999008,
+            51494516031776,
+            51494516064544
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/Ripstick96BlackEdition.jpg?v=1777490512"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Multicolor"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "161cm",
+            "168cm",
+            "175cm",
+            "182cm",
+            "189cm"
+          ]
+        },
+        {
+          "name": "MSRP",
+          "position": 3,
+          "values": [
+            "Retail: $949.99"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10159178088736,
+      "title": "Line Pandora 85 Adult Skis 2026",
+      "handle": "line-pandora-85-adult-skis-2026",
+      "vendor": "Line Skis",
+      "product_type": "Flat Skis",
+      "tags": [
+        "2026",
+        "Adult",
+        "All Mountain Skis",
+        "Discounted",
+        "Mens",
+        "product-complete",
+        "Skis"
+      ],
+      "variants": [
+        {
+          "id": 51112547221792,
+          "option1": "Multicolor",
+          "option2": "147cm",
+          "option3": null,
+          "sku": "196222945967",
+          "available": true,
+          "price": "299.97",
+          "compare_at_price": "499.95"
+        },
+        {
+          "id": 51112547254560,
+          "option1": "Multicolor",
+          "option2": "154cm",
+          "option3": null,
+          "sku": "196222945950",
+          "available": true,
+          "price": "299.97",
+          "compare_at_price": "499.95"
+        },
+        {
+          "id": 51112547287328,
+          "option1": "Multicolor",
+          "option2": "161cm",
+          "option3": null,
+          "sku": "196222945943",
+          "available": true,
+          "price": "299.97",
+          "compare_at_price": "499.95"
+        }
+      ],
+      "images": [
+        {
+          "id": 51375978479904,
+          "variant_ids": [
+            51112547221792,
+            51112547254560,
+            51112547287328
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/700_266169_1184449.webp?v=1767915372"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Multicolor"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "147cm",
+            "154cm",
+            "161cm"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10159178449184,
+      "title": "K2 Reckoner 92 Mens Skis 2027",
+      "handle": "k2-reckoner-92-mens-skis-2027",
+      "vendor": "K2 Skis",
+      "product_type": "Flat Skis",
+      "tags": [
+        "2027",
+        "Adult",
+        "Full-Price",
+        "Mens",
+        "product-complete",
+        "Skis",
+        "Twin Tip/Freeride Skis"
+      ],
+      "variants": [
+        {
+          "id": 51950506639648,
+          "option1": "Multicolor",
+          "option2": "149cm",
+          "option3": null,
+          "sku": "196222944809",
+          "available": true,
+          "price": "499.95",
+          "compare_at_price": "499.95"
+        },
+        {
+          "id": 51112547909920,
+          "option1": "Multicolor",
+          "option2": "159cm",
+          "option3": null,
+          "sku": "196222942942",
+          "available": true,
+          "price": "499.95",
+          "compare_at_price": "499.95"
+        },
+        {
+          "id": 51112547942688,
+          "option1": "Multicolor",
+          "option2": "169cm",
+          "option3": null,
+          "sku": "196222942935",
+          "available": true,
+          "price": "499.95",
+          "compare_at_price": "499.95"
+        },
+        {
+          "id": 51112547975456,
+          "option1": "Multicolor",
+          "option2": "179cm",
+          "option3": null,
+          "sku": "196222942928",
+          "available": true,
+          "price": "499.95",
+          "compare_at_price": "499.95"
+        }
+      ],
+      "images": [
+        {
+          "id": 51376021504288,
+          "variant_ids": [
+            51112547909920,
+            51112547942688,
+            51112547975456,
+            51950506639648
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/700_264788_1180712.webp?v=1767916032"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Multicolor"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "149cm",
+            "159cm",
+            "169cm",
+            "179cm"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9976776294688,
+      "title": "Line Blend Adult Skis 2026",
+      "handle": "line-blend-adult-skis-2026",
+      "vendor": "Line Skis",
+      "product_type": "Flat Skis",
+      "tags": [
+        "2026",
+        "Adult",
+        "Discounted",
+        "Mens",
+        "product-complete",
+        "Skis",
+        "Twin Tip/Freeride Skis",
+        "Womens"
+      ],
+      "variants": [
+        {
+          "id": 50310768722208,
+          "option1": "Multicolor",
+          "option2": "163cm",
+          "option3": "Retail: $674.95",
+          "sku": "196222945721",
+          "available": true,
+          "price": "404.97",
+          "compare_at_price": "674.95"
+        },
+        {
+          "id": 50310768754976,
+          "option1": "Multicolor",
+          "option2": "169cm",
+          "option3": "Retail: $674.95",
+          "sku": "196222945714",
+          "available": true,
+          "price": "404.97",
+          "compare_at_price": "674.95"
+        },
+        {
+          "id": 50310768787744,
+          "option1": "Multicolor",
+          "option2": "175cm",
+          "option3": "Retail: $674.95",
+          "sku": "196222945707",
+          "available": true,
+          "price": "404.97",
+          "compare_at_price": "674.95"
+        },
+        {
+          "id": 51112446755104,
+          "option1": "Multicolor",
+          "option2": "180cm",
+          "option3": "Retail: $674.95",
+          "sku": "196222945691",
+          "available": true,
+          "price": "404.97",
+          "compare_at_price": "674.95"
+        }
+      ],
+      "images": [
+        {
+          "id": 49796763582752,
+          "variant_ids": [
+            50310768722208,
+            50310768754976,
+            50310768787744,
+            51112446755104
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/LN2509311398Large_52b3716a-377a-46f9-8052-8911b7d304c1.jpg?v=1750707236"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Multicolor"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "163cm",
+            "169cm",
+            "175cm",
+            "180cm"
+          ]
+        },
+        {
+          "name": "MSRP",
+          "position": 3,
+          "values": [
+            "Retail: $674.95"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10282458939680,
+      "title": "Elan Lil Magic (with EL 4.5 GW Shift System Bindings) Girls Skis 2027",
+      "handle": "elan-lil-magic-with-el-45-gw-shift-system-bindings-girls-skis-2027",
+      "vendor": "Elan",
+      "product_type": "System Skis",
+      "tags": [
+        "2027",
+        "Full-Price",
+        "Girls",
+        "Kids",
+        "product-complete",
+        "Skis"
+      ],
+      "variants": [
+        {
+          "id": 51494514229536,
+          "option1": "Purple",
+          "option2": "70cm",
+          "option3": "Retail: $249.99",
+          "sku": "194050175136",
+          "available": true,
+          "price": "249.99",
+          "compare_at_price": "249.99"
+        },
+        {
+          "id": 51494514262304,
+          "option1": "Purple",
+          "option2": "80cm",
+          "option3": "Retail: $249.99",
+          "sku": "194050175143",
+          "available": true,
+          "price": "249.99",
+          "compare_at_price": "249.99"
+        },
+        {
+          "id": 51494514295072,
+          "option1": "Purple",
+          "option2": "90cm",
+          "option3": "Retail: $249.99",
+          "sku": "194050175150",
+          "available": true,
+          "price": "249.99",
+          "compare_at_price": "249.99"
+        },
+        {
+          "id": 51494514327840,
+          "option1": "Purple",
+          "option2": "100cm",
+          "option3": "Retail: $249.99",
+          "sku": "194050175167",
+          "available": true,
+          "price": "249.99",
+          "compare_at_price": "249.99"
+        },
+        {
+          "id": 51494514360608,
+          "option1": "Purple",
+          "option2": "110cm",
+          "option3": "Retail: $249.99",
+          "sku": "194050175174",
+          "available": true,
+          "price": "249.99",
+          "compare_at_price": "249.99"
+        },
+        {
+          "id": 51494514393376,
+          "option1": "Purple",
+          "option2": "120cm",
+          "option3": "Retail: $249.99",
+          "sku": "194050175181",
+          "available": true,
+          "price": "249.99",
+          "compare_at_price": "249.99"
+        },
+        {
+          "id": 51494514426144,
+          "option1": "Purple",
+          "option2": "130cm",
+          "option3": "Retail: $249.99",
+          "sku": "194050175228",
+          "available": true,
+          "price": "249.99",
+          "compare_at_price": "249.99"
+        }
+      ],
+      "images": [
+        {
+          "id": 52107424825632,
+          "variant_ids": [
+            51494514229536,
+            51494514262304,
+            51494514295072,
+            51494514327840,
+            51494514360608,
+            51494514393376,
+            51494514426144
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/LilMagicJrEL4.5Shiftcopy_75097651-f4e5-4cd4-93f9-61e2eaecc3ad.jpg?v=1777489733"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Purple"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "70cm",
+            "80cm",
+            "90cm",
+            "100cm",
+            "110cm",
+            "120cm",
+            "130cm"
+          ]
+        },
+        {
+          "name": "MSRP",
+          "position": 3,
+          "values": [
+            "Retail: $249.99"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10282459300128,
+      "title": "Elan Ripstick 94 W Womens Skis 2027 | 614-848-6600",
+      "handle": "elan-ripstick-94-w-womens-skis-2027",
+      "vendor": "Elan",
+      "product_type": "Flat Skis",
+      "tags": [
+        "2027",
+        "Adult",
+        "All Mountain Skis",
+        "Full-Price",
+        "product-complete",
+        "Skis",
+        "Womens"
+      ],
+      "variants": [
+        {
+          "id": 51494515409184,
+          "option1": "Multicolor",
+          "option2": "147cm",
+          "option3": "Retail: $749.99",
+          "sku": "194050167445",
+          "available": true,
+          "price": "749.99",
+          "compare_at_price": "749.99"
+        },
+        {
+          "id": 51494515441952,
+          "option1": "Multicolor",
+          "option2": "154cm",
+          "option3": "Retail: $749.99",
+          "sku": "194050167452",
+          "available": true,
+          "price": "749.99",
+          "compare_at_price": "749.99"
+        },
+        {
+          "id": 51494515474720,
+          "option1": "Multicolor",
+          "option2": "161cm",
+          "option3": "Retail: $749.99",
+          "sku": "194050167469",
+          "available": true,
+          "price": "749.99",
+          "compare_at_price": "749.99"
+        },
+        {
+          "id": 51494515507488,
+          "option1": "Multicolor",
+          "option2": "168cm",
+          "option3": "Retail: $749.99",
+          "sku": "194050167476",
+          "available": true,
+          "price": "749.99",
+          "compare_at_price": "749.99"
+        }
+      ],
+      "images": [
+        {
+          "id": 52107471618336,
+          "variant_ids": [
+            51494515409184,
+            51494515441952,
+            51494515474720,
+            51494515507488
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/Ripstick94W.jpg?v=1777490276"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Multicolor"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "147cm",
+            "154cm",
+            "161cm",
+            "168cm"
+          ]
+        },
+        {
+          "name": "MSRP",
+          "position": 3,
+          "values": [
+            "Retail: $749.99"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9976777146656,
+      "title": "Line Optic 96 Adult Skis 2026",
+      "handle": "line-optic-96-adult-skis-2026",
+      "vendor": "Line Skis",
+      "product_type": "Flat Skis",
+      "tags": [
+        "2026",
+        "Adult",
+        "Discounted",
+        "Mens",
+        "product-complete",
+        "Skis",
+        "Twin Tip/Freeride Skis",
+        "Womens"
+      ],
+      "variants": [
+        {
+          "id": 50586588414240,
+          "option1": "Multicolor",
+          "option2": "163cm",
+          "option3": "Retail: $754.95",
+          "sku": "196222946247",
+          "available": false,
+          "price": "452.97",
+          "compare_at_price": "754.95"
+        },
+        {
+          "id": 50310781370656,
+          "option1": "Multicolor",
+          "option2": "170cm",
+          "option3": "Retail: $754.95",
+          "sku": "196222946230",
+          "available": true,
+          "price": "452.97",
+          "compare_at_price": "754.95"
+        },
+        {
+          "id": 50310781403424,
+          "option1": "Multicolor",
+          "option2": "177cm",
+          "option3": "Retail: $754.95",
+          "sku": "196222946223",
+          "available": true,
+          "price": "452.97",
+          "compare_at_price": "754.95"
+        },
+        {
+          "id": 50310781436192,
+          "option1": "Multicolor",
+          "option2": "184cm",
+          "option3": "Retail: $754.95",
+          "sku": "196222946216",
+          "available": true,
+          "price": "452.97",
+          "compare_at_price": "754.95"
+        }
+      ],
+      "images": [
+        {
+          "id": 49796819910944,
+          "variant_ids": [
+            50310781370656,
+            50310781403424,
+            50310781436192,
+            50586588414240
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/LN2509201398Large.jpg?v=1750707752"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Multicolor"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "163cm",
+            "170cm",
+            "177cm",
+            "184cm"
+          ]
+        },
+        {
+          "name": "MSRP",
+          "position": 3,
+          "values": [
+            "Retail: $754.95"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10316461834528,
+      "title": "Atomic Bent 90 Adult Skis 2027",
+      "handle": "atomic-bent-90-adult-skis-2027",
+      "vendor": "Atomic",
+      "product_type": "Flat Skis",
+      "tags": [
+        "2027",
+        "Adult",
+        "All Mountain Skis",
+        "Full-Price",
+        "product-complete",
+        "Skis",
+        "Twin Tip/Freeride Skis"
+      ],
+      "variants": [
+        {
+          "id": 51667073892640,
+          "option1": "Multicolor",
+          "option2": "157cm",
+          "option3": "Retail: $725.00",
+          "sku": "887445516231",
+          "available": true,
+          "price": "599.95",
+          "compare_at_price": "725.00"
+        },
+        {
+          "id": 51667073925408,
+          "option1": "Multicolor",
+          "option2": "166cm",
+          "option3": "Retail: $725.00",
+          "sku": "887445516224",
+          "available": true,
+          "price": "599.95",
+          "compare_at_price": "725.00"
+        },
+        {
+          "id": 51667073958176,
+          "option1": "Multicolor",
+          "option2": "175cm",
+          "option3": "Retail: $725.00",
+          "sku": "887445516255",
+          "available": true,
+          "price": "599.95",
+          "compare_at_price": "725.00"
+        },
+        {
+          "id": 51667073990944,
+          "option1": "Multicolor",
+          "option2": "184cm",
+          "option3": "Retail: $725.00",
+          "sku": "887445516248",
+          "available": true,
+          "price": "599.95",
+          "compare_at_price": "725.00"
+        }
+      ],
+      "images": [
+        {
+          "id": 52265670902048,
+          "variant_ids": [
+            51667073892640,
+            51667073925408,
+            51667073958176,
+            51667073990944
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/Bent902.jpg?v=1779123781"
+        },
+        {
+          "id": 52265671000352,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/Bent905.jpg?v=1779123781"
+        },
+        {
+          "id": 52265671033120,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/Bent906.jpg?v=1779123781"
+        },
+        {
+          "id": 52265671065888,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/Bent907.jpg?v=1779123781"
+        },
+        {
+          "id": 52265671098656,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/Bent908.jpg?v=1779123780"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Multicolor"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "157cm",
+            "166cm",
+            "175cm",
+            "184cm"
+          ]
+        },
+        {
+          "name": "MSRP",
+          "position": 3,
+          "values": [
+            "Retail: $725.00"
+          ]
+        }
+      ]
+    }
+  ],
+  "capture_note": "Public price/variant fields retained; description and unrelated metadata omitted."
+}

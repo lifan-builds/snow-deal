@@ -1,0 +1,125 @@
+{
+  "source": "https://www.aspenskiandboard.com/collections/skis/products.json?limit=24&page=1",
+  "observed_date": "2026-11-02",
+  "products": [
+    {
+      "id": 10570493559072,
+      "title": "Atomic Maverick 78 (with M 10 GW System Bindings) Mens Skis 2027",
+      "handle": "atomic-maverick-78-with-m-10-gw-system-bindings-mens-skis-2027",
+      "vendor": "Atomic",
+      "product_type": "System Skis",
+      "tags": [
+        "2027",
+        "Adult",
+        "All Mountain Skis",
+        "Full-Price",
+        "Mens",
+        "product-complete",
+        "Skis"
+      ],
+      "variants": [
+        {
+          "id": 52267419336992,
+          "option1": "Grey/Black",
+          "option2": "146cm",
+          "option3": "Retail: $550.00",
+          "sku": "887445550587",
+          "available": true,
+          "price": "329.95",
+          "compare_at_price": "550.00"
+        },
+        {
+          "id": 52267419369760,
+          "option1": "Grey/Black",
+          "option2": "154cm",
+          "option3": "Retail: $550.00",
+          "sku": "887445550600",
+          "available": true,
+          "price": "329.95",
+          "compare_at_price": "550.00"
+        },
+        {
+          "id": 52267419402528,
+          "option1": "Grey/Black",
+          "option2": "162cm",
+          "option3": "Retail: $550.00",
+          "sku": "887445550570",
+          "available": true,
+          "price": "329.95",
+          "compare_at_price": "550.00"
+        },
+        {
+          "id": 52267419435296,
+          "option1": "Grey/Black",
+          "option2": "170cm",
+          "option3": "Retail: $550.00",
+          "sku": "887445550617",
+          "available": true,
+          "price": "329.95",
+          "compare_at_price": "550.00"
+        },
+        {
+          "id": 52267419468064,
+          "option1": "Grey/Black",
+          "option2": "178cm",
+          "option3": "Retail: $550.00",
+          "sku": "887445550594",
+          "available": true,
+          "price": "329.95",
+          "compare_at_price": "550.00"
+        }
+      ],
+      "images": [
+        {
+          "id": 53855247237408,
+          "variant_ids": [
+            52267419336992,
+            52267419369760,
+            52267419402528,
+            52267419435296,
+            52267419468064
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/Maverick78.jpg?v=1790372915"
+        },
+        {
+          "id": 53855247204640,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/Maverick782.jpg?v=1790372915"
+        },
+        {
+          "id": 53855247171872,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0965/4642/files/Maverick781.jpg?v=1790372915"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Grey/Black"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "146cm",
+            "154cm",
+            "162cm",
+            "170cm",
+            "178cm"
+          ]
+        },
+        {
+          "name": "MSRP",
+          "position": 3,
+          "values": [
+            "Retail: $550.00"
+          ]
+        }
+      ]
+    }
+  ],
+  "capture_note": "Public price/variant fields retained; description and unrelated metadata omitted."
+}

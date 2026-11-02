@@ -10,7 +10,7 @@
   },
   "functions": {
     "api/index.py": {
-      "excludeFiles": "{aggregator/tests/**,docs/**,tampermonkey/**,.pytest_cache/**,**/__pycache__/**}"
+      "excludeFiles": "{common/tests/**,catalogs/*/tests/**,catalogs/*/history/**,catalogs/*/tampermonkey/**,docs/**,.pytest_cache/**,**/__pycache__/**}"
     }
   },
   "rewrites": [

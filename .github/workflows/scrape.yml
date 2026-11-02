@@ -33,16 +33,16 @@ jobs:
           python-version: "3.12"
           cache: pip
       - name: Install dependencies
-        run: pip install -e . -e './aggregator[dev]'
+        run: pip install -e '.[dev,scraping]'
       - name: Verify parsers and data contracts
         env:
           DATABASE_PATH: /tmp/freshpowder-tests.db
           AUTH_DB_PATH: /tmp/freshpowder-test-auth.db
-        run: python -m pytest aggregator/tests -q
+        run: python scripts/check.py -q
       - name: Restore previous snapshot and price history
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release download latest-data --repo lifan-builds/snow-deal-data --pattern deals.db --dir aggregator
+        run: mkdir -p catalogs/fresh-powder/data && gh release download latest-data --repo lifan-builds/snow-deal-data --pattern deals.db --dir catalogs/fresh-powder/data
       - name: Install Playwright Chromium
         run: playwright install chromium --with-deps
       - name: Run scraper
@@ -75,7 +75,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.DATA_REPO_TOKEN }}
         run: |
-          gh release upload latest-data aggregator/deals.db --clobber --repo lifan-builds/snow-deal-data
+          gh release upload latest-data catalogs/fresh-powder/data/deals.db --clobber --repo lifan-builds/snow-deal-data
           gh release edit latest-data --repo lifan-builds/snow-deal-data --notes "Validated snapshot from run $GITHUB_RUN_ID"
       - name: Deploy fresh data to Vercel
         env:

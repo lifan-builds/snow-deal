@@ -4,7 +4,7 @@ from pathlib import Path
 import sys
 
 ROOT = Path(__file__).resolve().parent
-for path in (ROOT, ROOT / "aggregator"):
+for path in (ROOT / "common", ROOT / "catalogs" / "fresh-powder" / "src"):
     path_text = str(path)
     if path_text not in sys.path:
         sys.path.insert(0, path_text)

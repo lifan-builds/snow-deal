@@ -3,9 +3,9 @@ requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "snow-deals"
+name = "deal-aggregator"
 version = "0.1.0"
-description = "CLI tool that scrapes e-commerce listings and ranks items by discount percentage"
+description = "Shared deal-finding components and category-specific catalogs"
 requires-python = ">=3.11"
 dependencies = [
     "aiosqlite>=0.20,<0.23",
@@ -24,13 +24,25 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+scraping = ["playwright>=1.40"]
 dev = [
     "pytest>=8.0",
     "ruff>=0.4",
+    "playwright>=1.40",
 ]
 
 [project.scripts]
 snow-deals = "snow_deals.cli:cli"
+snow-deals-agg = "aggregator.cli:cli"
 
 [tool.setuptools.packages.find]
-include = ["snow_deals*"]
+where = ["common", "catalogs/fresh-powder/src"]
+include = ["deal_common*", "aggregator*", "snow_deals*"]
+
+[tool.setuptools.package-data]
+"aggregator" = ["comparison_catalog.json"]
+"aggregator.web" = ["templates/*.html", "templates/partials/*.html", "static/*.css", "static/*.js", "static/img/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["common/tests", "catalogs/fresh-powder/tests"]
+pythonpath = ["common", "catalogs/fresh-powder/src"]
