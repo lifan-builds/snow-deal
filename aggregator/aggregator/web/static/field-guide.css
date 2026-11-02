@@ -1397,7 +1397,7 @@ th small {
 }
 @media (max-width: 480px) {
   .site-header { height: auto; min-height: 108px; flex-wrap: wrap; padding: 14px 20px 8px; gap: 4px; }
-  .site-header nav { width: 100%; justify-content: space-between; gap: 8px; }
+  .site-header nav { width: 100%; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
   .site-header nav > a:first-child { display: inline-flex; }
   .site-header nav a { font-size: 12px; }
   .site-header .wordmark { font-size: 22px; }

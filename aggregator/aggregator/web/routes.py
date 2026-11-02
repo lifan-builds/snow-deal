@@ -351,7 +351,9 @@ async def sitemap():
     from xml.sax.saxutils import escape
     if not is_public_mode():
         raise HTTPException(404)
-    paths = ['/', '/alerts', '/status', '/privacy', '/products', '/how-it-works']
+    from aggregator.web.guides import GUIDES
+    paths = ['/', '/alerts', '/status', '/privacy', '/products', '/how-it-works', '/guides', '/about']
+    paths += ['/guides/' + slug for slug in GUIDES]
     paths += ['/gear/' + slug for slug in CATEGORIES]
     paths += ['/products/' + slug for slug in PRODUCTS]
     paths += ['/brands/' + slug for slug in INDEXABLE_BRANDS]

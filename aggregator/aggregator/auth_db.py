@@ -11,6 +11,7 @@ are pushed via .sync().
 from __future__ import annotations
 
 import logging
+import json
 import os
 import secrets
 import sqlite3
@@ -274,10 +275,32 @@ async def get_click_stats(days: int = 7) -> dict:
 
     row = conn.execute(
         "SELECT COUNT(DISTINCT session) AS cnt FROM events "
-        "WHERE created_at >= ? AND session IS NOT NULL",
+        "WHERE created_at >= ? AND session LIKE 'anon:%'",
         (cutoff,),
     ).fetchone()
     unique_sessions = row[0] if row else 0
+
+    row = conn.execute(
+        "SELECT COUNT(DISTINCT session) FROM events WHERE created_at >= ? "
+        "AND session LIKE 'anon:%' AND event_type = 'click'", (cutoff,),
+    ).fetchone()
+    outbound_sessions = row[0] if row else 0
+    # Metadata is server-allowlisted JSON for v2 events; legacy rows may be text.
+    source_sessions = {}
+    for session, raw in conn.execute(
+        "SELECT session, metadata FROM events WHERE created_at >= ? "
+        "AND session LIKE 'anon:%' AND event_type = 'page_view'", (cutoff,),
+    ).fetchall():
+        try:
+            metadata = json.loads(raw or "{}")
+            source = metadata.get("source", "unknown") if isinstance(metadata, dict) else "unknown"
+        except (ValueError, TypeError):
+            source = "unknown"
+        if not isinstance(source, str):
+            source = "unknown"
+        source_sessions.setdefault(source, set()).add(session)
+    acquisition = [{"source": source, "sessions": len(sessions)}
+                   for source, sessions in sorted(source_sessions.items())]
 
     filter_usage = [
         {"metadata": r[0], "cnt": r[1]}
@@ -296,6 +319,8 @@ async def get_click_stats(days: int = 7) -> dict:
         "clicks_by_day": clicks_by_day,
         "views_by_day": views_by_day,
         "unique_sessions": unique_sessions,
+        "outbound_sessions": outbound_sessions,
+        "acquisition": acquisition,
         "filter_usage": filter_usage,
         "days": days,
     }

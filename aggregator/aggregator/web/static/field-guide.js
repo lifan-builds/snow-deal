@@ -219,23 +219,10 @@ document.addEventListener("click", async (event) => {
   if (link && new URL(link.href).origin !== location.origin) {
     const card = link.closest(".deal-card, .retailer-offer");
     if (!card) return;
-    try {
-      navigator.sendBeacon(
-        "/api/event",
-        new Blob(
-          [
-            JSON.stringify({
-              event_type: "click",
-              deal_url: card.dataset.href,
-              deal_name: card.dataset.name,
-              store: card.dataset.store,
-              category: card.dataset.category,
-            }),
-          ],
-          { type: "application/json" },
-        ),
-      );
-    } catch (_) {}
+    window.fpTrack?.("click", {
+      deal_url: card.dataset.href, deal_name: card.dataset.name,
+      store: card.dataset.store, category: card.dataset.category,
+    });
   }
 });
 const waitlist = document.getElementById("waitlist-form");

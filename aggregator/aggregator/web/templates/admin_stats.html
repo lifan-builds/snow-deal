@@ -138,7 +138,7 @@
         <div class="kpi-row">
             <div class="kpi-card">
                 <div class="value">{{ stats.unique_sessions }}</div>
-                <div class="label">Unique Users</div>
+                <div class="label">Short Sessions</div>
             </div>
             <div class="kpi-card">
                 <div class="value">{{ total_views }}</div>
@@ -154,6 +154,9 @@
             </div>
         </div>
 
+        <p class="empty-msg">Short sessions use a separate 30-minute anonymous cookie. Counts exclude opted-out browsing and do not identify unique people. Legacy events remain in totals but not the new session counts. Clicks are not purchases.</p>
+        <p>Sessions with retailer clicks: <strong>{{ stats.outbound_sessions }}</strong></p>
+        <div class="section"><h2>Acquisition sources</h2><table class="stat-table"><thead><tr><th>Source</th><th>Sessions with page views</th></tr></thead><tbody>{% for row in stats.acquisition %}<tr><td>{{ row.source }}</td><td>{{ row.sessions }}</td></tr>{% else %}<tr><td colspan="2">No anonymous page-view data yet.</td></tr>{% endfor %}</tbody></table><p class="empty-msg">A session can appear under more than one source; do not add these rows to infer unique people.</p></div>
         <div class="section">
             <h2>Clicks by Day</h2>
             {% if stats.clicks_by_day %}

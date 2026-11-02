@@ -1,0 +1,2 @@
+{% extends 'base.html' %}
+{% block content %}<main id="main" class="shell editorial reading-copy"><span class="eyebrow">BUY WITH CONTEXT</span><h1>Before you chase the discount.</h1><p class="lede">A few checks can turn a tempting price into a better buying decision.</p>{% for slug, guide in guides.items() %}<section class="comparison-section"><h2><a href="/guides/{{ slug }}">{{ guide.title }}</a></h2><p>{{ guide.description }}</p></section>{% endfor %}<p><a class="button primary" href="/products">Compare ski &amp; snowboard models →</a></p></main>{% endblock %}

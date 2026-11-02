@@ -14,6 +14,12 @@
       <a href="#offers" class="button primary">Compare offers ↓</a> <button class="share-btn" type="button" data-url="{{ canonical_url }}" data-name="{{ p.name }}">Share comparison ↗</button>
     </div>
   </section>
+  <section class="comparison-section" aria-labelledby="scope-heading">
+    <h2 id="scope-heading">What this comparison covers</h2>
+    <p>This page compares reviewed listings for <strong>{{ p.name }}</strong>, model year {{ p.year }}. Similar names, other seasons and bundles are not interchangeable offers. Prices shown here are {{ p.currency }} retailer listings; your selected size may cost more.</p>
+    <p>{% if p.size %}You selected {{ p.size }} cm. Only shops explicitly reporting that size appear; missing sizes are not inferred.{% else %}Choose a reported size to narrow the shops, then confirm its price and availability at the retailer.{% endif %}</p>
+    <p><a href="/guides/listed-price-and-your-size">Check size and price together</a> · <a href="/guides/new-past-season-demo-gear">Compare condition and package contents</a></p>
+  </section>
   <section id="offers" class="comparison-section" aria-labelledby="offers-heading">
     <h2 id="offers-heading">Retailer offers</h2>
     <form method="get" action="/products/{{ p.slug }}#offers" class="comparison-filters">

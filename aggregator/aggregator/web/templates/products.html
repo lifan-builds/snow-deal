@@ -5,6 +5,7 @@
   <h1>{% if brand %}Compare {{ brand }} prices{% else %}Find your gear. Compare the shops.{% endif %}</h1>
   <p class="lede">A selected catalog of skis and snowboards matched by model and season. See retailer prices, reported lengths and the history we’ve observed, all in one place.</p>
   <p>Matching starts with the exact model. Your size and the retailer’s final price still matter. <a href="/how-it-works">How we compare →</a></p>
+  <p><a href="/guides/check-a-real-ski-deal">How to judge a deal</a> · <a href="/guides/listed-price-and-your-size">Why size changes the price</a></p>
   <nav class="category-links" aria-label="Compare by brand"><a href="/products" {% if not brand %}aria-current="page"{% endif %}>All brands</a>{% for slug, name in brands.items() %}<a href="/brands/{{ slug }}" {% if brand == name %}aria-current="page"{% endif %}>{{ name }}</a>{% endfor %}</nav>
   <div class="deal-grid comparison-grid">
     {% for p in products %}
