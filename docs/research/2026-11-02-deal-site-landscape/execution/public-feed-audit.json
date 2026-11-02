@@ -1,0 +1,26 @@
+[
+  {
+    "store": "Aspen Ski and Board",
+    "source_url": "https://www.aspenskiandboard.com/collections/skis/products.json?limit=24&page=1",
+    "checked_at": "2026-11-02T19:42:07.882879+00:00",
+    "scope": "First collection page only; feed claims, no checkout or market-currency verification",
+    "http_status": 429,
+    "error": "HTTPStatusError"
+  },
+  {
+    "store": "The Startingate",
+    "source_url": "https://shopstartingate.com/collections/skis-bindings/products.json?limit=24&page=1",
+    "checked_at": "2026-11-02T19:42:07.933845+00:00",
+    "scope": "First collection page only; feed claims, no checkout or market-currency verification",
+    "http_status": 429,
+    "error": "HTTPStatusError"
+  },
+  {
+    "store": "Freeride Boardshop",
+    "source_url": "https://www.freerideboardshop.com/en-us/collections/sale-snowboards/products.json?limit=24&page=1",
+    "checked_at": "2026-11-02T19:42:07.947703+00:00",
+    "scope": "First collection page only; feed claims, no checkout or market-currency verification",
+    "http_status": 429,
+    "error": "HTTPStatusError"
+  }
+]

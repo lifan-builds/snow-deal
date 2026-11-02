@@ -19,6 +19,11 @@ Thumbs.db
 
 # Data
 *.db
+*.db-shm
+*.db-wal
+*.db-info
+.env
+.env.*
 cookies.json
 public/static/
 

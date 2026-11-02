@@ -17,7 +17,7 @@ import sqlite3
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path[:0] = [str(ROOT), str(ROOT / 'aggregator')]
+sys.path[:0] = [str(ROOT / 'common'), str(ROOT / 'catalogs/fresh-powder/src')]
 from aggregator.db import init_db, repair_deal_categories
 from aggregator.reviews import _normalize_brand, compute_and_store_deal_reviews
 from snow_deals.parsers.shopify import product_type_from_item

@@ -1,0 +1,42 @@
+{
+  "configured_stores": 1,
+  "stores_with_deals": 1,
+  "total_deals": 11,
+  "zero_count_stores": [],
+  "store_summaries": [
+    {
+      "store": "Aspen Ski and Board",
+      "deals": 11,
+      "missing_category": 0,
+      "missing_image": 0,
+      "missing_sizes": 0,
+      "missing_lengths": 0,
+      "length_eligible": 11,
+      "variant_offers": 42,
+      "deals_with_variants": 11,
+      "confirmed_size_deals": 11
+    }
+  ],
+  "missing_category": 0,
+  "missing_image": 0,
+  "missing_sizes": 0,
+  "missing_lengths": 0,
+  "length_eligible": 11,
+  "variant_offers": 42,
+  "deals_with_variants": 11,
+  "confirmed_size_deals": 11,
+  "source": "https://www.aspenskiandboard.com/collections/skis/products.json?limit=24&page=1",
+  "observed_date": "2026-11-02",
+  "scope": "First 24 products of one collection; incomplete store snapshot; not for deployment",
+  "raw_products": 24,
+  "parsed_discounted_products": 13,
+  "merchant_spot_check": {
+    "url": "https://www.aspenskiandboard.com/products/atomic-maverick-78-with-m-10-gw-system-bindings-mens-skis-2027?variant=52267419336992",
+    "selected_size": "146cm",
+    "current_price": 329.95,
+    "retailer_reference": 550,
+    "currency": "USD",
+    "add_to_cart_enabled": true,
+    "checkout_completed": false
+  }
+}

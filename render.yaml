@@ -2,7 +2,7 @@ services:
   - type: web
     name: snow-deals
     runtime: docker
-    dockerfilePath: aggregator/Dockerfile
+    dockerfilePath: catalogs/fresh-powder/deploy/Dockerfile
     dockerContext: .
     plan: free
     envVars:
