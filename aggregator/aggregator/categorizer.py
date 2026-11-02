@@ -26,6 +26,36 @@ _CATEGORY_PATTERNS = [
 _NOT_HARDGOODS_PATTERN = re.compile(r"\b(?:" + "|".join(re.escape(kw.strip()) for kw in NOT_HARDGOODS_KEYWORDS) + r")\b")
 
 
+def explicit_non_equipment_category(name: str) -> str | None:
+    """Recognize clear product nouns before boot/model keywords.
+
+    Title-only evidence also allows safe corrections to stored listings whose
+    original retailer product type is no longer available.
+    """
+    text = re.sub(r"[-_/]+", " ", name.lower())
+    if re.search(r"\bbody glove\b", text):
+        return None  # Brand name, not a glove product noun.
+    if re.search(r"\b(?:gloves?|mittens?|mitts?)\b", text):
+        return "gloves"
+    if (re.search(r"\bbalaclava\b", text)
+            and re.search(r"\b(?:hoodies?|hoody|pullover)\b", text)):
+        return "layers"  # Includes tops with an integrated balaclava.
+    if re.search(r"\b(?:bags?|beanies?|balaclavas?|clava|scarves|scarf|socks?|ski straps?)\b", text):
+        return "accessories"
+    # A replacement lens is not a whole goggle. Bundled bonus lenses stay goggles.
+    if re.search(r"\b(?:replacement|replaement|repl|rep) lens(?:es)?\b", text):
+        return "accessories"
+    if re.search(r"\b(?:pole baskets?|boot dryers?|insoles?|outsoles?)\b", text):
+        return "accessories"
+    if re.search(r"\b(?:pants?|bibs?)\b", text):
+        return "pants"
+    if re.search(r"\b(?:jackets?|parkas?|anoraks?|coats?)\b", text):
+        return "jackets"
+    if re.search(r"\b(?:capilene|baselayers?|base layers?|midlayers?|mid layers?|fleece|hoodies?|hoody|sweatshirts?|crewneck|crew neck|leggings?)\b", text):
+        return "layers"
+    return None
+
+
 def _url_path(url: str) -> str:
     """Extract just the path from a URL, ignoring the domain.
 
@@ -129,6 +159,9 @@ def categorize(name: str, url: str = "", product_type: str = "") -> str | None:
     """
     if is_excluded(f"{name} {product_type}", url):
         return None
+    explicit = explicit_non_equipment_category(name)
+    if explicit:
+        return explicit
     # A product's name outranks collection paths; "ski sale" must not turn
     # clothing into skis. Explicit retailer product types outrank URL guesses.
     for signal in (name, product_type, _url_path(url)):

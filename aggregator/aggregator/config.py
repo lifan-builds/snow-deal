@@ -892,5 +892,6 @@ EXCLUDE_KEYWORDS: list[str] = [
     "previously ridden", "shop worn",
 ]
 
-# Apparel hidden by default in the main shopping feed.
-CLOTHING_CATEGORIES = ("jackets", "pants", "layers")
+# Only recognized equipment appears in the default shopping feed.
+EQUIPMENT_CATEGORIES = ("skis", "snowboards", "ski boots", "snowboard boots",
+                        "bindings", "poles", "helmets", "goggles")

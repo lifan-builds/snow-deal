@@ -14,7 +14,7 @@ from fastapi.templating import Jinja2Templates
 from datetime import datetime, timedelta
 
 from aggregator.auth import is_public_mode, require_invite
-from aggregator.config import CATEGORY_RULES, STORES, CLOTHING_CATEGORIES
+from aggregator.config import CATEGORY_RULES, STORES, EQUIPMENT_CATEGORIES
 from aggregator.db import (
     count_with_length, get_brands, get_category_counts, query_deals, store_status, refresh_status,
 )
@@ -201,8 +201,8 @@ async def index(
             "category_counts": category_counts,
             "store_counts": store_counts,
             "current_currency": currency,
-            "current_include_clothing": include_clothing or category in CLOTHING_CATEGORIES,
-            "clothing_categories": CLOTHING_CATEGORIES,
+            "current_include_clothing": include_clothing or bool(category and category not in EQUIPMENT_CATEGORIES),
+            "equipment_categories": EQUIPMENT_CATEGORIES,
             "current_category": category,
             "current_store": store,
             "current_brand": brand,

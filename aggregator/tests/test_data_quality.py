@@ -25,10 +25,58 @@ from snow_deals.parsers.shopify import ShopifyParser
     ('Unleashed 108', 'skis'),
     ('CAPiTA Mercury Snowboard', 'snowboards'),
     ('Vans Hi Standard Snowboard Boots', 'snowboard boots'),
+    ("Boulder Gear Boot Cut Jean Insulated Ski Pant (Women's)", 'pants'),
+    ("AFRC Finesse Over the Boot Stretch Ski Pant (Women's)", 'pants'),
+    ("Women's Capilene Midweight Crew", 'layers'),
+    ('Flight Deck M Rep Lens', 'accessories'),
+    ('Oakley Flight Deck L Replacement Lens', 'accessories'),
+    ('Giro Axis/Ella Goggles Replacement Lens', 'accessories'),
+    ('Dakine Goggle Stash Bag', 'accessories'),
+    ('Rossignol Basic Snowboard Solo Bag', 'accessories'),
+    ('ASBCO Ski Straps', 'accessories'),
+    ('Peter Glenn Ski Goggle Beanie with Fox Fur Pom', 'accessories'),
+    ('Dirt Bag Gloves', 'gloves'),
+    ('Everyday Fleece Gloves', 'gloves'),
+    ('Volcom Untethered Balaclava Hoodie', 'layers'),
+    ('Rossignol Opside Womens Hoodie Jacket 2026', 'jackets'),
+    ('Anon M4 Goggles + Bonus Lens + MFI Face Mask', 'goggles'),
+    ('Squad MAG + Bonus Lens', 'goggles'),
+    ('Salomon S/Pro Alpha 130 Ski Boots 2024', 'ski boots'),
 ])
 def test_real_product_categories(name, expected):
     assert not is_excluded(name)
     assert categorize(name) == expected
+
+
+def test_snapshot_category_repair_preserves_prices_and_freshness(tmp_path):
+    import sqlite3
+    from datetime import datetime
+    from aggregator.db import init_db, upsert_deals, repair_deal_categories
+    from aggregator.models import AggregatedDeal
+    path = tmp_path / 'public-snapshot.db'
+    asyncio.run(init_db(path))
+    rows = []
+    for i, (name, category) in enumerate([
+        ("Boulder Gear Boot Cut Jean Insulated Ski Pant (Women's)", 'boots'),
+        ("Women's Capilene Midweight Crew", None),
+        ('Flight Deck M Rep Lens', 'goggles'),
+        ('Atomic Bent 100 Skis', 'skis'),
+    ]):
+        rows.append(AggregatedDeal(id=None, store='Test', name=name, url=f'https://test.example/{i}',
+                                  current_price=50, original_price=100, discount_pct=50,
+                                  category=category, sizes='M', length_min=170, length_max=180,
+                                  scraped_at=datetime(2026, 10, 30)))
+    asyncio.run(upsert_deals(rows, path))
+    with sqlite3.connect(path) as db:
+        before = db.execute('SELECT id, name, url, current_price, original_price, discount_pct, sizes, scraped_at, first_seen FROM deals ORDER BY id').fetchall()
+        history = db.execute('SELECT * FROM price_history').fetchall()
+    assert asyncio.run(repair_deal_categories(path)) == 3
+    assert asyncio.run(repair_deal_categories(path)) == 0
+    with sqlite3.connect(path) as db:
+        assert db.execute('SELECT id, name, url, current_price, original_price, discount_pct, sizes, scraped_at, first_seen FROM deals ORDER BY id').fetchall() == before
+        assert db.execute('SELECT * FROM price_history').fetchall() == history
+        assert db.execute('SELECT category, length_min FROM deals ORDER BY id').fetchall() == [
+            ('pants', None), ('layers', None), ('accessories', None), ('skis', 170)]
 
 
 def test_collection_path_cannot_override_product_name():

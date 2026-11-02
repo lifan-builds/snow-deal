@@ -8,7 +8,7 @@ from datetime import datetime
 from pathlib import Path
 from urllib.parse import quote
 
-from aggregator.config import env_flag, STORES, CLOTHING_CATEGORIES
+from aggregator.config import env_flag, STORES, EQUIPMENT_CATEGORIES
 from aggregator.models import AggregatedDeal
 
 DB_PATH = Path(os.environ.get("DATABASE_PATH", Path(__file__).resolve().parent.parent / "deals.db"))
@@ -118,6 +118,27 @@ async def ensure_deals_db_ready(db_path: Path = DB_PATH) -> None:
             raise RuntimeError(
                 f"Deal database at {db_path} is missing the deals table."
             ) from exc
+
+
+async def repair_deal_categories(db_path: Path) -> int:
+    """Correct explicit title evidence in a downloaded snapshot, without re-aging it."""
+    from aggregator.categorizer import explicit_non_equipment_category
+
+    async with _connect(db_path) as db:
+        rows = await (await db.execute("SELECT id, name, category FROM deals")).fetchall()
+        corrections = []
+        for deal_id, name, category in rows:
+            corrected = explicit_non_equipment_category(name)
+            if corrected and corrected != category:
+                corrections.append((corrected, deal_id))
+        await db.executemany(
+            "UPDATE deals SET category = ?, length_min = NULL, length_max = NULL WHERE id = ?",
+            corrections,
+        )
+        await db.executemany("DELETE FROM deal_reviews WHERE deal_id = ?",
+                             [(deal_id,) for _, deal_id in corrections])
+        await db.commit()
+    return len(corrections)
 
 
 async def init_db(db_path: Path = DB_PATH) -> None:
@@ -289,10 +310,10 @@ async def query_deals(
         clauses.append("deals.current_price <= ?")
         params.append(max_price)
 
-    if not include_clothing and category not in CLOTHING_CATEGORIES:
-        placeholders = ", ".join("?" for _ in CLOTHING_CATEGORIES)
-        clauses.append(f"(deals.category IS NULL OR deals.category NOT IN ({placeholders}))")
-        params.extend(CLOTHING_CATEGORIES)
+    if not include_clothing and not category:
+        placeholders = ", ".join("?" for _ in EQUIPMENT_CATEGORIES)
+        clauses.append(f"deals.category IN ({placeholders})")
+        params.extend(EQUIPMENT_CATEGORIES)
 
     if category:
         clauses.append("deals.category = ?")

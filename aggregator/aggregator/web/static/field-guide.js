@@ -135,7 +135,7 @@ if (form) {
       currency: 'Currency', min_discount: 'Minimum discount',
       min_price: 'Min price', max_price: 'Max price',
       size_min: 'Length from', size_max: 'Length to', reviewed: 'Expert review available',
-      include_clothing: 'Clothing included',
+      include_clothing: 'Clothing & accessories included',
     };
     container.replaceChildren();
     for (const [name, label] of Object.entries(labels)) {
