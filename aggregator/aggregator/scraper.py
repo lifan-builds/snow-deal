@@ -18,7 +18,7 @@ from urllib.parse import urlparse
 
 import httpx
 
-from aggregator.categorizer import categorize, is_excluded
+from aggregator.categorizer import categorize, exclusion_reason
 from aggregator.reviews import _extract_brand, _normalize_brand
 from aggregator.config import STORES, StoreConfig
 from aggregator.models import AggregatedDeal
@@ -129,12 +129,6 @@ def _extract_lengths(sizes_str: str | None) -> tuple[int | None, int | None]:
     return min(lengths), max(lengths)
 
 
-_KIDS_KEYWORDS = re.compile(
-    r"\b(junior|jr|kids?|youth|toddlers?|baby|boys?|girls?|infant|child|children|grom|little kid|big kid)\b",
-    re.IGNORECASE,
-)
-
-
 @dataclass(frozen=True)
 class StoreScrapeSummary:
     """Per-store scrape quality counters."""
@@ -166,7 +160,7 @@ class ScrapeReport:
 
 def _is_kids_product(name: str) -> bool:
     """Return True if the product name indicates kids/junior gear."""
-    return bool(_KIDS_KEYWORDS.search(name))
+    return exclusion_reason(name) == 'children'
 
 
 def _products_to_deals(
@@ -183,7 +177,7 @@ def _products_to_deals(
         if not name:
             continue
         source_description = f"{name} {p.product_type or ''} {p.brand or ''}"
-        if _is_kids_product(source_description) or is_excluded(source_description, p.url):
+        if exclusion_reason(source_description, p.url):
             continue
         if (not math.isfinite(p.current_price) or p.original_price is None
                 or not math.isfinite(p.original_price)
@@ -192,7 +186,7 @@ def _products_to_deals(
             continue
         if p.current_price < 1 or p.discount_pct <= 0 or p.discount_pct >= 95:
             continue
-        category = categorize(name, p.url, p.product_type or "")
+        category = categorize(name, p.url, p.product_type or "", brand=p.brand or "")
         raw_sizes = ", ".join(p.sizes) if p.sizes else None
         if category in {"skis", "snowboards"} and raw_sizes:
             raw_sizes = re.sub(r"(?<![\d.])\b(1\d{2}|2[01]\d|220)\b(?!\s*cm|[\d.])", r"\1cm", raw_sizes)
@@ -214,6 +208,7 @@ def _products_to_deals(
                 length_max=length_max,
                 scraped_at=now,
                 image_url=p.image_url,
+                product_type=p.product_type,
                 brand=_normalize_brand(p.brand) if p.brand else (_extract_brand(name) or None),
             )
         )

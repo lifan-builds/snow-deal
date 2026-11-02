@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import logging
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 
 from bs4 import BeautifulSoup, Tag
 
@@ -81,6 +81,12 @@ class SacredRideParser(BaseParser):
             url=url,
             current_price=current_price,
             original_price=original_price,
+            product_type={
+                'skis': 'Skis', 'snowboards': 'Snowboards', 'boots': 'Ski Boots',
+                'snowboard-boots': 'Snowboard Boots', 'bindings': 'Ski Bindings',
+                'snowboard-bindings': 'Snowboard Bindings', 'helmets': 'Helmets', 'goggles': 'Goggles',
+            }.get(urlparse(page_url).path.split('/winter/', 1)[-1].split('/')[0])
+            if '/product-category/winter/' in urlparse(page_url).path else None,
             image_url=urljoin(page_url, img.get("data-src") or img.get("src") or "")
             if (img := card.select_one("img[data-src], img[src]")) else None,
         )

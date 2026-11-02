@@ -80,7 +80,7 @@ def download_deals_db() -> None:
         from aggregator.reviews import compute_and_store_deal_reviews
         asyncio.run(init_db(tmp_path))
         corrected = asyncio.run(repair_deal_categories(tmp_path))
-        log(f"Corrected {corrected} title-based categories without changing price timestamps")
+        log(f"Corrected {corrected} catalog categories without changing price timestamps")
         # Reconcile old snapshots with the current model-matching rules.
         matches = asyncio.run(compute_and_store_deal_reviews(tmp_path))
         log(f"Verified {matches} model review matches")

@@ -62,7 +62,7 @@ async def catalog_rows(db_path: Path | None = None) -> list[dict]:
             SELECT d.*, latest.ts AS store_latest
             FROM deals d JOIN (SELECT store, MAX(scraped_at) ts FROM deals GROUP BY store) latest
               ON latest.store=d.store
-            WHERE d.url IN ({placeholders})
+            WHERE d.exclusion_reason IS NULL AND d.url IN ({placeholders})
         """, tuple(REFERENCES))).fetchall()
     cutoff = datetime.now(timezone.utc).replace(tzinfo=None) - timedelta(hours=72)
     result = []

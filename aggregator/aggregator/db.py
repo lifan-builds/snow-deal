@@ -75,6 +75,8 @@ MIGRATIONS = [
     "ALTER TABLE deals ADD COLUMN length_max INTEGER",
     "ALTER TABLE deals ADD COLUMN image_url TEXT",
     "ALTER TABLE deals ADD COLUMN brand TEXT",
+    "ALTER TABLE deals ADD COLUMN product_type TEXT",
+    "ALTER TABLE deals ADD COLUMN exclusion_reason TEXT",
     "CREATE INDEX IF NOT EXISTS idx_brand ON deals (brand)",
 ]
 
@@ -121,22 +123,27 @@ async def ensure_deals_db_ready(db_path: Path = DB_PATH) -> None:
 
 
 async def repair_deal_categories(db_path: Path) -> int:
-    """Correct explicit title evidence in a downloaded snapshot, without re-aging it."""
-    from aggregator.categorizer import explicit_non_equipment_category
+    """Reclassify the downloaded snapshot while preserving price evidence and age."""
+    from aggregator.categorizer import categorize, exclusion_reason
+    from aggregator.scraper import _extract_lengths
 
     async with _connect(db_path) as db:
-        rows = await (await db.execute("SELECT id, name, category FROM deals")).fetchall()
+        rows = await (await db.execute(
+            "SELECT id, name, url, product_type, brand, category, exclusion_reason, sizes, length_min, length_max FROM deals"
+        )).fetchall()
         corrections = []
-        for deal_id, name, category in rows:
-            corrected = explicit_non_equipment_category(name)
-            if corrected and corrected != category:
-                corrections.append((corrected, deal_id))
+        for deal_id, name, url, product_type, brand, category, old_reason, sizes, lower, upper in rows:
+            reason = exclusion_reason(name, url, product_type or '')
+            corrected = None if reason else categorize(name, url, product_type or '', brand=brand or '')
+            if corrected != category or reason != old_reason:
+                lengths = _extract_lengths(sizes) if corrected in {'skis', 'snowboards'} else (None, None)
+                corrections.append((corrected, reason, *lengths, deal_id))
         await db.executemany(
-            "UPDATE deals SET category = ?, length_min = NULL, length_max = NULL WHERE id = ?",
+            "UPDATE deals SET category = ?, exclusion_reason = ?, length_min = ?, length_max = ? WHERE id = ?",
             corrections,
         )
         await db.executemany("DELETE FROM deal_reviews WHERE deal_id = ?",
-                             [(deal_id,) for _, deal_id in corrections])
+                             [(row[-1],) for row in corrections])
         await db.commit()
     return len(corrections)
 
@@ -158,11 +165,30 @@ async def init_db(db_path: Path = DB_PATH) -> None:
 
 async def upsert_deals(deals: list[AggregatedDeal], db_path: Path = DB_PATH) -> int:
     """Insert or update deals. Returns count of rows affected."""
+    from aggregator.categorizer import categorize, category_from_product_type, exclusion_reason
+    from aggregator.scraper import _extract_lengths
     async with _connect(db_path) as db:
         count = 0
         for d in deals:
+            # An opaque code or generic "Boots" must not erase reviewed taxonomy
+            # for the same URL and title when a retailer omits detail later.
+            product_type = d.product_type
+            if (category_from_product_type(product_type or '') in {None, 'boots'}
+                    and not exclusion_reason('', product_type=product_type or '')):
+                product_type = None
             currency = next((store.currency for store in STORES if store.name == d.store), d.currency)
-            prior = await (await db.execute("SELECT current_price, scraped_at FROM deals WHERE url = ?", (d.url,))).fetchone()
+            prior = await (await db.execute("SELECT current_price, scraped_at, name, product_type, brand FROM deals WHERE url = ?", (d.url,))).fetchone()
+            category, lengths = d.category, (d.length_min, d.length_max)
+            brand = d.brand
+            if prior and prior[2] == d.name:
+                brand = brand or prior[4]
+                if not product_type and prior[3]:
+                    product_type = prior[3]
+                    category = categorize(d.name, d.url, product_type, brand=brand or '')
+                    lengths = _extract_lengths(d.sizes) if category in {'skis', 'snowboards'} else (None, None)
+            reason = exclusion_reason(d.name, d.url, product_type or '')
+            if reason:
+                category, lengths = None, (None, None)
             if prior:
                 await db.execute("INSERT OR IGNORE INTO price_history VALUES (?, ?, ?)", (d.url, prior[1], prior[0]))
             await db.execute("INSERT OR REPLACE INTO price_history VALUES (?, ?, ?)", (d.url, d.scraped_at.isoformat(), d.current_price))
@@ -170,8 +196,8 @@ async def upsert_deals(deals: list[AggregatedDeal], db_path: Path = DB_PATH) -> 
                 """\
                 INSERT INTO deals (store, name, url, current_price, original_price,
                                    discount_pct, category, sizes, length_min, length_max,
-                                   scraped_at, image_url, brand, first_seen, currency)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                                   scraped_at, image_url, brand, first_seen, currency, product_type, exclusion_reason)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 ON CONFLICT(url) DO UPDATE SET
                     store          = excluded.store,
                     name           = excluded.name,
@@ -185,12 +211,14 @@ async def upsert_deals(deals: list[AggregatedDeal], db_path: Path = DB_PATH) -> 
                     scraped_at     = excluded.scraped_at,
                     image_url      = excluded.image_url,
                     brand          = excluded.brand,
-                    currency       = excluded.currency
+                    currency       = excluded.currency,
+                    product_type   = excluded.product_type,
+                    exclusion_reason = excluded.exclusion_reason
                 """,
                 (
                     d.store, d.name, d.url, d.current_price, d.original_price,
-                    d.discount_pct, d.category, d.sizes, d.length_min, d.length_max,
-                    d.scraped_at.isoformat(), d.image_url, d.brand, d.scraped_at.isoformat(), currency,
+                    d.discount_pct, category, d.sizes, *lengths,
+                    d.scraped_at.isoformat(), d.image_url, brand, d.scraped_at.isoformat(), currency, product_type, reason,
                 ),
             )
             count += 1
@@ -223,7 +251,7 @@ async def count_with_length(db_path: Path = DB_PATH) -> int:
     async with _connect(db_path, read_only=_deal_db_read_only()) as db:
         cursor = await db.execute(
             """SELECT COUNT(*) FROM deals d
-               WHERE length_min IS NOT NULL AND category IN ('skis', 'snowboards')
+               WHERE exclusion_reason IS NULL AND length_min IS NOT NULL AND category IN ('skis', 'snowboards')
                AND scraped_at = (SELECT MAX(scraped_at) FROM deals WHERE store = d.store)
                AND datetime(scraped_at) >= datetime('now', '-72 hours')"""
         )
@@ -239,7 +267,7 @@ async def get_brands(db_path: Path = DB_PATH) -> list[str]:
             SELECT DISTINCT deals.brand FROM deals
             INNER JOIN (SELECT store, MAX(scraped_at) as max_s FROM deals GROUP BY store) d2 
               ON deals.store = d2.store AND deals.scraped_at = d2.max_s
-            WHERE deals.brand IS NOT NULL AND deals.brand != ''
+            WHERE deals.exclusion_reason IS NULL AND deals.brand IS NOT NULL AND deals.brand != ''
             AND datetime(deals.scraped_at) >= datetime('now', '-72 hours')
             ORDER BY deals.brand
             """
@@ -256,7 +284,7 @@ async def get_category_counts(db_path: Path = DB_PATH) -> dict[str, int]:
             SELECT deals.category, COUNT(*) FROM deals
             INNER JOIN (SELECT store, MAX(scraped_at) as max_s FROM deals GROUP BY store) d2 
               ON deals.store = d2.store AND deals.scraped_at = d2.max_s
-            WHERE deals.category IS NOT NULL
+            WHERE deals.exclusion_reason IS NULL AND deals.category IS NOT NULL
             AND datetime(deals.scraped_at) >= datetime('now', '-72 hours')
             GROUP BY deals.category
             """
@@ -289,6 +317,7 @@ async def query_deals(
 ) -> list[AggregatedDeal] | int:
     """Query deals with optional filters. If count_only=True, returns int."""
     clauses: list[str] = [
+        "deals.exclusion_reason IS NULL",
         "deals.discount_pct >= ?",
         "deals.current_price >= 1 AND deals.discount_pct < 95",
         "datetime(deals.scraped_at) >= datetime('now', '-72 hours')",
@@ -408,6 +437,7 @@ async def query_deals(
             scraped_at=datetime.fromisoformat(row["scraped_at"]),
             image_url=row["image_url"],
             brand=row["brand"],
+            product_type=row["product_type"],
             review_score=row["review_score"],
             review_award=row["review_award"],
             review_url=row["review_url"],

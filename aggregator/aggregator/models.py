@@ -30,3 +30,4 @@ class AggregatedDeal:
     first_seen: str | None = None
     previous_price: float | None = None
     currency: str = "USD"
+    product_type: str | None = None

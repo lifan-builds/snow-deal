@@ -662,7 +662,7 @@ async def compute_and_store_deal_reviews(db_path=None) -> int:
     # Load all deals (id, name only — we only need these for matching)
     async with aiosqlite.connect(db_path) as db:
         db.row_factory = aiosqlite.Row
-        cursor = await db.execute("SELECT id, name FROM deals")
+        cursor = await db.execute("SELECT id, name FROM deals WHERE exclusion_reason IS NULL")
         deal_rows = await cursor.fetchall()
 
     matched: list[dict] = []

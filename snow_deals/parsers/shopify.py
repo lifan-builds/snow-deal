@@ -21,6 +21,31 @@ def _products_json(body: str) -> list[dict]:
     return data["products"]
 
 
+def product_type_from_item(item: dict) -> str:
+    """Retain the retailer's readable taxonomy when its type is an internal code."""
+    tags = item.get("tags") or []
+    if isinstance(tags, str):
+        tags = [tag.strip() for tag in tags.split(",")]
+    taxonomy = {}
+    for tag in tags:
+        key, separator, value = str(tag).partition(":")
+        if separator and key in {"BreadcrumbClass", "BreadcrumbSubBMC"}:
+            taxonomy[key] = value.strip()
+    if taxonomy.get("BreadcrumbClass"):
+        result = " | ".join(taxonomy[key] for key in ("BreadcrumbClass", "BreadcrumbSubBMC") if taxonomy.get(key))
+    else:
+        explicit_tags = {str(tag).strip() for tag in tags if str(tag).startswith('Gear: ')}
+        if len(explicit_tags) == 1:
+            result = explicit_tags.pop().removeprefix('Gear: ')
+        elif 'Skis:' in tags or 'Skis' in tags:
+            result = 'Skis'
+        else:
+            result = str(item.get("product_type") or "")
+    if any(str(tag).strip().lower() in {'kids', 'junior', 'youth', 'boys', 'girls', 'gender/age:kids'} for tag in tags):
+        result += ' | Kids'
+    return result
+
+
 class ShopifyParser(BaseParser):
     """
     Parser for Shopify stores that expose /collections/{handle}/products.json.
@@ -100,7 +125,7 @@ class ShopifyParser(BaseParser):
                 current_price=price,
                 original_price=original_price,
                 sizes=sizes or None,
-                product_type=item.get("product_type") or None,
+                product_type=product_type_from_item(item) or None,
                 image_url=image_url,
                 brand=item.get("vendor") or None,
             ))

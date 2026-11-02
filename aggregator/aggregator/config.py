@@ -446,6 +446,7 @@ CATEGORY_RULES: list[tuple[str, list[str]]] = [
                    "mach sport"]),
     # Snowboard boots — specific keywords
     ("snowboard boots", ["snowboard boot", "snowboard boots"]),
+    ("winter boots", ["winter boot", "winter boots", "snow boot", "snow boots"]),
     # Generic boot — needs further disambiguation via brand/model fallback
     ("boots", [" boa", "boot", "boots"]),
     ("bindings", ["ski binding", "ski bindings", "snowboard binding", "snowboard bindings",
@@ -537,7 +538,7 @@ SKI_MODEL_NAMES: set[str] = {
     # Atomic
     "maverick", "bent", "redster",
     # Head
-    "supershape", "shape", "kore",
+    "supershape", "kore",
     # K2
     "mindbender", "disruption", "reckoner",
     # Nordica
@@ -567,19 +568,19 @@ SKI_MODEL_NAMES: set[str] = {
     # Women's-specific ski models
     "secret", "vetta", "siren", "sierra", "maven", "reliance",
     # Generic / multi-brand
-    "sender", "freecarver", "revolt",
+    "sender", "revolt",
 }
 SNOWBOARD_MODEL_NAMES: set[str] = {
     # Burton
     "twinpig", "kilroy", "process", "custom", "flagship", "feelgood",
-    "hometown", "dancehaul", "insano", "cartographer", "yeasayer",
+    "hometown", "dancehaul", "cartographer", "yeasayer",
     "feelbetter", "swoon",
     # Lib Tech
     "proto", "orca", "ejack", "skunk",
     # Ride
     "warpig", "psychocandy", "shadowban", "berzerker", "algorythm",
     "d.o.a.", "twinpig",
-    "orton", "almanac", "excavator", "heartbreaker",
+    "almanac", "excavator", "heartbreaker",
     # Jones — removed "frontier" (conflicts with Dragon goggles), "storm", "mind", "ultra" (too generic)
     "tweaker", "cultivator", "spellcaster", "hovercraft", "stratos",
     "aeronaut", "horizon", "passport",
@@ -599,8 +600,8 @@ SNOWBOARD_MODEL_NAMES: set[str] = {
     "xoxo",
     # Various — removed "slash" (too generic)
     "rumble", "mercury", "legacy", "dpr", "aura",
-    "falcor", "disaster", "meteorite", "strata",
-    "cadet", "relapse", "gloss",
+    "disaster",
+    "relapse", "gloss",
 }
 GOGGLE_MODEL_NAMES: set[str] = {
     "squad", "skyline", "i/o", "sagen", "goliath+",
@@ -610,7 +611,7 @@ GOGGLE_MODEL_NAMES: set[str] = {
 BINDING_MODEL_NAMES: set[str] = {
     "re:flex", "est", "cartel", "mission", "supermatic",
     "griffon", "strive", "stage",
-    "citizen", "lexa", "scribe",
+    "citizen", "lexa", "scribe", "falcor", "strata", "cadet", "meteorite",
 }
 BOOT_MODEL_NAMES: set[str] = {
     # Ski boot models
@@ -618,10 +619,10 @@ BOOT_MODEL_NAMES: set[str] = {
     "sportmachine", "promachine", "cabrio", "shadow", "nexo",
     "alltrack", "bfc", "vizion", "xt3",
     "formula", "steadfast", "garabaldi",
-    "veloce", "recon", "lupo", "kita",
+    "veloce", "recon", "lupo",
     "select",
     # Snowboard boot models
-    "limelight", "highshot", "lasso", "maysis", "swath",
+    "limelight", "highshot", "lasso", "maysis", "swath", "kita", "insano", "orton",
 }
 # Ski boot model names — for disambiguation
 SKI_BOOT_MODEL_NAMES: set[str] = {
@@ -629,13 +630,13 @@ SKI_BOOT_MODEL_NAMES: set[str] = {
     "sportmachine", "promachine", "cabrio", "shadow", "nexo",
     "alltrack", "bfc", "vizion", "xt3",
     "formula", "steadfast", "garabaldi",
-    "veloce", "recon", "lupo", "kita",
+    "veloce", "recon", "lupo",
     "select",
 }
 # Snowboard boot model names — for disambiguation
 SNOWBOARD_BOOT_MODEL_NAMES: set[str] = {
     # Burton
-    "limelight", "highshot", "lasso", "maysis", "swath",
+    "limelight", "highshot", "lasso", "maysis", "swath", "kita", "insano", "orton",
     "photon", "ruler", "imperial", "felix",
     "waverange",
     # DC
@@ -660,7 +661,7 @@ MULTI_WORD_MODEL_NAMES: list[tuple[str, str]] = [
     ("black pearl", "skis"),
     ("santa ana", "skis"),
     ("wild belle", "skis"),
-    ("pick your line", "skis"),
+    ("pick your line", "snowboards"),
     ("il moro", "ski boots"),    # Full Tilt Il Moro boot
     # Snowboards
     ("huck knife", "snowboards"),
@@ -698,9 +699,9 @@ MULTI_WORD_MODEL_NAMES: list[tuple[str, str]] = [
     ("oh yeah", "snowboards"),
     ("twin sister", "snowboards"),
     # Boots
-    ("s/pro alpha", "boots"),
-    ("s/pro hv", "boots"),
-    ("cabrio lv", "boots"),
+    ("s/pro alpha", "ski boots"),
+    ("s/pro hv", "ski boots"),
+    ("cabrio lv", "ski boots"),
     # Bindings
     ("carbon supermatic", "bindings"),
     ("lt supermatic", "bindings"),
@@ -713,6 +714,17 @@ MULTI_WORD_MODEL_NAMES: list[tuple[str, str]] = [
     ("squad photochromic", "goggles"),
     # Goggle models (Dragon)
     ("lil d", "goggles"),
+    ("union reset", "snowboard boots"),
+    ("scott celeste", "ski boots"),
+    ("scott cosmos", "ski boots"),
+    ("black diamond helio", "skis"),
+    ("elan truflex", "skis"),
+    ("dynastar m-menace", "skis"),
+    ("rossignol dreamer 90", "skis"),
+    ("rossignol sender soul", "skis"),
+    ("salomon mtn pure", "bindings"),
+    ("fritschi xenic", "bindings"),
+    ("fritschi tecton", "bindings"),
     # More snowboard models — use brand-qualified names for ambiguous models
     ("cream halldor", "snowboards"),
     ("jones frontier", "snowboards"),
@@ -823,6 +835,12 @@ EXCLUDE_KEYWORDS: list[str] = [
     "vans ", "emerica ", "etnies ", "new balance ", "numeric ",
     "adidas ", "sorel ", " sneaker", "gazelle",
     " mens shoe 20", " womens shoe 20", " ladies shoe 20",
+    # Mixed sale collections: explicit non-snow product types and titles.
+    "boardshort", "surfskate", "inline skate", "rollerblade", "pickleball",
+    "rooftop awning", "awning room", "water bottle", "portable speaker",
+    "button up shirt", "short sleeve", "short sleeved", "s/s shirt", "ss shirt",
+    "sport bra", "sports bra", "agility bra", "empower bra", "boost bra",
+    "surf cover up", "surf sleeve", "rash vest",
     # Swimwear
     "swimsuit", "swim trunk", "bikini", "swim jammer", "cheekini",
     # Casual clothing
