@@ -10,6 +10,9 @@ class BaseParser(ABC):
 
     requires_product_pages = False
 
+    def validate_listing_response(self, html: str, page_url: str, headers: dict[str, str]) -> None:
+        """Optional response metadata contract, before decoding or following pages."""
+
     def get_product_evidence_url(self, html: str, page_url: str) -> str | None:
         """Optional same-merchant, read-only evidence needed by a product page."""
         return None

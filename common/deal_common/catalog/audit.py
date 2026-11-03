@@ -8,12 +8,19 @@ import random
 import re
 from datetime import UTC, datetime
 from decimal import Decimal, InvalidOperation
+from html import unescape
 from urllib.parse import parse_qs, urlencode, urlsplit, urlunsplit
 
 import httpx
 
 from deal_common.catalog.refresh import safe_url
 from deal_common.http import DEFAULT_HEADERS, fetch_listing
+from deal_common.parsers.bikecloset import API as BIKECLOSET_API
+from deal_common.parsers.bikecloset import decode_offer as bikecloset_offer
+from deal_common.parsers.bikecloset import manufacturer as bikecloset_manufacturer
+from deal_common.parsers.bikecloset import money as bikecloset_money
+from deal_common.parsers.bikecloset import new_condition as bikecloset_new
+from deal_common.parsers.bikecloset import offer_destination as bikecloset_destination
 from deal_common.parsers.grizzly import sku_destination, structured_products
 from deal_common.parsers.grizzly import text as decoded_text
 from deal_common.parsers.harvey import shipping_notice
@@ -88,8 +95,9 @@ async def audit_sample(cards: list[dict], allowed_domains: dict[str, str], *, de
             sku_product = sku_destination(offer["url"], offer["variant_key"])
             taylor_product = taylor_destination(offer['url'], offer['variant_key'])
             rockler_product = rockler_destination(offer['url'], offer['variant_key'])
+            bikecloset_product = bikecloset_destination(offer['url'], offer['variant_key'])
             if (not domain or not safe_url(offer["url"], domain)
-                    or (not (taylor_product or rockler_product) and ("/products/" not in parts.path
+                    or (not (taylor_product or rockler_product or bikecloset_product) and ("/products/" not in parts.path
                         or (not sku_product and parse_qs(parts.query).get("variant") != [offer["variant_key"]])))):
                 results.append({**row, "status": "inconclusive", "reason": "Unsupported or unsafe product destination"})
                 continue
@@ -103,6 +111,18 @@ async def audit_sample(cards: list[dict], allowed_domains: dict[str, str], *, de
                 results.append({**row, "status": "inconclusive", "reason": "Host blocked or rate-limited earlier in this audit"})
                 continue
             try:
+                if bikecloset_product:
+                    parent_id, variant_id = offer['variant_key'].split('|')[0].split(':')
+                    row['evidence_url'] = BIKECLOSET_API + '/' + variant_id
+                    response = await fetch_listing(client, row['evidence_url'], delay)
+                    parent_url = BIKECLOSET_API + '/' + parent_id
+                    parent = await fetch_listing(client, parent_url, delay)
+                    row.update(response_sha256=hashlib.sha256(response.content).hexdigest(),
+                               parent_evidence_url=parent_url,
+                               parent_response_sha256=hashlib.sha256(parent.content).hexdigest())
+                    row.update(validate_bikecloset_product(card, parent.json(), response.json()))
+                    results.append(row)
+                    continue
                 if rockler_product:
                     response = await fetch_listing(client, offer['url'], delay)
                     product = rockler_data(response.text, offer['url'])
@@ -148,6 +168,29 @@ async def audit_sample(cards: list[dict], allowed_domains: dict[str, str], *, de
                 row.update(status="inconclusive", reason="Response could not be verified")
             results.append(row)
     return results
+
+
+def validate_bikecloset_product(card, parent, variant):
+    expected = card['offer']
+    actual = bikecloset_offer(parent, variant)
+    checks = {
+        'identity': unescape(parent['name']) == card['name'],
+        'currency': variant['prices']['currency_code'] == card.get('currency', 'USD'),
+        'price': bikecloset_money(variant['prices'], 'price') == expected['current_price'],
+        'reference': bikecloset_money(variant['prices'], 'regular_price') == expected['original_price'],
+        'condition': bikecloset_new(parent),
+        'stock': actual is not None and actual.availability == 'in_stock',
+        'destination': actual is not None and actual.url == expected['url'] and actual.variant_key == expected['variant_key'],
+        'options': actual is not None and actual.options == expected.get('options') and actual.size == expected.get('size'),
+        'shipping_note': actual is not None and actual.availability_note == expected.get('availability_note', ''),
+    }
+    return {'status': 'match' if all(checks.values()) else 'mismatch', 'checks': checks,
+            'merchant': {'parent_id': parent['id'], 'variant_id': variant['id'], 'sku': variant.get('sku'),
+                         'brand': bikecloset_manufacturer(parent),
+                         'price': bikecloset_money(variant['prices'], 'price'),
+                         'reference': bikecloset_money(variant['prices'], 'regular_price'),
+                         'currency': variant['prices']['currency_code'], 'is_in_stock': variant['is_in_stock'],
+                         'is_on_backorder': variant['is_on_backorder']}}
 
 
 def validate_rockler_product(card: dict, product: dict, delivery: dict) -> dict:

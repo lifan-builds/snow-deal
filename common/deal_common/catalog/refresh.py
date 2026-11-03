@@ -12,6 +12,8 @@ from deal_common.catalog.identity import manufacturer_name
 from deal_common.catalog.storage import save_source
 from deal_common.http import DEFAULT_HEADERS, fetch_products
 from deal_common.offers import discount
+from deal_common.parsers.bikecloset import BikeClosetParser
+from deal_common.parsers.bikecloset import offer_destination as bikecloset_destination
 from deal_common.parsers.grizzly import GrizzlyParser, sku_destination
 from deal_common.parsers.rockler import RocklerParser
 from deal_common.parsers.rockler import offer_destination as rockler_destination
@@ -42,7 +44,9 @@ def normalize(products, catalog: Catalog, domain: str, *, parser_type: str = "sh
             continue
         offers = []
         for offer in product.offers:
-            if parser_type == 'grizzly':
+            if parser_type == 'bikecloset':
+                destination_matches = bikecloset_destination(offer.url, offer.variant_key)
+            elif parser_type == 'grizzly':
                 destination_matches = sku_destination(offer.url, offer.variant_key)
             elif parser_type == 'taylor':
                 destination_matches = taylor_destination(offer.url, offer.variant_key)
@@ -80,9 +84,11 @@ async def refresh(catalog: Catalog, path: Path, *, max_pages: int = 30,
             observed_at = datetime.now(UTC).isoformat()
             if source.currency != "USD":
                 raise ValueError("These catalogs accept USD sources only")
-            if source.parser_type not in {"shopify", "grizzly", "taylor", "rockler"}:
+            if source.parser_type not in {"shopify", "grizzly", "taylor", "rockler", "bikecloset"}:
                 raise ValueError("Unsupported catalog parser")
-            if source.parser_type == 'rockler':
+            if source.parser_type == 'bikecloset':
+                parser = BikeClosetParser()
+            elif source.parser_type == 'rockler':
                 parser = RocklerParser()
             elif source.parser_type == 'taylor':
                 parser = TaylorParser()

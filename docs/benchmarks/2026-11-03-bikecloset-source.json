@@ -1,0 +1,105 @@
+{
+  "source": "Bike Closet",
+  "catalog": "cycling",
+  "recorded_at": "2026-11-03T16:52:17.651281+00:00",
+  "published": false,
+  "scope": "public category 3411 variable products, USD new complete bikes/framesets; not all retailer inventory",
+  "refresh": {
+    "candidate": {
+      "catalog": "cycling",
+      "name": "Bike Closet",
+      "domain": "bikecloset.com",
+      "parser_type": "bikecloset",
+      "scrape_urls": [
+        "https://bikecloset.com/wp-json/wc/store/v1/products?category=3411&type=variable&per_page=100&page=1&orderby=id&order=asc"
+      ]
+    },
+    "checked_at": "2026-11-03T08:05:42.473901+00:00",
+    "snapshot": "00-cycling.db",
+    "refresh": {
+      "source": "Bike Closet",
+      "status": "complete",
+      "errors": 0,
+      "pages": 1,
+      "collections": [
+        {
+          "url": "https://bikecloset.com/wp-json/wc/store/v1/products?category=3411&type=variable&per_page=100&page=1&orderby=id&order=asc",
+          "pages": 1,
+          "products": 21,
+          "status": "complete"
+        }
+      ],
+      "product_pages": 26,
+      "evidence_requests": 26,
+      "parsed_products": 21,
+      "accepted_products": 21
+    },
+    "eligible_listings": 20,
+    "deep_listings": 20,
+    "disposition": "needs-review"
+  },
+  "corrections": {
+    "original_snapshot": "admission-3/00-cycling.db",
+    "successful_at_preserved": "2026-11-03T08:01:04.941554+00:00",
+    "excluded": [
+      {
+        "name": "Time FRAME FLUIDITY TRANSLINK DISC V15 WHITE SIZE L (Max 25mm)",
+        "url": "https://bikecloset.com/product/time-frame-fluidity-translink-disc-v15-white-size-l-max-25mm/",
+        "reason": "explicit title size conflicts with variant size"
+      }
+    ],
+    "brand_evidence": "discovery public category labels: Time Frames -> TIME; LOOK -> LOOK",
+    "verification": "No new observation date. Separate merchant audit must confirm final selected offers."
+  },
+  "final_snapshot": {
+    "successful_at": "2026-11-03T08:01:04.941554+00:00",
+    "products": 20,
+    "variants": 107,
+    "in_stock_variants": 101,
+    "unknown_variants": 6,
+    "eligible_listings": 19,
+    "deep_listings": 19,
+    "useful_retailers": 1
+  },
+  "merchant_audit": {
+    "catalog": "cycling",
+    "source": "Bike Closet",
+    "started_at": "2026-11-03T08:08:26.380194+00:00",
+    "completed_at": "2026-11-03T10:30:45.418713+00:00",
+    "source_observed_at": "2026-11-03T08:01:04.941554+00:00",
+    "population": 19,
+    "seed": 20261103,
+    "method": "all selected offers when fewer than 30; separately fetched exact variant and parent public API",
+    "sample_size": 19,
+    "match": 19,
+    "mismatch": 0,
+    "inconclusive": 0,
+    "verified_match_percent": 100.0,
+    "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation"
+  },
+  "accuracy_metric_status": "not M3-qualified: audit elapsed longer than the fixed 15-minute observation window; no population accuracy claim",
+  "browser": {
+    "in_stock_destination": "https://bikecloset.com/product/look-765-optimum-disc-frameset/?attribute_pa_color=black-glossy-mat&attribute_pa_size=xs",
+    "selected_sku": "3611720202321",
+    "price": 799,
+    "reference": 2000,
+    "blue_xs": "Destination selects SKU 3611720202376; Store API reports out of stock, so excluded.",
+    "candidate_mobile": {
+      "viewport": [
+        390,
+        844
+      ],
+      "first_price_bottom": 727.09375,
+      "scroll_to_price": 0,
+      "horizontal_overflow": false
+    },
+    "production_metric_status": "local preview only; not a competitive mobile measurement"
+  },
+  "limitations": [
+    "Retailer compare-at references, not independently verified former selling prices.",
+    "No checkout or destination-specific shipping validation; preserve exclusions for Hawaii/Alaska.",
+    "Transient HTTP 429 responses recovered through the existing bounded retry policy.",
+    "Final standalone candidate applies deterministic size/brand corrections without changing observation timestamps.",
+    "Fresh runner-side audits and release-wide checks remain required before deployment."
+  ]
+}

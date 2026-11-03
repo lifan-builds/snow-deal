@@ -1,6 +1,6 @@
 # Source coverage and quality release — prepared 3 November 2026 UTC
 
-Repository: `lifan-builds/snow-deal`. Branch: `codex/gravity-source`. Production baseline: `0530cad`. Publication of this follow-up remains pending approval; the previous approval covered release `7798318` and its rollout recovery.
+Repository: `lifan-builds/snow-deal`. Branch: `codex/gravity-source`. Production baseline: `0530cad`. The user approved this release and comparable future releases on November 3. PR #7 passed CI and merged as `9b421b7`; fresh audited rollout is running. The earlier approval covered release `7798318` and its recovery.
 
 ## Result to publish
 

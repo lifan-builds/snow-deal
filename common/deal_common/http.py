@@ -131,6 +131,7 @@ async def fetch_products(store: RetailerConfig, parser: BaseParser, client: http
                 break
             seen_pages.add(fingerprint)
             try:
+                parser.validate_listing_response(resp.text, current_url, dict(resp.headers))
                 page_products = parser.parse_listing_page(resp.text, current_url)
                 next_url = parser.get_next_page_url(resp.text, current_url)
                 if parser.requires_product_pages:
