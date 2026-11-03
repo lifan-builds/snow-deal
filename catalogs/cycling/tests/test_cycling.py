@@ -90,3 +90,19 @@ def test_mislabeled_color_or_wheel_size_is_not_frame_size(value):
     assert product.offers[0].size is None
     assert product.offers[0].options == f'{value} / Medium'
     assert product.offers[0].url.endswith('variant=1')
+
+
+@pytest.mark.parametrize("name,kind,brand,expected", [
+    ("Rocky Mountain Solo Gravel Bike", "Gravel Bike", "Rocky Mountain", "Gravel bikes"),
+    ("Rocky Mountain Road Bike", "Road Bike", "Rocky Mountain", "Road bikes"),
+    ("Rocky Mountain Instinct", "Mountain Bikes", "Rocky Mountain", "Mountain bikes"),
+    ("Evil Bike Co The Offering V2 Frame Only XL - Mountain Bike Frame",
+     "Full Suspension Enduro Mountain Bike", "Evil Bike Co.", "Framesets"),
+    ("Frame-Only Mountain Bike", "Bikes", "Example", "Framesets"),
+    ("Frame Only Repair Stand", "Bike Stands", "Example", None),
+])
+def test_brand_and_frame_only_do_not_misclassify_bikes(name, kind, brand, expected):
+    product = Product(name, "https://example.com/products/bike", 1500, 4000,
+                      product_type=kind, brand=brand)
+    result = classify(product)
+    assert (result.category if result else None) == expected
