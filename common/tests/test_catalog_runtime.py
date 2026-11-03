@@ -242,6 +242,42 @@ def test_history_route_scoped_to_configured_source_and_current_variant(tmp_path)
     assert client.get("/history", params={**params, "source": "Unconfigured"}).status_code == 404
 
 
+@pytest.mark.parametrize("old_brand", ["In Stock", "Out of Stock", "ESD：Nov.30（Black）"])
+def test_history_survives_fulfillment_label_cleanup_without_rewriting_evidence(tmp_path, old_brand):
+    from deal_common.catalog.storage import read_offer_history
+    db = tmp_path / "history.db"
+    previous = {**product(offers=[offer(price=1200, stock="unknown")]), "brand": old_brand}
+    current = {**product(offers=[offer(price=1100)]), "brand": "Unspecified"}
+    previous_time = (NOW - timedelta(days=1)).isoformat()
+    save_source(db, "cycling", "BikesOnline", previous_time, [previous], "complete", {})
+    save_source(db, "cycling", "BikesOnline", NOW.isoformat(), [current], "complete", {})
+    original_bytes = db.read_bytes()
+    history = read_offer_history(db, "cycling", "BikesOnline", current, current["offers"][0], now=NOW)
+    assert len(history) == 2
+    assert history[1] == {"observed_at": previous_time, "price": 1200,
+                          "reference": 2000, "availability": "unknown", "availability_note": ""}
+    assert history[0]["price"] == 1100
+    assert db.read_bytes() == original_bytes
+
+
+@pytest.mark.parametrize("level,field,value", [
+    ("product", "brand", "Real Manufacturer"),
+    ("product", "name", "Different build"),
+    ("product", "url", "https://example.com/products/other-model"),
+    ("offer", "variant_key", "different-variant"),
+    ("offer", "options", "Different package"),
+    ("offer", "url", "https://example.com/products/bike?variant=different"),
+])
+def test_history_label_cleanup_cannot_merge_other_product_or_variant(tmp_path, level, field, value):
+    from deal_common.catalog.storage import read_offer_history
+    db = tmp_path / "history.db"
+    previous = {**product(), "brand": "In Stock"}
+    current = {**product(), "brand": "Unspecified"}
+    (previous if level == "product" else previous["offers"][0])[field] = value
+    save_source(db, "cycling", "BikesOnline", NOW.isoformat(), [previous], "complete", {})
+    assert read_offer_history(db, "cycling", "BikesOnline", current, current["offers"][0], now=NOW) == []
+
+
 def test_frameset_keyword_cannot_override_accessory_taxonomy():
     p = Product("Frameset transport bag", "https://example.com/products/bag", 100, 200,
                 product_type="Bike Bags")

@@ -5,6 +5,8 @@ from contextlib import contextmanager
 from datetime import UTC
 from pathlib import Path
 
+from deal_common.catalog.identity import manufacturer_name
+
 
 @contextmanager
 def database(path: Path, catalog: str, *, writable: bool = False):
@@ -91,7 +93,8 @@ def read_offer_history(path: Path, catalog: str, source: str, product: dict, off
         if stamp.tzinfo is None or not cutoff <= stamp <= now:
             continue
         for historical in json.loads(row["products"]):
-            if (historical["url"], historical["name"], historical["brand"]) != (product["url"], product["name"], product["brand"]):
+            if ((historical["url"], historical["name"], manufacturer_name(historical["brand"]))
+                    != (product["url"], product["name"], manufacturer_name(product["brand"]))):
                 continue
             for candidate in historical["offers"]:
                 if (candidate["variant_key"], candidate["options"], candidate["url"]) != (offer["variant_key"], offer["options"], offer["url"]):

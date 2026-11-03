@@ -1,6 +1,5 @@
 """Bounded source refreshes keep previous complete data on a partial response."""
 import asyncio
-import re
 from dataclasses import asdict
 from datetime import UTC, datetime
 from pathlib import Path
@@ -9,6 +8,7 @@ from urllib.parse import parse_qs, urlsplit
 import httpx
 
 from deal_common.catalog.definition import Catalog
+from deal_common.catalog.identity import manufacturer_name
 from deal_common.catalog.storage import save_source
 from deal_common.http import DEFAULT_HEADERS, fetch_products
 from deal_common.offers import discount
@@ -57,11 +57,7 @@ def normalize(products, catalog: Catalog, domain: str, *, parser_type: str = "sh
             offers.append(data)
         if not offers:
             continue
-        original_brand = (product.brand or "Unspecified").strip()
-        # Some storefronts put fulfillment messages in Shopify's vendor field.
-        # They establish neither a manufacturer nor variant stock evidence.
-        if re.fullmatch(r"in stock|out of stock|esd[:：].*", original_brand, re.IGNORECASE):
-            original_brand = "Unspecified"
+        original_brand = manufacturer_name(product.brand)
         row = {"name": product.name, "url": product.url,
                "brand": brands.get(original_brand.casefold(), original_brand),
                "source_category": product.product_type,

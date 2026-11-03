@@ -159,3 +159,8 @@ Fresh combined refreshes completed for 17 cycling and ten tools sources; both me
 ## Variant shipping evidence — 2026-11-03 UTC
 
 On separate branch `codex/variant-shipping-evidence`, preserve Harvey ESD notices on their exact color variants and withhold confirmed-stock status. The independent product audit rejects the delayed black G-700Pro while white passes; UI cards and dated history retain the notice. A fresh Harvey-only refresh in a copied public snapshot changes one of 14 offers to unknown, preserving 607 eligible tools listings and all unrelated source records. 501 offline tests and scoped Ruff checks pass; desktop and mobile history layouts were inspected. See `docs/SHIPPING-EVIDENCE-FOLLOWUP.md` and its public receipt. This is local follow-up work, separate from the pending publication request for `35f2bfb`.
+
+
+## Preserve history across manufacturer-label cleanup — 2026-11-03 UTC
+
+Shared the existing fulfillment-label normalization between ingestion and history identity comparison. A prior In Stock / Out of Stock / ESD label now matches the current Unspecified manufacturer only when the source, product URL/name, variant ID/options and destination still match. Historical records remain unchanged. Nine regressions cover preservation of dates/prices/references/stock, read-only behavior, and rejection of real manufacturer, model, package or variant changes. All 510 offline tests and catalog Ruff checks pass. The inspected Harvey public snapshot contains one real observation day; this correction does not create or claim recovered history there. Follow-up remains local, separate from publication approval for `35f2bfb`.
