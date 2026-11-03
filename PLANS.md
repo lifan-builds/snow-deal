@@ -164,3 +164,8 @@ On separate branch `codex/variant-shipping-evidence`, preserve Harvey ESD notice
 ## Preserve history across manufacturer-label cleanup — 2026-11-03 UTC
 
 Shared the existing fulfillment-label normalization between ingestion and history identity comparison. A prior In Stock / Out of Stock / ESD label now matches the current Unspecified manufacturer only when the source, product URL/name, variant ID/options and destination still match. Historical records remain unchanged. Nine regressions cover preservation of dates/prices/references/stock, read-only behavior, and rejection of real manufacturer, model, package or variant changes. All 510 offline tests and catalog Ruff checks pass. The inspected Harvey public snapshot contains one real observation day; this correction does not create or claim recovered history there. Follow-up remains local, separate from publication approval for `35f2bfb`.
+
+
+## Rockler public category feed discovered — 2026-11-03 UTC
+
+Observed the storefront's real category API and traversed all ten sale pages: 223 unique listings, 62 preliminary equipment discounts above the reference floor and seven nominal deep discounts. This supersedes the earlier empty text-search probe, which contained a merchandising redirect. Admission remains held: 227 advertised versus 223 returned records is unresolved, and sampled Axiom SKU 77007's structured InStock conflicts with a future manufacturer shipping date. Recorded public evidence and implementation gates in `docs/tasks/rockler-source/RESEARCH.md`. No retailer configuration, catalog snapshot or deployment changed.

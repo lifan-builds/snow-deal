@@ -1,0 +1,564 @@
+{
+  "started_at": "2026-11-03T05:45:10.983422+00:00",
+  "completed_at": "2026-11-03T05:45:27.753893+00:00",
+  "endpoint": "https://rn129l.a.searchspring.io/api/search/category.json",
+  "category": "Power Tools",
+  "filters": [
+    "Clearance",
+    "Flash Sale",
+    "Sale",
+    "Free Gift"
+  ],
+  "pages": [
+    {
+      "totalResults": 227,
+      "begin": 1,
+      "end": 24,
+      "currentPage": 1,
+      "totalPages": 10,
+      "previousPage": 0,
+      "nextPage": 2,
+      "perPage": 24,
+      "defaultPerPage": 24,
+      "returned_count": 20,
+      "merchandising_ids": {
+        "elevated": [
+          "9c311dc5389d951a00b4558ece62baf2",
+          "d9ba4b3d19c61e143c627a0f6b998538"
+        ],
+        "removed": [
+          "4efb04fb5ea0195ddd5b9f39a1e79326",
+          "0a2c87149d531f4c9e4e557a94c4dbd9"
+        ]
+      }
+    },
+    {
+      "totalResults": 227,
+      "begin": 25,
+      "end": 48,
+      "currentPage": 2,
+      "totalPages": 10,
+      "previousPage": 1,
+      "nextPage": 3,
+      "perPage": 24,
+      "defaultPerPage": 24,
+      "returned_count": 24,
+      "merchandising_ids": {
+        "elevated": [],
+        "removed": [
+          "4efb04fb5ea0195ddd5b9f39a1e79326",
+          "0a2c87149d531f4c9e4e557a94c4dbd9"
+        ]
+      }
+    },
+    {
+      "totalResults": 227,
+      "begin": 49,
+      "end": 72,
+      "currentPage": 3,
+      "totalPages": 10,
+      "previousPage": 2,
+      "nextPage": 4,
+      "perPage": 24,
+      "defaultPerPage": 24,
+      "returned_count": 24,
+      "merchandising_ids": {
+        "elevated": [],
+        "removed": [
+          "4efb04fb5ea0195ddd5b9f39a1e79326",
+          "0a2c87149d531f4c9e4e557a94c4dbd9"
+        ]
+      }
+    },
+    {
+      "totalResults": 227,
+      "begin": 73,
+      "end": 96,
+      "currentPage": 4,
+      "totalPages": 10,
+      "previousPage": 3,
+      "nextPage": 5,
+      "perPage": 24,
+      "defaultPerPage": 24,
+      "returned_count": 24,
+      "merchandising_ids": {
+        "elevated": [],
+        "removed": [
+          "4efb04fb5ea0195ddd5b9f39a1e79326",
+          "0a2c87149d531f4c9e4e557a94c4dbd9"
+        ]
+      }
+    },
+    {
+      "totalResults": 227,
+      "begin": 97,
+      "end": 120,
+      "currentPage": 5,
+      "totalPages": 10,
+      "previousPage": 4,
+      "nextPage": 6,
+      "perPage": 24,
+      "defaultPerPage": 24,
+      "returned_count": 24,
+      "merchandising_ids": {
+        "elevated": [],
+        "removed": [
+          "4efb04fb5ea0195ddd5b9f39a1e79326",
+          "0a2c87149d531f4c9e4e557a94c4dbd9"
+        ]
+      }
+    },
+    {
+      "totalResults": 227,
+      "begin": 121,
+      "end": 144,
+      "currentPage": 6,
+      "totalPages": 10,
+      "previousPage": 5,
+      "nextPage": 7,
+      "perPage": 24,
+      "defaultPerPage": 24,
+      "returned_count": 24,
+      "merchandising_ids": {
+        "elevated": [],
+        "removed": [
+          "4efb04fb5ea0195ddd5b9f39a1e79326",
+          "0a2c87149d531f4c9e4e557a94c4dbd9"
+        ]
+      }
+    },
+    {
+      "totalResults": 227,
+      "begin": 145,
+      "end": 168,
+      "currentPage": 7,
+      "totalPages": 10,
+      "previousPage": 6,
+      "nextPage": 8,
+      "perPage": 24,
+      "defaultPerPage": 24,
+      "returned_count": 24,
+      "merchandising_ids": {
+        "elevated": [],
+        "removed": [
+          "4efb04fb5ea0195ddd5b9f39a1e79326",
+          "0a2c87149d531f4c9e4e557a94c4dbd9"
+        ]
+      }
+    },
+    {
+      "totalResults": 227,
+      "begin": 169,
+      "end": 192,
+      "currentPage": 8,
+      "totalPages": 10,
+      "previousPage": 7,
+      "nextPage": 9,
+      "perPage": 24,
+      "defaultPerPage": 24,
+      "returned_count": 24,
+      "merchandising_ids": {
+        "elevated": [],
+        "removed": [
+          "4efb04fb5ea0195ddd5b9f39a1e79326",
+          "0a2c87149d531f4c9e4e557a94c4dbd9"
+        ]
+      }
+    },
+    {
+      "totalResults": 227,
+      "begin": 193,
+      "end": 216,
+      "currentPage": 9,
+      "totalPages": 10,
+      "previousPage": 8,
+      "nextPage": 10,
+      "perPage": 24,
+      "defaultPerPage": 24,
+      "returned_count": 24,
+      "merchandising_ids": {
+        "elevated": [],
+        "removed": [
+          "4efb04fb5ea0195ddd5b9f39a1e79326",
+          "0a2c87149d531f4c9e4e557a94c4dbd9"
+        ]
+      }
+    },
+    {
+      "totalResults": 227,
+      "begin": 217,
+      "end": 227,
+      "currentPage": 10,
+      "totalPages": 10,
+      "previousPage": 9,
+      "nextPage": 0,
+      "perPage": 24,
+      "defaultPerPage": 24,
+      "returned_count": 11,
+      "merchandising_ids": {
+        "elevated": [],
+        "removed": [
+          "4efb04fb5ea0195ddd5b9f39a1e79326",
+          "0a2c87149d531f4c9e4e557a94c4dbd9"
+        ]
+      }
+    }
+  ],
+  "unique_listings": 223,
+  "pagination_anomalies": [
+    {
+      "page": 1,
+      "advertised_count": 24,
+      "returned_count": 20
+    },
+    {
+      "advertised_total": 227,
+      "unique_returned": 223
+    }
+  ],
+  "complete_count_reconciliation": false,
+  "candidate_equipment_discounts": 62,
+  "candidate_deep_discounts": 7,
+  "status": "discovery_only",
+  "admitted": false,
+  "limitations": [
+    "Listing in_stock is not physical stock: sampled CNC lists a future shipping date.",
+    "Candidate counts are not M1: variants, shipping, stock and condition are not fully validated.",
+    "SKU 77007 browser showed manufacturer shipment estimated 11/14/2026.",
+    "Grouped/configurable products need exact SKU option resolution."
+  ],
+  "sample_detail": {
+    "url": "https://www.rockler.com/axiom-2x2-cnc-router-24-x-24",
+    "name": "Axiom 2X2 CNC Router, 24'' x 24''",
+    "sku": "77007",
+    "offers": [
+      {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": 999,
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "seller": {
+          "@id": "https://www.rockler.com/#organization"
+        },
+        "url": "https://www.rockler.com/axiom-2x2-cnc-router-24-x-24",
+        "priceValidUntil": "2026-12-31T00:00:00+00:00",
+        "@id": "https://www.rockler.com/axiom-2x2-cnc-router-24-x-24#offer"
+      }
+    ],
+    "browser_shipping_evidence": {
+      "delivery": "Ships from Manufacturer",
+      "estimated_ship_date": "11/14/2026",
+      "pickup": "Unavailable"
+    }
+  },
+  "request_parameters": {
+    "siteId": "rn129l",
+    "resultsFormat": "native",
+    "bgfilter.ss_category": "Power Tools",
+    "filter.ss_morewaystoshop": [
+      "Clearance",
+      "Flash Sale",
+      "Sale",
+      "Free Gift"
+    ],
+    "page": "1 through 10"
+  },
+  "json_format_crosscheck": {
+    "page": 1,
+    "advertised_count": 24,
+    "returned_count": 20,
+    "note": "Documented resultsFormat=json reproduces the same mismatch."
+  },
+  "candidate_types": {
+    "simple": 61,
+    "bundle": 1
+  },
+  "deep_candidates": [
+    {
+      "sku": "77007",
+      "uid": "55994",
+      "name": "Axiom 2X2 CNC Router, 24'' x 24''",
+      "url": "/axiom-2x2-cnc-router-24-x-24",
+      "brand": "Axiom",
+      "categories": [
+        "CNC Machines",
+        "Axiom CNC Machines"
+      ],
+      "category_hierarchy": [
+        "Power Tools",
+        "Power Tools&gt;CNC Machines",
+        "Power Tools&gt;CNC Machines&gt;Axiom",
+        "Power Tools&gt;CNC Machines&gt;Axiom&gt;Axiom CNC Machines"
+      ],
+      "type_id": "simple",
+      "has_options": "0",
+      "in_stock": "1",
+      "pickup_delivery": [
+        "Delivery"
+      ],
+      "price": "999",
+      "regular_price": "4699.99",
+      "msrp": "4699.99",
+      "special_price": "999",
+      "ss_final_price": "999",
+      "ss_isnotinstock": "0",
+      "ss_isnolongeravailable": "0",
+      "ss_outlet": "0",
+      "ss_bdl_item": "0",
+      "hide_promotional_price": "No",
+      "ss_morewaystoshop": [
+        "Sale"
+      ],
+      "preliminary_category": "Workshop equipment",
+      "discount_pct": 78.74
+    },
+    {
+      "sku": "67483",
+      "uid": "44028",
+      "name": "Axiom AR8 Elite CNC Router",
+      "url": "/axiom-ar8-elite-cnc-router",
+      "brand": "Axiom",
+      "categories": [
+        "Axiom",
+        "Axiom CNC Machines"
+      ],
+      "category_hierarchy": [
+        "Power Tools",
+        "Power Tools&gt;CNC Machines",
+        "Power Tools&gt;CNC Machines&gt;Axiom",
+        "Shop By Brand",
+        "Shop By Brand&gt;Axiom",
+        "Power Tools&gt;CNC Machines&gt;Axiom&gt;Axiom CNC Machines"
+      ],
+      "type_id": "simple",
+      "has_options": "0",
+      "in_stock": "1",
+      "pickup_delivery": [
+        "Delivery"
+      ],
+      "price": "6999",
+      "regular_price": "14299",
+      "msrp": "14299",
+      "special_price": "6999",
+      "ss_final_price": "6999",
+      "ss_isnotinstock": "0",
+      "ss_isnolongeravailable": "0",
+      "ss_outlet": "0",
+      "ss_bdl_item": "0",
+      "hide_promotional_price": "No",
+      "ss_morewaystoshop": [
+        "Sale"
+      ],
+      "preliminary_category": "Workshop equipment",
+      "discount_pct": 51.05
+    },
+    {
+      "sku": "77556",
+      "uid": "53412",
+      "name": "Powermatic ArmorGlide PM1800B-3T Bandsaw, 5HP, 3PH, 230V",
+      "url": "/powermatic-armorglide-pm1800b-3t-bandsaw-5hp-3ph-230v",
+      "brand": "Powermatic",
+      "categories": [
+        "Band Saws",
+        "Powermatic",
+        "Powermatic Band Saws"
+      ],
+      "category_hierarchy": [
+        "Power Tools",
+        "Power Tools&gt;Sawing",
+        "Power Tools&gt;Sawing&gt;Band Saws",
+        "Power Tools&gt;Sawing&gt;Band Saws&gt;Band Saws",
+        "Shop By Brand",
+        "Shop By Brand&gt;Powermatic",
+        "Shop By Brand&gt;Powermatic&gt;Powermatic Sawing",
+        "Shop By Brand&gt;Powermatic&gt;Powermatic Sawing&gt;Powermatic Band Saws"
+      ],
+      "type_id": "simple",
+      "has_options": "0",
+      "in_stock": "1",
+      "pickup_delivery": [
+        "Delivery"
+      ],
+      "price": "4999",
+      "regular_price": "8359",
+      "msrp": "8359",
+      "special_price": "4999",
+      "ss_final_price": "4999",
+      "ss_isnotinstock": "0",
+      "ss_isnolongeravailable": "0",
+      "ss_outlet": "0",
+      "ss_bdl_item": "0",
+      "hide_promotional_price": "No",
+      "ss_morewaystoshop": [
+        "Sale"
+      ],
+      "preliminary_category": "Workshop equipment",
+      "discount_pct": 40.2
+    },
+    {
+      "sku": "64846",
+      "uid": "44015",
+      "name": "Axiom AR16 Elite CNC Router",
+      "url": "/axiom-ar16-elite-cncrouter",
+      "brand": "Axiom",
+      "categories": [
+        "Axiom",
+        "Axiom CNC Machines"
+      ],
+      "category_hierarchy": [
+        "Power Tools",
+        "Power Tools&gt;CNC Machines",
+        "Power Tools&gt;CNC Machines&gt;Axiom",
+        "Shop By Brand",
+        "Shop By Brand&gt;Axiom",
+        "Power Tools&gt;CNC Machines&gt;Axiom&gt;Axiom CNC Machines"
+      ],
+      "type_id": "simple",
+      "has_options": "0",
+      "in_stock": "1",
+      "pickup_delivery": [
+        "Delivery"
+      ],
+      "price": "8999",
+      "regular_price": "19299",
+      "msrp": "19299",
+      "special_price": "8999",
+      "ss_final_price": "8999",
+      "ss_isnotinstock": "0",
+      "ss_isnolongeravailable": "0",
+      "ss_outlet": "0",
+      "ss_bdl_item": "0",
+      "hide_promotional_price": "No",
+      "ss_morewaystoshop": [
+        "Sale"
+      ],
+      "preliminary_category": "Workshop equipment",
+      "discount_pct": 53.37
+    },
+    {
+      "sku": "64433",
+      "uid": "44012",
+      "name": "Axiom Iconic 8 CNC Router",
+      "url": "/axiom-iconic-8-cnc-router",
+      "brand": "Axiom",
+      "categories": [
+        "Axiom CNC Machines",
+        "Axiom"
+      ],
+      "category_hierarchy": [
+        "Power Tools",
+        "Power Tools&gt;CNC Machines",
+        "Power Tools&gt;CNC Machines&gt;Axiom",
+        "Power Tools&gt;CNC Machines&gt;Axiom&gt;Axiom CNC Machines",
+        "Shop By Brand",
+        "Shop By Brand&gt;Axiom"
+      ],
+      "type_id": "simple",
+      "has_options": "0",
+      "in_stock": "1",
+      "pickup_delivery": [
+        "Delivery"
+      ],
+      "price": "2999",
+      "regular_price": "7149",
+      "msrp": "7149",
+      "special_price": "2999",
+      "ss_final_price": "2999",
+      "ss_isnotinstock": "0",
+      "ss_isnolongeravailable": "0",
+      "ss_outlet": "0",
+      "ss_bdl_item": "0",
+      "hide_promotional_price": "No",
+      "ss_morewaystoshop": [
+        "Sale"
+      ],
+      "preliminary_category": "Workshop equipment",
+      "discount_pct": 58.05
+    },
+    {
+      "sku": "64513",
+      "uid": "44013",
+      "name": "Axiom Iconic 6 CNC Router",
+      "url": "/axiom-iconic-6-cncrouter",
+      "brand": "Axiom",
+      "categories": [
+        "Axiom CNC Machines",
+        "Axiom"
+      ],
+      "category_hierarchy": [
+        "Power Tools",
+        "Power Tools&gt;CNC Machines",
+        "Power Tools&gt;CNC Machines&gt;Axiom",
+        "Power Tools&gt;CNC Machines&gt;Axiom&gt;Axiom CNC Machines",
+        "Shop By Brand",
+        "Shop By Brand&gt;Axiom"
+      ],
+      "type_id": "simple",
+      "has_options": "0",
+      "in_stock": "1",
+      "pickup_delivery": [
+        "Delivery"
+      ],
+      "price": "2499",
+      "regular_price": "6599",
+      "msrp": "6599",
+      "special_price": "2499",
+      "ss_final_price": "2499",
+      "ss_isnotinstock": "0",
+      "ss_isnolongeravailable": "0",
+      "ss_outlet": "0",
+      "ss_bdl_item": "0",
+      "hide_promotional_price": "No",
+      "ss_morewaystoshop": [
+        "Sale"
+      ],
+      "preliminary_category": "Workshop equipment",
+      "discount_pct": 62.13
+    },
+    {
+      "sku": "63241",
+      "uid": "44009",
+      "name": "Axiom Iconic 4 CNC Router",
+      "url": "/axiom-iconic-4-cnc-router",
+      "brand": "Axiom",
+      "categories": [
+        "Axiom CNC Machines",
+        "Power Tools",
+        "CNC Machines",
+        "Axiom"
+      ],
+      "category_hierarchy": [
+        "Power Tools",
+        "Power Tools&gt;CNC Machines",
+        "Power Tools&gt;CNC Machines&gt;Axiom",
+        "Power Tools&gt;CNC Machines&gt;Axiom&gt;Axiom CNC Machines",
+        "Shop By Brand",
+        "Shop By Brand&gt;Axiom"
+      ],
+      "type_id": "simple",
+      "has_options": "0",
+      "in_stock": "1",
+      "pickup_delivery": [
+        "Delivery"
+      ],
+      "price": "1999",
+      "regular_price": "6049",
+      "msrp": "6049",
+      "special_price": "1999",
+      "ss_final_price": "1999",
+      "ss_isnotinstock": "0",
+      "ss_isnolongeravailable": "0",
+      "ss_outlet": "0",
+      "ss_bdl_item": "0",
+      "hide_promotional_price": "No",
+      "ss_morewaystoshop": [
+        "Sale"
+      ],
+      "preliminary_category": "Workshop equipment",
+      "discount_pct": 66.95
+    }
+  ],
+  "prior_probe_correction": "The earlier table saw text search returned a merchandising redirect, not proof that Rockler lacks public inventory. Current category endpoint was observed from the public storefront pagination request.",
+  "next_gate": "Reconcile pagination, resolve delivery/stock evidence, bind SKU/reference/USD and exact destinations, and validate an independent sample before source admission."
+}
