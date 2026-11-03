@@ -1,19 +1,18 @@
 import asyncio
 
 import httpx
-
 from deal_common.catalog.audit import audit_sample, select_sample, validate_product
 
 
 def card():
-    return dict(name='Drill kit', store='Shop', url='https://shop.example/products/drill',
-                offer=dict(url='https://shop.example/products/drill?variant=42', variant_key='42',
-                           current_price=100, original_price=200, options='M / Red'))
+    return {'name': 'Drill kit', 'store': 'Shop', 'url': 'https://shop.example/products/drill',
+            'offer': {'url': 'https://shop.example/products/drill?variant=42', 'variant_key': '42',
+                      'current_price': 100, 'original_price': 200, 'options': 'M / Red'}}
 
 
 def raw():
-    return dict(title='Drill kit', variants=[dict(id=42, price=10000, compare_at_price=20000,
-                                                 options=['M', 'Red'], available=True, sku='SKU-42')])
+    return {'title': 'Drill kit', 'variants': [{'id': 42, 'price': 10000, 'compare_at_price': 20000,
+                                             'options': ['M', 'Red'], 'available': True, 'sku': 'SKU-42'}]}
 
 
 def test_price_reference_identity_options_and_stock_checked_separately():
@@ -102,3 +101,113 @@ def test_persistent_rate_limit_stops_after_bounded_retries():
                                       transport=httpx.MockTransport(handler)))
     assert calls == ["/cart.js"] * 4
     assert all(r["status"] == "inconclusive" for r in results)
+
+
+def test_audit_checks_finish_within_fifteen_minutes_and_record_response_time(monkeypatch):
+    from datetime import UTC, datetime, timedelta
+
+    import deal_common.catalog.audit as module
+    start = datetime(2026, 11, 3, tzinfo=UTC)
+    clock = [start]
+
+    class Clock:
+        @classmethod
+        def now(cls, tz):
+            return clock[0]
+
+    monkeypatch.setattr(module, 'datetime', Clock)
+
+    def handler(request):
+        if request.url.path == '/cart.js':
+            return httpx.Response(200, json={'currency': 'USD'})
+        clock[0] += timedelta(seconds=900)
+        return httpx.Response(200, json=raw())
+
+    results = asyncio.run(audit_sample([card()], {'Shop': 'shop.example'}, delay=0,
+                                       transport=httpx.MockTransport(handler)))
+    assert results[0]['status'] == 'match' and results[0]['within_audit_window'] is True
+    assert results[0]['sampled_at'] == results[0]['check_started_at'] == start.isoformat()
+    assert results[0]['checked_at'] == (start + timedelta(minutes=15)).isoformat()
+
+
+def test_late_matching_response_is_inconclusive_and_stops_remaining_reads(monkeypatch):
+    from datetime import UTC, datetime, timedelta
+
+    import deal_common.catalog.audit as module
+    start = datetime(2026, 11, 3, tzinfo=UTC)
+    clock, calls = [start], []
+
+    class Clock:
+        @classmethod
+        def now(cls, tz):
+            return clock[0]
+
+    monkeypatch.setattr(module, 'datetime', Clock)
+
+    def handler(request):
+        calls.append(request.url.path)
+        if request.url.path == '/cart.js':
+            return httpx.Response(200, json={'currency': 'USD'})
+        clock[0] += timedelta(seconds=901)
+        return httpx.Response(200, json=raw())
+
+    results = asyncio.run(audit_sample([card(), card()], {'Shop': 'shop.example'}, delay=0,
+                                       transport=httpx.MockTransport(handler)))
+    assert calls == ['/cart.js', '/products/drill.js']
+    assert all(r['status'] == 'inconclusive' and not r['within_audit_window'] for r in results)
+    assert all(results[0]['checks'].values())  # Agreeing facts cannot make stale evidence timely.
+    assert '15-minute' in results[0]['reason']
+
+
+def test_window_expiring_between_currency_and_product_stops_next_endpoint(monkeypatch):
+    from datetime import UTC, datetime, timedelta
+
+    import deal_common.catalog.audit as module
+    clock = [datetime(2026, 11, 3, tzinfo=UTC)]
+    calls = []
+
+    class Clock:
+        @classmethod
+        def now(cls, tz):
+            return clock[0]
+
+    monkeypatch.setattr(module, 'datetime', Clock)
+
+    def handler(request):
+        calls.append(request.url.path)
+        clock[0] += timedelta(minutes=16)
+        return httpx.Response(200, json={'currency': 'USD'})
+
+    results = asyncio.run(audit_sample([card(), card()], {'Shop': 'shop.example'}, delay=0,
+                                       transport=httpx.MockTransport(handler)))
+    assert calls == ['/cart.js']
+    assert all(r['status'] == 'inconclusive' for r in results)
+
+
+def test_backwards_clock_does_not_reopen_the_observation_window(monkeypatch):
+    from datetime import UTC, datetime, timedelta
+
+    import deal_common.catalog.audit as module
+    start = datetime(2026, 11, 3, tzinfo=UTC)
+    clock = [start]
+    calls = []
+
+    class Clock:
+        @classmethod
+        def now(cls, tz):
+            value = clock[0]
+            if value < start:
+                clock[0] = start  # Correction on the next check must not resume requests.
+            return value
+
+    monkeypatch.setattr(module, 'datetime', Clock)
+
+    def handler(request):
+        calls.append(request.url.path)
+        clock[0] -= timedelta(seconds=1)
+        return httpx.Response(200, json={'currency': 'USD'})
+
+    results = asyncio.run(audit_sample([card(), card()], {'Shop': 'shop.example'}, delay=0,
+                                       transport=httpx.MockTransport(handler)))
+    assert calls == ['/cart.js']
+    assert all(r['status'] == 'inconclusive' and not r['within_audit_window'] for r in results)
