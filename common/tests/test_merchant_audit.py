@@ -63,3 +63,42 @@ def test_declared_price_metadata_is_not_mistaken_for_a_variant_choice():
     assert result['status'] == 'match' and result['merchant']['raw_options'][-1] == 'Retail: $200'
     response['options'][-1]['name'] = 'Package'
     assert validate_product(card(), response, 'USD')['checks']['options'] is False
+
+
+def test_rate_limit_waits_as_requested_before_retrying(monkeypatch):
+    waits, calls = [], []
+    async def sleep(seconds):
+        waits.append(seconds)
+    monkeypatch.setattr("deal_common.http.asyncio.sleep", sleep)
+    def handler(request):
+        calls.append(request.url.path)
+        if len(calls) == 1:
+            return httpx.Response(429, headers={"Retry-After": "7"})
+        return httpx.Response(200, json={"currency": "USD"} if request.url.path == "/cart.js" else raw())
+    results = asyncio.run(audit_sample([card()], {"Shop": "shop.example"}, delay=5,
+                                      transport=httpx.MockTransport(handler)))
+    assert results[0]["status"] == "match"
+    assert calls == ["/cart.js", "/cart.js", "/products/drill.js"]
+    assert waits == [5, 7, 5, 5]
+
+
+def test_rate_limit_beyond_wait_budget_stops_the_host():
+    calls = []
+    def handler(request):
+        calls.append(request.url.path)
+        return httpx.Response(429, headers={"Retry-After": "120"})
+    results = asyncio.run(audit_sample([card(), card()], {"Shop": "shop.example"}, delay=0,
+                                      transport=httpx.MockTransport(handler)))
+    assert calls == ["/cart.js"]
+    assert all(r["status"] == "inconclusive" for r in results)
+
+
+def test_persistent_rate_limit_stops_after_bounded_retries():
+    calls = []
+    def handler(request):
+        calls.append(request.url.path)
+        return httpx.Response(429, headers={"Retry-After": "0"})
+    results = asyncio.run(audit_sample([card(), card()], {"Shop": "shop.example"}, delay=0,
+                                      transport=httpx.MockTransport(handler)))
+    assert calls == ["/cart.js"] * 4
+    assert all(r["status"] == "inconclusive" for r in results)

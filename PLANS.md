@@ -121,3 +121,7 @@ Final verification: 84 tests passed; Python compilation and `git diff --check` p
 ## Catalog production source recovery
 
 PR #4 merged after CI passed. First production tools refresh exposed Grizzly HTTP 403; eight other feeds completed. Quarantine the inaccessible feed and show the coverage limitation on the source page; preserve all completeness and merchant-audit gates. Cycling and snow refreshes continue independently.
+
+## Catalog audit retry recovery
+
+Run `41576984053` produced 30/30 matching tools audit samples and a valid eight-source package (327 eligible listings), then deployment failed because the existing GitHub Vercel token is invalid. Token creation through the authenticated CLI app is forbidden; requested user renewal of the existing repository secret and continuing deployment through normal local CLI authentication. Cycling matched 27/30 with three inconclusive after Colorado Cyclist HTTP 429; Pro Bike Supply passed this time. Reuse the shared bounded HTTP retry helper so audits honor Retry-After (up to 60 seconds) without changing endpoints or networks. HTTP 403 still stops immediately; exhausted retries remain inconclusive and block publication.
