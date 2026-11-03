@@ -1,15 +1,15 @@
 """Restore an explicit public catalog snapshot; never silently discard its history."""
 import argparse
-from pathlib import Path
 import sqlite3
 import sys
 import tempfile
+from pathlib import Path
 
 import httpx
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "common"))
-from deal_common.catalog.storage import read_sources  # noqa: E402
+from deal_common.catalog.storage import read_sources
 
 RELEASE_API = "https://api.github.com/repos/lifan-builds/snow-deal-data/releases/tags/latest-data"
 MAX_BYTES = 100 * 1024 * 1024
@@ -23,7 +23,7 @@ def restore(catalog: str, destination: Path, *, bootstrap=False, transport=None)
         response.raise_for_status()
         assets = response.json().get("assets")
         if not isinstance(assets, list):
-            raise ValueError("Malformed release metadata")
+            raise ValueError("Malformed release metadata")  # noqa: TRY004 - invalid remote response, not caller type
         asset = next((a for a in assets if a.get("name") == f"{catalog}.db"), None)
         if asset is None:
             if bootstrap:

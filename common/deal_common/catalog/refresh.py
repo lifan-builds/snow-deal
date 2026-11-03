@@ -1,7 +1,7 @@
 """Bounded source refreshes keep previous complete data on a partial response."""
 import asyncio
 from dataclasses import asdict
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 from urllib.parse import parse_qs, urlsplit
 
@@ -11,8 +11,8 @@ from deal_common.catalog.definition import Catalog
 from deal_common.catalog.storage import save_source
 from deal_common.http import DEFAULT_HEADERS, fetch_products
 from deal_common.offers import discount
-from deal_common.parsers.shopify import ShopifyParser
 from deal_common.parsers.grizzly import GrizzlyParser, sku_destination
+from deal_common.parsers.shopify import ShopifyParser
 
 
 def safe_url(value: str | None, domain: str | None = None) -> bool:
@@ -65,7 +65,7 @@ async def refresh(catalog: Catalog, path: Path, *, max_pages: int = 30,
                                  transport=transport) as client:
         for source in catalog.sources:
             outcome = {"errors": 0, "pages": 0}
-            observed_at = datetime.now(timezone.utc).isoformat()
+            observed_at = datetime.now(UTC).isoformat()
             if source.currency != "USD":
                 raise ValueError("These catalogs accept USD sources only")
             if source.parser_type not in {"shopify", "grizzly"}:

@@ -2,21 +2,22 @@
 from __future__ import annotations
 
 import argparse
-from datetime import datetime, timedelta, timezone
 import json
-from pathlib import Path
 import shutil
 import sys
 import tomllib
+from datetime import UTC, datetime, timedelta
+from pathlib import Path
 from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 for source in ("common", "catalogs/cycling/src", "catalogs/tools/src"):
     sys.path.insert(0, str(ROOT / source))
 
-from deal_common.catalog.query import is_fresh, query  # noqa: E402
-from deal_common.catalog.health import snapshot_health  # noqa: E402
-from deal_common.catalog.storage import database as open_database, read_sources, save_source  # noqa: E402
+from deal_common.catalog.health import snapshot_health
+from deal_common.catalog.query import is_fresh, query
+from deal_common.catalog.storage import database as open_database
+from deal_common.catalog.storage import read_sources, save_source
 
 
 def package(slug: str, database: Path, output: Path, public_url: str | None = None) -> dict:
@@ -36,15 +37,15 @@ def package(slug: str, database: Path, output: Path, public_url: str | None = No
     if output.exists():
         raise ValueError("Output already exists; choose a new build directory")
     rows = {row["name"]: row for row in read_sources(database, slug)}
-    now = datetime.now(timezone.utc)
+    now = datetime.now(UTC)
     selected = []
     for source in CATALOG.sources:
         row = rows.get(source.name)
         if not row or row["status"] != "complete" or not is_fresh(row["successful_at"], now):
             raise ValueError(f"A fresh, complete snapshot is required for {source.name}")
         selected.append(row)
-    results = query(selected, dict(min_reference=CATALOG.default_reference, max_price=0,
-                                   min_discount=0, page=1), now=now)
+    results = query(selected, {"min_reference": CATALOG.default_reference, "max_price": 0,
+                                   "min_discount": 0, "page": 1}, now=now)
     if results["total"] == 0:
         raise ValueError("Refusing to package an empty default catalog")
     output.mkdir(parents=True)
@@ -79,11 +80,11 @@ def package(slug: str, database: Path, output: Path, public_url: str | None = No
         "functions": {"api/index.py": {"includeFiles": "{src/**,data/catalog.db}"}},
         "rewrites": [{"source": "/(.*)", "destination": "/api/index.py"}],
     }, indent=2) + "\n")
-    receipt = dict(catalog=slug, brand=CATALOG.name, built_at=now.isoformat(),
-                   snapshot_sha256=snapshot_health(CATALOG, selected, now=now)["snapshot_sha256"],
-                   public_url=public_url, matching_deals=results["total"],
-                   sources=[dict(name=row["name"], observed_at=row["successful_at"],
-                                 listings=len(row["products"])) for row in selected])
+    receipt = {"catalog": slug, "brand": CATALOG.name, "built_at": now.isoformat(),
+                   "snapshot_sha256": snapshot_health(CATALOG, selected, now=now)["snapshot_sha256"],
+                   "public_url": public_url, "matching_deals": results["total"],
+                   "sources": [{"name": row["name"], "observed_at": row["successful_at"],
+                                 "listings": len(row["products"])} for row in selected]}
     (output / "BUILD-RECEIPT.json").write_text(json.dumps(receipt, indent=2) + "\n")
     return receipt
 

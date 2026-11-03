@@ -1,19 +1,19 @@
 """Audit an explicitly named public catalog snapshot, read-only; never discover DBs."""
 import argparse
-from datetime import datetime, timezone
 import json
-from pathlib import Path
 import sys
+from datetime import UTC, datetime
+from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "common"))
-from deal_common.catalog.query import query  # noqa: E402
-from deal_common.catalog.storage import read_sources  # noqa: E402
+from deal_common.catalog.query import query
+from deal_common.catalog.storage import read_sources
 
 
 def audit(path, catalog, floor, now):
     sources = read_sources(path, catalog)
-    base = dict(min_discount=0, min_reference=floor, max_price=0, page=1, stock=True)
+    base = {"min_discount": 0, "min_reference": floor, "max_price": 0, "page": 1, "stock": True}
     initial = query(sources, base, now=now)
     cards = []
     for page in range(1, initial["pages"] + 1):
@@ -39,7 +39,7 @@ def main():
     if not args.database.is_file():
         parser.error("Snapshot does not exist; no database will be created")
     print(json.dumps(audit(args.database, args.catalog, {"cycling": 1000, "tools": 200}[args.catalog],
-                           datetime.now(timezone.utc)), indent=2))
+                           datetime.now(UTC)), indent=2))
 
 
 if __name__ == "__main__":
