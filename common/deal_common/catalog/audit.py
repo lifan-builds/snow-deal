@@ -3,7 +3,6 @@
 This checks merchant-reported facts, not checkout completion or former street prices.
 No browser session, cart contents, cookies, credentials or raw response is persisted.
 """
-import asyncio
 import hashlib
 import random
 import re
@@ -14,7 +13,7 @@ from urllib.parse import parse_qs, urlencode, urlsplit, urlunsplit
 import httpx
 
 from deal_common.catalog.refresh import safe_url
-from deal_common.http import DEFAULT_HEADERS
+from deal_common.http import DEFAULT_HEADERS, fetch_listing
 from deal_common.parsers.grizzly import sku_destination, structured_products
 from deal_common.parsers.grizzly import text as decoded_text
 
@@ -94,25 +93,19 @@ async def audit_sample(cards: list[dict], allowed_domains: dict[str, str], *, de
                 continue
             try:
                 if sku_product:
-                    await asyncio.sleep(delay)
-                    response = await client.get(offer["url"])
-                    response.raise_for_status()
+                    response = await fetch_listing(client, offer["url"], delay)
                     row["response_sha256"] = hashlib.sha256(response.content).hexdigest()
                     row.update(validate_sku_product(card, structured_products(response.text)))
                     results.append(row)
                     continue
                 if origin not in currencies:
-                    await asyncio.sleep(delay)
-                    response = await client.get(currency_url)
-                    response.raise_for_status()
+                    response = await fetch_listing(client, currency_url, delay)
                     # Only the currency is retained from this new anonymous session.
                     currencies[origin] = response.json().get("currency")
                 if currencies[origin] != card.get("currency", "USD"):
                     results.append({**row, "status": "inconclusive", "reason": "Presentment currency not confirmed"})
                     continue
-                await asyncio.sleep(delay)
-                response = await client.get(endpoint)
-                response.raise_for_status()
+                response = await fetch_listing(client, endpoint, delay)
                 raw = response.json()
                 if not isinstance(raw, dict):
                     raise TypeError("Malformed product")
