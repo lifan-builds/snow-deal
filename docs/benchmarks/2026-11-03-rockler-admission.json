@@ -1,0 +1,287 @@
+{
+  "recorded_at": "2026-11-03T06:03:50.190545+00:00",
+  "catalog": "tools",
+  "source": "Rockler",
+  "status": "not_admitted",
+  "enabled": false,
+  "published": false,
+  "pagination": {
+    "checked_at": "2026-11-03T05:50:01.792647+00:00",
+    "advertised_with_banners": 227,
+    "inline_banner_slots": 4,
+    "advertised_without_banners": 223,
+    "unique_products": 223,
+    "same_product_ids": true,
+    "page_counts": [
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      7
+    ],
+    "anomalies": [],
+    "complete_count_reconciliation": true,
+    "documentation": "https://docs.searchspring.com/reference/advanced-merchandising"
+  },
+  "delivery_samples": [
+    {
+      "checked_at": "2026-11-03T05:52:28.612424+00:00",
+      "sku": "77007",
+      "uid": "55994",
+      "name": "Axiom 2X2 CNC Router, 24'' x 24''",
+      "url": "https://www.rockler.com/axiom-2x2-cnc-router-24-x-24",
+      "stock_endpoint": "https://www.rockler.com/frx/stockmessage",
+      "stock": {
+        "delivery_available": true,
+        "is_stop_order": 0,
+        "direct_ship": 1,
+        "stock_message": "Ships from Manufacturer",
+        "delivery_message": "Ships from Manufacturer",
+        "delivery_box_message": "Ships from Manufacturer",
+        "estimate_shipping_message": "Estimated Ship Date: 11/14/2026",
+        "special_shipping_message": "",
+        "extra_shipping_cost_message": "",
+        "backorder_date": "11/14/2026"
+      },
+      "interpretation": {
+        "available": true,
+        "availability": "unknown",
+        "note": "Ships from Manufacturer \u00b7 Estimated Ship Date: 11/14/2026",
+        "message": "Ships from Manufacturer",
+        "estimate": "Estimated Ship Date: 11/14/2026",
+        "direct_ship": 1
+      }
+    },
+    {
+      "checked_at": "2026-11-03T05:52:30.630911+00:00",
+      "sku": "67483",
+      "uid": "44028",
+      "name": "Axiom AR8 Elite CNC Router",
+      "url": "https://www.rockler.com/axiom-ar8-elite-cnc-router",
+      "stock_endpoint": "https://www.rockler.com/frx/stockmessage",
+      "stock": {
+        "delivery_available": true,
+        "is_stop_order": 0,
+        "direct_ship": 1,
+        "stock_message": "Ships from Manufacturer",
+        "delivery_message": "Ships from Manufacturer",
+        "delivery_box_message": "Ships from Manufacturer",
+        "estimate_shipping_message": "Estimated Ship Date: 11/18/2026",
+        "special_shipping_message": "Additional Shipping Charges Will Apply: Please contact Customer Care for a shipping quote. Software is not included with the machine. We recommend the following software depending on your needs: Vetric VCarve Pro Software V10 (Item #58150), Vetric VCarve Desktop Software V10 (Item# 57318), Vetric Aspire V10 (Item# 59990), Vetric Photo VCarve Software (Item# 54822 ) Must be shipped within 48 Contiguous United States. 20% restocking fee on all returned merchandise. Please call customer service before returning product.",
+        "extra_shipping_cost_message": "",
+        "backorder_date": "11/18/2026"
+      },
+      "interpretation": {
+        "available": true,
+        "availability": "unknown",
+        "note": "Ships from Manufacturer \u00b7 Estimated Ship Date: 11/18/2026 \u00b7 Additional Shipping Charges Will Apply: Please contact Customer Care for a shipping quote. Software is not included with the machine. We recommend the following software depending on your needs: Vetric VCarve Pro Software V10 (Item #58150), Vetric VCarve Desktop Software V10 (Item# 57318), Vetric Aspire V10 (Item# 59990), Vetric Photo VCarve Software (Item# 54822 ) Must be shipped within 48 Contiguous United States. 20% restocking fee on all returned merchandise. Please call customer service before returning product.",
+        "message": "Ships from Manufacturer",
+        "estimate": "Estimated Ship Date: 11/18/2026",
+        "direct_ship": 1
+      }
+    },
+    {
+      "checked_at": "2026-11-03T05:52:32.427741+00:00",
+      "sku": "77556",
+      "uid": "53412",
+      "name": "Powermatic ArmorGlide PM1800B-3T Bandsaw, 5HP, 3PH, 230V",
+      "url": "https://www.rockler.com/powermatic-armorglide-pm1800b-3t-bandsaw-5hp-3ph-230v",
+      "stock_endpoint": "https://www.rockler.com/frx/stockmessage",
+      "stock": {
+        "delivery_available": true,
+        "is_stop_order": null,
+        "direct_ship": 1,
+        "stock_message": "Ships from Manufacturer",
+        "delivery_message": "Ships from Manufacturer",
+        "delivery_box_message": "Ships from Manufacturer",
+        "estimate_shipping_message": "Estimated Ship Date: 11/11/2026",
+        "special_shipping_message": "",
+        "extra_shipping_cost_message": "",
+        "backorder_date": "11/11/2026"
+      },
+      "interpretation": {
+        "available": true,
+        "availability": "unknown",
+        "note": "Ships from Manufacturer \u00b7 Estimated Ship Date: 11/11/2026",
+        "message": "Ships from Manufacturer",
+        "estimate": "Estimated Ship Date: 11/11/2026",
+        "direct_ship": 1
+      }
+    },
+    {
+      "checked_at": "2026-11-03T05:52:34.275545+00:00",
+      "sku": "64846",
+      "uid": "44015",
+      "name": "Axiom AR16 Elite CNC Router",
+      "url": "https://www.rockler.com/axiom-ar16-elite-cncrouter",
+      "stock_endpoint": "https://www.rockler.com/frx/stockmessage",
+      "stock": {
+        "delivery_available": true,
+        "is_stop_order": 0,
+        "direct_ship": 1,
+        "stock_message": "Ships from Manufacturer",
+        "delivery_message": "Ships from Manufacturer",
+        "delivery_box_message": "Ships from Manufacturer",
+        "estimate_shipping_message": "Estimated Ship Date: 11/18/2026",
+        "special_shipping_message": "Additional Shipping Charges Will Apply: Please contact Customer Care for a shipping quote. Software is not included with the machine. We recommend the following software depending on your needs: Vetric VCarve Pro Software V10 (Item #58150), Vetric VCarve Desktop Software V10 (Item# 57318), Vetric Aspire V10 (Item# 59990), Vetric Photo VCarve Software (Item# 54822 ) Must be shipped within 48 Contiguous United States. 20% restocking fee on all returned merchandise. Please call customer service before returning product.",
+        "extra_shipping_cost_message": "",
+        "backorder_date": "11/18/2026"
+      },
+      "interpretation": {
+        "available": true,
+        "availability": "unknown",
+        "note": "Ships from Manufacturer \u00b7 Estimated Ship Date: 11/18/2026 \u00b7 Additional Shipping Charges Will Apply: Please contact Customer Care for a shipping quote. Software is not included with the machine. We recommend the following software depending on your needs: Vetric VCarve Pro Software V10 (Item #58150), Vetric VCarve Desktop Software V10 (Item# 57318), Vetric Aspire V10 (Item# 59990), Vetric Photo VCarve Software (Item# 54822 ) Must be shipped within 48 Contiguous United States. 20% restocking fee on all returned merchandise. Please call customer service before returning product.",
+        "message": "Ships from Manufacturer",
+        "estimate": "Estimated Ship Date: 11/18/2026",
+        "direct_ship": 1
+      }
+    },
+    {
+      "checked_at": "2026-11-03T05:52:36.153078+00:00",
+      "sku": "64433",
+      "uid": "44012",
+      "name": "Axiom Iconic 8 CNC Router",
+      "url": "https://www.rockler.com/axiom-iconic-8-cnc-router",
+      "stock_endpoint": "https://www.rockler.com/frx/stockmessage",
+      "stock": {
+        "delivery_available": true,
+        "is_stop_order": 0,
+        "direct_ship": 1,
+        "stock_message": "Ships from Manufacturer",
+        "delivery_message": "Ships from Manufacturer",
+        "delivery_box_message": "Ships from Manufacturer",
+        "estimate_shipping_message": "Estimated Ship Date: 11/18/2026",
+        "special_shipping_message": "Must be shipped within 48 Contiguous United States. 20% restocking fee on all returned merchandise. Please call customer service before returning product.",
+        "extra_shipping_cost_message": "",
+        "backorder_date": "11/18/2026"
+      },
+      "interpretation": {
+        "available": true,
+        "availability": "unknown",
+        "note": "Ships from Manufacturer \u00b7 Estimated Ship Date: 11/18/2026 \u00b7 Must be shipped within 48 Contiguous United States. 20% restocking fee on all returned merchandise. Please call customer service before returning product.",
+        "message": "Ships from Manufacturer",
+        "estimate": "Estimated Ship Date: 11/18/2026",
+        "direct_ship": 1
+      }
+    },
+    {
+      "checked_at": "2026-11-03T05:52:37.959165+00:00",
+      "sku": "64513",
+      "uid": "44013",
+      "name": "Axiom Iconic 6 CNC Router",
+      "url": "https://www.rockler.com/axiom-iconic-6-cncrouter",
+      "stock_endpoint": "https://www.rockler.com/frx/stockmessage",
+      "stock": {
+        "delivery_available": true,
+        "is_stop_order": 0,
+        "direct_ship": 1,
+        "stock_message": "Ships from Manufacturer",
+        "delivery_message": "Ships from Manufacturer",
+        "delivery_box_message": "Ships from Manufacturer",
+        "estimate_shipping_message": "Estimated Ship Date: 11/18/2026",
+        "special_shipping_message": "Must be shipped within 48 Contiguous United States. 20% restocking fee on all returned merchandise. Please call customer service before returning product.",
+        "extra_shipping_cost_message": "",
+        "backorder_date": "11/18/2026"
+      },
+      "interpretation": {
+        "available": true,
+        "availability": "unknown",
+        "note": "Ships from Manufacturer \u00b7 Estimated Ship Date: 11/18/2026 \u00b7 Must be shipped within 48 Contiguous United States. 20% restocking fee on all returned merchandise. Please call customer service before returning product.",
+        "message": "Ships from Manufacturer",
+        "estimate": "Estimated Ship Date: 11/18/2026",
+        "direct_ship": 1
+      }
+    },
+    {
+      "checked_at": "2026-11-03T05:52:39.834014+00:00",
+      "sku": "63241",
+      "uid": "44009",
+      "name": "Axiom Iconic 4 CNC Router",
+      "url": "https://www.rockler.com/axiom-iconic-4-cnc-router",
+      "stock_endpoint": "https://www.rockler.com/frx/stockmessage",
+      "stock": {
+        "delivery_available": true,
+        "is_stop_order": 0,
+        "direct_ship": 1,
+        "stock_message": "Ships from Manufacturer",
+        "delivery_message": "Ships from Manufacturer",
+        "delivery_box_message": "Ships from Manufacturer",
+        "estimate_shipping_message": "Estimated Ship Date: 11/18/2026",
+        "special_shipping_message": "Must be shipped within 48 Contiguous United States. 20% restocking fee on all returned merchandise. Please call customer service before returning product.",
+        "extra_shipping_cost_message": "",
+        "backorder_date": "11/18/2026"
+      },
+      "interpretation": {
+        "available": true,
+        "availability": "unknown",
+        "note": "Ships from Manufacturer \u00b7 Estimated Ship Date: 11/18/2026 \u00b7 Must be shipped within 48 Contiguous United States. 20% restocking fee on all returned merchandise. Please call customer service before returning product.",
+        "message": "Ships from Manufacturer",
+        "estimate": "Estimated Ship Date: 11/18/2026",
+        "direct_ship": 1
+      }
+    },
+    {
+      "checked_at": "2026-11-03T05:52:41.616750+00:00",
+      "sku": "55868",
+      "uid": "26762",
+      "name": "Bosch JS470E 7.0A D-Handle Jigsaw",
+      "url": "https://www.rockler.com/bosch-js470e-70a-d-handle-jigsaw",
+      "stock_endpoint": "https://www.rockler.com/frx/stockmessage",
+      "stock": {
+        "delivery_available": true,
+        "is_stop_order": 0,
+        "direct_ship": 0,
+        "stock_message": "In Stock and Ready to Ship",
+        "delivery_message": "Ready to Ship",
+        "delivery_box_message": "Ready to Ship",
+        "estimate_shipping_message": "",
+        "special_shipping_message": "",
+        "extra_shipping_cost_message": "",
+        "backorder_date": "11/15/2026"
+      },
+      "interpretation": {
+        "available": true,
+        "availability": "in_stock",
+        "note": "",
+        "message": "Ready to Ship",
+        "estimate": "",
+        "direct_ship": 0
+      }
+    }
+  ],
+  "candidate_refresh": [
+    {
+      "source": "Rockler",
+      "status": "incomplete",
+      "errors": 1,
+      "pages": 1,
+      "collections": [
+        {
+          "url": "https://rn129l.a.searchspring.io/api/search/category.json?siteId=rn129l&resultsFormat=json&disableInlineBanners=true&bgfilter.ss_category=Power+Tools&page=1&filter.ss_morewaystoshop=Clearance&filter.ss_morewaystoshop=Flash+Sale&filter.ss_morewaystoshop=Sale&filter.ss_morewaystoshop=Free+Gift",
+          "pages": 1,
+          "products": 0,
+          "status": "product_http_error",
+          "http_status": 429
+        }
+      ],
+      "product_pages": 5,
+      "evidence_requests": 5,
+      "parsed_products": 0,
+      "accepted_products": 0
+    }
+  ],
+  "accepted_source_count_change": 0,
+  "confirmed_deep_discount_count_change": 0,
+  "limitations": [
+    "All seven nominal deep-discount candidates have future manufacturer shipment estimates; they are not confirmed in stock.",
+    "Shipping sample product IDs came from the public discovery feed; full production detail binding and merchant audit remain incomplete.",
+    "Candidate refresh hit HTTP 429 after five detail pages. Bounded retries exhausted; no partial inventory admitted.",
+    "No subsequent live retry was made after the request-saving and redirect-safety changes.",
+    "Offline regression checks validate decoder behavior, not live source completeness or competitive superiority."
+  ]
+}

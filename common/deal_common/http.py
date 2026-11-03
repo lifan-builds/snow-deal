@@ -32,12 +32,14 @@ DEFAULT_HEADERS = {
 }
 
 
-async def fetch_listing(client: httpx.AsyncClient, url: str, delay: float) -> httpx.Response:
+async def fetch_listing(client: httpx.AsyncClient, url: str, delay: float,
+                        *, follow_redirects: bool | None = None) -> httpx.Response:
     """Pace every request, including collection boundaries; retry temporary failures."""
     for attempt in range(4):
         await asyncio.sleep(max(delay, 0))
         try:
-            response = await client.get(url)
+            options = {} if follow_redirects is None else {'follow_redirects': follow_redirects}
+            response = await client.get(url, **options)
             if response.status_code not in {429, 500, 502, 503, 504} or attempt == 3:
                 response.raise_for_status()
                 return response
@@ -148,7 +150,21 @@ async def fetch_products(store: RetailerConfig, parser: BaseParser, client: http
                         if urlsplit(str(detail.url)).hostname != store.domain:
                             raise ValueError('Product detail redirected off source')
                         outcome['product_pages'] = outcome.get('product_pages', 0) + 1
-                        resolved.extend(parser.parse_product_page(detail.text, product.url))
+                        evidence_url = parser.get_product_evidence_url(detail.text, product.url)
+                        if evidence_url:
+                            evidence_target = urlsplit(evidence_url)
+                            if (evidence_target.scheme != 'https' or evidence_target.hostname != store.domain
+                                    or evidence_target.username or evidence_target.password
+                                    or evidence_target.port not in (None, 443)):
+                                raise ValueError('Unsafe product evidence destination')
+                            async with semaphore:
+                                evidence = await fetch_listing(client, evidence_url, delay, follow_redirects=False)
+                            if urlsplit(str(evidence.url)).hostname != store.domain:
+                                raise ValueError('Product evidence redirected off source')
+                            outcome['evidence_requests'] = outcome.get('evidence_requests', 0) + 1
+                            resolved.extend(parser.parse_product_evidence(detail.text, product.url, evidence.text))
+                        else:
+                            resolved.extend(parser.parse_product_page(detail.text, product.url))
                     page_products = resolved
                 products.extend(page_products)
                 collection["products"] += len(page_products)

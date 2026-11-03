@@ -13,6 +13,8 @@ from deal_common.catalog.storage import save_source
 from deal_common.http import DEFAULT_HEADERS, fetch_products
 from deal_common.offers import discount
 from deal_common.parsers.grizzly import GrizzlyParser, sku_destination
+from deal_common.parsers.rockler import RocklerParser
+from deal_common.parsers.rockler import offer_destination as rockler_destination
 from deal_common.parsers.shopify import ShopifyParser
 from deal_common.parsers.taylor import TaylorParser
 from deal_common.parsers.taylor import offer_destination as taylor_destination
@@ -44,6 +46,8 @@ def normalize(products, catalog: Catalog, domain: str, *, parser_type: str = "sh
                 destination_matches = sku_destination(offer.url, offer.variant_key)
             elif parser_type == 'taylor':
                 destination_matches = taylor_destination(offer.url, offer.variant_key)
+            elif parser_type == 'rockler':
+                destination_matches = rockler_destination(offer.url, offer.variant_key)
             else:
                 destination_matches = parse_qs(urlsplit(offer.url).query).get('variant') == [offer.variant_key]
             if (offer.availability not in {"in_stock", "unknown"}
@@ -76,9 +80,11 @@ async def refresh(catalog: Catalog, path: Path, *, max_pages: int = 30,
             observed_at = datetime.now(UTC).isoformat()
             if source.currency != "USD":
                 raise ValueError("These catalogs accept USD sources only")
-            if source.parser_type not in {"shopify", "grizzly", "taylor"}:
+            if source.parser_type not in {"shopify", "grizzly", "taylor", "rockler"}:
                 raise ValueError("Unsupported catalog parser")
-            if source.parser_type == 'taylor':
+            if source.parser_type == 'rockler':
+                parser = RocklerParser()
+            elif source.parser_type == 'taylor':
                 parser = TaylorParser()
             elif source.parser_type == 'grizzly':
                 parser = GrizzlyParser()

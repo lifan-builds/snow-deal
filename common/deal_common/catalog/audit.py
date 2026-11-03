@@ -17,6 +17,9 @@ from deal_common.http import DEFAULT_HEADERS, fetch_listing
 from deal_common.parsers.grizzly import sku_destination, structured_products
 from deal_common.parsers.grizzly import text as decoded_text
 from deal_common.parsers.harvey import shipping_notice
+from deal_common.parsers.rockler import delivery_data, stock_url
+from deal_common.parsers.rockler import detail_data as rockler_data
+from deal_common.parsers.rockler import offer_destination as rockler_destination
 from deal_common.parsers.taylor import detail_data as taylor_data
 from deal_common.parsers.taylor import offer_destination as taylor_destination
 
@@ -84,8 +87,9 @@ async def audit_sample(cards: list[dict], allowed_domains: dict[str, str], *, de
                    "checked_at": datetime.now(UTC).isoformat()}
             sku_product = sku_destination(offer["url"], offer["variant_key"])
             taylor_product = taylor_destination(offer['url'], offer['variant_key'])
+            rockler_product = rockler_destination(offer['url'], offer['variant_key'])
             if (not domain or not safe_url(offer["url"], domain)
-                    or (not taylor_product and ("/products/" not in parts.path
+                    or (not (taylor_product or rockler_product) and ("/products/" not in parts.path
                         or (not sku_product and parse_qs(parts.query).get("variant") != [offer["variant_key"]])))):
                 results.append({**row, "status": "inconclusive", "reason": "Unsupported or unsafe product destination"})
                 continue
@@ -94,11 +98,22 @@ async def audit_sample(cards: list[dict], allowed_domains: dict[str, str], *, de
             currency_url = origin + prefix + "/cart.js?" + urlencode({"currency": card.get("currency", "USD")})
             endpoint = urlunsplit((parts.scheme, parts.netloc, parts.path + ".js",
                                   urlencode({"currency": card.get("currency", "USD")}), ""))
-            row["evidence_url"] = offer["url"] if sku_product or taylor_product else endpoint
+            row["evidence_url"] = offer["url"] if sku_product or taylor_product or rockler_product else endpoint
             if origin in blocked:
                 results.append({**row, "status": "inconclusive", "reason": "Host blocked or rate-limited earlier in this audit"})
                 continue
             try:
+                if rockler_product:
+                    response = await fetch_listing(client, offer['url'], delay)
+                    product = rockler_data(response.text, offer['url'])
+                    evidence_url = stock_url(product)
+                    stock = await fetch_listing(client, evidence_url, delay)
+                    row.update(response_sha256=hashlib.sha256(response.content).hexdigest(),
+                               stock_evidence_url=evidence_url,
+                               stock_response_sha256=hashlib.sha256(stock.content).hexdigest())
+                    row.update(validate_rockler_product(card, product, delivery_data(stock.json())))
+                    results.append(row)
+                    continue
                 if taylor_product:
                     response = await fetch_listing(client, offer['url'], delay)
                     row['response_sha256'] = hashlib.sha256(response.content).hexdigest()
@@ -129,10 +144,30 @@ async def audit_sample(cards: list[dict], allowed_domains: dict[str, str], *, de
                 if status in {403, 429}:
                     blocked.add(origin)
                 row.update(status="inconclusive", reason=f"HTTP {status}")
-            except (httpx.HTTPError, ValueError, TypeError, AttributeError):
+            except (httpx.HTTPError, ValueError, TypeError, AttributeError, KeyError):
                 row.update(status="inconclusive", reason="Response could not be verified")
             results.append(row)
     return results
+
+
+def validate_rockler_product(card: dict, product: dict, delivery: dict) -> dict:
+    expected = card['offer']
+    key = f"{product['sku']}|{product['uid']}|{urlsplit(product['url']).path}"
+    checks = {
+        'identity': product['name'] == card['name'] and key == expected['variant_key'],
+        'destination': product['url'] == expected['url'] and rockler_destination(expected['url'], key),
+        'currency': card.get('currency', 'USD') == 'USD',  # decoder requires explicit USD
+        'price': product['price'] == expected['current_price'],
+        'reference': product['reference'] == expected['original_price'],
+        'options': expected.get('options') == f"SKU {product['sku']}",
+        'condition': product['condition'] == 'https://schema.org/NewCondition',
+        'stock': delivery['available'] and delivery['availability'] == 'in_stock',
+        'shipping_note': expected.get('availability_note', '') == delivery['note'],
+    }
+    return {'status': 'match' if all(checks.values()) else 'mismatch', 'checks': checks,
+            'merchant': {'sku': product['sku'], 'product_id': product['uid'],
+                         'price': product['price'], 'reference': product['reference'], 'currency': 'USD',
+                         'schema_availability': product['schema_availability'], 'delivery': delivery}}
 
 
 def validate_taylor_product(card: dict, product: dict) -> dict:
