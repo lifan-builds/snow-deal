@@ -15,7 +15,8 @@ def main() -> int:
         env = {key: os.environ[key] for key in ("PATH", "SYSTEMROOT", "LANG") if key in os.environ}
         env.update(
             HOME=tmp,
-            PYTHONPATH=os.pathsep.join((str(ROOT / "common"), str(ROOT / "catalogs/fresh-powder/src"))),
+            PYTHONPATH=os.pathsep.join(str(ROOT / path) for path in (
+                "common", "catalogs/fresh-powder/src", "catalogs/cycling/src", "catalogs/tools/src")),
             PYTEST_DISABLE_PLUGIN_AUTOLOAD="1",
             DATABASE_PATH=str(Path(tmp) / "deals.db"),
             AUTH_DB_PATH=str(Path(tmp) / "auth.db"),

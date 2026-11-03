@@ -1,0 +1,79 @@
+{
+  "catalog": "tools",
+  "measured_at": "2026-11-02T23:45:12.073984+00:00",
+  "reference_floor": 200,
+  "scope": "snapshot-listed offers; not independent merchant verification or unique model count",
+  "eligible_in_stock_listings": 175,
+  "deep_deal_listings": 7,
+  "useful_retailers": [
+    "Tool Nut",
+    "Woodcraft"
+  ],
+  "checked_within_24h_percent": 100.0,
+  "exact_size_facets": [],
+  "top_offers": [
+    {
+      "name": "Iconic 24\" x 24\" for Axiom CNC Router",
+      "store": "Woodcraft",
+      "url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-24-for-axiom-cnc-router?currency=USD&variant=43403824922762",
+      "price": 2999.0,
+      "reference": 6049.0,
+      "discount": 50.4,
+      "size": null
+    },
+    {
+      "name": "JET JAT-127, 3/4-in. Composite Impact Wrench (505127)",
+      "store": "Tool Nut",
+      "url": "https://www.toolnut.com/products/jet-505127-jat-127-composite-impact-wrench?currency=USD&variant=50177235976486",
+      "price": 299.99,
+      "reference": 580.99,
+      "discount": 48.4,
+      "size": null
+    },
+    {
+      "name": "Iconic 24\" x 36\" CNC Router",
+      "store": "Woodcraft",
+      "url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-36-cnc-router?currency=USD&variant=43400695939210",
+      "price": 3499.0,
+      "reference": 6599.0,
+      "discount": 47.0,
+      "size": null
+    },
+    {
+      "name": "Jet J-4400A, 12-in. Industrial Disc Finishing Machine 115/230V 1-Phase (414602)",
+      "store": "Tool Nut",
+      "url": "https://www.toolnut.com/products/jet-414602-j-4400a-12-industrial-disc-finishing-machine-115-230v-1ph?currency=USD&variant=50175462670630",
+      "price": 1099.0,
+      "reference": 2036.99,
+      "discount": 46.0,
+      "size": null
+    },
+    {
+      "name": "Axiom Iconic 24\" x 48\" CNC Router",
+      "store": "Woodcraft",
+      "url": "https://www.woodcraft.com/products/axiom-precision-axiom-iconic-24-x-48-cnc-router?currency=USD&variant=43400901656714",
+      "price": 3999.0,
+      "reference": 7149.0,
+      "discount": 44.1,
+      "size": null
+    },
+    {
+      "name": "DeWALT 20V MAX 6-1/2-in. Brushless Cordless Circular Saw, Tool Only (PROMO DCS565B)",
+      "store": "Tool Nut",
+      "url": "https://www.toolnut.com/products/dewalt-dcs565b-20v-max-6-1-2-in-brushless-cordless-circular-saw-tool-only-promo?currency=USD&variant=53393184162086",
+      "price": 134.99,
+      "reference": 237.99,
+      "discount": 43.3,
+      "size": null
+    },
+    {
+      "name": "18\" Woodworking Bandsaw with ArmorGlide -  5 HP 3 PH 230V - PM1800B-3T",
+      "store": "Woodcraft",
+      "url": "https://www.woodcraft.com/products/powermatic-18-woodworking-bandsaw-with-armorglide-5-hp-3-ph-230v-pm1800b-3t?currency=USD&variant=43872697778314",
+      "price": 4999.0,
+      "reference": 8359.0,
+      "discount": 40.2,
+      "size": null
+    }
+  ]
+}

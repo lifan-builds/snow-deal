@@ -260,7 +260,8 @@ async def count_with_length(db_path: Path = DB_PATH) -> int:
             """SELECT COUNT(*) FROM deals d
                WHERE exclusion_reason IS NULL AND length_min IS NOT NULL AND category IN ('skis', 'snowboards')
                AND scraped_at = (SELECT MAX(scraped_at) FROM deals WHERE store = d.store)
-               AND datetime(scraped_at) >= datetime('now', '-72 hours')"""
+               AND datetime(scraped_at) <= datetime('now')
+               AND datetime(scraped_at) >= datetime('now', '-24 hours')"""
         )
         row = await cursor.fetchone()
     return row[0]
@@ -275,7 +276,8 @@ async def get_brands(db_path: Path = DB_PATH) -> list[str]:
             INNER JOIN (SELECT store, MAX(scraped_at) as max_s FROM deals GROUP BY store) d2 
               ON deals.store = d2.store AND deals.scraped_at = d2.max_s
             WHERE deals.exclusion_reason IS NULL AND deals.brand IS NOT NULL AND deals.brand != ''
-            AND datetime(deals.scraped_at) >= datetime('now', '-72 hours')
+            AND datetime(deals.scraped_at) <= datetime('now')
+            AND datetime(deals.scraped_at) >= datetime('now', '-24 hours')
             ORDER BY deals.brand
             """
         )
@@ -292,7 +294,8 @@ async def get_category_counts(db_path: Path = DB_PATH) -> dict[str, int]:
             INNER JOIN (SELECT store, MAX(scraped_at) as max_s FROM deals GROUP BY store) d2 
               ON deals.store = d2.store AND deals.scraped_at = d2.max_s
             WHERE deals.exclusion_reason IS NULL AND deals.category IS NOT NULL
-            AND datetime(deals.scraped_at) >= datetime('now', '-72 hours')
+            AND datetime(deals.scraped_at) <= datetime('now')
+            AND datetime(deals.scraped_at) >= datetime('now', '-24 hours')
             GROUP BY deals.category
             """
         )
@@ -330,7 +333,8 @@ async def query_deals(
         "deals.exclusion_reason IS NULL",
         "deals.discount_pct >= ?",
         "deals.current_price >= 1 AND deals.discount_pct < 95",
-        "datetime(deals.scraped_at) >= datetime('now', '-72 hours')",
+        "datetime(deals.scraped_at) <= datetime('now')",
+        "datetime(deals.scraped_at) >= datetime('now', '-24 hours')",
     ]
     params: list[object] = [min_discount]
 

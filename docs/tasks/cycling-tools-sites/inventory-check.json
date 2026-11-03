@@ -1,0 +1,64 @@
+{
+  "checked_at": "2026-11-02T22:49:22.669613+00:00",
+  "catalogs": [
+    {
+      "catalog": "cycling",
+      "name": "Big Ring",
+      "default_reference": 1000,
+      "matching_deals": 249,
+      "top_discount": 73.5,
+      "sources": [
+        {
+          "name": "BikesOnline",
+          "successful_at": "2026-11-02T22:38:52.715152+00:00",
+          "status": "complete",
+          "listings": 111,
+          "variants": 320,
+          "categories": {
+            "Mountain bikes": 48,
+            "Framesets": 12,
+            "Road bikes": 12,
+            "Electric bikes": 6,
+            "Other complete bikes": 20,
+            "Gravel bikes": 13
+          }
+        },
+        {
+          "name": "Mike's Bikes",
+          "successful_at": "2026-11-02T22:40:47.775894+00:00",
+          "status": "complete",
+          "listings": 163,
+          "variants": 588,
+          "categories": {
+            "Electric bikes": 77,
+            "Road bikes": 33,
+            "Gravel bikes": 24,
+            "Mountain bikes": 18,
+            "Other complete bikes": 11
+          }
+        }
+      ]
+    },
+    {
+      "catalog": "tools",
+      "name": "Bench Drop",
+      "default_reference": 200,
+      "matching_deals": 71,
+      "top_discount": 50.4,
+      "sources": [
+        {
+          "name": "Woodcraft",
+          "successful_at": "2026-11-02T22:47:01.622979+00:00",
+          "status": "complete",
+          "listings": 76,
+          "variants": 76,
+          "categories": {
+            "Workshop equipment": 60,
+            "Power tools": 14,
+            "Combo kits": 2
+          }
+        }
+      ]
+    }
+  ]
+}

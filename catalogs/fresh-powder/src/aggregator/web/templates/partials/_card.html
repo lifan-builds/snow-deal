@@ -12,4 +12,9 @@
 {% if d.review_score is not none %}<div class="review-row"><span class="review-score">{{ d.review_score }}/100</span>{% if d.review_url %}<a href="{{ d.review_url }}" target="_blank" rel="noopener noreferrer">Expert review ↗</a>{% endif %}</div>{% endif %}
 {% if comparison %}<div class="comparison-card-links"><a href="{{ comparison }}">Compare shops →</a><a class="product-link" href="{{ d.purchase_url }}" target="_blank" rel="noopener noreferrer">Visit {{ d.store }} ↗</a></div>{% endif %}
 {% if not comparison %}<a class="product-link retailer-link" href="{{ d.purchase_url }}" target="_blank" rel="noopener noreferrer">View offer at {{ d.store }} ↗</a>{% endif %}
+<details class="offer-evidence"><summary>Price &amp; variant details</summary>
+<p>Discount compares this offer with the retailer’s reference price. That reference is not an independently verified former selling price or an all-time low.</p>
+<p>{% if d.variant_key %}Variant {{ d.variant_key }} · {{ d.offer_options or 'Options not specified' }}.{% else %}Exact variant not supplied; confirm options and stock at the store.{% endif %}</p>
+<p>Shipping and tax excluded. Source checked {{ d.scraped_at.strftime('%b %d, %H:%M') }} UTC; price and availability can change at checkout.</p>
+</details>
 <div class="card-bottom"><span>Source checked {{ d.scraped_at.strftime('%b %d, %H:%M') }} UTC</span><button type="button" class="share-btn" data-url="{{ site_url + comparison if comparison else d.purchase_url }}" data-name="{{ d.name }}" aria-label="Share {{ d.name }}">Share ↗</button></div></div></article>

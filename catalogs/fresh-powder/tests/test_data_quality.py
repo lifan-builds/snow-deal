@@ -1,13 +1,12 @@
 """Regression fixtures from the November source-quality audit."""
 import asyncio
 import json
-from pathlib import Path
 
 import httpx
 import pytest
 
 from aggregator.browser import _parse_raw_products
-from aggregator.categorizer import categorize, is_excluded
+from aggregator.categorizer import categorize, exclusion_reason, is_excluded
 from aggregator.config import StoreConfig
 from aggregator.parsers.coloradodiscount import ColoradoDiscountParser
 from aggregator.parsers.sacredride import SacredRideParser
@@ -15,6 +14,51 @@ from aggregator.scraper import _products_to_deals, build_scrape_report, protect_
 from snow_deals.models import Product
 from snow_deals.parsers.bluezone import BlueZoneParser
 from snow_deals.parsers.shopify import ShopifyParser
+
+
+@pytest.mark.parametrize(('name', 'url', 'product_type'), [
+    ('Season Nexus Skis - Blem 2025', 'https://shop.example/nexus', 'Skis'),
+    ('Lib Tech T. Rice Pro Snowboard - Blem 2026', 'https://shop.example/rice', ''),
+    ('Nexus Skis', 'https://shop.example/products/nexus-blem', ''),
+    ('Nexus Skis', 'https://shop.example/nexus', 'Blemished Skis'),
+])
+def test_blemished_equipment_is_excluded_at_ingestion(name, url, product_type):
+    assert exclusion_reason(name, url, product_type) == 'condition'
+    product = Product(name, url, 300, 750, product_type=product_type)
+    assert _products_to_deals([product], 'Test') == []
+
+
+def test_demo_binding_design_is_not_used_condition():
+    name = 'Marker Kingpin 10 Demo Alpine Touring Ski Bindings'
+    assert exclusion_reason(name, 'https://shop.example/kingpin-demo-alpine') is None
+    assert exclusion_reason(name + ' - Used') is not None
+
+
+def test_snapshot_repair_excludes_blem_without_rewriting_observation(tmp_path):
+    import sqlite3
+    from datetime import datetime, timezone
+    from aggregator.db import init_db, upsert_deals, repair_deal_categories, query_deals
+    from aggregator.models import AggregatedDeal
+
+    path = tmp_path / 'public-snapshot.db'
+    asyncio.run(init_db(path))
+    row = AggregatedDeal(id=None, store='Test', name='Season Nexus Skis',
+                         url='https://shop.example/nexus', current_price=300,
+                         original_price=750, discount_pct=60, category='skis',
+                         sizes=None, length_min=None, length_max=None,
+                         scraped_at=datetime.now(timezone.utc).replace(tzinfo=None))
+    asyncio.run(upsert_deals([row], path))
+    with sqlite3.connect(path) as db:
+        db.execute("UPDATE deals SET name = 'Season Nexus Skis - Blem 2025'")
+        before = db.execute('SELECT current_price, original_price, scraped_at, first_seen FROM deals').fetchall()
+        history = db.execute('SELECT * FROM price_history').fetchall()
+    assert asyncio.run(repair_deal_categories(path)) == 1
+    assert asyncio.run(repair_deal_categories(path)) == 0
+    with sqlite3.connect(path) as db:
+        assert db.execute('SELECT current_price, original_price, scraped_at, first_seen FROM deals').fetchall() == before
+        assert db.execute('SELECT * FROM price_history').fetchall() == history
+        assert db.execute('SELECT exclusion_reason FROM deals').fetchone() == ('condition',)
+    assert asyncio.run(query_deals(db_path=path)) == []
 
 
 @pytest.mark.parametrize(('name', 'expected'), [
@@ -154,7 +198,8 @@ def test_collection_errors_preserve_other_valid_products(monkeypatch):
     async def run():
         item = dict(title='Atomic Skis',handle='ski',variants=[dict(price='300',compare_at_price='600')])
         def handler(request):
-            if '/bad/' in str(request.url): return httpx.Response(200,text='<html>Challenge</html>')
+            if '/bad/' in str(request.url):
+                return httpx.Response(200,text='<html>Challenge</html>')
             return httpx.Response(200,json={'products':[item]})
         store = StoreConfig('Test','store.test',['https://store.test/collections/bad','https://store.test/collections/skis'],shopify_products_limit=1)
         outcomes = {}
@@ -193,16 +238,17 @@ def test_browser_failed_pagination_is_not_reported_as_complete():
 
 def test_filter_counts_exclude_stale_and_historical_rows(tmp_path):
     from datetime import datetime, timedelta
-    from aggregator.db import init_db, upsert_deals, get_brands, get_category_counts, count_with_length
+    from aggregator.db import init_db, upsert_deals, get_brands, get_category_counts, count_with_length, query_deals
     async def run():
         path = tmp_path / 'counts.db'
         await init_db(path)
         deals = _products_to_deals([Product('Atomic Skis','https://s.test/old',100,200,['170cm'],brand='Atomic')], 'Old')
-        deals[0].scraped_at = datetime.utcnow() - timedelta(days=4)
+        deals[0].scraped_at = datetime.utcnow() - timedelta(hours=25)
         await upsert_deals(deals,path)
         assert await get_brands(path) == []
         assert await get_category_counts(path) == {}
         assert await count_with_length(path) == 0
+        assert await query_deals(db_path=path) == []
     asyncio.run(run())
 
 
@@ -246,9 +292,11 @@ def test_flat_skis_and_compact_length_lists():
     ('https://s.test/snow?page=1', ['https://s.test/other?page=2','https://s.test/snow?page=20','https://s.test/snow?page=2'], 'https://s.test/snow?page=2'),
 ])
 def test_real_pagination_javascript(current, links, expected):
-    import shutil, subprocess
+    import shutil
+    import subprocess
     from aggregator.browser import _try_next_page
-    if not shutil.which('node'): pytest.skip('Node is needed to execute the browser selector fixture')
+    if not shutil.which('node'):
+        pytest.skip('Node is needed to execute the browser selector fixture')
     class Page:
         async def evaluate(self, script):
             setup = 'const window={location:new URL(' + json.dumps(current) + ')};'
@@ -278,7 +326,9 @@ def test_targeted_refresh_uses_only_selected_store_baseline(monkeypatch, tmp_pat
         selected['stores'] = [s.name for s in kwargs['stores']]
         kwargs['outcomes'][store] = {'errors':0,'pages':1}
         return deals
-    async def upsert(rows): selected['published'] = len(rows); return len(rows)
+    async def upsert(rows):
+        selected['published'] = len(rows)
+        return len(rows)
     async def save(*args): pass
     monkeypatch.setattr(module,'init_db',init)
     monkeypatch.setattr(module,'store_status',status)

@@ -214,6 +214,21 @@ def test_waitlist_failure_is_not_reported_as_success(isolated_app, monkeypatch):
         assert response.json()['ok'] is False
 
 
+def test_failed_snow_refresh_cannot_make_health_look_current(isolated_app, monkeypatch):
+    from datetime import datetime, timedelta, timezone
+    now = datetime.now(timezone.utc).replace(tzinfo=None)
+    old = (now - timedelta(hours=25)).isoformat()
+    async def statuses():
+        return [{"checked_at": old, "status": "ok", "deals": 10},
+                {"checked_at": now.isoformat(), "status": "unavailable", "deals": 0}]
+    monkeypatch.setattr(routes_module, "refresh_status", statuses)
+    with TestClient(app_module.create_app()) as client:
+        result = client.get('/healthz').json()
+        assert result['status'] == 'stale'
+        assert result['checked_at'] == old
+        assert result['last_attempt_at'] == now.isoformat()
+
+
 def test_public_category_seo_and_pagination(isolated_app, monkeypatch):
     monkeypatch.setenv('PUBLIC_MODE', '1')
     monkeypatch.setenv('SITE_URL', 'https://freshpowder.clifan.com')

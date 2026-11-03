@@ -2,8 +2,9 @@ name: Scrape Deals
 
 on:
   schedule:
-    # Daily; avoid the busiest top-of-hour queue.
+    # Every eight hours; keep the existing morning slot for weekly reviews.
     - cron: "17 5 * * *"
+    - cron: "17 13,21 * * *"
   workflow_dispatch:
     inputs:
       refresh_reviews:

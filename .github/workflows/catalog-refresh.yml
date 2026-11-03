@@ -1,0 +1,98 @@
+name: Refresh cycling and tools
+
+# Publication activates this schedule; review the release plan before merging.
+on:
+  schedule:
+    - cron: '43 */8 * * *'
+  workflow_dispatch:
+    inputs:
+      bootstrap_history:
+        description: 'First run only: allow a missing cycling/tools history asset'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: new-catalog-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - catalog: cycling
+            command: cycling-deals
+            project_secret: CYCLING_VERCEL_PROJECT_ID
+            site_variable: CYCLING_SITE_URL
+          - catalog: tools
+            command: tool-deals
+            project_secret: TOOLS_VERCEL_PROJECT_ID
+            site_variable: TOOLS_SITE_URL
+    env:
+      SITE_URL: ${{ vars[matrix.site_variable] }}
+      VERCEL_PROJECT_ID: ${{ secrets[matrix.project_secret] }}
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+    steps:
+      - name: Verify deployment configuration
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          DATA_REPO_TOKEN: ${{ secrets.DATA_REPO_TOKEN }}
+        run: |
+          for key in SITE_URL VERCEL_PROJECT_ID VERCEL_ORG_ID VERCEL_TOKEN DATA_REPO_TOKEN; do
+            if [ -z "${!key}" ]; then echo "::error::Missing configuration: $key"; exit 1; fi
+          done
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --global vercel@65.9.0
+      - run: pip install -e '.[dev]'
+      - name: Verify offline data contracts
+        run: python scripts/check.py -q
+      - name: Restore previous public snapshot and history
+        env:
+          BOOTSTRAP: ${{ inputs.bootstrap_history }}
+          CATALOG: ${{ matrix.catalog }}
+        run: |
+          args=()
+          if [ "$BOOTSTRAP" = 'true' ]; then args+=(--bootstrap); fi
+          python scripts/restore_catalog.py "$CATALOG" --database "$RUNNER_TEMP/catalog.db" "${args[@]}"
+      - name: Refresh configured sources
+        run: ${{ matrix.command }} refresh --database "${{ runner.temp }}/catalog.db"
+      - name: Audit selected offers against merchant endpoints
+        run: python scripts/audit_merchants.py --catalog ${{ matrix.catalog }} --database "$RUNNER_TEMP/catalog.db" --output "$RUNNER_TEMP/merchant-audit.json" --seed "$(date -u +%Y%m%d)"
+      - name: Prepare read-only site and snapshot report
+        run: |
+          python scripts/package_catalog.py ${{ matrix.catalog }} --database "$RUNNER_TEMP/catalog.db" --output "$RUNNER_TEMP/site" --public-url "$SITE_URL"
+          python scripts/audit_catalog.py --catalog ${{ matrix.catalog }} --database "$RUNNER_TEMP/catalog.db" > "$RUNNER_TEMP/snapshot-audit.json"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ${{ matrix.catalog }}-site
+          path: |
+            ${{ runner.temp }}/site/
+            ${{ runner.temp }}/snapshot-audit.json
+            ${{ runner.temp }}/merchant-audit.json
+          retention-days: 30
+      - name: Retain validated history in the existing data release
+        env:
+          GH_TOKEN: ${{ secrets.DATA_REPO_TOKEN }}
+          CATALOG: ${{ matrix.catalog }}
+        run: |
+          cp "$RUNNER_TEMP/catalog.db" "$RUNNER_TEMP/$CATALOG.db"
+          gh release upload latest-data "$RUNNER_TEMP/$CATALOG.db" --clobber --repo lifan-builds/snow-deal-data
+      - name: Deploy the validated standalone catalog bundle
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: vercel deploy "$RUNNER_TEMP/site" --yes --prod --token "$VERCEL_TOKEN"
+      - name: Verify public site serves this exact snapshot
+        run: python scripts/verify_catalog_live.py --receipt "$RUNNER_TEMP/site/BUILD-RECEIPT.json" --site-url "$SITE_URL"

@@ -1,5 +1,15 @@
 # Deal Aggregator workspace refactor
 
+## Competitive gap closure — November 2, 2026
+
+Expanded cycling to three validated sources and tools to two, added independent merchant sampling with blocked checks retained, tightened browsing expiry to 24 hours across all three apps, corrected tool taxonomy and manufacturer aliases, and fixed history continuity across CI runners and deployment bundles. Prepared eight-hour refresh workflows with explicit first-run bootstrap, audit gates, deployment preflight and exact live snapshot verification. 307 offline tests pass. Local mobile price visibility and four-action budget/fit searches pass. Publication and new-site project/domain setup await approval of [the concrete release plan](docs/CATALOG-RELEASE-PLAN.md). Historical completeness and all-competitor leadership are not achieved; see [the gap report](docs/benchmarks/2026-11-02-gap-closure.md). The sections below preserve earlier milestones.
+
+## Cycling and tools implementation — November 2, 2026
+
+The user requested two additional sites and clarified tools means workshop and power tools. Big Ring and Bench Drop are now implemented with their own catalog packages, themes, artwork, sources, classifications and snapshots. Shared snapshot ingestion, query/ranking, responsive browsing, and saved searches live in `common/deal_common/catalog/`; Fresh Powder retains its existing application and deployment entrypoints.
+
+Live local validation found 249 cycling listings above a $1,000 retailer reference across two stores and 71 tools listings above $200 from Woodcraft. Percentage off remains first. 277 offline tests pass. Standalone deployment packaging and a manual artifact workflow are prepared; public deployment, DNS and recurring production refresh remain separate from this build. See [delivery record](docs/tasks/cycling-tools-sites/DELIVERY.md) for exact evidence and limits. Earlier proposal-only statements below describe the prior milestone.
+
 ## Purpose
 
 Extract Fresh Powder's methodology and reusable code so additional category catalogs can find exceptionally deep discounts on expensive products.
@@ -68,3 +78,36 @@ Final verification: 84 tests passed; Python compilation and `git diff --check` p
 - PR #2 merged as `758e13c` after successful Vercel checks. The updated production interface is live and category/year/reference filters, pagination, browser-local saved searches, and mobile layout have been checked.
 - The prior public snapshot is backed up under the original project's ignored `.local/release-rollback/2026-11-02/` directory. The existing production checkout and operational databases remain unchanged.
 - Full refresh run `41525351684` succeeded. The new snapshot is live with 13,171 listings, 25,980 variant offers, and 7,836 products with a reported in-stock size. Production timestamp, exact-size counts/ranking/link consistency, combined filters, pagination, and mobile checks passed. See `docs/RELEASE-RECEIPT.md` for evidence and remaining product-validation limits.
+
+
+## Competitive benchmark and product improvements — 2026-11-02
+
+- Researched 19 direct, editorial and international capability comparators across snow, cycling and tools. Defined ten fixed metrics, dated evidence and an executable all-metrics lead check. The full lead claim deliberately fails while evidence or coverage is missing.
+- Made the two new catalogs compact on mobile, added visible applied filters and offer evidence, and exposed genuine per-variant daily history with explicit insufficient-history wording. Snow cards also show reference/variant evidence.
+- Fixed cycling frame/wheel-size conflation, hardened product/variant purchase destinations, protected accessory classification, and retained history across standalone packaging.
+- Local mobile first-price distance improved from 1,359 to 783 px for cycling in the paired saved-search state, and 1,351 to 738 px for tools. Current snapshots show 33 / 4 qualifying ≥40%-off cycling/tools listings; tools still has one retailer. See `docs/tasks/competitive-benchmark/verification.md`.
+- No publication or recurring benchmark job was activated. Remaining work: independent merchant accuracy samples, broader tools coverage, 30+ real observation days and comparable production performance tests.
+
+## Cycling and tools source expansion — 2026-11-02
+
+- Reused Fresh Powder source discovery and ingestion, with isolated candidate probes, complete pagination, currency/variant or SKU validation, and explicit holds for uncertain candidates.
+- Cycling: three to seven retailers, 309 to 956 eligible in-stock listings, 32 to 73 at least 40% off. Tools: two to seven retailers, 175 to 213 eligible listings, seven to nine at least 40% off. Original reference floors retained.
+- Added shared Grizzly structured-SKU ingestion and independent product auditing; corrected observed bike taxonomy, shipping-tag and tool accessory/condition errors. Preserved old source timestamps and daily history when merging public preview snapshots.
+- Nine newly admitted retailers passed 23 selected merchant checks. Harvey's early rate limits later recovered; Max Warehouse remains held. This is admission evidence, not a representative market-wide accuracy or historical-price claim.
+- No push or deployment. See `docs/tasks/source-expansion/IMPLEMENTATION.md` and the dated JSON receipt for sources, retained failures, evidence and remaining tools coverage gaps.
+- Final validation: 351 offline tests, scoped Ruff, whitespace checks, both standalone packages and local source-health/page checks passed.
+
+## Continued source expansion to the practical public-feed limit — 2026-11-02
+
+- Expanded cycling from seven to 16 contributing retailers and tools from seven to nine; broadened Tool Nut and Woodcraft without removing prior collections. Final qualifying snapshots: cycling 956 → 1,142 listings and 73 → 87 at least 40% off; tools 213 → 347 and nine → 20. Two additional cycling deep discounts came from refreshing Mike's Bikes, not new retailer coverage.
+- Fixed observed apparel/accessory, showroom/blemished and condition-tag errors. Negative shipping tags override positive ones; removed Fanatik pickup-only inventory after separate product-page review. State's manufacturer name no longer makes a tire look like a bicycle. Frame aliases SM/MD/LG now match their full-size equivalents without splitting compound labels.
+- Reapplied final cycling rules across all 16 sources, verified 48 distinct sampled merchant offers, and checked local previews plus packaged snapshot hashes. All 377 offline tests, scoped Ruff and whitespace checks passed.
+- The researched reusable-feed queue is exhausted for this pass; custom adapters, access recovery and partner feeds remain substantial opportunities. See `docs/tasks/source-expansion/SATURATION.md` and `docs/benchmarks/2026-11-02-source-saturation.json`. No push or public deployment.
+
+## Competitive continuation — 2026-11-03 UTC
+
+- Expanded the evidence registry to 21 competitors, crawled Powder Deals and Velo Bargains to completion, inspected public competitor APIs and measured seven production mobile sites with three cold runs each. Candidate counts remain provisional; the all-metrics lead gate still fails.
+- Improved tools recall for jigsaws, oscillating tools and powered ratchets: 351 eligible listings / 21 deep deals across nine sources after a complete refresh. Cycling remains 1,142 / 87 across 16 sources. Both latest 30-offer merchant endpoint samples matched; this does not prove checkout, population accuracy or historical price validity.
+- Fixed cycling size facets contaminated by merchant color labels and wheel-only values, refreshed both affected sources, and rebuilt the standalone packages. Snow excludes explicit blemished equipment at ingestion/repair while preserving observation history.
+- Production snow LCP was behind Powder Deals and Ski Finder. Earlier stylesheet/font discovery reduced median LCP 792 → 596 ms in a paired local captured-content fixture; production gain remains unverified.
+- 405 offline tests, scoped Ruff, whitespace and package/preview snapshot-hash checks passed. Both local catalogs have two actual observed UTC dates, not 30-day history. No push or deployment. Current report: `docs/benchmarks/2026-11-03-competitive-continuation.md`; current publication scope: `docs/CATALOG-RELEASE-PLAN.md`.

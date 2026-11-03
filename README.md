@@ -20,13 +20,16 @@ catalogs/
     docs/images/             # Product screenshots
     history/                 # Preserved architecture/planning records
     PLAN.md                  # Preserved product growth plan
-  cycling/                   # Proposed second catalog; research only
+  cycling/                   # Big Ring: cycling rules, sources, branding, and CLI
+  tools/                     # Bench Drop: workshop/power-tool rules, sources, branding, and CLI
 scripts/                      # Workspace checks and default Vercel build adapter
 app.py, api/, vercel.json      # Existing Fresh Powder deployment entrypoints
 PLANS.md                      # Workspace refactor decisions and verification
 ```
 
-Read [the methodology](docs/METHODOLOGY.md), [common component boundaries](common/README.md), and [the cycling proposal](catalogs/cycling/README.md).
+Read [the methodology](docs/METHODOLOGY.md), [common component boundaries](common/README.md), [Big Ring](catalogs/cycling/README.md), and [Bench Drop](catalogs/tools/README.md).
+
+The cycling and tools sites share `common/deal_common/catalog/`: atomic source snapshots, dated observations, matching-variant filters, percentage-first ranking, pagination, responsive templates, and browser-local saved searches. Each catalog owns its classifications and visual assets. Their [delivery record](docs/tasks/cycling-tools-sites/DELIVERY.md) includes local previews, source limits, and independent deployment packaging.
 
 ## Development
 
@@ -43,7 +46,7 @@ The check runner clears inherited service credentials and uses temporary databas
 
 For a safe UI preview with synthetic offers and temporary databases, run `.venv/bin/python scripts/preview_offers.py` and open `http://127.0.0.1:8765`. This demonstrates size-specific prices, percent-first ranking, original-price filtering, and browser-local saved searches. The sample deals are not retailer inventory.
 
-A single root installation provides `deal_common`, the existing `aggregator` and `snow_deals` import names, and both existing CLI commands. No second install inside the catalog is needed. Templates and static assets are included in the package.
+A single root installation provides `deal_common`, `aggregator`, `snow_deals`, `cycling_deals`, and `tool_deals`. The new commands are `cycling-deals` and `tool-deals`, each with `refresh --database PATH` and `serve --database PATH` subcommands. No second install inside the catalog is needed. Templates and static assets are included in the package.
 
 The web command starts the Fresh Powder app with public local access and a new, initially empty database. For invite-gated development configure your own `SECRET_KEY`. See [Fresh Powder](catalogs/fresh-powder/README.md) for deployment and data paths.
 
@@ -56,3 +59,9 @@ Old ignored databases, credentials, deployment state, browser state, and install
 Existing research in `docs/research/` and task media in `media/` retain their paths for current chats. Historical Fresh Powder plans are preserved in the catalog. Nothing in this refactor publishes or deploys changes.
 
 The November 2 implementation also integrates the newer production application and retains Shopify variant offers and dated observations. Old snapshots need schema migration and a fresh scrape to populate variants. Schema migration alone does not establish size availability. HTML-only sources retain explicitly unknown stock unless their parser supplies variant evidence. See the [implementation receipt](docs/research/2026-11-02-deal-site-landscape/execution/IMPLEMENTATION.md) for verification and rollout limits.
+
+## Competitive quality benchmark
+
+See [the ten-metric comparison](docs/COMPETITIVE-BENCHMARK.md) and [dated scorecard](docs/benchmarks/2026-11-02.md). Run `python scripts/benchmark.py docs/benchmarks/2026-11-02.json --require-lead` to test a market-lead claim. Missing evidence deliberately fails this gate; it is separate from the offline code checks.
+
+The [source follow-up](docs/tasks/source-expansion/SATURATION.md) extends Fresh Powder’s admission process to 16 cycling and nine tools retailers. It includes isolated probes, full pagination, USD/stock/identity checks, shipping/condition exclusions and separate merchant samples. The [latest competitive pass](docs/benchmarks/2026-11-03-competitive-continuation.md) has 1,142 qualifying cycling listings (87 at least 40% off) and 351 tools listings (21 at least 40% off), with stronger frame-size and condition checks. Common ingestion also supports Grizzly’s exact-SKU public structured data. This is measured public-feed coverage, not exhaustive market coverage or publication.

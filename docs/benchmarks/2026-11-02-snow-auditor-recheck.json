@@ -1,0 +1,339 @@
+{
+  "sample_size": 5,
+  "match": 5,
+  "mismatch": 0,
+  "inconclusive": 0,
+  "verified_match_percent": 100.0,
+  "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+  "results": [
+    {
+      "name": "Dalbello DS Asolo 115 Factory GW LS Womens Ski Boot",
+      "store": "Aspen Ski and Board",
+      "offer": {
+        "variant_key": "50304003703072",
+        "url": "https://www.aspenskiandboard.com/products/dalbello-ds-asolo-115-factory-gw-ls-womens-ski-boot-2022?variant=50304003703072",
+        "current_price": 198.94,
+        "original_price": 950.0,
+        "options": "Black/Black / 23.5",
+        "availability": "in_stock",
+        "size": "23.5"
+      },
+      "checked_at": "2026-11-02T23:30:16.763393+00:00",
+      "evidence_url": "https://www.aspenskiandboard.com/products/dalbello-ds-asolo-115-factory-gw-ls-womens-ski-boot-2022.js?currency=USD",
+      "response_sha256": "4ccd9d623443b41c7c61d1fce5a0661f63d791015af5a509da630803e22044a8",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Dalbello DS Asolo 115 Factory GW LS Womens Ski Boot",
+        "variant": "50304003703072",
+        "sku": "616438795892",
+        "price_minor": 19894,
+        "reference_minor": 95000,
+        "currency": "USD",
+        "options": "Black/Black / 23.5",
+        "raw_options": [
+          "Black/Black",
+          "23.5",
+          "Retail Price: $950.00"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Black/Black"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "23.5",
+              "24.5"
+            ]
+          },
+          {
+            "name": "MSRP",
+            "position": 3,
+            "values": [
+              "Retail Price: $950.00"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Dalbello Chakra 105 ID Ski Boots Womens",
+      "store": "Aspen Ski and Board",
+      "offer": {
+        "variant_key": "50304561119520",
+        "url": "https://www.aspenskiandboard.com/products/dalbello-chakra-105-id-ski-boots-womens?variant=50304561119520",
+        "current_price": 149.95,
+        "original_price": 650.0,
+        "options": "Navy Blue/Black / 24.5",
+        "availability": "in_stock",
+        "size": "24.5"
+      },
+      "checked_at": "2026-11-02T23:30:20.009550+00:00",
+      "evidence_url": "https://www.aspenskiandboard.com/products/dalbello-chakra-105-id-ski-boots-womens.js?currency=USD",
+      "response_sha256": "5249295065a98824b56507041818cd0629c24eea69d8294e798f1332ac625e5f",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Dalbello Chakra 105 ID Ski Boots Womens",
+        "variant": "50304561119520",
+        "sku": "616438781857",
+        "price_minor": 14995,
+        "reference_minor": 65000,
+        "currency": "USD",
+        "options": "Navy Blue/Black / 24.5",
+        "raw_options": [
+          "Navy Blue/Black",
+          "24.5",
+          "Retail: $650.00"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Navy Blue/Black"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "23.5",
+              "24.5",
+              "25.5"
+            ]
+          },
+          {
+            "name": "MSRP",
+            "position": 3,
+            "values": [
+              "Retail: $650.00"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Dalbello Cabrio LV Free 105 W Womens Ski Boots",
+      "store": "Aspen Ski and Board",
+      "offer": {
+        "variant_key": "68018233671968",
+        "url": "https://www.aspenskiandboard.com/products/dalbello-cabrio-lv-free-105-w-womens-ski-boots?variant=68018233671968",
+        "current_price": 299.95,
+        "original_price": 649.99,
+        "options": "Jungle Green/Black / 23.5",
+        "availability": "in_stock",
+        "size": "23.5"
+      },
+      "checked_at": "2026-11-02T23:30:21.632587+00:00",
+      "evidence_url": "https://www.aspenskiandboard.com/products/dalbello-cabrio-lv-free-105-w-womens-ski-boots.js?currency=USD",
+      "response_sha256": "2ba36ba9f97d2fd90bfd92da88b4ad112be5c486411f74de6d175aa7750eb911",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Dalbello Cabrio LV Free 105 W Womens Ski Boots",
+        "variant": "68018233671968",
+        "sku": "616438810991",
+        "price_minor": 29995,
+        "reference_minor": 64999,
+        "currency": "USD",
+        "options": "Jungle Green/Black / 23.5",
+        "raw_options": [
+          "Jungle Green/Black",
+          "23.5",
+          "Retail: $649.99"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Jungle Green/Black"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "23.5",
+              "25.5",
+              "26.5"
+            ]
+          },
+          {
+            "name": "MSRP",
+            "position": 3,
+            "values": [
+              "Retail: $649.99"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Salomon S/Pro Supra BOA 100 GW Mens Ski Boots 2026",
+      "store": "Aspen Ski and Board",
+      "offer": {
+        "variant_key": "50148775428384",
+        "url": "https://www.aspenskiandboard.com/products/salomon-s-pro-supra-boa-100-gw-mens-ski-boots-2026?variant=50148775428384",
+        "current_price": 363.97,
+        "original_price": 620.0,
+        "options": "Black/Dark Grey Met./Burgundy Met. / 30/30.5",
+        "availability": "in_stock",
+        "size": "30/30.5"
+      },
+      "checked_at": "2026-11-02T23:30:23.295541+00:00",
+      "evidence_url": "https://www.aspenskiandboard.com/products/salomon-s-pro-supra-boa-100-gw-mens-ski-boots-2026.js?currency=USD",
+      "response_sha256": "6d36d051675f9a8bedbcfc4be6a25c01473bc9cab2e980ba2c0ea5a53c65799e",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Salomon S/Pro Supra BOA 100 GW Mens Ski Boots 2026",
+        "variant": "50148775428384",
+        "sku": "198720008861",
+        "price_minor": 36397,
+        "reference_minor": 62000,
+        "currency": "USD",
+        "options": "Black/Dark Grey Met./Burgundy Met. / 30/30.5",
+        "raw_options": [
+          "Black/Dark Grey Met./Burgundy Met.",
+          "30/30.5",
+          "Retail: $620.00"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Black/Dark Grey Met./Burgundy Met."
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "24/24.5",
+              "25/25.5",
+              "26/26.5",
+              "27/27.5",
+              "28/28.5",
+              "29/29.5",
+              "30/30.5",
+              "31/31.5"
+            ]
+          },
+          {
+            "name": "MSRP",
+            "position": 3,
+            "values": [
+              "Retail: $620.00"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Atomic Hawx Prime 130 S Boa Mens Ski Boots 2026",
+      "store": "Aspen Ski and Board",
+      "offer": {
+        "variant_key": "50579096502560",
+        "url": "https://www.aspenskiandboard.com/products/atomic-hawx-prime-130-s-boa-mens-ski-boots-2026?variant=50579096502560",
+        "current_price": 439.95,
+        "original_price": 1050.0,
+        "options": "Cement/Black/Red / 28.5",
+        "availability": "in_stock",
+        "size": "28.5"
+      },
+      "checked_at": "2026-11-02T23:30:24.985993+00:00",
+      "evidence_url": "https://www.aspenskiandboard.com/products/atomic-hawx-prime-130-s-boa-mens-ski-boots-2026.js?currency=USD",
+      "response_sha256": "a2dfafd3a941d44e293376f359bb199129ecded140cb6f37d965a9ab610e8c79",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Atomic Hawx Prime 130 S Boa Mens Ski Boots 2026",
+        "variant": "50579096502560",
+        "sku": "887445408673",
+        "price_minor": 43995,
+        "reference_minor": 105000,
+        "currency": "USD",
+        "options": "Cement/Black/Red / 28.5",
+        "raw_options": [
+          "Cement/Black/Red",
+          "28.5",
+          "Retail: $1050.00"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Cement/Black/Red"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "27.5",
+              "28.5",
+              "29.5"
+            ]
+          },
+          {
+            "name": "MSRP",
+            "position": 3,
+            "values": [
+              "Retail: $1050.00"
+            ]
+          }
+        ],
+        "available": true
+      }
+    }
+  ]
+}

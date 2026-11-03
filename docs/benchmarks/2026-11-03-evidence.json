@@ -1,0 +1,4114 @@
+{
+  "date": "2026-11-03",
+  "timezone": "UTC; November 2 evening in America/Los_Angeles",
+  "scope": "Anonymous public endpoints, ephemeral browser contexts and explicit task-owned local snapshots. No competitor data ingested into our inventory.",
+  "inventory": {
+    "cycling": {
+      "catalog": "cycling",
+      "measured_at": "2026-11-03T02:47:37.991989+00:00",
+      "reference_floor": 1000,
+      "scope": "snapshot-listed offers; not independent merchant verification or unique model count",
+      "eligible_in_stock_listings": 1142,
+      "deep_deal_listings": 87,
+      "useful_retailers": [
+        "Bicycle Warehouse",
+        "Bike Mart",
+        "BikesOnline",
+        "Colorado Cyclist",
+        "Contender Bicycles",
+        "ERIK’S Bike Shop",
+        "Mike's Bikes",
+        "Planet Cyclery",
+        "Pro Bike Supply",
+        "The Path Bike Shop",
+        "Worldwide Cyclery"
+      ],
+      "checked_within_24h_percent": 100.0,
+      "exact_size_facets": [
+        "20.5in",
+        "20.5tt",
+        "22\"",
+        "26 TALL",
+        "43",
+        "44",
+        "46",
+        "46.5",
+        "47",
+        "48",
+        "48cm (19\")",
+        "49",
+        "49cm",
+        "49cm (19.25\")",
+        "50",
+        "50cm",
+        "50cm (19.75\")",
+        "51",
+        "51.5",
+        "51cm",
+        "52",
+        "52cm",
+        "52cm (20.5\")",
+        "53",
+        "53cm",
+        "53cm (21\")",
+        "54",
+        "54CM",
+        "54cm",
+        "54cm (21\")",
+        "54cm (21.25\")",
+        "55",
+        "56",
+        "56CM",
+        "56cm",
+        "56cm (22\")",
+        "57",
+        "57.5",
+        "57cm (22.5\")",
+        "58",
+        "58CM",
+        "58cm",
+        "59.5",
+        "60",
+        "61",
+        "61cm",
+        "62",
+        "All",
+        "L",
+        "L (29\" wheel)",
+        "L - 630wh Battery",
+        "LARGE",
+        "LG",
+        "LG (29)",
+        "LG (5'10\" - 6'3\")",
+        "LG (5'10\" - 6'4\")",
+        "LG (5'5\" - 5'10\")",
+        "Large",
+        "Large MX",
+        "Large/X-Large",
+        "M",
+        "M #MWS Options 1",
+        "M #MWS Options 11",
+        "M (29\" wheel)",
+        "MD",
+        "MD (5' - 5'6\")",
+        "MD (5'5\" - 5'10\")",
+        "MD (5'6\" - 5'10\")",
+        "MD (MX)",
+        "MEDIUM",
+        "ML",
+        "ML (29\" wheel)",
+        "Medium",
+        "Medium (29\")",
+        "Medium - 54cm - ( Riders 5'9\" - 6'1\")",
+        "Medium 29",
+        "Medium MX",
+        "Medium/Large",
+        "One Size",
+        "One Size Fits Most",
+        "One size fits most",
+        "R",
+        "Regular",
+        "S",
+        "S #MWS Options 13",
+        "S #MWS Options 5",
+        "S (27.5\" wheel)",
+        "S/M",
+        "S1",
+        "S1 (MX)",
+        "S1 (SM)",
+        "S2",
+        "S2 (MX)",
+        "S3",
+        "S3 (29)",
+        "S3 - 29",
+        "S4",
+        "S4 (29)",
+        "S4 - 29",
+        "S5",
+        "S5 (29)",
+        "S5 - 29",
+        "S6",
+        "S6 (29)",
+        "S6 - 29",
+        "SM",
+        "SM (4'10\" - 5'6\")",
+        "SM (5' - 5'6\")",
+        "SM (MX)",
+        "SMALL",
+        "Size 2",
+        "Size 3",
+        "Small",
+        "Small (29)",
+        "Small MX",
+        "Small/Medium",
+        "X-LARGE",
+        "X-Large",
+        "X-Medium",
+        "X-Small",
+        "XL",
+        "XL #MWS Options 9",
+        "XL (29\" wheel)",
+        "XM",
+        "XMD",
+        "XMD (29)",
+        "XS",
+        "XS (27.5\" wheel)",
+        "XS (4'9\" - 5'3\")",
+        "XX-LARGE",
+        "XX-Large",
+        "XX-Small",
+        "XXL",
+        "XXS",
+        "XXS (26\" wheel)",
+        "Xl",
+        "Xs"
+      ],
+      "top_offers": [
+        {
+          "name": "Vaast Bikes E/1 XT/SLX 27.5 E-Bike - Nostalgic Sea Blue-Ocean Frost",
+          "store": "Colorado Cyclist",
+          "url": "https://coloradocyclist.com/products/vaast-bikes-e-1-xt-slx-27-5-e-bike-nostalgic-sea-blue-ocean-frost?currency=USD&variant=48408222335216",
+          "price": 1499.99,
+          "reference": 7699.99,
+          "discount": 80.5,
+          "size": "Medium"
+        },
+        {
+          "name": "Vaast Bikes E/1 Enviolo 27.5 E-Bike - Vibrant Berry Red-Black Cherry",
+          "store": "Colorado Cyclist",
+          "url": "https://coloradocyclist.com/products/vaast-bikes-e-1-enviolo-27-5-e-bike-vibrant-berry-red-black-cherry?currency=USD&variant=48408222236912",
+          "price": 1999.99,
+          "reference": 8699.99,
+          "discount": 77.0,
+          "size": "Medium"
+        },
+        {
+          "name": "S-Works Diverge STR Road Bike Frameset",
+          "store": "ERIK’S Bike Shop",
+          "url": "https://www.eriksbikeshop.com/products/s-works-diverge-str-road-bike-frameset-pr5a17935?currency=USD&variant=49445702140118",
+          "price": 1999.99,
+          "reference": 5499.99,
+          "discount": 63.6,
+          "size": "58CM"
+        },
+        {
+          "name": "Specialized Turbo Vado SL 5.0 EQ Electric Bike",
+          "store": "ERIK’S Bike Shop",
+          "url": "https://www.eriksbikeshop.com/products/specialized-2023-turbo-vado-sl-5-0-eq-electric-bike-pr5a12693?currency=USD&variant=46161239539926",
+          "price": 1999.99,
+          "reference": 5249.99,
+          "discount": 61.9,
+          "size": "Xl"
+        },
+        {
+          "name": "Heckler SL CC X0 Transmission Reserve",
+          "store": "Mike's Bikes",
+          "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-cc-x0-transmission-reserve-2024?currency=USD&variant=44649480618053",
+          "price": 4499.77,
+          "reference": 11699.99,
+          "discount": 61.5,
+          "size": "XX-Large"
+        },
+        {
+          "name": "S-Works Stumpjumper Frameset",
+          "store": "Pro Bike Supply",
+          "url": "https://www.probikesupply.com/products/specialized-stumpjumper-s-works-frm-frame-satin-dusty-blue-pearl-black-carbon-s3?currency=USD&variant=42349827096631",
+          "price": 1199.99,
+          "reference": 2999.99,
+          "discount": 60.0,
+          "size": "S1"
+        },
+        {
+          "name": "Stumpjumper Frameset",
+          "store": "Pro Bike Supply",
+          "url": "https://www.probikesupply.com/products/2022-specialized-stumpjumper-29-carbon-frameset-s2-satin-copper-black?currency=USD&variant=42349599064119",
+          "price": 1079.99,
+          "reference": 2699.99,
+          "discount": 60.0,
+          "size": "S1"
+        },
+        {
+          "name": "Heckler SL C S",
+          "store": "Mike's Bikes",
+          "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-s-2024?currency=USD&variant=40617095069765",
+          "price": 3499.77,
+          "reference": 8699.99,
+          "discount": 59.8,
+          "size": "XX-Large"
+        },
+        {
+          "name": "Heckler SL C R",
+          "store": "Mike's Bikes",
+          "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-r-2024?currency=USD&variant=40615074889797",
+          "price": 2999.77,
+          "reference": 7299.99,
+          "discount": 58.9,
+          "size": "XX-Large"
+        },
+        {
+          "name": "OPEN UPPER Frameset",
+          "store": "Contender Bicycles",
+          "url": "https://contenderbicycles.com/products/open-upper-frameset?currency=USD&variant=37271992533160",
+          "price": 1895.99,
+          "reference": 4500.0,
+          "discount": 57.9,
+          "size": "S"
+        }
+      ]
+    },
+    "tools": {
+      "catalog": "tools",
+      "measured_at": "2026-11-03T02:33:31.624061+00:00",
+      "reference_floor": 200,
+      "scope": "snapshot-listed offers; not independent merchant verification or unique model count",
+      "eligible_in_stock_listings": 351,
+      "deep_deal_listings": 21,
+      "useful_retailers": [
+        "Grizzly Industrial",
+        "OakTree Supply",
+        "Tool Nut",
+        "Woodcraft"
+      ],
+      "checked_within_24h_percent": 100.0,
+      "exact_size_facets": [
+        "HW110S-36Pro",
+        "HW110S-52Pro",
+        "HW110TC-36Pro",
+        "HW110TC-52Pro"
+      ],
+      "top_offers": [
+        {
+          "name": "Axiom 2x2 CNC Table with Air-Cooled Spindle",
+          "store": "OakTree Supply",
+          "url": "https://www.oaktreesupply.com/products/axiom-2x2-cnc-table-with-spindle?currency=USD&variant=47708931948761",
+          "price": 1999.0,
+          "reference": 4699.0,
+          "discount": 57.5,
+          "size": null
+        },
+        {
+          "name": "Axiom Iconic-4 Series CNC Router 2' x 2'",
+          "store": "OakTree Supply",
+          "url": "https://www.oaktreesupply.com/products/axoiom-iconic-4-series-cnc-router-24-x-24?currency=USD&variant=37991680082119",
+          "price": 2999.0,
+          "reference": 6049.0,
+          "discount": 50.4,
+          "size": null
+        },
+        {
+          "name": "Iconic 24\" x 24\" for Axiom CNC Router",
+          "store": "Woodcraft",
+          "url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-24-for-axiom-cnc-router?currency=USD&variant=43403824922762",
+          "price": 2999.0,
+          "reference": 6049.0,
+          "discount": 50.4,
+          "size": null
+        },
+        {
+          "name": "JET JAT-127, 3/4-in. Composite Impact Wrench (505127)",
+          "store": "Tool Nut",
+          "url": "https://www.toolnut.com/products/jet-505127-jat-127-composite-impact-wrench?currency=USD&variant=50177235976486",
+          "price": 299.99,
+          "reference": 580.99,
+          "discount": 48.4,
+          "size": null
+        },
+        {
+          "name": "Axiom AR16 Elite 4'x4' CNC Router",
+          "store": "OakTree Supply",
+          "url": "https://www.oaktreesupply.com/products/axiom-ar16-elite-4x4?currency=USD&variant=31966639423606",
+          "price": 9999.0,
+          "reference": 19299.0,
+          "discount": 48.2,
+          "size": null
+        },
+        {
+          "name": "Axiom AR4Pro V6 2'x2' CNC Router",
+          "store": "OakTree Supply",
+          "url": "https://www.oaktreesupply.com/products/axiom-ar4pro-v5-2x2-cnc-router?currency=USD&variant=31966616780918",
+          "price": 4999.0,
+          "reference": 9459.0,
+          "discount": 47.2,
+          "size": null
+        },
+        {
+          "name": "Axiom Iconic-6 Series CNC Router 2' x 3'",
+          "store": "OakTree Supply",
+          "url": "https://www.oaktreesupply.com/products/axiom-iconic-6-series-cnc-router-24-x-36?currency=USD&variant=41257102147783",
+          "price": 3499.0,
+          "reference": 6599.0,
+          "discount": 47.0,
+          "size": null
+        },
+        {
+          "name": "Iconic 24\" x 36\" CNC Router",
+          "store": "Woodcraft",
+          "url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-36-cnc-router?currency=USD&variant=43400695939210",
+          "price": 3499.0,
+          "reference": 6599.0,
+          "discount": 47.0,
+          "size": null
+        },
+        {
+          "name": "JET JAT-127 3/4\" Composite Pneumatic Impact Wrench",
+          "store": "OakTree Supply",
+          "url": "https://www.oaktreesupply.com/products/jet-jat-127-3-4-pneumatic-composite-impact-wrench?currency=USD&variant=44426104668377",
+          "price": 299.0,
+          "reference": 560.99,
+          "discount": 46.7,
+          "size": null
+        },
+        {
+          "name": "10\" 2 HP Benchtop Table Saw w/Stand",
+          "store": "Grizzly Industrial",
+          "url": "https://www.grizzly.com/products/shop-fox-10-2-hp-benchtop-table-saw-w-stand/w1875",
+          "price": 379.91,
+          "reference": 710.0,
+          "discount": 46.5,
+          "size": null
+        }
+      ]
+    }
+  },
+  "competitor_cohorts": {
+    "powder": {
+      "total_listings": 497,
+      "pages": 21,
+      "crawl_complete": true,
+      "observed_at": "2026-11-03T02:17:48.817752+00:00",
+      "price_threshold_candidates": 49,
+      "equipment_candidates": 34,
+      "candidate_retailers": [
+        "Black Diamond Equipment",
+        "Equipe Sport",
+        "Gravity Coalition",
+        "Skis"
+      ],
+      "rows": [
+        {
+          "name": "Nordica Sentra SL7 Womens Skis with TPX 12 EVO Bindings 2018",
+          "url": "https://powderdeals.com/products/nordica-sentra-sl7-womens-skis-with-tpx-12-evo-bindings-2018-652328-173",
+          "merchant_link": "https://powderdeals.com/go/deal/84261",
+          "store": "Skis",
+          "price": 249.99,
+          "reference": 899.99,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 72.2,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "KJUS Razor Pro Mens Ski Pants 2018",
+          "url": "https://powderdeals.com/products/kjus-razor-pro-mens-ski-pants-2018-454232-173",
+          "merchant_link": "https://powderdeals.com/go/deal/83886",
+          "store": "Skis",
+          "price": 209.99,
+          "reference": 699.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 70.0,
+          "disposition": "clothing excluded"
+        },
+        {
+          "name": "Mountain Force Ava Down Colorblock Womens Insulated Ski Jacket 2018",
+          "url": "https://powderdeals.com/products/mountain-force-ava-down-colorblock-womens-insulated-ski-jacket-2018-499885-173",
+          "merchant_link": "https://powderdeals.com/go/deal/80196",
+          "store": "Skis",
+          "price": 299.99,
+          "reference": 999.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 70.0,
+          "disposition": "clothing excluded"
+        },
+        {
+          "name": "Nordica Santa Ana 100 Womens Skis 2019",
+          "url": "https://powderdeals.com/products/nordica-santa-ana-100-womens-skis-2019-652386-173",
+          "merchant_link": "https://powderdeals.com/go/deal/84427",
+          "store": "Skis",
+          "price": 249.99,
+          "reference": 799.99,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 68.8,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Salomon X-Race Lab Race Skis with X-12 Lab Bindings 2018",
+          "url": "https://powderdeals.com/products/salomon-x-race-lab-race-skis-with-x-12-lab-bindings-2018-900768-173",
+          "merchant_link": "https://powderdeals.com/go/deal/84349",
+          "store": "Skis",
+          "price": 399.95,
+          "reference": 1149.99,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 65.2,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Salomon S/Pro HV 90 Ski Boots - Women's",
+          "url": "https://powderdeals.com/products/salomon-s-pro-hv-90-ski-boots-women-s-salomon-s-pro-hv-90-ski-boots-womens-94",
+          "merchant_link": "https://powderdeals.com/go/deal/83809",
+          "store": "Gravity Coalition",
+          "price": 249.97,
+          "reference": 675.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 63.0,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Burton [ak] Freebird GORETEX Bib Snowpants - Men's",
+          "url": "https://powderdeals.com/products/burton-ak-freebird-goretex-bib-snowpants-men-s-burton-ak-freebird-gore-tex-bib-snowpants-mens-94",
+          "merchant_link": "https://powderdeals.com/go/deal/83806",
+          "store": "Gravity Coalition",
+          "price": 298.97,
+          "reference": 699.95,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 57.3,
+          "disposition": "clothing excluded"
+        },
+        {
+          "name": "KJUS Freelite Womens Insulated Ski Jacket 2019",
+          "url": "https://powderdeals.com/products/kjus-freelite-womens-insulated-ski-jacket-2019-547385-173",
+          "merchant_link": "https://powderdeals.com/go/deal/80463",
+          "store": "Skis",
+          "price": 529.99,
+          "reference": 1299.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 59.2,
+          "disposition": "clothing excluded"
+        },
+        {
+          "name": "Nordica Dobermann GP 130 Race Ski Boots 2019",
+          "url": "https://powderdeals.com/products/nordica-dobermann-gp-130-race-ski-boots-2019-618108-173",
+          "merchant_link": "https://powderdeals.com/go/deal/83979",
+          "store": "Skis",
+          "price": 299.95,
+          "reference": 699.99,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 57.1,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "KJUS Formula Mens Ski Pants 2018",
+          "url": "https://powderdeals.com/products/kjus-formula-mens-ski-pants-2018-454205-173",
+          "merchant_link": "https://powderdeals.com/go/deal/85237",
+          "store": "Skis",
+          "price": 239.99,
+          "reference": 549.99,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 56.4,
+          "disposition": "clothing excluded"
+        },
+        {
+          "name": "Nordica Dobermann GS Race Skis 2020",
+          "url": "https://powderdeals.com/products/nordica-dobermann-gs-race-skis-2020-652338-173",
+          "merchant_link": "https://powderdeals.com/go/deal/84659",
+          "store": "Skis",
+          "price": 349.95,
+          "reference": 799.99,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 56.3,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Nordica Dobermann Spitfire 80 RB Skis 2020",
+          "url": "https://powderdeals.com/products/nordica-dobermann-spitfire-80-rb-skis-2020-605068-173",
+          "merchant_link": "https://powderdeals.com/go/deal/85795",
+          "store": "Skis",
+          "price": 349.95,
+          "reference": 699.99,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 50.0,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Scott Scrapper 105 Skis 2020",
+          "url": "https://powderdeals.com/products/scott-scrapper-105-skis-2020-571028-173",
+          "merchant_link": "https://powderdeals.com/go/deal/85776",
+          "store": "Skis",
+          "price": 349.95,
+          "reference": 699.99,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 50.0,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "FERA Harper Faux Fur Womens Insulated Ski Jacket 2020",
+          "url": "https://powderdeals.com/products/fera-harper-faux-fur-womens-insulated-ski-jacket-2020-587602-173",
+          "merchant_link": "https://powderdeals.com/go/deal/84626",
+          "store": "Skis",
+          "price": 259.99,
+          "reference": 520.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 50.0,
+          "disposition": "clothing excluded"
+        },
+        {
+          "name": "Fischer RC Pro 130 Vaccum Ski Boots 2019",
+          "url": "https://powderdeals.com/products/fischer-rc-pro-130-vaccum-ski-boots-2019-600432-173",
+          "merchant_link": "https://powderdeals.com/go/deal/84481",
+          "store": "Skis",
+          "price": 399.95,
+          "reference": 799.99,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 50.0,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Helly Hansen Whitestar Womens Insulated Ski Jacket 2018",
+          "url": "https://powderdeals.com/products/helly-hansen-whitestar-womens-insulated-ski-jacket-2018-515434-173",
+          "merchant_link": "https://powderdeals.com/go/deal/84380",
+          "store": "Skis",
+          "price": 274.99,
+          "reference": 550.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 50.0,
+          "disposition": "clothing excluded"
+        },
+        {
+          "name": "Postcard Ismail Womens Insulated Ski Jacket 2020",
+          "url": "https://powderdeals.com/products/postcard-ismail-womens-insulated-ski-jacket-2020-576956-173",
+          "merchant_link": "https://powderdeals.com/go/deal/84105",
+          "store": "Skis",
+          "price": 674.99,
+          "reference": 1350.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 50.0,
+          "disposition": "clothing excluded"
+        },
+        {
+          "name": "Nordica Dobermann GP 140 Race Ski Boots 2019",
+          "url": "https://powderdeals.com/products/nordica-dobermann-gp-140-race-ski-boots-2019-618104-173",
+          "merchant_link": "https://powderdeals.com/go/deal/85881",
+          "store": "Skis",
+          "price": 379.95,
+          "reference": 749.99,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 49.3,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Impulse Ti 112 Skis - Past Season",
+          "url": "https://powderdeals.com/products/impulse-ti-112-skis-past-season-impulse-ti-112-skis-past-season-28",
+          "merchant_link": "https://powderdeals.com/go/deal/84168",
+          "store": "Black Diamond Equipment",
+          "price": 449.98,
+          "reference": 899.95,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 50.0,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Impulse Pro Ti 114 Skis - Past Season",
+          "url": "https://powderdeals.com/products/impulse-pro-ti-114-skis-past-season-impulse-pro-ti-114-skis-past-season-28",
+          "merchant_link": "https://powderdeals.com/go/deal/84107",
+          "store": "Black Diamond Equipment",
+          "price": 449.98,
+          "reference": 899.95,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 50.0,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Impulse Ti 98 Skis - Past Season",
+          "url": "https://powderdeals.com/products/impulse-ti-98-skis-past-season-impulse-ti-98-skis-past-season-28",
+          "merchant_link": "https://powderdeals.com/go/deal/84022",
+          "store": "Black Diamond Equipment",
+          "price": 399.98,
+          "reference": 799.95,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 50.0,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Women's Impulse Ti 104 Skis - Past Season",
+          "url": "https://powderdeals.com/products/women-s-impulse-ti-104-skis-past-season-womens-impulse-ti-104-skis-past-season-28",
+          "merchant_link": "https://powderdeals.com/go/deal/83976",
+          "store": "Black Diamond Equipment",
+          "price": 424.98,
+          "reference": 849.95,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 50.0,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Impulse Ti 104 Skis - Past Season",
+          "url": "https://powderdeals.com/products/impulse-ti-104-skis-past-season-impulse-ti-104-skis-past-season-28",
+          "merchant_link": "https://powderdeals.com/go/deal/83937",
+          "store": "Black Diamond Equipment",
+          "price": 424.98,
+          "reference": 849.95,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 50.0,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Faction Chapter 1.0 Skis 2020",
+          "url": "https://powderdeals.com/products/faction-chapter-1-0-skis-2020-580002-173",
+          "merchant_link": "https://powderdeals.com/go/deal/85779",
+          "store": "Skis",
+          "price": 299.95,
+          "reference": 579.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 48.2,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Salomon S/LAB SHIFT MNC Alpine Touring Ski Bindings",
+          "url": "https://powderdeals.com/products/salomon-s-lab-shift-mnc-alpine-touring-ski-bindings-salomon-n-s-lab-shift-mnc-ski-bindings-94",
+          "merchant_link": "https://powderdeals.com/go/deal/84229",
+          "store": "Gravity Coalition",
+          "price": 359.97,
+          "reference": 675.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 46.7,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Burton Family Tree Channel Surfer Flat Top Snowboard",
+          "url": "https://powderdeals.com/products/burton-family-tree-channel-surfer-flat-top-snowboard-burton-family-tree-channel-surfer-flat-top-snowboard-94",
+          "merchant_link": "https://powderdeals.com/go/deal/83802",
+          "store": "Gravity Coalition",
+          "price": 458.97,
+          "reference": 829.95,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 44.7,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Volkl Women's Shine 78 Skis + LR11 TCX Bindings - Winter 2025/2026",
+          "url": "https://powderdeals.com/products/volkl-women-s-shine-78-skis-lr11-tcx-bindings-winter-2025-2026-shine-78-lowride-lr11-tcx-66",
+          "merchant_link": "https://powderdeals.com/go/deal/85803",
+          "store": "Equipe Sport",
+          "price": 559.99,
+          "reference": 999.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 43.9,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Arbor Metal Machine Snowboard",
+          "url": "https://powderdeals.com/products/arbor-metal-machine-snowboard-arbor-metal-machine-snowboard-94",
+          "merchant_link": "https://powderdeals.com/go/deal/84020",
+          "store": "Gravity Coalition",
+          "price": 365.97,
+          "reference": 649.97,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 43.7,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Rossignol Sky 7 HD Skis 2020",
+          "url": "https://powderdeals.com/products/rossignol-sky-7-hd-skis-2020-586069-173",
+          "merchant_link": "https://powderdeals.com/go/deal/85010",
+          "store": "Skis",
+          "price": 399.95,
+          "reference": 699.95,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 42.9,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Rossignol Experience 94 Ti Skis 2020",
+          "url": "https://powderdeals.com/products/rossignol-experience-94-ti-skis-2020-570163-173",
+          "merchant_link": "https://powderdeals.com/go/deal/84727",
+          "store": "Skis",
+          "price": 399.95,
+          "reference": 699.95,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 42.9,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Blizzard Brahma 82 Blem Skis 2020",
+          "url": "https://powderdeals.com/products/blizzard-brahma-82-blem-skis-2020-599097-173",
+          "merchant_link": "https://powderdeals.com/go/deal/85993",
+          "store": "Skis",
+          "price": 349.95,
+          "reference": 599.95,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 41.7,
+          "disposition": "condition excluded"
+        },
+        {
+          "name": "Nidecker The Donuts Snowboard 2019",
+          "url": "https://powderdeals.com/products/nidecker-the-donuts-snowboard-2019-593095-173",
+          "merchant_link": "https://powderdeals.com/go/deal/84922",
+          "store": "Skis",
+          "price": 349.89,
+          "reference": 599.95,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 41.7,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Rossignol Experience 84 AI Skis 2020",
+          "url": "https://powderdeals.com/products/rossignol-experience-84-ai-skis-2020-600489-173",
+          "merchant_link": "https://powderdeals.com/go/deal/84747",
+          "store": "Skis",
+          "price": 349.95,
+          "reference": 599.95,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 41.7,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Salomon Rumble Fish Snowboard",
+          "url": "https://powderdeals.com/products/salomon-rumble-fish-snowboard-salomon-rumble-fish-snowboard-94",
+          "merchant_link": "https://powderdeals.com/go/deal/84357",
+          "store": "Gravity Coalition",
+          "price": 349.97,
+          "reference": 600.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 41.7,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Helly Hansen Odin Mountain 3L Womens Shell Ski Jacket",
+          "url": "https://powderdeals.com/products/helly-hansen-odin-mountain-3l-womens-shell-ski-jacket-916648-173",
+          "merchant_link": "https://powderdeals.com/go/deal/85978",
+          "store": "Skis",
+          "price": 359.99,
+          "reference": 600.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 40.0,
+          "disposition": "clothing excluded"
+        },
+        {
+          "name": "Fischer RC4 WC GS Curv Stiff Women's Race Skis with NA Bindings 2019",
+          "url": "https://powderdeals.com/products/fischer-rc4-wc-gs-curv-stiff-women-s-race-skis-with-na-bindings-2019-600416-173",
+          "merchant_link": "https://powderdeals.com/go/deal/85968",
+          "store": "Skis",
+          "price": 799.95,
+          "reference": 1349.99,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 40.7,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Rossignol Aile Womens Insulated Ski Jacket 2020",
+          "url": "https://powderdeals.com/products/rossignol-aile-womens-insulated-ski-jacket-2020-903105-173",
+          "merchant_link": "https://powderdeals.com/go/deal/85961",
+          "store": "Skis",
+          "price": 389.99,
+          "reference": 650.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 40.0,
+          "disposition": "clothing excluded"
+        },
+        {
+          "name": "Lib Tech Off Ramp Snowboard - Winter 2025/2026",
+          "url": "https://powderdeals.com/products/lib-tech-off-ramp-snowboard-winter-2025-2026-off-ramp-66",
+          "merchant_link": "https://powderdeals.com/go/deal/85507",
+          "store": "Equipe Sport",
+          "price": 329.99,
+          "reference": 549.99,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 40.0,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "GNU Wagyu Snowboard - Winter 2025/2026",
+          "url": "https://powderdeals.com/products/gnu-wagyu-snowboard-winter-2025-2026-wagyu-66",
+          "merchant_link": "https://powderdeals.com/go/deal/85490",
+          "store": "Equipe Sport",
+          "price": 329.99,
+          "reference": 549.99,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 40.0,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Burton Family Tree Alekesam Camber Snowboard - Winter 2025/2026",
+          "url": "https://powderdeals.com/products/burton-family-tree-alekesam-camber-snowboard-winter-2025-2026-family-tree-alekesam-camber-1-66",
+          "merchant_link": "https://powderdeals.com/go/deal/85487",
+          "store": "Equipe Sport",
+          "price": 377.79,
+          "reference": 629.95,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 40.0,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Rossignol Jibsaw Heavy Duty Snowboard 2019",
+          "url": "https://powderdeals.com/products/rossignol-jibsaw-heavy-duty-snowboard-2019-563154-173",
+          "merchant_link": "https://powderdeals.com/go/deal/85432",
+          "store": "Skis",
+          "price": 329.94,
+          "reference": 549.95,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 40.0,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Burton Women's Yeasayer Flying V Snowboard - Winter 2025/2026",
+          "url": "https://powderdeals.com/products/burton-women-s-yeasayer-flying-v-snowboard-winter-2025-2026-yeasayer-flying-v-4-66",
+          "merchant_link": "https://powderdeals.com/go/deal/85406",
+          "store": "Equipe Sport",
+          "price": 317.97,
+          "reference": 529.95,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 40.0,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Line Blade Womens Skis",
+          "url": "https://powderdeals.com/products/line-blade-womens-skis-600091-173",
+          "merchant_link": "https://powderdeals.com/go/deal/85201",
+          "store": "Skis",
+          "price": 419.97,
+          "reference": 699.95,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 40.0,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Burton Family Tree Sketch Artist Snowboard - Winter 2025/2026",
+          "url": "https://powderdeals.com/products/burton-family-tree-sketch-artist-snowboard-winter-2025-2026-family-tree-sketch-artist-camber-1-66",
+          "merchant_link": "https://powderdeals.com/go/deal/84918",
+          "store": "Equipe Sport",
+          "price": 437.97,
+          "reference": 729.95,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 40.0,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Rossignol Aile Mens Insulated Ski Jacket 2020",
+          "url": "https://powderdeals.com/products/rossignol-aile-mens-insulated-ski-jacket-2020-903099-173",
+          "merchant_link": "https://powderdeals.com/go/deal/84423",
+          "store": "Skis",
+          "price": 389.99,
+          "reference": 650.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 40.0,
+          "disposition": "clothing excluded"
+        },
+        {
+          "name": "Bogner Fire + Ice Farina Womens Insulated Ski Jacket",
+          "url": "https://powderdeals.com/products/bogner-fire-ice-farina-womens-insulated-ski-jacket-903819-173",
+          "merchant_link": "https://powderdeals.com/go/deal/84353",
+          "store": "Skis",
+          "price": 389.99,
+          "reference": 650.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 40.0,
+          "disposition": "clothing excluded"
+        },
+        {
+          "name": "Karbon Cascade Mens Insulated Ski Jacket",
+          "url": "https://powderdeals.com/products/karbon-cascade-mens-insulated-ski-jacket-608197-173",
+          "merchant_link": "https://powderdeals.com/go/deal/84225",
+          "store": "Skis",
+          "price": 359.99,
+          "reference": 600.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 40.0,
+          "disposition": "clothing excluded"
+        },
+        {
+          "name": "Poivre Blanc Stretch Womens Insulated Ski Jacket",
+          "url": "https://powderdeals.com/products/poivre-blanc-stretch-womens-insulated-ski-jacket-621136-173",
+          "merchant_link": "https://powderdeals.com/go/deal/84102",
+          "store": "Skis",
+          "price": 369.99,
+          "reference": 620.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 40.3,
+          "disposition": "clothing excluded"
+        },
+        {
+          "name": "Salomon S/Pro HV 100 Ski Boots - Men's",
+          "url": "https://powderdeals.com/products/salomon-s-pro-hv-100-ski-boots-men-s-salomon-s-pro-hv-100-ski-boots-mens-94",
+          "merchant_link": "https://powderdeals.com/go/deal/84079",
+          "store": "Gravity Coalition",
+          "price": 399.97,
+          "reference": 675.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 40.7,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        }
+      ],
+      "page_receipts": [
+        {
+          "url": "https://powderdeals.com/deals",
+          "status": 200,
+          "sha256": "b120fe73e9385099e9054cc5846e6fd583a7c86c685c0ab42fbfc7c66eb99744",
+          "cards": 24
+        },
+        {
+          "url": "https://powderdeals.com/deals?page=2",
+          "status": 200,
+          "sha256": "50344543682c4c355216eaaf1c85359a61bf0630515784521d84a8f0094f7b5a",
+          "cards": 24
+        },
+        {
+          "url": "https://powderdeals.com/deals?page=3",
+          "status": 200,
+          "sha256": "c0386fa29d362f9488a0fe80b6b616c1f23d11fec238d7aa0f4ce7e51b25b202",
+          "cards": 24
+        },
+        {
+          "url": "https://powderdeals.com/deals?page=4",
+          "status": 200,
+          "sha256": "10a7ed52cf4e4f5df35b7c406f40b1ed04460a1149403dc0f22c78719693b5f2",
+          "cards": 24
+        },
+        {
+          "url": "https://powderdeals.com/deals?page=5",
+          "status": 200,
+          "sha256": "9624802420ed46475a0a9552445f595346f61dfad8f4f77944a0d0f849ff7e4d",
+          "cards": 24
+        },
+        {
+          "url": "https://powderdeals.com/deals?page=6",
+          "status": 200,
+          "sha256": "8cf42a26a01e1ad9deb7f602cfd0efff9360d4671c734b3e633ad2c9ad401868",
+          "cards": 24
+        },
+        {
+          "url": "https://powderdeals.com/deals?page=7",
+          "status": 200,
+          "sha256": "6be69d17714dece2efc1dfc5d0da29f53e20cf9f2d2b682e0388dd316d887791",
+          "cards": 24
+        },
+        {
+          "url": "https://powderdeals.com/deals?page=8",
+          "status": 200,
+          "sha256": "7a041cbf24befd25027a0590e63b3e0a3d2e59d8627b0b8bafaf204284afafd2",
+          "cards": 24
+        },
+        {
+          "url": "https://powderdeals.com/deals?page=9",
+          "status": 200,
+          "sha256": "54486be705c8f3d30240a2df2271b83d603c380fd6416dd3929e5d0bb3037c42",
+          "cards": 24
+        },
+        {
+          "url": "https://powderdeals.com/deals?page=10",
+          "status": 200,
+          "sha256": "c02573080f62911de888763a6fee4424f1a9b0d45941e262395bd899ee7c2509",
+          "cards": 24
+        },
+        {
+          "url": "https://powderdeals.com/deals?page=11",
+          "status": 200,
+          "sha256": "f06931c574b2a17e3bb6cc3daef0021f85ec05549d304c4c8474d2c01216061b",
+          "cards": 24
+        },
+        {
+          "url": "https://powderdeals.com/deals?page=12",
+          "status": 200,
+          "sha256": "7e7a181774f44ee0544404f6a674330253fcddbe84147287b832a05c277bf689",
+          "cards": 24
+        },
+        {
+          "url": "https://powderdeals.com/deals?page=13",
+          "status": 200,
+          "sha256": "b7b18e04f4ee0fcf742642af7ecf2ff5140b013c92dc11482998e453adebff7e",
+          "cards": 24
+        },
+        {
+          "url": "https://powderdeals.com/deals?page=14",
+          "status": 200,
+          "sha256": "fab376d20aadf174ce13aea095e65c80038be76bfcb658f7ddb83867c25e293a",
+          "cards": 24
+        },
+        {
+          "url": "https://powderdeals.com/deals?page=15",
+          "status": 200,
+          "sha256": "032ef38b895675018af8596c5aa9e59843e9da90c2460f16bf514dbeb3d0113e",
+          "cards": 24
+        },
+        {
+          "url": "https://powderdeals.com/deals?page=16",
+          "status": 200,
+          "sha256": "6a9baa5f1976062ecfef36a85f0087fc4528361e57f15d3f7000721fe4c13a35",
+          "cards": 24
+        },
+        {
+          "url": "https://powderdeals.com/deals?page=17",
+          "status": 200,
+          "sha256": "4036dba2d0e92b3b68d246ad34eefa43a992646d3c56eaadcb18f3bd050ad22e",
+          "cards": 24
+        },
+        {
+          "url": "https://powderdeals.com/deals?page=18",
+          "status": 200,
+          "sha256": "0e7b063be7009ff428342a1d5ba0a71dfd56b56f9898392a8aa2dd56d8328bb3",
+          "cards": 24
+        },
+        {
+          "url": "https://powderdeals.com/deals?page=19",
+          "status": 200,
+          "sha256": "2ff2403b2574d4016784419783bc63c1c9cb16e29d9d0366fbf9fd42ed6f0436",
+          "cards": 24
+        },
+        {
+          "url": "https://powderdeals.com/deals?page=20",
+          "status": 200,
+          "sha256": "c6bbfac95a0824fc7d0da157ba08d7055b2371b9cc5592b40d4cc845d1335dc4",
+          "cards": 24
+        },
+        {
+          "url": "https://powderdeals.com/deals?page=21",
+          "status": 200,
+          "sha256": "a1470236aaa602eea95258aa9e1a168142398178bdb0d6439a36a96f1e1fc1b0",
+          "cards": 17
+        }
+      ],
+      "qualification": "Displayed offers only; not independently verified M1."
+    },
+    "velo": {
+      "total_listings": 346,
+      "pages": 15,
+      "crawl_complete": true,
+      "observed_at": "2026-11-03T02:17:39.532487+00:00",
+      "price_threshold_candidates": 17,
+      "equipment_candidates": 12,
+      "candidate_retailers": [
+        "Jenson Usa"
+      ],
+      "rows": [
+        {
+          "name": "Open | U.p. Frameset | Green | L",
+          "url": "https://velo.bargains/products/open-u-p-frameset-green-l-fr001580-112",
+          "merchant_link": "https://velo.bargains/go/deal/80490",
+          "store": "Jenson Usa",
+          "price": 809.95,
+          "reference": 2500.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 67.6,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Forge+Bond | 30 Em 29\" Wheelset Front 15X110, Rear 12X148, 6 Bolt, Xd",
+          "url": "https://velo.bargains/products/forge-bond-30-em-29-wheelset-front-15x110-rear-12x148-6-bolt-xd-wh001632-112",
+          "merchant_link": "https://velo.bargains/go/deal/87433",
+          "store": "Jenson Usa",
+          "price": 999.94,
+          "reference": 2199.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 54.5,
+          "disposition": "component excluded"
+        },
+        {
+          "name": "Demo Altitude C70 - Black Orange",
+          "url": "https://velo.bargains/products/demo-altitude-c70-black-orange-demo-altitude-c70-me7dl-black-orange-137",
+          "merchant_link": "https://velo.bargains/go/deal/83704",
+          "store": "Outdoor Gear Exchange",
+          "price": 3398.99,
+          "reference": 7499.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 54.7,
+          "disposition": "condition excluded"
+        },
+        {
+          "name": "Fox Racing Shox | 36 Performace Grip 29\" Fork Blk 160Mm",
+          "url": "https://velo.bargains/products/fox-racing-shox-36-performace-grip-29-fork-blk-160mm-fk001484-112",
+          "merchant_link": "https://velo.bargains/go/deal/87579",
+          "store": "Jenson Usa",
+          "price": 699.0,
+          "reference": 1259.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 44.5,
+          "disposition": "component excluded"
+        },
+        {
+          "name": "Niner | Sir 9 2-Star Bike | Black/bronze | Xl | Nylon",
+          "url": "https://velo.bargains/products/niner-sir-9-2-star-bike-black-bronze-xl-nylon-bi004058-112",
+          "merchant_link": "https://velo.bargains/go/deal/80437",
+          "store": "Jenson Usa",
+          "price": 1649.94,
+          "reference": 2949.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 44.1,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Ibis Bicycles | Hd6 Frame | Green | 3X",
+          "url": "https://velo.bargains/products/ibis-bicycles-hd6-frame-green-3x-fr001388-112",
+          "merchant_link": "https://velo.bargains/go/deal/87580",
+          "store": "Jenson Usa",
+          "price": 2199.94,
+          "reference": 3899.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 43.6,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Santa Cruz Bicycles | Heckler Sl C S E-Bike | Silver | Xxl",
+          "url": "https://velo.bargains/products/santa-cruz-bicycles-heckler-sl-c-s-e-bike-silver-xxl-bi004044-112",
+          "merchant_link": "https://velo.bargains/go/deal/87403",
+          "store": "Jenson Usa",
+          "price": 4899.94,
+          "reference": 8699.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 43.7,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Yt | Jeffsy 29 Cf Core 3 2025 Bike | Concrete Grey | Xl",
+          "url": "https://velo.bargains/products/yt-jeffsy-29-cf-core-3-2025-bike-concrete-grey-xl-bi005404-112",
+          "merchant_link": "https://velo.bargains/go/deal/80440",
+          "store": "Jenson Usa",
+          "price": 2999.94,
+          "reference": 5299.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 43.4,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Niner | Air 9 Nx Jenson Exclusive Bike | White | M",
+          "url": "https://velo.bargains/products/niner-air-9-nx-jenson-exclusive-bike-white-m-bi005353-112",
+          "merchant_link": "https://velo.bargains/go/deal/87507",
+          "store": "Jenson Usa",
+          "price": 1099.0,
+          "reference": 1899.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 42.1,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Marin Bikes | Alpine Trail Carbon 2 Bike 2023 | Gloss Black/silver | X-Large",
+          "url": "https://velo.bargains/products/marin-bikes-alpine-trail-carbon-2-bike-2023-gloss-black-silver-x-large-bi002183-112",
+          "merchant_link": "https://velo.bargains/go/deal/80124",
+          "store": "Jenson Usa",
+          "price": 2599.94,
+          "reference": 4499.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 42.2,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Orbea | Rise M20 20Mph E-Bike 2023 Large Carbon",
+          "url": "https://velo.bargains/products/orbea-rise-m20-20mph-e-bike-2023-large-carbon-bi003724-112",
+          "merchant_link": "https://velo.bargains/go/deal/87397",
+          "store": "Jenson Usa",
+          "price": 4094.95,
+          "reference": 6999.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 41.5,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Niner | Air 9 Xt Jenson Exclusive Bike | White | Xl",
+          "url": "https://velo.bargains/products/niner-air-9-xt-jenson-exclusive-bike-white-xl-bi005354-112",
+          "merchant_link": "https://velo.bargains/go/deal/87537",
+          "store": "Jenson Usa",
+          "price": 1319.0,
+          "reference": 2199.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 40.0,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Industry Nine | Hydra Gr300 V2 27.5\" Boost Wheelset 6 Bolt 20X110 Boost 12X148 Ms | Aluminum",
+          "url": "https://velo.bargains/products/industry-nine-hydra-gr300-v2-27-5-boost-wheelset-6-bolt-20x110-boost-12x148-ms-aluminum-wh001971-112",
+          "merchant_link": "https://velo.bargains/go/deal/87496",
+          "store": "Jenson Usa",
+          "price": 849.0,
+          "reference": 1435.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 40.8,
+          "disposition": "component excluded"
+        },
+        {
+          "name": "Industry Nine | Hydra Gr300 V2 29\" Wheelset 6 Bolt 15X110 12X148 Xd | Aluminum",
+          "url": "https://velo.bargains/products/industry-nine-hydra-gr300-v2-29-wheelset-6-bolt-15x110-12x148-xd-aluminum-wh001972-112",
+          "merchant_link": "https://velo.bargains/go/deal/87432",
+          "store": "Jenson Usa",
+          "price": 849.0,
+          "reference": 1435.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 40.8,
+          "disposition": "component excluded"
+        },
+        {
+          "name": "Kona | Process 153 Cr Sram Bike | Viridian Green | S",
+          "url": "https://velo.bargains/products/kona-process-153-cr-sram-bike-viridian-green-s-bi005436-112",
+          "merchant_link": "https://velo.bargains/go/deal/87448",
+          "store": "Jenson Usa",
+          "price": 2699.95,
+          "reference": 4499.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 40.0,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Orbea | Occam Sl M10 2024 Bike Spaceship Green M",
+          "url": "https://velo.bargains/products/orbea-occam-sl-m10-2024-bike-spaceship-green-m-bi004067-112",
+          "merchant_link": "https://velo.bargains/go/deal/87445",
+          "store": "Jenson Usa",
+          "price": 3899.94,
+          "reference": 6499.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 40.0,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        },
+        {
+          "name": "Argon 18 | Grey Matter Apex Xplr Bike | Tundra Green | Xl",
+          "url": "https://velo.bargains/products/argon-18-grey-matter-apex-xplr-bike-tundra-green-xl-bi005566-112",
+          "merchant_link": "https://velo.bargains/go/deal/87379",
+          "store": "Jenson Usa",
+          "price": 1319.94,
+          "reference": 2199.0,
+          "currency": "USD",
+          "stock": "not-on-card",
+          "computed_discount": 40.0,
+          "disposition": "candidate; merchant stock and selected variant unverified"
+        }
+      ],
+      "page_receipts": [
+        {
+          "url": "https://velo.bargains/deals",
+          "status": 200,
+          "sha256": "b89946f94c84bf78b8ce590a06819b084d55929689864801631ef00ce8e2f6d9",
+          "cards": 24
+        },
+        {
+          "url": "https://velo.bargains/deals?page=2",
+          "status": 200,
+          "sha256": "02de7b1efcf1e5db46667fcb1b40c5d93272fbdc60c61be9c2a829e44f8b2518",
+          "cards": 24
+        },
+        {
+          "url": "https://velo.bargains/deals?page=3",
+          "status": 200,
+          "sha256": "7c66247c061eb6d549cddb17c18e399550e4774f1298d478cfc60eb15d0c5a2d",
+          "cards": 24
+        },
+        {
+          "url": "https://velo.bargains/deals?page=4",
+          "status": 200,
+          "sha256": "a62de022e6d2eaa9edd9b1824ced2ea99e4a62ec2926bafecaebb9bb97ccda3d",
+          "cards": 24
+        },
+        {
+          "url": "https://velo.bargains/deals?page=5",
+          "status": 200,
+          "sha256": "823060c915f23d31499e5858e2e64fa83d4182a105ce1f48fbfb8d7efc71e0be",
+          "cards": 24
+        },
+        {
+          "url": "https://velo.bargains/deals?page=6",
+          "status": 200,
+          "sha256": "9aca02303dc7161abb45aa43e82c7df2c85eff186ed563568c6d3526dbea8fd7",
+          "cards": 24
+        },
+        {
+          "url": "https://velo.bargains/deals?page=7",
+          "status": 200,
+          "sha256": "084d0a4a90dd0632980922860b7851538e3d5daaecbc94563d57f61209a3c95d",
+          "cards": 24
+        },
+        {
+          "url": "https://velo.bargains/deals?page=8",
+          "status": 200,
+          "sha256": "92f997534411498102b0a8a9a32549935d872bdbc9931dfabbe05dea079961a5",
+          "cards": 24
+        },
+        {
+          "url": "https://velo.bargains/deals?page=9",
+          "status": 200,
+          "sha256": "19eb7c4b578073c8842acd481d122a5c68cf747b6a890c2840556bbe5069546b",
+          "cards": 24
+        },
+        {
+          "url": "https://velo.bargains/deals?page=10",
+          "status": 200,
+          "sha256": "cf89918ad303a2978809b1d9b724e0ff77decbcff91ef697c3e3f1b83e7b7553",
+          "cards": 24
+        },
+        {
+          "url": "https://velo.bargains/deals?page=11",
+          "status": 200,
+          "sha256": "16d52f85803d3e6ec39f76e6f1d497c3b831b85a9a7ff19f79e5b7f0e9a36336",
+          "cards": 24
+        },
+        {
+          "url": "https://velo.bargains/deals?page=12",
+          "status": 200,
+          "sha256": "57a0d8d5fe1a8c57e76f215d245f393aa7638a586be69a13e2194312200832b3",
+          "cards": 24
+        },
+        {
+          "url": "https://velo.bargains/deals?page=13",
+          "status": 200,
+          "sha256": "8411edf4acb195e6c10014c632c1b5ae1748e1e6d59a6409b76a74d11a3b2f68",
+          "cards": 24
+        },
+        {
+          "url": "https://velo.bargains/deals?page=14",
+          "status": 200,
+          "sha256": "d19c9fd9aec2044dca985bcfb3eafeaff781807aff57021d9f8d34b4f0e1fb9a",
+          "cards": 24
+        },
+        {
+          "url": "https://velo.bargains/deals?page=15",
+          "status": 200,
+          "sha256": "2b3b174ea595f429c4e30c664d8062f80f5832d3319976c2cd6ed3c0f172a628",
+          "cards": 10
+        }
+      ],
+      "qualification": "Displayed offers only; not independently verified M1."
+    },
+    "hardhat": {
+      "api_listings": 533,
+      "rendered_cards": 328,
+      "price_threshold_candidates": 28,
+      "equipment_candidates": 7,
+      "candidate_retailers": [
+        "Amazon",
+        "Home Depot",
+        "Walmart"
+      ],
+      "rows": [
+        {
+          "name": "Milwaukee M12/M18 12/18V Lithium-Ion Cordless 3/8 in. Ratchet and 1/2",
+          "url": "https://www.homedepot.com/p/Milwaukee-M12-M18-12-18V-Lithium-Ion-Cordless-3-8-in-Ratchet-and-1-2-in-High-Torque-Impact-Wrench-with-Friction-Ring-Combo-Kit-2666-22RH/330107365",
+          "store": "Home Depot",
+          "price": 299,
+          "reference": 499,
+          "reference_basis": "Was",
+          "computed_discount": 40.1,
+          "category": "Power tools",
+          "matched_our_scope": true,
+          "checked_at_claim": "2026-11-02T20:26:11.669Z",
+          "stock": "not supplied",
+          "group": "736k6f5t1p",
+          "manual_review": "Powered ratchet bundle; title is truncated, package contents remain unknown."
+        },
+        {
+          "name": "Milwaukee M18 18-Volt Lithium-Ion XC Starter Kit with Two 5.0Ah",
+          "url": "https://www.homedepot.com/p/Milwaukee-M18-18-Volt-Lithium-Ion-XC-Starter-Kit-with-Two-5-0Ah-Batteries-and-Charger-48-59-1852B/320379720",
+          "store": "Home Depot",
+          "price": 199,
+          "reference": 397,
+          "reference_basis": "Was",
+          "computed_discount": 49.9,
+          "category": "Power tools",
+          "matched_our_scope": false,
+          "checked_at_claim": "2026-11-03T00:34:07.099Z",
+          "stock": "not supplied",
+          "group": "2n4v2c6c3s"
+        },
+        {
+          "name": "Lisle Master Plus Disconnect Set",
+          "url": "https://www.amazon.com/dp/B00MEPIRQ8?tag=hardhatdeals-20",
+          "store": "Amazon",
+          "price": 138.88,
+          "reference": 280.45,
+          "reference_basis": "List Price",
+          "computed_discount": 50.5,
+          "category": "Automotive",
+          "matched_our_scope": false,
+          "checked_at_claim": "2026-11-03T00:35:02.826Z",
+          "stock": "not supplied",
+          "group": "4y192u0z1l"
+        },
+        {
+          "name": "Lisle Engine Cylinder Hone",
+          "url": "https://www.amazon.com/dp/B000GKIE4S?tag=hardhatdeals-20",
+          "store": "Amazon",
+          "price": 181.78,
+          "reference": 390.45,
+          "reference_basis": "List Price",
+          "computed_discount": 53.4,
+          "category": "Automotive",
+          "matched_our_scope": false,
+          "checked_at_claim": "2026-11-03T00:35:22.826Z",
+          "stock": "not supplied",
+          "group": "3t1q035h1a"
+        },
+        {
+          "name": "MSA V-FIT Full Body Safety Harness",
+          "url": "https://www.amazon.com/dp/B08G59XDK6?tag=hardhatdeals-20",
+          "store": "Amazon",
+          "price": 248.99,
+          "reference": 426,
+          "reference_basis": "List Price",
+          "computed_discount": 41.6,
+          "category": "Safety & PPE",
+          "matched_our_scope": false,
+          "checked_at_claim": "2026-11-03T00:35:22.761Z",
+          "stock": "not supplied",
+          "group": "2t1g5w1o0b"
+        },
+        {
+          "name": "Carhartt Men's Ground Force Waterproof Work Boots",
+          "url": "https://www.amazon.com/dp/B07FMH8NSB?tag=hardhatdeals-20",
+          "store": "Amazon",
+          "price": 131.39,
+          "reference": 219.99,
+          "reference_basis": "List Price",
+          "computed_discount": 40.3,
+          "category": "Jobsite gear",
+          "matched_our_scope": false,
+          "checked_at_claim": "2026-11-03T00:35:37.264Z",
+          "stock": "not supplied",
+          "group": "3k286w1t39"
+        },
+        {
+          "name": "Makita Brushless Blower",
+          "url": "https://www.amazon.com/dp/B081H8MQ46?tag=hardhatdeals-20",
+          "store": "Amazon",
+          "price": 123.37,
+          "reference": 259.93,
+          "reference_basis": "Typical price",
+          "computed_discount": 52.5,
+          "category": "Outdoor & landscaping",
+          "matched_our_scope": false,
+          "checked_at_claim": "2026-11-03T00:35:59.743Z",
+          "stock": "not supplied",
+          "group": "6c1s404t41"
+        },
+        {
+          "name": "ARIAT Men's Ironside Square Toe Steel Toe Work Boot",
+          "url": "https://www.amazon.com/dp/B0DH2WYYJ4?tag=hardhatdeals-20",
+          "store": "Amazon",
+          "price": 125.55,
+          "reference": 209.95,
+          "reference_basis": "List Price",
+          "computed_discount": 40.2,
+          "category": "Jobsite gear",
+          "matched_our_scope": false,
+          "checked_at_claim": "2026-11-03T00:36:14.936Z",
+          "stock": "not supplied",
+          "group": "4i5y412014"
+        },
+        {
+          "name": "ARIAT Work Sierra Shock Shield Patriot Steel Toe Work Boots",
+          "url": "https://www.amazon.com/dp/B0B5M5PHSL?tag=hardhatdeals-20",
+          "store": "Amazon",
+          "price": 123.17,
+          "reference": 219.95,
+          "reference_basis": "List Price",
+          "computed_discount": 44.0,
+          "category": "Jobsite gear",
+          "matched_our_scope": false,
+          "checked_at_claim": "2026-11-03T00:36:11.049Z",
+          "stock": "not supplied",
+          "group": "3d3z1w4p0y"
+        },
+        {
+          "name": "Thorogood American Heritage 11” Steel Toe Wellington Boots for Men",
+          "url": "https://www.amazon.com/dp/B0BTJTQ778?tag=hardhatdeals-20",
+          "store": "Amazon",
+          "price": 159.95,
+          "reference": 274.95,
+          "reference_basis": "List Price",
+          "computed_discount": 41.8,
+          "category": "Jobsite gear",
+          "matched_our_scope": false,
+          "checked_at_claim": "2026-11-03T00:36:25.968Z",
+          "stock": "not supplied",
+          "group": "5i531a3y6a"
+        },
+        {
+          "name": "Ergodyne N-Ferno Men's Winter Thermal Work Jacket",
+          "url": "https://www.amazon.com/dp/B074NBTBJR?tag=hardhatdeals-20",
+          "store": "Amazon",
+          "price": 114.36,
+          "reference": 290.75,
+          "reference_basis": "List Price",
+          "computed_discount": 60.7,
+          "category": "Safety & PPE",
+          "matched_our_scope": false,
+          "checked_at_claim": "2026-11-03T00:36:33.605Z",
+          "stock": "not supplied",
+          "group": "5t5l6l6i0w"
+        },
+        {
+          "name": "KEEN Utility Men's Camden 6 Composite Toe Waterproof Boots",
+          "url": "https://www.amazon.com/dp/B0BPVWWKBS?tag=hardhatdeals-20",
+          "store": "Amazon",
+          "price": 128.01,
+          "reference": 220,
+          "reference_basis": "List Price",
+          "computed_discount": 41.8,
+          "category": "Jobsite gear",
+          "matched_our_scope": false,
+          "checked_at_claim": "2026-11-03T00:36:46.014Z",
+          "stock": "not supplied",
+          "group": "500e0c2r58"
+        },
+        {
+          "name": "KEEN Utility Men's Camden 8” Composite Toe Waterproof Insulated Work",
+          "url": "https://www.amazon.com/dp/B0BPVZK7N4?tag=hardhatdeals-20",
+          "store": "Amazon",
+          "price": 107.8,
+          "reference": 245,
+          "reference_basis": "List Price",
+          "computed_discount": 56.0,
+          "category": "Jobsite gear",
+          "matched_our_scope": false,
+          "checked_at_claim": "2026-11-03T00:36:46.423Z",
+          "stock": "not supplied",
+          "group": "500e0c2r58"
+        },
+        {
+          "name": "Greenworks 40V 8 in Cordless Electric Lawn Edger",
+          "url": "https://www.amazon.com/dp/B09VY7G6KM?tag=hardhatdeals-20",
+          "store": "Amazon",
+          "price": 179.98,
+          "reference": 299.99,
+          "reference_basis": "List Price",
+          "computed_discount": 40.0,
+          "category": "Outdoor & landscaping",
+          "matched_our_scope": false,
+          "checked_at_claim": "2026-11-03T00:34:53.824Z",
+          "stock": "not supplied",
+          "group": "1w4z3h5z2u"
+        },
+        {
+          "name": "Milwaukee M18 18V Li-Ion Cordless Combo Kit w/ Two Batteries &Charger",
+          "url": "https://www.homedepot.com/p/Milwaukee-M18-18V-Li-Ion-Cordless-Combo-Kit-w-Two-Batteries-Charger-5-Tool-Oscillating-Multi-Tool-Blade-Kit-20-Piece-3692-25-49-10-9920/343489527",
+          "store": "Home Depot",
+          "price": 399,
+          "reference": 760,
+          "reference_basis": "Was",
+          "computed_discount": 47.5,
+          "category": "Power tools",
+          "matched_our_scope": true,
+          "checked_at_claim": "2026-11-03T00:35:31.825Z",
+          "stock": "not supplied",
+          "group": "3g466f3i40"
+        },
+        {
+          "name": "DEWALT 20V MAX XR Brushless Cordless Jigsaw (DCS334B) – 3,200 SPM",
+          "url": "https://www.walmart.com/ip/3741971493",
+          "store": "Walmart",
+          "price": 123.97,
+          "reference": 239,
+          "reference_basis": "Was",
+          "computed_discount": 48.1,
+          "category": "Power tools",
+          "matched_our_scope": true,
+          "checked_at_claim": "2026-11-03T00:48:07.925Z",
+          "stock": "not supplied",
+          "group": "2228252o1f"
+        },
+        {
+          "name": "Greenworks 80V Electric Leaf Blower",
+          "url": "https://www.amazon.com/dp/B0CLSDL517?tag=hardhatdeals-20",
+          "store": "Amazon",
+          "price": 179.99,
+          "reference": 299.99,
+          "reference_basis": "List Price",
+          "computed_discount": 40.0,
+          "category": "Outdoor & landscaping",
+          "matched_our_scope": false,
+          "checked_at_claim": "2026-11-03T00:34:23.617Z",
+          "stock": "not supplied",
+          "group": "4d086w6z1n"
+        },
+        {
+          "name": "DEWALT FLEXVOLT 60V MAX 4-1/2 in to 6 in Cordless Grinder (DCG418B) –",
+          "url": "https://www.walmart.com/ip/334275662",
+          "store": "Walmart",
+          "price": 170.99,
+          "reference": 299,
+          "reference_basis": "Was",
+          "computed_discount": 42.8,
+          "category": "Power tools",
+          "matched_our_scope": true,
+          "checked_at_claim": "2026-11-03T00:48:47.212Z",
+          "stock": "not supplied",
+          "group": "4d0o28290y"
+        },
+        {
+          "name": "DuroMax 13,000-Watt 500cc Tri Fuel Gas Propane Natural Gas Portable Generator",
+          "url": "https://www.amazon.com/dp/B092CJQ51F?tag=hardhatdeals-20",
+          "store": "Amazon",
+          "price": 1499,
+          "reference": 2499,
+          "reference_basis": "List Price",
+          "computed_discount": 40.0,
+          "category": "Jobsite gear",
+          "matched_our_scope": false,
+          "checked_at_claim": "2026-11-03T00:34:16.373Z",
+          "stock": "not supplied",
+          "group": "1h406x6e26"
+        },
+        {
+          "name": "Greenworks 2100 PSI (1.2 GPM) Electric Pressure Washer",
+          "url": "https://www.amazon.com/dp/B0DC11RC2Y?tag=hardhatdeals-20",
+          "store": "Amazon",
+          "price": 149.99,
+          "reference": 249.99,
+          "reference_basis": "List Price",
+          "computed_discount": 40.0,
+          "category": "Outdoor & landscaping",
+          "matched_our_scope": false,
+          "checked_at_claim": "2026-11-03T00:34:11.501Z",
+          "stock": "not supplied",
+          "group": "1634725471"
+        },
+        {
+          "name": "GEARWRENCH 3/8\" Drive 120XP Flex Head Electronic Torque Wrench",
+          "url": "https://www.amazon.com/dp/B07TFLXCX6?tag=hardhatdeals-20",
+          "store": "Amazon",
+          "price": 163.12,
+          "reference": 319.99,
+          "reference_basis": "List Price",
+          "computed_discount": 49.0,
+          "category": "Automotive",
+          "matched_our_scope": false,
+          "checked_at_claim": "2026-11-03T00:34:03.362Z",
+          "stock": "not supplied",
+          "group": "2y2g0l382t"
+        },
+        {
+          "name": "DEWALT 192 Pcs. Mechanics Tool Set (DWMT75049)",
+          "url": "https://www.amazon.com/dp/B01BHJE0J4?tag=hardhatdeals-20",
+          "store": "Amazon",
+          "price": 159.98,
+          "reference": 289.99,
+          "reference_basis": "List Price",
+          "computed_discount": 44.8,
+          "category": "Automotive",
+          "matched_our_scope": false,
+          "checked_at_claim": "2026-11-03T00:33:58.473Z",
+          "stock": "not supplied",
+          "group": "5a361j4s1e"
+        },
+        {
+          "name": "DEWALT 20V MAX 5.0Ah Lithium-Ion Battery Pack 2-Pack (DCB205-2) –",
+          "url": "https://www.walmart.com/ip/138765053",
+          "store": "Walmart",
+          "price": 119.99,
+          "reference": 249,
+          "reference_basis": "Was",
+          "computed_discount": 51.8,
+          "category": "Power tools",
+          "matched_our_scope": false,
+          "checked_at_claim": "2026-11-03T00:50:38.690Z",
+          "stock": "not supplied",
+          "group": "4p296k6j1s"
+        },
+        {
+          "name": "DEWALT Xtreme 12V MAX* Reciprocating Saw (DCS312B)",
+          "url": "https://www.amazon.com/dp/B0847NP274?tag=hardhatdeals-20",
+          "store": "Amazon",
+          "price": 98.01,
+          "reference": 268.99,
+          "reference_basis": "List Price",
+          "computed_discount": 63.6,
+          "category": "Power tools",
+          "matched_our_scope": true,
+          "checked_at_claim": "2026-11-03T00:33:51.111Z",
+          "stock": "not supplied",
+          "group": "4k0z2v2p06"
+        },
+        {
+          "name": "DEWALT 20V MAX XR Oscillating Tool (DCS356D1)",
+          "url": "https://www.amazon.com/dp/B00SOU6LR4?tag=hardhatdeals-20",
+          "store": "Amazon",
+          "price": 99,
+          "reference": 299,
+          "reference_basis": "List Price",
+          "computed_discount": 66.9,
+          "category": "Power tools",
+          "matched_our_scope": true,
+          "checked_at_claim": "2026-11-03T00:33:27.722Z",
+          "stock": "not supplied",
+          "group": "3i590a3u5s"
+        },
+        {
+          "name": "Craftsman 262-Piece Mechanic Tool Set with 3-Drawer VERSASTACK Box (CMMT45309)",
+          "url": "https://www.amazon.com/dp/B0CNKXHGZT?tag=hardhatdeals-20",
+          "store": "Amazon",
+          "price": 149,
+          "reference": 249,
+          "reference_basis": "List Price",
+          "computed_discount": 40.2,
+          "category": "Hand tools",
+          "matched_our_scope": false,
+          "checked_at_claim": "2026-11-03T00:33:46.114Z",
+          "stock": "not supplied",
+          "group": "4d582i5x0g"
+        },
+        {
+          "name": "DEWALT Line Laser (DW088K)",
+          "url": "https://www.amazon.com/dp/B009O94W3E?tag=hardhatdeals-20",
+          "store": "Amazon",
+          "price": 127,
+          "reference": 219,
+          "reference_basis": "List Price",
+          "computed_discount": 42.0,
+          "category": "Measuring & layout",
+          "matched_our_scope": false,
+          "checked_at_claim": "2026-11-03T00:33:29.944Z",
+          "stock": "not supplied",
+          "group": "6x2e573x4x"
+        },
+        {
+          "name": "DEWALT 20V MAX Drill + Impact Driver Combo Kit (DCK240C2)",
+          "url": "https://www.amazon.com/dp/B00IJ0ALYS?tag=hardhatdeals-20",
+          "store": "Amazon",
+          "price": 129,
+          "reference": 239,
+          "reference_basis": "List Price",
+          "computed_discount": 46.0,
+          "category": "Power tools",
+          "matched_our_scope": true,
+          "checked_at_claim": "2026-11-03T00:33:37.157Z",
+          "stock": "not supplied",
+          "group": "b00ij0alys"
+        }
+      ],
+      "url": "https://hardhatdeals.com/api/deals",
+      "sha256": "a616967397f74dd96399eb97bd03440520b274e136fd50599f8300a7e5d5d729",
+      "qualification": "Public API includes grouped alternatives; rendered homepage collapses them. Stock and seller/condition unverified; not M1."
+    },
+    "mtb": {
+      "api_listings": 734,
+      "equipment_candidates": 52,
+      "candidate_retailers": [
+        "Backcountry",
+        "Competitive Cyclist",
+        "Jenson USA",
+        "Mike's Bikes",
+        "REI",
+        "Worldwide Cyclery",
+        "evo"
+      ],
+      "rows": [
+        {
+          "name": "Forestal Siryon Complete Bike w/ Halo Build, Yellow / Black",
+          "url": "https://worldwidecyclery.com/products/forestal-siryon-complete-bike-w-halo-build-yellow-black",
+          "store": "Worldwide Cyclery",
+          "price": 3490.0,
+          "reference": 6999.0,
+          "computed_discount": 50.1,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "mtb",
+          "sizes_claim": "[\"L\"]",
+          "observed_at_claim": "2026-11-03T02:00:37.924Z"
+        },
+        {
+          "name": "Santa Cruz Heckler SL C S",
+          "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-s",
+          "store": "Mike's Bikes",
+          "price": 3499.77,
+          "reference": 7399.0,
+          "computed_discount": 52.7,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "emtb",
+          "sizes_claim": "[\"XXL\"]",
+          "observed_at_claim": "2026-11-03T02:00:34.647Z"
+        },
+        {
+          "name": "Santa Cruz Heckler SL C 70",
+          "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-70",
+          "store": "Mike's Bikes",
+          "price": 3999.77,
+          "reference": 7299.0,
+          "computed_discount": 45.2,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "emtb",
+          "sizes_claim": "[\"XXL\"]",
+          "observed_at_claim": "2026-11-03T02:00:34.610Z"
+        },
+        {
+          "name": "Santa Cruz Heckler SL CC X0 AXS Reserve",
+          "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-cc-x0-axs-reserve",
+          "store": "Mike's Bikes",
+          "price": 4999.77,
+          "reference": 11699.0,
+          "computed_discount": 57.3,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "emtb",
+          "sizes_claim": "[\"XXL\"]",
+          "observed_at_claim": "2026-11-03T02:00:34.592Z"
+        },
+        {
+          "name": "Santa Cruz Heckler SL C GX Transmission",
+          "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-gx-transmission-2024",
+          "store": "Mike's Bikes",
+          "price": 4499.77,
+          "reference": 9699.99,
+          "computed_discount": 53.6,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "emtb",
+          "sizes_claim": "[\"XXL\"]",
+          "observed_at_claim": "2026-11-03T02:00:34.548Z"
+        },
+        {
+          "name": "Santa Cruz Heckler SL C 90",
+          "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-90",
+          "store": "Mike's Bikes",
+          "price": 4999.77,
+          "reference": 8699.0,
+          "computed_discount": 42.5,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "emtb",
+          "sizes_claim": "[\"XL\",\"XXL\"]",
+          "observed_at_claim": "2026-11-03T02:00:34.512Z"
+        },
+        {
+          "name": "Santa Cruz Heckler SL CC X0 Transmission Reserve",
+          "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-cc-x0-transmission-reserve-2024",
+          "store": "Mike's Bikes",
+          "price": 4499.77,
+          "reference": 11699.99,
+          "computed_discount": 61.5,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "emtb",
+          "sizes_claim": "[\"XXL\"]",
+          "observed_at_claim": "2026-11-03T02:00:34.502Z"
+        },
+        {
+          "name": "Santa Cruz Heckler SL C S",
+          "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-s-2024",
+          "store": "Mike's Bikes",
+          "price": 3499.77,
+          "reference": 8699.99,
+          "computed_discount": 59.8,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "emtb",
+          "sizes_claim": "[\"XXL\"]",
+          "observed_at_claim": "2026-11-03T02:00:34.467Z"
+        },
+        {
+          "name": "Santa Cruz Heckler SL C R",
+          "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-r-2024",
+          "store": "Mike's Bikes",
+          "price": 2999.77,
+          "reference": 7299.99,
+          "computed_discount": 58.9,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "emtb",
+          "sizes_claim": "[\"XXL\"]",
+          "observed_at_claim": "2026-11-03T02:00:34.439Z"
+        },
+        {
+          "name": "Cannondale Habit Neo 1",
+          "url": "https://mikesbikes.com/products/cannondale-habit-neo-1-2026",
+          "store": "Mike's Bikes",
+          "price": 6600.77,
+          "reference": 11998.99,
+          "computed_discount": 45.0,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "emtb",
+          "sizes_claim": "[\"S\",\"L\"]",
+          "observed_at_claim": "2026-11-03T02:00:34.324Z"
+        },
+        {
+          "name": "Cannondale Habit Neo 2",
+          "url": "https://mikesbikes.com/products/cannondale-habit-neo-2-2026",
+          "store": "Mike's Bikes",
+          "price": 4950.77,
+          "reference": 8998.99,
+          "computed_discount": 45.0,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "emtb",
+          "sizes_claim": "[\"M\",\"L\",\"XL\"]",
+          "observed_at_claim": "2026-11-03T02:00:34.065Z"
+        },
+        {
+          "name": "Cannondale Habit Neo 3",
+          "url": "https://mikesbikes.com/products/cannondale-habit-neo-3-2026",
+          "store": "Mike's Bikes",
+          "price": 3850.77,
+          "reference": 6998.99,
+          "computed_discount": 45.0,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "emtb",
+          "sizes_claim": "[\"S\",\"M\",\"L\",\"XL\"]",
+          "observed_at_claim": "2026-11-03T02:00:33.973Z"
+        },
+        {
+          "name": "Santa Cruz 5010 5 C GX AXS (2024)",
+          "url": "https://mikesbikes.com/products/santa-cruz-5010-5-c-gx-axs-2024",
+          "store": "Mike's Bikes",
+          "price": 2999.77,
+          "reference": 6899.99,
+          "computed_discount": 56.5,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "trail",
+          "sizes_claim": "[\"XXL\"]",
+          "observed_at_claim": "2026-11-03T02:00:33.740Z"
+        },
+        {
+          "name": "Santa Cruz Hightower 3 C S",
+          "url": "https://mikesbikes.com/products/santa-cruz-hightower-3-c-s-2024",
+          "store": "Mike's Bikes",
+          "price": 2499.77,
+          "reference": 5899.99,
+          "computed_discount": 57.6,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "mtb",
+          "sizes_claim": "[\"XXL\"]",
+          "observed_at_claim": "2026-11-03T02:00:33.708Z"
+        },
+        {
+          "name": "Santa Cruz Tallboy 5 CC X0 AXS",
+          "url": "https://mikesbikes.com/products/santa-cruz-tallboy-5-cc-x0-axs-2024",
+          "store": "Mike's Bikes",
+          "price": 3499.77,
+          "reference": 7899.99,
+          "computed_discount": 55.7,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "trail",
+          "sizes_claim": "[\"XXL\"]",
+          "observed_at_claim": "2026-11-03T02:00:33.600Z"
+        },
+        {
+          "name": "Devinci Chainsaw A 29 Deore 12s Complete Mountain Bike 2025",
+          "url": "https://www.evo.com/products/289461-devinci-chainsaw-a-29-deore-12s-complete-mountain-bike-2025",
+          "store": "evo",
+          "price": 2220.1,
+          "reference": 3699.0,
+          "computed_discount": 40.0,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "xc",
+          "sizes_claim": "[\"XL\"]",
+          "observed_at_claim": "2026-11-03T02:00:30.999Z"
+        },
+        {
+          "name": "Mondraker RAZE R Complete Mountain Bike 2025",
+          "url": "https://www.evo.com/products/281776-mondraker-raze-carbon-r-complete-mountain-bike-2025",
+          "store": "evo",
+          "price": 2500.09,
+          "reference": 4999.0,
+          "computed_discount": 50.0,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "mtb",
+          "sizes_claim": "[\"M\",\"L\",\"XL\"]",
+          "observed_at_claim": "2026-11-03T02:00:30.194Z"
+        },
+        {
+          "name": "Pivot Shadowcat Eagle 70/90 Brunch Ride Carbon Wheel Mountain Bike Danger Fruit, L",
+          "url": "https://www.backcountry.com/pivot-shadowcat-eagle-70-90-brunch-ride-carbon-wheel-mountain-bike",
+          "store": "Backcountry",
+          "price": 4599.0,
+          "reference": 7999.0,
+          "computed_discount": 42.5,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": null,
+          "sizes_claim": "[\"M\"]",
+          "observed_at_claim": "2026-11-03T02:00:27.207Z"
+        },
+        {
+          "name": "Rocky Mountain Instinct Powerplay SL C50 XT E-Bike",
+          "url": "https://www.backcountry.com/rocky-mountain-instinct-powerplay-sl-c50-xt-e-bike",
+          "store": "Backcountry",
+          "price": 4800.0,
+          "reference": 7999.0,
+          "computed_discount": 40.0,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": null,
+          "sizes_claim": "[\"XL\"]",
+          "observed_at_claim": "2026-11-03T02:00:27.189Z"
+        },
+        {
+          "name": "Rocky Mountain Instinct Powerplay SL C50 XT E-Bike Blue/Blue/Black, XL",
+          "url": "https://www.competitivecyclist.com/rocky-mountain-instinct-powerplay-sl-c50-xt-e-bike",
+          "store": "Competitive Cyclist",
+          "price": 4800.0,
+          "reference": 7999.0,
+          "computed_discount": 40.0,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "emtb",
+          "sizes_claim": "[\"XL\"]",
+          "observed_at_claim": "2026-11-03T02:00:22.487Z"
+        },
+        {
+          "name": "Pivot Shadowcat Eagle 70/90 Brunch Ride Carbon Wheel Mountain Bike Danger Fruit",
+          "url": "https://www.competitivecyclist.com/pivot-shadowcat-eagle-70-90-brunch-ride-carbon-wheel-mountain-bike",
+          "store": "Competitive Cyclist",
+          "price": 4599.0,
+          "reference": 7999.0,
+          "computed_discount": 42.5,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": null,
+          "sizes_claim": "[\"M\"]",
+          "observed_at_claim": "2026-11-03T02:00:21.987Z"
+        },
+        {
+          "name": "Cannondale Moterra 3 Electric Mountain Bike",
+          "url": "https://www.rei.com/product/208207/cannondale-moterra-3-electric-mountain-bike",
+          "store": "REI",
+          "price": 3999.93,
+          "reference": 6750.0,
+          "computed_discount": 40.7,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": null,
+          "sizes_claim": "[\"M\",\"XL\"]",
+          "observed_at_claim": "2026-11-03T02:00:07.011Z"
+        },
+        {
+          "name": "Scott Spark 960 Bike",
+          "url": "https://www.rei.com/product/C00577/scott-spark-960-bike",
+          "store": "REI",
+          "price": 1799.93,
+          "reference": 3000.0,
+          "computed_discount": 40.0,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "xc",
+          "sizes_claim": "[\"M\",\"L\"]",
+          "observed_at_claim": "2026-11-03T02:00:07.002Z"
+        },
+        {
+          "name": "Rocky Mountain Instinct Carbon 30 Mountain Bike",
+          "url": "https://www.rei.com/product/245870/rocky-mountain-instinct-carbon-30-mountain-bike",
+          "store": "REI",
+          "price": 2818.93,
+          "reference": 4699.0,
+          "computed_discount": 40.0,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": null,
+          "sizes_claim": "[\"M\"]",
+          "observed_at_claim": "2026-11-03T02:00:06.991Z"
+        },
+        {
+          "name": "Diamondback Yowie Carbon Mountain Bike",
+          "url": "https://www.rei.com/product/210875/diamondback-yowie-carbon-mountain-bike",
+          "store": "REI",
+          "price": 2849.93,
+          "reference": 4750.0,
+          "computed_discount": 40.0,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": null,
+          "sizes_claim": "[\"S\"]",
+          "observed_at_claim": "2026-11-03T02:00:06.979Z"
+        },
+        {
+          "name": "Rocky Mountain Altitude Alloy 50 Mountain Bike",
+          "url": "https://www.rei.com/product/245871/rocky-mountain-altitude-alloy-50-mountain-bike",
+          "store": "REI",
+          "price": 2878.93,
+          "reference": 4799.0,
+          "computed_discount": 40.0,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": null,
+          "sizes_claim": "[\"M\"]",
+          "observed_at_claim": "2026-11-03T02:00:06.953Z"
+        },
+        {
+          "name": "Salsa Notch 160 CUES 10 Electric Mountain Bike",
+          "url": "https://www.rei.com/product/227684/salsa-notch-160-cues-10-electric-mountain-bike",
+          "store": "REI",
+          "price": 2999.93,
+          "reference": 4999.0,
+          "computed_discount": 40.0,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "enduro",
+          "sizes_claim": "[\"M\",\"XL\"]",
+          "observed_at_claim": "2026-11-03T02:00:06.889Z"
+        },
+        {
+          "name": "Salsa Notch 160 Deore 12 Electric Mountain Bike",
+          "url": "https://www.rei.com/product/227685/salsa-notch-160-deore-12-electric-mountain-bike",
+          "store": "REI",
+          "price": 3599.93,
+          "reference": 5999.0,
+          "computed_discount": 40.0,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "enduro",
+          "sizes_claim": "[\"L\"]",
+          "observed_at_claim": "2026-11-03T02:00:06.875Z"
+        },
+        {
+          "name": "Co-op Cycles DRT e3.1 Electric Mountain Bike",
+          "url": "https://www.rei.com/product/198759/co-op-cycles-drt-e31-electric-mountain-bike",
+          "store": "REI",
+          "price": 2498.93,
+          "reference": 4999.0,
+          "computed_discount": 50.0,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": null,
+          "sizes_claim": "[\"XS\"]",
+          "observed_at_claim": "2026-11-03T02:00:06.792Z"
+        },
+        {
+          "name": "Co-op Cycles DRT 3.1 Mountain Bike",
+          "url": "https://www.rei.com/product/198809/co-op-cycles-drt-31-mountain-bike",
+          "store": "REI",
+          "price": 1298.93,
+          "reference": 2599.0,
+          "computed_discount": 50.0,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "xc",
+          "sizes_claim": "[\"S\"]",
+          "observed_at_claim": "2026-11-03T02:00:06.772Z"
+        },
+        {
+          "name": "Scott Genius 940 Bike",
+          "url": "https://www.rei.com/product/C00575/scott-genius-940-bike",
+          "store": "REI",
+          "price": 1979.93,
+          "reference": 3300.0,
+          "computed_discount": 40.0,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": null,
+          "sizes_claim": "[\"S\",\"M\",\"L\",\"XL\"]",
+          "observed_at_claim": "2026-11-03T02:00:06.715Z"
+        },
+        {
+          "name": "Co-op Cycles DRT 3.3 Mountain Bike",
+          "url": "https://www.rei.com/product/198758/co-op-cycles-drt-33-mountain-bike",
+          "store": "REI",
+          "price": 1698.93,
+          "reference": 3399.0,
+          "computed_discount": 50.0,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "xc",
+          "sizes_claim": "[\"XS\",\"S\",\"L\"]",
+          "observed_at_claim": "2026-11-03T02:00:06.565Z"
+        },
+        {
+          "name": "Scott Ransom 920 Bike 2026",
+          "url": "https://www.jensonusa.com/scott-ransom-920-bike-2026",
+          "store": "Jenson USA",
+          "price": 3599.99,
+          "reference": 5999.99,
+          "computed_discount": 40.0,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": null,
+          "sizes_claim": "[\"S\",\"M\",\"L\",\"XL\"]",
+          "observed_at_claim": "2026-11-03T02:00:05.580Z"
+        },
+        {
+          "name": "Scott Ransom 910 Bike 2026",
+          "url": "https://www.jensonusa.com/scott-ransom-910-bike-2026",
+          "store": "Jenson USA",
+          "price": 4679.95,
+          "reference": 7999.99,
+          "computed_discount": 41.5,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": null,
+          "sizes_claim": "[\"XL\"]",
+          "observed_at_claim": "2026-11-03T02:00:05.568Z"
+        },
+        {
+          "name": "Scott Ransom 900 RC Bike 2026",
+          "url": "https://www.jensonusa.com/scott-ransom-900-rc-bike-2026",
+          "store": "Jenson USA",
+          "price": 5849.95,
+          "reference": 9999.99,
+          "computed_discount": 41.5,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "enduro",
+          "sizes_claim": "[\"S\",\"M\",\"L\",\"XL\"]",
+          "observed_at_claim": "2026-11-03T02:00:05.549Z"
+        },
+        {
+          "name": "Santa Cruz Hightower 4 C S Bike",
+          "url": "https://www.jensonusa.com/santa-cruz-hightower-4-c-s-bike",
+          "store": "Jenson USA",
+          "price": 3209.94,
+          "reference": 5899.0,
+          "computed_discount": 45.6,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "enduro",
+          "sizes_claim": "[\"XXL\"]",
+          "observed_at_claim": "2026-11-03T02:00:05.249Z"
+        },
+        {
+          "name": "Santa Cruz Hightower 4 C R Bike",
+          "url": "https://www.jensonusa.com/santa-cruz-hightower-4-c-r-bike",
+          "store": "Jenson USA",
+          "price": 2899.94,
+          "reference": 4999.0,
+          "computed_discount": 42.0,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": null,
+          "sizes_claim": "[\"XXL\"]",
+          "observed_at_claim": "2026-11-03T02:00:05.240Z"
+        },
+        {
+          "name": "Rocky Mountain Instinct A50 Shimano Bike",
+          "url": "https://www.jensonusa.com/rocky-mountain-instinct-a50-shimano-bike",
+          "store": "Jenson USA",
+          "price": 2759.94,
+          "reference": 4599.0,
+          "computed_discount": 40.0,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": null,
+          "sizes_claim": "[\"XL\"]",
+          "observed_at_claim": "2026-11-03T02:00:04.928Z"
+        },
+        {
+          "name": "Rocky Mountain Altitude Powerplay A50 E-Bike 2027",
+          "url": "https://www.jensonusa.com/rocky-mountain-altitude-powerplay-a50-e-bike-2027",
+          "store": "Jenson USA",
+          "price": 3999.94,
+          "reference": 7899.0,
+          "computed_discount": 49.4,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": null,
+          "sizes_claim": "[\"M\",\"L\",\"XL\"]",
+          "observed_at_claim": "2026-11-03T02:00:04.825Z"
+        },
+        {
+          "name": "Norco Optic C2 Bike 2025",
+          "url": "https://www.jensonusa.com/norco-optic-c2-bike-2025",
+          "store": "Jenson USA",
+          "price": 4498.5,
+          "reference": 9099.0,
+          "computed_discount": 50.6,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": null,
+          "sizes_claim": null,
+          "observed_at_claim": "2026-11-03T02:00:04.533Z"
+        },
+        {
+          "name": "Norco Fluid FS C3 Bike",
+          "url": "https://www.jensonusa.com/norco-fluid-fs-c3-bike",
+          "store": "Jenson USA",
+          "price": 2398.5,
+          "reference": 4099.0,
+          "computed_discount": 41.5,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": null,
+          "sizes_claim": "[\"XL\"]",
+          "observed_at_claim": "2026-11-03T02:00:04.500Z"
+        },
+        {
+          "name": "Norco Fluid FS 4 29\" Bike 2023",
+          "url": "https://www.jensonusa.com/norco-fluid-fs-4-29-bike-2023",
+          "store": "Jenson USA",
+          "price": 1200.0,
+          "reference": 1999.0,
+          "computed_discount": 40.0,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "trail",
+          "sizes_claim": "[\"XXL\"]",
+          "observed_at_claim": "2026-11-03T02:00:04.487Z"
+        },
+        {
+          "name": "Niner RKT 9 RDO Eagle 90 Bike",
+          "url": "https://www.jensonusa.com/niner-rkt-9-rdo-eagle-90-bike",
+          "store": "Jenson USA",
+          "price": 3158.96,
+          "reference": 6499.99,
+          "computed_discount": 51.4,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "xc",
+          "sizes_claim": "[\"M\",\"L\",\"XL\"]",
+          "observed_at_claim": "2026-11-03T02:00:04.469Z"
+        },
+        {
+          "name": "Niner RIP 9 RDO GX AXS Bike",
+          "url": "https://www.jensonusa.com/niner-rip-9-rdo-gx-axs-bike",
+          "store": "Jenson USA",
+          "price": 3599.94,
+          "reference": 7499.99,
+          "computed_discount": 52.0,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "trail",
+          "sizes_claim": "[\"S\",\"M\",\"L\",\"XL\"]",
+          "observed_at_claim": "2026-11-03T02:00:04.447Z"
+        },
+        {
+          "name": "Niner RIP 9 RDO Eagle 70 Bike",
+          "url": "https://www.jensonusa.com/niner-rip-9-rdo-eagle-70-bike",
+          "store": "Jenson USA",
+          "price": 2799.94,
+          "reference": 5499.99,
+          "computed_discount": 49.1,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "trail",
+          "sizes_claim": "[\"M\",\"L\",\"XL\"]",
+          "observed_at_claim": "2026-11-03T02:00:04.436Z"
+        },
+        {
+          "name": "Niner Jet RDO GX AXS 2026 Bike",
+          "url": "https://www.jensonusa.com/niner-jet-rdo-gx-axs-2026-bike",
+          "store": "Jenson USA",
+          "price": 3941.95,
+          "reference": 7299.99,
+          "computed_discount": 46.0,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "xc",
+          "sizes_claim": "[\"S\",\"M\"]",
+          "observed_at_claim": "2026-11-03T02:00:04.415Z"
+        },
+        {
+          "name": "Norco SIGHT C2 SRAM 29 BIKE 2023",
+          "url": "https://www.jensonusa.com/norco-sight-c2-sram-29-bike-2023",
+          "store": "Jenson USA",
+          "price": 2907.0,
+          "reference": 5499.0,
+          "computed_discount": 47.1,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "trail",
+          "sizes_claim": "[\"S\",\"XL\"]",
+          "observed_at_claim": "2026-11-03T02:00:04.406Z"
+        },
+        {
+          "name": "Marin Rift Zone XR AXS 27.5 Bike",
+          "url": "https://www.jensonusa.com/marin-rift-zone-xr-axs-275-bike",
+          "store": "Jenson USA",
+          "price": 2199.94,
+          "reference": 4699.0,
+          "computed_discount": 53.2,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "trail",
+          "sizes_claim": "[\"M\"]",
+          "observed_at_claim": "2026-11-03T02:00:04.272Z"
+        },
+        {
+          "name": "Marin Rift Zone XR 29 Bike",
+          "url": "https://www.jensonusa.com/marin-rift-zone-xr-29-bike",
+          "store": "Jenson USA",
+          "price": 1699.94,
+          "reference": 3699.0,
+          "computed_discount": 54.0,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": "xc",
+          "sizes_claim": null,
+          "observed_at_claim": "2026-11-03T02:00:04.220Z"
+        },
+        {
+          "name": "Kona Process 153 CR SRAM Bike",
+          "url": "https://www.jensonusa.com/kona-process-153-cr-sram-bike",
+          "store": "Jenson USA",
+          "price": 2699.94,
+          "reference": 4499.0,
+          "computed_discount": 40.0,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": null,
+          "sizes_claim": "[\"M\",\"L\",\"XL\"]",
+          "observed_at_claim": "2026-11-03T02:00:04.184Z"
+        },
+        {
+          "name": "Cannondale Moterra Carbon 2 E-Bike",
+          "url": "https://www.jensonusa.com/cannondale-moterra-carbon-2-e-bike",
+          "store": "Jenson USA",
+          "price": 3449.94,
+          "reference": 7500.0,
+          "computed_discount": 54.0,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": null,
+          "sizes_claim": "[\"L\"]",
+          "observed_at_claim": "2026-11-03T02:00:03.953Z"
+        },
+        {
+          "name": "Cannondale Jekyll 1 Bike",
+          "url": "https://www.jensonusa.com/cannondale-jekyll-1-bike",
+          "store": "Jenson USA",
+          "price": 2800.0,
+          "reference": 6249.0,
+          "computed_discount": 55.2,
+          "stock_claim": true,
+          "condition_claim": "New",
+          "category": null,
+          "sizes_claim": "[\"S\"]",
+          "observed_at_claim": "2026-11-03T02:00:03.932Z"
+        }
+      ],
+      "url": "https://mtbprice.com/api/bikes",
+      "sha256": "88b2a84eefaaddec6b5c3937a82e25f3bd13b200ed92a6b670fe4019bb02f8c6",
+      "qualification": "Full-suspension bikes subset; model-level sizes and price not independently tied to exact purchasable variants. Not directly comparable to all-cycling M1."
+    },
+    "fresh_powder": {
+      "total_price_filtered_listings": 1381,
+      "source_reported_stock_equipment_before_condition_review": 969,
+      "condition_excluded": [
+        {
+          "name": "Season Nexus Skis - Blem 2025",
+          "store": "Evo",
+          "category": "skis",
+          "url": "https://www.evo.com/products/261037-season-nexus-skis-blem-2025?variant=46150366527638",
+          "price": 289.99,
+          "reference": 749.0,
+          "stock": "Reported in stock · Confirm shipping & returns at store"
+        },
+        {
+          "name": "Lib Tech T. Rice Pro Snowboard - Blem 2026",
+          "store": "Evo",
+          "category": "snowboards",
+          "url": "https://www.evo.com/products/280837-lib-tech-t-rice-pro-snowboard-blem-2026?variant=46154080747670",
+          "price": 409.95,
+          "reference": 699.99,
+          "stock": "Reported in stock · Confirm shipping & returns at store"
+        }
+      ],
+      "source_reported_stock_equipment": 967,
+      "candidate_retailers": [
+        "Alpine Shop VT",
+        "Aspen Ski and Board",
+        "Blauer Board Shop",
+        "Colorado Ski Shop",
+        "Evo",
+        "First Stop Board Barn",
+        "Freeride Boardshop",
+        "Ski Depot",
+        "Ski Pro AZ",
+        "Skirack",
+        "Sports Basement",
+        "The Ski Monster",
+        "The Startingate",
+        "UtahSkis"
+      ],
+      "checked_within_24h_percent": 100.0,
+      "p95_source_age_hours": 5.368795618611111,
+      "oldest_source_age_hours": 5.368795618611111,
+      "pages": 24,
+      "complete": true,
+      "observed_at": "2026-11-03T02:30:07.664227+00:00",
+      "page_receipts": [
+        {
+          "url": "https://freshpowder.clifan.com/?min_reference=500&min_discount=40&currency=USD",
+          "status": 200,
+          "cards": 60,
+          "sha256": "210e072c578cc8a89edc00c2f0adbb48780d3d590b7c95b70adf471f5664a23e"
+        },
+        {
+          "url": "https://freshpowder.clifan.com/deals?min_reference=500&min_discount=40&currency=USD&offset=60",
+          "status": 200,
+          "cards": 60,
+          "sha256": "f3952c25c4669b4de738b67c635e197f256e655ca8cca07f2db3b73e69baaed1"
+        },
+        {
+          "url": "https://freshpowder.clifan.com/deals?min_reference=500&min_discount=40&currency=USD&offset=120",
+          "status": 200,
+          "cards": 60,
+          "sha256": "3aac7463b477eed2b82d99c1a91d171e1b7e19d9d03f4554a81528de958f82f0"
+        },
+        {
+          "url": "https://freshpowder.clifan.com/deals?min_reference=500&min_discount=40&currency=USD&offset=180",
+          "status": 200,
+          "cards": 60,
+          "sha256": "92d497f3cb639ec6af2f6d2e6328f7a5248788decd80bd3cf9033f6d06ac4cd5"
+        },
+        {
+          "url": "https://freshpowder.clifan.com/deals?min_reference=500&min_discount=40&currency=USD&offset=240",
+          "status": 200,
+          "cards": 60,
+          "sha256": "501cab3ac53c9faa87b6ab6fcf505db552a42727b02bed8f10030882663d9cb7"
+        },
+        {
+          "url": "https://freshpowder.clifan.com/deals?min_reference=500&min_discount=40&currency=USD&offset=300",
+          "status": 200,
+          "cards": 60,
+          "sha256": "fd48304176bc3bf3fc2f5595e5c3e4092c6feb2b9828a87ecec52934fe531971"
+        },
+        {
+          "url": "https://freshpowder.clifan.com/deals?min_reference=500&min_discount=40&currency=USD&offset=360",
+          "status": 200,
+          "cards": 60,
+          "sha256": "3ba7695a28c141e979de728f80c829a504c1b41622730c31d90924c661370b4a"
+        },
+        {
+          "url": "https://freshpowder.clifan.com/deals?min_reference=500&min_discount=40&currency=USD&offset=420",
+          "status": 200,
+          "cards": 60,
+          "sha256": "bfeff4685dc20e22b1f8e1db825b67747e89ccb0b83125e6811acdc3e03af23e"
+        },
+        {
+          "url": "https://freshpowder.clifan.com/deals?min_reference=500&min_discount=40&currency=USD&offset=480",
+          "status": 200,
+          "cards": 60,
+          "sha256": "0c75f02ad48ec4e6a42702b73a79cde13d74d1c58c6e236f5cef6b35d0dfe83c"
+        },
+        {
+          "url": "https://freshpowder.clifan.com/deals?min_reference=500&min_discount=40&currency=USD&offset=540",
+          "status": 200,
+          "cards": 60,
+          "sha256": "bcf411ca4250922d6cb8e91bd13248e5f2d2b293559d0ab73966aee382de3776"
+        },
+        {
+          "url": "https://freshpowder.clifan.com/deals?min_reference=500&min_discount=40&currency=USD&offset=600",
+          "status": 200,
+          "cards": 60,
+          "sha256": "044bdf401b1eca4ac282e72b159d882edef92c319457269083d3e662dc632d0f"
+        },
+        {
+          "url": "https://freshpowder.clifan.com/deals?min_reference=500&min_discount=40&currency=USD&offset=660",
+          "status": 200,
+          "cards": 60,
+          "sha256": "0df8c31ffa7dde71956c3f358ae18a808cda470fb7b68f672bd8b434e7f63158"
+        },
+        {
+          "url": "https://freshpowder.clifan.com/deals?min_reference=500&min_discount=40&currency=USD&offset=720",
+          "status": 200,
+          "cards": 60,
+          "sha256": "6ff15ed988eb606c4e6f8dd34fb5aadcde0f5368d71983cbba19cec28685a401"
+        },
+        {
+          "url": "https://freshpowder.clifan.com/deals?min_reference=500&min_discount=40&currency=USD&offset=780",
+          "status": 200,
+          "cards": 60,
+          "sha256": "5ebea0dd0bdebcdc16af41efa738fc50f1f1f11bec3603c4a053d284fc800af1"
+        },
+        {
+          "url": "https://freshpowder.clifan.com/deals?min_reference=500&min_discount=40&currency=USD&offset=840",
+          "status": 200,
+          "cards": 60,
+          "sha256": "bd0e44cb30415688899804380f14160afb5063f6b084dd984453f812ea7e2e44"
+        },
+        {
+          "url": "https://freshpowder.clifan.com/deals?min_reference=500&min_discount=40&currency=USD&offset=900",
+          "status": 200,
+          "cards": 60,
+          "sha256": "af431478c4d1c5478f8feb64647606162aa4decc8083f4385c8668191172c01d"
+        },
+        {
+          "url": "https://freshpowder.clifan.com/deals?min_reference=500&min_discount=40&currency=USD&offset=960",
+          "status": 200,
+          "cards": 60,
+          "sha256": "66656bc2527ce4cc210e13af798f53d6898409c5f90fcdca8a70aeb08a3fa023"
+        },
+        {
+          "url": "https://freshpowder.clifan.com/deals?min_reference=500&min_discount=40&currency=USD&offset=1020",
+          "status": 200,
+          "cards": 60,
+          "sha256": "f960ee5b2d3fcab8a987cedf0f1ed20a08d841605053574f41e0b8f147282587"
+        },
+        {
+          "url": "https://freshpowder.clifan.com/deals?min_reference=500&min_discount=40&currency=USD&offset=1080",
+          "status": 200,
+          "cards": 60,
+          "sha256": "d504744713e83b6f60725f8d7fe1aa099f8b071332372233159c96d94c0d5084"
+        },
+        {
+          "url": "https://freshpowder.clifan.com/deals?min_reference=500&min_discount=40&currency=USD&offset=1140",
+          "status": 200,
+          "cards": 60,
+          "sha256": "2b8f35e8f5baf79c18e23be90b0b649b436ecf2318b2d285d2b28ab742732cb1"
+        },
+        {
+          "url": "https://freshpowder.clifan.com/deals?min_reference=500&min_discount=40&currency=USD&offset=1200",
+          "status": 200,
+          "cards": 60,
+          "sha256": "57b406ea132bc367ee95bb832b385a7f3226a67bbed9c7a33f149bf51b79db17"
+        },
+        {
+          "url": "https://freshpowder.clifan.com/deals?min_reference=500&min_discount=40&currency=USD&offset=1260",
+          "status": 200,
+          "cards": 60,
+          "sha256": "ea44aa65ffbad9ccdf9e9a8888ee023d248056bda9b2381cf5c837a0beffd6af"
+        },
+        {
+          "url": "https://freshpowder.clifan.com/deals?min_reference=500&min_discount=40&currency=USD&offset=1320",
+          "status": 200,
+          "cards": 60,
+          "sha256": "ffb7669b38398f0eda5235c9792041ce24ce41cfe9c6f2252cdd2700f3e866d2"
+        },
+        {
+          "url": "https://freshpowder.clifan.com/deals?min_reference=500&min_discount=40&currency=USD&offset=1380",
+          "status": 200,
+          "cards": 1,
+          "sha256": "c230bd572f57801de2374518c17b767173268a0947cb60151cdd32600a4e0570"
+        }
+      ],
+      "qualification": "Public rendered source-reported stock, not independent merchant validation. Missing stock excluded. Displayed source dates parsed as UTC in current year."
+    }
+  },
+  "mobile_runs": [
+    {
+      "site": "Fresh Powder",
+      "url": "https://freshpowder.clifan.com/",
+      "run": 1,
+      "at": "2026-11-03T02:26:48.322418+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 1712,
+      "cls": 0,
+      "lcp_entries": 1,
+      "shifts": [],
+      "first_price": "$59.99",
+      "first_price_bottom": 806.90625,
+      "initial_scroll": 0,
+      "horizontal_overflow": false,
+      "title": "Ski & Snowboard Deals | FreshPowder",
+      "window_end": 10327.60000000894,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "Fresh Powder",
+      "url": "https://freshpowder.clifan.com/",
+      "run": 2,
+      "at": "2026-11-03T02:26:58.818391+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 1640,
+      "cls": 0,
+      "lcp_entries": 1,
+      "shifts": [],
+      "first_price": "$59.99",
+      "first_price_bottom": 806.90625,
+      "initial_scroll": 0,
+      "horizontal_overflow": false,
+      "title": "Ski & Snowboard Deals | FreshPowder",
+      "window_end": 9718.20000000298,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "Fresh Powder",
+      "url": "https://freshpowder.clifan.com/",
+      "run": 3,
+      "at": "2026-11-03T02:27:08.752089+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 1732,
+      "cls": 0,
+      "lcp_entries": 1,
+      "shifts": [],
+      "first_price": "$59.99",
+      "first_price_bottom": 806.90625,
+      "initial_scroll": 0,
+      "horizontal_overflow": false,
+      "title": "Ski & Snowboard Deals | FreshPowder",
+      "window_end": 9808.70000000298,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "Powder Deals",
+      "url": "https://powderdeals.com/deals",
+      "run": 1,
+      "at": "2026-11-03T02:27:18.714937+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 1248,
+      "cls": 6.656322945265241e-05,
+      "lcp_entries": 2,
+      "shifts": [
+        {
+          "at": 2810.2999999970198,
+          "value": 6.656322945265241e-05
+        }
+      ],
+      "first_price": "$29.99",
+      "first_price_bottom": 1180.21875,
+      "initial_scroll": 318.21875,
+      "horizontal_overflow": false,
+      "title": "Ski & Snowboard Deals Today | Powder Deals",
+      "window_end": 10145.60000000894,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "Powder Deals",
+      "url": "https://powderdeals.com/deals",
+      "run": 2,
+      "at": "2026-11-03T02:27:29.040654+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 1692,
+      "cls": 6.656322945265241e-05,
+      "lcp_entries": 2,
+      "shifts": [
+        {
+          "at": 3341,
+          "value": 6.656322945265241e-05
+        }
+      ],
+      "first_price": "$29.99",
+      "first_price_bottom": 1180.21875,
+      "initial_scroll": 318.21875,
+      "horizontal_overflow": false,
+      "title": "Ski & Snowboard Deals Today | Powder Deals",
+      "window_end": 10433.300000011921,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "Powder Deals",
+      "url": "https://powderdeals.com/deals",
+      "run": 3,
+      "at": "2026-11-03T02:27:39.671684+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 1252,
+      "cls": 6.656322945265241e-05,
+      "lcp_entries": 2,
+      "shifts": [
+        {
+          "at": 2817.7000000029802,
+          "value": 6.656322945265241e-05
+        }
+      ],
+      "first_price": "$29.99",
+      "first_price_bottom": 1180.21875,
+      "initial_scroll": 318.21875,
+      "horizontal_overflow": false,
+      "title": "Ski & Snowboard Deals Today | Powder Deals",
+      "window_end": 10149.5,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "Velo Bargains",
+      "url": "https://velo.bargains/deals",
+      "run": 1,
+      "at": "2026-11-03T02:27:50.025426+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 3120,
+      "cls": 0.0009016107000283358,
+      "lcp_entries": 2,
+      "shifts": [
+        {
+          "at": 4147.0999999940395,
+          "value": 0.00017990679474077056
+        },
+        {
+          "at": 4333.0999999940395,
+          "value": 6.656322945265241e-05
+        },
+        {
+          "at": 4607.29999999702,
+          "value": 0.0006551406758349128
+        }
+      ],
+      "first_price": "$4.99",
+      "first_price_bottom": 1056.71875,
+      "initial_scroll": 212.71875,
+      "horizontal_overflow": false,
+      "title": "All Cycling Deals — Bike & Gear Discounts | Velo Bargains",
+      "window_end": 11794.699999988079,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "Velo Bargains",
+      "url": "https://velo.bargains/deals",
+      "run": 2,
+      "at": "2026-11-03T02:28:02.003600+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 2004,
+      "cls": 0.0009016107000283358,
+      "lcp_entries": 2,
+      "shifts": [
+        {
+          "at": 2983.0999999940395,
+          "value": 0.00017990679474077056
+        },
+        {
+          "at": 3185.5,
+          "value": 6.656322945265241e-05
+        },
+        {
+          "at": 3466,
+          "value": 0.0006551406758349128
+        }
+      ],
+      "first_price": "$4.99",
+      "first_price_bottom": 1056.71875,
+      "initial_scroll": 212.71875,
+      "horizontal_overflow": false,
+      "title": "All Cycling Deals — Bike & Gear Discounts | Velo Bargains",
+      "window_end": 10689.29999999702,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "Velo Bargains",
+      "url": "https://velo.bargains/deals",
+      "run": 3,
+      "at": "2026-11-03T02:28:12.866090+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 1248,
+      "cls": 0.0009016107000283358,
+      "lcp_entries": 2,
+      "shifts": [
+        {
+          "at": 2264,
+          "value": 0.00017990679474077056
+        },
+        {
+          "at": 2483,
+          "value": 6.656322945265241e-05
+        },
+        {
+          "at": 2754.3999999910593,
+          "value": 0.0006551406758349128
+        }
+      ],
+      "first_price": "$4.99",
+      "first_price_bottom": 1056.71875,
+      "initial_scroll": 212.71875,
+      "horizontal_overflow": false,
+      "title": "All Cycling Deals — Bike & Gear Discounts | Velo Bargains",
+      "window_end": 10025.199999988079,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "HardHat Deals",
+      "url": "https://hardhatdeals.com/",
+      "run": 1,
+      "at": "2026-11-03T02:28:23.079288+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 2180,
+      "cls": 0.09643590050452998,
+      "lcp_entries": 1,
+      "shifts": [
+        {
+          "at": 2589.2999999970198,
+          "value": 0.09355639718277574
+        },
+        {
+          "at": 2626.7999999970198,
+          "value": 0.00287950332175424
+        },
+        {
+          "at": 3650.0999999940395,
+          "value": 0.0002963705114094817
+        }
+      ],
+      "first_price": "$61.99",
+      "first_price_bottom": 1730,
+      "initial_scroll": 886,
+      "horizontal_overflow": false,
+      "title": "Construction Tool Deals & Pro Tool Deals Today – DeWalt, Milwaukee, Klein | HardHat Deals",
+      "window_end": 10696.09999999404,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "HardHat Deals",
+      "url": "https://hardhatdeals.com/",
+      "run": 2,
+      "at": "2026-11-03T02:28:33.942414+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 1344,
+      "cls": 0.09643590050452998,
+      "lcp_entries": 1,
+      "shifts": [
+        {
+          "at": 1870.3999999910593,
+          "value": 0.09355639718277574
+        },
+        {
+          "at": 1909.699999988079,
+          "value": 0.00287950332175424
+        },
+        {
+          "at": 2949.3999999910593,
+          "value": 0.0002963705114094817
+        }
+      ],
+      "first_price": "$61.99",
+      "first_price_bottom": 1730,
+      "initial_scroll": 886,
+      "horizontal_overflow": false,
+      "title": "Construction Tool Deals & Pro Tool Deals Today – DeWalt, Milwaukee, Klein | HardHat Deals",
+      "window_end": 9986.5,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "HardHat Deals",
+      "url": "https://hardhatdeals.com/",
+      "run": 3,
+      "at": "2026-11-03T02:28:44.094556+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 1348,
+      "cls": 0.09643590050452998,
+      "lcp_entries": 1,
+      "shifts": [
+        {
+          "at": 2228.2000000029802,
+          "value": 0.09355639718277574
+        },
+        {
+          "at": 2267.6000000089407,
+          "value": 0.00287950332175424
+        },
+        {
+          "at": 3323.4000000059605,
+          "value": 0.0002963705114094817
+        }
+      ],
+      "first_price": "$61.99",
+      "first_price_bottom": 1730,
+      "initial_scroll": 886,
+      "horizontal_overflow": false,
+      "title": "Construction Tool Deals & Pro Tool Deals Today – DeWalt, Milwaukee, Klein | HardHat Deals",
+      "window_end": 10348.79999999702,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "MTB Price Agent",
+      "url": "https://mtbprice.com/",
+      "run": 1,
+      "at": "2026-11-03T02:28:54.633272+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 4124,
+      "cls": 0,
+      "lcp_entries": 2,
+      "shifts": [],
+      "first_price": "$4,499.77",
+      "first_price_bottom": 1583.078125,
+      "initial_scroll": 739.078125,
+      "horizontal_overflow": false,
+      "title": "Full Suspension MTB Deals: Compare Prices | MTB Price Agent",
+      "window_end": 9463,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "MTB Price Agent",
+      "url": "https://mtbprice.com/",
+      "run": 2,
+      "at": "2026-11-03T02:29:04.248792+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 3756,
+      "cls": 0,
+      "lcp_entries": 2,
+      "shifts": [],
+      "first_price": "$4,499.77",
+      "first_price_bottom": 1583.078125,
+      "initial_scroll": 739.078125,
+      "horizontal_overflow": false,
+      "title": "Full Suspension MTB Deals: Compare Prices | MTB Price Agent",
+      "window_end": 9210.5,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "MTB Price Agent",
+      "url": "https://mtbprice.com/",
+      "run": 3,
+      "at": "2026-11-03T02:29:13.611704+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 3796,
+      "cls": 0,
+      "lcp_entries": 2,
+      "shifts": [],
+      "first_price": "$4,499.77",
+      "first_price_bottom": 1583.078125,
+      "initial_scroll": 739.078125,
+      "horizontal_overflow": false,
+      "title": "Full Suspension MTB Deals: Compare Prices | MTB Price Agent",
+      "window_end": 9345.70000000298,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "Ski Finder",
+      "url": "https://www.ski-finders.com/deals",
+      "run": 1,
+      "at": "2026-11-03T02:29:23.106584+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 1044,
+      "cls": 0.033291179905953344,
+      "lcp_entries": 1,
+      "shifts": [
+        {
+          "at": 1723.5999999940395,
+          "value": 0.033291179905953344
+        }
+      ],
+      "first_price": "$461",
+      "first_price_bottom": 612,
+      "initial_scroll": 0,
+      "horizontal_overflow": false,
+      "title": "Ski Deals — Price Drops and Closeouts Across Every Shop | Ski Finder",
+      "window_end": 9077.70000000298,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "Ski Finder",
+      "url": "https://www.ski-finders.com/deals",
+      "run": 2,
+      "at": "2026-11-03T02:29:32.321888+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 992,
+      "cls": 0.033291179905953344,
+      "lcp_entries": 1,
+      "shifts": [
+        {
+          "at": 1743.199999988079,
+          "value": 0.033291179905953344
+        }
+      ],
+      "first_price": "$461",
+      "first_price_bottom": 612,
+      "initial_scroll": 0,
+      "horizontal_overflow": false,
+      "title": "Ski Deals — Price Drops and Closeouts Across Every Shop | Ski Finder",
+      "window_end": 9026.09999999404,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "Ski Finder",
+      "url": "https://www.ski-finders.com/deals",
+      "run": 3,
+      "at": "2026-11-03T02:29:41.490052+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 964,
+      "cls": 0.033291179905953344,
+      "lcp_entries": 1,
+      "shifts": [
+        {
+          "at": 1655.2999999970198,
+          "value": 0.033291179905953344
+        }
+      ],
+      "first_price": "$461",
+      "first_price_bottom": 612,
+      "initial_scroll": 0,
+      "horizontal_overflow": false,
+      "title": "Ski Deals — Price Drops and Closeouts Across Every Shop | Ski Finder",
+      "window_end": 8994,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "Daily Tool Drops",
+      "url": "https://dailytooldrops.com/",
+      "run": 1,
+      "at": "2026-11-03T02:29:50.628819+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "status": "inconclusive",
+      "error": "TimeoutError",
+      "detail": "Locator.wait_for: Timeout 15000ms exceeded."
+    },
+    {
+      "site": "Big Ring",
+      "url": "http://127.0.0.1:8766/",
+      "run": 1,
+      "at": "2026-11-03T02:30:07.197568+00:00",
+      "environment": "local",
+      "network": "unthrottled-local",
+      "cpu_slowdown": 1,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 100,
+      "cls": 0,
+      "lcp_entries": 1,
+      "shifts": [],
+      "first_price": "$1,499.99",
+      "first_price_bottom": 727.09375,
+      "initial_scroll": 0,
+      "horizontal_overflow": false,
+      "title": "Big Ring · Deep discounts, serious gear",
+      "window_end": 1114.3999999910593,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "Bench Drop",
+      "url": "http://127.0.0.1:8767/",
+      "run": 1,
+      "at": "2026-11-03T02:30:08.463269+00:00",
+      "environment": "local",
+      "network": "unthrottled-local",
+      "cpu_slowdown": 1,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 88,
+      "cls": 0,
+      "lcp_entries": 1,
+      "shifts": [],
+      "first_price": "$1,999",
+      "first_price_bottom": 759.09375,
+      "initial_scroll": 0,
+      "horizontal_overflow": false,
+      "title": "Bench Drop · Deep discounts, serious gear",
+      "window_end": 1090.7000000029802,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "Daily Tool Drops",
+      "url": "https://dailytooldrops.com/",
+      "run": 1,
+      "at": "2026-11-03T02:35:27.827615+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 2644,
+      "cls": 0.0034879851751084654,
+      "lcp_entries": 2,
+      "shifts": [
+        {
+          "at": 2593.5,
+          "value": 0.003419989626762133
+        },
+        {
+          "at": 2769.5999999940395,
+          "value": 6.799554834633225e-05
+        }
+      ],
+      "first_price": "$9900",
+      "first_price_bottom": 495.71875,
+      "initial_scroll": 0,
+      "horizontal_overflow": false,
+      "title": "Daily Tool Drops | No Fake Deals",
+      "window_end": 9769.59999999404,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "Daily Tool Drops",
+      "url": "https://dailytooldrops.com/",
+      "run": 2,
+      "at": "2026-11-03T02:35:37.746040+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 2592,
+      "cls": 0.002550984834871933,
+      "lcp_entries": 2,
+      "shifts": [
+        {
+          "at": 2800.6000000089407,
+          "value": 0.002550984834871933
+        }
+      ],
+      "first_price": "$9900",
+      "first_price_bottom": 495.71875,
+      "initial_scroll": 0,
+      "horizontal_overflow": false,
+      "title": "Daily Tool Drops | No Fake Deals",
+      "window_end": 9795.90000000596,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "Daily Tool Drops",
+      "url": "https://dailytooldrops.com/",
+      "run": 3,
+      "at": "2026-11-03T02:35:47.681250+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 3172,
+      "cls": 0.0027121342560301187,
+      "lcp_entries": 3,
+      "shifts": [
+        {
+          "at": 3098.1000000089407,
+          "value": 0.0026051412780877968
+        },
+        {
+          "at": 3223.7000000029802,
+          "value": 7.513740274684549e-05
+        },
+        {
+          "at": 3393.300000011921,
+          "value": 3.185557519547645e-05
+        }
+      ],
+      "first_price": "$9900",
+      "first_price_bottom": 495.71875,
+      "initial_scroll": 0,
+      "horizontal_overflow": false,
+      "title": "Daily Tool Drops | No Fake Deals",
+      "window_end": 9949.90000000596,
+      "visible": true,
+      "status": "measured"
+    }
+  ],
+  "paired_render_runs": [
+    {
+      "site": "Snow fixture before",
+      "url": "http://127.0.0.1:8768/before.html",
+      "run": 1,
+      "at": "2026-11-03T02:37:03.490535+00:00",
+      "environment": "local",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 808,
+      "cls": 0.0019623410214367294,
+      "lcp_entries": 1,
+      "shifts": [
+        {
+          "at": 1381.9000000059605,
+          "value": 0.0019623410214367294
+        }
+      ],
+      "first_price": "$59.99",
+      "first_price_bottom": 806.90625,
+      "initial_scroll": 0,
+      "horizontal_overflow": false,
+      "title": "Ski & Snowboard Deals | FreshPowder",
+      "window_end": 8888.5,
+      "visible": true,
+      "status": "measured",
+      "scope": "Controlled local captured-content fixture; not production performance"
+    },
+    {
+      "site": "Snow fixture after",
+      "url": "http://127.0.0.1:8768/after.html",
+      "run": 1,
+      "at": "2026-11-03T02:37:12.515427+00:00",
+      "environment": "local",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 588,
+      "cls": 0,
+      "lcp_entries": 1,
+      "shifts": [],
+      "first_price": "$59.99",
+      "first_price_bottom": 806.90625,
+      "initial_scroll": 0,
+      "horizontal_overflow": false,
+      "title": "Ski & Snowboard Deals | FreshPowder",
+      "window_end": 8721,
+      "visible": true,
+      "status": "measured",
+      "scope": "Controlled local captured-content fixture; not production performance"
+    },
+    {
+      "site": "Snow fixture before",
+      "url": "http://127.0.0.1:8768/before.html",
+      "run": 2,
+      "at": "2026-11-03T02:37:21.370222+00:00",
+      "environment": "local",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 792,
+      "cls": 0,
+      "lcp_entries": 1,
+      "shifts": [],
+      "first_price": "$59.99",
+      "first_price_bottom": 806.90625,
+      "initial_scroll": 0,
+      "horizontal_overflow": false,
+      "title": "Ski & Snowboard Deals | FreshPowder",
+      "window_end": 8868.29999999702,
+      "visible": true,
+      "status": "measured",
+      "scope": "Controlled local captured-content fixture; not production performance"
+    },
+    {
+      "site": "Snow fixture after",
+      "url": "http://127.0.0.1:8768/after.html",
+      "run": 2,
+      "at": "2026-11-03T02:37:30.364627+00:00",
+      "environment": "local",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 596,
+      "cls": 0,
+      "lcp_entries": 1,
+      "shifts": [],
+      "first_price": "$59.99",
+      "first_price_bottom": 806.90625,
+      "initial_scroll": 0,
+      "horizontal_overflow": false,
+      "title": "Ski & Snowboard Deals | FreshPowder",
+      "window_end": 8737.20000000298,
+      "visible": true,
+      "status": "measured",
+      "scope": "Controlled local captured-content fixture; not production performance"
+    },
+    {
+      "site": "Snow fixture before",
+      "url": "http://127.0.0.1:8768/before.html",
+      "run": 3,
+      "at": "2026-11-03T02:37:39.237050+00:00",
+      "environment": "local",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 788,
+      "cls": 0,
+      "lcp_entries": 1,
+      "shifts": [],
+      "first_price": "$59.99",
+      "first_price_bottom": 806.90625,
+      "initial_scroll": 0,
+      "horizontal_overflow": false,
+      "title": "Ski & Snowboard Deals | FreshPowder",
+      "window_end": 8861.5,
+      "visible": true,
+      "status": "measured",
+      "scope": "Controlled local captured-content fixture; not production performance"
+    },
+    {
+      "site": "Snow fixture after",
+      "url": "http://127.0.0.1:8768/after.html",
+      "run": 3,
+      "at": "2026-11-03T02:37:48.225890+00:00",
+      "environment": "local",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 612,
+      "cls": 0,
+      "lcp_entries": 1,
+      "shifts": [],
+      "first_price": "$59.99",
+      "first_price_bottom": 806.90625,
+      "initial_scroll": 0,
+      "horizontal_overflow": false,
+      "title": "Ski & Snowboard Deals | FreshPowder",
+      "window_end": 8730.79999999702,
+      "visible": true,
+      "status": "measured",
+      "scope": "Controlled local captured-content fixture; not production performance"
+    }
+  ],
+  "builds": {
+    "cycling": {
+      "catalog": "cycling",
+      "brand": "Big Ring",
+      "built_at": "2026-11-03T02:47:49.103420+00:00",
+      "snapshot_sha256": "199b9dab91108bb3d55e7de8af0225b0d2be0351ae0ed70772cdadecd93d1223",
+      "public_url": null,
+      "matching_deals": 1142,
+      "sources": [
+        {
+          "name": "Bicycle Warehouse",
+          "observed_at": "2026-11-03T01:45:30.507464+00:00",
+          "listings": 72
+        },
+        {
+          "name": "BikesOnline",
+          "observed_at": "2026-11-03T01:45:36.045014+00:00",
+          "listings": 99
+        },
+        {
+          "name": "Mike's Bikes",
+          "observed_at": "2026-11-03T01:45:55.370757+00:00",
+          "listings": 165
+        },
+        {
+          "name": "ERIK’S Bike Shop",
+          "observed_at": "2026-11-03T01:46:01.392739+00:00",
+          "listings": 109
+        },
+        {
+          "name": "Pro Bike Supply",
+          "observed_at": "2026-11-03T02:46:33.584925+00:00",
+          "listings": 366
+        },
+        {
+          "name": "Contender Bicycles",
+          "observed_at": "2026-11-03T01:46:25.464642+00:00",
+          "listings": 182
+        },
+        {
+          "name": "Cambria Bike",
+          "observed_at": "2026-11-03T01:46:37.160539+00:00",
+          "listings": 24
+        },
+        {
+          "name": "INTENSE",
+          "observed_at": "2026-11-03T01:47:02.115210+00:00",
+          "listings": 4
+        },
+        {
+          "name": "Bike Mart",
+          "observed_at": "2026-11-03T02:46:48.448554+00:00",
+          "listings": 74
+        },
+        {
+          "name": "First Stop Board Barn",
+          "observed_at": "2026-11-03T01:47:23.093511+00:00",
+          "listings": 1
+        },
+        {
+          "name": "Colorado Cyclist",
+          "observed_at": "2026-11-03T01:47:27.830066+00:00",
+          "listings": 61
+        },
+        {
+          "name": "Planet Cyclery",
+          "observed_at": "2026-11-03T01:47:37.571071+00:00",
+          "listings": 32
+        },
+        {
+          "name": "Worldwide Cyclery",
+          "observed_at": "2026-11-03T01:47:48.072144+00:00",
+          "listings": 4
+        },
+        {
+          "name": "State Bicycle Co.",
+          "observed_at": "2026-11-03T01:50:34.090987+00:00",
+          "listings": 1
+        },
+        {
+          "name": "The Path Bike Shop",
+          "observed_at": "2026-11-03T01:48:06.792382+00:00",
+          "listings": 34
+        },
+        {
+          "name": "Fanatik Bike Co.",
+          "observed_at": "2026-11-03T01:48:11.673885+00:00",
+          "listings": 24
+        }
+      ]
+    },
+    "tools": {
+      "catalog": "tools",
+      "brand": "Bench Drop",
+      "built_at": "2026-11-03T02:47:49.211944+00:00",
+      "snapshot_sha256": "cc3b085fcf1775d728c0f5495fd9949df673bcbe384b959475d8a9c29293b3ae",
+      "public_url": null,
+      "matching_deals": 351,
+      "sources": [
+        {
+          "name": "Tool Nut",
+          "observed_at": "2026-11-03T02:18:44.159819+00:00",
+          "listings": 158
+        },
+        {
+          "name": "Woodcraft",
+          "observed_at": "2026-11-03T02:20:45.151477+00:00",
+          "listings": 77
+        },
+        {
+          "name": "Craft Supplies USA",
+          "observed_at": "2026-11-03T02:21:17.658265+00:00",
+          "listings": 1
+        },
+        {
+          "name": "Harvey Woodworking",
+          "observed_at": "2026-11-03T02:21:22.519933+00:00",
+          "listings": 11
+        },
+        {
+          "name": "WEN",
+          "observed_at": "2026-11-03T02:21:27.405378+00:00",
+          "listings": 8
+        },
+        {
+          "name": "Factory Direct Supply",
+          "observed_at": "2026-11-03T02:21:32.357335+00:00",
+          "listings": 6
+        },
+        {
+          "name": "Grizzly Industrial",
+          "observed_at": "2026-11-03T02:22:10.048502+00:00",
+          "listings": 41
+        },
+        {
+          "name": "Max Warehouse",
+          "observed_at": "2026-11-03T02:24:21.132040+00:00",
+          "listings": 45
+        },
+        {
+          "name": "OakTree Supply",
+          "observed_at": "2026-11-03T02:24:48.729743+00:00",
+          "listings": 84
+        }
+      ]
+    }
+  },
+  "verification": {
+    "cycling": [
+      {
+        "surface": "preview",
+        "health": {
+          "catalog": "cycling",
+          "snapshot_sha256": "199b9dab91108bb3d55e7de8af0225b0d2be0351ae0ed70772cdadecd93d1223",
+          "fresh_sources": 16,
+          "configured_sources": 16,
+          "status": "ready"
+        },
+        "pages_checked": 4
+      },
+      {
+        "surface": "standalone",
+        "health": {
+          "catalog": "cycling",
+          "snapshot_sha256": "199b9dab91108bb3d55e7de8af0225b0d2be0351ae0ed70772cdadecd93d1223",
+          "fresh_sources": 16,
+          "configured_sources": 16,
+          "status": "ready"
+        },
+        "pages_checked": 2
+      }
+    ],
+    "tools": [
+      {
+        "surface": "preview",
+        "health": {
+          "catalog": "tools",
+          "snapshot_sha256": "cc3b085fcf1775d728c0f5495fd9949df673bcbe384b959475d8a9c29293b3ae",
+          "fresh_sources": 9,
+          "configured_sources": 9,
+          "status": "ready"
+        },
+        "pages_checked": 4
+      },
+      {
+        "surface": "standalone",
+        "health": {
+          "catalog": "tools",
+          "snapshot_sha256": "cc3b085fcf1775d728c0f5495fd9949df673bcbe384b959475d8a9c29293b3ae",
+          "fresh_sources": 9,
+          "configured_sources": 9,
+          "status": "ready"
+        },
+        "pages_checked": 2
+      }
+    ]
+  },
+  "condition_review": {
+    "excluded": "Two explicitly blemished snow products excluded from the comparison; pending snow code excludes at ingestion and snapshot repair.",
+    "preserved": "Marker Kingpin 10 Demo is an adjustable binding design; Demo alone is not proof of used condition.",
+    "sources": [
+      "https://www.evo.com/pages/new-blem-condition",
+      "https://www.evo.com/products/228438-marker-kingpin-10-demo-alpine-touring-ski-bindings"
+    ]
+  },
+  "frame_size_review": {
+    "retailer": "Pro Bike Supply",
+    "source": "https://www.probikesupply.com/products/2025-yeti-sb160-carbon-series-29-complete-mountain-bike-c2-90-transmission-build.js?currency=USD",
+    "response_sha256": "ddd9fa509d796c7a95801591acab0d6028158da8c6b1bc39b5b33a47ac10dcc1",
+    "issue": "Retailer Size values are Turquoise/Raw Carbon and Color values are real sizes. Keep raw options; withhold mislabeled size values from exact-fit filters. Bike Mart wheel-only values also withheld.",
+    "refresh_receipts": [
+      [
+        {
+          "source": "Pro Bike Supply",
+          "status": "complete",
+          "errors": 0,
+          "pages": 3,
+          "collections": [
+            {
+              "url": "https://www.probikesupply.com/collections/on-sale-bikes-frames?currency=USD",
+              "pages": 3,
+              "products": 488,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 488,
+          "accepted_products": 366
+        }
+      ],
+      [
+        {
+          "source": "Bike Mart",
+          "status": "complete",
+          "errors": 0,
+          "pages": 3,
+          "collections": [
+            {
+              "url": "https://www.bikemart.com/collections/bikes?currency=USD",
+              "pages": 3,
+              "products": 81,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 81,
+          "accepted_products": 74
+        }
+      ]
+    ]
+  },
+  "historical_evidence": {
+    "cycling_observed_dates": 2,
+    "tools_observed_dates": 2,
+    "thirty_day_coverage_percent": 0,
+    "note": "Two actual UTC dates in the local snapshots, not 30 days or evidence of a deployed schedule."
+  },
+  "offline_tests": 405,
+  "limits": [
+    "Merchant API agreement is not checkout or US delivery verification.",
+    "Source-reported stock and compare-at prices do not prove historical selling prices.",
+    "Competitor candidate counts lack exact-variant merchant confirmation.",
+    "Controlled local rendering measurements are not production gains.",
+    "Mobile observations cover a bounded lab window, not field Core Web Vitals.",
+    "Daily Tool Drops initial selector attempt was inconclusive; its later three successful cold runs are recorded separately."
+  ],
+  "new_tools_admission": [
+    {
+      "name": "DeWALT 20V MAX XR Brushless Cordless Top-Handle Jigsaw, Tool Only (PROMO DCS334B)",
+      "store": "Tool Nut",
+      "offer": {
+        "variant_key": "53393178624294",
+        "url": "https://www.toolnut.com/products/dewalt-dcs334b-20v-max-xr-brushless-cordless-top-handle-jigsaw-tool-only-promo?currency=USD&variant=53393178624294",
+        "current_price": 129.0,
+        "original_price": 239.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/dcs334n_2_2_220158ab-872f-4429-8431-326a4a22d7f1.jpg?v=1778684330",
+        "reference_basis": "retailer_compare_at",
+        "discount": 46.0,
+        "savings": 110.0
+      },
+      "checked_at": "2026-11-03T02:26:48.824125+00:00",
+      "evidence_url": "https://www.toolnut.com/products/dewalt-dcs334b-20v-max-xr-brushless-cordless-top-handle-jigsaw-tool-only-promo.js?currency=USD",
+      "response_sha256": "2c35f51b6e23ecf06a37394e6b0990ad3086f342f7e51ab7783ce5e0c957af5b",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "DeWALT 20V MAX XR Brushless Cordless Top-Handle Jigsaw, Tool Only (PROMO DCS334B)",
+        "variant": "53393178624294",
+        "sku": "PROMO DCS334B",
+        "price_minor": 12900,
+        "reference_minor": 23900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "DeWALT 20V MAX XR Low-Vibration Oscillating Multi-Tool, Tool Only (DCS359B)",
+      "store": "Tool Nut",
+      "offer": {
+        "variant_key": "53550532919590",
+        "url": "https://www.toolnut.com/products/dewalt-20v-max-xr-r-oscillating-multi-tool-tool-only-dcs359b?currency=USD&variant=53550532919590",
+        "current_price": 229.0,
+        "original_price": 249.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/df55e3e75554f67653a5187493e6ebe7cf3f97c1.jpg?v=1785524261",
+        "reference_basis": "retailer_compare_at",
+        "discount": 8.0,
+        "savings": 20.0
+      },
+      "checked_at": "2026-11-03T02:26:55.159146+00:00",
+      "evidence_url": "https://www.toolnut.com/products/dewalt-20v-max-xr-r-oscillating-multi-tool-tool-only-dcs359b.js?currency=USD",
+      "response_sha256": "241ebeb2598060eefa0cc6dbf6e096c05fa40b372da55913ec2164d5225122c7",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "DeWALT 20V MAX XR Low-Vibration Oscillating Multi-Tool, Tool Only (DCS359B)",
+        "variant": "53550532919590",
+        "sku": "DCS359B",
+        "price_minor": 22900,
+        "reference_minor": 24900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "20V Max XR Jigsaw Kit (5.0Ah)",
+      "store": "Grizzly Industrial",
+      "offer": {
+        "variant_key": "T32331",
+        "url": "https://www.grizzly.com/products/dewalt-20v-max-xr-jigsaw-kit-5.0ah/t32331",
+        "current_price": 379.0,
+        "original_price": 399.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn3.grizzly.com/pics/jpeg288/t/t32331-89af1f0dc210760ce957b86184ac19c0.jpg",
+        "reference_basis": "retailer_compare_at",
+        "discount": 5.0,
+        "savings": 20.0
+      },
+      "checked_at": "2026-11-03T02:26:58.317037+00:00",
+      "evidence_url": "https://www.grizzly.com/products/dewalt-20v-max-xr-jigsaw-kit-5.0ah/t32331",
+      "response_sha256": "785baf26ddb4ee054e18fee16aec8b8299974c98ccd34f5a44a76e51c7756c32",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "destination": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "stock": true,
+        "condition": true,
+        "options": true
+      },
+      "merchant": {
+        "sku": "T32331",
+        "price": 379,
+        "reference": 399,
+        "currency": "USD",
+        "availability": "https://schema.org/InStock",
+        "condition": "https://schema.org/NewCondition"
+      }
+    },
+    {
+      "name": "12-1/2\" Planer w/ 3 Knives",
+      "store": "Grizzly Industrial",
+      "offer": {
+        "variant_key": "H5341",
+        "url": "https://www.grizzly.com/products/dewalt-12-1-2-planer-w-3-knives/h5341",
+        "current_price": 599.0,
+        "original_price": 629.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn9.grizzly.com/pics/jpeg288/h/h5341-0860384ccac5d96cea5320365a6aaa11.jpg",
+        "reference_basis": "retailer_compare_at",
+        "discount": 4.8,
+        "savings": 30.0
+      },
+      "checked_at": "2026-11-03T02:27:01.632328+00:00",
+      "evidence_url": "https://www.grizzly.com/products/dewalt-12-1-2-planer-w-3-knives/h5341",
+      "response_sha256": "ded84395d83a8618a2fb1fac07759551a2748e822a14085086735a925555d5ca",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "destination": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "stock": true,
+        "condition": true,
+        "options": true
+      },
+      "merchant": {
+        "sku": "H5341",
+        "price": 599,
+        "reference": 629,
+        "currency": "USD",
+        "availability": "https://schema.org/InStock",
+        "condition": "https://schema.org/NewCondition"
+      }
+    }
+  ]
+}
