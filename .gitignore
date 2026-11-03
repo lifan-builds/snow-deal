@@ -26,6 +26,8 @@ Thumbs.db
 .env.*
 cookies.json
 public/static/
+.local/catalog-preview/
+.local/source-expansion/
 
 # Claude Code
 .claude/settings.local.json

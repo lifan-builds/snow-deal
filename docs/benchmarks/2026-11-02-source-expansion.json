@@ -1,0 +1,1591 @@
+{
+  "observed_at": "2026-11-03T00:58:53.887833+00:00",
+  "catalogs": {
+    "cycling": {
+      "before": {
+        "retailers": 3,
+        "eligible_listings": 309,
+        "deep_listings": 32
+      },
+      "after": {
+        "retailers": 7,
+        "eligible_listings": 956,
+        "deep_listings": 73
+      },
+      "added_sources": [
+        {
+          "name": "ERIK\u2019S Bike Shop",
+          "observed_at": "2026-11-03T00:49:32.821038+00:00",
+          "retailers": 1,
+          "eligible_listings": 92,
+          "deep_listings": 5,
+          "collections": [
+            {
+              "url": "https://www.eriksbikeshop.com/collections/cycling-bicycles?currency=USD",
+              "pages": 2,
+              "products": 125,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "merchant_checks": [
+            {
+              "name": "S-Works Diverge STR Road Bike Frameset",
+              "store": "ERIK\u2019S Bike Shop",
+              "offer": {
+                "variant_key": "49445702140118",
+                "url": "https://www.eriksbikeshop.com/products/s-works-diverge-str-road-bike-frameset-pr5a17935?currency=USD&variant=49445702140118",
+                "current_price": 1999.99,
+                "original_price": 5499.99,
+                "size": "58CM",
+                "options": "SATIN FOREST GREEN/DARK MOSS GREEN/BLACK PEARL / 58CM",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0697/5252/0918/files/s-works-diverge-str-road-bike-frameset_forest-green_pr5a17935_hero.jpg?v=1784585310",
+                "reference_basis": "retailer_compare_at",
+                "discount": 63.6,
+                "savings": 3500.0
+              },
+              "checked_at": "2026-11-03T00:41:46.990108+00:00",
+              "evidence_url": "https://www.eriksbikeshop.com/products/s-works-diverge-str-road-bike-frameset-pr5a17935.js?currency=USD",
+              "response_sha256": "f02acb32aa53e205d1e1cc020d903d47e1cb62c38f1f9709d1184645429a0836",
+              "status": "match",
+              "checks": {
+                "identity": true,
+                "currency": true,
+                "price": true,
+                "reference": true,
+                "options": true,
+                "stock": true
+              },
+              "merchant": {
+                "title": "S-Works Diverge STR Road Bike Frameset",
+                "variant": "49445702140118",
+                "sku": "EK5A48238",
+                "price_minor": 199999,
+                "reference_minor": 549999,
+                "currency": "USD",
+                "options": "SATIN FOREST GREEN/DARK MOSS GREEN/BLACK PEARL / 58CM",
+                "raw_options": [
+                  "SATIN FOREST GREEN/DARK MOSS GREEN/BLACK PEARL",
+                  "58CM"
+                ],
+                "option_definitions": [
+                  {
+                    "name": "Color",
+                    "position": 1,
+                    "values": [
+                      "SATIN FOREST GREEN/DARK MOSS GREEN/BLACK PEARL"
+                    ]
+                  },
+                  {
+                    "name": "Size",
+                    "position": 2,
+                    "values": [
+                      "58CM"
+                    ]
+                  }
+                ],
+                "available": true
+              }
+            },
+            {
+              "name": "Specialized Turbo Vado SL 5.0 EQ Electric Bike",
+              "store": "ERIK\u2019S Bike Shop",
+              "offer": {
+                "variant_key": "46161239539926",
+                "url": "https://www.eriksbikeshop.com/products/specialized-2023-turbo-vado-sl-5-0-eq-electric-bike-pr5a12693?currency=USD&variant=46161239539926",
+                "current_price": 1999.99,
+                "original_price": 5249.99,
+                "size": "Xl",
+                "options": "Brushed Aluminum Black Relfective / Xl",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0697/5252/0918/files/314284.jpg?v=1726266600",
+                "reference_basis": "retailer_compare_at",
+                "discount": 61.9,
+                "savings": 3250.0
+              },
+              "checked_at": "2026-11-03T00:41:53.361780+00:00",
+              "evidence_url": "https://www.eriksbikeshop.com/products/specialized-2023-turbo-vado-sl-5-0-eq-electric-bike-pr5a12693.js?currency=USD",
+              "response_sha256": "a72a62aaf9bd396c3cc00c2316c5a7d8c85120a0f585d9779e35a89a1bb5b6c9",
+              "status": "match",
+              "checks": {
+                "identity": true,
+                "currency": true,
+                "price": true,
+                "reference": true,
+                "options": true,
+                "stock": true
+              },
+              "merchant": {
+                "title": "Specialized Turbo Vado SL 5.0 EQ Electric Bike",
+                "variant": "46161239539926",
+                "sku": "EK5A24085",
+                "price_minor": 199999,
+                "reference_minor": 524999,
+                "currency": "USD",
+                "options": "Brushed Aluminum Black Relfective / Xl",
+                "raw_options": [
+                  "Brushed Aluminum Black Relfective",
+                  "Xl"
+                ],
+                "option_definitions": [
+                  {
+                    "name": "Color",
+                    "position": 1,
+                    "values": [
+                      "Brushed Aluminum Black Relfective"
+                    ]
+                  },
+                  {
+                    "name": "Size",
+                    "position": 2,
+                    "values": [
+                      "Xl"
+                    ]
+                  }
+                ],
+                "available": true
+              }
+            },
+            {
+              "name": "BMC 257 AMP AL Speed Electric Bike",
+              "store": "ERIK\u2019S Bike Shop",
+              "offer": {
+                "variant_key": "47214364655830",
+                "url": "https://www.eriksbikeshop.com/products/bmc-2024-257-amp-al-speed-electric-bike-pr5a26673?currency=USD&variant=47214364655830",
+                "current_price": 2199.99,
+                "original_price": 4999.0,
+                "size": "S",
+                "options": "Powder Anthracite / S",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0697/5252/0918/files/bmc-257-amp-al-speed-electric-bike_pr5a26673_989e.jpg?v=1756454644",
+                "reference_basis": "retailer_compare_at",
+                "discount": 56.0,
+                "savings": 2799.01
+              },
+              "checked_at": "2026-11-03T00:41:56.505330+00:00",
+              "evidence_url": "https://www.eriksbikeshop.com/products/bmc-2024-257-amp-al-speed-electric-bike-pr5a26673.js?currency=USD",
+              "response_sha256": "12c9cb54e5667f878b1c72cfdb0b009eeaef4b8f84205b1a74ff878aa88252de",
+              "status": "match",
+              "checks": {
+                "identity": true,
+                "currency": true,
+                "price": true,
+                "reference": true,
+                "options": true,
+                "stock": true
+              },
+              "merchant": {
+                "title": "BMC 257 AMP AL Speed Electric Bike",
+                "variant": "47214364655830",
+                "sku": "EK5A95454",
+                "price_minor": 219999,
+                "reference_minor": 499900,
+                "currency": "USD",
+                "options": "Powder Anthracite / S",
+                "raw_options": [
+                  "Powder Anthracite",
+                  "S"
+                ],
+                "option_definitions": [
+                  {
+                    "name": "Color",
+                    "position": 1,
+                    "values": [
+                      "Powder Anthracite"
+                    ]
+                  },
+                  {
+                    "name": "Size",
+                    "position": 2,
+                    "values": [
+                      "S",
+                      "Xl",
+                      "L",
+                      "M"
+                    ]
+                  }
+                ],
+                "available": true
+              }
+            }
+          ],
+          "page_review": [
+            {
+              "url": "https://www.eriksbikeshop.com/products/s-works-diverge-str-road-bike-frameset-pr5a17935?currency=USD&variant=49445702140118",
+              "status": 200
+            }
+          ]
+        },
+        {
+          "name": "Pro Bike Supply",
+          "observed_at": "2026-11-03T00:49:42.160995+00:00",
+          "retailers": 1,
+          "eligible_listings": 357,
+          "deep_listings": 13,
+          "collections": [
+            {
+              "url": "https://www.probikesupply.com/collections/on-sale-bikes-frames?currency=USD",
+              "pages": 3,
+              "products": 488,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "merchant_checks": [
+            {
+              "name": "S-Works Stumpjumper Frameset",
+              "store": "Pro Bike Supply",
+              "offer": {
+                "variant_key": "42349827096631",
+                "url": "https://www.probikesupply.com/products/specialized-stumpjumper-s-works-frm-frame-satin-dusty-blue-pearl-black-carbon-s3?currency=USD&variant=42349827096631",
+                "current_price": 1199.99,
+                "original_price": 2999.99,
+                "size": "S1",
+                "options": "Satin Dusty Blue Pearl / Black / Carbon / S1",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0892/2046/files/73322-01_SJ-SW-FRM-DSTBLU-BLK-CARB_HERO_7ef87e02-6831-4836-aab8-50e1e8bd65c3.jpg?v=1785786878",
+                "reference_basis": "retailer_compare_at",
+                "discount": 60.0,
+                "savings": 1800.0
+              },
+              "checked_at": "2026-11-03T00:42:03.426734+00:00",
+              "evidence_url": "https://www.probikesupply.com/products/specialized-stumpjumper-s-works-frm-frame-satin-dusty-blue-pearl-black-carbon-s3.js?currency=USD",
+              "response_sha256": "3f2c4a57b820c6aa0574e8c40766a45925bbb98f09944e581db2d0e1eae2ad94",
+              "status": "match",
+              "checks": {
+                "identity": true,
+                "currency": true,
+                "price": true,
+                "reference": true,
+                "options": true,
+                "stock": true
+              },
+              "merchant": {
+                "title": "S-Works Stumpjumper Frameset",
+                "variant": "42349827096631",
+                "sku": "73322-0101",
+                "price_minor": 119999,
+                "reference_minor": 299999,
+                "currency": "USD",
+                "options": "Satin Dusty Blue Pearl / Black / Carbon / S1",
+                "raw_options": [
+                  "Satin Dusty Blue Pearl / Black / Carbon",
+                  "S1"
+                ],
+                "option_definitions": [
+                  {
+                    "name": "Color",
+                    "position": 1,
+                    "values": [
+                      "Satin Dusty Blue Pearl / Black / Carbon"
+                    ]
+                  },
+                  {
+                    "name": "Size",
+                    "position": 2,
+                    "values": [
+                      "S1",
+                      "S2",
+                      "S3",
+                      "S4",
+                      "S5",
+                      "S6"
+                    ]
+                  }
+                ],
+                "available": true
+              }
+            },
+            {
+              "name": "Stumpjumper Frameset",
+              "store": "Pro Bike Supply",
+              "offer": {
+                "variant_key": "42349599064119",
+                "url": "https://www.probikesupply.com/products/2022-specialized-stumpjumper-29-carbon-frameset-s2-satin-copper-black?currency=USD&variant=42349599064119",
+                "current_price": 1079.99,
+                "original_price": 2699.99,
+                "size": "S1",
+                "options": "Satin Copper / Black / S1",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0892/2046/files/73322-70_SJ-FRM-COP-BLK_HERO_0823d85c-cf72-425b-9853-0cf8271e4b84.jpg?v=1785786351",
+                "reference_basis": "retailer_compare_at",
+                "discount": 60.0,
+                "savings": 1620.0
+              },
+              "checked_at": "2026-11-03T00:42:09.716133+00:00",
+              "evidence_url": "https://www.probikesupply.com/products/2022-specialized-stumpjumper-29-carbon-frameset-s2-satin-copper-black.js?currency=USD",
+              "response_sha256": "e7f3a74792b0d111c81b836f582ed027879b9a9a98404afe0b6f6482428df651",
+              "status": "match",
+              "checks": {
+                "identity": true,
+                "currency": true,
+                "price": true,
+                "reference": true,
+                "options": true,
+                "stock": true
+              },
+              "merchant": {
+                "title": "Stumpjumper Frameset",
+                "variant": "42349599064119",
+                "sku": "73322-7001",
+                "price_minor": 107999,
+                "reference_minor": 269999,
+                "currency": "USD",
+                "options": "Satin Copper / Black / S1",
+                "raw_options": [
+                  "Satin Copper / Black",
+                  "S1"
+                ],
+                "option_definitions": [
+                  {
+                    "name": "Color",
+                    "position": 1,
+                    "values": [
+                      "Satin Copper / Black"
+                    ]
+                  },
+                  {
+                    "name": "Size",
+                    "position": 2,
+                    "values": [
+                      "S1",
+                      "S2",
+                      "S3",
+                      "S4",
+                      "S5",
+                      "S6"
+                    ]
+                  }
+                ],
+                "available": true
+              }
+            },
+            {
+              "name": "Transition Relay Carbon GX AXS 2023",
+              "store": "Pro Bike Supply",
+              "offer": {
+                "variant_key": "42446953513015",
+                "url": "https://www.probikesupply.com/products/transition-relay-carbon-gx-axs-2023?currency=USD&variant=42446953513015",
+                "current_price": 4999.0,
+                "original_price": 9999.0,
+                "size": "XX-Large",
+                "options": "Oxide Grey / XX-Large",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0892/2046/files/C3_Relay_GX_Grey_3f3e67ae-6b29-4e82-afc4-830f2d538a04.avif?v=1789590714",
+                "reference_basis": "retailer_compare_at",
+                "discount": 50.0,
+                "savings": 5000.0
+              },
+              "checked_at": "2026-11-03T00:42:12.863604+00:00",
+              "evidence_url": "https://www.probikesupply.com/products/transition-relay-carbon-gx-axs-2023.js?currency=USD",
+              "response_sha256": "1cde540005c34d23bd70a9102ffebaac7a8a12e912db08073745df5e8d06d570",
+              "status": "match",
+              "checks": {
+                "identity": true,
+                "currency": true,
+                "price": true,
+                "reference": true,
+                "options": true,
+                "stock": true
+              },
+              "merchant": {
+                "title": "Transition Relay Carbon GX AXS 2023",
+                "variant": "42446953513015",
+                "sku": "01.23.11.4934",
+                "price_minor": 499900,
+                "reference_minor": 999900,
+                "currency": "USD",
+                "options": "Oxide Grey / XX-Large",
+                "raw_options": [
+                  "Oxide Grey",
+                  "XX-Large"
+                ],
+                "option_definitions": [
+                  {
+                    "name": "Color",
+                    "position": 1,
+                    "values": [
+                      "Oxide Grey",
+                      "TR Blue"
+                    ]
+                  },
+                  {
+                    "name": "Size",
+                    "position": 2,
+                    "values": [
+                      "XX-Large",
+                      "X-Large"
+                    ]
+                  }
+                ],
+                "available": true
+              }
+            }
+          ],
+          "page_review": [
+            {
+              "url": "https://www.probikesupply.com/products/specialized-stumpjumper-s-works-frm-frame-satin-dusty-blue-pearl-black-carbon-s3?currency=USD&variant=42349827096631",
+              "status": 200
+            }
+          ]
+        },
+        {
+          "name": "Contender Bicycles",
+          "observed_at": "2026-11-03T00:49:57.178238+00:00",
+          "retailers": 1,
+          "eligible_listings": 182,
+          "deep_listings": 23,
+          "collections": [
+            {
+              "url": "https://contenderbicycles.com/collections/sale?currency=USD",
+              "pages": 2,
+              "products": 354,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "merchant_checks": [
+            {
+              "name": "OPEN UPPER Frameset",
+              "store": "Contender Bicycles",
+              "offer": {
+                "variant_key": "37271992533160",
+                "url": "https://contenderbicycles.com/products/open-upper-frameset?currency=USD&variant=37271992533160",
+                "current_price": 1895.99,
+                "original_price": 4500.0,
+                "size": "S",
+                "options": "Ready To Paint / S",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/upper-r2p-3.jpg?v=1685747112",
+                "reference_basis": "retailer_compare_at",
+                "discount": 57.9,
+                "savings": 2604.01
+              },
+              "checked_at": "2026-11-03T00:42:19.774089+00:00",
+              "evidence_url": "https://contenderbicycles.com/products/open-upper-frameset.js?currency=USD",
+              "response_sha256": "26e833f6a781882281c454753452a4d23c1ea7ff91fb5436cbb6428afafd3645",
+              "status": "match",
+              "checks": {
+                "identity": true,
+                "currency": true,
+                "price": true,
+                "reference": true,
+                "options": true,
+                "stock": true
+              },
+              "merchant": {
+                "title": "OPEN UPPER Frameset",
+                "variant": "37271992533160",
+                "sku": "210000106322",
+                "price_minor": 189599,
+                "reference_minor": 450000,
+                "currency": "USD",
+                "options": "Ready To Paint / S",
+                "raw_options": [
+                  "Ready To Paint",
+                  "S"
+                ],
+                "option_definitions": [
+                  {
+                    "name": "Color",
+                    "position": 1,
+                    "values": [
+                      "Black",
+                      "Ready To Paint"
+                    ]
+                  },
+                  {
+                    "name": "Size",
+                    "position": 2,
+                    "values": [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "M #MWS Options 11",
+                      "S #MWS Options 5",
+                      "S #MWS Options 13",
+                      "S #MWS Options 14",
+                      "S #MWS Options 15",
+                      "S #MWS Options 6"
+                    ]
+                  }
+                ],
+                "available": true
+              }
+            },
+            {
+              "name": "OPEN WIDE Frameset",
+              "store": "Contender Bicycles",
+              "offer": {
+                "variant_key": "37272021467304",
+                "url": "https://contenderbicycles.com/products/open-wide-frameset?currency=USD&variant=37272021467304",
+                "current_price": 1495.99,
+                "original_price": 3500.0,
+                "size": "S",
+                "options": "Ready To Paint / S",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/wide-r2p.jpg?v=1685747133",
+                "reference_basis": "retailer_compare_at",
+                "discount": 57.3,
+                "savings": 2004.01
+              },
+              "checked_at": "2026-11-03T00:42:26.048801+00:00",
+              "evidence_url": "https://contenderbicycles.com/products/open-wide-frameset.js?currency=USD",
+              "response_sha256": "85802ec97bede9d08806326d827244ac9f2e36a5d966b320bbfd9c695628a1ee",
+              "status": "match",
+              "checks": {
+                "identity": true,
+                "currency": true,
+                "price": true,
+                "reference": true,
+                "options": true,
+                "stock": true
+              },
+              "merchant": {
+                "title": "OPEN WIDE Frameset",
+                "variant": "37272021467304",
+                "sku": "210000108579",
+                "price_minor": 149599,
+                "reference_minor": 350000,
+                "currency": "USD",
+                "options": "Ready To Paint / S",
+                "raw_options": [
+                  "Ready To Paint",
+                  "S"
+                ],
+                "option_definitions": [
+                  {
+                    "name": "Color",
+                    "position": 1,
+                    "values": [
+                      "Turquoise",
+                      "Grey Gloss/Matte",
+                      "Orange",
+                      "Brown",
+                      "Ready To Paint"
+                    ]
+                  },
+                  {
+                    "name": "Size",
+                    "position": 2,
+                    "values": [
+                      "XS",
+                      "S",
+                      "M",
+                      "L",
+                      "XL"
+                    ]
+                  }
+                ],
+                "available": true
+              }
+            },
+            {
+              "name": "OPEN MIND Frameset",
+              "store": "Contender Bicycles",
+              "offer": {
+                "variant_key": "37272023204008",
+                "url": "https://contenderbicycles.com/products/open-mind-frameset?currency=USD&variant=37272023204008",
+                "current_price": 1699.0,
+                "original_price": 3900.0,
+                "size": "L",
+                "options": "Midnight Blue / L",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/OPEN_MIND_Frameset_Midnight_Blue_Contender_Bicycles.jpg?v=1767113515",
+                "reference_basis": "retailer_compare_at",
+                "discount": 56.4,
+                "savings": 2201.0
+              },
+              "checked_at": "2026-11-03T00:42:29.166320+00:00",
+              "evidence_url": "https://contenderbicycles.com/products/open-mind-frameset.js?currency=USD",
+              "response_sha256": "1b9f08e33ae56142e1382428913c481d26836ea2329ffb856128e2c6f655b03c",
+              "status": "match",
+              "checks": {
+                "identity": true,
+                "currency": true,
+                "price": true,
+                "reference": true,
+                "options": true,
+                "stock": true
+              },
+              "merchant": {
+                "title": "OPEN MIND Frameset",
+                "variant": "37272023204008",
+                "sku": "210000111794",
+                "price_minor": 169900,
+                "reference_minor": 390000,
+                "currency": "USD",
+                "options": "Midnight Blue / L",
+                "raw_options": [
+                  "Midnight Blue",
+                  "L"
+                ],
+                "option_definitions": [
+                  {
+                    "name": "Color",
+                    "position": 1,
+                    "values": [
+                      "Midnight Blue",
+                      "Grey / Matte Red",
+                      "Ready To Paint"
+                    ]
+                  },
+                  {
+                    "name": "Size",
+                    "position": 2,
+                    "values": [
+                      "S",
+                      "M",
+                      "L",
+                      "XL"
+                    ]
+                  }
+                ],
+                "available": true
+              }
+            }
+          ],
+          "page_review": [
+            {
+              "url": "https://contenderbicycles.com/products/open-upper-frameset?currency=USD&variant=37271992533160",
+              "status": 429
+            }
+          ]
+        },
+        {
+          "name": "Cambria Bike",
+          "observed_at": "2026-11-03T00:50:08.868259+00:00",
+          "retailers": 1,
+          "eligible_listings": 16,
+          "deep_listings": 0,
+          "collections": [
+            {
+              "url": "https://cambriabike.com/collections/mtb-bikes?currency=USD",
+              "pages": 4,
+              "products": 26,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://cambriabike.com/collections/mtb-frames?currency=USD",
+              "pages": 1,
+              "products": 6,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "merchant_checks": [
+            {
+              "name": "Kona Process 153 DL 29 - Jade Green - 2025",
+              "store": "Cambria Bike",
+              "offer": {
+                "variant_key": "43739517190326",
+                "url": "https://cambriabike.com/products/kona-process-153-dl-29-jade-green-2025?currency=USD&variant=43739517190326",
+                "current_price": 2599.99,
+                "original_price": 3599.0,
+                "size": "X-Large",
+                "options": "Jade Green / X-Large",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0032/9023/4992/files/KonaProcess153DL29-JadeGreen-2025.jpg?v=1741340036",
+                "reference_basis": "retailer_compare_at",
+                "discount": 27.8,
+                "savings": 999.01
+              },
+              "checked_at": "2026-11-03T00:51:31.498491+00:00",
+              "evidence_url": "https://cambriabike.com/products/kona-process-153-dl-29-jade-green-2025.js?currency=USD",
+              "response_sha256": "0fa9f9b17534f269a53ec9d592999bb187fb55104a8b9970b3abb33be02b68be",
+              "status": "match",
+              "checks": {
+                "identity": true,
+                "currency": true,
+                "price": true,
+                "reference": true,
+                "options": true,
+                "stock": true
+              },
+              "merchant": {
+                "title": "Kona Process 153 DL 29 - Jade Green - 2025",
+                "variant": "43739517190326",
+                "sku": "GM012225-28",
+                "price_minor": 259999,
+                "reference_minor": 359900,
+                "currency": "USD",
+                "options": "Jade Green / X-Large",
+                "raw_options": [
+                  "Jade Green",
+                  "X-Large"
+                ],
+                "option_definitions": [
+                  {
+                    "name": "Color",
+                    "position": 1,
+                    "values": [
+                      "Jade Green"
+                    ]
+                  },
+                  {
+                    "name": "Size",
+                    "position": 2,
+                    "values": [
+                      "Small",
+                      "Medium",
+                      "Large",
+                      "X-Large"
+                    ]
+                  }
+                ],
+                "available": true
+              }
+            },
+            {
+              "name": "Kona Process X 29 - Blue - 2025",
+              "store": "Cambria Bike",
+              "offer": {
+                "variant_key": "43739516600502",
+                "url": "https://cambriabike.com/products/kona-process-x-29-blue-2025?currency=USD&variant=43739516600502",
+                "current_price": 2999.99,
+                "original_price": 4099.0,
+                "size": "Large",
+                "options": "Blue / Large",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0032/9023/4992/files/my23_process_x.webp?v=1737628340",
+                "reference_basis": "retailer_compare_at",
+                "discount": 26.8,
+                "savings": 1099.01
+              },
+              "checked_at": "2026-11-03T00:51:37.916721+00:00",
+              "evidence_url": "https://cambriabike.com/products/kona-process-x-29-blue-2025.js?currency=USD",
+              "response_sha256": "b87562c9a8a05f788aecddf5b168be5894caf3e9b342ba53194304d2cd96b859",
+              "status": "match",
+              "checks": {
+                "identity": true,
+                "currency": true,
+                "price": true,
+                "reference": true,
+                "options": true,
+                "stock": true
+              },
+              "merchant": {
+                "title": "Kona Process X 29 - Blue - 2025",
+                "variant": "43739516600502",
+                "sku": "GM012225-03",
+                "price_minor": 299999,
+                "reference_minor": 409900,
+                "currency": "USD",
+                "options": "Blue / Large",
+                "raw_options": [
+                  "Blue",
+                  "Large"
+                ],
+                "option_definitions": [
+                  {
+                    "name": "Color",
+                    "position": 1,
+                    "values": [
+                      "Blue"
+                    ]
+                  },
+                  {
+                    "name": "Size",
+                    "position": 2,
+                    "values": [
+                      "Small",
+                      "Medium",
+                      "Large",
+                      "X-Large"
+                    ]
+                  }
+                ],
+                "available": true
+              }
+            },
+            {
+              "name": "Santa Cruz Megatower Carbon 29 - GX AXS - Matt Black - 2025",
+              "store": "Cambria Bike",
+              "offer": {
+                "variant_key": "43376945430710",
+                "url": "https://cambriabike.com/products/santa-cruz-megatower-carbon-29-gx-axs-matt-black-2025?currency=USD&variant=43376945430710",
+                "current_price": 5799.0,
+                "original_price": 7249.0,
+                "size": "Large",
+                "options": "Matt Black / Large",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0032/9023/4992/files/SantaCruzMegatowerCarbon29-GXAXS-MattBlack-2025.jpg?v=1722506352",
+                "reference_basis": "retailer_compare_at",
+                "discount": 20.0,
+                "savings": 1450.0
+              },
+              "checked_at": "2026-11-03T00:51:41.063732+00:00",
+              "evidence_url": "https://cambriabike.com/products/santa-cruz-megatower-carbon-29-gx-axs-matt-black-2025.js?currency=USD",
+              "response_sha256": "a70754d77701437758ac837ed08a5d5f1f09e19922dd68dce7d38e6082c2b492",
+              "status": "match",
+              "checks": {
+                "identity": true,
+                "currency": true,
+                "price": true,
+                "reference": true,
+                "options": true,
+                "stock": true
+              },
+              "merchant": {
+                "title": "Santa Cruz Megatower Carbon 29 - GX AXS - Matt Black - 2025",
+                "variant": "43376945430710",
+                "sku": "GM073124-76",
+                "price_minor": 579900,
+                "reference_minor": 724900,
+                "currency": "USD",
+                "options": "Matt Black / Large",
+                "raw_options": [
+                  "Matt Black",
+                  "Large"
+                ],
+                "option_definitions": [
+                  {
+                    "name": "Color",
+                    "position": 1,
+                    "values": [
+                      "Matt Black"
+                    ]
+                  },
+                  {
+                    "name": "Size",
+                    "position": 2,
+                    "values": [
+                      "Small",
+                      "Medium",
+                      "Large",
+                      "X-Large",
+                      "2X-Large"
+                    ]
+                  }
+                ],
+                "available": true
+              }
+            }
+          ],
+          "page_review": [
+            {
+              "url": "https://cambriabike.com/products/kona-process-153-dl-29-jade-green-2025?currency=USD&variant=43739517190326",
+              "status": 200
+            }
+          ]
+        }
+      ]
+    },
+    "tools": {
+      "before": {
+        "retailers": 2,
+        "eligible_listings": 175,
+        "deep_listings": 7
+      },
+      "after": {
+        "retailers": 7,
+        "eligible_listings": 213,
+        "deep_listings": 9
+      },
+      "added_sources": [
+        {
+          "name": "Harvey Woodworking",
+          "observed_at": "2026-11-03T00:54:29.956049+00:00",
+          "retailers": 1,
+          "eligible_listings": 11,
+          "deep_listings": 0,
+          "collections": [
+            {
+              "url": "https://www.harveywoodworking.com/collections/all?currency=USD",
+              "pages": 1,
+              "products": 18,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "merchant_checks": [
+            {
+              "name": "ALPHA HW110S-36Pro & 52Pro 10\" 4HP Stain-less Cabinet Saw with Big Eye Rip Fence",
+              "store": "Harvey Woodworking",
+              "offer": {
+                "variant_key": "44661500936410",
+                "url": "https://www.harveywoodworking.com/products/alpha-hw110s-36pro-52pro-10-4hp-stain-less-cabinet-saw-with-big-eye-rip-fence?currency=USD&variant=44661500936410",
+                "current_price": 2999.0,
+                "original_price": 4699.0,
+                "size": "HW110S-36Pro",
+                "options": "HW110S-36Pro",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/1781/9323/files/HW110S-36Pro_Table_Saw.png?v=1768522613",
+                "reference_basis": "retailer_compare_at",
+                "discount": 36.2,
+                "savings": 1700.0
+              },
+              "checked_at": "2026-11-03T00:58:07.726109+00:00",
+              "evidence_url": "https://www.harveywoodworking.com/products/alpha-hw110s-36pro-52pro-10-4hp-stain-less-cabinet-saw-with-big-eye-rip-fence.js?currency=USD",
+              "response_sha256": "2fb8b9e45f6273ceb9506143c94aac84e36ca6dc6514ec44698fea2cc8d4422b",
+              "status": "match",
+              "checks": {
+                "identity": true,
+                "currency": true,
+                "price": true,
+                "reference": true,
+                "options": true,
+                "stock": true
+              },
+              "merchant": {
+                "title": "ALPHA HW110S-36Pro & 52Pro 10\" 4HP Stain-less Cabinet Saw with Big Eye Rip Fence",
+                "variant": "44661500936410",
+                "sku": "804135",
+                "price_minor": 299900,
+                "reference_minor": 469900,
+                "currency": "USD",
+                "options": "HW110S-36Pro",
+                "raw_options": [
+                  "HW110S-36Pro"
+                ],
+                "option_definitions": [
+                  {
+                    "name": "Size",
+                    "position": 1,
+                    "values": [
+                      "HW110S-36Pro",
+                      "HW110S-52Pro"
+                    ]
+                  }
+                ],
+                "available": true
+              }
+            },
+            {
+              "name": "AMBASSADOR C14Pro 3HP 14\" Stain-less Bandsaw",
+              "store": "Harvey Woodworking",
+              "offer": {
+                "variant_key": "45312393609434",
+                "url": "https://www.harveywoodworking.com/products/ambassador-c14pro-3hp-14-stain-less-bandsaw?currency=USD&variant=45312393609434",
+                "current_price": 1899.0,
+                "original_price": 2899.0,
+                "size": null,
+                "options": "",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/1781/9323/files/14-inch-stainless-bandsaw-3hp-ambassador-c14pro.webp?v=1758184108",
+                "reference_basis": "retailer_compare_at",
+                "discount": 34.5,
+                "savings": 1000.0
+              },
+              "checked_at": "2026-11-03T00:58:14.088827+00:00",
+              "evidence_url": "https://www.harveywoodworking.com/products/ambassador-c14pro-3hp-14-stain-less-bandsaw.js?currency=USD",
+              "response_sha256": "c21bea55cbd59b025bae973c657f6aeefce5287517b0796fd5c54d7042e3f8de",
+              "status": "match",
+              "checks": {
+                "identity": true,
+                "currency": true,
+                "price": true,
+                "reference": true,
+                "options": true,
+                "stock": true
+              },
+              "merchant": {
+                "title": "AMBASSADOR C14Pro 3HP 14\" Stain-less Bandsaw",
+                "variant": "45312393609434",
+                "sku": "701106",
+                "price_minor": 189900,
+                "reference_minor": 289900,
+                "currency": "USD",
+                "options": "",
+                "raw_options": [
+                  "Default Title"
+                ],
+                "option_definitions": [
+                  {
+                    "name": "Title",
+                    "position": 1,
+                    "values": [
+                      "Default Title"
+                    ]
+                  }
+                ],
+                "available": true
+              }
+            },
+            {
+              "name": "ALPHA HW110TC-36Pro & 52Pro 10\" 3HP Stain-less Cabinet Saw with Big Eye Rip Fence",
+              "store": "Harvey Woodworking",
+              "offer": {
+                "variant_key": "45312423067866",
+                "url": "https://www.harveywoodworking.com/products/alpha-hw110tc-36pro-52pro-10-3hp-stain-less-cabinet-saw-with-big-eye-rip-fence?currency=USD&variant=45312423067866",
+                "current_price": 2999.0,
+                "original_price": 4299.0,
+                "size": "HW110TC-52Pro",
+                "options": "HW110TC-52Pro",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/1781/9323/files/HW110TC-52Pro_Table_Saw.png?v=1768522519",
+                "reference_basis": "retailer_compare_at",
+                "discount": 30.2,
+                "savings": 1300.0
+              },
+              "checked_at": "2026-11-03T00:58:17.277769+00:00",
+              "evidence_url": "https://www.harveywoodworking.com/products/alpha-hw110tc-36pro-52pro-10-3hp-stain-less-cabinet-saw-with-big-eye-rip-fence.js?currency=USD",
+              "response_sha256": "daaf7d593458003445fa91668cb229c73183fdd0b5f75a812cdd6fb9ead62a25",
+              "status": "match",
+              "checks": {
+                "identity": true,
+                "currency": true,
+                "price": true,
+                "reference": true,
+                "options": true,
+                "stock": true
+              },
+              "merchant": {
+                "title": "ALPHA HW110TC-36Pro & 52Pro 10\" 3HP Stain-less Cabinet Saw with Big Eye Rip Fence",
+                "variant": "45312423067866",
+                "sku": "709076",
+                "price_minor": 299900,
+                "reference_minor": 429900,
+                "currency": "USD",
+                "options": "HW110TC-52Pro",
+                "raw_options": [
+                  "HW110TC-52Pro"
+                ],
+                "option_definitions": [
+                  {
+                    "name": "Size",
+                    "position": 1,
+                    "values": [
+                      "HW110TC-36Pro",
+                      "HW110TC-52Pro"
+                    ]
+                  }
+                ],
+                "available": true
+              }
+            }
+          ],
+          "page_review": [
+            {
+              "url": "https://www.harveywoodworking.com/products/alpha-hw110s-36pro-52pro-10-4hp-stain-less-cabinet-saw-with-big-eye-rip-fence?currency=USD&variant=44661500936410",
+              "status": 200
+            }
+          ]
+        },
+        {
+          "name": "Craft Supplies USA",
+          "observed_at": "2026-11-03T00:54:34.784736+00:00",
+          "retailers": 1,
+          "eligible_listings": 1,
+          "deep_listings": 0,
+          "collections": [
+            {
+              "url": "https://woodturnerscatalog.com/collections/wood-lathes?currency=USD",
+              "pages": 1,
+              "products": 1,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "merchant_checks": [
+            {
+              "name": "Apprentice 812 VS Mini Lathe",
+              "store": "Craft Supplies USA",
+              "offer": {
+                "variant_key": "39433700048919",
+                "url": "https://woodturnerscatalog.com/products/apprentice-812-vs-mini-lathe?currency=USD&variant=39433700048919",
+                "current_price": 230.93,
+                "original_price": 329.9,
+                "size": null,
+                "options": "",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0550/7697/8711/products/app_812_vs_min_lat.jpg?v=1635367158",
+                "reference_basis": "retailer_compare_at",
+                "discount": 30.0,
+                "savings": 98.97
+              },
+              "checked_at": "2026-11-03T00:58:24.322696+00:00",
+              "evidence_url": "https://woodturnerscatalog.com/products/apprentice-812-vs-mini-lathe.js?currency=USD",
+              "response_sha256": "01875a67b27db1e0dd1c3b261a643999d731bc1362e1411588cf51d51f8be4bd",
+              "status": "match",
+              "checks": {
+                "identity": true,
+                "currency": true,
+                "price": true,
+                "reference": true,
+                "options": true,
+                "stock": true
+              },
+              "merchant": {
+                "title": "Apprentice 812 VS Mini Lathe",
+                "variant": "39433700048919",
+                "sku": "9796460001",
+                "price_minor": 23093,
+                "reference_minor": 32990,
+                "currency": "USD",
+                "options": "",
+                "raw_options": [
+                  "Default Title"
+                ],
+                "option_definitions": [
+                  {
+                    "name": "Title",
+                    "position": 1,
+                    "values": [
+                      "Default Title"
+                    ]
+                  }
+                ],
+                "available": true
+              }
+            }
+          ],
+          "page_review": [
+            {
+              "url": "https://woodturnerscatalog.com/products/apprentice-812-vs-mini-lathe?currency=USD&variant=39433700048919",
+              "status": 200
+            }
+          ]
+        },
+        {
+          "name": "WEN",
+          "observed_at": "2026-11-03T00:54:39.492878+00:00",
+          "retailers": 1,
+          "eligible_listings": 1,
+          "deep_listings": 0,
+          "collections": [
+            {
+              "url": "https://wenproducts.com/collections/power-tools?currency=USD",
+              "pages": 1,
+              "products": 9,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "merchant_checks": [
+            {
+              "name": "WEN 4212T 5-Amp 10-Inch Variable Speed Cast Iron Benchtop Drill Press with Laser",
+              "store": "WEN",
+              "offer": {
+                "variant_key": "39722104225826",
+                "url": "https://wenproducts.com/products/wen-4212t-10-in-variable-speed-drill-press?currency=USD&variant=39722104225826",
+                "current_price": 239.16,
+                "original_price": 299.99,
+                "size": null,
+                "options": "Individual",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0012/0350/3168/products/4212.main_bf961923-3ea9-4af9-9c01-1d2c0c7bbeba.jpg?v=1744143394",
+                "reference_basis": "retailer_compare_at",
+                "discount": 20.3,
+                "savings": 60.83
+              },
+              "checked_at": "2026-11-03T00:58:34.303443+00:00",
+              "evidence_url": "https://wenproducts.com/products/wen-4212t-10-in-variable-speed-drill-press.js?currency=USD",
+              "response_sha256": "a02967c79febafc2d1cb8fce67dee4067e4cd6dea0dc74c2e4f0db547fd285f1",
+              "status": "match",
+              "checks": {
+                "identity": true,
+                "currency": true,
+                "price": true,
+                "reference": true,
+                "options": true,
+                "stock": true
+              },
+              "merchant": {
+                "title": "WEN 4212T 5-Amp 10-Inch Variable Speed Cast Iron Benchtop Drill Press with Laser",
+                "variant": "39722104225826",
+                "sku": "4212T",
+                "price_minor": 23916,
+                "reference_minor": 29999,
+                "currency": "USD",
+                "options": "Individual",
+                "raw_options": [
+                  "Individual"
+                ],
+                "option_definitions": [
+                  {
+                    "name": "Title",
+                    "position": 1,
+                    "values": [
+                      "Individual",
+                      "Bulk Order: 12 Pieces ($207.75 per piece)"
+                    ]
+                  }
+                ],
+                "available": true
+              }
+            }
+          ],
+          "page_review": [
+            {
+              "url": "https://wenproducts.com/products/wen-4212t-10-in-variable-speed-drill-press?currency=USD&variant=39722104225826",
+              "status": 200
+            }
+          ]
+        },
+        {
+          "name": "Factory Direct Supply",
+          "observed_at": "2026-11-03T00:54:44.368463+00:00",
+          "retailers": 1,
+          "eligible_listings": 3,
+          "deep_listings": 0,
+          "collections": [
+            {
+              "url": "https://factorydirectsupply.com/collections/power-tools?currency=USD",
+              "pages": 8,
+              "products": 17,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "merchant_checks": [
+            {
+              "name": "JET JWP-208HH 20 Inch Planer with Helical Cutterhead 5 HP 1-Phase 230V",
+              "store": "Factory Direct Supply",
+              "offer": {
+                "variant_key": "40251148664993",
+                "url": "https://factorydirectsupply.com/products/jet-708544?currency=USD&variant=40251148664993",
+                "current_price": 4950.99,
+                "original_price": 5759.99,
+                "size": null,
+                "options": "",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0398/5188/4705/products/708544_main.png?v=1676879469",
+                "reference_basis": "retailer_compare_at",
+                "discount": 14.0,
+                "savings": 809.0
+              },
+              "checked_at": "2026-11-03T00:58:44.056742+00:00",
+              "evidence_url": "https://factorydirectsupply.com/products/jet-708544.js?currency=USD",
+              "response_sha256": "e194f3480acb2b2d229aa9d53d684fd0ca8dd2bb10fc2c9e73559371c38ef1d8",
+              "status": "match",
+              "checks": {
+                "identity": true,
+                "currency": true,
+                "price": true,
+                "reference": true,
+                "options": true,
+                "stock": true
+              },
+              "merchant": {
+                "title": "JET JWP-208HH 20 Inch Planer with Helical Cutterhead 5 HP 1-Phase 230V",
+                "variant": "40251148664993",
+                "sku": "JT9-708544",
+                "price_minor": 495099,
+                "reference_minor": 575999,
+                "currency": "USD",
+                "options": "",
+                "raw_options": [
+                  "Default Title"
+                ],
+                "option_definitions": [
+                  {
+                    "name": "Title",
+                    "position": 1,
+                    "values": [
+                      "Default Title"
+                    ]
+                  }
+                ],
+                "available": true
+              }
+            },
+            {
+              "name": "DeWALT 20V MAX XR Cordless Concrete Electric Nailer Kit DCN890P2",
+              "store": "Factory Direct Supply",
+              "offer": {
+                "variant_key": "35338710155425",
+                "url": "https://factorydirectsupply.com/products/dewalt-dcn890p2-20v-max-xr-cordless-concrete-electric-nailer-kit-with-kit-box?currency=USD&variant=35338710155425",
+                "current_price": 1059.99,
+                "original_price": 1216.99,
+                "size": null,
+                "options": "",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0398/5188/4705/products/DCN890P2_K1.jpg?v=1791573083",
+                "reference_basis": "retailer_compare_at",
+                "discount": 12.9,
+                "savings": 157.0
+              },
+              "checked_at": "2026-11-03T00:58:50.405600+00:00",
+              "evidence_url": "https://factorydirectsupply.com/products/dewalt-dcn890p2-20v-max-xr-cordless-concrete-electric-nailer-kit-with-kit-box.js?currency=USD",
+              "response_sha256": "4726d038efe8b25d4e2761fc350c60dff74767ad1cc977d1e8968e76f4c713bf",
+              "status": "match",
+              "checks": {
+                "identity": true,
+                "currency": true,
+                "price": true,
+                "reference": true,
+                "options": true,
+                "stock": true
+              },
+              "merchant": {
+                "title": "DeWALT 20V MAX XR Cordless Concrete Electric Nailer Kit DCN890P2",
+                "variant": "35338710155425",
+                "sku": "DCN890P2",
+                "price_minor": 105999,
+                "reference_minor": 121699,
+                "currency": "USD",
+                "options": "",
+                "raw_options": [
+                  "Default Title"
+                ],
+                "option_definitions": [
+                  {
+                    "name": "Title",
+                    "position": 1,
+                    "values": [
+                      "Default Title"
+                    ]
+                  }
+                ],
+                "available": true
+              }
+            },
+            {
+              "name": "DeWALT 20V MAX Cordless 1/4 in. Impact Driver Kit with 8 Ah Battery and Charger",
+              "store": "Factory Direct Supply",
+              "offer": {
+                "variant_key": "48206638186726",
+                "url": "https://factorydirectsupply.com/products/dewalt-20v-max-xr-3-speed-1-4-inch-high-torque-impact-driver-kit?currency=USD&variant=48206638186726",
+                "current_price": 319.0,
+                "original_price": 339.0,
+                "size": null,
+                "options": "",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0398/5188/4705/files/DCF860WW1_K1_1280.webp?v=1787083928",
+                "reference_basis": "retailer_compare_at",
+                "discount": 5.9,
+                "savings": 20.0
+              },
+              "checked_at": "2026-11-03T00:58:53.551476+00:00",
+              "evidence_url": "https://factorydirectsupply.com/products/dewalt-20v-max-xr-3-speed-1-4-inch-high-torque-impact-driver-kit.js?currency=USD",
+              "response_sha256": "21aeeb9d4251513ec8a38415c8768b68090160bd9fb5eddfc2ea27850291182e",
+              "status": "match",
+              "checks": {
+                "identity": true,
+                "currency": true,
+                "price": true,
+                "reference": true,
+                "options": true,
+                "stock": true
+              },
+              "merchant": {
+                "title": "DeWALT 20V MAX Cordless 1/4 in. Impact Driver Kit with 8 Ah Battery and Charger",
+                "variant": "48206638186726",
+                "sku": "DCF860WW1",
+                "price_minor": 31900,
+                "reference_minor": 33900,
+                "currency": "USD",
+                "options": "",
+                "raw_options": [
+                  "Default Title"
+                ],
+                "option_definitions": [
+                  {
+                    "name": "Title",
+                    "position": 1,
+                    "values": [
+                      "Default Title"
+                    ]
+                  }
+                ],
+                "available": true
+              }
+            }
+          ],
+          "page_review": [
+            {
+              "url": "https://factorydirectsupply.com/products/jet-708544?currency=USD&variant=40251148664993",
+              "status": 200
+            }
+          ]
+        },
+        {
+          "name": "Grizzly Industrial",
+          "observed_at": "2026-11-03T00:55:20.354651+00:00",
+          "retailers": 1,
+          "eligible_listings": 22,
+          "deep_listings": 2,
+          "collections": [
+            {
+              "url": "https://www.grizzly.com/outlet-specials/shop-all",
+              "pages": 27,
+              "products": 1299,
+              "status": "complete"
+            }
+          ],
+          "merchant_checks": [
+            {
+              "name": "10\" 2 HP Benchtop Table Saw w/Stand",
+              "store": "Grizzly Industrial",
+              "offer": {
+                "variant_key": "W1875",
+                "url": "https://www.grizzly.com/products/shop-fox-10-2-hp-benchtop-table-saw-w-stand/w1875",
+                "current_price": 379.91,
+                "original_price": 710.0,
+                "size": null,
+                "options": "",
+                "availability": "in_stock",
+                "image_url": "https://cdn4.grizzly.com/pics/jpeg288/w/w1875-8fff8e19bb85172da7006dcb520e51aa.jpg",
+                "reference_basis": "retailer_compare_at",
+                "discount": 46.5,
+                "savings": 330.09
+              },
+              "checked_at": "2026-11-03T00:59:00.244915+00:00",
+              "evidence_url": "https://www.grizzly.com/products/shop-fox-10-2-hp-benchtop-table-saw-w-stand/w1875",
+              "response_sha256": "70eec3c3980760b9fd0ab77590d6c41bec205c7adfd4ff9f5cf33c4a2dff5538",
+              "status": "match",
+              "checks": {
+                "identity": true,
+                "destination": true,
+                "currency": true,
+                "price": true,
+                "reference": true,
+                "stock": true,
+                "condition": true,
+                "options": true
+              },
+              "merchant": {
+                "sku": "W1875",
+                "price": 379.91,
+                "reference": 710,
+                "currency": "USD",
+                "availability": "https://schema.org/InStock",
+                "condition": "https://schema.org/NewCondition"
+              }
+            },
+            {
+              "name": "12\" Disc Sander",
+              "store": "Grizzly Industrial",
+              "offer": {
+                "variant_key": "W1828",
+                "url": "https://www.grizzly.com/products/shop-fox-12-disc-sander/w1828",
+                "current_price": 265.28,
+                "original_price": 465.0,
+                "size": null,
+                "options": "",
+                "availability": "in_stock",
+                "image_url": "https://cdn3.grizzly.com/pics/jpeg288/w/w1828-6fe4c6f955211b50a4e5eede4cff0d09.jpg",
+                "reference_basis": "retailer_compare_at",
+                "discount": 43.0,
+                "savings": 199.72
+              },
+              "checked_at": "2026-11-03T00:59:03.638271+00:00",
+              "evidence_url": "https://www.grizzly.com/products/shop-fox-12-disc-sander/w1828",
+              "response_sha256": "3784fc9583cd0cc6e047d0891364c7ea8a2a8a69276b7cc298507530fa3f9fb1",
+              "status": "match",
+              "checks": {
+                "identity": true,
+                "destination": true,
+                "currency": true,
+                "price": true,
+                "reference": true,
+                "stock": true,
+                "condition": true,
+                "options": true
+              },
+              "merchant": {
+                "sku": "W1828",
+                "price": 265.28,
+                "reference": 465,
+                "currency": "USD",
+                "availability": "https://schema.org/InStock",
+                "condition": "https://schema.org/NewCondition"
+              }
+            },
+            {
+              "name": "8\" x 27\" Enclosed CNC Mill w/Auto Tool Changer",
+              "store": "Grizzly Industrial",
+              "offer": {
+                "variant_key": "G0876",
+                "url": "https://www.grizzly.com/products/grizzly-8-x-27-enclosed-cnc-mill-w-auto-tool-changer/g0876",
+                "current_price": 31654.87,
+                "original_price": 43965.0,
+                "size": null,
+                "options": "",
+                "availability": "in_stock",
+                "image_url": "https://cdn8.grizzly.com/pics/jpeg288/g/g0876-3deaa5cb2c3e031e0d61c717bf46b770.jpg",
+                "reference_basis": "retailer_compare_at",
+                "discount": 28.0,
+                "savings": 12310.13
+              },
+              "checked_at": "2026-11-03T00:59:06.971052+00:00",
+              "evidence_url": "https://www.grizzly.com/products/grizzly-8-x-27-enclosed-cnc-mill-w-auto-tool-changer/g0876",
+              "response_sha256": "c1d999a7334b63729c7f0e61728e591074da2a49192ac45b3cf9984c8f60ef8f",
+              "status": "match",
+              "checks": {
+                "identity": true,
+                "destination": true,
+                "currency": true,
+                "price": true,
+                "reference": true,
+                "stock": true,
+                "condition": true,
+                "options": true
+              },
+              "merchant": {
+                "sku": "G0876",
+                "price": 31654.87,
+                "reference": 43965,
+                "currency": "USD",
+                "availability": "https://schema.org/InStock",
+                "condition": "https://schema.org/NewCondition"
+              }
+            }
+          ],
+          "page_review": [
+            {
+              "url": "https://www.grizzly.com/products/shop-fox-10-2-hp-benchtop-table-saw-w-stand/w1875",
+              "status": 200
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "scope": "Public retailer listings; confirmed-stock variants at reference floors cycling USD1000/tools USD200. Not deduplicated cross-retailer models or checkout/historical-price validation.",
+  "publication": "local preview only; no push or deploy",
+  "held_candidates": [
+    {
+      "name": "Max Warehouse",
+      "reason": "21 eligible listings, no 40-percent deals; independent audit HTTP429, not enabled"
+    },
+    {
+      "name": "Sports Basement",
+      "reason": "Sample bike page explicitly unavailable for shipping; source not enabled"
+    },
+    {
+      "name": "Coastal Tool",
+      "reason": "Complete four-page feed, no usable discounted variants"
+    },
+    {
+      "name": "MaxTool",
+      "reason": "Complete targeted combo/saw feeds, no usable discounted variants"
+    },
+    {
+      "name": "Factory Authorized Outlet",
+      "reason": "Complete targeted combo/saw feeds, no usable discounted variants"
+    },
+    {
+      "name": "Infinity Tools",
+      "reason": "Apparent high-reference matches were cutters, knives, or accessories; not enabled"
+    },
+    {
+      "name": "Colorado Cyclist",
+      "reason": "Candidate bikes collection HTTP404"
+    }
+  ],
+  "retained_failures": [
+    {
+      "name": "Harvey Woodworking",
+      "reason": "Two early independent audit attempts HTTP429; final fresh-snapshot sample later matched 3/3. Earlier failures retained in local probe evidence."
+    },
+    {
+      "name": "Contender Bicycles",
+      "reason": "Variant endpoint sample matched 3/3; additional HTML page request hit HTTP429. No retry of that page."
+    }
+  ],
+  "validation": {
+    "offline_tests_passed": 351,
+    "ruff": "passed",
+    "whitespace": "passed",
+    "standalone_packages": "both served successfully; source counts and hashes matched",
+    "preview_source_health": {
+      "cycling": "7/7 ready",
+      "tools": "7/7 ready"
+    }
+  }
+}

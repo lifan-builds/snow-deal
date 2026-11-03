@@ -1,0 +1,1091 @@
+{
+  "catalog": "snow",
+  "date": "2026-11-02T23:28:52.765050+00:00",
+  "seed": 20261102,
+  "population": 969,
+  "method": "top10-plus-seeded20-merchant-product-v1",
+  "sample_size": 30,
+  "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+  "match": 22,
+  "mismatch": 0,
+  "inconclusive": 8,
+  "verified_match_percent": 73.33,
+  "results": [
+    {
+      "name": "Lange RX 110 W LV Ski Boots - Women's 2019",
+      "store": "Evo",
+      "offer": {
+        "variant_key": "46353314742422",
+        "url": "https://www.evo.com/products/138112-lange-rx-110-w-lv-ski-boots-women-s-2019?variant=46353314742422",
+        "current_price": 69.99,
+        "original_price": 599.95,
+        "options": "Black Corail / 22.5",
+        "availability": "in_stock",
+        "size": "22.5"
+      },
+      "checked_at": "2026-11-02T23:28:00.120247+00:00",
+      "evidence_url": "https://www.evo.com/products/138112-lange-rx-110-w-lv-ski-boots-women-s-2019.js?currency=USD",
+      "response_sha256": "3e297fe0c9c409bf8414ca5f02f579ade42d87feeb47a3eefafce64d61bf6c98",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Lange RX 110 W LV Ski Boots - Women's 2019",
+        "variant": "46353314742422",
+        "sku": "EB-138112-1002",
+        "price_minor": 6999,
+        "reference_minor": 59995,
+        "currency": "USD",
+        "options": "Black Corail / 22.5",
+        "available": true
+      }
+    },
+    {
+      "name": "Lange XT3 Free 95 MV GW Alpine Touring Ski Boots - Women's 2024",
+      "store": "Evo",
+      "offer": {
+        "variant_key": "46151337214102",
+        "url": "https://www.evo.com/products/264305-lange-xt3-free-95-mv-gw-alpine-touring-ski-boots-women-s-2024?variant=46151337214102",
+        "current_price": 114.95,
+        "original_price": 649.95,
+        "options": "23.5",
+        "availability": "in_stock",
+        "size": "23.5"
+      },
+      "checked_at": "2026-11-02T23:28:03.564216+00:00",
+      "evidence_url": "https://www.evo.com/products/264305-lange-xt3-free-95-mv-gw-alpine-touring-ski-boots-women-s-2024.js?currency=USD",
+      "response_sha256": "99f1947e6a32125761893e431a01ee00619fa7b4303e97e8bb969d149df158b8",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Lange XT3 Free 95 MV GW Alpine Touring Ski Boots - Women's 2024",
+        "variant": "46151337214102",
+        "sku": "EB-264305-1002",
+        "price_minor": 11495,
+        "reference_minor": 64995,
+        "currency": "USD",
+        "options": "23.5",
+        "available": true
+      }
+    },
+    {
+      "name": "Lange XT3 Free 85 MV GW Alpine Touring Ski Boots - Women's 2024",
+      "store": "Evo",
+      "offer": {
+        "variant_key": "46149036376214",
+        "url": "https://www.evo.com/products/255417-lange-xt3-free-85-mv-gw-alpine-touring-ski-boots-women-s-2024?variant=46149036376214",
+        "current_price": 109.99,
+        "original_price": 549.95,
+        "options": "23.5",
+        "availability": "in_stock",
+        "size": "23.5"
+      },
+      "checked_at": "2026-11-02T23:28:05.208408+00:00",
+      "evidence_url": "https://www.evo.com/products/255417-lange-xt3-free-85-mv-gw-alpine-touring-ski-boots-women-s-2024.js?currency=USD",
+      "response_sha256": "331e1fac37813140b429b79c08c9fce5c3bb10e6f8dcc1f0021781a8357ff5eb",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Lange XT3 Free 85 MV GW Alpine Touring Ski Boots - Women's 2024",
+        "variant": "46149036376214",
+        "sku": "EB-255417-1002",
+        "price_minor": 10999,
+        "reference_minor": 54995,
+        "currency": "USD",
+        "options": "23.5",
+        "available": true
+      }
+    },
+    {
+      "name": "Salomon S/Pro Alpha 130 Ski Boots 2024",
+      "store": "Evo",
+      "offer": {
+        "variant_key": "46348060426390",
+        "url": "https://www.evo.com/products/219337-salomon-s-pro-alpha-130-ski-boots-2024?variant=46348060426390",
+        "current_price": 164.99,
+        "original_price": 799.95,
+        "options": "Race Blue/White / 22.5",
+        "availability": "in_stock",
+        "size": "22.5"
+      },
+      "checked_at": "2026-11-02T23:28:06.845433+00:00",
+      "evidence_url": "https://www.evo.com/products/219337-salomon-s-pro-alpha-130-ski-boots-2024.js?currency=USD",
+      "response_sha256": "a8698668c1a989d28f9e76350f76cf1bbd43484c40cbdc0d63730d8a3a14b09a",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Salomon S/Pro Alpha 130 Ski Boots 2024",
+        "variant": "46348060426390",
+        "sku": "EB-219337-1001",
+        "price_minor": 16499,
+        "reference_minor": 79995,
+        "currency": "USD",
+        "options": "Race Blue/White / 22.5",
+        "available": true
+      }
+    },
+    {
+      "name": "Dalbello DS Asolo 115 Factory GW LS Womens Ski Boot",
+      "store": "Aspen Ski and Board",
+      "offer": {
+        "variant_key": "50304003703072",
+        "url": "https://www.aspenskiandboard.com/products/dalbello-ds-asolo-115-factory-gw-ls-womens-ski-boot-2022?variant=50304003703072",
+        "current_price": 198.94,
+        "original_price": 950.0,
+        "options": "Black/Black / 23.5",
+        "availability": "in_stock",
+        "size": "23.5"
+      },
+      "checked_at": "2026-11-02T23:30:16.763393+00:00",
+      "evidence_url": "https://www.aspenskiandboard.com/products/dalbello-ds-asolo-115-factory-gw-ls-womens-ski-boot-2022.js?currency=USD",
+      "response_sha256": "4ccd9d623443b41c7c61d1fce5a0661f63d791015af5a509da630803e22044a8",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Dalbello DS Asolo 115 Factory GW LS Womens Ski Boot",
+        "variant": "50304003703072",
+        "sku": "616438795892",
+        "price_minor": 19894,
+        "reference_minor": 95000,
+        "currency": "USD",
+        "options": "Black/Black / 23.5",
+        "raw_options": [
+          "Black/Black",
+          "23.5",
+          "Retail Price: $950.00"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Black/Black"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "23.5",
+              "24.5"
+            ]
+          },
+          {
+            "name": "MSRP",
+            "position": 3,
+            "values": [
+              "Retail Price: $950.00"
+            ]
+          }
+        ],
+        "available": true
+      },
+      "original_status": "mismatch",
+      "disposition": "Auditor corrected: declared retail-price option is not a size/color dimension."
+    },
+    {
+      "name": "K2 Dispatch LT W Alpine Touring Ski Boots - Women's 2025",
+      "store": "Evo",
+      "offer": {
+        "variant_key": "46348060688534",
+        "url": "https://www.evo.com/products/241871-k2-dispatch-lt-w-alpine-touring-ski-boots-women-s-2025?variant=46348060688534",
+        "current_price": 169.99,
+        "original_price": 799.95,
+        "options": "22.5",
+        "availability": "in_stock",
+        "size": "22.5"
+      },
+      "checked_at": "2026-11-02T23:28:11.979756+00:00",
+      "evidence_url": "https://www.evo.com/products/241871-k2-dispatch-lt-w-alpine-touring-ski-boots-women-s-2025.js?currency=USD",
+      "response_sha256": "ca04c2514c7b97dc7c6a63c69b328d993a4c01ff86e421b32ea4d8fc61cff8d9",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "K2 Dispatch LT W Alpine Touring Ski Boots - Women's 2025",
+        "variant": "46348060688534",
+        "sku": "EB-241871-1001",
+        "price_minor": 16999,
+        "reference_minor": 79995,
+        "currency": "USD",
+        "options": "22.5",
+        "available": true
+      }
+    },
+    {
+      "name": "Lange XT3 Free 85 LV GW Alpine Touring Ski Boots - Women's 2024",
+      "store": "Evo",
+      "offer": {
+        "variant_key": "46151332757654",
+        "url": "https://www.evo.com/products/264269-lange-xt3-free-85-lv-gw-alpine-touring-ski-boots-women-s-2024?variant=46151332757654",
+        "current_price": 119.95,
+        "original_price": 549.95,
+        "options": "23.5",
+        "availability": "in_stock",
+        "size": "23.5"
+      },
+      "checked_at": "2026-11-02T23:28:13.602102+00:00",
+      "evidence_url": "https://www.evo.com/products/264269-lange-xt3-free-85-lv-gw-alpine-touring-ski-boots-women-s-2024.js?currency=USD",
+      "response_sha256": "02a72e3b10faa805b178dc930b7a2f338eaafc02b6fee47c5308c94bb6bb6d83",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Lange XT3 Free 85 LV GW Alpine Touring Ski Boots - Women's 2024",
+        "variant": "46151332757654",
+        "sku": "EB-264269-1002",
+        "price_minor": 11995,
+        "reference_minor": 54995,
+        "currency": "USD",
+        "options": "23.5",
+        "available": true
+      }
+    },
+    {
+      "name": "Dalbello Chakra 105 ID Ski Boots Womens",
+      "store": "Aspen Ski and Board",
+      "offer": {
+        "variant_key": "50304561119520",
+        "url": "https://www.aspenskiandboard.com/products/dalbello-chakra-105-id-ski-boots-womens?variant=50304561119520",
+        "current_price": 149.95,
+        "original_price": 650.0,
+        "options": "Navy Blue/Black / 24.5",
+        "availability": "in_stock",
+        "size": "24.5"
+      },
+      "checked_at": "2026-11-02T23:30:20.009550+00:00",
+      "evidence_url": "https://www.aspenskiandboard.com/products/dalbello-chakra-105-id-ski-boots-womens.js?currency=USD",
+      "response_sha256": "5249295065a98824b56507041818cd0629c24eea69d8294e798f1332ac625e5f",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Dalbello Chakra 105 ID Ski Boots Womens",
+        "variant": "50304561119520",
+        "sku": "616438781857",
+        "price_minor": 14995,
+        "reference_minor": 65000,
+        "currency": "USD",
+        "options": "Navy Blue/Black / 24.5",
+        "raw_options": [
+          "Navy Blue/Black",
+          "24.5",
+          "Retail: $650.00"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Navy Blue/Black"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "23.5",
+              "24.5",
+              "25.5"
+            ]
+          },
+          {
+            "name": "MSRP",
+            "position": 3,
+            "values": [
+              "Retail: $650.00"
+            ]
+          }
+        ],
+        "available": true
+      },
+      "original_status": "mismatch",
+      "disposition": "Auditor corrected: declared retail-price option is not a size/color dimension."
+    },
+    {
+      "name": "Lange Shadow 95 LV GW Ski Boots - Women's 2025",
+      "store": "Evo",
+      "offer": {
+        "variant_key": "46353214767254",
+        "url": "https://www.evo.com/products/240234-lange-shadow-95-lv-gw-ski-boots-women-s-2025?variant=46353214767254",
+        "current_price": 157.49,
+        "original_price": 649.95,
+        "options": "Black / 26.5",
+        "availability": "in_stock",
+        "size": "26.5"
+      },
+      "checked_at": "2026-11-02T23:28:16.946121+00:00",
+      "evidence_url": "https://www.evo.com/products/240234-lange-shadow-95-lv-gw-ski-boots-women-s-2025.js?currency=USD",
+      "response_sha256": "e2af37264ce23d32aa88db3d66c1b220446d715d93fb35a13256f9a69a5b5146",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Lange Shadow 95 LV GW Ski Boots - Women's 2025",
+        "variant": "46353214767254",
+        "sku": "EB-240234-1004",
+        "price_minor": 15749,
+        "reference_minor": 64995,
+        "currency": "USD",
+        "options": "Black / 26.5",
+        "available": true
+      }
+    },
+    {
+      "name": "Head Formula 95 GW Ski Boots - Women's 2023",
+      "store": "Evo",
+      "offer": {
+        "variant_key": "46353353343126",
+        "url": "https://www.evo.com/products/225565-head-formula-95-gw-ski-boots-women-s-2023?variant=46353353343126",
+        "current_price": 145.32,
+        "original_price": 599.0,
+        "options": "Anthracite/Light Blue / 23.5",
+        "availability": "in_stock",
+        "size": "23.5"
+      },
+      "checked_at": "2026-11-02T23:28:18.652312+00:00",
+      "evidence_url": "https://www.evo.com/products/225565-head-formula-95-gw-ski-boots-women-s-2023.js?currency=USD",
+      "response_sha256": "22148232da7c1ec3c5665e3e813da0b74ed2eeb895675f3ad9915d527c13e9cb",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Head Formula 95 GW Ski Boots - Women's 2023",
+        "variant": "46353353343126",
+        "sku": "EB-225565-1002",
+        "price_minor": 14532,
+        "reference_minor": 59900,
+        "currency": "USD",
+        "options": "Anthracite/Light Blue / 23.5",
+        "available": true
+      }
+    },
+    {
+      "name": "Atomic MAVEN 103 CTI 2026",
+      "store": "Ski Depot",
+      "offer": {
+        "variant_key": "51163468103961",
+        "url": "https://ski-depot.com/products/atomic-maven-103-cti-2026?variant=51163468103961",
+        "current_price": 559.95,
+        "original_price": 975.0,
+        "options": "156 cm",
+        "availability": "in_stock",
+        "size": "156 cm"
+      },
+      "checked_at": "2026-11-02T23:28:20.295453+00:00",
+      "evidence_url": "https://ski-depot.com/products/atomic-maven-103-cti-2026.js?currency=USD",
+      "response_sha256": "d3f1a3d20890e36257ce3bee79adbc962b34da02073841caa7a1be2337dcbc03",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Atomic MAVEN 103 CTI 2026",
+        "variant": "51163468103961",
+        "sku": "AA0030662-156",
+        "price_minor": 55995,
+        "reference_minor": 97500,
+        "currency": "USD",
+        "options": "156 cm",
+        "available": true
+      }
+    },
+    {
+      "name": "Dalbello Cabrio LV Free 105 W Womens Ski Boots",
+      "store": "Aspen Ski and Board",
+      "offer": {
+        "variant_key": "68018233671968",
+        "url": "https://www.aspenskiandboard.com/products/dalbello-cabrio-lv-free-105-w-womens-ski-boots?variant=68018233671968",
+        "current_price": 299.95,
+        "original_price": 649.99,
+        "options": "Jungle Green/Black / 23.5",
+        "availability": "in_stock",
+        "size": "23.5"
+      },
+      "checked_at": "2026-11-02T23:30:21.632587+00:00",
+      "evidence_url": "https://www.aspenskiandboard.com/products/dalbello-cabrio-lv-free-105-w-womens-ski-boots.js?currency=USD",
+      "response_sha256": "2ba36ba9f97d2fd90bfd92da88b4ad112be5c486411f74de6d175aa7750eb911",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Dalbello Cabrio LV Free 105 W Womens Ski Boots",
+        "variant": "68018233671968",
+        "sku": "616438810991",
+        "price_minor": 29995,
+        "reference_minor": 64999,
+        "currency": "USD",
+        "options": "Jungle Green/Black / 23.5",
+        "raw_options": [
+          "Jungle Green/Black",
+          "23.5",
+          "Retail: $649.99"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Jungle Green/Black"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "23.5",
+              "25.5",
+              "26.5"
+            ]
+          },
+          {
+            "name": "MSRP",
+            "position": 3,
+            "values": [
+              "Retail: $649.99"
+            ]
+          }
+        ],
+        "available": true
+      },
+      "original_status": "mismatch",
+      "disposition": "Auditor corrected: declared retail-price option is not a size/color dimension."
+    },
+    {
+      "name": "Dalbello Il Moro 110 3D Wrap Ski Boots 2026",
+      "store": "Evo",
+      "offer": {
+        "variant_key": "46148704436374",
+        "url": "https://www.evo.com/products/254688-dalbello-il-moro-110-3d-wrap-ski-boots-2026?variant=46148704436374",
+        "current_price": 329.99,
+        "original_price": 549.99,
+        "options": "Yellow Fluo/Yellow Fluo / 25.5",
+        "availability": "in_stock",
+        "size": "25.5"
+      },
+      "checked_at": "2026-11-02T23:28:25.489259+00:00",
+      "evidence_url": "https://www.evo.com/products/254688-dalbello-il-moro-110-3d-wrap-ski-boots-2026.js?currency=USD",
+      "response_sha256": "737b9f2ac33edb10c09a9496bd38da1740d95f66c03b612bdff68b20e674311b",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Dalbello Il Moro 110 3D Wrap Ski Boots 2026",
+        "variant": "46148704436374",
+        "sku": "EB-254688-1004",
+        "price_minor": 32999,
+        "reference_minor": 54999,
+        "currency": "USD",
+        "options": "Yellow Fluo/Yellow Fluo / 25.5",
+        "available": true
+      }
+    },
+    {
+      "name": "Blizzard Women's Black Pearl 94 Skis 2026",
+      "store": "Ski Pro AZ",
+      "offer": {
+        "variant_key": "44592280207537",
+        "url": "https://skipro.com/products/black-pearl-94-flat-lds-45w?variant=44592280207537",
+        "current_price": 559.95,
+        "original_price": 975.0,
+        "options": "PEACH / 158",
+        "availability": "in_stock",
+        "size": "158"
+      },
+      "checked_at": "2026-11-02T23:28:27.224490+00:00",
+      "evidence_url": "https://skipro.com/products/black-pearl-94-flat-lds-45w.js?currency=USD",
+      "status": "inconclusive",
+      "reason": "HTTP 429"
+    },
+    {
+      "name": "K2 Disruption MTI Skis with MXC 12 Bindings 2024",
+      "store": "Ski Pro AZ",
+      "offer": {
+        "variant_key": "43449283805361",
+        "url": "https://skipro.com/products/disruption-mti-mxc-12-34w?variant=43449283805361",
+        "current_price": 499.98,
+        "original_price": 949.95,
+        "options": "TAN/BLACK / 180",
+        "availability": "in_stock",
+        "size": "180"
+      },
+      "checked_at": "2026-11-02T23:28:30.631537+00:00",
+      "evidence_url": "https://skipro.com/products/disruption-mti-mxc-12-34w.js?currency=USD",
+      "status": "inconclusive",
+      "reason": "Host blocked or rate-limited earlier in this audit"
+    },
+    {
+      "name": "Salomon S/Pro Supra BOA 100 GW Mens Ski Boots 2026",
+      "store": "Aspen Ski and Board",
+      "offer": {
+        "variant_key": "50148775428384",
+        "url": "https://www.aspenskiandboard.com/products/salomon-s-pro-supra-boa-100-gw-mens-ski-boots-2026?variant=50148775428384",
+        "current_price": 363.97,
+        "original_price": 620.0,
+        "options": "Black/Dark Grey Met./Burgundy Met. / 30/30.5",
+        "availability": "in_stock",
+        "size": "30/30.5"
+      },
+      "checked_at": "2026-11-02T23:30:23.295541+00:00",
+      "evidence_url": "https://www.aspenskiandboard.com/products/salomon-s-pro-supra-boa-100-gw-mens-ski-boots-2026.js?currency=USD",
+      "response_sha256": "6d36d051675f9a8bedbcfc4be6a25c01473bc9cab2e980ba2c0ea5a53c65799e",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Salomon S/Pro Supra BOA 100 GW Mens Ski Boots 2026",
+        "variant": "50148775428384",
+        "sku": "198720008861",
+        "price_minor": 36397,
+        "reference_minor": 62000,
+        "currency": "USD",
+        "options": "Black/Dark Grey Met./Burgundy Met. / 30/30.5",
+        "raw_options": [
+          "Black/Dark Grey Met./Burgundy Met.",
+          "30/30.5",
+          "Retail: $620.00"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Black/Dark Grey Met./Burgundy Met."
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "24/24.5",
+              "25/25.5",
+              "26/26.5",
+              "27/27.5",
+              "28/28.5",
+              "29/29.5",
+              "30/30.5",
+              "31/31.5"
+            ]
+          },
+          {
+            "name": "MSRP",
+            "position": 3,
+            "values": [
+              "Retail: $620.00"
+            ]
+          }
+        ],
+        "available": true
+      },
+      "original_status": "mismatch",
+      "disposition": "Auditor corrected: declared retail-price option is not a size/color dimension."
+    },
+    {
+      "name": "Line Chronic 94 Adult Skis 2026 with Strive 12 Bindings Ski Package",
+      "store": "Aspen Ski and Board",
+      "offer": {
+        "variant_key": "52062371709216",
+        "url": "https://www.aspenskiandboard.com/products/line-chronic-94-adult-skis-2026-with-strive-12-bindings-ski-package-1?variant=52062371709216",
+        "current_price": 519.95,
+        "original_price": 879.95,
+        "options": "171cm / Black / 44",
+        "availability": "in_stock",
+        "size": "171cm / 44"
+      },
+      "checked_at": "2026-11-02T23:28:32.341872+00:00",
+      "evidence_url": "https://www.aspenskiandboard.com/products/line-chronic-94-adult-skis-2026-with-strive-12-bindings-ski-package-1.js?currency=USD",
+      "response_sha256": "01dcdb9073e91ab929a3c49f9fc5b78888668c60ec3bb7a9896cc6b6bf1d9cff",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Line Chronic 94 Adult Skis 2026 with Strive 12 Bindings Ski Package",
+        "variant": "52062371709216",
+        "sku": null,
+        "price_minor": 51995,
+        "reference_minor": 87995,
+        "currency": "USD",
+        "options": "171cm / Black / 44",
+        "available": true
+      }
+    },
+    {
+      "name": "Arbor DK Park Pro Snowboard 2026",
+      "store": "Evo",
+      "offer": {
+        "variant_key": "46078801870998",
+        "url": "https://www.evo.com/products/265183-arbor-dk-park-pro-snowboard-2026?variant=46078801870998",
+        "current_price": 274.98,
+        "original_price": 549.95,
+        "options": "154 cm",
+        "availability": "in_stock",
+        "size": "154 cm"
+      },
+      "checked_at": "2026-11-02T23:28:33.995278+00:00",
+      "evidence_url": "https://www.evo.com/products/265183-arbor-dk-park-pro-snowboard-2026.js?currency=USD",
+      "response_sha256": "e89b9428f8079b7ef3bebcbb24f1f8f99dc9ea251193f6c3267d1325912bec42",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Arbor DK Park Pro Snowboard 2026",
+        "variant": "46078801870998",
+        "sku": "EB-265183-1001",
+        "price_minor": 27498,
+        "reference_minor": 54995,
+        "currency": "USD",
+        "options": "154 cm",
+        "available": true
+      }
+    },
+    {
+      "name": "Atomic Hawx Prime 130 S Boa Mens Ski Boots 2026",
+      "store": "Aspen Ski and Board",
+      "offer": {
+        "variant_key": "50579096502560",
+        "url": "https://www.aspenskiandboard.com/products/atomic-hawx-prime-130-s-boa-mens-ski-boots-2026?variant=50579096502560",
+        "current_price": 439.95,
+        "original_price": 1050.0,
+        "options": "Cement/Black/Red / 28.5",
+        "availability": "in_stock",
+        "size": "28.5"
+      },
+      "checked_at": "2026-11-02T23:30:24.985993+00:00",
+      "evidence_url": "https://www.aspenskiandboard.com/products/atomic-hawx-prime-130-s-boa-mens-ski-boots-2026.js?currency=USD",
+      "response_sha256": "a2dfafd3a941d44e293376f359bb199129ecded140cb6f37d965a9ab610e8c79",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Atomic Hawx Prime 130 S Boa Mens Ski Boots 2026",
+        "variant": "50579096502560",
+        "sku": "887445408673",
+        "price_minor": 43995,
+        "reference_minor": 105000,
+        "currency": "USD",
+        "options": "Cement/Black/Red / 28.5",
+        "raw_options": [
+          "Cement/Black/Red",
+          "28.5",
+          "Retail: $1050.00"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Cement/Black/Red"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "27.5",
+              "28.5",
+              "29.5"
+            ]
+          },
+          {
+            "name": "MSRP",
+            "position": 3,
+            "values": [
+              "Retail: $1050.00"
+            ]
+          }
+        ],
+        "available": true
+      },
+      "original_status": "mismatch",
+      "disposition": "Auditor corrected: declared retail-price option is not a size/color dimension."
+    },
+    {
+      "name": "Salomon Women's S/Pro Supra 105 Dual BOA Ski Boots 2026",
+      "store": "Ski Pro AZ",
+      "offer": {
+        "variant_key": "45093579391153",
+        "url": "https://skipro.com/products/s-pro-supra-dualboa-105-l-56w?variant=45093579391153",
+        "current_price": 549.95,
+        "original_price": 940.0,
+        "options": "AURORA / 23.5",
+        "availability": "in_stock",
+        "size": "23.5"
+      },
+      "checked_at": "2026-11-02T23:28:37.387506+00:00",
+      "evidence_url": "https://skipro.com/products/s-pro-supra-dualboa-105-l-56w.js?currency=USD",
+      "status": "inconclusive",
+      "reason": "Host blocked or rate-limited earlier in this audit"
+    },
+    {
+      "name": "Twinpig",
+      "store": "Sports Basement",
+      "offer": {
+        "variant_key": "40593787551816",
+        "url": "https://www.sportsbasement.com/products/twinpig-4?variant=40593787551816",
+        "current_price": 342.0,
+        "original_price": 569.95,
+        "options": "N/A / 136 CM",
+        "availability": "in_stock",
+        "size": "136 CM"
+      },
+      "checked_at": "2026-11-02T23:28:37.387601+00:00",
+      "evidence_url": "https://www.sportsbasement.com/products/twinpig-4.js?currency=USD",
+      "response_sha256": "645854fe90bcfe792bb098c0982dd0fa8c8bcf9250f80839bb4e38b7c64b3769",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Twinpig",
+        "variant": "40593787551816",
+        "sku": "2050013668658",
+        "price_minor": 34200,
+        "reference_minor": 56995,
+        "currency": "USD",
+        "options": "N/A / 136 CM",
+        "available": true
+      }
+    },
+    {
+      "name": "Nordica Enforcer 89 Skis 2026",
+      "store": "Ski Pro AZ",
+      "offer": {
+        "variant_key": "46243331506353",
+        "url": "https://skipro.com/products/enforcer-89-flat-56w?variant=46243331506353",
+        "current_price": 524.95,
+        "original_price": 900.0,
+        "options": "BLACK/BLUE / 167",
+        "availability": "in_stock",
+        "size": "167"
+      },
+      "checked_at": "2026-11-02T23:28:40.837739+00:00",
+      "evidence_url": "https://skipro.com/products/enforcer-89-flat-56w.js?currency=USD",
+      "status": "inconclusive",
+      "reason": "Host blocked or rate-limited earlier in this audit"
+    },
+    {
+      "name": "Nidecker Sensor Pro Snowboard 2026",
+      "store": "Blauer Board Shop",
+      "offer": {
+        "variant_key": "46096809132247",
+        "url": "https://blauerboardshop.com/products/nidecker-sensor-pro-snowboard-2026?variant=46096809132247",
+        "current_price": 329.97,
+        "original_price": 549.95,
+        "options": "158cm",
+        "availability": "in_stock",
+        "size": "158cm"
+      },
+      "checked_at": "2026-11-02T23:28:40.837853+00:00",
+      "evidence_url": "https://blauerboardshop.com/products/nidecker-sensor-pro-snowboard-2026.js?currency=USD",
+      "status": "inconclusive",
+      "reason": "HTTP 429"
+    },
+    {
+      "name": "Salomon MTN 80 Pro Skis 2023",
+      "store": "Ski Pro AZ",
+      "offer": {
+        "variant_key": "42804130119857",
+        "url": "https://skipro.com/products/salomon_mtn_80_pro_ski?variant=42804130119857",
+        "current_price": 249.98,
+        "original_price": 650.0,
+        "options": "CORAL / 158",
+        "availability": "in_stock",
+        "size": "158"
+      },
+      "checked_at": "2026-11-02T23:28:44.261606+00:00",
+      "evidence_url": "https://skipro.com/products/salomon_mtn_80_pro_ski.js?currency=USD",
+      "status": "inconclusive",
+      "reason": "Host blocked or rate-limited earlier in this audit"
+    },
+    {
+      "name": "Volkl Secret 88 Womens Skis 2025",
+      "store": "UtahSkis",
+      "offer": {
+        "variant_key": "41860064542779",
+        "url": "https://utahskis.com/products/volkl-secret-88-womens-skis-2025?variant=41860064542779",
+        "current_price": 419.95,
+        "original_price": 749.99,
+        "options": "149",
+        "availability": "in_stock",
+        "size": "149"
+      },
+      "checked_at": "2026-11-02T23:28:44.261788+00:00",
+      "evidence_url": "https://utahskis.com/products/volkl-secret-88-womens-skis-2025.js?currency=USD",
+      "response_sha256": "0aa1c8bcc5a224d84f2217d1a3c05e0cad1586b743261aa4bf2fd739f8b2c250",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Volkl Secret 88 Womens Skis 2025",
+        "variant": "41860064542779",
+        "sku": "169034",
+        "price_minor": 41995,
+        "reference_minor": 74999,
+        "currency": "USD",
+        "options": "149",
+        "available": true
+      }
+    },
+    {
+      "name": "Arbor A-Frame Snowboard 2026",
+      "store": "Evo",
+      "offer": {
+        "variant_key": "46078800003222",
+        "url": "https://www.evo.com/products/265128-arbor-a-frame-snowboard-2026?variant=46078800003222",
+        "current_price": 309.98,
+        "original_price": 619.95,
+        "options": "158 cm",
+        "availability": "in_stock",
+        "size": "158 cm"
+      },
+      "checked_at": "2026-11-02T23:28:47.673712+00:00",
+      "evidence_url": "https://www.evo.com/products/265128-arbor-a-frame-snowboard-2026.js?currency=USD",
+      "response_sha256": "0890be58954f5de73b1cda3c9e62337fb37c6cb66c6388304116dc458ecbd00e",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Arbor A-Frame Snowboard 2026",
+        "variant": "46078800003222",
+        "sku": "EB-265128-1001",
+        "price_minor": 30998,
+        "reference_minor": 61995,
+        "currency": "USD",
+        "options": "158 cm",
+        "available": true
+      }
+    },
+    {
+      "name": "Head Oblivion 116 Skis 2026",
+      "store": "Evo",
+      "offer": {
+        "variant_key": "46078943035542",
+        "url": "https://www.evo.com/products/269335-head-oblivion-116-skis-2026?variant=46078943035542",
+        "current_price": 449.0,
+        "original_price": 749.0,
+        "options": "181 cm",
+        "availability": "in_stock",
+        "size": "181 cm"
+      },
+      "checked_at": "2026-11-02T23:28:49.460519+00:00",
+      "evidence_url": "https://www.evo.com/products/269335-head-oblivion-116-skis-2026.js?currency=USD",
+      "response_sha256": "0bf4ee4847cb8426b230e7cbbe9bb021712979bdb38250beb70880e37368ac45",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Head Oblivion 116 Skis 2026",
+        "variant": "46078943035542",
+        "sku": "EB-269335-1001",
+        "price_minor": 44900,
+        "reference_minor": 74900,
+        "currency": "USD",
+        "options": "181 cm",
+        "available": true
+      }
+    },
+    {
+      "name": "Atomic Ladies Hawx Ultra XTD 95 BOA Ski Boots 2023-2024",
+      "store": "Ski Pro AZ",
+      "offer": {
+        "variant_key": "42788786667697",
+        "url": "https://skipro.com/products/atomic_ladies_hawx_ultra_xtd_95_boa_ski_boots?variant=42788786667697",
+        "current_price": 469.95,
+        "original_price": 850.0,
+        "options": "STRM/IVR / 24.5",
+        "availability": "in_stock",
+        "size": "24.5"
+      },
+      "checked_at": "2026-11-02T23:28:51.146698+00:00",
+      "evidence_url": "https://skipro.com/products/atomic_ladies_hawx_ultra_xtd_95_boa_ski_boots.js?currency=USD",
+      "status": "inconclusive",
+      "reason": "Host blocked or rate-limited earlier in this audit"
+    },
+    {
+      "name": "Salomon QST 94 Skis 2026/2027",
+      "store": "Evo",
+      "offer": {
+        "variant_key": "46078884675734",
+        "url": "https://www.evo.com/products/267651-salomon-qst-94-skis-2026?variant=46078884675734",
+        "current_price": 419.97,
+        "original_price": 699.95,
+        "options": "Iced Aqua / 156 cm",
+        "availability": "in_stock",
+        "size": "156 cm"
+      },
+      "checked_at": "2026-11-02T23:28:51.146823+00:00",
+      "evidence_url": "https://www.evo.com/products/267651-salomon-qst-94-skis-2026.js?currency=USD",
+      "response_sha256": "5d03447842a911fce6a49182373b76a68f8452a6e5f05b20d83125c6ef1fec14",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Salomon QST 94 Skis 2026/2027",
+        "variant": "46078884675734",
+        "sku": "EB-267651-1001",
+        "price_minor": 41997,
+        "reference_minor": 69995,
+        "currency": "USD",
+        "options": "Iced Aqua / 156 cm",
+        "available": true
+      }
+    },
+    {
+      "name": "GNU Riders Choice Snowboard 2025 - Men's",
+      "store": "Blauer Board Shop",
+      "offer": {
+        "variant_key": "45223546683607",
+        "url": "https://blauerboardshop.com/products/gnu-riders-choice-2025?variant=45223546683607",
+        "current_price": 419.99,
+        "original_price": 699.99,
+        "options": "155cm Wide",
+        "availability": "in_stock",
+        "size": "155cm Wide"
+      },
+      "checked_at": "2026-11-02T23:28:52.762949+00:00",
+      "evidence_url": "https://blauerboardshop.com/products/gnu-riders-choice-2025.js?currency=USD",
+      "status": "inconclusive",
+      "reason": "Host blocked or rate-limited earlier in this audit"
+    }
+  ],
+  "provenance": {
+    "original": "2026-11-02-snow-merchant-audit.json",
+    "recheck": "2026-11-02-snow-auditor-recheck.json",
+    "cohort_revalidated": "969 eligible listings; same 30 URLs after latest-store and 24h constraints",
+    "note": "This reconciles evidence from two checks, not a new simultaneous audit. Blocked rows remain inconclusive."
+  }
+}

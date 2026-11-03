@@ -7,7 +7,8 @@ import re
 def size_key(value: str | None) -> str:
     value = re.sub(r'\s+', '', (value or '').casefold())
     value = re.sub(r'(cm|mondo)$', '', value)
-    aliases = {'small': 's', 'medium': 'm', 'large': 'l', 'extra-large': 'xl', 'x-large': 'xl'}
+    aliases = {'small': 's', 'sm': 's', 'medium': 'm', 'md': 'm', 'large': 'l', 'lg': 'l',
+               'extra-large': 'xl', 'x-large': 'xl'}
     return aliases.get(value, value)
 
 

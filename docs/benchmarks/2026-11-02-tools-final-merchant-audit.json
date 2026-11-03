@@ -1,0 +1,1155 @@
+{
+  "catalog": "tools",
+  "date": "2026-11-02T23:43:24.171604+00:00",
+  "seed": 20261102,
+  "population": 175,
+  "method": "top10-plus-seeded20-merchant-product-v1",
+  "sample_size": 30,
+  "match": 17,
+  "mismatch": 0,
+  "inconclusive": 13,
+  "verified_match_percent": 56.67,
+  "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+  "results": [
+    {
+      "name": "Iconic 24\" x 24\" for Axiom CNC Router",
+      "store": "Woodcraft",
+      "offer": {
+        "variant_key": "43403824922762",
+        "url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-24-for-axiom-cnc-router?currency=USD&variant=43403824922762",
+        "current_price": 2999.0,
+        "original_price": 6049.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/172910_000_001.jpg?v=1720472421",
+        "reference_basis": "retailer_compare_at",
+        "discount": 50.4,
+        "savings": 3050.0
+      },
+      "checked_at": "2026-11-02T23:42:51.238124+00:00",
+      "evidence_url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-24-for-axiom-cnc-router.js?currency=USD",
+      "response_sha256": "70a947ae04b90c1bfc26a6ab72a7d2fd9deceea5cffea990b1fa15ae9e64b02d",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Iconic 24\" x 24\" for Axiom CNC Router",
+        "variant": "43403824922762",
+        "sku": "172910",
+        "price_minor": 299900,
+        "reference_minor": 604900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "JET JAT-127, 3/4-in. Composite Impact Wrench (505127)",
+      "store": "Tool Nut",
+      "offer": {
+        "variant_key": "50177235976486",
+        "url": "https://www.toolnut.com/products/jet-505127-jat-127-composite-impact-wrench?currency=USD&variant=50177235976486",
+        "current_price": 299.99,
+        "original_price": 580.99,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/505127_main.jpg?v=1778274029",
+        "reference_basis": "retailer_compare_at",
+        "discount": 48.4,
+        "savings": 281.0
+      },
+      "checked_at": "2026-11-02T23:42:54.582272+00:00",
+      "evidence_url": "https://www.toolnut.com/products/jet-505127-jat-127-composite-impact-wrench.js?currency=USD",
+      "status": "inconclusive",
+      "reason": "HTTP 429"
+    },
+    {
+      "name": "Iconic 24\" x 36\" CNC Router",
+      "store": "Woodcraft",
+      "offer": {
+        "variant_key": "43400695939210",
+        "url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-36-cnc-router?currency=USD&variant=43400695939210",
+        "current_price": 3499.0,
+        "original_price": 6599.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/172911_000_001.jpg?v=1720472424",
+        "reference_basis": "retailer_compare_at",
+        "discount": 47.0,
+        "savings": 3100.0
+      },
+      "checked_at": "2026-11-02T23:42:57.855197+00:00",
+      "evidence_url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-36-cnc-router.js?currency=USD",
+      "response_sha256": "0c85371d1b0e881d75222727672a3e2f1b203c3194ab96b0678c39403f05d2a8",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Iconic 24\" x 36\" CNC Router",
+        "variant": "43400695939210",
+        "sku": "172911",
+        "price_minor": 349900,
+        "reference_minor": 659900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Jet J-4400A, 12-in. Industrial Disc Finishing Machine 115/230V 1-Phase (414602)",
+      "store": "Tool Nut",
+      "offer": {
+        "variant_key": "50175462670630",
+        "url": "https://www.toolnut.com/products/jet-414602-j-4400a-12-industrial-disc-finishing-machine-115-230v-1ph?currency=USD&variant=50175462670630",
+        "current_price": 1099.0,
+        "original_price": 2036.99,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/414602_main.jpg?v=1778128350",
+        "reference_basis": "retailer_compare_at",
+        "discount": 46.0,
+        "savings": 937.99
+      },
+      "checked_at": "2026-11-02T23:42:59.487932+00:00",
+      "evidence_url": "https://www.toolnut.com/products/jet-414602-j-4400a-12-industrial-disc-finishing-machine-115-230v-1ph.js?currency=USD",
+      "status": "inconclusive",
+      "reason": "Host blocked or rate-limited earlier in this audit"
+    },
+    {
+      "name": "Axiom Iconic 24\" x 48\" CNC Router",
+      "store": "Woodcraft",
+      "offer": {
+        "variant_key": "43400901656714",
+        "url": "https://www.woodcraft.com/products/axiom-precision-axiom-iconic-24-x-48-cnc-router?currency=USD&variant=43400901656714",
+        "current_price": 3999.0,
+        "original_price": 7149.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/172912_000_001.jpg?v=1720482526",
+        "reference_basis": "retailer_compare_at",
+        "discount": 44.1,
+        "savings": 3150.0
+      },
+      "checked_at": "2026-11-02T23:42:59.488065+00:00",
+      "evidence_url": "https://www.woodcraft.com/products/axiom-precision-axiom-iconic-24-x-48-cnc-router.js?currency=USD",
+      "response_sha256": "b23f98326a1f62c55b39cbf4ad99971386ec421d5266ed03670385920fc1a3db",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Axiom Iconic 24\" x 48\" CNC Router",
+        "variant": "43400901656714",
+        "sku": "172912",
+        "price_minor": 399900,
+        "reference_minor": 714900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "DeWALT 20V MAX 6-1/2-in. Brushless Cordless Circular Saw, Tool Only (PROMO DCS565B)",
+      "store": "Tool Nut",
+      "offer": {
+        "variant_key": "53393184162086",
+        "url": "https://www.toolnut.com/products/dewalt-dcs565b-20v-max-6-1-2-in-brushless-cordless-circular-saw-tool-only-promo?currency=USD&variant=53393184162086",
+        "current_price": 134.99,
+        "original_price": 237.99,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/dcs565b_1_a6aace15-1cb4-4005-8256-2e9f7f324606.jpg?v=1778684329",
+        "reference_basis": "retailer_compare_at",
+        "discount": 43.3,
+        "savings": 103.0
+      },
+      "checked_at": "2026-11-02T23:43:01.134407+00:00",
+      "evidence_url": "https://www.toolnut.com/products/dewalt-dcs565b-20v-max-6-1-2-in-brushless-cordless-circular-saw-tool-only-promo.js?currency=USD",
+      "status": "inconclusive",
+      "reason": "Host blocked or rate-limited earlier in this audit"
+    },
+    {
+      "name": "18\" Woodworking Bandsaw with ArmorGlide -  5 HP 3 PH 230V - PM1800B-3T",
+      "store": "Woodcraft",
+      "offer": {
+        "variant_key": "43872697778314",
+        "url": "https://www.woodcraft.com/products/powermatic-18-woodworking-bandsaw-with-armorglide-5-hp-3-ph-230v-pm1800b-3t?currency=USD&variant=43872697778314",
+        "current_price": 4999.0,
+        "original_price": 8359.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/189338_000_001.jpg?v=1720486620",
+        "reference_basis": "retailer_compare_at",
+        "discount": 40.2,
+        "savings": 3360.0
+      },
+      "checked_at": "2026-11-02T23:43:01.134536+00:00",
+      "evidence_url": "https://www.woodcraft.com/products/powermatic-18-woodworking-bandsaw-with-armorglide-5-hp-3-ph-230v-pm1800b-3t.js?currency=USD",
+      "response_sha256": "73df3541e904ce688c4c74409236a041e2c02ff3b674f7a2e57a432a129ab3d5",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "18\" Woodworking Bandsaw with ArmorGlide -  5 HP 3 PH 230V - PM1800B-3T",
+        "variant": "43872697778314",
+        "sku": "189338",
+        "price_minor": 499900,
+        "reference_minor": 835900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "JET JAT-211, 1-in. D-Handle Impact Wrench (505211)",
+      "store": "Tool Nut",
+      "offer": {
+        "variant_key": "50176726991142",
+        "url": "https://www.toolnut.com/products/jet-505211-jat-211-1-inch-d-handle-impact-wrench?currency=USD&variant=50176726991142",
+        "current_price": 599.99,
+        "original_price": 997.99,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/jet_505211_main.jpg?v=1778221572",
+        "reference_basis": "retailer_compare_at",
+        "discount": 39.9,
+        "savings": 398.0
+      },
+      "checked_at": "2026-11-02T23:43:02.763144+00:00",
+      "evidence_url": "https://www.toolnut.com/products/jet-505211-jat-211-1-inch-d-handle-impact-wrench.js?currency=USD",
+      "status": "inconclusive",
+      "reason": "Host blocked or rate-limited earlier in this audit"
+    },
+    {
+      "name": "Flex Combo Kit With Stack Pack",
+      "store": "Woodcraft",
+      "offer": {
+        "variant_key": "49858297430154",
+        "url": "https://www.woodcraft.com/products/flex-combo-kit-with-stack-pack?currency=USD&variant=49858297430154",
+        "current_price": 649.0,
+        "original_price": 979.98,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/199612K_000_001.jpg?v=1785960714",
+        "reference_basis": "retailer_compare_at",
+        "discount": 33.8,
+        "savings": 330.98
+      },
+      "checked_at": "2026-11-02T23:43:02.763267+00:00",
+      "evidence_url": "https://www.woodcraft.com/products/flex-combo-kit-with-stack-pack.js?currency=USD",
+      "response_sha256": "4b7726d0ce39361e83f6d47b1b1871de2ca3bc1d5fe6fc2b0fa9ec7eb92ed3b4",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Flex Combo Kit With Stack Pack",
+        "variant": "49858297430154",
+        "sku": "199612K",
+        "price_minor": 64900,
+        "reference_minor": 97998,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Bosch 18V Brushless 6-1/2-in. Circular Saw, Tool Only (GKS18V-22N)",
+      "store": "Tool Nut",
+      "offer": {
+        "variant_key": "50183171899686",
+        "url": "https://www.toolnut.com/products/bosch-gks18v-22n-18v-brushless-6-1-2-in-circular-saw-tool-only?currency=USD&variant=50183171899686",
+        "current_price": 165.17,
+        "original_price": 245.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/gks18v-22n.jpg?v=1778304416",
+        "reference_basis": "retailer_compare_at",
+        "discount": 32.6,
+        "savings": 79.83
+      },
+      "checked_at": "2026-11-02T23:43:04.398188+00:00",
+      "evidence_url": "https://www.toolnut.com/products/bosch-gks18v-22n-18v-brushless-6-1-2-in-circular-saw-tool-only.js?currency=USD",
+      "status": "inconclusive",
+      "reason": "Host blocked or rate-limited earlier in this audit"
+    },
+    {
+      "name": "Industrial Cabinet Saw with 52\" Industrial T-Glide Advance Fence System - 5 HP - 3PH - 230V",
+      "store": "Woodcraft",
+      "offer": {
+        "variant_key": "46882382151818",
+        "url": "https://www.woodcraft.com/products/sawstop-5hp-3-ph-230v-industrial-saw-36-industrial-t-glide-advance?currency=USD&variant=46882382151818",
+        "current_price": 5604.0,
+        "original_price": 6104.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/197667_000_001.jpg?v=1779999391",
+        "reference_basis": "retailer_compare_at",
+        "discount": 8.2,
+        "savings": 500.0
+      },
+      "checked_at": "2026-11-02T23:43:04.398336+00:00",
+      "evidence_url": "https://www.woodcraft.com/products/sawstop-5hp-3-ph-230v-industrial-saw-36-industrial-t-glide-advance.js?currency=USD",
+      "response_sha256": "de33430f477b0c09e5d487c7f9f2c9b842e3a35f5ac5ff4fab6d51856de01b83",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Industrial Cabinet Saw with 52\" Industrial T-Glide Advance Fence System - 5 HP - 3PH - 230V",
+        "variant": "46882382151818",
+        "sku": "197667",
+        "price_minor": 560400,
+        "reference_minor": 610400,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "JET GH-1440-1 Lathe with Collet Closer (323372)",
+      "store": "Tool Nut",
+      "offer": {
+        "variant_key": "50177161363750",
+        "url": "https://www.toolnut.com/products/jet-323372-lathe?currency=USD&variant=50177161363750",
+        "current_price": 19849.0,
+        "original_price": 25277.99,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/323372_main_1.jpg?v=1778271482",
+        "reference_basis": "retailer_compare_at",
+        "discount": 21.5,
+        "savings": 5428.99
+      },
+      "checked_at": "2026-11-02T23:43:06.124481+00:00",
+      "evidence_url": "https://www.toolnut.com/products/jet-323372-lathe.js?currency=USD",
+      "status": "inconclusive",
+      "reason": "Host blocked or rate-limited earlier in this audit"
+    },
+    {
+      "name": "SawStop 220V Single Phase 3-HP 13-Amp 10-in. Professional Cabinet Saw with 30-in. Fence System (PCS31230-PFA30)",
+      "store": "Tool Nut",
+      "offer": {
+        "variant_key": "50176559579430",
+        "url": "https://www.toolnut.com/products/sawstop-pcs31230-pfa30-220v-single-phase-3-hp-13-amp-10-professional-cabinet-saw-with-30-fence-system?currency=USD&variant=50176559579430",
+        "current_price": 3201.0,
+        "original_price": 3551.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/pcs31230-pfa30_1_fcshtwie7qo9sp8n.jpg?v=1778202083",
+        "reference_basis": "retailer_compare_at",
+        "discount": 9.9,
+        "savings": 350.0
+      },
+      "checked_at": "2026-11-02T23:43:06.124608+00:00",
+      "evidence_url": "https://www.toolnut.com/products/sawstop-pcs31230-pfa30-220v-single-phase-3-hp-13-amp-10-professional-cabinet-saw-with-30-fence-system.js?currency=USD",
+      "status": "inconclusive",
+      "reason": "Host blocked or rate-limited earlier in this audit"
+    },
+    {
+      "name": "Industrial Cabinet Saw with 52\" T-Glide Advance Fence System - 7.5HP - 3PH - 480V",
+      "store": "Woodcraft",
+      "offer": {
+        "variant_key": "47014685933706",
+        "url": "https://www.woodcraft.com/products/sawstop-industrial-cabinet-saw-with-52-advance-t-glide-fence-system-7-5hp-3ph-480v?currency=USD&variant=47014685933706",
+        "current_price": 6282.0,
+        "original_price": 6782.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/197622_000_001.jpg?v=1779999341",
+        "reference_basis": "retailer_compare_at",
+        "discount": 7.4,
+        "savings": 500.0
+      },
+      "checked_at": "2026-11-02T23:43:06.124653+00:00",
+      "evidence_url": "https://www.woodcraft.com/products/sawstop-industrial-cabinet-saw-with-52-advance-t-glide-fence-system-7-5hp-3ph-480v.js?currency=USD",
+      "response_sha256": "8388b549e6b2adb6e1aa55bc8fba991928af808786d2d22519ed979d6dd60f98",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Industrial Cabinet Saw with 52\" T-Glide Advance Fence System - 7.5HP - 3PH - 480V",
+        "variant": "47014685933706",
+        "sku": "197622",
+        "price_minor": 628200,
+        "reference_minor": 678200,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "3 HP Professional Cabinet Saw with 52\u201d Professional T-Glide Advance Fence System - 1 PH 230V",
+      "store": "Woodcraft",
+      "offer": {
+        "variant_key": "46990685339786",
+        "url": "https://www.woodcraft.com/products/sawstop-professional-3hp-cabinet-saw-with-52-professional-t-glide-adv?currency=USD&variant=46990685339786",
+        "current_price": 3784.0,
+        "original_price": 4134.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/197661_000_001.jpg?v=1779999365",
+        "reference_basis": "retailer_compare_at",
+        "discount": 8.5,
+        "savings": 350.0
+      },
+      "checked_at": "2026-11-02T23:43:07.906205+00:00",
+      "evidence_url": "https://www.woodcraft.com/products/sawstop-professional-3hp-cabinet-saw-with-52-professional-t-glide-adv.js?currency=USD",
+      "response_sha256": "9eb98d952c681f15d3aac6c32b927be962bc7575736a30f44e489e67493aea68",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "3 HP Professional Cabinet Saw with 52\u201d Professional T-Glide Advance Fence System - 1 PH 230V",
+        "variant": "46990685339786",
+        "sku": "197661",
+        "price_minor": 378400,
+        "reference_minor": 413400,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Powermatic Bandsaw 5H, 3PH 230V ArmorGlide (1791258BT-POWERMATIC)",
+      "store": "Tool Nut",
+      "offer": {
+        "variant_key": "50185216131366",
+        "url": "https://www.toolnut.com/products/powermatic-1791258bt-powermatic-powermatic-bandsaw-5h-3ph-230v-armorglide?currency=USD&variant=50185216131366",
+        "current_price": 6599.0,
+        "original_price": 8886.99,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/pm1-1791258bt-1.jpg?v=1778357465",
+        "reference_basis": "retailer_compare_at",
+        "discount": 25.7,
+        "savings": 2287.99
+      },
+      "checked_at": "2026-11-02T23:43:09.514358+00:00",
+      "evidence_url": "https://www.toolnut.com/products/powermatic-1791258bt-powermatic-powermatic-bandsaw-5h-3ph-230v-armorglide.js?currency=USD",
+      "status": "inconclusive",
+      "reason": "Host blocked or rate-limited earlier in this audit"
+    },
+    {
+      "name": "JET JWS-20CS Shaper 1.5HP (724020)",
+      "store": "Tool Nut",
+      "offer": {
+        "variant_key": "50183190675750",
+        "url": "https://www.toolnut.com/products/jet-jws-20cs-shaper-1-5hp?currency=USD&variant=50183190675750",
+        "current_price": 1799.0,
+        "original_price": 2319.99,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/b82fc5db-e5b9-4ac9-a5ad-8a33f9027758_7.jpg?v=1778305984",
+        "reference_basis": "retailer_compare_at",
+        "discount": 22.5,
+        "savings": 520.99
+      },
+      "checked_at": "2026-11-02T23:43:09.514488+00:00",
+      "evidence_url": "https://www.toolnut.com/products/jet-jws-20cs-shaper-1-5hp.js?currency=USD",
+      "status": "inconclusive",
+      "reason": "Host blocked or rate-limited earlier in this audit"
+    },
+    {
+      "name": "SHARK HD510 CNC Machine",
+      "store": "Woodcraft",
+      "offer": {
+        "variant_key": "43403686838410",
+        "url": "https://www.woodcraft.com/products/next-wave-shark-hd510-cnc-machine?currency=USD&variant=43403686838410",
+        "current_price": 3399.99,
+        "original_price": 3999.99,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/167550_000_002.jpg?v=1767622951",
+        "reference_basis": "retailer_compare_at",
+        "discount": 15.0,
+        "savings": 600.0
+      },
+      "checked_at": "2026-11-02T23:43:09.514533+00:00",
+      "evidence_url": "https://www.woodcraft.com/products/next-wave-shark-hd510-cnc-machine.js?currency=USD",
+      "response_sha256": "578120604c76d70eece69b396a2e2334dd35379457be918e3ed8548b4fbf80bf",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "SHARK HD510 CNC Machine",
+        "variant": "43403686838410",
+        "sku": "167550",
+        "price_minor": 339999,
+        "reference_minor": 399999,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Jet GH-1880ZX Lathe With Newall DP700 DRO With Collet Closer (321583)",
+      "store": "Tool Nut",
+      "offer": {
+        "variant_key": "50175995740454",
+        "url": "https://www.toolnut.com/products/jet-321583-gh-1880zx-lathe-with-newall-dp700-dro-with-collet-closer?currency=USD&variant=50175995740454",
+        "current_price": 49542.0,
+        "original_price": 56358.99,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/jet-321583-1_1.jpg?v=1778146680",
+        "reference_basis": "retailer_compare_at",
+        "discount": 12.1,
+        "savings": 6816.99
+      },
+      "checked_at": "2026-11-02T23:43:11.128990+00:00",
+      "evidence_url": "https://www.toolnut.com/products/jet-321583-gh-1880zx-lathe-with-newall-dp700-dro-with-collet-closer.js?currency=USD",
+      "status": "inconclusive",
+      "reason": "Host blocked or rate-limited earlier in this audit"
+    },
+    {
+      "name": "SawStop 110V Single Phase 1.75-HP 14-Amp 10-in. Contractor Saw with 36-in. Professional Series T-Glide Fence System (CNS175-TGP236)",
+      "store": "Tool Nut",
+      "offer": {
+        "variant_key": "50176543555878",
+        "url": "https://www.toolnut.com/products/sawstop-cns175-tgp236-110v-single-phase-1-75-hp-15-amp-10-contractor-saw-with-36-professional-series-t-glide-fence-system?currency=USD&variant=50176543555878",
+        "current_price": 2129.0,
+        "original_price": 2329.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/cns175-tgp36_eehfls3mnpaaddwx.jpg?v=1778200631",
+        "reference_basis": "retailer_compare_at",
+        "discount": 8.6,
+        "savings": 200.0
+      },
+      "checked_at": "2026-11-02T23:43:11.129263+00:00",
+      "evidence_url": "https://www.toolnut.com/products/sawstop-cns175-tgp236-110v-single-phase-1-75-hp-15-amp-10-contractor-saw-with-36-professional-series-t-glide-fence-system.js?currency=USD",
+      "status": "inconclusive",
+      "reason": "Host blocked or rate-limited earlier in this audit"
+    },
+    {
+      "name": "2\" x 42\" Bench Belt Grinder & Disc Sander",
+      "store": "Woodcraft",
+      "offer": {
+        "variant_key": "46327696457866",
+        "url": "https://www.woodcraft.com/products/jet-2-x-42-bench-belt-grinder-disc-sander?currency=USD&variant=46327696457866",
+        "current_price": 629.0,
+        "original_price": 736.99,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/190614_000_001.jpg?v=1747931629",
+        "reference_basis": "retailer_compare_at",
+        "discount": 14.7,
+        "savings": 107.99
+      },
+      "checked_at": "2026-11-02T23:43:11.129335+00:00",
+      "evidence_url": "https://www.woodcraft.com/products/jet-2-x-42-bench-belt-grinder-disc-sander.js?currency=USD",
+      "response_sha256": "6017388c07053777c0b5da2f1eb7bc192abdc14f4b51d952108e5daeb02e3102",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2\" x 42\" Bench Belt Grinder & Disc Sander",
+        "variant": "46327696457866",
+        "sku": "190614",
+        "price_minor": 62900,
+        "reference_minor": 73699,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Industrial Cabinet Saw with 36\" Industrial T-Glide Advance Fence System - 3 HP - 1PH - 230V",
+      "store": "Woodcraft",
+      "offer": {
+        "variant_key": "46882381987978",
+        "url": "https://www.woodcraft.com/products/sawstop-1-75-hp-professional-saw-52-in-pro-t-glide-advance?currency=USD&variant=46882381987978",
+        "current_price": 4818.0,
+        "original_price": 5318.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/197662_000_001.jpg?v=1779999367",
+        "reference_basis": "retailer_compare_at",
+        "discount": 9.4,
+        "savings": 500.0
+      },
+      "checked_at": "2026-11-02T23:43:12.727497+00:00",
+      "evidence_url": "https://www.woodcraft.com/products/sawstop-1-75-hp-professional-saw-52-in-pro-t-glide-advance.js?currency=USD",
+      "response_sha256": "a402e8a217848196f989458921ae350a0af53c1518adbf1e32e918fbe235d9b0",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Industrial Cabinet Saw with 36\" Industrial T-Glide Advance Fence System - 3 HP - 1PH - 230V",
+        "variant": "46882381987978",
+        "sku": "197662",
+        "price_minor": 481800,
+        "reference_minor": 531800,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Industrial Cabinet Saw with 36\" T-Glide Advance Fence System - 7.5HP - 3PH - 230V",
+      "store": "Woodcraft",
+      "offer": {
+        "variant_key": "47014685802634",
+        "url": "https://www.woodcraft.com/products/sawstop-industrial-cabinet-saw-with-36-advance-t-glide-fence-system-7-5hp-3ph-230v?currency=USD&variant=47014685802634",
+        "current_price": 6164.0,
+        "original_price": 6664.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/197619_000_001.jpg?v=1779999329",
+        "reference_basis": "retailer_compare_at",
+        "discount": 7.5,
+        "savings": 500.0
+      },
+      "checked_at": "2026-11-02T23:43:14.322571+00:00",
+      "evidence_url": "https://www.woodcraft.com/products/sawstop-industrial-cabinet-saw-with-36-advance-t-glide-fence-system-7-5hp-3ph-230v.js?currency=USD",
+      "response_sha256": "19035c4395fc9046879140a257e4fcb818144730dde91a6077edf9a42b8b51e8",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Industrial Cabinet Saw with 36\" T-Glide Advance Fence System - 7.5HP - 3PH - 230V",
+        "variant": "47014685802634",
+        "sku": "197619",
+        "price_minor": 616400,
+        "reference_minor": 666400,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "12\" Parallelogram Jointer with ArmorGlide - Straight Knife - 3 HP 1 PH 230V - 1285T",
+      "store": "Woodcraft",
+      "offer": {
+        "variant_key": "43872823181450",
+        "url": "https://www.woodcraft.com/products/powermatic-12-parallelogram-jointer-with-armorglide-straight-knife-3-hp-1-ph-230v-1285t?currency=USD&variant=43872823181450",
+        "current_price": 6999.0,
+        "original_price": 9569.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/189345_000_001.jpg?v=1720487328",
+        "reference_basis": "retailer_compare_at",
+        "discount": 26.9,
+        "savings": 2570.0
+      },
+      "checked_at": "2026-11-02T23:43:15.932055+00:00",
+      "evidence_url": "https://www.woodcraft.com/products/powermatic-12-parallelogram-jointer-with-armorglide-straight-knife-3-hp-1-ph-230v-1285t.js?currency=USD",
+      "response_sha256": "2be8c08ecfbc4d7d26cae57b90c166f9a1a203ad244cf326593f079ecdfe7e64",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "12\" Parallelogram Jointer with ArmorGlide - Straight Knife - 3 HP 1 PH 230V - 1285T",
+        "variant": "43872823181450",
+        "sku": "189345",
+        "price_minor": 699900,
+        "reference_minor": 956900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Sawstop Contractor 1.75HP Saw with 52-in. Professional T-Glide Advance Fence, Rails & Extension Table (CNS175-ATGP52)",
+      "store": "Tool Nut",
+      "offer": {
+        "variant_key": "51633306173734",
+        "url": "https://www.toolnut.com/products/sawstop-cns175-atgp52-contractor-1-75hp-saw-with-52-professional-t-glide-advance-fence-rails-extension-table?currency=USD&variant=51633306173734",
+        "current_price": 2382.0,
+        "original_price": 2582.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/sawstop_cns52_atg_188599e1-729f-4a7a-9084-83d4cde5e9a2.jpg?v=1761768221",
+        "reference_basis": "retailer_compare_at",
+        "discount": 7.7,
+        "savings": 200.0
+      },
+      "checked_at": "2026-11-02T23:43:17.671425+00:00",
+      "evidence_url": "https://www.toolnut.com/products/sawstop-cns175-atgp52-contractor-1-75hp-saw-with-52-professional-t-glide-advance-fence-rails-extension-table.js?currency=USD",
+      "status": "inconclusive",
+      "reason": "Host blocked or rate-limited earlier in this audit"
+    },
+    {
+      "name": "7.5 HP 3 PH 480V Industrial Cabinet Saw with 36\" Industrial T-Glide Fence System",
+      "store": "Woodcraft",
+      "offer": {
+        "variant_key": "43402847387786",
+        "url": "https://www.woodcraft.com/products/sawstop-7-5hp-3ph-480v-industrial-cabinet-saw-with-36-industrial-t-glide-fence-system?currency=USD&variant=43402847387786",
+        "current_price": 6000.0,
+        "original_price": 6500.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/420946_000_001.jpg?v=1790193989",
+        "reference_basis": "retailer_compare_at",
+        "discount": 7.7,
+        "savings": 500.0
+      },
+      "checked_at": "2026-11-02T23:43:17.671511+00:00",
+      "evidence_url": "https://www.woodcraft.com/products/sawstop-7-5hp-3ph-480v-industrial-cabinet-saw-with-36-industrial-t-glide-fence-system.js?currency=USD",
+      "response_sha256": "a6b11c244ff912a3739e312df6bd293f8942dfa14183523ae26d980a044af568",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "7.5 HP 3 PH 480V Industrial Cabinet Saw with 36\" Industrial T-Glide Fence System",
+        "variant": "43402847387786",
+        "sku": "420946",
+        "price_minor": 600000,
+        "reference_minor": 650000,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Powermatic Bandsaw 5HP 3PH 230V ArmorGlide (1791801BT-POWERMATIC)",
+      "store": "Tool Nut",
+      "offer": {
+        "variant_key": "50185215967526",
+        "url": "https://www.toolnut.com/products/powermatic-1791801bt-powermatic-powermatic-bandsaw-5hp-3ph-230v-armorglide?currency=USD&variant=50185215967526",
+        "current_price": 6499.0,
+        "original_price": 8007.99,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/pm1-1791801bt-1.jpg?v=1778352471",
+        "reference_basis": "retailer_compare_at",
+        "discount": 18.8,
+        "savings": 1508.99
+      },
+      "checked_at": "2026-11-02T23:43:19.318690+00:00",
+      "evidence_url": "https://www.toolnut.com/products/powermatic-1791801bt-powermatic-powermatic-bandsaw-5hp-3ph-230v-armorglide.js?currency=USD",
+      "status": "inconclusive",
+      "reason": "Host blocked or rate-limited earlier in this audit"
+    },
+    {
+      "name": "Industrial Cabinet Saw with 52\" Industrial T-Glide Advance Fence System - 3 HP - 1PH - 230V",
+      "store": "Woodcraft",
+      "offer": {
+        "variant_key": "46882382020746",
+        "url": "https://www.woodcraft.com/products/sawstop-3hp-professional-saw-36-in-pro-t-glide-advance?currency=USD&variant=46882382020746",
+        "current_price": 4936.0,
+        "original_price": 5436.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/197663_000_001.jpg?v=1779999376",
+        "reference_basis": "retailer_compare_at",
+        "discount": 9.2,
+        "savings": 500.0
+      },
+      "checked_at": "2026-11-02T23:43:19.318840+00:00",
+      "evidence_url": "https://www.woodcraft.com/products/sawstop-3hp-professional-saw-36-in-pro-t-glide-advance.js?currency=USD",
+      "response_sha256": "9eefe077f4ea7d4a37e49ec98f1600f3d8288e9c3ee88927277133064cb80127",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Industrial Cabinet Saw with 52\" Industrial T-Glide Advance Fence System - 3 HP - 1PH - 230V",
+        "variant": "46882382020746",
+        "sku": "197663",
+        "price_minor": 493600,
+        "reference_minor": 543600,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "HVBS712V 7\" X 12\" Variable Speed Horizontal / Vertical Bandsaw",
+      "store": "Woodcraft",
+      "offer": {
+        "variant_key": "46321790288010",
+        "url": "https://www.woodcraft.com/products/jet-hvbs712v-7-x-12-variable-speed-horizontal-vertical-bandsaw?currency=USD&variant=46321790288010",
+        "current_price": 2199.0,
+        "original_price": 2529.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/196355_000_001.jpg?v=1747758851",
+        "reference_basis": "retailer_compare_at",
+        "discount": 13.0,
+        "savings": 330.0
+      },
+      "checked_at": "2026-11-02T23:43:20.957316+00:00",
+      "evidence_url": "https://www.woodcraft.com/products/jet-hvbs712v-7-x-12-variable-speed-horizontal-vertical-bandsaw.js?currency=USD",
+      "response_sha256": "8ba278ec5c46c33ab64bfdabba751895dae7f0515c0afde144c98078ff6822aa",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "HVBS712V 7\" X 12\" Variable Speed Horizontal / Vertical Bandsaw",
+        "variant": "46321790288010",
+        "sku": "196355",
+        "price_minor": 219900,
+        "reference_minor": 252900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Industrial Cabinet Saw with 52\" Industrial T-Glide Fence System - 5 HP - 1PH - 230V",
+      "store": "Woodcraft",
+      "offer": {
+        "variant_key": "43403479941258",
+        "url": "https://www.woodcraft.com/products/sawstop-5hp-1ph-230v-industrial-cabinet-saw-with-52-industrial-t-glide-fence-system?currency=USD&variant=43403479941258",
+        "current_price": 5440.0,
+        "original_price": 5940.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/856293_000_001.jpg?v=1790191050",
+        "reference_basis": "retailer_compare_at",
+        "discount": 8.4,
+        "savings": 500.0
+      },
+      "checked_at": "2026-11-02T23:43:22.545424+00:00",
+      "evidence_url": "https://www.woodcraft.com/products/sawstop-5hp-1ph-230v-industrial-cabinet-saw-with-52-industrial-t-glide-fence-system.js?currency=USD",
+      "response_sha256": "62610fee9415deda5cd9d31988251053909f9b3f53f06c995b18d70d12bc2dee",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Industrial Cabinet Saw with 52\" Industrial T-Glide Fence System - 5 HP - 1PH - 230V",
+        "variant": "43403479941258",
+        "sku": "856293",
+        "price_minor": 544000,
+        "reference_minor": 594000,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    }
+  ]
+}

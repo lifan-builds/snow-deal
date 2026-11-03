@@ -81,8 +81,10 @@ async def fetch_products(store: RetailerConfig, parser: BaseParser, client: http
                     collection['status'] = 'currency_mismatch' if observed else 'currency_unknown'
                     outcome['errors'] += 1
                     continue
-            except (httpx.HTTPError, ValueError, TypeError, AttributeError):
+            except (httpx.HTTPError, ValueError, TypeError, AttributeError) as exc:
                 collection['status'] = 'currency_check_failed'
+                if isinstance(exc, httpx.HTTPStatusError):
+                    collection['http_status'] = exc.response.status_code
                 outcome['errors'] += 1
                 continue
         # For Shopify stores, convert to API URL

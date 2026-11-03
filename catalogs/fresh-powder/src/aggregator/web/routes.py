@@ -11,7 +11,7 @@ from fastapi import APIRouter, HTTPException, Query, Request
 from fastapi.responses import HTMLResponse, PlainTextResponse, Response
 from fastapi.templating import Jinja2Templates
 
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 from aggregator.auth import is_public_mode, require_invite
 from aggregator.config import CATEGORY_RULES, STORES, EQUIPMENT_CATEGORIES
@@ -40,14 +40,14 @@ CAD_STORES = {s.name for s in STORES if s.currency == "CAD"}
 async def _build_store_statuses() -> list[dict]:
     """Build annotated store status list with freshness indicators."""
     statuses = await store_status()
-    now = datetime.now()
+    now = datetime.now(timezone.utc).replace(tzinfo=None)
     for st in statuses:
         last = datetime.fromisoformat(st["last_scraped"])
         age = now - last
         st["age_hours"] = age.total_seconds() / 3600
-        if age < timedelta(hours=30):
+        if timedelta(0) <= age <= timedelta(hours=24):
             st["freshness"] = "fresh"
-        elif age < timedelta(hours=48):
+        elif timedelta(hours=24) < age < timedelta(hours=48):
             st["freshness"] = "stale"
         else:
             st["freshness"] = "old"
@@ -327,9 +327,10 @@ async def healthz():
     from fastapi.responses import JSONResponse
     try:
         rows = await refresh_status()
-        checked_at = max((row["checked_at"] for row in rows), default=None)
-        age = (datetime.utcnow() - datetime.fromisoformat(checked_at)).total_seconds() / 3600 if checked_at else None
-        return JSONResponse({"status": "ok" if age is not None and age < 48 else "stale",
+        checked_at = max((row["checked_at"] for row in rows if row["status"] == "ok" and row["deals"] > 0), default=None)
+        age = (datetime.now(timezone.utc).replace(tzinfo=None) - datetime.fromisoformat(checked_at)).total_seconds() / 3600 if checked_at else None
+        return JSONResponse({"status": "ok" if age is not None and 0 <= age <= 24 else "stale",
+                             "last_attempt_at": max((row["checked_at"] for row in rows), default=None),
                              "checked_at": checked_at, "stores_with_deals": sum(row["deals"] > 0 for row in rows)},
                             headers={"Cache-Control": "no-store"})
     except Exception:

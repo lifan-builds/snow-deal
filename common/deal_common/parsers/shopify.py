@@ -57,6 +57,12 @@ class ShopifyParser(BaseParser):
     provides structured price data including compare_at_price for discounts.
     """
 
+    def __init__(self, *, size_option_names: tuple[str, ...] = (), size_value_pattern: str = ""):
+        # Catalogs may distinguish frame size from wheel size. Empty preserves
+        # the snow parser's existing size/length discovery contract.
+        self.size_option_names = {name.casefold() for name in size_option_names}
+        self.size_value_pattern = re.compile(size_value_pattern, re.I) if size_value_pattern else None
+
     def _get_collection_handle(self, url: str) -> str | None:
         m = re.search(r"/collections/([^/?#]+)", urlparse(url).path)
         return m.group(1) if m else None
@@ -80,8 +86,10 @@ class ShopifyParser(BaseParser):
             images = item.get("images") or []
             default_image = images[0].get("src") if images else (item.get("image") or {}).get("src")
             option_keys = [f"option{index + 1}" for index, option in enumerate(item.get("options") or [])
-                           if isinstance(option, dict) and any(word in str(option.get("name", "")).lower()
-                                                             for word in ("size", "length"))]
+                           if isinstance(option, dict) and (
+                               str(option.get("name", "")).strip().casefold() in self.size_option_names
+                               if self.size_option_names else any(
+                                   word in str(option.get("name", "")).lower() for word in ("size", "length")))]
             price_keys = {f"option{index + 1}" for index, option in enumerate(item.get("options") or [])
                           if isinstance(option, dict) and re.search(r"\b(msrp|retail|price)\b", str(option.get('name', '')), re.I)}
             offers = []
@@ -96,8 +104,10 @@ class ShopifyParser(BaseParser):
                 if not (math.isfinite(price) and math.isfinite(original) and 0 < price < original):
                     continue
                 sizes = []
-                for key in option_keys or (() if item.get("options") else ("option1", "option2", "option3")):
+                for key in option_keys or (() if item.get("options") or self.size_option_names else ("option1", "option2", "option3")):
                     value = str(candidate.get(key) or '').strip()
+                    if self.size_value_pattern and not self.size_value_pattern.fullmatch(value):
+                        continue
                     if not option_keys and not re.fullmatch(r"(?:\d+(?:\.\d+)?\s*(?:cm|mm)?|[2-6]?X{0,3}[SML]|Small|Medium|Large)", value, re.I):
                         continue
                     if value and value != 'Default Title':
@@ -135,6 +145,9 @@ class ShopifyParser(BaseParser):
                 image_url=image_url,
                 brand=item.get("vendor") or None,
                 offers=offers,
+                tags=tuple(tag.strip() for tag in (
+                    item.get("tags", "").split(",") if isinstance(item.get("tags"), str)
+                    else item.get("tags") or []) if isinstance(tag, str)),
             ))
 
         log.info("Parsed %d products from %s", len(products), page_url)

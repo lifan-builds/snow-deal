@@ -1,0 +1,1734 @@
+{
+  "catalog": "cycling",
+  "date": "2026-11-02T23:45:23.838350+00:00",
+  "seed": 20261102,
+  "population": 309,
+  "method": "top10-plus-seeded20-merchant-product-v1",
+  "sample_size": 30,
+  "match": 27,
+  "mismatch": 0,
+  "inconclusive": 3,
+  "verified_match_percent": 90.0,
+  "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+  "results": [
+    {
+      "name": "Heckler SL C S",
+      "store": "Mike's Bikes",
+      "offer": {
+        "variant_key": "40617095069765",
+        "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-s-2024?currency=USD&variant=40617095069765",
+        "current_price": 3499.77,
+        "original_price": 8699.99,
+        "size": "XX-Large",
+        "options": "Gloss Magenta / XX-Large",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Santa-Cruz-Heckler-SL-C-S_Gloss_Magenta.png?v=1747271140",
+        "reference_basis": "retailer_compare_at",
+        "discount": 59.8,
+        "savings": 5200.22
+      },
+      "checked_at": "2026-11-02T23:44:32.109742+00:00",
+      "evidence_url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-s-2024.js?currency=USD",
+      "response_sha256": "d142a44a7ad33394f65fba9255bd1f085fe3fc637e2d168ffb5544dd74af50ef",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Heckler SL C S",
+        "variant": "40617095069765",
+        "sku": "58-24298-148-6-825-652901-01",
+        "price_minor": 349977,
+        "reference_minor": 869999,
+        "currency": "USD",
+        "options": "Gloss Magenta / XX-Large",
+        "raw_options": [
+          "Gloss Magenta",
+          "XX-Large"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Matte Silver",
+              "Gloss Magenta"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "Medium",
+              "Large",
+              "XX-Large",
+              "X-Large"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Heckler SL C R",
+      "store": "Mike's Bikes",
+      "offer": {
+        "variant_key": "40615074889797",
+        "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-r-2024?currency=USD&variant=40615074889797",
+        "current_price": 2999.77,
+        "original_price": 7299.99,
+        "size": "XX-Large",
+        "options": "Gloss Magenta / XX-Large",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Santa-Cruz-Heckler-SL-C-R_Gloss_Magenta.png?v=1747271140",
+        "reference_basis": "retailer_compare_at",
+        "discount": 58.9,
+        "savings": 4300.22
+      },
+      "checked_at": "2026-11-02T23:44:35.445031+00:00",
+      "evidence_url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-r-2024.js?currency=USD",
+      "response_sha256": "fde1617012554e8d3597d29b8a716a00d1840d76f26f26abf78974a52d5768dd",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Heckler SL C R",
+        "variant": "40615074889797",
+        "sku": "58-24298-147-6-825-642701-01",
+        "price_minor": 299977,
+        "reference_minor": 729999,
+        "currency": "USD",
+        "options": "Gloss Magenta / XX-Large",
+        "raw_options": [
+          "Gloss Magenta",
+          "XX-Large"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Gloss Magenta",
+              "Silver"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "X-Large",
+              "XX-Large"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Heckler SL CC X0 AXS Reserve",
+      "store": "Mike's Bikes",
+      "offer": {
+        "variant_key": "41813859631173",
+        "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-cc-x0-axs-reserve?currency=USD&variant=41813859631173",
+        "current_price": 4999.77,
+        "original_price": 11699.0,
+        "size": "XX-Large",
+        "options": "Matte Dark Blue / XX-Large",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Heckler-SL-CC-X0-AXS-Reserve_Matte-Dark-Blue.jpg?v=1747271141",
+        "reference_basis": "retailer_compare_at",
+        "discount": 57.3,
+        "savings": 6699.23
+      },
+      "checked_at": "2026-11-02T23:44:37.076779+00:00",
+      "evidence_url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-cc-x0-axs-reserve.js?currency=USD",
+      "response_sha256": "40d8176437f579386a707d3f38c03dd77685299b782fc341e8eb42a754c1c324",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Heckler SL CC X0 AXS Reserve",
+        "variant": "41813859631173",
+        "sku": "58-25299-351-6-856-664402-01",
+        "price_minor": 499977,
+        "reference_minor": 1169900,
+        "currency": "USD",
+        "options": "Matte Dark Blue / XX-Large",
+        "raw_options": [
+          "Matte Dark Blue",
+          "XX-Large"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Gloss Mustard Yellow",
+              "Matte Dark Blue"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "Small",
+              "Medium",
+              "Large",
+              "X-Large",
+              "XX-Large"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "5010 5 C GX AXS (2024)",
+      "store": "Mike's Bikes",
+      "offer": {
+        "variant_key": "40602859110469",
+        "url": "https://mikesbikes.com/products/santa-cruz-5010-5-c-gx-axs-2024?currency=USD&variant=40602859110469",
+        "current_price": 2999.77,
+        "original_price": 6899.99,
+        "size": "XX-Large",
+        "options": "Gloss Black / XX-Large",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/SantaCruz-5010-GX_AXS-Black.jpg?v=1747271083",
+        "reference_basis": "retailer_compare_at",
+        "discount": 56.5,
+        "savings": 3900.22
+      },
+      "checked_at": "2026-11-02T23:44:38.701943+00:00",
+      "evidence_url": "https://mikesbikes.com/products/santa-cruz-5010-5-c-gx-axs-2024.js?currency=USD",
+      "response_sha256": "6ad18347afe6117fa5d3d3fcd96595679fad70d26053c0d7f8710d03f10ffa8d",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "5010 5 C GX AXS (2024)",
+        "variant": "40602859110469",
+        "sku": "58-24283-165-6-801-252401",
+        "price_minor": 299977,
+        "reference_minor": 689999,
+        "currency": "USD",
+        "options": "Gloss Black / XX-Large",
+        "raw_options": [
+          "Gloss Black",
+          "XX-Large"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Gloss Black",
+              "Matte Spumoni Green"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "X-Small",
+              "Small",
+              "Medium",
+              "Large",
+              "X-Large",
+              "XX-Large"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Tallboy 5 CC X0 AXS",
+      "store": "Mike's Bikes",
+      "offer": {
+        "variant_key": "40543189368901",
+        "url": "https://mikesbikes.com/products/santa-cruz-tallboy-5-cc-x0-axs-2024?currency=USD&variant=40543189368901",
+        "current_price": 3499.77,
+        "original_price": 7899.99,
+        "size": "XX-Large",
+        "options": "Gloss Melon / XX-Large",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Santa-Cruz-Tallboy-5-CC-29-X0-AXS_Gloss_Melon.png?v=1759187994",
+        "reference_basis": "retailer_compare_at",
+        "discount": 55.7,
+        "savings": 4400.22
+      },
+      "checked_at": "2026-11-02T23:44:40.355017+00:00",
+      "evidence_url": "https://mikesbikes.com/products/santa-cruz-tallboy-5-cc-x0-axs-2024.js?currency=USD",
+      "response_sha256": "490804dbe76069e21d1b0ab8dddf9bcbf0de6d8f6693120adb0f659bc616a889",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Tallboy 5 CC X0 AXS",
+        "variant": "40543189368901",
+        "sku": "58-24275-185-6-797-202201",
+        "price_minor": 349977,
+        "reference_minor": 789999,
+        "currency": "USD",
+        "options": "Gloss Melon / XX-Large",
+        "raw_options": [
+          "Gloss Melon",
+          "XX-Large"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Gloss White",
+              "Gloss Melon"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "X-Small",
+              "Small",
+              "Large",
+              "XX-Large"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Heckler SL C GX Transmission",
+      "store": "Mike's Bikes",
+      "offer": {
+        "variant_key": "44649480486981",
+        "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-gx-transmission-2024?currency=USD&variant=44649480486981",
+        "current_price": 4499.77,
+        "original_price": 9699.99,
+        "size": "XX-Large",
+        "options": "Magenta / XX-Large",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Santa-Cruz-Heckler-SL-C-GX-AXS_Gloss_Magenta.png?v=1747270931",
+        "reference_basis": "retailer_compare_at",
+        "discount": 53.6,
+        "savings": 5200.22
+      },
+      "checked_at": "2026-11-02T23:44:42.057862+00:00",
+      "evidence_url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-gx-transmission-2024.js?currency=USD",
+      "response_sha256": "d4ebb0ddfb4bfc514c294dee4c9b96bf5e37262ad61552b4929b6e015cd257e3",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Heckler SL C GX Transmission",
+        "variant": "44649480486981",
+        "sku": "58-24298-165-6-825-652901-01",
+        "price_minor": 449977,
+        "reference_minor": 969999,
+        "currency": "USD",
+        "options": "Magenta / XX-Large",
+        "raw_options": [
+          "Magenta",
+          "XX-Large"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Magenta",
+              "Matte Silver"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "Small",
+              "XX-Large"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Heckler SL C S",
+      "store": "Mike's Bikes",
+      "offer": {
+        "variant_key": "41813857501253",
+        "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-s?currency=USD&variant=41813857501253",
+        "current_price": 3499.77,
+        "original_price": 7399.0,
+        "size": "XX-Large",
+        "options": "Gloss Mustard Yellow / XX-Large",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Heckler-SL-C-S_Gloss-Mustard-Yellow.jpg?v=1721070862",
+        "reference_basis": "retailer_compare_at",
+        "discount": 52.7,
+        "savings": 3899.23
+      },
+      "checked_at": "2026-11-02T23:44:43.729803+00:00",
+      "evidence_url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-s.js?currency=USD",
+      "response_sha256": "cf1a21a7924297e358a83b13b4dfc19d26f6f20ba1b0e757e69ca6ce6dc15181",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Heckler SL C S",
+        "variant": "41813857501253",
+        "sku": "58-25298-319-6-855-423701-01",
+        "price_minor": 349977,
+        "reference_minor": 739900,
+        "currency": "USD",
+        "options": "Gloss Mustard Yellow / XX-Large",
+        "raw_options": [
+          "Gloss Mustard Yellow",
+          "XX-Large"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Gloss Mustard Yellow",
+              "Matte Dark Blue"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "Small",
+              "Medium",
+              "Large",
+              "X-Large",
+              "XX-Large"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Skitch CC Apex (2024)",
+      "store": "Mike's Bikes",
+      "offer": {
+        "variant_key": "40614687113285",
+        "url": "https://mikesbikes.com/products/santa-cruz-skitch-cc-apex-2024?currency=USD&variant=40614687113285",
+        "current_price": 2999.77,
+        "original_price": 6299.99,
+        "size": "XX-Large",
+        "options": "Matte Olive Green / XX-Large",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Santa-Cruz-Skitch-CC--Apex_Matte_Olive_Green.png?v=1747270917",
+        "reference_basis": "retailer_compare_at",
+        "discount": 52.4,
+        "savings": 3300.22
+      },
+      "checked_at": "2026-11-02T23:44:45.343876+00:00",
+      "evidence_url": "https://mikesbikes.com/products/santa-cruz-skitch-cc-apex-2024.js?currency=USD",
+      "response_sha256": "ab6331d83857897673183e432c7444333dc47d0072c29484fc2c432b9040c146",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Skitch CC Apex (2024)",
+        "variant": "40614687113285",
+        "sku": "58-24300-192-6-826-000001-01",
+        "price_minor": 299977,
+        "reference_minor": 629999,
+        "currency": "USD",
+        "options": "Matte Olive Green / XX-Large",
+        "raw_options": [
+          "Matte Olive Green",
+          "XX-Large"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Matte Olive Green"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "Small",
+              "Medium",
+              "Large",
+              "X-Large",
+              "XX-Large"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Superior XR 6.5 GR - Gravel Bike",
+      "store": "BikesOnline",
+      "offer": {
+        "variant_key": "52646767493412",
+        "url": "https://bikesonline.com/products/superior-xr-6-5-gr-gravel-bike?currency=USD&variant=52646767493412",
+        "current_price": 1499.99,
+        "original_price": 2999.99,
+        "size": "XL",
+        "options": "XL",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0847/4066/9732/files/SuperiorXR6.5GR-GravelBike_1.jpg?v=1775515188",
+        "reference_basis": "retailer_compare_at",
+        "discount": 50.0,
+        "savings": 1500.0
+      },
+      "checked_at": "2026-11-02T23:44:46.977661+00:00",
+      "evidence_url": "https://bikesonline.com/products/superior-xr-6-5-gr-gravel-bike.js?currency=USD",
+      "response_sha256": "8994ff2130c87ec2db7d5ee3b208c8be48bd5c0c081f76bacd1a18d3ed2236f9",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Superior XR 6.5 GR - Gravel Bike",
+        "variant": "52646767493412",
+        "sku": "801.2025.28048",
+        "price_minor": 149999,
+        "reference_minor": 299999,
+        "currency": "USD",
+        "options": "XL",
+        "raw_options": [
+          "XL"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "XL"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Ultimate T10+ HMB",
+      "store": "Mike's Bikes",
+      "offer": {
+        "variant_key": "32074827563077",
+        "url": "https://mikesbikes.com/products/gazelle-ultimate-t10?currency=USD&variant=32074827563077",
+        "current_price": 2299.95,
+        "original_price": 4499.99,
+        "size": "MD (5'6\" - 5'10\")",
+        "options": "Champion Red Gloss / MD (5'6\" - 5'10\")",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Gazelle-Ultimate-T10-plus-HMB_Champion_gloss_red.jpg?v=1747270914",
+        "reference_basis": "retailer_compare_at",
+        "discount": 48.9,
+        "savings": 2200.04
+      },
+      "checked_at": "2026-11-02T23:44:50.254910+00:00",
+      "evidence_url": "https://mikesbikes.com/products/gazelle-ultimate-t10.js?currency=USD",
+      "response_sha256": "b26040f637ef459b8eeec7e148579d7f9f636efb71f344eb57643a877eb81ea4",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Ultimate T10+ HMB",
+        "variant": "32074827563077",
+        "sku": "G2420",
+        "price_minor": 229995,
+        "reference_minor": 449999,
+        "currency": "USD",
+        "options": "Champion Red Gloss / MD (5'6\" - 5'10\")",
+        "raw_options": [
+          "Champion Red Gloss",
+          "MD (5'6\" - 5'10\")"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Orion Blue",
+              "Champion Red Gloss"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "MD (5'6\" - 5'10\")",
+              "LG (5'10\" - 6'4\")"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Vala AL Deore",
+      "store": "Mike's Bikes",
+      "offer": {
+        "variant_key": "43043337830469",
+        "url": "https://mikesbikes.com/products/santa-cruz-vala-al-deore?currency=USD&variant=43043337830469",
+        "current_price": 4649.0,
+        "original_price": 6199.0,
+        "size": "Medium",
+        "options": "Lunar Gray / Medium",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Vala-AL-Deore_Lunar-Grey.jpg?v=1752789791",
+        "reference_basis": "retailer_compare_at",
+        "discount": 25.0,
+        "savings": 1550.0
+      },
+      "checked_at": "2026-11-02T23:44:51.878126+00:00",
+      "evidence_url": "https://mikesbikes.com/products/santa-cruz-vala-al-deore.js?currency=USD",
+      "response_sha256": "a60bcabfb15df51153932f43dcf5c6f96ac00948e349d16df68263a562f6be09",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Vala AL Deore",
+        "variant": "43043337830469",
+        "sku": "58-26315-448-3-918-314301-01",
+        "price_minor": 464900,
+        "reference_minor": 619900,
+        "currency": "USD",
+        "options": "Lunar Gray / Medium",
+        "raw_options": [
+          "Lunar Gray",
+          "Medium"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Stormbringer Purple",
+              "Lunar Gray"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "Small",
+              "Medium",
+              "Large",
+              "X-Large"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Sirrus X 3.0 (2025)",
+      "store": "Bicycle Warehouse",
+      "offer": {
+        "variant_key": "41954130264166",
+        "url": "https://bicyclewarehouse.com/products/sirrus-x-3-0-2025?currency=USD&variant=41954130264166",
+        "current_price": 799.99,
+        "original_price": 1000.0,
+        "size": "L",
+        "options": "Pink / L",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0286/1214/files/92325-71_SIRRUS-X-30-KM-RBLPNK-ASHGRY_HERO-PDP.png?v=1772093015",
+        "reference_basis": "retailer_compare_at",
+        "discount": 20.0,
+        "savings": 200.01
+      },
+      "checked_at": "2026-11-02T23:44:53.597727+00:00",
+      "evidence_url": "https://bicyclewarehouse.com/products/sirrus-x-3-0-2025.js?currency=USD",
+      "status": "inconclusive",
+      "reason": "HTTP 429"
+    },
+    {
+      "name": "Topstone Carbon 2 AXS 1X",
+      "store": "Mike's Bikes",
+      "offer": {
+        "variant_key": "42267937439813",
+        "url": "https://mikesbikes.com/products/cannondale-topstone-carbon-2-axs-1x?currency=USD&variant=42267937439813",
+        "current_price": 4198.99,
+        "original_price": 4798.99,
+        "size": "47",
+        "options": "Spruce Green / 47",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Topstone-Carbon-2-AXS-1X-01_Spruce-Green.jpg?v=1747270982",
+        "reference_basis": "retailer_compare_at",
+        "discount": 12.5,
+        "savings": 600.0
+      },
+      "checked_at": "2026-11-02T23:44:56.915465+00:00",
+      "evidence_url": "https://mikesbikes.com/products/cannondale-topstone-carbon-2-axs-1x.js?currency=USD",
+      "response_sha256": "a5910f3ba995cd75aad77bb8afa9d3a5fa31c935d2039961ab6f4a7b50caa393",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Topstone Carbon 2 AXS 1X",
+        "variant": "42267937439813",
+        "sku": "C15165U1047",
+        "price_minor": 419899,
+        "reference_minor": 479899,
+        "currency": "USD",
+        "options": "Spruce Green / 47",
+        "raw_options": [
+          "Spruce Green",
+          "47"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Spruce Green"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "47",
+              "51",
+              "54",
+              "56",
+              "58",
+              "61"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Polygon Tambora G7 - Carbon Gravel Bike",
+      "store": "BikesOnline",
+      "offer": {
+        "variant_key": "49874210849060",
+        "url": "https://bikesonline.com/products/2024-polygon-tambora-g7-gravel-bike?currency=USD&variant=49874210849060",
+        "current_price": 2299.99,
+        "original_price": 2999.99,
+        "size": "S",
+        "options": "S",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0847/4066/9732/files/2024_TAMBORA_G7.jpg?v=1726301772",
+        "reference_basis": "retailer_compare_at",
+        "discount": 23.3,
+        "savings": 700.0
+      },
+      "checked_at": "2026-11-02T23:44:58.538306+00:00",
+      "evidence_url": "https://bikesonline.com/products/2024-polygon-tambora-g7-gravel-bike.js?currency=USD",
+      "response_sha256": "5a2be275b74c39fe6b9b5efcfeb8b59bed158a04e8f469e28e60bf4fa2cb40b0",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Polygon Tambora G7 - Carbon Gravel Bike",
+        "variant": "49874210849060",
+        "sku": "AIDPX28TG74SG1",
+        "price_minor": 229999,
+        "reference_minor": 299999,
+        "currency": "USD",
+        "options": "S",
+        "raw_options": [
+          "S"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "S"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Turbo Vado 4.0 (2026)",
+      "store": "Bicycle Warehouse",
+      "offer": {
+        "variant_key": "43355718975590",
+        "url": "https://bicyclewarehouse.com/products/vado-4-0-2026?currency=USD&variant=43355718975590",
+        "current_price": 3499.99,
+        "original_price": 4000.0,
+        "size": "S",
+        "options": "Blue / S",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0286/1214/files/95026-52_VADO-40-SEA-CMLNLPS-GCLMET_HERO-PDP.webp?v=1772153384",
+        "reference_basis": "retailer_compare_at",
+        "discount": 12.5,
+        "savings": 500.01
+      },
+      "checked_at": "2026-11-02T23:45:00.232461+00:00",
+      "evidence_url": "https://bicyclewarehouse.com/products/vado-4-0-2026.js?currency=USD",
+      "status": "inconclusive",
+      "reason": "Host blocked or rate-limited earlier in this audit"
+    },
+    {
+      "name": "R5 Dura-Ace Di2",
+      "store": "Mike's Bikes",
+      "offer": {
+        "variant_key": "43082813505605",
+        "url": "https://mikesbikes.com/products/cervelo-r5-dura-ace?currency=USD&variant=43082813505605",
+        "current_price": 10612.95,
+        "original_price": 14149.99,
+        "size": "51",
+        "options": "Five Black/Bronze / 51",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/R5-Dura-Ace_Five-Black-Bronze.jpg?v=1757007179",
+        "reference_basis": "retailer_compare_at",
+        "discount": 25.0,
+        "savings": 3537.04
+      },
+      "checked_at": "2026-11-02T23:45:00.232588+00:00",
+      "evidence_url": "https://mikesbikes.com/products/cervelo-r5-dura-ace.js?currency=USD",
+      "response_sha256": "2b1a30ba859479989e62a8b059595b52f0d6152b2de5b2ffa1daf1208a5d2474",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "R5 Dura-Ace Di2",
+        "variant": "43082813505605",
+        "sku": "0L0R5HDI1C51",
+        "price_minor": 1061295,
+        "reference_minor": 1414999,
+        "currency": "USD",
+        "options": "Five Black/Bronze / 51",
+        "raw_options": [
+          "Five Black/Bronze",
+          "51"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Five Black/Bronze"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "48",
+              "51",
+              "54",
+              "56",
+              "58",
+              "61"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Roam E+ STA Electric Bike (2022)",
+      "store": "Bicycle Warehouse",
+      "offer": {
+        "variant_key": "39573766668390",
+        "url": "https://bicyclewarehouse.com/products/giant-roam-e-sta-electric-bike-2022?currency=USD&variant=39573766668390",
+        "current_price": 2199.95,
+        "original_price": 2750.0,
+        "size": "Small",
+        "options": "Black / Small",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0286/1214/products/giant-roam-e-sta-electric-bike-2022-28749405323366.jpg?v=1772070202",
+        "reference_basis": "retailer_compare_at",
+        "discount": 20.0,
+        "savings": 550.05
+      },
+      "checked_at": "2026-11-02T23:45:02.012276+00:00",
+      "evidence_url": "https://bicyclewarehouse.com/products/giant-roam-e-sta-electric-bike-2022.js?currency=USD",
+      "status": "inconclusive",
+      "reason": "Host blocked or rate-limited earlier in this audit"
+    },
+    {
+      "name": "Polygon Collosus TLE 8 - Bosch Carbon eMTB",
+      "store": "BikesOnline",
+      "offer": {
+        "variant_key": "50572960956708",
+        "url": "https://bikesonline.com/products/polygon-collosus-tle-8-bosch-carbon-emtb?currency=USD&variant=50572960956708",
+        "current_price": 4999.99,
+        "original_price": 6299.99,
+        "size": "XL",
+        "options": "Black / XL",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0847/4066/9732/files/Polygon_Collosus_TLE_8_-_Black.jpg?v=1744687695",
+        "reference_basis": "retailer_compare_at",
+        "discount": 20.6,
+        "savings": 1300.0
+      },
+      "checked_at": "2026-11-02T23:45:02.012363+00:00",
+      "evidence_url": "https://bikesonline.com/products/polygon-collosus-tle-8-bosch-carbon-emtb.js?currency=USD",
+      "response_sha256": "af7bca93949d7c6a675fb19564ed63dfb1df3b868b123d5cf43c6e458707bd2a",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Polygon Collosus TLE 8 - Bosch Carbon eMTB",
+        "variant": "50572960956708",
+        "sku": "AIEPX29S9E7LG1",
+        "price_minor": 499999,
+        "reference_minor": 629999,
+        "currency": "USD",
+        "options": "Black / XL",
+        "raw_options": [
+          "Black",
+          "XL"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Black",
+              "Bronze"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "XL",
+              "S"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Caledonia-5 Force AXS",
+      "store": "Mike's Bikes",
+      "offer": {
+        "variant_key": "43312549396549",
+        "url": "https://mikesbikes.com/products/cervelo-caledonia-5-force-axs?currency=USD&variant=43312549396549",
+        "current_price": 8099.95,
+        "original_price": 8999.99,
+        "size": "51",
+        "options": "Emerald/Cream / 51",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Caledonia-5-Force-AXS_Emerald-Cream.jpg?v=1762976252",
+        "reference_basis": "retailer_compare_at",
+        "discount": 10.0,
+        "savings": 900.04
+      },
+      "checked_at": "2026-11-02T23:45:03.694071+00:00",
+      "evidence_url": "https://mikesbikes.com/products/cervelo-caledonia-5-force-axs.js?currency=USD",
+      "response_sha256": "7415fa13d3f2e0ee5cef914694549063d8c05fb91811900925adc663cb8ec586",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Caledonia-5 Force AXS",
+        "variant": "43312549396549",
+        "sku": "0L0CFBFX1C51",
+        "price_minor": 809995,
+        "reference_minor": 899999,
+        "currency": "USD",
+        "options": "Emerald/Cream / 51",
+        "raw_options": [
+          "Emerald/Cream",
+          "51"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Emerald/Cream",
+              "Vanilla/Cherry"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "48",
+              "51",
+              "54",
+              "56",
+              "58",
+              "61"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Blur 4 C 90 TR",
+      "store": "Mike's Bikes",
+      "offer": {
+        "variant_key": "42575123841093",
+        "url": "https://mikesbikes.com/products/santa-cruz-blur-4-c-90-tr?currency=USD&variant=42575123841093",
+        "current_price": 4249.0,
+        "original_price": 5699.0,
+        "size": "Large",
+        "options": "Gloss Fog / Large",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Blur-4-C-90-TR_Gloss-Fog.jpg?v=1743011038",
+        "reference_basis": "retailer_compare_at",
+        "discount": 25.4,
+        "savings": 1450.0
+      },
+      "checked_at": "2026-11-02T23:45:05.341183+00:00",
+      "evidence_url": "https://mikesbikes.com/products/santa-cruz-blur-4-c-90-tr.js?currency=USD",
+      "response_sha256": "5538aea99ee758fa4d695b70ac8a2015c9549bb87d2c7e4e1415c1cbeafb7f5a",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Blur 4 C 90 TR",
+        "variant": "42575123841093",
+        "sku": "58-26244-461-4-891-141601",
+        "price_minor": 424900,
+        "reference_minor": 569900,
+        "currency": "USD",
+        "options": "Gloss Fog / Large",
+        "raw_options": [
+          "Gloss Fog",
+          "Large"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Gloss Fog",
+              "Gloss Light Teal"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "Small",
+              "Medium",
+              "Large",
+              "X-Large"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Medeo T10+ Smart",
+      "store": "Mike's Bikes",
+      "offer": {
+        "variant_key": "42770656198725",
+        "url": "https://mikesbikes.com/products/gazelle-medeo-t10-smart?currency=USD&variant=42770656198725",
+        "current_price": 3599.95,
+        "original_price": 3999.99,
+        "size": "MD (5' - 5'6\")",
+        "options": "Light Olive / MD (5' - 5'6\")",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Medeo-T10-Mid-Step_Light-Olive.jpg?v=1749602656",
+        "reference_basis": "retailer_compare_at",
+        "discount": 10.0,
+        "savings": 400.04
+      },
+      "checked_at": "2026-11-02T23:45:06.985843+00:00",
+      "evidence_url": "https://mikesbikes.com/products/gazelle-medeo-t10-smart.js?currency=USD",
+      "response_sha256": "51fe33e35c209ae61fff87872429786643250e5f29d1b444876d1e0cd906b155",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Medeo T10+ Smart",
+        "variant": "42770656198725",
+        "sku": "G3792",
+        "price_minor": 359995,
+        "reference_minor": 399999,
+        "currency": "USD",
+        "options": "Light Olive / MD (5' - 5'6\")",
+        "raw_options": [
+          "Light Olive",
+          "MD (5' - 5'6\")"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Light Olive",
+              "Mallard Blue"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "MD (5' - 5'6\")",
+              "LG (5'5\" - 5'10\")"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Polygon Collosus T6 Carbon - All-Mountain Bike",
+      "store": "BikesOnline",
+      "offer": {
+        "variant_key": "51181884145956",
+        "url": "https://bikesonline.com/products/polygon-collosus-t6-carbon-all-mountain-bike?currency=USD&variant=51181884145956",
+        "current_price": 2999.99,
+        "original_price": 3999.99,
+        "size": "M",
+        "options": "M",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0847/4066/9732/files/PolygonCollosusT6Carbon-All-MountainBikec1.jpg?v=1761608724",
+        "reference_basis": "retailer_compare_at",
+        "discount": 25.0,
+        "savings": 1000.0
+      },
+      "checked_at": "2026-11-02T23:45:08.605095+00:00",
+      "evidence_url": "https://bikesonline.com/products/polygon-collosus-t6-carbon-all-mountain-bike.js?currency=USD",
+      "response_sha256": "12d7b702a570480f3e44b2c63fe9fb27876cc96c4a7b64f518fbd54e9875ed01",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Polygon Collosus T6 Carbon - All-Mountain Bike",
+        "variant": "51181884145956",
+        "sku": "AIEPX29STO5MG1",
+        "price_minor": 299999,
+        "reference_minor": 399999,
+        "currency": "USD",
+        "options": "M",
+        "raw_options": [
+          "M"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "S",
+              "M",
+              "L",
+              "XL"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Polygon Collosus N9 - Enduro Mountain Bike [New]",
+      "store": "BikesOnline",
+      "offer": {
+        "variant_key": "50460966551844",
+        "url": "https://bikesonline.com/products/polygon-collosus-n9-enduro-mountain-bike-new?currency=USD&variant=50460966551844",
+        "current_price": 3399.99,
+        "original_price": 3499.99,
+        "size": "S",
+        "options": "S",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0847/4066/9732/files/Polygon_Collosus_N9_-_Enduro_Mountain_Bike_New__Main_image_1.jpg?v=1743822493",
+        "reference_basis": "retailer_compare_at",
+        "discount": 2.9,
+        "savings": 100.0
+      },
+      "checked_at": "2026-11-02T23:45:10.369896+00:00",
+      "evidence_url": "https://bikesonline.com/products/polygon-collosus-n9-enduro-mountain-bike-new.js?currency=USD",
+      "response_sha256": "8a355648cf248a2dd3df83118f02dd9eaf793613290a1bd050ca758e7aba3fb6",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Polygon Collosus N9 - Enduro Mountain Bike [New]",
+        "variant": "50460966551844",
+        "sku": "AIEPX29CNM4SG1",
+        "price_minor": 339999,
+        "reference_minor": 349999,
+        "currency": "USD",
+        "options": "S",
+        "raw_options": [
+          "S"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "S",
+              "M",
+              "L",
+              "XL"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Stigmata 4 CC Force 1x AXS Rudy",
+      "store": "Mike's Bikes",
+      "offer": {
+        "variant_key": "43579722596421",
+        "url": "https://mikesbikes.com/products/santa-cruz-stigmata-4-cc-force-1x-axs-rudy?currency=USD&variant=43579722596421",
+        "current_price": 6399.0,
+        "original_price": 7549.0,
+        "size": "Large",
+        "options": "Matte Carbon / Large",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Stigmata-4-CC-Force-AXS-Rudy_Matte-Carbon.jpg?v=1757700483",
+        "reference_basis": "retailer_compare_at",
+        "discount": 15.2,
+        "savings": 1150.0
+      },
+      "checked_at": "2026-11-02T23:45:12.076905+00:00",
+      "evidence_url": "https://mikesbikes.com/products/santa-cruz-stigmata-4-cc-force-1x-axs-rudy.js?currency=USD",
+      "response_sha256": "3f7e59e34899834a0ae6f56ab4e2112d3f6ea820a6633b22fbd8e9c22add252b",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Stigmata 4 CC Force 1x AXS Rudy",
+        "variant": "43579722596421",
+        "sku": "58-26290-414-4-909-003602",
+        "price_minor": 639900,
+        "reference_minor": 754900,
+        "currency": "USD",
+        "options": "Matte Carbon / Large",
+        "raw_options": [
+          "Matte Carbon",
+          "Large"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Matte Carbon",
+              "British Racing Green"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "X-Small",
+              "Small",
+              "Medium",
+              "Large",
+              "X-Large",
+              "XX-Large"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Caledonia-5 Red AXS",
+      "store": "Mike's Bikes",
+      "offer": {
+        "variant_key": "43704985550917",
+        "url": "https://mikesbikes.com/products/cervelo-caledonia-5-red-axs-2025?currency=USD&variant=43704985550917",
+        "current_price": 7999.95,
+        "original_price": 11999.99,
+        "size": "61",
+        "options": "Five Black / 61",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Caledonia-5-Red-AXS_Black.jpg?v=1747271088",
+        "reference_basis": "retailer_compare_at",
+        "discount": 33.3,
+        "savings": 4000.04
+      },
+      "checked_at": "2026-11-02T23:45:13.718575+00:00",
+      "evidence_url": "https://mikesbikes.com/products/cervelo-caledonia-5-red-axs-2025.js?currency=USD",
+      "response_sha256": "95d108a43c3565a94f5aea022b1ab3b46cd3d426374b565b2bcbc14ffccf7c66",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Caledonia-5 Red AXS",
+        "variant": "43704985550917",
+        "sku": "0K0CFBRX1C61",
+        "price_minor": 799995,
+        "reference_minor": 1199999,
+        "currency": "USD",
+        "options": "Five Black / 61",
+        "raw_options": [
+          "Five Black",
+          "61"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Five Black"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "48",
+              "51",
+              "54",
+              "56",
+              "58",
+              "61"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Vala AL 70",
+      "store": "Mike's Bikes",
+      "offer": {
+        "variant_key": "43043603185733",
+        "url": "https://mikesbikes.com/products/santa-cruz-vala-al-70?currency=USD&variant=43043603185733",
+        "current_price": 5299.0,
+        "original_price": 7049.0,
+        "size": "X-Large",
+        "options": "Stormbringer Purple / X-Large",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Vala-AL-70_Stormbringer-Purple.jpg?v=1752793686",
+        "reference_basis": "retailer_compare_at",
+        "discount": 24.8,
+        "savings": 1750.0
+      },
+      "checked_at": "2026-11-02T23:45:15.326093+00:00",
+      "evidence_url": "https://mikesbikes.com/products/santa-cruz-vala-al-70.js?currency=USD",
+      "response_sha256": "e2891ae31483ae23ef5c5cca5ea10ea60ed4c578333cda5a38bd1fe2ded8d615",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Vala AL 70",
+        "variant": "43043603185733",
+        "sku": "58-26315-451-5-919-304001-01",
+        "price_minor": 529900,
+        "reference_minor": 704900,
+        "currency": "USD",
+        "options": "Stormbringer Purple / X-Large",
+        "raw_options": [
+          "Stormbringer Purple",
+          "X-Large"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Lunar Gray",
+              "Stormbringer Purple"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "Small",
+              "Medium",
+              "Large",
+              "X-Large"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Soloist 105",
+      "store": "Mike's Bikes",
+      "offer": {
+        "variant_key": "44052179746885",
+        "url": "https://mikesbikes.com/products/cervelo-soloist-105?currency=USD&variant=44052179746885",
+        "current_price": 3119.95,
+        "original_price": 3899.99,
+        "size": "51",
+        "options": "Dark Slate / 51",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Soloist-105_Dark-Slate.jpg?v=1764721490",
+        "reference_basis": "retailer_compare_at",
+        "discount": 20.0,
+        "savings": 780.04
+      },
+      "checked_at": "2026-11-02T23:45:16.964017+00:00",
+      "evidence_url": "https://mikesbikes.com/products/cervelo-soloist-105.js?currency=USD",
+      "response_sha256": "96fb89196ea57ff264fd8f7833dafa16e2b54c93d5dda44a3b5e33f1f667be12",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Soloist 105",
+        "variant": "44052179746885",
+        "sku": "0L0STA111A51",
+        "price_minor": 311995,
+        "reference_minor": 389999,
+        "currency": "USD",
+        "options": "Dark Slate / 51",
+        "raw_options": [
+          "Dark Slate",
+          "51"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Serpentine",
+              "Dark Slate"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "48",
+              "51",
+              "54",
+              "56",
+              "58",
+              "61"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Habit Neo 1",
+      "store": "Mike's Bikes",
+      "offer": {
+        "variant_key": "45163833589829",
+        "url": "https://mikesbikes.com/products/cannondale-habit-neo-1-2026?currency=USD&variant=45163833589829",
+        "current_price": 6600.77,
+        "original_price": 11998.99,
+        "size": "Small",
+        "options": "Silver / Small",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Habit-Neo-1_Silver-01.jpg?v=1781636097",
+        "reference_basis": "retailer_compare_at",
+        "discount": 45.0,
+        "savings": 5398.22
+      },
+      "checked_at": "2026-11-02T23:45:18.664203+00:00",
+      "evidence_url": "https://mikesbikes.com/products/cannondale-habit-neo-1-2026.js?currency=USD",
+      "response_sha256": "af2bb657941227c94b1f7cb8fb3436d8cf87660bb173c07fa9b8a73408ecdfdb",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Habit Neo 1",
+        "variant": "45163833589829",
+        "sku": "C65015U10SM",
+        "price_minor": 660077,
+        "reference_minor": 1199899,
+        "currency": "USD",
+        "options": "Silver / Small",
+        "raw_options": [
+          "Silver",
+          "Small"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Silver"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "Small",
+              "Medium",
+              "Large",
+              "X-Large"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Polygon Collosus TLE 0 - Bosch Carbon eMTB",
+      "store": "BikesOnline",
+      "offer": {
+        "variant_key": "50572977209636",
+        "url": "https://bikesonline.com/products/polygon-collosus-tle-0-bosch-carbon-emtb?currency=USD&variant=50572977209636",
+        "current_price": 6499.99,
+        "original_price": 7999.99,
+        "size": "S",
+        "options": "Volt Rush / S",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0847/4066/9732/files/Polygon_Collosus_TLE_0_-_green.jpg?v=1744684719",
+        "reference_basis": "retailer_compare_at",
+        "discount": 18.8,
+        "savings": 1500.0
+      },
+      "checked_at": "2026-11-02T23:45:20.329305+00:00",
+      "evidence_url": "https://bikesonline.com/products/polygon-collosus-tle-0-bosch-carbon-emtb.js?currency=USD",
+      "response_sha256": "b29b609c0c9c5001c3e75e05aff195520eae70a0b7167a71ab0e25360f20a540",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Polygon Collosus TLE 0 - Bosch Carbon eMTB",
+        "variant": "50572977209636",
+        "sku": "AIEPX29STR4SG1",
+        "price_minor": 649999,
+        "reference_minor": 799999,
+        "currency": "USD",
+        "options": "Volt Rush / S",
+        "raw_options": [
+          "Volt Rush",
+          "S"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Volt Rush"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Nomad 6 C GX AXS",
+      "store": "Mike's Bikes",
+      "offer": {
+        "variant_key": "41813867429957",
+        "url": "https://mikesbikes.com/products/santa-cruz-nomad-6-c-gx-axs-2025?currency=USD&variant=41813867429957",
+        "current_price": 5449.0,
+        "original_price": 7249.0,
+        "size": "Large",
+        "options": "Gloss Stormbringer Purple / Large",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Nomad-6-CC-MX-GX-AXS_Gloss-Stormbringer-Purple.jpg?v=1768430420",
+        "reference_basis": "retailer_compare_at",
+        "discount": 24.8,
+        "savings": 1800.0
+      },
+      "checked_at": "2026-11-02T23:45:22.065111+00:00",
+      "evidence_url": "https://mikesbikes.com/products/santa-cruz-nomad-6-c-gx-axs-2025.js?currency=USD",
+      "response_sha256": "af282f2f5d45b533ccb4766325559e63082df1f548852a02b01bfb54992cfee3",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Nomad 6 C GX AXS",
+        "variant": "41813867429957",
+        "sku": "58-25280-335-4-849-494201",
+        "price_minor": 544900,
+        "reference_minor": 724900,
+        "currency": "USD",
+        "options": "Gloss Stormbringer Purple / Large",
+        "raw_options": [
+          "Gloss Stormbringer Purple",
+          "Large"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Gloss Stormbringer Purple",
+              "Gloss Light Teal"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "Small",
+              "Medium",
+              "Large"
+            ]
+          }
+        ],
+        "available": true
+      }
+    }
+  ]
+}

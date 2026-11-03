@@ -16,6 +16,7 @@ class Product:
     brand: str | None = None
 
     offers: list[VariantOffer] = field(default_factory=list)
+    tags: tuple[str, ...] = ()
 
     @property
     def discount_pct(self) -> float:

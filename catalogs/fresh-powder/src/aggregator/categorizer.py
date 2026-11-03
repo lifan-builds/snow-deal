@@ -152,6 +152,9 @@ def is_excluded(name: str, url: str = "") -> bool:
 
 def exclusion_reason(name: str, url: str = '', product_type: str = '') -> str | None:
     text = f'{name} {product_type}'
+    condition_text = re.sub(r'[-_/]+', ' ', f'{text} {_url_path(url)}')
+    if re.search(r'\b(?:blem|blemished|blemish)\b', condition_text, re.I):
+        return 'condition'
     if re.search(r'\b(?:juniors?|jrs?|kids?|youth|toddlers?|baby|boys?|girls?|infants?|child|children|grom|teens?)\b', text, re.I):
         return 'children'
     if is_excluded(text, url):

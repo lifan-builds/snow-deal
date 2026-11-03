@@ -27,22 +27,27 @@ dependencies = [
 scraping = ["playwright>=1.40"]
 dev = [
     "pytest>=8.0",
-    "ruff>=0.4",
+    "ruff==0.17.3",
     "playwright>=1.40",
 ]
 
 [project.scripts]
 snow-deals = "snow_deals.cli:cli"
 snow-deals-agg = "aggregator.cli:cli"
+cycling-deals = "cycling_deals.cli:cli"
+tool-deals = "tool_deals.cli:cli"
 
 [tool.setuptools.packages.find]
-where = ["common", "catalogs/fresh-powder/src"]
-include = ["deal_common*", "aggregator*", "snow_deals*"]
+where = ["common", "catalogs/fresh-powder/src", "catalogs/cycling/src", "catalogs/tools/src"]
+include = ["deal_common*", "aggregator*", "snow_deals*", "cycling_deals*", "tool_deals*"]
 
 [tool.setuptools.package-data]
 "aggregator" = ["comparison_catalog.json"]
 "aggregator.web" = ["templates/*.html", "templates/partials/*.html", "static/*.css", "static/*.js", "static/img/*"]
+"deal_common.catalog" = ["templates/*.html", "static/*.css", "static/*.js"]
+"cycling_deals" = ["static/*.css", "static/*.svg"]
+"tool_deals" = ["static/*.css", "static/*.svg"]
 
 [tool.pytest.ini_options]
-testpaths = ["common/tests", "catalogs/fresh-powder/tests"]
-pythonpath = ["common", "catalogs/fresh-powder/src"]
+testpaths = ["common/tests", "catalogs/fresh-powder/tests", "catalogs/cycling/tests", "catalogs/tools/tests"]
+pythonpath = ["common", "catalogs/fresh-powder/src", "catalogs/cycling/src", "catalogs/tools/src"]

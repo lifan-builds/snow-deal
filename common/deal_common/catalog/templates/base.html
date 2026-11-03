@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ catalog.description }}">
+  <meta property="og:title" content="{{ catalog.name }} · Deep discounts, serious gear">
+  <meta property="og:description" content="{{ catalog.description }}">
+  <meta property="og:type" content="website">
+  {% if public_url %}<link rel="canonical" href="{{ public_url }}{{ request.url.path }}"><meta property="og:url" content="{{ public_url }}{{ request.url.path }}">{% endif %}
+  <meta name="theme-color" content="{{ catalog.theme_color }}">
+  <title>{% block title %}{{ catalog.name }} · Deep discounts, serious gear{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='catalog.css') }}">
+  <link rel="stylesheet" href="{{ url_for('brand', path='brand.css') }}">
+  <script src="{{ url_for('static', path='catalog.js') }}" defer></script>
+</head>
+<body class="{{ catalog.slug }}" data-catalog="{{ catalog.slug }}">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="/" aria-label="{{ catalog.name }} home"><span class="brand-mark" aria-hidden="true">{{ catalog.mark }}</span>{{ catalog.name }}<span class="brand-dot">.</span></a>
+    <nav aria-label="Main"><a href="/#deals">Find a deal</a><a href="/sources">Our sources <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main">{% block content %}{% endblock %}</main>
+  <footer>
+    <a class="wordmark" href="/">{{ catalog.name }}<span class="brand-dot">.</span></a>
+    <p>A Deal Aggregator catalog. Deep discounts come first.</p>
+    <p>USD prices. Shipping and tax are extra unless stated by the retailer. Prices and stock can change after we check.</p>
+    <a href="/sources">Price references & source health</a>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,106 @@
+# Competitive benchmark — updated 3 November 2026 UTC
+
+## Decision
+
+Win on **finding the deepest usable discount on expensive equipment**, with a trustworthy purchase link and little effort. A beautiful card with a wrong size or inflated reference is a failure. Percentage off remains the primary ranking key; cash savings break ties. Revenue, imagery and reviews never move an inferior discount above a better eligible offer.
+
+We do **not yet have evidence that all three sites beat every competitor**. Cycling now has 16 contributing retailers and tools nine; 11 and four respectively contribute a deal at least 40% off above the reference floor. Competitors already offer broad coverage, product matching, price history and alerts. The registry now covers 21 relevant services, not the entire internet. See the [latest evidence and changes](benchmarks/2026-11-03-competitive-continuation.md).
+
+## The ten metrics
+
+Use US-deliverable, USD, new equipment. Exclude used, refurbished, previously demoed, blemished, accessories and unavailable variants from the equipment cohort. The November 3 condition clarification aligns the snow comparison with cycling/tools' existing exclusions; retain raw counts and dispositions. A new adjustable demo-design binding is not evidence of prior use. Separate complete bikes from framesets, bare tools from kits, and skis from boots/boards. Reference floors: snow $500, cycling $1,000, tools $200. Do not mix CAD/GBP/AUD counts or equate a retailer list price with verified historical value.
+
+| # | Metric / primary unit | Fixed measurement method | Release target and competitive rule |
+|---|---|---|---|
+| M1 | Qualified deep-deal coverage / distinct offers | Count available listings ≥40% off above the floor. Deduplicate merchant + canonical product + selected variant. Also report cross-retailer model deduplication separately; do not claim unique models without identity evidence. | ≥20% more than strongest comparable competitor, without sacrificing M3–M6. |
+| M2 | Useful retailer coverage / retailers | Retailers contributing at least one M1 offer, not configured connectors or affiliate logos. | Greater than strongest comparable competitor. |
+| M3 | Price and product accuracy / % correct | Merchant check within 15 minutes of display: same SKU/model/year/build, currency, current price, reference and destination. Audit top 10 plus 20 seeded random offers per site; if fewer, audit all. Publish failures and sample size. | ≥99%; no known wrong price. Report confidence intervals; a small 100% sample is not proof of superiority. |
+| M4 | Fit/package and stock accuracy / % correct | Same sample: exact selected size/build/package is purchasable; battery platform never inferred from voltage alone. Unknown stock is not a pass. | ≥99%; unknowns disclosed and excluded from exact-fit results. |
+| M5 | Category/condition precision / % correct | Same sample: appropriate equipment category, new condition, frame vs complete bike, bare tool vs kit; missing evidence remains unknown. | ≥99%, with zero known misleading package/condition labels. |
+| M6 | Reference evidence coverage / % of cards | Card/detail exposes numeric reference, basis, variant, observation time and limitations. Audit all first-page cards; independently verify any historic-low claim. | 100%. Retailer compare-at transparency is not verification that an item previously sold at that price. |
+| M7 | Freshness / % checked within 24 hours | Successful offer/source observations only; failed attempts cannot renew timestamps. All eligible listings, same observation time. Also report p95 age and dead-offer removal delay. | ≥95%; hard expiration ≤24 h; eight-hour checks where permitted (tightened from the original 72-hour ceiling in the gap-closing release). |
+| M8 | Historical evidence / % with ≥30 distinct observed days | Same variant, merchant, currency and product identity, observed on ≥30 UTC dates in last 45 days. Multiple checks in a day count once. | ≥90%, then greater than strongest comparable competitor. No backfilled/fabricated history. |
+| M9 | Mobile discovery effort / scroll pixels to first full price | Fresh 390×844 viewport, normal text size, no saved searches, default deal-entry page (record the URL), first price bottom minus viewport height (minimum zero). Repeat for budget + exact-fit/package task and count actions; failed task is not a low score. | Zero initial scroll; exact-fit task ≤4 meaningful actions. Equal zero is parity, not a strict win. |
+| M10 | Mobile loading / median LCP milliseconds | Three cold production runs on the same device/network profile within one hour. Report CLS and task responsiveness alongside LCP. Local previews are ineligible for competitive speed claims. | LCP ≤2,500 ms, CLS ≤0.1; faster than strongest comparable production site. |
+
+Accuracy sampling must record the seed, population, sample, timestamps, merchant evidence and unresolved checks. For M3–M5 report Wilson intervals; do not equate a 30/30 result with a proven 99% population accuracy. Numeric comparisons require matching cohort, method and date. Missing/blocked/self-reported evidence never becomes zero. At a metric's ceiling, accept parity and seek a lead elsewhere instead of inventing a win. [Core Web Vitals definitions](https://web.dev/articles/vitals).
+
+## Competitor registry and what to learn
+
+Observed = visible public surface on research date; claimed = provider statement, not an independent outcome audit. Inventory totals below are **not M1 counts**. All links are primary sources. Geographic capability comparators stay outside US inventory rankings.
+
+| Competitor | Scope | Observed or claimed evidence | Implication for us |
+|---|---|---|---|
+| [Powder Deals](https://powderdeals.com/deals) | Snow, US direct | Observed 499 broad deals and merchant names in the brand facet; top results mix clothing, socks and equipment. [Disclosure](https://powderdeals.com/disclosures) claims ranking independent of commission. | Separate retailer/brand taxonomy and expensive-equipment cohorts; audit actual variants, not merely attractive discounts. |
+| [SnowDeal](https://snowdeal.io/) | Snow, direct | Claims nightly cross-shop pricing; explicit final-price/stock caveat. | Model-level price comparison is part of the competitive baseline. Nightly claim needs independent freshness sampling. |
+| [Ski Finder](https://www.ski-finders.com/deals) | Snow, US direct | November 3 UTC direct page: 33 deals / 312 skis; distinguishes price drops, newer-model closeouts and cross-shop gaps. Same-session mobile median LCP 992 ms. | Strong loading benchmark; different reference bases cannot be flattened into one discount cohort. |
+| [PowderList](https://powderlist.com/about) | Snow, direct | About page describes premium ski/snow comparison and retailer checkout. Homepage inventory was not inspectable in text extraction. | Unknown inventory/accuracy, not a failed competitor. Browser/sample audit still needed. |
+| [trail.deals](https://trail.deals/about) | Outdoor including snow | Claims 33 sources, published offers checked at least every eight hours, removal within a day, history qualification for low-price badges. | Strong freshness/transparency target; one daily scrape is not a defensible advantage. |
+| [Velo Bargains](https://velo.bargains/deals) | Cycling, US direct | Observed 345 broad deals in text extraction, 346 in the later browser check, merchant names in brand facet, and camping/fishing/hiking categories. Cheap accessories dominate initial discount ranking. | Positive category classification and reference floors improve relevance; raw totals are not comparable. |
+| [99 Spokes](https://99spokes.com/) | Bike comparison | Claims daily monitoring of 40,000+ bikes; geometry/spec comparison and a deal section. | Much stronger discovery/identity scope; 40,000 bikes is not 40,000 qualified discounts. |
+| [MTB Price Agent](https://mtbprice.com/) | Mountain bikes, US direct | Displays 728 bikes, seven named retailers, frame/wheel/material/travel filters. Sort emphasizes spec value. | Coverage and fit are serious competition. Our discount-first ordering serves a different stated objective. |
+| [VeloDeals](https://velodeals.com/) | Cycling deals | Visible granular bike/frame/component categories and search. | Compare actual task effort and fresh qualified offers before declaring a lead. |
+| [BikeHunt](https://www.bikehunt.au/guides/how-bikehunt-compares-prices) | Australia capability reference | Describes build/year matching, uncertain-year labels, several checks a day, availability and used/demo exclusion. | Identity rigor matters more than fuzzy model-name grouping. |
+| [Cycling Deals](https://www.cycling-deals.co.uk/) | UK capability reference | Displays 6,665 broad deals, 627 bike deals, dated daily checks; claims history on every product. | Need real price history, not just struck-through MSRP. GBP inventory stays out of M1. |
+| [VeloChecker](https://velochecker.com/about) | UK capability reference | Claims live shop comparisons, automatic seller discovery, target-price/percentage email alerts. | Saved searches are useful but are not delivered alerts. |
+| [Daily Tool Drops](https://dailytooldrops.com/) | US tools, direct | Text extraction showed five offers; the later browser check showed eight and an updated Nov 2 timestamp. Distinguishes retailer-sale references from tracked-history labels. | Reference provenance and observed-price history need to be legible at the offer. |
+| [DrillDown](https://drilldown.cc/) | Tools/spec comparison | Claims 150+ tools across 11 brands; explicit bare-tool/kit SKU examples and price-history capabilities. | Package/SKU compatibility is core, not an optional label. Homepage example charts are not independent offer evidence. |
+| [ToolGuyd](https://toolguyd.com/) | Tools editorial/community | Active dated deal stories, kits/free-tool promotions, comments and reviews. | Editorial judgment explains bundle value that a percentage alone misses. Keep bundle conditions explicit. |
+| [ScoredDeals](https://www.scoreddeals.com/best/tools) | Broad tools deals | Indexed page shows price/reference/percentage and score; direct extraction failed. | Partial evidence only. Scores cannot replace our percentage-first product contract. |
+| [HardHat Deals](https://hardhatdeals.com/) | US tools, direct | Displays 407 broad deals, trade/brand filters, percentage sorting and per-offer reference types/timestamps; claims checks within 24 hours. | Large retailer reach and reference specificity matter. Broad inventory includes accessories; 407 is not an M1 count. |
+| [Tool Brief](https://toolbrief.co.uk/deals) | UK capability reference | Displays 20 SKUs, 46 checked offers, 31 high-confidence rows and per-retailer extraction evidence; page's last pull was Oct 28. | Good evidence design; a “live” label alone does not establish current freshness. |
+| [Red Tool Radar](https://redtoolradar.com/) | US Milwaukee tools, direct | Visible SKU/store/promotion filters, percentage discounts and separate free-tool deals across Acme and Ohio Power Tool. | Bundles and exact SKU coverage are competitive requirements; free items must not become invented percentage savings. |
+| [Slickdeals](https://slickdeals.net/corp/how-slickdeals-works/) | Cross-category/community | Describes votes, comments, editorial price/history/availability checks and alerts. | Community detects coupon, bundle and stock caveats; automation needs comparable feedback loops. |
+| [DealNews](https://corp.dealnews.com/faq/) | Cross-category/editorial | Describes continuous editorial work, recency labels, link checks and popularity ranking. | Reliability and selection are competition even without catalog-specific branding. |
+
+Retailer outlets (evo, Powder7, Jenson, BikesOnline, Mike's Bikes, Woodcraft, Home Depot, Lowe's and Acme) are also shopping alternatives and potential sources. Compare their exact offers in M3/M4; do not present them as independent multi-retailer aggregators. Coupons, membership, shipping, rebates and free-tool bundles require separate terms; an uncomputed landed price must not be called the cheapest checkout.
+
+## Current scorecard
+
+`docs/benchmarks/2026-11-03.json` records the current roster and measurements; November 2 files remain historical. `scripts/benchmark.py` renders the site × ten-metric matrix and exits nonzero with `--require-lead` while any applicable rival or metric lacks comparable evidence. An unknown cell is an explicit work item, not an implied win. International sites and editorial sites remain visible as capability comparators, with US direct comparisons handled separately.
+
+The latest pass crawls Powder Deals and Velo Bargains to completion, inspects public competitor APIs and measures seven production sites with three cold mobile runs each. Our two new catalogs each match 30/30 merchant endpoint samples. Competitor merchant samples, checkout/fit and condition audits remain incomplete. Fresh Powder's production LCP is behind Powder Deals and Ski Finder; the local render correction needs publication and remeasurement. No all-metrics lead is established.
+
+## Improvement loop
+
+1. Run offline tests and the explicit-snapshot audit before every refresh release; reject unsafe destinations, invalid prices, wrong catalog identity and partial refreshes.
+2. Review the ten-metric matrix weekly and after adding a retailer. Record dated evidence; never overwrite an old measurement as if it were a new observation.
+3. Audit top 10 plus 20 seeded random live offers per site against merchant destinations; triage any wrong variant/price before expanding coverage.
+4. Prioritize tools source breadth, exact SKU/package capture, and shared per-variant history. Gather ≥30 real observation days before making historical-low claims.
+5. Run consistent production mobile tests after publication. Investigate actual load/layout/interaction regressions; do not substitute localhost timings.
+6. Expand to new competitors found in search and retailer referrals. Change the metric contract only with a versioned rationale, never to hide a loss.
+
+This is a documented operating process and executable local gate, not an activated recurring job. Existing refresh schedules are not evidence that the new catalogs are deployed or collecting daily history.
+
+## Historical first iteration — 2 November
+
+- Big Ring and Bench Drop now use a compact introduction and put real prices on the first mobile screen. Applied-filter chips show the default reference floor, and removing that chip explicitly sets the floor to zero. Buttons and evidence controls have 44 px minimum targets; controls retain keyboard focus indicators.
+- All three catalogs have per-offer reference/variant explanations. The new catalogs also expose actual per-variant daily observations, identifying insufficient history and missing days. Deployment bundles preserve the latest 45 days of configured-source history rather than resetting it on every build.
+- Cycling frame-size parsing now uses catalog-owned option names. Wheel size stays visible in the variant description but does not contaminate the frame-size filter. Explicit unknown dimensions stay unknown. Medium returned 104 listings after the fresh feed, versus 98 in the earlier snapshot; this count difference includes live inventory changes and is not attributed solely to the parser fix.
+- New-catalog ingestion rejects a purchase URL pointing to a different product or a different/missing variant ID. Accessory taxonomy takes precedence over a misleading frameset keyword. Shared snow size/length parsing remains unchanged by the opt-in cycling rule.
+- Current local snapshots: 250 in-stock cycling listings above $1,000 reference, of which 33 are ≥40% off from two retailers; tools 71 above $200, of which four are ≥40% off from one retailer. These are source-reported snapshots, not independently audited stock or historical discount validity.
+- A bounded Red Tool Store source probe failed currency verification; no unverified feed was enabled. Expanding tools beyond Woodcraft remains a release priority.
+
+### Browser evidence (390 × 844, 2 November)
+
+| Surface | First full price bottom, px | Initial scroll to price, px | Interpretation |
+|---|---:|---:|---|
+| Big Ring before, one saved-search chip | 1,358.7 | 514.7 | Local previous UI |
+| Big Ring after, same saved-search chip | 783.1 | 0 | 42% less distance to price in the paired layout check |
+| Big Ring after, no saved searches | 727.1 | 0 | Default benchmark surface, local |
+| Bench Drop before | 1,350.7 | 506.7 | Local previous UI |
+| Bench Drop after | 738.3 | 0 | 45% less distance to price, local |
+| Fresh Powder production | 806.9 | 0 | Public site, before this iteration's deployment |
+| Powder Deals `/deals` | 1,180.2 | 336.2 | Public site, default banner retained |
+| Velo Bargains `/deals` | 1,056.7 | 212.7 | Public site, default banner retained |
+| Daily Tool Drops | 504.5 | 0 | Public site; parity on the zero-scroll target |
+
+These are layout measurements, not speed, deal-quality or conversion measurements. The snow local test uses six synthetic offers and is excluded from inventory metrics. Same-session public pages can change: retain timestamps and evidence instead of assuming cached search counts are current.
+
+Run the audit with an explicit public snapshot path: `python scripts/audit_catalog.py --catalog cycling --database <path>` (or `tools`). Render the latest matrix with `python scripts/benchmark.py docs/benchmarks/2026-11-03.json`; append `--require-lead` to test the all-metrics claim. Its nonzero result is expected until the evidence supports a lead.
+
+## Historical gap-closing continuation — 2 November
+
+The earlier iteration counts and browser table above are retained as historical observations. The [November 2 gap report](benchmarks/2026-11-02-gap-closure.md) recorded 309 cycling listings / 32 deep deals / three useful stores and 175 tools listings / seven deep deals / two useful stores; the latest report supersedes those counts. Every figure remains source-reported. Merchant endpoint audit receipts include a later Tool Nut rate limit, not only successful checks. Snow's 22 matches and eight inconclusive checks include a documented auditor correction, not five silently repaired merchant errors.
+
+The new-catalog workflow now restores history, audits merchant endpoints before publication and verifies the deployed snapshot hash. Publication will activate eight-hour schedules; no new schedule has run yet. All three apps hide offers older than 24 hours. Storage retains one real successful observation per UTC day for 45 days; one day of data is still one day. M10 comparison now rejects a single run or missing/excessive CLS evidence. The concrete approval scope is in [CATALOG-RELEASE-PLAN.md](CATALOG-RELEASE-PLAN.md).

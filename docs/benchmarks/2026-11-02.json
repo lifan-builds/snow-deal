@@ -1,0 +1,421 @@
+{
+  "version": 1,
+  "date": "2026-11-02",
+  "contract": "docs/COMPETITIVE-BENCHMARK.md",
+  "sites": [
+    {
+      "name": "Fresh Powder",
+      "ours": true,
+      "categories": [
+        "snow"
+      ],
+      "market": "US",
+      "metrics": {
+        "M9": {
+          "status": "measured",
+          "value": 0,
+          "first_price_bottom": 806.90625,
+          "date": "2026-11-02",
+          "sample_size": 1,
+          "cohort": "default-deal-entry-mobile",
+          "method": "390x844-no-saved-searches-v1",
+          "environment": "production",
+          "evidence": "https://freshpowder.clifan.com/",
+          "note": "Read-only DOM geometry; layout only, not speed or task-completion study."
+        }
+      }
+    },
+    {
+      "name": "Big Ring",
+      "ours": true,
+      "categories": [
+        "cycling"
+      ],
+      "market": "US",
+      "metrics": {
+        "M1": {
+          "status": "observed",
+          "value": 33,
+          "date": "2026-11-02",
+          "sample_size": 250,
+          "cohort": "US-new-cycling-1000",
+          "method": "source-snapshot-v1",
+          "evidence": "cycling-benchmark-audit.json",
+          "note": "Source snapshot only; independent merchant validity audit pending. Not a competitive win."
+        },
+        "M2": {
+          "status": "observed",
+          "value": 2,
+          "date": "2026-11-02",
+          "sample_size": 250,
+          "cohort": "US-new-cycling-1000",
+          "method": "source-snapshot-v1",
+          "evidence": "cycling-benchmark-audit.json",
+          "note": "Source snapshot only; independent merchant validity audit pending. Not a competitive win."
+        },
+        "M7": {
+          "status": "observed",
+          "value": 100.0,
+          "date": "2026-11-02",
+          "sample_size": 250,
+          "cohort": "US-new-cycling-1000",
+          "method": "source-snapshot-v1",
+          "evidence": "cycling-benchmark-audit.json",
+          "note": "Source snapshot only; independent merchant validity audit pending. Not a competitive win."
+        },
+        "M8": {
+          "status": "observed",
+          "value": 0,
+          "date": "2026-11-02",
+          "evidence": "Catalog observation history began on this date; less than 30 observed days."
+        },
+        "M9": {
+          "status": "measured",
+          "value": 0,
+          "first_price_bottom": 727.09375,
+          "date": "2026-11-02",
+          "sample_size": 1,
+          "cohort": "default-deal-entry-mobile",
+          "method": "390x844-no-saved-searches-v1",
+          "environment": "local",
+          "evidence": "http://127.0.0.1:8766/",
+          "note": "Read-only DOM geometry; layout only, not speed or task-completion study."
+        },
+        "M6": {
+          "status": "measured",
+          "value": 100,
+          "date": "2026-11-02",
+          "sample_size": 24,
+          "cohort": "first-page-cards",
+          "method": "card-reference-variant-timestamp-v1",
+          "environment": "local",
+          "evidence": "docs/tasks/competitive-benchmark/verification.md",
+          "note": "24/24 rendered cards have numeric reference, basis, variant and observation timestamp; no historical-low claim."
+        }
+      }
+    },
+    {
+      "name": "Bench Drop",
+      "ours": true,
+      "categories": [
+        "tools"
+      ],
+      "market": "US",
+      "metrics": {
+        "M1": {
+          "status": "observed",
+          "value": 4,
+          "date": "2026-11-02",
+          "sample_size": 71,
+          "cohort": "US-new-tools-200",
+          "method": "source-snapshot-v1",
+          "evidence": "tools-benchmark-audit.json",
+          "note": "Source snapshot only; independent merchant validity audit pending. Not a competitive win."
+        },
+        "M2": {
+          "status": "observed",
+          "value": 1,
+          "date": "2026-11-02",
+          "sample_size": 71,
+          "cohort": "US-new-tools-200",
+          "method": "source-snapshot-v1",
+          "evidence": "tools-benchmark-audit.json",
+          "note": "Source snapshot only; independent merchant validity audit pending. Not a competitive win."
+        },
+        "M7": {
+          "status": "observed",
+          "value": 100.0,
+          "date": "2026-11-02",
+          "sample_size": 71,
+          "cohort": "US-new-tools-200",
+          "method": "source-snapshot-v1",
+          "evidence": "tools-benchmark-audit.json",
+          "note": "Source snapshot only; independent merchant validity audit pending. Not a competitive win."
+        },
+        "M8": {
+          "status": "observed",
+          "value": 0,
+          "date": "2026-11-02",
+          "evidence": "Catalog observation history began on this date; less than 30 observed days."
+        },
+        "M9": {
+          "status": "measured",
+          "value": 0,
+          "first_price_bottom": 738.296875,
+          "date": "2026-11-02",
+          "sample_size": 1,
+          "cohort": "default-deal-entry-mobile",
+          "method": "390x844-no-saved-searches-v1",
+          "environment": "local",
+          "evidence": "http://127.0.0.1:8767/",
+          "note": "Read-only DOM geometry; layout only, not speed or task-completion study."
+        },
+        "M6": {
+          "status": "measured",
+          "value": 100,
+          "date": "2026-11-02",
+          "sample_size": 24,
+          "cohort": "first-page-cards",
+          "method": "card-reference-variant-timestamp-v1",
+          "environment": "local",
+          "evidence": "docs/tasks/competitive-benchmark/verification.md",
+          "note": "24/24 rendered cards have numeric reference, basis, variant and observation timestamp; no historical-low claim."
+        }
+      }
+    },
+    {
+      "name": "Powder Deals",
+      "categories": [
+        "snow"
+      ],
+      "market": "US",
+      "evidence_url": "https://powderdeals.com/deals",
+      "metrics": {
+        "M9": {
+          "status": "measured",
+          "value": 336.22,
+          "first_price_bottom": 1180.21875,
+          "date": "2026-11-02",
+          "sample_size": 1,
+          "cohort": "default-deal-entry-mobile",
+          "method": "390x844-no-saved-searches-v1",
+          "environment": "production",
+          "evidence": "https://powderdeals.com/deals",
+          "note": "Read-only DOM geometry; layout only, not speed or task-completion study."
+        }
+      }
+    },
+    {
+      "name": "SnowDeal",
+      "categories": [
+        "snow"
+      ],
+      "market": "US",
+      "evidence_url": "https://snowdeal.io/",
+      "metrics": {
+        "M7": {
+          "status": "claimed",
+          "note": "Nightly pricing claim.",
+          "date": "2026-11-02",
+          "evidence": "https://snowdeal.io/"
+        }
+      }
+    },
+    {
+      "name": "PowderList",
+      "categories": [
+        "snow"
+      ],
+      "market": "US",
+      "evidence_url": "https://powderlist.com/about",
+      "metrics": {}
+    },
+    {
+      "name": "trail.deals",
+      "categories": [
+        "snow"
+      ],
+      "market": "US",
+      "evidence_url": "https://trail.deals/about",
+      "metrics": {
+        "M7": {
+          "status": "claimed",
+          "note": "Published offers rechecked at least every eight hours (provider policy).",
+          "date": "2026-11-02",
+          "evidence": "https://trail.deals/about"
+        }
+      }
+    },
+    {
+      "name": "Velo Bargains",
+      "categories": [
+        "cycling"
+      ],
+      "market": "US",
+      "evidence_url": "https://velo.bargains/deals",
+      "metrics": {
+        "M9": {
+          "status": "measured",
+          "value": 212.72,
+          "first_price_bottom": 1056.71875,
+          "date": "2026-11-02",
+          "sample_size": 1,
+          "cohort": "default-deal-entry-mobile",
+          "method": "390x844-no-saved-searches-v1",
+          "environment": "production",
+          "evidence": "https://velo.bargains/deals",
+          "note": "Read-only DOM geometry; layout only, not speed or task-completion study."
+        }
+      }
+    },
+    {
+      "name": "99 Spokes",
+      "categories": [
+        "cycling"
+      ],
+      "market": "US",
+      "evidence_url": "https://99spokes.com/",
+      "metrics": {
+        "M7": {
+          "status": "claimed",
+          "note": "Daily monitoring claim.",
+          "date": "2026-11-02",
+          "evidence": "https://99spokes.com/"
+        }
+      }
+    },
+    {
+      "name": "MTB Price Agent",
+      "categories": [
+        "cycling"
+      ],
+      "market": "US",
+      "evidence_url": "https://mtbprice.com/",
+      "metrics": {}
+    },
+    {
+      "name": "VeloDeals",
+      "categories": [
+        "cycling"
+      ],
+      "market": "US",
+      "evidence_url": "https://velodeals.com/",
+      "metrics": {}
+    },
+    {
+      "name": "BikeHunt",
+      "categories": [
+        "cycling"
+      ],
+      "market": "AU",
+      "evidence_url": "https://www.bikehunt.au/guides/how-bikehunt-compares-prices",
+      "metrics": {}
+    },
+    {
+      "name": "Cycling Deals",
+      "categories": [
+        "cycling"
+      ],
+      "market": "UK",
+      "evidence_url": "https://www.cycling-deals.co.uk/",
+      "metrics": {
+        "M7": {
+          "status": "claimed",
+          "note": "Daily checks claim.",
+          "date": "2026-11-02",
+          "evidence": "https://www.cycling-deals.co.uk/"
+        },
+        "M8": {
+          "status": "claimed",
+          "note": "History on every product; 30 distinct days not audited.",
+          "date": "2026-11-02",
+          "evidence": "https://www.cycling-deals.co.uk/"
+        }
+      }
+    },
+    {
+      "name": "VeloChecker",
+      "categories": [
+        "cycling"
+      ],
+      "market": "UK",
+      "evidence_url": "https://velochecker.com/about",
+      "metrics": {}
+    },
+    {
+      "name": "Daily Tool Drops",
+      "categories": [
+        "tools"
+      ],
+      "market": "US",
+      "evidence_url": "https://dailytooldrops.com/",
+      "metrics": {
+        "M8": {
+          "status": "claimed",
+          "note": "30-day history label on four of five visible offers; actual observations not audited.",
+          "date": "2026-11-02",
+          "evidence": "https://dailytooldrops.com/"
+        },
+        "M9": {
+          "status": "measured",
+          "value": 0,
+          "first_price_bottom": 504.53125,
+          "date": "2026-11-02",
+          "sample_size": 1,
+          "cohort": "default-deal-entry-mobile",
+          "method": "390x844-no-saved-searches-v1",
+          "environment": "production",
+          "evidence": "https://dailytooldrops.com/",
+          "note": "Read-only DOM geometry; layout only, not speed or task-completion study."
+        }
+      }
+    },
+    {
+      "name": "DrillDown",
+      "categories": [
+        "tools"
+      ],
+      "market": "US",
+      "evidence_url": "https://drilldown.cc/",
+      "metrics": {}
+    },
+    {
+      "name": "ToolGuyd",
+      "categories": [
+        "tools"
+      ],
+      "market": "US",
+      "evidence_url": "https://toolguyd.com/",
+      "metrics": {}
+    },
+    {
+      "name": "ScoredDeals",
+      "categories": [
+        "tools"
+      ],
+      "market": "US",
+      "evidence_url": "https://www.scoreddeals.com/best/tools",
+      "metrics": {}
+    },
+    {
+      "name": "Tool Brief",
+      "categories": [
+        "tools"
+      ],
+      "market": "UK",
+      "evidence_url": "https://toolbrief.co.uk/deals",
+      "metrics": {}
+    },
+    {
+      "name": "Slickdeals",
+      "categories": [
+        "snow",
+        "cycling",
+        "tools"
+      ],
+      "market": "US",
+      "evidence_url": "https://slickdeals.net/corp/how-slickdeals-works/",
+      "metrics": {}
+    },
+    {
+      "name": "DealNews",
+      "categories": [
+        "snow",
+        "cycling",
+        "tools"
+      ],
+      "market": "US",
+      "evidence_url": "https://corp.dealnews.com/faq/",
+      "metrics": {}
+    },
+    {
+      "name": "Red Tool Radar",
+      "categories": [
+        "tools"
+      ],
+      "market": "US",
+      "evidence_url": "https://redtoolradar.com/",
+      "metrics": {}
+    }
+  ]
+}
