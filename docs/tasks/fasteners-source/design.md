@@ -1,0 +1,7 @@
+# Change boundary
+
+Reuse Shopify ingestion, currency checks, exact variant selection and independent product-endpoint audit unchanged. The source remains on the merchant's observed `fastenersinc.myshopify.com` domain; its public redirect carries the full query to `fastenersinc.net/product/<handle>`. Do not invent a generic alias framework or treat a Supabase client as privileged access. Inspect the live redirected product surface before admission. Verify eligibility against the actual numeric purchase price; BOGO/free-item messaging is not a percentage discount input.
+
+Expected files: tools source configuration, tools classifier regression fixtures, this task's receipt and the competitive scorecard. The observed DEWALT DCS334B jigsaw title includes “Blade Stroke Length,” which the accessory guard currently rejects. Permit that explicit specification phrase while continuing to reject replacement blades and blade product types. A cordless planer title also places “Cordless” after “Planer”; classify this observed machine as a power tool without changing its package or platform evidence. Tests should cover both positives and accessory negatives. Do not infer bare-tool/kit or battery platform from SKU naming.
+
+Complete the current broader source probe before source admission. If final storefront evidence differs from the feed, hold the source or affected offers and retain the discrepancy instead of claiming a successful expansion.

@@ -118,3 +118,10 @@ Final verification: 84 tests passed; Python compilation and `git diff --check` p
 - Tools now has ten contributing retailers, 352 qualifying listings and 22 deep deals from five retailers. The Taylor offer matched a fresh merchant check; the combined top-ten plus seeded-twenty sample matched 30/30. These are endpoint facts, not checkout or historical-price proof.
 - Fixed invalid stock quantities passing the Taylor audit. All 440 offline tests and scoped lint pass; package and preview snapshot hashes agree. Local budget-plus-fit tasks show four visible form interactions, with physical gestures and competitor comparisons still unproven.
 - Separate follow-up branch leaves pending release 7798318 unchanged. No push or deployment. See `docs/tasks/taylor-source/IMPLEMENTATION.md` and `docs/benchmarks/2026-11-03-taylor-matrix.json`.
+
+## Fasteners Inc follow-up — 2026-11-03 UTC
+
+- Reused the existing Shopify ingestion after observing the current merchant's public backend and validating exact-variant redirects. Five collections completed across 19 JSON pages, with USD verified. Fasteners adds 57 qualifying listings and four deep deals; tools now totals 409 / 26 across 11 contributing retailers, six useful for deep deals.
+- Corrected a genuine jigsaw excluded by its blade-stroke specification and classified a trailing-word cordless planer as portable. Package/platform labels remain evidence-bound.
+- Fasteners' 30-offer merchant sample and the combined catalog's separate 30-offer sample matched. Seven browser checks matched current-storefront price/reference/stock and retained variants. Samples overlap and do not prove population or checkout accuracy.
+- All 445 offline tests, scoped lint and package/preview hash checks passed. Real history and old source timestamps remain intact. The all-metrics lead gate remains unmet. No push or deployment; 7798318's publication scope is unchanged. See `docs/tasks/fasteners-source/IMPLEMENTATION.md`.
