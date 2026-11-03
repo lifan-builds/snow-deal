@@ -1,5 +1,5 @@
 """Server-rendered catalog app with read-only snapshots and validated filters."""
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 from urllib.parse import urlencode
 
@@ -52,9 +52,9 @@ def create_app(catalog: Catalog, database: Path, *, public_url: str | None = Non
               max_price: float = Query(0, ge=0, le=1000000),
               min_discount: float = Query(0, ge=0, le=100), stock: bool = False,
               page: int = Query(1, ge=1, le=100000)):
-        filters = dict(q=q, category=category, brand=brand, store=store, size=size, format=format,
-                       platform=platform, min_reference=min_reference, max_price=max_price,
-                       min_discount=min_discount, stock=stock, page=page)
+        filters = {"q": q, "category": category, "brand": brand, "store": store, "size": size, "format": format,
+                       "platform": platform, "min_reference": min_reference, "max_price": max_price,
+                       "min_discount": min_discount, "stock": stock, "page": page}
         rows = sources()
         result = query(rows, filters)
         for card in result["cards"]:
@@ -102,7 +102,7 @@ def create_app(catalog: Catalog, database: Path, *, public_url: str | None = Non
                 for offer in item["offers"]:
                     if offer["variant_key"] == variant:
                         observations = read_offer_history(database, catalog.slug, source, item, offer,
-                                                          now=datetime.now(timezone.utc))
+                                                          now=datetime.now(UTC))
                         return templates.TemplateResponse(request=request, name="history.html", context={
                             "catalog": catalog, "product": item, "offer": offer, "store": source,
                             "observations": observations})
@@ -111,7 +111,7 @@ def create_app(catalog: Catalog, database: Path, *, public_url: str | None = Non
     @app.get("/sources", response_class=HTMLResponse)
     def source_health(request: Request):
         rows = {row["name"]: row for row in sources()}
-        now = datetime.now(timezone.utc)
+        now = datetime.now(UTC)
         health = []
         for source in catalog.sources:
             row = rows.get(source.name, {})

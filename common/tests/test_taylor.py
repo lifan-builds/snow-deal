@@ -1,18 +1,22 @@
 """Fixtures shaped from Taylor's observed listing and SKU-selection contract."""
 import asyncio
-from dataclasses import replace
 import json
+from dataclasses import replace
 
 import httpx
 import pytest
-
 from deal_common.catalog.audit import audit_sample, validate_taylor_product
 from deal_common.catalog.refresh import normalize, refresh
 from deal_common.catalog.storage import read_sources
 from deal_common.config import RetailerConfig
-from deal_common.parsers.taylor import TaylorParser, detail_data, offer_destination, literal
-from tool_deals.catalog import CATALOG, classify
 from deal_common.models import Product
+from deal_common.parsers.taylor import (
+    TaylorParser,
+    detail_data,
+    literal,
+    offer_destination,
+)
+from tool_deals.catalog import CATALOG, classify
 
 URL = 'https://taytools.com/3m-grinder'
 COLLECTION = 'https://taytools.com/power-tools?ppg=65535&pn=1'
@@ -30,8 +34,8 @@ def detail(*, variants=None, keys=None, mapping=None, currency_class='us_only', 
     variants = variants if variants is not None else {'4157111082': {'data': {
         'price': '269.00', 'regular_price': '494.14', 'qty': '16', 'available': True,
         'ib': False, 'level_name': 'Regular', 'vendor_sku': '111296_67115'}}}
-    literals = dict(skusKeyValues=variants, keys=keys or [], sc=mapping or [],
-                    images={'default': {'array': [{'normal': 'https://taytools.com/images/grinder.jpg'}]}})
+    literals = {'skusKeyValues': variants, 'keys': keys or [], 'sc': mapping or [],
+                'images': {'default': {'array': [{'normal': 'https://taytools.com/images/grinder.jpg'}]}}}
     return (f'<link rel="canonical" href="{canonical}"><h1 id="title">3M Electric Angle Grinder</h1>'
             f'<span id="price" class="{currency_class}"></span><span itemprop="itemListElement">Grinders</span>'
             '<select data-key="a_21"><option value="v_1">Small kit</option>'

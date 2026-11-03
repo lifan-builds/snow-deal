@@ -45,12 +45,13 @@ def compare(metric: str, own: dict, rival: dict, *, as_of: str) -> str:
                 return "unproven"
         if own["cls"] > 0.1:
             return "below-target"
-    if metric in {"M3", "M4", "M5"}:
-        # A point estimate cannot establish superiority for sampled accuracy.
-        if any(not isinstance(o.get("interval"), list) or len(o["interval"]) != 2
-               or not 0 <= o["interval"][0] <= o["value"] <= o["interval"][1] <= 100
-               for o in (own, rival)):
-            return "unproven"
+    # A point estimate cannot establish superiority for sampled accuracy.
+    if metric in {"M3", "M4", "M5"} and any(
+        not isinstance(o.get("interval"), list) or len(o["interval"]) != 2
+        or not 0 <= o["interval"][0] <= o["value"] <= o["interval"][1] <= 100
+        for o in (own, rival)
+    ):
+        return "unproven"
     a, b = own["value"], rival["value"]
     if (direction == "higher" and a < target) or (direction == "lower" and a > target):
         return "below-target"

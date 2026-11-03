@@ -1,4 +1,4 @@
-# Three-catalog quality release — prepared, not published
+# Three-catalog quality release
 
 Branch: `codex/cycling-tools-sites`, repository `lifan-builds/snow-deal`. This is a new release; the earlier approval for `4b26de3` covered the completed snow rollout only.
 
@@ -36,3 +36,13 @@ The latest cycling and tools audits both matched 30/30, with seed 20261103 and z
 If publication fails, leave the last verified public deployment in place. If an incorrect deployment was promoted, restore the previous verified app/data deployment together. Preserve public snapshot history and failure receipts. Disable only the new failing workflow schedule if necessary; do not reset unrelated working trees or delete history.
 
 The market-leading claim remains unproven. Required follow-up includes more qualifying deep-discount retailers, representative same-cohort competitor merchant audits, exact-fit tasks, production measurements of released changes, and at least 30 genuinely observed UTC dates. An eight-hour schedule or 405 passing tests does not fill these gaps. At 100% accuracy or zero scroll, strict superiority may be impossible; report parity honestly. See the dated gap scorecard and `COMPETITIVE-BENCHMARK.md`.
+
+## Approved rollout update — November 3, 2026 UTC
+
+The user approved release `7798318`. PR #4 merged as `0b3bf0e` after all checks passed, including the Ruff 0.17.3 parity fix `2103ed5` and 405 offline tests. Both Vercel projects and DNS routes are configured on the existing account.
+
+Initial tools refresh job `125719815260` in run `41576092687` received HTTP 403 from Grizzly Industrial before reading any listing pages; the other eight retailers completed. No tools snapshot or deployment was published. Grizzly is quarantined from the enabled catalog, and the public source page explicitly explains the missing coverage. No alternate IP, endpoint or session is used to bypass its refusal. The release now targets eight active tools retailers; earlier nine-retailer inventory totals remain historical local evidence. All active-source completeness, merchant audit and exact deployment fingerprint gates remain mandatory. Re-admission requires a fresh successful production-runner probe and audit.
+
+Cycling's first production audit matched 24/30 offers, with zero mismatches and six inconclusive checks after Pro Bike Supply returned HTTP 429. The audit stopped further requests to that host. The next run increases spacing between audit requests from 1.5 to 5 seconds; it must still produce 30 matches before publication. Preserve this failed audit as evidence. Future workflow artifacts also retain the public source-refresh report on failed refreshes.
+
+Second run `41576984053`: tools refreshed eight sources, matched all 30 merchant checks, and packaged 327 eligible listings; deployment then stopped on the invalid existing `VERCEL_TOKEN`. Provider CLI authentication works, but that app cannot create replacement tokens (HTTP 403); user renewal of the repository secret is pending. The reviewed workflow package can be deployed through normal authenticated CLI without reading or exporting local credentials. Cycling matched 27/30, with three inconclusive checks after Colorado Cyclist HTTP 429; Pro Bike Supply now matched. Audits now reuse the scraper's bounded Retry-After-aware retry helper: four attempts maximum, no retry beyond the 60-second wait budget, and no retry for HTTP 403. Earlier failed audits remain retained.

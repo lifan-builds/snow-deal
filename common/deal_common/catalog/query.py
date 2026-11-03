@@ -1,5 +1,5 @@
 """Choose one eligible offer per listing before counts, order, and pagination."""
-from datetime import datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta
 from math import ceil
 
 from deal_common.offers import discount, size_key
@@ -19,7 +19,7 @@ def is_fresh(timestamp: str | None, now: datetime) -> bool:
 
 
 def query(sources: list[dict], filters: dict, *, now: datetime | None = None) -> dict:
-    now = now or datetime.now(timezone.utc)
+    now = now or datetime.now(UTC)
     cards = []
     facets = {key: set() for key in ("brand", "store", "size", "platform")}
     fresh_sources = 0

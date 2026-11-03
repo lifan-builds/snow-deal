@@ -3,15 +3,15 @@
 from __future__ import annotations
 
 import asyncio
-import logging
 import hashlib
 import json
-import re
+import logging
 import random
+import re
 from collections.abc import Callable
-from urllib.parse import urlsplit
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from email.utils import parsedate_to_datetime
+from urllib.parse import urlsplit
 
 import httpx
 
@@ -46,7 +46,7 @@ async def fetch_listing(client: httpx.AsyncClient, url: str, delay: float) -> ht
                 seconds = float(retry_after)
             except ValueError:
                 try:
-                    seconds = (parsedate_to_datetime(retry_after) - datetime.now(timezone.utc)).total_seconds()
+                    seconds = (parsedate_to_datetime(retry_after) - datetime.now(UTC)).total_seconds()
                 except (ValueError, TypeError):
                     seconds = 2 ** (attempt + 2) + random.random()
             # Do not retry sooner than a retailer requests when the wait exceeds our budget.

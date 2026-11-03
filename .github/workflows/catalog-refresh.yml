@@ -67,7 +67,7 @@ jobs:
           if [ "$BOOTSTRAP" = 'true' ]; then args+=(--bootstrap); fi
           python scripts/restore_catalog.py "$CATALOG" --database "$RUNNER_TEMP/catalog.db" "${args[@]}"
       - name: Refresh configured sources
-        run: ${{ matrix.command }} refresh --database "${{ runner.temp }}/catalog.db"
+        run: ${{ matrix.command }} refresh --database "${{ runner.temp }}/catalog.db" | tee "$RUNNER_TEMP/source-refresh.json"
       - name: Audit selected offers against merchant endpoints
         run: python scripts/audit_merchants.py --catalog ${{ matrix.catalog }} --database "$RUNNER_TEMP/catalog.db" --output "$RUNNER_TEMP/merchant-audit.json" --seed "$(date -u +%Y%m%d)"
       - name: Prepare read-only site and snapshot report
@@ -80,6 +80,7 @@ jobs:
           name: ${{ matrix.catalog }}-site
           path: |
             ${{ runner.temp }}/site/
+            ${{ runner.temp }}/source-refresh.json
             ${{ runner.temp }}/snapshot-audit.json
             ${{ runner.temp }}/merchant-audit.json
           retention-days: 30

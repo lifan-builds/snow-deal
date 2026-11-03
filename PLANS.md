@@ -129,3 +129,20 @@ Final verification: 84 tests passed; Python compilation and `git diff --check` p
 ## Gravity Coalition follow-up (local only)
 
 Prepared a seventeenth cycling source after two complete currency-verified collection refreshes: 29 eligible listings, six deep discounts, and 29/29 merchant endpoint matches. Fixed manufacturer-name and frame-only classification defects with six regression cases; 451 offline tests pass. This follows unpublished Taylor/Fasteners work, is outside release 7798318, and remains unpushed. See `docs/tasks/gravity-source/IMPLEMENTATION.md`.
+## Approved catalog release: CI parity fix (2026-11-03 UTC)
+
+- User approved publishing release `7798318`, merging after checks, and the three-catalog rollout in `docs/CATALOG-RELEASE-PLAN.md`. PR #4 initially failed lint because CI installed Ruff 0.17.3 while local validation used 0.15.11.
+- Pinned Ruff 0.17.3 and applied its import, UTC-alias, literal-dictionary and equivalent-condition fixes. Preserved restore's invalid-response ValueError contract. Later Taylor/Fasteners additions remain outside this release.
+- Validation: all 405 offline tests pass; the exact CI lint command passes on Ruff 0.17.3; JavaScript syntax and whitespace checks pass.
+
+## Catalog production source recovery
+
+PR #4 merged after CI passed. First production tools refresh exposed Grizzly HTTP 403; eight other feeds completed. Quarantine the inaccessible feed and show the coverage limitation on the source page; preserve all completeness and merchant-audit gates. Cycling and snow refreshes continue independently.
+
+## Catalog audit retry recovery
+
+Run `41576984053` produced 30/30 matching tools audit samples and a valid eight-source package (327 eligible listings), then deployment failed because the existing GitHub Vercel token is invalid. Token creation through the authenticated CLI app is forbidden; requested user renewal of the existing repository secret and continuing deployment through normal local CLI authentication. Cycling matched 27/30 with three inconclusive after Colorado Cyclist HTTP 429; Pro Bike Supply passed this time. Reuse the shared bounded HTTP retry helper so audits honor Retry-After (up to 60 seconds) without changing endpoints or networks. HTTP 403 still stops immediately; exhausted retries remain inconclusive and block publication.
+
+## Source follow-up integration — 2026-11-03 UTC
+
+Merged production recovery through `0530cad` into the unpublished Taylor/Fasteners/Gravity branch. Kept Grizzly excluded, preserved the new feeds, and applied the shared bounded audit retries to Taylor. Resolved import/documentation conflicts without losing either task history. All 454 offline tests, Ruff 0.17.3 CI checks plus changed HTTP/parser tests, JavaScript syntax and whitespace checks pass. This is local integration, not approval or evidence of production admission for the three additional feeds.

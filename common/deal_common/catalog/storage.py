@@ -2,6 +2,7 @@
 import json
 import sqlite3
 from contextlib import contextmanager
+from datetime import UTC
 from pathlib import Path
 
 
@@ -76,7 +77,7 @@ def read_sources(path: Path, catalog: str) -> list[dict]:
 def read_offer_history(path: Path, catalog: str, source: str, product: dict, offer: dict,
                        *, now, days: int = 45) -> list[dict]:
     """One successful observation per UTC day, for the exact current identity only."""
-    from datetime import datetime, timedelta, timezone
+    from datetime import datetime, timedelta
     cutoff = now - timedelta(days=days)
     with database(path, catalog) as connection:
         rows = connection.execute("""
@@ -95,7 +96,7 @@ def read_offer_history(path: Path, catalog: str, source: str, product: dict, off
             for candidate in historical["offers"]:
                 if (candidate["variant_key"], candidate["options"], candidate["url"]) != (offer["variant_key"], offer["options"], offer["url"]):
                     continue
-                daily[stamp.astimezone(timezone.utc).date().isoformat()] = {
+                daily[stamp.astimezone(UTC).date().isoformat()] = {
                     "observed_at": row["observed_at"], "price": candidate["current_price"],
                     "reference": candidate["original_price"], "availability": candidate["availability"]}
     return list(reversed(daily.values()))

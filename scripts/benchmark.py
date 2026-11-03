@@ -1,12 +1,12 @@
 """Render a dated competitive matrix; --require-lead rejects unsupported win claims."""
 import argparse
 import json
-from pathlib import Path
 import sys
+from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "common"))
-from deal_common.benchmark import evaluate, markdown  # noqa: E402
+from deal_common.benchmark import evaluate, markdown
 
 
 def main():

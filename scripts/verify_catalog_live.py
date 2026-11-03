@@ -1,8 +1,8 @@
 """Verify an explicit public site serves the packaged snapshot, without credentials."""
 import argparse
 import json
-from pathlib import Path
 import time
+from pathlib import Path
 from urllib.parse import urlsplit
 
 import httpx

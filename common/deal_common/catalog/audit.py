@@ -3,20 +3,21 @@
 This checks merchant-reported facts, not checkout completion or former street prices.
 No browser session, cart contents, cookies, credentials or raw response is persisted.
 """
-import asyncio
-from datetime import datetime, timezone
-from decimal import Decimal, InvalidOperation
 import hashlib
 import random
 import re
+from datetime import UTC, datetime
+from decimal import Decimal, InvalidOperation
 from urllib.parse import parse_qs, urlencode, urlsplit, urlunsplit
 
 import httpx
 
 from deal_common.catalog.refresh import safe_url
-from deal_common.http import DEFAULT_HEADERS
-from deal_common.parsers.grizzly import sku_destination, structured_products, text as decoded_text
-from deal_common.parsers.taylor import detail_data as taylor_data, offer_destination as taylor_destination
+from deal_common.http import DEFAULT_HEADERS, fetch_listing
+from deal_common.parsers.grizzly import sku_destination, structured_products
+from deal_common.parsers.grizzly import text as decoded_text
+from deal_common.parsers.taylor import detail_data as taylor_data
+from deal_common.parsers.taylor import offer_destination as taylor_destination
 
 
 def select_sample(cards: list[dict], seed: int = 20261102) -> list[dict]:
@@ -44,7 +45,7 @@ def validate_product(card: dict, raw: dict, currency: str | None) -> dict:
     option_definitions = raw.get("options") or []
     price_positions = {i for i, definition in enumerate(option_definitions)
                        if isinstance(definition, dict) and re.search(
-                           r"\b(?:msrp|retail|price)\b", str(definition.get("name", "")), re.I)}
+                           r"\b(?:msrp|retail|price)\b", str(definition.get("name", "")), re.IGNORECASE)}
     # A declared MSRP metadata option is not a purchasable size/color choice.
     # Preserve its raw value in evidence, but compare actual variant dimensions.
     raw_options = actual.get("options", [])
@@ -65,7 +66,7 @@ def validate_product(card: dict, raw: dict, currency: str | None) -> dict:
                          "option_definitions": option_definitions, "available": actual.get("available")}}
 
 
-async def audit_sample(cards: list[dict], allowed_domains: dict[str, str], *, delay: float = 1.5,
+async def audit_sample(cards: list[dict], allowed_domains: dict[str, str], *, delay: float = 5.0,
                        transport=None) -> list[dict]:
     results = []
     currencies = {}
@@ -77,7 +78,7 @@ async def audit_sample(cards: list[dict], allowed_domains: dict[str, str], *, de
             parts = urlsplit(offer["url"])
             domain = allowed_domains.get(card["store"])
             row = {"name": card["name"], "store": card["store"], "offer": offer,
-                   "checked_at": datetime.now(timezone.utc).isoformat()}
+                   "checked_at": datetime.now(UTC).isoformat()}
             sku_product = sku_destination(offer["url"], offer["variant_key"])
             taylor_product = taylor_destination(offer['url'], offer['variant_key'])
             if (not domain or not safe_url(offer["url"], domain)
@@ -96,36 +97,28 @@ async def audit_sample(cards: list[dict], allowed_domains: dict[str, str], *, de
                 continue
             try:
                 if taylor_product:
-                    await asyncio.sleep(delay)
-                    response = await client.get(offer['url'])
-                    response.raise_for_status()
+                    response = await fetch_listing(client, offer['url'], delay)
                     row['response_sha256'] = hashlib.sha256(response.content).hexdigest()
                     row.update(validate_taylor_product(card, taylor_data(response.text, offer['url'])))
                     results.append(row)
                     continue
                 if sku_product:
-                    await asyncio.sleep(delay)
-                    response = await client.get(offer["url"])
-                    response.raise_for_status()
+                    response = await fetch_listing(client, offer["url"], delay)
                     row["response_sha256"] = hashlib.sha256(response.content).hexdigest()
                     row.update(validate_sku_product(card, structured_products(response.text)))
                     results.append(row)
                     continue
                 if origin not in currencies:
-                    await asyncio.sleep(delay)
-                    response = await client.get(currency_url)
-                    response.raise_for_status()
+                    response = await fetch_listing(client, currency_url, delay)
                     # Only the currency is retained from this new anonymous session.
                     currencies[origin] = response.json().get("currency")
                 if currencies[origin] != card.get("currency", "USD"):
                     results.append({**row, "status": "inconclusive", "reason": "Presentment currency not confirmed"})
                     continue
-                await asyncio.sleep(delay)
-                response = await client.get(endpoint)
-                response.raise_for_status()
+                response = await fetch_listing(client, endpoint, delay)
                 raw = response.json()
                 if not isinstance(raw, dict):
-                    raise ValueError("Malformed product")
+                    raise TypeError("Malformed product")
                 row["response_sha256"] = hashlib.sha256(response.content).hexdigest()
                 row.update(validate_product(card, raw, currencies[origin]))
             except httpx.HTTPStatusError as exc:
