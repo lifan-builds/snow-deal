@@ -1,0 +1,3841 @@
+{
+  "date": "2026-11-03",
+  "scope": "Local follow-up to pending release 7798318; no publication",
+  "discovery": {
+    "url": "https://taytools.com/power-tools?ppg=65535&pn=1",
+    "at": "2026-11-03T03:13:51.566592+00:00",
+    "sha256": "11b9e4e5fb743cf33293041899ee564468de840d284935a0f4e75a187963fd8a",
+    "advertised_listing_ids": 1917,
+    "canonical_destinations": 1913,
+    "detail_requests": 186,
+    "complete_http_responses": 187,
+    "refresh": [
+      {
+        "source": "Taylor Toolworks",
+        "status": "complete",
+        "errors": 0,
+        "pages": 1,
+        "collections": [
+          {
+            "url": "https://taytools.com/power-tools?ppg=65535&pn=1",
+            "pages": 1,
+            "products": 22,
+            "status": "complete"
+          }
+        ],
+        "product_pages": 186,
+        "parsed_products": 22,
+        "accepted_products": 1
+      }
+    ]
+  },
+  "requests": [
+    {
+      "url": "https://taytools.com/power-tools?ppg=65535&pn=1",
+      "status": 200,
+      "at": "2026-11-03T03:13:51.566592+00:00",
+      "sha256": "11b9e4e5fb743cf33293041899ee564468de840d284935a0f4e75a187963fd8a"
+    },
+    {
+      "url": "https://taytools.com/3m-4-5-5-inch-electric-angle-grinder-and-with-paddle-switch-120v-13-amps-1900w-with-16-piece-cubitron-disc-set",
+      "status": 200,
+      "at": "2026-11-03T03:13:55.476552+00:00",
+      "sha256": "5d35a8f46c4dd432f85f4c49c1a4770596cade33558fcdf247cf72b49b503529"
+    },
+    {
+      "url": "https://taytools.com/robert-sorby-steel-ferrule-for-lathe-tool-handles",
+      "status": 200,
+      "at": "2026-11-03T03:13:57.929840+00:00",
+      "sha256": "7703ff3e51a9c538e702511e2fa8bb95468c999b8c692ff83f4fa01d8939ed21"
+    },
+    {
+      "url": "https://taytools.com/taytools-multi-slot-milled-face-aluminum-universal-t-track-3-inch-x-3-4-inch-for-bandsaw-router-and-drill-press-fences",
+      "status": 200,
+      "at": "2026-11-03T03:14:00.391175+00:00",
+      "sha256": "5d4267e3c39de7a5413e5a3f5379273f17b302ee4f6023e232081c94115d278f"
+    },
+    {
+      "url": "https://taytools.com/igaging-ez-planer-precision-digital-read-out-for-dewalt-dw735-planers",
+      "status": 200,
+      "at": "2026-11-03T03:14:02.951842+00:00",
+      "sha256": "087712aaaae97614a5e47394622132598edbca042ab0e1e03ff04e6f9b37e7d2"
+    },
+    {
+      "url": "https://taytools.com/incra-miter-gauge-v27-for-tablesaw-and-bandsaw",
+      "status": 200,
+      "at": "2026-11-03T03:14:05.436614+00:00",
+      "sha256": "3b14eb653af4bc0df435e3fdf33d8a3b388efbca7ab1ee3f0f9bfb65f5b2d3d5"
+    },
+    {
+      "url": "https://taytools.com/jessem-clear-cut-stock-guides-sts-for-table-saw",
+      "status": 200,
+      "at": "2026-11-03T03:14:07.879949+00:00",
+      "sha256": "2a5913a28daa331671cb6aaab7d9825da56258ccff67ff20d1cbc95505a399f9"
+    },
+    {
+      "url": "https://taytools.com/carter-products-urethane-band-saw-tire-10-inch-12-inch-and-14-inch",
+      "status": 200,
+      "at": "2026-11-03T03:14:10.438255+00:00",
+      "sha256": "38e751264daef2771d80a9be084e457e90b7752e35419a1e681132022809fbd4"
+    },
+    {
+      "url": "https://taytools.com/sawstop-table-saw-brake-cartridge-for-10-inch-blades",
+      "status": 200,
+      "at": "2026-11-03T03:14:12.914830+00:00",
+      "sha256": "d95059c2bbf5134fe927b930aeab232efadc5954eed606487689a78f23835732"
+    },
+    {
+      "url": "https://taytools.com/taytools-10-piece-solid-brass-router-template-bushings-guide-bearings-set",
+      "status": 200,
+      "at": "2026-11-03T03:14:15.426723+00:00",
+      "sha256": "cbf6ec403f812ef25b00be1db66f0344fc05581c55da4d13b73f60e3dec4db96"
+    },
+    {
+      "url": "https://taytools.com/viking-norseman-drill-single-flute-pilotless-chatterproof-deburring-countersink-tool",
+      "status": 200,
+      "at": "2026-11-03T03:14:17.887676+00:00",
+      "sha256": "32eaaf3efc364a83c1c4851d33b9c1a962ac83f85952c614200f15f02e542274"
+    },
+    {
+      "url": "https://taytools.com/whiteside-steel-router-collet",
+      "status": 200,
+      "at": "2026-11-03T03:14:20.367979+00:00",
+      "sha256": "de5985691bb4e5c0a4147dd93a2f3702be02e83540683d26e6917098da07d2bd"
+    },
+    {
+      "url": "https://taytools.com/taytools-router-collet-extender",
+      "status": 200,
+      "at": "2026-11-03T03:14:22.879288+00:00",
+      "sha256": "4fe6de98c1465c21082e19c40a930c922c13cc545cdf314549b0ff1299ac90a9"
+    },
+    {
+      "url": "https://taytools.com/sawstop-table-saw-dado-cartridge-for-8-dadosets-blue",
+      "status": 200,
+      "at": "2026-11-03T03:14:25.370756+00:00",
+      "sha256": "d9f93e30601865455a6dd3065119ed6d811603442963f638042e60bf79869c9b"
+    },
+    {
+      "url": "https://taytools.com/microjig-splitter-steelpro-1-8-inch-full-kerf-table-saw-splitter-system",
+      "status": 200,
+      "at": "2026-11-03T03:14:28.285915+00:00",
+      "sha256": "83c491266ace3c3195d7497b9b4c837ee975c89ba4ff4638b7c2a76a8397e774"
+    },
+    {
+      "url": "https://taytools.com/microjig-splitter-steelpro-thin-kerf-table-saw-splitter-system",
+      "status": 200,
+      "at": "2026-11-03T03:14:31.328750+00:00",
+      "sha256": "28413cdd20da990bedb488266257fd208484e27b18d64e8ebcfe6963cc7a3096"
+    },
+    {
+      "url": "https://taytools.com/viking-norseman-drill-single-flute-pilotless-chatterproof-deburring-countersink-tool-set",
+      "status": 200,
+      "at": "2026-11-03T03:14:33.959769+00:00",
+      "sha256": "3f57d4dfcc594af014ac478e307c28a17ff16350a82bb11a305ddf7525158c58"
+    },
+    {
+      "url": "https://taytools.com/cmt-orange-tools-set-of-3-chrome-carbide-10-inch-saw-blades-rip-general-purpose-combo-and-ultimate-crosscutting",
+      "status": 200,
+      "at": "2026-11-03T03:14:36.509516+00:00",
+      "sha256": "00880f9375d3063810146cadbba7708a22e37c0621bd2c9e36b35486ec9ff92f"
+    },
+    {
+      "url": "https://taytools.com/jessem-clear-cut-stock-guides-ts-for-table-saw",
+      "status": 200,
+      "at": "2026-11-03T03:14:39.023030+00:00",
+      "sha256": "4546b6f94d37f548fe9034ad0bfa1b2a7221b1520724ec391adb96112b856b6d"
+    },
+    {
+      "url": "https://taytools.com/taytools-universal-router-base-plate-6-1-2-inch-diameter-5-16-inch-thick",
+      "status": 200,
+      "at": "2026-11-03T03:14:41.479945+00:00",
+      "sha256": "ad62b7f1157665a7a32d317d5383f0d197155da77b5a311f19922f9c5b2d4f54"
+    },
+    {
+      "url": "https://taytools.com/bow-products-portable-saw-featherboard-dce",
+      "status": 200,
+      "at": "2026-11-03T03:14:44.920417+00:00",
+      "sha256": "7e5854fdf0b8fb9eabbf2581374fc063f6eaf1958656e8d2c636902d77f9ac4d"
+    },
+    {
+      "url": "https://taytools.com/mirka-deros-550xcv-5-inch-5mm-orbit-vacuum-ready-random-orbital-finishing-sander",
+      "status": 200,
+      "at": "2026-11-03T03:14:47.394007+00:00",
+      "sha256": "11f391264559590c89d8f67805117beb26bc8df3727da8886002db25e60caeaa"
+    },
+    {
+      "url": "https://taytools.com/fastcap-10-million-dollar-stick-safety-miter-and-table-saw-hold-down",
+      "status": 200,
+      "at": "2026-11-03T03:14:49.892807+00:00",
+      "sha256": "2e25a0d2e3c4336b25b4998e3aeaa6d0489d58d5de58d3527ec665358a40713c"
+    },
+    {
+      "url": "https://taytools.com/microjig-gr2-go-grrr-ripper2-go-push-block-for-table-saw-jointer-bandsaw-and-router",
+      "status": 200,
+      "at": "2026-11-03T03:14:54.490083+00:00",
+      "sha256": "d937b2605a2120e8a17743f904bb87d6ba34017adabc2d01203f86034c48f640"
+    },
+    {
+      "url": "https://taytools.com/bow-products-guidepro-vertical-band-saw-resaw-feather-board",
+      "status": 200,
+      "at": "2026-11-03T03:14:56.958187+00:00",
+      "sha256": "13c04cd4b8eee82d139705e3e82a3b5819d2f2b3b4aaedc84765097fd43d688e"
+    },
+    {
+      "url": "https://taytools.com/incra-miter-express-sled-table-saw-crosscut-sled",
+      "status": 200,
+      "at": "2026-11-03T03:14:59.447377+00:00",
+      "sha256": "4190831992220b7e36c84d9fd220f9812a3e726b58b65cc9194f25ae0691a0b6"
+    },
+    {
+      "url": "https://taytools.com/jessem-mast-r-fence-iii-router-table-fence",
+      "status": 200,
+      "at": "2026-11-03T03:15:01.919522+00:00",
+      "sha256": "bd4f410aea5fc27fbfa3a8ac4c39ef785a11e8b32588de8cb4858d9dc94974ee"
+    },
+    {
+      "url": "https://taytools.com/taytools-deluxe-24-inch-anodized-aluminum-router-table-fence-300016",
+      "status": 200,
+      "at": "2026-11-03T03:15:04.382988+00:00",
+      "sha256": "63864bd283985d4aa8b9a8ab661169fc6567ba544e0c7e6cde23f6981619ef74"
+    },
+    {
+      "url": "https://taytools.com/igaging-digital-router-gauge-router-depth--router-center-slot-depth-0-2-inch-0-0005-inch-0-01-mm-64th",
+      "status": 200,
+      "at": "2026-11-03T03:15:06.921789+00:00",
+      "sha256": "e1eba6805d67d4fe52fcb9b5a142a04e223dd55472bca9aa117f29d0b14ee68d"
+    },
+    {
+      "url": "https://taytools.com/taytools-deluxe-32-inch-anodized-aluminum-router-table-fence",
+      "status": 200,
+      "at": "2026-11-03T03:15:09.404941+00:00",
+      "sha256": "93fd59b75907b4372255fae774865c9c89a8a3d48c8b05a3fc3d4b7f15be24c2"
+    },
+    {
+      "url": "https://taytools.com/fastcap-little-lipper-flush-trim-router-guide",
+      "status": 200,
+      "at": "2026-11-03T03:15:11.866755+00:00",
+      "sha256": "46cd3d5862c20e69126631efde33208a1d5058838597a387099e70d5a5c70813"
+    },
+    {
+      "url": "https://taytools.com/mirka-deros-650xcv-6-inch-5mm-orbit-vacuum-ready-random-orbital-finishing-sander",
+      "status": 200,
+      "at": "2026-11-03T03:15:14.325456+00:00",
+      "sha256": "0c2205d69ad5fb1f53818f36b2034634b5c7e9290764ff49f20f0bb094a7b623"
+    },
+    {
+      "url": "https://taytools.com/carter-products-accurite-zero-clearance-bandsaw-table-inserts-for-jet-saws",
+      "status": 200,
+      "at": "2026-11-03T03:15:16.878951+00:00",
+      "sha256": "eafb09df4a628b7764ae3141435a5f3c2da9486f4261bea4100c2f5f6326f7bf"
+    },
+    {
+      "url": "https://taytools.com/bow-products-bow-36-inch-xt-xtender-bandsaw-resaw-fence-bundle",
+      "status": 200,
+      "at": "2026-11-03T03:15:19.375579+00:00",
+      "sha256": "d937dff0085326c37c7a10634697f84ab4635e9353b3c3f60fac8f9ef6d7f463"
+    },
+    {
+      "url": "https://taytools.com/magswitch-savr-quick-release-table-saw-featherboard-fits-3-4-inch-and-5-8-inch-miter-slots",
+      "status": 200,
+      "at": "2026-11-03T03:15:21.776095+00:00",
+      "sha256": "ad66cff251d02ab372dcc3d746718f24746f2f275d502cbda7bb0adabac0b2de"
+    },
+    {
+      "url": "https://taytools.com/magswitch-table-saw-featherboard-bundle-pro-two-vertical-and-one-universal",
+      "status": 200,
+      "at": "2026-11-03T03:15:24.221183+00:00",
+      "sha256": "11d653896b1002d53421986226bc83696b01703e63bc6b43e324a0eaf7f513b5"
+    },
+    {
+      "url": "https://taytools.com/incra-miter-1000se-and-express-tables-saw-crosscut-sled-combo-pack",
+      "status": 200,
+      "at": "2026-11-03T03:15:26.682848+00:00",
+      "sha256": "6e40af839cac7692eb991fe2ad7b6cdf4ca42e13389c4c869b1a93d13d96bf70"
+    },
+    {
+      "url": "https://taytools.com/cmt-orange-tools-4-piece-multipurpose-set-for-oscillating-multi-tools-for-cutting-wood-and-metal",
+      "status": 200,
+      "at": "2026-11-03T03:15:29.116139+00:00",
+      "sha256": "9bbd4f4f0d5d354b63d28098d4ee6c2165c043a8320662a649568e17b40b721d"
+    },
+    {
+      "url": "https://taytools.com/incra-miter-gauge-v120-for-table-saw-and-bandsaw",
+      "status": 200,
+      "at": "2026-11-03T03:15:31.582289+00:00",
+      "sha256": "eb42d17df9fce940bedce89e4e1104acdf3fd90354e083d8c817ff75736d7dc6"
+    },
+    {
+      "url": "https://taytools.com/cmt-orange-tools-16-piece-multipurpose-set-for-oscillating-multi-tools-for-cutting-wood-and-metal",
+      "status": 200,
+      "at": "2026-11-03T03:15:34.039974+00:00",
+      "sha256": "1f1ca4731aea9837f74206b3212478ceb83c10509a69c4d60a78247293d671a3"
+    },
+    {
+      "url": "https://taytools.com/cmt-orange-tools-33-piece-set-of-cutting-accessories-for-oscillating-multi-tool",
+      "status": 200,
+      "at": "2026-11-03T03:15:36.441703+00:00",
+      "sha256": "07cbcd01932d675c6e2306f416ab991ad698c9cdbe9ab0f524f3c1ba71e3a385"
+    },
+    {
+      "url": "https://taytools.com/ss-niles-bottle-stoppers-1-inch-x-8-inch-mandrel",
+      "status": 200,
+      "at": "2026-11-03T03:15:38.899178+00:00",
+      "sha256": "da47013a71df1c72ea5871c669a35088e35458450a085fd78afffa1dcdbca58f"
+    },
+    {
+      "url": "https://taytools.com/taytools-router-inlay-kit-solid-brass-3-piece-guide-bushing-set",
+      "status": 200,
+      "at": "2026-11-03T03:15:41.337082+00:00",
+      "sha256": "1d61c2890d9b14394ab657c47f5afd3947e857e13837d2c10f7d11c5306266f9"
+    },
+    {
+      "url": "https://taytools.com/jessem-weekend-warrior-router-table-package",
+      "status": 200,
+      "at": "2026-11-03T03:15:43.784509+00:00",
+      "sha256": "08161088ea5508635a9c46472423bf34f46a341083518839e8f1458ceae5694f"
+    },
+    {
+      "url": "https://taytools.com/carter-products-multirest-lathe-support-system",
+      "status": 200,
+      "at": "2026-11-03T03:15:46.246889+00:00",
+      "sha256": "1dd0781abaac64e6ec4ad8002c626e3346681d3a54d81ab1e20e75dc6a005680"
+    },
+    {
+      "url": "https://taytools.com/jessem-mast-r-lift-ii-router-table-package",
+      "status": 200,
+      "at": "2026-11-03T03:15:48.672178+00:00",
+      "sha256": "d3da9c95d8dcddfa14d48dd86ce5ba50c74c9c9f7fe4fe4a9f6f49eedd6398fc"
+    },
+    {
+      "url": "https://taytools.com/igaging-ip54-ez-depth-drill-press-digital-readout-dro",
+      "status": 200,
+      "at": "2026-11-03T03:15:51.085864+00:00",
+      "sha256": "e4d65876a94240c1f85ace52e4915c8205c5ddac74bf3377b57ca424bbc2c3ac"
+    },
+    {
+      "url": "https://taytools.com/taytools-2-inch-bowl-and-spindle-sander-with-10-discs",
+      "status": 200,
+      "at": "2026-11-03T03:15:53.573170+00:00",
+      "sha256": "4a0f5b04583ad1f5350457a68c95a51a34c1e75ff4f37025c943fc84cf936ff8"
+    },
+    {
+      "url": "https://taytools.com/carter-products-clean-sweep-band-saw-brush",
+      "status": 200,
+      "at": "2026-11-03T03:15:56.014738+00:00",
+      "sha256": "f595846c7920586034fdd7edc845834248d4a3be90e72eaedfc39b7956a22ee5"
+    },
+    {
+      "url": "https://taytools.com/igaging-2-inch-multi-adjustable-router-depth-center-gauge-set-with-5-setup-blocks",
+      "status": 200,
+      "at": "2026-11-03T03:15:58.571275+00:00",
+      "sha256": "608ce7cbfc23b5a5e6814b13665f24085fde8c85c744738b340b11573d138eac"
+    },
+    {
+      "url": "https://taytools.com/jessem-clear-cut-stock-guides-for-router-table",
+      "status": 200,
+      "at": "2026-11-03T03:16:00.977075+00:00",
+      "sha256": "69ffe42f4fc7cee80a803cc57663ff2ecfe029e2360ef5254eb389dafeecfed4"
+    },
+    {
+      "url": "https://taytools.com/jessem-micro-adjuster-for-ta-fence-and-mast-r-fence-router-table-fences",
+      "status": 200,
+      "at": "2026-11-03T03:16:03.431735+00:00",
+      "sha256": "4ebf5e55ddabfcce9b609b8e49bb2f8f567c9ad365d419b87fd4a4e067f2b817"
+    },
+    {
+      "url": "https://taytools.com/supercut-bandsaw-blades-for-wood-cutting-high-carbon-steel",
+      "status": 200,
+      "at": "2026-11-03T03:16:05.949583+00:00",
+      "sha256": "a7af8bacaba3bbd1d4d2e9d5e7dbeb39f57f64674634d9c5a19044f5acc7b082"
+    },
+    {
+      "url": "https://taytools.com/supercut-premium-gold-carbide-bandsaw-blades-for-wood-cutting",
+      "status": 200,
+      "at": "2026-11-03T03:16:09.389590+00:00",
+      "sha256": "7e2b8699dcf2b7db01acbc2dce04b5ed5e0aa5db51d34756af9db8be6b03f834"
+    },
+    {
+      "url": "https://taytools.com/fein-starlock-e-cut-long-life-oscillating-saw-blades",
+      "status": 200,
+      "at": "2026-11-03T03:16:11.932941+00:00",
+      "sha256": "2ba73a5079ea3bc95af6a8d885711b74ac0f43a25c3437112a2aca3b48d7d36c"
+    },
+    {
+      "url": "https://taytools.com/supercut-woodsaver-carbide-thin-kerf-bandsaw-resaw-blades",
+      "status": 200,
+      "at": "2026-11-03T03:16:14.359886+00:00",
+      "sha256": "76f418f8c1d1e7c49b1e059d79c4624a11727be8566cddfe5a50e3934549bc42"
+    },
+    {
+      "url": "https://taytools.com/unclassified-planer-head-hk-82",
+      "status": 200,
+      "at": "2026-11-03T03:16:16.782282+00:00",
+      "sha256": "5b5c374abc52180e08743d29a2562346cc254f41c69ea54199eb10fe7a03cc10"
+    },
+    {
+      "url": "https://taytools.com/festool-drill-countersink",
+      "status": 200,
+      "at": "2026-11-03T03:16:19.176891+00:00",
+      "sha256": "806a4560bc1ea06aff95897fa27639aa5d650f884e67073b58ad73793bbf15eb"
+    },
+    {
+      "url": "https://taytools.com/benchdog-tools-imperial-precision-cross-cut-system-fence-kit-for-festool-csc-sys-table-saw-with-micro-adjust-flip-stop",
+      "status": 200,
+      "at": "2026-11-03T03:16:21.690037+00:00",
+      "sha256": "7af78118b1406c282527b3fae0b2771109863b6ea9df6fba5b7422d1631b70cb"
+    },
+    {
+      "url": "https://taytools.com/benchdog-tools-imperial-precision-cross-cut-system-fence-kit-for-festool-csc-sys-table-saw-with-flag-stop",
+      "status": 200,
+      "at": "2026-11-03T03:16:24.093568+00:00",
+      "sha256": "a72b10029fd0dd665a1abe65b11262bc4bfc27ef5776026802ebd0031fda67da"
+    },
+    {
+      "url": "https://taytools.com/vacudog-vacuum-clamping-starter-kit",
+      "status": 200,
+      "at": "2026-11-03T03:16:26.493579+00:00",
+      "sha256": "71bd313221b56fd8d7cb540ebae3b735ef79b655c7dd5efdd760cc3687d90c45"
+    },
+    {
+      "url": "https://taytools.com/vacudog-vacuum-bench-dog",
+      "status": 200,
+      "at": "2026-11-03T03:16:28.875125+00:00",
+      "sha256": "d07cc64064ff667f894efaefea2c44bc841ef14076d1df86fa6a3788082d65c4"
+    },
+    {
+      "url": "https://taytools.com/magswitch-drill-press-fences",
+      "status": 200,
+      "at": "2026-11-03T03:16:31.331069+00:00",
+      "sha256": "a13b0b3d0feed6dd9dde16f6425a09e2c849701be3362e9e49d0f989a1dd569f"
+    },
+    {
+      "url": "https://taytools.com/fein-starlock-plus-e-cut-long-life-oscillating-saw-blades",
+      "status": 200,
+      "at": "2026-11-03T03:16:33.810590+00:00",
+      "sha256": "3c1f6ee88c548ffa21f9506660fa897d4e8a15f507b31fc1881c8bd50a50770d"
+    },
+    {
+      "url": "https://taytools.com/jessem-rout-r-lift-ii-for-router-tables-9-1-4-inch-x-11-3-4-inch",
+      "status": 200,
+      "at": "2026-11-03T03:16:36.271245+00:00",
+      "sha256": "b649f6e2569c0c895bfedc3d32bfb31cd8d2d449f3bed418c90b886d2e1d6563"
+    },
+    {
+      "url": "https://taytools.com/fein-50-pack-e-cut-universal-starlock-plus-saw-blades",
+      "status": 200,
+      "at": "2026-11-03T03:16:38.737044+00:00",
+      "sha256": "810cfb9a8f2b14eb1f8d9ded132a63bbfde1e86407ff532ae6482964820793f9"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-edge-router-ofkc-500-r3-eb-basic",
+      "status": 200,
+      "at": "2026-11-03T03:16:47.767589+00:00",
+      "sha256": "70efe7dc39de3a6ac9627a7ee316bc8e86d7166648b5b7ddb2a7969a0bc29906"
+    },
+    {
+      "url": "https://taytools.com/fein-3-pack-titan-bi-metal-starlock-long-life-omt-demolition-saw-blades",
+      "status": 200,
+      "at": "2026-11-03T03:16:50.249487+00:00",
+      "sha256": "6fe588f8b129b7a2d46ba4e2fe125dd71390d63302b7f1ba020a586d5e57672b"
+    },
+    {
+      "url": "https://taytools.com/festool-impact-driver-and-drill-set-tid-18-basic-set-t18",
+      "status": 200,
+      "at": "2026-11-03T03:16:53.221554+00:00",
+      "sha256": "b8c3518a29bdbc2b0701e34801e513710d08cbb5058baf5f400347d33ef8740e"
+    },
+    {
+      "url": "https://taytools.com/unclassified-dust-extractor-tube-d-36-hr-k-as",
+      "status": 200,
+      "at": "2026-11-03T03:16:55.665856+00:00",
+      "sha256": "b3d45ecc91b03829a11e4ab5e9d2879324b0cc127a0463f513f1b0fc39ac33ea"
+    },
+    {
+      "url": "https://taytools.com/festool-vacuum-clamp-ct-wings-ct-w",
+      "status": 200,
+      "at": "2026-11-03T03:16:58.241564+00:00",
+      "sha256": "5ae13146c2755d262cfd804b4513ff3c8b7427f516d9804f2dc167f2e9c2c703"
+    },
+    {
+      "url": "https://taytools.com/festool-2-pack-interface-sander-backing-pad",
+      "status": 200,
+      "at": "2026-11-03T03:17:00.694534+00:00",
+      "sha256": "efc7d6b2e41022d9540e65c0443b2d174237c547760bc9f3bb7503829d455989"
+    },
+    {
+      "url": "https://taytools.com/festool-router-table-ft-0",
+      "status": 200,
+      "at": "2026-11-03T03:17:03.193789+00:00",
+      "sha256": "e57826ba535f94553cd7f93813d30527091df6ad9d5bbd38a9463668098bd280"
+    },
+    {
+      "url": "https://taytools.com/festool-router-table-ft-mfk-700-15-set",
+      "status": 200,
+      "at": "2026-11-03T03:17:05.684298+00:00",
+      "sha256": "b1f90019547c4fa79350ac3e9f92c000801357df16dcd59ca596fcf357aba7be"
+    },
+    {
+      "url": "https://taytools.com/benchdog-tools-1900mm-miter-saw-fence-system-metric-280-2180mm-markings-with-mk2-quad-dogs",
+      "status": 200,
+      "at": "2026-11-03T03:17:08.174960+00:00",
+      "sha256": "0e5756b41e10839badb37592b6cb49aca5e5ca2dec89bae6fcff8b4a91de5559"
+    },
+    {
+      "url": "https://taytools.com/festool-hand-protection-hs-agc-18",
+      "status": 200,
+      "at": "2026-11-03T03:17:10.551293+00:00",
+      "sha256": "1d9dd0bc18acc07b3ced28044f00fb9efbea5d7e45d658ce52b59d33f4286b7a"
+    },
+    {
+      "url": "https://taytools.com/festool-kapex-sliding-compound-miter-saw-starter-set",
+      "status": 200,
+      "at": "2026-11-03T03:17:14.430475+00:00",
+      "sha256": "31b69677fcabce15c0a7d1aca5ad6ec43a5a3e2060b32100a855105c9244c90c"
+    },
+    {
+      "url": "https://taytools.com/festool-planex-drywall-sander-starter-set",
+      "status": 200,
+      "at": "2026-11-03T03:17:16.935648+00:00",
+      "sha256": "d8ddab7f4fc65be77df74c2566e8d11f2be6dcad3d99523e89e2861167f222c8"
+    },
+    {
+      "url": "https://taytools.com/festool-combo-set-of-1400-eq-f-plus-router-starter-set",
+      "status": 200,
+      "at": "2026-11-03T03:17:19.437543+00:00",
+      "sha256": "52228fdd76ceb980cd6f2a6266c421104f821103fa8a38344a3cff56b7625feb"
+    },
+    {
+      "url": "https://taytools.com/festool-protector-pr-ets-r-125",
+      "status": 200,
+      "at": "2026-11-03T03:17:21.803183+00:00",
+      "sha256": "cb6b7a709191f4264875b8495c4f6d69a0b3822d49a7a91c6db5c062403554c5"
+    },
+    {
+      "url": "https://taytools.com/festool-prot-cover-sh-agc-18-115",
+      "status": 200,
+      "at": "2026-11-03T03:17:24.174497+00:00",
+      "sha256": "1d2fc8a0af9d844ea5c63f671f257194a96b48a901f0bb92929d427426417e5a"
+    },
+    {
+      "url": "https://taytools.com/festool-drywall-sander-lhs-e-225-eq-cb-planex-easy",
+      "status": 200,
+      "at": "2026-11-03T03:17:27.142047+00:00",
+      "sha256": "a7e46f40c822fabaac5132a847d12e837d6f83a332a10d7b7f3dc834da76dd78"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-track-saw-tsc-55-kseb-basic",
+      "status": 200,
+      "at": "2026-11-03T03:17:31.087289+00:00",
+      "sha256": "6ffe7b1156ffd9efe70f85af871e2df0ab9f01d4c09d3fee0cc8647701410442"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-carpentry-saw-hkc-55-keb-f-basic",
+      "status": 200,
+      "at": "2026-11-03T03:17:36.333133+00:00",
+      "sha256": "0bbdab6238ab42a8fe0f416ed6ac323f64f26f1c1437570f2cd8d9a11a08b202"
+    },
+    {
+      "url": "https://taytools.com/festool-router-of-1400-eq-f-plus",
+      "status": 200,
+      "at": "2026-11-03T03:17:40.763876+00:00",
+      "sha256": "85b4b2d77e58b989008c7f2e263b5d3ec467dabcb6bddecc9013d7ff53d66fc5"
+    },
+    {
+      "url": "https://taytools.com/benchdog-tools-2850mm-mitre-saw-fence-system-metric",
+      "status": 200,
+      "at": "2026-11-03T03:17:43.180222+00:00",
+      "sha256": "0696ed9d1c4ccc06f82bc44c825440bb6155c2b4e59be9440726a98bd6919d2b"
+    },
+    {
+      "url": "https://taytools.com/mirka-edge-guide-for-deros-sander",
+      "status": 200,
+      "at": "2026-11-03T03:17:45.629128+00:00",
+      "sha256": "5c20d54b8d8e8304321c2da053c24eee4af0767af761b1372efc9d1472962d64"
+    },
+    {
+      "url": "https://taytools.com/festool-impact-driver-and-drill-set-tid-18-basic-set-tpc-18-4",
+      "status": 200,
+      "at": "2026-11-03T03:17:48.031867+00:00",
+      "sha256": "b304f758467f32ce63dd4eb0fd29042a9c2a11526c0626a9f9265f4f0166ad61"
+    },
+    {
+      "url": "https://taytools.com/fein-18v-cordless-jigsaw-kit",
+      "status": 200,
+      "at": "2026-11-03T03:17:51.027025+00:00",
+      "sha256": "85e6a89e54508ede2f6165bd136c82f82fba23d1cc01ff4bc03535f26646e6be"
+    },
+    {
+      "url": "https://taytools.com/festool-mobile-saw-table-and-work-bench-stm-1800",
+      "status": 200,
+      "at": "2026-11-03T03:17:53.447582+00:00",
+      "sha256": "3747c7bb876906a0d30867d27f678c4429c333c1d2297e4a71c778126c4df0ea"
+    },
+    {
+      "url": "https://taytools.com/festool-keyl-flange-nu-qrn-agc-18-5-8-inch",
+      "status": 200,
+      "at": "2026-11-03T03:17:55.852771+00:00",
+      "sha256": "f0de4955fc0d76eaabb9d9d4fa8090b6ae893c7de8a63d53fbd439ed41de9cff"
+    },
+    {
+      "url": "https://taytools.com/unclassified-hand-driver-sd-ce-drive-uni",
+      "status": 200,
+      "at": "2026-11-03T03:17:58.259626+00:00",
+      "sha256": "66cf6ff09970ecc3f01277fa0c0e2302f26914ab20349fce1fff45b6d4a5d169"
+    },
+    {
+      "url": "https://taytools.com/benchdog-tools-router-big-base-guide-bush-mandrel",
+      "status": 200,
+      "at": "2026-11-03T03:18:00.638679+00:00",
+      "sha256": "acfd45011f7744412cefa7d401066eb09f8d54eece1f0e1eb0debbfdeadb5f0b"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-modular-edge-router-mfkc-700-eb-basic",
+      "status": 200,
+      "at": "2026-11-03T03:18:09.654052+00:00",
+      "sha256": "0d03da53fa08792048588cb2f338945943db12254d2a5af4ff360573092f817d"
+    },
+    {
+      "url": "https://taytools.com/festool-sander-backing-pad-st-d77-m5-w",
+      "status": 200,
+      "at": "2026-11-03T03:18:12.043548+00:00",
+      "sha256": "1eda658bac540d859380107d17c2d385c5424ce8e7150218a7d68f57a009e0cd"
+    },
+    {
+      "url": "https://taytools.com/unclassified-hook-driver-hd-d-18-ce",
+      "status": 200,
+      "at": "2026-11-03T03:18:14.463067+00:00",
+      "sha256": "1960a4a76788f60bf38c14d6b0517732e45d641279a0263ca16546d553536763"
+    },
+    {
+      "url": "https://taytools.com/unclassified-guide-rail-base-for-carvex-jigsaw-adt-ps-420",
+      "status": 200,
+      "at": "2026-11-03T03:18:16.838875+00:00",
+      "sha256": "63ec5ba2e45bf0857d9ea479acf13dc5ef96a71ccd671965a7bd996308943560"
+    },
+    {
+      "url": "https://taytools.com/festool-dust-extractor-ct-15-hepa-cleantec",
+      "status": 200,
+      "at": "2026-11-03T03:18:19.227640+00:00",
+      "sha256": "df71d7c6207e7281af1929e6e85fedc2cbb02f127662a8e952124f54dff9f184"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-planer-hlc-82-eb-f-basic",
+      "status": 200,
+      "at": "2026-11-03T03:18:25.808649+00:00",
+      "sha256": "465af6c73a430d7d40d301affb684af5cb69dd82347d31c45062b427ef0294d3"
+    },
+    {
+      "url": "https://taytools.com/benchdog-tools-router-big-base-track-adaptors",
+      "status": 200,
+      "at": "2026-11-03T03:18:28.236488+00:00",
+      "sha256": "c970afc20312b751033f52c8300029333fc50debcb86c3e9b2464846d16f3f7a"
+    },
+    {
+      "url": "https://taytools.com/cmt-orange-tools-cmt-set-of-37-pcs-cutting-accessories-for-oscillating-multi-tool",
+      "status": 200,
+      "at": "2026-11-03T03:18:30.670912+00:00",
+      "sha256": "97a2514760079f8331d7a7bed5dc009dcf73a643d02a953f5c71e44d8b39bc90"
+    },
+    {
+      "url": "https://taytools.com/magswitch-savr-ultimate-table-saw-safety-set-with-featherboard-push-block-and-4-piece-refill-kit",
+      "status": 200,
+      "at": "2026-11-03T03:18:33.054394+00:00",
+      "sha256": "350058c0974372e4e647ad045c0a9371572f4827d74d070bf5712d2d9a46657d"
+    },
+    {
+      "url": "https://taytools.com/magswitch-savr-table-saw-push-stick-with-replacable-mdf-base",
+      "status": 200,
+      "at": "2026-11-03T03:18:35.483833+00:00",
+      "sha256": "e81c288818d016e9576408d7523d909d914a4be1d58e251309b0f261986b5f6c"
+    },
+    {
+      "url": "https://taytools.com/incra-incra-miter-5000-table-saw-crosscut-sled-with-telescoping-fence-36-inch-to-64-inch-flip-stop-and-hold-down",
+      "status": 200,
+      "at": "2026-11-03T03:18:37.912058+00:00",
+      "sha256": "a007a82585e0e2adb4886b43fd8e5742f1aa9668f244c6565add5a87debeec16"
+    },
+    {
+      "url": "https://taytools.com/magswitch-stacked-savr-quick-release-table-saw-featherboard-fits-3-4-inch-and-5-8-inch-miter-slots",
+      "status": 200,
+      "at": "2026-11-03T03:18:40.305515+00:00",
+      "sha256": "d6bfca79a1a564e20bf6edd716306ff738512ea92d2e2b0d42c75ce8a338da43"
+    },
+    {
+      "url": "https://taytools.com/fastcap-11th-finger-magnetic-table-saw-push-stick",
+      "status": 200,
+      "at": "2026-11-03T03:18:42.716116+00:00",
+      "sha256": "e8ae168feae102e47a06ba5307158940557024ad454d231f0eee2dd8e7bfb3a4"
+    },
+    {
+      "url": "https://taytools.com/taytools-magnetic-bandsaw-and-drill-press-fence-18-inch-x-3-inch",
+      "status": 200,
+      "at": "2026-11-03T03:18:45.093396+00:00",
+      "sha256": "2a98a5ae7de5edbc5759687ce8d5b9a6c8b74cf9fa237ec2c68b63b7932be25f"
+    },
+    {
+      "url": "https://taytools.com/bow-products-bow-24-inch-xt-xtender-bandsaw-resaw-fence-bundle",
+      "status": 200,
+      "at": "2026-11-03T03:18:47.502659+00:00",
+      "sha256": "b11327d3619f9f6a350e6b4063e46bc4efafcbd59591b1cf3d39423594a72e1c"
+    },
+    {
+      "url": "https://taytools.com/jessem-steel-router-table-stand",
+      "status": 200,
+      "at": "2026-11-03T03:18:49.902202+00:00",
+      "sha256": "7df6a47ce91f3abfdcead2cd4424baf121860531d13b522cbc76ac424d566be6"
+    },
+    {
+      "url": "https://taytools.com/sawstop-compact-saw-folding-stand",
+      "status": 200,
+      "at": "2026-11-03T03:18:52.356583+00:00",
+      "sha256": "19352b0c404e3af84aacabe8278e5028aa18a284c1a52f724df5e351fef4892a"
+    },
+    {
+      "url": "https://taytools.com/sawstop-jobsite-saw-pro-1-5hp-120v-60hz-includes-brake-cartridge-dust-guard",
+      "status": 200,
+      "at": "2026-11-03T03:18:54.789791+00:00",
+      "sha256": "c03e365d371801a1dfb4586e18cebbcad13ea3ccf5650fc6bbe8b165d0afec97"
+    },
+    {
+      "url": "https://taytools.com/sawstop-compact-saw-cts-1-5hp-120v-60hz-includes-brake-cartridge-dust-guard",
+      "status": 200,
+      "at": "2026-11-03T03:18:57.167579+00:00",
+      "sha256": "fd33f88a7432a9a34b5a084f9be0ac225f17dd476196068cea6aec7f797aebdb"
+    },
+    {
+      "url": "https://taytools.com/jessem-dust-box-for-router-table",
+      "status": 200,
+      "at": "2026-11-03T03:18:59.697668+00:00",
+      "sha256": "d0a111f44a6a9c9146ee4980ca2efaee5cc422c443c9ae597bdd16b55e3be825"
+    },
+    {
+      "url": "https://taytools.com/viking-norseman-combined-drill-and-countersink-bit",
+      "status": 200,
+      "at": "2026-11-03T03:19:02.119296+00:00",
+      "sha256": "67f78bc69ad22e136f8cfec3f22397f7831c152ce17888794dfab6fdd436350a"
+    },
+    {
+      "url": "https://taytools.com/carter-products-guide-set-for-14-inch-jet-band-saw",
+      "status": 200,
+      "at": "2026-11-03T03:19:04.539176+00:00",
+      "sha256": "19af4ef838faa1affb8a6192f766dd672d974fb085814dfff2181d9047c69972"
+    },
+    {
+      "url": "https://taytools.com/carter-products-guide-set-for-14-inch-delta-band-saw",
+      "status": 200,
+      "at": "2026-11-03T03:19:07.038857+00:00",
+      "sha256": "9f25aeab42f9572140ae0dc70d7f9ccc058cbd7512fb23098e2aebb84a7cd556"
+    },
+    {
+      "url": "https://taytools.com/igaging-2-piece-set-1-inch-2-inch-mini-multi-adjustable-router-depth-center-gauges",
+      "status": 200,
+      "at": "2026-11-03T03:19:09.465428+00:00",
+      "sha256": "da3c068518d581fb4fbedfec5b2e2d5837b5d8459095cd6412e33536317ff864"
+    },
+    {
+      "url": "https://taytools.com/bow-products-anchorpro-combination-long-and-short-miter-bar-kit-for-3-4-inch--19mm-miter-slots",
+      "status": 200,
+      "at": "2026-11-03T03:19:11.844959+00:00",
+      "sha256": "b34f9847cee0f47259533502853f1d73810a68a64339f7784731b757a11940ba"
+    },
+    {
+      "url": "https://taytools.com/jessem-fence-stop-block-mast-r-fence-and-rout-r-fence-router-table-fences",
+      "status": 200,
+      "at": "2026-11-03T03:19:14.253722+00:00",
+      "sha256": "8fc7239a012f6e575615d6be47ca9d62871620e84a793e9632503ae2e99e1ca3"
+    },
+    {
+      "url": "https://taytools.com/carter-products-face-off-modular-face-plate-system-1x8-3-inch-complete-combo-kit",
+      "status": 200,
+      "at": "2026-11-03T03:19:16.674573+00:00",
+      "sha256": "33b9d91917888888810263ef635a4c0da5be839b7660bb0468900743ee97a43c"
+    },
+    {
+      "url": "https://taytools.com/jessem-mounting-bracket-for-micro-adjuster-for-04010-mast-r-fence-ii-router-table-fence",
+      "status": 200,
+      "at": "2026-11-03T03:19:19.091846+00:00",
+      "sha256": "29bcafbbaecfc2ba89399cc0b2ce3c40cbc5d8c4326fa8032dec68925c12784f"
+    },
+    {
+      "url": "https://taytools.com/festool-track-saw-ts-55-feq-f-plus",
+      "status": 200,
+      "at": "2026-11-03T03:19:22.082097+00:00",
+      "sha256": "cb943ad2e00d7b3a47c5833ed8c084dae5e9e26f4ca751b70832609adf4c3a3a"
+    },
+    {
+      "url": "https://taytools.com/festool-drywall-sander-planex-easy-lhs-e-225-eq",
+      "status": 200,
+      "at": "2026-11-03T03:19:24.468185+00:00",
+      "sha256": "18a871bdd6ac0844e7b5aaa2c3648534be1d2a8888b6fe7e39ac862e8fbb9e6c"
+    },
+    {
+      "url": "https://taytools.com/festool-drywall-sander-lhs-2-m-225-eq-planex",
+      "status": 200,
+      "at": "2026-11-03T03:19:27.481823+00:00",
+      "sha256": "2817d56b7bf7ccd5b7f316906bb7fcd0701d8a8521fbe7c7fd5f6658a26e515f"
+    },
+    {
+      "url": "https://taytools.com/festool-drywall-sander-lhs-2-225-eqi-plus-planex",
+      "status": 200,
+      "at": "2026-11-03T03:19:30.012177+00:00",
+      "sha256": "fd4692e08c6f53b5c7aed4e7a18e0d35b0587b622de526dd48e3da33c8b80acc"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-reciprocating-saw-rsc-18-eb-basic",
+      "status": 200,
+      "at": "2026-11-03T03:19:32.914072+00:00",
+      "sha256": "2bc61dc29738b1d2a7f15a90af15df442384f88c3fd0dbd8b899653575c18634"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-jigsaw-psc-420-eb-basic-carvex",
+      "status": 200,
+      "at": "2026-11-03T03:19:35.348967+00:00",
+      "sha256": "e97ee38757795e67ba6728165cf9b0a23c0039154c747827605b75d1c0bd875d"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-jigsaw-psbc-420-eb-basic-carvex",
+      "status": 200,
+      "at": "2026-11-03T03:19:37.768131+00:00",
+      "sha256": "c35a6386eedd48dbee0d853f55fa567508a8547e097658cdb7d57577e120f0d7"
+    },
+    {
+      "url": "https://taytools.com/festool-random-orbital-sander-ets-ec150-3-eq-plus",
+      "status": 200,
+      "at": "2026-11-03T03:19:40.167190+00:00",
+      "sha256": "8408b1b05c4f6207e390c87c3720de0561fea5532e3a4f611b3ad7f6e6be41c2"
+    },
+    {
+      "url": "https://taytools.com/festool-track-saw-ts-60-keb-f-plus",
+      "status": 200,
+      "at": "2026-11-03T03:19:43.000521+00:00",
+      "sha256": "4af3696cfb94328804a4b0c9e469b53d9e71bb31e8e8b649a684a5c8fe9574a8"
+    },
+    {
+      "url": "https://taytools.com/festool-track-saw-ts-75-eq-f-plus",
+      "status": 200,
+      "at": "2026-11-03T03:19:45.428793+00:00",
+      "sha256": "12564cfc42df7f36a89334abb8a388847de4d28a9a0b75d5cd6b91dfe4464644"
+    },
+    {
+      "url": "https://taytools.com/festool-plunge-cut-saw-with-scoring-function-tsv-60-keb-f-plus",
+      "status": 200,
+      "at": "2026-11-03T03:19:47.835416+00:00",
+      "sha256": "d03cfcfe960398cee5bbc15656b87200dbb1a24486325f465215689dabaadc30"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-sliding-compound-miter-saw-ksc-60-eb-basic-kapex",
+      "status": 200,
+      "at": "2026-11-03T03:19:50.750111+00:00",
+      "sha256": "46201728cf7e556ba56e2048d980d2e1adb59f37e072fcb77a29756b46386b0d"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-table-saw-csc-sys-50-eb-basic",
+      "status": 200,
+      "at": "2026-11-03T03:19:53.171149+00:00",
+      "sha256": "5b4f3384115eed6f36689c15370e91a1a29554e1b966ec75815ae68124aa21fa"
+    },
+    {
+      "url": "https://taytools.com/festool-sliding-compound-miter-saw-ks-120-reb-kapex",
+      "status": 200,
+      "at": "2026-11-03T03:19:56.583374+00:00",
+      "sha256": "d0b08f2a627e5608a78dcd03f256465d66d981659efcd1b0a36ac243ad69dc43"
+    },
+    {
+      "url": "https://taytools.com/festool-multi-mode-sander-ro-150-feq-plus-rotex",
+      "status": 200,
+      "at": "2026-11-03T03:19:59.007823+00:00",
+      "sha256": "0730c8e06c734fbed2511c53bc8063bf70f799766792a63474f09bc300636319"
+    },
+    {
+      "url": "https://taytools.com/festool-random-orbital-sander-ets-ec150-5-eq-plus",
+      "status": 200,
+      "at": "2026-11-03T03:20:01.569815+00:00",
+      "sha256": "6d25470f1c72994c23eae04e2c2c67247f91c0d2092c7ae61d8bd4f3afb4dd6a"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-orbital-sander-rtsc-400-basic",
+      "status": 200,
+      "at": "2026-11-03T03:20:04.564023+00:00",
+      "sha256": "c118060a4c1b20c68bcead148c407785f698fae7d80e363ba3fa8b67ff674328"
+    },
+    {
+      "url": "https://taytools.com/festool-ecc-sander-lex-3-150-5-usa",
+      "status": 200,
+      "at": "2026-11-03T03:20:06.959950+00:00",
+      "sha256": "f0561b35cd92ebfdd01301940d3d8f7cd93c1833ef77cd178e81e8cd7169f3d7"
+    },
+    {
+      "url": "https://taytools.com/festool-ecc-sander-lex-3-150-7-usa",
+      "status": 200,
+      "at": "2026-11-03T03:20:09.422567+00:00",
+      "sha256": "9bef9b16dd95029eeaedf52faf7480416a9d527951a8ccbdc503948a5e88f5ce"
+    },
+    {
+      "url": "https://taytools.com/festool-ecc-sander-lex-3-77-25-usa",
+      "status": 200,
+      "at": "2026-11-03T03:20:12.849774+00:00",
+      "sha256": "2964ed9775f2b89788e9aeda775d881aaab9bd2b5eac34652830f1aec70647cd"
+    },
+    {
+      "url": "https://taytools.com/festool-random-orbital-sander-ets-125-req-plus",
+      "status": 200,
+      "at": "2026-11-03T03:20:15.236833+00:00",
+      "sha256": "0296ed8e0bd4e80f02fe6d4caed97b8350accb600357ee3a76796d8638834ccd"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-random-orbit-sander-etsc-125-basic",
+      "status": 200,
+      "at": "2026-11-03T03:20:17.640316+00:00",
+      "sha256": "5b54dbfe16771eaeec66d5fb315b04a95f1b635771e9c33720454c18cd1970ea"
+    },
+    {
+      "url": "https://taytools.com/festool-finish-orbital-sander-rts-400-req-plus",
+      "status": 200,
+      "at": "2026-11-03T03:20:20.043198+00:00",
+      "sha256": "2b7b9fa85ae7281ea68e284abf54b9aa5756c03d479f9dfd186bf1dbeadc6182"
+    },
+    {
+      "url": "https://taytools.com/festool-finish-delta-sander-dts-400-req-plus",
+      "status": 200,
+      "at": "2026-11-03T03:20:22.909972+00:00",
+      "sha256": "40854b702126283174215103ba38969288bae66eba22ef42f5f099fec3b85186"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-delta-sander-dtsc-400-basic",
+      "status": 200,
+      "at": "2026-11-03T03:20:25.299425+00:00",
+      "sha256": "072acd13af71bd42ac20ae8bf6233cad3bfc796b735a50026637e3ad0d58228f"
+    },
+    {
+      "url": "https://taytools.com/festool-multi-mode-sander-ro-125-feq-plus-rotex",
+      "status": 200,
+      "at": "2026-11-03T03:20:27.774636+00:00",
+      "sha256": "2280b93a9cfb09043801d611aa50754f2c9189fddeb44f200f559df217e00447"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-random-orbit-sander-etsc-2-125-basic",
+      "status": 200,
+      "at": "2026-11-03T03:20:30.209648+00:00",
+      "sha256": "b784b4288a9276fb9e58fa819d60f67380685c04a32c3cb4ab3cf61314f797a7"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-random-orbital-sander-etsc-2-150-basic",
+      "status": 200,
+      "at": "2026-11-03T03:20:32.593192+00:00",
+      "sha256": "d62c177c7c30a020922d20a0817106ddcbd11f894cc9130fd6214fd1ddc43d08"
+    },
+    {
+      "url": "https://taytools.com/festool-random-orbital-sander-ets-ec-125-3-eq-plus",
+      "status": 200,
+      "at": "2026-11-03T03:20:34.966543+00:00",
+      "sha256": "f15af2ba3fa3079b0d3f2e0c20bf70ef92d7a452b434afde016cc42e66e5e6b2"
+    },
+    {
+      "url": "https://taytools.com/festool-multi-mode-sander-ro-90-dc-feq-plus-rotex",
+      "status": 200,
+      "at": "2026-11-03T03:20:37.551461+00:00",
+      "sha256": "6ca2bde0510ce66b2dde7e46a9fc53a2573891500b949af053f57701693c3fdb"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-random-orbit-sander-etsc-125-30-i-plus",
+      "status": 200,
+      "at": "2026-11-03T03:20:39.938268+00:00",
+      "sha256": "874fb9614a474aa5bb3e4a368cecc231abd0cdf8347687ffc05529db80aa4f0e"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-orbital-sander-rtsc-400-30-i-plus",
+      "status": 200,
+      "at": "2026-11-03T03:20:42.892175+00:00",
+      "sha256": "9a94c708f8da43d0444efcb27dc87c42c18df167344b3434331a76eb81294c6b"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-delta-sander-dtsc-400-30-i-plus",
+      "status": 200,
+      "at": "2026-11-03T03:20:45.405511+00:00",
+      "sha256": "489f3f11b247d4bd6d421e2cdee9dbef0b953f8d7c08186346cc9c866807125b"
+    },
+    {
+      "url": "https://taytools.com/fisch-29-piece-hss-wood-twist-drill-set",
+      "status": 200,
+      "at": "2026-11-03T03:20:47.801505+00:00",
+      "sha256": "741d9547295a808f5b55fe3b9b8700d11bac2fa2f21d9a1fdbda18deb48c6003"
+    },
+    {
+      "url": "https://taytools.com/mirka-deros-rs-600x-6-inch-vacuum-ready-rotary-sander",
+      "status": 200,
+      "at": "2026-11-03T03:20:50.171286+00:00",
+      "sha256": "e53233cca0f987dfecb1277e672b34f78ce00f61fcae47bbae827d9011c3d3be"
+    },
+    {
+      "url": "https://taytools.com/festool-router-of-2200-eb-f-plus",
+      "status": 200,
+      "at": "2026-11-03T03:20:52.587059+00:00",
+      "sha256": "ef409fd4f777298c1c6742f0e284458defed4790a64e9275c7e1ff9ecdc76161"
+    },
+    {
+      "url": "https://taytools.com/festool-module-edge-router-mfk-700-eq-set",
+      "status": 200,
+      "at": "2026-11-03T03:20:55.034285+00:00",
+      "sha256": "a24dc4f6cf345279cae9c1bc01f9ad68a38c77ed3a1e90051f8ad82f413da39b"
+    },
+    {
+      "url": "https://taytools.com/swan-tool-group-vac-pucs-2-pack",
+      "status": 200,
+      "at": "2026-11-03T03:20:57.443411+00:00",
+      "sha256": "7cd03b39f7bb2ec49ca15bfc6aa3a7cc1d68f86f4fdd80c348cd7173413c796a"
+    },
+    {
+      "url": "https://taytools.com/swan-tool-group-vac-plate-for-grabo",
+      "status": 200,
+      "at": "2026-11-03T03:20:59.821692+00:00",
+      "sha256": "9d728980160fc1b4748e828c0418153fb5dcbba8a1db7f98d9e3bfe43a2832aa"
+    },
+    {
+      "url": "https://taytools.com/festool-router-of-1010-rebq-plus",
+      "status": 200,
+      "at": "2026-11-03T03:21:02.759595+00:00",
+      "sha256": "85a1fee37f24f5222cdde156fbd6f22bca95a3752965fe41d0a2531e3946dc46"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-drill-tpc-18-4-hpc40-i-set-quadrive",
+      "status": 200,
+      "at": "2026-11-03T03:21:05.137224+00:00",
+      "sha256": "2f6196255c4c1f3242d62554ae94b74df446189b2c7ed65f4a9cc2371bb2a764"
+    },
+    {
+      "url": "https://taytools.com/festool-diamond-grinder-rg-130-eci-plus-renofix",
+      "status": 200,
+      "at": "2026-11-03T03:21:07.615804+00:00",
+      "sha256": "76e41afd3de1a5e105ef8b1f79074a684ed1066e3fa85eb1f03f1c0309f39fca"
+    },
+    {
+      "url": "https://taytools.com/festool-planer-hl-850-e-f-plus",
+      "status": 200,
+      "at": "2026-11-03T03:21:10.036097+00:00",
+      "sha256": "e562e12bdfcfdb190d6f02cbf46203e435d0a74d4433006a0043d027d75f7b55"
+    },
+    {
+      "url": "https://taytools.com/festool-impact-driver-and-drill-set-tid-18-hpc-4-01-set-t18",
+      "status": 200,
+      "at": "2026-11-03T03:21:12.434194+00:00",
+      "sha256": "05d248c72190465df452be22fa9dc09ffe2bd63cd775470b2af2117e5e447325"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-drill-t18-3-hpc-40-i-set",
+      "status": 200,
+      "at": "2026-11-03T03:21:14.957499+00:00",
+      "sha256": "00364ddbee0b0cc45a96e86865fb6854650e1bc819cbeea0185ec708b56c4469"
+    },
+    {
+      "url": "https://taytools.com/festool-dust-extractor-ct-48-ei-ac-hepa-cleantec",
+      "status": 200,
+      "at": "2026-11-03T03:21:18.920841+00:00",
+      "sha256": "13204f17a26a542eb3006e63ad378f83e88da457cf458909861a0dd424c66010"
+    },
+    {
+      "url": "https://taytools.com/festool-dust-extractor-ct-midi-i-hepa-cleantec",
+      "status": 200,
+      "at": "2026-11-03T03:21:21.353886+00:00",
+      "sha256": "a2f362aa1a87bd397367455ca71f526dcab680735c30a8e23ca99020f874d56c"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-mobile-dust-extractor-ctc-midi-i-hepa-basic-cleantec",
+      "status": 200,
+      "at": "2026-11-03T03:21:23.743995+00:00",
+      "sha256": "3c184974e498d2d47edabcf7db14f474f48743b7d4c6172a1af577689858a26c"
+    },
+    {
+      "url": "https://taytools.com/festool-dust-extractor-ct-26-ei-hepa-cleantec",
+      "status": 200,
+      "at": "2026-11-03T03:21:26.138060+00:00",
+      "sha256": "e7695fa556467a00a15ef00521e1fd72f1de855e7acb2a80afcb0b3bfc7207d8"
+    },
+    {
+      "url": "https://taytools.com/festool-dust-extractor-ct-36-ei-hepa-cleantec",
+      "status": 200,
+      "at": "2026-11-03T03:21:28.586543+00:00",
+      "sha256": "a05d85462bac1f9f70e4e49685f0d4968b3cb1f08df9d9f74930a1b071e8896d"
+    },
+    {
+      "url": "https://taytools.com/festool-dust-extractor-ct-36-ei-ac-hepa-cleantec",
+      "status": 200,
+      "at": "2026-11-03T03:21:31.049400+00:00",
+      "sha256": "ef8fc421411c54bbf0d30e413ddf3aa02eea1ce07a21cec69b79aa937ced6ef0"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-drill-t18-3-e-basic",
+      "status": 200,
+      "at": "2026-11-03T03:21:33.641162+00:00",
+      "sha256": "3c7ae25d4e71b0b85f70fa92380722f1fc979be82174c328d855396aeb597e5f"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-drill-cxs-12-25-set",
+      "status": 200,
+      "at": "2026-11-03T03:21:36.052715+00:00",
+      "sha256": "9b7ebebdce0b21b57b062b13349bcf5e9b3f44eee40a5650a8bba33f46cc4c78"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-impact-drill-tid-18-basic",
+      "status": 200,
+      "at": "2026-11-03T03:21:38.441323+00:00",
+      "sha256": "7ce1f36d0f4af1aeb2483ad26fe9e1003657a78c68cb660e14c4c8d149b04a57"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-drill-txs-18-basic",
+      "status": 200,
+      "at": "2026-11-03T03:21:40.962983+00:00",
+      "sha256": "73ce1fe875094d82e31e0212c7a60264d3ea95d8ebab954580599da0f642113a"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-drill-cxs-18-basic",
+      "status": 200,
+      "at": "2026-11-03T03:21:43.389384+00:00",
+      "sha256": "5762aa2255fd76f9d3a4eed04bdd48285569b2ed267ea22391d841664f7c6e7a"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-drill-t-18-3-basic",
+      "status": 200,
+      "at": "2026-11-03T03:21:45.781147+00:00",
+      "sha256": "02a83787419243d4d30f187ab5270737c7e0b588b4a0e1b31ac71c50bc34f6e1"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-drill-c-18-basic",
+      "status": 200,
+      "at": "2026-11-03T03:21:48.175598+00:00",
+      "sha256": "be468bb0b1340017bc03bc63801fa4e6d389c43995e46c7936b1c1923cae90b7"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-rotary-hammer-drill-khc-18-eb-basic",
+      "status": 200,
+      "at": "2026-11-03T03:21:50.609416+00:00",
+      "sha256": "df13110e7ca89146ba6bc1122e53bf6d306dce1f6454c358fecb89305875efb9"
+    },
+    {
+      "url": "https://taytools.com/festool-cordless-drill-tpc-18-4-basic-quadrive",
+      "status": 200,
+      "at": "2026-11-03T03:21:53.029318+00:00",
+      "sha256": "538d4bd8354f76087bb28d9213a24e767799dda3f0d90e77eaaf4edec8ce918e"
+    },
+    {
+      "url": "https://taytools.com/mirka-deos-343xcv-3-inchx4-inch-cv-3mm-orbital-sheet-sander",
+      "status": 200,
+      "at": "2026-11-03T03:21:55.435376+00:00",
+      "sha256": "7282dcc16bce98c7118856d570d6cc6e601030e3750f671a0220805a2c9a502f"
+    },
+    {
+      "url": "https://taytools.com/ss-niles-bottle-stoppers-nbs-1-1-4x8-mandrel",
+      "status": 200,
+      "at": "2026-11-03T03:21:57.947846+00:00",
+      "sha256": "27499e8f23cda9e6615278644b2686069819b00aa4f5c4b0970d52dd638ae4a6"
+    },
+    {
+      "url": "https://taytools.com/3m-4-5-5-inch-electric-angle-grinder-with-paddle-switch-120v-1900w-motor",
+      "status": 200,
+      "at": "2026-11-03T03:22:00.367250+00:00",
+      "sha256": "87d81789df9c9976ef8255ae757abe353f0505457abb28fa3a04f3f53d060df8"
+    },
+    {
+      "url": "https://taytools.com/mirka-deros-350xcv-3-inch-5mm-orbit-vacuum-ready-random-orbital-finishing-sander",
+      "status": 200,
+      "at": "2026-11-03T03:22:02.761340+00:00",
+      "sha256": "b62739bec77dab4c704e39e0afe4a9663d7492fe369e9a24497507dc58e591bb"
+    },
+    {
+      "url": "https://taytools.com/mirka-dust-extractor-1230-hepa-pc-120v",
+      "status": 200,
+      "at": "2026-11-03T03:22:05.139012+00:00",
+      "sha256": "8a0c97f19d7335bc1c557be6b738820d81cc2da1b0f0525d4ba55a6007f8d21a"
+    },
+    {
+      "url": "https://taytools.com/mirka-deos-ii-3-inch-x-4-inch-electric-random-oribtal-sander-with-free-ligno-groove-interface-and-cooler-bag",
+      "status": 200,
+      "at": "2026-11-03T03:22:07.540662+00:00",
+      "sha256": "cdf08d87aa449543eb2a3284ff837357eebb5de1dae7fababe34a3c71f555319"
+    }
+  ],
+  "discounted_product_dispositions": [
+    {
+      "name": "3M 4.5-5\" Electric Angle Grinder and with Paddle Switch 120V 13 Amps 1900W with 16-Piece Cubitron Disc Set",
+      "type": "Grinders",
+      "classification": "Classification(category='Power tools', format='Not specified', platform='')",
+      "prices": [
+        [
+          269.0,
+          494.14
+        ]
+      ]
+    },
+    {
+      "name": "INCRA Miter Gauge V27 for Tablesaw and Bandsaw",
+      "type": "Saw Accessories",
+      "classification": "None",
+      "prices": [
+        [
+          80.71,
+          94.95
+        ]
+      ]
+    },
+    {
+      "name": "Viking Norseman Drill Single Flute Pilotless Chatterproof Deburring Countersink Tool",
+      "type": "Drill Bits & Sets",
+      "classification": "None",
+      "prices": [
+        [
+          14.99,
+          23.94
+        ],
+        [
+          15.69,
+          18.22
+        ],
+        [
+          16.72,
+          19.41
+        ],
+        [
+          19.61,
+          22.76
+        ],
+        [
+          23.99,
+          30.01
+        ],
+        [
+          44.74,
+          51.92
+        ],
+        [
+          76.13,
+          88.38
+        ]
+      ]
+    },
+    {
+      "name": "Whiteside Steel Router Collet",
+      "type": "Router Accessories",
+      "classification": "None",
+      "prices": [
+        [
+          15.2,
+          17.88
+        ],
+        [
+          15.2,
+          17.88
+        ],
+        [
+          15.2,
+          17.88
+        ],
+        [
+          15.2,
+          17.88
+        ],
+        [
+          15.2,
+          17.88
+        ],
+        [
+          18.25,
+          21.47
+        ],
+        [
+          21.89,
+          25.75
+        ],
+        [
+          21.89,
+          25.75
+        ],
+        [
+          21.89,
+          25.75
+        ]
+      ]
+    },
+    {
+      "name": "Microjig SPLITTER STEELPRO 1/8\" Full Kerf Table Saw Splitter System",
+      "type": "Saw Accessories",
+      "classification": "None",
+      "prices": [
+        [
+          39.0,
+          39.99
+        ]
+      ]
+    },
+    {
+      "name": "Microjig SPLITTER STEELPRO Thin Kerf Table Saw Splitter System",
+      "type": "Saw Accessories",
+      "classification": "None",
+      "prices": [
+        [
+          39.0,
+          39.99
+        ]
+      ]
+    },
+    {
+      "name": "Viking Norseman Drill Single Flute Pilotless Chatterproof Deburring Countersink Tool Set",
+      "type": "Drill Bits & Sets",
+      "classification": "None",
+      "prices": [
+        [
+          97.09,
+          112.71
+        ]
+      ]
+    },
+    {
+      "name": "Microjig (GR2-GO) GRR-RIPPER 2Go Push Block for Table, Saw, Jointer, Bandsaw and Router",
+      "type": "Saw Accessories",
+      "classification": "None",
+      "prices": [
+        [
+          52.2,
+          58.0
+        ]
+      ]
+    },
+    {
+      "name": "INCRA Miter Express Sled - Table Saw Crosscut Sled",
+      "type": "Saw Accessories",
+      "classification": "None",
+      "prices": [
+        [
+          192.06,
+          225.95
+        ]
+      ]
+    },
+    {
+      "name": "Magswitch Table Saw FeatherBoard Bundle Pro-Two Vertical and One Universal",
+      "type": "Saw Accessories",
+      "classification": "None",
+      "prices": [
+        [
+          275.47,
+          289.97
+        ]
+      ]
+    },
+    {
+      "name": "INCRA Miter 1000SE and Express Tables Saw Crosscut Sled Combo Pack",
+      "type": "Saw Accessories",
+      "classification": "None",
+      "prices": [
+        [
+          353.56,
+          415.95
+        ]
+      ]
+    },
+    {
+      "name": "CMT Orange Tools 4-Piece Multipurpose Set for Oscillating Multi-Tools for Cutting Wood and Metal",
+      "type": "Saw Blades",
+      "classification": "None",
+      "prices": [
+        [
+          19.97,
+          33.9
+        ]
+      ]
+    },
+    {
+      "name": "INCRA Miter Gauge V120 for Table Saw and Bandsaw",
+      "type": "Saw Accessories",
+      "classification": "None",
+      "prices": [
+        [
+          111.31,
+          130.95
+        ]
+      ]
+    },
+    {
+      "name": "CMT Orange Tools 16-Piece Multipurpose Set for Oscillating Multi-Tools for Cutting Wood and Metal",
+      "type": "Saw Blades",
+      "classification": "None",
+      "prices": [
+        [
+          59.9,
+          99.9
+        ]
+      ]
+    },
+    {
+      "name": "Fein Starlock E-Cut Long Life Oscillating Saw Blades",
+      "type": "Saw Blades",
+      "classification": "None",
+      "prices": [
+        [
+          14.95,
+          15.0
+        ],
+        [
+          14.95,
+          15.0
+        ],
+        [
+          14.95,
+          15.0
+        ],
+        [
+          39.95,
+          40.0
+        ],
+        [
+          39.95,
+          40.0
+        ],
+        [
+          39.95,
+          40.0
+        ],
+        [
+          39.95,
+          40.0
+        ],
+        [
+          119.95,
+          120.0
+        ],
+        [
+          119.95,
+          120.0
+        ],
+        [
+          119.95,
+          120.0
+        ],
+        [
+          499.95,
+          500.0
+        ]
+      ]
+    },
+    {
+      "name": "Fein Starlock Plus E-Cut Long Life Oscillating Saw Blades",
+      "type": "Saw Blades",
+      "classification": "None",
+      "prices": [
+        [
+          39.95,
+          40.0
+        ],
+        [
+          119.95,
+          120.0
+        ]
+      ]
+    },
+    {
+      "name": "Fein 50-Pack E-Cut Universal Starlock Plus Saw Blades",
+      "type": "Saw Blades",
+      "classification": "None",
+      "prices": [
+        [
+          499.95,
+          500.0
+        ],
+        [
+          499.95,
+          500.0
+        ]
+      ]
+    },
+    {
+      "name": "Fein 3-Pack TITAN Bi-Metal Starlock Long-Life OMT Demolition Saw Blades",
+      "type": "Saw Blades",
+      "classification": "None",
+      "prices": [
+        [
+          44.95,
+          45.0
+        ]
+      ]
+    },
+    {
+      "name": "CMT Orange Tools CMT Set of 37 pcs. Cutting Accessories for Oscillating Multi tool",
+      "type": "Saw Blades",
+      "classification": "None",
+      "prices": [
+        [
+          47.9,
+          73.4
+        ]
+      ]
+    },
+    {
+      "name": "INCRA INCRA Miter 5000 Table Saw Crosscut Sled with Telescoping Fence (36\" to 64\"), Flip Stop and Hold Down",
+      "type": "Saw Accessories",
+      "classification": "None",
+      "prices": [
+        [
+          399.95,
+          467.95
+        ]
+      ]
+    },
+    {
+      "name": "Magswitch Stacked SavR Quick Release Table Saw Featherboard Fits 3/4\" and 5/8\" Miter Slots",
+      "type": "Saw Accessories",
+      "classification": "None",
+      "prices": [
+        [
+          71.23,
+          74.98
+        ]
+      ]
+    },
+    {
+      "name": "Fisch 29-Piece HSS Wood Twist Drill Set",
+      "type": "Drill Bits & Sets",
+      "classification": "None",
+      "prices": [
+        [
+          329.99,
+          379.99
+        ]
+      ]
+    }
+  ],
+  "source_audit": {
+    "sample_size": 1,
+    "match": 1,
+    "mismatch": 0,
+    "inconclusive": 0,
+    "verified_match_percent": 100.0,
+    "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+    "results": [
+      {
+        "name": "3M 4.5-5\" Electric Angle Grinder and with Paddle Switch 120V 13 Amps 1900W with 16-Piece Cubitron Disc Set",
+        "store": "Taylor Toolworks",
+        "offer": {
+          "variant_key": "4157111082|",
+          "url": "https://taytools.com/3m-4-5-5-inch-electric-angle-grinder-and-with-paddle-switch-120v-13-amps-1900w-with-16-piece-cubitron-disc-set",
+          "current_price": 269.0,
+          "original_price": 494.14,
+          "size": null,
+          "options": "SKU 111296_67115",
+          "availability": "in_stock",
+          "image_url": "https://taytools.com/images/products/3m/product/image-3M210ZZZ-550-550.jpg",
+          "reference_basis": "retailer_compare_at",
+          "discount": 45.6,
+          "savings": 225.14
+        },
+        "checked_at": "2026-11-03T03:22:16.605422+00:00",
+        "evidence_url": "https://taytools.com/3m-4-5-5-inch-electric-angle-grinder-and-with-paddle-switch-120v-13-amps-1900w-with-16-piece-cubitron-disc-set",
+        "response_sha256": "8f1f36a8a8fe888d89ad0dbe586f61be5ab1e75a326b9434d854f5ac59ac45e6",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "destination": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "condition": true
+        },
+        "merchant": {
+          "sku": "111296_67115",
+          "selector_sku": "4157111082",
+          "selection": {},
+          "price": "269.00",
+          "reference": "494.14",
+          "stock": "16",
+          "options": "SKU 111296_67115",
+          "currency": "USD"
+        }
+      }
+    ]
+  },
+  "combined_audit": {
+    "catalog": "tools",
+    "date": "2026-11-03T03:26:58.556076+00:00",
+    "seed": 20261104,
+    "population": 352,
+    "method": "top10-plus-seeded20-merchant-product-v1",
+    "sample_size": 30,
+    "match": 30,
+    "mismatch": 0,
+    "inconclusive": 0,
+    "verified_match_percent": 100.0,
+    "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+    "results": [
+      {
+        "name": "Axiom 2x2 CNC Table with Air-Cooled Spindle",
+        "store": "OakTree Supply",
+        "offer": {
+          "variant_key": "47708931948761",
+          "url": "https://www.oaktreesupply.com/products/axiom-2x2-cnc-table-with-spindle?currency=USD&variant=47708931948761",
+          "current_price": 1999.0,
+          "original_price": 4699.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/files/AX-101-1.jpg?v=1769713524",
+          "reference_basis": "retailer_compare_at",
+          "discount": 57.5,
+          "savings": 2700.0
+        },
+        "checked_at": "2026-11-03T03:25:57.501842+00:00",
+        "evidence_url": "https://www.oaktreesupply.com/products/axiom-2x2-cnc-table-with-spindle.js?currency=USD",
+        "response_sha256": "f4b87f2e1b8db50fa6bdd089236baf2d3cab3939639aa1c106f2d21f0739aa33",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Axiom 2x2 CNC Table with Air-Cooled Spindle",
+          "variant": "47708931948761",
+          "sku": "AX1-101",
+          "price_minor": 199900,
+          "reference_minor": 469900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Axiom Iconic-4 Series CNC Router 2' x 2'",
+        "store": "OakTree Supply",
+        "offer": {
+          "variant_key": "37991680082119",
+          "url": "https://www.oaktreesupply.com/products/axoiom-iconic-4-series-cnc-router-24-x-24?currency=USD&variant=37991680082119",
+          "current_price": 2999.0,
+          "original_price": 6049.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/products/Iconic-4.jpg?v=1676914267",
+          "reference_basis": "retailer_compare_at",
+          "discount": 50.4,
+          "savings": 3050.0
+        },
+        "checked_at": "2026-11-03T03:26:01.004484+00:00",
+        "evidence_url": "https://www.oaktreesupply.com/products/axoiom-iconic-4-series-cnc-router-24-x-24.js?currency=USD",
+        "response_sha256": "f07a77a59e0307e5b6d384a0ba332ec04fca519b4fed6871a9297d7486a86700",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Axiom Iconic-4 Series CNC Router 2' x 2'",
+          "variant": "37991680082119",
+          "sku": "AX9-ICONIC4",
+          "price_minor": 299900,
+          "reference_minor": 604900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Iconic 24\" x 24\" for Axiom CNC Router",
+        "store": "Woodcraft",
+        "offer": {
+          "variant_key": "43403824922762",
+          "url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-24-for-axiom-cnc-router?currency=USD&variant=43403824922762",
+          "current_price": 2999.0,
+          "original_price": 6049.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/172910_000_001.jpg?v=1720472421",
+          "reference_basis": "retailer_compare_at",
+          "discount": 50.4,
+          "savings": 3050.0
+        },
+        "checked_at": "2026-11-03T03:26:02.645362+00:00",
+        "evidence_url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-24-for-axiom-cnc-router.js?currency=USD",
+        "response_sha256": "70a947ae04b90c1bfc26a6ab72a7d2fd9deceea5cffea990b1fa15ae9e64b02d",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Iconic 24\" x 24\" for Axiom CNC Router",
+          "variant": "43403824922762",
+          "sku": "172910",
+          "price_minor": 299900,
+          "reference_minor": 604900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "JET JAT-127, 3/4-in. Composite Impact Wrench (505127)",
+        "store": "Tool Nut",
+        "offer": {
+          "variant_key": "50177235976486",
+          "url": "https://www.toolnut.com/products/jet-505127-jat-127-composite-impact-wrench?currency=USD&variant=50177235976486",
+          "current_price": 299.99,
+          "original_price": 580.99,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/505127_main.jpg?v=1778274029",
+          "reference_basis": "retailer_compare_at",
+          "discount": 48.4,
+          "savings": 281.0
+        },
+        "checked_at": "2026-11-03T03:26:06.088323+00:00",
+        "evidence_url": "https://www.toolnut.com/products/jet-505127-jat-127-composite-impact-wrench.js?currency=USD",
+        "response_sha256": "809181c34868ee50941e0ca822e8053f47d5f3660da88a3048b4cf6ee9a8f8bd",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "JET JAT-127, 3/4-in. Composite Impact Wrench (505127)",
+          "variant": "50177235976486",
+          "sku": "505127",
+          "price_minor": 29999,
+          "reference_minor": 58099,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Axiom AR16 Elite 4'x4' CNC Router",
+        "store": "OakTree Supply",
+        "offer": {
+          "variant_key": "31966639423606",
+          "url": "https://www.oaktreesupply.com/products/axiom-ar16-elite-4x4?currency=USD&variant=31966639423606",
+          "current_price": 9999.0,
+          "original_price": 19299.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/products/AR16Elite_6b6c2750-ef34-4a6c-b6bd-7429b0810f70.jpg?v=1678136683",
+          "reference_basis": "retailer_compare_at",
+          "discount": 48.2,
+          "savings": 9300.0
+        },
+        "checked_at": "2026-11-03T03:26:09.382911+00:00",
+        "evidence_url": "https://www.oaktreesupply.com/products/axiom-ar16-elite-4x4.js?currency=USD",
+        "response_sha256": "bb5d82a8ce2314250074ad73ac51874cdc5dbf76b29bc568ca97155fbdda770b",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Axiom AR16 Elite 4'x4' CNC Router",
+          "variant": "31966639423606",
+          "sku": "AX9-AR16ELITE",
+          "price_minor": 999900,
+          "reference_minor": 1929900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Axiom AR4Pro V6 2'x2' CNC Router",
+        "store": "OakTree Supply",
+        "offer": {
+          "variant_key": "31966616780918",
+          "url": "https://www.oaktreesupply.com/products/axiom-ar4pro-v5-2x2-cnc-router?currency=USD&variant=31966616780918",
+          "current_price": 4999.0,
+          "original_price": 9459.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/files/AR4ProV6main_4d61fd1e-1529-413c-95d0-cfddbfd9d660.jpg?v=1711135489",
+          "reference_basis": "retailer_compare_at",
+          "discount": 47.2,
+          "savings": 4460.0
+        },
+        "checked_at": "2026-11-03T03:26:11.166356+00:00",
+        "evidence_url": "https://www.oaktreesupply.com/products/axiom-ar4pro-v5-2x2-cnc-router.js?currency=USD",
+        "response_sha256": "f885fbfb159c552ba6d62d8a6c4e8e45a5e1e33d23cfde9aea79db10b9a24486",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Axiom AR4Pro V6 2'x2' CNC Router",
+          "variant": "31966616780918",
+          "sku": "AX9-AR4PROV6",
+          "price_minor": 499900,
+          "reference_minor": 945900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Axiom Iconic-6 Series CNC Router 2' x 3'",
+        "store": "OakTree Supply",
+        "offer": {
+          "variant_key": "41257102147783",
+          "url": "https://www.oaktreesupply.com/products/axiom-iconic-6-series-cnc-router-24-x-36?currency=USD&variant=41257102147783",
+          "current_price": 3499.0,
+          "original_price": 6599.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/products/Iconic-6-1.jpg?v=1676914781",
+          "reference_basis": "retailer_compare_at",
+          "discount": 47.0,
+          "savings": 3100.0
+        },
+        "checked_at": "2026-11-03T03:26:12.838042+00:00",
+        "evidence_url": "https://www.oaktreesupply.com/products/axiom-iconic-6-series-cnc-router-24-x-36.js?currency=USD",
+        "response_sha256": "3f902de9f53baa0e0c0d55b697cba42793ad8c615259d500de2157f34d6091fe",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Axiom Iconic-6 Series CNC Router 2' x 3'",
+          "variant": "41257102147783",
+          "sku": "AX9-ICONIC6",
+          "price_minor": 349900,
+          "reference_minor": 659900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Iconic 24\" x 36\" CNC Router",
+        "store": "Woodcraft",
+        "offer": {
+          "variant_key": "43400695939210",
+          "url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-36-cnc-router?currency=USD&variant=43400695939210",
+          "current_price": 3499.0,
+          "original_price": 6599.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/172911_000_001.jpg?v=1720472424",
+          "reference_basis": "retailer_compare_at",
+          "discount": 47.0,
+          "savings": 3100.0
+        },
+        "checked_at": "2026-11-03T03:26:14.448364+00:00",
+        "evidence_url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-36-cnc-router.js?currency=USD",
+        "response_sha256": "0c85371d1b0e881d75222727672a3e2f1b203c3194ab96b0678c39403f05d2a8",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Iconic 24\" x 36\" CNC Router",
+          "variant": "43400695939210",
+          "sku": "172911",
+          "price_minor": 349900,
+          "reference_minor": 659900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "JET JAT-127 3/4\" Composite Pneumatic Impact Wrench",
+        "store": "OakTree Supply",
+        "offer": {
+          "variant_key": "44426104668377",
+          "url": "https://www.oaktreesupply.com/products/jet-jat-127-3-4-pneumatic-composite-impact-wrench?currency=USD&variant=44426104668377",
+          "current_price": 299.0,
+          "original_price": 560.99,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/files/505127-1.jpg?v=1748882450",
+          "reference_basis": "retailer_compare_at",
+          "discount": 46.7,
+          "savings": 261.99
+        },
+        "checked_at": "2026-11-03T03:26:16.143079+00:00",
+        "evidence_url": "https://www.oaktreesupply.com/products/jet-jat-127-3-4-pneumatic-composite-impact-wrench.js?currency=USD",
+        "response_sha256": "253436ea7fd48ac5bb863cede3412b20834b16c3033ec7441a1a27d91290ba37",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "JET JAT-127 3/4\" Composite Pneumatic Impact Wrench",
+          "variant": "44426104668377",
+          "sku": "JT9-505127",
+          "price_minor": 29900,
+          "reference_minor": 56099,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "10\" 2 HP Benchtop Table Saw w/Stand",
+        "store": "Grizzly Industrial",
+        "offer": {
+          "variant_key": "W1875",
+          "url": "https://www.grizzly.com/products/shop-fox-10-2-hp-benchtop-table-saw-w-stand/w1875",
+          "current_price": 379.91,
+          "original_price": 710.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn4.grizzly.com/pics/jpeg288/w/w1875-8fff8e19bb85172da7006dcb520e51aa.jpg",
+          "reference_basis": "retailer_compare_at",
+          "discount": 46.5,
+          "savings": 330.09
+        },
+        "checked_at": "2026-11-03T03:26:17.794975+00:00",
+        "evidence_url": "https://www.grizzly.com/products/shop-fox-10-2-hp-benchtop-table-saw-w-stand/w1875",
+        "response_sha256": "a142da16347d5292071a28ae9d36a599ad0aca688f3c5cebcd964c2c5f0af531",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "destination": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "stock": true,
+          "condition": true,
+          "options": true
+        },
+        "merchant": {
+          "sku": "W1875",
+          "price": 379.91,
+          "reference": 710,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "condition": "https://schema.org/NewCondition"
+        }
+      },
+      {
+        "name": "Industrial Cabinet Saw with 36\" Industrial T-Glide Fence System - 5HP - 1PH - 230V",
+        "store": "Woodcraft",
+        "offer": {
+          "variant_key": "43403480957066",
+          "url": "https://www.woodcraft.com/products/sawstop-5hp-3ph-230v-industrial-cabinet-saw-with-36-industrial-t-glide-fence-system?currency=USD&variant=43403480957066",
+          "current_price": 5322.0,
+          "original_price": 5822.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/856294_000_001.jpg?v=1790194078",
+          "reference_basis": "retailer_compare_at",
+          "discount": 8.6,
+          "savings": 500.0
+        },
+        "checked_at": "2026-11-03T03:26:19.889804+00:00",
+        "evidence_url": "https://www.woodcraft.com/products/sawstop-5hp-3ph-230v-industrial-cabinet-saw-with-36-industrial-t-glide-fence-system.js?currency=USD",
+        "response_sha256": "92c51dfce7364ec3d77a5fbf5dce5a0459d10bec20eb5fd918a376991bad74db",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Industrial Cabinet Saw with 36\" Industrial T-Glide Fence System - 5HP - 1PH - 230V",
+          "variant": "43403480957066",
+          "sku": "856294",
+          "price_minor": 532200,
+          "reference_minor": 582200,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "SawStop 5HP, 3ph, 230v Industrial Cabinet Saw w/36\" T-Glide Advance Fence, Rails & Extension Table",
+        "store": "OakTree Supply",
+        "offer": {
+          "variant_key": "47338354540761",
+          "url": "https://www.oaktreesupply.com/products/sawstop-5hp-3ph-230v-industrial-cabinet-saw-w-36-t-glide-advance-fence-rails-extension-table?currency=USD&variant=47338354540761",
+          "current_price": 5486.0,
+          "original_price": 5986.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/files/ICS53230-ATGI36.jpg?v=1761836341",
+          "reference_basis": "retailer_compare_at",
+          "discount": 8.4,
+          "savings": 500.0
+        },
+        "checked_at": "2026-11-03T03:26:21.653100+00:00",
+        "evidence_url": "https://www.oaktreesupply.com/products/sawstop-5hp-3ph-230v-industrial-cabinet-saw-w-36-t-glide-advance-fence-rails-extension-table.js?currency=USD",
+        "response_sha256": "b8d4f1796a27dfdab9770d18665de26d9c44760d82d5854f92078bc58483de87",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "SawStop 5HP, 3ph, 230v Industrial Cabinet Saw w/36\" T-Glide Advance Fence, Rails & Extension Table",
+          "variant": "47338354540761",
+          "sku": "ICS53230-ATGI36",
+          "price_minor": 548600,
+          "reference_minor": 598600,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "JET GH-1880ZX With ACU-RITE 203 DRO With Collet Closer (321492)",
+        "store": "Tool Nut",
+        "offer": {
+          "variant_key": "50177149141286",
+          "url": "https://www.toolnut.com/products/jet-321492-lathe?currency=USD&variant=50177149141286",
+          "current_price": 49619.0,
+          "original_price": 56426.99,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/321492_main_1.jpg?v=1778271313",
+          "reference_basis": "retailer_compare_at",
+          "discount": 12.1,
+          "savings": 6807.99
+        },
+        "checked_at": "2026-11-03T03:26:23.509723+00:00",
+        "evidence_url": "https://www.toolnut.com/products/jet-321492-lathe.js?currency=USD",
+        "response_sha256": "c358c6b90d88a13b0c782ece51f787a4f66b3fb1be6bcb0f1d3e8005ae555444",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "JET GH-1880ZX With ACU-RITE 203 DRO With Collet Closer (321492)",
+          "variant": "50177149141286",
+          "sku": "321492",
+          "price_minor": 4961900,
+          "reference_minor": 5642699,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Jet Tools JWSS-18B 18-in. Scroll Saw (727300B)",
+        "store": "Tool Nut",
+        "offer": {
+          "variant_key": "50176434635046",
+          "url": "https://www.toolnut.com/products/jet-tools-727300b-jwss-18b-18-inch-scroll-saw?currency=USD&variant=50176434635046",
+          "current_price": 699.99,
+          "original_price": 1026.99,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/727300b_alt1.jpg?v=1778192807",
+          "reference_basis": "retailer_compare_at",
+          "discount": 31.8,
+          "savings": 327.0
+        },
+        "checked_at": "2026-11-03T03:26:25.217239+00:00",
+        "evidence_url": "https://www.toolnut.com/products/jet-tools-727300b-jwss-18b-18-inch-scroll-saw.js?currency=USD",
+        "response_sha256": "2ce7e79a1331a4e3a6e42bab8a9500ee3fcd60b6d94e601b18e207b96188d72e",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Jet Tools JWSS-18B 18-in. Scroll Saw (727300B)",
+          "variant": "50176434635046",
+          "sku": "727300B",
+          "price_minor": 69999,
+          "reference_minor": 102699,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Sawstop Industrial 7.5HP, 3ph, 480v Cabinet Saw with 36-in. Industrial T-Glide Rip Fence, Rails & Extension Table (ICS73480-TGI236)",
+        "store": "Tool Nut",
+        "offer": {
+          "variant_key": "51633305059622",
+          "url": "https://www.toolnut.com/products/sawstop-ics73480-tgi236-industrial-7-5hp-3ph-480v-cabinet-saw-with-36-industrial-t-glide-rip-fence-rails-extension-table?currency=USD&variant=51633305059622",
+          "current_price": 6000.0,
+          "original_price": 6500.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/sawstop_ics36_atg_e9b86750-3c4c-40b7-845e-b698bd40bc9e.jpg?v=1761768221",
+          "reference_basis": "retailer_compare_at",
+          "discount": 7.7,
+          "savings": 500.0
+        },
+        "checked_at": "2026-11-03T03:26:26.895943+00:00",
+        "evidence_url": "https://www.toolnut.com/products/sawstop-ics73480-tgi236-industrial-7-5hp-3ph-480v-cabinet-saw-with-36-industrial-t-glide-rip-fence-rails-extension-table.js?currency=USD",
+        "response_sha256": "bc6e3d9f2bea469829562c58907aa657ff5aebf3f83b519b5438ae4f29a580d3",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Sawstop Industrial 7.5HP, 3ph, 480v Cabinet Saw with 36-in. Industrial T-Glide Rip Fence, Rails & Extension Table (ICS73480-TGI236)",
+          "variant": "51633305059622",
+          "sku": "ICS73480-TGI236",
+          "price_minor": 600000,
+          "reference_minor": 650000,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "1-3/4HP 1PH 110-120V Contractor Saw with 36\" Pro T-Glide Fence System",
+        "store": "Woodcraft",
+        "offer": {
+          "variant_key": "43403853856906",
+          "url": "https://www.woodcraft.com/products/sawstop-1-3-4hp-1ph-110-120v-contractor-saw-with-36-pro-t-glide-fence-system?currency=USD&variant=43403853856906",
+          "current_price": 2129.0,
+          "original_price": 2329.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/840938_000_001.jpg?v=1790194010",
+          "reference_basis": "retailer_compare_at",
+          "discount": 8.6,
+          "savings": 200.0
+        },
+        "checked_at": "2026-11-03T03:26:28.600056+00:00",
+        "evidence_url": "https://www.woodcraft.com/products/sawstop-1-3-4hp-1ph-110-120v-contractor-saw-with-36-pro-t-glide-fence-system.js?currency=USD",
+        "response_sha256": "b28cf82870647d7d36cc16b7fc75a00e0a77cf3ca3fdfce90e700cd3a70b70c0",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "1-3/4HP 1PH 110-120V Contractor Saw with 36\" Pro T-Glide Fence System",
+          "variant": "43403853856906",
+          "sku": "840938",
+          "price_minor": 212900,
+          "reference_minor": 232900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "24\" 10 HP 3-Phase Industrial Planer w/ Spiral Cutterhead",
+        "store": "Grizzly Industrial",
+        "offer": {
+          "variant_key": "G9961B",
+          "url": "https://www.grizzly.com/products/grizzly-24-10-hp-3-phase-industrial-planer-w-spiral-cutterhead/g9961b",
+          "current_price": 13995.0,
+          "original_price": 15450.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn3.grizzly.com/pics/jpeg288/g/g9961b-45a5442c4c99ae4bb67950a334766d18.jpg",
+          "reference_basis": "retailer_compare_at",
+          "discount": 9.4,
+          "savings": 1455.0
+        },
+        "checked_at": "2026-11-03T03:26:30.301753+00:00",
+        "evidence_url": "https://www.grizzly.com/products/grizzly-24-10-hp-3-phase-industrial-planer-w-spiral-cutterhead/g9961b",
+        "response_sha256": "ef40713340be2986fb64288f1b29b659cb2051d527dac1507d4012a6c76301fc",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "destination": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "stock": true,
+          "condition": true,
+          "options": true
+        },
+        "merchant": {
+          "sku": "G9961B",
+          "price": 13995,
+          "reference": 15450,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "condition": "https://schema.org/NewCondition"
+        }
+      },
+      {
+        "name": "SawStop 7.5HP, 3ph, 230v Industrial Cabinet Saw w/52\" T-Glide Advance Fence, Rails & Extension Table",
+        "store": "OakTree Supply",
+        "offer": {
+          "variant_key": "47338340155609",
+          "url": "https://www.oaktreesupply.com/products/sawstop-7-5hp-3ph-230v-industrial-cabinet-saw-w-52-t-glide-advance-fence-rails-extension-table?currency=USD&variant=47338340155609",
+          "current_price": 6282.0,
+          "original_price": 6782.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/files/ICS73230-ATGI52.jpg?v=1761836680",
+          "reference_basis": "retailer_compare_at",
+          "discount": 7.4,
+          "savings": 500.0
+        },
+        "checked_at": "2026-11-03T03:26:32.322454+00:00",
+        "evidence_url": "https://www.oaktreesupply.com/products/sawstop-7-5hp-3ph-230v-industrial-cabinet-saw-w-52-t-glide-advance-fence-rails-extension-table.js?currency=USD",
+        "response_sha256": "f061e55855fdf0dbe56fa38d45c60980a187941bfed1613b05a7f36f822aaa5b",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "SawStop 7.5HP, 3ph, 230v Industrial Cabinet Saw w/52\" T-Glide Advance Fence, Rails & Extension Table",
+          "variant": "47338340155609",
+          "sku": "ICS73230-ATGI52",
+          "price_minor": 628200,
+          "reference_minor": 678200,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Milwaukee M18 FUEL Brushless Compact Router, Tool Only (2723-20)",
+        "store": "Tool Nut",
+        "offer": {
+          "variant_key": "53393062494502",
+          "url": "https://www.toolnut.com/products/milwaukee-2723-20-m18-fuel-brushless-compact-router-tool-only?currency=USD&variant=53393062494502",
+          "current_price": 189.0,
+          "original_price": 229.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/2723-20-1.jpg?v=1778197673",
+          "reference_basis": "retailer_compare_at",
+          "discount": 17.5,
+          "savings": 40.0
+        },
+        "checked_at": "2026-11-03T03:26:34.038683+00:00",
+        "evidence_url": "https://www.toolnut.com/products/milwaukee-2723-20-m18-fuel-brushless-compact-router-tool-only.js?currency=USD",
+        "response_sha256": "9b12bc34c7e9c8c4fbb69b2753dbe5a0a9de83747fd0e34dba25250fdedbbcf2",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Milwaukee M18 FUEL Brushless Compact Router, Tool Only (2723-20)",
+          "variant": "53393062494502",
+          "sku": "2723-20",
+          "price_minor": 18900,
+          "reference_minor": 22900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "JET JWP-208HH 20 Inch Planer with Helical Cutterhead 5 HP 1-Phase 230V",
+        "store": "Factory Direct Supply",
+        "offer": {
+          "variant_key": "40251148664993",
+          "url": "https://factorydirectsupply.com/products/jet-708544?currency=USD&variant=40251148664993",
+          "current_price": 4950.99,
+          "original_price": 5759.99,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0398/5188/4705/products/708544_main.png?v=1676879469",
+          "reference_basis": "retailer_compare_at",
+          "discount": 14.0,
+          "savings": 809.0
+        },
+        "checked_at": "2026-11-03T03:26:35.810275+00:00",
+        "evidence_url": "https://factorydirectsupply.com/products/jet-708544.js?currency=USD",
+        "response_sha256": "e194f3480acb2b2d229aa9d53d684fd0ca8dd2bb10fc2c9e73559371c38ef1d8",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "JET JWP-208HH 20 Inch Planer with Helical Cutterhead 5 HP 1-Phase 230V",
+          "variant": "40251148664993",
+          "sku": "JT9-708544",
+          "price_minor": 495099,
+          "reference_minor": 575999,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Compact Table Saw",
+        "store": "Woodcraft",
+        "offer": {
+          "variant_key": "43402724475018",
+          "url": "https://www.woodcraft.com/products/sawstop-compact-table-saw?currency=USD&variant=43402724475018",
+          "current_price": 824.0,
+          "original_price": 899.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/184486_000_001.jpg?v=1788268566",
+          "reference_basis": "retailer_compare_at",
+          "discount": 8.3,
+          "savings": 75.0
+        },
+        "checked_at": "2026-11-03T03:26:39.231493+00:00",
+        "evidence_url": "https://www.woodcraft.com/products/sawstop-compact-table-saw.js?currency=USD",
+        "response_sha256": "b2a75760d85e073dd2a342b31b6eb4163bc29aeb8ca8e46f2b7f97d4943ad0c3",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Compact Table Saw",
+          "variant": "43402724475018",
+          "sku": "184486",
+          "price_minor": 82400,
+          "reference_minor": 89900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "15\" Planer - 3 HP 1 Ph 230V - Straight Knives - JWP-15B",
+        "store": "Woodcraft",
+        "offer": {
+          "variant_key": "43401322463370",
+          "url": "https://www.woodcraft.com/products/jet-15-planer-3-hp-1-ph-230v-straight-knives-jwp-15b?currency=USD&variant=43401322463370",
+          "current_price": 1999.0,
+          "original_price": 2771.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/167190_000_001.jpg?v=1752518172",
+          "reference_basis": "retailer_compare_at",
+          "discount": 27.9,
+          "savings": 772.0
+        },
+        "checked_at": "2026-11-03T03:26:41.047664+00:00",
+        "evidence_url": "https://www.woodcraft.com/products/jet-15-planer-3-hp-1-ph-230v-straight-knives-jwp-15b.js?currency=USD",
+        "response_sha256": "67dfaf062555cb37f568ee9740906a76664fe5f4f05ae038cf9e2e6c651ed627",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "15\" Planer - 3 HP 1 Ph 230V - Straight Knives - JWP-15B",
+          "variant": "43401322463370",
+          "sku": "167190",
+          "price_minor": 199900,
+          "reference_minor": 277100,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "22\" Planer - 7-1/2 HP 1 Ph 230V - Straight Knife - 201",
+        "store": "Woodcraft",
+        "offer": {
+          "variant_key": "43403668816010",
+          "url": "https://www.woodcraft.com/products/powermatic-22-planer-7-1-2-hp-1-ph-230v-straight-knife-201?currency=USD&variant=43403668816010",
+          "current_price": 7999.0,
+          "original_price": 9899.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/819347_000_001.jpg?v=1720485907",
+          "reference_basis": "retailer_compare_at",
+          "discount": 19.2,
+          "savings": 1900.0
+        },
+        "checked_at": "2026-11-03T03:26:42.735235+00:00",
+        "evidence_url": "https://www.woodcraft.com/products/powermatic-22-planer-7-1-2-hp-1-ph-230v-straight-knife-201.js?currency=USD",
+        "response_sha256": "2f33ea6cb2ad82b54da139406ebe3cc9bdec4d70df0e6f5d87df2fa631b9f644",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "22\" Planer - 7-1/2 HP 1 Ph 230V - Straight Knife - 201",
+          "variant": "43403668816010",
+          "sku": "819347",
+          "price_minor": 799900,
+          "reference_minor": 989900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Industrial Cabinet Saw with 36\" Industrial T-Glide Advance Fence System - 5 HP - 3PH - 230V\u00a0",
+        "store": "Woodcraft",
+        "offer": {
+          "variant_key": "46882382119050",
+          "url": "https://www.woodcraft.com/products/sawstop-3hp-3-ph-230v-industrial-saw-52-industrial-t-glide-advance?currency=USD&variant=46882382119050",
+          "current_price": 5486.0,
+          "original_price": 5986.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/197666_000_001.jpg?v=1779999390",
+          "reference_basis": "retailer_compare_at",
+          "discount": 8.4,
+          "savings": 500.0
+        },
+        "checked_at": "2026-11-03T03:26:44.377713+00:00",
+        "evidence_url": "https://www.woodcraft.com/products/sawstop-3hp-3-ph-230v-industrial-saw-52-industrial-t-glide-advance.js?currency=USD",
+        "response_sha256": "ff1c6cfcfdf7da129a3a9d6042f4a01647572af3c64ef48c4e8f1e27e6b3efa5",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Industrial Cabinet Saw with 36\" Industrial T-Glide Advance Fence System - 5 HP - 3PH - 230V\u00a0",
+          "variant": "46882382119050",
+          "sku": "197666",
+          "price_minor": 548600,
+          "reference_minor": 598600,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "TURBO T-40 14\"X24\" Wood Lathe With Servo Motor",
+        "store": "Harvey Woodworking",
+        "offer": {
+          "variant_key": "31907235233907",
+          "url": "https://www.harveywoodworking.com/products/turbo-t-40-14x24-wood-lathe-with-servo-motor?currency=USD&variant=31907235233907",
+          "current_price": 2699.0,
+          "original_price": 2999.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/1781/9323/products/t40.png?v=1758184008",
+          "reference_basis": "retailer_compare_at",
+          "discount": 10.0,
+          "savings": 300.0
+        },
+        "checked_at": "2026-11-03T03:26:45.993072+00:00",
+        "evidence_url": "https://www.harveywoodworking.com/products/turbo-t-40-14x24-wood-lathe-with-servo-motor.js?currency=USD",
+        "response_sha256": "54bef0897b29b06c95b3214fcfd0c5e1d5607613451257f83bee29a665f773e4",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "TURBO T-40 14\"X24\" Wood Lathe With Servo Motor",
+          "variant": "31907235233907",
+          "sku": "702027",
+          "price_minor": 269900,
+          "reference_minor": 299900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "SawStop 230V Three Phase 5-HP 12-Amp Industrial Cabinet Saw with 52-in. T-Glide Fence System (ICS53230-52)",
+        "store": "Tool Nut",
+        "offer": {
+          "variant_key": "50176554795302",
+          "url": "https://www.toolnut.com/products/sawstop-ics53230-52-230v-three-phase-5-hp-13-amp-industrial-cabinet-saw-with-52-t-glide-fence-system?currency=USD&variant=50176554795302",
+          "current_price": 5440.0,
+          "original_price": 5940.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/ics-52_3_5v2ywntik3m2tdn8.jpg?v=1778201879",
+          "reference_basis": "retailer_compare_at",
+          "discount": 8.4,
+          "savings": 500.0
+        },
+        "checked_at": "2026-11-03T03:26:49.336978+00:00",
+        "evidence_url": "https://www.toolnut.com/products/sawstop-ics53230-52-230v-three-phase-5-hp-13-amp-industrial-cabinet-saw-with-52-t-glide-fence-system.js?currency=USD",
+        "response_sha256": "2126d6c49e3f8f38b35a1b5dd874256accdbc03e21a814cc3d203c4c8cd0864e",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "SawStop 230V Three Phase 5-HP 12-Amp Industrial Cabinet Saw with 52-in. T-Glide Fence System (ICS53230-52)",
+          "variant": "50176554795302",
+          "sku": "ICS53230-52",
+          "price_minor": 544000,
+          "reference_minor": 594000,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Milwaukee M12 Cable Stapler (2448-20)",
+        "store": "Tool Nut",
+        "offer": {
+          "variant_key": "53393095885094",
+          "url": "https://www.toolnut.com/products/milwaukee-2448-20-m12-cable-stapler?currency=USD&variant=53393095885094",
+          "current_price": 229.0,
+          "original_price": 279.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/2448-20_1.jpg?v=1778044510",
+          "reference_basis": "retailer_compare_at",
+          "discount": 17.9,
+          "savings": 50.0
+        },
+        "checked_at": "2026-11-03T03:26:51.158184+00:00",
+        "evidence_url": "https://www.toolnut.com/products/milwaukee-2448-20-m12-cable-stapler.js?currency=USD",
+        "response_sha256": "3ba136f33391b2ee999cbc3e0acadcafc9ee18c372bde9a04a003f3302b79515",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Milwaukee M12 Cable Stapler (2448-20)",
+          "variant": "53393095885094",
+          "sku": "2448-20",
+          "price_minor": 22900,
+          "reference_minor": 27900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "37\" 15 HP Wide-Belt Sander with Industrial Roller",
+        "store": "Grizzly Industrial",
+        "offer": {
+          "variant_key": "G0866",
+          "url": "https://www.grizzly.com/products/grizzly-37-15-hp-wide-belt-sander-with-industrial-roller/g0866",
+          "current_price": 22633.58,
+          "original_price": 28650.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn7.grizzly.com/pics/jpeg288/g/g0866-6aa65ab8cb026552a8cf120b28e46e1c.jpg",
+          "reference_basis": "retailer_compare_at",
+          "discount": 21.0,
+          "savings": 6016.42
+        },
+        "checked_at": "2026-11-03T03:26:52.789290+00:00",
+        "evidence_url": "https://www.grizzly.com/products/grizzly-37-15-hp-wide-belt-sander-with-industrial-roller/g0866",
+        "response_sha256": "46a8b493a24aaca710e35b7116e53724570ef6c3e19cd3e7881ab52edaeee0c7",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "destination": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "stock": true,
+          "condition": true,
+          "options": true
+        },
+        "merchant": {
+          "sku": "G0866",
+          "price": 22633.58,
+          "reference": 28650,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "condition": "https://schema.org/NewCondition"
+        }
+      },
+      {
+        "name": "Sawstop Industrial 5HP, 1ph, 230v Cabinet Saw with 36-in. Industrial T-Glide Advance Rip Fence, Rails & Extension Table (ICS51230-ATGI36)",
+        "store": "Tool Nut",
+        "offer": {
+          "variant_key": "51633304863014",
+          "url": "https://www.toolnut.com/products/sawstop-ics51230-atgi36-industrial-5hp-1ph-230v-cabinet-saw-with-36-industrial-t-glide-advance-rip-fence-rails-extension-table?currency=USD&variant=51633304863014",
+          "current_price": 5486.0,
+          "original_price": 5986.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/sawstop_ics36_atg_6ffeea4b-aa06-4f2a-be2d-0e7ed5c7b0db.jpg?v=1761768220",
+          "reference_basis": "retailer_compare_at",
+          "discount": 8.4,
+          "savings": 500.0
+        },
+        "checked_at": "2026-11-03T03:26:55.065308+00:00",
+        "evidence_url": "https://www.toolnut.com/products/sawstop-ics51230-atgi36-industrial-5hp-1ph-230v-cabinet-saw-with-36-industrial-t-glide-advance-rip-fence-rails-extension-table.js?currency=USD",
+        "response_sha256": "4b897607fe6b2a81ac344c4f6ff5e9589b81e244e40028ef2145750fe5c26d74",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Sawstop Industrial 5HP, 1ph, 230v Cabinet Saw with 36-in. Industrial T-Glide Advance Rip Fence, Rails & Extension Table (ICS51230-ATGI36)",
+          "variant": "51633304863014",
+          "sku": "ICS51230-ATGI36",
+          "price_minor": 548600,
+          "reference_minor": 598600,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Powermatic 54HH 6\" Helical Head Jointer",
+        "store": "OakTree Supply",
+        "offer": {
+          "variant_key": "29790990217",
+          "url": "https://www.oaktreesupply.com/products/powermatic-6-jointer-with-helical-head-54hh?currency=USD&variant=29790990217",
+          "current_price": 2199.0,
+          "original_price": 2364.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/products/1791317K-1.jpg?v=1748888366",
+          "reference_basis": "retailer_compare_at",
+          "discount": 7.0,
+          "savings": 165.0
+        },
+        "checked_at": "2026-11-03T03:26:56.776063+00:00",
+        "evidence_url": "https://www.oaktreesupply.com/products/powermatic-6-jointer-with-helical-head-54hh.js?currency=USD",
+        "response_sha256": "cf9191dd86e5ccda57c4a687b16afb5f1dd615a2a719c61790215d15379ec5c6",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Powermatic 54HH 6\" Helical Head Jointer",
+          "variant": "29790990217",
+          "sku": "PM9-1791317K",
+          "price_minor": 219900,
+          "reference_minor": 236400,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      }
+    ]
+  },
+  "inventory": {
+    "catalog": "tools",
+    "measured_at": "2026-11-03T03:25:05.949430+00:00",
+    "reference_floor": 200,
+    "scope": "snapshot-listed offers; not independent merchant verification or unique model count",
+    "eligible_in_stock_listings": 352,
+    "deep_deal_listings": 22,
+    "useful_retailers": [
+      "Grizzly Industrial",
+      "OakTree Supply",
+      "Taylor Toolworks",
+      "Tool Nut",
+      "Woodcraft"
+    ],
+    "checked_within_24h_percent": 100.0,
+    "exact_size_facets": [
+      "HW110S-36Pro",
+      "HW110S-52Pro",
+      "HW110TC-36Pro",
+      "HW110TC-52Pro"
+    ],
+    "top_offers": [
+      {
+        "name": "Axiom 2x2 CNC Table with Air-Cooled Spindle",
+        "store": "OakTree Supply",
+        "url": "https://www.oaktreesupply.com/products/axiom-2x2-cnc-table-with-spindle?currency=USD&variant=47708931948761",
+        "price": 1999.0,
+        "reference": 4699.0,
+        "discount": 57.5,
+        "size": null
+      },
+      {
+        "name": "Axiom Iconic-4 Series CNC Router 2' x 2'",
+        "store": "OakTree Supply",
+        "url": "https://www.oaktreesupply.com/products/axoiom-iconic-4-series-cnc-router-24-x-24?currency=USD&variant=37991680082119",
+        "price": 2999.0,
+        "reference": 6049.0,
+        "discount": 50.4,
+        "size": null
+      },
+      {
+        "name": "Iconic 24\" x 24\" for Axiom CNC Router",
+        "store": "Woodcraft",
+        "url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-24-for-axiom-cnc-router?currency=USD&variant=43403824922762",
+        "price": 2999.0,
+        "reference": 6049.0,
+        "discount": 50.4,
+        "size": null
+      },
+      {
+        "name": "JET JAT-127, 3/4-in. Composite Impact Wrench (505127)",
+        "store": "Tool Nut",
+        "url": "https://www.toolnut.com/products/jet-505127-jat-127-composite-impact-wrench?currency=USD&variant=50177235976486",
+        "price": 299.99,
+        "reference": 580.99,
+        "discount": 48.4,
+        "size": null
+      },
+      {
+        "name": "Axiom AR16 Elite 4'x4' CNC Router",
+        "store": "OakTree Supply",
+        "url": "https://www.oaktreesupply.com/products/axiom-ar16-elite-4x4?currency=USD&variant=31966639423606",
+        "price": 9999.0,
+        "reference": 19299.0,
+        "discount": 48.2,
+        "size": null
+      },
+      {
+        "name": "Axiom AR4Pro V6 2'x2' CNC Router",
+        "store": "OakTree Supply",
+        "url": "https://www.oaktreesupply.com/products/axiom-ar4pro-v5-2x2-cnc-router?currency=USD&variant=31966616780918",
+        "price": 4999.0,
+        "reference": 9459.0,
+        "discount": 47.2,
+        "size": null
+      },
+      {
+        "name": "Axiom Iconic-6 Series CNC Router 2' x 3'",
+        "store": "OakTree Supply",
+        "url": "https://www.oaktreesupply.com/products/axiom-iconic-6-series-cnc-router-24-x-36?currency=USD&variant=41257102147783",
+        "price": 3499.0,
+        "reference": 6599.0,
+        "discount": 47.0,
+        "size": null
+      },
+      {
+        "name": "Iconic 24\" x 36\" CNC Router",
+        "store": "Woodcraft",
+        "url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-36-cnc-router?currency=USD&variant=43400695939210",
+        "price": 3499.0,
+        "reference": 6599.0,
+        "discount": 47.0,
+        "size": null
+      },
+      {
+        "name": "JET JAT-127 3/4\" Composite Pneumatic Impact Wrench",
+        "store": "OakTree Supply",
+        "url": "https://www.oaktreesupply.com/products/jet-jat-127-3-4-pneumatic-composite-impact-wrench?currency=USD&variant=44426104668377",
+        "price": 299.0,
+        "reference": 560.99,
+        "discount": 46.7,
+        "size": null
+      },
+      {
+        "name": "10\" 2 HP Benchtop Table Saw w/Stand",
+        "store": "Grizzly Industrial",
+        "url": "https://www.grizzly.com/products/shop-fox-10-2-hp-benchtop-table-saw-w-stand/w1875",
+        "price": 379.91,
+        "reference": 710.0,
+        "discount": 46.5,
+        "size": null
+      }
+    ]
+  },
+  "build": {
+    "catalog": "tools",
+    "brand": "Bench Drop",
+    "built_at": "2026-11-03T03:38:26.359054+00:00",
+    "snapshot_sha256": "05ce40f339462c928ade6ef31cc43155abafc8940490b9000e69ce9801c777c5",
+    "public_url": null,
+    "matching_deals": 352,
+    "sources": [
+      {
+        "name": "Tool Nut",
+        "observed_at": "2026-11-03T02:18:44.159819+00:00",
+        "listings": 158
+      },
+      {
+        "name": "Woodcraft",
+        "observed_at": "2026-11-03T02:20:45.151477+00:00",
+        "listings": 77
+      },
+      {
+        "name": "Craft Supplies USA",
+        "observed_at": "2026-11-03T02:21:17.658265+00:00",
+        "listings": 1
+      },
+      {
+        "name": "Harvey Woodworking",
+        "observed_at": "2026-11-03T02:21:22.519933+00:00",
+        "listings": 11
+      },
+      {
+        "name": "WEN",
+        "observed_at": "2026-11-03T02:21:27.405378+00:00",
+        "listings": 8
+      },
+      {
+        "name": "Factory Direct Supply",
+        "observed_at": "2026-11-03T02:21:32.357335+00:00",
+        "listings": 6
+      },
+      {
+        "name": "Grizzly Industrial",
+        "observed_at": "2026-11-03T02:22:10.048502+00:00",
+        "listings": 41
+      },
+      {
+        "name": "Max Warehouse",
+        "observed_at": "2026-11-03T02:24:21.132040+00:00",
+        "listings": 45
+      },
+      {
+        "name": "OakTree Supply",
+        "observed_at": "2026-11-03T02:24:48.729743+00:00",
+        "listings": 84
+      },
+      {
+        "name": "Taylor Toolworks",
+        "observed_at": "2026-11-03T03:13:45.629203+00:00",
+        "listings": 1
+      }
+    ]
+  },
+  "preview_verification": [
+    {
+      "surface": "preview",
+      "health": {
+        "catalog": "tools",
+        "snapshot_sha256": "05ce40f339462c928ade6ef31cc43155abafc8940490b9000e69ce9801c777c5",
+        "fresh_sources": 10,
+        "configured_sources": 10,
+        "status": "ready"
+      },
+      "filtered_cards": 1,
+      "destination": "https://taytools.com/3m-4-5-5-inch-electric-angle-grinder-and-with-paddle-switch-120v-13-amps-1900w-with-16-piece-cubitron-disc-set"
+    },
+    {
+      "surface": "standalone",
+      "health": {
+        "catalog": "tools",
+        "snapshot_sha256": "05ce40f339462c928ade6ef31cc43155abafc8940490b9000e69ce9801c777c5",
+        "fresh_sources": 10,
+        "configured_sources": 10,
+        "status": "ready"
+      }
+    }
+  ],
+  "browser_contract": [
+    {
+      "url": "https://taytools.com/kakuri-tapered-drill-bits-for-wooden-tapered-nails?a_21=v_6294",
+      "status": 200,
+      "visible": "$11.99/ea",
+      "sku": "54309",
+      "availability": "",
+      "stock": "10+ available",
+      "cart_enabled": true
+    },
+    {
+      "url": "https://taytools.com/3m-4-5-5-inch-electric-angle-grinder-and-with-paddle-switch-120v-13-amps-1900w-with-16-piece-cubitron-disc-set",
+      "status": 200,
+      "visible": "$269.00/ea\u00a0\u00a0$494.14\u00a0\u00a046% OFF",
+      "sku": "111296_67115",
+      "availability": "",
+      "stock": "10+ available",
+      "cart_enabled": true
+    }
+  ],
+  "mobile_fit_tasks": [
+    {
+      "site": "Big Ring",
+      "at": "2026-11-03T03:30:39.622511+00:00",
+      "environment": "local",
+      "viewport": [
+        390,
+        844
+      ],
+      "task": {
+        "budget": 2500,
+        "size": "M"
+      },
+      "actions": [
+        "Open filters",
+        "Set budget",
+        "Select size",
+        "Apply filters"
+      ],
+      "action_count": 4,
+      "action_scope": "Form-control interactions only; Playwright may auto-scroll. Not a verified physical gesture count.",
+      "scroll_positions": [
+        0,
+        0,
+        0,
+        0,
+        193
+      ],
+      "control_positions": [
+        {
+          "control": "budget",
+          "box": {
+            "x": 34.5,
+            "y": 611.5,
+            "width": 153,
+            "height": 44
+          }
+        },
+        {
+          "control": "size",
+          "box": {
+            "x": 34.5,
+            "y": 528.5,
+            "width": 153,
+            "height": 44
+          }
+        },
+        {
+          "control": "submit",
+          "box": {
+            "x": 202.5,
+            "y": 689.5,
+            "width": 153,
+            "height": 41
+          }
+        }
+      ],
+      "result_first_price_bottom": 661.09375,
+      "result_url": "http://127.0.0.1:8766/?q=&category=&brand=&store=&size=M&min_reference=1000&max_price=2500&min_discount=0.0#deals",
+      "matching_deals": "73",
+      "visible_cards": [
+        {
+          "price": "$1,499.99",
+          "stock": "Reported in stock \u00b7 Medium",
+          "variant": "Nostalgic Sea Blue - Ocean Frost / Medium",
+          "tags": null,
+          "url": "https://coloradocyclist.com/products/vaast-bikes-e-1-xt-slx-27-5-e-bike-nostalgic-sea-blue-ocean-frost?currency=USD&variant=48408222335216"
+        },
+        {
+          "price": "$1,999.99",
+          "stock": "Reported in stock \u00b7 Medium",
+          "variant": "Vibrant Berry Red - Black Cherry / Medium",
+          "tags": null,
+          "url": "https://coloradocyclist.com/products/vaast-bikes-e-1-enviolo-27-5-e-bike-vibrant-berry-red-black-cherry?currency=USD&variant=48408222236912"
+        },
+        {
+          "price": "$1,895.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "Ready To Paint / M",
+          "tags": null,
+          "url": "https://contenderbicycles.com/products/open-upper-frameset?currency=USD&variant=37271992697000"
+        },
+        {
+          "price": "$2,199.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "Powder Anthracite / M",
+          "tags": null,
+          "url": "https://www.eriksbikeshop.com/products/bmc-2024-257-amp-al-speed-electric-bike-pr5a26673?currency=USD&variant=47214364688598"
+        },
+        {
+          "price": "$2,199.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "Powder Anthracite / M",
+          "tags": null,
+          "url": "https://www.eriksbikeshop.com/products/bmc-2024-257-amp-al-speed-step-through-electric-bike-pr5a26672?currency=USD&variant=47214364033238"
+        },
+        {
+          "price": "$1,595.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "Grey Gloss/Matte / M",
+          "tags": null,
+          "url": "https://contenderbicycles.com/products/open-wide-frameset?currency=USD&variant=37272021729448"
+        },
+        {
+          "price": "$1,495.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "Ready To Paint / M",
+          "tags": null,
+          "url": "https://contenderbicycles.com/products/open-u-p-unbeaten-path-gravel-frameset?currency=USD&variant=37272017797288"
+        },
+        {
+          "price": "$2,199.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "M",
+          "tags": null,
+          "url": "https://bikesonline.com/products/superior-xf-9-2-dc-lightweight-carbon-trail-bike?currency=USD&variant=52646834798884"
+        },
+        {
+          "price": "$1,799.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "M",
+          "tags": null,
+          "url": "https://bikesonline.com/products/superior-xr-6-5-gr-gravel-bike-new?currency=USD&variant=54327887626532"
+        },
+        {
+          "price": "$2,499.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "Gloss Castblack / M",
+          "tags": null,
+          "url": "https://www.eriksbikeshop.com/products/specialized-turbo-vado-2-40-electric-bike-pr5a27410?currency=USD&variant=67566626734294"
+        },
+        {
+          "price": "$2,499.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "GLOSS CASTBLACK / SATIN SILVER REFLECTIVE / M",
+          "tags": null,
+          "url": "https://www.eriksbikeshop.com/products/specialized-turbo-vado-40-step-through-electric-bike-pr5a27044?currency=USD&variant=50043773944022"
+        },
+        {
+          "price": "$1,999",
+          "stock": "Reported in stock \u00b7 MD",
+          "variant": "RockShox Super Deluxe Ultimate D1 / MD",
+          "tags": null,
+          "url": "https://intensecycles.com/products/primer-frameset?currency=USD&variant=45188692508695"
+        },
+        {
+          "price": "$1,999.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "Red/White / M",
+          "tags": null,
+          "url": "https://bikesonline.com/products/superior-rr-9-4-carbon-road-bike?currency=USD&variant=52646767296804"
+        },
+        {
+          "price": "$1,999",
+          "stock": "Reported in stock \u00b7 MD",
+          "variant": "Red / RockShox Vivid Ultimate / MD",
+          "tags": null,
+          "url": "https://intensecycles.com/products/tracer-279-frameset?currency=USD&variant=45139831521303"
+        },
+        {
+          "price": "$1,999",
+          "stock": "Reported in stock \u00b7 MD",
+          "variant": "Satin Black / RockShox Vivid Ultimate / MD",
+          "tags": null,
+          "url": "https://intensecycles.com/products/tracer-29-frameset?currency=USD&variant=45139984318487"
+        },
+        {
+          "price": "$2,499.01",
+          "stock": "Reported in stock \u00b7 Medium",
+          "variant": "Blue Lagoon / Medium",
+          "tags": null,
+          "url": "https://www.probikesupply.com/products/transition-patrol-carbon-frameset-2025?currency=USD&variant=42446970847287"
+        },
+        {
+          "price": "$2,199.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "Red Tint/Silver Reflective / M",
+          "tags": null,
+          "url": "https://www.eriksbikeshop.com/products/specialized-turbo-como-3-0-igh-electric-bike-pr5a23436?currency=USD&variant=46302803198166"
+        },
+        {
+          "price": "$2,199.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "Cast Black Silver Reflective / M",
+          "tags": null,
+          "url": "https://www.eriksbikeshop.com/products/specialized-2023-turbo-como-3-0-igh-step-thru-electric-bike-pr5a13230?currency=USD&variant=46161215422678"
+        },
+        {
+          "price": "$1,599.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "M / 29 inch",
+          "tags": null,
+          "url": "https://bikesonline.com/products/2024-polygon-syncline-c5-carbon-xc-mountain-bike?currency=USD&variant=49915949285668"
+        },
+        {
+          "price": "$849.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "M",
+          "tags": null,
+          "url": "https://bikesonline.com/products/polygon-path-4-urban-city-bike-new?currency=USD&variant=50896153739556"
+        },
+        {
+          "price": "$999.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "M",
+          "tags": null,
+          "url": "https://bikesonline.com/products/polygon-siskiu-d5-mountain-bike-new?currency=USD&variant=51049272312100"
+        },
+        {
+          "price": "$799.99",
+          "stock": "Reported in stock \u00b7 Medium",
+          "variant": "Gloss Blue / Medium",
+          "tags": null,
+          "url": "https://coloradocyclist.com/products/vaast-bikes-u-1-700c-street-gloss-blue?currency=USD&variant=48408261689584"
+        },
+        {
+          "price": "$2,199",
+          "stock": "Reported in stock \u00b7 MD",
+          "variant": "MD",
+          "tags": null,
+          "url": "https://bicyclewarehouse.com/products/dew-e-37?currency=USD&variant=45489399955558"
+        },
+        {
+          "price": "$2,199.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "Black Gloss / M",
+          "tags": null,
+          "url": "https://bikesonline.com/products/polygon-collosus-t6-all-mountain-bike?currency=USD&variant=52221357556004"
+        }
+      ],
+      "horizontal_overflow": false
+    },
+    {
+      "site": "Bench Drop",
+      "at": "2026-11-03T03:30:41.878994+00:00",
+      "environment": "local",
+      "viewport": [
+        390,
+        844
+      ],
+      "task": {
+        "budget": 500,
+        "format": "Kit"
+      },
+      "actions": [
+        "Open filters",
+        "Set budget",
+        "Select format",
+        "Apply filters"
+      ],
+      "action_count": 4,
+      "action_scope": "Form-control interactions only; Playwright may auto-scroll. Not a verified physical gesture count.",
+      "scroll_positions": [
+        0,
+        0,
+        0,
+        0,
+        193
+      ],
+      "control_positions": [
+        {
+          "control": "budget",
+          "box": {
+            "x": 34.5,
+            "y": 694.5,
+            "width": 153,
+            "height": 44
+          }
+        },
+        {
+          "control": "format",
+          "box": {
+            "x": 34.5,
+            "y": 611.5,
+            "width": 153,
+            "height": 44
+          }
+        },
+        {
+          "control": "submit",
+          "box": {
+            "x": 202.5,
+            "y": 772.5,
+            "width": 153,
+            "height": 41
+          }
+        }
+      ],
+      "result_first_price_bottom": 636.890625,
+      "result_url": "http://127.0.0.1:8767/?q=&category=&brand=&store=&size=&platform=&format=Kit&min_reference=200&max_price=500&min_discount=0.0#deals",
+      "matching_deals": "17",
+      "visible_cards": [
+        {
+          "price": "$279",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "KitDeWalt 20V MAX",
+          "url": "https://www.toolnut.com/products/dewalt-dcg410ww1-20v-max-xr-brushless-4-1-2-in-5-in-angle-grinder-8-0ah-kit-w-xr-powerpack?currency=USD&variant=53393169056038"
+        },
+        {
+          "price": "$279",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "KitDeWalt 20V MAX",
+          "url": "https://www.toolnut.com/products/dewalt-dcs590ww1-20v-max-xr-brushless-7-1-4-in-circular-saw-8-0ah-kit-w-xr-powerpack?currency=USD&variant=53393183670566"
+        },
+        {
+          "price": "$259",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "KitDeWalt 20V MAX",
+          "url": "https://www.toolnut.com/products/dewalt-dcd1007ww1-20v-max-xr-brushless-3-speed-1-2-in-hammer-drill-powerpack-8-0ah-kit?currency=USD&variant=53393154736422"
+        },
+        {
+          "price": "$299",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "KitMilwaukee M18",
+          "url": "https://www.toolnut.com/products/milwaukee-2967-21b-m18-fuel-1-2-high-torque-impact-wrench-w-friction-ring-5-0ah-kit?currency=USD&variant=53393071374630"
+        },
+        {
+          "price": "$249",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "KitMilwaukee M18",
+          "url": "https://www.toolnut.com/products/milwaukee-2904-22-m18-fuel-1-2-hammer-drill-driver-kit?currency=USD&variant=53393069048102"
+        },
+        {
+          "price": "$299",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "KitMilwaukee M18",
+          "url": "https://www.toolnut.com/products/milwaukee-2761-22-m18-fuel-surge-1-4-hex-hydraulic-impact-driver-5-0ah-kit?currency=USD&variant=53393066590502"
+        },
+        {
+          "price": "$349",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "Kit",
+          "url": "https://www.toolnut.com/products/kreg-20v-cordless-ionic-drive-6-1-2-in-plunge-cut-track-saw-kit-kptbps200b?currency=USD&variant=53335376986406"
+        },
+        {
+          "price": "$349",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "Kit",
+          "url": "https://www.toolnut.com/products/kreg-kptbps100a-20v-ionic-drive-6-1-2-in-plunge-cut-track-saw-4-0ah-kit?currency=USD&variant=51473724408102"
+        },
+        {
+          "price": "$269",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "Kit",
+          "url": "https://www.woodcraft.com/products/bosch-2-25-hp-evs-fixed-and-plunge-base-router-combo-kit?currency=USD&variant=43403867488394"
+        },
+        {
+          "price": "$319",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "KitDeWalt 20V MAX",
+          "url": "https://factorydirectsupply.com/products/dewalt-20v-max-xr-3-speed-1-4-inch-high-torque-impact-driver-kit?currency=USD&variant=48206638186726"
+        },
+        {
+          "price": "$379",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "KitDeWalt 20V MAX",
+          "url": "https://www.grizzly.com/products/dewalt-20v-max-xr-jigsaw-kit-5.0ah/t32331"
+        },
+        {
+          "price": "$378.69",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "KitMilwaukee M18",
+          "url": "https://www.maxwarehouse.com/products/m18-fuel-hackzall?currency=USD&variant=39301742297139"
+        },
+        {
+          "price": "$337.24",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "Kit",
+          "url": "https://www.maxwarehouse.com/products/metabo-hpt-16-ga-cordless-straight-finish-nailer-kit-18-volt?currency=USD&variant=31799636066355"
+        },
+        {
+          "price": "$310.96",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "Kit",
+          "url": "https://www.maxwarehouse.com/products/metabo-hpt-15-ga-cordless-34-deg-angled-finish-nailer-kit-18-volt?currency=USD&variant=31799645831219"
+        },
+        {
+          "price": "$291.39",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "Kit",
+          "url": "https://www.maxwarehouse.com/products/metabo-hpt-pneumatic-16-ga-pro-finish-nailer-kit?currency=USD&variant=31799645798451"
+        },
+        {
+          "price": "$251.91",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "KitMilwaukee M12",
+          "url": "https://www.maxwarehouse.com/products/milwaukee-m12-fuel-surge-12-volt-cordless-brushless-hydraulic-impact-driver-kit-450-in-lb?currency=USD&variant=32223542214707"
+        },
+        {
+          "price": "$224.99",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "Kit",
+          "url": "https://www.maxwarehouse.com/products/skil-pwrcore-20-20-volt-cordless-brushed-4-tool-combo-kit?currency=USD&variant=32598740172851"
+        }
+      ],
+      "horizontal_overflow": false
+    }
+  ],
+  "limitations": [
+    "Merchant-reported stock and reference; not checkout or historical selling-price verification.",
+    "Mobile tasks are local form-control interactions, not physical tap/keystroke counts or a user study.",
+    "M4/M5 population claims and all-market superiority remain unproven."
+  ],
+  "workshop_probe": {
+    "disposition": "Not enabled; no eligible discounted equipment in the tested collection",
+    "discovery_count": "560",
+    "refresh": [
+      {
+        "source": "Taylor Toolworks",
+        "status": "complete",
+        "errors": 0,
+        "pages": 1,
+        "collections": [
+          {
+            "url": "https://taytools.com/workshop?ppg=65535&pn=1",
+            "pages": 1,
+            "products": 1,
+            "status": "complete"
+          }
+        ],
+        "product_pages": 17,
+        "parsed_products": 1,
+        "accepted_products": 0
+      }
+    ],
+    "requests": [
+      {
+        "url": "https://taytools.com/workshop?ppg=65535&pn=1",
+        "status": 200,
+        "at": "2026-11-03T03:35:06.828008+00:00",
+        "sha256": "f384293de57a18c8c2fdb7568283b44d938d873c62faab33bec574b72fd64317"
+      },
+      {
+        "url": "https://taytools.com/taytools-drill-press-sharpening-system-accessories",
+        "status": 200,
+        "at": "2026-11-03T03:35:09.999567+00:00",
+        "sha256": "0fe61de86cfe3cba74c6cef132d3343cb3a10e36b937a64e1eda48ec961ae5f2"
+      },
+      {
+        "url": "https://taytools.com/taytools-ez-sharp-drill-press-sharpening-system-v2",
+        "status": 200,
+        "at": "2026-11-03T03:35:12.509147+00:00",
+        "sha256": "bdfef8157aafb30c4dc4fac6b5b0bda6acec4ea042482c1b71ea9e616f192135"
+      },
+      {
+        "url": "https://taytools.com/taytools-xtract-electric-random-orbital-sander-adapters-for-festool-dust-extractors-and-shop-vac-extractors",
+        "status": 200,
+        "at": "2026-11-03T03:35:14.937450+00:00",
+        "sha256": "0a054a72a2cfaf7252a128ea4cfe392662b016bcc347bfcf0d7f194bd5fab17b"
+      },
+      {
+        "url": "https://taytools.com/3m-xtract-portable-dust-extractor-fleece-bags",
+        "status": 200,
+        "at": "2026-11-03T03:35:17.365291+00:00",
+        "sha256": "29377da835d3207d6b037b09d9edd6a561fb4644e69c41f9e36ed47bbffe1e65"
+      },
+      {
+        "url": "https://taytools.com/fastcap-fastcap-saw-hoods",
+        "status": 200,
+        "at": "2026-11-03T03:35:19.864330+00:00",
+        "sha256": "a307ad22c389b7f3f7b23996b2efb7975d04b0209835c3887b89c468a257f7a1"
+      },
+      {
+        "url": "https://taytools.com/benchdog-tools-csc-sys-fence-kit-990-imperial-precision-cross-cut-system-for-festool-sys-table-saw",
+        "status": 200,
+        "at": "2026-11-03T03:35:22.289657+00:00",
+        "sha256": "6dc924ccc2da20b1f2136ae1fbd9929da260f622adc9e38d7678e61d151efc5b"
+      },
+      {
+        "url": "https://taytools.com/robert-sorby-lrack6-6-lathe-tool-deluxe-wall-storage-tool-rack",
+        "status": 200,
+        "at": "2026-11-03T03:35:24.816558+00:00",
+        "sha256": "17127ea641b463e635c5eda5b9201d0e2154e0c344ce91ebb078c22a7b727df2"
+      },
+      {
+        "url": "https://taytools.com/robert-sorby-lrack6c-6-lathe-tool-deluxe-carousel-storage-tool-rack",
+        "status": 200,
+        "at": "2026-11-03T03:35:27.292859+00:00",
+        "sha256": "69d0e6faf97152b66af102a6a20a012ba3951cbc2b3b38244f7eee428090b0bf"
+      },
+      {
+        "url": "https://taytools.com/robert-sorby-lrack8c-8-lathe-tool-deluxe-carousel-storage-tool-rack",
+        "status": 200,
+        "at": "2026-11-03T03:35:29.717142+00:00",
+        "sha256": "0e897f829a4d8cb09b87c682718260f5b78725397cb0aec41242c2521a8bb12a"
+      },
+      {
+        "url": "https://taytools.com/robert-sorby-5-lathe-tool-deluxe-wall-storage-tool-rack",
+        "status": 200,
+        "at": "2026-11-03T03:35:32.174664+00:00",
+        "sha256": "88cfd3d4c745f792ece534fe2de0e5665746d588565828095a11e632b6a54fab"
+      },
+      {
+        "url": "https://taytools.com/magswitch-drill-press-vise-mount",
+        "status": 200,
+        "at": "2026-11-03T03:35:34.935812+00:00",
+        "sha256": "0f345fc03ca8c38cf4a85ad6c31aed856212238b7cf65b8fd642e531ef9b0ac4"
+      },
+      {
+        "url": "https://taytools.com/taytools-3-inch-drill-press-vise",
+        "status": 200,
+        "at": "2026-11-03T03:35:37.434709+00:00",
+        "sha256": "c3c51cdc1c259f6ad6715065b508b6b0fb53fe27a2bd2da8e7fd54eddeffe0ae"
+      },
+      {
+        "url": "https://taytools.com/taytools-2-1-2-inch-drill-press-vise",
+        "status": 200,
+        "at": "2026-11-03T03:35:39.908172+00:00",
+        "sha256": "bfe5ed28f46a9bccbbf6529005c2537eba40a59979705121c3f85673104d6ef7"
+      },
+      {
+        "url": "https://taytools.com/taytools-2-1-2-inch-dust-collection-shop-vac-cyclone-separator-lid",
+        "status": 200,
+        "at": "2026-11-03T03:35:42.847041+00:00",
+        "sha256": "c8eef0321892e5d55bea37b907f80e427e3d1b39e775c295c890e63f9bd0460d"
+      },
+      {
+        "url": "https://taytools.com/pinie-heavy-duty-worktop-portable-benchtop-workstation-with-vise",
+        "status": 200,
+        "at": "2026-11-03T03:35:45.789140+00:00",
+        "sha256": "dc08a1c41bdebefba9cc3a4006ad73656d6cd0f25f5f3d3b4885ea7fd7f5a655"
+      },
+      {
+        "url": "https://taytools.com/pinie-starter-worktop-portable-benchtop-workstation-with-vise",
+        "status": 200,
+        "at": "2026-11-03T03:35:48.251254+00:00",
+        "sha256": "ca148fa629309f8aa496ce72ddf67c785b5c992930aeb7bfc1e7d07a74acb3bf"
+      },
+      {
+        "url": "https://taytools.com/3m-xtract-portable-dust-extractor-64256-110-v-plug-type-b",
+        "status": 200,
+        "at": "2026-11-03T03:35:50.687706+00:00",
+        "sha256": "3f118da2bf728d79167e9e0088f9a17cea661e92e2dd2365e1d23c2df427fad8"
+      }
+    ]
+  },
+  "verification": {
+    "offline_tests_passed": 440,
+    "scoped_ruff": "pass",
+    "diff_check": "pass",
+    "all_metrics_gate": "expected failure: 4 / 250 strict leads"
+  }
+}

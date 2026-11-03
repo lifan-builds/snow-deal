@@ -112,6 +112,23 @@ Final verification: 84 tests passed; Python compilation and `git diff --check` p
 - Production snow LCP was behind Powder Deals and Ski Finder. Earlier stylesheet/font discovery reduced median LCP 792 → 596 ms in a paired local captured-content fixture; production gain remains unverified.
 - 405 offline tests, scoped Ruff, whitespace and package/preview snapshot-hash checks passed. Both local catalogs have two actual observed UTC dates, not 30-day history. No push or deployment. Current report: `docs/benchmarks/2026-11-03-competitive-continuation.md`; current publication scope: `docs/CATALOG-RELEASE-PLAN.md`.
 
+## Taylor Toolworks follow-up — 2026-11-03 UTC
+
+- Added a validated exact-SKU HTML/detail adapter using shared request pacing, classification, snapshot replacement and merchant auditing. Complete discovery: 1,917 listing IDs, 186 relevant canonical detail requests, 22 discounted products and one eligible grinder bundle. Accessories remain excluded.
+- Tools now has ten contributing retailers, 352 qualifying listings and 22 deep deals from five retailers. The Taylor offer matched a fresh merchant check; the combined top-ten plus seeded-twenty sample matched 30/30. These are endpoint facts, not checkout or historical-price proof.
+- Fixed invalid stock quantities passing the Taylor audit. All 440 offline tests and scoped lint pass; package and preview snapshot hashes agree. Local budget-plus-fit tasks show four visible form interactions, with physical gestures and competitor comparisons still unproven.
+- Separate follow-up branch leaves pending release 7798318 unchanged. No push or deployment. See `docs/tasks/taylor-source/IMPLEMENTATION.md` and `docs/benchmarks/2026-11-03-taylor-matrix.json`.
+
+## Fasteners Inc follow-up — 2026-11-03 UTC
+
+- Reused the existing Shopify ingestion after observing the current merchant's public backend and validating exact-variant redirects. Five collections completed across 19 JSON pages, with USD verified. Fasteners adds 57 qualifying listings and four deep deals; tools now totals 409 / 26 across 11 contributing retailers, six useful for deep deals.
+- Corrected a genuine jigsaw excluded by its blade-stroke specification and classified a trailing-word cordless planer as portable. Package/platform labels remain evidence-bound.
+- Fasteners' 30-offer merchant sample and the combined catalog's separate 30-offer sample matched. Seven browser checks matched current-storefront price/reference/stock and retained variants. Samples overlap and do not prove population or checkout accuracy.
+- All 445 offline tests, scoped lint and package/preview hash checks passed. Real history and old source timestamps remain intact. The all-metrics lead gate remains unmet. No push or deployment; 7798318's publication scope is unchanged. See `docs/tasks/fasteners-source/IMPLEMENTATION.md`.
+
+## Gravity Coalition follow-up (local only)
+
+Prepared a seventeenth cycling source after two complete currency-verified collection refreshes: 29 eligible listings, six deep discounts, and 29/29 merchant endpoint matches. Fixed manufacturer-name and frame-only classification defects with six regression cases; 451 offline tests pass. This follows unpublished Taylor/Fasteners work, is outside release 7798318, and remains unpushed. See `docs/tasks/gravity-source/IMPLEMENTATION.md`.
 ## Approved catalog release: CI parity fix (2026-11-03 UTC)
 
 - User approved publishing release `7798318`, merging after checks, and the three-catalog rollout in `docs/CATALOG-RELEASE-PLAN.md`. PR #4 initially failed lint because CI installed Ruff 0.17.3 while local validation used 0.15.11.
@@ -125,3 +142,15 @@ PR #4 merged after CI passed. First production tools refresh exposed Grizzly HTT
 ## Catalog audit retry recovery
 
 Run `41576984053` produced 30/30 matching tools audit samples and a valid eight-source package (327 eligible listings), then deployment failed because the existing GitHub Vercel token is invalid. Token creation through the authenticated CLI app is forbidden; requested user renewal of the existing repository secret and continuing deployment through normal local CLI authentication. Cycling matched 27/30 with three inconclusive after Colorado Cyclist HTTP 429; Pro Bike Supply passed this time. Reuse the shared bounded HTTP retry helper so audits honor Retry-After (up to 60 seconds) without changing endpoints or networks. HTTP 403 still stops immediately; exhausted retries remain inconclusive and block publication.
+
+## Source follow-up integration — 2026-11-03 UTC
+
+Merged production recovery through `0530cad` into the unpublished Taylor/Fasteners/Gravity branch. Kept Grizzly excluded, preserved the new feeds, and applied the shared bounded audit retries to Taylor. Resolved import/documentation conflicts without losing either task history. All 454 offline tests, Ruff 0.17.3 CI checks plus changed HTTP/parser tests, JavaScript syntax and whitespace checks pass. This is local integration, not approval or evidence of production admission for the three additional feeds.
+
+## Approved rollout verified — 2026-11-03 UTC
+
+Repaired the Gmail OAuth rejection, completed the scoped verification-code lookup and updated the GitHub Vercel secret. Catalog run `41580573050` passed both 30/30 merchant audits, deployment and exact production hash checks. Live smoke checks passed at 05:00 UTC. Snow run `41576089057` also succeeded. Current counts, hashes, source limitations and unpublished follow-up scope are recorded in `docs/CATALOG-RELEASE-RECEIPT.md`; all-metric competitive leadership remains unproven.
+
+## Source and quality admission — 2026-11-03 UTC
+
+Fresh combined refreshes completed for 17 cycling and ten tools sources; both merchant audits matched 30/30. Local eligible/deep/useful-retailer counts are cycling 1,170/93/12 and tools 607/24/5. Ski Essentials now completes all six collections after a narrowly scoped newsletter dismissal (1,853 unique products, 899 discounts). Model/category regressions, bike accessory taxonomy, invalid frame dimensions and non-manufacturer vendor labels were corrected. Targeted rechecks preserved the eligible audited offer maps. Desktop/mobile inspection caught and fixed clipped square images. Benchmark comparisons now reject local layout and out-of-window speed evidence. All 489 tests and scoped checks pass. See `docs/SOURCE-QUALITY-RELEASE-PLAN.md` for the concrete unpublished release and retained admission evidence.

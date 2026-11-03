@@ -1,0 +1,4584 @@
+{
+  "date": "2026-11-03",
+  "scope": "Unpublished follow-up after Taylor dbea14b; pending release 7798318 unchanged",
+  "candidate": {
+    "catalog": "tools",
+    "name": "Fasteners Inc",
+    "domain": "fastenersinc.myshopify.com",
+    "scrape_urls": [
+      "https://fastenersinc.myshopify.com/collections/power-tools?currency=USD",
+      "https://fastenersinc.myshopify.com/collections/power-tools-1?currency=USD",
+      "https://fastenersinc.myshopify.com/collections/machine-tools?currency=USD",
+      "https://fastenersinc.myshopify.com/collections/power-tool-closeouts?currency=USD",
+      "https://fastenersinc.myshopify.com/collections/all-closeouts?currency=USD"
+    ]
+  },
+  "collection_discovery": {
+    "count": 905,
+    "endpoint": "https://fastenersinc.myshopify.com/collections.json?limit=250",
+    "pages": 4
+  },
+  "initial_probe": [
+    {
+      "candidate": {
+        "catalog": "tools",
+        "name": "Fasteners Inc",
+        "domain": "fastenersinc.myshopify.com",
+        "scrape_urls": [
+          "https://fastenersinc.myshopify.com/collections/all-closeouts?currency=USD",
+          "https://fastenersinc.myshopify.com/collections/closeout-liquidation-sale?currency=USD",
+          "https://fastenersinc.myshopify.com/collections/dewalt-power-tools?currency=USD"
+        ]
+      },
+      "checked_at": "2026-11-03T03:38:46.794071+00:00",
+      "snapshot": "00-tools.db",
+      "refresh": {
+        "source": "Fasteners Inc",
+        "status": "complete",
+        "errors": 0,
+        "pages": 4,
+        "collections": [
+          {
+            "url": "https://fastenersinc.myshopify.com/collections/all-closeouts?currency=USD",
+            "pages": 1,
+            "products": 11,
+            "status": "complete",
+            "observed_currency": "USD"
+          },
+          {
+            "url": "https://fastenersinc.myshopify.com/collections/closeout-liquidation-sale?currency=USD",
+            "pages": 1,
+            "products": 11,
+            "status": "complete",
+            "observed_currency": "USD"
+          },
+          {
+            "url": "https://fastenersinc.myshopify.com/collections/dewalt-power-tools?currency=USD",
+            "pages": 2,
+            "products": 70,
+            "status": "complete",
+            "observed_currency": "USD"
+          }
+        ],
+        "parsed_products": 92,
+        "accepted_products": 40
+      },
+      "eligible_listings": 30,
+      "deep_listings": 3,
+      "disposition": "needs-review"
+    }
+  ],
+  "broader_probe_before_classifier_fix": [
+    {
+      "candidate": {
+        "catalog": "tools",
+        "name": "Fasteners Inc",
+        "domain": "fastenersinc.myshopify.com",
+        "scrape_urls": [
+          "https://fastenersinc.myshopify.com/collections/power-tools?currency=USD",
+          "https://fastenersinc.myshopify.com/collections/power-tools-1?currency=USD",
+          "https://fastenersinc.myshopify.com/collections/machine-tools?currency=USD",
+          "https://fastenersinc.myshopify.com/collections/power-tool-closeouts?currency=USD",
+          "https://fastenersinc.myshopify.com/collections/all-closeouts?currency=USD"
+        ]
+      },
+      "checked_at": "2026-11-03T03:41:11.686729+00:00",
+      "snapshot": "00-tools.db",
+      "refresh": {
+        "source": "Fasteners Inc",
+        "status": "complete",
+        "errors": 0,
+        "pages": 19,
+        "collections": [
+          {
+            "url": "https://fastenersinc.myshopify.com/collections/power-tools?currency=USD",
+            "pages": 8,
+            "products": 99,
+            "status": "complete",
+            "observed_currency": "USD"
+          },
+          {
+            "url": "https://fastenersinc.myshopify.com/collections/power-tools-1?currency=USD",
+            "pages": 8,
+            "products": 75,
+            "status": "complete",
+            "observed_currency": "USD"
+          },
+          {
+            "url": "https://fastenersinc.myshopify.com/collections/machine-tools?currency=USD",
+            "pages": 1,
+            "products": 2,
+            "status": "complete",
+            "observed_currency": "USD"
+          },
+          {
+            "url": "https://fastenersinc.myshopify.com/collections/power-tool-closeouts?currency=USD",
+            "pages": 1,
+            "products": 2,
+            "status": "complete",
+            "observed_currency": "USD"
+          },
+          {
+            "url": "https://fastenersinc.myshopify.com/collections/all-closeouts?currency=USD",
+            "pages": 1,
+            "products": 11,
+            "status": "complete",
+            "observed_currency": "USD"
+          }
+        ],
+        "parsed_products": 189,
+        "accepted_products": 74
+      },
+      "eligible_listings": 56,
+      "deep_listings": 3,
+      "disposition": "needs-review"
+    }
+  ],
+  "final_refresh": [
+    {
+      "source": "Fasteners Inc",
+      "status": "complete",
+      "errors": 0,
+      "pages": 19,
+      "collections": [
+        {
+          "url": "https://fastenersinc.myshopify.com/collections/power-tools?currency=USD",
+          "pages": 8,
+          "products": 99,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://fastenersinc.myshopify.com/collections/power-tools-1?currency=USD",
+          "pages": 8,
+          "products": 75,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://fastenersinc.myshopify.com/collections/machine-tools?currency=USD",
+          "pages": 1,
+          "products": 2,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://fastenersinc.myshopify.com/collections/power-tool-closeouts?currency=USD",
+          "pages": 1,
+          "products": 2,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://fastenersinc.myshopify.com/collections/all-closeouts?currency=USD",
+          "pages": 1,
+          "products": 11,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "parsed_products": 189,
+      "accepted_products": 75
+    }
+  ],
+  "requests": [
+    {
+      "url": "https://fastenersinc.myshopify.com/collections/power-tools?currency=USD",
+      "status": 200,
+      "at": "2026-11-03T03:41:35.206100+00:00",
+      "sha256": "7d24698e51297f46d2b9a1f0a705e51af5d01378db23ad47b9104e2c9340c2ce"
+    },
+    {
+      "url": "https://fastenersinc.myshopify.com/collections/power-tools/products.json?limit=250&page=1&currency=USD",
+      "status": 200,
+      "at": "2026-11-03T03:41:37.653797+00:00",
+      "sha256": "bafb91bb620b58472de908dc33e5e5f4f2c950e28d4940eeb99f978920dfc85e"
+    },
+    {
+      "url": "https://fastenersinc.myshopify.com/collections/power-tools/products.json?limit=250&page=2&currency=USD",
+      "status": 200,
+      "at": "2026-11-03T03:41:42.153859+00:00",
+      "sha256": "7445eba45808c4434ad53f478f57d5ba070fa7fce9cda3e158fd9ccd6259437e"
+    },
+    {
+      "url": "https://fastenersinc.myshopify.com/collections/power-tools/products.json?limit=250&page=3&currency=USD",
+      "status": 200,
+      "at": "2026-11-03T03:41:46.504628+00:00",
+      "sha256": "cba8b7518f16f36f0d6ef1436a2c67f0b359c5e84de29301468a2dd75b888a8b"
+    },
+    {
+      "url": "https://fastenersinc.myshopify.com/collections/power-tools/products.json?limit=250&page=4&currency=USD",
+      "status": 200,
+      "at": "2026-11-03T03:41:50.781242+00:00",
+      "sha256": "6e06b929fa804eb4bf92c79501eefb2ad4151eb642289dc4379abacdb2af3b40"
+    },
+    {
+      "url": "https://fastenersinc.myshopify.com/collections/power-tools/products.json?limit=250&page=5&currency=USD",
+      "status": 200,
+      "at": "2026-11-03T03:41:55.060478+00:00",
+      "sha256": "1387df113e80ad39bd882263352e245d5dcf3d6633eb2ff6b94c8ddd3de229fc"
+    },
+    {
+      "url": "https://fastenersinc.myshopify.com/collections/power-tools/products.json?limit=250&page=6&currency=USD",
+      "status": 200,
+      "at": "2026-11-03T03:41:59.382164+00:00",
+      "sha256": "b56f7da3442abdb67b3c15a4c7349075fe9089379c848d7cd473677f0a195b05"
+    },
+    {
+      "url": "https://fastenersinc.myshopify.com/collections/power-tools/products.json?limit=250&page=7&currency=USD",
+      "status": 200,
+      "at": "2026-11-03T03:42:03.792977+00:00",
+      "sha256": "c746fd283a04254cee6ad85f1b14a40d3ebb66a0d2050f1589b6e6a51c39abd0"
+    },
+    {
+      "url": "https://fastenersinc.myshopify.com/collections/power-tools/products.json?limit=250&page=8&currency=USD",
+      "status": 200,
+      "at": "2026-11-03T03:42:07.980063+00:00",
+      "sha256": "5980336389a0bf1834a3b69afd961c32231b30deb9931587617173268f8431c7"
+    },
+    {
+      "url": "https://fastenersinc.myshopify.com/collections/power-tools-1?currency=USD",
+      "status": 200,
+      "at": "2026-11-03T03:42:10.231939+00:00",
+      "sha256": "86582221e423541dcbdd19dfde80f8f6ad19d20b760f177c32a794275efe2b87"
+    },
+    {
+      "url": "https://fastenersinc.myshopify.com/collections/power-tools-1/products.json?limit=250&page=1&currency=USD",
+      "status": 200,
+      "at": "2026-11-03T03:42:12.740417+00:00",
+      "sha256": "96797cf60ef248f77bf459c69c341134de8497fa04502bf222883ccec7243def"
+    },
+    {
+      "url": "https://fastenersinc.myshopify.com/collections/power-tools-1/products.json?limit=250&page=2&currency=USD",
+      "status": 200,
+      "at": "2026-11-03T03:42:17.096538+00:00",
+      "sha256": "4b1ec25745e7f2043c117e1b89aa7e74ed89f2d49f1e8e9de6d45ab1d03fd303"
+    },
+    {
+      "url": "https://fastenersinc.myshopify.com/collections/power-tools-1/products.json?limit=250&page=3&currency=USD",
+      "status": 200,
+      "at": "2026-11-03T03:42:21.359884+00:00",
+      "sha256": "5fa1d7582dbedd3645d5feb25479d9d247323b8bf33b0f916362a4f148bf30b9"
+    },
+    {
+      "url": "https://fastenersinc.myshopify.com/collections/power-tools-1/products.json?limit=250&page=4&currency=USD",
+      "status": 200,
+      "at": "2026-11-03T03:42:25.672217+00:00",
+      "sha256": "024dd7192ffd00b62edc8ba6100bfe8dbe60451d7f5c0bc1bbe9a37f8fd32aa9"
+    },
+    {
+      "url": "https://fastenersinc.myshopify.com/collections/power-tools-1/products.json?limit=250&page=5&currency=USD",
+      "status": 200,
+      "at": "2026-11-03T03:42:29.999063+00:00",
+      "sha256": "5d0962e5ad764653b0442f8a9d0c3a52a3974e0274804f138da929cadd0fbfe5"
+    },
+    {
+      "url": "https://fastenersinc.myshopify.com/collections/power-tools-1/products.json?limit=250&page=6&currency=USD",
+      "status": 200,
+      "at": "2026-11-03T03:42:34.359665+00:00",
+      "sha256": "7c0d7cb2e3a30ee66251a8a4341baf8856d25facb442b5f5c1e1929b0400b242"
+    },
+    {
+      "url": "https://fastenersinc.myshopify.com/collections/power-tools-1/products.json?limit=250&page=7&currency=USD",
+      "status": 200,
+      "at": "2026-11-03T03:42:38.648888+00:00",
+      "sha256": "69bea8c8da3771796153a6223c84190c90a21cc11cbb547b6fc9f9456fc69329"
+    },
+    {
+      "url": "https://fastenersinc.myshopify.com/collections/power-tools-1/products.json?limit=250&page=8&currency=USD",
+      "status": 200,
+      "at": "2026-11-03T03:42:42.821142+00:00",
+      "sha256": "063808e119b8d42fa4be3554840f2863cc4e7162aa114ac45eb1d01c60ba06c3"
+    },
+    {
+      "url": "https://fastenersinc.myshopify.com/collections/machine-tools?currency=USD",
+      "status": 200,
+      "at": "2026-11-03T03:42:45.200602+00:00",
+      "sha256": "e6423800cb8933e80cedc11ecf05f58b6f89eeaad53dfb3dd1b7c5773a53fff5"
+    },
+    {
+      "url": "https://fastenersinc.myshopify.com/collections/machine-tools/products.json?limit=250&page=1&currency=USD",
+      "status": 200,
+      "at": "2026-11-03T03:42:47.479570+00:00",
+      "sha256": "0ec720d29dba758b2f0a4a684b4355308f4b1479ed5cbb87720674397489ef20"
+    },
+    {
+      "url": "https://fastenersinc.myshopify.com/collections/power-tool-closeouts?currency=USD",
+      "status": 200,
+      "at": "2026-11-03T03:42:49.618453+00:00",
+      "sha256": "e03bd2a8bd4d2d66ac0fde4fcfdc77b1762a80144b1871b29eeb51b3bd107a1c"
+    },
+    {
+      "url": "https://fastenersinc.myshopify.com/collections/power-tool-closeouts/products.json?limit=250&page=1&currency=USD",
+      "status": 200,
+      "at": "2026-11-03T03:42:51.732070+00:00",
+      "sha256": "7b5b7b8dd6409e615ac1ce7693d9e77db6ae7e3d773b9582807915647ab69b7e"
+    },
+    {
+      "url": "https://fastenersinc.myshopify.com/collections/all-closeouts?currency=USD",
+      "status": 200,
+      "at": "2026-11-03T03:42:53.893321+00:00",
+      "sha256": "483ddb9b8ecd4d94e6577b02f91771c29924515b649b42cb75210b28a6c093e2"
+    },
+    {
+      "url": "https://fastenersinc.myshopify.com/collections/all-closeouts/products.json?limit=250&page=1&currency=USD",
+      "status": 200,
+      "at": "2026-11-03T03:42:56.087526+00:00",
+      "sha256": "d5f8307299c63f3779b71a7edc3222ed5828d36145eb4d9dc2f4f5e1c1f892a2"
+    }
+  ],
+  "classification_review": [
+    {
+      "name": "DEWALT 20V MAX XR Brushless Cordless Router (Tool Only)",
+      "type": "Routers",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT, DCS334B, Cordless Jig Saw, 20V, Brushless, 1 in Blade Stroke Length, 4-Position Orbital Action",
+      "type": "Jig Saws",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT, DCF913B, Impact Wrench, 3/8 in square, 250 ft-lbs max torque, Cordless, Brushless",
+      "type": "Impact Wrenches",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT, DCF911B, Impact Wrench, 20V, 1/2 in square, Hog ring anvil, 250 ft-lbs torque, Cordless",
+      "type": "Impact Wrenches",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DeWalt DCF870B 20V MAX XR Brushless Cordless 1/4 in. Quiet Hydraulic Impact Driver (Tool Only)",
+      "type": "Drills",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT, DCP580B, Planer, Brushless Motor, 20 V, 3.25 in Cutting Width, 15000 RPM, Cordless",
+      "type": "Power Planers",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT FLEXVOLT 60V MAX 7-1/4-In. Cordless Worm Drive Style Saw (Tool Only)",
+      "type": "Circular Saws",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT, D25481K, Rotary Hammer Drill, SDS-Max, 1-9/16 in, 10.5 A, 540 RPM",
+      "type": "Rotary Hammers",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT, DCH133B, Rotary Hammer Drill, 20V, 1 in, Brushless, 2.6 J Impact Energy, Cordless, SDS-Plus",
+      "type": "Rotary Hammers",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT DCG420XB ATOMIC 20V MAX Extended Die Grinder Tool Only",
+      "type": "Die Grinders",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DeWalt DCG432XB ATOMIC 20V MAX 4 Inch Extended Cut-Off Tool (Bare Tool)",
+      "type": "Cut-Off Saw",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT 20V MAX XR Oscillating Multi-Tool",
+      "type": "Oscillating Multi-Tools",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT, DCK225D2, Brushless Drill/Driver and Impact Driver Combo Kit, 20V, 1700 in-lbs Torque, 2 Ah Battery, Compact Design",
+      "type": "Combo Kits",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DeWalt DCW230B 20V MAX XR 6-in Random Orbit Sander (Tool Only)",
+      "type": "Sander",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT, DCG418B, Angle Grinder, 60V MAX, Brushless, 6 in Wheel Diameter, 9000 RPM, Cordless",
+      "type": "Angle Grinders",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT, DCG440B, Angle Grinder, 60V MAX, 7 in, Brushless, 6500 RPM, KICKBACK BRAKE",
+      "type": "Angle Grinders",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT, DCS389B, Reciprocating Saw, 60 V, Brushless, 3000 spm, 1-1/8 in stroke length, Cordless",
+      "type": "Reciprocating Saws",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT, DCG460B, Angle Grinder, 60V MAX, 7 in; 9000 RPM, Brushless Motor, Cordless",
+      "type": "Angle Grinders",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT, DCW220B, Belt Sander, 20V MAX, 3 in x 21 in, Cordless, Brushless, Variable Speed, 650-1050 OPM",
+      "type": "Sanders",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT 20V MAX XR 12-in. Double Bevel Sliding Miter Saw (Tool Only)",
+      "type": "Saws",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT, DCF510B, Ratchet Wrench, Cordless, 3/8 in & 1/2 in Drive, 900 in-lbs Torque, Brushless Motor, LED Light",
+      "type": "Ratcheting Wrenches",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT, DCF892B, Impact Wrench, 20V, 1/2 in, 600 ft-lbs Torque, Brushless, Cordless",
+      "type": "Impact Wrenches",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT, DCN681B, Narrow Crown Stapler, 18 GA, 20 V, Brushless Motor, Cordless, 1/4 in Crown Width, 1/2 in to 1-1/2 in Staple Length",
+      "type": "Air Staplers",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT 20V MAX ATOMIC Multi-Head Drill/Driver (Tool Only)",
+      "type": "Drills",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT, DCS692B, Cut-Off Saw, 60 V, Brushless, 9 in; 3-1/4 in cut depth, Cordless, 6600 RPM",
+      "type": "Jig Saws",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT 20V MAX XR 10-in. Double Bevel Fixed Miter Saw (Tool Only)",
+      "type": "Miter Saws",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "Makita XLT01Z 18-Volt 1/4-Inch LXT Lithium-Ion Angle Impact Driver - Bare Tool",
+      "type": "Drills",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "Makita XAG11Z 18V LXT\u00ae Lithium\u2011Ion Brushless Cordless 4\u20111/2\u201d / 5\" Paddle Switch Cut\u2011Off/Angle Grinder, with Electric Brake, Tool Only",
+      "type": "Grinder",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT, DCW620B, Plunge Router, 20V MAX; 2-1/4 Peak HP, Cordless, Variable Speed 11,000-23,000 RPM",
+      "type": "Oscillating Multi-Tools",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DeWalt DCG410VSB 20V MAX XR Brushless Cordless 4-1/2 in. - 5 in. Variable Speed Paddle Switch Grinder (Tool Only)",
+      "type": "Grinder",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT, DCF900B, Impact Wrench, 1/2 in Drive, 20V MAX Lithium Ion, 1030 ft-lbs Max Torque, 4 Mode Speed Settings",
+      "type": "Impact Wrenches",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT, DCF921B, Impact Wrench, 1/2 in Drive, 450 ft-lbs Torque, Cordless, 20V MAX Lithium Ion",
+      "type": "Impact Wrenches",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT, DCF923B, Impact Wrench, 20V MAX Lithium Ion, 3/8 in, 1800 lb-in, Cordless",
+      "type": "Impact Wrenches",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT, DCF961B, Impact Wrench, 1/2 in, 4 Speed, 1200 ft-lbs Max Torque, Cordless, 20V MAX Lithium Ion",
+      "type": "Impact Wrenches",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT DCD446B 20V MAX XR Brushless Cordless 1/2 in. Compact Stud Joist Drill (Tool Only)",
+      "type": "Drills",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT DCD447B 20V MAX* XR Brushless Cordless 7/16 in. Quick Change Compact Stud Joist Drill (Tool Only)",
+      "type": "Drills",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "Makita XAG20Z 18V LXT\u00ae Lithium-Ion Brushless Cordless 4-1/2\" / 5\" Paddle Switch Cut-Off/Angle Grinder, with Electric Brake, Tool Only",
+      "type": "Grinder",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "FLEX FX2481-2J 9 in Handheld Cut-Off Saw Stacked Lithium Kit",
+      "type": "Cut-Off Saws",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "Makita XTR01Z 18V LXT Lithium-Ion Brushless Cordless Compact Router, Tool Only",
+      "type": "Routers",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "Makita XRJ05Z 18V Brushless Cordless Recipro Saw , Tool Only",
+      "type": "Saws",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT, DCS383B, Circular Saw, 20V, 7-1/4 in, Brushless Motor, Cordless, Tool Connect+ Technology",
+      "type": "Circular Saws",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT, DCN920B, Framing Nailer, 20 V, Cordless, Lightweight, 15.5 in Length",
+      "type": "Air Nailers",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "Makita XSH03Z 18V LXT\u00ae Lithium\u2011Ion Brushless Cordless 6\u20111/2\" Circular Saw, Tool Only",
+      "type": "Saws",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "Bosch, RH328VC, Rotary Hammer, 2.6 Ft.-Lbs. Impact Energy, 8 A, 1.125 in Cutting Capacity, SDS-plus",
+      "type": "Rotary Hammers",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DeWalt DCF964B 20V MAX XR Brushless Cordless 3/4 In. High Torque Impact Wrench with Hog Ring Anvil (Tool Only)",
+      "type": "Drills",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "Makita XSR01PT 336V (18V X2) LXT\u00ae Brushless Rear Handle 7\u20111/4\" Circular Saw Kit (5.0Ah)",
+      "type": "Saws",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT, DCN45RNB, Cordless Coil Roofing Nailer, 20V, 15 Degree, Brushless Motor, 3/4 in to 1-3/4 in Nails, Tool-Free Depth Adjustment",
+      "type": "Air Nailers",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT, DCN650B, Cordless Angled Finish Nailer, 15 gauge, 2-1/2 in max length, Brushless Motor, 20V MAX Lithium-Ion",
+      "type": "Air Nailers",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "Makita XBP04Z 18V LXT Lithium Ion Compact Brushless Cordless Band Saw, Tool Only",
+      "type": "Saws",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT, DWE43244N, Angle Grinder, 6 in Wheel Diameter; 13 A; Brushless Motor; 9000 RPM",
+      "type": "Angle Grinders",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT, D25911K, Rotary Hammer Drill, Brushless, SDS-Max, 27 Joules, Corded, Kit",
+      "type": "Rotary Hammers",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "Bosch 1 Inch SDS-Plus Bulldog Extreme Rotary Hammer",
+      "type": "Rotary Hammers",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "Makita XWT08Z LXT XWT08Z 18V LXT Lithium\u2011Ion Brushless Cordless High\u2011Torque 1/2\" Drive Impact Wrench, Tool Only",
+      "type": "Drills",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "DEWALT 20V MAX ATOMIC Brushless Cordless 3/8-in. Extended Reach Ratchet (Tool Only)",
+      "type": "Rachet Tool",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "Makita XBP02Z 18V LXT Lithium-Ion Cordless Portable Band Saw, Tool Only",
+      "type": "Saws",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "Makita XWT15Z 18V LXT\u00ae Lithium\u2011Ion Brushless Cordless 4\u2011Speed 1/2\" Sq. Drive Impact Wrench w/ Detent Anvil, Tool Only",
+      "type": "Drills",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    },
+    {
+      "name": "Makita XSC04Z 18V LXT\u00ae Lithium\u2011Ion Brushless Cordless 5\u20117/8\" Metal Cutting Saw, with Electric Brake and Chip Collector, Tool Only",
+      "type": "Saws",
+      "variant_count": 1,
+      "restriction_tags": [],
+      "restriction_text": []
+    }
+  ],
+  "browser_checks": [
+    {
+      "at": "2026-11-03T03:39:51.834425+00:00",
+      "requested": "https://fastenersinc.myshopify.com/products/dcw600b-20v-max-compact-router-dewalt?currency=USD&variant=31231201247319",
+      "destination": "https://fastenersinc.net/product/dcw600b-20v-max-compact-router-dewalt?currency=USD&variant=31231201247319",
+      "heading": [
+        "DEWALT 20V MAX XR Brushless Cordless Router (Tool Only)"
+      ],
+      "price": 119.0,
+      "reference": 249.0,
+      "variant": "31231201247319",
+      "single_variant_product": true,
+      "price_reference_stock_match": true,
+      "page_claims_bogo_eligibility": true,
+      "scope": "Read-only current storefront; numeric per-item price matched, no cart/checkout action or free-item savings claim"
+    },
+    {
+      "at": "2026-11-03T03:39:57.786468+00:00",
+      "requested": "https://fastenersinc.myshopify.com/products/dewalt-dcf913b-20v-max-3-8-in-cordless-impact-wrench-with-hog-ring-anvil-tool-only?currency=USD&variant=41178623606975",
+      "destination": "https://fastenersinc.net/product/dewalt-dcf913b-20v-max-3-8-in-cordless-impact-wrench-with-hog-ring-anvil-tool-only?currency=USD&variant=41178623606975",
+      "heading": [
+        "DEWALT DCF913B Impact Wrench 3/8 in square 250 ft-lbs max torque Cordless Brushless"
+      ],
+      "price": 119.0,
+      "reference": 219.0,
+      "variant": "41178623606975",
+      "single_variant_product": true,
+      "price_reference_stock_match": true,
+      "page_claims_bogo_eligibility": true,
+      "scope": "Read-only current storefront; numeric per-item price matched, no cart/checkout action or free-item savings claim"
+    },
+    {
+      "at": "2026-11-03T03:40:04.212867+00:00",
+      "requested": "https://fastenersinc.myshopify.com/products/dewalt-dcf911b-20v-max-1-2-impact-wrench-with-hog-ring-anvil-tool-only?currency=USD&variant=41178623279295",
+      "destination": "https://fastenersinc.net/product/dewalt-dcf911b-20v-max-1-2-impact-wrench-with-hog-ring-anvil-tool-only?currency=USD&variant=41178623279295",
+      "heading": [
+        "DEWALT DCF911B Impact Wrench 20V 1/2 in square Hog ring anvil 250 ft-lbs torque Cordless"
+      ],
+      "price": 129.0,
+      "reference": 219.0,
+      "variant": "41178623279295",
+      "single_variant_product": true,
+      "price_reference_stock_match": true,
+      "page_claims_bogo_eligibility": true,
+      "scope": "Read-only current storefront; numeric per-item price matched, no cart/checkout action or free-item savings claim"
+    },
+    {
+      "at": "2026-11-03T03:40:10.153496+00:00",
+      "requested": "https://fastenersinc.myshopify.com/products/dewalt-dck225d2-atomic-20v-max-brushles-compact-drill-driver-and-impact-driver-combo-kit?currency=USD&variant=43846244827327",
+      "destination": "https://fastenersinc.net/product/dewalt-dck225d2-atomic-20v-max-brushles-compact-drill-driver-and-impact-driver-combo-kit?currency=USD&variant=43846244827327",
+      "heading": [
+        "DEWALT DCK225D2 Brushless Drill/Driver and Impact Driver Combo Kit 20V 1700 in-lbs Torque 2 Ah Battery Compact Design"
+      ],
+      "price": 179.0,
+      "reference": 249.0,
+      "variant": "43846244827327",
+      "single_variant_product": true,
+      "price_reference_stock_match": true,
+      "page_claims_bogo_eligibility": false,
+      "scope": "Read-only current storefront; numeric per-item price matched, no cart/checkout action or free-item savings claim"
+    },
+    {
+      "at": "2026-11-03T03:44:05.743726+00:00",
+      "requested": "https://fastenersinc.myshopify.com/products/dcs334b-20v-max-xr-cordless-jig-saw-tool-only-dewalt?currency=USD&variant=31231188205655",
+      "destination": "https://fastenersinc.net/product/dcs334b-20v-max-xr-cordless-jig-saw-tool-only-dewalt?currency=USD&variant=31231188205655",
+      "heading": [
+        "DEWALT DCS334B Cordless Jig Saw 20V Brushless 1 in Blade Stroke Length 4-Position Orbital Action"
+      ],
+      "price": 119.0,
+      "reference": 239.0,
+      "variant": "31231188205655",
+      "single_variant_product": true,
+      "price_reference_stock_match": true,
+      "page_claims_bogo_eligibility": true,
+      "scope": "Read-only current storefront; numeric per-item price matched, no cart/checkout action or free-item savings claim"
+    },
+    {
+      "at": "2026-11-03T03:44:11.706473+00:00",
+      "requested": "https://fastenersinc.myshopify.com/products/makita-xlt01z-18-volt-1-4-inch-lxt-lithium-ion-angle-impact-driver-bare-tool?currency=USD&variant=14356314292336",
+      "destination": "https://fastenersinc.net/product/makita-xlt01z-18-volt-1-4-inch-lxt-lithium-ion-angle-impact-driver-bare-tool?currency=USD&variant=14356314292336",
+      "heading": [
+        "Makita XLT01Z 18-Volt 1/4-Inch LXT Lithium-Ion Angle Impact Driver - Bare Tool"
+      ],
+      "price": 199.0,
+      "reference": 244.0,
+      "variant": "14356314292336",
+      "single_variant_product": true,
+      "price_reference_stock_match": true,
+      "page_claims_bogo_eligibility": false,
+      "scope": "Read-only current storefront; numeric per-item price matched, no cart/checkout action or free-item savings claim"
+    },
+    {
+      "at": "2026-11-03T03:44:17.637166+00:00",
+      "requested": "https://fastenersinc.myshopify.com/products/flex-fx2481-2j-9-in-handheld-cut-off-saw-stacked-lithium-kit?currency=USD&variant=67540582138047",
+      "destination": "https://fastenersinc.net/product/flex-fx2481-2j-9-in-handheld-cut-off-saw-stacked-lithium-kit?currency=USD&variant=67540582138047",
+      "heading": [
+        "FLEX FX2481-2J 9 in Handheld Cut-Off Saw Stacked Lithium Kit"
+      ],
+      "price": 849.0,
+      "reference": 989.0,
+      "variant": "67540582138047",
+      "single_variant_product": true,
+      "price_reference_stock_match": true,
+      "page_claims_bogo_eligibility": false,
+      "scope": "Read-only current storefront; numeric per-item price matched, no cart/checkout action or free-item savings claim"
+    }
+  ],
+  "source_audit": {
+    "catalog": "tools",
+    "date": "2026-11-03T03:44:35.441412+00:00",
+    "seed": 20261105,
+    "population": 57,
+    "method": "top10-plus-seeded20-merchant-product-v1",
+    "sample_size": 30,
+    "match": 30,
+    "mismatch": 0,
+    "inconclusive": 0,
+    "verified_match_percent": 100.0,
+    "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+    "results": [
+      {
+        "name": "DEWALT 20V MAX XR Brushless Cordless Router (Tool Only)",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "31231201247319",
+          "url": "https://fastenersinc.myshopify.com/products/dcw600b-20v-max-compact-router-dewalt?currency=USD&variant=31231201247319",
+          "current_price": 119.0,
+          "original_price": 249.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/1c82af8b8d6d0cf2f34b8eea29e1d28f87bd16c4-large.png?v=1790078004",
+          "reference_basis": "retailer_compare_at",
+          "discount": 52.2,
+          "savings": 130.0
+        },
+        "checked_at": "2026-11-03T03:43:29.243440+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/dcw600b-20v-max-compact-router-dewalt.js?currency=USD",
+        "response_sha256": "898903320f587fde506a5ec1fe82b4cf047a5037f0749b86255b6c8a38f4eeb0",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DEWALT 20V MAX XR Brushless Cordless Router (Tool Only)",
+          "variant": "31231201247319",
+          "sku": "DEW-DCW600B",
+          "price_minor": 11900,
+          "reference_minor": 24900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "DEWALT, DCS334B, Cordless Jig Saw, 20V, Brushless, 1 in Blade Stroke Length, 4-Position Orbital Action",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "31231188205655",
+          "url": "https://fastenersinc.myshopify.com/products/dcs334b-20v-max-xr-cordless-jig-saw-tool-only-dewalt?currency=USD&variant=31231188205655",
+          "current_price": 119.0,
+          "original_price": 239.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/473893353f01ef5298d20ee57c71d49d0d5d654e-large_2e145551-785e-4a6c-a184-39ece194d402.png?v=1773431552",
+          "reference_basis": "retailer_compare_at",
+          "discount": 50.2,
+          "savings": 120.0
+        },
+        "checked_at": "2026-11-03T03:43:33.618606+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/dcs334b-20v-max-xr-cordless-jig-saw-tool-only-dewalt.js?currency=USD",
+        "response_sha256": "41c2584cc85c27be814ea5282e9c97911bba22b4ad0472a7219836ae4701fdac",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DEWALT, DCS334B, Cordless Jig Saw, 20V, Brushless, 1 in Blade Stroke Length, 4-Position Orbital Action",
+          "variant": "31231188205655",
+          "sku": "DEW-DCS334B",
+          "price_minor": 11900,
+          "reference_minor": 23900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "DEWALT, DCF913B, Impact Wrench, 3/8 in square, 250 ft-lbs max torque, Cordless, Brushless",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "41178623606975",
+          "url": "https://fastenersinc.myshopify.com/products/dewalt-dcf913b-20v-max-3-8-in-cordless-impact-wrench-with-hog-ring-anvil-tool-only?currency=USD&variant=41178623606975",
+          "current_price": 119.0,
+          "original_price": 219.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/d08d272bd9b286c70339344ed417d7939254d7e0-large.png?v=1772762311",
+          "reference_basis": "retailer_compare_at",
+          "discount": 45.7,
+          "savings": 100.0
+        },
+        "checked_at": "2026-11-03T03:43:35.753238+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/dewalt-dcf913b-20v-max-3-8-in-cordless-impact-wrench-with-hog-ring-anvil-tool-only.js?currency=USD",
+        "response_sha256": "d99200940e7277e5daa46afcc9804aa26b2b908ead1881b9eaf050dfd1fdc3ff",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DEWALT, DCF913B, Impact Wrench, 3/8 in square, 250 ft-lbs max torque, Cordless, Brushless",
+          "variant": "41178623606975",
+          "sku": "DEW-DCF913B",
+          "price_minor": 11900,
+          "reference_minor": 21900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "DEWALT, DCF911B, Impact Wrench, 20V, 1/2 in square, Hog ring anvil, 250 ft-lbs torque, Cordless",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "41178623279295",
+          "url": "https://fastenersinc.myshopify.com/products/dewalt-dcf911b-20v-max-1-2-impact-wrench-with-hog-ring-anvil-tool-only?currency=USD&variant=41178623279295",
+          "current_price": 129.0,
+          "original_price": 219.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/89bb5b8c042008ec7121aafcecd2c6355e1d2ce3-large.png?v=1773431355",
+          "reference_basis": "retailer_compare_at",
+          "discount": 41.1,
+          "savings": 90.0
+        },
+        "checked_at": "2026-11-03T03:43:37.879061+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/dewalt-dcf911b-20v-max-1-2-impact-wrench-with-hog-ring-anvil-tool-only.js?currency=USD",
+        "response_sha256": "11a2739bbc370db032d8aa73671eab98fb4872c2c9bd032e74a33c0cd9e692a5",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DEWALT, DCF911B, Impact Wrench, 20V, 1/2 in square, Hog ring anvil, 250 ft-lbs torque, Cordless",
+          "variant": "41178623279295",
+          "sku": "DEW-DCF911B",
+          "price_minor": 12900,
+          "reference_minor": 21900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "DeWalt DCF870B 20V MAX XR Brushless Cordless 1/4 in. Quiet Hydraulic Impact Driver (Tool Only)",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "43717690622143",
+          "url": "https://fastenersinc.myshopify.com/products/dewalt-dcf870b-20v-max-xr-brushless-cordless-1-4-in-quiet-hydraulic-impact-driver-tool-only?currency=USD&variant=43717690622143",
+          "current_price": 139.0,
+          "original_price": 219.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/Ecomm_Large-DCF870B_1_828686b4-0275-4d56-8a10-7e3c0ca96635.jpg?v=1743800766",
+          "reference_basis": "retailer_compare_at",
+          "discount": 36.5,
+          "savings": 80.0
+        },
+        "checked_at": "2026-11-03T03:43:39.988027+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/dewalt-dcf870b-20v-max-xr-brushless-cordless-1-4-in-quiet-hydraulic-impact-driver-tool-only.js?currency=USD",
+        "response_sha256": "ac741271e709a8c1e29d4de98b3bd2053281ddd04da173256005fb68aba00f31",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DeWalt DCF870B 20V MAX XR Brushless Cordless 1/4 in. Quiet Hydraulic Impact Driver (Tool Only)",
+          "variant": "43717690622143",
+          "sku": "DEW-DCF870B",
+          "price_minor": 13900,
+          "reference_minor": 21900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "DEWALT, DCP580B, Planer, Brushless Motor, 20 V, 3.25 in Cutting Width, 15000 RPM, Cordless",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "31231185911895",
+          "url": "https://fastenersinc.myshopify.com/products/dcp580b-20v-max-li-ion-brushless-planer-bare-tool-dewalt?currency=USD&variant=31231185911895",
+          "current_price": 169.0,
+          "original_price": 259.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/b88c9d66816f23b16b8abbec808d4d44856ac814-large.png?v=1774675122",
+          "reference_basis": "retailer_compare_at",
+          "discount": 34.7,
+          "savings": 90.0
+        },
+        "checked_at": "2026-11-03T03:43:42.094299+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/dcp580b-20v-max-li-ion-brushless-planer-bare-tool-dewalt.js?currency=USD",
+        "response_sha256": "5a25e076b78660fe63e772bc572dc4ae5648c02943fe939544d326cd3a4ae9e9",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DEWALT, DCP580B, Planer, Brushless Motor, 20 V, 3.25 in Cutting Width, 15000 RPM, Cordless",
+          "variant": "31231185911895",
+          "sku": "DEW-DCP580B",
+          "price_minor": 16900,
+          "reference_minor": 25900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "DEWALT FLEXVOLT 60V MAX 7-1/4-In. Cordless Worm Drive Style Saw (Tool Only)",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "38183505035455",
+          "url": "https://fastenersinc.myshopify.com/products/dewalt-dcs577b-flexvolt-60v-max-7-1-4-worm-drive-style-saw-bare?currency=USD&variant=38183505035455",
+          "current_price": 219.0,
+          "original_price": 329.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/fa6037c4a3e2b80001b6a2ac21e03181249b1be1-large.png?v=1772760400",
+          "reference_basis": "retailer_compare_at",
+          "discount": 33.4,
+          "savings": 110.0
+        },
+        "checked_at": "2026-11-03T03:43:44.214210+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/dewalt-dcs577b-flexvolt-60v-max-7-1-4-worm-drive-style-saw-bare.js?currency=USD",
+        "response_sha256": "0d7ca246be7f6f8f2d5da82a1955fc926bd1ec2fe1a5c38c6c1ac7241d510064",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DEWALT FLEXVOLT 60V MAX 7-1/4-In. Cordless Worm Drive Style Saw (Tool Only)",
+          "variant": "38183505035455",
+          "sku": "DEW-DCS577B",
+          "price_minor": 21900,
+          "reference_minor": 32900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "DEWALT, D25481K, Rotary Hammer Drill, SDS-Max, 1-9/16 in, 10.5 A, 540 RPM",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "31231081939031",
+          "url": "https://fastenersinc.myshopify.com/products/d25481k-1-9-16-sds-max-combination-hammer-kit-with-shocks-dewalt?currency=USD&variant=31231081939031",
+          "current_price": 339.0,
+          "original_price": 499.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/37b0f7b27af0c559e2ca082beeab21d007a0f743-large.png?v=1790078119",
+          "reference_basis": "retailer_compare_at",
+          "discount": 32.1,
+          "savings": 160.0
+        },
+        "checked_at": "2026-11-03T03:43:46.336534+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/d25481k-1-9-16-sds-max-combination-hammer-kit-with-shocks-dewalt.js?currency=USD",
+        "response_sha256": "1a53db0cae6c2ce7f8a927505b625b7130a81fb9d321f4146539ddf83c8182ca",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DEWALT, D25481K, Rotary Hammer Drill, SDS-Max, 1-9/16 in, 10.5 A, 540 RPM",
+          "variant": "31231081939031",
+          "sku": "DEW-D25481K",
+          "price_minor": 33900,
+          "reference_minor": 49900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "DEWALT, DCH133B, Rotary Hammer Drill, 20V, 1 in, Brushless, 2.6 J Impact Energy, Cordless, SDS-Plus",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "31231137742935",
+          "url": "https://fastenersinc.myshopify.com/products/dch133b-20v-max-xr-brushless-1-d-handle-rotary-hammer-dewalt?currency=USD&variant=31231137742935",
+          "current_price": 169.0,
+          "original_price": 249.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/d4666adda1f2070e3f25be67d775da92081bb18b-large.png?v=1773431404",
+          "reference_basis": "retailer_compare_at",
+          "discount": 32.1,
+          "savings": 80.0
+        },
+        "checked_at": "2026-11-03T03:43:48.452544+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/dch133b-20v-max-xr-brushless-1-d-handle-rotary-hammer-dewalt.js?currency=USD",
+        "response_sha256": "ee6c72117d752a3c51cba524388c03218e5ac06d3b049c65817fe65ad7973929",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DEWALT, DCH133B, Rotary Hammer Drill, 20V, 1 in, Brushless, 2.6 J Impact Energy, Cordless, SDS-Plus",
+          "variant": "31231137742935",
+          "sku": "DEW-DCH133B",
+          "price_minor": 16900,
+          "reference_minor": 24900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "DEWALT DCG420XB ATOMIC 20V MAX Extended Die Grinder Tool Only",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "67540582039743",
+          "url": "https://fastenersinc.myshopify.com/products/dewalt-dcg420xb-atomic-20v-max-extended-die-grinder-tool-only?currency=USD&variant=67540582039743",
+          "current_price": 239.0,
+          "original_price": 349.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/dewalt-atomic-20v-max-extended-die-grinder-bare-tool-dcg420xb.jpg?v=1790999923",
+          "reference_basis": "retailer_compare_at",
+          "discount": 31.5,
+          "savings": 110.0
+        },
+        "checked_at": "2026-11-03T03:43:50.557141+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/dewalt-dcg420xb-atomic-20v-max-extended-die-grinder-tool-only.js?currency=USD",
+        "response_sha256": "a598a10348b1770824e48ea7552654e14a895674e6d758fa600bf58acfc0863d",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DEWALT DCG420XB ATOMIC 20V MAX Extended Die Grinder Tool Only",
+          "variant": "67540582039743",
+          "sku": "DEW-DCG420XB",
+          "price_minor": 23900,
+          "reference_minor": 34900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "DEWALT DCD447B 20V MAX* XR Brushless Cordless 7/16 in. Quick Change Compact Stud Joist Drill (Tool Only)",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "43710249468095",
+          "url": "https://fastenersinc.myshopify.com/products/dewalt-dcd447b-20v-max-xr-brushless-cordless-7-16-in-quick-change-compact-stud-joist-drill-tool-only?currency=USD&variant=43710249468095",
+          "current_price": 299.0,
+          "original_price": 349.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/Ecomm_Large-DCD447B_1_2cc35731-1603-499f-98c0-c908e447e68a.jpg?v=1743800096",
+          "reference_basis": "retailer_compare_at",
+          "discount": 14.3,
+          "savings": 50.0
+        },
+        "checked_at": "2026-11-03T03:43:52.695700+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/dewalt-dcd447b-20v-max-xr-brushless-cordless-7-16-in-quick-change-compact-stud-joist-drill-tool-only.js?currency=USD",
+        "response_sha256": "358ee7808d4e53e850c04c8e36e4a765b59c6dba110d9552904d5949390db56e",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DEWALT DCD447B 20V MAX* XR Brushless Cordless 7/16 in. Quick Change Compact Stud Joist Drill (Tool Only)",
+          "variant": "43710249468095",
+          "sku": "DEW-DCD447B",
+          "price_minor": 29900,
+          "reference_minor": 34900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Makita XWT08Z LXT XWT08Z 18V LXT Lithium\u2011Ion Brushless Cordless High\u2011Torque 1/2\" Drive Impact Wrench, Tool Only",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "14356302856304",
+          "url": "https://fastenersinc.myshopify.com/products/makita-xwt08z-18-volt-1-2-inch-lxt-lit-ion-cordless-impact-wrench-bare-tool?currency=USD&variant=14356302856304",
+          "current_price": 309.0,
+          "original_price": 339.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/products/xwt08z__1.jpg?v=1734664399",
+          "reference_basis": "retailer_compare_at",
+          "discount": 8.8,
+          "savings": 30.0
+        },
+        "checked_at": "2026-11-03T03:43:54.826135+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/makita-xwt08z-18-volt-1-2-inch-lxt-lit-ion-cordless-impact-wrench-bare-tool.js?currency=USD",
+        "response_sha256": "a98e0a0bc42e2dfaecc14d5944e47edbbcfef5b7fb6dfed2d459fa9b23f76648",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Makita XWT08Z LXT XWT08Z 18V LXT Lithium\u2011Ion Brushless Cordless High\u2011Torque 1/2\" Drive Impact Wrench, Tool Only",
+          "variant": "14356302856304",
+          "sku": "MAK-XWT08Z",
+          "price_minor": 30900,
+          "reference_minor": 33900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "DEWALT 20V MAX ATOMIC Multi-Head Drill/Driver (Tool Only)",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "44874528981183",
+          "url": "https://fastenersinc.myshopify.com/products/dewalt-dcd803b-atomic-20v-max-multi-head-drill-driver-tool-only?currency=USD&variant=44874528981183",
+          "current_price": 199.0,
+          "original_price": 249.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/1106685811e4ee8fdd6da4a5b2b67a59f3381fac-large.png?v=1790079786",
+          "reference_basis": "retailer_compare_at",
+          "discount": 20.1,
+          "savings": 50.0
+        },
+        "checked_at": "2026-11-03T03:43:56.924340+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/dewalt-dcd803b-atomic-20v-max-multi-head-drill-driver-tool-only.js?currency=USD",
+        "response_sha256": "4105dbf60f44e4fd980cd2426f13dff4897b74a216661d22e6cb6f2cfc24c772",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DEWALT 20V MAX ATOMIC Multi-Head Drill/Driver (Tool Only)",
+          "variant": "44874528981183",
+          "sku": "DEW-DCD803B",
+          "price_minor": 19900,
+          "reference_minor": 24900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Makita XAG20Z 18V LXT\u00ae Lithium-Ion Brushless Cordless 4-1/2\" / 5\" Paddle Switch Cut-Off/Angle Grinder, with Electric Brake, Tool Only",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "43865928335551",
+          "url": "https://fastenersinc.myshopify.com/products/makita-xag20z-18v-lxt\u00ae-lithium-ion-brushless-cordless-4-1-2-5-paddle-switch-cut-off-angle-grinder-with-electric-brake-tool-only?currency=USD&variant=43865928335551",
+          "current_price": 239.0,
+          "original_price": 279.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/f2661bb0-5b62-4ca7-a1db-8ecf101e9091_xag20z_p_1500px.png?v=1734661942",
+          "reference_basis": "retailer_compare_at",
+          "discount": 14.3,
+          "savings": 40.0
+        },
+        "checked_at": "2026-11-03T03:43:59.119751+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/makita-xag20z-18v-lxt\u00ae-lithium-ion-brushless-cordless-4-1-2-5-paddle-switch-cut-off-angle-grinder-with-electric-brake-tool-only.js?currency=USD",
+        "response_sha256": "dbdf6829dedde99c835e515d838228ec859cb984d852d2847ee6221981ff6e12",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Makita XAG20Z 18V LXT\u00ae Lithium-Ion Brushless Cordless 4-1/2\" / 5\" Paddle Switch Cut-Off/Angle Grinder, with Electric Brake, Tool Only",
+          "variant": "43865928335551",
+          "sku": "MAK-XAG20Z",
+          "price_minor": 23900,
+          "reference_minor": 27900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "DEWALT 20V MAX XR Oscillating Multi-Tool",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "46043156119743",
+          "url": "https://fastenersinc.myshopify.com/products/dew-dcs359b?currency=USD&variant=46043156119743",
+          "current_price": 179.0,
+          "original_price": 249.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/DCS359B_1_1680_afb5a255-bf4b-414c-9daa-b431a1a69016.webp?v=1787087288",
+          "reference_basis": "retailer_compare_at",
+          "discount": 28.1,
+          "savings": 70.0
+        },
+        "checked_at": "2026-11-03T03:44:01.330081+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/dew-dcs359b.js?currency=USD",
+        "response_sha256": "5640c35e4136a71b0d6fe9d63c49878f0a826f1e228c37c0f97d373699bfa17d",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DEWALT 20V MAX XR Oscillating Multi-Tool",
+          "variant": "46043156119743",
+          "sku": "DEW-DCS359B",
+          "price_minor": 17900,
+          "reference_minor": 24900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "DEWALT, DCS389B, Reciprocating Saw, 60 V, Brushless, 3000 spm, 1-1/8 in stroke length, Cordless",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "31744985071703",
+          "url": "https://fastenersinc.myshopify.com/products/dewalt-dcs389b-flexvolt-60v-max-brushless-cordless-reciprocating-saw-tool-only?currency=USD&variant=31744985071703",
+          "current_price": 219.0,
+          "original_price": 299.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/be2c03cccd8483be2cc97686f2c89e3e8a591869-large.png?v=1772761902",
+          "reference_basis": "retailer_compare_at",
+          "discount": 26.8,
+          "savings": 80.0
+        },
+        "checked_at": "2026-11-03T03:44:03.458519+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/dewalt-dcs389b-flexvolt-60v-max-brushless-cordless-reciprocating-saw-tool-only.js?currency=USD",
+        "response_sha256": "f2eafc670b7c5cf6158d3165c37654c5b08a8614dc5ebff616a2961355b1a71f",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DEWALT, DCS389B, Reciprocating Saw, 60 V, Brushless, 3000 spm, 1-1/8 in stroke length, Cordless",
+          "variant": "31744985071703",
+          "sku": "DEW-DCS389B",
+          "price_minor": 21900,
+          "reference_minor": 29900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Makita XBP02Z 18V LXT Lithium-Ion Cordless Portable Band Saw, Tool Only",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "14356337328240",
+          "url": "https://fastenersinc.myshopify.com/products/makita-xbp02z-18v-lxt-lithium-ion-cordless-portable-band-saw-bare-tool?currency=USD&variant=14356337328240",
+          "current_price": 399.0,
+          "original_price": 434.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/products/XBP02Z__1.jpg?v=1734664408",
+          "reference_basis": "retailer_compare_at",
+          "discount": 8.1,
+          "savings": 35.0
+        },
+        "checked_at": "2026-11-03T03:44:05.578438+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/makita-xbp02z-18v-lxt-lithium-ion-cordless-portable-band-saw-bare-tool.js?currency=USD",
+        "response_sha256": "ef9e818a26871314f838cb5627ac0ca33d3433d7772672cbe555f445bf8abaf0",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Makita XBP02Z 18V LXT Lithium-Ion Cordless Portable Band Saw, Tool Only",
+          "variant": "14356337328240",
+          "sku": "MAK-XBP02Z",
+          "price_minor": 39900,
+          "reference_minor": 43400,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "DEWALT, DCF510B, Ratchet Wrench, Cordless, 3/8 in & 1/2 in Drive, 900 in-lbs Torque, Brushless Motor, LED Light",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "42817442382015",
+          "url": "https://fastenersinc.myshopify.com/products/dewalt-dcf510b-20v-max-xr-brushless-cordless-3-8-1-2-sealed-head-ratchet-tool-only?currency=USD&variant=42817442382015",
+          "current_price": 219.0,
+          "original_price": 279.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/8c394e7908619a15d41919415dabc868f883cced-large.png?v=1772755535",
+          "reference_basis": "retailer_compare_at",
+          "discount": 21.5,
+          "savings": 60.0
+        },
+        "checked_at": "2026-11-03T03:44:07.686010+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/dewalt-dcf510b-20v-max-xr-brushless-cordless-3-8-1-2-sealed-head-ratchet-tool-only.js?currency=USD",
+        "response_sha256": "94209ffe48a5c7c68bf1e338a753b081e5ef1e44f8c02cd16dd3cf168a663a36",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DEWALT, DCF510B, Ratchet Wrench, Cordless, 3/8 in & 1/2 in Drive, 900 in-lbs Torque, Brushless Motor, LED Light",
+          "variant": "42817442382015",
+          "sku": "DEW-DCF510B",
+          "price_minor": 21900,
+          "reference_minor": 27900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "DEWALT, DCS692B, Cut-Off Saw, 60 V, Brushless, 9 in; 3-1/4 in cut depth, Cordless, 6600 RPM",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "42300052046015",
+          "url": "https://fastenersinc.myshopify.com/products/dewalt-dcs692b-60v-max-brushless-cordless-9-in-cut-off-saw?currency=USD&variant=42300052046015",
+          "current_price": 549.0,
+          "original_price": 679.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/9fe8b06139fe1dcf988d54fb99546d5e4b9fba07-large.png?v=1790078845",
+          "reference_basis": "retailer_compare_at",
+          "discount": 19.1,
+          "savings": 130.0
+        },
+        "checked_at": "2026-11-03T03:44:09.823254+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/dewalt-dcs692b-60v-max-brushless-cordless-9-in-cut-off-saw.js?currency=USD",
+        "response_sha256": "65e54c187ec28cd0083ea29f77b2f8085b95836ef792fc953040a55f218f9433",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DEWALT, DCS692B, Cut-Off Saw, 60 V, Brushless, 9 in; 3-1/4 in cut depth, Cordless, 6600 RPM",
+          "variant": "42300052046015",
+          "sku": "DEW-DCS692B",
+          "price_minor": 54900,
+          "reference_minor": 67900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "DEWALT, DCG418B, Angle Grinder, 60V MAX, Brushless, 6 in Wheel Diameter, 9000 RPM, Cordless",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "31744838434903",
+          "url": "https://fastenersinc.myshopify.com/products/dewalt-dcg418b-flexvolt-60v-max-brushless-4-1-2-in-6-in-cordless-grinder-with-kickback-brake-tool-only?currency=USD&variant=31744838434903",
+          "current_price": 219.0,
+          "original_price": 299.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/91d903c063dfebcbd5efe00b26e47b60f890ee35-large.png?v=1772761170",
+          "reference_basis": "retailer_compare_at",
+          "discount": 26.8,
+          "savings": 80.0
+        },
+        "checked_at": "2026-11-03T03:44:11.945712+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/dewalt-dcg418b-flexvolt-60v-max-brushless-4-1-2-in-6-in-cordless-grinder-with-kickback-brake-tool-only.js?currency=USD",
+        "response_sha256": "62e282a230a47d670cae935fa5951a1354bf20e8253a2a0d140ca1cf532c1832",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DEWALT, DCG418B, Angle Grinder, 60V MAX, Brushless, 6 in Wheel Diameter, 9000 RPM, Cordless",
+          "variant": "31744838434903",
+          "sku": "DEW-DCG418B",
+          "price_minor": 21900,
+          "reference_minor": 29900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Makita XBP04Z 18V LXT Lithium Ion Compact Brushless Cordless Band Saw, Tool Only",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "42055695532223",
+          "url": "https://fastenersinc.myshopify.com/products/makita-xbp04z-18v-lxt-lithium-ion-compact-brushless-cordless-band-saw-tool-only?currency=USD&variant=42055695532223",
+          "current_price": 359.0,
+          "original_price": 399.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/products/23ae8be9-d968-4f9f-98c4-13d1fcb1d64e_xbp04z_p_1500px.png?v=1734663231",
+          "reference_basis": "retailer_compare_at",
+          "discount": 10.0,
+          "savings": 40.0
+        },
+        "checked_at": "2026-11-03T03:44:14.058085+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/makita-xbp04z-18v-lxt-lithium-ion-compact-brushless-cordless-band-saw-tool-only.js?currency=USD",
+        "response_sha256": "d58dd278ee24ae2a6e293f1cf85da18937c4c53df99b8b43c142a8f4e15334b6",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Makita XBP04Z 18V LXT Lithium Ion Compact Brushless Cordless Band Saw, Tool Only",
+          "variant": "42055695532223",
+          "sku": "MAK-XBP04Z",
+          "price_minor": 35900,
+          "reference_minor": 39900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "DEWALT, DCW220B, Belt Sander, 20V MAX, 3 in x 21 in, Cordless, Brushless, Variable Speed, 650-1050 OPM",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "42285712801983",
+          "url": "https://fastenersinc.myshopify.com/products/dewalt-dcw220b-20v-max-xr-brushless-cordless-belt-sander-tool-only?currency=USD&variant=42285712801983",
+          "current_price": 229.0,
+          "original_price": 299.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/ea4c8fb9efbbc72b52dc60132e4119b6ab03f06b-large.png?v=1790079815",
+          "reference_basis": "retailer_compare_at",
+          "discount": 23.4,
+          "savings": 70.0
+        },
+        "checked_at": "2026-11-03T03:44:16.184149+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/dewalt-dcw220b-20v-max-xr-brushless-cordless-belt-sander-tool-only.js?currency=USD",
+        "response_sha256": "02e387459b275ae7048f2770cb941e9b1eb704dce848aa8a9cc193b7a33a7451",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DEWALT, DCW220B, Belt Sander, 20V MAX, 3 in x 21 in, Cordless, Brushless, Variable Speed, 650-1050 OPM",
+          "variant": "42285712801983",
+          "sku": "DEW-DCW220B",
+          "price_minor": 22900,
+          "reference_minor": 29900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "DEWALT, DCG440B, Angle Grinder, 60V MAX, 7 in, Brushless, 6500 RPM, KICKBACK BRAKE",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "42300061221055",
+          "url": "https://fastenersinc.myshopify.com/products/dewalt-dcg440b-60v-max-7-in-brushless-cordless-grinder-with-kickback-brake-tool-only?currency=USD&variant=42300061221055",
+          "current_price": 219.0,
+          "original_price": 299.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/056b76b890c7022a59db85b2f4c18a139055c375-large.png?v=1772760459",
+          "reference_basis": "retailer_compare_at",
+          "discount": 26.8,
+          "savings": 80.0
+        },
+        "checked_at": "2026-11-03T03:44:18.356618+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/dewalt-dcg440b-60v-max-7-in-brushless-cordless-grinder-with-kickback-brake-tool-only.js?currency=USD",
+        "response_sha256": "fd681c9c161d07bf2a122a0a0eaf4d219bba9125159d47b77d666274fb022893",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DEWALT, DCG440B, Angle Grinder, 60V MAX, 7 in, Brushless, 6500 RPM, KICKBACK BRAKE",
+          "variant": "42300061221055",
+          "sku": "DEW-DCG440B",
+          "price_minor": 21900,
+          "reference_minor": 29900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "DEWALT 20V MAX ATOMIC Brushless Cordless 3/8-in. Extended Reach Ratchet (Tool Only)",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "44572576219327",
+          "url": "https://fastenersinc.myshopify.com/products/dewalt-dcf513eb-20v-max-atomic-brushless-cordless-3-8-in-extended-reach-ratchet-tool-only?currency=USD&variant=44572576219327",
+          "current_price": 219.0,
+          "original_price": 239.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/01fced01e1ba229ba18d5f186f0aabeea237e100-large.png?v=1785186836",
+          "reference_basis": "retailer_compare_at",
+          "discount": 8.4,
+          "savings": 20.0
+        },
+        "checked_at": "2026-11-03T03:44:20.481233+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/dewalt-dcf513eb-20v-max-atomic-brushless-cordless-3-8-in-extended-reach-ratchet-tool-only.js?currency=USD",
+        "response_sha256": "ce98577d14c5b38ea3c38664585e54cc8c3ed5a8cabd84ad039b56e7350fe373",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DEWALT 20V MAX ATOMIC Brushless Cordless 3/8-in. Extended Reach Ratchet (Tool Only)",
+          "variant": "44572576219327",
+          "sku": "DEW-DCF513EB",
+          "price_minor": 21900,
+          "reference_minor": 23900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Makita XSH03Z 18V LXT\u00ae Lithium\u2011Ion Brushless Cordless 6\u20111/2\" Circular Saw, Tool Only",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "31306592419927",
+          "url": "https://fastenersinc.myshopify.com/products/makita-cordless-circular-saw-left-180-voltage-xsh03z-i-g3880689?currency=USD&variant=31306592419927",
+          "current_price": 219.0,
+          "original_price": 249.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/products/Z1r20zlcpIx.jpg?v=1734663961",
+          "reference_basis": "retailer_compare_at",
+          "discount": 12.0,
+          "savings": 30.0
+        },
+        "checked_at": "2026-11-03T03:44:22.593523+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/makita-cordless-circular-saw-left-180-voltage-xsh03z-i-g3880689.js?currency=USD",
+        "response_sha256": "dbae9b56f647f74c60694cfb26239f1f5e0ee10af310e68a4b91031658cabe2e",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Makita XSH03Z 18V LXT\u00ae Lithium\u2011Ion Brushless Cordless 6\u20111/2\" Circular Saw, Tool Only",
+          "variant": "31306592419927",
+          "sku": "MAK-XSH03Z",
+          "price_minor": 21900,
+          "reference_minor": 24900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Bosch, RH328VC, Rotary Hammer, 2.6 Ft.-Lbs. Impact Energy, 8 A, 1.125 in Cutting Capacity, SDS-plus",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "45174106816703",
+          "url": "https://fastenersinc.myshopify.com/products/bosch-rh328vc?currency=USD&variant=45174106816703",
+          "current_price": 299.0,
+          "original_price": 339.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/2382d8cf7c95ce27be1ce35107f2753eaa98d0dd-large.png?v=1773943269",
+          "reference_basis": "retailer_compare_at",
+          "discount": 11.8,
+          "savings": 40.0
+        },
+        "checked_at": "2026-11-03T03:44:24.705833+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/bosch-rh328vc.js?currency=USD",
+        "response_sha256": "f6bebfbe117bd14073f2b714744a2d5445b55eb68e32566cde2255f89225db18",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Bosch, RH328VC, Rotary Hammer, 2.6 Ft.-Lbs. Impact Energy, 8 A, 1.125 in Cutting Capacity, SDS-plus",
+          "variant": "45174106816703",
+          "sku": "BOSCH-RH328VC",
+          "price_minor": 29900,
+          "reference_minor": 33900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Makita XWT15Z 18V LXT\u00ae Lithium\u2011Ion Brushless Cordless 4\u2011Speed 1/2\" Sq. Drive Impact Wrench w/ Detent Anvil, Tool Only",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "39571414286527",
+          "url": "https://fastenersinc.myshopify.com/products/makita-xwt15z-18v-lxt\u00ae-lithium-ion-brushless-cordless-4-speed-1-2-sq-drive-impact-wrench-w-detent-anvil-tool-only?currency=USD&variant=39571414286527",
+          "current_price": 229.0,
+          "original_price": 249.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/products/24e46090-1d56-4574-8e10-1bbe413ad742_xwt15z_p_1500px.png?v=1734663447",
+          "reference_basis": "retailer_compare_at",
+          "discount": 8.0,
+          "savings": 20.0
+        },
+        "checked_at": "2026-11-03T03:44:26.814351+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/makita-xwt15z-18v-lxt\u00ae-lithium-ion-brushless-cordless-4-speed-1-2-sq-drive-impact-wrench-w-detent-anvil-tool-only.js?currency=USD",
+        "response_sha256": "7699ebaa815814768c84f3360e342e40a0105443df3441fb1d905b223477dba3",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Makita XWT15Z 18V LXT\u00ae Lithium\u2011Ion Brushless Cordless 4\u2011Speed 1/2\" Sq. Drive Impact Wrench w/ Detent Anvil, Tool Only",
+          "variant": "39571414286527",
+          "sku": "MAK-XWT15Z",
+          "price_minor": 22900,
+          "reference_minor": 24900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "DeWalt DCW230B 20V MAX XR 6-in Random Orbit Sander (Tool Only)",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "45766438715583",
+          "url": "https://fastenersinc.myshopify.com/products/sbd-dew-dcw230b?currency=USD&variant=45766438715583",
+          "current_price": 179.0,
+          "original_price": 249.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/DCW230B_1_1680.webp?v=1787087286",
+          "reference_basis": "retailer_compare_at",
+          "discount": 28.1,
+          "savings": 70.0
+        },
+        "checked_at": "2026-11-03T03:44:29.006721+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/sbd-dew-dcw230b.js?currency=USD",
+        "response_sha256": "82a20fecaa19785701a431d4d77a89a746495b175e630d20bf8317011c4e6fcd",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DeWalt DCW230B 20V MAX XR 6-in Random Orbit Sander (Tool Only)",
+          "variant": "45766438715583",
+          "sku": "DEW-DCW230B",
+          "price_minor": 17900,
+          "reference_minor": 24900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Option1",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "DEWALT 20V MAX XR 12-in. Double Bevel Sliding Miter Saw (Tool Only)",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "44229724242111",
+          "url": "https://fastenersinc.myshopify.com/products/dewalt-dcs785b-20v-max-xr-12-in-double-bevel-sliding-miter-saw-tool-only?currency=USD&variant=44229724242111",
+          "current_price": 549.0,
+          "original_price": 699.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/4eead3640e1dd015d5b488b02473a59095807b11-large.png?v=1790079845",
+          "reference_basis": "retailer_compare_at",
+          "discount": 21.5,
+          "savings": 150.0
+        },
+        "checked_at": "2026-11-03T03:44:31.209999+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/dewalt-dcs785b-20v-max-xr-12-in-double-bevel-sliding-miter-saw-tool-only.js?currency=USD",
+        "response_sha256": "2cbc68e37feb18afff2a5e317eac44a028442b757ecf22892341dbac557b4a86",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DEWALT 20V MAX XR 12-in. Double Bevel Sliding Miter Saw (Tool Only)",
+          "variant": "44229724242111",
+          "sku": "DEW-DCS785B",
+          "price_minor": 54900,
+          "reference_minor": 69900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "FLEX FX2481-2J 9 in Handheld Cut-Off Saw Stacked Lithium Kit",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "67540582138047",
+          "url": "https://fastenersinc.myshopify.com/products/flex-fx2481-2j-9-in-handheld-cut-off-saw-stacked-lithium-kit?currency=USD&variant=67540582138047",
+          "current_price": 849.0,
+          "original_price": 989.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/fx2481-2j_flex_9-inch_cut-off-saw_3q-down_25-0424_main_1000.png?v=1790999925",
+          "reference_basis": "retailer_compare_at",
+          "discount": 14.2,
+          "savings": 140.0
+        },
+        "checked_at": "2026-11-03T03:44:33.332750+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/flex-fx2481-2j-9-in-handheld-cut-off-saw-stacked-lithium-kit.js?currency=USD",
+        "response_sha256": "2a6fc3638d3dd6bad1dc8c5df25dbc82509a38c332fc09988990ec304ff7fa6c",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "FLEX FX2481-2J 9 in Handheld Cut-Off Saw Stacked Lithium Kit",
+          "variant": "67540582138047",
+          "sku": "FLEX-FX2481-2J",
+          "price_minor": 84900,
+          "reference_minor": 98900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      }
+    ]
+  },
+  "combined_audit": {
+    "catalog": "tools",
+    "date": "2026-11-03T03:46:19.220979+00:00",
+    "seed": 20261105,
+    "population": 409,
+    "method": "top10-plus-seeded20-merchant-product-v1",
+    "sample_size": 30,
+    "match": 30,
+    "mismatch": 0,
+    "inconclusive": 0,
+    "verified_match_percent": 100.0,
+    "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+    "results": [
+      {
+        "name": "Axiom 2x2 CNC Table with Air-Cooled Spindle",
+        "store": "OakTree Supply",
+        "offer": {
+          "variant_key": "47708931948761",
+          "url": "https://www.oaktreesupply.com/products/axiom-2x2-cnc-table-with-spindle?currency=USD&variant=47708931948761",
+          "current_price": 1999.0,
+          "original_price": 4699.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/files/AX-101-1.jpg?v=1769713524",
+          "reference_basis": "retailer_compare_at",
+          "discount": 57.5,
+          "savings": 2700.0
+        },
+        "checked_at": "2026-11-03T03:45:17.829285+00:00",
+        "evidence_url": "https://www.oaktreesupply.com/products/axiom-2x2-cnc-table-with-spindle.js?currency=USD",
+        "response_sha256": "f4b87f2e1b8db50fa6bdd089236baf2d3cab3939639aa1c106f2d21f0739aa33",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Axiom 2x2 CNC Table with Air-Cooled Spindle",
+          "variant": "47708931948761",
+          "sku": "AX1-101",
+          "price_minor": 199900,
+          "reference_minor": 469900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "DEWALT 20V MAX XR Brushless Cordless Router (Tool Only)",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "31231201247319",
+          "url": "https://fastenersinc.myshopify.com/products/dcw600b-20v-max-compact-router-dewalt?currency=USD&variant=31231201247319",
+          "current_price": 119.0,
+          "original_price": 249.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/1c82af8b8d6d0cf2f34b8eea29e1d28f87bd16c4-large.png?v=1790078004",
+          "reference_basis": "retailer_compare_at",
+          "discount": 52.2,
+          "savings": 130.0
+        },
+        "checked_at": "2026-11-03T03:45:21.103940+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/dcw600b-20v-max-compact-router-dewalt.js?currency=USD",
+        "response_sha256": "898903320f587fde506a5ec1fe82b4cf047a5037f0749b86255b6c8a38f4eeb0",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DEWALT 20V MAX XR Brushless Cordless Router (Tool Only)",
+          "variant": "31231201247319",
+          "sku": "DEW-DCW600B",
+          "price_minor": 11900,
+          "reference_minor": 24900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Axiom Iconic-4 Series CNC Router 2' x 2'",
+        "store": "OakTree Supply",
+        "offer": {
+          "variant_key": "37991680082119",
+          "url": "https://www.oaktreesupply.com/products/axoiom-iconic-4-series-cnc-router-24-x-24?currency=USD&variant=37991680082119",
+          "current_price": 2999.0,
+          "original_price": 6049.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/products/Iconic-4.jpg?v=1676914267",
+          "reference_basis": "retailer_compare_at",
+          "discount": 50.4,
+          "savings": 3050.0
+        },
+        "checked_at": "2026-11-03T03:45:24.398288+00:00",
+        "evidence_url": "https://www.oaktreesupply.com/products/axoiom-iconic-4-series-cnc-router-24-x-24.js?currency=USD",
+        "response_sha256": "f07a77a59e0307e5b6d384a0ba332ec04fca519b4fed6871a9297d7486a86700",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Axiom Iconic-4 Series CNC Router 2' x 2'",
+          "variant": "37991680082119",
+          "sku": "AX9-ICONIC4",
+          "price_minor": 299900,
+          "reference_minor": 604900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Iconic 24\" x 24\" for Axiom CNC Router",
+        "store": "Woodcraft",
+        "offer": {
+          "variant_key": "43403824922762",
+          "url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-24-for-axiom-cnc-router?currency=USD&variant=43403824922762",
+          "current_price": 2999.0,
+          "original_price": 6049.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/172910_000_001.jpg?v=1720472421",
+          "reference_basis": "retailer_compare_at",
+          "discount": 50.4,
+          "savings": 3050.0
+        },
+        "checked_at": "2026-11-03T03:45:26.148722+00:00",
+        "evidence_url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-24-for-axiom-cnc-router.js?currency=USD",
+        "response_sha256": "70a947ae04b90c1bfc26a6ab72a7d2fd9deceea5cffea990b1fa15ae9e64b02d",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Iconic 24\" x 24\" for Axiom CNC Router",
+          "variant": "43403824922762",
+          "sku": "172910",
+          "price_minor": 299900,
+          "reference_minor": 604900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "DEWALT, DCS334B, Cordless Jig Saw, 20V, Brushless, 1 in Blade Stroke Length, 4-Position Orbital Action",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "31231188205655",
+          "url": "https://fastenersinc.myshopify.com/products/dcs334b-20v-max-xr-cordless-jig-saw-tool-only-dewalt?currency=USD&variant=31231188205655",
+          "current_price": 119.0,
+          "original_price": 239.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/473893353f01ef5298d20ee57c71d49d0d5d654e-large_2e145551-785e-4a6c-a184-39ece194d402.png?v=1773431552",
+          "reference_basis": "retailer_compare_at",
+          "discount": 50.2,
+          "savings": 120.0
+        },
+        "checked_at": "2026-11-03T03:45:29.547582+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/dcs334b-20v-max-xr-cordless-jig-saw-tool-only-dewalt.js?currency=USD",
+        "response_sha256": "41c2584cc85c27be814ea5282e9c97911bba22b4ad0472a7219836ae4701fdac",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DEWALT, DCS334B, Cordless Jig Saw, 20V, Brushless, 1 in Blade Stroke Length, 4-Position Orbital Action",
+          "variant": "31231188205655",
+          "sku": "DEW-DCS334B",
+          "price_minor": 11900,
+          "reference_minor": 23900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "JET JAT-127, 3/4-in. Composite Impact Wrench (505127)",
+        "store": "Tool Nut",
+        "offer": {
+          "variant_key": "50177235976486",
+          "url": "https://www.toolnut.com/products/jet-505127-jat-127-composite-impact-wrench?currency=USD&variant=50177235976486",
+          "current_price": 299.99,
+          "original_price": 580.99,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/505127_main.jpg?v=1778274029",
+          "reference_basis": "retailer_compare_at",
+          "discount": 48.4,
+          "savings": 281.0
+        },
+        "checked_at": "2026-11-03T03:45:31.246674+00:00",
+        "evidence_url": "https://www.toolnut.com/products/jet-505127-jat-127-composite-impact-wrench.js?currency=USD",
+        "response_sha256": "809181c34868ee50941e0ca822e8053f47d5f3660da88a3048b4cf6ee9a8f8bd",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "JET JAT-127, 3/4-in. Composite Impact Wrench (505127)",
+          "variant": "50177235976486",
+          "sku": "505127",
+          "price_minor": 29999,
+          "reference_minor": 58099,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Axiom AR16 Elite 4'x4' CNC Router",
+        "store": "OakTree Supply",
+        "offer": {
+          "variant_key": "31966639423606",
+          "url": "https://www.oaktreesupply.com/products/axiom-ar16-elite-4x4?currency=USD&variant=31966639423606",
+          "current_price": 9999.0,
+          "original_price": 19299.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/products/AR16Elite_6b6c2750-ef34-4a6c-b6bd-7429b0810f70.jpg?v=1678136683",
+          "reference_basis": "retailer_compare_at",
+          "discount": 48.2,
+          "savings": 9300.0
+        },
+        "checked_at": "2026-11-03T03:45:34.655581+00:00",
+        "evidence_url": "https://www.oaktreesupply.com/products/axiom-ar16-elite-4x4.js?currency=USD",
+        "response_sha256": "bb5d82a8ce2314250074ad73ac51874cdc5dbf76b29bc568ca97155fbdda770b",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Axiom AR16 Elite 4'x4' CNC Router",
+          "variant": "31966639423606",
+          "sku": "AX9-AR16ELITE",
+          "price_minor": 999900,
+          "reference_minor": 1929900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Axiom AR4Pro V6 2'x2' CNC Router",
+        "store": "OakTree Supply",
+        "offer": {
+          "variant_key": "31966616780918",
+          "url": "https://www.oaktreesupply.com/products/axiom-ar4pro-v5-2x2-cnc-router?currency=USD&variant=31966616780918",
+          "current_price": 4999.0,
+          "original_price": 9459.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/files/AR4ProV6main_4d61fd1e-1529-413c-95d0-cfddbfd9d660.jpg?v=1711135489",
+          "reference_basis": "retailer_compare_at",
+          "discount": 47.2,
+          "savings": 4460.0
+        },
+        "checked_at": "2026-11-03T03:45:36.369064+00:00",
+        "evidence_url": "https://www.oaktreesupply.com/products/axiom-ar4pro-v5-2x2-cnc-router.js?currency=USD",
+        "response_sha256": "f885fbfb159c552ba6d62d8a6c4e8e45a5e1e33d23cfde9aea79db10b9a24486",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Axiom AR4Pro V6 2'x2' CNC Router",
+          "variant": "31966616780918",
+          "sku": "AX9-AR4PROV6",
+          "price_minor": 499900,
+          "reference_minor": 945900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Axiom Iconic-6 Series CNC Router 2' x 3'",
+        "store": "OakTree Supply",
+        "offer": {
+          "variant_key": "41257102147783",
+          "url": "https://www.oaktreesupply.com/products/axiom-iconic-6-series-cnc-router-24-x-36?currency=USD&variant=41257102147783",
+          "current_price": 3499.0,
+          "original_price": 6599.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/products/Iconic-6-1.jpg?v=1676914781",
+          "reference_basis": "retailer_compare_at",
+          "discount": 47.0,
+          "savings": 3100.0
+        },
+        "checked_at": "2026-11-03T03:45:37.978882+00:00",
+        "evidence_url": "https://www.oaktreesupply.com/products/axiom-iconic-6-series-cnc-router-24-x-36.js?currency=USD",
+        "response_sha256": "3f902de9f53baa0e0c0d55b697cba42793ad8c615259d500de2157f34d6091fe",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Axiom Iconic-6 Series CNC Router 2' x 3'",
+          "variant": "41257102147783",
+          "sku": "AX9-ICONIC6",
+          "price_minor": 349900,
+          "reference_minor": 659900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Iconic 24\" x 36\" CNC Router",
+        "store": "Woodcraft",
+        "offer": {
+          "variant_key": "43400695939210",
+          "url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-36-cnc-router?currency=USD&variant=43400695939210",
+          "current_price": 3499.0,
+          "original_price": 6599.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/172911_000_001.jpg?v=1720472424",
+          "reference_basis": "retailer_compare_at",
+          "discount": 47.0,
+          "savings": 3100.0
+        },
+        "checked_at": "2026-11-03T03:45:39.590513+00:00",
+        "evidence_url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-36-cnc-router.js?currency=USD",
+        "response_sha256": "0c85371d1b0e881d75222727672a3e2f1b203c3194ab96b0678c39403f05d2a8",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Iconic 24\" x 36\" CNC Router",
+          "variant": "43400695939210",
+          "sku": "172911",
+          "price_minor": 349900,
+          "reference_minor": 659900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "24\" 10 HP 3-Phase Industrial Planer w/ Spiral Cutterhead",
+        "store": "Grizzly Industrial",
+        "offer": {
+          "variant_key": "G9961B",
+          "url": "https://www.grizzly.com/products/grizzly-24-10-hp-3-phase-industrial-planer-w-spiral-cutterhead/g9961b",
+          "current_price": 13995.0,
+          "original_price": 15450.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn3.grizzly.com/pics/jpeg288/g/g9961b-45a5442c4c99ae4bb67950a334766d18.jpg",
+          "reference_basis": "retailer_compare_at",
+          "discount": 9.4,
+          "savings": 1455.0
+        },
+        "checked_at": "2026-11-03T03:45:41.349941+00:00",
+        "evidence_url": "https://www.grizzly.com/products/grizzly-24-10-hp-3-phase-industrial-planer-w-spiral-cutterhead/g9961b",
+        "response_sha256": "b9a66f6d7adc51aac7c166c8a66a9a15cbe4c5ef8ed2aea33a8545f6f5a6aea1",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "destination": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "stock": true,
+          "condition": true,
+          "options": true
+        },
+        "merchant": {
+          "sku": "G9961B",
+          "price": 13995,
+          "reference": 15450,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "condition": "https://schema.org/NewCondition"
+        }
+      },
+      {
+        "name": "Shark HD620 PRO CNC Machine",
+        "store": "Woodcraft",
+        "offer": {
+          "variant_key": "47537558749322",
+          "url": "https://www.woodcraft.com/products/next-wave-shark-hd620-pro-cnc-machine?currency=USD&variant=47537558749322",
+          "current_price": 5849.99,
+          "original_price": 6499.99,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/198344_000_001.jpg?v=1790806158",
+          "reference_basis": "retailer_compare_at",
+          "discount": 10.0,
+          "savings": 650.0
+        },
+        "checked_at": "2026-11-03T03:45:43.311778+00:00",
+        "evidence_url": "https://www.woodcraft.com/products/next-wave-shark-hd620-pro-cnc-machine.js?currency=USD",
+        "response_sha256": "5df5941dae0c155ae511d3116d6d23381d60eb10990dc4fe712131522dc2d8d0",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Shark HD620 PRO CNC Machine",
+          "variant": "47537558749322",
+          "sku": "198344",
+          "price_minor": 584999,
+          "reference_minor": 649999,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "10\" 2 HP Benchtop Table Saw w/Stand",
+        "store": "Grizzly Industrial",
+        "offer": {
+          "variant_key": "W1875",
+          "url": "https://www.grizzly.com/products/shop-fox-10-2-hp-benchtop-table-saw-w-stand/w1875",
+          "current_price": 379.91,
+          "original_price": 710.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn4.grizzly.com/pics/jpeg288/w/w1875-8fff8e19bb85172da7006dcb520e51aa.jpg",
+          "reference_basis": "retailer_compare_at",
+          "discount": 46.5,
+          "savings": 330.09
+        },
+        "checked_at": "2026-11-03T03:45:45.022016+00:00",
+        "evidence_url": "https://www.grizzly.com/products/shop-fox-10-2-hp-benchtop-table-saw-w-stand/w1875",
+        "response_sha256": "a903a6f9e754049ba3ce38c42b9038ff746efa2b9219f4989f11042793651e55",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "destination": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "stock": true,
+          "condition": true,
+          "options": true
+        },
+        "merchant": {
+          "sku": "W1875",
+          "price": 379.91,
+          "reference": 710,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "condition": "https://schema.org/NewCondition"
+        }
+      },
+      {
+        "name": "SawStop 480V Three Phase 7.5-HP 9-Amp Industrial Cabinet Saw with 52-in. T-Glide Fence System (ICS73480-52)",
+        "store": "Tool Nut",
+        "offer": {
+          "variant_key": "50176555254054",
+          "url": "https://www.toolnut.com/products/sawstop-ics73480-52-480v-three-phase-7-5-hp-9-amp-industrial-cabinet-saw-with-52-t-glide-fence-system?currency=USD&variant=50176555254054",
+          "current_price": 6118.0,
+          "original_price": 6618.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/ics-52_opztbdoyq1par8yr.jpg?v=1778201904",
+          "reference_basis": "retailer_compare_at",
+          "discount": 7.6,
+          "savings": 500.0
+        },
+        "checked_at": "2026-11-03T03:45:46.862041+00:00",
+        "evidence_url": "https://www.toolnut.com/products/sawstop-ics73480-52-480v-three-phase-7-5-hp-9-amp-industrial-cabinet-saw-with-52-t-glide-fence-system.js?currency=USD",
+        "response_sha256": "5c0731db4c53ca28bea1e40b9080c2eb664e6a2107262f952cfb8bf286dc1fb3",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "SawStop 480V Three Phase 7.5-HP 9-Amp Industrial Cabinet Saw with 52-in. T-Glide Fence System (ICS73480-52)",
+          "variant": "50176555254054",
+          "sku": "ICS73480-52",
+          "price_minor": 611800,
+          "reference_minor": 661800,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Makita XAG20Z 18V LXT\u00ae Lithium-Ion Brushless Cordless 4-1/2\" / 5\" Paddle Switch Cut-Off/Angle Grinder, with Electric Brake, Tool Only",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "43865928335551",
+          "url": "https://fastenersinc.myshopify.com/products/makita-xag20z-18v-lxt\u00ae-lithium-ion-brushless-cordless-4-1-2-5-paddle-switch-cut-off-angle-grinder-with-electric-brake-tool-only?currency=USD&variant=43865928335551",
+          "current_price": 239.0,
+          "original_price": 279.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/f2661bb0-5b62-4ca7-a1db-8ecf101e9091_xag20z_p_1500px.png?v=1734661942",
+          "reference_basis": "retailer_compare_at",
+          "discount": 14.3,
+          "savings": 40.0
+        },
+        "checked_at": "2026-11-03T03:45:48.554302+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/makita-xag20z-18v-lxt\u00ae-lithium-ion-brushless-cordless-4-1-2-5-paddle-switch-cut-off-angle-grinder-with-electric-brake-tool-only.js?currency=USD",
+        "response_sha256": "dbdf6829dedde99c835e515d838228ec859cb984d852d2847ee6221981ff6e12",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Makita XAG20Z 18V LXT\u00ae Lithium-Ion Brushless Cordless 4-1/2\" / 5\" Paddle Switch Cut-Off/Angle Grinder, with Electric Brake, Tool Only",
+          "variant": "43865928335551",
+          "sku": "MAK-XAG20Z",
+          "price_minor": 23900,
+          "reference_minor": 27900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "DeWALT 20V MAX XR 7-1/4-in. Metal Cutting Circular Saw, Tool Only (DCS383B)",
+        "store": "Tool Nut",
+        "offer": {
+          "variant_key": "53393182556454",
+          "url": "https://www.toolnut.com/products/dewalt-dcs383b-20v-max-xr-7-1-4-in-metal-cutting-circular-saw-tool-only?currency=USD&variant=53393182556454",
+          "current_price": 354.99,
+          "original_price": 479.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/ecomm_medium-dcs383b_6.jpg?v=1758927761",
+          "reference_basis": "retailer_compare_at",
+          "discount": 25.9,
+          "savings": 124.01
+        },
+        "checked_at": "2026-11-03T03:45:50.269345+00:00",
+        "evidence_url": "https://www.toolnut.com/products/dewalt-dcs383b-20v-max-xr-7-1-4-in-metal-cutting-circular-saw-tool-only.js?currency=USD",
+        "response_sha256": "e7ff966647228e86c08117342c35c952e67cc86e189db78858041c310dfd4da4",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DeWALT 20V MAX XR 7-1/4-in. Metal Cutting Circular Saw, Tool Only (DCS383B)",
+          "variant": "53393182556454",
+          "sku": "DCS383B",
+          "price_minor": 35499,
+          "reference_minor": 47900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Sawstop Professional 1.75HP Cabinet Saw with 36-in. Professional T-Glide Advance Rip Fence, Rails & Extension Table (PCS175-ATGP36)",
+        "store": "Tool Nut",
+        "offer": {
+          "variant_key": "51633306108198",
+          "url": "https://www.toolnut.com/products/sawstop-pcs175-atgp36-professional-1-75hp-cabinet-saw-with-36-professional-t-glide-advance-rip-fence-rails-extension-table?currency=USD&variant=51633306108198",
+          "current_price": 3152.0,
+          "original_price": 3502.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/sawstop_pcs52_175_atg_1_1d7c02dc-f1fe-4c79-ad50-cee8a982c298.jpg?v=1761768220",
+          "reference_basis": "retailer_compare_at",
+          "discount": 10.0,
+          "savings": 350.0
+        },
+        "checked_at": "2026-11-03T03:45:51.937016+00:00",
+        "evidence_url": "https://www.toolnut.com/products/sawstop-pcs175-atgp36-professional-1-75hp-cabinet-saw-with-36-professional-t-glide-advance-rip-fence-rails-extension-table.js?currency=USD",
+        "response_sha256": "afbae1b7de39b2718cfe333b216913fb465a18173bc0949478bf836a3b05709b",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Sawstop Professional 1.75HP Cabinet Saw with 36-in. Professional T-Glide Advance Rip Fence, Rails & Extension Table (PCS175-ATGP36)",
+          "variant": "51633306108198",
+          "sku": "PCS175-ATGP36",
+          "price_minor": 315200,
+          "reference_minor": 350200,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Stanley Bostitch MIIIFN Hardwood Flooring Cleat Nailer",
+        "store": "Tool Nut",
+        "offer": {
+          "variant_key": "50174894571814",
+          "url": "https://www.toolnut.com/products/stanley-bostitch-miiifn-hardwood-flooring-cleat-nailer?currency=USD&variant=50174894571814",
+          "current_price": 361.03,
+          "original_price": 500.97,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/stanley_bostitch-miiifn-1.jpg?v=1778064428",
+          "reference_basis": "retailer_compare_at",
+          "discount": 27.9,
+          "savings": 139.94
+        },
+        "checked_at": "2026-11-03T03:45:53.545114+00:00",
+        "evidence_url": "https://www.toolnut.com/products/stanley-bostitch-miiifn-hardwood-flooring-cleat-nailer.js?currency=USD",
+        "response_sha256": "89a46ca9e0dc763c786e6b17e5ebde61c41b727e9fa58027f44923203dd8bc0c",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Stanley Bostitch MIIIFN Hardwood Flooring Cleat Nailer",
+          "variant": "50174894571814",
+          "sku": "MIIIFN",
+          "price_minor": 36103,
+          "reference_minor": 50097,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "ALPHA HW615Pro  3HP 15\" Stain-less Bandsaw",
+        "store": "Harvey Woodworking",
+        "offer": {
+          "variant_key": "44693094793434",
+          "url": "https://www.harveywoodworking.com/products/alpha-hw615pro-3hp-15-stain-less-bandsaw?currency=USD&variant=44693094793434",
+          "current_price": 2599.0,
+          "original_price": 3399.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/1781/9323/files/Harvey_Alpha_HW615Pro_Bandsaw.png?v=1768596721",
+          "reference_basis": "retailer_compare_at",
+          "discount": 23.5,
+          "savings": 800.0
+        },
+        "checked_at": "2026-11-03T03:45:55.163387+00:00",
+        "evidence_url": "https://www.harveywoodworking.com/products/alpha-hw615pro-3hp-15-stain-less-bandsaw.js?currency=USD",
+        "response_sha256": "1747db1539c7e7857491cfa89c8d47780fd706806a3cd86edce179d7af9ad8e8",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "ALPHA HW615Pro  3HP 15\" Stain-less Bandsaw",
+          "variant": "44693094793434",
+          "sku": "701107",
+          "price_minor": 259900,
+          "reference_minor": 339900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "DeWALT 20V MAX XR Brushless 7-1/4-in. Circular Saw POWERPACK 8.0Ah Kit (DCS590WW1)",
+        "store": "Tool Nut",
+        "offer": {
+          "variant_key": "53393183670566",
+          "url": "https://www.toolnut.com/products/dewalt-dcs590ww1-20v-max-xr-brushless-7-1-4-in-circular-saw-8-0ah-kit-w-xr-powerpack?currency=USD&variant=53393183670566",
+          "current_price": 279.0,
+          "original_price": 379.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/dcs590ww1-1.jpg?v=1778399406",
+          "reference_basis": "retailer_compare_at",
+          "discount": 26.4,
+          "savings": 100.0
+        },
+        "checked_at": "2026-11-03T03:45:58.776115+00:00",
+        "evidence_url": "https://www.toolnut.com/products/dewalt-dcs590ww1-20v-max-xr-brushless-7-1-4-in-circular-saw-8-0ah-kit-w-xr-powerpack.js?currency=USD",
+        "response_sha256": "e360c3efe4049d0da49cd9e795586ed6b3f5752df7de28f289aef92b38257c29",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DeWALT 20V MAX XR Brushless 7-1/4-in. Circular Saw POWERPACK 8.0Ah Kit (DCS590WW1)",
+          "variant": "53393183670566",
+          "sku": "DCS590WW1",
+          "price_minor": 27900,
+          "reference_minor": 37900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "SawStop 3HP, 1ph, 230v Industrial Cabinet Saw w/52\" T-Glide Fence System, Rails & Extension Table",
+        "store": "OakTree Supply",
+        "offer": {
+          "variant_key": "37560123424967",
+          "url": "https://www.oaktreesupply.com/products/sawstop-3hp-1ph-220v-industrial-cabinet-saw-with-52-industrial-t-glide-fence?currency=USD&variant=37560123424967",
+          "current_price": 4772.0,
+          "original_price": 5272.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/products/ICS-52.jpg?v=1610139005",
+          "reference_basis": "retailer_compare_at",
+          "discount": 9.5,
+          "savings": 500.0
+        },
+        "checked_at": "2026-11-03T03:46:00.523457+00:00",
+        "evidence_url": "https://www.oaktreesupply.com/products/sawstop-3hp-1ph-220v-industrial-cabinet-saw-with-52-industrial-t-glide-fence.js?currency=USD",
+        "response_sha256": "3f1c115a4d440ee31eeb27472a6081d950a4481598c11842c8eabfbfbf2209b0",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "SawStop 3HP, 1ph, 230v Industrial Cabinet Saw w/52\" T-Glide Fence System, Rails & Extension Table",
+          "variant": "37560123424967",
+          "sku": "ICS31230-TGI252",
+          "price_minor": 477200,
+          "reference_minor": 527200,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "AMBASSADOR C14Pro 3HP 14\" Stain-less Bandsaw",
+        "store": "Harvey Woodworking",
+        "offer": {
+          "variant_key": "45312393609434",
+          "url": "https://www.harveywoodworking.com/products/ambassador-c14pro-3hp-14-stain-less-bandsaw?currency=USD&variant=45312393609434",
+          "current_price": 1899.0,
+          "original_price": 2899.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/1781/9323/files/14-inch-stainless-bandsaw-3hp-ambassador-c14pro.webp?v=1758184108",
+          "reference_basis": "retailer_compare_at",
+          "discount": 34.5,
+          "savings": 1000.0
+        },
+        "checked_at": "2026-11-03T03:46:02.195777+00:00",
+        "evidence_url": "https://www.harveywoodworking.com/products/ambassador-c14pro-3hp-14-stain-less-bandsaw.js?currency=USD",
+        "response_sha256": "c21bea55cbd59b025bae973c657f6aeefce5287517b0796fd5c54d7042e3f8de",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "AMBASSADOR C14Pro 3HP 14\" Stain-less Bandsaw",
+          "variant": "45312393609434",
+          "sku": "701106",
+          "price_minor": 189900,
+          "reference_minor": 289900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "SHARK HD520 CNC Machine",
+        "store": "Woodcraft",
+        "offer": {
+          "variant_key": "43400676278410",
+          "url": "https://www.woodcraft.com/products/next-wave-shark-hd520-cnc-machine?currency=USD&variant=43400676278410",
+          "current_price": 4249.99,
+          "original_price": 4999.99,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/167551_000_002.jpg?v=1767622966",
+          "reference_basis": "retailer_compare_at",
+          "discount": 15.0,
+          "savings": 750.0
+        },
+        "checked_at": "2026-11-03T03:46:03.801606+00:00",
+        "evidence_url": "https://www.woodcraft.com/products/next-wave-shark-hd520-cnc-machine.js?currency=USD",
+        "response_sha256": "6230ababb9d58240c4f35fd64e7629f3209ef8d49c991000a9c51dcccbb33bfe",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "SHARK HD520 CNC Machine",
+          "variant": "43400676278410",
+          "sku": "167551",
+          "price_minor": 424999,
+          "reference_minor": 499999,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Industrial Cabinet Saw with 36\" Industrial T-Glide Fence System - 5HP - 3PH - 230V",
+        "store": "Woodcraft",
+        "offer": {
+          "variant_key": "43403005460618",
+          "url": "https://www.woodcraft.com/products/sawstop-5hp-3ph-480v-industrial-cabinet-saw-with-36-industrial-t-glide-fence-system?currency=USD&variant=43403005460618",
+          "current_price": 5322.0,
+          "original_price": 5822.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/420942_000_001.jpg?v=1790193976",
+          "reference_basis": "retailer_compare_at",
+          "discount": 8.6,
+          "savings": 500.0
+        },
+        "checked_at": "2026-11-03T03:46:05.618088+00:00",
+        "evidence_url": "https://www.woodcraft.com/products/sawstop-5hp-3ph-480v-industrial-cabinet-saw-with-36-industrial-t-glide-fence-system.js?currency=USD",
+        "response_sha256": "59c9fb6c664dbb090e03563519a3d84dc94292d0face23e391b8602972adc3f2",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Industrial Cabinet Saw with 36\" Industrial T-Glide Fence System - 5HP - 3PH - 230V",
+          "variant": "43403005460618",
+          "sku": "420942",
+          "price_minor": 532200,
+          "reference_minor": 582200,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Industrial Cabinet Saw with 36\" Industrial T-Glide Advance Fence System - 5 HP - 3PH - 480V",
+        "store": "Woodcraft",
+        "offer": {
+          "variant_key": "47760057794698",
+          "url": "https://www.woodcraft.com/products/sawstop-5hp-3ph-480v-ics-36-industrial?currency=USD&variant=47760057794698",
+          "current_price": 4651.0,
+          "original_price": 5151.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/839898_000_001.jpg?v=1779999237",
+          "reference_basis": "retailer_compare_at",
+          "discount": 9.7,
+          "savings": 500.0
+        },
+        "checked_at": "2026-11-03T03:46:07.234266+00:00",
+        "evidence_url": "https://www.woodcraft.com/products/sawstop-5hp-3ph-480v-ics-36-industrial.js?currency=USD",
+        "response_sha256": "021a30a903958cc5358be65f0c14ea667ecf9a89ba3bb31b8d9fc748d300fceb",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Industrial Cabinet Saw with 36\" Industrial T-Glide Advance Fence System - 5 HP - 3PH - 480V",
+          "variant": "47760057794698",
+          "sku": "839898",
+          "price_minor": 465100,
+          "reference_minor": 515100,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Compact Table Saw",
+        "store": "Woodcraft",
+        "offer": {
+          "variant_key": "43402724475018",
+          "url": "https://www.woodcraft.com/products/sawstop-compact-table-saw?currency=USD&variant=43402724475018",
+          "current_price": 824.0,
+          "original_price": 899.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/184486_000_001.jpg?v=1788268566",
+          "reference_basis": "retailer_compare_at",
+          "discount": 8.3,
+          "savings": 75.0
+        },
+        "checked_at": "2026-11-03T03:46:08.840058+00:00",
+        "evidence_url": "https://www.woodcraft.com/products/sawstop-compact-table-saw.js?currency=USD",
+        "response_sha256": "b2a75760d85e073dd2a342b31b6eb4163bc29aeb8ca8e46f2b7f97d4943ad0c3",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Compact Table Saw",
+          "variant": "43402724475018",
+          "sku": "184486",
+          "price_minor": 82400,
+          "reference_minor": 89900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Jet GH-1440-1 Lathe with Newall DP500 DRO (323386)",
+        "store": "Tool Nut",
+        "offer": {
+          "variant_key": "50176763003174",
+          "url": "https://www.toolnut.com/products/jet-323386-gh-1440-1-lathe-with-newall-dp500-dro?currency=USD&variant=50176763003174",
+          "current_price": 20399.0,
+          "original_price": 25766.99,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/jet_323386_main.jpg?v=1778222013",
+          "reference_basis": "retailer_compare_at",
+          "discount": 20.8,
+          "savings": 5367.99
+        },
+        "checked_at": "2026-11-03T03:46:10.441692+00:00",
+        "evidence_url": "https://www.toolnut.com/products/jet-323386-gh-1440-1-lathe-with-newall-dp500-dro.js?currency=USD",
+        "response_sha256": "cd5e5bf58ce61b3f1cd0f7aa82bfe433e46e4aff602c8a0e6d3e6854e8cc8b78",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Jet GH-1440-1 Lathe with Newall DP500 DRO (323386)",
+          "variant": "50176763003174",
+          "sku": "323386-JPW",
+          "price_minor": 2039900,
+          "reference_minor": 2576699,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "SawStop 5HP, 1ph, 230v Industrial Cabinet Saw w/36\" T-Glide Advance Fence, Rails & Extension Table",
+        "store": "OakTree Supply",
+        "offer": {
+          "variant_key": "47338360111321",
+          "url": "https://www.oaktreesupply.com/products/sawstop-5hp-1ph-230v-industrial-cabinet-saw-w-36-t-glide-advance-fence-rails-extension-table?currency=USD&variant=47338360111321",
+          "current_price": 5486.0,
+          "original_price": 5986.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/files/ICS51230-ATGI36.jpg?v=1761836200",
+          "reference_basis": "retailer_compare_at",
+          "discount": 8.4,
+          "savings": 500.0
+        },
+        "checked_at": "2026-11-03T03:46:12.131745+00:00",
+        "evidence_url": "https://www.oaktreesupply.com/products/sawstop-5hp-1ph-230v-industrial-cabinet-saw-w-36-t-glide-advance-fence-rails-extension-table.js?currency=USD",
+        "response_sha256": "18bf9651d3a979f8f105c83962b2998c41d751d708eb512369345aec06c73b10",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "SawStop 5HP, 1ph, 230v Industrial Cabinet Saw w/36\" T-Glide Advance Fence, Rails & Extension Table",
+          "variant": "47338360111321",
+          "sku": "ICS51230-ATGI36",
+          "price_minor": 548600,
+          "reference_minor": 598600,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "Metabo HPT Siding Nailer",
+        "store": "Max Warehouse",
+        "offer": {
+          "variant_key": "809637838854",
+          "url": "https://www.maxwarehouse.com/products/coil-siding-nailr-120psi?currency=USD&variant=809637838854",
+          "current_price": 406.09,
+          "original_price": 410.15,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/1405/6268/files/image_2fabedb0-2ab8-42c0-ad08-14569a575cb3.jpg?v=1783929133",
+          "reference_basis": "retailer_compare_at",
+          "discount": 1.0,
+          "savings": 4.06
+        },
+        "checked_at": "2026-11-03T03:46:13.862179+00:00",
+        "evidence_url": "https://www.maxwarehouse.com/products/coil-siding-nailr-120psi.js?currency=USD",
+        "response_sha256": "decd276b7961abfc06cf792b1dd79cd63cff40656a6b3ac262e5b39b1b1572d0",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Metabo HPT Siding Nailer",
+          "variant": "809637838854",
+          "sku": "ACE-2686715",
+          "price_minor": 40609,
+          "reference_minor": 41015,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      },
+      {
+        "name": "DEWALT 20V MAX XR Oscillating Multi-Tool",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "46043156119743",
+          "url": "https://fastenersinc.myshopify.com/products/dew-dcs359b?currency=USD&variant=46043156119743",
+          "current_price": 179.0,
+          "original_price": 249.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/DCS359B_1_1680_afb5a255-bf4b-414c-9daa-b431a1a69016.webp?v=1787087288",
+          "reference_basis": "retailer_compare_at",
+          "discount": 28.1,
+          "savings": 70.0
+        },
+        "checked_at": "2026-11-03T03:46:17.420417+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/dew-dcs359b.js?currency=USD",
+        "response_sha256": "5640c35e4136a71b0d6fe9d63c49878f0a826f1e228c37c0f97d373699bfa17d",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DEWALT 20V MAX XR Oscillating Multi-Tool",
+          "variant": "46043156119743",
+          "sku": "DEW-DCS359B",
+          "price_minor": 17900,
+          "reference_minor": 24900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true
+        }
+      }
+    ]
+  },
+  "inventory": {
+    "catalog": "tools",
+    "measured_at": "2026-11-03T03:43:58.575265+00:00",
+    "reference_floor": 200,
+    "scope": "snapshot-listed offers; not independent merchant verification or unique model count",
+    "eligible_in_stock_listings": 409,
+    "deep_deal_listings": 26,
+    "useful_retailers": [
+      "Fasteners Inc",
+      "Grizzly Industrial",
+      "OakTree Supply",
+      "Taylor Toolworks",
+      "Tool Nut",
+      "Woodcraft"
+    ],
+    "checked_within_24h_percent": 100.0,
+    "exact_size_facets": [
+      "HW110S-36Pro",
+      "HW110S-52Pro",
+      "HW110TC-36Pro",
+      "HW110TC-52Pro"
+    ],
+    "top_offers": [
+      {
+        "name": "Axiom 2x2 CNC Table with Air-Cooled Spindle",
+        "store": "OakTree Supply",
+        "url": "https://www.oaktreesupply.com/products/axiom-2x2-cnc-table-with-spindle?currency=USD&variant=47708931948761",
+        "price": 1999.0,
+        "reference": 4699.0,
+        "discount": 57.5,
+        "size": null
+      },
+      {
+        "name": "DEWALT 20V MAX XR Brushless Cordless Router (Tool Only)",
+        "store": "Fasteners Inc",
+        "url": "https://fastenersinc.myshopify.com/products/dcw600b-20v-max-compact-router-dewalt?currency=USD&variant=31231201247319",
+        "price": 119.0,
+        "reference": 249.0,
+        "discount": 52.2,
+        "size": null
+      },
+      {
+        "name": "Axiom Iconic-4 Series CNC Router 2' x 2'",
+        "store": "OakTree Supply",
+        "url": "https://www.oaktreesupply.com/products/axoiom-iconic-4-series-cnc-router-24-x-24?currency=USD&variant=37991680082119",
+        "price": 2999.0,
+        "reference": 6049.0,
+        "discount": 50.4,
+        "size": null
+      },
+      {
+        "name": "Iconic 24\" x 24\" for Axiom CNC Router",
+        "store": "Woodcraft",
+        "url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-24-for-axiom-cnc-router?currency=USD&variant=43403824922762",
+        "price": 2999.0,
+        "reference": 6049.0,
+        "discount": 50.4,
+        "size": null
+      },
+      {
+        "name": "DEWALT, DCS334B, Cordless Jig Saw, 20V, Brushless, 1 in Blade Stroke Length, 4-Position Orbital Action",
+        "store": "Fasteners Inc",
+        "url": "https://fastenersinc.myshopify.com/products/dcs334b-20v-max-xr-cordless-jig-saw-tool-only-dewalt?currency=USD&variant=31231188205655",
+        "price": 119.0,
+        "reference": 239.0,
+        "discount": 50.2,
+        "size": null
+      },
+      {
+        "name": "JET JAT-127, 3/4-in. Composite Impact Wrench (505127)",
+        "store": "Tool Nut",
+        "url": "https://www.toolnut.com/products/jet-505127-jat-127-composite-impact-wrench?currency=USD&variant=50177235976486",
+        "price": 299.99,
+        "reference": 580.99,
+        "discount": 48.4,
+        "size": null
+      },
+      {
+        "name": "Axiom AR16 Elite 4'x4' CNC Router",
+        "store": "OakTree Supply",
+        "url": "https://www.oaktreesupply.com/products/axiom-ar16-elite-4x4?currency=USD&variant=31966639423606",
+        "price": 9999.0,
+        "reference": 19299.0,
+        "discount": 48.2,
+        "size": null
+      },
+      {
+        "name": "Axiom AR4Pro V6 2'x2' CNC Router",
+        "store": "OakTree Supply",
+        "url": "https://www.oaktreesupply.com/products/axiom-ar4pro-v5-2x2-cnc-router?currency=USD&variant=31966616780918",
+        "price": 4999.0,
+        "reference": 9459.0,
+        "discount": 47.2,
+        "size": null
+      },
+      {
+        "name": "Axiom Iconic-6 Series CNC Router 2' x 3'",
+        "store": "OakTree Supply",
+        "url": "https://www.oaktreesupply.com/products/axiom-iconic-6-series-cnc-router-24-x-36?currency=USD&variant=41257102147783",
+        "price": 3499.0,
+        "reference": 6599.0,
+        "discount": 47.0,
+        "size": null
+      },
+      {
+        "name": "Iconic 24\" x 36\" CNC Router",
+        "store": "Woodcraft",
+        "url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-36-cnc-router?currency=USD&variant=43400695939210",
+        "price": 3499.0,
+        "reference": 6599.0,
+        "discount": 47.0,
+        "size": null
+      }
+    ]
+  },
+  "build": {
+    "catalog": "tools",
+    "brand": "Bench Drop",
+    "built_at": "2026-11-03T03:45:18.641847+00:00",
+    "snapshot_sha256": "ffbbea4aa921df224067b9a1efa0865ca12a9c81286576527bed809a02294551",
+    "public_url": null,
+    "matching_deals": 409,
+    "sources": [
+      {
+        "name": "Tool Nut",
+        "observed_at": "2026-11-03T02:18:44.159819+00:00",
+        "listings": 158
+      },
+      {
+        "name": "Woodcraft",
+        "observed_at": "2026-11-03T02:20:45.151477+00:00",
+        "listings": 77
+      },
+      {
+        "name": "Craft Supplies USA",
+        "observed_at": "2026-11-03T02:21:17.658265+00:00",
+        "listings": 1
+      },
+      {
+        "name": "Harvey Woodworking",
+        "observed_at": "2026-11-03T02:21:22.519933+00:00",
+        "listings": 11
+      },
+      {
+        "name": "WEN",
+        "observed_at": "2026-11-03T02:21:27.405378+00:00",
+        "listings": 8
+      },
+      {
+        "name": "Factory Direct Supply",
+        "observed_at": "2026-11-03T02:21:32.357335+00:00",
+        "listings": 6
+      },
+      {
+        "name": "Grizzly Industrial",
+        "observed_at": "2026-11-03T02:22:10.048502+00:00",
+        "listings": 41
+      },
+      {
+        "name": "Max Warehouse",
+        "observed_at": "2026-11-03T02:24:21.132040+00:00",
+        "listings": 45
+      },
+      {
+        "name": "OakTree Supply",
+        "observed_at": "2026-11-03T02:24:48.729743+00:00",
+        "listings": 84
+      },
+      {
+        "name": "Taylor Toolworks",
+        "observed_at": "2026-11-03T03:13:45.629203+00:00",
+        "listings": 1
+      },
+      {
+        "name": "Fasteners Inc",
+        "observed_at": "2026-11-03T03:41:32.886930+00:00",
+        "listings": 75
+      }
+    ]
+  },
+  "preview_verification": [
+    {
+      "surface": "preview",
+      "health": {
+        "catalog": "tools",
+        "snapshot_sha256": "ffbbea4aa921df224067b9a1efa0865ca12a9c81286576527bed809a02294551",
+        "fresh_sources": 11,
+        "configured_sources": 11,
+        "status": "ready"
+      },
+      "deep_fasteners_cards": [
+        {
+          "url": "https://fastenersinc.myshopify.com/products/dcw600b-20v-max-compact-router-dewalt?currency=USD&variant=31231201247319",
+          "price": 119.0,
+          "reference": 249.0
+        },
+        {
+          "url": "https://fastenersinc.myshopify.com/products/dcs334b-20v-max-xr-cordless-jig-saw-tool-only-dewalt?currency=USD&variant=31231188205655",
+          "price": 119.0,
+          "reference": 239.0
+        },
+        {
+          "url": "https://fastenersinc.myshopify.com/products/dewalt-dcf913b-20v-max-3-8-in-cordless-impact-wrench-with-hog-ring-anvil-tool-only?currency=USD&variant=41178623606975",
+          "price": 119.0,
+          "reference": 219.0
+        },
+        {
+          "url": "https://fastenersinc.myshopify.com/products/dewalt-dcf911b-20v-max-1-2-impact-wrench-with-hog-ring-anvil-tool-only?currency=USD&variant=41178623279295",
+          "price": 129.0,
+          "reference": 219.0
+        }
+      ]
+    },
+    {
+      "surface": "standalone",
+      "health": {
+        "catalog": "tools",
+        "snapshot_sha256": "ffbbea4aa921df224067b9a1efa0865ca12a9c81286576527bed809a02294551",
+        "fresh_sources": 11,
+        "configured_sources": 11,
+        "status": "ready"
+      }
+    }
+  ],
+  "verification": {
+    "offline_tests_passed": 445,
+    "scoped_ruff": "pass",
+    "diff_check": "pass"
+  },
+  "limitations": [
+    "Source-reported references and stock are not checkout or historical street-price evidence.",
+    "The source and combined samples overlap; do not add them as independent random samples.",
+    "Each qualifying source product had one feed variant; no claim of multi-variant headless selector validation.",
+    "No public deployment; no all-market lead or saturation claim."
+  ],
+  "mobile_fit_tasks": [
+    {
+      "site": "Big Ring",
+      "at": "2026-11-03T03:47:16.548996+00:00",
+      "environment": "local",
+      "viewport": [
+        390,
+        844
+      ],
+      "task": {
+        "budget": 2500,
+        "size": "M"
+      },
+      "actions": [
+        "Open filters",
+        "Set budget",
+        "Select size",
+        "Apply filters"
+      ],
+      "action_count": 4,
+      "action_scope": "Form-control interactions only; Playwright may auto-scroll. Not a verified physical gesture count.",
+      "scroll_positions": [
+        0,
+        0,
+        0,
+        0,
+        193
+      ],
+      "control_positions": [
+        {
+          "control": "budget",
+          "box": {
+            "x": 34.5,
+            "y": 611.5,
+            "width": 153,
+            "height": 44
+          }
+        },
+        {
+          "control": "size",
+          "box": {
+            "x": 34.5,
+            "y": 528.5,
+            "width": 153,
+            "height": 44
+          }
+        },
+        {
+          "control": "submit",
+          "box": {
+            "x": 202.5,
+            "y": 689.5,
+            "width": 153,
+            "height": 41
+          }
+        }
+      ],
+      "result_first_price_bottom": 661.09375,
+      "result_url": "http://127.0.0.1:8766/?q=&category=&brand=&store=&size=M&min_reference=1000&max_price=2500&min_discount=0.0#deals",
+      "matching_deals": "73",
+      "visible_cards": [
+        {
+          "price": "$1,499.99",
+          "stock": "Reported in stock \u00b7 Medium",
+          "variant": "Nostalgic Sea Blue - Ocean Frost / Medium",
+          "tags": null,
+          "url": "https://coloradocyclist.com/products/vaast-bikes-e-1-xt-slx-27-5-e-bike-nostalgic-sea-blue-ocean-frost?currency=USD&variant=48408222335216"
+        },
+        {
+          "price": "$1,999.99",
+          "stock": "Reported in stock \u00b7 Medium",
+          "variant": "Vibrant Berry Red - Black Cherry / Medium",
+          "tags": null,
+          "url": "https://coloradocyclist.com/products/vaast-bikes-e-1-enviolo-27-5-e-bike-vibrant-berry-red-black-cherry?currency=USD&variant=48408222236912"
+        },
+        {
+          "price": "$1,895.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "Ready To Paint / M",
+          "tags": null,
+          "url": "https://contenderbicycles.com/products/open-upper-frameset?currency=USD&variant=37271992697000"
+        },
+        {
+          "price": "$2,199.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "Powder Anthracite / M",
+          "tags": null,
+          "url": "https://www.eriksbikeshop.com/products/bmc-2024-257-amp-al-speed-electric-bike-pr5a26673?currency=USD&variant=47214364688598"
+        },
+        {
+          "price": "$2,199.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "Powder Anthracite / M",
+          "tags": null,
+          "url": "https://www.eriksbikeshop.com/products/bmc-2024-257-amp-al-speed-step-through-electric-bike-pr5a26672?currency=USD&variant=47214364033238"
+        },
+        {
+          "price": "$1,595.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "Grey Gloss/Matte / M",
+          "tags": null,
+          "url": "https://contenderbicycles.com/products/open-wide-frameset?currency=USD&variant=37272021729448"
+        },
+        {
+          "price": "$1,495.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "Ready To Paint / M",
+          "tags": null,
+          "url": "https://contenderbicycles.com/products/open-u-p-unbeaten-path-gravel-frameset?currency=USD&variant=37272017797288"
+        },
+        {
+          "price": "$2,199.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "M",
+          "tags": null,
+          "url": "https://bikesonline.com/products/superior-xf-9-2-dc-lightweight-carbon-trail-bike?currency=USD&variant=52646834798884"
+        },
+        {
+          "price": "$1,799.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "M",
+          "tags": null,
+          "url": "https://bikesonline.com/products/superior-xr-6-5-gr-gravel-bike-new?currency=USD&variant=54327887626532"
+        },
+        {
+          "price": "$2,499.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "Gloss Castblack / M",
+          "tags": null,
+          "url": "https://www.eriksbikeshop.com/products/specialized-turbo-vado-2-40-electric-bike-pr5a27410?currency=USD&variant=67566626734294"
+        },
+        {
+          "price": "$2,499.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "GLOSS CASTBLACK / SATIN SILVER REFLECTIVE / M",
+          "tags": null,
+          "url": "https://www.eriksbikeshop.com/products/specialized-turbo-vado-40-step-through-electric-bike-pr5a27044?currency=USD&variant=50043773944022"
+        },
+        {
+          "price": "$1,999",
+          "stock": "Reported in stock \u00b7 MD",
+          "variant": "RockShox Super Deluxe Ultimate D1 / MD",
+          "tags": null,
+          "url": "https://intensecycles.com/products/primer-frameset?currency=USD&variant=45188692508695"
+        },
+        {
+          "price": "$1,999.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "Red/White / M",
+          "tags": null,
+          "url": "https://bikesonline.com/products/superior-rr-9-4-carbon-road-bike?currency=USD&variant=52646767296804"
+        },
+        {
+          "price": "$1,999",
+          "stock": "Reported in stock \u00b7 MD",
+          "variant": "Red / RockShox Vivid Ultimate / MD",
+          "tags": null,
+          "url": "https://intensecycles.com/products/tracer-279-frameset?currency=USD&variant=45139831521303"
+        },
+        {
+          "price": "$1,999",
+          "stock": "Reported in stock \u00b7 MD",
+          "variant": "Satin Black / RockShox Vivid Ultimate / MD",
+          "tags": null,
+          "url": "https://intensecycles.com/products/tracer-29-frameset?currency=USD&variant=45139984318487"
+        },
+        {
+          "price": "$2,499.01",
+          "stock": "Reported in stock \u00b7 Medium",
+          "variant": "Blue Lagoon / Medium",
+          "tags": null,
+          "url": "https://www.probikesupply.com/products/transition-patrol-carbon-frameset-2025?currency=USD&variant=42446970847287"
+        },
+        {
+          "price": "$2,199.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "Red Tint/Silver Reflective / M",
+          "tags": null,
+          "url": "https://www.eriksbikeshop.com/products/specialized-turbo-como-3-0-igh-electric-bike-pr5a23436?currency=USD&variant=46302803198166"
+        },
+        {
+          "price": "$2,199.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "Cast Black Silver Reflective / M",
+          "tags": null,
+          "url": "https://www.eriksbikeshop.com/products/specialized-2023-turbo-como-3-0-igh-step-thru-electric-bike-pr5a13230?currency=USD&variant=46161215422678"
+        },
+        {
+          "price": "$1,599.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "M / 29 inch",
+          "tags": null,
+          "url": "https://bikesonline.com/products/2024-polygon-syncline-c5-carbon-xc-mountain-bike?currency=USD&variant=49915949285668"
+        },
+        {
+          "price": "$849.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "M",
+          "tags": null,
+          "url": "https://bikesonline.com/products/polygon-path-4-urban-city-bike-new?currency=USD&variant=50896153739556"
+        },
+        {
+          "price": "$999.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "M",
+          "tags": null,
+          "url": "https://bikesonline.com/products/polygon-siskiu-d5-mountain-bike-new?currency=USD&variant=51049272312100"
+        },
+        {
+          "price": "$799.99",
+          "stock": "Reported in stock \u00b7 Medium",
+          "variant": "Gloss Blue / Medium",
+          "tags": null,
+          "url": "https://coloradocyclist.com/products/vaast-bikes-u-1-700c-street-gloss-blue?currency=USD&variant=48408261689584"
+        },
+        {
+          "price": "$2,199",
+          "stock": "Reported in stock \u00b7 MD",
+          "variant": "MD",
+          "tags": null,
+          "url": "https://bicyclewarehouse.com/products/dew-e-37?currency=USD&variant=45489399955558"
+        },
+        {
+          "price": "$2,199.99",
+          "stock": "Reported in stock \u00b7 M",
+          "variant": "Black Gloss / M",
+          "tags": null,
+          "url": "https://bikesonline.com/products/polygon-collosus-t6-all-mountain-bike?currency=USD&variant=52221357556004"
+        }
+      ],
+      "horizontal_overflow": false
+    },
+    {
+      "site": "Bench Drop",
+      "at": "2026-11-03T03:47:21.593990+00:00",
+      "environment": "local",
+      "viewport": [
+        390,
+        844
+      ],
+      "task": {
+        "budget": 500,
+        "format": "Kit"
+      },
+      "actions": [
+        "Open filters",
+        "Set budget",
+        "Select format",
+        "Apply filters"
+      ],
+      "action_count": 4,
+      "action_scope": "Form-control interactions only; Playwright may auto-scroll. Not a verified physical gesture count.",
+      "scroll_positions": [
+        0,
+        0,
+        0,
+        0,
+        193
+      ],
+      "control_positions": [
+        {
+          "control": "budget",
+          "box": {
+            "x": 34.5,
+            "y": 694.5,
+            "width": 153,
+            "height": 44
+          }
+        },
+        {
+          "control": "format",
+          "box": {
+            "x": 34.5,
+            "y": 611.5,
+            "width": 153,
+            "height": 44
+          }
+        },
+        {
+          "control": "submit",
+          "box": {
+            "x": 202.5,
+            "y": 772.5,
+            "width": 153,
+            "height": 41
+          }
+        }
+      ],
+      "result_first_price_bottom": 657.6875,
+      "result_url": "http://127.0.0.1:8770/?q=&category=&brand=&store=&size=&platform=&format=Kit&min_reference=200&max_price=500&min_discount=0.0#deals",
+      "matching_deals": "19",
+      "visible_cards": [
+        {
+          "price": "$179",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "Kit",
+          "url": "https://fastenersinc.myshopify.com/products/dewalt-dck225d2-atomic-20v-max-brushles-compact-drill-driver-and-impact-driver-combo-kit?currency=USD&variant=43846244827327"
+        },
+        {
+          "price": "$279",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "KitDeWalt 20V MAX",
+          "url": "https://www.toolnut.com/products/dewalt-dcg410ww1-20v-max-xr-brushless-4-1-2-in-5-in-angle-grinder-8-0ah-kit-w-xr-powerpack?currency=USD&variant=53393169056038"
+        },
+        {
+          "price": "$279",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "KitDeWalt 20V MAX",
+          "url": "https://www.toolnut.com/products/dewalt-dcs590ww1-20v-max-xr-brushless-7-1-4-in-circular-saw-8-0ah-kit-w-xr-powerpack?currency=USD&variant=53393183670566"
+        },
+        {
+          "price": "$259",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "KitDeWalt 20V MAX",
+          "url": "https://www.toolnut.com/products/dewalt-dcd1007ww1-20v-max-xr-brushless-3-speed-1-2-in-hammer-drill-powerpack-8-0ah-kit?currency=USD&variant=53393154736422"
+        },
+        {
+          "price": "$299",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "KitMilwaukee M18",
+          "url": "https://www.toolnut.com/products/milwaukee-2967-21b-m18-fuel-1-2-high-torque-impact-wrench-w-friction-ring-5-0ah-kit?currency=USD&variant=53393071374630"
+        },
+        {
+          "price": "$249",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "KitMilwaukee M18",
+          "url": "https://www.toolnut.com/products/milwaukee-2904-22-m18-fuel-1-2-hammer-drill-driver-kit?currency=USD&variant=53393069048102"
+        },
+        {
+          "price": "$299",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "KitMilwaukee M18",
+          "url": "https://www.toolnut.com/products/milwaukee-2761-22-m18-fuel-surge-1-4-hex-hydraulic-impact-driver-5-0ah-kit?currency=USD&variant=53393066590502"
+        },
+        {
+          "price": "$349",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "Kit",
+          "url": "https://www.toolnut.com/products/kreg-20v-cordless-ionic-drive-6-1-2-in-plunge-cut-track-saw-kit-kptbps200b?currency=USD&variant=53335376986406"
+        },
+        {
+          "price": "$349",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "Kit",
+          "url": "https://www.toolnut.com/products/kreg-kptbps100a-20v-ionic-drive-6-1-2-in-plunge-cut-track-saw-4-0ah-kit?currency=USD&variant=51473724408102"
+        },
+        {
+          "price": "$399",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "KitMakita LXT",
+          "url": "https://fastenersinc.myshopify.com/products/makita-18v-x2-lxt-lithiumion-36v-brushless-cordless-rear-handle-714-circular-saw-kit-50ah-xsr01pt-i-g8096685?currency=USD&variant=31306600251479"
+        },
+        {
+          "price": "$269",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "Kit",
+          "url": "https://www.woodcraft.com/products/bosch-2-25-hp-evs-fixed-and-plunge-base-router-combo-kit?currency=USD&variant=43403867488394"
+        },
+        {
+          "price": "$319",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "KitDeWalt 20V MAX",
+          "url": "https://factorydirectsupply.com/products/dewalt-20v-max-xr-3-speed-1-4-inch-high-torque-impact-driver-kit?currency=USD&variant=48206638186726"
+        },
+        {
+          "price": "$379",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "KitDeWalt 20V MAX",
+          "url": "https://www.grizzly.com/products/dewalt-20v-max-xr-jigsaw-kit-5.0ah/t32331"
+        },
+        {
+          "price": "$378.69",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "KitMilwaukee M18",
+          "url": "https://www.maxwarehouse.com/products/m18-fuel-hackzall?currency=USD&variant=39301742297139"
+        },
+        {
+          "price": "$337.24",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "Kit",
+          "url": "https://www.maxwarehouse.com/products/metabo-hpt-16-ga-cordless-straight-finish-nailer-kit-18-volt?currency=USD&variant=31799636066355"
+        },
+        {
+          "price": "$310.96",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "Kit",
+          "url": "https://www.maxwarehouse.com/products/metabo-hpt-15-ga-cordless-34-deg-angled-finish-nailer-kit-18-volt?currency=USD&variant=31799645831219"
+        },
+        {
+          "price": "$291.39",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "Kit",
+          "url": "https://www.maxwarehouse.com/products/metabo-hpt-pneumatic-16-ga-pro-finish-nailer-kit?currency=USD&variant=31799645798451"
+        },
+        {
+          "price": "$251.91",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "KitMilwaukee M12",
+          "url": "https://www.maxwarehouse.com/products/milwaukee-m12-fuel-surge-12-volt-cordless-brushless-hydraulic-impact-driver-kit-450-in-lb?currency=USD&variant=32223542214707"
+        },
+        {
+          "price": "$224.99",
+          "stock": "Reported in stock",
+          "variant": "Standard listing",
+          "tags": "Kit",
+          "url": "https://www.maxwarehouse.com/products/skil-pwrcore-20-20-volt-cordless-brushed-4-tool-combo-kit?currency=USD&variant=32598740172851"
+        }
+      ],
+      "horizontal_overflow": false
+    }
+  ],
+  "classifier_replay": [
+    {
+      "name": "DEWALT, DCS334B, Cordless Jig Saw, 20V, Brushless, 1 in Blade Stroke Length, 4-Position Orbital Action",
+      "before": "None",
+      "after": "Classification(category='Power tools', format='Not specified', platform='')",
+      "eligible": true,
+      "best_discount": 50.2
+    },
+    {
+      "name": "DEWALT, DCP580B, Planer, Brushless Motor, 20 V, 3.25 in Cutting Width, 15000 RPM, Cordless",
+      "before": "Classification(category='Workshop equipment', format='Not specified', platform='')",
+      "after": "Classification(category='Power tools', format='Not specified', platform='')",
+      "eligible": true,
+      "best_discount": 34.7
+    }
+  ]
+}

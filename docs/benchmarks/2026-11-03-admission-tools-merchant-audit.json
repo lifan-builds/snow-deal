@@ -1,0 +1,1545 @@
+{
+  "catalog": "tools",
+  "date": "2026-11-03T05:16:43.895060+00:00",
+  "seed": 20261103,
+  "population": 607,
+  "method": "top10-plus-seeded20-merchant-product-v1",
+  "sample_size": 30,
+  "match": 30,
+  "mismatch": 0,
+  "inconclusive": 0,
+  "verified_match_percent": 100.0,
+  "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+  "results": [
+    {
+      "name": "Axiom 2x2 CNC Table with Air-Cooled Spindle",
+      "store": "OakTree Supply",
+      "offer": {
+        "variant_key": "47708931948761",
+        "url": "https://www.oaktreesupply.com/products/axiom-2x2-cnc-table-with-spindle?currency=USD&variant=47708931948761",
+        "current_price": 1999.0,
+        "original_price": 4699.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/files/AX-101-1.jpg?v=1769713524",
+        "reference_basis": "retailer_compare_at",
+        "discount": 57.5,
+        "savings": 2700.0
+      },
+      "checked_at": "2026-11-03T05:13:40.699494+00:00",
+      "evidence_url": "https://www.oaktreesupply.com/products/axiom-2x2-cnc-table-with-spindle.js?currency=USD",
+      "response_sha256": "f4b87f2e1b8db50fa6bdd089236baf2d3cab3939639aa1c106f2d21f0739aa33",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Axiom 2x2 CNC Table with Air-Cooled Spindle",
+        "variant": "47708931948761",
+        "sku": "AX1-101",
+        "price_minor": 199900,
+        "reference_minor": 469900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "DEWALT 20V MAX XR Brushless Cordless Router (Tool Only)",
+      "store": "Fasteners Inc",
+      "offer": {
+        "variant_key": "31231201247319",
+        "url": "https://fastenersinc.myshopify.com/products/dcw600b-20v-max-compact-router-dewalt?currency=USD&variant=31231201247319",
+        "current_price": 119.0,
+        "original_price": 249.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/1c82af8b8d6d0cf2f34b8eea29e1d28f87bd16c4-large.png?v=1790078004",
+        "reference_basis": "retailer_compare_at",
+        "discount": 52.2,
+        "savings": 130.0
+      },
+      "checked_at": "2026-11-03T05:13:51.237818+00:00",
+      "evidence_url": "https://fastenersinc.myshopify.com/products/dcw600b-20v-max-compact-router-dewalt.js?currency=USD",
+      "response_sha256": "898903320f587fde506a5ec1fe82b4cf047a5037f0749b86255b6c8a38f4eeb0",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "DEWALT 20V MAX XR Brushless Cordless Router (Tool Only)",
+        "variant": "31231201247319",
+        "sku": "DEW-DCW600B",
+        "price_minor": 11900,
+        "reference_minor": 24900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Axiom Iconic-4 Series CNC Router 2' x 2'",
+      "store": "OakTree Supply",
+      "offer": {
+        "variant_key": "37991680082119",
+        "url": "https://www.oaktreesupply.com/products/axoiom-iconic-4-series-cnc-router-24-x-24?currency=USD&variant=37991680082119",
+        "current_price": 2999.0,
+        "original_price": 6049.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/products/Iconic-4.jpg?v=1676914267",
+        "reference_basis": "retailer_compare_at",
+        "discount": 50.4,
+        "savings": 3050.0
+      },
+      "checked_at": "2026-11-03T05:14:01.555018+00:00",
+      "evidence_url": "https://www.oaktreesupply.com/products/axoiom-iconic-4-series-cnc-router-24-x-24.js?currency=USD",
+      "response_sha256": "f07a77a59e0307e5b6d384a0ba332ec04fca519b4fed6871a9297d7486a86700",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Axiom Iconic-4 Series CNC Router 2' x 2'",
+        "variant": "37991680082119",
+        "sku": "AX9-ICONIC4",
+        "price_minor": 299900,
+        "reference_minor": 604900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Iconic 24\" x 24\" for Axiom CNC Router",
+      "store": "Woodcraft",
+      "offer": {
+        "variant_key": "43403824922762",
+        "url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-24-for-axiom-cnc-router?currency=USD&variant=43403824922762",
+        "current_price": 2999.0,
+        "original_price": 6049.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/172910_000_001.jpg?v=1720472421",
+        "reference_basis": "retailer_compare_at",
+        "discount": 50.4,
+        "savings": 3050.0
+      },
+      "checked_at": "2026-11-03T05:14:06.754165+00:00",
+      "evidence_url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-24-for-axiom-cnc-router.js?currency=USD",
+      "response_sha256": "70a947ae04b90c1bfc26a6ab72a7d2fd9deceea5cffea990b1fa15ae9e64b02d",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Iconic 24\" x 24\" for Axiom CNC Router",
+        "variant": "43403824922762",
+        "sku": "172910",
+        "price_minor": 299900,
+        "reference_minor": 604900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "DEWALT, DCS334B, Cordless Jig Saw, 20V, Brushless, 1 in Blade Stroke Length, 4-Position Orbital Action",
+      "store": "Fasteners Inc",
+      "offer": {
+        "variant_key": "31231188205655",
+        "url": "https://fastenersinc.myshopify.com/products/dcs334b-20v-max-xr-cordless-jig-saw-tool-only-dewalt?currency=USD&variant=31231188205655",
+        "current_price": 119.0,
+        "original_price": 239.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/473893353f01ef5298d20ee57c71d49d0d5d654e-large_2e145551-785e-4a6c-a184-39ece194d402.png?v=1773431552",
+        "reference_basis": "retailer_compare_at",
+        "discount": 50.2,
+        "savings": 120.0
+      },
+      "checked_at": "2026-11-03T05:14:17.224593+00:00",
+      "evidence_url": "https://fastenersinc.myshopify.com/products/dcs334b-20v-max-xr-cordless-jig-saw-tool-only-dewalt.js?currency=USD",
+      "response_sha256": "41c2584cc85c27be814ea5282e9c97911bba22b4ad0472a7219836ae4701fdac",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "DEWALT, DCS334B, Cordless Jig Saw, 20V, Brushless, 1 in Blade Stroke Length, 4-Position Orbital Action",
+        "variant": "31231188205655",
+        "sku": "DEW-DCS334B",
+        "price_minor": 11900,
+        "reference_minor": 23900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "JET JAT-127, 3/4-in. Composite Impact Wrench (505127)",
+      "store": "Tool Nut",
+      "offer": {
+        "variant_key": "50177235976486",
+        "url": "https://www.toolnut.com/products/jet-505127-jat-127-composite-impact-wrench?currency=USD&variant=50177235976486",
+        "current_price": 299.99,
+        "original_price": 580.99,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/505127_main.jpg?v=1778274029",
+        "reference_basis": "retailer_compare_at",
+        "discount": 48.4,
+        "savings": 281.0
+      },
+      "checked_at": "2026-11-03T05:14:22.404666+00:00",
+      "evidence_url": "https://www.toolnut.com/products/jet-505127-jat-127-composite-impact-wrench.js?currency=USD",
+      "response_sha256": "809181c34868ee50941e0ca822e8053f47d5f3660da88a3048b4cf6ee9a8f8bd",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "JET JAT-127, 3/4-in. Composite Impact Wrench (505127)",
+        "variant": "50177235976486",
+        "sku": "505127",
+        "price_minor": 29999,
+        "reference_minor": 58099,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Axiom AR16 Elite 4'x4' CNC Router",
+      "store": "OakTree Supply",
+      "offer": {
+        "variant_key": "31966639423606",
+        "url": "https://www.oaktreesupply.com/products/axiom-ar16-elite-4x4?currency=USD&variant=31966639423606",
+        "current_price": 9999.0,
+        "original_price": 19299.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/products/AR16Elite_6b6c2750-ef34-4a6c-b6bd-7429b0810f70.jpg?v=1678136683",
+        "reference_basis": "retailer_compare_at",
+        "discount": 48.2,
+        "savings": 9300.0
+      },
+      "checked_at": "2026-11-03T05:14:32.823786+00:00",
+      "evidence_url": "https://www.oaktreesupply.com/products/axiom-ar16-elite-4x4.js?currency=USD",
+      "response_sha256": "bb5d82a8ce2314250074ad73ac51874cdc5dbf76b29bc568ca97155fbdda770b",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Axiom AR16 Elite 4'x4' CNC Router",
+        "variant": "31966639423606",
+        "sku": "AX9-AR16ELITE",
+        "price_minor": 999900,
+        "reference_minor": 1929900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Axiom AR4Pro V6 2'x2' CNC Router",
+      "store": "OakTree Supply",
+      "offer": {
+        "variant_key": "31966616780918",
+        "url": "https://www.oaktreesupply.com/products/axiom-ar4pro-v5-2x2-cnc-router?currency=USD&variant=31966616780918",
+        "current_price": 4999.0,
+        "original_price": 9459.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/files/AR4ProV6main_4d61fd1e-1529-413c-95d0-cfddbfd9d660.jpg?v=1711135489",
+        "reference_basis": "retailer_compare_at",
+        "discount": 47.2,
+        "savings": 4460.0
+      },
+      "checked_at": "2026-11-03T05:14:38.069135+00:00",
+      "evidence_url": "https://www.oaktreesupply.com/products/axiom-ar4pro-v5-2x2-cnc-router.js?currency=USD",
+      "response_sha256": "f885fbfb159c552ba6d62d8a6c4e8e45a5e1e33d23cfde9aea79db10b9a24486",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Axiom AR4Pro V6 2'x2' CNC Router",
+        "variant": "31966616780918",
+        "sku": "AX9-AR4PROV6",
+        "price_minor": 499900,
+        "reference_minor": 945900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Axiom Iconic-6 Series CNC Router 2' x 3'",
+      "store": "OakTree Supply",
+      "offer": {
+        "variant_key": "41257102147783",
+        "url": "https://www.oaktreesupply.com/products/axiom-iconic-6-series-cnc-router-24-x-36?currency=USD&variant=41257102147783",
+        "current_price": 3499.0,
+        "original_price": 6599.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/products/Iconic-6-1.jpg?v=1676914781",
+        "reference_basis": "retailer_compare_at",
+        "discount": 47.0,
+        "savings": 3100.0
+      },
+      "checked_at": "2026-11-03T05:14:43.300708+00:00",
+      "evidence_url": "https://www.oaktreesupply.com/products/axiom-iconic-6-series-cnc-router-24-x-36.js?currency=USD",
+      "response_sha256": "3f902de9f53baa0e0c0d55b697cba42793ad8c615259d500de2157f34d6091fe",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Axiom Iconic-6 Series CNC Router 2' x 3'",
+        "variant": "41257102147783",
+        "sku": "AX9-ICONIC6",
+        "price_minor": 349900,
+        "reference_minor": 659900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Iconic 24\" x 36\" CNC Router",
+      "store": "Woodcraft",
+      "offer": {
+        "variant_key": "43400695939210",
+        "url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-36-cnc-router?currency=USD&variant=43400695939210",
+        "current_price": 3499.0,
+        "original_price": 6599.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/172911_000_001.jpg?v=1720472424",
+        "reference_basis": "retailer_compare_at",
+        "discount": 47.0,
+        "savings": 3100.0
+      },
+      "checked_at": "2026-11-03T05:14:48.552166+00:00",
+      "evidence_url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-36-cnc-router.js?currency=USD",
+      "response_sha256": "0c85371d1b0e881d75222727672a3e2f1b203c3194ab96b0678c39403f05d2a8",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Iconic 24\" x 36\" CNC Router",
+        "variant": "43400695939210",
+        "sku": "172911",
+        "price_minor": 349900,
+        "reference_minor": 659900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "SKIL 20V PWR CORE Cordless Brushed 4 Tool Combo Kit",
+      "store": "Max Warehouse",
+      "offer": {
+        "variant_key": "32598740172851",
+        "url": "https://www.maxwarehouse.com/products/skil-pwrcore-20-20-volt-cordless-brushed-4-tool-combo-kit?currency=USD&variant=32598740172851",
+        "current_price": 224.99,
+        "original_price": 227.24,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/1405/6268/files/image_69901bca-765f-4eaf-bbe2-f807bdfdab2d.jpg?v=1772114790",
+        "reference_basis": "retailer_compare_at",
+        "discount": 1.0,
+        "savings": 2.25
+      },
+      "checked_at": "2026-11-03T05:14:53.794797+00:00",
+      "evidence_url": "https://www.maxwarehouse.com/products/skil-pwrcore-20-20-volt-cordless-brushed-4-tool-combo-kit.js?currency=USD",
+      "response_sha256": "473aec0dfdd57814c0fdf057c59c961fb2bb1a5fd3860661ae51783eb39ae9ee",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "SKIL 20V PWR CORE Cordless Brushed 4 Tool Combo Kit",
+        "variant": "32598740172851",
+        "sku": "EJD-2006595",
+        "price_minor": 22499,
+        "reference_minor": 22724,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "SawStop 7.5HP, 3ph, 230v Industrial Cabinet Saw w/36\" T-Glide Fence System, Rails & Extension Table",
+      "store": "OakTree Supply",
+      "offer": {
+        "variant_key": "37560870043847",
+        "url": "https://www.oaktreesupply.com/products/sawstop-7-5hp-3ph-220v-industrial-cabinet-saw-with-36-industrial-t-glide-fence?currency=USD&variant=37560870043847",
+        "current_price": 6000.0,
+        "original_price": 6500.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/files/ICS-36_e40936ee-9155-41d1-96c5-75d550cf61db.jpg?v=1758901357",
+        "reference_basis": "retailer_compare_at",
+        "discount": 7.7,
+        "savings": 500.0
+      },
+      "checked_at": "2026-11-03T05:15:04.311278+00:00",
+      "evidence_url": "https://www.oaktreesupply.com/products/sawstop-7-5hp-3ph-220v-industrial-cabinet-saw-with-36-industrial-t-glide-fence.js?currency=USD",
+      "response_sha256": "cd38c0fc5d3db48b053d0055171368558054108e3ebd3160b8c035b1775cdd37",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "SawStop 7.5HP, 3ph, 230v Industrial Cabinet Saw w/36\" T-Glide Fence System, Rails & Extension Table",
+        "variant": "37560870043847",
+        "sku": "ICS73230-TGI236",
+        "price_minor": 600000,
+        "reference_minor": 650000,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "SCM Nova SI 4k R Sliding Table Saw 10.5 ft. | READY | 5.5 HP (Single Phase)",
+      "store": "OakTree Supply",
+      "offer": {
+        "variant_key": "46483532284121",
+        "url": "https://www.oaktreesupply.com/products/scm-nova-si-4k-r-table-saw-w-ready-control-1ph?currency=USD&variant=46483532284121",
+        "current_price": 16228.13,
+        "original_price": 18475.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/files/NovaSI4kR-Ready-1.jpg?v=1782240655",
+        "reference_basis": "retailer_compare_at",
+        "discount": 12.2,
+        "savings": 2246.87
+      },
+      "checked_at": "2026-11-03T05:15:09.551756+00:00",
+      "evidence_url": "https://www.oaktreesupply.com/products/scm-nova-si-4k-r-table-saw-w-ready-control-1ph.js?currency=USD",
+      "response_sha256": "501d8f37722c3387d0d1be69d904b2e9c9908f582a7cf845cada4c986f3d3ed9",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "SCM Nova SI 4k R Sliding Table Saw 10.5 ft. | READY | 5.5 HP (Single Phase)",
+        "variant": "46483532284121",
+        "sku": "NovaSI4kR-1ph",
+        "price_minor": 1622813,
+        "reference_minor": 1847500,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "JET GH-1880ZX With Newall DP700 DRO (321488)",
+      "store": "Tool Nut",
+      "offer": {
+        "variant_key": "50177148748070",
+        "url": "https://www.toolnut.com/products/jet-321488-lathe?currency=USD&variant=50177148748070",
+        "current_price": 41919.0,
+        "original_price": 49584.99,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/321488_main_1.jpg?v=1778271309",
+        "reference_basis": "retailer_compare_at",
+        "discount": 15.5,
+        "savings": 7665.99
+      },
+      "checked_at": "2026-11-03T05:15:14.753971+00:00",
+      "evidence_url": "https://www.toolnut.com/products/jet-321488-lathe.js?currency=USD",
+      "response_sha256": "7899163860cd31b0eedce071280472782bbb0ca930ad94fa14ae62551a620ffb",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "JET GH-1880ZX With Newall DP700 DRO (321488)",
+        "variant": "50177148748070",
+        "sku": "321488",
+        "price_minor": 4191900,
+        "reference_minor": 4958499,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "SawStop 5HP, 1ph, 230v Industrial Cabinet Saw w/52\" T-Glide Fence System, Rails & Extension Table",
+      "store": "OakTree Supply",
+      "offer": {
+        "variant_key": "37560284119239",
+        "url": "https://www.oaktreesupply.com/products/sawstop-5hp-1ph-220v-industrial-cabinet-saw-with-52-industrial-t-glide-fence?currency=USD&variant=37560284119239",
+        "current_price": 5440.0,
+        "original_price": 5940.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/files/ICS-52_d23322c0-afed-4a22-90f2-395cf5f0d318.jpg?v=1758901877",
+        "reference_basis": "retailer_compare_at",
+        "discount": 8.4,
+        "savings": 500.0
+      },
+      "checked_at": "2026-11-03T05:15:20.018969+00:00",
+      "evidence_url": "https://www.oaktreesupply.com/products/sawstop-5hp-1ph-220v-industrial-cabinet-saw-with-52-industrial-t-glide-fence.js?currency=USD",
+      "response_sha256": "e33e8b123a34ded7edb2ca3978b8a10d3a9f25106dd32b0febcfde31b390f4ef",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "SawStop 5HP, 1ph, 230v Industrial Cabinet Saw w/52\" T-Glide Fence System, Rails & Extension Table",
+        "variant": "37560284119239",
+        "sku": "ICS51230-TGI252",
+        "price_minor": 544000,
+        "reference_minor": 594000,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Makita XWT08Z LXT XWT08Z 18V LXT Lithium\u2011Ion Brushless Cordless High\u2011Torque 1/2\" Drive Impact Wrench, Tool Only",
+      "store": "Fasteners Inc",
+      "offer": {
+        "variant_key": "14356302856304",
+        "url": "https://fastenersinc.myshopify.com/products/makita-xwt08z-18-volt-1-2-inch-lxt-lit-ion-cordless-impact-wrench-bare-tool?currency=USD&variant=14356302856304",
+        "current_price": 309.0,
+        "original_price": 339.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/products/xwt08z__1.jpg?v=1734664399",
+        "reference_basis": "retailer_compare_at",
+        "discount": 8.8,
+        "savings": 30.0
+      },
+      "checked_at": "2026-11-03T05:15:25.263457+00:00",
+      "evidence_url": "https://fastenersinc.myshopify.com/products/makita-xwt08z-18-volt-1-2-inch-lxt-lit-ion-cordless-impact-wrench-bare-tool.js?currency=USD",
+      "response_sha256": "a98e0a0bc42e2dfaecc14d5944e47edbbcfef5b7fb6dfed2d459fa9b23f76648",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Makita XWT08Z LXT XWT08Z 18V LXT Lithium\u2011Ion Brushless Cordless High\u2011Torque 1/2\" Drive Impact Wrench, Tool Only",
+        "variant": "14356302856304",
+        "sku": "MAK-XWT08Z",
+        "price_minor": 30900,
+        "reference_minor": 33900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Shark HD610 CNC Machine",
+      "store": "Woodcraft",
+      "offer": {
+        "variant_key": "47537024106634",
+        "url": "https://www.woodcraft.com/products/next-wave-shark-hd610-cnc-machine?currency=USD&variant=47537024106634",
+        "current_price": 3599.99,
+        "original_price": 3999.99,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/198339_000_001.jpg?v=1790806037",
+        "reference_basis": "retailer_compare_at",
+        "discount": 10.0,
+        "savings": 400.0
+      },
+      "checked_at": "2026-11-03T05:15:30.545398+00:00",
+      "evidence_url": "https://www.woodcraft.com/products/next-wave-shark-hd610-cnc-machine.js?currency=USD",
+      "response_sha256": "784d565f369d59ad9060ba096f28321ae0298e34a3022f25203228a520851967",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Shark HD610 CNC Machine",
+        "variant": "47537024106634",
+        "sku": "198339",
+        "price_minor": 359999,
+        "reference_minor": 399999,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Milwaukee M12 Cordless 23-Gauge Pin Nailer 1.5Ah Kit (2540-21)",
+      "store": "Tool Nut",
+      "offer": {
+        "variant_key": "53393100996902",
+        "url": "https://www.toolnut.com/products/milwaukee-2540-21-m12-23-gauge-pin-nailer-1-5ah-kit?currency=USD&variant=53393100996902",
+        "current_price": 254.15,
+        "original_price": 299.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/2540-21-1.jpg?v=1778273799",
+        "reference_basis": "retailer_compare_at",
+        "discount": 15.0,
+        "savings": 44.85
+      },
+      "checked_at": "2026-11-03T05:15:35.738934+00:00",
+      "evidence_url": "https://www.toolnut.com/products/milwaukee-2540-21-m12-23-gauge-pin-nailer-1-5ah-kit.js?currency=USD",
+      "response_sha256": "657c942367cac430bee526a0dee4134d788add8b3c2870e2bd8949282c1dcd6f",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Milwaukee M12 Cordless 23-Gauge Pin Nailer 1.5Ah Kit (2540-21)",
+        "variant": "53393100996902",
+        "sku": "2540-21",
+        "price_minor": 25415,
+        "reference_minor": 29900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Shark HD610 PLUS CNC Machine",
+      "store": "Woodcraft",
+      "offer": {
+        "variant_key": "47537556127882",
+        "url": "https://www.woodcraft.com/products/next-wave-shark-hd610-plus-cnc-machine?currency=USD&variant=47537556127882",
+        "current_price": 4229.99,
+        "original_price": 4699.99,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/198340_000_001.jpg?v=1790806061",
+        "reference_basis": "retailer_compare_at",
+        "discount": 10.0,
+        "savings": 470.0
+      },
+      "checked_at": "2026-11-03T05:15:41.004160+00:00",
+      "evidence_url": "https://www.woodcraft.com/products/next-wave-shark-hd610-plus-cnc-machine.js?currency=USD",
+      "response_sha256": "e979b753b22d008dca0cd912ee50821fb748e30bb4c22f65c2811b5b8ed91023",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Shark HD610 PLUS CNC Machine",
+        "variant": "47537556127882",
+        "sku": "198340",
+        "price_minor": 422999,
+        "reference_minor": 469999,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "SawStop 220V Single Phase 3-HP 13-Amp 10-in. Professional Cabinet Saw with 36-in. Professional Series T-Glide Fence System (PCS31230-TGP236)",
+      "store": "Tool Nut",
+      "offer": {
+        "variant_key": "50176559743270",
+        "url": "https://www.toolnut.com/products/sawstop-pcs31230-tgp236-220v-single-phase-3-hp-13-amp-10-professional-cabinet-saw-with-36-professional-series-t-glide-fence-system?currency=USD&variant=50176559743270",
+        "current_price": 3531.0,
+        "original_price": 3881.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/pcs31230-tgp236_1_lzgyfqcb4xskahn7.jpg?v=1778202085",
+        "reference_basis": "retailer_compare_at",
+        "discount": 9.0,
+        "savings": 350.0
+      },
+      "checked_at": "2026-11-03T05:15:46.219751+00:00",
+      "evidence_url": "https://www.toolnut.com/products/sawstop-pcs31230-tgp236-220v-single-phase-3-hp-13-amp-10-professional-cabinet-saw-with-36-professional-series-t-glide-fence-system.js?currency=USD",
+      "response_sha256": "81a57e4c5f452be1646a07345e8ade8a955025c724cb485baf55c1d92645fd13",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "SawStop 220V Single Phase 3-HP 13-Amp 10-in. Professional Cabinet Saw with 36-in. Professional Series T-Glide Fence System (PCS31230-TGP236)",
+        "variant": "50176559743270",
+        "sku": "PCS31230-TGP236",
+        "price_minor": 353100,
+        "reference_minor": 388100,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Powermatic 60HH 8\" Helical Head Jointer",
+      "store": "OakTree Supply",
+      "offer": {
+        "variant_key": "4162227205",
+        "url": "https://www.oaktreesupply.com/products/powermatic-8-jointer-with-helical-cutterhead-60hh?currency=USD&variant=4162227205",
+        "current_price": 2999.0,
+        "original_price": 3519.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/products/1610086K-1.jpg?v=1748888371",
+        "reference_basis": "retailer_compare_at",
+        "discount": 14.8,
+        "savings": 520.0
+      },
+      "checked_at": "2026-11-03T05:15:51.496562+00:00",
+      "evidence_url": "https://www.oaktreesupply.com/products/powermatic-8-jointer-with-helical-cutterhead-60hh.js?currency=USD",
+      "response_sha256": "a441b33095ff14f656cffd474cf0217aa3b7ea55e78bba37c8c28265e56db090",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Powermatic 60HH 8\" Helical Head Jointer",
+        "variant": "4162227205",
+        "sku": "PM9-1610086K",
+        "price_minor": 299900,
+        "reference_minor": 351900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "DeWALT 60V MAX 1-1/4-in. Brushless Cordless SDS PLUS Rotary Hammer, Tool Only (DCH416B)",
+      "store": "Tool Nut",
+      "offer": {
+        "variant_key": "50904391909670",
+        "url": "https://www.toolnut.com/products/dewalt-dch416b-60v-max-sds-plus-rotary-hammer?currency=USD&variant=50904391909670",
+        "current_price": 479.0,
+        "original_price": 581.99,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/dch416b_1.jpg?v=1755061071",
+        "reference_basis": "retailer_compare_at",
+        "discount": 17.7,
+        "savings": 102.99
+      },
+      "checked_at": "2026-11-03T05:15:56.693680+00:00",
+      "evidence_url": "https://www.toolnut.com/products/dewalt-dch416b-60v-max-sds-plus-rotary-hammer.js?currency=USD",
+      "response_sha256": "7684c264f66debe3f3555c8508e83eb1abdd80820ac0f7e990aa91374f96a2e5",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "DeWALT 60V MAX 1-1/4-in. Brushless Cordless SDS PLUS Rotary Hammer, Tool Only (DCH416B)",
+        "variant": "50904391909670",
+        "sku": "DCH416B",
+        "price_minor": 47900,
+        "reference_minor": 58199,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Powermatic Bandsaw 5H, 3PH 230V ArmorGlide (1791258BT-POWERMATIC)",
+      "store": "Tool Nut",
+      "offer": {
+        "variant_key": "50185216131366",
+        "url": "https://www.toolnut.com/products/powermatic-1791258bt-powermatic-powermatic-bandsaw-5h-3ph-230v-armorglide?currency=USD&variant=50185216131366",
+        "current_price": 6599.0,
+        "original_price": 8886.99,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/pm1-1791258bt-1.jpg?v=1778357465",
+        "reference_basis": "retailer_compare_at",
+        "discount": 25.7,
+        "savings": 2287.99
+      },
+      "checked_at": "2026-11-03T05:16:01.979986+00:00",
+      "evidence_url": "https://www.toolnut.com/products/powermatic-1791258bt-powermatic-powermatic-bandsaw-5h-3ph-230v-armorglide.js?currency=USD",
+      "response_sha256": "20dda09135f3c3974356c9d6c149585d24f132b1432ae5975f4f8b544636bdc8",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Powermatic Bandsaw 5H, 3PH 230V ArmorGlide (1791258BT-POWERMATIC)",
+        "variant": "50185216131366",
+        "sku": "1791258BT-POWERMATIC",
+        "price_minor": 659900,
+        "reference_minor": 888699,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "DeWALT 20V MAX XR Brushless 7-1/4-in. Circular Saw POWERPACK 8.0Ah Kit (DCS590WW1)",
+      "store": "Tool Nut",
+      "offer": {
+        "variant_key": "53393183670566",
+        "url": "https://www.toolnut.com/products/dewalt-dcs590ww1-20v-max-xr-brushless-7-1-4-in-circular-saw-8-0ah-kit-w-xr-powerpack?currency=USD&variant=53393183670566",
+        "current_price": 279.0,
+        "original_price": 379.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/dcs590ww1-1.jpg?v=1778399406",
+        "reference_basis": "retailer_compare_at",
+        "discount": 26.4,
+        "savings": 100.0
+      },
+      "checked_at": "2026-11-03T05:16:07.197099+00:00",
+      "evidence_url": "https://www.toolnut.com/products/dewalt-dcs590ww1-20v-max-xr-brushless-7-1-4-in-circular-saw-8-0ah-kit-w-xr-powerpack.js?currency=USD",
+      "response_sha256": "e360c3efe4049d0da49cd9e795586ed6b3f5752df7de28f289aef92b38257c29",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "DeWALT 20V MAX XR Brushless 7-1/4-in. Circular Saw POWERPACK 8.0Ah Kit (DCS590WW1)",
+        "variant": "53393183670566",
+        "sku": "DCS590WW1",
+        "price_minor": 27900,
+        "reference_minor": 37900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Milwaukee M18 FUEL SAWZALL Reciprocating Saw with One-Key, 5.0 Kit (2822-22)",
+      "store": "Tool Nut",
+      "offer": {
+        "variant_key": "53393064984870",
+        "url": "https://www.toolnut.com/products/milwaukee-2822-22-m18-fuel-sawzall-recip-saw-with-one-key-5-0-kit?currency=USD&variant=53393064984870",
+        "current_price": 466.65,
+        "original_price": 549.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/milwaukee-2822-22_kit_2.jpg?v=1778430623",
+        "reference_basis": "retailer_compare_at",
+        "discount": 15.0,
+        "savings": 82.35
+      },
+      "checked_at": "2026-11-03T05:16:12.448414+00:00",
+      "evidence_url": "https://www.toolnut.com/products/milwaukee-2822-22-m18-fuel-sawzall-recip-saw-with-one-key-5-0-kit.js?currency=USD",
+      "response_sha256": "b1170987b270b90d52cb20fb522a69816abb1ea039d24e322363359fb7134696",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Milwaukee M18 FUEL SAWZALL Reciprocating Saw with One-Key, 5.0 Kit (2822-22)",
+        "variant": "53393064984870",
+        "sku": "2822-22",
+        "price_minor": 46665,
+        "reference_minor": 54900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Sawstop Professional 1.75HP Cabinet Saw with 52-in. Professional T-Glide Advance Rip Fence, Rails & Extension Table (PCS175-ATGP52)",
+      "store": "Tool Nut",
+      "offer": {
+        "variant_key": "51633305714982",
+        "url": "https://www.toolnut.com/products/sawstop-pcs175-atgp52-professional-1-75hp-cabinet-saw-with-52-professional-t-glide-advance-rip-fence-rails-extension-table?currency=USD&variant=51633305714982",
+        "current_price": 3258.0,
+        "original_price": 3608.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/sawstop_pcs52_175_atg_66e771c9-9904-4ff1-a7da-84d3913a5c74.jpg?v=1761768220",
+        "reference_basis": "retailer_compare_at",
+        "discount": 9.7,
+        "savings": 350.0
+      },
+      "checked_at": "2026-11-03T05:16:17.691287+00:00",
+      "evidence_url": "https://www.toolnut.com/products/sawstop-pcs175-atgp52-professional-1-75hp-cabinet-saw-with-52-professional-t-glide-advance-rip-fence-rails-extension-table.js?currency=USD",
+      "response_sha256": "3c3894644aa50d3fc1f8aa2a4e065f652adffecaaf9ee672e6b2a08e109f5858",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Sawstop Professional 1.75HP Cabinet Saw with 52-in. Professional T-Glide Advance Rip Fence, Rails & Extension Table (PCS175-ATGP52)",
+        "variant": "51633305714982",
+        "sku": "PCS175-ATGP52",
+        "price_minor": 325800,
+        "reference_minor": 360800,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "DeWALT 20V MAX XR Brushless 21-Degree Plastic Collated Framing Nailer, Tool Only (DCN920B)",
+      "store": "Tool Nut",
+      "offer": {
+        "variant_key": "53393178296614",
+        "url": "https://www.toolnut.com/products/dewalt-dcn920b-20v-max-xr-brushless-21-degree-plastic-collated-framing-nailer-tool-only?currency=USD&variant=53393178296614",
+        "current_price": 334.99,
+        "original_price": 449.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/dcn920b-1.jpg?v=1778391402",
+        "reference_basis": "retailer_compare_at",
+        "discount": 25.4,
+        "savings": 114.01
+      },
+      "checked_at": "2026-11-03T05:16:22.935487+00:00",
+      "evidence_url": "https://www.toolnut.com/products/dewalt-dcn920b-20v-max-xr-brushless-21-degree-plastic-collated-framing-nailer-tool-only.js?currency=USD",
+      "response_sha256": "75bf4e11456ade4fa90d0be43cdb1710151414dba0cfcdea49c51e26c3c3c7b5",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "DeWALT 20V MAX XR Brushless 21-Degree Plastic Collated Framing Nailer, Tool Only (DCN920B)",
+        "variant": "53393178296614",
+        "sku": "DCN920B",
+        "price_minor": 33499,
+        "reference_minor": 44900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Milwaukee M18 FUEL 5-3/8-in. Metal Cutting Circular Saw, Tool Only (2782-20)",
+      "store": "Tool Nut",
+      "offer": {
+        "variant_key": "53393063936294",
+        "url": "https://www.toolnut.com/products/milwaukee-2782-20-m18-fuel-5-3-8-metal-cutting-circular-saw-tool-only?currency=USD&variant=53393063936294",
+        "current_price": 237.15,
+        "original_price": 279.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/2782-20-1.jpg?v=1778132802",
+        "reference_basis": "retailer_compare_at",
+        "discount": 15.0,
+        "savings": 41.85
+      },
+      "checked_at": "2026-11-03T05:16:28.181898+00:00",
+      "evidence_url": "https://www.toolnut.com/products/milwaukee-2782-20-m18-fuel-5-3-8-metal-cutting-circular-saw-tool-only.js?currency=USD",
+      "response_sha256": "ca8400591f41eb34b331e735ca298c7025104ba5a6832df943666bdaa0762daf",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Milwaukee M18 FUEL 5-3/8-in. Metal Cutting Circular Saw, Tool Only (2782-20)",
+        "variant": "53393063936294",
+        "sku": "2782-20",
+        "price_minor": 23715,
+        "reference_minor": 27900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Milwaukee M18 FUEL SAWZALL Reciprocating Saw, 5.0Ah Kit (2821-21)",
+      "store": "Tool Nut",
+      "offer": {
+        "variant_key": "53393066754342",
+        "url": "https://www.toolnut.com/products/milwaukee-2821-21-m18-fuel-sawzall-recip-saw-5-0ah-kit?currency=USD&variant=53393066754342",
+        "current_price": 322.15,
+        "original_price": 379.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/2821-21-1.jpg?v=1778430518",
+        "reference_basis": "retailer_compare_at",
+        "discount": 15.0,
+        "savings": 56.85
+      },
+      "checked_at": "2026-11-03T05:16:33.406090+00:00",
+      "evidence_url": "https://www.toolnut.com/products/milwaukee-2821-21-m18-fuel-sawzall-recip-saw-5-0ah-kit.js?currency=USD",
+      "response_sha256": "7c1acfd2e084a5460f7aa599327088bac20e76d1117e2a99468f959abd9c2232",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Milwaukee M18 FUEL SAWZALL Reciprocating Saw, 5.0Ah Kit (2821-21)",
+        "variant": "53393066754342",
+        "sku": "2821-21",
+        "price_minor": 32215,
+        "reference_minor": 37900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Powermatic 1285 Jointer, 3HP 1PH 230V, Helical Head (1791307)",
+      "store": "Tool Nut",
+      "offer": {
+        "variant_key": "50175408242982",
+        "url": "https://www.toolnut.com/products/powermatic-1791307-1285-jointer-3hp-1ph-230v-helical-head?currency=USD&variant=50175408242982",
+        "current_price": 8999.0,
+        "original_price": 10449.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/powermatic-1791307-1.jpg?v=1778118613",
+        "reference_basis": "retailer_compare_at",
+        "discount": 13.9,
+        "savings": 1450.0
+      },
+      "checked_at": "2026-11-03T05:16:38.656903+00:00",
+      "evidence_url": "https://www.toolnut.com/products/powermatic-1791307-1285-jointer-3hp-1ph-230v-helical-head.js?currency=USD",
+      "response_sha256": "2a3f737cb599345816a3451ca547f4acef49cad19dec09126182cf1d08312846",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Powermatic 1285 Jointer, 3HP 1PH 230V, Helical Head (1791307)",
+        "variant": "50175408242982",
+        "sku": "1791307",
+        "price_minor": 899900,
+        "reference_minor": 1044900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    }
+  ]
+}

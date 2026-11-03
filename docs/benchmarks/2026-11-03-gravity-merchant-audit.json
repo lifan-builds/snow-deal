@@ -1,0 +1,1963 @@
+{
+  "catalog": "cycling",
+  "date": "2026-11-03T04:21:51.063464+00:00",
+  "population": 29,
+  "method": "all-qualifying-gravity-listings",
+  "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+  "sample_size": 29,
+  "match": 29,
+  "mismatch": 0,
+  "inconclusive": 0,
+  "verified_match_percent": 100.0,
+  "results": [
+    {
+      "name": "S-Works Stumpjumper Frameset",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "49396351697140",
+        "url": "https://gravitycoalition.com/products/s-works-stumpjumper-frameset?currency=USD&variant=49396351697140",
+        "current_price": 1149.99,
+        "original_price": 3000.0,
+        "size": "S1",
+        "options": "Satin Dusty Blue Pearl / Black / Carbon / S1",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/73322-01_SJ-SW-FRM-DSTBLU-BLK-CARB_HERO.jpg?v=1789480756",
+        "reference_basis": "retailer_compare_at",
+        "discount": 61.7,
+        "savings": 1850.01
+      },
+      "checked_at": "2026-11-03T04:19:13.325756+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/s-works-stumpjumper-frameset.js?currency=USD",
+      "response_sha256": "1de449604fd4027ec96bb0565be00f7d36866436ef716a037f09077a043f2ff7",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "S-Works Stumpjumper Frameset",
+        "variant": "49396351697140",
+        "sku": "73322-0101",
+        "price_minor": 114999,
+        "reference_minor": 300000,
+        "currency": "USD",
+        "options": "Satin Dusty Blue Pearl / Black / Carbon / S1",
+        "raw_options": [
+          "Satin Dusty Blue Pearl / Black / Carbon",
+          "S1"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Satin Dusty Blue Pearl / Black / Carbon"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S1",
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Stumpjumper Frameset",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "49399117218036",
+        "url": "https://gravitycoalition.com/products/stumpjumper-frameset?currency=USD&variant=49399117218036",
+        "current_price": 1079.99,
+        "original_price": 2700.0,
+        "size": "S1",
+        "options": "Satin Copper / Black / S1",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/73322-70_SJ-FRM-COP-BLK_HERO.jpg?v=1789476198",
+        "reference_basis": "retailer_compare_at",
+        "discount": 60.0,
+        "savings": 1620.01
+      },
+      "checked_at": "2026-11-03T04:19:23.902822+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/stumpjumper-frameset.js?currency=USD",
+      "response_sha256": "5f93d4cf5cb2b9f26556c424657dc7fa0df9d10d9a4771a9e34b7b97189b8c8f",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Stumpjumper Frameset",
+        "variant": "49399117218036",
+        "sku": "73322-7001",
+        "price_minor": 107999,
+        "reference_minor": 270000,
+        "currency": "USD",
+        "options": "Satin Copper / Black / S1",
+        "raw_options": [
+          "Satin Copper / Black",
+          "S1"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Satin Copper / Black"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S1",
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Rocky Mountain Solo Gravel Bike",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "47701318172916",
+        "url": "https://gravitycoalition.com/products/rocky-mountain-solo-gravel-bike?currency=USD&variant=47701318172916",
+        "current_price": 2999.97,
+        "original_price": 6499.0,
+        "size": "XL",
+        "options": "C90 - Purple/Orange / XL",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/Web_MY23__B0287-PURPLEORANGE_Solo_C90_C1_Profile_1.webp?v=1771540041",
+        "reference_basis": "retailer_compare_at",
+        "discount": 53.8,
+        "savings": 3499.03
+      },
+      "checked_at": "2026-11-03T04:19:29.171997+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/rocky-mountain-solo-gravel-bike.js?currency=USD",
+      "response_sha256": "2be2908249a94d4fd525ec50464f1efb19e94bf6e3be216575dde394d519b702",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Rocky Mountain Solo Gravel Bike",
+        "variant": "47701318172916",
+        "sku": "B0287XL3",
+        "price_minor": 299997,
+        "reference_minor": 649900,
+        "currency": "USD",
+        "options": "C90 - Purple/Orange / XL",
+        "raw_options": [
+          "C90 - Purple/Orange",
+          "XL"
+        ],
+        "option_definitions": [
+          {
+            "name": "Option + Color",
+            "position": 1,
+            "values": [
+              "C90 - Purple/Orange"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "XL"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Evil Bike Co The Offering V2 Frame Only XL - Mountain Bike Frame",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "45851870003444",
+        "url": "https://gravitycoalition.com/products/copy-of-evil-bike-co-the-offering-gx-eagle-custom-build-mountain-bike?currency=USD&variant=45851870003444",
+        "current_price": 1799.97,
+        "original_price": 3299.0,
+        "size": "XL",
+        "options": "Frame Only / XL / Blackout",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/evil-offering-v2-blackout-drunk-frame-super-deluxe-side-_fafafa.webp?v=1759857930",
+        "reference_basis": "retailer_compare_at",
+        "discount": 45.4,
+        "savings": 1499.03
+      },
+      "checked_at": "2026-11-03T04:19:34.528353+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/copy-of-evil-bike-co-the-offering-gx-eagle-custom-build-mountain-bike.js?currency=USD",
+      "response_sha256": "9964a2f701df2034b9c49b00999d476af030b6d55060138bf9299b6bc03d5ff1",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Evil Bike Co The Offering V2 Frame Only XL - Mountain Bike Frame",
+        "variant": "45851870003444",
+        "sku": "",
+        "price_minor": 179997,
+        "reference_minor": 329900,
+        "currency": "USD",
+        "options": "Frame Only / XL / Blackout",
+        "raw_options": [
+          "Frame Only",
+          "XL",
+          "Blackout"
+        ],
+        "option_definitions": [
+          {
+            "name": "Option",
+            "position": 1,
+            "values": [
+              "X01 -  Scuffed Frame but will still have normal warranty",
+              "Frame Only"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "M",
+              "XL"
+            ]
+          },
+          {
+            "name": "Color",
+            "position": 3,
+            "values": [
+              "Blackout"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Devinci Troy Full Suspension Mountain Bike",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "45483981668596",
+        "url": "https://gravitycoalition.com/products/devinci-troy-deore-12s-carbon-gx-12s-kit-mountain-bike?currency=USD&variant=45483981668596",
+        "current_price": 2989.97,
+        "original_price": 5419.0,
+        "size": "XL",
+        "options": "Carbon/Alu 29 GX 12s / Black Edition / XL",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/troy_carb_alu_gx_black-flash.webp?v=1718731510",
+        "reference_basis": "retailer_compare_at",
+        "discount": 44.8,
+        "savings": 2429.03
+      },
+      "checked_at": "2026-11-03T04:19:39.744525+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/devinci-troy-deore-12s-carbon-gx-12s-kit-mountain-bike.js?currency=USD",
+      "response_sha256": "e84374bb0d015b0d9101a64c8f332d284dad69b2afb75dbbcd980bb941a1c049",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Devinci Troy Full Suspension Mountain Bike",
+        "variant": "45483981668596",
+        "sku": "FV23046511",
+        "price_minor": 298997,
+        "reference_minor": 541900,
+        "currency": "USD",
+        "options": "Carbon/Alu 29 GX 12s / Black Edition / XL",
+        "raw_options": [
+          "Carbon/Alu 29 GX 12s",
+          "Black Edition",
+          "XL"
+        ],
+        "option_definitions": [
+          {
+            "name": "Option",
+            "position": 1,
+            "values": [
+              "A29 SX 12s",
+              "Carbon/Alu 29 GX 12s"
+            ]
+          },
+          {
+            "name": "Color",
+            "position": 2,
+            "values": [
+              "Alien Blue",
+              "Black Edition"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 3,
+            "values": [
+              "M",
+              "L",
+              "XL",
+              "S"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Cannondale Habit Full Suspension Mountain Bikes",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "48817701814516",
+        "url": "https://gravitycoalition.com/products/cannondale-habit-mountain-trail-bikes-bikes?currency=USD&variant=48817701814516",
+        "current_price": 3299.97,
+        "original_price": 5550.0,
+        "size": "XL",
+        "options": "XL / Habit Carbon 1 - Jade",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/products/C23_C23101U_Habit_Crb_1_JDE_PD.png?v=1775509101",
+        "reference_basis": "retailer_compare_at",
+        "discount": 40.5,
+        "savings": 2250.03
+      },
+      "checked_at": "2026-11-03T04:19:45.008663+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/cannondale-habit-mountain-trail-bikes-bikes.js?currency=USD",
+      "response_sha256": "a1816a7326a4158cf71a6a3e380c2982e760bce5a24c46e891ace6d4e4072a25",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Cannondale Habit Full Suspension Mountain Bikes",
+        "variant": "48817701814516",
+        "sku": "C23101U10XL",
+        "price_minor": 329997,
+        "reference_minor": 555000,
+        "currency": "USD",
+        "options": "XL / Habit Carbon 1 - Jade",
+        "raw_options": [
+          "XL",
+          "Habit Carbon 1 - Jade"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "XS",
+              "SM",
+              "MD",
+              "LG",
+              "XL"
+            ]
+          },
+          {
+            "name": "Options",
+            "position": 2,
+            "values": [
+              "Habit 3 - Purple Haze",
+              "Habit 3 - Grey",
+              "Habit 4 - Candy Red",
+              "Habit 4 - Black",
+              "Habit Carbon 1 - Jade",
+              "Habit Carbon 2 - Black Pearl",
+              "Habit Carbon LT 1 - Chalk",
+              "Habit LT 2 - Laguna Yellow",
+              "Habit Women's Carbon 2 - Alpine",
+              "Habit 4 - Ice Green",
+              "Habit 5 - Black",
+              "Habit Carbon 3 - Emerald",
+              "Habit Waves - Silver",
+              "Habit Carbon SE - Chameleon USED DEMO",
+              "Habit LTD - Royal Purple",
+              "Habit Carbon LT LTD - Meteor Gray"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Specialized Turbo Vado Electric Bike",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "48817429872884",
+        "url": "https://gravitycoalition.com/products/specialized-turbo-vado-3-0-igh?currency=USD&variant=48817429872884",
+        "current_price": 2824.97,
+        "original_price": 4600.0,
+        "size": "M",
+        "options": "M / Satin Gunmetal / Smoke Frost + SL 2 4.0 Step-Through EQ",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/93925-51_VADO-SL-40-ST-EQ-2-GUN-SMK_HERO-PDP.webp?v=1773863679",
+        "reference_basis": "retailer_compare_at",
+        "discount": 38.6,
+        "savings": 1775.03
+      },
+      "checked_at": "2026-11-03T04:19:50.251587+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/specialized-turbo-vado-3-0-igh.js?currency=USD",
+      "response_sha256": "4a68aa9504e115b87d081a7e9c0c87bbdcb5b9992356b3c1edeee8e500a4257a",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Specialized Turbo Vado Electric Bike",
+        "variant": "48817429872884",
+        "sku": "93925-5103",
+        "price_minor": 282497,
+        "reference_minor": 460000,
+        "currency": "USD",
+        "options": "M / Satin Gunmetal / Smoke Frost + SL 2 4.0 Step-Through EQ",
+        "raw_options": [
+          "M",
+          "Satin Gunmetal / Smoke Frost + SL 2 4.0 Step-Through EQ"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "S",
+              "M",
+              "L",
+              "XL"
+            ]
+          },
+          {
+            "name": "Color + Options",
+            "position": 2,
+            "values": [
+              "Gloss Oasis / Dune White Frost + SL 2 4.0 Step-Through EQ",
+              "Gloss Dove Gray / Cool Grey Frost + SL 2 5.0 Step-Through EQ",
+              "Gloss Seafoam / Lapis Pearl / Glacial Metallic + 5.0 IGH Step-Through",
+              "Satin Gunmetal / Smoke Frost + SL 2 4.0 Step-Through EQ",
+              "Gloss Castblack / Satin Silver Reflective + 5.0 IGH",
+              "White Mountains / Black Reflective + 3.0 IGH",
+              "4.0 - Satin Seafoam / Lapis Pearl / Glacial Metallic",
+              "Gloss Castblack / Satin Silver Reflective + 4.0 Step-Through",
+              "Gloss Seafoam / Lapis Pearl / Glacial Metallic + 4.0 Step-Through"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Cannondale Moterra Neo Full Suspension Electric E-Mountain Bikes",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "47169687421172",
+        "url": "https://gravitycoalition.com/products/cannondale-moterra-neo-electric-emountain-bikes?currency=USD&variant=47169687421172",
+        "current_price": 3564.97,
+        "original_price": 5499.0,
+        "size": "MD",
+        "options": "MD / Moterra Neo 4 - Obsidian",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/C25_C65234U_Moterra_4_AM_OBS_PD.webp?v=1762994558",
+        "reference_basis": "retailer_compare_at",
+        "discount": 35.2,
+        "savings": 1934.03
+      },
+      "checked_at": "2026-11-03T04:19:55.504893+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/cannondale-moterra-neo-electric-emountain-bikes.js?currency=USD",
+      "response_sha256": "dd265b5b4dacebb96c65d12a839555e3e66f2b6104ffe8979907a71824accc94",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Cannondale Moterra Neo Full Suspension Electric E-Mountain Bikes",
+        "variant": "47169687421172",
+        "sku": "C65234U10MD",
+        "price_minor": 356497,
+        "reference_minor": 549900,
+        "currency": "USD",
+        "options": "MD / Moterra Neo 4 - Obsidian",
+        "raw_options": [
+          "MD",
+          "Moterra Neo 4 - Obsidian"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "SM",
+              "MD",
+              "LG",
+              "XL"
+            ]
+          },
+          {
+            "name": "Options",
+            "position": 2,
+            "values": [
+              "Moterra Neo 3 - Deep Teal",
+              "Moterra Neo 3 - Mercury",
+              "Moterra Neo 4 - Impact Orange",
+              "Moterra Neo 5 - Mantis",
+              "Moterra Neo Carbon 1 - Abyss Blue",
+              "Moterra Neo Carbon 2 - Mantis",
+              "Moterra Neo Carbon 2 - Alpine",
+              "Moterra Neo Carbon LT 1 - Quicksand",
+              "Moterra Neo Carbon LT 2 - Matte Black",
+              "Moterra Neo Carbon LT 2 - Cool Mint",
+              "Moterra 3 - Olive Green",
+              "Moterra Neo 4 - Tiger Eye",
+              "Moterra Neo 4 - Obsidian",
+              "Moterra Neo 4 Plus - Tiger Eye",
+              "Moterra Neo Carbon 1 - Mercury",
+              "Moterra Neo 4 Plus - Obsidian",
+              "Moterra Neo 4 - Obsidian (Used - Rental Fleet)",
+              "Moterra Neo 4 - Tiger Eye (Used - Rental Fleet)"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Specialized Como Electric Hybrid Bike",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "48817459626228",
+        "url": "https://gravitycoalition.com/products/specialized-como-4-0-igh-ul-electric-hybrid-bike?currency=USD&variant=48817459626228",
+        "current_price": 2999.99,
+        "original_price": 4600.0,
+        "size": "S",
+        "options": "4.0 IGH UL - Cast Black / Silver Reflective / S",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/90425-40_COMO-40-IGH-UL-CSTBLK-FLKSIL_HERO-PDP.webp?v=1781734304",
+        "reference_basis": "retailer_compare_at",
+        "discount": 34.8,
+        "savings": 1600.01
+      },
+      "checked_at": "2026-11-03T04:20:00.750795+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/specialized-como-4-0-igh-ul-electric-hybrid-bike.js?currency=USD",
+      "response_sha256": "1ff86df892429b459d2632fa2664bf127db978f4451c6372653a385947091ad8",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Specialized Como Electric Hybrid Bike",
+        "variant": "48817459626228",
+        "sku": "90425-4002U",
+        "price_minor": 299999,
+        "reference_minor": 460000,
+        "currency": "USD",
+        "options": "4.0 IGH UL - Cast Black / Silver Reflective / S",
+        "raw_options": [
+          "4.0 IGH UL - Cast Black / Silver Reflective",
+          "S"
+        ],
+        "option_definitions": [
+          {
+            "name": "Option",
+            "position": 1,
+            "values": [
+              "4.0 IGH UL - Sand / Black Reflective",
+              "4.0 IGH UL - Cast Black / Silver Reflective",
+              "5.0 IGH UL - Gloss Cast Black / Satin Silver Reflective (Small Scratch on Frame)",
+              "5.0 IGH - Gloss Metallic Dark Navy / Satin Silver Reflective"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S",
+              "M",
+              "L"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Specialized Turbo Vado 3 4.0 IGH 2027 Electric Hybrid Bike",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "67988926136564",
+        "url": "https://gravitycoalition.com/products/specialized-turbo-vado-3-4-0-igh-2027?currency=USD&variant=67988926136564",
+        "current_price": 3699.97,
+        "original_price": 5299.0,
+        "size": "M",
+        "options": "Gloss Pacific Blue Metallic / Dune White / M",
+        "availability": "in_stock",
+        "image_url": null,
+        "reference_basis": "retailer_compare_at",
+        "discount": 30.2,
+        "savings": 1599.03
+      },
+      "checked_at": "2026-11-03T04:20:05.972949+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/specialized-turbo-vado-3-4-0-igh-2027.js?currency=USD",
+      "response_sha256": "7e07b3eb3d25d2515cedb23751f36d558168ec3163faa6cd86ca8bafc2ff46dc",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Specialized Turbo Vado 3 4.0 IGH 2027 Electric Hybrid Bike",
+        "variant": "67988926136564",
+        "sku": "95027-5603",
+        "price_minor": 369997,
+        "reference_minor": 529900,
+        "currency": "USD",
+        "options": "Gloss Pacific Blue Metallic / Dune White / M",
+        "raw_options": [
+          "Gloss Pacific Blue Metallic / Dune White",
+          "M"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Gloss Pacific Blue Metallic / Dune White",
+              "Gloss Nebula Metallic / Silver Dust",
+              "Gloss Sandstone Metallic / Warm Smoke Metallic"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "M"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Cannondale Topstone Carbon Gravel Bikes",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "44022338912500",
+        "url": "https://gravitycoalition.com/products/cannondale-topstone-carbon-road-gravel-bikes?currency=USD&variant=44022338912500",
+        "current_price": 2999.99,
+        "original_price": 4250.0,
+        "size": "SM",
+        "options": "Topstone Carbon 2 Lefty - Gold Dust / SM",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/products/C22_C15202U_Topstone_Crb_2_Lefty_GDT_PD.png?v=1768346907",
+        "reference_basis": "retailer_compare_at",
+        "discount": 29.4,
+        "savings": 1250.01
+      },
+      "checked_at": "2026-11-03T04:20:11.200359+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/cannondale-topstone-carbon-road-gravel-bikes.js?currency=USD",
+      "response_sha256": "7c0bb3dedef29ff81093ded5ce27d41f31d3317d1d359c6b607530eec33aa794",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Cannondale Topstone Carbon Gravel Bikes",
+        "variant": "44022338912500",
+        "sku": "C15202U10SM",
+        "price_minor": 299999,
+        "reference_minor": 425000,
+        "currency": "USD",
+        "options": "Topstone Carbon 2 Lefty - Gold Dust / SM",
+        "raw_options": [
+          "Topstone Carbon 2 Lefty - Gold Dust",
+          "SM"
+        ],
+        "option_definitions": [
+          {
+            "name": "Options",
+            "position": 1,
+            "values": [
+              "Topstone Carbon 2 Lefty - Gold Dust",
+              "Topstone Carbon 105 - Black Pearl",
+              "Topstone Carbon 1 Lefty - Rally Red",
+              "Topstone Carbon 1 RLE - Black Pearl",
+              "Topstone Carbon 2 - Saber",
+              "Topstone Carbon 2 L - Jade",
+              "Topstone Carbon 2 L - Chili Powder",
+              "Topstone Carbon 2 Lefty - Laguna Yellow",
+              "Topstone Carbon 3 L - Carbon",
+              "Topstone Carbon 4 - Smoke Black",
+              "Topstone Carbon 4 - Olive Green",
+              "Topstone Carbon 5 - Graphite",
+              "Topstone Carbon Lefty 1 - Chameleon",
+              "Topstone Carbon Apex AXS - Orchid",
+              "Topstone Carbon 2 Lefty - Royal Purple",
+              "Topstone Carbon 2 Lefty - Green",
+              "Topstone Carbon 3"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "XS",
+              "SM",
+              "MD",
+              "LG",
+              "XL",
+              "58cm Moonstone"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Specialized Turbo Vado 3 4.0 2027 Electric Hybrid Bike",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "67988925841652",
+        "url": "https://gravitycoalition.com/products/specialized-turbo-vado-3-4-0-2027?currency=USD&variant=67988925841652",
+        "current_price": 3199.97,
+        "original_price": 4500.0,
+        "size": "M",
+        "options": "Gloss Pacific Blue Metallic / Dune White / M",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/95027-51_VADO-3-40-NBLMET-SILDST-BRSHCP_HERO-PDP.webp?v=1793294401",
+        "reference_basis": "retailer_compare_at",
+        "discount": 28.9,
+        "savings": 1300.03
+      },
+      "checked_at": "2026-11-03T04:20:16.471063+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/specialized-turbo-vado-3-4-0-2027.js?currency=USD",
+      "response_sha256": "cc72681c455148db004f0f36987ac8566d191ad6970e809be444dd078ed1c2d5",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Specialized Turbo Vado 3 4.0 2027 Electric Hybrid Bike",
+        "variant": "67988925841652",
+        "sku": "95027-5003",
+        "price_minor": 319997,
+        "reference_minor": 450000,
+        "currency": "USD",
+        "options": "Gloss Pacific Blue Metallic / Dune White / M",
+        "raw_options": [
+          "Gloss Pacific Blue Metallic / Dune White",
+          "M"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Gloss Pacific Blue Metallic / Dune White",
+              "Gloss Nebula Metallic / Silver Dust",
+              "Gloss Sandstone Metallic / Warm Smoke Metallic"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "M"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Cannondale Scalpel Full Suspension Cross Country Mountain Bikes",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "48817699487988",
+        "url": "https://gravitycoalition.com/products/cannondale-scalpel-mountain-cross-country-bikes?currency=USD&variant=48817699487988",
+        "current_price": 6899.97,
+        "original_price": 9500.0,
+        "size": "MD",
+        "options": "MD / Scalpel Carbon 1 - Rally Red",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/C24_C24254U_Scalpel_Crb_1_RRD_PD.webp?v=1764460417",
+        "reference_basis": "retailer_compare_at",
+        "discount": 27.4,
+        "savings": 2600.03
+      },
+      "checked_at": "2026-11-03T04:20:21.687959+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/cannondale-scalpel-mountain-cross-country-bikes.js?currency=USD",
+      "response_sha256": "8f2d32ce4eba516eaf2593952415919aee7ccede70f48a7effa5918dd911dea6",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Cannondale Scalpel Full Suspension Cross Country Mountain Bikes",
+        "variant": "48817699487988",
+        "sku": "C24254U20MD",
+        "price_minor": 689997,
+        "reference_minor": 950000,
+        "currency": "USD",
+        "options": "MD / Scalpel Carbon 1 - Rally Red",
+        "raw_options": [
+          "MD",
+          "Scalpel Carbon 1 - Rally Red"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "SM",
+              "MD",
+              "LG",
+              "XL",
+              "LG (ridden one summer)"
+            ]
+          },
+          {
+            "name": "Options",
+            "position": 2,
+            "values": [
+              "Scalpel Carbon 2 - Graphite",
+              "Scalpel Carbon 3 - Mercury",
+              "Scalpel Carbon 3 - Black",
+              "Scalpel Carbon 3 - Candy Red",
+              "Scalpel Carbon Hi-MOD 1 - White",
+              "Scalpel Carbon Hi-MOD Ultimate - Tinted Red",
+              "Scalpel Carbon 2 (SMU) - Storm Cloud",
+              "Scalpel Carbon 4 (SMU) - Smoke Black",
+              "Scalpel  Carbon 3 - Tiger Shark",
+              "Scalpel Carbon 2 - Smoke Black",
+              "Scalpel Carbon 1 - Rally Red"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Devinci Hatchet Gravel and Road Bike",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "42565341774068",
+        "url": "https://gravitycoalition.com/products/devinci-hatchet-gravel-and-road-bike?currency=USD&variant=42565341774068",
+        "current_price": 2499.99,
+        "original_price": 3429.0,
+        "size": "L",
+        "options": "105 22s / Skyscraper Silver / L",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/products/devinci_hatchet_105_22s_skyscraper_silver.jpg?v=1647284586",
+        "reference_basis": "retailer_compare_at",
+        "discount": 27.1,
+        "savings": 929.01
+      },
+      "checked_at": "2026-11-03T04:20:26.948330+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/devinci-hatchet-gravel-and-road-bike.js?currency=USD",
+      "response_sha256": "c28165e9789cc9e53f17b0865d0bc32b482f5a264e8d0abc660a499e51088a02",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Devinci Hatchet Gravel and Road Bike",
+        "variant": "42565341774068",
+        "sku": "FV22022_22-L",
+        "price_minor": 249999,
+        "reference_minor": 342900,
+        "currency": "USD",
+        "options": "105 22s / Skyscraper Silver / L",
+        "raw_options": [
+          "105 22s",
+          "Skyscraper Silver",
+          "L"
+        ],
+        "option_definitions": [
+          {
+            "name": "Option",
+            "position": 1,
+            "values": [
+              "105 22s"
+            ]
+          },
+          {
+            "name": "Color",
+            "position": 2,
+            "values": [
+              "Skyscraper Silver"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 3,
+            "values": [
+              "M",
+              "L"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Cannondale Mavaro Urban Electric Bike",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "48892274147572",
+        "url": "https://gravitycoalition.com/products/cannondale-mavaro-neo-3-urban-electric-bike?currency=USD&variant=48892274147572",
+        "current_price": 2949.97,
+        "original_price": 3999.99,
+        "size": "SM",
+        "options": "Mavaro 3 Low Step Thru - Dust Blue / SM",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/C24_C68353U_Mavaro_Neo_3_LSTH_DBU_PD.png?v=1764889397",
+        "reference_basis": "retailer_compare_at",
+        "discount": 26.3,
+        "savings": 1050.02
+      },
+      "checked_at": "2026-11-03T04:20:32.170897+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/cannondale-mavaro-neo-3-urban-electric-bike.js?currency=USD",
+      "response_sha256": "545870c5e2dc345ca42bc44440794035c58c91f31b6e6576b8043a232de1b3c3",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Cannondale Mavaro Urban Electric Bike",
+        "variant": "48892274147572",
+        "sku": "C68353U40SM",
+        "price_minor": 294997,
+        "reference_minor": 399999,
+        "currency": "USD",
+        "options": "Mavaro 3 Low Step Thru - Dust Blue / SM",
+        "raw_options": [
+          "Mavaro 3 Low Step Thru - Dust Blue",
+          "SM"
+        ],
+        "option_definitions": [
+          {
+            "name": "Option",
+            "position": 1,
+            "values": [
+              "Mavaro 1 Low Step Thru - Candy Red",
+              "Mavaro 2 Low Step Thru - Mantis",
+              "Mavaro 3 Low Step Thru - Dust Blue"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "SM/MD",
+              "LG",
+              "MD",
+              "SM"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "S-Works Stumpjumper 15 Frameset",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "49393965039860",
+        "url": "https://gravitycoalition.com/products/s-works-stumpjumper-15-frameset?currency=USD&variant=49393965039860",
+        "current_price": 2739.99,
+        "original_price": 3600.0,
+        "size": "S1",
+        "options": "Satin Nrly Blk / Blk / Cool Grey / Obsidian / Satin Dove Grey / S1 / 29/27.5",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/73325-00_SJ-15-SW-FRM-NRBLK-BLK-CLGRY_HERO.jpg?v=1789438531",
+        "reference_basis": "retailer_compare_at",
+        "discount": 23.9,
+        "savings": 860.01
+      },
+      "checked_at": "2026-11-03T04:20:37.414046+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/s-works-stumpjumper-15-frameset.js?currency=USD",
+      "response_sha256": "8492c3b0b821ffc3363149718ffd0631d4faddadc3884614fea718675f0b901e",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "S-Works Stumpjumper 15 Frameset",
+        "variant": "49393965039860",
+        "sku": "73325-0001",
+        "price_minor": 273999,
+        "reference_minor": 360000,
+        "currency": "USD",
+        "options": "Satin Nrly Blk / Blk / Cool Grey / Obsidian / Satin Dove Grey / S1 / 29/27.5",
+        "raw_options": [
+          "Satin Nrly Blk / Blk / Cool Grey / Obsidian / Satin Dove Grey",
+          "S1",
+          "29/27.5"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Satin Nrly Blk / Blk / Cool Grey / Obsidian / Satin Dove Grey"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S1",
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6"
+            ]
+          },
+          {
+            "name": "Wheel Size",
+            "position": 3,
+            "values": [
+              "29/27.5",
+              "29/29"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Stumpjumper 15 Alloy Frameset",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "49394679513332",
+        "url": "https://gravitycoalition.com/products/stumpjumper-15-alloy-frameset?currency=USD&variant=49394679513332",
+        "current_price": 1599.99,
+        "original_price": 2100.0,
+        "size": "S1",
+        "options": "Satin Obsidian / Silver Dust / S1 / 29/27.5",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/73325-70_SJ-15-ALLOY-FRM-OBSD-SILDST_HERO.jpg?v=1789478997",
+        "reference_basis": "retailer_compare_at",
+        "discount": 23.8,
+        "savings": 500.01
+      },
+      "checked_at": "2026-11-03T04:20:42.668289+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/stumpjumper-15-alloy-frameset.js?currency=USD",
+      "response_sha256": "acce4fb789869bcd7e347bb2c8a85a40cbc5b9466e3ed9f6d87140d5f531c864",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Stumpjumper 15 Alloy Frameset",
+        "variant": "49394679513332",
+        "sku": "73325-7001",
+        "price_minor": 159999,
+        "reference_minor": 210000,
+        "currency": "USD",
+        "options": "Satin Obsidian / Silver Dust / S1 / 29/27.5",
+        "raw_options": [
+          "Satin Obsidian / Silver Dust",
+          "S1",
+          "29/27.5"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Satin Obsidian / Silver Dust",
+              "Satin Olive Green / Metallic Obsidian"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S1",
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6"
+            ]
+          },
+          {
+            "name": "Wheel Size",
+            "position": 3,
+            "values": [
+              "29/27.5",
+              "29/29"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Cannondale Moterra SL E-Mountain Bike",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "48817616519412",
+        "url": "https://gravitycoalition.com/products/cannondale-moterra-sl?currency=USD&variant=48817616519412",
+        "current_price": 5989.97,
+        "original_price": 7699.0,
+        "size": "Large",
+        "options": "Large / 2 / Smoke Black",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/C25_C65125U_Moterra_SL_2_AM_SBK_PD_b03f6ee6-0ced-42b6-bd70-15ab7714b2c7.png?v=1764355401",
+        "reference_basis": "retailer_compare_at",
+        "discount": 22.2,
+        "savings": 1709.03
+      },
+      "checked_at": "2026-11-03T04:20:47.905630+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/cannondale-moterra-sl.js?currency=USD",
+      "response_sha256": "f81895c9108265f6f0152f1190a71b0dd0d0ab471b5906621fe029490e1bc1aa",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Cannondale Moterra SL E-Mountain Bike",
+        "variant": "48817616519412",
+        "sku": "C65125U20LG",
+        "price_minor": 598997,
+        "reference_minor": 769900,
+        "currency": "USD",
+        "options": "Large / 2 / Smoke Black",
+        "raw_options": [
+          "Large",
+          "2",
+          "Smoke Black"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "Small",
+              "Medium",
+              "Large",
+              "XL"
+            ]
+          },
+          {
+            "name": " Model",
+            "position": 2,
+            "values": [
+              "1",
+              "2"
+            ]
+          },
+          {
+            "name": "Color",
+            "position": 3,
+            "values": [
+              "Raw",
+              "Tungsten Blue",
+              "Smoke Black",
+              "Tiger Shark",
+              "Candy Red",
+              "Tiger Eye"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Amflow PL Carbon",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "67855420293364",
+        "url": "https://gravitycoalition.com/products/amflow-pl-carbon?currency=USD&variant=67855420293364",
+        "current_price": 5997.0,
+        "original_price": 7499.0,
+        "size": "M",
+        "options": "M",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/054f1dc8231c940a6c72ba5cf6b79c0b_ultra.jpg?v=1792639455",
+        "reference_basis": "retailer_compare_at",
+        "discount": 20.0,
+        "savings": 1502.0
+      },
+      "checked_at": "2026-11-03T04:20:53.142644+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/amflow-pl-carbon.js?currency=USD",
+      "response_sha256": "1713d77a7d594c22c5639be534c296d9a1a502abf775787e9e0db53739f5d142",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Amflow PL Carbon",
+        "variant": "67855420293364",
+        "sku": "6937224119796",
+        "price_minor": 599700,
+        "reference_minor": 749900,
+        "currency": "USD",
+        "options": "M",
+        "raw_options": [
+          "M"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "M",
+              "L",
+              "XL"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Specialized Status Full Suspension Freeride Mountain Bike",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "49392582656244",
+        "url": "https://gravitycoalition.com/products/specialized-status-full-suspension-freeride-mountain-bike?currency=USD&variant=49392582656244",
+        "current_price": 1999.97,
+        "original_price": 2500.0,
+        "size": null,
+        "options": "2026 Status 2 170 ZERO SMU - Gloss Laurel Green Metallic / Desert Rose / S0 - XXS",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/26-status-2-170-green-1_0de8049a-f58a-4d23-b6d9-d3f78c1e204f.jpg?v=1789423235",
+        "reference_basis": "retailer_compare_at",
+        "discount": 20.0,
+        "savings": 500.03
+      },
+      "checked_at": "2026-11-03T04:20:58.385117+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/specialized-status-full-suspension-freeride-mountain-bike.js?currency=USD",
+      "response_sha256": "96f1253a15bbfa10a90a7fb6e7dfa77db5d5170e7cfbc09304898e2c09a280c2",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Specialized Status Full Suspension Freeride Mountain Bike",
+        "variant": "49392582656244",
+        "sku": "93726-7200",
+        "price_minor": 199997,
+        "reference_minor": 250000,
+        "currency": "USD",
+        "options": "2026 Status 2 170 ZERO SMU - Gloss Laurel Green Metallic / Desert Rose / S0 - XXS",
+        "raw_options": [
+          "2026 Status 2 170 ZERO SMU - Gloss Laurel Green Metallic / Desert Rose",
+          "S0 - XXS"
+        ],
+        "option_definitions": [
+          {
+            "name": "Options",
+            "position": 1,
+            "values": [
+              "Status 2 170 - Satin Obsidian / Dune White",
+              "Status 2 170 - Satin Harvest Gold Tint / Obsidian / Dune White",
+              "Status 2 140 ZERO - Satin Aluminum",
+              "2026 Status 2 170 SMU - Gloss Shadow Silver / Dolomite Metallic / California Sunshine",
+              "2026 Status 2 170 ZERO SMU - Gloss Laurel Green Metallic / Desert Rose",
+              "2026 Status 2 170 ZERO SMU - Gloss Shadow Silver",
+              "2026 Status 2 170 DH - Gloss Nebula Metallic / Orange Zest"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S2 - Small",
+              "S3 - Medium",
+              "S4 - Large",
+              "S0 - XXS",
+              "S5 - X-Large"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Yeti Cycles SB140 Full Suspension Mountain Bike",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "48305401659636",
+        "url": "https://gravitycoalition.com/products/yeti-sb140-full-suspension-mountain-bike?currency=USD&variant=48305401659636",
+        "current_price": 4974.97,
+        "original_price": 6200.0,
+        "size": "XL",
+        "options": "XL / Turquoise - C2 90 Transmission",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/7a45d4e2e8e14b05722a199a411e873b98ad385af04bbd3b4b6824f5072faf78__99654.webp?v=1779227141",
+        "reference_basis": "retailer_compare_at",
+        "discount": 19.8,
+        "savings": 1225.03
+      },
+      "checked_at": "2026-11-03T04:21:03.647771+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/yeti-sb140-full-suspension-mountain-bike.js?currency=USD",
+      "response_sha256": "eece540a1af47b0810f201f97f42cc4378c73290cd4392e8b8f8f2f305abd262",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Yeti Cycles SB140 Full Suspension Mountain Bike",
+        "variant": "48305401659636",
+        "sku": "B26149CXLPTUPAC026500",
+        "price_minor": 497497,
+        "reference_minor": 620000,
+        "currency": "USD",
+        "options": "XL / Turquoise - C2 90 Transmission",
+        "raw_options": [
+          "XL",
+          "Turquoise - C2 90 Transmission"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "Large",
+              "XL"
+            ]
+          },
+          {
+            "name": "Color + Kit",
+            "position": 2,
+            "values": [
+              "Turquoise - T3 X0 AXS Transmission",
+              "Turquoise - C2 90 Transmission"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Cannondale Adventure Neo Electric Bikes",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "46641292574964",
+        "url": "https://gravitycoalition.com/products/cannondale-adventure-neo-electric-eurban-bikes?currency=USD&variant=46641292574964",
+        "current_price": 2399.99,
+        "original_price": 2875.0,
+        "size": "L",
+        "options": "Neo 4 - Grey / L",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/products/C21_C68401U_Adventure_Neo_4_GRY_PD.png?v=1723824687",
+        "reference_basis": "retailer_compare_at",
+        "discount": 16.5,
+        "savings": 475.01
+      },
+      "checked_at": "2026-11-03T04:21:08.874901+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/cannondale-adventure-neo-electric-eurban-bikes.js?currency=USD",
+      "response_sha256": "265c85eb7126960f77f66d399422c5a82408c3bb3ed26ee8c17ab230af19b374",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Cannondale Adventure Neo Electric Bikes",
+        "variant": "46641292574964",
+        "sku": "C68401U20LG",
+        "price_minor": 239999,
+        "reference_minor": 287500,
+        "currency": "USD",
+        "options": "Neo 4 - Grey / L",
+        "raw_options": [
+          "Neo 4 - Grey",
+          "L"
+        ],
+        "option_definitions": [
+          {
+            "name": "Options",
+            "position": 1,
+            "values": [
+              "Neo 4 - Grey",
+              "Neo 4 - Mango"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "SM",
+              "L"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Cannondale Adventure Neo Allroad Electric Urban E-Bikes",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "44022307750132",
+        "url": "https://gravitycoalition.com/products/cannondale-adventure-neo-allroad-electric-eurban-bikes?currency=USD&variant=44022307750132",
+        "current_price": 1842.97,
+        "original_price": 2198.99,
+        "size": "LG",
+        "options": "LG / Adventure Neo Allroad Speed - Black",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/o9431yxzkdk2nn1iijuk_fe572fc5-2e45-4b74-8b1e-2141ed6599f2.png?v=1739320048",
+        "reference_basis": "retailer_compare_at",
+        "discount": 16.2,
+        "savings": 356.02
+      },
+      "checked_at": "2026-11-03T04:21:14.114678+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/cannondale-adventure-neo-allroad-electric-eurban-bikes.js?currency=USD",
+      "response_sha256": "8e7c7bf9b8ecf4848195a6bc9d1a5e13fce90ff3e7fb66d1b65c82c19a869832",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Cannondale Adventure Neo Allroad Electric Urban E-Bikes",
+        "variant": "44022307750132",
+        "sku": "C68554M10LG",
+        "price_minor": 184297,
+        "reference_minor": 219899,
+        "currency": "USD",
+        "options": "LG / Adventure Neo Allroad Speed - Black",
+        "raw_options": [
+          "LG",
+          "Adventure Neo Allroad Speed - Black"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "MD",
+              "LG",
+              "SM"
+            ]
+          },
+          {
+            "name": "Options",
+            "position": 2,
+            "values": [
+              "Adventure Neo Allroad  - Black",
+              "Adventure Neo Allroad EQ - Black",
+              "Adventure Neo Allroad EQ Low StepThru - Black",
+              "Adventure Neo Allroad Low StepThru - Jade",
+              "Adventure Neo Allroad Low StepThru - Black",
+              "Adventure Neo Allroad Speed - Black",
+              "Adventure Neo Allroad Speed Low StepThru - Black (UL Certified)",
+              "Adventure Neo Allroad Speed Low StepThru - Fire Red",
+              "Adventure Neo Allroad Low StepThru - Storm Cloud",
+              "Adventure Neo Allroad Speed - Fire Red (UL Certified)"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Surly Krampus Hardtail Mountain Bike - Blue Oyster Coat",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "49436357787892",
+        "url": "https://gravitycoalition.com/products/krampus-front-suspension-bike-blue-oyster-coat?currency=USD&variant=49436357787892",
+        "current_price": 2299.0,
+        "original_price": 2699.0,
+        "size": "X-Large",
+        "options": "X-Large",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/BK00276.jpg?v=1789853637",
+        "reference_basis": "retailer_compare_at",
+        "discount": 14.8,
+        "savings": 400.0
+      },
+      "checked_at": "2026-11-03T04:21:19.355812+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/krampus-front-suspension-bike-blue-oyster-coat.js?currency=USD",
+      "response_sha256": "e67640123fde57cef6cb0582a9cd85cd53e30b240a4fac2f56ba46e84cc7f25e",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Surly Krampus Hardtail Mountain Bike - Blue Oyster Coat",
+        "variant": "49436357787892",
+        "sku": "BK00278",
+        "price_minor": 229900,
+        "reference_minor": 269900,
+        "currency": "USD",
+        "options": "X-Large",
+        "raw_options": [
+          "X-Large"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "Small",
+              "Medium",
+              "Large",
+              "X-Large"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Specialized Rockhopper Hardtail Mountain Bike",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "48004647616756",
+        "url": "https://gravitycoalition.com/products/specialized-rockhopper-expert-mountain-bike?currency=USD&variant=48004647616756",
+        "current_price": 1149.99,
+        "original_price": 1300.0,
+        "size": null,
+        "options": "Expert / Large (29) - Gloss Silver Dust / Satin Burnt Gold Metallic",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/91825-31_ROCKHOPPER-EXPERT-GLOSS-SILVER-DUST---SATIN-BURNT-GOLD-METALLIC_HERO.webp?v=1773867675",
+        "reference_basis": "retailer_compare_at",
+        "discount": 11.5,
+        "savings": 150.01
+      },
+      "checked_at": "2026-11-03T04:21:24.598534+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/specialized-rockhopper-expert-mountain-bike.js?currency=USD",
+      "response_sha256": "fa96d25316693b7a976dc515a5c1ef48e01526299b956f13f407cbd51901612a",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Specialized Rockhopper Hardtail Mountain Bike",
+        "variant": "48004647616756",
+        "sku": "91825-3104",
+        "price_minor": 114999,
+        "reference_minor": 130000,
+        "currency": "USD",
+        "options": "Expert / Large (29) - Gloss Silver Dust / Satin Burnt Gold Metallic",
+        "raw_options": [
+          "Expert",
+          "Large (29) - Gloss Silver Dust / Satin Burnt Gold Metallic"
+        ],
+        "option_definitions": [
+          {
+            "name": "Options",
+            "position": 1,
+            "values": [
+              "Expert",
+              "Sport",
+              "Base"
+            ]
+          },
+          {
+            "name": "Size + Color",
+            "position": 2,
+            "values": [
+              "Small (27.5) - Gloss Silver Dust / Satin Burnt Gold Metallic",
+              "Large (29) - Gloss Silver Dust / Satin Burnt Gold Metallic",
+              "Large (29) - Satin Cast Blue Metallic / Gloss Astral Blue",
+              "Extra Small (27.5) - Gloss Smoke / Cool Grey",
+              "Medium (29) - Gloss Smoke / Cool Grey",
+              "Medium (29) - Gloss Maroon / Deep Orange",
+              "XXSmall (26) - Gloss Sky Blue / Majesty Blue Mettalic",
+              "XXSmall (26) - Gloss Obsidian / Dune White",
+              "Large (29) - Satin Bottle Green / Oak Green Metallic",
+              "Extra Small (27.5) - Satin Metallic Obsidian / Shadow Silver"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "S-Works Stumpjumper 15 EVO Frameset (2026)",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "49399153459444",
+        "url": "https://gravitycoalition.com/products/s-works-stumpjumper-15-evo-frameset-2026?currency=USD&variant=49399153459444",
+        "current_price": 3299.99,
+        "original_price": 3600.0,
+        "size": "S1",
+        "options": "Satin Shadow Silver / Ashen Grey / Gloss Black Liquid Metal / S1 / 29/27.5",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/73326-00_SJ-15-SW-FRM-ASHGRY-SHDWSIL-BLKLQDMET_HERO.jpg?v=1789480519",
+        "reference_basis": "retailer_compare_at",
+        "discount": 8.3,
+        "savings": 300.01
+      },
+      "checked_at": "2026-11-03T04:21:29.875349+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/s-works-stumpjumper-15-evo-frameset-2026.js?currency=USD",
+      "response_sha256": "0900cab0d54cc934d2a98e48430abadc69fed335e076cdd1f62b280705c4aa57",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "S-Works Stumpjumper 15 EVO Frameset (2026)",
+        "variant": "49399153459444",
+        "sku": "73326-0001",
+        "price_minor": 329999,
+        "reference_minor": 360000,
+        "currency": "USD",
+        "options": "Satin Shadow Silver / Ashen Grey / Gloss Black Liquid Metal / S1 / 29/27.5",
+        "raw_options": [
+          "Satin Shadow Silver / Ashen Grey / Gloss Black Liquid Metal",
+          "S1",
+          "29/27.5"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Satin Shadow Silver / Ashen Grey / Gloss Black Liquid Metal"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S1",
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6"
+            ]
+          },
+          {
+            "name": "Wheel Size",
+            "position": 3,
+            "values": [
+              "29/27.5",
+              "29/29"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Amflow PL Carbon Pro",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "67855421210868",
+        "url": "https://gravitycoalition.com/products/amflow-pl-carbon-pro?currency=USD&variant=67855421210868",
+        "current_price": 9997.0,
+        "original_price": 10199.0,
+        "size": "M",
+        "options": "M",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/xl_2e6c8ad6-3991-4fc2-a6ca-2c117de2c4d9.jpg?v=1792640558",
+        "reference_basis": "retailer_compare_at",
+        "discount": 2.0,
+        "savings": 202.0
+      },
+      "checked_at": "2026-11-03T04:21:35.172762+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/amflow-pl-carbon-pro.js?currency=USD",
+      "response_sha256": "ad48aa4ded2ec0fe1291e9c2bcb3d3380819e24fbe8f46883e5c9130cf0ed564",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Amflow PL Carbon Pro",
+        "variant": "67855421210868",
+        "sku": "6937224119604",
+        "price_minor": 999700,
+        "reference_minor": 1019900,
+        "currency": "USD",
+        "options": "M",
+        "raw_options": [
+          "M"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "M",
+              "XL"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Specialized Diverge Gravel Bike",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "48817393926388",
+        "url": "https://gravitycoalition.com/products/specialized-diverge-4-sport-carbon?currency=USD&variant=48817393926388",
+        "current_price": 2074.97,
+        "original_price": 2100.0,
+        "size": "56",
+        "options": "56 / Diverge 4 Sport Alloy - Gloss Dark Navy / Dolomite Metallic",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/95426-63_DIVERGE-E5-SPORT-DKNVY-DLMMET_HERO-PDP.webp?v=1776795365",
+        "reference_basis": "retailer_compare_at",
+        "discount": 1.2,
+        "savings": 25.03
+      },
+      "checked_at": "2026-11-03T04:21:40.525697+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/specialized-diverge-4-sport-carbon.js?currency=USD",
+      "response_sha256": "0581148bf58c4bdd9f8076f9b28c62e01ccb906626f1fa2bd643385aa13f3932",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Specialized Diverge Gravel Bike",
+        "variant": "48817393926388",
+        "sku": "95426-6356",
+        "price_minor": 207497,
+        "reference_minor": 210000,
+        "currency": "USD",
+        "options": "56 / Diverge 4 Sport Alloy - Gloss Dark Navy / Dolomite Metallic",
+        "raw_options": [
+          "56",
+          "Diverge 4 Sport Alloy - Gloss Dark Navy / Dolomite Metallic"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "56",
+              "54",
+              "52"
+            ]
+          },
+          {
+            "name": "Build",
+            "position": 2,
+            "values": [
+              "Diverge 4 Sport Carbon - Deep Orange / Dune White",
+              "Diverge 4 Sport Carbon - Emerald Metallic / Silver Dust",
+              "Diverge 3 Alloy - Gloss Dune White / Ashen",
+              "Diverge 4 Sport Alloy - Gloss Dark Navy / Dolomite Metallic"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Stumpjumper 15 EVO Alloy Frameset",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "49395019383028",
+        "url": "https://gravitycoalition.com/products/stumpjumper-15-evo-alloy-frameset?currency=USD&variant=49395019383028",
+        "current_price": 2074.97,
+        "original_price": 2099.99,
+        "size": "S1",
+        "options": "Satin Brushed Aluminum / Cast Blue / S1 / 29/27.5",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/73326-70_SJ-15-ALLOY-FRM-BRSH-LQDMET-CSTBLU_HERO.jpg?v=1789458367",
+        "reference_basis": "retailer_compare_at",
+        "discount": 1.2,
+        "savings": 25.02
+      },
+      "checked_at": "2026-11-03T04:21:45.745537+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/stumpjumper-15-evo-alloy-frameset.js?currency=USD",
+      "response_sha256": "1b681853716f6b5991edb1c70be41f638c0500648f052f97b999232879f6e127",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Stumpjumper 15 EVO Alloy Frameset",
+        "variant": "49395019383028",
+        "sku": "73326-7001",
+        "price_minor": 207497,
+        "reference_minor": 209999,
+        "currency": "USD",
+        "options": "Satin Brushed Aluminum / Cast Blue / S1 / 29/27.5",
+        "raw_options": [
+          "Satin Brushed Aluminum / Cast Blue",
+          "S1",
+          "29/27.5"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Satin Brushed Aluminum / Cast Blue"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S1",
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6"
+            ]
+          },
+          {
+            "name": "Wheel Size",
+            "position": 3,
+            "values": [
+              "29/27.5",
+              "29/29"
+            ]
+          }
+        ],
+        "available": true
+      }
+    }
+  ]
+}

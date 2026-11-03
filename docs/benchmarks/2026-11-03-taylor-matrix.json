@@ -1,0 +1,741 @@
+{
+  "version": 1,
+  "date": "2026-11-03",
+  "contract": "docs/COMPETITIVE-BENCHMARK.md",
+  "sites": [
+    {
+      "name": "Fresh Powder",
+      "ours": true,
+      "categories": [
+        "snow"
+      ],
+      "market": "US",
+      "metrics": {
+        "M9": {
+          "status": "measured",
+          "value": 0,
+          "first_price_bottom": 806.90625,
+          "date": "2026-11-03",
+          "sample_size": 3,
+          "cohort": "default-deal-entry-mobile",
+          "method": "390x844-no-saved-searches-v1",
+          "environment": "production",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#mobile_runs",
+          "url": "https://freshpowder.clifan.com/",
+          "note": "Initial discovery geometry only; exact-fit action task still unmeasured. Zero-scroll is parity at the ceiling."
+        },
+        "M1": {
+          "status": "observed",
+          "value": 967,
+          "date": "2026-11-03",
+          "sample_size": 1381,
+          "cohort": "US-new-snow-500",
+          "method": "public-surface-candidate-review-v1",
+          "environment": "production",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#competitor_cohorts.fresh_powder",
+          "note": "Public rendered source-reported stock, not independent merchant validation. Missing stock excluded. Displayed source dates parsed as UTC in current year."
+        },
+        "M2": {
+          "status": "observed",
+          "value": 14,
+          "date": "2026-11-03",
+          "sample_size": 1381,
+          "cohort": "US-new-snow-500",
+          "method": "public-surface-candidate-review-v1",
+          "environment": "production",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#competitor_cohorts.fresh_powder",
+          "note": "Public rendered source-reported stock, not independent merchant validation. Missing stock excluded. Displayed source dates parsed as UTC in current year."
+        },
+        "M10": {
+          "status": "measured",
+          "value": 1712,
+          "cls": 0,
+          "date": "2026-11-03",
+          "sample_size": 3,
+          "cohort": "default-deal-entry-mobile",
+          "method": "chrome-cold-390x844-150ms-1.6Mbps-4x-v1",
+          "environment": "production",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#mobile_runs",
+          "url": "https://freshpowder.clifan.com/",
+          "note": "Sequential same-session cold contexts, cache disabled, 750Kbps up. LCP/maximum-session-window CLS observed until 8 seconds after first price. Responsiveness task pending."
+        }
+      }
+    },
+    {
+      "name": "Big Ring",
+      "ours": true,
+      "categories": [
+        "cycling"
+      ],
+      "market": "US",
+      "metrics": {
+        "M1": {
+          "status": "observed",
+          "value": 87,
+          "date": "2026-11-03",
+          "sample_size": 1142,
+          "cohort": "US-new-cycling-1000",
+          "method": "source-snapshot-v1",
+          "environment": "local",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#inventory.cycling",
+          "note": "Source-reported exact variants; shipping/checkout/condition not independently established for the whole population."
+        },
+        "M2": {
+          "status": "observed",
+          "value": 11,
+          "date": "2026-11-03",
+          "sample_size": 1142,
+          "cohort": "US-new-cycling-1000",
+          "method": "source-snapshot-v1",
+          "environment": "local",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#inventory.cycling",
+          "note": "Source-reported exact variants; shipping/checkout/condition not independently established for the whole population."
+        },
+        "M7": {
+          "status": "observed",
+          "value": 100.0,
+          "date": "2026-11-03",
+          "sample_size": 1142,
+          "cohort": "US-new-cycling-1000",
+          "method": "source-snapshot-v1",
+          "environment": "local",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#inventory.cycling",
+          "note": "Source-reported exact variants; shipping/checkout/condition not independently established for the whole population."
+        },
+        "M8": {
+          "status": "observed",
+          "value": 0,
+          "date": "2026-11-03",
+          "sample_size": 1142,
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#historical_evidence",
+          "note": "Only two real UTC observation dates; no fabricated backfill."
+        },
+        "M9": {
+          "status": "measured",
+          "value": 0,
+          "first_price_bottom": 727.09375,
+          "date": "2026-11-03",
+          "sample_size": 1,
+          "cohort": "default-deal-entry-mobile",
+          "method": "390x844-no-saved-searches-v1",
+          "environment": "local",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#mobile_runs",
+          "url": "http://127.0.0.1:8766/",
+          "note": "Initial discovery geometry; equal zero is parity. Separate local budget and fit task used four form interactions with controls visible at 390x844. Not a real-user physical gesture or competitor task study.",
+          "fit_task_evidence": "docs/benchmarks/2026-11-03-taylor-source.json#mobile_fit_tasks"
+        },
+        "M6": {
+          "status": "measured",
+          "value": 100,
+          "date": "2026-11-02",
+          "sample_size": 24,
+          "cohort": "first-page-cards",
+          "method": "card-reference-variant-timestamp-v1",
+          "environment": "local",
+          "evidence": "docs/tasks/competitive-benchmark/verification.md",
+          "note": "24/24 rendered cards have numeric reference, basis, variant and observation timestamp; no historical-low claim."
+        },
+        "M3": {
+          "status": "measured",
+          "value": 100.0,
+          "date": "2026-11-03",
+          "sample_size": 30,
+          "interval": [
+            88.649,
+            100.0
+          ],
+          "cohort": "US-new-cycling-1000",
+          "method": "top10-plus-seeded20-merchant-product-v1",
+          "environment": "local",
+          "evidence": "docs/benchmarks/2026-11-03-cycling-merchant-audit.json",
+          "note": "Top 10 plus 20 seeded samples. Wilson interval is descriptive for this mixed selection, not a random-only population proof. Checks product identity, currency, price/reference, raw options and merchant-reported stock; not checkout. M4/M5 remain unproven."
+        }
+      }
+    },
+    {
+      "name": "Bench Drop",
+      "ours": true,
+      "categories": [
+        "tools"
+      ],
+      "market": "US",
+      "metrics": {
+        "M1": {
+          "status": "observed",
+          "value": 22,
+          "date": "2026-11-03",
+          "sample_size": 352,
+          "cohort": "US-new-tools-200",
+          "method": "source-snapshot-v1",
+          "environment": "local",
+          "evidence": "docs/benchmarks/2026-11-03-taylor-source.json#inventory",
+          "note": "Source-reported exact variants; shipping/checkout/condition not independently established for the whole population."
+        },
+        "M2": {
+          "status": "observed",
+          "value": 5,
+          "date": "2026-11-03",
+          "sample_size": 352,
+          "cohort": "US-new-tools-200",
+          "method": "source-snapshot-v1",
+          "environment": "local",
+          "evidence": "docs/benchmarks/2026-11-03-taylor-source.json#inventory",
+          "note": "Source-reported exact variants; shipping/checkout/condition not independently established for the whole population."
+        },
+        "M7": {
+          "status": "observed",
+          "value": 100.0,
+          "date": "2026-11-03",
+          "sample_size": 352,
+          "cohort": "US-new-tools-200",
+          "method": "source-snapshot-v1",
+          "environment": "local",
+          "evidence": "docs/benchmarks/2026-11-03-taylor-source.json#inventory",
+          "note": "Source-reported exact variants; shipping/checkout/condition not independently established for the whole population."
+        },
+        "M8": {
+          "status": "observed",
+          "value": 0,
+          "date": "2026-11-03",
+          "sample_size": 351,
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#historical_evidence",
+          "note": "Only two real UTC observation dates; no fabricated backfill. Taylor is a new source with one observed day; previous 351-listing cohort remains historical."
+        },
+        "M9": {
+          "status": "measured",
+          "value": 0,
+          "first_price_bottom": 759.09375,
+          "date": "2026-11-03",
+          "sample_size": 1,
+          "cohort": "default-deal-entry-mobile",
+          "method": "390x844-no-saved-searches-v1",
+          "environment": "local",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#mobile_runs",
+          "url": "http://127.0.0.1:8767/",
+          "note": "Initial discovery geometry; equal zero is parity. Separate local budget and fit task used four form interactions with controls visible at 390x844. Not a real-user physical gesture or competitor task study.",
+          "fit_task_evidence": "docs/benchmarks/2026-11-03-taylor-source.json#mobile_fit_tasks"
+        },
+        "M6": {
+          "status": "measured",
+          "value": 100,
+          "date": "2026-11-02",
+          "sample_size": 24,
+          "cohort": "first-page-cards",
+          "method": "card-reference-variant-timestamp-v1",
+          "environment": "local",
+          "evidence": "docs/tasks/competitive-benchmark/verification.md",
+          "note": "24/24 rendered cards have numeric reference, basis, variant and observation timestamp; no historical-low claim."
+        },
+        "M3": {
+          "status": "measured",
+          "value": 100.0,
+          "date": "2026-11-03",
+          "sample_size": 30,
+          "interval": [
+            88.649,
+            100.0
+          ],
+          "cohort": "US-new-tools-200",
+          "method": "top10-plus-seeded20-merchant-product-v1",
+          "environment": "local",
+          "evidence": "docs/benchmarks/2026-11-03-taylor-source.json#combined_audit",
+          "note": "Top 10 plus 20 seeded samples. Wilson interval is descriptive for this mixed selection, not a random-only population proof. Checks product identity, currency, price/reference, raw options and merchant-reported stock; not checkout. M4/M5 remain unproven."
+        }
+      }
+    },
+    {
+      "name": "Powder Deals",
+      "categories": [
+        "snow"
+      ],
+      "market": "US",
+      "evidence_url": "https://powderdeals.com/deals",
+      "metrics": {
+        "M9": {
+          "status": "measured",
+          "value": 318.21875,
+          "first_price_bottom": 1180.21875,
+          "date": "2026-11-03",
+          "sample_size": 3,
+          "cohort": "default-deal-entry-mobile",
+          "method": "390x844-no-saved-searches-v1",
+          "environment": "production",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#mobile_runs",
+          "url": "https://powderdeals.com/deals",
+          "note": "Initial discovery geometry only; exact-fit action task still unmeasured. Zero-scroll is parity at the ceiling."
+        },
+        "M1": {
+          "status": "observed",
+          "value": 34,
+          "date": "2026-11-03",
+          "sample_size": 497,
+          "cohort": "US-new-snow-500",
+          "method": "public-surface-candidate-review-v1",
+          "environment": "production",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#competitor_cohorts.powder",
+          "note": "Displayed offers only; not independently verified M1."
+        },
+        "M2": {
+          "status": "observed",
+          "value": 4,
+          "date": "2026-11-03",
+          "sample_size": 497,
+          "cohort": "US-new-snow-500",
+          "method": "public-surface-candidate-review-v1",
+          "environment": "production",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#competitor_cohorts.powder",
+          "note": "Displayed offers only; not independently verified M1."
+        },
+        "M10": {
+          "status": "measured",
+          "value": 1252,
+          "cls": 6.656322945265241e-05,
+          "date": "2026-11-03",
+          "sample_size": 3,
+          "cohort": "default-deal-entry-mobile",
+          "method": "chrome-cold-390x844-150ms-1.6Mbps-4x-v1",
+          "environment": "production",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#mobile_runs",
+          "url": "https://powderdeals.com/deals",
+          "note": "Sequential same-session cold contexts, cache disabled, 750Kbps up. LCP/maximum-session-window CLS observed until 8 seconds after first price. Responsiveness task pending."
+        }
+      }
+    },
+    {
+      "name": "SnowDeal",
+      "categories": [
+        "snow"
+      ],
+      "market": "US",
+      "evidence_url": "https://snowdeal.io/",
+      "metrics": {
+        "M7": {
+          "status": "claimed",
+          "note": "Nightly pricing claim.",
+          "date": "2026-11-02",
+          "evidence": "https://snowdeal.io/"
+        }
+      }
+    },
+    {
+      "name": "PowderList",
+      "categories": [
+        "snow"
+      ],
+      "market": "US",
+      "evidence_url": "https://powderlist.com/about",
+      "metrics": {}
+    },
+    {
+      "name": "trail.deals",
+      "categories": [
+        "snow"
+      ],
+      "market": "US",
+      "evidence_url": "https://trail.deals/about",
+      "metrics": {
+        "M7": {
+          "status": "claimed",
+          "note": "Published offers rechecked at least every eight hours (provider policy).",
+          "date": "2026-11-02",
+          "evidence": "https://trail.deals/about"
+        }
+      }
+    },
+    {
+      "name": "Velo Bargains",
+      "categories": [
+        "cycling"
+      ],
+      "market": "US",
+      "evidence_url": "https://velo.bargains/deals",
+      "metrics": {
+        "M9": {
+          "status": "measured",
+          "value": 212.71875,
+          "first_price_bottom": 1056.71875,
+          "date": "2026-11-03",
+          "sample_size": 3,
+          "cohort": "default-deal-entry-mobile",
+          "method": "390x844-no-saved-searches-v1",
+          "environment": "production",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#mobile_runs",
+          "url": "https://velo.bargains/deals",
+          "note": "Initial discovery geometry only; exact-fit action task still unmeasured. Zero-scroll is parity at the ceiling."
+        },
+        "M1": {
+          "status": "observed",
+          "value": 12,
+          "date": "2026-11-03",
+          "sample_size": 346,
+          "cohort": "US-new-cycling-1000",
+          "method": "public-surface-candidate-review-v1",
+          "environment": "production",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#competitor_cohorts.velo",
+          "note": "Displayed offers only; not independently verified M1."
+        },
+        "M2": {
+          "status": "observed",
+          "value": 1,
+          "date": "2026-11-03",
+          "sample_size": 346,
+          "cohort": "US-new-cycling-1000",
+          "method": "public-surface-candidate-review-v1",
+          "environment": "production",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#competitor_cohorts.velo",
+          "note": "Displayed offers only; not independently verified M1."
+        },
+        "M10": {
+          "status": "measured",
+          "value": 2004,
+          "cls": 0.0009016107000283358,
+          "date": "2026-11-03",
+          "sample_size": 3,
+          "cohort": "default-deal-entry-mobile",
+          "method": "chrome-cold-390x844-150ms-1.6Mbps-4x-v1",
+          "environment": "production",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#mobile_runs",
+          "url": "https://velo.bargains/deals",
+          "note": "Sequential same-session cold contexts, cache disabled, 750Kbps up. LCP/maximum-session-window CLS observed until 8 seconds after first price. Responsiveness task pending."
+        }
+      }
+    },
+    {
+      "name": "99 Spokes",
+      "categories": [
+        "cycling"
+      ],
+      "market": "US",
+      "evidence_url": "https://99spokes.com/",
+      "metrics": {
+        "M7": {
+          "status": "claimed",
+          "note": "Daily monitoring claim.",
+          "date": "2026-11-02",
+          "evidence": "https://99spokes.com/"
+        }
+      }
+    },
+    {
+      "name": "MTB Price Agent",
+      "categories": [
+        "cycling"
+      ],
+      "market": "US",
+      "evidence_url": "https://mtbprice.com/",
+      "metrics": {
+        "M1": {
+          "status": "observed",
+          "value": 52,
+          "date": "2026-11-03",
+          "sample_size": 734,
+          "cohort": "US-full-suspension-new-cycling-1000",
+          "method": "public-surface-candidate-review-v1",
+          "environment": "production",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#competitor_cohorts.mtb",
+          "note": "Full-suspension bikes subset; model-level sizes and price not independently tied to exact purchasable variants. Not directly comparable to all-cycling M1."
+        },
+        "M2": {
+          "status": "observed",
+          "value": 7,
+          "date": "2026-11-03",
+          "sample_size": 734,
+          "cohort": "US-full-suspension-new-cycling-1000",
+          "method": "public-surface-candidate-review-v1",
+          "environment": "production",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#competitor_cohorts.mtb",
+          "note": "Full-suspension bikes subset; model-level sizes and price not independently tied to exact purchasable variants. Not directly comparable to all-cycling M1."
+        },
+        "M9": {
+          "status": "measured",
+          "value": 739.078125,
+          "first_price_bottom": 1583.078125,
+          "date": "2026-11-03",
+          "sample_size": 3,
+          "cohort": "default-deal-entry-mobile",
+          "method": "390x844-no-saved-searches-v1",
+          "environment": "production",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#mobile_runs",
+          "url": "https://mtbprice.com/",
+          "note": "Initial discovery geometry only; exact-fit action task still unmeasured. Zero-scroll is parity at the ceiling."
+        },
+        "M10": {
+          "status": "measured",
+          "value": 3796,
+          "cls": 0,
+          "date": "2026-11-03",
+          "sample_size": 3,
+          "cohort": "default-deal-entry-mobile",
+          "method": "chrome-cold-390x844-150ms-1.6Mbps-4x-v1",
+          "environment": "production",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#mobile_runs",
+          "url": "https://mtbprice.com/",
+          "note": "Sequential same-session cold contexts, cache disabled, 750Kbps up. LCP/maximum-session-window CLS observed until 8 seconds after first price. Responsiveness task pending."
+        }
+      }
+    },
+    {
+      "name": "VeloDeals",
+      "categories": [
+        "cycling"
+      ],
+      "market": "US",
+      "evidence_url": "https://velodeals.com/",
+      "metrics": {}
+    },
+    {
+      "name": "BikeHunt",
+      "categories": [
+        "cycling"
+      ],
+      "market": "AU",
+      "evidence_url": "https://www.bikehunt.au/guides/how-bikehunt-compares-prices",
+      "metrics": {}
+    },
+    {
+      "name": "Cycling Deals",
+      "categories": [
+        "cycling"
+      ],
+      "market": "UK",
+      "evidence_url": "https://www.cycling-deals.co.uk/",
+      "metrics": {
+        "M7": {
+          "status": "claimed",
+          "note": "Daily checks claim.",
+          "date": "2026-11-02",
+          "evidence": "https://www.cycling-deals.co.uk/"
+        },
+        "M8": {
+          "status": "claimed",
+          "note": "History on every product; 30 distinct days not audited.",
+          "date": "2026-11-02",
+          "evidence": "https://www.cycling-deals.co.uk/"
+        }
+      }
+    },
+    {
+      "name": "VeloChecker",
+      "categories": [
+        "cycling"
+      ],
+      "market": "UK",
+      "evidence_url": "https://velochecker.com/about",
+      "metrics": {}
+    },
+    {
+      "name": "Daily Tool Drops",
+      "categories": [
+        "tools"
+      ],
+      "market": "US",
+      "evidence_url": "https://dailytooldrops.com/",
+      "metrics": {
+        "M8": {
+          "status": "claimed",
+          "note": "30-day history label on four of five visible offers; actual observations not audited.",
+          "date": "2026-11-02",
+          "evidence": "https://dailytooldrops.com/"
+        },
+        "M9": {
+          "status": "measured",
+          "value": 0,
+          "first_price_bottom": 495.71875,
+          "date": "2026-11-03",
+          "sample_size": 3,
+          "cohort": "default-deal-entry-mobile",
+          "method": "390x844-no-saved-searches-v1",
+          "environment": "production",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#mobile_runs",
+          "url": "https://dailytooldrops.com/",
+          "note": "Initial discovery geometry only; exact-fit action task still unmeasured. Zero-scroll is parity at the ceiling."
+        },
+        "M10": {
+          "status": "measured",
+          "value": 2644,
+          "cls": 0.0034879851751084654,
+          "date": "2026-11-03",
+          "sample_size": 3,
+          "cohort": "default-deal-entry-mobile",
+          "method": "chrome-cold-390x844-150ms-1.6Mbps-4x-v1",
+          "environment": "production",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#mobile_runs",
+          "url": "https://dailytooldrops.com/",
+          "note": "Sequential same-session cold contexts, cache disabled, 750Kbps up. LCP/maximum-session-window CLS observed until 8 seconds after first price. Responsiveness task pending."
+        }
+      }
+    },
+    {
+      "name": "DrillDown",
+      "categories": [
+        "tools"
+      ],
+      "market": "US",
+      "evidence_url": "https://drilldown.cc/",
+      "metrics": {}
+    },
+    {
+      "name": "ToolGuyd",
+      "categories": [
+        "tools"
+      ],
+      "market": "US",
+      "evidence_url": "https://toolguyd.com/",
+      "metrics": {}
+    },
+    {
+      "name": "ScoredDeals",
+      "categories": [
+        "tools"
+      ],
+      "market": "US",
+      "evidence_url": "https://www.scoreddeals.com/best/tools",
+      "metrics": {}
+    },
+    {
+      "name": "Tool Brief",
+      "categories": [
+        "tools"
+      ],
+      "market": "UK",
+      "evidence_url": "https://toolbrief.co.uk/deals",
+      "metrics": {}
+    },
+    {
+      "name": "Slickdeals",
+      "categories": [
+        "snow",
+        "cycling",
+        "tools"
+      ],
+      "market": "US",
+      "evidence_url": "https://slickdeals.net/corp/how-slickdeals-works/",
+      "metrics": {}
+    },
+    {
+      "name": "DealNews",
+      "categories": [
+        "snow",
+        "cycling",
+        "tools"
+      ],
+      "market": "US",
+      "evidence_url": "https://corp.dealnews.com/faq/",
+      "metrics": {}
+    },
+    {
+      "name": "Red Tool Radar",
+      "categories": [
+        "tools"
+      ],
+      "market": "US",
+      "evidence_url": "https://redtoolradar.com/",
+      "metrics": {}
+    },
+    {
+      "name": "HardHat Deals",
+      "ours": false,
+      "categories": [
+        "tools"
+      ],
+      "market": "US",
+      "url": "https://hardhatdeals.com/",
+      "metrics": {
+        "M1": {
+          "status": "observed",
+          "value": 7,
+          "date": "2026-11-03",
+          "sample_size": 533,
+          "cohort": "US-new-tools-200",
+          "method": "public-surface-candidate-review-v1",
+          "environment": "production",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#competitor_cohorts.hardhat",
+          "note": "Public API includes grouped alternatives; rendered homepage collapses them. Stock and seller/condition unverified; not M1."
+        },
+        "M2": {
+          "status": "observed",
+          "value": 3,
+          "date": "2026-11-03",
+          "sample_size": 533,
+          "cohort": "US-new-tools-200",
+          "method": "public-surface-candidate-review-v1",
+          "environment": "production",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#competitor_cohorts.hardhat",
+          "note": "Public API includes grouped alternatives; rendered homepage collapses them. Stock and seller/condition unverified; not M1."
+        },
+        "M9": {
+          "status": "measured",
+          "value": 886,
+          "first_price_bottom": 1730,
+          "date": "2026-11-03",
+          "sample_size": 3,
+          "cohort": "default-deal-entry-mobile",
+          "method": "390x844-no-saved-searches-v1",
+          "environment": "production",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#mobile_runs",
+          "url": "https://hardhatdeals.com/",
+          "note": "Initial discovery geometry only; exact-fit action task still unmeasured. Zero-scroll is parity at the ceiling."
+        },
+        "M10": {
+          "status": "measured",
+          "value": 1348,
+          "cls": 0.09643590050452998,
+          "date": "2026-11-03",
+          "sample_size": 3,
+          "cohort": "default-deal-entry-mobile",
+          "method": "chrome-cold-390x844-150ms-1.6Mbps-4x-v1",
+          "environment": "production",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#mobile_runs",
+          "url": "https://hardhatdeals.com/",
+          "note": "Sequential same-session cold contexts, cache disabled, 750Kbps up. LCP/maximum-session-window CLS observed until 8 seconds after first price. Responsiveness task pending."
+        }
+      }
+    },
+    {
+      "name": "Ski Finder",
+      "ours": false,
+      "categories": [
+        "snow"
+      ],
+      "market": "US",
+      "url": "https://www.ski-finders.com/deals",
+      "metrics": {
+        "M9": {
+          "status": "measured",
+          "value": 0,
+          "first_price_bottom": 612,
+          "date": "2026-11-03",
+          "sample_size": 3,
+          "cohort": "default-deal-entry-mobile",
+          "method": "390x844-no-saved-searches-v1",
+          "environment": "production",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#mobile_runs",
+          "url": "https://www.ski-finders.com/deals",
+          "note": "Initial discovery geometry only; exact-fit action task still unmeasured. Zero-scroll is parity at the ceiling."
+        },
+        "M10": {
+          "status": "measured",
+          "value": 992,
+          "cls": 0.033291179905953344,
+          "date": "2026-11-03",
+          "sample_size": 3,
+          "cohort": "default-deal-entry-mobile",
+          "method": "chrome-cold-390x844-150ms-1.6Mbps-4x-v1",
+          "environment": "production",
+          "evidence": "docs/benchmarks/2026-11-03-evidence.json#mobile_runs",
+          "url": "https://www.ski-finders.com/deals",
+          "note": "Sequential same-session cold contexts, cache disabled, 750Kbps up. LCP/maximum-session-window CLS observed until 8 seconds after first price. Responsiveness task pending."
+        }
+      }
+    }
+  ],
+  "previous_report": "docs/benchmarks/2026-11-02.json",
+  "evidence": "docs/benchmarks/2026-11-03-evidence.json",
+  "notes": [
+    "21 competitor services retained; this is not exhaustive internet coverage.",
+    "The prior JSON accidentally omitted HardHat despite its documentation registry entry; this report restores it and adds Ski Finder.",
+    "Inherited observations keep their original dates. New candidate cohorts do not become validated M1/M2 counts.",
+    "All-metrics lead remains unsupported. M9 alone omits the exact-fit action task; M10 does not prove task responsiveness."
+  ],
+  "note": "Follow-up to 7798318. Prior measurements retain their original evidence; only Bench Drop source/audit observations and local fit-task notes are updated."
+}

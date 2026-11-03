@@ -8,6 +8,7 @@ from deal_common.models import Product
 # Retailers occasionally swap Size and Color labels. Preserve raw options, but
 # only a recognizable frame-size value can participate in the exact-fit filter.
 FRAME_SIZE_PATTERN = (
+    r'(?!.*\b(?:foot|feet|ft|cable)\b)(?!\d+(?:\.\d+)?\s*[x×])'
     r'(?!.*\bwheel\b$)(?:'
     r'(?:\d+(?:\.\d+)?\s*(?:cm|in|tt|\")?|S[1-6]|Size\s+\d+)'
     r'|(?:[2-6]?X{0,3}[SML]|SM|MD|LG|ML|XM|XMD|R|Regular|All)'
@@ -36,9 +37,9 @@ def classify(product: Product) -> Classification | None:
         return None
     # Only a positive retailer bike taxonomy or an unambiguous product name qualifies.
     # A title containing "bike" alone could be a bike rack or a helmet.
-    if re.search(r"\b(helmets?|jerseys?|shorts|gloves?|shoes?|racks?|bags?|wheels?|tires?|tyres?|tubes?|pedals?|saddles?|hangers?|forks?|batteries|chargers?|covers?|stands?|trainers?|parts|accessories)\b", kind):
+    if re.search(r"\b(helmets?|jerseys?|shorts|gloves?|shoes?|racks?|bags?|wheels?|tires?|tyres?|tubes?|pedals?|saddles?|hangers?|forks?|batteries|chargers?|covers?|stands?|trainers?|parts?|accessor(?:y|ies)|maintenance|locks?|pumps?|goggles?|computers?|heart rate|lights?|cables?|brakes?|adaptors?|adapters?)\b", kind):
         return None
-    if re.search(r"\b(framesets?|frame sets?)\b", text) or kind in {
+    if re.search(r"\b(framesets?|frame sets?|frame[- ]only)\b", text) or kind in {
             "frames", "mtb frames", "road frames", "gravel frames", "am/enduro frames", "trail/am frames", "e-bike frames"}:
         return Classification("Framesets")
     if kind == "e-commuter":
@@ -51,13 +52,15 @@ def classify(product: Product) -> Classification | None:
     explicit = bool(re.search(r"(?:mountain|road|gravel|hybrid|commuter|electric|trail|xc|e-mountain|e-road) (?:bikes?|bicycles?)(?:\s*\[new\])?$", title))
     if not bike_type and not explicit:
         return None
-    if re.search(r"\b(e-bikes?|ebikes?|electric|e-mountain|e-road|e-gravel)\b", text):
+    # A manufacturer such as Rocky Mountain does not define the bike category.
+    category_text = f"{unbranded_title} {kind}"
+    if re.search(r"\b(e-bikes?|ebikes?|electric|e-mountain|e-road|e-gravel)\b", category_text):
         return Classification("Electric bikes")
-    if re.search(r"\b(mountain|mtb|trail|enduro|downhill|xc)\b", text):
+    if re.search(r"\b(mountain|mtb|trail|enduro|downhill|xc)\b", category_text):
         return Classification("Mountain bikes")
-    if "gravel" in text:
+    if "gravel" in category_text:
         return Classification("Gravel bikes")
-    if "road" in text:
+    if "road" in category_text:
         return Classification("Road bikes")
     return Classification("Other complete bikes")
 
@@ -67,7 +70,11 @@ CATALOG = Catalog(
     headline="More bike.\nLess money.",
     description="Big discounts on complete bikes and framesets. The deepest percentage cuts come first, with the exact size and price attached.",
     categories=("Mountain bikes", "Road bikes", "Gravel bikes", "Electric bikes", "Framesets", "Other complete bikes"),
-    sources=(RetailerConfig(name="Bicycle Warehouse", domain="bicyclewarehouse.com",
+    sources=(RetailerConfig(name="Gravity Coalition", domain="gravitycoalition.com",
+                            scrape_urls=["https://gravitycoalition.com/collections/all-bikes-frames?currency=USD",
+                                         "https://gravitycoalition.com/collections/bike-sale?currency=USD"],
+                            verify_shopify_currency=True),
+             RetailerConfig(name="Bicycle Warehouse", domain="bicyclewarehouse.com",
                             scrape_urls=["https://bicyclewarehouse.com/collections/bikes-on-sale?currency=USD"],
                             verify_shopify_currency=True),
              RetailerConfig(name="BikesOnline", domain="bikesonline.com",

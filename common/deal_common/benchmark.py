@@ -1,5 +1,5 @@
 """Evidence-aware competitive comparisons; unknown measurements never become wins."""
-from datetime import date
+from datetime import date, datetime, timedelta
 from math import isfinite
 
 METRICS = {
@@ -35,7 +35,7 @@ def compare(metric: str, own: dict, rival: dict, *, as_of: str) -> str:
     for field in ("cohort", "method", "date"):
         if not own.get(field) or own[field] != rival.get(field):
             return "incomparable"
-    if metric == "M10" and (own.get("environment") != "production" or rival.get("environment") != "production"):
+    if metric in {"M9", "M10"} and (own.get("environment") != "production" or rival.get("environment") != "production"):
         return "incomparable"
     if metric == "M10":
         for observation in (own, rival):
@@ -45,6 +45,20 @@ def compare(metric: str, own: dict, rival: dict, *, as_of: str) -> str:
                 return "unproven"
         if own["cls"] > 0.1:
             return "below-target"
+        windows = []
+        for observation in (own, rival):
+            try:
+                start = datetime.fromisoformat(observation["started_at"])
+                end = datetime.fromisoformat(observation["ended_at"])
+                if (start.utcoffset() is None or end.utcoffset() is None or end < start
+                        or start.date().isoformat() != observation["date"]
+                        or end.date().isoformat() != observation["date"]):
+                    return "unproven"
+            except (KeyError, TypeError, ValueError):
+                return "unproven"
+            windows.extend((start, end))
+        if max(windows) - min(windows) > timedelta(hours=1):
+            return "incomparable"
     # A point estimate cannot establish superiority for sampled accuracy.
     if metric in {"M3", "M4", "M5"} and any(
         not isinstance(o.get("interval"), list) or len(o["interval"]) != 2

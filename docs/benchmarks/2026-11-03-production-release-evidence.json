@@ -1,0 +1,4334 @@
+{
+  "date": "2026-11-03",
+  "workflow_run": 41580573050,
+  "workflow_url": "https://github.com/lifan-builds/snow-deal/actions/runs/41580573050",
+  "inventory": {
+    "cycling": {
+      "catalog": "cycling",
+      "measured_at": "2026-11-03T04:58:07.872998+00:00",
+      "reference_floor": 1000,
+      "scope": "snapshot-listed offers; not independent merchant verification or unique model count",
+      "eligible_in_stock_listings": 1141,
+      "deep_deal_listings": 87,
+      "useful_retailers": [
+        "Bicycle Warehouse",
+        "Bike Mart",
+        "BikesOnline",
+        "Colorado Cyclist",
+        "Contender Bicycles",
+        "ERIK\u2019S Bike Shop",
+        "Mike's Bikes",
+        "Planet Cyclery",
+        "Pro Bike Supply",
+        "The Path Bike Shop",
+        "Worldwide Cyclery"
+      ],
+      "checked_within_24h_percent": 100.0,
+      "exact_size_facets": [
+        "20.5in",
+        "20.5tt",
+        "22\"",
+        "26 TALL",
+        "43",
+        "44",
+        "46",
+        "46.5",
+        "47",
+        "48",
+        "48cm (19\")",
+        "49",
+        "49cm",
+        "49cm (19.25\")",
+        "50",
+        "50cm",
+        "50cm (19.75\")",
+        "51",
+        "51.5",
+        "51cm",
+        "52",
+        "52cm",
+        "52cm (20.5\")",
+        "53",
+        "53cm",
+        "53cm (21\")",
+        "54",
+        "54CM",
+        "54cm",
+        "54cm (21\")",
+        "54cm (21.25\")",
+        "55",
+        "56",
+        "56CM",
+        "56cm",
+        "56cm (22\")",
+        "57",
+        "57.5",
+        "57cm (22.5\")",
+        "58",
+        "58CM",
+        "58cm",
+        "59.5",
+        "60",
+        "61",
+        "61cm",
+        "62",
+        "All",
+        "L",
+        "L (29\" wheel)",
+        "L - 630wh Battery",
+        "LARGE",
+        "LG",
+        "LG (29)",
+        "LG (5'10\" - 6'3\")",
+        "LG (5'10\" - 6'4\")",
+        "LG (5'5\" - 5'10\")",
+        "Large",
+        "Large MX",
+        "Large/X-Large",
+        "M",
+        "M #MWS Options 1",
+        "M #MWS Options 11",
+        "M (29\" wheel)",
+        "MD",
+        "MD (5' - 5'6\")",
+        "MD (5'5\" - 5'10\")",
+        "MD (5'6\" - 5'10\")",
+        "MD (MX)",
+        "MEDIUM",
+        "ML",
+        "ML (29\" wheel)",
+        "Medium",
+        "Medium (29\")",
+        "Medium - 54cm - ( Riders 5'9\" - 6'1\")",
+        "Medium 29",
+        "Medium MX",
+        "Medium/Large",
+        "One Size",
+        "One Size Fits Most",
+        "One size fits most",
+        "R",
+        "Regular",
+        "S",
+        "S #MWS Options 13",
+        "S #MWS Options 5",
+        "S (27.5\" wheel)",
+        "S/M",
+        "S1",
+        "S1 (MX)",
+        "S1 (SM)",
+        "S2",
+        "S2 (MX)",
+        "S3",
+        "S3 (29)",
+        "S3 - 29",
+        "S4",
+        "S4 (29)",
+        "S4 - 29",
+        "S5",
+        "S5 (29)",
+        "S5 - 29",
+        "S6",
+        "S6 (29)",
+        "S6 - 29",
+        "SM",
+        "SM (4'10\" - 5'6\")",
+        "SM (5' - 5'6\")",
+        "SM (MX)",
+        "SMALL",
+        "Size 2",
+        "Size 3",
+        "Small",
+        "Small (29)",
+        "Small MX",
+        "Small/Medium",
+        "X-LARGE",
+        "X-Large",
+        "X-Medium",
+        "X-Small",
+        "XL",
+        "XL #MWS Options 9",
+        "XL (29\" wheel)",
+        "XM",
+        "XMD",
+        "XMD (29)",
+        "XS",
+        "XS (27.5\" wheel)",
+        "XS (4'9\" - 5'3\")",
+        "XX-LARGE",
+        "XX-Large",
+        "XX-Small",
+        "XXL",
+        "XXS",
+        "XXS (26\" wheel)",
+        "Xl",
+        "Xs"
+      ],
+      "top_offers": [
+        {
+          "name": "Vaast Bikes E/1 XT/SLX 27.5 E-Bike - Nostalgic Sea Blue-Ocean Frost",
+          "store": "Colorado Cyclist",
+          "url": "https://coloradocyclist.com/products/vaast-bikes-e-1-xt-slx-27-5-e-bike-nostalgic-sea-blue-ocean-frost?currency=USD&variant=48408222335216",
+          "price": 1499.99,
+          "reference": 7699.99,
+          "discount": 80.5,
+          "size": "Medium"
+        },
+        {
+          "name": "Vaast Bikes E/1 Enviolo 27.5 E-Bike - Vibrant Berry Red-Black Cherry",
+          "store": "Colorado Cyclist",
+          "url": "https://coloradocyclist.com/products/vaast-bikes-e-1-enviolo-27-5-e-bike-vibrant-berry-red-black-cherry?currency=USD&variant=48408222236912",
+          "price": 1999.99,
+          "reference": 8699.99,
+          "discount": 77.0,
+          "size": "Medium"
+        },
+        {
+          "name": "S-Works Diverge STR Road Bike Frameset",
+          "store": "ERIK\u2019S Bike Shop",
+          "url": "https://www.eriksbikeshop.com/products/s-works-diverge-str-road-bike-frameset-pr5a17935?currency=USD&variant=49445702140118",
+          "price": 1999.99,
+          "reference": 5499.99,
+          "discount": 63.6,
+          "size": "58CM"
+        },
+        {
+          "name": "Specialized Turbo Vado SL 5.0 EQ Electric Bike",
+          "store": "ERIK\u2019S Bike Shop",
+          "url": "https://www.eriksbikeshop.com/products/specialized-2023-turbo-vado-sl-5-0-eq-electric-bike-pr5a12693?currency=USD&variant=46161239539926",
+          "price": 1999.99,
+          "reference": 5249.99,
+          "discount": 61.9,
+          "size": "Xl"
+        },
+        {
+          "name": "Heckler SL CC X0 Transmission Reserve",
+          "store": "Mike's Bikes",
+          "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-cc-x0-transmission-reserve-2024?currency=USD&variant=44649480618053",
+          "price": 4499.77,
+          "reference": 11699.99,
+          "discount": 61.5,
+          "size": "XX-Large"
+        },
+        {
+          "name": "S-Works Stumpjumper Frameset",
+          "store": "Pro Bike Supply",
+          "url": "https://www.probikesupply.com/products/specialized-stumpjumper-s-works-frm-frame-satin-dusty-blue-pearl-black-carbon-s3?currency=USD&variant=42349827096631",
+          "price": 1199.99,
+          "reference": 2999.99,
+          "discount": 60.0,
+          "size": "S1"
+        },
+        {
+          "name": "Stumpjumper Frameset",
+          "store": "Pro Bike Supply",
+          "url": "https://www.probikesupply.com/products/2022-specialized-stumpjumper-29-carbon-frameset-s2-satin-copper-black?currency=USD&variant=42349599064119",
+          "price": 1079.99,
+          "reference": 2699.99,
+          "discount": 60.0,
+          "size": "S1"
+        },
+        {
+          "name": "Heckler SL C S",
+          "store": "Mike's Bikes",
+          "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-s-2024?currency=USD&variant=40617095069765",
+          "price": 3499.77,
+          "reference": 8699.99,
+          "discount": 59.8,
+          "size": "XX-Large"
+        },
+        {
+          "name": "Heckler SL C R",
+          "store": "Mike's Bikes",
+          "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-r-2024?currency=USD&variant=40615074889797",
+          "price": 2999.77,
+          "reference": 7299.99,
+          "discount": 58.9,
+          "size": "XX-Large"
+        },
+        {
+          "name": "OPEN UPPER Frameset",
+          "store": "Contender Bicycles",
+          "url": "https://contenderbicycles.com/products/open-upper-frameset?currency=USD&variant=37271992533160",
+          "price": 1895.99,
+          "reference": 4500.0,
+          "discount": 57.9,
+          "size": "S"
+        }
+      ]
+    },
+    "tools": {
+      "catalog": "tools",
+      "measured_at": "2026-11-03T04:58:57.404394+00:00",
+      "reference_floor": 200,
+      "scope": "snapshot-listed offers; not independent merchant verification or unique model count",
+      "eligible_in_stock_listings": 548,
+      "deep_deal_listings": 19,
+      "useful_retailers": [
+        "OakTree Supply",
+        "Tool Nut",
+        "Woodcraft"
+      ],
+      "checked_within_24h_percent": 100.0,
+      "exact_size_facets": [
+        "HW110S-36Pro",
+        "HW110S-52Pro",
+        "HW110TC-36Pro",
+        "HW110TC-52Pro"
+      ],
+      "top_offers": [
+        {
+          "name": "Axiom 2x2 CNC Table with Air-Cooled Spindle",
+          "store": "OakTree Supply",
+          "url": "https://www.oaktreesupply.com/products/axiom-2x2-cnc-table-with-spindle?currency=USD&variant=47708931948761",
+          "price": 1999.0,
+          "reference": 4699.0,
+          "discount": 57.5,
+          "size": null
+        },
+        {
+          "name": "Axiom Iconic-4 Series CNC Router 2' x 2'",
+          "store": "OakTree Supply",
+          "url": "https://www.oaktreesupply.com/products/axoiom-iconic-4-series-cnc-router-24-x-24?currency=USD&variant=37991680082119",
+          "price": 2999.0,
+          "reference": 6049.0,
+          "discount": 50.4,
+          "size": null
+        },
+        {
+          "name": "Iconic 24\" x 24\" for Axiom CNC Router",
+          "store": "Woodcraft",
+          "url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-24-for-axiom-cnc-router?currency=USD&variant=43403824922762",
+          "price": 2999.0,
+          "reference": 6049.0,
+          "discount": 50.4,
+          "size": null
+        },
+        {
+          "name": "JET JAT-127, 3/4-in. Composite Impact Wrench (505127)",
+          "store": "Tool Nut",
+          "url": "https://www.toolnut.com/products/jet-505127-jat-127-composite-impact-wrench?currency=USD&variant=50177235976486",
+          "price": 299.99,
+          "reference": 580.99,
+          "discount": 48.4,
+          "size": null
+        },
+        {
+          "name": "Axiom AR16 Elite 4'x4' CNC Router",
+          "store": "OakTree Supply",
+          "url": "https://www.oaktreesupply.com/products/axiom-ar16-elite-4x4?currency=USD&variant=31966639423606",
+          "price": 9999.0,
+          "reference": 19299.0,
+          "discount": 48.2,
+          "size": null
+        },
+        {
+          "name": "Axiom AR4Pro V6 2'x2' CNC Router",
+          "store": "OakTree Supply",
+          "url": "https://www.oaktreesupply.com/products/axiom-ar4pro-v5-2x2-cnc-router?currency=USD&variant=31966616780918",
+          "price": 4999.0,
+          "reference": 9459.0,
+          "discount": 47.2,
+          "size": null
+        },
+        {
+          "name": "Axiom Iconic-6 Series CNC Router 2' x 3'",
+          "store": "OakTree Supply",
+          "url": "https://www.oaktreesupply.com/products/axiom-iconic-6-series-cnc-router-24-x-36?currency=USD&variant=41257102147783",
+          "price": 3499.0,
+          "reference": 6599.0,
+          "discount": 47.0,
+          "size": null
+        },
+        {
+          "name": "Iconic 24\" x 36\" CNC Router",
+          "store": "Woodcraft",
+          "url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-36-cnc-router?currency=USD&variant=43400695939210",
+          "price": 3499.0,
+          "reference": 6599.0,
+          "discount": 47.0,
+          "size": null
+        },
+        {
+          "name": "JET JAT-127 3/4\" Composite Pneumatic Impact Wrench",
+          "store": "OakTree Supply",
+          "url": "https://www.oaktreesupply.com/products/jet-jat-127-3-4-pneumatic-composite-impact-wrench?currency=USD&variant=44426104668377",
+          "price": 299.0,
+          "reference": 560.99,
+          "discount": 46.7,
+          "size": null
+        },
+        {
+          "name": "Jet J-4400A, 12-in. Industrial Disc Finishing Machine 115/230V 1-Phase (414602)",
+          "store": "Tool Nut",
+          "url": "https://www.toolnut.com/products/jet-414602-j-4400a-12-industrial-disc-finishing-machine-115-230v-1ph?currency=USD&variant=50175462670630",
+          "price": 1099.0,
+          "reference": 2036.99,
+          "discount": 46.0,
+          "size": null
+        }
+      ]
+    }
+  },
+  "merchant_audits": {
+    "cycling": {
+      "catalog": "cycling",
+      "date": "2026-11-03T04:58:07.676297+00:00",
+      "seed": 20261103,
+      "population": 1141,
+      "method": "top10-plus-seeded20-merchant-product-v1",
+      "sample_size": 30,
+      "match": 30,
+      "mismatch": 0,
+      "inconclusive": 0,
+      "verified_match_percent": 100.0,
+      "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+      "results": [
+        {
+          "name": "Vaast Bikes E/1 XT/SLX 27.5 E-Bike - Nostalgic Sea Blue-Ocean Frost",
+          "store": "Colorado Cyclist",
+          "offer": {
+            "variant_key": "48408222335216",
+            "url": "https://coloradocyclist.com/products/vaast-bikes-e-1-xt-slx-27-5-e-bike-nostalgic-sea-blue-ocean-frost?currency=USD&variant=48408222335216",
+            "current_price": 1499.99,
+            "original_price": 7699.99,
+            "size": "Medium",
+            "options": "Nostalgic Sea Blue - Ocean Frost / Medium",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0761/3592/3952/files/VaastBikesE1XTSLX27.5E-Bike-NostalgicSeaBlue-OceanFrost_653758ef-151f-403f-a1ce-418046e5c846.jpg?v=1765222053",
+            "reference_basis": "retailer_compare_at",
+            "discount": 80.5,
+            "savings": 6200.0
+          },
+          "checked_at": "2026-11-03T04:54:54.167464+00:00",
+          "evidence_url": "https://coloradocyclist.com/products/vaast-bikes-e-1-xt-slx-27-5-e-bike-nostalgic-sea-blue-ocean-frost.js?currency=USD",
+          "response_sha256": "f98606d31831b63ddac51bbb06505dfb2568078dd02bece0ee04994685abc512",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Vaast Bikes E/1 XT/SLX 27.5 E-Bike - Nostalgic Sea Blue-Ocean Frost",
+            "variant": "48408222335216",
+            "sku": "GM111324-02",
+            "price_minor": 149999,
+            "reference_minor": 769999,
+            "currency": "USD",
+            "options": "Nostalgic Sea Blue - Ocean Frost / Medium",
+            "raw_options": [
+              "Nostalgic Sea Blue - Ocean Frost",
+              "Medium"
+            ],
+            "option_definitions": [
+              {
+                "name": "Color",
+                "position": 1,
+                "values": [
+                  "Nostalgic Sea Blue - Ocean Frost"
+                ]
+              },
+              {
+                "name": "Size",
+                "position": 2,
+                "values": [
+                  "Small",
+                  "Medium",
+                  "Large"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Vaast Bikes E/1 Enviolo 27.5 E-Bike - Vibrant Berry Red-Black Cherry",
+          "store": "Colorado Cyclist",
+          "offer": {
+            "variant_key": "48408222236912",
+            "url": "https://coloradocyclist.com/products/vaast-bikes-e-1-enviolo-27-5-e-bike-vibrant-berry-red-black-cherry?currency=USD&variant=48408222236912",
+            "current_price": 1999.99,
+            "original_price": 8699.99,
+            "size": "Medium",
+            "options": "Vibrant Berry Red - Black Cherry / Medium",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0761/3592/3952/files/VaastBikesE1Enviolo27.5E-Bike-VibrantBerryRed-BlackCherry_4fce3f0d-9e0e-4fb1-b9c3-fc008cd9d985.jpg?v=1765222053",
+            "reference_basis": "retailer_compare_at",
+            "discount": 77.0,
+            "savings": 6700.0
+          },
+          "checked_at": "2026-11-03T04:55:04.546672+00:00",
+          "evidence_url": "https://coloradocyclist.com/products/vaast-bikes-e-1-enviolo-27-5-e-bike-vibrant-berry-red-black-cherry.js?currency=USD",
+          "response_sha256": "6cc1aa574d9ab4baf1b88c9a557d12d8b207986f23befe0a51ca9727fddd2e22",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Vaast Bikes E/1 Enviolo 27.5 E-Bike - Vibrant Berry Red-Black Cherry",
+            "variant": "48408222236912",
+            "sku": "GM111324-05",
+            "price_minor": 199999,
+            "reference_minor": 869999,
+            "currency": "USD",
+            "options": "Vibrant Berry Red - Black Cherry / Medium",
+            "raw_options": [
+              "Vibrant Berry Red - Black Cherry",
+              "Medium"
+            ],
+            "option_definitions": [
+              {
+                "name": "Color",
+                "position": 1,
+                "values": [
+                  "Vibrant Berry Red - Black Cherry"
+                ]
+              },
+              {
+                "name": "Size",
+                "position": 2,
+                "values": [
+                  "Small",
+                  "Medium",
+                  "Large"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "S-Works Diverge STR Road Bike Frameset",
+          "store": "ERIK\u2019S Bike Shop",
+          "offer": {
+            "variant_key": "49445702140118",
+            "url": "https://www.eriksbikeshop.com/products/s-works-diverge-str-road-bike-frameset-pr5a17935?currency=USD&variant=49445702140118",
+            "current_price": 1999.99,
+            "original_price": 5499.99,
+            "size": "58CM",
+            "options": "SATIN FOREST GREEN/DARK MOSS GREEN/BLACK PEARL / 58CM",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0697/5252/0918/files/s-works-diverge-str-road-bike-frameset_forest-green_pr5a17935_hero.jpg?v=1784585310",
+            "reference_basis": "retailer_compare_at",
+            "discount": 63.6,
+            "savings": 3500.0
+          },
+          "checked_at": "2026-11-03T04:55:09.760704+00:00",
+          "evidence_url": "https://www.eriksbikeshop.com/products/s-works-diverge-str-road-bike-frameset-pr5a17935.js?currency=USD",
+          "response_sha256": "f02acb32aa53e205d1e1cc020d903d47e1cb62c38f1f9709d1184645429a0836",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "S-Works Diverge STR Road Bike Frameset",
+            "variant": "49445702140118",
+            "sku": "EK5A48238",
+            "price_minor": 199999,
+            "reference_minor": 549999,
+            "currency": "USD",
+            "options": "SATIN FOREST GREEN/DARK MOSS GREEN/BLACK PEARL / 58CM",
+            "raw_options": [
+              "SATIN FOREST GREEN/DARK MOSS GREEN/BLACK PEARL",
+              "58CM"
+            ],
+            "option_definitions": [
+              {
+                "name": "Color",
+                "position": 1,
+                "values": [
+                  "SATIN FOREST GREEN/DARK MOSS GREEN/BLACK PEARL"
+                ]
+              },
+              {
+                "name": "Size",
+                "position": 2,
+                "values": [
+                  "58CM"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Specialized Turbo Vado SL 5.0 EQ Electric Bike",
+          "store": "ERIK\u2019S Bike Shop",
+          "offer": {
+            "variant_key": "46161239539926",
+            "url": "https://www.eriksbikeshop.com/products/specialized-2023-turbo-vado-sl-5-0-eq-electric-bike-pr5a12693?currency=USD&variant=46161239539926",
+            "current_price": 1999.99,
+            "original_price": 5249.99,
+            "size": "Xl",
+            "options": "Brushed Aluminum Black Relfective / Xl",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0697/5252/0918/files/314284.jpg?v=1726266600",
+            "reference_basis": "retailer_compare_at",
+            "discount": 61.9,
+            "savings": 3250.0
+          },
+          "checked_at": "2026-11-03T04:55:20.091561+00:00",
+          "evidence_url": "https://www.eriksbikeshop.com/products/specialized-2023-turbo-vado-sl-5-0-eq-electric-bike-pr5a12693.js?currency=USD",
+          "response_sha256": "a72a62aaf9bd396c3cc00c2316c5a7d8c85120a0f585d9779e35a89a1bb5b6c9",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Specialized Turbo Vado SL 5.0 EQ Electric Bike",
+            "variant": "46161239539926",
+            "sku": "EK5A24085",
+            "price_minor": 199999,
+            "reference_minor": 524999,
+            "currency": "USD",
+            "options": "Brushed Aluminum Black Relfective / Xl",
+            "raw_options": [
+              "Brushed Aluminum Black Relfective",
+              "Xl"
+            ],
+            "option_definitions": [
+              {
+                "name": "Color",
+                "position": 1,
+                "values": [
+                  "Brushed Aluminum Black Relfective"
+                ]
+              },
+              {
+                "name": "Size",
+                "position": 2,
+                "values": [
+                  "Xl"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Heckler SL CC X0 Transmission Reserve",
+          "store": "Mike's Bikes",
+          "offer": {
+            "variant_key": "44649480618053",
+            "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-cc-x0-transmission-reserve-2024?currency=USD&variant=44649480618053",
+            "current_price": 4499.77,
+            "original_price": 11699.99,
+            "size": "XX-Large",
+            "options": "Silver / XX-Large",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Heckler-SL-CC-X0-Transmission-Reserve_Silver.jpg?v=1771368555",
+            "reference_basis": "retailer_compare_at",
+            "discount": 61.5,
+            "savings": 7200.22
+          },
+          "checked_at": "2026-11-03T04:55:25.273044+00:00",
+          "evidence_url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-cc-x0-transmission-reserve-2024.js?currency=USD",
+          "response_sha256": "de720a5d4fb2714a946edd2dba509bf05a970dd64ba7b3ff4a619de0e5d12586",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Heckler SL CC X0 Transmission Reserve",
+            "variant": "44649480618053",
+            "sku": "58-24299-187-6-824-663002-01",
+            "price_minor": 449977,
+            "reference_minor": 1169999,
+            "currency": "USD",
+            "options": "Silver / XX-Large",
+            "raw_options": [
+              "Silver",
+              "XX-Large"
+            ],
+            "option_definitions": [
+              {
+                "name": "Color",
+                "position": 1,
+                "values": [
+                  "Gloss Magenta",
+                  "Silver"
+                ]
+              },
+              {
+                "name": "Size",
+                "position": 2,
+                "values": [
+                  "Large",
+                  "X-Large",
+                  "XX-Large"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "S-Works Stumpjumper Frameset",
+          "store": "Pro Bike Supply",
+          "offer": {
+            "variant_key": "42349827096631",
+            "url": "https://www.probikesupply.com/products/specialized-stumpjumper-s-works-frm-frame-satin-dusty-blue-pearl-black-carbon-s3?currency=USD&variant=42349827096631",
+            "current_price": 1199.99,
+            "original_price": 2999.99,
+            "size": "S1",
+            "options": "Satin Dusty Blue Pearl / Black / Carbon / S1",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0892/2046/files/73322-01_SJ-SW-FRM-DSTBLU-BLK-CARB_HERO_7ef87e02-6831-4836-aab8-50e1e8bd65c3.jpg?v=1785786878",
+            "reference_basis": "retailer_compare_at",
+            "discount": 60.0,
+            "savings": 1800.0
+          },
+          "checked_at": "2026-11-03T04:55:35.709954+00:00",
+          "evidence_url": "https://www.probikesupply.com/products/specialized-stumpjumper-s-works-frm-frame-satin-dusty-blue-pearl-black-carbon-s3.js?currency=USD",
+          "response_sha256": "3f2c4a57b820c6aa0574e8c40766a45925bbb98f09944e581db2d0e1eae2ad94",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "S-Works Stumpjumper Frameset",
+            "variant": "42349827096631",
+            "sku": "73322-0101",
+            "price_minor": 119999,
+            "reference_minor": 299999,
+            "currency": "USD",
+            "options": "Satin Dusty Blue Pearl / Black / Carbon / S1",
+            "raw_options": [
+              "Satin Dusty Blue Pearl / Black / Carbon",
+              "S1"
+            ],
+            "option_definitions": [
+              {
+                "name": "Color",
+                "position": 1,
+                "values": [
+                  "Satin Dusty Blue Pearl / Black / Carbon"
+                ]
+              },
+              {
+                "name": "Size",
+                "position": 2,
+                "values": [
+                  "S1",
+                  "S2",
+                  "S3",
+                  "S4",
+                  "S5",
+                  "S6"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Stumpjumper Frameset",
+          "store": "Pro Bike Supply",
+          "offer": {
+            "variant_key": "42349599064119",
+            "url": "https://www.probikesupply.com/products/2022-specialized-stumpjumper-29-carbon-frameset-s2-satin-copper-black?currency=USD&variant=42349599064119",
+            "current_price": 1079.99,
+            "original_price": 2699.99,
+            "size": "S1",
+            "options": "Satin Copper / Black / S1",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0892/2046/files/73322-70_SJ-FRM-COP-BLK_HERO_0823d85c-cf72-425b-9853-0cf8271e4b84.jpg?v=1785786351",
+            "reference_basis": "retailer_compare_at",
+            "discount": 60.0,
+            "savings": 1620.0
+          },
+          "checked_at": "2026-11-03T04:55:46.143567+00:00",
+          "evidence_url": "https://www.probikesupply.com/products/2022-specialized-stumpjumper-29-carbon-frameset-s2-satin-copper-black.js?currency=USD",
+          "response_sha256": "e7f3a74792b0d111c81b836f582ed027879b9a9a98404afe0b6f6482428df651",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Stumpjumper Frameset",
+            "variant": "42349599064119",
+            "sku": "73322-7001",
+            "price_minor": 107999,
+            "reference_minor": 269999,
+            "currency": "USD",
+            "options": "Satin Copper / Black / S1",
+            "raw_options": [
+              "Satin Copper / Black",
+              "S1"
+            ],
+            "option_definitions": [
+              {
+                "name": "Color",
+                "position": 1,
+                "values": [
+                  "Satin Copper / Black"
+                ]
+              },
+              {
+                "name": "Size",
+                "position": 2,
+                "values": [
+                  "S1",
+                  "S2",
+                  "S3",
+                  "S4",
+                  "S5",
+                  "S6"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Heckler SL C S",
+          "store": "Mike's Bikes",
+          "offer": {
+            "variant_key": "40617095069765",
+            "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-s-2024?currency=USD&variant=40617095069765",
+            "current_price": 3499.77,
+            "original_price": 8699.99,
+            "size": "XX-Large",
+            "options": "Gloss Magenta / XX-Large",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Santa-Cruz-Heckler-SL-C-S_Gloss_Magenta.png?v=1747271140",
+            "reference_basis": "retailer_compare_at",
+            "discount": 59.8,
+            "savings": 5200.22
+          },
+          "checked_at": "2026-11-03T04:55:51.377575+00:00",
+          "evidence_url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-s-2024.js?currency=USD",
+          "response_sha256": "d142a44a7ad33394f65fba9255bd1f085fe3fc637e2d168ffb5544dd74af50ef",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Heckler SL C S",
+            "variant": "40617095069765",
+            "sku": "58-24298-148-6-825-652901-01",
+            "price_minor": 349977,
+            "reference_minor": 869999,
+            "currency": "USD",
+            "options": "Gloss Magenta / XX-Large",
+            "raw_options": [
+              "Gloss Magenta",
+              "XX-Large"
+            ],
+            "option_definitions": [
+              {
+                "name": "Color",
+                "position": 1,
+                "values": [
+                  "Matte Silver",
+                  "Gloss Magenta"
+                ]
+              },
+              {
+                "name": "Size",
+                "position": 2,
+                "values": [
+                  "Medium",
+                  "Large",
+                  "XX-Large",
+                  "X-Large"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Heckler SL C R",
+          "store": "Mike's Bikes",
+          "offer": {
+            "variant_key": "40615074889797",
+            "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-r-2024?currency=USD&variant=40615074889797",
+            "current_price": 2999.77,
+            "original_price": 7299.99,
+            "size": "XX-Large",
+            "options": "Gloss Magenta / XX-Large",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Santa-Cruz-Heckler-SL-C-R_Gloss_Magenta.png?v=1747271140",
+            "reference_basis": "retailer_compare_at",
+            "discount": 58.9,
+            "savings": 4300.22
+          },
+          "checked_at": "2026-11-03T04:55:56.913173+00:00",
+          "evidence_url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-r-2024.js?currency=USD",
+          "response_sha256": "fde1617012554e8d3597d29b8a716a00d1840d76f26f26abf78974a52d5768dd",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Heckler SL C R",
+            "variant": "40615074889797",
+            "sku": "58-24298-147-6-825-642701-01",
+            "price_minor": 299977,
+            "reference_minor": 729999,
+            "currency": "USD",
+            "options": "Gloss Magenta / XX-Large",
+            "raw_options": [
+              "Gloss Magenta",
+              "XX-Large"
+            ],
+            "option_definitions": [
+              {
+                "name": "Color",
+                "position": 1,
+                "values": [
+                  "Gloss Magenta",
+                  "Silver"
+                ]
+              },
+              {
+                "name": "Size",
+                "position": 2,
+                "values": [
+                  "X-Large",
+                  "XX-Large"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "OPEN UPPER Frameset",
+          "store": "Contender Bicycles",
+          "offer": {
+            "variant_key": "37271992533160",
+            "url": "https://contenderbicycles.com/products/open-upper-frameset?currency=USD&variant=37271992533160",
+            "current_price": 1895.99,
+            "original_price": 4500.0,
+            "size": "S",
+            "options": "Ready To Paint / S",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/upper-r2p-3.jpg?v=1685747112",
+            "reference_basis": "retailer_compare_at",
+            "discount": 57.9,
+            "savings": 2604.01
+          },
+          "checked_at": "2026-11-03T04:56:02.396179+00:00",
+          "evidence_url": "https://contenderbicycles.com/products/open-upper-frameset.js?currency=USD",
+          "response_sha256": "26e833f6a781882281c454753452a4d23c1ea7ff91fb5436cbb6428afafd3645",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "OPEN UPPER Frameset",
+            "variant": "37271992533160",
+            "sku": "210000106322",
+            "price_minor": 189599,
+            "reference_minor": 450000,
+            "currency": "USD",
+            "options": "Ready To Paint / S",
+            "raw_options": [
+              "Ready To Paint",
+              "S"
+            ],
+            "option_definitions": [
+              {
+                "name": "Color",
+                "position": 1,
+                "values": [
+                  "Black",
+                  "Ready To Paint"
+                ]
+              },
+              {
+                "name": "Size",
+                "position": 2,
+                "values": [
+                  "S",
+                  "M",
+                  "L",
+                  "XL",
+                  "M #MWS Options 11",
+                  "S #MWS Options 5",
+                  "S #MWS Options 13",
+                  "S #MWS Options 14",
+                  "S #MWS Options 15",
+                  "S #MWS Options 6"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Polygon Strattos 8 - Ultegra Di2 Carbon Endurance Bike",
+          "store": "BikesOnline",
+          "offer": {
+            "variant_key": "52037180260644",
+            "url": "https://bikesonline.com/products/polygon-strattos-8-ultegra-di2-carbon-endurance-bike?currency=USD&variant=52037180260644",
+            "current_price": 2699.99,
+            "original_price": 3299.99,
+            "size": "S",
+            "options": "S",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0847/4066/9732/files/PolygonStrattos8-UltegraDi2CarbonEnduranceBike_c1.jpg?v=1772693779",
+            "reference_basis": "retailer_compare_at",
+            "discount": 18.2,
+            "savings": 600.0
+          },
+          "checked_at": "2026-11-03T04:56:12.814535+00:00",
+          "evidence_url": "https://bikesonline.com/products/polygon-strattos-8-ultegra-di2-carbon-endurance-bike.js?currency=USD",
+          "response_sha256": "36bb06d805cc28b8b1597ed133ad95644ed32b3d0c9b147b345f6313ab92fa24",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Polygon Strattos 8 - Ultegra Di2 Carbon Endurance Bike",
+            "variant": "52037180260644",
+            "sku": "AIFPX28S8I4SG1",
+            "price_minor": 269999,
+            "reference_minor": 329999,
+            "currency": "USD",
+            "options": "S",
+            "raw_options": [
+              "S"
+            ],
+            "option_definitions": [
+              {
+                "name": "Size",
+                "position": 1,
+                "values": [
+                  "XXS",
+                  "XS",
+                  "S",
+                  "M",
+                  "L",
+                  "XL",
+                  "XXL"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "BMC URS 01 LT ONE 2026",
+          "store": "Contender Bicycles",
+          "offer": {
+            "variant_key": "48508830580981",
+            "url": "https://contenderbicycles.com/products/bmc-urs-01-lt-one-2026?currency=USD&variant=48508830580981",
+            "current_price": 3499.99,
+            "original_price": 6299.0,
+            "size": "M",
+            "options": "Metallic White / Black / M",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/BMC_URS_01_LT_ONE_2026_Metallic_White_Black_Contender_Bicycles.jpg?v=1786504723",
+            "reference_basis": "retailer_compare_at",
+            "discount": 44.4,
+            "savings": 2799.01
+          },
+          "checked_at": "2026-11-03T04:56:23.267611+00:00",
+          "evidence_url": "https://contenderbicycles.com/products/bmc-urs-01-lt-one-2026.js?currency=USD",
+          "response_sha256": "3b16a77a43094fcd9028b3ef79dbd6bf41308adb488fb024c4fefc4eae0113ae",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "BMC URS 01 LT ONE 2026",
+            "variant": "48508830580981",
+            "sku": "30007080",
+            "price_minor": 349999,
+            "reference_minor": 629900,
+            "currency": "USD",
+            "options": "Metallic White / Black / M",
+            "raw_options": [
+              "Metallic White / Black",
+              "M"
+            ],
+            "option_definitions": [
+              {
+                "name": "Color",
+                "position": 1,
+                "values": [
+                  "Metallic White / Black"
+                ]
+              },
+              {
+                "name": "Size",
+                "position": 2,
+                "values": [
+                  "XS",
+                  "S",
+                  "M",
+                  "L",
+                  "XL"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Orbea Kemen Tour 30 MID 28mph",
+          "store": "Contender Bicycles",
+          "offer": {
+            "variant_key": "45926249660661",
+            "url": "https://contenderbicycles.com/products/orbea-kemen-tour-30-mid-28mph?currency=USD&variant=45926249660661",
+            "current_price": 2992.49,
+            "original_price": 3988.95,
+            "size": "S",
+            "options": "Spaceship Green (Matt) / S",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/Orbea_Kemen_Tour_30_MID_28mph_Contender_Bicycles.jpg?v=1777949550",
+            "reference_basis": "retailer_compare_at",
+            "discount": 25.0,
+            "savings": 996.46
+          },
+          "checked_at": "2026-11-03T04:56:28.496117+00:00",
+          "evidence_url": "https://contenderbicycles.com/products/orbea-kemen-tour-30-mid-28mph.js?currency=USD",
+          "response_sha256": "057738783b0f615a467d78bdf56a79d3124a9a6c12eb5e1a70da3f1490b13e3f",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Orbea Kemen Tour 30 MID 28mph",
+            "variant": "45926249660661",
+            "sku": "210000157885",
+            "price_minor": 299249,
+            "reference_minor": 398895,
+            "currency": "USD",
+            "options": "Spaceship Green (Matt) / S",
+            "raw_options": [
+              "Spaceship Green (Matt)",
+              "S"
+            ],
+            "option_definitions": [
+              {
+                "name": "Color",
+                "position": 1,
+                "values": [
+                  "Ivory White (Gloss)",
+                  "Spaceship Green (Matt)"
+                ]
+              },
+              {
+                "name": "Size",
+                "position": 2,
+                "values": [
+                  "S"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Orbea Keram 10 20mph 2023",
+          "store": "Contender Bicycles",
+          "offer": {
+            "variant_key": "45705827287285",
+            "url": "https://contenderbicycles.com/products/orbea-keram-10-20mph-2023?currency=USD&variant=45705827287285",
+            "current_price": 2833.95,
+            "original_price": 3358.95,
+            "size": "S",
+            "options": "Black (Matt-Gloss) / S",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/bike-product-image_900px_6196b86c-4ecd-406a-9050-15ffdc53828f.jpg?v=1721408829",
+            "reference_basis": "retailer_compare_at",
+            "discount": 15.6,
+            "savings": 525.0
+          },
+          "checked_at": "2026-11-03T04:56:33.746345+00:00",
+          "evidence_url": "https://contenderbicycles.com/products/orbea-keram-10-20mph-2023.js?currency=USD",
+          "response_sha256": "81ba5fdfea25c89ec32576a2e1423f33078b5cce65400fa0e9b064614d8645a1",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Orbea Keram 10 20mph 2023",
+            "variant": "45705827287285",
+            "sku": "210000154698",
+            "price_minor": 283395,
+            "reference_minor": 335895,
+            "currency": "USD",
+            "options": "Black (Matt-Gloss) / S",
+            "raw_options": [
+              "Black (Matt-Gloss)",
+              "S"
+            ],
+            "option_definitions": [
+              {
+                "name": "Color",
+                "position": 1,
+                "values": [
+                  "Metallic Dark Green (Gloss)- Lichen Green (Matte)",
+                  "Black (Matt-Gloss)",
+                  "Leo Orange (Gloss) - Black (Matt)"
+                ]
+              },
+              {
+                "name": "Size",
+                "position": 2,
+                "values": [
+                  "XL",
+                  "M",
+                  "S",
+                  "L"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Pinarello Nytro E9 Road Dura Ace Di2 2025",
+          "store": "Contender Bicycles",
+          "offer": {
+            "variant_key": "46528204144885",
+            "url": "https://contenderbicycles.com/products/pinarello-nytro-road-e9-dura-ace-di2?currency=USD&variant=46528204144885",
+            "current_price": 11000.0,
+            "original_price": 13000.0,
+            "size": "50",
+            "options": "Electro Gold with DT Swiss ARC 1400 50 Wheels / 50",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/Pinarello_Nytro_E9_Road_Dura_Ace_Di2_Electro_Gold_Contender_Bicycles.jpg?v=1743785869",
+            "reference_basis": "retailer_compare_at",
+            "discount": 15.4,
+            "savings": 2000.0
+          },
+          "checked_at": "2026-11-03T04:56:38.949090+00:00",
+          "evidence_url": "https://contenderbicycles.com/products/pinarello-nytro-road-e9-dura-ace-di2.js?currency=USD",
+          "response_sha256": "c462d1f82a0b80c532190aed456675b0b8792f9678f6eaab472169fb842a95e0",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Pinarello Nytro E9 Road Dura Ace Di2 2025",
+            "variant": "46528204144885",
+            "sku": "C1749274159-31774",
+            "price_minor": 1100000,
+            "reference_minor": 1300000,
+            "currency": "USD",
+            "options": "Electro Gold with DT Swiss ARC 1400 50 Wheels / 50",
+            "raw_options": [
+              "Electro Gold with DT Swiss ARC 1400 50 Wheels",
+              "50"
+            ],
+            "option_definitions": [
+              {
+                "name": "Color",
+                "position": 1,
+                "values": [
+                  "Electro Gold with DT Swiss ARC 1400 50 Wheels",
+                  "Electro Red with Princeton Carbon Works Grit 4540 Wheels"
+                ]
+              },
+              {
+                "name": "Size",
+                "position": 2,
+                "values": [
+                  "46",
+                  "50",
+                  "53",
+                  "55",
+                  "57.5",
+                  "60"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "BMC Roadmachine 01 TWO 2026",
+          "store": "Contender Bicycles",
+          "offer": {
+            "variant_key": "48234741596405",
+            "url": "https://contenderbicycles.com/products/bmc-roadmachine-01-two-2026?currency=USD&variant=48234741596405",
+            "current_price": 9749.99,
+            "original_price": 12999.0,
+            "size": "54",
+            "options": "Sage Green / 54",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/Roadmachine_01_TWO_Sage_Green_Contender_Bicycles.jpg?v=1780940636",
+            "reference_basis": "retailer_compare_at",
+            "discount": 25.0,
+            "savings": 3249.01
+          },
+          "checked_at": "2026-11-03T04:56:44.207079+00:00",
+          "evidence_url": "https://contenderbicycles.com/products/bmc-roadmachine-01-two-2026.js?currency=USD",
+          "response_sha256": "e23dfd343806a7ff0da0bebf1e6386d3283dce24b257f166c17008900a273e4a",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "BMC Roadmachine 01 TWO 2026",
+            "variant": "48234741596405",
+            "sku": "30006995",
+            "price_minor": 974999,
+            "reference_minor": 1299900,
+            "currency": "USD",
+            "options": "Sage Green / 54",
+            "raw_options": [
+              "Sage Green",
+              "54"
+            ],
+            "option_definitions": [
+              {
+                "name": "Color",
+                "position": 1,
+                "values": [
+                  "Sage Green"
+                ]
+              },
+              {
+                "name": "Size",
+                "position": 2,
+                "values": [
+                  "47",
+                  "51",
+                  "54",
+                  "56",
+                  "58",
+                  "61"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "2026 Turbo Levo SL 2 Expert Di2 Electric Full Suspension Mountain Bike",
+          "store": "Bike Mart",
+          "offer": {
+            "variant_key": "71242931536125",
+            "url": "https://www.bikemart.com/products/2026-turbo-levo-sl-2-expert-di2-full-suspension-electric-mountain-bike?currency=USD&variant=71242931536125",
+            "current_price": 7999.99,
+            "original_price": 9699.99,
+            "size": "S3",
+            "options": "Bordeaux / S3",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0705/8928/4605/files/96826-30_LEVO-SL-EXPERT-CARBON-DI2-BDXMET-WHT_HERO-PDP.png?v=1788446358",
+            "reference_basis": "retailer_compare_at",
+            "discount": 17.5,
+            "savings": 1700.0
+          },
+          "checked_at": "2026-11-03T04:56:49.392422+00:00",
+          "evidence_url": "https://www.bikemart.com/products/2026-turbo-levo-sl-2-expert-di2-full-suspension-electric-mountain-bike.js?currency=USD",
+          "response_sha256": "7e5f15aa4466420f9756f1fb03565ff97bd8948779e73a10e9f391a6e926fe40",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "2026 Turbo Levo SL 2 Expert Di2 Electric Full Suspension Mountain Bike",
+            "variant": "71242931536125",
+            "sku": "SPE366244633",
+            "price_minor": 799999,
+            "reference_minor": 969999,
+            "currency": "USD",
+            "options": "Bordeaux / S3",
+            "raw_options": [
+              "Bordeaux",
+              "S3"
+            ],
+            "option_definitions": [
+              {
+                "name": "Color",
+                "position": 1,
+                "values": [
+                  "Bordeaux",
+                  "Carbon"
+                ]
+              },
+              {
+                "name": "Size",
+                "position": 2,
+                "values": [
+                  "S1",
+                  "S2",
+                  "S3",
+                  "S4",
+                  "S5",
+                  "S6"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Transition Smuggler Carbon Frameset 2025",
+          "store": "Pro Bike Supply",
+          "offer": {
+            "variant_key": "42446971666487",
+            "url": "https://www.probikesupply.com/products/transition-smuggler-carbon-frameset-2025?currency=USD&variant=42446971666487",
+            "current_price": 2899.0,
+            "original_price": 3499.0,
+            "size": "Small",
+            "options": "Juniper / Small",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0892/2046/files/SB11_Smug_Carb_FrameOnly.jpg?v=1792773605",
+            "reference_basis": "retailer_compare_at",
+            "discount": 17.1,
+            "savings": 600.0
+          },
+          "checked_at": "2026-11-03T04:56:59.750126+00:00",
+          "evidence_url": "https://www.probikesupply.com/products/transition-smuggler-carbon-frameset-2025.js?currency=USD",
+          "response_sha256": "ee693a9218a2ca6a7b10f429a3e2f7553bbe4910198a8fc02592e6f500ab88e9",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Transition Smuggler Carbon Frameset 2025",
+            "variant": "42446971666487",
+            "sku": "01.25.10.3911",
+            "price_minor": 289900,
+            "reference_minor": 349900,
+            "currency": "USD",
+            "options": "Juniper / Small",
+            "raw_options": [
+              "Juniper",
+              "Small"
+            ],
+            "option_definitions": [
+              {
+                "name": "Color",
+                "position": 1,
+                "values": [
+                  "Juniper",
+                  "Slab Grey"
+                ]
+              },
+              {
+                "name": "Size",
+                "position": 2,
+                "values": [
+                  "Small",
+                  "Medium",
+                  "Large",
+                  "X-Large",
+                  "XX-Large"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Specialized Turbo Levo SL 2 Expert DI2 Electric Mountain Bike",
+          "store": "ERIK\u2019S Bike Shop",
+          "offer": {
+            "variant_key": "47340917752022",
+            "url": "https://www.eriksbikeshop.com/products/specialized-turbo-levo-sl-2-expert-di2-electric-mountain-bike-pr5a26015?currency=USD&variant=47340917752022",
+            "current_price": 7999.99,
+            "original_price": 9699.99,
+            "size": "S4",
+            "options": "Carbon/Burnt Gold Metallic / S4",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0697/5252/0918/files/specialized-levo-sl-2-expert-di2-electric-mountain-bike_carbon-burnt-gold-metallic_pr5a26015_7cdb.jpg?v=1759477209",
+            "reference_basis": "retailer_compare_at",
+            "discount": 17.5,
+            "savings": 1700.0
+          },
+          "checked_at": "2026-11-03T04:57:04.929276+00:00",
+          "evidence_url": "https://www.eriksbikeshop.com/products/specialized-turbo-levo-sl-2-expert-di2-electric-mountain-bike-pr5a26015.js?currency=USD",
+          "response_sha256": "bb406dd49c20a9b283b5df74ddc21f1f8eff46f69ca16aab1c7b843ecbaebb4f",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Specialized Turbo Levo SL 2 Expert DI2 Electric Mountain Bike",
+            "variant": "47340917752022",
+            "sku": "EK5A91668",
+            "price_minor": 799999,
+            "reference_minor": 969999,
+            "currency": "USD",
+            "options": "Carbon/Burnt Gold Metallic / S4",
+            "raw_options": [
+              "Carbon/Burnt Gold Metallic",
+              "S4"
+            ],
+            "option_definitions": [
+              {
+                "name": "Color",
+                "position": 1,
+                "values": [
+                  "Bordeaux Metallic/White",
+                  "Carbon/Burnt Gold Metallic"
+                ]
+              },
+              {
+                "name": "Size",
+                "position": 2,
+                "values": [
+                  "S3",
+                  "S2",
+                  "S1",
+                  "S6",
+                  "S5",
+                  "S4"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Transition Smuggler Carbon XO AXS 2025",
+          "store": "Pro Bike Supply",
+          "offer": {
+            "variant_key": "42446967701559",
+            "url": "https://www.probikesupply.com/products/transition-smuggler-carbon-xo-axs-2025?currency=USD&variant=42446967701559",
+            "current_price": 6598.97,
+            "original_price": 7799.0,
+            "size": "Large",
+            "options": "Juniper / Large",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0892/2046/files/C_Smug_Eagle90_Juniper_73afdec7-f689-4112-87ab-47859136ac63.avif?v=1789590787",
+            "reference_basis": "retailer_compare_at",
+            "discount": 15.4,
+            "savings": 1200.03
+          },
+          "checked_at": "2026-11-03T04:57:10.136244+00:00",
+          "evidence_url": "https://www.probikesupply.com/products/transition-smuggler-carbon-xo-axs-2025.js?currency=USD",
+          "response_sha256": "de18c66b71c42321d664d7fbba39f2fc4f1b7c9387302abcf5bbe09ecaf877e4",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Transition Smuggler Carbon XO AXS 2025",
+            "variant": "42446967701559",
+            "sku": "01.25.11.3915",
+            "price_minor": 659897,
+            "reference_minor": 779900,
+            "currency": "USD",
+            "options": "Juniper / Large",
+            "raw_options": [
+              "Juniper",
+              "Large"
+            ],
+            "option_definitions": [
+              {
+                "name": "Color",
+                "position": 1,
+                "values": [
+                  "Juniper",
+                  "Slab Grey"
+                ]
+              },
+              {
+                "name": "Size",
+                "position": 2,
+                "values": [
+                  "Small",
+                  "Medium",
+                  "Large",
+                  "X-Large",
+                  "XX-Large"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Surly Straggler Bike - 650b Steel Cold Steel Blue 42cm",
+          "store": "Pro Bike Supply",
+          "offer": {
+            "variant_key": "41409540915255",
+            "url": "https://www.probikesupply.com/products/surly-straggler-bike-650b-steel-cold-steel-blue-42cm?currency=USD&variant=41409540915255",
+            "current_price": 1274.0,
+            "original_price": 1699.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0892/2046/files/BK00604_6143eb89-a7af-4150-bb5b-5bf354d53fca.jpg?v=1734026925",
+            "reference_basis": "retailer_compare_at",
+            "discount": 25.0,
+            "savings": 425.0
+          },
+          "checked_at": "2026-11-03T04:57:15.364236+00:00",
+          "evidence_url": "https://www.probikesupply.com/products/surly-straggler-bike-650b-steel-cold-steel-blue-42cm.js?currency=USD",
+          "response_sha256": "101b6ad8725f89775478464c5266cfd7308623423c4acd1465beff5f69aaac04",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Surly Straggler Bike - 650b Steel Cold Steel Blue 42cm",
+            "variant": "41409540915255",
+            "sku": "04-002090",
+            "price_minor": 127400,
+            "reference_minor": 169900,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Bianchi Sprint 105 Di2 Disc - SX CK16-Black Full Glossy",
+          "store": "Colorado Cyclist",
+          "offer": {
+            "variant_key": "48408412717296",
+            "url": "https://coloradocyclist.com/products/bianchi-sprint-105-di2-disc-sx-ck16-black-full-glossy?currency=USD&variant=48408412717296",
+            "current_price": 3499.99,
+            "original_price": 3650.0,
+            "size": "57cm (22.5\")",
+            "options": "SX - CK16 - Black Full Glossy / 57cm (22.5\")",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0761/3592/3952/files/BianchiSprint105Di2Disc-SXCK16-BlackFullGlossy.jpg?v=1765224173",
+            "reference_basis": "retailer_compare_at",
+            "discount": 4.1,
+            "savings": 150.01
+          },
+          "checked_at": "2026-11-03T04:57:20.560644+00:00",
+          "evidence_url": "https://coloradocyclist.com/products/bianchi-sprint-105-di2-disc-sx-ck16-black-full-glossy.js?currency=USD",
+          "response_sha256": "89ebb822b3c320bf699fbb4b18d8616971b2035abe4ba7dc8f76c03aa63d0b74",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Bianchi Sprint 105 Di2 Disc - SX CK16-Black Full Glossy",
+            "variant": "48408412717296",
+            "sku": "GM061725-45",
+            "price_minor": 349999,
+            "reference_minor": 365000,
+            "currency": "USD",
+            "options": "SX - CK16 - Black Full Glossy / 57cm (22.5\")",
+            "raw_options": [
+              "SX - CK16 - Black Full Glossy",
+              "57cm (22.5\")"
+            ],
+            "option_definitions": [
+              {
+                "name": "Color",
+                "position": 1,
+                "values": [
+                  "SX - CK16 - Black Full Glossy"
+                ]
+              },
+              {
+                "name": "Size",
+                "position": 2,
+                "values": [
+                  "55cm (21.5\")",
+                  "57cm (22.5\")",
+                  "59cm (23\")"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Orbea Orca M35i 2025",
+          "store": "Contender Bicycles",
+          "offer": {
+            "variant_key": "45788366176501",
+            "url": "https://contenderbicycles.com/products/orbea-orca-m35i-2025?currency=USD&variant=45788366176501",
+            "current_price": 3148.95,
+            "original_price": 4198.95,
+            "size": "53",
+            "options": "Wine Red Carbon View-Titanium (Gloss) / 53",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/bike-product-image_900px_abed12f8-cc27-4e9c-b4b7-283f6f3d8e41.jpg?v=1724096952",
+            "reference_basis": "retailer_compare_at",
+            "discount": 25.0,
+            "savings": 1050.0
+          },
+          "checked_at": "2026-11-03T04:57:25.778897+00:00",
+          "evidence_url": "https://contenderbicycles.com/products/orbea-orca-m35i-2025.js?currency=USD",
+          "response_sha256": "930f7ae82bbfd42fbfe214c6f1f12feeb19d5314c3de6abd5d66a9540914bcb3",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Orbea Orca M35i 2025",
+            "variant": "45788366176501",
+            "sku": "S11053CB",
+            "price_minor": 314895,
+            "reference_minor": 419895,
+            "currency": "USD",
+            "options": "Wine Red Carbon View-Titanium (Gloss) / 53",
+            "raw_options": [
+              "Wine Red Carbon View-Titanium (Gloss)",
+              "53"
+            ],
+            "option_definitions": [
+              {
+                "name": "Color",
+                "position": 1,
+                "values": [
+                  "Slate Blue-Halo Silver (Matt)",
+                  "Ivory White-Burgundy (Gloss)-Vulcano (Matt)",
+                  "Vulcano-Black(Matt) Black(Gloss)",
+                  "Wine Red Carbon View-Titanium (Gloss)"
+                ]
+              },
+              {
+                "name": "Size",
+                "position": 2,
+                "values": [
+                  "47",
+                  "49",
+                  "51",
+                  "53",
+                  "55",
+                  "57",
+                  "60"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Ritchey Break-Away TandM Tandem Frameset Large",
+          "store": "Pro Bike Supply",
+          "offer": {
+            "variant_key": "41369076793399",
+            "url": "https://www.probikesupply.com/products/ritchey-break-away-tandm-tandem-frameset-large?currency=USD&variant=41369076793399",
+            "current_price": 3999.0,
+            "original_price": 4399.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0892/2046/files/rc4420a.jpg?v=1731445897",
+            "reference_basis": "retailer_compare_at",
+            "discount": 9.1,
+            "savings": 400.0
+          },
+          "checked_at": "2026-11-03T04:57:31.043317+00:00",
+          "evidence_url": "https://www.probikesupply.com/products/ritchey-break-away-tandm-tandem-frameset-large.js?currency=USD",
+          "response_sha256": "f40971493d881427d2e21c2bb733cb80e3cab5c90ad39f00e3c541674a7668d2",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Ritchey Break-Away TandM Tandem Frameset Large",
+            "variant": "41369076793399",
+            "sku": "97352007009",
+            "price_minor": 399900,
+            "reference_minor": 439900,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Otso Voytek GX AXS Build",
+          "store": "Contender Bicycles",
+          "offer": {
+            "variant_key": "43349553414389",
+            "url": "https://contenderbicycles.com/products/otso-voytek-gx-axs?currency=USD&variant=43349553414389",
+            "current_price": 3599.0,
+            "original_price": 4995.0,
+            "size": "LG",
+            "options": "Charcoal/Black / LG",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/products/bike-product-ismage_900px_9a3cf147-15e8-4ee5-95b0-c216377ad5e7.jpg?v=1676066128",
+            "reference_basis": "retailer_compare_at",
+            "discount": 27.9,
+            "savings": 1396.0
+          },
+          "checked_at": "2026-11-03T04:57:36.209061+00:00",
+          "evidence_url": "https://contenderbicycles.com/products/otso-voytek-gx-axs.js?currency=USD",
+          "response_sha256": "e1fffacf791d8a80cb3d6625aa6b7e5a463196c01bc6505c6ad7eb98c3a85a91",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Otso Voytek GX AXS Build",
+            "variant": "43349553414389",
+            "sku": "210000137799",
+            "price_minor": 359900,
+            "reference_minor": 499500,
+            "currency": "USD",
+            "options": "Charcoal/Black / LG",
+            "raw_options": [
+              "Charcoal/Black",
+              "LG"
+            ],
+            "option_definitions": [
+              {
+                "name": "Color",
+                "position": 1,
+                "values": [
+                  "Charcoal/Black",
+                  "Aquamarine/Orange",
+                  "Pistachio/Navy"
+                ]
+              },
+              {
+                "name": "Size",
+                "position": 2,
+                "values": [
+                  "MD",
+                  "LG",
+                  "XL",
+                  "SM"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Shuttle LT Team XX Eagle Transmission",
+          "store": "Mike's Bikes",
+          "offer": {
+            "variant_key": "44559826452549",
+            "url": "https://mikesbikes.com/products/pivot-shuttle-lt-team-xx-eagle-transmission-2027?currency=USD&variant=44559826452549",
+            "current_price": 11999.0,
+            "original_price": 14999.0,
+            "size": "Medium",
+            "options": "Stone Cold White / Medium",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Shuttle-LT-Team-XX-Eagle-Transmission_Stone-Cold-White.jpg?v=1769639117",
+            "reference_basis": "retailer_compare_at",
+            "discount": 20.0,
+            "savings": 3000.0
+          },
+          "checked_at": "2026-11-03T04:57:41.502962+00:00",
+          "evidence_url": "https://mikesbikes.com/products/pivot-shuttle-lt-team-xx-eagle-transmission-2027.js?currency=USD",
+          "response_sha256": "51e085e093e459cb48a17e949a24714b91932ec6943c37f5f89231b57fe278a9",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Shuttle LT Team XX Eagle Transmission",
+            "variant": "44559826452549",
+            "sku": "27SLTV3MXCXXB--SCWMDDRPZNSA1",
+            "price_minor": 1199900,
+            "reference_minor": 1499900,
+            "currency": "USD",
+            "options": "Stone Cold White / Medium",
+            "raw_options": [
+              "Stone Cold White",
+              "Medium"
+            ],
+            "option_definitions": [
+              {
+                "name": "Color",
+                "position": 1,
+                "values": [
+                  "Stone Cold White",
+                  "Black Royal Purple"
+                ]
+              },
+              {
+                "name": "Size",
+                "position": 2,
+                "values": [
+                  "Small",
+                  "Medium",
+                  "Large",
+                  "X-Large"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Surly Grappler Bike - 27.5 Steel Subterranean Homesick Blue X-Small",
+          "store": "Pro Bike Supply",
+          "offer": {
+            "variant_key": "41409521975351",
+            "url": "https://www.probikesupply.com/products/surly-grappler-bike-27-5-steel-subterranean-homesick-blue-x-small?currency=USD&variant=41409521975351",
+            "current_price": 1649.0,
+            "original_price": 1899.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0892/2046/files/BK00295.jpg?v=1734026157",
+            "reference_basis": "retailer_compare_at",
+            "discount": 13.2,
+            "savings": 250.0
+          },
+          "checked_at": "2026-11-03T04:57:46.808311+00:00",
+          "evidence_url": "https://www.probikesupply.com/products/surly-grappler-bike-27-5-steel-subterranean-homesick-blue-x-small.js?currency=USD",
+          "response_sha256": "6486955a8c1056de40d57cfcf337f54de9f7a15b402c489f298e2924d50dc913",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Surly Grappler Bike - 27.5 Steel Subterranean Homesick Blue X-Small",
+            "variant": "41409521975351",
+            "sku": "04-002082",
+            "price_minor": 164900,
+            "reference_minor": 189900,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Orbea Orca OMR Frameset 2024",
+          "store": "Contender Bicycles",
+          "offer": {
+            "variant_key": "44108117770485",
+            "url": "https://contenderbicycles.com/products/orbea-orca-omr-frameset-2024?currency=USD&variant=44108117770485",
+            "current_price": 2519.16,
+            "original_price": 3148.95,
+            "size": "49",
+            "options": "Slate Blue-Halo Silver (Matt) / 49",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/Untitleddesign-2023-12-08T121351.581.jpg?v=1787166952",
+            "reference_basis": "retailer_compare_at",
+            "discount": 20.0,
+            "savings": 629.79
+          },
+          "checked_at": "2026-11-03T04:57:51.962175+00:00",
+          "evidence_url": "https://contenderbicycles.com/products/orbea-orca-omr-frameset-2024.js?currency=USD",
+          "response_sha256": "6b5a8bbe19ea75fdbf41a68ad577bdf2161e348b921397f814d64399c8aefe13",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Orbea Orca OMR Frameset 2024",
+            "variant": "44108117770485",
+            "sku": "210000146316",
+            "price_minor": 251916,
+            "reference_minor": 314895,
+            "currency": "USD",
+            "options": "Slate Blue-Halo Silver (Matt) / 49",
+            "raw_options": [
+              "Slate Blue-Halo Silver (Matt)",
+              "49"
+            ],
+            "option_definitions": [
+              {
+                "name": "Color",
+                "position": 1,
+                "values": [
+                  "Ivory White-Burgundy (Gloss)-Vulcano (Matt)",
+                  "Vulcano-Black(Matt) - Black(Gloss)",
+                  "Slate Blue-Halo Silver (Matt)",
+                  "Wine Red - Titanium (Gloss)"
+                ]
+              },
+              {
+                "name": "Size",
+                "position": 2,
+                "values": [
+                  "47",
+                  "49",
+                  "51",
+                  "53",
+                  "55",
+                  "57",
+                  "60"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Eclipse C380+ High-Step",
+          "store": "Mike's Bikes",
+          "offer": {
+            "variant_key": "41088429654085",
+            "url": "https://mikesbikes.com/products/gazelle-eclipse-c380-high-step?currency=USD&variant=41088429654085",
+            "current_price": 5998.95,
+            "original_price": 6398.99,
+            "size": "MD (5'5\" - 5'10\")",
+            "options": "Anthracite Grey Matte / MD (5'5\" - 5'10\")",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Eclipse-C380-plus-high_01.jpg?v=1747270960",
+            "reference_basis": "retailer_compare_at",
+            "discount": 6.3,
+            "savings": 400.04
+          },
+          "checked_at": "2026-11-03T04:57:57.211341+00:00",
+          "evidence_url": "https://mikesbikes.com/products/gazelle-eclipse-c380-high-step.js?currency=USD",
+          "response_sha256": "7e548feba8e46850facf6107790aedb2c0aae733f111898c0d53a4395c8000de",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Eclipse C380+ High-Step",
+            "variant": "41088429654085",
+            "sku": "G3661",
+            "price_minor": 599895,
+            "reference_minor": 639899,
+            "currency": "USD",
+            "options": "Anthracite Grey Matte / MD (5'5\" - 5'10\")",
+            "raw_options": [
+              "Anthracite Grey Matte",
+              "MD (5'5\" - 5'10\")"
+            ],
+            "option_definitions": [
+              {
+                "name": "Color",
+                "position": 1,
+                "values": [
+                  "Anthracite Grey Matte"
+                ]
+              },
+              {
+                "name": "Size",
+                "position": 2,
+                "values": [
+                  "MD (5'5\" - 5'10\")",
+                  "LG (5'10\" - 6'4\")"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Ultimate T10+ Mid-Step",
+          "store": "Mike's Bikes",
+          "offer": {
+            "variant_key": "32074827333701",
+            "url": "https://mikesbikes.com/products/gazelle-ultimate-t10-mid-step?currency=USD&variant=32074827333701",
+            "current_price": 2299.95,
+            "original_price": 4499.99,
+            "size": "MD (5'6\" - 5'10\")",
+            "options": "Dust Light Gloss / MD (5'6\" - 5'10\")",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Gazelle-Ultimate-T10-plus-Mid-Step.jpg?v=1747271123",
+            "reference_basis": "retailer_compare_at",
+            "discount": 48.9,
+            "savings": 2200.04
+          },
+          "checked_at": "2026-11-03T04:58:02.480584+00:00",
+          "evidence_url": "https://mikesbikes.com/products/gazelle-ultimate-t10-mid-step.js?currency=USD",
+          "response_sha256": "6c2f3b5d35cff46789debe1d7b9306eb056739e741f2fac3c553d40fe5330677",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Ultimate T10+ Mid-Step",
+            "variant": "32074827333701",
+            "sku": "G2416",
+            "price_minor": 229995,
+            "reference_minor": 449999,
+            "currency": "USD",
+            "options": "Dust Light Gloss / MD (5'6\" - 5'10\")",
+            "raw_options": [
+              "Dust Light Gloss",
+              "MD (5'6\" - 5'10\")"
+            ],
+            "option_definitions": [
+              {
+                "name": "Color",
+                "position": 1,
+                "values": [
+                  "Dust Light Gloss"
+                ]
+              },
+              {
+                "name": "Size",
+                "position": 2,
+                "values": [
+                  "SM (4'10\" - 5'6\")",
+                  "MD (5'6\" - 5'10\")",
+                  "LG (5'10\" - 6'4\")"
+                ]
+              }
+            ],
+            "available": true
+          }
+        }
+      ]
+    },
+    "tools": {
+      "catalog": "tools",
+      "date": "2026-11-03T04:58:57.186741+00:00",
+      "seed": 20261103,
+      "population": 548,
+      "method": "top10-plus-seeded20-merchant-product-v1",
+      "sample_size": 30,
+      "match": 30,
+      "mismatch": 0,
+      "inconclusive": 0,
+      "verified_match_percent": 100.0,
+      "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+      "results": [
+        {
+          "name": "Axiom 2x2 CNC Table with Air-Cooled Spindle",
+          "store": "OakTree Supply",
+          "offer": {
+            "variant_key": "47708931948761",
+            "url": "https://www.oaktreesupply.com/products/axiom-2x2-cnc-table-with-spindle?currency=USD&variant=47708931948761",
+            "current_price": 1999.0,
+            "original_price": 4699.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/files/AX-101-1.jpg?v=1769713524",
+            "reference_basis": "retailer_compare_at",
+            "discount": 57.5,
+            "savings": 2700.0
+          },
+          "checked_at": "2026-11-03T04:56:06.985832+00:00",
+          "evidence_url": "https://www.oaktreesupply.com/products/axiom-2x2-cnc-table-with-spindle.js?currency=USD",
+          "response_sha256": "f4b87f2e1b8db50fa6bdd089236baf2d3cab3939639aa1c106f2d21f0739aa33",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Axiom 2x2 CNC Table with Air-Cooled Spindle",
+            "variant": "47708931948761",
+            "sku": "AX1-101",
+            "price_minor": 199900,
+            "reference_minor": 469900,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Axiom Iconic-4 Series CNC Router 2' x 2'",
+          "store": "OakTree Supply",
+          "offer": {
+            "variant_key": "37991680082119",
+            "url": "https://www.oaktreesupply.com/products/axoiom-iconic-4-series-cnc-router-24-x-24?currency=USD&variant=37991680082119",
+            "current_price": 2999.0,
+            "original_price": 6049.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/products/Iconic-4.jpg?v=1676914267",
+            "reference_basis": "retailer_compare_at",
+            "discount": 50.4,
+            "savings": 3050.0
+          },
+          "checked_at": "2026-11-03T04:56:17.288780+00:00",
+          "evidence_url": "https://www.oaktreesupply.com/products/axoiom-iconic-4-series-cnc-router-24-x-24.js?currency=USD",
+          "response_sha256": "f07a77a59e0307e5b6d384a0ba332ec04fca519b4fed6871a9297d7486a86700",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Axiom Iconic-4 Series CNC Router 2' x 2'",
+            "variant": "37991680082119",
+            "sku": "AX9-ICONIC4",
+            "price_minor": 299900,
+            "reference_minor": 604900,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Iconic 24\" x 24\" for Axiom CNC Router",
+          "store": "Woodcraft",
+          "offer": {
+            "variant_key": "43403824922762",
+            "url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-24-for-axiom-cnc-router?currency=USD&variant=43403824922762",
+            "current_price": 2999.0,
+            "original_price": 6049.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/172910_000_001.jpg?v=1720472421",
+            "reference_basis": "retailer_compare_at",
+            "discount": 50.4,
+            "savings": 3050.0
+          },
+          "checked_at": "2026-11-03T04:56:22.500453+00:00",
+          "evidence_url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-24-for-axiom-cnc-router.js?currency=USD",
+          "response_sha256": "70a947ae04b90c1bfc26a6ab72a7d2fd9deceea5cffea990b1fa15ae9e64b02d",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Iconic 24\" x 24\" for Axiom CNC Router",
+            "variant": "43403824922762",
+            "sku": "172910",
+            "price_minor": 299900,
+            "reference_minor": 604900,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "JET JAT-127, 3/4-in. Composite Impact Wrench (505127)",
+          "store": "Tool Nut",
+          "offer": {
+            "variant_key": "50177235976486",
+            "url": "https://www.toolnut.com/products/jet-505127-jat-127-composite-impact-wrench?currency=USD&variant=50177235976486",
+            "current_price": 299.99,
+            "original_price": 580.99,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/505127_main.jpg?v=1778274029",
+            "reference_basis": "retailer_compare_at",
+            "discount": 48.4,
+            "savings": 281.0
+          },
+          "checked_at": "2026-11-03T04:56:32.774739+00:00",
+          "evidence_url": "https://www.toolnut.com/products/jet-505127-jat-127-composite-impact-wrench.js?currency=USD",
+          "response_sha256": "809181c34868ee50941e0ca822e8053f47d5f3660da88a3048b4cf6ee9a8f8bd",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "JET JAT-127, 3/4-in. Composite Impact Wrench (505127)",
+            "variant": "50177235976486",
+            "sku": "505127",
+            "price_minor": 29999,
+            "reference_minor": 58099,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Axiom AR16 Elite 4'x4' CNC Router",
+          "store": "OakTree Supply",
+          "offer": {
+            "variant_key": "31966639423606",
+            "url": "https://www.oaktreesupply.com/products/axiom-ar16-elite-4x4?currency=USD&variant=31966639423606",
+            "current_price": 9999.0,
+            "original_price": 19299.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/products/AR16Elite_6b6c2750-ef34-4a6c-b6bd-7429b0810f70.jpg?v=1678136683",
+            "reference_basis": "retailer_compare_at",
+            "discount": 48.2,
+            "savings": 9300.0
+          },
+          "checked_at": "2026-11-03T04:56:43.087966+00:00",
+          "evidence_url": "https://www.oaktreesupply.com/products/axiom-ar16-elite-4x4.js?currency=USD",
+          "response_sha256": "bb5d82a8ce2314250074ad73ac51874cdc5dbf76b29bc568ca97155fbdda770b",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Axiom AR16 Elite 4'x4' CNC Router",
+            "variant": "31966639423606",
+            "sku": "AX9-AR16ELITE",
+            "price_minor": 999900,
+            "reference_minor": 1929900,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Axiom AR4Pro V6 2'x2' CNC Router",
+          "store": "OakTree Supply",
+          "offer": {
+            "variant_key": "31966616780918",
+            "url": "https://www.oaktreesupply.com/products/axiom-ar4pro-v5-2x2-cnc-router?currency=USD&variant=31966616780918",
+            "current_price": 4999.0,
+            "original_price": 9459.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/files/AR4ProV6main_4d61fd1e-1529-413c-95d0-cfddbfd9d660.jpg?v=1711135489",
+            "reference_basis": "retailer_compare_at",
+            "discount": 47.2,
+            "savings": 4460.0
+          },
+          "checked_at": "2026-11-03T04:56:48.283154+00:00",
+          "evidence_url": "https://www.oaktreesupply.com/products/axiom-ar4pro-v5-2x2-cnc-router.js?currency=USD",
+          "response_sha256": "f885fbfb159c552ba6d62d8a6c4e8e45a5e1e33d23cfde9aea79db10b9a24486",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Axiom AR4Pro V6 2'x2' CNC Router",
+            "variant": "31966616780918",
+            "sku": "AX9-AR4PROV6",
+            "price_minor": 499900,
+            "reference_minor": 945900,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Axiom Iconic-6 Series CNC Router 2' x 3'",
+          "store": "OakTree Supply",
+          "offer": {
+            "variant_key": "41257102147783",
+            "url": "https://www.oaktreesupply.com/products/axiom-iconic-6-series-cnc-router-24-x-36?currency=USD&variant=41257102147783",
+            "current_price": 3499.0,
+            "original_price": 6599.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/products/Iconic-6-1.jpg?v=1676914781",
+            "reference_basis": "retailer_compare_at",
+            "discount": 47.0,
+            "savings": 3100.0
+          },
+          "checked_at": "2026-11-03T04:56:53.479499+00:00",
+          "evidence_url": "https://www.oaktreesupply.com/products/axiom-iconic-6-series-cnc-router-24-x-36.js?currency=USD",
+          "response_sha256": "3f902de9f53baa0e0c0d55b697cba42793ad8c615259d500de2157f34d6091fe",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Axiom Iconic-6 Series CNC Router 2' x 3'",
+            "variant": "41257102147783",
+            "sku": "AX9-ICONIC6",
+            "price_minor": 349900,
+            "reference_minor": 659900,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Iconic 24\" x 36\" CNC Router",
+          "store": "Woodcraft",
+          "offer": {
+            "variant_key": "43400695939210",
+            "url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-36-cnc-router?currency=USD&variant=43400695939210",
+            "current_price": 3499.0,
+            "original_price": 6599.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/172911_000_001.jpg?v=1720472424",
+            "reference_basis": "retailer_compare_at",
+            "discount": 47.0,
+            "savings": 3100.0
+          },
+          "checked_at": "2026-11-03T04:56:58.609079+00:00",
+          "evidence_url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-36-cnc-router.js?currency=USD",
+          "response_sha256": "0c85371d1b0e881d75222727672a3e2f1b203c3194ab96b0678c39403f05d2a8",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Iconic 24\" x 36\" CNC Router",
+            "variant": "43400695939210",
+            "sku": "172911",
+            "price_minor": 349900,
+            "reference_minor": 659900,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "JET JAT-127 3/4\" Composite Pneumatic Impact Wrench",
+          "store": "OakTree Supply",
+          "offer": {
+            "variant_key": "44426104668377",
+            "url": "https://www.oaktreesupply.com/products/jet-jat-127-3-4-pneumatic-composite-impact-wrench?currency=USD&variant=44426104668377",
+            "current_price": 299.0,
+            "original_price": 560.99,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/files/505127-1.jpg?v=1748882450",
+            "reference_basis": "retailer_compare_at",
+            "discount": 46.7,
+            "savings": 261.99
+          },
+          "checked_at": "2026-11-03T04:57:03.819462+00:00",
+          "evidence_url": "https://www.oaktreesupply.com/products/jet-jat-127-3-4-pneumatic-composite-impact-wrench.js?currency=USD",
+          "response_sha256": "253436ea7fd48ac5bb863cede3412b20834b16c3033ec7441a1a27d91290ba37",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "JET JAT-127 3/4\" Composite Pneumatic Impact Wrench",
+            "variant": "44426104668377",
+            "sku": "JT9-505127",
+            "price_minor": 29900,
+            "reference_minor": 56099,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Jet J-4400A, 12-in. Industrial Disc Finishing Machine 115/230V 1-Phase (414602)",
+          "store": "Tool Nut",
+          "offer": {
+            "variant_key": "50175462670630",
+            "url": "https://www.toolnut.com/products/jet-414602-j-4400a-12-industrial-disc-finishing-machine-115-230v-1ph?currency=USD&variant=50175462670630",
+            "current_price": 1099.0,
+            "original_price": 2036.99,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/414602_main.jpg?v=1778128350",
+            "reference_basis": "retailer_compare_at",
+            "discount": 46.0,
+            "savings": 937.99
+          },
+          "checked_at": "2026-11-03T04:57:08.995789+00:00",
+          "evidence_url": "https://www.toolnut.com/products/jet-414602-j-4400a-12-industrial-disc-finishing-machine-115-230v-1ph.js?currency=USD",
+          "response_sha256": "272b9c70c8f3f809695fb3b7a687662f034cf412a42644e75f6d3a4879f8c355",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Jet J-4400A, 12-in. Industrial Disc Finishing Machine 115/230V 1-Phase (414602)",
+            "variant": "50175462670630",
+            "sku": "414602",
+            "price_minor": 109900,
+            "reference_minor": 203699,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "SawStop 7.5HP, 3ph, 230v Industrial Cabinet Saw w/52\" T-Glide Fence System, Rails & Extension Table",
+          "store": "OakTree Supply",
+          "offer": {
+            "variant_key": "37560932597959",
+            "url": "https://www.oaktreesupply.com/products/sawstop-7-5hp-3ph-220v-industrial-cabinet-saw-with-52-industrial-t-glide-fence?currency=USD&variant=37560932597959",
+            "current_price": 6118.0,
+            "original_price": 6618.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/files/ICS-52TGLIDEADVANCE_2ae2be50-ce14-4201-b84f-80e9c1ecc419.jpg?v=1758901096",
+            "reference_basis": "retailer_compare_at",
+            "discount": 7.6,
+            "savings": 500.0
+          },
+          "checked_at": "2026-11-03T04:57:14.157711+00:00",
+          "evidence_url": "https://www.oaktreesupply.com/products/sawstop-7-5hp-3ph-220v-industrial-cabinet-saw-with-52-industrial-t-glide-fence.js?currency=USD",
+          "response_sha256": "13ef7d068ee21957df82696a1113c9a395e25f635f376387be60f9b5fa659aa9",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "SawStop 7.5HP, 3ph, 230v Industrial Cabinet Saw w/52\" T-Glide Fence System, Rails & Extension Table",
+            "variant": "37560932597959",
+            "sku": "ICS73230-TGI252",
+            "price_minor": 611800,
+            "reference_minor": 661800,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "JET GH-1440-1 Lathe with Collet Closer (323372)",
+          "store": "Tool Nut",
+          "offer": {
+            "variant_key": "50177161363750",
+            "url": "https://www.toolnut.com/products/jet-323372-lathe?currency=USD&variant=50177161363750",
+            "current_price": 19849.0,
+            "original_price": 25277.99,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/323372_main_1.jpg?v=1778271482",
+            "reference_basis": "retailer_compare_at",
+            "discount": 21.5,
+            "savings": 5428.99
+          },
+          "checked_at": "2026-11-03T04:57:19.307225+00:00",
+          "evidence_url": "https://www.toolnut.com/products/jet-323372-lathe.js?currency=USD",
+          "response_sha256": "f55a62459395b3251c1135149f372528135f6382d083961f46d8fe2d66a94042",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "JET GH-1440-1 Lathe with Collet Closer (323372)",
+            "variant": "50177161363750",
+            "sku": "323372",
+            "price_minor": 1984900,
+            "reference_minor": 2527799,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Kreg 20V Ionic Drive 6-1/2-in. Cordless Plunge-Cut Track Saw 4.0Ah Kit (KPTBPS100A)",
+          "store": "Tool Nut",
+          "offer": {
+            "variant_key": "51473724408102",
+            "url": "https://www.toolnut.com/products/kreg-kptbps100a-20v-ionic-drive-6-1-2-in-plunge-cut-track-saw-4-0ah-kit?currency=USD&variant=51473724408102",
+            "current_price": 349.0,
+            "original_price": 399.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/10265188729126_1.jpg?v=1783535572",
+            "reference_basis": "retailer_compare_at",
+            "discount": 12.5,
+            "savings": 50.0
+          },
+          "checked_at": "2026-11-03T04:57:24.448195+00:00",
+          "evidence_url": "https://www.toolnut.com/products/kreg-kptbps100a-20v-ionic-drive-6-1-2-in-plunge-cut-track-saw-4-0ah-kit.js?currency=USD",
+          "response_sha256": "672feffe5dd9ab67f13b9c3fdb25cd1536efb35ec51b8a9892bc2057789f5132",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Kreg 20V Ionic Drive 6-1/2-in. Cordless Plunge-Cut Track Saw 4.0Ah Kit (KPTBPS100A)",
+            "variant": "51473724408102",
+            "sku": "KPTBPS100A",
+            "price_minor": 34900,
+            "reference_minor": 39900,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Milwaukee M12 FUEL Compact Band Saw, Tool Only (2529-20)",
+          "store": "Tool Nut",
+          "offer": {
+            "variant_key": "53393098440998",
+            "url": "https://www.toolnut.com/products/milwaukee-2529-20-m12-fuel-compact-band-saw?currency=USD&variant=53393098440998",
+            "current_price": 228.65,
+            "original_price": 269.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/2529-20-1.jpg?v=1778274666",
+            "reference_basis": "retailer_compare_at",
+            "discount": 15.0,
+            "savings": 40.35
+          },
+          "checked_at": "2026-11-03T04:57:29.595594+00:00",
+          "evidence_url": "https://www.toolnut.com/products/milwaukee-2529-20-m12-fuel-compact-band-saw.js?currency=USD",
+          "response_sha256": "3bdab4c7061d7010743d79cf86c986f601affbaa3dd0d1d575ca6b107cb778ac",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Milwaukee M12 FUEL Compact Band Saw, Tool Only (2529-20)",
+            "variant": "53393098440998",
+            "sku": "2529-20",
+            "price_minor": 22865,
+            "reference_minor": 26900,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "DeWALT FLEXVOLT 60V MAX Brushless 9-in. Cut-off Saw, Tool Only (DCS692B)",
+          "store": "Tool Nut",
+          "offer": {
+            "variant_key": "53393138221350",
+            "url": "https://www.toolnut.com/products/dewalt-dcs692b-flexvolt-60v-max-brushless-9-cut-off-saw-tool-only?currency=USD&variant=53393138221350",
+            "current_price": 569.0,
+            "original_price": 679.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/dcs692b.jpg?v=1778060176",
+            "reference_basis": "retailer_compare_at",
+            "discount": 16.2,
+            "savings": 110.0
+          },
+          "checked_at": "2026-11-03T04:57:34.771963+00:00",
+          "evidence_url": "https://www.toolnut.com/products/dewalt-dcs692b-flexvolt-60v-max-brushless-9-cut-off-saw-tool-only.js?currency=USD",
+          "response_sha256": "96ebe2f05aa9088fc78bd5ed3b4759780a5f09c658518008be7fa1e440fed04c",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "DeWALT FLEXVOLT 60V MAX Brushless 9-in. Cut-off Saw, Tool Only (DCS692B)",
+            "variant": "53393138221350",
+            "sku": "DCS692B",
+            "price_minor": 56900,
+            "reference_minor": 67900,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Powermatic 201 22\" Straight Knife Planer 7.5hp, 1ph, 230v",
+          "store": "OakTree Supply",
+          "offer": {
+            "variant_key": "19739805450358",
+            "url": "https://www.oaktreesupply.com/products/powermatic-201-22-straight-knife-planer?currency=USD&variant=19739805450358",
+            "current_price": 7999.0,
+            "original_price": 9899.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/products/1791268-2_892479d0-f3b1-4b89-8a1b-b83e3d710e4b.jpg?v=1653509083",
+            "reference_basis": "retailer_compare_at",
+            "discount": 19.2,
+            "savings": 1900.0
+          },
+          "checked_at": "2026-11-03T04:57:39.920115+00:00",
+          "evidence_url": "https://www.oaktreesupply.com/products/powermatic-201-22-straight-knife-planer.js?currency=USD",
+          "response_sha256": "1cbdd40e789dffe47cf6adfddd740d61b29a54c4ecd4cff05b2a5b5d5c84b971",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Powermatic 201 22\" Straight Knife Planer 7.5hp, 1ph, 230v",
+            "variant": "19739805450358",
+            "sku": "PM9-1791261",
+            "price_minor": 799900,
+            "reference_minor": 989900,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Milwaukee M18 FUEL 1/2-in. Extension Anvil Controlled Torque Impact Wrench with ONE-KEY Kit (2769-22R)",
+          "store": "Tool Nut",
+          "offer": {
+            "variant_key": "53393064100134",
+            "url": "https://www.toolnut.com/products/milwaukee-2769-22r-m18-fuel-1-2-ext-anvil-controlled-torque-impact-wrench-w-one-key-kit?currency=USD&variant=53393064100134",
+            "current_price": 551.65,
+            "original_price": 649.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/2769-22r_kit_102.jpg?v=1778087938",
+            "reference_basis": "retailer_compare_at",
+            "discount": 15.0,
+            "savings": 97.35
+          },
+          "checked_at": "2026-11-03T04:57:45.082494+00:00",
+          "evidence_url": "https://www.toolnut.com/products/milwaukee-2769-22r-m18-fuel-1-2-ext-anvil-controlled-torque-impact-wrench-w-one-key-kit.js?currency=USD",
+          "response_sha256": "e1687dc4f0349752d24c6b70c1d91366aed05a39fb4a81adc2d9a23da3b52a76",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Milwaukee M18 FUEL 1/2-in. Extension Anvil Controlled Torque Impact Wrench with ONE-KEY Kit (2769-22R)",
+            "variant": "53393064100134",
+            "sku": "2769-22R",
+            "price_minor": 55165,
+            "reference_minor": 64900,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Industrial Cabinet Saw with 52\" Industrial T-Glide Fence System - 5HP - 3PH - 230V",
+          "store": "Woodcraft",
+          "offer": {
+            "variant_key": "43402133667978",
+            "url": "https://www.woodcraft.com/products/sawstop-5hp-3ph-230v-industrial-cabinet-saw-with-52-industrial-t-glide-fence-system?currency=USD&variant=43402133667978",
+            "current_price": 5440.0,
+            "original_price": 5940.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/856295_000_001.jpg?v=1790191056",
+            "reference_basis": "retailer_compare_at",
+            "discount": 8.4,
+            "savings": 500.0
+          },
+          "checked_at": "2026-11-03T04:57:50.225353+00:00",
+          "evidence_url": "https://www.woodcraft.com/products/sawstop-5hp-3ph-230v-industrial-cabinet-saw-with-52-industrial-t-glide-fence-system.js?currency=USD",
+          "response_sha256": "c3fffc911b5b8440720a302214a28a4deabbf5beaa3f09768b588f929d6c754c",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Industrial Cabinet Saw with 52\" Industrial T-Glide Fence System - 5HP - 3PH - 230V",
+            "variant": "43402133667978",
+            "sku": "856295",
+            "price_minor": 544000,
+            "reference_minor": 594000,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "DeWALT 20V MAX XR Brushless 3-Speed 1/2-in. Hammer Drill POWERPACK 8.0Ah Kit (DCD1007WW1)",
+          "store": "Tool Nut",
+          "offer": {
+            "variant_key": "53393154736422",
+            "url": "https://www.toolnut.com/products/dewalt-dcd1007ww1-20v-max-xr-brushless-3-speed-1-2-in-hammer-drill-powerpack-8-0ah-kit?currency=USD&variant=53393154736422",
+            "current_price": 259.0,
+            "original_price": 349.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/dcd1007ww1-k1.jpg?v=1778397035",
+            "reference_basis": "retailer_compare_at",
+            "discount": 25.8,
+            "savings": 90.0
+          },
+          "checked_at": "2026-11-03T04:57:55.421227+00:00",
+          "evidence_url": "https://www.toolnut.com/products/dewalt-dcd1007ww1-20v-max-xr-brushless-3-speed-1-2-in-hammer-drill-powerpack-8-0ah-kit.js?currency=USD",
+          "response_sha256": "1220d0072ed4426d8f2f0f027aecc2e523e4c07f8f75942fcb60b90710421be7",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "DeWALT 20V MAX XR Brushless 3-Speed 1/2-in. Hammer Drill POWERPACK 8.0Ah Kit (DCD1007WW1)",
+            "variant": "53393154736422",
+            "sku": "DCD1007WW1",
+            "price_minor": 25900,
+            "reference_minor": 34900,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Milwaukee M12 Cordless Sub-Compact Band Saw, Tool Only (2429-20)",
+          "store": "Tool Nut",
+          "offer": {
+            "variant_key": "53393096835366",
+            "url": "https://www.toolnut.com/products/milwaukee-2429-20-m12-cordless-sub-compact-band-saw?currency=USD&variant=53393096835366",
+            "current_price": 194.65,
+            "original_price": 229.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/2429-20-1.jpg?v=1778048825",
+            "reference_basis": "retailer_compare_at",
+            "discount": 15.0,
+            "savings": 34.35
+          },
+          "checked_at": "2026-11-03T04:58:00.570245+00:00",
+          "evidence_url": "https://www.toolnut.com/products/milwaukee-2429-20-m12-cordless-sub-compact-band-saw.js?currency=USD",
+          "response_sha256": "dd484bf9039e94c091f24ce1c0e0526b8fc9518986acc95d0e293a743092cd3e",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Milwaukee M12 Cordless Sub-Compact Band Saw, Tool Only (2429-20)",
+            "variant": "53393096835366",
+            "sku": "2429-20",
+            "price_minor": 19465,
+            "reference_minor": 22900,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Stanley Bostitch MIIIFN Hardwood Flooring Cleat Nailer",
+          "store": "Tool Nut",
+          "offer": {
+            "variant_key": "50174894571814",
+            "url": "https://www.toolnut.com/products/stanley-bostitch-miiifn-hardwood-flooring-cleat-nailer?currency=USD&variant=50174894571814",
+            "current_price": 361.03,
+            "original_price": 500.97,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/stanley_bostitch-miiifn-1.jpg?v=1778064428",
+            "reference_basis": "retailer_compare_at",
+            "discount": 27.9,
+            "savings": 139.94
+          },
+          "checked_at": "2026-11-03T04:58:05.721970+00:00",
+          "evidence_url": "https://www.toolnut.com/products/stanley-bostitch-miiifn-hardwood-flooring-cleat-nailer.js?currency=USD",
+          "response_sha256": "89a46ca9e0dc763c786e6b17e5ebde61c41b727e9fa58027f44923203dd8bc0c",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Stanley Bostitch MIIIFN Hardwood Flooring Cleat Nailer",
+            "variant": "50174894571814",
+            "sku": "MIIIFN",
+            "price_minor": 36103,
+            "reference_minor": 50097,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Milwaukee M12 FUEL Brushless Straight Die Grinder 2.0Ah Kit (2486-22)",
+          "store": "Tool Nut",
+          "offer": {
+            "variant_key": "53393096868134",
+            "url": "https://www.toolnut.com/products/milwaukee-2486-22-m12-fuel-brushless-straight-die-grinder-2-0ah-kit?currency=USD&variant=53393096868134",
+            "current_price": 296.65,
+            "original_price": 349.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/2486-22-1.jpg?v=1778200161",
+            "reference_basis": "retailer_compare_at",
+            "discount": 15.0,
+            "savings": 52.35
+          },
+          "checked_at": "2026-11-03T04:58:10.864071+00:00",
+          "evidence_url": "https://www.toolnut.com/products/milwaukee-2486-22-m12-fuel-brushless-straight-die-grinder-2-0ah-kit.js?currency=USD",
+          "response_sha256": "3984f4514136b2acbe6bca83b1ae5f242a58c81f2343b8c4af375fa9dadca43d",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Milwaukee M12 FUEL Brushless Straight Die Grinder 2.0Ah Kit (2486-22)",
+            "variant": "53393096868134",
+            "sku": "2486-22",
+            "price_minor": 29665,
+            "reference_minor": 34900,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Milwaukee M18 FUEL 1-1/4-in. SDS Plus D-Handle Rotary Hammer with ONE-KEY, Tool Only (2916-20)",
+          "store": "Tool Nut",
+          "offer": {
+            "variant_key": "53393068884262",
+            "url": "https://www.toolnut.com/products/milwaukee-2916-20-m18-fuel-trade-1-1-4-sds-plus-d-handle-rotary-hammer-w-one-key-trade?currency=USD&variant=53393068884262",
+            "current_price": 424.15,
+            "original_price": 499.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/2916-20_1.jpg?v=1778064825",
+            "reference_basis": "retailer_compare_at",
+            "discount": 15.0,
+            "savings": 74.85
+          },
+          "checked_at": "2026-11-03T04:58:16.004294+00:00",
+          "evidence_url": "https://www.toolnut.com/products/milwaukee-2916-20-m18-fuel-trade-1-1-4-sds-plus-d-handle-rotary-hammer-w-one-key-trade.js?currency=USD",
+          "response_sha256": "055ddf82059dc0745328d1755a64b9981284404a937528bba2f80d606a0d2490",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Milwaukee M18 FUEL 1-1/4-in. SDS Plus D-Handle Rotary Hammer with ONE-KEY, Tool Only (2916-20)",
+            "variant": "53393068884262",
+            "sku": "2916-20",
+            "price_minor": 42415,
+            "reference_minor": 49900,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Industrial Cabinet Saw with 36\" Industrial T-Glide Advance Fence System - 5 HP - 3PH - 230V\u00a0",
+          "store": "Woodcraft",
+          "offer": {
+            "variant_key": "46882382119050",
+            "url": "https://www.woodcraft.com/products/sawstop-3hp-3-ph-230v-industrial-saw-52-industrial-t-glide-advance?currency=USD&variant=46882382119050",
+            "current_price": 5486.0,
+            "original_price": 5986.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/197666_000_001.jpg?v=1779999390",
+            "reference_basis": "retailer_compare_at",
+            "discount": 8.4,
+            "savings": 500.0
+          },
+          "checked_at": "2026-11-03T04:58:21.136155+00:00",
+          "evidence_url": "https://www.woodcraft.com/products/sawstop-3hp-3-ph-230v-industrial-saw-52-industrial-t-glide-advance.js?currency=USD",
+          "response_sha256": "ff1c6cfcfdf7da129a3a9d6042f4a01647572af3c64ef48c4e8f1e27e6b3efa5",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Industrial Cabinet Saw with 36\" Industrial T-Glide Advance Fence System - 5 HP - 3PH - 230V\u00a0",
+            "variant": "46882382119050",
+            "sku": "197666",
+            "price_minor": 548600,
+            "reference_minor": 598600,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Milwaukee M12 12V Cordless Sub-Compact Band Saw Kit (2429-21XC)",
+          "store": "Tool Nut",
+          "offer": {
+            "variant_key": "53393094017318",
+            "url": "https://www.toolnut.com/products/milwaukee-2429-21xc-m12-12-volt-cordless-sub-compact-band-saw-kit?currency=USD&variant=53393094017318",
+            "current_price": 254.15,
+            "original_price": 299.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/2429-21xc-kit-1.jpg?v=1778048842",
+            "reference_basis": "retailer_compare_at",
+            "discount": 15.0,
+            "savings": 44.85
+          },
+          "checked_at": "2026-11-03T04:58:26.293871+00:00",
+          "evidence_url": "https://www.toolnut.com/products/milwaukee-2429-21xc-m12-12-volt-cordless-sub-compact-band-saw-kit.js?currency=USD",
+          "response_sha256": "ab07b430d7a6598466e734b86d9d2167ebc1f041567e0fbaa09d91e74aa75782",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Milwaukee M12 12V Cordless Sub-Compact Band Saw Kit (2429-21XC)",
+            "variant": "53393094017318",
+            "sku": "2429-21XC",
+            "price_minor": 25415,
+            "reference_minor": 29900,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Milwaukee M18 FUEL 1/2-in. Drill/Driver, Tool Only (2903-20)",
+          "store": "Tool Nut",
+          "offer": {
+            "variant_key": "53393068622118",
+            "url": "https://www.toolnut.com/products/milwaukee-2903-20-m18-fuel-1-2-drill-driver?currency=USD&variant=53393068622118",
+            "current_price": 186.15,
+            "original_price": 219.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/2903-20_1.jpg?v=1778054337",
+            "reference_basis": "retailer_compare_at",
+            "discount": 15.0,
+            "savings": 32.85
+          },
+          "checked_at": "2026-11-03T04:58:31.439617+00:00",
+          "evidence_url": "https://www.toolnut.com/products/milwaukee-2903-20-m18-fuel-1-2-drill-driver.js?currency=USD",
+          "response_sha256": "db6cc388f2101b19c74994fffa7abbc4fee730f657a54ee1f97801c9556fa246",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Milwaukee M18 FUEL 1/2-in. Drill/Driver, Tool Only (2903-20)",
+            "variant": "53393068622118",
+            "sku": "2903-20",
+            "price_minor": 18615,
+            "reference_minor": 21900,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Milwaukee M18 FUEL 1-in. SDS Plus Rotary Hammer Dust Extractor 6.0Ah Kit (2912-22DE)",
+          "store": "Tool Nut",
+          "offer": {
+            "variant_key": "53393070260518",
+            "url": "https://www.toolnut.com/products/milwaukee-2912-22de-m18-fuel-1-sds-plus-rotary-hammer-dust-extractor-6-0ah-kit?currency=USD&variant=53393070260518",
+            "current_price": 679.15,
+            "original_price": 799.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/2912-22de_kit.jpg?v=1778041883",
+            "reference_basis": "retailer_compare_at",
+            "discount": 15.0,
+            "savings": 119.85
+          },
+          "checked_at": "2026-11-03T04:58:36.570941+00:00",
+          "evidence_url": "https://www.toolnut.com/products/milwaukee-2912-22de-m18-fuel-1-sds-plus-rotary-hammer-dust-extractor-6-0ah-kit.js?currency=USD",
+          "response_sha256": "dfe859762f5826f336c8f5ee6aa78dccea50f9e8412df061b069dd0e656409bf",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Milwaukee M18 FUEL 1-in. SDS Plus Rotary Hammer Dust Extractor 6.0Ah Kit (2912-22DE)",
+            "variant": "53393070260518",
+            "sku": "2912-22DE",
+            "price_minor": 67915,
+            "reference_minor": 79900,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Stanley Bostitch High-Power Coil Framing Nailer (N89C-1)",
+          "store": "Tool Nut",
+          "offer": {
+            "variant_key": "50174895620390",
+            "url": "https://www.toolnut.com/products/stanley-bostitch-n89c-1-high-power-coil-framing-nailer?currency=USD&variant=50174895620390",
+            "current_price": 270.0,
+            "original_price": 339.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/bostitch-n89c-1.jpg?v=1778064486",
+            "reference_basis": "retailer_compare_at",
+            "discount": 20.4,
+            "savings": 69.0
+          },
+          "checked_at": "2026-11-03T04:58:41.701167+00:00",
+          "evidence_url": "https://www.toolnut.com/products/stanley-bostitch-n89c-1-high-power-coil-framing-nailer.js?currency=USD",
+          "response_sha256": "7a68fdcbfb132f6f7e5d6cf46a2cc67f9c4f6f320cd6aed6ea4b09d55205c9b5",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Stanley Bostitch High-Power Coil Framing Nailer (N89C-1)",
+            "variant": "50174895620390",
+            "sku": "N89C-1",
+            "price_minor": 27000,
+            "reference_minor": 33900,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Milwaukee M18 FUEL 3/8 Mid-Torque Impact Wrench with Friction Ring Kit (2960-22R)",
+          "store": "Tool Nut",
+          "offer": {
+            "variant_key": "53393070948646",
+            "url": "https://www.toolnut.com/products/milwaukee-2960-22r-m18-fuel-3-8-mid-torque-impact-wrench-w-friction-ring-kit?currency=USD&variant=53393070948646",
+            "current_price": 407.15,
+            "original_price": 479.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/2960-22r_kit_101.jpg?v=1778087996",
+            "reference_basis": "retailer_compare_at",
+            "discount": 15.0,
+            "savings": 71.85
+          },
+          "checked_at": "2026-11-03T04:58:46.889904+00:00",
+          "evidence_url": "https://www.toolnut.com/products/milwaukee-2960-22r-m18-fuel-3-8-mid-torque-impact-wrench-w-friction-ring-kit.js?currency=USD",
+          "response_sha256": "23869556f31166cc357b369192be0087666fa90d27e03f00c6ecc776c326f4a5",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Milwaukee M18 FUEL 3/8 Mid-Torque Impact Wrench with Friction Ring Kit (2960-22R)",
+            "variant": "53393070948646",
+            "sku": "2960-22R",
+            "price_minor": 40715,
+            "reference_minor": 47900,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        },
+        {
+          "name": "Stanley Bostitch 2-1/2-in. Coil Siding Nailer (N66C-1)",
+          "store": "Tool Nut",
+          "offer": {
+            "variant_key": "50310893469990",
+            "url": "https://www.toolnut.com/products/stanley-bostitch-n66c-1-2-1-2-coil-siding-nailer?currency=USD&variant=50310893469990",
+            "current_price": 249.0,
+            "original_price": 311.99,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/bostitch-n66c-1.jpg?v=1754894339",
+            "reference_basis": "retailer_compare_at",
+            "discount": 20.2,
+            "savings": 62.99
+          },
+          "checked_at": "2026-11-03T04:58:52.023101+00:00",
+          "evidence_url": "https://www.toolnut.com/products/stanley-bostitch-n66c-1-2-1-2-coil-siding-nailer.js?currency=USD",
+          "response_sha256": "a39048ec9d6eaa3aa58294822ecfe66b6cbd038274c9dc39c28bbaa355ac8cf4",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "merchant": {
+            "title": "Stanley Bostitch 2-1/2-in. Coil Siding Nailer (N66C-1)",
+            "variant": "50310893469990",
+            "sku": "N66C-1",
+            "price_minor": 24900,
+            "reference_minor": 31199,
+            "currency": "USD",
+            "options": "",
+            "raw_options": [
+              "Default Title"
+            ],
+            "option_definitions": [
+              {
+                "name": "Title",
+                "position": 1,
+                "values": [
+                  "Default Title"
+                ]
+              }
+            ],
+            "available": true
+          }
+        }
+      ]
+    }
+  },
+  "live_smoke": [
+    {
+      "catalog": "cycling",
+      "url": "https://bigring.clifan.com",
+      "checked_at": "2026-11-03T05:00:29.407325+00:00",
+      "health": {
+        "catalog": "cycling",
+        "snapshot_sha256": "0762426157018d62aec91eb01435b9d4ece1f60f347b5ef4f535124f21b6c3bb",
+        "fresh_sources": 16,
+        "configured_sources": 16,
+        "status": "ready"
+      },
+      "pages": [
+        {
+          "query": {},
+          "visible_cards": 24,
+          "first_price": "$1,499.99",
+          "history_status": 200
+        },
+        {
+          "query": {
+            "size": "M",
+            "max_price": 2500,
+            "stock": "true"
+          },
+          "visible_cards": 24,
+          "first_price": "$1,499.99",
+          "history_status": 200
+        }
+      ],
+      "source_status": 200
+    },
+    {
+      "catalog": "tools",
+      "url": "https://benchdrop.clifan.com",
+      "checked_at": "2026-11-03T05:00:31.001493+00:00",
+      "health": {
+        "catalog": "tools",
+        "snapshot_sha256": "1e60b7351ff4964a570a633ea3e9e25577d8a2b9824e51bd9eaba4c187856c82",
+        "fresh_sources": 8,
+        "configured_sources": 8,
+        "status": "ready"
+      },
+      "pages": [
+        {
+          "query": {},
+          "visible_cards": 24,
+          "first_price": "$1,999",
+          "history_status": 200
+        },
+        {
+          "query": {
+            "format": "Kit",
+            "max_price": 500,
+            "stock": "true"
+          },
+          "visible_cards": 24,
+          "first_price": "$279",
+          "history_status": 200
+        }
+      ],
+      "source_status": 200
+    }
+  ],
+  "mobile_runs": [
+    {
+      "site": "Fresh Powder",
+      "url": "https://freshpowder.clifan.com/",
+      "run": 1,
+      "at": "2026-11-03T04:10:14.820662+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 2216,
+      "cls": 0,
+      "lcp_entries": 1,
+      "shifts": [],
+      "first_price": "$59.99",
+      "first_price_bottom": 806.90625,
+      "initial_scroll": 0,
+      "horizontal_overflow": false,
+      "title": "Ski & Snowboard Deals | FreshPowder",
+      "window_end": 11024.79999999702,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "Fresh Powder",
+      "url": "https://freshpowder.clifan.com/",
+      "run": 2,
+      "at": "2026-11-03T04:10:26.941895+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 1768,
+      "cls": 0,
+      "lcp_entries": 1,
+      "shifts": [],
+      "first_price": "$59.99",
+      "first_price_bottom": 806.90625,
+      "initial_scroll": 0,
+      "horizontal_overflow": false,
+      "title": "Ski & Snowboard Deals | FreshPowder",
+      "window_end": 10555.60000000894,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "Fresh Powder",
+      "url": "https://freshpowder.clifan.com/",
+      "run": 3,
+      "at": "2026-11-03T04:10:37.850073+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 1544,
+      "cls": 0,
+      "lcp_entries": 1,
+      "shifts": [],
+      "first_price": "$59.99",
+      "first_price_bottom": 806.90625,
+      "initial_scroll": 0,
+      "horizontal_overflow": false,
+      "title": "Ski & Snowboard Deals | FreshPowder",
+      "window_end": 9677.5,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "Powder Deals",
+      "url": "https://powderdeals.com/deals",
+      "run": 1,
+      "at": "2026-11-03T04:10:47.727561+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 4636,
+      "cls": 6.656322945265241e-05,
+      "lcp_entries": 2,
+      "shifts": [
+        {
+          "at": 5924.899999991059,
+          "value": 6.656322945265241e-05
+        }
+      ],
+      "first_price": "$29.99",
+      "first_price_bottom": 1180.21875,
+      "initial_scroll": 318.21875,
+      "horizontal_overflow": false,
+      "title": "Ski & Snowboard Deals Today | Powder Deals",
+      "window_end": 13149.29999999702,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "Powder Deals",
+      "url": "https://powderdeals.com/deals",
+      "run": 2,
+      "at": "2026-11-03T04:11:01.302846+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 2500,
+      "cls": 6.656322945265241e-05,
+      "lcp_entries": 2,
+      "shifts": [
+        {
+          "at": 3942.5999999940395,
+          "value": 6.656322945265241e-05
+        }
+      ],
+      "first_price": "$29.99",
+      "first_price_bottom": 1180.21875,
+      "initial_scroll": 318.21875,
+      "horizontal_overflow": false,
+      "title": "Ski & Snowboard Deals Today | Powder Deals",
+      "window_end": 10834.699999988079,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "Powder Deals",
+      "url": "https://powderdeals.com/deals",
+      "run": 3,
+      "at": "2026-11-03T04:11:12.375485+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 2320,
+      "cls": 6.656322945265241e-05,
+      "lcp_entries": 2,
+      "shifts": [
+        {
+          "at": 3908.0999999940395,
+          "value": 6.656322945265241e-05
+        }
+      ],
+      "first_price": "$29.99",
+      "first_price_bottom": 1180.21875,
+      "initial_scroll": 318.21875,
+      "horizontal_overflow": false,
+      "title": "Ski & Snowboard Deals Today | Powder Deals",
+      "window_end": 11507.20000000298,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "Ski Finder",
+      "url": "https://www.ski-finders.com/deals",
+      "run": 1,
+      "at": "2026-11-03T04:11:25.906755+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 1532,
+      "cls": 0.033291179905953344,
+      "lcp_entries": 1,
+      "shifts": [
+        {
+          "at": 2088.8999999910593,
+          "value": 0.033291179905953344
+        }
+      ],
+      "first_price": "$461",
+      "first_price_bottom": 612,
+      "initial_scroll": 0,
+      "horizontal_overflow": false,
+      "title": "Ski Deals \u2014 Price Drops and Closeouts Across Every Shop | Ski Finder",
+      "window_end": 9727.89999999106,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "Ski Finder",
+      "url": "https://www.ski-finders.com/deals",
+      "run": 2,
+      "at": "2026-11-03T04:11:36.984918+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 1512,
+      "cls": 0,
+      "lcp_entries": 1,
+      "shifts": [],
+      "first_price": "$461",
+      "first_price_bottom": 612,
+      "initial_scroll": 0,
+      "horizontal_overflow": false,
+      "title": "Ski Deals \u2014 Price Drops and Closeouts Across Every Shop | Ski Finder",
+      "window_end": 9746.70000000298,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "Ski Finder",
+      "url": "https://www.ski-finders.com/deals",
+      "run": 3,
+      "at": "2026-11-03T04:11:49.362722+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 1352,
+      "cls": 0,
+      "lcp_entries": 1,
+      "shifts": [],
+      "first_price": "$461",
+      "first_price_bottom": 612,
+      "initial_scroll": 0,
+      "horizontal_overflow": false,
+      "title": "Ski Deals \u2014 Price Drops and Closeouts Across Every Shop | Ski Finder",
+      "window_end": 9544,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "Bench Drop",
+      "url": "https://benchdrop.clifan.com/",
+      "run": 1,
+      "at": "2026-11-03T04:28:33.620124+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 1188,
+      "cls": 0,
+      "lcp_entries": 1,
+      "shifts": [],
+      "first_price": "$1,999",
+      "first_price_bottom": 759.09375,
+      "initial_scroll": 0,
+      "horizontal_overflow": false,
+      "title": "Bench Drop \u00b7 Deep discounts, serious gear",
+      "window_end": 9292.59999999404,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "Bench Drop",
+      "url": "https://benchdrop.clifan.com/",
+      "run": 2,
+      "at": "2026-11-03T04:28:43.248997+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 1120,
+      "cls": 0,
+      "lcp_entries": 1,
+      "shifts": [],
+      "first_price": "$1,999",
+      "first_price_bottom": 759.09375,
+      "initial_scroll": 0,
+      "horizontal_overflow": false,
+      "title": "Bench Drop \u00b7 Deep discounts, serious gear",
+      "window_end": 9308.09999999404,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "Bench Drop",
+      "url": "https://benchdrop.clifan.com/",
+      "run": 3,
+      "at": "2026-11-03T04:28:52.737442+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 1008,
+      "cls": 0,
+      "lcp_entries": 1,
+      "shifts": [],
+      "first_price": "$1,999",
+      "first_price_bottom": 759.09375,
+      "initial_scroll": 0,
+      "horizontal_overflow": false,
+      "title": "Bench Drop \u00b7 Deep discounts, serious gear",
+      "window_end": 9229.59999999404,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "HardHat Deals",
+      "url": "https://hardhatdeals.com/",
+      "run": 1,
+      "at": "2026-11-03T04:29:02.144449+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 2512,
+      "cls": 0.09643590050452998,
+      "lcp_entries": 1,
+      "shifts": [
+        {
+          "at": 3347.2999999970198,
+          "value": 0.09355639718277574
+        },
+        {
+          "at": 3476,
+          "value": 0.00287950332175424
+        },
+        {
+          "at": 4809.899999991059,
+          "value": 0.0002963705114094817
+        }
+      ],
+      "first_price": "$29.65",
+      "first_price_bottom": 1693.5,
+      "initial_scroll": 849.5,
+      "horizontal_overflow": false,
+      "title": "Construction Tool Deals & Pro Tool Deals Today \u2013 DeWalt, Milwaukee, Klein | HardHat Deals",
+      "window_end": 11783.09999999404,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "HardHat Deals",
+      "url": "https://hardhatdeals.com/",
+      "run": 2,
+      "at": "2026-11-03T04:29:14.318495+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 1768,
+      "cls": 0.09643590050452998,
+      "lcp_entries": 1,
+      "shifts": [
+        {
+          "at": 2677.2000000029802,
+          "value": 0.09355639718277574
+        },
+        {
+          "at": 2767.5,
+          "value": 0.00287950332175424
+        },
+        {
+          "at": 4039.5999999940395,
+          "value": 0.0002963705114094817
+        }
+      ],
+      "first_price": "$29.65",
+      "first_price_bottom": 1693.5,
+      "initial_scroll": 849.5,
+      "horizontal_overflow": false,
+      "title": "Construction Tool Deals & Pro Tool Deals Today \u2013 DeWalt, Milwaukee, Klein | HardHat Deals",
+      "window_end": 10971.09999999404,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "HardHat Deals",
+      "url": "https://hardhatdeals.com/",
+      "run": 3,
+      "at": "2026-11-03T04:29:25.693296+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "lcp": 1976,
+      "cls": 0.09643590050452998,
+      "lcp_entries": 1,
+      "shifts": [
+        {
+          "at": 2823.9000000059605,
+          "value": 0.09355639718277574
+        },
+        {
+          "at": 2880.2000000029802,
+          "value": 0.00287950332175424
+        },
+        {
+          "at": 4631.5,
+          "value": 0.0002963705114094817
+        }
+      ],
+      "first_price": "$29.65",
+      "first_price_bottom": 1693.5,
+      "initial_scroll": 849.5,
+      "horizontal_overflow": false,
+      "title": "Construction Tool Deals & Pro Tool Deals Today \u2013 DeWalt, Milwaukee, Klein | HardHat Deals",
+      "window_end": 11016.800000011921,
+      "visible": true,
+      "status": "measured"
+    },
+    {
+      "site": "Daily Tool Drops",
+      "url": "https://dailytooldrops.com/",
+      "run": 1,
+      "at": "2026-11-03T04:29:37.033034+00:00",
+      "environment": "production",
+      "network": "150ms-1.6Mbps-down-750Kbps-up",
+      "cpu_slowdown": 4,
+      "viewport": [
+        390,
+        844
+      ],
+      "cold_context": true,
+      "http_status": 200,
+      "status": "inconclusive",
+      "error": "TimeoutError",
+      "detail": "Locator.wait_for: Timeout 15000ms exceeded."
+    }
+  ]
+}

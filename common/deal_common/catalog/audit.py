@@ -16,6 +16,8 @@ from deal_common.catalog.refresh import safe_url
 from deal_common.http import DEFAULT_HEADERS, fetch_listing
 from deal_common.parsers.grizzly import sku_destination, structured_products
 from deal_common.parsers.grizzly import text as decoded_text
+from deal_common.parsers.taylor import detail_data as taylor_data
+from deal_common.parsers.taylor import offer_destination as taylor_destination
 
 
 def select_sample(cards: list[dict], seed: int = 20261102) -> list[dict]:
@@ -78,8 +80,10 @@ async def audit_sample(cards: list[dict], allowed_domains: dict[str, str], *, de
             row = {"name": card["name"], "store": card["store"], "offer": offer,
                    "checked_at": datetime.now(UTC).isoformat()}
             sku_product = sku_destination(offer["url"], offer["variant_key"])
-            if (not domain or not safe_url(offer["url"], domain) or "/products/" not in parts.path
-                    or (not sku_product and parse_qs(parts.query).get("variant") != [offer["variant_key"]])):
+            taylor_product = taylor_destination(offer['url'], offer['variant_key'])
+            if (not domain or not safe_url(offer["url"], domain)
+                    or (not taylor_product and ("/products/" not in parts.path
+                        or (not sku_product and parse_qs(parts.query).get("variant") != [offer["variant_key"]])))):
                 results.append({**row, "status": "inconclusive", "reason": "Unsupported or unsafe product destination"})
                 continue
             origin = f"{parts.scheme}://{parts.netloc}"
@@ -87,11 +91,17 @@ async def audit_sample(cards: list[dict], allowed_domains: dict[str, str], *, de
             currency_url = origin + prefix + "/cart.js?" + urlencode({"currency": card.get("currency", "USD")})
             endpoint = urlunsplit((parts.scheme, parts.netloc, parts.path + ".js",
                                   urlencode({"currency": card.get("currency", "USD")}), ""))
-            row["evidence_url"] = offer["url"] if sku_product else endpoint
+            row["evidence_url"] = offer["url"] if sku_product or taylor_product else endpoint
             if origin in blocked:
                 results.append({**row, "status": "inconclusive", "reason": "Host blocked or rate-limited earlier in this audit"})
                 continue
             try:
+                if taylor_product:
+                    response = await fetch_listing(client, offer['url'], delay)
+                    row['response_sha256'] = hashlib.sha256(response.content).hexdigest()
+                    row.update(validate_taylor_product(card, taylor_data(response.text, offer['url'])))
+                    results.append(row)
+                    continue
                 if sku_product:
                     response = await fetch_listing(client, offer["url"], delay)
                     row["response_sha256"] = hashlib.sha256(response.content).hexdigest()
@@ -120,6 +130,38 @@ async def audit_sample(cards: list[dict], allowed_domains: dict[str, str], *, de
                 row.update(status="inconclusive", reason="Response could not be verified")
             results.append(row)
     return results
+
+
+def validate_taylor_product(card: dict, product: dict) -> dict:
+    expected = card['offer']
+    sku, _, query = expected['variant_key'].partition('|')
+    actual = product['skus'].get(sku)
+    if actual is None:
+        return {'status': 'inconclusive', 'reason': 'SKU absent from Taylor product page'}
+    def equal(value, target):
+        try:
+            return not isinstance(value, bool) and Decimal(str(value)) == Decimal(str(target))
+        except (InvalidOperation, ValueError, TypeError):
+            return False
+    try:
+        quantity = Decimal(str(actual.get('qty')))
+        has_stock = quantity.is_finite() and quantity > 0
+    except (InvalidOperation, ValueError, TypeError):
+        has_stock = False
+    checks = {
+        'identity': product['name'] == card['name'],
+        'destination': actual['query'] == query and taylor_destination(expected['url'], expected['variant_key']),
+        'currency': True,  # detail_data requires the explicit US-only price container.
+        'price': equal(actual.get('price'), expected['current_price']),
+        'reference': equal(actual.get('regular_price'), expected['original_price']),
+        'options': actual['options'] == expected.get('options'),
+        'stock': actual.get('available') is True and actual.get('ib') is False and has_stock,
+        'condition': actual.get('level_name') == 'Regular',
+    }
+    return {'status': 'match' if all(checks.values()) else 'mismatch', 'checks': checks,
+            'merchant': {'sku': actual['vendor_sku'], 'selector_sku': sku, 'selection': actual['selection'],
+                         'price': actual.get('price'), 'reference': actual.get('regular_price'),
+                         'stock': actual.get('qty'), 'options': actual['options'], 'currency': 'USD'}}
 
 
 def validate_sku_product(card: dict, products: list[dict]) -> dict:

@@ -8,6 +8,12 @@ from deal_common.models import Product
 class BaseParser(ABC):
     """Interface that every site-specific parser must implement."""
 
+    requires_product_pages = False
+
+    def parse_product_page(self, html: str, page_url: str) -> list[Product]:
+        """Resolve discovery listings to authoritative offers when opted in."""
+        raise NotImplementedError
+
     @abstractmethod
     def parse_listing_page(self, html: str, page_url: str) -> list[Product]:
         """Extract all products from a single listing page's HTML."""

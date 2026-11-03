@@ -1,0 +1,50 @@
+{
+  "catalog": "cycling",
+  "source": "Gravity Coalition",
+  "checked_at": "2026-11-03T04:26:36.459264+00:00",
+  "deployment_status": "local preparation only; production-runner validation pending",
+  "refresh": {
+    "source": "Gravity Coalition",
+    "status": "complete",
+    "errors": 0,
+    "pages": 2,
+    "collections": [
+      {
+        "url": "https://gravitycoalition.com/collections/all-bikes-frames?currency=USD",
+        "pages": 1,
+        "products": 124,
+        "status": "complete",
+        "observed_currency": "USD"
+      },
+      {
+        "url": "https://gravitycoalition.com/collections/bike-sale?currency=USD",
+        "pages": 1,
+        "products": 102,
+        "status": "complete",
+        "observed_currency": "USD"
+      }
+    ],
+    "parsed_products": 226,
+    "accepted_products": 38
+  },
+  "eligible_in_stock_listings": 29,
+  "deep_40_percent_listings": 6,
+  "reference_floor_usd": 1000,
+  "merchant_audit": {
+    "catalog": "cycling",
+    "date": "2026-11-03T04:21:51.063464+00:00",
+    "population": 29,
+    "method": "all-qualifying-gravity-listings",
+    "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+    "sample_size": 29,
+    "match": 29,
+    "mismatch": 0,
+    "inconclusive": 0,
+    "verified_match_percent": 100.0
+  },
+  "classification_corrections": [
+    "Manufacturer Rocky Mountain does not imply mountain-bike category",
+    "Explicit frame-only products are framesets"
+  ],
+  "limitation": "Retailer reference and reported stock; not historical selling-price or checkout verification"
+}

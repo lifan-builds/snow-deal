@@ -6,6 +6,8 @@ All I/O is async. New static parsers inherit `deal_common.parsers.base.BaseParse
 
 Every product path must preserve `image_url`, price, category, brand, and size/length behavior. Image extraction uses Shopify `images[0].src` or browser `data-src || src`. Price parsing must accept decimal and whole-dollar comma prices.
 
+Ski Essentials Show More can be covered by its newsletter dialog. Dismiss only the observed `POPUP Form` close control on that retailer; keep the increasing-product-count wait and pagination-error reporting. An accepted click alone is not traversal proof. Cumulative listing DOM counts are not unique product counts.
+
 ## Data-quality invariants
 
 1. Test categorization before scraping; miscategorized products pollute durable snapshots.
@@ -29,6 +31,7 @@ Never run a live scrape, review fetch, browser session, auth sync, invite genera
 - A Shopify offer destination must stay on its product path and carry exactly the matching `variant` query ID. Grizzly's single-SKU product pages instead require the configured Grizzly parser, an exact SKU/path-suffix match, identical product/offer URLs, explicit USD price and strikethrough reference, and new/in-stock evidence. Never invent a Shopify variant query for a SKU page or relax Shopify validation for other sources.
 - Variant history matches source, product URL/name/brand and variant ID/options/destination. Count distinct UTC observation dates; incomplete refreshes do not create observations. Catalog currency is fixed to USD. Package builds must preserve the last 45 days of configured-source observations.
 - Competitive evidence lives in `docs/COMPETITIVE-BENCHMARK.md` and dated `docs/benchmarks/` records. Unmeasured, provider-claimed or incomparable values cannot justify a market-leading claim.
+- Retailer taxonomy such as Bike Lock, Bike Pumps, Bike Part and Bike Maintenance identifies accessories even though it contains Bike. Cable lengths and tire-width dimensions cannot satisfy a frame-size request. Fulfillment messages in a vendor field are not manufacturer or stock evidence; retain unknown manufacturer status rather than inventing a brand.
 
 ## Catalog freshness, observations and merchant audits
 
@@ -43,3 +46,9 @@ Use `scripts/probe_sources.py` with an explicit public candidate manifest and a 
 Retain Shopify tags for catalog eligibility, including observed shipping-only or condition restrictions. Retailer taxonomy is evidence: Hardtail/Full Suspension are bike types; cutters, knives, stands, and books are not powered machines. A contradictory title such as Recon overrides a structured NewCondition claim. Grizzly pagination must report the requested page and a terminal page; the catalog CLI has a bounded 30-page budget, and reaching it early is an incomplete refresh. Merchant samples use the separate exact-SKU product page for Grizzly. HTTP 403/429 remains unresolved evidence, never an accuracy pass.
 
 Shipping restrictions take precedence over positive shipping tags. Fanatik can mark the same product `ship-usa` and `in-store-only`/`no-ship`; its condition tags can also disclose open-box, lightly ridden or cosmetic-blemish stock absent from the title. Inspect the separate product page as well as price/variant JSON before admitting a source. A price audit match does not prove shipping eligibility. Keep showroom machines out of the new/shippable tools catalog. Match specific accessory taxonomy without rejecting actual jig saws, fat-tire bikes or machines with digital displays. Proprietary model taxonomy (such as State's `6061 All Road`) requires observed brand and bicycle-tag evidence. Frame-size aliases SM/MD/LG may match S/M/L, but compound sizes must remain intact.
+
+## Taylor detail-page contract
+
+Taylor's parent listing IDs differ from its purchasable SKU identities. `TaylorParser` decodes the page's JSON literal assignments without executing merchant JavaScript, checks canonical product identity and the explicit US-price container, and binds the selector SKU to its complete option query. Both single- and multi-SKU links were verified in an anonymous browser. Missing stock, backorders, factory-second levels, malformed prices and ambiguous option destinations cannot become offers. Detail breadcrumbs supply the authoritative category; listing names are only a request-saving prefilter.
+
+Taylor's normal pagination is cumulative. Validate the requested page, page size, advertised total and unique listing IDs. Different listing IDs may alias one product URL; fetch that canonical detail only once. Show All must still match the advertised total and the bounded listing cap. Shared HTTP detail resolution is opt-in, paced, bounded and source-domain restricted. Any failed or malformed detail makes the entire source incomplete, preserving previous successful rows and observation timestamps. Keep prior Shopify/Grizzly validation intact.

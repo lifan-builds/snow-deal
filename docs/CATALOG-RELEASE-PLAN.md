@@ -1,5 +1,7 @@
 # Three-catalog quality release
 
+Status update: the approved release and recovery fixes are deployed. See the [verified release receipt](CATALOG-RELEASE-RECEIPT.md) for current inventory, successful automation, and remaining gaps. The preparation details below record the original plan.
+
 Branch: `codex/cycling-tools-sites`, repository `lifan-builds/snow-deal`. This is a new release; the earlier approval for `4b26de3` covered the completed snow rollout only.
 
 ## Reviewable result

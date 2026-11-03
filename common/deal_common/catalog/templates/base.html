@@ -10,7 +10,7 @@
   {% if public_url %}<link rel="canonical" href="{{ public_url }}{{ request.url.path }}"><meta property="og:url" content="{{ public_url }}{{ request.url.path }}">{% endif %}
   <meta name="theme-color" content="{{ catalog.theme_color }}">
   <title>{% block title %}{{ catalog.name }} · Deep discounts, serious gear{% endblock %}</title>
-  <link rel="stylesheet" href="{{ url_for('static', path='catalog.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', path='catalog.css') }}?v=2">
   <link rel="stylesheet" href="{{ url_for('brand', path='brand.css') }}">
   <script src="{{ url_for('static', path='catalog.js') }}" defer></script>
 </head>

@@ -482,6 +482,15 @@ async def _try_next_page(page: Page, next_selector: str | None) -> bool:
                     await page.goto(abs_href or href, wait_until="domcontentloaded")
                     return True
                 before_count = await page.locator('[data-testid="product-card-title"]').count() if 'SHOW MORE' in selector else None
+                if before_count is not None and urlparse(page.url).hostname in {"skiessentials.com", "www.skiessentials.com"}:
+                    # The retailer's newsletter modal intercepts Show More clicks.
+                    # Dismiss only its observed close control, never force the
+                    # pagination click through an unknown overlay.
+                    close = await page.query_selector(
+                        '[role="dialog"][aria-label="POPUP Form"] button[aria-label="Close dialog"]'
+                    )
+                    if close and await close.is_visible():
+                        await close.click()
                 await el.click()
                 if before_count is not None:
                     await page.wait_for_function(
