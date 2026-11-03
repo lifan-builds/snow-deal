@@ -8,6 +8,8 @@ import hashlib
 import json
 import re
 import random
+from collections.abc import Callable
+from urllib.parse import urlsplit
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 
@@ -60,11 +62,14 @@ async def fetch_listing(client: httpx.AsyncClient, url: str, delay: float) -> ht
 
 async def fetch_products(store: RetailerConfig, parser: BaseParser, client: httpx.AsyncClient,
                          *, semaphore: asyncio.Semaphore, delay: float = 1.0,
-                         max_pages: int = 10, outcome: dict | None = None) -> list[Product]:
+                         max_pages: int = 10, outcome: dict | None = None,
+                         include_product: Callable[[Product], bool] | None = None,
+                         max_product_pages: int = 500) -> list[Product]:
     """Read bounded collections, preserving coverage and failure evidence."""
     if outcome is None:
         outcome = {"errors": 0, "pages": 0}
     products: list[Product] = []
+    details_seen: set[str] = set()
 
     for url in store.scrape_urls:
         page = 0
@@ -125,9 +130,35 @@ async def fetch_products(store: RetailerConfig, parser: BaseParser, client: http
             seen_pages.add(fingerprint)
             try:
                 page_products = parser.parse_listing_page(resp.text, current_url)
+                next_url = parser.get_next_page_url(resp.text, current_url)
+                if parser.requires_product_pages:
+                    resolved = []
+                    for product in page_products:
+                        if product.url in details_seen or (include_product and not include_product(product)):
+                            continue
+                        target = urlsplit(product.url)
+                        if (target.scheme != 'https' or target.hostname != store.domain
+                                or target.username or target.password or target.port not in (None, 443)):
+                            raise ValueError('Unsafe product detail destination')
+                        if len(details_seen) >= max_product_pages:
+                            raise ValueError('Product detail page budget exhausted')
+                        details_seen.add(product.url)
+                        async with semaphore:
+                            detail = await fetch_listing(client, product.url, delay)
+                        if urlsplit(str(detail.url)).hostname != store.domain:
+                            raise ValueError('Product detail redirected off source')
+                        outcome['product_pages'] = outcome.get('product_pages', 0) + 1
+                        resolved.extend(parser.parse_product_page(detail.text, product.url))
+                    page_products = resolved
                 products.extend(page_products)
                 collection["products"] += len(page_products)
-                current_url = parser.get_next_page_url(resp.text, current_url)
+                current_url = next_url
+            except httpx.HTTPError as exc:
+                outcome['errors'] += 1
+                collection['status'] = 'product_http_error'
+                if isinstance(exc, httpx.HTTPStatusError):
+                    collection['http_status'] = exc.response.status_code
+                break
             except (ValueError, TypeError, KeyError, AttributeError) as exc:
                 outcome["errors"] += 1
                 collection["status"] = "parse_error"

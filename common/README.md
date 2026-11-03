@@ -7,9 +7,10 @@
 | `models.Product` | Raw product fields and percentage/dollar savings calculations |
 | `offers.VariantOffer` | Variant identity, price/reference, size/options, stock evidence, and destination |
 | `config.RetailerConfig` | Store identity, listing URLs, parser type, currency, platform settings |
-| `parsers.base.BaseParser` | Listing extraction and next-page interface |
+| `parsers.base.BaseParser` | Listing extraction and next-page interface, with opt-in product detail resolution |
 | `parsers.shopify.ShopifyParser` | Shopify JSON, available variants, prices, images, pagination |
 | `parsers.grizzly.GrizzlyParser` | Public single-SKU JSON-LD, USD/new/stock/reference evidence, explicit page-count traversal |
+| `parsers.taylor.TaylorParser` | Complete HTML listing discovery plus exact-SKU detail data, explicit option destinations and US price/stock evidence |
 | `parsers.common` | Price parsing and product-name/URL cleanup |
 | `http.fetch_products` | HTTP collection traversal, page caps, delay, caller-owned concurrency, HTTP failure handling |
 | `rate_limit` | Request throttling for web endpoints |
@@ -42,4 +43,6 @@ Run `.venv/bin/python scripts/check.py -q` from the workspace root.
 
 ## Probe a source before enabling it
 
-Write a JSON array with `catalog`, `name`, `domain`, `scrape_urls`, and optional `parser_type` (`shopify` by default, or `grizzly`). Run `python scripts/probe_sources.py candidates.json --output .local/source-expansion/new-run --max-pages 30`. The output directory must be new. Inspect complete collection outcomes, eligible and ≥40%-off counts, condition/shipping restrictions and selected merchant offers before adding the source to a catalog. Keep raw public candidate snapshots local; retain a compact admission receipt in docs. See the [worked expansion](../docs/tasks/source-expansion/IMPLEMENTATION.md).
+Write a JSON array with `catalog`, `name`, `domain`, `scrape_urls`, and optional `parser_type` (`shopify` by default, `grizzly`, or `taylor`). Run `python scripts/probe_sources.py candidates.json --output .local/source-expansion/new-run --max-pages 30`. The output directory must be new. Inspect complete collection outcomes, eligible and ≥40%-off counts, condition/shipping restrictions and selected merchant offers before adding the source to a catalog. Keep raw public candidate snapshots local; retain a compact admission receipt in docs. See the [worked expansion](../docs/tasks/source-expansion/IMPLEMENTATION.md).
+
+Taylor listings are discovery metadata only. The HTTP loop deduplicates canonical detail destinations and applies the catalog's existing classifier before fetching details; authoritative detail taxonomy is classified again before storage. Every detail request uses the normal pacing/retry policy. A failed detail, incomplete page, or exhausted 500-detail budget makes the source incomplete and preserves its previous successful snapshot. Other parsers retain their existing listing-only behavior.

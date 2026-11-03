@@ -4,7 +4,7 @@
 
 Win on **finding the deepest usable discount on expensive equipment**, with a trustworthy purchase link and little effort. A beautiful card with a wrong size or inflated reference is a failure. Percentage off remains the primary ranking key; cash savings break ties. Revenue, imagery and reviews never move an inferior discount above a better eligible offer.
 
-We do **not yet have evidence that all three sites beat every competitor**. Cycling now has 16 contributing retailers and tools nine; 11 and four respectively contribute a deal at least 40% off above the reference floor. Competitors already offer broad coverage, product matching, price history and alerts. The registry now covers 21 relevant services, not the entire internet. See the [latest evidence and changes](benchmarks/2026-11-03-competitive-continuation.md).
+We do **not yet have evidence that all three sites beat every competitor**. Cycling now has 16 contributing retailers and tools ten; 11 and five respectively contribute a deal at least 40% off above the reference floor. Competitors already offer broad coverage, product matching, price history and alerts. The registry now covers 21 relevant services, not the entire internet. See the [Taylor source follow-up](tasks/taylor-source/IMPLEMENTATION.md) and [prior competitive measurements](benchmarks/2026-11-03-competitive-continuation.md).
 
 ## The ten metrics
 
@@ -57,7 +57,7 @@ Retailer outlets (evo, Powder7, Jenson, BikesOnline, Mike's Bikes, Woodcraft, Ho
 
 ## Current scorecard
 
-`docs/benchmarks/2026-11-03.json` records the current roster and measurements; November 2 files remain historical. `scripts/benchmark.py` renders the site × ten-metric matrix and exits nonzero with `--require-lead` while any applicable rival or metric lacks comparable evidence. An unknown cell is an explicit work item, not an implied win. International sites and editorial sites remain visible as capability comparators, with US direct comparisons handled separately.
+`docs/benchmarks/2026-11-03-taylor-matrix.json` records the current roster and measurements; earlier files remain historical. `scripts/benchmark.py` renders the site × ten-metric matrix and exits nonzero with `--require-lead` while any applicable rival or metric lacks comparable evidence. An unknown cell is an explicit work item, not an implied win. International sites and editorial sites remain visible as capability comparators, with US direct comparisons handled separately.
 
 The latest pass crawls Powder Deals and Velo Bargains to completion, inspects public competitor APIs and measures seven production sites with three cold mobile runs each. Our two new catalogs each match 30/30 merchant endpoint samples. Competitor merchant samples, checkout/fit and condition audits remain incomplete. Fresh Powder's production LCP is behind Powder Deals and Ski Finder; the local render correction needs publication and remeasurement. No all-metrics lead is established.
 
@@ -97,7 +97,7 @@ This is a documented operating process and executable local gate, not an activat
 
 These are layout measurements, not speed, deal-quality or conversion measurements. The snow local test uses six synthetic offers and is excluded from inventory metrics. Same-session public pages can change: retain timestamps and evidence instead of assuming cached search counts are current.
 
-Run the audit with an explicit public snapshot path: `python scripts/audit_catalog.py --catalog cycling --database <path>` (or `tools`). Render the latest matrix with `python scripts/benchmark.py docs/benchmarks/2026-11-03.json`; append `--require-lead` to test the all-metrics claim. Its nonzero result is expected until the evidence supports a lead.
+Run the audit with an explicit public snapshot path: `python scripts/audit_catalog.py --catalog cycling --database <path>` (or `tools`). Render the latest matrix with `python scripts/benchmark.py docs/benchmarks/2026-11-03-taylor-matrix.json`; append `--require-lead` to test the all-metrics claim. Its nonzero result is expected until the evidence supports a lead.
 
 ## Historical gap-closing continuation — 2 November
 

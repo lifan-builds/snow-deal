@@ -19,6 +19,8 @@ def classify(product: Product) -> Classification | None:
     if re.search(r"\b(accessories|parts|rests?|jigs?(?!\s+saws?\b)|templates?|blades|bits|cutters|knives|clamps|vises|guides|gauges|books|casters|storage|staples|sawhorses|abrasives|sanding paper|batteries and chargers|apparel|fasteners|hand tools|turning tools)\b", kind):
         return None
     # Replacement parts and consumables do not become machines because their title names one.
+    if re.search(r"\b(?:drill|driver|router) bits?\b", title):
+        return None
     if re.search(r"\b(replacement|adapte?r|adaptor|attachment|blade|bit set|insert|filter|hose|cover|chuck|sandpaper|stand only|tool bag|rests?|jigs?(?!\s+saw\b)|templates?|stop collar|drilling guide)\b", title):
         return None
     if re.search(r"\b(cutter sets?|shaper cutters?|depth stops?|drill guides?|sharpening station|saw indicator|clamp kit|stand kit|vac switch|tool cabinet|machine cabinet|outfeed table|work station|pole saw|staples|how to|driver kit for|hole saw|casters?|systainer|sawhorse|router table system)\b", title):
@@ -94,7 +96,9 @@ CATALOG = Catalog(
                                          "https://www.oaktreesupply.com/collections/jet-and-powermatic-price-drops?currency=USD",
                                          "https://www.oaktreesupply.com/collections/scm-sale?currency=USD",
                                          "https://www.oaktreesupply.com/collections/sawstop?currency=USD"],
-                            verify_shopify_currency=True)),
+                            verify_shopify_currency=True),
+             RetailerConfig(name="Taylor Toolworks", domain="taytools.com", parser_type="taylor",
+                            scrape_urls=["https://taytools.com/power-tools?ppg=65535&pn=1"])),
     classify=classify, default_reference=200,
     assets=Path(__file__).parent / "static", art_label="02 / THE NEXT PROJECT", theme_color="#282922", mark="↘",
     formats=("Bare tool", "Kit", "Not specified"),

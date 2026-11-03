@@ -111,3 +111,10 @@ Final verification: 84 tests passed; Python compilation and `git diff --check` p
 - Fixed cycling size facets contaminated by merchant color labels and wheel-only values, refreshed both affected sources, and rebuilt the standalone packages. Snow excludes explicit blemished equipment at ingestion/repair while preserving observation history.
 - Production snow LCP was behind Powder Deals and Ski Finder. Earlier stylesheet/font discovery reduced median LCP 792 → 596 ms in a paired local captured-content fixture; production gain remains unverified.
 - 405 offline tests, scoped Ruff, whitespace and package/preview snapshot-hash checks passed. Both local catalogs have two actual observed UTC dates, not 30-day history. No push or deployment. Current report: `docs/benchmarks/2026-11-03-competitive-continuation.md`; current publication scope: `docs/CATALOG-RELEASE-PLAN.md`.
+
+## Taylor Toolworks follow-up — 2026-11-03 UTC
+
+- Added a validated exact-SKU HTML/detail adapter using shared request pacing, classification, snapshot replacement and merchant auditing. Complete discovery: 1,917 listing IDs, 186 relevant canonical detail requests, 22 discounted products and one eligible grinder bundle. Accessories remain excluded.
+- Tools now has ten contributing retailers, 352 qualifying listings and 22 deep deals from five retailers. The Taylor offer matched a fresh merchant check; the combined top-ten plus seeded-twenty sample matched 30/30. These are endpoint facts, not checkout or historical-price proof.
+- Fixed invalid stock quantities passing the Taylor audit. All 440 offline tests and scoped lint pass; package and preview snapshot hashes agree. Local budget-plus-fit tasks show four visible form interactions, with physical gestures and competitor comparisons still unproven.
+- Separate follow-up branch leaves pending release 7798318 unchanged. No push or deployment. See `docs/tasks/taylor-source/IMPLEMENTATION.md` and `docs/benchmarks/2026-11-03-taylor-matrix.json`.

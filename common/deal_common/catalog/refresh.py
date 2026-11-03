@@ -13,6 +13,7 @@ from deal_common.http import DEFAULT_HEADERS, fetch_products
 from deal_common.offers import discount
 from deal_common.parsers.shopify import ShopifyParser
 from deal_common.parsers.grizzly import GrizzlyParser, sku_destination
+from deal_common.parsers.taylor import TaylorParser, offer_destination as taylor_destination
 
 
 def safe_url(value: str | None, domain: str | None = None) -> bool:
@@ -37,12 +38,17 @@ def normalize(products, catalog: Catalog, domain: str, *, parser_type: str = "sh
             continue
         offers = []
         for offer in product.offers:
+            if parser_type == 'grizzly':
+                destination_matches = sku_destination(offer.url, offer.variant_key)
+            elif parser_type == 'taylor':
+                destination_matches = taylor_destination(offer.url, offer.variant_key)
+            else:
+                destination_matches = parse_qs(urlsplit(offer.url).query).get('variant') == [offer.variant_key]
             if (offer.availability not in {"in_stock", "unknown"}
                     or discount(offer.current_price, offer.original_price) <= 0
                     or not safe_url(offer.url, domain)
                     or urlsplit(offer.url).path != urlsplit(product.url).path
-                    or not (sku_destination(offer.url, offer.variant_key) if parser_type == "grizzly"
-                            else parse_qs(urlsplit(offer.url).query).get("variant") == [offer.variant_key])):
+                    or not destination_matches):
                 continue
             data = asdict(offer)
             data["image_url"] = offer.image_url if safe_url(offer.image_url) else None
@@ -68,13 +74,19 @@ async def refresh(catalog: Catalog, path: Path, *, max_pages: int = 30,
             observed_at = datetime.now(timezone.utc).isoformat()
             if source.currency != "USD":
                 raise ValueError("These catalogs accept USD sources only")
-            if source.parser_type not in {"shopify", "grizzly"}:
+            if source.parser_type not in {"shopify", "grizzly", "taylor"}:
                 raise ValueError("Unsupported catalog parser")
-            parser = GrizzlyParser() if source.parser_type == "grizzly" else ShopifyParser(
-                size_option_names=catalog.size_option_names, size_value_pattern=catalog.size_value_pattern)
+            if source.parser_type == 'taylor':
+                parser = TaylorParser()
+            elif source.parser_type == 'grizzly':
+                parser = GrizzlyParser()
+            else:
+                parser = ShopifyParser(size_option_names=catalog.size_option_names,
+                                       size_value_pattern=catalog.size_value_pattern)
             products = await fetch_products(source, parser, client,
                                             semaphore=asyncio.Semaphore(1), delay=delay,
-                                            max_pages=max_pages, outcome=outcome)
+                                            max_pages=max_pages, outcome=outcome,
+                                            include_product=lambda product: catalog.classify(product) is not None)
             normalized = normalize(products, catalog, source.domain, parser_type=source.parser_type)
             status = "complete" if outcome["errors"] == 0 and outcome.get("collections") else "incomplete"
             outcome.update(parsed_products=len(products), accepted_products=len(normalized))
