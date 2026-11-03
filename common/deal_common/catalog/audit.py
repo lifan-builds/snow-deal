@@ -65,7 +65,7 @@ def validate_product(card: dict, raw: dict, currency: str | None) -> dict:
                          "option_definitions": option_definitions, "available": actual.get("available")}}
 
 
-async def audit_sample(cards: list[dict], allowed_domains: dict[str, str], *, delay: float = 1.5,
+async def audit_sample(cards: list[dict], allowed_domains: dict[str, str], *, delay: float = 5.0,
                        transport=None) -> list[dict]:
     results = []
     currencies = {}
