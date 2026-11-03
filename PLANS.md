@@ -117,3 +117,7 @@ Final verification: 84 tests passed; Python compilation and `git diff --check` p
 - User approved publishing release `7798318`, merging after checks, and the three-catalog rollout in `docs/CATALOG-RELEASE-PLAN.md`. PR #4 initially failed lint because CI installed Ruff 0.17.3 while local validation used 0.15.11.
 - Pinned Ruff 0.17.3 and applied its import, UTC-alias, literal-dictionary and equivalent-condition fixes. Preserved restore's invalid-response ValueError contract. Later Taylor/Fasteners additions remain outside this release.
 - Validation: all 405 offline tests pass; the exact CI lint command passes on Ruff 0.17.3; JavaScript syntax and whitespace checks pass.
+
+## Catalog production source recovery
+
+PR #4 merged after CI passed. First production tools refresh exposed Grizzly HTTP 403; eight other feeds completed. Quarantine the inaccessible feed and show the coverage limitation on the source page; preserve all completeness and merchant-audit gates. Cycling and snow refreshes continue independently.

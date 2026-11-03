@@ -83,8 +83,6 @@ CATALOG = Catalog(
              RetailerConfig(name="Factory Direct Supply", domain="factorydirectsupply.com",
                             scrape_urls=["https://factorydirectsupply.com/collections/power-tools?currency=USD"],
                             verify_shopify_currency=True),
-             RetailerConfig(name="Grizzly Industrial", domain="www.grizzly.com", parser_type="grizzly",
-                            scrape_urls=["https://www.grizzly.com/outlet-specials/shop-all"]),
              RetailerConfig(name="Max Warehouse", domain="www.maxwarehouse.com",
                             scrape_urls=["https://www.maxwarehouse.com/collections/power-tools?currency=USD"],
                             verify_shopify_currency=True),
@@ -100,5 +98,6 @@ CATALOG = Catalog(
     formats=("Bare tool", "Kit", "Not specified"),
     brand_aliases=(("sawstop", "SawStop"), ("jet", "JET"), ("jet tools", "JET"),
                    ("kreg tool", "Kreg"), ("kreg", "Kreg"), ("dewalt", "DeWalt")),
+    coverage_note="Grizzly Industrial is currently excluded: its storefront refused our refresh request on November 3, 2026. Its offers are hidden until we can complete a fresh check.",
     buying_note="A bare tool does not include a battery or charger. A kit label does not guarantee particular contents. Confirm the package, battery compatibility, shipping, and return policy on the retailer page. Check required voltage and phase for workshop machines. Clearance may be final sale.",
 )

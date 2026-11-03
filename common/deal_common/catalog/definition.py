@@ -31,6 +31,7 @@ class Catalog:
     size_label: str = "Size"
     formats: tuple[str, ...] = ()
     buying_note: str = ""
+    coverage_note: str = ""
     size_option_names: tuple[str, ...] = ()
     size_value_pattern: str = ""
     brand_aliases: tuple[tuple[str, str], ...] = ()
