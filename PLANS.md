@@ -185,3 +185,7 @@ Added a public WooCommerce decoder with header/count reconciliation and exact pa
 ## Bound merchant audit observations — 2026-11-03 UTC
 
 On separate branch `codex/audit-window`, enforce a 15-minute observation window in the shared merchant auditor. Record completion time, keep late factual checks as inconclusive, stop subsequent endpoints after expiry, and latch invalid backwards-clock observations. Four controlled-clock regressions cover the boundary and request stopping; all 550 offline tests pass. Prior evidence is unchanged and the gate alone does not establish comparative M3 accuracy. PR #8 remains frozen at `cb8672e` with passing checks while PR #7's live refreshes finish. Publish this correction as a separately reviewed follow-up under standing authorization.
+
+## evo cycling admission — 2026-11-03 UTC
+
+Revisited the earlier zero-admission result and found that exact complete-bike retailer taxonomy was missing from classification. The complete 493-product feed now yields 55 eligible listings and three deep deals, excluding 14 store-only products and one blemished product. A fresh currency-verified refresh and 30/30 separate merchant sample passed within 163 seconds. Browser checks confirmed all three deep variants plus a contradictory shipping-tag exclusion; checkout shipping fees remain excluded from prices. Nine regressions bring the suite to 559 passing tests. See `docs/tasks/evo-cycling/IMPLEMENTATION.md`. The new nineteenth local source follows the frozen Bike Closet and audit-window releases.

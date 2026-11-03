@@ -1,0 +1,122 @@
+{
+  "date": "2026-11-03",
+  "source": "evo",
+  "catalog": "cycling",
+  "disposition": "admitted locally; production refresh and verification required",
+  "discovery": {
+    "pages": [
+      {
+        "url": "https://www.evo.com/collections/bikes/products.json?limit=250&page=1&currency=USD",
+        "count": 250,
+        "sha256": "a326a0568633830b77eae7b15233f6502bed94084326a1160328c58ebd2541f1",
+        "observed_at": "2026-11-03T17:10:53.536342+00:00"
+      },
+      {
+        "url": "https://www.evo.com/collections/bikes/products.json?limit=250&page=2&currency=USD",
+        "count": 243,
+        "sha256": "860d63c7ced8fd98d277b065214e78e53cba6ecb709ab7af7513d308a2d603c9",
+        "observed_at": "2026-11-03T17:10:59.554115+00:00"
+      }
+    ],
+    "products": 493,
+    "unique": 493,
+    "available_variants": 404,
+    "any_discounted": 1568
+  },
+  "admission": {
+    "candidate": {
+      "catalog": "cycling",
+      "name": "evo",
+      "domain": "www.evo.com",
+      "scrape_urls": [
+        "https://www.evo.com/collections/bikes?currency=USD"
+      ]
+    },
+    "checked_at": "2026-11-03T17:13:07.247449+00:00",
+    "snapshot": "00-cycling.db",
+    "refresh": {
+      "source": "evo",
+      "status": "complete",
+      "errors": 0,
+      "pages": 2,
+      "collections": [
+        {
+          "url": "https://www.evo.com/collections/bikes?currency=USD",
+          "pages": 2,
+          "products": 70,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "parsed_products": 70,
+      "accepted_products": 55
+    },
+    "eligible_listings": 55,
+    "deep_listings": 3,
+    "disposition": "needs-review"
+  },
+  "browser": {
+    "recorded_at": "2026-11-03T17:15:44.623178+00:00",
+    "method": "CUA read-only exact-variant product form review",
+    "deep_offers": [
+      {
+        "name": "Mondraker RAZE R Complete Mountain Bike 2025",
+        "variant": "46154270539926",
+        "sku": "EB-281776-1004",
+        "price": 2500.09,
+        "reference": 4999,
+        "size": "XL",
+        "color": "Cherry Red",
+        "remaining": 4
+      },
+      {
+        "name": "Devinci Chainsaw A 29 Deore 12s Complete Mountain Bike 2025",
+        "variant": "46417834705046",
+        "sku": "EB-289461-1004",
+        "price": 2220.1,
+        "reference": 3699,
+        "size": "XL",
+        "color": "Silver",
+        "remaining": 6
+      },
+      {
+        "name": "Santa Cruz 5010 CC X01 AXS Reserve Complete Mountain Bike 2023",
+        "variant": "46137746423958",
+        "sku": "EB-233178-1012",
+        "price": 6179.4,
+        "reference": 10649,
+        "size": "XXL",
+        "color": "Gloss Red",
+        "remaining": 1
+      }
+    ],
+    "shipping": {
+      "product": "Mondraker RAZE R Complete Mountain Bike 2025",
+      "details_modal_observed": true,
+      "home_delivery": "flat rate shown at checkout",
+      "region": "contiguous US; excludes Alaska, Hawaii, PO, FPO and APO addresses",
+      "assembly": "merchant asks 2-4 days before shipment; arrives mostly assembled",
+      "free_shipping": "ship to evo store, not a home-delivery promise"
+    },
+    "excluded_negative_check": {
+      "name": "Transition Sentinel Alloy Deore Complete Mountain Bike 2025",
+      "variant": "46149828575382",
+      "both_tags": [
+        "Free Bike Ship",
+        "badge:Ship to Store Only"
+      ],
+      "visible_restriction": "Free Ship to Store Only; choose an evo store in checkout"
+    },
+    "scope": "Observed price, options, reported inventory and shipping language; no cart action or checkout validation"
+  },
+  "exclusions": {
+    "ship_to_store_only": 14,
+    "blemished": 1
+  },
+  "limitations": [
+    "Merchant listings, not unique cross-retailer models.",
+    "Endpoint agreement is not checkout or historical reference proof.",
+    "No comparative M3 population accuracy claim.",
+    "Existing observed price history is preserved; no history is backfilled."
+  ]
+}

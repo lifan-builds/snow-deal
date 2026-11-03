@@ -23,7 +23,7 @@ def classify(product: Product) -> Classification | None:
     text = f"{title} {kind}"
     tags = {tag.casefold().strip().replace("_", " ") for tag in product.tags}
     if tags & {"used", "pre-owned", "demo", "consignment", "pickup only", "in store only", "ebike block ship",
-               "in-store-only", "no-ship",
+               "in-store-only", "no-ship", "badge:ship to store only",
                "condition:lightly-ridden", "condition:new-cosmetic-blem", "condition:open-box"}:
         return None
     if re.search(r"\b(kids?|junior|youth|boys|girls|used|pre-owned|demo|display|consignment|refurbished|reconditioned|returned|unridden|blem(?:ish(?:ed)?)?|open.box|scratch|dent)\b", text):
@@ -48,7 +48,8 @@ def classify(product: Product) -> Classification | None:
         return Classification("Mountain bikes")
     if kind == "6061 all road" and "bicycle" in tags and (product.brand or "").casefold() == "state bicycle co.":
         return Classification("Gravel bikes")
-    bike_type = bool(re.search(r"\b(bikes?|bicycles?)\b", kind))
+    bike_type = kind in {"mountain completes", "e-mountain completes", "gravel completes"} or bool(
+        re.search(r"\b(bikes?|bicycles?)\b", kind))
     explicit = bool(re.search(r"(?:mountain|road|gravel|hybrid|commuter|electric|trail|xc|e-mountain|e-road) (?:bikes?|bicycles?)(?:\s*\[new\])?$", title))
     if not bike_type and not explicit:
         return None
@@ -70,7 +71,10 @@ CATALOG = Catalog(
     headline="More bike.\nLess money.",
     description="Big discounts on complete bikes and framesets. The deepest percentage cuts come first, with the exact size and price attached.",
     categories=("Mountain bikes", "Road bikes", "Gravel bikes", "Electric bikes", "Framesets", "Other complete bikes"),
-    sources=(RetailerConfig(name="Bike Closet", domain="bikecloset.com", parser_type="bikecloset",
+    sources=(RetailerConfig(name="evo", domain="www.evo.com",
+                            scrape_urls=["https://www.evo.com/collections/bikes?currency=USD"],
+                            verify_shopify_currency=True),
+             RetailerConfig(name="Bike Closet", domain="bikecloset.com", parser_type="bikecloset",
                             scrape_urls=["https://bikecloset.com/wp-json/wc/store/v1/products?category=3411&type=variable&per_page=100&page=1&orderby=id&order=asc"]),
              RetailerConfig(name="Gravity Coalition", domain="gravitycoalition.com",
                             scrape_urls=["https://gravitycoalition.com/collections/all-bikes-frames?currency=USD",
