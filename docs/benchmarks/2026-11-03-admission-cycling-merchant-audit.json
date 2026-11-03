@@ -1,0 +1,1878 @@
+{
+  "catalog": "cycling",
+  "date": "2026-11-03T05:09:06.200282+00:00",
+  "seed": 20261103,
+  "population": 1170,
+  "method": "top10-plus-seeded20-merchant-product-v1",
+  "sample_size": 30,
+  "match": 30,
+  "mismatch": 0,
+  "inconclusive": 0,
+  "verified_match_percent": 100.0,
+  "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+  "results": [
+    {
+      "name": "Vaast Bikes E/1 XT/SLX 27.5 E-Bike - Nostalgic Sea Blue-Ocean Frost",
+      "store": "Colorado Cyclist",
+      "offer": {
+        "variant_key": "48408222335216",
+        "url": "https://coloradocyclist.com/products/vaast-bikes-e-1-xt-slx-27-5-e-bike-nostalgic-sea-blue-ocean-frost?currency=USD&variant=48408222335216",
+        "current_price": 1499.99,
+        "original_price": 7699.99,
+        "size": "Medium",
+        "options": "Nostalgic Sea Blue - Ocean Frost / Medium",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0761/3592/3952/files/VaastBikesE1XTSLX27.5E-Bike-NostalgicSeaBlue-OceanFrost_653758ef-151f-403f-a1ce-418046e5c846.jpg?v=1765222053",
+        "reference_basis": "retailer_compare_at",
+        "discount": 80.5,
+        "savings": 6200.0
+      },
+      "checked_at": "2026-11-03T05:05:47.133216+00:00",
+      "evidence_url": "https://coloradocyclist.com/products/vaast-bikes-e-1-xt-slx-27-5-e-bike-nostalgic-sea-blue-ocean-frost.js?currency=USD",
+      "response_sha256": "f98606d31831b63ddac51bbb06505dfb2568078dd02bece0ee04994685abc512",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Vaast Bikes E/1 XT/SLX 27.5 E-Bike - Nostalgic Sea Blue-Ocean Frost",
+        "variant": "48408222335216",
+        "sku": "GM111324-02",
+        "price_minor": 149999,
+        "reference_minor": 769999,
+        "currency": "USD",
+        "options": "Nostalgic Sea Blue - Ocean Frost / Medium",
+        "raw_options": [
+          "Nostalgic Sea Blue - Ocean Frost",
+          "Medium"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Nostalgic Sea Blue - Ocean Frost"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "Small",
+              "Medium",
+              "Large"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Vaast Bikes E/1 Enviolo 27.5 E-Bike - Vibrant Berry Red-Black Cherry",
+      "store": "Colorado Cyclist",
+      "offer": {
+        "variant_key": "48408222236912",
+        "url": "https://coloradocyclist.com/products/vaast-bikes-e-1-enviolo-27-5-e-bike-vibrant-berry-red-black-cherry?currency=USD&variant=48408222236912",
+        "current_price": 1999.99,
+        "original_price": 8699.99,
+        "size": "Medium",
+        "options": "Vibrant Berry Red - Black Cherry / Medium",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0761/3592/3952/files/VaastBikesE1Enviolo27.5E-Bike-VibrantBerryRed-BlackCherry_4fce3f0d-9e0e-4fb1-b9c3-fc008cd9d985.jpg?v=1765222053",
+        "reference_basis": "retailer_compare_at",
+        "discount": 77.0,
+        "savings": 6700.0
+      },
+      "checked_at": "2026-11-03T05:05:57.500490+00:00",
+      "evidence_url": "https://coloradocyclist.com/products/vaast-bikes-e-1-enviolo-27-5-e-bike-vibrant-berry-red-black-cherry.js?currency=USD",
+      "response_sha256": "6cc1aa574d9ab4baf1b88c9a557d12d8b207986f23befe0a51ca9727fddd2e22",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Vaast Bikes E/1 Enviolo 27.5 E-Bike - Vibrant Berry Red-Black Cherry",
+        "variant": "48408222236912",
+        "sku": "GM111324-05",
+        "price_minor": 199999,
+        "reference_minor": 869999,
+        "currency": "USD",
+        "options": "Vibrant Berry Red - Black Cherry / Medium",
+        "raw_options": [
+          "Vibrant Berry Red - Black Cherry",
+          "Medium"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Vibrant Berry Red - Black Cherry"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "Small",
+              "Medium",
+              "Large"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "S-Works Diverge STR Road Bike Frameset",
+      "store": "ERIK\u2019S Bike Shop",
+      "offer": {
+        "variant_key": "49445702140118",
+        "url": "https://www.eriksbikeshop.com/products/s-works-diverge-str-road-bike-frameset-pr5a17935?currency=USD&variant=49445702140118",
+        "current_price": 1999.99,
+        "original_price": 5499.99,
+        "size": "58CM",
+        "options": "SATIN FOREST GREEN/DARK MOSS GREEN/BLACK PEARL / 58CM",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0697/5252/0918/files/s-works-diverge-str-road-bike-frameset_forest-green_pr5a17935_hero.jpg?v=1784585310",
+        "reference_basis": "retailer_compare_at",
+        "discount": 63.6,
+        "savings": 3500.0
+      },
+      "checked_at": "2026-11-03T05:06:02.736366+00:00",
+      "evidence_url": "https://www.eriksbikeshop.com/products/s-works-diverge-str-road-bike-frameset-pr5a17935.js?currency=USD",
+      "response_sha256": "f02acb32aa53e205d1e1cc020d903d47e1cb62c38f1f9709d1184645429a0836",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "S-Works Diverge STR Road Bike Frameset",
+        "variant": "49445702140118",
+        "sku": "EK5A48238",
+        "price_minor": 199999,
+        "reference_minor": 549999,
+        "currency": "USD",
+        "options": "SATIN FOREST GREEN/DARK MOSS GREEN/BLACK PEARL / 58CM",
+        "raw_options": [
+          "SATIN FOREST GREEN/DARK MOSS GREEN/BLACK PEARL",
+          "58CM"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "SATIN FOREST GREEN/DARK MOSS GREEN/BLACK PEARL"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "58CM"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Specialized Turbo Vado SL 5.0 EQ Electric Bike",
+      "store": "ERIK\u2019S Bike Shop",
+      "offer": {
+        "variant_key": "46161239539926",
+        "url": "https://www.eriksbikeshop.com/products/specialized-2023-turbo-vado-sl-5-0-eq-electric-bike-pr5a12693?currency=USD&variant=46161239539926",
+        "current_price": 1999.99,
+        "original_price": 5249.99,
+        "size": "Xl",
+        "options": "Brushed Aluminum Black Relfective / Xl",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0697/5252/0918/files/314284.jpg?v=1726266600",
+        "reference_basis": "retailer_compare_at",
+        "discount": 61.9,
+        "savings": 3250.0
+      },
+      "checked_at": "2026-11-03T05:06:13.200191+00:00",
+      "evidence_url": "https://www.eriksbikeshop.com/products/specialized-2023-turbo-vado-sl-5-0-eq-electric-bike-pr5a12693.js?currency=USD",
+      "response_sha256": "a72a62aaf9bd396c3cc00c2316c5a7d8c85120a0f585d9779e35a89a1bb5b6c9",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Specialized Turbo Vado SL 5.0 EQ Electric Bike",
+        "variant": "46161239539926",
+        "sku": "EK5A24085",
+        "price_minor": 199999,
+        "reference_minor": 524999,
+        "currency": "USD",
+        "options": "Brushed Aluminum Black Relfective / Xl",
+        "raw_options": [
+          "Brushed Aluminum Black Relfective",
+          "Xl"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Brushed Aluminum Black Relfective"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "Xl"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "S-Works Stumpjumper Frameset",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "49396351697140",
+        "url": "https://gravitycoalition.com/products/s-works-stumpjumper-frameset?currency=USD&variant=49396351697140",
+        "current_price": 1149.99,
+        "original_price": 3000.0,
+        "size": "S1",
+        "options": "Satin Dusty Blue Pearl / Black / Carbon / S1",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/73322-01_SJ-SW-FRM-DSTBLU-BLK-CARB_HERO.jpg?v=1789480756",
+        "reference_basis": "retailer_compare_at",
+        "discount": 61.7,
+        "savings": 1850.01
+      },
+      "checked_at": "2026-11-03T05:06:18.660485+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/s-works-stumpjumper-frameset.js?currency=USD",
+      "response_sha256": "1de449604fd4027ec96bb0565be00f7d36866436ef716a037f09077a043f2ff7",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "S-Works Stumpjumper Frameset",
+        "variant": "49396351697140",
+        "sku": "73322-0101",
+        "price_minor": 114999,
+        "reference_minor": 300000,
+        "currency": "USD",
+        "options": "Satin Dusty Blue Pearl / Black / Carbon / S1",
+        "raw_options": [
+          "Satin Dusty Blue Pearl / Black / Carbon",
+          "S1"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Satin Dusty Blue Pearl / Black / Carbon"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S1",
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Heckler SL CC X0 Transmission Reserve",
+      "store": "Mike's Bikes",
+      "offer": {
+        "variant_key": "44649480618053",
+        "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-cc-x0-transmission-reserve-2024?currency=USD&variant=44649480618053",
+        "current_price": 4499.77,
+        "original_price": 11699.99,
+        "size": "XX-Large",
+        "options": "Silver / XX-Large",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Heckler-SL-CC-X0-Transmission-Reserve_Silver.jpg?v=1771368555",
+        "reference_basis": "retailer_compare_at",
+        "discount": 61.5,
+        "savings": 7200.22
+      },
+      "checked_at": "2026-11-03T05:06:28.989475+00:00",
+      "evidence_url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-cc-x0-transmission-reserve-2024.js?currency=USD",
+      "response_sha256": "de720a5d4fb2714a946edd2dba509bf05a970dd64ba7b3ff4a619de0e5d12586",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Heckler SL CC X0 Transmission Reserve",
+        "variant": "44649480618053",
+        "sku": "58-24299-187-6-824-663002-01",
+        "price_minor": 449977,
+        "reference_minor": 1169999,
+        "currency": "USD",
+        "options": "Silver / XX-Large",
+        "raw_options": [
+          "Silver",
+          "XX-Large"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Gloss Magenta",
+              "Silver"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "Large",
+              "X-Large",
+              "XX-Large"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "S-Works Stumpjumper Frameset",
+      "store": "Pro Bike Supply",
+      "offer": {
+        "variant_key": "42349827096631",
+        "url": "https://www.probikesupply.com/products/specialized-stumpjumper-s-works-frm-frame-satin-dusty-blue-pearl-black-carbon-s3?currency=USD&variant=42349827096631",
+        "current_price": 1199.99,
+        "original_price": 2999.99,
+        "size": "S1",
+        "options": "Satin Dusty Blue Pearl / Black / Carbon / S1",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0892/2046/files/73322-01_SJ-SW-FRM-DSTBLU-BLK-CARB_HERO_7ef87e02-6831-4836-aab8-50e1e8bd65c3.jpg?v=1785786878",
+        "reference_basis": "retailer_compare_at",
+        "discount": 60.0,
+        "savings": 1800.0
+      },
+      "checked_at": "2026-11-03T05:06:39.406495+00:00",
+      "evidence_url": "https://www.probikesupply.com/products/specialized-stumpjumper-s-works-frm-frame-satin-dusty-blue-pearl-black-carbon-s3.js?currency=USD",
+      "response_sha256": "3f2c4a57b820c6aa0574e8c40766a45925bbb98f09944e581db2d0e1eae2ad94",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "S-Works Stumpjumper Frameset",
+        "variant": "42349827096631",
+        "sku": "73322-0101",
+        "price_minor": 119999,
+        "reference_minor": 299999,
+        "currency": "USD",
+        "options": "Satin Dusty Blue Pearl / Black / Carbon / S1",
+        "raw_options": [
+          "Satin Dusty Blue Pearl / Black / Carbon",
+          "S1"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Satin Dusty Blue Pearl / Black / Carbon"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S1",
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Stumpjumper Frameset",
+      "store": "Gravity Coalition",
+      "offer": {
+        "variant_key": "49399117218036",
+        "url": "https://gravitycoalition.com/products/stumpjumper-frameset?currency=USD&variant=49399117218036",
+        "current_price": 1079.99,
+        "original_price": 2700.0,
+        "size": "S1",
+        "options": "Satin Copper / Black / S1",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/73322-70_SJ-FRM-COP-BLK_HERO.jpg?v=1789476198",
+        "reference_basis": "retailer_compare_at",
+        "discount": 60.0,
+        "savings": 1620.01
+      },
+      "checked_at": "2026-11-03T05:06:49.927951+00:00",
+      "evidence_url": "https://gravitycoalition.com/products/stumpjumper-frameset.js?currency=USD",
+      "response_sha256": "5f93d4cf5cb2b9f26556c424657dc7fa0df9d10d9a4771a9e34b7b97189b8c8f",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Stumpjumper Frameset",
+        "variant": "49399117218036",
+        "sku": "73322-7001",
+        "price_minor": 107999,
+        "reference_minor": 270000,
+        "currency": "USD",
+        "options": "Satin Copper / Black / S1",
+        "raw_options": [
+          "Satin Copper / Black",
+          "S1"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Satin Copper / Black"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S1",
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Stumpjumper Frameset",
+      "store": "Pro Bike Supply",
+      "offer": {
+        "variant_key": "42349599064119",
+        "url": "https://www.probikesupply.com/products/2022-specialized-stumpjumper-29-carbon-frameset-s2-satin-copper-black?currency=USD&variant=42349599064119",
+        "current_price": 1079.99,
+        "original_price": 2699.99,
+        "size": "S1",
+        "options": "Satin Copper / Black / S1",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0892/2046/files/73322-70_SJ-FRM-COP-BLK_HERO_0823d85c-cf72-425b-9853-0cf8271e4b84.jpg?v=1785786351",
+        "reference_basis": "retailer_compare_at",
+        "discount": 60.0,
+        "savings": 1620.0
+      },
+      "checked_at": "2026-11-03T05:06:55.159581+00:00",
+      "evidence_url": "https://www.probikesupply.com/products/2022-specialized-stumpjumper-29-carbon-frameset-s2-satin-copper-black.js?currency=USD",
+      "response_sha256": "e7f3a74792b0d111c81b836f582ed027879b9a9a98404afe0b6f6482428df651",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Stumpjumper Frameset",
+        "variant": "42349599064119",
+        "sku": "73322-7001",
+        "price_minor": 107999,
+        "reference_minor": 269999,
+        "currency": "USD",
+        "options": "Satin Copper / Black / S1",
+        "raw_options": [
+          "Satin Copper / Black",
+          "S1"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Satin Copper / Black"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S1",
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Heckler SL C S",
+      "store": "Mike's Bikes",
+      "offer": {
+        "variant_key": "40617095069765",
+        "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-s-2024?currency=USD&variant=40617095069765",
+        "current_price": 3499.77,
+        "original_price": 8699.99,
+        "size": "XX-Large",
+        "options": "Gloss Magenta / XX-Large",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Santa-Cruz-Heckler-SL-C-S_Gloss_Magenta.png?v=1747271140",
+        "reference_basis": "retailer_compare_at",
+        "discount": 59.8,
+        "savings": 5200.22
+      },
+      "checked_at": "2026-11-03T05:07:00.408691+00:00",
+      "evidence_url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-s-2024.js?currency=USD",
+      "response_sha256": "d142a44a7ad33394f65fba9255bd1f085fe3fc637e2d168ffb5544dd74af50ef",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Heckler SL C S",
+        "variant": "40617095069765",
+        "sku": "58-24298-148-6-825-652901-01",
+        "price_minor": 349977,
+        "reference_minor": 869999,
+        "currency": "USD",
+        "options": "Gloss Magenta / XX-Large",
+        "raw_options": [
+          "Gloss Magenta",
+          "XX-Large"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Matte Silver",
+              "Gloss Magenta"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "Medium",
+              "Large",
+              "XX-Large",
+              "X-Large"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Polygon Strattos 8 - Ultegra Di2 Carbon Endurance Bike",
+      "store": "BikesOnline",
+      "offer": {
+        "variant_key": "52037180260644",
+        "url": "https://bikesonline.com/products/polygon-strattos-8-ultegra-di2-carbon-endurance-bike?currency=USD&variant=52037180260644",
+        "current_price": 2699.99,
+        "original_price": 3299.99,
+        "size": "S",
+        "options": "S",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0847/4066/9732/files/PolygonStrattos8-UltegraDi2CarbonEnduranceBike_c1.jpg?v=1772693779",
+        "reference_basis": "retailer_compare_at",
+        "discount": 18.2,
+        "savings": 600.0
+      },
+      "checked_at": "2026-11-03T05:07:05.607310+00:00",
+      "evidence_url": "https://bikesonline.com/products/polygon-strattos-8-ultegra-di2-carbon-endurance-bike.js?currency=USD",
+      "response_sha256": "36bb06d805cc28b8b1597ed133ad95644ed32b3d0c9b147b345f6313ab92fa24",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Polygon Strattos 8 - Ultegra Di2 Carbon Endurance Bike",
+        "variant": "52037180260644",
+        "sku": "AIFPX28S8I4SG1",
+        "price_minor": 269999,
+        "reference_minor": 329999,
+        "currency": "USD",
+        "options": "S",
+        "raw_options": [
+          "S"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "XXS",
+              "XS",
+              "S",
+              "M",
+              "L",
+              "XL",
+              "XXL"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "BMC URS 01 LT ONE 2026",
+      "store": "Contender Bicycles",
+      "offer": {
+        "variant_key": "48508830580981",
+        "url": "https://contenderbicycles.com/products/bmc-urs-01-lt-one-2026?currency=USD&variant=48508830580981",
+        "current_price": 3499.99,
+        "original_price": 6299.0,
+        "size": "M",
+        "options": "Metallic White / Black / M",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/BMC_URS_01_LT_ONE_2026_Metallic_White_Black_Contender_Bicycles.jpg?v=1786504723",
+        "reference_basis": "retailer_compare_at",
+        "discount": 44.4,
+        "savings": 2799.01
+      },
+      "checked_at": "2026-11-03T05:07:16.108005+00:00",
+      "evidence_url": "https://contenderbicycles.com/products/bmc-urs-01-lt-one-2026.js?currency=USD",
+      "response_sha256": "3b16a77a43094fcd9028b3ef79dbd6bf41308adb488fb024c4fefc4eae0113ae",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "BMC URS 01 LT ONE 2026",
+        "variant": "48508830580981",
+        "sku": "30007080",
+        "price_minor": 349999,
+        "reference_minor": 629900,
+        "currency": "USD",
+        "options": "Metallic White / Black / M",
+        "raw_options": [
+          "Metallic White / Black",
+          "M"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Metallic White / Black"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "XS",
+              "S",
+              "M",
+              "L",
+              "XL"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Orbea Kemen SUV 40 20MPH 2024",
+      "store": "Contender Bicycles",
+      "offer": {
+        "variant_key": "44177727357173",
+        "url": "https://contenderbicycles.com/products/orbea-kemen-suv-40-20mph-2024?currency=USD&variant=44177727357173",
+        "current_price": 3107.16,
+        "original_price": 3883.95,
+        "size": "L",
+        "options": "Urban Green (Gloss) - Black (Matt) / L",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/Untitleddesign-2023-12-08T101935.025.jpg?v=1787165913",
+        "reference_basis": "retailer_compare_at",
+        "discount": 20.0,
+        "savings": 776.79
+      },
+      "checked_at": "2026-11-03T05:07:26.567822+00:00",
+      "evidence_url": "https://contenderbicycles.com/products/orbea-kemen-suv-40-20mph-2024.js?currency=USD",
+      "response_sha256": "9667f79fbfd0997acc95b6b12fbb9715fcd932ca4d4969d4eec466104faaaf9d",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Orbea Kemen SUV 40 20MPH 2024",
+        "variant": "44177727357173",
+        "sku": "210000147006",
+        "price_minor": 310716,
+        "reference_minor": 388395,
+        "currency": "USD",
+        "options": "Urban Green (Gloss) - Black (Matt) / L",
+        "raw_options": [
+          "Urban Green (Gloss) - Black (Matt)",
+          "L"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Urban Green (Gloss) - Black (Matt)",
+              "Mango (Gloss) - Black (Matt)",
+              "Metallic Night Black (Matt-Gloss)"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S",
+              "M",
+              "L",
+              "XL"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Orbea Kemen Tour 30 MID 28mph",
+      "store": "Contender Bicycles",
+      "offer": {
+        "variant_key": "45926249660661",
+        "url": "https://contenderbicycles.com/products/orbea-kemen-tour-30-mid-28mph?currency=USD&variant=45926249660661",
+        "current_price": 2992.49,
+        "original_price": 3988.95,
+        "size": "S",
+        "options": "Spaceship Green (Matt) / S",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/Orbea_Kemen_Tour_30_MID_28mph_Contender_Bicycles.jpg?v=1777949550",
+        "reference_basis": "retailer_compare_at",
+        "discount": 25.0,
+        "savings": 996.46
+      },
+      "checked_at": "2026-11-03T05:07:31.856262+00:00",
+      "evidence_url": "https://contenderbicycles.com/products/orbea-kemen-tour-30-mid-28mph.js?currency=USD",
+      "response_sha256": "057738783b0f615a467d78bdf56a79d3124a9a6c12eb5e1a70da3f1490b13e3f",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Orbea Kemen Tour 30 MID 28mph",
+        "variant": "45926249660661",
+        "sku": "210000157885",
+        "price_minor": 299249,
+        "reference_minor": 398895,
+        "currency": "USD",
+        "options": "Spaceship Green (Matt) / S",
+        "raw_options": [
+          "Spaceship Green (Matt)",
+          "S"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Ivory White (Gloss)",
+              "Spaceship Green (Matt)"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Pinarello Nytro E7 Road Ultegra Di2 2025",
+      "store": "Contender Bicycles",
+      "offer": {
+        "variant_key": "46528178159861",
+        "url": "https://contenderbicycles.com/products/pinarello-nytro-e7-road-ultegra-di2?currency=USD&variant=46528178159861",
+        "current_price": 8000.0,
+        "original_price": 9800.0,
+        "size": "53",
+        "options": "Electro Sky / 53",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/Pinarello_Nytro_E7_Road_Ultegra_Di2_Electro_Sky_Contender_Bicycles.jpg?v=1743784974",
+        "reference_basis": "retailer_compare_at",
+        "discount": 18.4,
+        "savings": 1800.0
+      },
+      "checked_at": "2026-11-03T05:07:37.089662+00:00",
+      "evidence_url": "https://contenderbicycles.com/products/pinarello-nytro-e7-road-ultegra-di2.js?currency=USD",
+      "response_sha256": "dc2736005e1c8980f8bf3fe3cc3740c23712781f34a3bb0519ede86ddb442f9c",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Pinarello Nytro E7 Road Ultegra Di2 2025",
+        "variant": "46528178159861",
+        "sku": "C1758174163-31781",
+        "price_minor": 800000,
+        "reference_minor": 980000,
+        "currency": "USD",
+        "options": "Electro Sky / 53",
+        "raw_options": [
+          "Electro Sky",
+          "53"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Electro Sky",
+              "Electro Green",
+              "Ghost Black",
+              "Power Blue"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "46",
+              "50",
+              "53",
+              "55",
+              "57.5",
+              "60"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "BMC Roadmachine 01 TWO 2026",
+      "store": "Contender Bicycles",
+      "offer": {
+        "variant_key": "48234741596405",
+        "url": "https://contenderbicycles.com/products/bmc-roadmachine-01-two-2026?currency=USD&variant=48234741596405",
+        "current_price": 9749.99,
+        "original_price": 12999.0,
+        "size": "54",
+        "options": "Sage Green / 54",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/Roadmachine_01_TWO_Sage_Green_Contender_Bicycles.jpg?v=1780940636",
+        "reference_basis": "retailer_compare_at",
+        "discount": 25.0,
+        "savings": 3249.01
+      },
+      "checked_at": "2026-11-03T05:07:42.358888+00:00",
+      "evidence_url": "https://contenderbicycles.com/products/bmc-roadmachine-01-two-2026.js?currency=USD",
+      "response_sha256": "e23dfd343806a7ff0da0bebf1e6386d3283dce24b257f166c17008900a273e4a",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "BMC Roadmachine 01 TWO 2026",
+        "variant": "48234741596405",
+        "sku": "30006995",
+        "price_minor": 974999,
+        "reference_minor": 1299900,
+        "currency": "USD",
+        "options": "Sage Green / 54",
+        "raw_options": [
+          "Sage Green",
+          "54"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Sage Green"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "47",
+              "51",
+              "54",
+              "56",
+              "58",
+              "61"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "2026 Turbo Levo SL 2 Expert Di2 Electric Full Suspension Mountain Bike",
+      "store": "Bike Mart",
+      "offer": {
+        "variant_key": "71242931536125",
+        "url": "https://www.bikemart.com/products/2026-turbo-levo-sl-2-expert-di2-full-suspension-electric-mountain-bike?currency=USD&variant=71242931536125",
+        "current_price": 7999.99,
+        "original_price": 9699.99,
+        "size": "S3",
+        "options": "Bordeaux / S3",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0705/8928/4605/files/96826-30_LEVO-SL-EXPERT-CARBON-DI2-BDXMET-WHT_HERO-PDP.png?v=1788446358",
+        "reference_basis": "retailer_compare_at",
+        "discount": 17.5,
+        "savings": 1700.0
+      },
+      "checked_at": "2026-11-03T05:07:47.548965+00:00",
+      "evidence_url": "https://www.bikemart.com/products/2026-turbo-levo-sl-2-expert-di2-full-suspension-electric-mountain-bike.js?currency=USD",
+      "response_sha256": "7e5f15aa4466420f9756f1fb03565ff97bd8948779e73a10e9f391a6e926fe40",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2026 Turbo Levo SL 2 Expert Di2 Electric Full Suspension Mountain Bike",
+        "variant": "71242931536125",
+        "sku": "SPE366244633",
+        "price_minor": 799999,
+        "reference_minor": 969999,
+        "currency": "USD",
+        "options": "Bordeaux / S3",
+        "raw_options": [
+          "Bordeaux",
+          "S3"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Bordeaux",
+              "Carbon"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S1",
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Transition Regulator CX XT 2025",
+      "store": "Pro Bike Supply",
+      "offer": {
+        "variant_key": "42446960623671",
+        "url": "https://www.probikesupply.com/products/transition-regulator-cx-xt-2025?currency=USD&variant=42446960623671",
+        "current_price": 7599.01,
+        "original_price": 9499.0,
+        "size": "X-Large",
+        "options": "Glacier White / X-Large",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0892/2046/files/C4-2026-Regulator-CX_9e1f958d-431f-4831-9883-1d1e9c453b4b.avif?v=1789590700",
+        "reference_basis": "retailer_compare_at",
+        "discount": 20.0,
+        "savings": 1899.99
+      },
+      "checked_at": "2026-11-03T05:07:58.092081+00:00",
+      "evidence_url": "https://www.probikesupply.com/products/transition-regulator-cx-xt-2025.js?currency=USD",
+      "response_sha256": "8710d30c8abaa014143fe1b3d66ef5d9811392a3521819ea969b23daa2e18cba",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Transition Regulator CX XT 2025",
+        "variant": "42446960623671",
+        "sku": "01.25.11.5134",
+        "price_minor": 759901,
+        "reference_minor": 949900,
+        "currency": "USD",
+        "options": "Glacier White / X-Large",
+        "raw_options": [
+          "Glacier White",
+          "X-Large"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Glacier White",
+              "Salish Sea Blue"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "X-Large"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Specialized Turbo Levo R Expert Electric Mountain Bike",
+      "store": "ERIK\u2019S Bike Shop",
+      "offer": {
+        "variant_key": "47875384017110",
+        "url": "https://www.eriksbikeshop.com/products/specialized-turbo-levo-r-expert-electric-mountain-bike-pr5a27769?currency=USD&variant=47875384017110",
+        "current_price": 7199.99,
+        "original_price": 8999.99,
+        "size": "S2",
+        "options": "Carbon/Burnt Gold Metallic / S2",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0697/5252/0918/files/specialized-turbo-levo-r-expert-electric-mountain-bike_carbon-burnt-gold-metallic_pr5a27769_a2cc.jpg?v=1772022272",
+        "reference_basis": "retailer_compare_at",
+        "discount": 20.0,
+        "savings": 1800.0
+      },
+      "checked_at": "2026-11-03T05:08:03.321731+00:00",
+      "evidence_url": "https://www.eriksbikeshop.com/products/specialized-turbo-levo-r-expert-electric-mountain-bike-pr5a27769.js?currency=USD",
+      "response_sha256": "a47d183282d4d4c83eb5a6e13dcd83384bc33ee3c13ebca771489c27626383bf",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Specialized Turbo Levo R Expert Electric Mountain Bike",
+        "variant": "47875384017110",
+        "sku": "EK5A102538",
+        "price_minor": 719999,
+        "reference_minor": 899999,
+        "currency": "USD",
+        "options": "Carbon/Burnt Gold Metallic / S2",
+        "raw_options": [
+          "Carbon/Burnt Gold Metallic",
+          "S2"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Pistachio/Dark Moss Green",
+              "Carbon/Burnt Gold Metallic"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S1",
+              "S6"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Transition Relay Alloy Deore 2025",
+      "store": "Pro Bike Supply",
+      "offer": {
+        "variant_key": "42446952529975",
+        "url": "https://www.probikesupply.com/products/transition-relay-alloy-deore-2025?currency=USD&variant=42446952529975",
+        "current_price": 3598.98,
+        "original_price": 5999.0,
+        "size": "X-Large",
+        "options": "Raw / X-Large",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0892/2046/files/C2_Relay_GXpnw_Raw.avif?v=1789590711",
+        "reference_basis": "retailer_compare_at",
+        "discount": 40.0,
+        "savings": 2400.02
+      },
+      "checked_at": "2026-11-03T05:08:08.546216+00:00",
+      "evidence_url": "https://www.probikesupply.com/products/transition-relay-alloy-deore-2025.js?currency=USD",
+      "response_sha256": "ef56b0c1c0bb77d4b6a5e71585ef125ac9f350ae048ed30d3a1d1acfd9ec7021",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Transition Relay Alloy Deore 2025",
+        "variant": "42446952529975",
+        "sku": "01.25.11.5056",
+        "price_minor": 359898,
+        "reference_minor": 599900,
+        "currency": "USD",
+        "options": "Raw / X-Large",
+        "raw_options": [
+          "Raw",
+          "X-Large"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Raw",
+              "Sea Salt"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "Large",
+              "X-Large",
+              "XX-Large"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Surly Disc Trucker Bike - 26\" Steel Pea Lime Soup 50cm",
+      "store": "Pro Bike Supply",
+      "offer": {
+        "variant_key": "41695641927735",
+        "url": "https://www.probikesupply.com/products/surly-disc-trucker-bike-26-steel-pea-lime-soup-50cm?currency=USD&variant=41695641927735",
+        "current_price": 1784.15,
+        "original_price": 2099.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0892/2046/files/BK1754_b1a3d1fe-2a22-4e56-b16f-1cfcee985ad0.jpg?v=1749171136",
+        "reference_basis": "retailer_compare_at",
+        "discount": 15.0,
+        "savings": 314.85
+      },
+      "checked_at": "2026-11-03T05:08:13.796949+00:00",
+      "evidence_url": "https://www.probikesupply.com/products/surly-disc-trucker-bike-26-steel-pea-lime-soup-50cm.js?currency=USD",
+      "response_sha256": "de3c3bfc977c0a3c91fc1d916157c9f0331f30933e8d2371e7b7f03f5f03a094",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Surly Disc Trucker Bike - 26\" Steel Pea Lime Soup 50cm",
+        "variant": "41695641927735",
+        "sku": "BK1753",
+        "price_minor": 178415,
+        "reference_minor": 209900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Bianchi Sprint 105 Di2 Disc - SX CK16-Black Full Glossy",
+      "store": "Colorado Cyclist",
+      "offer": {
+        "variant_key": "48408412717296",
+        "url": "https://coloradocyclist.com/products/bianchi-sprint-105-di2-disc-sx-ck16-black-full-glossy?currency=USD&variant=48408412717296",
+        "current_price": 3499.99,
+        "original_price": 3650.0,
+        "size": "57cm (22.5\")",
+        "options": "SX - CK16 - Black Full Glossy / 57cm (22.5\")",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0761/3592/3952/files/BianchiSprint105Di2Disc-SXCK16-BlackFullGlossy.jpg?v=1765224173",
+        "reference_basis": "retailer_compare_at",
+        "discount": 4.1,
+        "savings": 150.01
+      },
+      "checked_at": "2026-11-03T05:08:19.027949+00:00",
+      "evidence_url": "https://coloradocyclist.com/products/bianchi-sprint-105-di2-disc-sx-ck16-black-full-glossy.js?currency=USD",
+      "response_sha256": "89ebb822b3c320bf699fbb4b18d8616971b2035abe4ba7dc8f76c03aa63d0b74",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Bianchi Sprint 105 Di2 Disc - SX CK16-Black Full Glossy",
+        "variant": "48408412717296",
+        "sku": "GM061725-45",
+        "price_minor": 349999,
+        "reference_minor": 365000,
+        "currency": "USD",
+        "options": "SX - CK16 - Black Full Glossy / 57cm (22.5\")",
+        "raw_options": [
+          "SX - CK16 - Black Full Glossy",
+          "57cm (22.5\")"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "SX - CK16 - Black Full Glossy"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "55cm (21.5\")",
+              "57cm (22.5\")",
+              "59cm (23\")"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Orbea Orca M21eTEAM PWR 2024",
+      "store": "Contender Bicycles",
+      "offer": {
+        "variant_key": "45567060115701",
+        "url": "https://contenderbicycles.com/products/orbea-orca-m21eteam-pwr-2024?currency=USD&variant=45567060115701",
+        "current_price": 5248.95,
+        "original_price": 7243.95,
+        "size": "49",
+        "options": "Slate Blue-Halo Silver (Matt) / 49",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/Untitleddesign-2024-06-13T111746.865.jpg?v=1718312363",
+        "reference_basis": "retailer_compare_at",
+        "discount": 27.5,
+        "savings": 1995.0
+      },
+      "checked_at": "2026-11-03T05:08:24.280862+00:00",
+      "evidence_url": "https://contenderbicycles.com/products/orbea-orca-m21eteam-pwr-2024.js?currency=USD",
+      "response_sha256": "d4db525d9d0050930583e9272f4901702ea67c0913e5c1d146ec93bbe2d53d39",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Orbea Orca M21eTEAM PWR 2024",
+        "variant": "45567060115701",
+        "sku": "210000153352",
+        "price_minor": 524895,
+        "reference_minor": 724395,
+        "currency": "USD",
+        "options": "Slate Blue-Halo Silver (Matt) / 49",
+        "raw_options": [
+          "Slate Blue-Halo Silver (Matt)",
+          "49"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Ivory White-Burgundy (Gloss)-Vulcano (Matt)",
+              "Vulcano-Black(Matt) - Black(Gloss)",
+              "Slate Blue-Halo Silver (Matt)",
+              "Wine Red - Titanium (Gloss)"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "47",
+              "49",
+              "51",
+              "53",
+              "55",
+              "57",
+              "60"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Mondraker CRAFTY CARBON RR SL 2026",
+      "store": "Pro Bike Supply",
+      "offer": {
+        "variant_key": "42443351982135",
+        "url": "https://www.probikesupply.com/products/2026-mondraker-crafty-carbon-rr-sl?currency=USD&variant=42443351982135",
+        "current_price": 11199.0,
+        "original_price": 13999.0,
+        "size": "Small",
+        "options": "Black/Black / Small",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0892/2046/files/010.26US319.jpg?v=1789491892",
+        "reference_basis": "retailer_compare_at",
+        "discount": 20.0,
+        "savings": 2800.0
+      },
+      "checked_at": "2026-11-03T05:08:29.536780+00:00",
+      "evidence_url": "https://www.probikesupply.com/products/2026-mondraker-crafty-carbon-rr-sl.js?currency=USD",
+      "response_sha256": "0bba0176c4811e9c886ade0cfdefd0912a681029d4d3c5944fa3e4f49296cf84",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Mondraker CRAFTY CARBON RR SL 2026",
+        "variant": "42443351982135",
+        "sku": "010.26US319",
+        "price_minor": 1119900,
+        "reference_minor": 1399900,
+        "currency": "USD",
+        "options": "Black/Black / Small",
+        "raw_options": [
+          "Black/Black",
+          "Small"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Black/Black"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "Small",
+              "Medium",
+              "Medium/Large",
+              "Large"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Orbea Wild ST H20 20MPH",
+      "store": "Contender Bicycles",
+      "offer": {
+        "variant_key": "46922493985013",
+        "url": "https://contenderbicycles.com/products/orbea-wild-st-h20-20mph?currency=USD&variant=46922493985013",
+        "current_price": 4999.0,
+        "original_price": 6298.95,
+        "size": "L",
+        "options": "Halo Silver (Gloss) / L",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/Orbea_Wild_ST_H20_20MPH_Silver_Contender_Bicycles.jpg?v=1756515750",
+        "reference_basis": "retailer_compare_at",
+        "discount": 20.6,
+        "savings": 1299.95
+      },
+      "checked_at": "2026-11-03T05:08:34.772530+00:00",
+      "evidence_url": "https://contenderbicycles.com/products/orbea-wild-st-h20-20mph.js?currency=USD",
+      "response_sha256": "a622adb40ee06609b0fe76fdc4b09e0fccf4a65f35f17186919cbbd4fa00124c",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Orbea Wild ST H20 20MPH",
+        "variant": "46922493985013",
+        "sku": "210000164056",
+        "price_minor": 499900,
+        "reference_minor": 629895,
+        "currency": "USD",
+        "options": "Halo Silver (Gloss) / L",
+        "raw_options": [
+          "Halo Silver (Gloss)",
+          "L"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Halo Silver (Gloss)",
+              "Diamond Black - Blue Stone (Matt)"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S",
+              "M",
+              "L",
+              "XL"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Soloist Rival AXS",
+      "store": "Mike's Bikes",
+      "offer": {
+        "variant_key": "42800974987333",
+        "url": "https://mikesbikes.com/products/cervelo-soloist-rival-axs?currency=USD&variant=42800974987333",
+        "current_price": 5359.95,
+        "original_price": 6699.99,
+        "size": "51",
+        "options": "Dark Slate / 51",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Soloist-Rival-AXS_Dark-Slate.jpg?v=1752106694",
+        "reference_basis": "retailer_compare_at",
+        "discount": 20.0,
+        "savings": 1340.04
+      },
+      "checked_at": "2026-11-03T05:08:39.998236+00:00",
+      "evidence_url": "https://mikesbikes.com/products/cervelo-soloist-rival-axs.js?currency=USD",
+      "response_sha256": "ddf7d9fda39dfcaebcdd8fde115cac0a856e89727bf97ddc562b570091c9848e",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Soloist Rival AXS",
+        "variant": "42800974987333",
+        "sku": "0L0STAVX1C51",
+        "price_minor": 535995,
+        "reference_minor": 669999,
+        "currency": "USD",
+        "options": "Dark Slate / 51",
+        "raw_options": [
+          "Dark Slate",
+          "51"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Serpentine",
+              "Dark Slate"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "48",
+              "51",
+              "54",
+              "56",
+              "58",
+              "61"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Salsa Warbird C Rival GX Eagle AXS Bike - 700c Carbon Lilac 59cm",
+      "store": "Pro Bike Supply",
+      "offer": {
+        "variant_key": "41497963888695",
+        "url": "https://www.probikesupply.com/products/salsa-warbird-c-rival-gx-eagle-axs-bike-700c-carbon-lilac-59cm?currency=USD&variant=41497963888695",
+        "current_price": 4844.15,
+        "original_price": 5699.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0892/2046/files/BK01428_21c087a1-5964-4029-8c33-83b1b38db711.jpg?v=1739572427",
+        "reference_basis": "retailer_compare_at",
+        "discount": 15.0,
+        "savings": 854.85
+      },
+      "checked_at": "2026-11-03T05:08:45.223512+00:00",
+      "evidence_url": "https://www.probikesupply.com/products/salsa-warbird-c-rival-gx-eagle-axs-bike-700c-carbon-lilac-59cm.js?currency=USD",
+      "response_sha256": "40285ebae618e5449369e3618aef0f842ec010e9c8d5b836684d87dc9c675706",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Salsa Warbird C Rival GX Eagle AXS Bike - 700c Carbon Lilac 59cm",
+        "variant": "41497963888695",
+        "sku": "06-003650",
+        "price_minor": 484415,
+        "reference_minor": 569900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Orbea Orca M35i 2025",
+      "store": "Contender Bicycles",
+      "offer": {
+        "variant_key": "45788366176501",
+        "url": "https://contenderbicycles.com/products/orbea-orca-m35i-2025?currency=USD&variant=45788366176501",
+        "current_price": 3148.95,
+        "original_price": 4198.95,
+        "size": "53",
+        "options": "Wine Red Carbon View-Titanium (Gloss) / 53",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/bike-product-image_900px_abed12f8-cc27-4e9c-b4b7-283f6f3d8e41.jpg?v=1724096952",
+        "reference_basis": "retailer_compare_at",
+        "discount": 25.0,
+        "savings": 1050.0
+      },
+      "checked_at": "2026-11-03T05:08:50.505162+00:00",
+      "evidence_url": "https://contenderbicycles.com/products/orbea-orca-m35i-2025.js?currency=USD",
+      "response_sha256": "930f7ae82bbfd42fbfe214c6f1f12feeb19d5314c3de6abd5d66a9540914bcb3",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Orbea Orca M35i 2025",
+        "variant": "45788366176501",
+        "sku": "S11053CB",
+        "price_minor": 314895,
+        "reference_minor": 419895,
+        "currency": "USD",
+        "options": "Wine Red Carbon View-Titanium (Gloss) / 53",
+        "raw_options": [
+          "Wine Red Carbon View-Titanium (Gloss)",
+          "53"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Slate Blue-Halo Silver (Matt)",
+              "Ivory White-Burgundy (Gloss)-Vulcano (Matt)",
+              "Vulcano-Black(Matt) Black(Gloss)",
+              "Wine Red Carbon View-Titanium (Gloss)"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "47",
+              "49",
+              "51",
+              "53",
+              "55",
+              "57",
+              "60"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Caledonia-5 Dura-Ace Di2",
+      "store": "Mike's Bikes",
+      "offer": {
+        "variant_key": "44051988348997",
+        "url": "https://mikesbikes.com/products/cervelo-caledonia-5-dura-ace-di2?currency=USD&variant=44051988348997",
+        "current_price": 11249.95,
+        "original_price": 12499.99,
+        "size": "51",
+        "options": "Emerald/Cream / 51",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Caledonia-5-Dura-Ace-Di2_Emerald-Cream.jpg?v=1764714235",
+        "reference_basis": "retailer_compare_at",
+        "discount": 10.0,
+        "savings": 1250.04
+      },
+      "checked_at": "2026-11-03T05:08:55.707005+00:00",
+      "evidence_url": "https://mikesbikes.com/products/cervelo-caledonia-5-dura-ace-di2.js?currency=USD",
+      "response_sha256": "f526b562ce80b93ac32bfdb96f4b6738abc2fadff59f0a2b9247fddcae07cdb9",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Caledonia-5 Dura-Ace Di2",
+        "variant": "44051988348997",
+        "sku": "0L0CFBDI1C51",
+        "price_minor": 1124995,
+        "reference_minor": 1249999,
+        "currency": "USD",
+        "options": "Emerald/Cream / 51",
+        "raw_options": [
+          "Emerald/Cream",
+          "51"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Emerald/Cream"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "48",
+              "51",
+              "54",
+              "56",
+              "58",
+              "61"
+            ]
+          }
+        ],
+        "available": true
+      }
+    },
+    {
+      "name": "Rouvida Rival XPLR AXS 1 Road",
+      "store": "Mike's Bikes",
+      "offer": {
+        "variant_key": "44052175650885",
+        "url": "https://mikesbikes.com/products/cervelo-rouvida-rival-xplr-axs-1-road?currency=USD&variant=44052175650885",
+        "current_price": 6614.95,
+        "original_price": 7349.99,
+        "size": "Large",
+        "options": "Blackout / Large",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Rouvida-Rival-XPLR-AXS-1-Road_Blackout.jpg?v=1764711419",
+        "reference_basis": "retailer_compare_at",
+        "discount": 10.0,
+        "savings": 735.04
+      },
+      "checked_at": "2026-11-03T05:09:00.978397+00:00",
+      "evidence_url": "https://mikesbikes.com/products/cervelo-rouvida-rival-xplr-axs-1-road.js?currency=USD",
+      "response_sha256": "ffba00311f5d700ab40bd923241d6ad1930230fe95fa910cf1d0a35658ba7eeb",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Rouvida Rival XPLR AXS 1 Road",
+        "variant": "44052175650885",
+        "sku": "0L0ERAXI1CLG",
+        "price_minor": 661495,
+        "reference_minor": 734999,
+        "currency": "USD",
+        "options": "Blackout / Large",
+        "raw_options": [
+          "Blackout",
+          "Large"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Blackout"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "Small",
+              "Medium",
+              "Large",
+              "X-Large"
+            ]
+          }
+        ],
+        "available": true
+      }
+    }
+  ]
+}

@@ -6,6 +6,8 @@ All I/O is async. New static parsers inherit `deal_common.parsers.base.BaseParse
 
 Every product path must preserve `image_url`, price, category, brand, and size/length behavior. Image extraction uses Shopify `images[0].src` or browser `data-src || src`. Price parsing must accept decimal and whole-dollar comma prices.
 
+Ski Essentials Show More can be covered by its newsletter dialog. Dismiss only the observed `POPUP Form` close control on that retailer; keep the increasing-product-count wait and pagination-error reporting. An accepted click alone is not traversal proof. Cumulative listing DOM counts are not unique product counts.
+
 ## Data-quality invariants
 
 1. Test categorization before scraping; miscategorized products pollute durable snapshots.
@@ -29,6 +31,7 @@ Never run a live scrape, review fetch, browser session, auth sync, invite genera
 - A Shopify offer destination must stay on its product path and carry exactly the matching `variant` query ID. Grizzly's single-SKU product pages instead require the configured Grizzly parser, an exact SKU/path-suffix match, identical product/offer URLs, explicit USD price and strikethrough reference, and new/in-stock evidence. Never invent a Shopify variant query for a SKU page or relax Shopify validation for other sources.
 - Variant history matches source, product URL/name/brand and variant ID/options/destination. Count distinct UTC observation dates; incomplete refreshes do not create observations. Catalog currency is fixed to USD. Package builds must preserve the last 45 days of configured-source observations.
 - Competitive evidence lives in `docs/COMPETITIVE-BENCHMARK.md` and dated `docs/benchmarks/` records. Unmeasured, provider-claimed or incomparable values cannot justify a market-leading claim.
+- Retailer taxonomy such as Bike Lock, Bike Pumps, Bike Part and Bike Maintenance identifies accessories even though it contains Bike. Cable lengths and tire-width dimensions cannot satisfy a frame-size request. Fulfillment messages in a vendor field are not manufacturer or stock evidence; retain unknown manufacturer status rather than inventing a brand.
 
 ## Catalog freshness, observations and merchant audits
 

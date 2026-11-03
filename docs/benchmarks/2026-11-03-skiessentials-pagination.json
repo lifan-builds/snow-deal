@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-03",
+  "method": "production-browser-extractor-six-collections",
+  "change": "Dismiss exact observed newsletter dialog before Show More",
+  "collection_outcomes": [
+    {
+      "url": "https://www.skiessentials.com/collections/alpine-skis",
+      "pages": 24,
+      "products": 14390,
+      "status": "complete"
+    },
+    {
+      "url": "https://www.skiessentials.com/collections/snowboards",
+      "pages": 4,
+      "products": 480,
+      "status": "complete"
+    },
+    {
+      "url": "https://www.skiessentials.com/collections/ski-boots",
+      "pages": 7,
+      "products": 1304,
+      "status": "complete"
+    },
+    {
+      "url": "https://www.skiessentials.com/collections/snowboard-boots",
+      "pages": 1,
+      "products": 39,
+      "status": "complete"
+    },
+    {
+      "url": "https://www.skiessentials.com/collections/alpine-ski-bindings",
+      "pages": 3,
+      "products": 254,
+      "status": "complete"
+    },
+    {
+      "url": "https://www.skiessentials.com/collections/snowboard-bindings",
+      "pages": 2,
+      "products": 125,
+      "status": "complete"
+    }
+  ],
+  "unique_products": 1853,
+  "discounted_deals": 899,
+  "category_counts": {
+    "skis": 626,
+    "snowboards": 101,
+    "null": 4,
+    "bindings": 63,
+    "ski boots": 78,
+    "snowboard boots": 27
+  },
+  "limitation": "Listing extraction does not establish exact size or independently confirm stock. Collection products counts are cumulative DOM occurrences, not unique inventory. No deployment in this probe.",
+  "category_counts_after_verified_model_rules": {
+    "skis": 627,
+    "snowboards": 101,
+    "bindings": 63,
+    "ski boots": 80,
+    "accessories": 1,
+    "snowboard boots": 27
+  },
+  "classification_evidence_urls": [
+    "https://www.skiessentials.com/products/2024-rossignol-hero-athlete-mogul-accelere",
+    "https://www.skiessentials.com/products/sidas-cambrelle-covers",
+    "https://www.skiessentials.com/products/lange-rs-j-65-2020",
+    "https://www.skiessentials.com/products/lange-world-cup-rs-zsoft-22"
+  ],
+  "classification_evidence_note": "Merchant descriptions establish model type only. Cached search extracts are not used as current price or stock evidence."
+}

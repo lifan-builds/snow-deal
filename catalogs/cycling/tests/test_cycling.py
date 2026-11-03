@@ -29,6 +29,15 @@ from deal_common.models import Product
     ("Pivot Firebird Blemish", "Mountain Bikes", None),
     ("Pivot Shuttle BLEM", "Electric Bikes", None),
     ("Display Trail Model", "Display Mountain Bikes", None),
+    ("Rhinodillos Tire Liner", "Bike Maintenance", None),
+    ("Kryptonite Krytoflex Cable", "Bike Lock", None),
+    ("Fabric Mini Pump", "Bike Pumps", None),
+    ("POC Ora Clarity Goggle", "Bike goggle", None),
+    ("MSW Miniac GO GPS Bike Computer", "Bike Computers and Heart Rate Monitors", None),
+    ("Lezyne KTV Drive Headlight and Taillight Set", "Bike Lights", None),
+    ("Shimano Stainless DERAILLEUR Cable and Housing Set", "Bike Part", None),
+    ("Shimano SM-MA-F180P/P2 Disc Brake Adaptor", "Bike Part", None),
+    ("Commuter Electric Bike with Lights", "Electric Bikes", "Electric bikes"),
 ])
 def test_scope(name, kind, expected):
     actual = classify(Product(name, "https://example.com", 500, 2000, product_type=kind))
@@ -68,14 +77,17 @@ def test_manufacturer_name_is_not_bicycle_product_evidence():
 
 
 @pytest.mark.parametrize('value', ['M', 'MD', 'LG', 'X-Large', 'Medium/Large', 'S3 (29)',
-                                  '58CM', '20.5in', 'M #MWS Options 1', 'One Size Fits Most'])
+                                  '58CM', '20.5in', 'M #MWS Options 1', 'One Size Fits Most',
+                                  '26 TALL', '49cm (19.25")', 'M (29" wheel)'])
 def test_supported_frame_size_values(value):
     import re
     from cycling_deals.catalog import FRAME_SIZE_PATTERN
     assert re.fullmatch(FRAME_SIZE_PATTERN, value, re.I)
 
 
-@pytest.mark.parametrize('value', ['Turquoise', 'Cobalt', 'Raw Carbon', '24" wheel'])
+@pytest.mark.parametrize('value', ['Turquoise', 'Cobalt', 'Raw Carbon', '24" wheel',
+                                  '2.5 foot SeatSaver Cable', '4 foot', '7 feet',
+                                  '20 x 2.0-2.125', '26 x 2.0-2.125'])
 def test_mislabeled_color_or_wheel_size_is_not_frame_size(value):
     import json
     from cycling_deals.catalog import CATALOG

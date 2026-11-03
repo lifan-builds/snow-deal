@@ -644,6 +644,10 @@ SNOWBOARD_BOOT_MODEL_NAMES: set[str] = {
 # Multi-word model names — checked via substring match on lowered name
 # Format: (phrase, category)
 MULTI_WORD_MODEL_NAMES: list[tuple[str, str]] = [
+    # Verified model-only titles from Ski Essentials; require the manufacturer.
+    ("rossignol hero athlete mogul", "skis"),
+    ("lange rs j 65", "ski boots"),
+    ("lange world cup rs zsoft", "ski boots"),
     # Skis
     ("black pearl", "skis"),
     ("santa ana", "skis"),

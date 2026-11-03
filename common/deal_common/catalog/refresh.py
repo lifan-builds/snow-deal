@@ -1,5 +1,6 @@
 """Bounded source refreshes keep previous complete data on a partial response."""
 import asyncio
+import re
 from dataclasses import asdict
 from datetime import UTC, datetime
 from pathlib import Path
@@ -57,6 +58,10 @@ def normalize(products, catalog: Catalog, domain: str, *, parser_type: str = "sh
         if not offers:
             continue
         original_brand = (product.brand or "Unspecified").strip()
+        # Some storefronts put fulfillment messages in Shopify's vendor field.
+        # They establish neither a manufacturer nor variant stock evidence.
+        if re.fullmatch(r"in stock|out of stock|esd[:：].*", original_brand, re.IGNORECASE):
+            original_brand = "Unspecified"
         row = {"name": product.name, "url": product.url,
                "brand": brands.get(original_brand.casefold(), original_brand),
                "source_category": product.product_type,

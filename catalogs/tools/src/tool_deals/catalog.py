@@ -10,6 +10,8 @@ def classify(product: Product) -> Classification | None:
     title = product.name.casefold()
     kind = (product.product_type or "").casefold()
     text = f"{title} {kind}"
+    if re.search(r"\b(?:pepper|salt|coffee|spice|meat|food) (?:ball )?grinders?\b", text):
+        return None
     if {tag.casefold().strip().replace("_", " ") for tag in product.tags} & {
             "used", "pre-owned", "refurbished", "reconditioned", "open box", "pickup only", "in store only",
             "demo", "showroom", "display model"}:

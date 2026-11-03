@@ -146,3 +146,11 @@ Run `41576984053` produced 30/30 matching tools audit samples and a valid eight-
 ## Source follow-up integration — 2026-11-03 UTC
 
 Merged production recovery through `0530cad` into the unpublished Taylor/Fasteners/Gravity branch. Kept Grizzly excluded, preserved the new feeds, and applied the shared bounded audit retries to Taylor. Resolved import/documentation conflicts without losing either task history. All 454 offline tests, Ruff 0.17.3 CI checks plus changed HTTP/parser tests, JavaScript syntax and whitespace checks pass. This is local integration, not approval or evidence of production admission for the three additional feeds.
+
+## Approved rollout verified — 2026-11-03 UTC
+
+Repaired the Gmail OAuth rejection, completed the scoped verification-code lookup and updated the GitHub Vercel secret. Catalog run `41580573050` passed both 30/30 merchant audits, deployment and exact production hash checks. Live smoke checks passed at 05:00 UTC. Snow run `41576089057` also succeeded. Current counts, hashes, source limitations and unpublished follow-up scope are recorded in `docs/CATALOG-RELEASE-RECEIPT.md`; all-metric competitive leadership remains unproven.
+
+## Source and quality admission — 2026-11-03 UTC
+
+Fresh combined refreshes completed for 17 cycling and ten tools sources; both merchant audits matched 30/30. Local eligible/deep/useful-retailer counts are cycling 1,170/93/12 and tools 607/24/5. Ski Essentials now completes all six collections after a narrowly scoped newsletter dismissal (1,853 unique products, 899 discounts). Model/category regressions, bike accessory taxonomy, invalid frame dimensions and non-manufacturer vendor labels were corrected. Targeted rechecks preserved the eligible audited offer maps. Desktop/mobile inspection caught and fixed clipped square images. Benchmark comparisons now reject local layout and out-of-window speed evidence. All 489 tests and scoped checks pass. See `docs/SOURCE-QUALITY-RELEASE-PLAN.md` for the concrete unpublished release and retained admission evidence.

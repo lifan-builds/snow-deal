@@ -63,6 +63,9 @@ from deal_common.models import Product
     ('Demo CNC Router', "CNC Router", None, "", ""),
     ('CNC Router with Digital Display', "CNC Router", "Workshop equipment", "Not specified", ""),
     ("20V Brushless Handheld Planer - Tool Only", "Planers", "Power tools", "Bare tool", ""),
+    ("Chef'n Plastic Pepper Ball Grinder", "Pepper Ball Grinder", None, "", ""),
+    ("Electric Coffee Grinder", "Grinders", None, "", ""),
+    ("Brushless Angle Grinder", "Grinders", "Power tools", "Not specified", ""),
 ])
 def test_scope_package_and_platform(name, kind, category, form, platform):
     actual = classify(Product(name, "https://example.com", 200, 500, product_type=kind))
@@ -77,7 +80,8 @@ def test_brand_aliases_merge_only_explicit_manufacturer_names():
     from deal_common.catalog.refresh import normalize
     from deal_common.offers import VariantOffer
     for brand, expected in [("Sawstop", "SawStop"), ("Jet Tools", "JET"), ("Kreg Tool", "Kreg"),
-                            ("Different Tools", "Different Tools")]:
+                            ("Different Tools", "Different Tools"), ("In Stock", "Unspecified"),
+                            ("ESD：Nov.30（Black）", "Unspecified")]:
         product = Product("Table Saw", "https://example.com/products/saw", 200, 500, brand=brand,
                           offers=[VariantOffer(variant_key="1", url="https://example.com/products/saw?variant=1",
                                                current_price=200, original_price=500, availability="in_stock")])

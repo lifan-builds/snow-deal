@@ -45,7 +45,7 @@ def explicit_non_equipment_category(name: str) -> str | None:
     # A replacement lens is not a whole goggle. Bundled bonus lenses stay goggles.
     if re.search(r"\b(?:replacement|replaement|repl|rep) lens(?:es)?\b", text):
         return "accessories"
-    if re.search(r"\b(?:pole baskets?|boot dryers?|insoles?|outsoles?)\b", text):
+    if re.search(r"\b(?:pole baskets?|boot dryers?|insoles?|outsoles?|sidas cambrelle covers?)\b", text):
         return "accessories"
     if re.search(r"\b(?:backpacks?|boot (?:pack|locker|caps?)|footbeds?|helmet covers?|hardshell helmet top|hardshell top helmet|ski (?:leash|lock)|snowboard leash|climbing skins?|splitboard skins?|tip loop|spare parts|universal dis[ck]|heat elements|skicase|freeride spacer|alpine sole|toe warmers?|crampons?|snowshoes?|suspenders|cable lock|torque driver)\b", text):
         return "accessories"

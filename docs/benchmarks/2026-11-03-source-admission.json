@@ -1,0 +1,1217 @@
+{
+  "date": "2026-11-03",
+  "environment": "local-prepared-release",
+  "publication": "pending",
+  "catalogs": {
+    "cycling": {
+      "inventory": {
+        "catalog": "cycling",
+        "measured_at": "2026-11-03T05:05:47.529998+00:00",
+        "reference_floor": 1000,
+        "scope": "snapshot-listed offers; not independent merchant verification or unique model count",
+        "eligible_in_stock_listings": 1170,
+        "deep_deal_listings": 93,
+        "useful_retailers": [
+          "Bicycle Warehouse",
+          "Bike Mart",
+          "BikesOnline",
+          "Colorado Cyclist",
+          "Contender Bicycles",
+          "ERIK\u2019S Bike Shop",
+          "Gravity Coalition",
+          "Mike's Bikes",
+          "Planet Cyclery",
+          "Pro Bike Supply",
+          "The Path Bike Shop",
+          "Worldwide Cyclery"
+        ],
+        "checked_within_24h_percent": 100.0,
+        "exact_size_facets": [
+          "2.5 foot SeatSaver Cable",
+          "20 x 2.0-2.125",
+          "20.5in",
+          "20.5tt",
+          "22\"",
+          "26 TALL",
+          "26 x 2.0-2.125",
+          "30 foot",
+          "4 foot",
+          "43",
+          "44",
+          "46",
+          "46.5",
+          "47",
+          "48",
+          "48cm (19\")",
+          "49",
+          "49cm",
+          "49cm (19.25\")",
+          "50",
+          "50cm",
+          "50cm (19.75\")",
+          "51",
+          "51.5",
+          "51cm",
+          "52",
+          "52cm",
+          "52cm (20.5\")",
+          "53",
+          "53cm",
+          "53cm (21\")",
+          "54",
+          "54CM",
+          "54cm",
+          "54cm (21\")",
+          "54cm (21.25\")",
+          "55",
+          "56",
+          "56CM",
+          "56cm",
+          "56cm (22\")",
+          "57",
+          "57.5",
+          "57cm (22.5\")",
+          "58",
+          "58CM",
+          "58cm",
+          "59.5",
+          "60",
+          "61",
+          "61cm",
+          "62",
+          "7 foot",
+          "All",
+          "L",
+          "L (29\" wheel)",
+          "L - 630wh Battery",
+          "LARGE",
+          "LG",
+          "LG (29)",
+          "LG (5'10\" - 6'3\")",
+          "LG (5'10\" - 6'4\")",
+          "LG (5'5\" - 5'10\")",
+          "Large",
+          "Large MX",
+          "Large/X-Large",
+          "M",
+          "M #MWS Options 1",
+          "M #MWS Options 11",
+          "M (29\" wheel)",
+          "MD",
+          "MD (5' - 5'6\")",
+          "MD (5'5\" - 5'10\")",
+          "MD (5'6\" - 5'10\")",
+          "MD (MX)",
+          "MEDIUM",
+          "ML",
+          "ML (29\" wheel)",
+          "Medium",
+          "Medium (29\")",
+          "Medium - 54cm - ( Riders 5'9\" - 6'1\")",
+          "Medium 29",
+          "Medium MX",
+          "Medium/Large",
+          "One Size",
+          "One Size Fits Most",
+          "One size fits most",
+          "R",
+          "Regular",
+          "S",
+          "S #MWS Options 13",
+          "S #MWS Options 5",
+          "S (27.5\" wheel)",
+          "S/M",
+          "S1",
+          "S1 (MX)",
+          "S1 (SM)",
+          "S2",
+          "S2 (MX)",
+          "S3",
+          "S3 (29)",
+          "S3 - 29",
+          "S4",
+          "S4 (29)",
+          "S4 - 29",
+          "S5",
+          "S5 (29)",
+          "S5 - 29",
+          "S6",
+          "S6 (29)",
+          "S6 - 29",
+          "SM",
+          "SM (4'10\" - 5'6\")",
+          "SM (5' - 5'6\")",
+          "SM (MX)",
+          "SMALL",
+          "Size 2",
+          "Size 3",
+          "Small",
+          "Small (29)",
+          "Small MX",
+          "Small/Medium",
+          "X-LARGE",
+          "X-Large",
+          "X-Medium",
+          "X-Small",
+          "XL",
+          "XL #MWS Options 9",
+          "XL (29\" wheel)",
+          "XM",
+          "XMD",
+          "XMD (29)",
+          "XS",
+          "XS (27.5\" wheel)",
+          "XS (4'9\" - 5'3\")",
+          "XX-LARGE",
+          "XX-Large",
+          "XX-Small",
+          "XXL",
+          "XXS",
+          "XXS (26\" wheel)",
+          "Xl",
+          "Xs"
+        ],
+        "top_offers": [
+          {
+            "name": "Vaast Bikes E/1 XT/SLX 27.5 E-Bike - Nostalgic Sea Blue-Ocean Frost",
+            "store": "Colorado Cyclist",
+            "url": "https://coloradocyclist.com/products/vaast-bikes-e-1-xt-slx-27-5-e-bike-nostalgic-sea-blue-ocean-frost?currency=USD&variant=48408222335216",
+            "price": 1499.99,
+            "reference": 7699.99,
+            "discount": 80.5,
+            "size": "Medium"
+          },
+          {
+            "name": "Vaast Bikes E/1 Enviolo 27.5 E-Bike - Vibrant Berry Red-Black Cherry",
+            "store": "Colorado Cyclist",
+            "url": "https://coloradocyclist.com/products/vaast-bikes-e-1-enviolo-27-5-e-bike-vibrant-berry-red-black-cherry?currency=USD&variant=48408222236912",
+            "price": 1999.99,
+            "reference": 8699.99,
+            "discount": 77.0,
+            "size": "Medium"
+          },
+          {
+            "name": "S-Works Diverge STR Road Bike Frameset",
+            "store": "ERIK\u2019S Bike Shop",
+            "url": "https://www.eriksbikeshop.com/products/s-works-diverge-str-road-bike-frameset-pr5a17935?currency=USD&variant=49445702140118",
+            "price": 1999.99,
+            "reference": 5499.99,
+            "discount": 63.6,
+            "size": "58CM"
+          },
+          {
+            "name": "Specialized Turbo Vado SL 5.0 EQ Electric Bike",
+            "store": "ERIK\u2019S Bike Shop",
+            "url": "https://www.eriksbikeshop.com/products/specialized-2023-turbo-vado-sl-5-0-eq-electric-bike-pr5a12693?currency=USD&variant=46161239539926",
+            "price": 1999.99,
+            "reference": 5249.99,
+            "discount": 61.9,
+            "size": "Xl"
+          },
+          {
+            "name": "S-Works Stumpjumper Frameset",
+            "store": "Gravity Coalition",
+            "url": "https://gravitycoalition.com/products/s-works-stumpjumper-frameset?currency=USD&variant=49396351697140",
+            "price": 1149.99,
+            "reference": 3000.0,
+            "discount": 61.7,
+            "size": "S1"
+          },
+          {
+            "name": "Heckler SL CC X0 Transmission Reserve",
+            "store": "Mike's Bikes",
+            "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-cc-x0-transmission-reserve-2024?currency=USD&variant=44649480618053",
+            "price": 4499.77,
+            "reference": 11699.99,
+            "discount": 61.5,
+            "size": "XX-Large"
+          },
+          {
+            "name": "S-Works Stumpjumper Frameset",
+            "store": "Pro Bike Supply",
+            "url": "https://www.probikesupply.com/products/specialized-stumpjumper-s-works-frm-frame-satin-dusty-blue-pearl-black-carbon-s3?currency=USD&variant=42349827096631",
+            "price": 1199.99,
+            "reference": 2999.99,
+            "discount": 60.0,
+            "size": "S1"
+          },
+          {
+            "name": "Stumpjumper Frameset",
+            "store": "Gravity Coalition",
+            "url": "https://gravitycoalition.com/products/stumpjumper-frameset?currency=USD&variant=49399117218036",
+            "price": 1079.99,
+            "reference": 2700.0,
+            "discount": 60.0,
+            "size": "S1"
+          },
+          {
+            "name": "Stumpjumper Frameset",
+            "store": "Pro Bike Supply",
+            "url": "https://www.probikesupply.com/products/2022-specialized-stumpjumper-29-carbon-frameset-s2-satin-copper-black?currency=USD&variant=42349599064119",
+            "price": 1079.99,
+            "reference": 2699.99,
+            "discount": 60.0,
+            "size": "S1"
+          },
+          {
+            "name": "Heckler SL C S",
+            "store": "Mike's Bikes",
+            "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-s-2024?currency=USD&variant=40617095069765",
+            "price": 3499.77,
+            "reference": 8699.99,
+            "discount": 59.8,
+            "size": "XX-Large"
+          }
+        ]
+      },
+      "package": {
+        "catalog": "cycling",
+        "brand": "Big Ring",
+        "built_at": "2026-11-03T05:20:56.147447+00:00",
+        "snapshot_sha256": "590c39ede9bf4aaf7ee87db029288ec6f666135db50a09805899adec4c195564",
+        "public_url": "https://bigring.clifan.com",
+        "matching_deals": 1170,
+        "sources": [
+          {
+            "name": "Gravity Coalition",
+            "observed_at": "2026-11-03T05:14:38.665569+00:00",
+            "listings": 30
+          },
+          {
+            "name": "Bicycle Warehouse",
+            "observed_at": "2026-11-03T05:02:32.967474+00:00",
+            "listings": 72
+          },
+          {
+            "name": "BikesOnline",
+            "observed_at": "2026-11-03T05:02:37.176445+00:00",
+            "listings": 99
+          },
+          {
+            "name": "Mike's Bikes",
+            "observed_at": "2026-11-03T05:02:52.819297+00:00",
+            "listings": 165
+          },
+          {
+            "name": "ERIK\u2019S Bike Shop",
+            "observed_at": "2026-11-03T05:02:57.596365+00:00",
+            "listings": 109
+          },
+          {
+            "name": "Pro Bike Supply",
+            "observed_at": "2026-11-03T05:03:05.196017+00:00",
+            "listings": 366
+          },
+          {
+            "name": "Contender Bicycles",
+            "observed_at": "2026-11-03T05:03:17.838860+00:00",
+            "listings": 182
+          },
+          {
+            "name": "Cambria Bike",
+            "observed_at": "2026-11-03T05:03:27.555016+00:00",
+            "listings": 24
+          },
+          {
+            "name": "INTENSE",
+            "observed_at": "2026-11-03T05:03:46.627420+00:00",
+            "listings": 4
+          },
+          {
+            "name": "Bike Mart",
+            "observed_at": "2026-11-03T05:03:50.293553+00:00",
+            "listings": 73
+          },
+          {
+            "name": "First Stop Board Barn",
+            "observed_at": "2026-11-03T05:04:04.218701+00:00",
+            "listings": 1
+          },
+          {
+            "name": "Colorado Cyclist",
+            "observed_at": "2026-11-03T05:04:07.951997+00:00",
+            "listings": 61
+          },
+          {
+            "name": "Planet Cyclery",
+            "observed_at": "2026-11-03T05:04:15.927106+00:00",
+            "listings": 32
+          },
+          {
+            "name": "Worldwide Cyclery",
+            "observed_at": "2026-11-03T05:04:23.973831+00:00",
+            "listings": 4
+          },
+          {
+            "name": "State Bicycle Co.",
+            "observed_at": "2026-11-03T05:04:34.995828+00:00",
+            "listings": 1
+          },
+          {
+            "name": "The Path Bike Shop",
+            "observed_at": "2026-11-03T05:04:39.015066+00:00",
+            "listings": 34
+          },
+          {
+            "name": "Fanatik Bike Co.",
+            "observed_at": "2026-11-03T05:04:43.403699+00:00",
+            "listings": 24
+          }
+        ]
+      },
+      "merchant_audit": "docs/benchmarks/2026-11-03-admission-cycling-merchant-audit.json",
+      "refresh": [
+        {
+          "source": "Gravity Coalition",
+          "status": "complete",
+          "errors": 0,
+          "pages": 2,
+          "collections": [
+            {
+              "url": "https://gravitycoalition.com/collections/all-bikes-frames?currency=USD",
+              "pages": 1,
+              "products": 124,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://gravitycoalition.com/collections/bike-sale?currency=USD",
+              "pages": 1,
+              "products": 102,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 226,
+          "accepted_products": 38
+        },
+        {
+          "source": "Bicycle Warehouse",
+          "status": "complete",
+          "errors": 0,
+          "pages": 1,
+          "collections": [
+            {
+              "url": "https://bicyclewarehouse.com/collections/bikes-on-sale?currency=USD",
+              "pages": 1,
+              "products": 72,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 72,
+          "accepted_products": 72
+        },
+        {
+          "source": "BikesOnline",
+          "status": "complete",
+          "errors": 0,
+          "pages": 4,
+          "collections": [
+            {
+              "url": "https://bikesonline.com/collections/sale?currency=USD",
+              "pages": 4,
+              "products": 474,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 474,
+          "accepted_products": 99
+        },
+        {
+          "source": "Mike's Bikes",
+          "status": "complete",
+          "errors": 0,
+          "pages": 1,
+          "collections": [
+            {
+              "url": "https://mikesbikes.com/collections/clearance-and-sale-bikes?currency=USD",
+              "pages": 1,
+              "products": 170,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 170,
+          "accepted_products": 165
+        },
+        {
+          "source": "ERIK\u2019S Bike Shop",
+          "status": "complete",
+          "errors": 0,
+          "pages": 2,
+          "collections": [
+            {
+              "url": "https://www.eriksbikeshop.com/collections/cycling-bicycles?currency=USD",
+              "pages": 2,
+              "products": 125,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 125,
+          "accepted_products": 109
+        },
+        {
+          "source": "Pro Bike Supply",
+          "status": "complete",
+          "errors": 0,
+          "pages": 3,
+          "collections": [
+            {
+              "url": "https://www.probikesupply.com/collections/on-sale-bikes-frames?currency=USD",
+              "pages": 3,
+              "products": 488,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 488,
+          "accepted_products": 366
+        },
+        {
+          "source": "Contender Bicycles",
+          "status": "complete",
+          "errors": 0,
+          "pages": 2,
+          "collections": [
+            {
+              "url": "https://contenderbicycles.com/collections/sale?currency=USD",
+              "pages": 2,
+              "products": 354,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 354,
+          "accepted_products": 182
+        },
+        {
+          "source": "Cambria Bike",
+          "status": "complete",
+          "errors": 0,
+          "pages": 5,
+          "collections": [
+            {
+              "url": "https://cambriabike.com/collections/mtb-bikes?currency=USD",
+              "pages": 4,
+              "products": 26,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://cambriabike.com/collections/mtb-frames?currency=USD",
+              "pages": 1,
+              "products": 6,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 32,
+          "accepted_products": 24
+        },
+        {
+          "source": "INTENSE",
+          "status": "complete",
+          "errors": 0,
+          "pages": 1,
+          "collections": [
+            {
+              "url": "https://intensecycles.com/collections/sale?currency=USD",
+              "pages": 1,
+              "products": 4,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 4,
+          "accepted_products": 4
+        },
+        {
+          "source": "Bike Mart",
+          "status": "complete",
+          "errors": 0,
+          "pages": 3,
+          "collections": [
+            {
+              "url": "https://www.bikemart.com/collections/bikes?currency=USD",
+              "pages": 3,
+              "products": 80,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 80,
+          "accepted_products": 73
+        },
+        {
+          "source": "First Stop Board Barn",
+          "status": "complete",
+          "errors": 0,
+          "pages": 1,
+          "collections": [
+            {
+              "url": "https://www.firststopboardbarn.com/collections/blazing-summer-bike-sale?currency=USD",
+              "pages": 1,
+              "products": 17,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 17,
+          "accepted_products": 1
+        },
+        {
+          "source": "Colorado Cyclist",
+          "status": "complete",
+          "errors": 0,
+          "pages": 2,
+          "collections": [
+            {
+              "url": "https://coloradocyclist.com/collections/all-bikes?currency=USD",
+              "pages": 2,
+              "products": 62,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 62,
+          "accepted_products": 61
+        },
+        {
+          "source": "Planet Cyclery",
+          "status": "complete",
+          "errors": 0,
+          "pages": 2,
+          "collections": [
+            {
+              "url": "https://planetcyclery.com/collections/mtb-bikes?currency=USD",
+              "pages": 1,
+              "products": 25,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://planetcyclery.com/collections/road-bikes?currency=USD",
+              "pages": 1,
+              "products": 8,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 33,
+          "accepted_products": 32
+        },
+        {
+          "source": "Worldwide Cyclery",
+          "status": "complete",
+          "errors": 0,
+          "pages": 3,
+          "collections": [
+            {
+              "url": "https://worldwidecyclery.com/collections/bikes-and-frames?currency=USD",
+              "pages": 3,
+              "products": 4,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 4,
+          "accepted_products": 4
+        },
+        {
+          "source": "State Bicycle Co.",
+          "status": "complete",
+          "errors": 0,
+          "pages": 1,
+          "collections": [
+            {
+              "url": "https://www.statebicycle.com/collections/sale?currency=USD",
+              "pages": 1,
+              "products": 132,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 132,
+          "accepted_products": 1
+        },
+        {
+          "source": "The Path Bike Shop",
+          "status": "complete",
+          "errors": 0,
+          "pages": 1,
+          "collections": [
+            {
+              "url": "https://www.thepathbikeshop.com/collections/bike-eligible-to-ship?currency=USD",
+              "pages": 1,
+              "products": 45,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 45,
+          "accepted_products": 34
+        },
+        {
+          "source": "Fanatik Bike Co.",
+          "status": "complete",
+          "errors": 0,
+          "pages": 3,
+          "collections": [
+            {
+              "url": "https://www.fanatikbike.com/collections/on-sale-complete-bikes?currency=USD",
+              "pages": 1,
+              "products": 26,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://www.fanatikbike.com/collections/on-sale-frames?currency=USD",
+              "pages": 1,
+              "products": 14,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://www.fanatikbike.com/collections/on-sale-e-bikes?currency=USD",
+              "pages": 1,
+              "products": 15,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 55,
+          "accepted_products": 24
+        }
+      ]
+    },
+    "tools": {
+      "inventory": {
+        "catalog": "tools",
+        "measured_at": "2026-11-03T05:13:41.631585+00:00",
+        "reference_floor": 200,
+        "scope": "snapshot-listed offers; not independent merchant verification or unique model count",
+        "eligible_in_stock_listings": 607,
+        "deep_deal_listings": 24,
+        "useful_retailers": [
+          "Fasteners Inc",
+          "OakTree Supply",
+          "Taylor Toolworks",
+          "Tool Nut",
+          "Woodcraft"
+        ],
+        "checked_within_24h_percent": 100.0,
+        "exact_size_facets": [
+          "HW110S-36Pro",
+          "HW110S-52Pro",
+          "HW110TC-36Pro",
+          "HW110TC-52Pro"
+        ],
+        "top_offers": [
+          {
+            "name": "Axiom 2x2 CNC Table with Air-Cooled Spindle",
+            "store": "OakTree Supply",
+            "url": "https://www.oaktreesupply.com/products/axiom-2x2-cnc-table-with-spindle?currency=USD&variant=47708931948761",
+            "price": 1999.0,
+            "reference": 4699.0,
+            "discount": 57.5,
+            "size": null
+          },
+          {
+            "name": "DEWALT 20V MAX XR Brushless Cordless Router (Tool Only)",
+            "store": "Fasteners Inc",
+            "url": "https://fastenersinc.myshopify.com/products/dcw600b-20v-max-compact-router-dewalt?currency=USD&variant=31231201247319",
+            "price": 119.0,
+            "reference": 249.0,
+            "discount": 52.2,
+            "size": null
+          },
+          {
+            "name": "Axiom Iconic-4 Series CNC Router 2' x 2'",
+            "store": "OakTree Supply",
+            "url": "https://www.oaktreesupply.com/products/axoiom-iconic-4-series-cnc-router-24-x-24?currency=USD&variant=37991680082119",
+            "price": 2999.0,
+            "reference": 6049.0,
+            "discount": 50.4,
+            "size": null
+          },
+          {
+            "name": "Iconic 24\" x 24\" for Axiom CNC Router",
+            "store": "Woodcraft",
+            "url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-24-for-axiom-cnc-router?currency=USD&variant=43403824922762",
+            "price": 2999.0,
+            "reference": 6049.0,
+            "discount": 50.4,
+            "size": null
+          },
+          {
+            "name": "DEWALT, DCS334B, Cordless Jig Saw, 20V, Brushless, 1 in Blade Stroke Length, 4-Position Orbital Action",
+            "store": "Fasteners Inc",
+            "url": "https://fastenersinc.myshopify.com/products/dcs334b-20v-max-xr-cordless-jig-saw-tool-only-dewalt?currency=USD&variant=31231188205655",
+            "price": 119.0,
+            "reference": 239.0,
+            "discount": 50.2,
+            "size": null
+          },
+          {
+            "name": "JET JAT-127, 3/4-in. Composite Impact Wrench (505127)",
+            "store": "Tool Nut",
+            "url": "https://www.toolnut.com/products/jet-505127-jat-127-composite-impact-wrench?currency=USD&variant=50177235976486",
+            "price": 299.99,
+            "reference": 580.99,
+            "discount": 48.4,
+            "size": null
+          },
+          {
+            "name": "Axiom AR16 Elite 4'x4' CNC Router",
+            "store": "OakTree Supply",
+            "url": "https://www.oaktreesupply.com/products/axiom-ar16-elite-4x4?currency=USD&variant=31966639423606",
+            "price": 9999.0,
+            "reference": 19299.0,
+            "discount": 48.2,
+            "size": null
+          },
+          {
+            "name": "Axiom AR4Pro V6 2'x2' CNC Router",
+            "store": "OakTree Supply",
+            "url": "https://www.oaktreesupply.com/products/axiom-ar4pro-v5-2x2-cnc-router?currency=USD&variant=31966616780918",
+            "price": 4999.0,
+            "reference": 9459.0,
+            "discount": 47.2,
+            "size": null
+          },
+          {
+            "name": "Axiom Iconic-6 Series CNC Router 2' x 3'",
+            "store": "OakTree Supply",
+            "url": "https://www.oaktreesupply.com/products/axiom-iconic-6-series-cnc-router-24-x-36?currency=USD&variant=41257102147783",
+            "price": 3499.0,
+            "reference": 6599.0,
+            "discount": 47.0,
+            "size": null
+          },
+          {
+            "name": "Iconic 24\" x 36\" CNC Router",
+            "store": "Woodcraft",
+            "url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-36-cnc-router?currency=USD&variant=43400695939210",
+            "price": 3499.0,
+            "reference": 6599.0,
+            "discount": 47.0,
+            "size": null
+          }
+        ]
+      },
+      "package": {
+        "catalog": "tools",
+        "brand": "Bench Drop",
+        "built_at": "2026-11-03T05:20:56.269156+00:00",
+        "snapshot_sha256": "65ab40730bc8bd740cd6eeff708b22237df0c920424c5602cbb7b7ce65998e78",
+        "public_url": "https://benchdrop.clifan.com",
+        "matching_deals": 607,
+        "sources": [
+          {
+            "name": "Tool Nut",
+            "observed_at": "2026-11-03T05:02:23.238293+00:00",
+            "listings": 452
+          },
+          {
+            "name": "Woodcraft",
+            "observed_at": "2026-11-03T05:03:58.350377+00:00",
+            "listings": 77
+          },
+          {
+            "name": "Craft Supplies USA",
+            "observed_at": "2026-11-03T05:04:23.640618+00:00",
+            "listings": 1
+          },
+          {
+            "name": "Harvey Woodworking",
+            "observed_at": "2026-11-03T05:19:16.091899+00:00",
+            "listings": 11
+          },
+          {
+            "name": "WEN",
+            "observed_at": "2026-11-03T05:04:31.188302+00:00",
+            "listings": 8
+          },
+          {
+            "name": "Factory Direct Supply",
+            "observed_at": "2026-11-03T05:04:35.233504+00:00",
+            "listings": 6
+          },
+          {
+            "name": "Max Warehouse",
+            "observed_at": "2026-11-03T05:19:19.811979+00:00",
+            "listings": 44
+          },
+          {
+            "name": "OakTree Supply",
+            "observed_at": "2026-11-03T05:05:24.362272+00:00",
+            "listings": 84
+          },
+          {
+            "name": "Taylor Toolworks",
+            "observed_at": "2026-11-03T05:05:42.688216+00:00",
+            "listings": 1
+          },
+          {
+            "name": "Fasteners Inc",
+            "observed_at": "2026-11-03T05:12:24.786138+00:00",
+            "listings": 76
+          }
+        ]
+      },
+      "merchant_audit": "docs/benchmarks/2026-11-03-admission-tools-merchant-audit.json",
+      "refresh": [
+        {
+          "source": "Tool Nut",
+          "status": "complete",
+          "errors": 0,
+          "pages": 26,
+          "collections": [
+            {
+              "url": "https://www.toolnut.com/collections/saws?currency=USD",
+              "pages": 2,
+              "products": 100,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://www.toolnut.com/collections/power-tools?currency=USD",
+              "pages": 17,
+              "products": 936,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://www.toolnut.com/collections/stationary-tools?currency=USD",
+              "pages": 7,
+              "products": 98,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 1134,
+          "accepted_products": 452
+        },
+        {
+          "source": "Woodcraft",
+          "status": "complete",
+          "errors": 0,
+          "pages": 7,
+          "collections": [
+            {
+              "url": "https://www.woodcraft.com/collections/clearance?currency=USD",
+              "pages": 1,
+              "products": 105,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://www.woodcraft.com/collections/power-tools?currency=USD",
+              "pages": 2,
+              "products": 8,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://www.woodcraft.com/collections/woodworking-machines?currency=USD",
+              "pages": 3,
+              "products": 78,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://www.woodcraft.com/collections/power-tool-deals?currency=USD",
+              "pages": 1,
+              "products": 82,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 273,
+          "accepted_products": 77
+        },
+        {
+          "source": "Craft Supplies USA",
+          "status": "complete",
+          "errors": 0,
+          "pages": 1,
+          "collections": [
+            {
+              "url": "https://woodturnerscatalog.com/collections/wood-lathes?currency=USD",
+              "pages": 1,
+              "products": 1,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 1,
+          "accepted_products": 1
+        },
+        {
+          "source": "Harvey Woodworking",
+          "status": "complete",
+          "errors": 0,
+          "pages": 1,
+          "collections": [
+            {
+              "url": "https://www.harveywoodworking.com/collections/all?currency=USD",
+              "pages": 1,
+              "products": 18,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 18,
+          "accepted_products": 11
+        },
+        {
+          "source": "WEN",
+          "status": "complete",
+          "errors": 0,
+          "pages": 1,
+          "collections": [
+            {
+              "url": "https://wenproducts.com/collections/power-tools?currency=USD",
+              "pages": 1,
+              "products": 9,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 9,
+          "accepted_products": 8
+        },
+        {
+          "source": "Factory Direct Supply",
+          "status": "complete",
+          "errors": 0,
+          "pages": 8,
+          "collections": [
+            {
+              "url": "https://factorydirectsupply.com/collections/power-tools?currency=USD",
+              "pages": 8,
+              "products": 17,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 17,
+          "accepted_products": 6
+        },
+        {
+          "source": "Max Warehouse",
+          "status": "complete",
+          "errors": 0,
+          "pages": 6,
+          "collections": [
+            {
+              "url": "https://www.maxwarehouse.com/collections/power-tools?currency=USD",
+              "pages": 6,
+              "products": 238,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 238,
+          "accepted_products": 45
+        },
+        {
+          "source": "OakTree Supply",
+          "status": "complete",
+          "errors": 0,
+          "pages": 5,
+          "collections": [
+            {
+              "url": "https://www.oaktreesupply.com/collections/clearance?currency=USD",
+              "pages": 1,
+              "products": 105,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://www.oaktreesupply.com/collections/jpw-overstock-items-2026?currency=USD",
+              "pages": 1,
+              "products": 25,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://www.oaktreesupply.com/collections/jet-and-powermatic-price-drops?currency=USD",
+              "pages": 1,
+              "products": 8,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://www.oaktreesupply.com/collections/scm-sale?currency=USD",
+              "pages": 1,
+              "products": 14,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://www.oaktreesupply.com/collections/sawstop?currency=USD",
+              "pages": 1,
+              "products": 40,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 192,
+          "accepted_products": 84
+        },
+        {
+          "source": "Taylor Toolworks",
+          "status": "complete",
+          "errors": 0,
+          "pages": 1,
+          "collections": [
+            {
+              "url": "https://taytools.com/power-tools?ppg=65535&pn=1",
+              "pages": 1,
+              "products": 22,
+              "status": "complete"
+            }
+          ],
+          "product_pages": 186,
+          "parsed_products": 22,
+          "accepted_products": 1
+        },
+        {
+          "source": "Fasteners Inc",
+          "status": "complete",
+          "errors": 0,
+          "pages": 19,
+          "collections": [
+            {
+              "url": "https://fastenersinc.myshopify.com/collections/power-tools?currency=USD",
+              "pages": 8,
+              "products": 100,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://fastenersinc.myshopify.com/collections/power-tools-1?currency=USD",
+              "pages": 8,
+              "products": 76,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://fastenersinc.myshopify.com/collections/machine-tools?currency=USD",
+              "pages": 1,
+              "products": 2,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://fastenersinc.myshopify.com/collections/power-tool-closeouts?currency=USD",
+              "pages": 1,
+              "products": 2,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://fastenersinc.myshopify.com/collections/all-closeouts?currency=USD",
+              "pages": 1,
+              "products": 11,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 191,
+          "accepted_products": 76
+        }
+      ]
+    }
+  },
+  "classification_rechecks": {
+    "cycling": {
+      "source_refresh": [
+        {
+          "source": "Gravity Coalition",
+          "status": "complete",
+          "errors": 0,
+          "pages": 2,
+          "collections": [
+            {
+              "url": "https://gravitycoalition.com/collections/all-bikes-frames?currency=USD",
+              "pages": 1,
+              "products": 124,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://gravitycoalition.com/collections/bike-sale?currency=USD",
+              "pages": 1,
+              "products": 102,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 226,
+          "accepted_products": 30
+        }
+      ],
+      "eligible_offer_count_before": 1170,
+      "eligible_offer_count_after": 1170,
+      "eligible_offers_unchanged": true,
+      "prior_merchant_audit": "cycling-merchant-audit.json"
+    },
+    "tools": {
+      "source_refresh": [
+        {
+          "source": "Harvey Woodworking",
+          "status": "complete",
+          "errors": 0,
+          "pages": 1,
+          "collections": [
+            {
+              "url": "https://www.harveywoodworking.com/collections/all?currency=USD",
+              "pages": 1,
+              "products": 18,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 18,
+          "accepted_products": 11
+        },
+        {
+          "source": "Max Warehouse",
+          "status": "complete",
+          "errors": 0,
+          "pages": 6,
+          "collections": [
+            {
+              "url": "https://www.maxwarehouse.com/collections/power-tools?currency=USD",
+              "pages": 6,
+              "products": 238,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 238,
+          "accepted_products": 44
+        }
+      ],
+      "eligible_offer_count_before": 607,
+      "eligible_offer_count_after": 607,
+      "eligible_offers_unchanged": true,
+      "prior_merchant_audit": "tools-merchant-audit.json"
+    }
+  },
+  "verification": {
+    "offline_tests_passed": 489,
+    "ruff": "pass",
+    "javascript_syntax": "pass",
+    "whitespace": "pass",
+    "desktop_image_fit": "Image and container heights agree; previously square images exceeded the container by 92.6 pixels.",
+    "mobile_image_fit": "Both catalogs: 390x844, first three images and containers 120px high; no horizontal overflow.",
+    "filters": "Gravity has 29 eligible listings; Fasteners has 58. Cable lengths, tire dimensions, fulfillment text and the kitchen grinder no longer pollute facets.",
+    "unchanged_audited_offers": "Each classification recheck confirms the full eligible offer map is unchanged; original merchant check times are retained."
+  }
+}

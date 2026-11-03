@@ -16,6 +16,19 @@ from snow_deals.parsers.bluezone import BlueZoneParser
 from snow_deals.parsers.shopify import ShopifyParser
 
 
+@pytest.mark.parametrize(("name", "expected"), [
+    ("2024 Rossignol Hero Athlete Mogul Accelere", "skis"),
+    ("Lange RS J 65 2020", "ski boots"),
+    ("Lange World Cup RS ZSoft 22", "ski boots"),
+    ("Sidas Cambrelle Covers", "accessories"),
+    ("Lange RS J 65 Boot Bag", "accessories"),
+    ("RS J 65", None),
+    ("World Cup RS ZSoft", None),
+])
+def test_recovered_skiessentials_model_titles(name, expected):
+    assert categorize(name) == expected
+
+
 @pytest.mark.parametrize(('name', 'url', 'product_type'), [
     ('Season Nexus Skis - Blem 2025', 'https://shop.example/nexus', 'Skis'),
     ('Lib Tech T. Rice Pro Snowboard - Blem 2026', 'https://shop.example/rice', ''),

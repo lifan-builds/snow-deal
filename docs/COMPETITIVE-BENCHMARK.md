@@ -4,7 +4,7 @@
 
 Win on **finding the deepest usable discount on expensive equipment**, with a trustworthy purchase link and little effort. A beautiful card with a wrong size or inflated reference is a failure. Percentage off remains the primary ranking key; cash savings break ties. Revenue, imagery and reviews never move an inferior discount above a better eligible offer.
 
-We do **not yet have evidence that all three sites beat every competitor**. Cycling now has 16 contributing retailers and tools eleven; 11 and six respectively contribute a deal at least 40% off above the reference floor. Competitors already offer broad coverage, product matching, price history and alerts. The registry now covers 21 relevant services, not the entire internet. See the [Fasteners source follow-up](tasks/fasteners-source/IMPLEMENTATION.md) and [prior competitive measurements](benchmarks/2026-11-03-competitive-continuation.md).
+We do **not yet have evidence that all three sites beat every competitor**. Verified production has 16 fresh cycling sources and eight tools sources; 11 and three respectively contribute a deal at least 40% off above the reference floor. Competitors already offer broad coverage, product matching, price history and alerts. The registry covers 21 relevant services, not the entire internet. The [production release matrix](benchmarks/2026-11-03-production-release-matrix.md) supports four strict leads among 250 comparisons; unknowns, incomparable measurements and parity still block the broad claim. See the [release receipt](CATALOG-RELEASE-RECEIPT.md) for deployed inventory and the [source follow-up](tasks/gravity-source/IMPLEMENTATION.md) for unpublished additions.
 
 ## The ten metrics
 
@@ -70,7 +70,7 @@ The latest pass crawls Powder Deals and Velo Bargains to completion, inspects pu
 5. Run consistent production mobile tests after publication. Investigate actual load/layout/interaction regressions; do not substitute localhost timings.
 6. Expand to new competitors found in search and retailer referrals. Change the metric contract only with a versioned rationale, never to hide a loss.
 
-This is a documented operating process and executable local gate, not an activated recurring job. Existing refresh schedules are not evidence that the new catalogs are deployed or collecting daily history.
+This competitive benchmarking process is an executable local gate, not a recurring benchmark job. Catalog publication and eight-hour refresh schedules are now verified separately in the [release receipt](CATALOG-RELEASE-RECEIPT.md). They preserve real observations; they do not establish thirty days of history or ongoing competitive superiority.
 
 ## Historical first iteration — 2 November
 
@@ -97,7 +97,7 @@ This is a documented operating process and executable local gate, not an activat
 
 These are layout measurements, not speed, deal-quality or conversion measurements. The snow local test uses six synthetic offers and is excluded from inventory metrics. Same-session public pages can change: retain timestamps and evidence instead of assuming cached search counts are current.
 
-Run the audit with an explicit public snapshot path: `python scripts/audit_catalog.py --catalog cycling --database <path>` (or `tools`). Render the latest matrix with `python scripts/benchmark.py docs/benchmarks/2026-11-03-fasteners-matrix.json`; append `--require-lead` to test the all-metrics claim. Its nonzero result is expected until the evidence supports a lead.
+Run the audit with an explicit public snapshot path: `python scripts/audit_catalog.py --catalog cycling --database <path>` (or `tools`). Render the latest matrix with `python scripts/benchmark.py docs/benchmarks/2026-11-03-production-release-matrix.json`; append `--require-lead` to test the all-metrics claim. Its nonzero result is expected until the evidence supports a lead. Mobile layout comparisons require production measurements; speed comparisons additionally require documented timestamps spanning no more than one hour. A newer inconclusive probe cannot become a competitor loss.
 
 ## Historical gap-closing continuation — 2 November
 
