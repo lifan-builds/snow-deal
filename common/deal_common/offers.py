@@ -29,6 +29,7 @@ class VariantOffer:
     availability: str = 'unknown'
     image_url: str | None = None
     reference_basis: str = 'retailer_compare_at'
+    availability_note: str = ''
 
     @property
     def discount_pct(self) -> float:

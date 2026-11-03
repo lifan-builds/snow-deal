@@ -16,6 +16,7 @@ from deal_common.catalog.refresh import safe_url
 from deal_common.http import DEFAULT_HEADERS, fetch_listing
 from deal_common.parsers.grizzly import sku_destination, structured_products
 from deal_common.parsers.grizzly import text as decoded_text
+from deal_common.parsers.harvey import shipping_notice
 from deal_common.parsers.taylor import detail_data as taylor_data
 from deal_common.parsers.taylor import offer_destination as taylor_destination
 
@@ -51,19 +52,21 @@ def validate_product(card: dict, raw: dict, currency: str | None) -> dict:
     raw_options = actual.get("options", [])
     actual_options = " / ".join(str(v) for i, v in enumerate(raw_options)
                                 if i not in price_positions and v != "Default Title")
+    notice = shipping_notice(raw, actual, offer["url"])
     checks = {
         "identity": str(raw.get("title", "")).strip() == card["name"].strip(),
         "currency": currency == card.get("currency", "USD"),
         "price": cents_equal(actual.get("price"), offer["current_price"]),
         "reference": cents_equal(actual.get("compare_at_price"), offer["original_price"]),
         "options": actual_options == expected_options,
-        "stock": actual.get("available") is True,
+        "stock": actual.get("available") is True and not notice,
     }
     return {"status": "match" if all(checks.values()) else "mismatch", "checks": checks,
             "merchant": {"title": raw.get("title"), "variant": str(actual["id"]), "sku": actual.get("sku"),
                          "price_minor": actual.get("price"), "reference_minor": actual.get("compare_at_price"),
                          "currency": currency, "options": actual_options, "raw_options": raw_options,
-                         "option_definitions": option_definitions, "available": actual.get("available")}}
+                         "option_definitions": option_definitions, "available": actual.get("available"),
+                         "shipping_notice": notice}}
 
 
 async def audit_sample(cards: list[dict], allowed_domains: dict[str, str], *, delay: float = 5.0,
