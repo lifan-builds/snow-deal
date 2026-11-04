@@ -78,3 +78,21 @@ Merchant size conflicts cannot satisfy stock or fit: an explicit SIZE L title wi
 ## Ski Essentials exact-offer feed
 
 Decode only collection identity from the public React Router indexed JSON stream; never execute merchant JavaScript. The public Boost feed must reconcile a stable total, page size, unique product IDs and terminal count. Read each sale price from `online_variant_prices` by exact SKU and require explicit USD metadata; the ordinary variant price can still be MSRP. Never copy a product-wide lowest price to every size. Bind verified option names to the storefront option query, preserving the canonical product URL separately. Exclude configurable `Bundle Product` entries. Confirm stock only with explicit available status, positive tracked quantity and deny-backorder policy. Unknown/conflicting stock cannot satisfy exact size. Complete-source and partial-snapshot guards remain unchanged.
+
+## Beaver main purchase panel
+
+Beaver Industrial Supply retains the Shopify feed and explicit USD currency check, but its exact-host parser resolves each eligible single-variant product through the ordinary product page. Scope identity, SKU, variant, quantity, visible sale/reference prices and stock to the main `product-info` panel; recommendation cards and quick-view inventory are not purchase evidence. Decode only the JSON literal in the observed `window.dpoData.product` assignment; never execute merchant JavaScript. Bind the singleton default variant to canonical path, hidden purchase form and USD structured offer. Unsupported variant shapes or disagreement make the source incomplete.
+
+`available: true` is insufficient when the main panel says Usually Ships in 5-7 Days or Call for availability. Retain those as unknown stock with the merchant notice. Explicit sold-out/unavailable evidence removes the offer. Independently fetch both exact product JSON and the main product page during audits; malformed JSON stays inconclusive even if the HTML agrees. Failed refreshes preserve earlier successful observations. Source activation still requires a complete fresh candidate and independent merchant evidence.
+
+## Bolton candidate contract
+
+Bolton remains disabled while its warehouse-relocation banner restricts purchases to LTL freight without product-specific eligibility. A promised past restoration date and optional freight-service controls do not establish eligibility. Reject the active nonempty banner before admitting or renewing stock. The candidate parser binds canonical slug, product ID, model, USD single-unit current/reference prices, new condition and stock. Bulk prices never replace quantity-one prices. Configured category counts, unique identities and page sequence must reconcile; repeated or missing listings are incomplete, not silently deduplicated coverage. Seven observed categories reconcile, but that is not full-retailer coverage.
+
+## RA Cycles variant stock
+
+RA keeps Shopify discovery and USD checks but requires the canonical product page and separate public product JSON as evidence. Reconcile every feed, ProductGroup, stock-map and endpoint variant ID; bind SKU, exact option values, price/reference and destination. The main selected purchase input, variant JSON, active stock message and visible money must agree. Its theme renders cents in a separate `sup` element; do not turn $2,799 with 99 cents into $279999. Dormant stock templates cannot establish availability.
+
+Positive quantity with available=true and virtual-warehouse=false is immediate stock. Virtual-warehouse delivery retains the stated delay as unknown. An available variant with zero quantity can expose an explicit Coming soon / reserve backorder panel; that remains unknown and carries the merchant notice. Explicit unavailable variants are excluded. Preserve applicable final-sale limitations. Missing or contradictory state makes the refresh incomplete, retaining earlier successful data and timestamps.
+
+An explicit Frameset tag precedes a broader Mountain Bikes discipline after accessory/condition exclusions. Numeric-s frame labels such as 50s are valid raw dimensions and remain distinct from 50cm; never infer equivalent geometry. Audits reuse the independently fetched exact product JSON and refetch the selected product page, preserving inconclusive results and the fifteen-minute observation window.

@@ -1,0 +1,5 @@
+# Scope and boundary
+
+Reuse Shopify feed discovery, currency checking, normalization and ranking. Add an exact-host subclass only if required by the researched storefront contract. Public RA pages expose script.variant-status-map keyed by variantID with qty/vw/available, selected-variant data and purchase controls. The adapter must bind complete identities and validate how the displayed stock state is chosen; merely finding all status-template strings is not evidence. Retain delayed notices as unknown stock and exclude explicit unavailable variants. No global Shopify availability weakening.
+
+Expected files: dedicated common RA parser/tests, exact-host refresh and independent audit routing, cycling catalog configuration after admission. Narrow catalog taxonomy/size corrections require actual page evidence: OPEN ONE+ Frame tags include Frameset; explicit 50s sizes must remain 50s, distinct from 50. Capture the merchant's shipping/condition policies and source gaps in research. Keep prospective improvements separate from production claims.

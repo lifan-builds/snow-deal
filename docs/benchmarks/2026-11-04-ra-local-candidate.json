@@ -1,0 +1,73 @@
+{
+  "observed_at": "2026-11-04T05:58:46.766635+00:00",
+  "reconciled_at": "2026-11-04T07:59:16.856633+00:00",
+  "refresh": [
+    {
+      "source": "RA Cycles",
+      "status": "complete",
+      "errors": 0,
+      "pages": 3,
+      "collections": [
+        {
+          "url": "https://racycles.com/collections/bikes?currency=USD",
+          "pages": 3,
+          "products": 144,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "product_pages": 144,
+      "evidence_requests": 144,
+      "parsed_products": 144,
+      "accepted_products": 144
+    }
+  ],
+  "scope": "Final decoder replay of captured public HTML and endpoint evidence; original time and price/stock/identity retained. Independent live audit remains required.",
+  "eligible_listings": 116,
+  "deep_listings": 64,
+  "price_stock_identity_changes": 0,
+  "input_sha256": "66cd2c1e32ead8cad079da4cb220dd329db9fb9bc1a49c679fa04bd2d9ebb390",
+  "snapshot_sha256": "c04aa0eb9bc1c5d8861354b40774cb60357fb1002e33cd48baeb749f8abd7cb9",
+  "notice_changes_count": 122,
+  "admitted": false,
+  "local_audits": [
+    {
+      "catalog": "cycling",
+      "source": "RA Cycles",
+      "measured_at": "2026-11-04T08:20:17.047643+00:00",
+      "population": 116,
+      "seed": 20261104,
+      "request_delay_seconds": 2,
+      "method": "top10-plus-seeded20 supplemented by every deep offer; same paced delay as candidate, unchanged15-minute observationwindow",
+      "extra_deep_samples": 46,
+      "sample_size": 76,
+      "match": 69,
+      "mismatch": 0,
+      "inconclusive": 7,
+      "verified_match_percent": 90.79,
+      "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+      "first_observation": "2026-11-04T07:59:30.219062+00:00",
+      "last_observation": "2026-11-04T08:20:17.045652+00:00",
+      "failure": "Execution pause crossed unchanged15-minute audit window; not an admission pass"
+    },
+    {
+      "catalog": "cycling",
+      "source": "RA Cycles",
+      "measured_at": "2026-11-04T09:54:58.912894+00:00",
+      "population": 116,
+      "seed": 20261104,
+      "request_delay_seconds": 2,
+      "method": "top10-plus-seeded20 supplemented by every deep offer; same paced delay as candidate, unchanged15-minute observationwindow",
+      "extra_deep_samples": 46,
+      "sample_size": 76,
+      "match": 2,
+      "mismatch": 0,
+      "inconclusive": 74,
+      "verified_match_percent": 2.63,
+      "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+      "first_observation": "2026-11-04T09:39:41.088448+00:00",
+      "last_observation": "2026-11-04T09:54:58.911213+00:00",
+      "failure": "Execution pause crossed unchanged15-minute audit window; not an admission pass"
+    }
+  ]
+}

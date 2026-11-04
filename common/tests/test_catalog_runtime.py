@@ -293,3 +293,46 @@ def test_daily_history_retention_is_bounded_and_failed_checks_do_not_replace_it(
     with database(db, 'cycling') as connection:
         observations = [r[0] for r in connection.execute('SELECT observed_at FROM observations ORDER BY observed_at')]
     assert observations == [(NOW-timedelta(days=1)).isoformat(), NOW.isoformat()]
+
+
+@pytest.mark.parametrize("name", [
+    "Festool Granat P40 Grit Abrasives for LRS 400 Sander, Pack of 50 497157",
+    "Festool Granat P280 Grit Abrasives for LRS 400 Sander, Pack of 50 497203",
+    "Sanding discs for random orbit sander",
+])
+def test_named_machine_does_not_turn_replacement_abrasives_into_power_tools(name):
+    assert TOOLS.classify(Product(name=name, url="https://example.com/item", current_price=49,
+                                 original_price=249, product_type="Power Tools")) is None
+
+
+def test_complete_sander_with_included_abrasives_remains_a_power_tool():
+    item = Product(name="Random orbit sander kit with abrasives", url="https://example.com/item",
+                   current_price=149, original_price=249, product_type="Power Tools")
+    assert TOOLS.classify(item).category == "Power tools"
+
+
+def test_explicit_frameset_tag_precedes_generic_mountain_bike_taxonomy():
+    item = Product(name="OPEN ONE+ Frame", url="https://example.com/item", current_price=1299,
+                   original_price=3499, product_type="Mountain Bikes", tags=("Frameset", "Mountain Bikes"))
+    assert CYCLING.classify(item).category == "Framesets"
+    assert CYCLING.classify(replace(item, product_type="Bike Parts")) is None
+
+
+def test_numeric_s_frame_size_stays_distinct_from_plain_numeric_size():
+    import json
+    from deal_common.parsers.shopify import ShopifyParser
+    parser = ShopifyParser(size_option_names=CYCLING.size_option_names,
+                           size_value_pattern=CYCLING.size_value_pattern)
+    raw = {"handle": "compact-frame", "title": "Compact Frameset", "product_type": "Framesets",
+           "options": [{"name": "Color"}, {"name": "Size"}],
+           "variants": [{"id": 1, "available": True, "price": "1000", "compare_at_price": "3000",
+                         "option1": "Blue", "option2": "50s"},
+                        {"id": 2, "available": True, "price": "1100", "compare_at_price": "3000",
+                         "option1": "Red", "option2": "50cm"}]}
+    parsed = parser.parse_listing_page(json.dumps({"products": [raw]}),
+                                      "https://example.com/collections/bikes?currency=USD")
+    normalized = normalize(parsed, CYCLING, "example.com")
+    result = query([source(normalized)], filters(size="50s"), now=NOW)
+    assert result["total"] == 1 and result["cards"][0]["offer"]["variant_key"] == "1"
+    result = query([source(normalized)], filters(size="50"), now=NOW)
+    assert result["total"] == 1 and result["cards"][0]["offer"]["variant_key"] == "2"

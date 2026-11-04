@@ -1,0 +1,757 @@
+{
+  "id": 7624655732780,
+  "title": "3T Exploro RaceMax EKAR 700c Bike",
+  "handle": "3t-exploro-racemax-ekar-700c-bike",
+  "vendor": "3T",
+  "type": "Gravel Bikes",
+  "tags": [
+    "3T Bikes",
+    "Bikes",
+    "Gravel Bikes",
+    "klaviyo_reviews_exclude"
+  ],
+  "variants": [
+    {
+      "id": 44030761631788,
+      "title": "Red / White / XXS",
+      "option1": "Red / White",
+      "option2": "XXS",
+      "option3": null,
+      "sku": "9752ESDI29L",
+      "requires_shipping": true,
+      "taxable": true,
+      "featured_image": {
+        "id": 45420910739500,
+        "product_id": 7624655732780,
+        "position": 2,
+        "created_at": "2026-01-23T13:41:19-05:00",
+        "updated_at": "2026-02-16T23:31:07-05:00",
+        "alt": "3T Exploro RaceMax EKAR 700c Bike Red / White",
+        "width": 2000,
+        "height": 2000,
+        "src": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/3t-exploro-racemax-ekar-700c-bike-5339506.jpg?v=1771302667",
+        "variant_ids": [
+          44030759501868,
+          44030759829548,
+          44030760484908,
+          44030760943660,
+          44030761173036,
+          44030761631788
+        ]
+      },
+      "available": false,
+      "name": "3T Exploro RaceMax EKAR 700c Bike - Red / White / XXS",
+      "public_title": "Red / White / XXS",
+      "options": [
+        "Red / White",
+        "XXS"
+      ],
+      "price": 279999,
+      "weight": 18144,
+      "compare_at_price": 599900,
+      "inventory_management": "shopify",
+      "barcode": null,
+      "featured_media": {
+        "alt": "3T Exploro RaceMax EKAR 700c Bike Red / White",
+        "id": 36539004321836,
+        "position": 2,
+        "preview_image": {
+          "aspect_ratio": 1.0,
+          "height": 2000,
+          "width": 2000,
+          "src": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/3t-exploro-racemax-ekar-700c-bike-5339506.jpg?v=1771302667"
+        }
+      },
+      "quantity_rule": {
+        "min": 1,
+        "max": null,
+        "increment": 1
+      },
+      "quantity_price_breaks": [],
+      "requires_selling_plan": false,
+      "selling_plan_allocations": []
+    },
+    {
+      "id": 44030759501868,
+      "title": "Red / White / 51cm",
+      "option1": "Red / White",
+      "option2": "51cm",
+      "option3": null,
+      "sku": "9752ESDJ29L",
+      "requires_shipping": true,
+      "taxable": true,
+      "featured_image": {
+        "id": 45420910739500,
+        "product_id": 7624655732780,
+        "position": 2,
+        "created_at": "2026-01-23T13:41:19-05:00",
+        "updated_at": "2026-02-16T23:31:07-05:00",
+        "alt": "3T Exploro RaceMax EKAR 700c Bike Red / White",
+        "width": 2000,
+        "height": 2000,
+        "src": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/3t-exploro-racemax-ekar-700c-bike-5339506.jpg?v=1771302667",
+        "variant_ids": [
+          44030759501868,
+          44030759829548,
+          44030760484908,
+          44030760943660,
+          44030761173036,
+          44030761631788
+        ]
+      },
+      "available": false,
+      "name": "3T Exploro RaceMax EKAR 700c Bike - Red / White / 51cm",
+      "public_title": "Red / White / 51cm",
+      "options": [
+        "Red / White",
+        "51cm"
+      ],
+      "price": 279999,
+      "weight": 18144,
+      "compare_at_price": 599900,
+      "inventory_management": "shopify",
+      "barcode": null,
+      "featured_media": {
+        "alt": "3T Exploro RaceMax EKAR 700c Bike Red / White",
+        "id": 36539004321836,
+        "position": 2,
+        "preview_image": {
+          "aspect_ratio": 1.0,
+          "height": 2000,
+          "width": 2000,
+          "src": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/3t-exploro-racemax-ekar-700c-bike-5339506.jpg?v=1771302667"
+        }
+      },
+      "quantity_rule": {
+        "min": 1,
+        "max": null,
+        "increment": 1
+      },
+      "quantity_price_breaks": [],
+      "requires_selling_plan": false,
+      "selling_plan_allocations": []
+    },
+    {
+      "id": 44030759829548,
+      "title": "Red / White / 54cm",
+      "option1": "Red / White",
+      "option2": "54cm",
+      "option3": null,
+      "sku": "9752ESDK29L",
+      "requires_shipping": true,
+      "taxable": true,
+      "featured_image": {
+        "id": 45420910739500,
+        "product_id": 7624655732780,
+        "position": 2,
+        "created_at": "2026-01-23T13:41:19-05:00",
+        "updated_at": "2026-02-16T23:31:07-05:00",
+        "alt": "3T Exploro RaceMax EKAR 700c Bike Red / White",
+        "width": 2000,
+        "height": 2000,
+        "src": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/3t-exploro-racemax-ekar-700c-bike-5339506.jpg?v=1771302667",
+        "variant_ids": [
+          44030759501868,
+          44030759829548,
+          44030760484908,
+          44030760943660,
+          44030761173036,
+          44030761631788
+        ]
+      },
+      "available": false,
+      "name": "3T Exploro RaceMax EKAR 700c Bike - Red / White / 54cm",
+      "public_title": "Red / White / 54cm",
+      "options": [
+        "Red / White",
+        "54cm"
+      ],
+      "price": 279999,
+      "weight": 18144,
+      "compare_at_price": 599900,
+      "inventory_management": "shopify",
+      "barcode": null,
+      "featured_media": {
+        "alt": "3T Exploro RaceMax EKAR 700c Bike Red / White",
+        "id": 36539004321836,
+        "position": 2,
+        "preview_image": {
+          "aspect_ratio": 1.0,
+          "height": 2000,
+          "width": 2000,
+          "src": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/3t-exploro-racemax-ekar-700c-bike-5339506.jpg?v=1771302667"
+        }
+      },
+      "quantity_rule": {
+        "min": 1,
+        "max": null,
+        "increment": 1
+      },
+      "quantity_price_breaks": [],
+      "requires_selling_plan": false,
+      "selling_plan_allocations": []
+    },
+    {
+      "id": 44030760484908,
+      "title": "Red / White / 56cm",
+      "option1": "Red / White",
+      "option2": "56cm",
+      "option3": null,
+      "sku": "9752ESDL29L",
+      "requires_shipping": true,
+      "taxable": true,
+      "featured_image": {
+        "id": 45420910739500,
+        "product_id": 7624655732780,
+        "position": 2,
+        "created_at": "2026-01-23T13:41:19-05:00",
+        "updated_at": "2026-02-16T23:31:07-05:00",
+        "alt": "3T Exploro RaceMax EKAR 700c Bike Red / White",
+        "width": 2000,
+        "height": 2000,
+        "src": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/3t-exploro-racemax-ekar-700c-bike-5339506.jpg?v=1771302667",
+        "variant_ids": [
+          44030759501868,
+          44030759829548,
+          44030760484908,
+          44030760943660,
+          44030761173036,
+          44030761631788
+        ]
+      },
+      "available": false,
+      "name": "3T Exploro RaceMax EKAR 700c Bike - Red / White / 56cm",
+      "public_title": "Red / White / 56cm",
+      "options": [
+        "Red / White",
+        "56cm"
+      ],
+      "price": 279999,
+      "weight": 18144,
+      "compare_at_price": 599900,
+      "inventory_management": "shopify",
+      "barcode": null,
+      "featured_media": {
+        "alt": "3T Exploro RaceMax EKAR 700c Bike Red / White",
+        "id": 36539004321836,
+        "position": 2,
+        "preview_image": {
+          "aspect_ratio": 1.0,
+          "height": 2000,
+          "width": 2000,
+          "src": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/3t-exploro-racemax-ekar-700c-bike-5339506.jpg?v=1771302667"
+        }
+      },
+      "quantity_rule": {
+        "min": 1,
+        "max": null,
+        "increment": 1
+      },
+      "quantity_price_breaks": [],
+      "requires_selling_plan": false,
+      "selling_plan_allocations": []
+    },
+    {
+      "id": 44030760943660,
+      "title": "Red / White / 58cm",
+      "option1": "Red / White",
+      "option2": "58cm",
+      "option3": null,
+      "sku": "9752ESDM29L",
+      "requires_shipping": true,
+      "taxable": true,
+      "featured_image": {
+        "id": 45420910739500,
+        "product_id": 7624655732780,
+        "position": 2,
+        "created_at": "2026-01-23T13:41:19-05:00",
+        "updated_at": "2026-02-16T23:31:07-05:00",
+        "alt": "3T Exploro RaceMax EKAR 700c Bike Red / White",
+        "width": 2000,
+        "height": 2000,
+        "src": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/3t-exploro-racemax-ekar-700c-bike-5339506.jpg?v=1771302667",
+        "variant_ids": [
+          44030759501868,
+          44030759829548,
+          44030760484908,
+          44030760943660,
+          44030761173036,
+          44030761631788
+        ]
+      },
+      "available": false,
+      "name": "3T Exploro RaceMax EKAR 700c Bike - Red / White / 58cm",
+      "public_title": "Red / White / 58cm",
+      "options": [
+        "Red / White",
+        "58cm"
+      ],
+      "price": 279999,
+      "weight": 18144,
+      "compare_at_price": 599900,
+      "inventory_management": "shopify",
+      "barcode": null,
+      "featured_media": {
+        "alt": "3T Exploro RaceMax EKAR 700c Bike Red / White",
+        "id": 36539004321836,
+        "position": 2,
+        "preview_image": {
+          "aspect_ratio": 1.0,
+          "height": 2000,
+          "width": 2000,
+          "src": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/3t-exploro-racemax-ekar-700c-bike-5339506.jpg?v=1771302667"
+        }
+      },
+      "quantity_rule": {
+        "min": 1,
+        "max": null,
+        "increment": 1
+      },
+      "quantity_price_breaks": [],
+      "requires_selling_plan": false,
+      "selling_plan_allocations": []
+    },
+    {
+      "id": 44030761173036,
+      "title": "Red / White / 61cm",
+      "option1": "Red / White",
+      "option2": "61cm",
+      "option3": null,
+      "sku": "9752ESDN29L",
+      "requires_shipping": true,
+      "taxable": true,
+      "featured_image": {
+        "id": 45420910739500,
+        "product_id": 7624655732780,
+        "position": 2,
+        "created_at": "2026-01-23T13:41:19-05:00",
+        "updated_at": "2026-02-16T23:31:07-05:00",
+        "alt": "3T Exploro RaceMax EKAR 700c Bike Red / White",
+        "width": 2000,
+        "height": 2000,
+        "src": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/3t-exploro-racemax-ekar-700c-bike-5339506.jpg?v=1771302667",
+        "variant_ids": [
+          44030759501868,
+          44030759829548,
+          44030760484908,
+          44030760943660,
+          44030761173036,
+          44030761631788
+        ]
+      },
+      "available": true,
+      "name": "3T Exploro RaceMax EKAR 700c Bike - Red / White / 61cm",
+      "public_title": "Red / White / 61cm",
+      "options": [
+        "Red / White",
+        "61cm"
+      ],
+      "price": 279999,
+      "weight": 18144,
+      "compare_at_price": 599900,
+      "inventory_management": "shopify",
+      "barcode": null,
+      "featured_media": {
+        "alt": "3T Exploro RaceMax EKAR 700c Bike Red / White",
+        "id": 36539004321836,
+        "position": 2,
+        "preview_image": {
+          "aspect_ratio": 1.0,
+          "height": 2000,
+          "width": 2000,
+          "src": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/3t-exploro-racemax-ekar-700c-bike-5339506.jpg?v=1771302667"
+        }
+      },
+      "quantity_rule": {
+        "min": 1,
+        "max": null,
+        "increment": 1
+      },
+      "quantity_price_breaks": [],
+      "requires_selling_plan": false,
+      "selling_plan_allocations": []
+    },
+    {
+      "id": 43652098621484,
+      "title": "Grey / Orange / XXS",
+      "option1": "Grey / Orange",
+      "option2": "XXS",
+      "option3": null,
+      "sku": "9752ESDI65L",
+      "requires_shipping": true,
+      "taxable": true,
+      "featured_image": {
+        "id": 45420910706732,
+        "product_id": 7624655732780,
+        "position": 1,
+        "created_at": "2026-01-23T13:41:19-05:00",
+        "updated_at": "2026-02-16T23:30:15-05:00",
+        "alt": "3T Exploro RaceMax EKAR 700c Bike Grey / Orange",
+        "width": 2000,
+        "height": 2000,
+        "src": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/3t-exploro-racemax-ekar-700c-bike-4626528.jpg?v=1771302615",
+        "variant_ids": [
+          43647140659244,
+          43647142461484,
+          43647142821932,
+          43652098457644,
+          43652098555948,
+          43652098621484
+        ]
+      },
+      "available": false,
+      "name": "3T Exploro RaceMax EKAR 700c Bike - Grey / Orange / XXS",
+      "public_title": "Grey / Orange / XXS",
+      "options": [
+        "Grey / Orange",
+        "XXS"
+      ],
+      "price": 279999,
+      "weight": 18144,
+      "compare_at_price": 599900,
+      "inventory_management": "shopify",
+      "barcode": null,
+      "featured_media": {
+        "alt": "3T Exploro RaceMax EKAR 700c Bike Grey / Orange",
+        "id": 36539004289068,
+        "position": 1,
+        "preview_image": {
+          "aspect_ratio": 1.0,
+          "height": 2000,
+          "width": 2000,
+          "src": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/3t-exploro-racemax-ekar-700c-bike-4626528.jpg?v=1771302615"
+        }
+      },
+      "quantity_rule": {
+        "min": 1,
+        "max": null,
+        "increment": 1
+      },
+      "quantity_price_breaks": [],
+      "requires_selling_plan": false,
+      "selling_plan_allocations": []
+    },
+    {
+      "id": 43647142821932,
+      "title": "Grey / Orange / 51cm",
+      "option1": "Grey / Orange",
+      "option2": "51cm",
+      "option3": null,
+      "sku": "9752ESDJ65L",
+      "requires_shipping": true,
+      "taxable": true,
+      "featured_image": {
+        "id": 45420910706732,
+        "product_id": 7624655732780,
+        "position": 1,
+        "created_at": "2026-01-23T13:41:19-05:00",
+        "updated_at": "2026-02-16T23:30:15-05:00",
+        "alt": "3T Exploro RaceMax EKAR 700c Bike Grey / Orange",
+        "width": 2000,
+        "height": 2000,
+        "src": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/3t-exploro-racemax-ekar-700c-bike-4626528.jpg?v=1771302615",
+        "variant_ids": [
+          43647140659244,
+          43647142461484,
+          43647142821932,
+          43652098457644,
+          43652098555948,
+          43652098621484
+        ]
+      },
+      "available": false,
+      "name": "3T Exploro RaceMax EKAR 700c Bike - Grey / Orange / 51cm",
+      "public_title": "Grey / Orange / 51cm",
+      "options": [
+        "Grey / Orange",
+        "51cm"
+      ],
+      "price": 279999,
+      "weight": 18144,
+      "compare_at_price": 599900,
+      "inventory_management": "shopify",
+      "barcode": null,
+      "featured_media": {
+        "alt": "3T Exploro RaceMax EKAR 700c Bike Grey / Orange",
+        "id": 36539004289068,
+        "position": 1,
+        "preview_image": {
+          "aspect_ratio": 1.0,
+          "height": 2000,
+          "width": 2000,
+          "src": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/3t-exploro-racemax-ekar-700c-bike-4626528.jpg?v=1771302615"
+        }
+      },
+      "quantity_rule": {
+        "min": 1,
+        "max": null,
+        "increment": 1
+      },
+      "quantity_price_breaks": [],
+      "requires_selling_plan": false,
+      "selling_plan_allocations": []
+    },
+    {
+      "id": 43652098457644,
+      "title": "Grey / Orange / 54cm",
+      "option1": "Grey / Orange",
+      "option2": "54cm",
+      "option3": null,
+      "sku": "9752ESDK65L",
+      "requires_shipping": true,
+      "taxable": true,
+      "featured_image": {
+        "id": 45420910706732,
+        "product_id": 7624655732780,
+        "position": 1,
+        "created_at": "2026-01-23T13:41:19-05:00",
+        "updated_at": "2026-02-16T23:30:15-05:00",
+        "alt": "3T Exploro RaceMax EKAR 700c Bike Grey / Orange",
+        "width": 2000,
+        "height": 2000,
+        "src": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/3t-exploro-racemax-ekar-700c-bike-4626528.jpg?v=1771302615",
+        "variant_ids": [
+          43647140659244,
+          43647142461484,
+          43647142821932,
+          43652098457644,
+          43652098555948,
+          43652098621484
+        ]
+      },
+      "available": false,
+      "name": "3T Exploro RaceMax EKAR 700c Bike - Grey / Orange / 54cm",
+      "public_title": "Grey / Orange / 54cm",
+      "options": [
+        "Grey / Orange",
+        "54cm"
+      ],
+      "price": 279999,
+      "weight": 18144,
+      "compare_at_price": 599900,
+      "inventory_management": "shopify",
+      "barcode": null,
+      "featured_media": {
+        "alt": "3T Exploro RaceMax EKAR 700c Bike Grey / Orange",
+        "id": 36539004289068,
+        "position": 1,
+        "preview_image": {
+          "aspect_ratio": 1.0,
+          "height": 2000,
+          "width": 2000,
+          "src": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/3t-exploro-racemax-ekar-700c-bike-4626528.jpg?v=1771302615"
+        }
+      },
+      "quantity_rule": {
+        "min": 1,
+        "max": null,
+        "increment": 1
+      },
+      "quantity_price_breaks": [],
+      "requires_selling_plan": false,
+      "selling_plan_allocations": []
+    },
+    {
+      "id": 43647142461484,
+      "title": "Grey / Orange / 56cm",
+      "option1": "Grey / Orange",
+      "option2": "56cm",
+      "option3": null,
+      "sku": "9752ESDL65L",
+      "requires_shipping": true,
+      "taxable": true,
+      "featured_image": {
+        "id": 45420910706732,
+        "product_id": 7624655732780,
+        "position": 1,
+        "created_at": "2026-01-23T13:41:19-05:00",
+        "updated_at": "2026-02-16T23:30:15-05:00",
+        "alt": "3T Exploro RaceMax EKAR 700c Bike Grey / Orange",
+        "width": 2000,
+        "height": 2000,
+        "src": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/3t-exploro-racemax-ekar-700c-bike-4626528.jpg?v=1771302615",
+        "variant_ids": [
+          43647140659244,
+          43647142461484,
+          43647142821932,
+          43652098457644,
+          43652098555948,
+          43652098621484
+        ]
+      },
+      "available": false,
+      "name": "3T Exploro RaceMax EKAR 700c Bike - Grey / Orange / 56cm",
+      "public_title": "Grey / Orange / 56cm",
+      "options": [
+        "Grey / Orange",
+        "56cm"
+      ],
+      "price": 279999,
+      "weight": 18144,
+      "compare_at_price": 599900,
+      "inventory_management": "shopify",
+      "barcode": null,
+      "featured_media": {
+        "alt": "3T Exploro RaceMax EKAR 700c Bike Grey / Orange",
+        "id": 36539004289068,
+        "position": 1,
+        "preview_image": {
+          "aspect_ratio": 1.0,
+          "height": 2000,
+          "width": 2000,
+          "src": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/3t-exploro-racemax-ekar-700c-bike-4626528.jpg?v=1771302615"
+        }
+      },
+      "quantity_rule": {
+        "min": 1,
+        "max": null,
+        "increment": 1
+      },
+      "quantity_price_breaks": [],
+      "requires_selling_plan": false,
+      "selling_plan_allocations": []
+    },
+    {
+      "id": 43647140659244,
+      "title": "Grey / Orange / 58cm",
+      "option1": "Grey / Orange",
+      "option2": "58cm",
+      "option3": null,
+      "sku": "9752ESDM65L",
+      "requires_shipping": true,
+      "taxable": true,
+      "featured_image": {
+        "id": 45420910706732,
+        "product_id": 7624655732780,
+        "position": 1,
+        "created_at": "2026-01-23T13:41:19-05:00",
+        "updated_at": "2026-02-16T23:30:15-05:00",
+        "alt": "3T Exploro RaceMax EKAR 700c Bike Grey / Orange",
+        "width": 2000,
+        "height": 2000,
+        "src": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/3t-exploro-racemax-ekar-700c-bike-4626528.jpg?v=1771302615",
+        "variant_ids": [
+          43647140659244,
+          43647142461484,
+          43647142821932,
+          43652098457644,
+          43652098555948,
+          43652098621484
+        ]
+      },
+      "available": false,
+      "name": "3T Exploro RaceMax EKAR 700c Bike - Grey / Orange / 58cm",
+      "public_title": "Grey / Orange / 58cm",
+      "options": [
+        "Grey / Orange",
+        "58cm"
+      ],
+      "price": 279999,
+      "weight": 18144,
+      "compare_at_price": 599900,
+      "inventory_management": "shopify",
+      "barcode": null,
+      "featured_media": {
+        "alt": "3T Exploro RaceMax EKAR 700c Bike Grey / Orange",
+        "id": 36539004289068,
+        "position": 1,
+        "preview_image": {
+          "aspect_ratio": 1.0,
+          "height": 2000,
+          "width": 2000,
+          "src": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/3t-exploro-racemax-ekar-700c-bike-4626528.jpg?v=1771302615"
+        }
+      },
+      "quantity_rule": {
+        "min": 1,
+        "max": null,
+        "increment": 1
+      },
+      "quantity_price_breaks": [],
+      "requires_selling_plan": false,
+      "selling_plan_allocations": []
+    },
+    {
+      "id": 43652098555948,
+      "title": "Grey / Orange / 61cm",
+      "option1": "Grey / Orange",
+      "option2": "61cm",
+      "option3": null,
+      "sku": "9752ESDN65L",
+      "requires_shipping": true,
+      "taxable": true,
+      "featured_image": {
+        "id": 45420910706732,
+        "product_id": 7624655732780,
+        "position": 1,
+        "created_at": "2026-01-23T13:41:19-05:00",
+        "updated_at": "2026-02-16T23:30:15-05:00",
+        "alt": "3T Exploro RaceMax EKAR 700c Bike Grey / Orange",
+        "width": 2000,
+        "height": 2000,
+        "src": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/3t-exploro-racemax-ekar-700c-bike-4626528.jpg?v=1771302615",
+        "variant_ids": [
+          43647140659244,
+          43647142461484,
+          43647142821932,
+          43652098457644,
+          43652098555948,
+          43652098621484
+        ]
+      },
+      "available": false,
+      "name": "3T Exploro RaceMax EKAR 700c Bike - Grey / Orange / 61cm",
+      "public_title": "Grey / Orange / 61cm",
+      "options": [
+        "Grey / Orange",
+        "61cm"
+      ],
+      "price": 279999,
+      "weight": 18144,
+      "compare_at_price": 599900,
+      "inventory_management": "shopify",
+      "barcode": null,
+      "featured_media": {
+        "alt": "3T Exploro RaceMax EKAR 700c Bike Grey / Orange",
+        "id": 36539004289068,
+        "position": 1,
+        "preview_image": {
+          "aspect_ratio": 1.0,
+          "height": 2000,
+          "width": 2000,
+          "src": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/3t-exploro-racemax-ekar-700c-bike-4626528.jpg?v=1771302615"
+        }
+      },
+      "quantity_rule": {
+        "min": 1,
+        "max": null,
+        "increment": 1
+      },
+      "quantity_price_breaks": [],
+      "requires_selling_plan": false,
+      "selling_plan_allocations": []
+    }
+  ],
+  "options": [
+    {
+      "name": "Color",
+      "position": 1,
+      "values": [
+        "Red / White",
+        "Grey / Orange"
+      ]
+    },
+    {
+      "name": "Size",
+      "position": 2,
+      "values": [
+        "XXS",
+        "51cm",
+        "54cm",
+        "56cm",
+        "58cm",
+        "61cm"
+      ]
+    }
+  ]
+}

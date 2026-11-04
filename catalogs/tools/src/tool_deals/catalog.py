@@ -21,6 +21,8 @@ def classify(product: Product) -> Classification | None:
     if re.search(r"\b(accessories|parts|rests?|jigs?(?!\s+saws?\b)|templates?|blades|bits|cutters|knives|clamps|vises|guides|gauges|books|casters|storage|staples|sawhorses|abrasives|sanding paper|batteries and chargers|apparel|fasteners|hand tools|turning tools)\b", kind):
         return None
     # Replacement parts and consumables do not become machines because their title names one.
+    if re.search(r"\b(?:abrasives|sanding (?:discs|belts|sheets))\s+for\b", title):
+        return None
     if re.search(r"\b(?:drill|driver|router) bits?\b", title):
         return None
     if re.search(r"\b(replacement|adapte?r|adaptor|attachment|blade(?!\s+stroke\b)|bit set|insert|filter|hose|cover|chuck|sandpaper|stand only|tool bag|rests?|jigs?(?!\s+saw\b)|templates?|stop collar|drilling guide)\b", title):
@@ -65,7 +67,10 @@ CATALOG = Catalog(
     headline="Build more.\nSpend less.",
     description="Deep cuts on power tools, serious kits, and workshop equipment. Ranked by percentage off, with the package details kept in view.",
     categories=("Power tools", "Combo kits", "Workshop equipment"),
-    sources=(RetailerConfig(name="Tool Nut", domain="www.toolnut.com",
+    sources=(RetailerConfig(name="Beaver Industrial Supply", domain="beavertools.com",
+                            scrape_urls=["https://beavertools.com/collections/sales-and-closeouts?currency=USD"],
+                            verify_shopify_currency=True),
+             RetailerConfig(name="Tool Nut", domain="www.toolnut.com",
                             scrape_urls=["https://www.toolnut.com/collections/saws?currency=USD",
                                          "https://www.toolnut.com/collections/power-tools?currency=USD",
                                          "https://www.toolnut.com/collections/stationary-tools?currency=USD"],

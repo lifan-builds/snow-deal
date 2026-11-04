@@ -1,0 +1,2334 @@
+{
+  "source": "Beaver Industrial Supply",
+  "scope": "sales-and-closeouts collection; retailer-reported USD prices and exact purchase stock, not historical-reference or checkout verification",
+  "preliminary_feed_only": {
+    "eligible_in_stock_listings": 157,
+    "deep_deal_listings": 15,
+    "disposition": "superseded by main purchase stock evidence"
+  },
+  "candidate": {
+    "checked_at": "2026-11-04T05:55:48.444394+00:00",
+    "refresh": [
+      {
+        "source": "Beaver Industrial Supply",
+        "status": "complete",
+        "errors": 0,
+        "pages": 3,
+        "collections": [
+          {
+            "url": "https://beavertools.com/collections/sales-and-closeouts?currency=USD",
+            "pages": 3,
+            "products": 192,
+            "status": "complete",
+            "observed_currency": "USD"
+          }
+        ],
+        "product_pages": 192,
+        "parsed_products": 192,
+        "accepted_products": 192
+      }
+    ],
+    "eligible_listings": 75,
+    "deep_listings": 7
+  },
+  "snapshot_sha256": "b632d06ef887b25a4245b1746d217b388759fd738475577a82b785963aee2382",
+  "merchant_audit": {
+    "catalog": "tools",
+    "source": "Beaver Industrial Supply",
+    "measured_at": "2026-11-04T06:01:41.376469+00:00",
+    "population": 75,
+    "seed": 20261104,
+    "method": "top10-plus-seeded20 supplemented by every deep offer",
+    "extra_deep_samples": 0,
+    "sample_size": 30,
+    "match": 30,
+    "mismatch": 0,
+    "inconclusive": 0,
+    "verified_match_percent": 100.0,
+    "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+    "results": [
+      {
+        "name": "Kreg 20V Ionic Drive 1/2\" Compact Drill Kit KPTBDR050A",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153404686429",
+          "url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-2-compact-drill-kit-kptbdr050a?currency=USD&variant=44153404686429",
+          "current_price": 99.0,
+          "original_price": 228.99,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/kreg_kptbdr050a_1.jpg?v=1769410568",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 56.766671033669596,
+          "savings": 129.99
+        },
+        "check_started_at": "2026-11-04T05:56:02.358586+00:00",
+        "evidence_url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-2-compact-drill-kit-kptbdr050a.js?currency=USD",
+        "response_sha256": "4a2cfec1c9fef875156b51fba92cf7e1b6ca8afa8c4299026145c646498b4d57",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "Kreg 20V Ionic Drive 1/2\" Compact Drill Kit KPTBDR050A",
+          "variant": "44153404686429",
+          "sku": "KJKPTBDR050A",
+          "price_minor": 9900,
+          "reference_minor": 22899,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-2-compact-drill-kit-kptbdr050a?currency=USD&variant=44153404686429",
+        "product_response_sha256": "48be327f21a5cb6920502ed42f86eb9069bad619a00fd5bc00e696555b568095",
+        "purchase_panel": {
+          "sku": "KJKPTBDR050A",
+          "product_id": "8060910633053",
+          "variant_key": "44153404686429",
+          "price": 99.0,
+          "reference": 228.99,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T05:56:18.767485+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Kreg 20V Ionic Drive 1/4\" Compact Impact Driver Kit KPTBDV025A",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153397182557",
+          "url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-4-compact-impact-driver-kit-kptbdv025a?currency=USD&variant=44153397182557",
+          "current_price": 119.0,
+          "original_price": 248.99,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/kreg_kptbdv025a_1.jpg?v=1769410521",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 52.20691594039921,
+          "savings": 129.99
+        },
+        "check_started_at": "2026-11-04T05:56:18.767507+00:00",
+        "evidence_url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-4-compact-impact-driver-kit-kptbdv025a.js?currency=USD",
+        "response_sha256": "dc524b636aafd2bc77696799251abcf55811622f35ebf7dabbfce899800c17c9",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "Kreg 20V Ionic Drive 1/4\" Compact Impact Driver Kit KPTBDV025A",
+          "variant": "44153397182557",
+          "sku": "KJKPTBDV025A",
+          "price_minor": 11900,
+          "reference_minor": 24899,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-4-compact-impact-driver-kit-kptbdv025a?currency=USD&variant=44153397182557",
+        "product_response_sha256": "bd34b5e9d39c361996ce03eedd63e0f6fdc0099d8294a1a8dda1d9dc25825660",
+        "purchase_panel": {
+          "sku": "KJKPTBDV025A",
+          "product_id": "8060903194717",
+          "variant_key": "44153397182557",
+          "price": 119.0,
+          "reference": 248.99,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T05:56:29.976364+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Kreg 20V Ionic Drive 5\" Random Orbit Sander Kit KPTBRS500A",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153396428893",
+          "url": "https://beavertools.com/products/kreg-20v-ionic-drive-5-random-orbit-sander-kit-kptbrs500a?currency=USD&variant=44153396428893",
+          "current_price": 119.0,
+          "original_price": 248.99,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/kreg_kptbrs500a_1.jpg?v=1769410520",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 52.20691594039921,
+          "savings": 129.99
+        },
+        "check_started_at": "2026-11-04T05:56:29.976387+00:00",
+        "evidence_url": "https://beavertools.com/products/kreg-20v-ionic-drive-5-random-orbit-sander-kit-kptbrs500a.js?currency=USD",
+        "response_sha256": "87bdf33a2f972fc415549597250cb191f2922de205273cb5296ce397e58c5192",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "Kreg 20V Ionic Drive 5\" Random Orbit Sander Kit KPTBRS500A",
+          "variant": "44153396428893",
+          "sku": "KJKPTBRS500A",
+          "price_minor": 11900,
+          "reference_minor": 24899,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/kreg-20v-ionic-drive-5-random-orbit-sander-kit-kptbrs500a?currency=USD&variant=44153396428893",
+        "product_response_sha256": "ff311e8bb5b8637e9572d63c8cbad4e8b6f6a4c691542862bdfbd012b7379809",
+        "purchase_panel": {
+          "sku": "KJKPTBRS500A",
+          "product_id": "8060902441053",
+          "variant_key": "44153396428893",
+          "price": 119.0,
+          "reference": 248.99,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T05:56:40.946012+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Kreg 20V Ionic Drive Oscillating Multi-Tool Kit KPTBMT100A",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153393905757",
+          "url": "https://beavertools.com/products/kreg-20v-ionic-drive-oscillating-multi-tool-kit-kptbmt100a?currency=USD&variant=44153393905757",
+          "current_price": 139.0,
+          "original_price": 268.99,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/kreg_kptbmt100a_1.jpg?v=1769410505",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 48.325216550801144,
+          "savings": 129.99
+        },
+        "check_started_at": "2026-11-04T05:56:40.946032+00:00",
+        "evidence_url": "https://beavertools.com/products/kreg-20v-ionic-drive-oscillating-multi-tool-kit-kptbmt100a.js?currency=USD",
+        "response_sha256": "2aa02cba72134883c4f0d934a89e807338beb05682a92c0169a1d97c557b0b09",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "Kreg 20V Ionic Drive Oscillating Multi-Tool Kit KPTBMT100A",
+          "variant": "44153393905757",
+          "sku": "KJKPTBMT100A",
+          "price_minor": 13900,
+          "reference_minor": 26899,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/kreg-20v-ionic-drive-oscillating-multi-tool-kit-kptbmt100a?currency=USD&variant=44153393905757",
+        "product_response_sha256": "1049cee205cd5c99562ee7c0bec7ba64d8ca51d2f4af8aed61552c4edac37638",
+        "purchase_panel": {
+          "sku": "KJKPTBMT100A",
+          "product_id": "8060899885149",
+          "variant_key": "44153393905757",
+          "price": 139.0,
+          "reference": 268.99,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T05:56:52.019689+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Kreg 20V Ionic Drive 1/4\" Trim Router Kit KPTBRT025A",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153399476317",
+          "url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-4-trim-router-kit-kptbrt025a?currency=USD&variant=44153399476317",
+          "current_price": 149.0,
+          "original_price": 278.99,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/kreg_kptbrt025a_1.jpg?v=1769410536",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 46.59306785189433,
+          "savings": 129.99
+        },
+        "check_started_at": "2026-11-04T05:56:52.019711+00:00",
+        "evidence_url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-4-trim-router-kit-kptbrt025a.js?currency=USD",
+        "response_sha256": "748b29fd9a8d3fc510fda8a12b3e8dbf2d515dcd1736b638efa40a5ffd1dc697",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "Kreg 20V Ionic Drive 1/4\" Trim Router Kit KPTBRT025A",
+          "variant": "44153399476317",
+          "sku": "KJKPTBRT025A",
+          "price_minor": 14900,
+          "reference_minor": 27899,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-4-trim-router-kit-kptbrt025a?currency=USD&variant=44153399476317",
+        "product_response_sha256": "5159d10f8f1a34f0a37d866c26b05fc70b29128943a3ace5329e4af5ecb080cb",
+        "purchase_panel": {
+          "sku": "KJKPTBRT025A",
+          "product_id": "8060905488477",
+          "variant_key": "44153399476317",
+          "price": 149.0,
+          "reference": 278.99,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T05:57:03.070417+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Axiom AutoRoute 24\" x 48\" CNC Router AR8PROV6",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153004130397",
+          "url": "https://beavertools.com/products/ar8prov6-axiom-ar8prov6-axion-autoroute-24-x-48-cnc-router?currency=USD&variant=44153004130397",
+          "current_price": 5999.0,
+          "original_price": 10669.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/Axiom_AutoRoute_24_x_48_CNC_Router_AR8PROV6._1.jpg?v=1769408797",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 43.77167494610554,
+          "savings": 4670.0
+        },
+        "check_started_at": "2026-11-04T05:57:03.070441+00:00",
+        "evidence_url": "https://beavertools.com/products/ar8prov6-axiom-ar8prov6-axion-autoroute-24-x-48-cnc-router.js?currency=USD",
+        "response_sha256": "87cbce8f2de19bafcfbf3ba31b9268817e0b82fee7b00df1808188ae119d6abd",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "Axiom AutoRoute 24\" x 48\" CNC Router AR8PROV6",
+          "variant": "44153004130397",
+          "sku": "AXAR8PROV6",
+          "price_minor": 599900,
+          "reference_minor": 1066900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/ar8prov6-axiom-ar8prov6-axion-autoroute-24-x-48-cnc-router?currency=USD&variant=44153004130397",
+        "product_response_sha256": "1387b3ca508a0a0cc3519cad922408ee0764027d55c026955b9f6ed89abfff49",
+        "purchase_panel": {
+          "sku": "AXAR8PROV6",
+          "product_id": "8060512043101",
+          "variant_key": "44153004130397",
+          "price": 5999.0,
+          "reference": 10669.0,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T05:57:14.077099+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Powermatic PM1800B-3T 18 in. Bandsaw with ArmorGlide, 5HP 3PH 230V 1791801BT",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153690030173",
+          "url": "https://beavertools.com/products/1791801bt-powermatic-pm1800b-3t-18-inch-bandsaw-5hp-3ph-230v-with-armorglide?currency=USD&variant=44153690030173",
+          "current_price": 4999.0,
+          "original_price": 8359.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/PM1-1791800BT_IMG_RIGHT_FRONT_ISO_44ce98cb-d607-42e5-b6ad-966ec906b17a.jpg?v=1777064083",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 40.19619571719105,
+          "savings": 3360.0
+        },
+        "check_started_at": "2026-11-04T05:57:14.077116+00:00",
+        "evidence_url": "https://beavertools.com/products/1791801bt-powermatic-pm1800b-3t-18-inch-bandsaw-5hp-3ph-230v-with-armorglide.js?currency=USD",
+        "response_sha256": "f3c1c743aa01b1f74971fb793c603cf7b0df6b366f0618ca8bbb3bdc72093e75",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "Powermatic PM1800B-3T 18 in. Bandsaw with ArmorGlide, 5HP 3PH 230V 1791801BT",
+          "variant": "44153690030173",
+          "sku": "PM1791801BT",
+          "price_minor": 499900,
+          "reference_minor": 835900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/1791801bt-powermatic-pm1800b-3t-18-inch-bandsaw-5hp-3ph-230v-with-armorglide?currency=USD&variant=44153690030173",
+        "product_response_sha256": "38599da2e13b1351608ceb8cd7afafb293af8c5bb972b9a8121312f251e41f54",
+        "purchase_panel": {
+          "sku": "PM1791801BT",
+          "product_id": "8061192732765",
+          "variant_key": "44153690030173",
+          "price": 4999.0,
+          "reference": 8359.0,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T05:57:25.201553+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Kreg 20V Ionic Drive 4-1/2\" Circular Saw + Rip-Cut KPTCS4502400B",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153388990557",
+          "url": "https://beavertools.com/products/kreg-20v-ionic-drive-4-1-2-circular-saw-rip-cut-kptcs4502400b?currency=USD&variant=44153388990557",
+          "current_price": 198.0,
+          "original_price": 327.99,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/kreg_kptcs4502400b_1.jpg?v=1769410479",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 39.63230586298363,
+          "savings": 129.99
+        },
+        "check_started_at": "2026-11-04T05:57:25.201571+00:00",
+        "evidence_url": "https://beavertools.com/products/kreg-20v-ionic-drive-4-1-2-circular-saw-rip-cut-kptcs4502400b.js?currency=USD",
+        "response_sha256": "b85cf67a1da70b4737370c8baeca8ac3179a52892df735bc3a4ba70e8ffac2f4",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "Kreg 20V Ionic Drive 4-1/2\" Circular Saw + Rip-Cut KPTCS4502400B",
+          "variant": "44153388990557",
+          "sku": "KJKPTCS4502400B",
+          "price_minor": 19800,
+          "reference_minor": 32799,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/kreg-20v-ionic-drive-4-1-2-circular-saw-rip-cut-kptcs4502400b?currency=USD&variant=44153388990557",
+        "product_response_sha256": "e82c5a466282571a7d6bb4dd32c572cde8b7acc96df7b624189ad7baf04d6abf",
+        "purchase_panel": {
+          "sku": "KJKPTCS4502400B",
+          "product_id": "8060895166557",
+          "variant_key": "44153388990557",
+          "price": 198.0,
+          "reference": 327.99,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T05:57:36.253707+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Jet JET 12 in Single Speed Industrial Buffer 578412",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153351766109",
+          "url": "https://beavertools.com/products/578412-jet-ibg-12ssb-12in-industrial-buffer?currency=USD&variant=44153351766109",
+          "current_price": 999.0,
+          "original_price": 1605.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/screenshot_2020-03-26_at_1.12.50_pm.png?v=1769410241",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 37.757009345794394,
+          "savings": 606.0
+        },
+        "check_started_at": "2026-11-04T05:57:36.253727+00:00",
+        "evidence_url": "https://beavertools.com/products/578412-jet-ibg-12ssb-12in-industrial-buffer.js?currency=USD",
+        "response_sha256": "d498f03e5479da1ddb83a365073c2404c40d707f480804d1e40ae3304890232e",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "Jet JET 12 in Single Speed Industrial Buffer 578412",
+          "variant": "44153351766109",
+          "sku": "JT578412",
+          "price_minor": 99900,
+          "reference_minor": 160500,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/578412-jet-ibg-12ssb-12in-industrial-buffer?currency=USD&variant=44153351766109",
+        "product_response_sha256": "d00e6e8f061eb594a9a46dd964cf69a986934fcede0d63086a89f7b756bd33a5",
+        "purchase_panel": {
+          "sku": "JT578412",
+          "product_id": "8060858400861",
+          "variant_key": "44153351766109",
+          "price": 999.0,
+          "reference": 1605.0,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T05:57:47.502659+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Bosch 18V 2-Tool Combo Kit w/ Drill, Impact Driver, 2 Batteries GXL18V-27B22",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153761595485",
+          "url": "https://beavertools.com/products/gxl18v-27b22-bosch-18v-2-tool-combo-kit-with-impact-driver-gdr18v-1800-drill-driver-gsr18v-400-2-2-0-ah-batteries?currency=USD&variant=44153761595485",
+          "current_price": 149.0,
+          "original_price": 229.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/Bosch_18V_2-Tool_Combo_Kit_with_Impact_Driver_GDR18V-1800_Drill_Driver_GSR18V-400_2_20_Ah_Batteries_GXL18V-27B22_1.jpg?v=1769412401",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 34.93449781659389,
+          "savings": 80.0
+        },
+        "check_started_at": "2026-11-04T05:57:47.502675+00:00",
+        "evidence_url": "https://beavertools.com/products/gxl18v-27b22-bosch-18v-2-tool-combo-kit-with-impact-driver-gdr18v-1800-drill-driver-gsr18v-400-2-2-0-ah-batteries.js?currency=USD",
+        "response_sha256": "8d0dd2ea921045c1714bf915c0422333406da554f23c638242866d608954f642",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "Bosch 18V 2-Tool Combo Kit w/ Drill, Impact Driver, 2 Batteries GXL18V-27B22",
+          "variant": "44153761595485",
+          "sku": "RBGXL18V-27B22",
+          "price_minor": 14900,
+          "reference_minor": 22900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/gxl18v-27b22-bosch-18v-2-tool-combo-kit-with-impact-driver-gdr18v-1800-drill-driver-gsr18v-400-2-2-0-ah-batteries?currency=USD&variant=44153761595485",
+        "product_response_sha256": "82f3d560f4b170c6aaa865e3f5b22757422b1cb53288ff74b90b8a0239440bac",
+        "purchase_panel": {
+          "sku": "RBGXL18V-27B22",
+          "product_id": "8061263609949",
+          "variant_key": "44153761595485",
+          "price": 149.0,
+          "reference": 229.0,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T05:57:58.600573+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "SawStop Contractor Table Saw 1.75HP, 115/230V, w/ 36in Pro Fence Assembly CNS175-TGP236",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153871204445",
+          "url": "https://beavertools.com/products/cns175-tgp236-sawstop-contractor-table-saw-1-75hp-115-230v-w-36in-pro-fence-assembly?currency=USD&variant=44153871204445",
+          "current_price": 2129.0,
+          "original_price": 2329.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/cns175-tgp36_1.png?v=1769412918",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 8.587376556462,
+          "savings": 200.0
+        },
+        "check_started_at": "2026-11-04T05:57:58.600589+00:00",
+        "evidence_url": "https://beavertools.com/products/cns175-tgp236-sawstop-contractor-table-saw-1-75hp-115-230v-w-36in-pro-fence-assembly.js?currency=USD",
+        "response_sha256": "ac3b8ed5f068143df93f6c5c607e6572195e42a7e24e142bb2f1b96d32f413c2",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "SawStop Contractor Table Saw 1.75HP, 115/230V, w/ 36in Pro Fence Assembly CNS175-TGP236",
+          "variant": "44153871204445",
+          "sku": "SSCNS175-TGP236",
+          "price_minor": 212900,
+          "reference_minor": 232900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/cns175-tgp236-sawstop-contractor-table-saw-1-75hp-115-230v-w-36in-pro-fence-assembly?currency=USD&variant=44153871204445",
+        "product_response_sha256": "a69c974d078a86945c81fa5568205ba3bacedb24deb71c91b2926ff9fbcefecf",
+        "purchase_panel": {
+          "sku": "SSCNS175-TGP236",
+          "product_id": "8061369057373",
+          "variant_key": "44153871204445",
+          "price": 2129.0,
+          "reference": 2329.0,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T05:58:09.601677+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Kreg 20V Ionic Drive 6-1/2\" Plunge-Cut Track Saw Kit KPTBPS100A",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153388925021",
+          "url": "https://beavertools.com/products/kreg-20v-ionic-drive-6-1-2-plunge-cut-track-saw-kit-kptbps100a?currency=USD&variant=44153388925021",
+          "current_price": 349.0,
+          "original_price": 399.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/kreg_kptbps100a_1.jpg?v=1769410483",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 12.531328320802006,
+          "savings": 50.0
+        },
+        "check_started_at": "2026-11-04T05:58:09.601696+00:00",
+        "evidence_url": "https://beavertools.com/products/kreg-20v-ionic-drive-6-1-2-plunge-cut-track-saw-kit-kptbps100a.js?currency=USD",
+        "response_sha256": "422064e8048a1056b2ee3b6e7ac2b2a4ac11148a6e331c9dbdac0e86a06a77c0",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "Kreg 20V Ionic Drive 6-1/2\" Plunge-Cut Track Saw Kit KPTBPS100A",
+          "variant": "44153388925021",
+          "sku": "KJKPTBPS100A",
+          "price_minor": 34900,
+          "reference_minor": 39900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/kreg-20v-ionic-drive-6-1-2-plunge-cut-track-saw-kit-kptbps100a?currency=USD&variant=44153388925021",
+        "product_response_sha256": "39d1ef80155c6954e49f03085e757b4b61a5ceee59be56d4a64ae6080212b3c8",
+        "purchase_panel": {
+          "sku": "KJKPTBPS100A",
+          "product_id": "8060895101021",
+          "variant_key": "44153388925021",
+          "price": 349.0,
+          "reference": 399.0,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T05:58:20.699010+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Bosch 18V Brushless 18-Gauge Brad Nailer (Bare Tool) GNH18V-18MN",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153744752733",
+          "url": "https://beavertools.com/products/bosch-18v-brushless-18-gauge-brad-nailer-bare-tool-gnh18v-18mn?currency=USD&variant=44153744752733",
+          "current_price": 299.0,
+          "original_price": 329.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/cordless-nailer-18v-gnh18v-18m-18ga-baretool-bosch-dynamic.jpg?v=1772000183",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 9.118541033434651,
+          "savings": 30.0
+        },
+        "check_started_at": "2026-11-04T05:58:20.699028+00:00",
+        "evidence_url": "https://beavertools.com/products/bosch-18v-brushless-18-gauge-brad-nailer-bare-tool-gnh18v-18mn.js?currency=USD",
+        "response_sha256": "0a3475971e760f499b4624fd945b8cbe2a5d178fb5bddf0963f808b400d565e9",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "Bosch 18V Brushless 18-Gauge Brad Nailer (Bare Tool) GNH18V-18MN",
+          "variant": "44153744752733",
+          "sku": "RBGNH18V-18MN",
+          "price_minor": 29900,
+          "reference_minor": 32900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/bosch-18v-brushless-18-gauge-brad-nailer-bare-tool-gnh18v-18mn?currency=USD&variant=44153744752733",
+        "product_response_sha256": "0dddf01ea4e26dbba8e0b5ee2dd23b56907114b241585bd6706d26b6c04b4d8d",
+        "purchase_panel": {
+          "sku": "RBGNH18V-18MN",
+          "product_id": "8061246832733",
+          "variant_key": "44153744752733",
+          "price": 299.0,
+          "reference": 329.0,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T05:58:31.696343+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Bosch 12V Max Compact Planer (Bare) GHO12V-08N",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153740984413",
+          "url": "https://beavertools.com/products/gho12v-08n-bosch-12v-max-compact-planer-bare-tool?currency=USD&variant=44153740984413",
+          "current_price": 209.0,
+          "original_price": 229.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/bosch_planer.jpg?v=1769412257",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 8.733624454148472,
+          "savings": 20.0
+        },
+        "check_started_at": "2026-11-04T05:58:31.696364+00:00",
+        "evidence_url": "https://beavertools.com/products/gho12v-08n-bosch-12v-max-compact-planer-bare-tool.js?currency=USD",
+        "response_sha256": "103339d0e513506b15accc2b7aec72c358dcaec502b8d68c44de0630a8f54ed8",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "Bosch 12V Max Compact Planer (Bare) GHO12V-08N",
+          "variant": "44153740984413",
+          "sku": "RBGHO12V-08N",
+          "price_minor": 20900,
+          "reference_minor": 22900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/gho12v-08n-bosch-12v-max-compact-planer-bare-tool?currency=USD&variant=44153740984413",
+        "product_response_sha256": "936eff216524be852005f347f6328e79e4875f8e60026c96283c3fd7047c510e",
+        "purchase_panel": {
+          "sku": "RBGHO12V-08N",
+          "product_id": "8061243064413",
+          "variant_key": "44153740984413",
+          "price": 209.0,
+          "reference": 229.0,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T05:58:42.806063+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Jet Black 8\" Helical Head Jointer 2HP 1Ph 230V JWJ-8HH-BLK JT1-1373",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153384829021",
+          "url": "https://beavertools.com/products/jet-black-8-helical-head-jointer-2hp-1ph-230v-jwj-8hh-blk-jt1-1373?currency=USD&variant=44153384829021",
+          "current_price": 2699.0,
+          "original_price": 2999.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/Jet_Black_8_Helical_Head_Jointer_2HP_1Ph_230V_JWJ-8HH-BLK_JT1-1373_1.png?v=1769410455",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 10.003334444814937,
+          "savings": 300.0
+        },
+        "check_started_at": "2026-11-04T05:58:42.806081+00:00",
+        "evidence_url": "https://beavertools.com/products/jet-black-8-helical-head-jointer-2hp-1ph-230v-jwj-8hh-blk-jt1-1373.js?currency=USD",
+        "response_sha256": "ca3d1aee33bbe0453e21abed6a0522929a000eb976db3bb58438c0ae79116d36",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "Jet Black 8\" Helical Head Jointer 2HP 1Ph 230V JWJ-8HH-BLK JT1-1373",
+          "variant": "44153384829021",
+          "sku": "JTJT1-1373",
+          "price_minor": 269900,
+          "reference_minor": 299900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/jet-black-8-helical-head-jointer-2hp-1ph-230v-jwj-8hh-blk-jt1-1373?currency=USD&variant=44153384829021",
+        "product_response_sha256": "188b1fa99d502b8e5e6433c3af4c4e7b9e77447c8b5e7172bd0cbfe61952748b",
+        "purchase_panel": {
+          "sku": "JTJT1-1373",
+          "product_id": "8060891299933",
+          "variant_key": "44153384829021",
+          "price": 2699.0,
+          "reference": 2999.0,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T05:58:54.020451+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Powermatic PJ-882HH 8 in. Parallelogram Jointer with Helical Cutterhead, 2HP, 1PH, 230V 1610082",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153687703645",
+          "url": "https://beavertools.com/products/1610082-powermatic-pj-882hh-8-parallelogram-jointer-2hp-1ph-230v-w-helical-cutterhead-woodworking?currency=USD&variant=44153687703645",
+          "current_price": 4499.0,
+          "original_price": 5202.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/PM9-1610079_main_png.png?v=1777064082",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 13.514033064206075,
+          "savings": 703.0
+        },
+        "check_started_at": "2026-11-04T05:58:54.020470+00:00",
+        "evidence_url": "https://beavertools.com/products/1610082-powermatic-pj-882hh-8-parallelogram-jointer-2hp-1ph-230v-w-helical-cutterhead-woodworking.js?currency=USD",
+        "response_sha256": "beabcf1145ea84ec3614f86ce696ea4b15aa619d58e289cf34c2b4160f230db1",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "Powermatic PJ-882HH 8 in. Parallelogram Jointer with Helical Cutterhead, 2HP, 1PH, 230V 1610082",
+          "variant": "44153687703645",
+          "sku": "PM1610082",
+          "price_minor": 449900,
+          "reference_minor": 520200,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/1610082-powermatic-pj-882hh-8-parallelogram-jointer-2hp-1ph-230v-w-helical-cutterhead-woodworking?currency=USD&variant=44153687703645",
+        "product_response_sha256": "6b2cdf719628f7c0b494661f6c19e2b5c50f41f68bea48df5abf6ceef67db949",
+        "purchase_panel": {
+          "sku": "PM1610082",
+          "product_id": "8061190406237",
+          "variant_key": "44153687703645",
+          "price": 4499.0,
+          "reference": 5202.0,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T05:59:05.162767+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Jet JWP-15B 15 in. CS Planer with Straight Knives 722150",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153365397597",
+          "url": "https://beavertools.com/products/722150-jet-jwp-15b-straight-knife-15in-planer?currency=USD&variant=44153365397597",
+          "current_price": 1999.0,
+          "original_price": 2771.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/722150_1.jpg?v=1769410321",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 27.859978347167086,
+          "savings": 772.0
+        },
+        "check_started_at": "2026-11-04T05:59:05.162784+00:00",
+        "evidence_url": "https://beavertools.com/products/722150-jet-jwp-15b-straight-knife-15in-planer.js?currency=USD",
+        "response_sha256": "a0db68a3eb8b6a7da14fcf4ed84d17d4505b941cb2eb96dbd7f0e7796fb3dd6d",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "Jet JWP-15B 15 in. CS Planer with Straight Knives 722150",
+          "variant": "44153365397597",
+          "sku": "JT722150",
+          "price_minor": 199900,
+          "reference_minor": 277100,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/722150-jet-jwp-15b-straight-knife-15in-planer?currency=USD&variant=44153365397597",
+        "product_response_sha256": "c0db7e6667abf6959d68b9f1b2aec500760cf68c3d19b7179d9994072cc7e4b1",
+        "purchase_panel": {
+          "sku": "JT722150",
+          "product_id": "8060872032349",
+          "variant_key": "44153365397597",
+          "price": 1999.0,
+          "reference": 2771.0,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T05:59:16.219994+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Bosch 18V Brushless Colt Palm Router GKF18V-25N",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153747603549",
+          "url": "https://beavertools.com/products/bosch-18v-brushless-colt-palm-router-gkf18v-25n?currency=USD&variant=44153747603549",
+          "current_price": 209.0,
+          "original_price": 255.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/0f4742de9f802cc4e454c1efa046aa4a9ed0ce37.webp?v=1772135076",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 18.03921568627451,
+          "savings": 46.0
+        },
+        "check_started_at": "2026-11-04T05:59:16.220013+00:00",
+        "evidence_url": "https://beavertools.com/products/bosch-18v-brushless-colt-palm-router-gkf18v-25n.js?currency=USD",
+        "response_sha256": "363e92f6b2b8b6821acfcd36ea8647ebeb144c35b7b7ec1ff8da18caec4516f2",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "Bosch 18V Brushless Colt Palm Router GKF18V-25N",
+          "variant": "44153747603549",
+          "sku": "RBGKF18V-25N",
+          "price_minor": 20900,
+          "reference_minor": 25500,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/bosch-18v-brushless-colt-palm-router-gkf18v-25n?currency=USD&variant=44153747603549",
+        "product_response_sha256": "f897cf8d2b7356ac2cf8614643912f75b6e56cde404ba04b04d910b8f120242b",
+        "purchase_panel": {
+          "sku": "RBGKF18V-25N",
+          "product_id": "8061249683549",
+          "variant_key": "44153747603549",
+          "price": 209.0,
+          "reference": 255.0,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T05:59:27.286693+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Bosch 1\" SDSplus Rotary Hammer, D Handle, 11255VSR",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153695764573",
+          "url": "https://beavertools.com/products/11255vsr-bosch-1-in-sds-plus-rotary-hammer-d-handle-bulldog-xtreme?currency=USD&variant=44153695764573",
+          "current_price": 199.0,
+          "original_price": 229.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/Bosch_1_in_SDS-plus_Rotary_Hammer_D_Handle_Bulldog_Xtreme_11255VSR_1.jpg?v=1769412037",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 13.100436681222707,
+          "savings": 30.0
+        },
+        "check_started_at": "2026-11-04T05:59:27.286711+00:00",
+        "evidence_url": "https://beavertools.com/products/11255vsr-bosch-1-in-sds-plus-rotary-hammer-d-handle-bulldog-xtreme.js?currency=USD",
+        "response_sha256": "f515d335be3526d7c9d9781a21effefa53825e0c935f9db14ea3e8070534641d",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "Bosch 1\" SDSplus Rotary Hammer, D Handle, 11255VSR",
+          "variant": "44153695764573",
+          "sku": "RB11255VSR",
+          "price_minor": 19900,
+          "reference_minor": 22900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/11255vsr-bosch-1-in-sds-plus-rotary-hammer-d-handle-bulldog-xtreme?currency=USD&variant=44153695764573",
+        "product_response_sha256": "f876aadc06fc8e727d58370dac4d2ea6906b9f8c2a64fac51e84a1d82a5079c0",
+        "purchase_panel": {
+          "sku": "RB11255VSR",
+          "product_id": "8061198499933",
+          "variant_key": "44153695764573",
+          "price": 199.0,
+          "reference": 229.0,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T05:59:38.355310+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "SawStop Professional Table Saw 1.75HP 110V w/ 52\" T-Glide Advance Fence Assembly PCS175-ATGP52",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44276831092829",
+          "url": "https://beavertools.com/products/sawstop-professional-table-saw-1-75hp-110v-w-52-advance-fence-assembly-pcs175-atgp52?currency=USD&variant=44276831092829",
+          "current_price": 3258.0,
+          "original_price": 3608.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/sawstop_pcs52_175_atg.jpg?v=1773900124",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 9.700665188470067,
+          "savings": 350.0
+        },
+        "check_started_at": "2026-11-04T05:59:38.355328+00:00",
+        "evidence_url": "https://beavertools.com/products/sawstop-professional-table-saw-1-75hp-110v-w-52-advance-fence-assembly-pcs175-atgp52.js?currency=USD",
+        "response_sha256": "9a6b1b813f0e8a86ffcfcac985a313b31b9ea8115394fd32cdaaf7e0ddbc9927",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "SawStop Professional Table Saw 1.75HP 110V w/ 52\" T-Glide Advance Fence Assembly PCS175-ATGP52",
+          "variant": "44276831092829",
+          "sku": "SSPCS175-ATGP52",
+          "price_minor": 325800,
+          "reference_minor": 360800,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/sawstop-professional-table-saw-1-75hp-110v-w-52-advance-fence-assembly-pcs175-atgp52?currency=USD&variant=44276831092829",
+        "product_response_sha256": "b69df35e960f861718fc112ec9fbfe536cdbd7e499f3fd63211584a7d0551a70",
+        "purchase_panel": {
+          "sku": "SSPCS175-ATGP52",
+          "product_id": "8093078749277",
+          "variant_key": "44276831092829",
+          "price": 3258.0,
+          "reference": 3608.0,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T05:59:49.419933+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Bosch 18V 1/2\" Hammer Drill/Driver w/ 2, 4.0 Ah Batteries GSB18V-975CB25",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153745965149",
+          "url": "https://beavertools.com/products/gsb18v-975cb25-bosch-18v-brushless-connected-ready-brute-tough-1-2-in-hammer-drill-driver-with-2-4-0-ah-core-compact-batteries?currency=USD&variant=44153745965149",
+          "current_price": 269.0,
+          "original_price": 315.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/Bosch_18V_Brushless_Connected-Ready_Brute_Tough_1-2_in_Hammer_Drill-Driver_with_2_40_Ah_CORE_Compact_Batteries_GSB18V-975CB25_1.jpg?v=1769412293",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 14.603174603174603,
+          "savings": 46.0
+        },
+        "check_started_at": "2026-11-04T05:59:49.419951+00:00",
+        "evidence_url": "https://beavertools.com/products/gsb18v-975cb25-bosch-18v-brushless-connected-ready-brute-tough-1-2-in-hammer-drill-driver-with-2-4-0-ah-core-compact-batteries.js?currency=USD",
+        "response_sha256": "8b7813006e3b4e6f7d5b25551fb82fd27b5a521cae47c9fd7cb8c72611095dc0",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "Bosch 18V 1/2\" Hammer Drill/Driver w/ 2, 4.0 Ah Batteries GSB18V-975CB25",
+          "variant": "44153745965149",
+          "sku": "RBGSB18V-975CB25",
+          "price_minor": 26900,
+          "reference_minor": 31500,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/gsb18v-975cb25-bosch-18v-brushless-connected-ready-brute-tough-1-2-in-hammer-drill-driver-with-2-4-0-ah-core-compact-batteries?currency=USD&variant=44153745965149",
+        "product_response_sha256": "9b0362a2d97c6ed1b04122ff928e2667060c149f30484790ec76b6746965cc29",
+        "purchase_panel": {
+          "sku": "RBGSB18V-975CB25",
+          "product_id": "8061248012381",
+          "variant_key": "44153745965149",
+          "price": 269.0,
+          "reference": 315.0,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T06:00:00.422063+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "SawStop Industrial Table Saw 7.5HP 3Ph 480V 60Hz 52\" T-Glide Fence ICS73480-TGI252",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44276831158365",
+          "url": "https://beavertools.com/products/sawstop-industrial-table-saw-7-5hp-3ph-480v-60hz-52-t-glide-fence-ics73480-tgi252?currency=USD&variant=44276831158365",
+          "current_price": 6118.0,
+          "original_price": 6618.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/sawstop_ics52_1_5.jpg?v=1773900124",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 7.555152614082805,
+          "savings": 500.0
+        },
+        "check_started_at": "2026-11-04T06:00:00.422081+00:00",
+        "evidence_url": "https://beavertools.com/products/sawstop-industrial-table-saw-7-5hp-3ph-480v-60hz-52-t-glide-fence-ics73480-tgi252.js?currency=USD",
+        "response_sha256": "36a24b323e6dc1d3d33843100db7e57a4fa8c6fd6fe42d77b908c94bace6b1bb",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "SawStop Industrial Table Saw 7.5HP 3Ph 480V 60Hz 52\" T-Glide Fence ICS73480-TGI252",
+          "variant": "44276831158365",
+          "sku": "SSICS73480-TGI252",
+          "price_minor": 611800,
+          "reference_minor": 661800,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/sawstop-industrial-table-saw-7-5hp-3ph-480v-60hz-52-t-glide-fence-ics73480-tgi252?currency=USD&variant=44276831158365",
+        "product_response_sha256": "b053ade4c596cd0e1361c1e0f66a98612231c45898258de5d641aae470f69879",
+        "purchase_panel": {
+          "sku": "SSICS73480-TGI252",
+          "product_id": "8093078814813",
+          "variant_key": "44276831158365",
+          "price": 6118.0,
+          "reference": 6618.0,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T06:00:11.641092+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "SawStop Industrial Table Saw 5HP 1Ph 230V 60Hz 52\" T-Glide Fence ICS51230-TGI252",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44276830371933",
+          "url": "https://beavertools.com/products/sawstop-industrial-table-saw-5hp-1ph-230v-60hz-52-t-glide-fence-ics51230-tgi252?currency=USD&variant=44276830371933",
+          "current_price": 5440.0,
+          "original_price": 5940.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/sawstop_ics52_1_1.jpg?v=1773900123",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 8.417508417508417,
+          "savings": 500.0
+        },
+        "check_started_at": "2026-11-04T06:00:11.641116+00:00",
+        "evidence_url": "https://beavertools.com/products/sawstop-industrial-table-saw-5hp-1ph-230v-60hz-52-t-glide-fence-ics51230-tgi252.js?currency=USD",
+        "response_sha256": "ef7de3558854640cb48a6c6127df6ef53301a3ab74b6301249483e60cafeb82c",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "SawStop Industrial Table Saw 5HP 1Ph 230V 60Hz 52\" T-Glide Fence ICS51230-TGI252",
+          "variant": "44276830371933",
+          "sku": "SSICS51230-TGI252",
+          "price_minor": 544000,
+          "reference_minor": 594000,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/sawstop-industrial-table-saw-5hp-1ph-230v-60hz-52-t-glide-fence-ics51230-tgi252?currency=USD&variant=44276830371933",
+        "product_response_sha256": "53d2118b66501a69fff179b0989f68337c29246dfb6fbf801e09d846f52f0995",
+        "purchase_panel": {
+          "sku": "SSICS51230-TGI252",
+          "product_id": "8093078028381",
+          "variant_key": "44276830371933",
+          "price": 5440.0,
+          "reference": 5940.0,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T06:00:22.819880+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "SawStop Jobsite Saw PRO with Mobile Cart Assembly - 15A, 120V, 60Hz JSS-120A60",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153859276893",
+          "url": "https://beavertools.com/products/jss-120a60-sawstop-jobsite-saw-pro-w-mobile-cart-15a-120v-60hz?currency=USD&variant=44153859276893",
+          "current_price": 1574.0,
+          "original_price": 1699.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/capture_12_8.png?v=1769412859",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 7.357268981753973,
+          "savings": 125.0
+        },
+        "check_started_at": "2026-11-04T06:00:22.819896+00:00",
+        "evidence_url": "https://beavertools.com/products/jss-120a60-sawstop-jobsite-saw-pro-w-mobile-cart-15a-120v-60hz.js?currency=USD",
+        "response_sha256": "22d1580efade269d7f51d1f76b61528c57199ade63178ecff93b8aeff122ffa1",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "SawStop Jobsite Saw PRO with Mobile Cart Assembly - 15A, 120V, 60Hz JSS-120A60",
+          "variant": "44153859276893",
+          "sku": "SSJSS-120A60",
+          "price_minor": 157400,
+          "reference_minor": 169900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/jss-120a60-sawstop-jobsite-saw-pro-w-mobile-cart-15a-120v-60hz?currency=USD&variant=44153859276893",
+        "product_response_sha256": "62504f179ed74574894f5af4015133e8b2c40c6e8c26eaa568c9fc87a0d8f652",
+        "purchase_panel": {
+          "sku": "SSJSS-120A60",
+          "product_id": "8061357228125",
+          "variant_key": "44153859276893",
+          "price": 1574.0,
+          "reference": 1699.0,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T06:00:34.000559+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Bosch 3-1/4\" Planer Kit PL2632K",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153791905885",
+          "url": "https://beavertools.com/products/pl2632k-bosch-3-1-4-in-planer-kit?currency=USD&variant=44153791905885",
+          "current_price": 169.0,
+          "original_price": 209.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/Bosch_3-1-4_in_Planer_Kit_PL2632K_2.jpg?v=1769412556",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 19.138755980861244,
+          "savings": 40.0
+        },
+        "check_started_at": "2026-11-04T06:00:34.000579+00:00",
+        "evidence_url": "https://beavertools.com/products/pl2632k-bosch-3-1-4-in-planer-kit.js?currency=USD",
+        "response_sha256": "6c9d7cd7aba51e03e3a99d194602ff6645219b9aa8c2303521788482574a1c51",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "Bosch 3-1/4\" Planer Kit PL2632K",
+          "variant": "44153791905885",
+          "sku": "RBPL2632K",
+          "price_minor": 16900,
+          "reference_minor": 20900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/pl2632k-bosch-3-1-4-in-planer-kit?currency=USD&variant=44153791905885",
+        "product_response_sha256": "48c6e8ce7c7aac9e1683e163f8c689e8644e6cc4ed97e60146a43c9c8b6da1f9",
+        "purchase_panel": {
+          "sku": "RBPL2632K",
+          "product_id": "8061293658205",
+          "variant_key": "44153791905885",
+          "price": 169.0,
+          "reference": 209.0,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T06:00:45.224559+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Powermatic PM2415BT 24 in. Bandsaw with ArmorGlide, 5HP 1PH 230V 1791259BT",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153689636957",
+          "url": "https://beavertools.com/products/1791259bt-powermatic-pm2415bt-24-inch-bandsaw-5hp-1ph-230v-with-armorglide?currency=USD&variant=44153689636957",
+          "current_price": 6999.0,
+          "original_price": 9899.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/PM1-1791259BT_IMG_RIGHT_FRONT.jpg?v=1777064082",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 29.29588847358319,
+          "savings": 2900.0
+        },
+        "check_started_at": "2026-11-04T06:00:45.224577+00:00",
+        "evidence_url": "https://beavertools.com/products/1791259bt-powermatic-pm2415bt-24-inch-bandsaw-5hp-1ph-230v-with-armorglide.js?currency=USD",
+        "response_sha256": "563bc69c59928e0f7e396def46ed8b6bb3278dd51eb4bd7bd7447ae961415530",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "Powermatic PM2415BT 24 in. Bandsaw with ArmorGlide, 5HP 1PH 230V 1791259BT",
+          "variant": "44153689636957",
+          "sku": "PM1791259BT",
+          "price_minor": 699900,
+          "reference_minor": 989900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/1791259bt-powermatic-pm2415bt-24-inch-bandsaw-5hp-1ph-230v-with-armorglide?currency=USD&variant=44153689636957",
+        "product_response_sha256": "877697096c28fbd09d38a3d3fd04ff0024a2de2a82de077bc232951f9f467ebd",
+        "purchase_panel": {
+          "sku": "PM1791259BT",
+          "product_id": "8061192339549",
+          "variant_key": "44153689636957",
+          "price": 6999.0,
+          "reference": 9899.0,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T06:00:56.413208+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "SawStop Compact Table Saw - 15A, 120V, 60Hz CTS-120A60",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153859342429",
+          "url": "https://beavertools.com/products/cts-120a60-sawstop-compact-table-saw?currency=USD&variant=44153859342429",
+          "current_price": 824.0,
+          "original_price": 899.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/cts-01.jpg?v=1769412859",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 8.342602892102336,
+          "savings": 75.0
+        },
+        "check_started_at": "2026-11-04T06:00:56.413226+00:00",
+        "evidence_url": "https://beavertools.com/products/cts-120a60-sawstop-compact-table-saw.js?currency=USD",
+        "response_sha256": "494ee14936ebc5bc8f4f121697c017baee2889b991425f0b37a6273e253092b2",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "SawStop Compact Table Saw - 15A, 120V, 60Hz CTS-120A60",
+          "variant": "44153859342429",
+          "sku": "SSCTS-120A60",
+          "price_minor": 82400,
+          "reference_minor": 89900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/cts-120a60-sawstop-compact-table-saw?currency=USD&variant=44153859342429",
+        "product_response_sha256": "5d33c241a1a83d265a559177e60e0412268f8a0c07d41c28b465d84b9e1f3643",
+        "purchase_panel": {
+          "sku": "SSCTS-120A60",
+          "product_id": "8061357260893",
+          "variant_key": "44153859342429",
+          "price": 824.0,
+          "reference": 899.0,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T06:01:07.428274+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "SawStop Industrial Table Saw 7.5HP 3Ph 230V 60Hz 52\" T-Glide Advance Fence ICS73230-ATGI52",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44276830797917",
+          "url": "https://beavertools.com/products/sawstop-industrial-table-saw-7-5hp-3ph-230v-60hz-52-t-glide-advance-fence-ics73230-atgi52?currency=USD&variant=44276830797917",
+          "current_price": 6282.0,
+          "original_price": 6782.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/sawstop_ics52_atg_4.jpg?v=1773900123",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 7.372456502506635,
+          "savings": 500.0
+        },
+        "check_started_at": "2026-11-04T06:01:07.428294+00:00",
+        "evidence_url": "https://beavertools.com/products/sawstop-industrial-table-saw-7-5hp-3ph-230v-60hz-52-t-glide-advance-fence-ics73230-atgi52.js?currency=USD",
+        "response_sha256": "99d8ae199953dec7c8e95ebd630f136ff18b545e577d85baa716f9b52ef17930",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "SawStop Industrial Table Saw 7.5HP 3Ph 230V 60Hz 52\" T-Glide Advance Fence ICS73230-ATGI52",
+          "variant": "44276830797917",
+          "sku": "SSICS73230-ATGI52",
+          "price_minor": 628200,
+          "reference_minor": 678200,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/sawstop-industrial-table-saw-7-5hp-3ph-230v-60hz-52-t-glide-advance-fence-ics73230-atgi52?currency=USD&variant=44276830797917",
+        "product_response_sha256": "9ad2ef517f37a0f22d0c1366e0626eeb67fff13316e447ccc2a5387932947a7a",
+        "purchase_panel": {
+          "sku": "SSICS73230-ATGI52",
+          "product_id": "8093078454365",
+          "variant_key": "44276830797917",
+          "price": 6282.0,
+          "reference": 6782.0,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T06:01:18.798068+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "SawStop Industrial Table Saw 7.5HP 3Ph 480V 60Hz 52\" T-Glide Advance Fence ICS73480-ATGI52",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44276830699613",
+          "url": "https://beavertools.com/products/sawstop-industrial-table-saw-7-5hp-3ph-480v-60hz-52-t-glide-advance-fence-ics73480-atgi52?currency=USD&variant=44276830699613",
+          "current_price": 6282.0,
+          "original_price": 6782.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/sawstop_ics52_atg_5.jpg?v=1773900124",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 7.372456502506635,
+          "savings": 500.0
+        },
+        "check_started_at": "2026-11-04T06:01:18.798092+00:00",
+        "evidence_url": "https://beavertools.com/products/sawstop-industrial-table-saw-7-5hp-3ph-480v-60hz-52-t-glide-advance-fence-ics73480-atgi52.js?currency=USD",
+        "response_sha256": "cf253c5e161630771aa8de802490b7dd416339344cbf5205ef1af4d24a1c044d",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "SawStop Industrial Table Saw 7.5HP 3Ph 480V 60Hz 52\" T-Glide Advance Fence ICS73480-ATGI52",
+          "variant": "44276830699613",
+          "sku": "SSICS73480-ATGI52",
+          "price_minor": 628200,
+          "reference_minor": 678200,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/sawstop-industrial-table-saw-7-5hp-3ph-480v-60hz-52-t-glide-advance-fence-ics73480-atgi52?currency=USD&variant=44276830699613",
+        "product_response_sha256": "dc18591d07c39aae42aa67effa1d01f20a153559b1f06a1c10b04f495c4bc49a",
+        "purchase_panel": {
+          "sku": "SSICS73480-ATGI52",
+          "product_id": "8093078356061",
+          "variant_key": "44276830699613",
+          "price": 6282.0,
+          "reference": 6782.0,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T06:01:30.266057+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "SawStop Contractor Table Saw 1.75HP 115/230V w/ 36\" T-Glide Advance Fence Assembly CNS175-ATGP36",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44274454429789",
+          "url": "https://beavertools.com/products/contractor-table-saw-1-75hp-115-230v-w-36-t-glide-advance-fence-assembly?currency=USD&variant=44274454429789",
+          "current_price": 2276.0,
+          "original_price": 2476.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/CNS36ATG.jpg?v=1774554599",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 8.077544426494345,
+          "savings": 200.0
+        },
+        "check_started_at": "2026-11-04T06:01:30.266076+00:00",
+        "evidence_url": "https://beavertools.com/products/contractor-table-saw-1-75hp-115-230v-w-36-t-glide-advance-fence-assembly.js?currency=USD",
+        "response_sha256": "3ba78aac947f88f2bc1502b5dfa14d90503b6eee0b12fdd21b664c909d25571d",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "SawStop Contractor Table Saw 1.75HP 115/230V w/ 36\" T-Glide Advance Fence Assembly CNS175-ATGP36",
+          "variant": "44274454429789",
+          "sku": "SSCNS175-ATGP36",
+          "price_minor": 227600,
+          "reference_minor": 247600,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/contractor-table-saw-1-75hp-115-230v-w-36-t-glide-advance-fence-assembly?currency=USD&variant=44274454429789",
+        "product_response_sha256": "aaf12abad99e2366f22925dbff4c2d9aaf4cf295c91b72475399e79b3fbd209f",
+        "purchase_panel": {
+          "sku": "SSCNS175-ATGP36",
+          "product_id": "8092743729245",
+          "variant_key": "44274454429789",
+          "price": 2276.0,
+          "reference": 2476.0,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-04T05:56:02.315343+00:00",
+        "checked_at": "2026-11-04T06:01:41.375890+00:00",
+        "within_audit_window": true
+      }
+    ]
+  },
+  "admission": "passed; source configured locally, publication pending",
+  "bolton": "not enabled: active warehouse relocation shipping restriction lacks explicit product-level LTL eligibility"
+}
