@@ -60,6 +60,7 @@ jobs:
         run: python scripts/check.py -q
       - name: Restore previous public snapshot and history
         env:
+          GITHUB_TOKEN: ${{ github.token }}
           BOOTSTRAP: ${{ inputs.bootstrap_history }}
           CATALOG: ${{ matrix.catalog }}
         run: |
