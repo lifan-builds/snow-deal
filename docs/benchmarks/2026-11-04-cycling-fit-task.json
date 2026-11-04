@@ -1,0 +1,34 @@
+{
+  "observed_at": "2026-11-04T04:22:14.857090+00:00",
+  "catalog": "cycling",
+  "production_snapshot_sha256": "791561caf8ed84c6cf66ead033af011e79aef85b945a4b410b37fd4ef36fa2fc",
+  "task": "Find retailer-reported in-stock XS variants costing at most USD 1500, retaining the default USD 1000 reference floor. Complete bikes and framesets are both eligible.",
+  "method": "Native browser at verified 390x844 CSS viewport. Default page, no saved search. Open filters, select XS, enter 1500, apply.",
+  "meaningful_actions": 4,
+  "actions": [
+    "Open Refine your search",
+    "Select XS frame size",
+    "Enter budget 1500",
+    "Apply filters"
+  ],
+  "result_url": "https://bigring.clifan.com/?q=&category=&brand=&store=&size=XS&min_reference=1000&max_price=1500&min_discount=0.0#deals",
+  "matching_cards": 21,
+  "all_within_budget": true,
+  "stock_labels": [
+    "Reported in stock \u00b7 XS",
+    "Reported in stock \u00b7 Xs"
+  ],
+  "initial_price_bottom_px": 727.09375,
+  "initial_scroll_y_px": 0,
+  "result_price_bottom_px": 656.296875,
+  "result_scroll_y_px": 191,
+  "additional_manual_scroll_to_price_px": 0,
+  "horizontal_overflow": false,
+  "limitations": [
+    "Stock labels were verified on the public catalog, not newly at each merchant or checkout.",
+    "One successful task only; no paired competitor task measurement or responsiveness timing.",
+    "Automation selector no-match retries are not successful user actions. The final completed run used native disclosure control and role-based form locators.",
+    "A preliminary screenshot used mismatched device metrics and was excluded; final result was rechecked after applying and verifying the native viewport override.",
+    "LCP remains unmeasured: Page.addScriptToEvaluateOnNewDocument was unsupported by the browser interface. No timing score was fabricated; all temporary emulation settings were restored."
+  ]
+}

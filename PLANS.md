@@ -195,3 +195,9 @@ Revisited the earlier zero-admission result and found that exact complete-bike r
 Shared discount calculations now preserve price precision for eligibility, variant selection and ordering. Snow derives percentages from prices even for read-only older snapshots. Fourteen regressions cover threshold boundaries, rounded ties and old-snapshot counts/pagination. All 573 offline tests and CI lint pass. See [implementation and correction receipt](docs/tasks/discount-precision/IMPLEMENTATION.md). Publication remains queued behind the tested source/audit releases under standing authorization.
 
 The PR #7 catalog and snow workflows succeeded; [rollout evidence](docs/benchmarks/2026-11-04-source-quality-rollout.json) records actual totals, retained source limitations, subsequent snow refreshes and the local TLS failure that prevented additional snow page checks. No all-competitor leadership claim is made.
+
+## Verified cycling/tools follow-up — November 4, 2026 UTC
+
+PR #8 merged as `6f52cfb`; catalog workflow `41770144751` completed successfully. Independent live hashes, selected variant links, stock/budget filters, shipping notices and history were checked. Big Ring has 1,205 in-stock listings / 113 deep deals / 13 useful retailers; Bench Drop has 583 / 24 / five. The full snow workflow `41770152754` remains active. See the [receipt and remaining limits](docs/benchmarks/2026-11-04-follow-up.md). The expanded 22-competitor matrix supports four strict leads out of 260 comparisons; all-metric leadership remains unproven.
+
+- November 4, 04:27 UTC continuation: snow run 41770152754 passed production HTTPS/timestamp verification; 13,586 raw listings, The House recovered, MEC 403. Merged green PRs #9/#10/#11 as 0bd7216, 75cce88 and 89f5d2e. Four-action cycling XS/budget task passed; controlled loading remains unmeasured. Fresh cycling/tools rollout is still required for the merged precision/evo release. Evidence PR #12 retains these limitations.

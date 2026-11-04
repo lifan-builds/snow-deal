@@ -1,0 +1,101 @@
+{
+  "run_id": 41770152754,
+  "run_url": "https://github.com/lifan-builds/snow-deal/actions/runs/41770152754",
+  "head_sha": "6f52cfb53e8a5d685f275c95f797ed8395d27ae1",
+  "conclusion": "success",
+  "report_sha256": "c2ea45511315c1faf6fa779e1e193f7534f5ab5135958d084b7bb55ebd024a81",
+  "checked_at": "2026-11-04T04:24:46.334250",
+  "configured_stores": 31,
+  "stores_with_deals": 30,
+  "published_raw_listings": 13586,
+  "withheld_stores": [],
+  "zero_count_stores": [
+    "MEC"
+  ],
+  "production_verification": {
+    "at": "2026-11-04T04:26:11.2222434Z",
+    "url": "https://freshpowder.clifan.com/healthz",
+    "observed_checked_at": "2026-11-04T04:24:46.334250",
+    "result": "success from GitHub-hosted runner"
+  },
+  "selected_outcomes": {
+    "The House": {
+      "errors": 0,
+      "pages": 6,
+      "collections": [
+        {
+          "url": "https://www.the-house.com/search?pmid=on-sale-now&start=0&sz=240",
+          "pages": 6,
+          "products": 832,
+          "status": "complete"
+        }
+      ]
+    },
+    "MEC": {
+      "errors": 1,
+      "pages": 0,
+      "collections": [
+        {
+          "url": "https://www.mec.ca/en/products/ski-and-snowsports/deals",
+          "pages": 0,
+          "products": 0,
+          "status": "http_error",
+          "http_status": 403
+        }
+      ]
+    },
+    "Ski Essentials": {
+      "errors": 0,
+      "pages": 42,
+      "collections": [
+        {
+          "url": "https://www.skiessentials.com/collections/alpine-skis",
+          "pages": 24,
+          "products": 14387,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.skiessentials.com/collections/snowboards",
+          "pages": 5,
+          "products": 677,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.skiessentials.com/collections/ski-boots",
+          "pages": 7,
+          "products": 1303,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.skiessentials.com/collections/snowboard-boots",
+          "pages": 1,
+          "products": 39,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.skiessentials.com/collections/alpine-ski-bindings",
+          "pages": 3,
+          "products": 254,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.skiessentials.com/collections/snowboard-bindings",
+          "pages": 2,
+          "products": 126,
+          "status": "complete"
+        }
+      ]
+    }
+  },
+  "selected_listing_counts": {
+    "The House": 695,
+    "MEC": 0,
+    "Ski Essentials": 906
+  },
+  "limitations": [
+    "Raw snow listings include multiple categories and incomplete variant evidence; not benchmark M1.",
+    "Collection product counters can be cumulative DOM observations, not unique listings.",
+    "Runner verifies timestamp and HTTPS, not an exact snow database hash.",
+    "Local custom-host TLS failure remains unresolved despite successful runner verification; no DNS or certificate configuration was changed."
+  ]
+}
