@@ -293,3 +293,19 @@ def test_daily_history_retention_is_bounded_and_failed_checks_do_not_replace_it(
     with database(db, 'cycling') as connection:
         observations = [r[0] for r in connection.execute('SELECT observed_at FROM observations ORDER BY observed_at')]
     assert observations == [(NOW-timedelta(days=1)).isoformat(), NOW.isoformat()]
+
+
+@pytest.mark.parametrize("name", [
+    "Festool Granat P40 Grit Abrasives for LRS 400 Sander, Pack of 50 497157",
+    "Festool Granat P280 Grit Abrasives for LRS 400 Sander, Pack of 50 497203",
+    "Sanding discs for random orbit sander",
+])
+def test_named_machine_does_not_turn_replacement_abrasives_into_power_tools(name):
+    assert TOOLS.classify(Product(name=name, url="https://example.com/item", current_price=49,
+                                 original_price=249, product_type="Power Tools")) is None
+
+
+def test_complete_sander_with_included_abrasives_remains_a_power_tool():
+    item = Product(name="Random orbit sander kit with abrasives", url="https://example.com/item",
+                   current_price=149, original_price=249, product_type="Power Tools")
+    assert TOOLS.classify(item).category == "Power tools"

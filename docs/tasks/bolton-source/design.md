@@ -1,0 +1,9 @@
+# Boundary and evidence
+
+Use a source-specific common parser and the existing paced, same-domain detail fetch. Listing cards provide canonical-slug discovery, sale/reference values and an explicit stock label. Detail pages expose product model and ID, canonical URL, USD/new/in-stock microdata and duplicate visible price blocks. Bind these independent fields and reject ambiguity, unsupported product options, mismatched stock, invalid money and condition conflicts. Bulk quantity prices do not replace the single-unit purchase price.
+
+Keep product URL canonical and stable. An exact identity includes product ID, model and canonical slug; the destination must agree with that slug and remain on the merchant. A freight-services notice describes delivery costs, not delayed inventory. No cart action is required. The independent auditor refetches the canonical public product page and records its checks and timing.
+
+Expected changes: dedicated parser/fixtures/tests, source recognition in common catalog normalization and merchant auditing, and the tools catalog configuration only after candidate admission. Reuse existing Product/VariantOffer and source refresh/retention behavior; do not add a generalized feed framework. Any classification extension must be supported by actual machinery taxonomy and negative accessory fixtures.
+
+Initial cohort: woodworking (63 listed products), combo lathe mills (16), tapping arms (30), EDM machines (24), presses (11), cutting-tool sharpeners (21), metal deburring/finishing (20). These seven observed category cohorts reconcile 185 listing positions before cross-category deduplication and eligibility checks. The broad metalworking parent and six child categories remain unresolved. The scope is explicit and cannot become a retailer-wide coverage claim.

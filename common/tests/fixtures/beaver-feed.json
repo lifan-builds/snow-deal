@@ -1,0 +1,127 @@
+{
+  "products": [
+    {
+      "id": 8061198270557,
+      "title": "Powermatic PJ-882HHT 8 in. Parallelogram Jointer with ArmorGlide, 2HP 1PH 230V, HH 1610082T",
+      "handle": "1610082t-powermatic-pj-882hht-8-inch-parallelogram-jointer-helical-cutterhead-2hp-1ph-230v-with-armorglide",
+      "vendor": "Powermatic",
+      "product_type": "Machinery",
+      "variants": [
+        {
+          "id": 44153695567965,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "PM1610082T",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "4699.00",
+          "grams": 337473,
+          "compare_at_price": "5279.00",
+          "position": 1,
+          "product_id": 8061198270557,
+          "created_at": "2026-01-26T01:20:26-06:00",
+          "updated_at": "2026-11-03T23:32:36-06:00"
+        }
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "id": 41571456417885,
+          "created_at": "2026-04-24T15:54:41-05:00",
+          "position": 1,
+          "updated_at": "2026-04-24T15:54:44-05:00",
+          "product_id": 8061198270557,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/PJ-882HHT_IMG_corrected-color.jpg?v=1777064084",
+          "width": 2000,
+          "height": 2000
+        },
+        {
+          "id": 41571460317277,
+          "created_at": "2026-04-24T15:54:46-05:00",
+          "position": 2,
+          "updated_at": "2026-04-24T15:54:48-05:00",
+          "product_id": 8061198270557,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/PJ882_EC_Features_helical.jpg?v=1777064088",
+          "width": 1500,
+          "height": 1500
+        },
+        {
+          "id": 41571465592925,
+          "created_at": "2026-04-24T15:54:50-05:00",
+          "position": 3,
+          "updated_at": "2026-04-24T15:54:52-05:00",
+          "product_id": 8061198270557,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/ArmorGlide-Jointers_EC_Low-Friction_eab11220-0afe-43f1-b53b-3bab3ca7b2ae.jpg?v=1777064092",
+          "width": 1000,
+          "height": 1000
+        },
+        {
+          "id": 41571469000797,
+          "created_at": "2026-04-24T15:54:53-05:00",
+          "position": 4,
+          "updated_at": "2026-04-24T15:54:55-05:00",
+          "product_id": 8061198270557,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/PJ882T_EC_No-Glare_e2a6914c-afaa-4636-94ad-9e2a029cc346.jpg?v=1777064095",
+          "width": 1000,
+          "height": 1000
+        },
+        {
+          "id": 41571471589469,
+          "created_at": "2026-04-24T15:54:56-05:00",
+          "position": 5,
+          "updated_at": "2026-04-24T15:54:57-05:00",
+          "product_id": 8061198270557,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/ArmorGlide-Jointers_EC_Rust-Resistant_3ce95f5a-8304-43ff-892b-81a8b8bec51f.jpg?v=1777064097",
+          "width": 1000,
+          "height": 1000
+        },
+        {
+          "id": 41571474047069,
+          "created_at": "2026-04-24T15:54:58-05:00",
+          "position": 6,
+          "updated_at": "2026-04-24T15:55:00-05:00",
+          "product_id": 8061198270557,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/ArmorGlide-Jointers_EC_No-More-Cleaning_6d5bccba-99b8-4b58-9986-9867d3e90a02.jpg?v=1777064100",
+          "width": 1000,
+          "height": 1000
+        }
+      ],
+      "tags": [
+        "Category_Catalog",
+        "Category_Catalog/Brands",
+        "Category_Catalog/Brands/Powermatic",
+        "Category_Catalog/Brands/Powermatic/Powermatic ArmorGlide",
+        "Category_Catalog/Brands/Powermatic/Powermatic Jointers",
+        "Category_Catalog/Brands/Powermatic/Powermatic Machines",
+        "Category_Catalog/Brands/Powermatic/Powermatic Machines/Jointers",
+        "Category_Catalog/Deals",
+        "Category_Catalog/Industries",
+        "Category_Catalog/Industries/Woodworking",
+        "Category_Catalog/Industries/Woodworking/Jointers",
+        "Category_Catalog/Tools & Machinery",
+        "Category_Catalog/Tools & Machinery /Stationary Machinery",
+        "Category_Catalog/Tools & Machinery /Stationary Machinery/Jointers",
+        "On_Promo",
+        "Promo_Powermatic-MemDay"
+      ]
+    }
+  ]
+}

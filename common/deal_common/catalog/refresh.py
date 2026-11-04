@@ -12,8 +12,11 @@ from deal_common.catalog.identity import manufacturer_name
 from deal_common.catalog.storage import save_source
 from deal_common.http import DEFAULT_HEADERS, fetch_products
 from deal_common.offers import discount
+from deal_common.parsers.beaver import BeaverShopifyParser
 from deal_common.parsers.bikecloset import BikeClosetParser
 from deal_common.parsers.bikecloset import offer_destination as bikecloset_destination
+from deal_common.parsers.bolton import BoltonParser
+from deal_common.parsers.bolton import offer_destination as bolton_destination
 from deal_common.parsers.grizzly import GrizzlyParser, sku_destination
 from deal_common.parsers.rockler import RocklerParser
 from deal_common.parsers.rockler import offer_destination as rockler_destination
@@ -44,7 +47,9 @@ def normalize(products, catalog: Catalog, domain: str, *, parser_type: str = "sh
             continue
         offers = []
         for offer in product.offers:
-            if parser_type == 'bikecloset':
+            if parser_type == 'bolton':
+                destination_matches = bolton_destination(offer.url, offer.variant_key)
+            elif parser_type == 'bikecloset':
                 destination_matches = bikecloset_destination(offer.url, offer.variant_key)
             elif parser_type == 'grizzly':
                 destination_matches = sku_destination(offer.url, offer.variant_key)
@@ -84,9 +89,11 @@ async def refresh(catalog: Catalog, path: Path, *, max_pages: int = 30,
             observed_at = datetime.now(UTC).isoformat()
             if source.currency != "USD":
                 raise ValueError("These catalogs accept USD sources only")
-            if source.parser_type not in {"shopify", "grizzly", "taylor", "rockler", "bikecloset"}:
+            if source.parser_type not in {"shopify", "grizzly", "taylor", "rockler", "bikecloset", "bolton"}:
                 raise ValueError("Unsupported catalog parser")
-            if source.parser_type == 'bikecloset':
+            if source.parser_type == 'bolton':
+                parser = BoltonParser()
+            elif source.parser_type == 'bikecloset':
                 parser = BikeClosetParser()
             elif source.parser_type == 'rockler':
                 parser = RocklerParser()
@@ -94,6 +101,8 @@ async def refresh(catalog: Catalog, path: Path, *, max_pages: int = 30,
                 parser = TaylorParser()
             elif source.parser_type == 'grizzly':
                 parser = GrizzlyParser()
+            elif source.domain == 'beavertools.com':
+                parser = BeaverShopifyParser()
             else:
                 parser = ShopifyParser(size_option_names=catalog.size_option_names,
                                        size_value_pattern=catalog.size_value_pattern)

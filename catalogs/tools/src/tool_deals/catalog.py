@@ -21,6 +21,8 @@ def classify(product: Product) -> Classification | None:
     if re.search(r"\b(accessories|parts|rests?|jigs?(?!\s+saws?\b)|templates?|blades|bits|cutters|knives|clamps|vises|guides|gauges|books|casters|storage|staples|sawhorses|abrasives|sanding paper|batteries and chargers|apparel|fasteners|hand tools|turning tools)\b", kind):
         return None
     # Replacement parts and consumables do not become machines because their title names one.
+    if re.search(r"\b(?:abrasives|sanding (?:discs|belts|sheets))\s+for\b", title):
+        return None
     if re.search(r"\b(?:drill|driver|router) bits?\b", title):
         return None
     if re.search(r"\b(replacement|adapte?r|adaptor|attachment|blade(?!\s+stroke\b)|bit set|insert|filter|hose|cover|chuck|sandpaper|stand only|tool bag|rests?|jigs?(?!\s+saw\b)|templates?|stop collar|drilling guide)\b", title):

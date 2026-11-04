@@ -15,12 +15,15 @@ import httpx
 
 from deal_common.catalog.refresh import safe_url
 from deal_common.http import DEFAULT_HEADERS, fetch_listing
+from deal_common.parsers.beaver import detail_data as beaver_data
 from deal_common.parsers.bikecloset import API as BIKECLOSET_API
 from deal_common.parsers.bikecloset import decode_offer as bikecloset_offer
 from deal_common.parsers.bikecloset import manufacturer as bikecloset_manufacturer
 from deal_common.parsers.bikecloset import money as bikecloset_money
 from deal_common.parsers.bikecloset import new_condition as bikecloset_new
 from deal_common.parsers.bikecloset import offer_destination as bikecloset_destination
+from deal_common.parsers.bolton import detail_data as bolton_data
+from deal_common.parsers.bolton import offer_destination as bolton_destination
 from deal_common.parsers.grizzly import sku_destination, structured_products
 from deal_common.parsers.grizzly import text as decoded_text
 from deal_common.parsers.harvey import shipping_notice
@@ -119,9 +122,10 @@ async def audit_sample(cards: list[dict], allowed_domains: dict[str, str], *, de
             sku_product = sku_destination(offer["url"], offer["variant_key"])
             taylor_product = taylor_destination(offer['url'], offer['variant_key'])
             rockler_product = rockler_destination(offer['url'], offer['variant_key'])
+            bolton_product = bolton_destination(offer['url'], offer['variant_key'])
             bikecloset_product = bikecloset_destination(offer['url'], offer['variant_key'])
             if (not domain or not safe_url(offer["url"], domain)
-                    or (not (taylor_product or rockler_product or bikecloset_product) and ("/products/" not in parts.path
+                    or (not (taylor_product or rockler_product or bikecloset_product or bolton_product) and ("/products/" not in parts.path
                         or (not sku_product and parse_qs(parts.query).get("variant") != [offer["variant_key"]])))):
                 record({**row, "status": "inconclusive", "reason": "Unsupported or unsafe product destination"})
                 continue
@@ -130,11 +134,17 @@ async def audit_sample(cards: list[dict], allowed_domains: dict[str, str], *, de
             currency_url = origin + prefix + "/cart.js?" + urlencode({"currency": card.get("currency", "USD")})
             endpoint = urlunsplit((parts.scheme, parts.netloc, parts.path + ".js",
                                   urlencode({"currency": card.get("currency", "USD")}), ""))
-            row["evidence_url"] = offer["url"] if sku_product or taylor_product or rockler_product else endpoint
+            row["evidence_url"] = offer["url"] if sku_product or taylor_product or rockler_product or bolton_product else endpoint
             if origin in blocked:
                 record({**row, "status": "inconclusive", "reason": "Host blocked or rate-limited earlier in this audit"})
                 continue
             try:
+                if bolton_product:
+                    response = await fetch(offer['url'])
+                    row['response_sha256'] = hashlib.sha256(response.content).hexdigest()
+                    row.update(validate_bolton_product(card, bolton_data(response.text, offer['url'])))
+                    record(row)
+                    continue
                 if bikecloset_product:
                     parent_id, variant_id = offer['variant_key'].split('|')[0].split(':')
                     row['evidence_url'] = BIKECLOSET_API + '/' + variant_id
@@ -183,6 +193,18 @@ async def audit_sample(cards: list[dict], allowed_domains: dict[str, str], *, de
                     raise TypeError("Malformed product")
                 row["response_sha256"] = hashlib.sha256(response.content).hexdigest()
                 row.update(validate_product(card, raw, currencies[origin]))
+                if parts.hostname == 'beavertools.com':
+                    page = await fetch(offer['url'])
+                    product = beaver_data(page.text, offer['url'])
+                    detail = validate_beaver_product(card, product)
+                    row.update(product_evidence_url=offer['url'],
+                               product_response_sha256=hashlib.sha256(page.content).hexdigest())
+                    if 'checks' not in row:
+                        row['checks'] = {'product_endpoint': False}
+                    row['checks'].update({'purchase_' + key: value for key, value in detail['checks'].items()})
+                    if row['status'] != 'inconclusive':
+                        row['status'] = 'match' if all(row['checks'].values()) else 'mismatch'
+                    row['purchase_panel'] = detail['merchant']
             except TimeoutError:
                 row.update(status='inconclusive', reason='Audit observation window expired')
             except httpx.HTTPStatusError as exc:
@@ -217,6 +239,41 @@ def validate_bikecloset_product(card, parent, variant):
                          'reference': bikecloset_money(variant['prices'], 'regular_price'),
                          'currency': variant['prices']['currency_code'], 'is_in_stock': variant['is_in_stock'],
                          'is_on_backorder': variant['is_on_backorder']}}
+
+
+def validate_beaver_product(card: dict, product: dict) -> dict:
+    expected = card['offer']
+    checks = {
+        'identity': product['name'] == card['name'] and product['variant_key'] == expected['variant_key'],
+        'destination': urlsplit(product['url']).path == urlsplit(expected['url']).path,
+        'currency': product['currency'] == card.get('currency', 'USD'),
+        'price': product['price'] == expected['current_price'],
+        'reference': product['reference'] == expected['original_price'],
+        'options': product['options'] == expected.get('options', '') and not expected.get('size'),
+        'stock': product['in_stock'],
+        'shipping_note': product['shipping_note'] == expected.get('availability_note', ''),
+    }
+    return {'status': 'match' if all(checks.values()) else 'mismatch', 'checks': checks,
+            'merchant': {key: product[key] for key in ('sku', 'product_id', 'variant_key', 'price',
+                        'reference', 'currency', 'stock_label', 'shipping_note')}}
+
+
+def validate_bolton_product(card: dict, product: dict) -> dict:
+    expected = card['offer']
+    checks = {
+        'identity': product['name'] == card['name'] and product['variant_key'] == expected['variant_key'],
+        'destination': product['url'] == expected['url'] and bolton_destination(expected['url'], product['variant_key']),
+        'currency': product['currency'] == card.get('currency', 'USD'),
+        'price': product['price'] == expected['current_price'],
+        'reference': product['reference'] == expected['original_price'],
+        'options': product['options'] == expected.get('options') and not expected.get('size'),
+        'condition': product['condition'] == 'NewCondition',
+        'stock': product['in_stock'],
+        'shipping_note': product['shipping_note'] == expected.get('availability_note', ''),
+    }
+    return {'status': 'match' if all(checks.values()) else 'mismatch', 'checks': checks,
+            'merchant': {key: product[key] for key in ('sku', 'variant_key', 'price', 'reference',
+                        'currency', 'condition', 'in_stock', 'shipping_note')}}
 
 
 def validate_rockler_product(card: dict, product: dict, delivery: dict) -> dict:
