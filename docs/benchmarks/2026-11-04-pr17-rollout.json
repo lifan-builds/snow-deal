@@ -1,0 +1,4102 @@
+{
+  "release": {
+    "pr": "https://github.com/lifan-builds/snow-deal/pull/17",
+    "merge": "1eec6c9517357bca5f6ba366c681ec4164c09df7",
+    "merged_at": "2026-11-04T17:57:26Z",
+    "offline_tests": 744
+  },
+  "snow": {
+    "checked_at": "2026-11-04T17:59:38.573320+00:00",
+    "deployment": "dpl_F5khDY4dRZ2nqPVt9XhiLm5bwzbB",
+    "site": "https://snow-deal-6k2mrllcy-lifan-chens-projects.vercel.app",
+    "production_alias": "https://freshpowder.clifan.com",
+    "health": {
+      "status": "ok",
+      "last_attempt_at": "2026-11-04T13:25:59.376317",
+      "checked_at": "2026-11-04T13:25:59.376317",
+      "stores_with_deals": 30
+    },
+    "exact_variant_checks": [
+      {
+        "path": "/",
+        "size": "178",
+        "cards": 1,
+        "status": 200
+      },
+      {
+        "path": "/",
+        "size": "172",
+        "cards": 0,
+        "status": 200
+      },
+      {
+        "path": "/deals",
+        "size": "178",
+        "cards": 1,
+        "status": 200
+      },
+      {
+        "path": "/deals",
+        "size": "172",
+        "cards": 0,
+        "status": 200
+      }
+    ],
+    "custom_hostname_local_error": "TLS WRONG_VERSION_NUMBER; provider production endpoint verified; no security bypass"
+  },
+  "snow_disclosure": {
+    "date": "2026-11-04",
+    "method": "first-page-five-reference-fields-v1",
+    "limitations": [
+      "Rendered disclosure only; not independent merchant validation or a competitive lead.",
+      "Provider production URL used because local custom-host TLS failed."
+    ],
+    "sites": [
+      {
+        "catalog": "snow",
+        "url": "https://snow-deal-6k2mrllcy-lifan-chens-projects.vercel.app/",
+        "observed_at": "2026-11-04T18:02:30.195670+00:00",
+        "sample_size": 60,
+        "passed": 46,
+        "missing": {
+          "numeric_reference": 0,
+          "reference_basis": 0,
+          "selected_variant": 14,
+          "observation_time": 0,
+          "limitations": 0
+        },
+        "sample": [
+          {
+            "name": "Ogasaka 00 - 01 Keos PG Skis (No Bindings / Flat) NEW !! 185,190cm",
+            "store": "Colorado Discount Skis",
+            "url": "https://www.coloradodiscountskis.com/store/Ogasaka_Keos_1pr_Skis.html",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": false,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Ogasaka 00 - 01 Unity USX Skis (No Bindings / Flat) NEW !! 185cm",
+            "store": "Colorado Discount Skis",
+            "url": "https://www.coloradodiscountskis.com/store/Ogasaka_Unity_USX_Skis.html",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": false,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Ogasaka 00 - 01 Unity C-VX Skis (No Bindings / Flat) NEW !! 185cm",
+            "store": "Colorado Discount Skis",
+            "url": "https://www.coloradodiscountskis.com/store/Ogasaka_Unity_CVX_Skis.html",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": false,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Ogasaka 00 - 01 Triun G Light Skis (No Bindings / Flat) NEW !! 180cm",
+            "store": "Colorado Discount Skis",
+            "url": "https://www.coloradodiscountskis.com/store/Ogasaka_Truin_Lt_Skis.html",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": false,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Ogasaka 00 - 01 FC White Skis (No Bindings / Flat) NEW !! 185cm",
+            "store": "Colorado Discount Skis",
+            "url": "https://www.coloradodiscountskis.com/store/Ogasaka_FC_White_Skis.html",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": false,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Lange RX 110 W LV Ski Boots - Women's 2019",
+            "store": "Evo",
+            "url": "https://www.evo.com/products/138112-lange-rx-110-w-lv-ski-boots-women-s-2019?variant=46353314742422",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "2024 XO H21 Ski",
+            "store": "Ski Essentials",
+            "url": "https://www.skiessentials.com/products/2024-xo-h21-ski-skxo0187h21?ski+size=166",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "2020 Fischer Rc4 Worldcup GS S15 Curv Booster Women's Ski",
+            "store": "Ski Essentials",
+            "url": "https://www.skiessentials.com/products/2020-fischer-rc4-worldcup-gs-s15-curv-booster-women-s-ski?ski+size=188",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Lange XT3 Free 95 MV GW Alpine Touring Ski Boots - Women's 2024",
+            "store": "Evo",
+            "url": "https://www.evo.com/products/264305-lange-xt3-free-95-mv-gw-alpine-touring-ski-boots-women-s-2024?variant=46151337214102",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Diamond ALC Poles",
+            "store": "Sports Basement",
+            "url": "https://www.sportsbasement.com/products/diamond-alc-poles?variant=39557615779912",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "2024 XO V7 Ski",
+            "store": "Ski Essentials",
+            "url": "https://www.skiessentials.com/products/2024-xo-v7-ski-skxo0177v7?ski+size=172",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Lange XT3 Free 85 MV GW Alpine Touring Ski Boots - Women's 2024",
+            "store": "Evo",
+            "url": "https://www.evo.com/products/255417-lange-xt3-free-85-mv-gw-alpine-touring-ski-boots-women-s-2024?variant=46149036376214",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Salomon S/Pro Alpha 130 Ski Boots 2024",
+            "store": "Evo",
+            "url": "https://www.evo.com/products/219337-salomon-s-pro-alpha-130-ski-boots-2024?variant=46348060426390",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Dalbello DS Asolo 115 Factory GW LS Womens Ski Boot",
+            "store": "Aspen Ski and Board",
+            "url": "https://www.aspenskiandboard.com/products/dalbello-ds-asolo-115-factory-gw-ls-womens-ski-boot-2022?variant=50304003703072",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "2023 Nordica Santa Ana Free 110 Women's Skis",
+            "store": "Ski Essentials",
+            "url": "https://www.skiessentials.com/products/2023-nordica-santa-ana-free-110-women-s-skis?ski+size=177",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "K2 Dispatch LT W Alpine Touring Ski Boots - Women's 2025",
+            "store": "Evo",
+            "url": "https://www.evo.com/products/241871-k2-dispatch-lt-w-alpine-touring-ski-boots-women-s-2025?variant=46348060688534",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Lange XT3 Free 85 LV GW Alpine Touring Ski Boots - Women's 2024",
+            "store": "Evo",
+            "url": "https://www.evo.com/products/264269-lange-xt3-free-85-lv-gw-alpine-touring-ski-boots-women-s-2024?variant=46151332757654",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Nordica One RTL Women's Ski Boots",
+            "store": "The House",
+            "url": "https://www.the-house.com/1114155.html?dwvar_1114155_color=blck",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": false,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "2023 Nordica Santa Ana 98 Women's Skis",
+            "store": "Ski Essentials",
+            "url": "https://www.skiessentials.com/products/2023-nordica-santa-ana-98-women-s-skis?ski+size=179",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "2023 Nordica Santa Ana 104 Free Women's Skis",
+            "store": "Ski Essentials",
+            "url": "https://www.skiessentials.com/products/2023-nordica-santa-ana-104-free-women-s-skis?ski+size=179",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Lange LX 95 HV GW Ski Boots - Women's 2024",
+            "store": "Evo",
+            "url": "https://www.evo.com/products/228674-lange-lx-95-hv-gw-ski-boots-women-s-2024?variant=46348060229782",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Dalbello Chakra 105 ID Ski Boots Womens",
+            "store": "Aspen Ski and Board",
+            "url": "https://www.aspenskiandboard.com/products/dalbello-chakra-105-id-ski-boots-womens?variant=50304561119520",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Lange Shadow 95 LV GW Ski Boots - Women's 2025",
+            "store": "Evo",
+            "url": "https://www.evo.com/products/240234-lange-shadow-95-lv-gw-ski-boots-women-s-2025?variant=46353214767254",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Head Formula 95 GW Ski Boots - Women's 2023",
+            "store": "Evo",
+            "url": "https://www.evo.com/products/225565-head-formula-95-gw-ski-boots-women-s-2023?variant=46353353343126",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "2026 Rossignol Essential Skis",
+            "store": "Ski Essentials",
+            "url": "https://www.skiessentials.com/products/2026-rossignol-essential-skis-rampw01?ski+size=155",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "2023 Nordica Santa Ana 93 Women's Skis",
+            "store": "Ski Essentials",
+            "url": "https://www.skiessentials.com/products/2023-nordica-santa-ana-93-women-s-skis?ski+size=179",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Dalbello Panterra 120 IF GW Mens Ski Boot",
+            "store": "Aspen Ski and Board",
+            "url": "https://www.aspenskiandboard.com/products/dalbello-panterra-120-if-gw-mens-ski-boots?variant=50304545554720",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Lange LX 75 HV GW Ski Boots - Women's 2025",
+            "store": "Evo",
+            "url": "https://www.evo.com/products/255405-lange-lx-75-hv-gw-ski-boots-women-s-2025?variant=46078538547350",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Nordica La Nina Women's Ski Boots - Smoke, Size 4",
+            "store": "The House",
+            "url": "https://www.the-house.com/SS007928.html",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": false,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "BCA Scepter Ski Poles 2025",
+            "store": "Evo",
+            "url": "https://www.evo.com/products/200421-bca-scepter-ski-poles-2025?variant=46119553040534",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Dalbello Panterra 120 ID GW Mens Ski Boots",
+            "store": "Aspen Ski and Board",
+            "url": "https://www.aspenskiandboard.com/products/dalbello-panterra-120-id-mens-ski-boots?variant=49916485796128",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "2022 Nordica Santa Ana 93 Women's Skis",
+            "store": "Ski Essentials",
+            "url": "https://www.skiessentials.com/products/2022-nordica-santa-ana-93-women-s-skis-0a131800?ski+size=179",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Dalbello Panterra 105 ID Womens Ski Boots",
+            "store": "Aspen Ski and Board",
+            "url": "https://www.aspenskiandboard.com/products/dalbello-panterra-105-id-womens-ski-boots-2023?variant=50283739447584",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Lange LX 120 HV GW Ski Boots 2025",
+            "store": "Evo",
+            "url": "https://www.evo.com/products/255402-lange-lx-120-hv-gw-ski-boots-2025?variant=46149029724310",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "2024 Nordica Santa Ana 98 Ski",
+            "store": "Ski Essentials",
+            "url": "https://www.skiessentials.com/products/2024-nordica-santa-ana-98-ski?ski+size=179",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Dalbello Panterra 130 ID GW Mens Ski Boots",
+            "store": "Aspen Ski and Board",
+            "url": "https://www.aspenskiandboard.com/products/dalbello-panterra-130-id-gw-mens-ski-boots?variant=50304013074720",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Lange RX 110 W Ski Boots - Women's 2019",
+            "store": "Evo",
+            "url": "https://www.evo.com/products/157528-lange-rx-110-w-ski-boots-women-s-2019?variant=46097417928854",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Lange Shadow 115 MV GW Ski Boots - Women's 2025",
+            "store": "Evo",
+            "url": "https://www.evo.com/products/240233-lange-shadow-115-mv-gw-ski-boots-women-s-2025?variant=46353353998486",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Nordica Unlimited 105 W DYN Ski Boots - Women's 2025",
+            "store": "Evo",
+            "url": "https://www.evo.com/products/242021-nordica-unlimited-105-w-dyn-ski-boots-women-s-2025?variant=46348067045526",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Lange LX 85 W HV GW Ski Boots Womens 2024",
+            "store": "Aspen Ski and Board",
+            "url": "https://www.aspenskiandboard.com/products/lange-lx-85-w-hv-gw-ski-boots-womens-2024?variant=50306110161184",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Lange Shadow 85 W MV GW Ski Boots Womens 2025",
+            "store": "Aspen Ski and Board",
+            "url": "https://www.aspenskiandboard.com/products/lange-shadow-85-w-mv-gw-ski-boots-womens-2025?variant=50306110128416",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Tecnica Cochise HV 95 W Alpine Touring Ski Boots - Women's 2025",
+            "store": "Evo",
+            "url": "https://www.evo.com/products/240643-tecnica-cochise-hv-95-w-alpine-touring-ski-boots-women-s-2025?variant=46353284726934",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "2024 Rossignol Experience 86 Basalt Open",
+            "store": "Ski Essentials",
+            "url": "https://www.skiessentials.com/products/2024-rossignol-experience-86-basalt-open-ramfq04?ski+size=149",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Lange Shadow 95 MV GW Ski Boots - Women's 2025",
+            "store": "Evo",
+            "url": "https://www.evo.com/products/246828-lange-shadow-95-mv-gw-ski-boots-women-s-2025?variant=46353255366806",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Dalbello Lupo Air 130 Mens Ski Boots",
+            "store": "Aspen Ski and Board",
+            "url": "https://www.aspenskiandboard.com/products/dalbello-lupo-air-130-mens-ski-boots-2020?variant=50656641220896",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Lange Shadow 85 LV GW Ski Boots - Women's 2025",
+            "store": "Evo",
+            "url": "https://www.evo.com/products/240235-lange-shadow-85-lv-gw-ski-boots-women-s-2025?variant=46353328865430",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Dalbello Panterra 95 W LS Womens Ski Boots",
+            "store": "Aspen Ski and Board",
+            "url": "https://www.aspenskiandboard.com/products/dalbello-panterra-95-w-ls-womens-ski-boots?variant=68018232754464",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Dalbello Cabrio Free 95 IF Womens Ski Boots 2025",
+            "store": "Aspen Ski and Board",
+            "url": "https://www.aspenskiandboard.com/products/dalbello-cabrio-95-free-95-if-womens-ski-boots-2025?variant=50303998001440",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Rossignol Evo XT 65 Positrack Unisex Nordic Skis",
+            "store": "The House",
+            "url": "https://www.the-house.com/1116714.html",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": false,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Lange Shadow 100 MV GW Ski Boots 2025",
+            "store": "Evo",
+            "url": "https://www.evo.com/products/255408-lange-shadow-100-mv-gw-ski-boots-2025?variant=46078538383510",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Lange RX 80 GW Womens Ski Boots",
+            "store": "Aspen Ski and Board",
+            "url": "https://www.aspenskiandboard.com/products/lange-rx-80-gw-womens-ski-boots?variant=51773578871072",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Lange LX 85 HV GW Ski Boots - Women's 2025",
+            "store": "Evo",
+            "url": "https://www.evo.com/products/255406-lange-lx-85-hv-gw-ski-boots-women-s-2025?variant=46078538219670",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Nordica Unlimited 95 W DYN Ski Boots - Women's 2025",
+            "store": "Evo",
+            "url": "https://www.evo.com/products/242022-nordica-unlimited-95-w-dyn-ski-boots-women-s-2025?variant=46353288921238",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Dalbello Sports Chakra Elevate 115 T.I. ID Ski Boot - 2023 - Women's",
+            "store": "Backcountry",
+            "url": "https://www.backcountry.com/dalbello-sports-chakra-elevate-115-t.i.-id-ski-boot-womens",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": false,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Tyrolia Sx 4.5 Gw Ac Ski Binding",
+            "store": "Backcountry",
+            "url": "https://www.backcountry.com/tyrolia-sx-4.5-gw-ac-ski-bindings-2021",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": false,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Look Team 4 Gripwalk 2022",
+            "store": "Backcountry",
+            "url": "https://www.backcountry.com/look-team-4-gripwalk-2022",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": false,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Tyrolia Sx 7.5 Gw Ski Binding",
+            "store": "Backcountry",
+            "url": "https://www.backcountry.com/tyrolia-sx-7.5-gw-ski-bindings-2021",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": false,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Dalbello Sports Lupo Ax 120 Ski Boot",
+            "store": "Backcountry",
+            "url": "https://www.backcountry.com/dalbello-sports-lupo-ax-120-ski-boots-2021",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": false,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Atomic Hawx Prime 95 BOA W GW Ski Boots - Women's 2025",
+            "store": "Evo",
+            "url": "https://www.evo.com/products/254279-atomic-hawx-prime-95-boa-w-gw-ski-boots-women-s-2025?variant=46148434034838",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": true,
+              "observation_time": true,
+              "limitations": true
+            }
+          },
+          {
+            "name": "Jackson Mips Helmet 2025",
+            "store": "The Circle Whistler",
+            "url": "https://www.thecirclewhistler.com/jackson-mips-helmet.html",
+            "checks": {
+              "numeric_reference": true,
+              "reference_basis": true,
+              "selected_variant": false,
+              "observation_time": true,
+              "limitations": true
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog_workflow": {
+    "id": 41882144887,
+    "url": "https://github.com/lifan-builds/snow-deal/actions/runs/41882144887",
+    "status": "completed",
+    "conclusion": "success",
+    "baseline_workflow": 41868782908,
+    "bootstrap_history": false
+  },
+  "inventory_diagnostic": {
+    "checked_at": "2026-11-04T18:02:54.270929+00:00",
+    "url": "https://www.toolnut.com/products/milwaukee-2736-21hd-m18-fuel-8-1-4-table-saw-with-one-key-12ah-hd-kit.js?currency=USD",
+    "status": 200,
+    "title": "Milwaukee M18 FUEL 8-1/4-in. Table Saw with One-Key 12.0Ah HD Kit (2736-21HD)",
+    "variants": [
+      {
+        "id": 53393063477542,
+        "price": 74900,
+        "compare_at_price": 74900,
+        "available": true
+      }
+    ],
+    "scope": "One diagnostic sample from listings that disappeared between unchanged-code scheduled runs; not a source-wide conclusion"
+  },
+  "limits": [
+    "No new competitive-lead claim. Latest comparable matrix still supports four strict leads out of 260.",
+    "Candidate and production counts remain separate; both cycling/tools fresh deployments and exact snapshot hashes are verified.",
+    "Retailer references are not independently verified historical selling prices."
+  ],
+  "verified_at": "2026-11-04T18:27:32.466401+00:00",
+  "catalogs": {
+    "cycling": {
+      "verified_at": "2026-11-04T18:18:47.273330+00:00",
+      "site": "https://bigring.clifan.com",
+      "build": {
+        "catalog": "cycling",
+        "brand": "Big Ring",
+        "built_at": "2026-11-04T18:17:46.961998+00:00",
+        "snapshot_sha256": "8a8e793d153c8e2f594b0991178bb69d62d43c7f674f56538d1ccb45ef1b0001",
+        "public_url": "https://bigring.clifan.com",
+        "matching_deals": 1375,
+        "sources": [
+          {
+            "name": "RA Cycles",
+            "observed_at": "2026-11-04T17:58:07.355065+00:00",
+            "listings": 145
+          },
+          {
+            "name": "evo",
+            "observed_at": "2026-11-04T18:07:37.517177+00:00",
+            "listings": 55
+          },
+          {
+            "name": "Bike Closet",
+            "observed_at": "2026-11-04T18:07:46.292179+00:00",
+            "listings": 19
+          },
+          {
+            "name": "Gravity Coalition",
+            "observed_at": "2026-11-04T18:10:53.993468+00:00",
+            "listings": 46
+          },
+          {
+            "name": "Bicycle Warehouse",
+            "observed_at": "2026-11-04T18:11:04.613211+00:00",
+            "listings": 75
+          },
+          {
+            "name": "BikesOnline",
+            "observed_at": "2026-11-04T18:11:09.808615+00:00",
+            "listings": 72
+          },
+          {
+            "name": "Mike's Bikes",
+            "observed_at": "2026-11-04T18:11:14.212200+00:00",
+            "listings": 151
+          },
+          {
+            "name": "ERIK\u2019S Bike Shop",
+            "observed_at": "2026-11-04T18:11:19.325950+00:00",
+            "listings": 118
+          },
+          {
+            "name": "Pro Bike Supply",
+            "observed_at": "2026-11-04T18:11:26.989395+00:00",
+            "listings": 363
+          },
+          {
+            "name": "Contender Bicycles",
+            "observed_at": "2026-11-04T18:11:38.929985+00:00",
+            "listings": 183
+          },
+          {
+            "name": "Cambria Bike",
+            "observed_at": "2026-11-04T18:11:47.310839+00:00",
+            "listings": 24
+          },
+          {
+            "name": "INTENSE",
+            "observed_at": "2026-11-04T18:12:05.773173+00:00",
+            "listings": 4
+          },
+          {
+            "name": "Bike Mart",
+            "observed_at": "2026-11-04T18:12:09.380559+00:00",
+            "listings": 79
+          },
+          {
+            "name": "First Stop Board Barn",
+            "observed_at": "2026-11-04T18:12:22.361547+00:00",
+            "listings": 1
+          },
+          {
+            "name": "Colorado Cyclist",
+            "observed_at": "2026-11-04T18:12:26.464043+00:00",
+            "listings": 61
+          },
+          {
+            "name": "Planet Cyclery",
+            "observed_at": "2026-11-04T18:12:31.200902+00:00",
+            "listings": 32
+          },
+          {
+            "name": "Worldwide Cyclery",
+            "observed_at": "2026-11-04T18:12:39.535931+00:00",
+            "listings": 4
+          },
+          {
+            "name": "State Bicycle Co.",
+            "observed_at": "2026-11-04T18:12:50.233088+00:00",
+            "listings": 1
+          },
+          {
+            "name": "The Path Bike Shop",
+            "observed_at": "2026-11-04T18:12:54.082800+00:00",
+            "listings": 34
+          },
+          {
+            "name": "Fanatik Bike Co.",
+            "observed_at": "2026-11-04T18:12:58.827769+00:00",
+            "listings": 24
+          }
+        ]
+      },
+      "live_health": {
+        "catalog": "cycling",
+        "snapshot_sha256": "8a8e793d153c8e2f594b0991178bb69d62d43c7f674f56538d1ccb45ef1b0001",
+        "fresh_sources": 20,
+        "configured_sources": 20,
+        "status": "ready"
+      },
+      "new_source": {
+        "name": "RA Cycles",
+        "successful_at": "2026-11-04T17:58:07.355065+00:00",
+        "details": {
+          "errors": 0,
+          "pages": 3,
+          "collections": [
+            {
+              "url": "https://racycles.com/collections/bikes?currency=USD",
+              "pages": 3,
+              "products": 145,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "product_pages": 145,
+          "evidence_requests": 145,
+          "parsed_products": 145,
+          "accepted_products": 145
+        },
+        "confirmed_stock_listings": 116,
+        "deep_listings": 64
+      },
+      "prior_utc_day_history_rows_retained": 17,
+      "all_prior_day_rows_identical": true,
+      "filtered_page_checks": [
+        {
+          "filters": {
+            "min_reference": 1000,
+            "max_price": 0,
+            "min_discount": 0,
+            "stock": true,
+            "page": 1,
+            "store": "RA Cycles"
+          },
+          "total": 116,
+          "visible_cards": 24,
+          "status": 200,
+          "all_selected_offers_match": true
+        },
+        {
+          "filters": {
+            "min_reference": 1000,
+            "max_price": 0,
+            "min_discount": 40,
+            "stock": true,
+            "page": 1,
+            "store": "RA Cycles"
+          },
+          "total": 64,
+          "visible_cards": 24,
+          "status": 200,
+          "all_selected_offers_match": true
+        },
+        {
+          "filters": {
+            "min_reference": 1000,
+            "max_price": 0,
+            "min_discount": 0,
+            "stock": true,
+            "page": 1,
+            "store": "RA Cycles",
+            "size": "50s"
+          },
+          "total": 2,
+          "visible_cards": 2,
+          "status": 200,
+          "all_selected_offers_match": true
+        },
+        {
+          "filters": {
+            "min_reference": 1000,
+            "max_price": 0,
+            "min_discount": 0,
+            "stock": true,
+            "page": 1,
+            "store": "RA Cycles",
+            "size": "50cm"
+          },
+          "total": 3,
+          "visible_cards": 3,
+          "status": 200,
+          "all_selected_offers_match": true
+        },
+        {
+          "filters": {
+            "min_reference": 1000,
+            "max_price": 0,
+            "min_discount": 0,
+            "stock": true,
+            "page": 1,
+            "store": "RA Cycles",
+            "q": "Van Rysel RCR Pro"
+          },
+          "total": 3,
+          "visible_cards": 3,
+          "status": 200,
+          "all_selected_offers_match": true
+        }
+      ],
+      "ordered_new_source_cards": 116,
+      "db_file_sha256": "5c118a8364315442242680ad2b67ce0e04b9ee51dadb152c7aecf922ab23edee",
+      "inventory": {
+        "reference_floor": 1000,
+        "scope": "snapshot-listed offers; not independent merchant verification or unique model count",
+        "eligible_in_stock_listings": 1347,
+        "deep_deal_listings": 166,
+        "useful_retailers": [
+          "Bicycle Warehouse",
+          "Bike Closet",
+          "Bike Mart",
+          "BikesOnline",
+          "Colorado Cyclist",
+          "Contender Bicycles",
+          "ERIK\u2019S Bike Shop",
+          "Gravity Coalition",
+          "Mike's Bikes",
+          "Planet Cyclery",
+          "Pro Bike Supply",
+          "RA Cycles",
+          "The Path Bike Shop",
+          "Worldwide Cyclery",
+          "evo"
+        ],
+        "checked_within_24h_percent": 100.0
+      },
+      "baseline_inventory": {
+        "eligible_in_stock_listings": 1232,
+        "deep_deal_listings": 102,
+        "useful_retailers": [
+          "Bicycle Warehouse",
+          "Bike Closet",
+          "Bike Mart",
+          "BikesOnline",
+          "Colorado Cyclist",
+          "Contender Bicycles",
+          "ERIK\u2019S Bike Shop",
+          "Gravity Coalition",
+          "Mike's Bikes",
+          "Planet Cyclery",
+          "Pro Bike Supply",
+          "The Path Bike Shop",
+          "Worldwide Cyclery",
+          "evo"
+        ]
+      },
+      "source_outcomes": [
+        {
+          "source": "RA Cycles",
+          "status": "complete",
+          "errors": 0,
+          "pages": 3,
+          "collections": [
+            {
+              "url": "https://racycles.com/collections/bikes?currency=USD",
+              "pages": 3,
+              "products": 145,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "product_pages": 145,
+          "evidence_requests": 145,
+          "parsed_products": 145,
+          "accepted_products": 145
+        },
+        {
+          "source": "evo",
+          "status": "complete",
+          "errors": 0,
+          "pages": 2,
+          "collections": [
+            {
+              "url": "https://www.evo.com/collections/bikes?currency=USD",
+              "pages": 2,
+              "products": 70,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 70,
+          "accepted_products": 55
+        },
+        {
+          "source": "Bike Closet",
+          "status": "complete",
+          "errors": 0,
+          "pages": 1,
+          "collections": [
+            {
+              "url": "https://bikecloset.com/wp-json/wc/store/v1/products?category=3411&type=variable&per_page=100&page=1&orderby=id&order=asc",
+              "pages": 1,
+              "products": 19,
+              "status": "complete"
+            }
+          ],
+          "product_pages": 26,
+          "evidence_requests": 26,
+          "parsed_products": 19,
+          "accepted_products": 19
+        },
+        {
+          "source": "Gravity Coalition",
+          "status": "complete",
+          "errors": 0,
+          "pages": 2,
+          "collections": [
+            {
+              "url": "https://gravitycoalition.com/collections/all-bikes-frames?currency=USD",
+              "pages": 1,
+              "products": 125,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://gravitycoalition.com/collections/bike-sale?currency=USD",
+              "pages": 1,
+              "products": 116,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 241,
+          "accepted_products": 46
+        },
+        {
+          "source": "Bicycle Warehouse",
+          "status": "complete",
+          "errors": 0,
+          "pages": 1,
+          "collections": [
+            {
+              "url": "https://bicyclewarehouse.com/collections/bikes-on-sale?currency=USD",
+              "pages": 1,
+              "products": 75,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 75,
+          "accepted_products": 75
+        },
+        {
+          "source": "BikesOnline",
+          "status": "complete",
+          "errors": 0,
+          "pages": 1,
+          "collections": [
+            {
+              "url": "https://bikesonline.com/collections/sale?currency=USD",
+              "pages": 1,
+              "products": 188,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 188,
+          "accepted_products": 72
+        },
+        {
+          "source": "Mike's Bikes",
+          "status": "complete",
+          "errors": 0,
+          "pages": 1,
+          "collections": [
+            {
+              "url": "https://mikesbikes.com/collections/clearance-and-sale-bikes?currency=USD",
+              "pages": 1,
+              "products": 168,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 168,
+          "accepted_products": 151
+        },
+        {
+          "source": "ERIK\u2019S Bike Shop",
+          "status": "complete",
+          "errors": 0,
+          "pages": 2,
+          "collections": [
+            {
+              "url": "https://www.eriksbikeshop.com/collections/cycling-bicycles?currency=USD",
+              "pages": 2,
+              "products": 137,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 137,
+          "accepted_products": 118
+        },
+        {
+          "source": "Pro Bike Supply",
+          "status": "complete",
+          "errors": 0,
+          "pages": 3,
+          "collections": [
+            {
+              "url": "https://www.probikesupply.com/collections/on-sale-bikes-frames?currency=USD",
+              "pages": 3,
+              "products": 486,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 486,
+          "accepted_products": 363
+        },
+        {
+          "source": "Contender Bicycles",
+          "status": "complete",
+          "errors": 0,
+          "pages": 2,
+          "collections": [
+            {
+              "url": "https://contenderbicycles.com/collections/sale?currency=USD",
+              "pages": 2,
+              "products": 357,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 357,
+          "accepted_products": 183
+        },
+        {
+          "source": "Cambria Bike",
+          "status": "complete",
+          "errors": 0,
+          "pages": 5,
+          "collections": [
+            {
+              "url": "https://cambriabike.com/collections/mtb-bikes?currency=USD",
+              "pages": 4,
+              "products": 26,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://cambriabike.com/collections/mtb-frames?currency=USD",
+              "pages": 1,
+              "products": 7,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 33,
+          "accepted_products": 24
+        },
+        {
+          "source": "INTENSE",
+          "status": "complete",
+          "errors": 0,
+          "pages": 1,
+          "collections": [
+            {
+              "url": "https://intensecycles.com/collections/sale?currency=USD",
+              "pages": 1,
+              "products": 4,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 4,
+          "accepted_products": 4
+        },
+        {
+          "source": "Bike Mart",
+          "status": "complete",
+          "errors": 0,
+          "pages": 3,
+          "collections": [
+            {
+              "url": "https://www.bikemart.com/collections/bikes?currency=USD",
+              "pages": 3,
+              "products": 83,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 83,
+          "accepted_products": 79
+        },
+        {
+          "source": "First Stop Board Barn",
+          "status": "complete",
+          "errors": 0,
+          "pages": 1,
+          "collections": [
+            {
+              "url": "https://www.firststopboardbarn.com/collections/blazing-summer-bike-sale?currency=USD",
+              "pages": 1,
+              "products": 17,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 17,
+          "accepted_products": 1
+        },
+        {
+          "source": "Colorado Cyclist",
+          "status": "complete",
+          "errors": 0,
+          "pages": 1,
+          "collections": [
+            {
+              "url": "https://coloradocyclist.com/collections/all-bikes?currency=USD",
+              "pages": 1,
+              "products": 62,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 62,
+          "accepted_products": 61
+        },
+        {
+          "source": "Planet Cyclery",
+          "status": "complete",
+          "errors": 0,
+          "pages": 2,
+          "collections": [
+            {
+              "url": "https://planetcyclery.com/collections/mtb-bikes?currency=USD",
+              "pages": 1,
+              "products": 25,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://planetcyclery.com/collections/road-bikes?currency=USD",
+              "pages": 1,
+              "products": 8,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 33,
+          "accepted_products": 32
+        },
+        {
+          "source": "Worldwide Cyclery",
+          "status": "complete",
+          "errors": 0,
+          "pages": 3,
+          "collections": [
+            {
+              "url": "https://worldwidecyclery.com/collections/bikes-and-frames?currency=USD",
+              "pages": 3,
+              "products": 4,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 4,
+          "accepted_products": 4
+        },
+        {
+          "source": "State Bicycle Co.",
+          "status": "complete",
+          "errors": 0,
+          "pages": 1,
+          "collections": [
+            {
+              "url": "https://www.statebicycle.com/collections/sale?currency=USD",
+              "pages": 1,
+              "products": 126,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 126,
+          "accepted_products": 1
+        },
+        {
+          "source": "The Path Bike Shop",
+          "status": "complete",
+          "errors": 0,
+          "pages": 1,
+          "collections": [
+            {
+              "url": "https://www.thepathbikeshop.com/collections/bike-eligible-to-ship?currency=USD",
+              "pages": 1,
+              "products": 44,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 44,
+          "accepted_products": 34
+        },
+        {
+          "source": "Fanatik Bike Co.",
+          "status": "complete",
+          "errors": 0,
+          "pages": 3,
+          "collections": [
+            {
+              "url": "https://www.fanatikbike.com/collections/on-sale-complete-bikes?currency=USD",
+              "pages": 1,
+              "products": 25,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://www.fanatikbike.com/collections/on-sale-frames?currency=USD",
+              "pages": 1,
+              "products": 14,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://www.fanatikbike.com/collections/on-sale-e-bikes?currency=USD",
+              "pages": 1,
+              "products": 15,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 54,
+          "accepted_products": 24
+        }
+      ],
+      "merchant_audit": {
+        "catalog": "cycling",
+        "date": "2026-11-04T18:17:46.847028+00:00",
+        "seed": 20261104,
+        "population": 1347,
+        "method": "top10-plus-seeded20-merchant-product-v1",
+        "sample_size": 30,
+        "match": 30,
+        "mismatch": 0,
+        "inconclusive": 0,
+        "verified_match_percent": 100.0,
+        "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation"
+      },
+      "merchant_sample": [
+        {
+          "name": "Guru Crono Frameset",
+          "store": "RA Cycles",
+          "offer": {
+            "variant_key": "43512640798764",
+            "url": "https://racycles.com/products/guru-crono-frameset-1?currency=USD&variant=43512640798764",
+            "current_price": 650.0,
+            "original_price": 3895.0,
+            "size": "51cm",
+            "options": "Black / 51cm",
+            "availability": "in_stock",
+            "image_url": null,
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "This item is \"Final Sale\" and cannot be returned or exchanged",
+            "discount": 83.31193838254173,
+            "savings": 3245.0
+          },
+          "check_started_at": "2026-11-04T18:13:11.135654+00:00",
+          "evidence_url": "https://racycles.com/products/guru-crono-frameset-1.js?currency=USD",
+          "response_sha256": "443dbc0833363863d14feedc05c9c6332ad003a0d0ac997eecb3aea4abf10253",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true,
+            "purchase_identity": true,
+            "purchase_destination": true,
+            "purchase_currency": true,
+            "purchase_price": true,
+            "purchase_reference": true,
+            "purchase_options": true,
+            "purchase_size": true,
+            "purchase_stock": true,
+            "purchase_shipping_note": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:13:27.265679+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Vaast Bikes E/1 XT/SLX 27.5 E-Bike - Nostalgic Sea Blue-Ocean Frost",
+          "store": "Colorado Cyclist",
+          "offer": {
+            "variant_key": "48408222335216",
+            "url": "https://coloradocyclist.com/products/vaast-bikes-e-1-xt-slx-27-5-e-bike-nostalgic-sea-blue-ocean-frost?currency=USD&variant=48408222335216",
+            "current_price": 1499.99,
+            "original_price": 7699.99,
+            "size": "Medium",
+            "options": "Nostalgic Sea Blue - Ocean Frost / Medium",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0761/3592/3952/files/VaastBikesE1XTSLX27.5E-Bike-NostalgicSeaBlue-OceanFrost_653758ef-151f-403f-a1ce-418046e5c846.jpg?v=1765222053",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 80.51958509037024,
+            "savings": 6200.0
+          },
+          "check_started_at": "2026-11-04T18:13:27.265722+00:00",
+          "evidence_url": "https://coloradocyclist.com/products/vaast-bikes-e-1-xt-slx-27-5-e-bike-nostalgic-sea-blue-ocean-frost.js?currency=USD",
+          "response_sha256": "f98606d31831b63ddac51bbb06505dfb2568078dd02bece0ee04994685abc512",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:13:37.576080+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Vaast Bikes E/1 Enviolo 27.5 E-Bike - Vibrant Berry Red-Black Cherry",
+          "store": "Colorado Cyclist",
+          "offer": {
+            "variant_key": "48408222236912",
+            "url": "https://coloradocyclist.com/products/vaast-bikes-e-1-enviolo-27-5-e-bike-vibrant-berry-red-black-cherry?currency=USD&variant=48408222236912",
+            "current_price": 1999.99,
+            "original_price": 8699.99,
+            "size": "Medium",
+            "options": "Vibrant Berry Red - Black Cherry / Medium",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0761/3592/3952/files/VaastBikesE1Enviolo27.5E-Bike-VibrantBerryRed-BlackCherry_4fce3f0d-9e0e-4fb1-b9c3-fc008cd9d985.jpg?v=1765222053",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 77.01158277193421,
+            "savings": 6700.0
+          },
+          "check_started_at": "2026-11-04T18:13:37.576117+00:00",
+          "evidence_url": "https://coloradocyclist.com/products/vaast-bikes-e-1-enviolo-27-5-e-bike-vibrant-berry-red-black-cherry.js?currency=USD",
+          "response_sha256": "6cc1aa574d9ab4baf1b88c9a557d12d8b207986f23befe0a51ca9727fddd2e22",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:13:42.766335+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "De Rosa King 3 Limited Frameset",
+          "store": "RA Cycles",
+          "offer": {
+            "variant_key": "43510741336108",
+            "url": "https://racycles.com/products/de-rosa-king-3-limited-frameset?currency=USD&variant=43510741336108",
+            "current_price": 1299.99,
+            "original_price": 5399.0,
+            "size": "67cm",
+            "options": "Limited Pearl White / 67cm",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/de-rosa-king-3-limited-frameset-6907579.jpg?v=1771301171",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "This item is \"Final Sale\" and cannot be returned or exchanged",
+            "discount": 75.921652157807,
+            "savings": 4099.01
+          },
+          "check_started_at": "2026-11-04T18:13:42.766371+00:00",
+          "evidence_url": "https://racycles.com/products/de-rosa-king-3-limited-frameset.js?currency=USD",
+          "response_sha256": "6ae2e536d7c0fff8af241a2e29078903e43edb4e92af826363086654f3603bdf",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true,
+            "purchase_identity": true,
+            "purchase_destination": true,
+            "purchase_currency": true,
+            "purchase_price": true,
+            "purchase_reference": true,
+            "purchase_options": true,
+            "purchase_size": true,
+            "purchase_stock": true,
+            "purchase_shipping_note": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:13:53.531124+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Kestrel Talon SL Frameset",
+          "store": "RA Cycles",
+          "offer": {
+            "variant_key": "43637142356012",
+            "url": "https://racycles.com/products/kestrel-talon-sl-frameset?currency=USD&variant=43637142356012",
+            "current_price": 550.0,
+            "original_price": 2199.0,
+            "size": "48cm",
+            "options": "48cm / Red Platinum",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/kestrel-talon-sl-frameset-2404128.jpg?v=1771294448",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "This item is \"Final Sale\" and cannot be returned or exchanged",
+            "discount": 74.98863119599818,
+            "savings": 1649.0
+          },
+          "check_started_at": "2026-11-04T18:13:53.531163+00:00",
+          "evidence_url": "https://racycles.com/products/kestrel-talon-sl-frameset.js?currency=USD",
+          "response_sha256": "133ea17c153e529216e9888ca499c70416d34d62a371460f6edfff81b219c66b",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true,
+            "purchase_identity": true,
+            "purchase_destination": true,
+            "purchase_currency": true,
+            "purchase_price": true,
+            "purchase_reference": true,
+            "purchase_options": true,
+            "purchase_size": true,
+            "purchase_stock": true,
+            "purchase_shipping_note": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:14:04.363591+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Look 765 GRAVEL RS Disc Frameset",
+          "store": "Bike Closet",
+          "offer": {
+            "variant_key": "1775295:1775296|attribute_pa_color=metallic-hope-green-satin&attribute_pa_size=xs",
+            "url": "https://bikecloset.com/product/765-gravel/?attribute_pa_color=metallic-hope-green-satin&attribute_pa_size=xs",
+            "current_price": 899.0,
+            "original_price": 3500.0,
+            "size": "XS",
+            "options": "Color: METALLIC HOPE GREEN SATIN / Size: XS / SKU 3611720206459",
+            "availability": "in_stock",
+            "image_url": "https://bikecloset.com/wp-content/uploads/2026/04/765-GRAVEL-RS-HOPE-GREEN-MAT-FULCRUM-F1-620x413.jpg",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "Cannot ship to Hawaii Or Alaska. \u00b7 Final sale.",
+            "discount": 74.31428571428572,
+            "savings": 2601.0
+          },
+          "check_started_at": "2026-11-04T18:14:04.363631+00:00",
+          "evidence_url": "https://bikecloset.com/wp-json/wc/store/v1/products/1775296",
+          "response_sha256": "7063bf7ec4fe707afdfefe4593a6fa9419697bf03a7927898263ca315230bfb9",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "condition": true,
+            "stock": true,
+            "destination": true,
+            "options": true,
+            "shipping_note": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:14:17.535683+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "De Rosa King 3 RS Frameset",
+          "store": "RA Cycles",
+          "offer": {
+            "variant_key": "43510738780204",
+            "url": "https://racycles.com/products/de-rosa-king-3-rs-frameset?currency=USD&variant=43510738780204",
+            "current_price": 1499.99,
+            "original_price": 5799.0,
+            "size": "66cm",
+            "options": "Black / Orange / 66cm",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/de-rosa-king-3-rs-frameset-3826049.jpg?v=1771301173",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "This item is \"Final Sale\" and cannot be returned or exchanged",
+            "discount": 74.13364373167788,
+            "savings": 4299.01
+          },
+          "check_started_at": "2026-11-04T18:14:17.535717+00:00",
+          "evidence_url": "https://racycles.com/products/de-rosa-king-3-rs-frameset.js?currency=USD",
+          "response_sha256": "7463df4ae2a924c65197ad7148e498174f94f3ed47bb1eb64e34329ffd669f83",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true,
+            "purchase_identity": true,
+            "purchase_destination": true,
+            "purchase_currency": true,
+            "purchase_price": true,
+            "purchase_reference": true,
+            "purchase_options": true,
+            "purchase_size": true,
+            "purchase_stock": true,
+            "purchase_shipping_note": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:14:28.089144+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "BMC Timemachine 01 Tri Frameset",
+          "store": "RA Cycles",
+          "offer": {
+            "variant_key": "43508614889516",
+            "url": "https://racycles.com/products/bmc-timemachine-01-tri-frameset?currency=USD&variant=43508614889516",
+            "current_price": 1499.99,
+            "original_price": 5499.0,
+            "size": "M-S",
+            "options": "Stealth / M-S",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/bmc-timemachine-01-tri-frameset-5609248.jpg?v=1771302012",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "This item is \"Final Sale\" and cannot be returned or exchanged",
+            "discount": 72.72249499909074,
+            "savings": 3999.01
+          },
+          "check_started_at": "2026-11-04T18:14:28.089181+00:00",
+          "evidence_url": "https://racycles.com/products/bmc-timemachine-01-tri-frameset.js?currency=USD",
+          "response_sha256": "9aee58a5781ca3385757a838615c4c022be07e36f1a9f92ffda7026dd5cf5b0c",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true,
+            "purchase_identity": true,
+            "purchase_destination": true,
+            "purchase_currency": true,
+            "purchase_price": true,
+            "purchase_reference": true,
+            "purchase_options": true,
+            "purchase_size": true,
+            "purchase_stock": true,
+            "purchase_shipping_note": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:14:38.844072+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Ridley Noah FAST Frameset",
+          "store": "RA Cycles",
+          "offer": {
+            "variant_key": "43517580214316",
+            "url": "https://racycles.com/products/ridley-noah-fast-frameset?currency=USD&variant=43517580214316",
+            "current_price": 1500.0,
+            "original_price": 5495.0,
+            "size": "XL",
+            "options": "Black / White / XL",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/ridley-noah-fast-frameset-7679089.jpg?v=1771298712",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "This item is \"Final Sale\" and cannot be returned or exchanged",
+            "discount": 72.7024567788899,
+            "savings": 3995.0
+          },
+          "check_started_at": "2026-11-04T18:14:38.844111+00:00",
+          "evidence_url": "https://racycles.com/products/ridley-noah-fast-frameset.js?currency=USD",
+          "response_sha256": "b7060e123170611687f876d9222f6e4fc831a6d7f31337b20d294d9a8a2114af",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true,
+            "purchase_identity": true,
+            "purchase_destination": true,
+            "purchase_currency": true,
+            "purchase_price": true,
+            "purchase_reference": true,
+            "purchase_options": true,
+            "purchase_size": true,
+            "purchase_stock": true,
+            "purchase_shipping_note": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:14:49.501154+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Time ADH ALPE D\u2019HUEZ Carbon Disc Frameset",
+          "store": "Bike Closet",
+          "offer": {
+            "variant_key": "1748595:1753660|attribute_pa_color=v36-brilliant-blue&attribute_pa_size=xs",
+            "url": "https://bikecloset.com/product/time-adh-alpe-dhuez-carbon-disc-frameset/?attribute_pa_color=v36-brilliant-blue&attribute_pa_size=xs",
+            "current_price": 1099.0,
+            "original_price": 4000.0,
+            "size": "XS",
+            "options": "Color: V36 Brilliant Blue / Size: XS",
+            "availability": "in_stock",
+            "image_url": "https://bikecloset.com/wp-content/uploads/2025/10/ADHDISC_Frameset_V36BrilliantBlue_efa80da8-c64e-4d20-b686-b483d07d109a.jpg-2-620x413.jpeg",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "Cannot ship to Hawaii Or Alaska. \u00b7 Final sale.",
+            "discount": 72.525,
+            "savings": 2901.0
+          },
+          "check_started_at": "2026-11-04T18:14:49.501195+00:00",
+          "evidence_url": "https://bikecloset.com/wp-json/wc/store/v1/products/1753660",
+          "response_sha256": "fe823300524f7929a85dbb01f58fe797defd43f26f36061203f670308ca4d9e6",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "condition": true,
+            "stock": true,
+            "destination": true,
+            "options": true,
+            "shipping_note": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:15:02.832313+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Santa Cruz Heckler SL C Stout E-Mountain Bike 2025",
+          "store": "evo",
+          "offer": {
+            "variant_key": "46149652152470",
+            "url": "https://www.evo.com/products/257947-santa-cruz-heckler-sl-c-stout-e-mountain-bike-2025?currency=USD&variant=46149652152470",
+            "current_price": 6949.0,
+            "original_price": 9299.0,
+            "size": "XL",
+            "options": "Matte Dark Blue / XL",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0679/7882/1782/files/product-image-1149733.jpg?v=1767735201",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 25.271534573610065,
+            "savings": 2350.0
+          },
+          "check_started_at": "2026-11-04T18:15:02.832346+00:00",
+          "evidence_url": "https://www.evo.com/products/257947-santa-cruz-heckler-sl-c-stout-e-mountain-bike-2025.js?currency=USD",
+          "response_sha256": "536617e3ee45846f299da6e9b9904651f369ee261aba1a7f68ed9257ecfd2410",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:15:13.296548+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "SCOTT Foil RC Ultimate HMX SL Frameset",
+          "store": "Contender Bicycles",
+          "offer": {
+            "variant_key": "48232979267829",
+            "url": "https://contenderbicycles.com/products/scott-foil-rc-ultimate-hmx-sl-frame-set?currency=USD&variant=48232979267829",
+            "current_price": 4249.99,
+            "original_price": 4999.99,
+            "size": "M",
+            "options": "Tungsten Grey / M",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/SCOTT_Foil_RC_Ultimate_HMX_SL_Frame_set_2026_Contender_Bicycles.jpg?v=1780687764",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 15.00003000006,
+            "savings": 750.0
+          },
+          "check_started_at": "2026-11-04T18:15:13.296582+00:00",
+          "evidence_url": "https://contenderbicycles.com/products/scott-foil-rc-ultimate-hmx-sl-frame-set.js?currency=USD",
+          "response_sha256": "47581cda2271a8375241a1c9801f8a1283422aec0366595c49670b9650b06313",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:15:23.761494+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Caledonia-5 Dura-Ace Di2",
+          "store": "Mike's Bikes",
+          "offer": {
+            "variant_key": "44051988348997",
+            "url": "https://mikesbikes.com/products/cervelo-caledonia-5-dura-ace-di2?currency=USD&variant=44051988348997",
+            "current_price": 11249.95,
+            "original_price": 12499.99,
+            "size": "51",
+            "options": "Emerald/Cream / 51",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Caledonia-5-Dura-Ace-Di2_Emerald-Cream.jpg?v=1764714235",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 10.0003280002624,
+            "savings": 1250.04
+          },
+          "check_started_at": "2026-11-04T18:15:23.761529+00:00",
+          "evidence_url": "https://mikesbikes.com/products/cervelo-caledonia-5-dura-ace-di2.js?currency=USD",
+          "response_sha256": "f526b562ce80b93ac32bfdb96f4b6738abc2fadff59f0a2b9247fddcae07cdb9",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:15:34.267760+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Cervelo Soloist 700c - Force AXS - Serpentine",
+          "store": "Planet Cyclery",
+          "offer": {
+            "variant_key": "44592216703148",
+            "url": "https://planetcyclery.com/products/cervelo-soloist-700c-force-axs-serpentine?currency=USD&variant=44592216703148",
+            "current_price": 5999.95,
+            "original_price": 7500.0,
+            "size": "56cm (22\")",
+            "options": "Serpentine / 56cm (22\")",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0656/8319/4028/files/Cervelo-Soloist-Force-AXS-AZ-2T.png?v=1755698301",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 20.000666666666667,
+            "savings": 1500.05
+          },
+          "check_started_at": "2026-11-04T18:15:34.267794+00:00",
+          "evidence_url": "https://planetcyclery.com/products/cervelo-soloist-700c-force-axs-serpentine.js?currency=USD",
+          "response_sha256": "741909d6c68d4b908d5ba026f43d039449f1c2d551f84d121b8707a437cc4a9e",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:15:44.638981+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Salsa Stormchaser GRX 810 1x SUS Bike - 700c Aluminum Black 57.5cm",
+          "store": "Pro Bike Supply",
+          "offer": {
+            "variant_key": "41409648918583",
+            "url": "https://www.probikesupply.com/products/salsa-stormchaser-grx-810-1x-sus-bike-700c-aluminum-black-57-5cm?currency=USD&variant=41409648918583",
+            "current_price": 3016.65,
+            "original_price": 3549.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0892/2046/files/BK9695_4626d6ce-38c2-4ece-835c-8d927204d317.jpg?v=1734037087",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 15.0,
+            "savings": 532.35
+          },
+          "check_started_at": "2026-11-04T18:15:44.639016+00:00",
+          "evidence_url": "https://www.probikesupply.com/products/salsa-stormchaser-grx-810-1x-sus-bike-700c-aluminum-black-57-5cm.js?currency=USD",
+          "response_sha256": "44ba5e64ec88e98fec289c30e5a614225e9d96f531724e11db3f2e00131e998c",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:15:55.014250+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "OPEN U.P. Ekar 700c Bike",
+          "store": "RA Cycles",
+          "offer": {
+            "variant_key": "44678101696556",
+            "url": "https://racycles.com/products/open-u-p-ekar-700c-bike?currency=USD&variant=44678101696556",
+            "current_price": 4499.0,
+            "original_price": 4999.0,
+            "size": "XL",
+            "options": "Sage / XL",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/open-up-ekar-700c-bike-5754391.jpg?v=1771295651",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "This item is \"Final Sale\" and cannot be returned or exchanged",
+            "discount": 10.002000400080016,
+            "savings": 500.0
+          },
+          "check_started_at": "2026-11-04T18:15:55.014282+00:00",
+          "evidence_url": "https://racycles.com/products/open-u-p-ekar-700c-bike.js?currency=USD",
+          "response_sha256": "a36ea6ab2cc9167145bda6836c95e62e9a797d60170079c1bad4771d43c8c43a",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true,
+            "purchase_identity": true,
+            "purchase_destination": true,
+            "purchase_currency": true,
+            "purchase_price": true,
+            "purchase_reference": true,
+            "purchase_options": true,
+            "purchase_size": true,
+            "purchase_stock": true,
+            "purchase_shipping_note": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:16:06.206899+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Turbo Levo SL 2 Expert (2025)",
+          "store": "Bicycle Warehouse",
+          "offer": {
+            "variant_key": "42829538558054",
+            "url": "https://bicyclewarehouse.com/products/specialized-turbo-levo-sl-2-expert-2025?currency=USD&variant=42829538558054",
+            "current_price": 7199.99,
+            "original_price": 9000.0,
+            "size": "S6",
+            "options": "Tan / S6",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0286/1214/files/96825-31_LEVO-SL-EXPERT-CARBON-UL-CHAM-CLGRY-METOBSD_HERO-PDP.webp?v=1749749670",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 20.00011111111111,
+            "savings": 1800.01
+          },
+          "check_started_at": "2026-11-04T18:16:06.206930+00:00",
+          "evidence_url": "https://bicyclewarehouse.com/products/specialized-turbo-levo-sl-2-expert-2025.js?currency=USD",
+          "response_sha256": "c0535e148a6349446e21c22fc95053a8c344ab4f0accfe4349a4864f1d268cb0",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:16:16.738612+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "S-Works Roubaix Etap Road Bike",
+          "store": "ERIK\u2019S Bike Shop",
+          "offer": {
+            "variant_key": "50043763327190",
+            "url": "https://www.eriksbikeshop.com/products/s-works-2025-roubaix-etap-road-bike-pr5a22755?currency=USD&variant=50043763327190",
+            "current_price": 9999.99,
+            "original_price": 12249.99,
+            "size": "54CM",
+            "options": "TAUPE/GUNMETAL/BLACK TINT / 54CM",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0697/5252/0918/files/386225.jpg?v=1782885198",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 18.36736193254035,
+            "savings": 2250.0
+          },
+          "check_started_at": "2026-11-04T18:16:16.738647+00:00",
+          "evidence_url": "https://www.eriksbikeshop.com/products/s-works-2025-roubaix-etap-road-bike-pr5a22755.js?currency=USD",
+          "response_sha256": "9c69e81e3214b0f3e3a21fd281bfc7a9eab1b1f3a76434e0fea348cec8097eca",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:16:27.124459+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "2024 Orbea KEMEN 10 Trekking Urban E-Bikes - Small, Metallic Burgundy Red (Gloss Matte)",
+          "store": "Pro Bike Supply",
+          "offer": {
+            "variant_key": "41353985949751",
+            "url": "https://www.probikesupply.com/products/2024-orbea-kemen-10-trekking-urban-e-bikes-small-metallic-burgundy-red-gloss-matte?currency=USD&variant=41353985949751",
+            "current_price": 4930.0,
+            "original_price": 5800.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0892/2046/files/R364TTCC-VC-SIDE-KEMEN_10.jpg?v=1730498591",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 15.0,
+            "savings": 870.0
+          },
+          "check_started_at": "2026-11-04T18:16:27.124493+00:00",
+          "evidence_url": "https://www.probikesupply.com/products/2024-orbea-kemen-10-trekking-urban-e-bikes-small-metallic-burgundy-red-gloss-matte.js?currency=USD",
+          "response_sha256": "f026497a8084afb3058e642f8ac12ae2d689f3665bad2cc59174137d61087036",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:16:32.355932+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Scene VLT 1",
+          "store": "Bicycle Warehouse",
+          "offer": {
+            "variant_key": "46652578005094",
+            "url": "https://bicyclewarehouse.com/products/2026-scene-vlt-2?currency=USD&variant=46652578005094",
+            "current_price": 2699.0,
+            "original_price": 2899.0,
+            "size": "S",
+            "options": "S",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0286/1214/files/1530beb64f8e420a0c642442a639f419eaf2fe0f.jpg?v=1787782889",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 6.89893066574681,
+            "savings": 200.0
+          },
+          "check_started_at": "2026-11-04T18:16:32.355967+00:00",
+          "evidence_url": "https://bicyclewarehouse.com/products/2026-scene-vlt-2.js?currency=USD",
+          "response_sha256": "90b9dfc1c2bcbb0d664d88bf4272e761aafb5391f5d070b7dcf7478440011e3f",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:16:38.150751+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Mondraker RAZE R Complete Mountain Bike 2025",
+          "store": "evo",
+          "offer": {
+            "variant_key": "46154270539926",
+            "url": "https://www.evo.com/products/281776-mondraker-raze-carbon-r-complete-mountain-bike-2025?currency=USD&variant=46154270539926",
+            "current_price": 2500.09,
+            "original_price": 4999.0,
+            "size": "XL",
+            "options": "Cherry Red / XL",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0679/7882/1782/files/product-image-1292291.jpg?v=1776276390",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 49.988197639527904,
+            "savings": 2498.91
+          },
+          "check_started_at": "2026-11-04T18:16:38.150784+00:00",
+          "evidence_url": "https://www.evo.com/products/281776-mondraker-raze-carbon-r-complete-mountain-bike-2025.js?currency=USD",
+          "response_sha256": "45d2aa934da3e4c302980342bdcb7ccaf1a057e06c5ed8183c674e3bcd74da97",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:16:43.352659+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Transition Sentinel Alloy Deore 2025",
+          "store": "Pro Bike Supply",
+          "offer": {
+            "variant_key": "42446963310647",
+            "url": "https://www.probikesupply.com/products/transition-sentinel-alloy-deore-2025?currency=USD&variant=42446963310647",
+            "current_price": 2799.0,
+            "original_price": 3499.0,
+            "size": "XX-Large",
+            "options": "Deep Purple / XX-Large",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0892/2046/files/C1-Senti-XT-Silvermist-Side.avif?v=1789590739",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 20.005715918833953,
+            "savings": 700.0
+          },
+          "check_started_at": "2026-11-04T18:16:43.352694+00:00",
+          "evidence_url": "https://www.probikesupply.com/products/transition-sentinel-alloy-deore-2025.js?currency=USD",
+          "response_sha256": "982de724f6bcbf27d7c95448f5f1b6e365550a27775aa262051067bdeae7901d",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:16:48.548045+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Kestrel Legend SL Ultegra Di2 Bike",
+          "store": "RA Cycles",
+          "offer": {
+            "variant_key": "43512890064940",
+            "url": "https://racycles.com/products/kestrel-legend-sl-ultegra-di2-bike?currency=USD&variant=43512890064940",
+            "current_price": 2634.0,
+            "original_price": 4509.0,
+            "size": "55cm",
+            "options": "Carbon / White / 55cm",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/kestrel-legend-sl-ultegra-di2-bike-2865150.jpg?v=1771300229",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "This item is \"Final Sale\" and cannot be returned or exchanged",
+            "discount": 41.583499667332,
+            "savings": 1875.0
+          },
+          "check_started_at": "2026-11-04T18:16:48.548078+00:00",
+          "evidence_url": "https://racycles.com/products/kestrel-legend-sl-ultegra-di2-bike.js?currency=USD",
+          "response_sha256": "b47eea096713cd365ea9a26a2a94ab7e6540bfc723c40049e9ed9e0f921922db",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true,
+            "purchase_identity": true,
+            "purchase_destination": true,
+            "purchase_currency": true,
+            "purchase_price": true,
+            "purchase_reference": true,
+            "purchase_options": true,
+            "purchase_size": true,
+            "purchase_stock": true,
+            "purchase_shipping_note": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:16:59.271792+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Kona Libre CR w/ SRAM",
+          "store": "The Path Bike Shop",
+          "offer": {
+            "variant_key": "50267370225921",
+            "url": "https://www.thepathbikeshop.com/products/kona-37e-libre-cr-w-sram?currency=USD&variant=50267370225921",
+            "current_price": 2695.0,
+            "original_price": 3699.0,
+            "size": "50cm",
+            "options": "Blue / 50cm",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0313/1654/1572/files/2k26_libre_cr-1_jpg.webp?v=1788403917",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 27.142470938091375,
+            "savings": 1004.0
+          },
+          "check_started_at": "2026-11-04T18:16:59.271829+00:00",
+          "evidence_url": "https://www.thepathbikeshop.com/products/kona-37e-libre-cr-w-sram.js?currency=USD",
+          "response_sha256": "8726b675a90feb39e751173ce3aecd8c7fe564f70d4d7ce4679e9f865e2285d5",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:17:09.756518+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Vado SL 4.0 Step Through EQ 2",
+          "store": "Bike Mart",
+          "offer": {
+            "variant_key": "46763979047165",
+            "url": "https://www.bikemart.com/products/vado-sl-40-step-through-eq-2?currency=USD&variant=46763979047165",
+            "current_price": 2999.99,
+            "original_price": 4599.99,
+            "size": "Large",
+            "options": "Gloss Oasis / Dune White Frost / Large / 700c",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0705/8928/4605/files/specialized-vado-sl-4.0-step-through-eq-2-1201917-1_3139e565-0d70-4b0c-ac4d-e097d6508974.jpg?v=1761059965",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 34.782684310183285,
+            "savings": 1600.0
+          },
+          "check_started_at": "2026-11-04T18:17:09.756554+00:00",
+          "evidence_url": "https://www.bikemart.com/products/vado-sl-40-step-through-eq-2.js?currency=USD",
+          "response_sha256": "ffaf011bfb5f68bd7327ccca9fe7121a97a54c84d62c3cd15d20b9ec779d4b46",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:17:20.123665+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Mondraker ARID CARBON RR 2026",
+          "store": "Pro Bike Supply",
+          "offer": {
+            "variant_key": "42443354046519",
+            "url": "https://www.probikesupply.com/products/2026-mondraker-arid-carbon-rr?currency=USD&variant=42443354046519",
+            "current_price": 5999.0,
+            "original_price": 7499.0,
+            "size": "Small",
+            "options": "Blue/Black / Small",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0892/2046/files/010.26US141AB_5976c13f-f8b1-422a-b6c4-11e94cf57261.jpg?v=1789475661",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 20.002667022269637,
+            "savings": 1500.0
+          },
+          "check_started_at": "2026-11-04T18:17:20.123700+00:00",
+          "evidence_url": "https://www.probikesupply.com/products/2026-mondraker-arid-carbon-rr.js?currency=USD",
+          "response_sha256": "0744aaa4aa0c27a200c221addf37df610e6ebd07a55754612e4974a1ca43dd85",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:17:25.331413+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Kona Process 153 DL 29 - Jade Green - 2025",
+          "store": "Planet Cyclery",
+          "offer": {
+            "variant_key": "44082102337708",
+            "url": "https://planetcyclery.com/products/kona-process-153-dl-29-jade-green-2025?currency=USD&variant=44082102337708",
+            "current_price": 2599.99,
+            "original_price": 3599.0,
+            "size": "X-Large",
+            "options": "Jade Green / X-Large",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0656/8319/4028/files/KonaProcess153DL29-JadeGreen-2025.jpg?v=1741340040",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 27.757988330091692,
+            "savings": 999.01
+          },
+          "check_started_at": "2026-11-04T18:17:25.331447+00:00",
+          "evidence_url": "https://planetcyclery.com/products/kona-process-153-dl-29-jade-green-2025.js?currency=USD",
+          "response_sha256": "47881e275604f7946223518dd905781df795404f0ac825c83c5bb867dd29b863",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:17:30.557908+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Stumpjumper 15 Expert (2025)",
+          "store": "Bicycle Warehouse",
+          "offer": {
+            "variant_key": "41820316368998",
+            "url": "https://bicyclewarehouse.com/products/stumpjumper-15-expert?currency=USD&variant=41820316368998",
+            "current_price": 4799.99,
+            "original_price": 6000.0,
+            "size": "S1",
+            "options": "Gunmetal / S1",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0286/1214/files/93325-31_SJ-15-EXPERT-GUN-WHTMTN_HERO-PDP.png?v=1772091417",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 20.000166666666665,
+            "savings": 1200.01
+          },
+          "check_started_at": "2026-11-04T18:17:30.557943+00:00",
+          "evidence_url": "https://bicyclewarehouse.com/products/stumpjumper-15-expert.js?currency=USD",
+          "response_sha256": "6ae145e5760e28e40c9bb47be6992bed57c788470c9865d4b7f41cc14cfb0054",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:17:36.334165+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Mondraker ARID CARBON R 2025",
+          "store": "Pro Bike Supply",
+          "offer": {
+            "variant_key": "42443355127863",
+            "url": "https://www.probikesupply.com/products/2025-mondraker-arid-carbon-r?currency=USD&variant=42443355127863",
+            "current_price": 4719.0,
+            "original_price": 5899.0,
+            "size": "Medium",
+            "options": "Gray/Black/Yellow / Medium",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0892/2046/files/010.25US146_c7445e56-2281-44bc-8b35-d18cb11c2443.jpg?v=1789475697",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 20.003390405153414,
+            "savings": 1180.0
+          },
+          "check_started_at": "2026-11-04T18:17:36.334202+00:00",
+          "evidence_url": "https://www.probikesupply.com/products/2025-mondraker-arid-carbon-r.js?currency=USD",
+          "response_sha256": "dfb63a2b7702586b77cd793ccbe0a8534f8607d928d84dc7257db06669db2cb3",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:17:41.529628+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Orbea Kemen Mid SUV 40 20mph 2023",
+          "store": "Contender Bicycles",
+          "offer": {
+            "variant_key": "43660440633589",
+            "url": "https://contenderbicycles.com/products/orbea-kemen-mid-suv-40-20mph-2023?currency=USD&variant=43660440633589",
+            "current_price": 3463.95,
+            "original_price": 3988.95,
+            "size": "L",
+            "options": "Urban Green (Gloss) - Black (Matte) / L",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/2023_Orbea_Kemen_Mid_SUV_40_20mph.jpg?v=1787165790",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 13.161358252171624,
+            "savings": 525.0
+          },
+          "check_started_at": "2026-11-04T18:17:41.529663+00:00",
+          "evidence_url": "https://contenderbicycles.com/products/orbea-kemen-mid-suv-40-20mph-2023.js?currency=USD",
+          "response_sha256": "cff58e0c317eaa5a385a4598b2709b1a21408b558837efb3a1af6de14706aede",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:13:11.109329+00:00",
+          "checked_at": "2026-11-04T18:17:46.846220+00:00",
+          "within_audit_window": true
+        }
+      ]
+    },
+    "tools": {
+      "verified_at": "2026-11-04T18:25:57.992907+00:00",
+      "site": "https://benchdrop.clifan.com",
+      "build": {
+        "catalog": "tools",
+        "brand": "Bench Drop",
+        "built_at": "2026-11-04T18:20:24.333254+00:00",
+        "snapshot_sha256": "0e4102e61f5776fa0cb2f788259181b6eb93227fc8d717c6dd2cf2f4b7bc2220",
+        "public_url": "https://benchdrop.clifan.com",
+        "matching_deals": 542,
+        "sources": [
+          {
+            "name": "Beaver Industrial Supply",
+            "observed_at": "2026-11-04T17:58:24.579695+00:00",
+            "listings": 192
+          },
+          {
+            "name": "Tool Nut",
+            "observed_at": "2026-11-04T18:05:34.854676+00:00",
+            "listings": 155
+          },
+          {
+            "name": "Woodcraft",
+            "observed_at": "2026-11-04T18:07:09.062154+00:00",
+            "listings": 77
+          },
+          {
+            "name": "Craft Supplies USA",
+            "observed_at": "2026-11-04T18:07:33.992779+00:00",
+            "listings": 1
+          },
+          {
+            "name": "Harvey Woodworking",
+            "observed_at": "2026-11-04T18:07:37.675691+00:00",
+            "listings": 11
+          },
+          {
+            "name": "WEN",
+            "observed_at": "2026-11-04T18:07:41.436595+00:00",
+            "listings": 8
+          },
+          {
+            "name": "Factory Direct Supply",
+            "observed_at": "2026-11-04T18:07:45.333896+00:00",
+            "listings": 6
+          },
+          {
+            "name": "Max Warehouse",
+            "observed_at": "2026-11-04T18:08:13.209647+00:00",
+            "listings": 44
+          },
+          {
+            "name": "OakTree Supply",
+            "observed_at": "2026-11-04T18:08:35.707375+00:00",
+            "listings": 83
+          },
+          {
+            "name": "Taylor Toolworks",
+            "observed_at": "2026-11-04T18:08:53.813175+00:00",
+            "listings": 1
+          },
+          {
+            "name": "Fasteners Inc",
+            "observed_at": "2026-11-04T18:15:33.962555+00:00",
+            "listings": 77
+          }
+        ]
+      },
+      "live_health": {
+        "catalog": "tools",
+        "snapshot_sha256": "0e4102e61f5776fa0cb2f788259181b6eb93227fc8d717c6dd2cf2f4b7bc2220",
+        "fresh_sources": 11,
+        "configured_sources": 11,
+        "status": "ready"
+      },
+      "new_source": {
+        "name": "Beaver Industrial Supply",
+        "successful_at": "2026-11-04T17:58:24.579695+00:00",
+        "details": {
+          "errors": 0,
+          "pages": 3,
+          "collections": [
+            {
+              "url": "https://beavertools.com/collections/sales-and-closeouts?currency=USD",
+              "pages": 3,
+              "products": 192,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "product_pages": 192,
+          "parsed_products": 192,
+          "accepted_products": 192
+        },
+        "confirmed_stock_listings": 69,
+        "deep_listings": 7
+      },
+      "prior_utc_day_history_rows_retained": 10,
+      "all_prior_day_rows_identical": true,
+      "filtered_page_checks": [
+        {
+          "filters": {
+            "min_reference": 200,
+            "max_price": 0,
+            "min_discount": 0,
+            "stock": true,
+            "page": 1,
+            "store": "Beaver Industrial Supply"
+          },
+          "total": 69,
+          "visible_cards": 24,
+          "status": 200,
+          "all_selected_offers_match": true
+        },
+        {
+          "filters": {
+            "min_reference": 200,
+            "max_price": 0,
+            "min_discount": 40,
+            "stock": true,
+            "page": 1,
+            "store": "Beaver Industrial Supply"
+          },
+          "total": 7,
+          "visible_cards": 7,
+          "status": 200,
+          "all_selected_offers_match": true
+        },
+        {
+          "filters": {
+            "min_reference": 200,
+            "max_price": 0,
+            "min_discount": 0,
+            "stock": false,
+            "page": 1,
+            "store": "Beaver Industrial Supply",
+            "q": "60HH"
+          },
+          "total": 1,
+          "visible_cards": 1,
+          "status": 200,
+          "all_selected_offers_match": true
+        },
+        {
+          "filters": {
+            "min_reference": 200,
+            "max_price": 0,
+            "min_discount": 0,
+            "stock": true,
+            "page": 1,
+            "store": "Beaver Industrial Supply",
+            "q": "60HH"
+          },
+          "total": 0,
+          "visible_cards": 0,
+          "status": 200,
+          "all_selected_offers_match": true
+        }
+      ],
+      "ordered_new_source_cards": 69,
+      "db_file_sha256": "659a21b5c3cc8614753cd6d81ff2f326127b9dfed7d741cf39cac2b06d1e57ec",
+      "inventory": {
+        "reference_floor": 200,
+        "scope": "snapshot-listed offers; not independent merchant verification or unique model count",
+        "eligible_in_stock_listings": 454,
+        "deep_deal_listings": 31,
+        "useful_retailers": [
+          "Beaver Industrial Supply",
+          "Fasteners Inc",
+          "OakTree Supply",
+          "Taylor Toolworks",
+          "Tool Nut",
+          "Woodcraft"
+        ],
+        "checked_within_24h_percent": 100.0
+      },
+      "baseline_inventory": {
+        "eligible_in_stock_listings": 383,
+        "deep_deal_listings": 24,
+        "useful_retailers": [
+          "Fasteners Inc",
+          "OakTree Supply",
+          "Taylor Toolworks",
+          "Tool Nut",
+          "Woodcraft"
+        ]
+      },
+      "source_outcomes": [
+        {
+          "source": "Beaver Industrial Supply",
+          "status": "complete",
+          "errors": 0,
+          "pages": 3,
+          "collections": [
+            {
+              "url": "https://beavertools.com/collections/sales-and-closeouts?currency=USD",
+              "pages": 3,
+              "products": 192,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "product_pages": 192,
+          "parsed_products": 192,
+          "accepted_products": 192
+        },
+        {
+          "source": "Tool Nut",
+          "status": "complete",
+          "errors": 0,
+          "pages": 26,
+          "collections": [
+            {
+              "url": "https://www.toolnut.com/collections/saws?currency=USD",
+              "pages": 2,
+              "products": 48,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://www.toolnut.com/collections/power-tools?currency=USD",
+              "pages": 17,
+              "products": 151,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://www.toolnut.com/collections/stationary-tools?currency=USD",
+              "pages": 7,
+              "products": 98,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 297,
+          "accepted_products": 155
+        },
+        {
+          "source": "Woodcraft",
+          "status": "complete",
+          "errors": 0,
+          "pages": 7,
+          "collections": [
+            {
+              "url": "https://www.woodcraft.com/collections/clearance?currency=USD",
+              "pages": 1,
+              "products": 104,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://www.woodcraft.com/collections/power-tools?currency=USD",
+              "pages": 2,
+              "products": 8,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://www.woodcraft.com/collections/woodworking-machines?currency=USD",
+              "pages": 3,
+              "products": 78,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://www.woodcraft.com/collections/power-tool-deals?currency=USD",
+              "pages": 1,
+              "products": 82,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 272,
+          "accepted_products": 77
+        },
+        {
+          "source": "Craft Supplies USA",
+          "status": "complete",
+          "errors": 0,
+          "pages": 1,
+          "collections": [
+            {
+              "url": "https://woodturnerscatalog.com/collections/wood-lathes?currency=USD",
+              "pages": 1,
+              "products": 1,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 1,
+          "accepted_products": 1
+        },
+        {
+          "source": "Harvey Woodworking",
+          "status": "complete",
+          "errors": 0,
+          "pages": 1,
+          "collections": [
+            {
+              "url": "https://www.harveywoodworking.com/collections/all?currency=USD",
+              "pages": 1,
+              "products": 17,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 17,
+          "accepted_products": 11
+        },
+        {
+          "source": "WEN",
+          "status": "complete",
+          "errors": 0,
+          "pages": 1,
+          "collections": [
+            {
+              "url": "https://wenproducts.com/collections/power-tools?currency=USD",
+              "pages": 1,
+              "products": 9,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 9,
+          "accepted_products": 8
+        },
+        {
+          "source": "Factory Direct Supply",
+          "status": "complete",
+          "errors": 0,
+          "pages": 8,
+          "collections": [
+            {
+              "url": "https://factorydirectsupply.com/collections/power-tools?currency=USD",
+              "pages": 8,
+              "products": 17,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 17,
+          "accepted_products": 6
+        },
+        {
+          "source": "Max Warehouse",
+          "status": "complete",
+          "errors": 0,
+          "pages": 6,
+          "collections": [
+            {
+              "url": "https://www.maxwarehouse.com/collections/power-tools?currency=USD",
+              "pages": 6,
+              "products": 237,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 237,
+          "accepted_products": 44
+        },
+        {
+          "source": "OakTree Supply",
+          "status": "complete",
+          "errors": 0,
+          "pages": 5,
+          "collections": [
+            {
+              "url": "https://www.oaktreesupply.com/collections/clearance?currency=USD",
+              "pages": 1,
+              "products": 105,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://www.oaktreesupply.com/collections/jpw-overstock-items-2026?currency=USD",
+              "pages": 1,
+              "products": 25,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://www.oaktreesupply.com/collections/jet-and-powermatic-price-drops?currency=USD",
+              "pages": 1,
+              "products": 8,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://www.oaktreesupply.com/collections/scm-sale?currency=USD",
+              "pages": 1,
+              "products": 13,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://www.oaktreesupply.com/collections/sawstop?currency=USD",
+              "pages": 1,
+              "products": 40,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 191,
+          "accepted_products": 83
+        },
+        {
+          "source": "Taylor Toolworks",
+          "status": "complete",
+          "errors": 0,
+          "pages": 1,
+          "collections": [
+            {
+              "url": "https://taytools.com/power-tools?ppg=65535&pn=1",
+              "pages": 1,
+              "products": 22,
+              "status": "complete"
+            }
+          ],
+          "product_pages": 186,
+          "parsed_products": 22,
+          "accepted_products": 1
+        },
+        {
+          "source": "Fasteners Inc",
+          "status": "complete",
+          "errors": 0,
+          "pages": 19,
+          "collections": [
+            {
+              "url": "https://fastenersinc.myshopify.com/collections/power-tools?currency=USD",
+              "pages": 8,
+              "products": 100,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://fastenersinc.myshopify.com/collections/power-tools-1?currency=USD",
+              "pages": 8,
+              "products": 77,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://fastenersinc.myshopify.com/collections/machine-tools?currency=USD",
+              "pages": 1,
+              "products": 2,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://fastenersinc.myshopify.com/collections/power-tool-closeouts?currency=USD",
+              "pages": 1,
+              "products": 2,
+              "status": "complete",
+              "observed_currency": "USD"
+            },
+            {
+              "url": "https://fastenersinc.myshopify.com/collections/all-closeouts?currency=USD",
+              "pages": 1,
+              "products": 15,
+              "status": "complete",
+              "observed_currency": "USD"
+            }
+          ],
+          "parsed_products": 196,
+          "accepted_products": 77
+        }
+      ],
+      "merchant_audit": {
+        "catalog": "tools",
+        "date": "2026-11-04T18:20:24.213047+00:00",
+        "seed": 20261104,
+        "population": 454,
+        "method": "top10-plus-seeded20-merchant-product-v1",
+        "sample_size": 30,
+        "match": 30,
+        "mismatch": 0,
+        "inconclusive": 0,
+        "verified_match_percent": 100.0,
+        "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation"
+      },
+      "merchant_sample": [
+        {
+          "name": "Axiom 2x2 CNC Table with Air-Cooled Spindle",
+          "store": "OakTree Supply",
+          "offer": {
+            "variant_key": "47708931948761",
+            "url": "https://www.oaktreesupply.com/products/axiom-2x2-cnc-table-with-spindle?currency=USD&variant=47708931948761",
+            "current_price": 1999.0,
+            "original_price": 4699.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/files/AX-101-1.jpg?v=1769713524",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 57.45903383698659,
+            "savings": 2700.0
+          },
+          "check_started_at": "2026-11-04T18:16:39.795729+00:00",
+          "evidence_url": "https://www.oaktreesupply.com/products/axiom-2x2-cnc-table-with-spindle.js?currency=USD",
+          "response_sha256": "f4b87f2e1b8db50fa6bdd089236baf2d3cab3939639aa1c106f2d21f0739aa33",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:16:50.107729+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Kreg 20V Ionic Drive 1/2\" Compact Drill Kit KPTBDR050A",
+          "store": "Beaver Industrial Supply",
+          "offer": {
+            "variant_key": "44153404686429",
+            "url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-2-compact-drill-kit-kptbdr050a?currency=USD&variant=44153404686429",
+            "current_price": 99.0,
+            "original_price": 228.99,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/kreg_kptbdr050a_1.jpg?v=1769410568",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 56.766671033669596,
+            "savings": 129.99
+          },
+          "check_started_at": "2026-11-04T18:16:50.107761+00:00",
+          "evidence_url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-2-compact-drill-kit-kptbdr050a.js?currency=USD",
+          "response_sha256": "4a2cfec1c9fef875156b51fba92cf7e1b6ca8afa8c4299026145c646498b4d57",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true,
+            "purchase_identity": true,
+            "purchase_destination": true,
+            "purchase_currency": true,
+            "purchase_price": true,
+            "purchase_reference": true,
+            "purchase_options": true,
+            "purchase_stock": true,
+            "purchase_shipping_note": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:17:06.968536+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "DEWALT 20V MAX XR Brushless Cordless Router (Tool Only)",
+          "store": "Fasteners Inc",
+          "offer": {
+            "variant_key": "31231201247319",
+            "url": "https://fastenersinc.myshopify.com/products/dcw600b-20v-max-compact-router-dewalt?currency=USD&variant=31231201247319",
+            "current_price": 119.0,
+            "original_price": 249.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/1c82af8b8d6d0cf2f34b8eea29e1d28f87bd16c4-large.png?v=1790078004",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 52.208835341365464,
+            "savings": 130.0
+          },
+          "check_started_at": "2026-11-04T18:17:06.968574+00:00",
+          "evidence_url": "https://fastenersinc.myshopify.com/products/dcw600b-20v-max-compact-router-dewalt.js?currency=USD",
+          "response_sha256": "898903320f587fde506a5ec1fe82b4cf047a5037f0749b86255b6c8a38f4eeb0",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:17:17.246023+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Kreg 20V Ionic Drive 1/4\" Compact Impact Driver Kit KPTBDV025A",
+          "store": "Beaver Industrial Supply",
+          "offer": {
+            "variant_key": "44153397182557",
+            "url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-4-compact-impact-driver-kit-kptbdv025a?currency=USD&variant=44153397182557",
+            "current_price": 119.0,
+            "original_price": 248.99,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/kreg_kptbdv025a_1.jpg?v=1769410521",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 52.20691594039921,
+            "savings": 129.99
+          },
+          "check_started_at": "2026-11-04T18:17:17.246054+00:00",
+          "evidence_url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-4-compact-impact-driver-kit-kptbdv025a.js?currency=USD",
+          "response_sha256": "dc524b636aafd2bc77696799251abcf55811622f35ebf7dabbfce899800c17c9",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true,
+            "purchase_identity": true,
+            "purchase_destination": true,
+            "purchase_currency": true,
+            "purchase_price": true,
+            "purchase_reference": true,
+            "purchase_options": true,
+            "purchase_stock": true,
+            "purchase_shipping_note": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:17:28.440648+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Kreg 20V Ionic Drive 5\" Random Orbit Sander Kit KPTBRS500A",
+          "store": "Beaver Industrial Supply",
+          "offer": {
+            "variant_key": "44153396428893",
+            "url": "https://beavertools.com/products/kreg-20v-ionic-drive-5-random-orbit-sander-kit-kptbrs500a?currency=USD&variant=44153396428893",
+            "current_price": 119.0,
+            "original_price": 248.99,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/kreg_kptbrs500a_1.jpg?v=1769410520",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 52.20691594039921,
+            "savings": 129.99
+          },
+          "check_started_at": "2026-11-04T18:17:28.440684+00:00",
+          "evidence_url": "https://beavertools.com/products/kreg-20v-ionic-drive-5-random-orbit-sander-kit-kptbrs500a.js?currency=USD",
+          "response_sha256": "87bdf33a2f972fc415549597250cb191f2922de205273cb5296ce397e58c5192",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true,
+            "purchase_identity": true,
+            "purchase_destination": true,
+            "purchase_currency": true,
+            "purchase_price": true,
+            "purchase_reference": true,
+            "purchase_options": true,
+            "purchase_stock": true,
+            "purchase_shipping_note": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:17:39.798511+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Axiom Iconic-4 Series CNC Router 2' x 2'",
+          "store": "OakTree Supply",
+          "offer": {
+            "variant_key": "37991680082119",
+            "url": "https://www.oaktreesupply.com/products/axoiom-iconic-4-series-cnc-router-24-x-24?currency=USD&variant=37991680082119",
+            "current_price": 2999.0,
+            "original_price": 6049.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/products/Iconic-4.jpg?v=1676914267",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 50.4215572821954,
+            "savings": 3050.0
+          },
+          "check_started_at": "2026-11-04T18:17:39.798542+00:00",
+          "evidence_url": "https://www.oaktreesupply.com/products/axoiom-iconic-4-series-cnc-router-24-x-24.js?currency=USD",
+          "response_sha256": "f07a77a59e0307e5b6d384a0ba332ec04fca519b4fed6871a9297d7486a86700",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:17:44.979444+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Iconic 24\" x 24\" for Axiom CNC Router",
+          "store": "Woodcraft",
+          "offer": {
+            "variant_key": "43403824922762",
+            "url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-24-for-axiom-cnc-router?currency=USD&variant=43403824922762",
+            "current_price": 2999.0,
+            "original_price": 6049.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/172910_000_001.jpg?v=1720472421",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 50.4215572821954,
+            "savings": 3050.0
+          },
+          "check_started_at": "2026-11-04T18:17:44.979475+00:00",
+          "evidence_url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-24-for-axiom-cnc-router.js?currency=USD",
+          "response_sha256": "70a947ae04b90c1bfc26a6ab72a7d2fd9deceea5cffea990b1fa15ae9e64b02d",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:17:55.408778+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "DEWALT, DCS334B, Cordless Jig Saw, 20V, Brushless, 1 in Blade Stroke Length, 4-Position Orbital Action",
+          "store": "Fasteners Inc",
+          "offer": {
+            "variant_key": "31231188205655",
+            "url": "https://fastenersinc.myshopify.com/products/dcs334b-20v-max-xr-cordless-jig-saw-tool-only-dewalt?currency=USD&variant=31231188205655",
+            "current_price": 119.0,
+            "original_price": 239.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/473893353f01ef5298d20ee57c71d49d0d5d654e-large_2e145551-785e-4a6c-a184-39ece194d402.png?v=1773431552",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 50.2092050209205,
+            "savings": 120.0
+          },
+          "check_started_at": "2026-11-04T18:17:55.408810+00:00",
+          "evidence_url": "https://fastenersinc.myshopify.com/products/dcs334b-20v-max-xr-cordless-jig-saw-tool-only-dewalt.js?currency=USD",
+          "response_sha256": "41c2584cc85c27be814ea5282e9c97911bba22b4ad0472a7219836ae4701fdac",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:18:00.571171+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "JET JAT-127, 3/4-in. Composite Impact Wrench (505127)",
+          "store": "Tool Nut",
+          "offer": {
+            "variant_key": "50177235976486",
+            "url": "https://www.toolnut.com/products/jet-505127-jat-127-composite-impact-wrench?currency=USD&variant=50177235976486",
+            "current_price": 299.99,
+            "original_price": 580.99,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/505127_main.jpg?v=1778274029",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 48.36572058038865,
+            "savings": 281.0
+          },
+          "check_started_at": "2026-11-04T18:18:00.571204+00:00",
+          "evidence_url": "https://www.toolnut.com/products/jet-505127-jat-127-composite-impact-wrench.js?currency=USD",
+          "response_sha256": "809181c34868ee50941e0ca822e8053f47d5f3660da88a3048b4cf6ee9a8f8bd",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:18:10.872387+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Kreg 20V Ionic Drive Oscillating Multi-Tool Kit KPTBMT100A",
+          "store": "Beaver Industrial Supply",
+          "offer": {
+            "variant_key": "44153393905757",
+            "url": "https://beavertools.com/products/kreg-20v-ionic-drive-oscillating-multi-tool-kit-kptbmt100a?currency=USD&variant=44153393905757",
+            "current_price": 139.0,
+            "original_price": 268.99,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/kreg_kptbmt100a_1.jpg?v=1769410505",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 48.325216550801144,
+            "savings": 129.99
+          },
+          "check_started_at": "2026-11-04T18:18:10.872418+00:00",
+          "evidence_url": "https://beavertools.com/products/kreg-20v-ionic-drive-oscillating-multi-tool-kit-kptbmt100a.js?currency=USD",
+          "response_sha256": "2aa02cba72134883c4f0d934a89e807338beb05682a92c0169a1d97c557b0b09",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true,
+            "purchase_identity": true,
+            "purchase_destination": true,
+            "purchase_currency": true,
+            "purchase_price": true,
+            "purchase_reference": true,
+            "purchase_options": true,
+            "purchase_stock": true,
+            "purchase_shipping_note": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:18:22.234280+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "15\" Planer - 3 HP 1 Ph 230V - Straight Knives - JWP-15B",
+          "store": "Woodcraft",
+          "offer": {
+            "variant_key": "43401322463370",
+            "url": "https://www.woodcraft.com/products/jet-15-planer-3-hp-1-ph-230v-straight-knives-jwp-15b?currency=USD&variant=43401322463370",
+            "current_price": 1999.0,
+            "original_price": 2771.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/167190_000_001.jpg?v=1752518172",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 27.859978347167086,
+            "savings": 772.0
+          },
+          "check_started_at": "2026-11-04T18:18:22.234311+00:00",
+          "evidence_url": "https://www.woodcraft.com/products/jet-15-planer-3-hp-1-ph-230v-straight-knives-jwp-15b.js?currency=USD",
+          "response_sha256": "67dfaf062555cb37f568ee9740906a76664fe5f4f05ae038cf9e2e6c651ed627",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:18:27.404928+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "SawStop 230V Single Phase 3-HP 13-Amp Industrial Cabinet Saw with 52-in. T-Glide Fence System (ICS31230-52)",
+          "store": "Tool Nut",
+          "offer": {
+            "variant_key": "50176554598694",
+            "url": "https://www.toolnut.com/products/sawstop-ics31230-52-230v-single-phase-3-hp-13-amp-industrial-cabinet-saw-with-52-t-glide-fence-system?currency=USD&variant=50176554598694",
+            "current_price": 4772.0,
+            "original_price": 5272.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/ics-52_5_kexd6lri6vejf6xq.jpg?v=1778201796",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 9.484066767830045,
+            "savings": 500.0
+          },
+          "check_started_at": "2026-11-04T18:18:27.404959+00:00",
+          "evidence_url": "https://www.toolnut.com/products/sawstop-ics31230-52-230v-single-phase-3-hp-13-amp-industrial-cabinet-saw-with-52-t-glide-fence-system.js?currency=USD",
+          "response_sha256": "7dad189b7737b7c18c618b939ed8fd02765e3d3ea30279769f89d3620fbdf197",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:18:32.577617+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "DEWALT, DCW220B, Belt Sander, 20V MAX, 3 in x 21 in, Cordless, Brushless, Variable Speed, 650-1050 OPM",
+          "store": "Fasteners Inc",
+          "offer": {
+            "variant_key": "42285712801983",
+            "url": "https://fastenersinc.myshopify.com/products/dewalt-dcw220b-20v-max-xr-brushless-cordless-belt-sander-tool-only?currency=USD&variant=42285712801983",
+            "current_price": 229.0,
+            "original_price": 299.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/ea4c8fb9efbbc72b52dc60132e4119b6ab03f06b-large.png?v=1790079815",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 23.411371237458194,
+            "savings": 70.0
+          },
+          "check_started_at": "2026-11-04T18:18:32.577648+00:00",
+          "evidence_url": "https://fastenersinc.myshopify.com/products/dewalt-dcw220b-20v-max-xr-brushless-cordless-belt-sander-tool-only.js?currency=USD",
+          "response_sha256": "02e387459b275ae7048f2770cb941e9b1eb704dce848aa8a9cc193b7a33a7451",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:18:37.742844+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Festool Cordless Random Orbit Sander ETSC 2 150 4.0 I-Plus",
+          "store": "OakTree Supply",
+          "offer": {
+            "variant_key": "46589410083033",
+            "url": "https://www.oaktreesupply.com/products/festool-cordless-random-orbit-sander-etsc-2-150-4-0-i-plus?currency=USD&variant=46589410083033",
+            "current_price": 705.0,
+            "original_price": 739.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/files/ETSC150main.jpg?v=1754020946",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 4.600811907983762,
+            "savings": 34.0
+          },
+          "check_started_at": "2026-11-04T18:18:37.742876+00:00",
+          "evidence_url": "https://www.oaktreesupply.com/products/festool-cordless-random-orbit-sander-etsc-2-150-4-0-i-plus.js?currency=USD",
+          "response_sha256": "9092f86c92f506bcf51edd29a7d88ca14e89a77fd76b0c0d949b1acb96c841c8",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:18:42.924909+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "SawStop 1.75HP Contractor Saw w/ 30\" Premium Fence Assembly",
+          "store": "OakTree Supply",
+          "offer": {
+            "variant_key": "42048162431193",
+            "url": "https://www.oaktreesupply.com/products/sawstop-1-75hp-contractor-saw-w-30-premium-fence-rails-extension-table?currency=USD&variant=42048162431193",
+            "current_price": 1799.0,
+            "original_price": 1999.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/files/CNS175-PFA30-1.jpg?v=1726162040",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 10.005002501250626,
+            "savings": 200.0
+          },
+          "check_started_at": "2026-11-04T18:18:42.924942+00:00",
+          "evidence_url": "https://www.oaktreesupply.com/products/sawstop-1-75hp-contractor-saw-w-30-premium-fence-rails-extension-table.js?currency=USD",
+          "response_sha256": "febbab41bb00d2cf6e862de309591acb9eebe4bc22cdbaa1096f636542141f29",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:18:48.078653+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "DeWALT 20V MAX FLEXVOLT Advantage Reciprocating Saw, Tool Only (DCS386B)",
+          "store": "Tool Nut",
+          "offer": {
+            "variant_key": "53393183834406",
+            "url": "https://www.toolnut.com/products/dewalt-dcs386b-20-v-max-flexvolt-recip-saw-tool-only?currency=USD&variant=53393183834406",
+            "current_price": 260.99,
+            "original_price": 292.99,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/dcs386b_1.jpg?v=1778220904",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 10.921874466705349,
+            "savings": 32.0
+          },
+          "check_started_at": "2026-11-04T18:18:48.078685+00:00",
+          "evidence_url": "https://www.toolnut.com/products/dewalt-dcs386b-20-v-max-flexvolt-recip-saw-tool-only.js?currency=USD",
+          "response_sha256": "191d83aabe8895043b839a24d395f18b5cf915a503295aeeaff362820e80ad5a",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:18:53.267589+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Milwaukee M18 FUEL 1-in. SDS Plus Rotary Hammer, Tool Only (2912-20)",
+          "store": "Tool Nut",
+          "offer": {
+            "variant_key": "53393068917030",
+            "url": "https://www.toolnut.com/products/milwaukee-2912-20-m18-fuel-1-sds-plus-rotary-hammer-tool-only?currency=USD&variant=53393068917030",
+            "current_price": 279.0,
+            "original_price": 379.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/2912-20_4.jpg?v=1778274572",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 26.385224274406333,
+            "savings": 100.0
+          },
+          "check_started_at": "2026-11-04T18:18:53.267621+00:00",
+          "evidence_url": "https://www.toolnut.com/products/milwaukee-2912-20-m18-fuel-1-sds-plus-rotary-hammer-tool-only.js?currency=USD",
+          "response_sha256": "1de516b76de8d7b742fa61bed16641f4f47c4377907ee68c41c1bcfbe36e8e68",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:18:58.438611+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Jet CS-275, 275mm 1-Phase Ferrous Manual Cold Saw 414228",
+          "store": "Beaver Industrial Supply",
+          "offer": {
+            "variant_key": "44153330794589",
+            "url": "https://beavertools.com/products/414228-jet-cs-275-275mm-1-phase-ferrous-manual-cold-saw?currency=USD&variant=44153330794589",
+            "current_price": 2999.0,
+            "original_price": 3629.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/414226_main_3.jpg?v=1769410146",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 17.360154312482777,
+            "savings": 630.0
+          },
+          "check_started_at": "2026-11-04T18:18:58.438643+00:00",
+          "evidence_url": "https://beavertools.com/products/414228-jet-cs-275-275mm-1-phase-ferrous-manual-cold-saw.js?currency=USD",
+          "response_sha256": "8cdc5b04218073efb4443b4c3ec8b1d819ad8b3ab437ed11e6f4fe8558051e97",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true,
+            "purchase_identity": true,
+            "purchase_destination": true,
+            "purchase_currency": true,
+            "purchase_price": true,
+            "purchase_reference": true,
+            "purchase_options": true,
+            "purchase_stock": true,
+            "purchase_shipping_note": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:19:09.908055+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Makita XAG20Z 18V LXT\u00ae Lithium-Ion Brushless Cordless 4-1/2\" / 5\" Paddle Switch Cut-Off/Angle Grinder, with Electric Brake, Tool Only",
+          "store": "Fasteners Inc",
+          "offer": {
+            "variant_key": "43865928335551",
+            "url": "https://fastenersinc.myshopify.com/products/makita-xag20z-18v-lxt\u00ae-lithium-ion-brushless-cordless-4-1-2-5-paddle-switch-cut-off-angle-grinder-with-electric-brake-tool-only?currency=USD&variant=43865928335551",
+            "current_price": 239.0,
+            "original_price": 279.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/f2661bb0-5b62-4ca7-a1db-8ecf101e9091_xag20z_p_1500px.png?v=1734661942",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 14.336917562724015,
+            "savings": 40.0
+          },
+          "check_started_at": "2026-11-04T18:19:09.908101+00:00",
+          "evidence_url": "https://fastenersinc.myshopify.com/products/makita-xag20z-18v-lxt\u00ae-lithium-ion-brushless-cordless-4-1-2-5-paddle-switch-cut-off-angle-grinder-with-electric-brake-tool-only.js?currency=USD",
+          "response_sha256": "dbdf6829dedde99c835e515d838228ec859cb984d852d2847ee6221981ff6e12",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:19:15.071511+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "SawStop 3HP, 1ph, 230v Industrial Cabinet Saw w/36\" T-Glide Advance Fence, Rails & Extension Table",
+          "store": "OakTree Supply",
+          "offer": {
+            "variant_key": "47338388095193",
+            "url": "https://www.oaktreesupply.com/products/sawstop-3hp-1ph-230v-industrial-cabinet-saw-w-36-t-glide-advance-fence-rails-extension-table?currency=USD&variant=47338388095193",
+            "current_price": 4818.0,
+            "original_price": 5318.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/files/ICS31230-ATGI36_2302156b-f4a1-480a-b15a-c73743d99a5c.jpg?v=1761834806",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 9.402030838661151,
+            "savings": 500.0
+          },
+          "check_started_at": "2026-11-04T18:19:15.071542+00:00",
+          "evidence_url": "https://www.oaktreesupply.com/products/sawstop-3hp-1ph-230v-industrial-cabinet-saw-w-36-t-glide-advance-fence-rails-extension-table.js?currency=USD",
+          "response_sha256": "6757bcb89e9bebb8f9fd1cc1e348deecf7ef3541bd7c04af2a49e49dac9b5ba7",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:19:20.255093+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Bosch EVS Plunge & Fixed-Base Router Combo Kit, 2.25 HP 1617EVSPK",
+          "store": "Beaver Industrial Supply",
+          "offer": {
+            "variant_key": "44153709920349",
+            "url": "https://beavertools.com/products/1617evspk-bosch-electronic-variable-speed-plunge-fixed-base-router-combo-kit-2-25-hp?currency=USD&variant=44153709920349",
+            "current_price": 269.0,
+            "original_price": 289.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/rb1617evspk_bosch_1617.jpg?v=1769412104",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 6.920415224913495,
+            "savings": 20.0
+          },
+          "check_started_at": "2026-11-04T18:19:20.255126+00:00",
+          "evidence_url": "https://beavertools.com/products/1617evspk-bosch-electronic-variable-speed-plunge-fixed-base-router-combo-kit-2-25-hp.js?currency=USD",
+          "response_sha256": "e0723bc2ea47c17390cc959d11ae6bd7ef5459fff513c40a66a7eaf7a1a03169",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true,
+            "purchase_identity": true,
+            "purchase_destination": true,
+            "purchase_currency": true,
+            "purchase_price": true,
+            "purchase_reference": true,
+            "purchase_options": true,
+            "purchase_stock": true,
+            "purchase_shipping_note": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:19:31.631625+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Sawstop Industrial 5HP, 1ph, 230v Cabinet Saw with 36-in. Industrial T-Glide Rip Fence, Rails & Extension Table (ICS51230-TGI236)",
+          "store": "Tool Nut",
+          "offer": {
+            "variant_key": "51633306140966",
+            "url": "https://www.toolnut.com/products/sawstop-ics51230-tgi236-industrial-5hp-1ph-230v-cabinet-saw-with-36-industrial-t-glide-rip-fence-rails-extension-table?currency=USD&variant=51633306140966",
+            "current_price": 5322.0,
+            "original_price": 5822.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/sawstop_ics36_atg_3a63b2de-972d-4666-a9db-71ad3652bdae.jpg?v=1761768221",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 8.588114050154585,
+            "savings": 500.0
+          },
+          "check_started_at": "2026-11-04T18:19:31.631663+00:00",
+          "evidence_url": "https://www.toolnut.com/products/sawstop-ics51230-tgi236-industrial-5hp-1ph-230v-cabinet-saw-with-36-industrial-t-glide-rip-fence-rails-extension-table.js?currency=USD",
+          "response_sha256": "0f0ace9e71bcf218f518fcb8ecb857c70677e1a6d5f756fa5361d1d12c5ecac8",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:19:36.810124+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Jobsite Saw PRO with Mobile Cart Assembly - 1-1/2 HP - 1PH - 120V Model JSS-120A60",
+          "store": "Woodcraft",
+          "offer": {
+            "variant_key": "43400880849034",
+            "url": "https://www.woodcraft.com/products/sawstop-jobsite-saw-pro-with-mobile-cart-assembly-1-1-2-hp-1ph-120v?currency=USD&variant=43400880849034",
+            "current_price": 1574.0,
+            "original_price": 1699.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/169251_000_001.jpg?v=1790186782",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 7.357268981753973,
+            "savings": 125.0
+          },
+          "check_started_at": "2026-11-04T18:19:36.810155+00:00",
+          "evidence_url": "https://www.woodcraft.com/products/sawstop-jobsite-saw-pro-with-mobile-cart-assembly-1-1-2-hp-1ph-120v.js?currency=USD",
+          "response_sha256": "dd867ee1bae7b62d8cdef011131c5c2fde25cd0de599087db584047597355dd1",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:19:41.983576+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Jet GH-1440-1 Lathe with Newall DP500 DRO (323386)",
+          "store": "Tool Nut",
+          "offer": {
+            "variant_key": "50176763003174",
+            "url": "https://www.toolnut.com/products/jet-323386-gh-1440-1-lathe-with-newall-dp500-dro?currency=USD&variant=50176763003174",
+            "current_price": 20399.0,
+            "original_price": 25766.99,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/jet_323386_main.jpg?v=1778222013",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 20.832817492458375,
+            "savings": 5367.99
+          },
+          "check_started_at": "2026-11-04T18:19:41.983608+00:00",
+          "evidence_url": "https://www.toolnut.com/products/jet-323386-gh-1440-1-lathe-with-newall-dp500-dro.js?currency=USD",
+          "response_sha256": "cd5e5bf58ce61b3f1cd0f7aa82bfe433e46e4aff602c8a0e6d3e6854e8cc8b78",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:19:47.169749+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Milwaukee M18 FUEL 6-1/2-in. Plunge Track Saw, Tool Only (2831-20)",
+          "store": "Tool Nut",
+          "offer": {
+            "variant_key": "53393067311398",
+            "url": "https://www.toolnut.com/products/milwaukee-2831-20-m18-fuel-6-1-2-plunge-track-saw?currency=USD&variant=53393067311398",
+            "current_price": 319.0,
+            "original_price": 429.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/2831-20-1.jpg?v=1778086921",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 25.641025641025642,
+            "savings": 110.0
+          },
+          "check_started_at": "2026-11-04T18:19:47.169781+00:00",
+          "evidence_url": "https://www.toolnut.com/products/milwaukee-2831-20-m18-fuel-6-1-2-plunge-track-saw.js?currency=USD",
+          "response_sha256": "b684867af0783f3201aa1a718481979df18a1dbddb818af78e9368fba4e5a376",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:19:52.327666+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Industrial Cabinet Saw with 52\" Industrial T-Glide Fence System - 3HP - 1PH - 230V",
+          "store": "Woodcraft",
+          "offer": {
+            "variant_key": "43403478433930",
+            "url": "https://www.woodcraft.com/products/sawstop-3hp-1ph-230v-industrial-cabinet-saw-with-52-industrial-t-glide-fence-system?currency=USD&variant=43403478433930",
+            "current_price": 4772.0,
+            "original_price": 5272.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/856291_000_001.jpg?v=1790191048",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 9.484066767830045,
+            "savings": 500.0
+          },
+          "check_started_at": "2026-11-04T18:19:52.327698+00:00",
+          "evidence_url": "https://www.woodcraft.com/products/sawstop-3hp-1ph-230v-industrial-cabinet-saw-with-52-industrial-t-glide-fence-system.js?currency=USD",
+          "response_sha256": "9c66e8dec7b6722c86af6e512f93e1f0aaa2d21573b8278fb58a8aa57f9cc118",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:19:57.491625+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Sawstop Contractor 1.75HP Saw with 36-in. Professional T-Glide Advance Fence, Rails & Extension Table (CNS175-ATGP36)",
+          "store": "Tool Nut",
+          "offer": {
+            "variant_key": "51633305485606",
+            "url": "https://www.toolnut.com/products/sawstop-cns175-atgp36-contractor-1-75hp-saw-with-36-professional-t-glide-advance-fence-rails-extension-table?currency=USD&variant=51633305485606",
+            "current_price": 2276.0,
+            "original_price": 2476.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/sawstop_cns36_atg_1dc0425d-53e1-467c-a861-8194670eeeb1.jpg?v=1761768220",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 8.077544426494345,
+            "savings": 200.0
+          },
+          "check_started_at": "2026-11-04T18:19:57.491656+00:00",
+          "evidence_url": "https://www.toolnut.com/products/sawstop-cns175-atgp36-contractor-1-75hp-saw-with-36-professional-t-glide-advance-fence-rails-extension-table.js?currency=USD",
+          "response_sha256": "4b3cc4973bde5e28a8465ca58dc5305faa7efdc3888e9949a90f0a06bc2e77ae",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:20:02.667261+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Sawstop Industrial 7.5HP, 3ph, 480v Cabinet Saw with 36-in. Industrial T-Glide Advance Rip Fence, Rails & Extension Table (ICS73480-ATGI36)",
+          "store": "Tool Nut",
+          "offer": {
+            "variant_key": "51633305288998",
+            "url": "https://www.toolnut.com/products/sawstop-ics73480-atgi36-industrial-7-5hp-3ph-480v-cabinet-saw-with-36-industrial-t-glide-advance-rip-fence-rails-extension-table?currency=USD&variant=51633305288998",
+            "current_price": 6164.0,
+            "original_price": 6664.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/sawstop_ics36_atg_a2b65e45-2e67-4d7a-a2f9-1f1adeaba90e.jpg?v=1761768221",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 7.503001200480192,
+            "savings": 500.0
+          },
+          "check_started_at": "2026-11-04T18:20:02.667292+00:00",
+          "evidence_url": "https://www.toolnut.com/products/sawstop-ics73480-atgi36-industrial-7-5hp-3ph-480v-cabinet-saw-with-36-industrial-t-glide-advance-rip-fence-rails-extension-table.js?currency=USD",
+          "response_sha256": "a7523568dc72e014db4407f521deecc819857f00693d10ed1d238534e315e775",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:20:07.855882+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "Bosch 12V Max Brushless Drill Driver Kit w/ 2 Batteries GSR12V-300FCB22",
+          "store": "Beaver Industrial Supply",
+          "offer": {
+            "variant_key": "44153746161757",
+            "url": "https://beavertools.com/products/gsr12v-300fcb22-bosch-12v-max-brushless-flexiclick-5-in-1-drill-driver-kit-with-2-2-0ah-batteries?currency=USD&variant=44153746161757",
+            "current_price": 179.0,
+            "original_price": 275.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/9ce2e32f75264d2e688e90e82580a627f51558a6.jpg?v=1772135193",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 34.90909090909091,
+            "savings": 96.0
+          },
+          "check_started_at": "2026-11-04T18:20:07.855914+00:00",
+          "evidence_url": "https://beavertools.com/products/gsr12v-300fcb22-bosch-12v-max-brushless-flexiclick-5-in-1-drill-driver-kit-with-2-2-0ah-batteries.js?currency=USD",
+          "response_sha256": "2ad255bc316db57985fceabaa6767adfb854f81f689f8f49b3b6c9600d8ae753",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true,
+            "purchase_identity": true,
+            "purchase_destination": true,
+            "purchase_currency": true,
+            "purchase_price": true,
+            "purchase_reference": true,
+            "purchase_options": true,
+            "purchase_stock": true,
+            "purchase_shipping_note": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:20:19.026850+00:00",
+          "within_audit_window": true
+        },
+        {
+          "name": "SCM Nova SI 4k R Sliding Table Saw 10.5 ft. | READY | 5.5 HP (Single Phase)",
+          "store": "OakTree Supply",
+          "offer": {
+            "variant_key": "46483532284121",
+            "url": "https://www.oaktreesupply.com/products/scm-nova-si-4k-r-table-saw-w-ready-control-1ph?currency=USD&variant=46483532284121",
+            "current_price": 16228.13,
+            "original_price": 18475.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/files/NovaSI4kR-Ready-1.jpg?v=1782240655",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": "",
+            "discount": 12.161677943166442,
+            "savings": 2246.87
+          },
+          "check_started_at": "2026-11-04T18:20:19.026885+00:00",
+          "evidence_url": "https://www.oaktreesupply.com/products/scm-nova-si-4k-r-table-saw-w-ready-control-1ph.js?currency=USD",
+          "response_sha256": "501d8f37722c3387d0d1be69d904b2e9c9908f582a7cf845cada4c986f3d3ed9",
+          "status": "match",
+          "checks": {
+            "identity": true,
+            "currency": true,
+            "price": true,
+            "reference": true,
+            "options": true,
+            "stock": true
+          },
+          "sampled_at": "2026-11-04T18:16:39.763642+00:00",
+          "checked_at": "2026-11-04T18:20:24.212205+00:00",
+          "within_audit_window": true
+        }
+      ]
+    }
+  },
+  "inventory_caveat": "Snapshot inventory is source-reported. RA candidate had 144 eligible detail pairs; production had 145. Beaver candidate had 75 confirmed-stock qualifying listings; production had 69. Inventory changes remain dated; no restamping or forced count reconciliation.",
+  "history_caveat": "All prior UTC-day rows remain identical (17 cycling, 10 tools). The latest successful observation legitimately replaces the same-day row under the existing daily retention contract; no fabricated history.",
+  "browser_checks": [
+    {
+      "url": "https://bigring.clifan.com/?store=RA+Cycles&size=50s&stock=true",
+      "viewport": [
+        390,
+        844
+      ],
+      "result": "Two exact 50s Colnago framesets; C59 selected key 44141670629420 at USD3795 / retailer reference5699.95; C60 final-sale notice visible.",
+      "observed_date": "2026-11-04"
+    },
+    {
+      "url": "https://benchdrop.clifan.com/?store=Beaver+Industrial+Supply&q=60HH&stock=false",
+      "result": "One Powermatic60HH at USD2999 / reference3519; stock unconfirmed, Usually Ships in 5-7 Days. HTTP exact-snapshot check confirms zero with stock=true. CUA mobile interaction also checked Reported in stock only and applied filters: zero matches.",
+      "observed_date": "2026-11-04"
+    }
+  ]
+}

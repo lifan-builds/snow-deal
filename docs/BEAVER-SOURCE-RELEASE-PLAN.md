@@ -1,6 +1,6 @@
 # Beaver Industrial Supply and RA Cycles release
 
-Status: Beaver and RA Cycles passed admission and are configured on the release branch. PR17 is awaiting final checks and production rollout.
+Status: PR17 merged as `1eec6c9`; both catalog deployments passed workflow `41882144887`. Exact production snapshots, filtered offers and prior-day history are verified. Fresh Powder's build recovery is also verified on its production provider URL. The dated stages below remain as release history.
 
 ## Scope
 
@@ -51,3 +51,13 @@ Runner `41874414409` at `3c3a34e` completed three feed pages and 144 HTML/JSON p
 Against baseline `41868782908`, the combined local preview has cycling 1,348 confirmed-stock listings / 166 deep deals / 15 useful retailers, and tools 458 / 31 / six. All 36 cycling and 20 tools baseline observation rows remain identical; original source timestamps are preserved. Percentage-first ordering, confirmed-stock filtering, rendered pages and distinct 50s versus 50cm frame selections pass. These are preview totals, not a production claim.
 
 Final snow optimization preview `dpl_Fxu4UqA4YC84iVdziqT35isXrder` reached Ready at 17:25:49 UTC. Its build preserved the latest snow timestamp and completed without the prior size failure.
+
+## Production verification
+
+The [final receipt](benchmarks/2026-11-04-pr17-rollout.json) records successful refresh, merchant audit, deployment and exact public snapshot checks for both catalogs. Big Ring serves 20/20 fresh sources, 1,347 qualifying in-stock listings, 166 deep deals and 15 useful retailers. Bench Drop serves 11/11 fresh sources, 454 qualifying in-stock listings, 31 deep deals and six useful retailers. Both fixed 30-offer merchant samples passed within the unchanged observation window, with zero mismatches or inconclusive results.
+
+RA contributes 116 qualifying in-stock listings / 64 deep deals after 145 detail/evidence pairs. Beaver contributes 69 / seven after 192 purchase checks. Candidate and production inventory differ; original candidate counts remain unchanged. Compared with the immediately preceding scheduled baseline, total deep listings rose from 102 to 166 for cycling and 24 to 31 for tools. These are source-reported listings, not unique cross-retailer models or verified historical discounts.
+
+All 17 cycling and ten tools observation rows from prior UTC days remain byte-for-byte equal at the row level. Today's successful observations replace today's rows under existing daily retention. Exact 50s versus 50cm pages, variant destinations and delayed-stock exclusion pass. The live 60HH tool card retains its five-to-seven-day shipping notice and is excluded when confirmed stock is requested.
+
+Fresh Powder production deployment `dpl_F5khDY4dRZ2nqPVt9XhiLm5bwzbB` is Ready and serves the unchanged 13:25 UTC public snapshot with 30 stores. Full and partial routes select the available XO H21 178 cm variant and exclude sold-out 172 cm. Local custom-host TLS still fails; the provider production URL was verified without a security bypass. The competitive gate still supports only four strict leads among 260 comparisons.

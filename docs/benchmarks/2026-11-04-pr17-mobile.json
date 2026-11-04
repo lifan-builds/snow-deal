@@ -1,0 +1,82 @@
+{
+  "date": "2026-11-04",
+  "catalog": "cycling",
+  "environment": "production",
+  "url": "https://bigring.clifan.com/",
+  "method": "390x844-no-saved-searches-v1",
+  "cohort": "default-deal-entry-mobile",
+  "runs": [
+    {
+      "observed_at": "2026-11-04T18:29:16.050Z",
+      "viewport": [
+        390,
+        844
+      ],
+      "first_price_bottom": 706.296875,
+      "initial_scroll_to_price": 0,
+      "horizontal_overflow": false,
+      "saved_searches": 0,
+      "first_product": "Guru Crono Frameset",
+      "first_price": 650,
+      "currency": "USD"
+    },
+    {
+      "observed_at": "2026-11-04T18:29:16.808Z",
+      "viewport": [
+        390,
+        844
+      ],
+      "first_price_bottom": 706.296875,
+      "initial_scroll_to_price": 0,
+      "horizontal_overflow": false,
+      "saved_searches": 0,
+      "first_product": "Guru Crono Frameset",
+      "first_price": 650,
+      "currency": "USD"
+    },
+    {
+      "observed_at": "2026-11-04T18:29:17.535Z",
+      "viewport": [
+        390,
+        844
+      ],
+      "first_price_bottom": 706.296875,
+      "initial_scroll_to_price": 0,
+      "horizontal_overflow": false,
+      "saved_searches": 0,
+      "first_product": "Guru Crono Frameset",
+      "first_price": 650,
+      "currency": "USD"
+    }
+  ],
+  "limitations": [
+    "Rendered geometry only; this is not an LCP or throttled cold-load measurement.",
+    "Equal zero scroll is parity. Historical competitor observations retain their original dates.",
+    "First product has no merchant image; the fallback remains visible and percentage-first ranking is preserved."
+  ],
+  "budget_fit_task": {
+    "observed_at": "2026-11-04T18:30:52.519Z",
+    "url": "https://bigring.clifan.com/?q=&category=&brand=&store=&size=XS&min_reference=1000&max_price=1500&min_discount=0.0#deals",
+    "viewport": [
+      390,
+      844
+    ],
+    "successful_form_actions": [
+      "Expand Refine your search",
+      "Select frame size XS",
+      "Set budget1500",
+      "Apply filters"
+    ],
+    "successful_form_action_count": 4,
+    "automation_selector_failures_before_native_controls": 3,
+    "matching_cards": 24,
+    "all_visible_cards_in_budget": true,
+    "all_visible_cards_reported_in_stock": true,
+    "all_visible_sizes_casefold_to_xs": true,
+    "first_price_bottom_document": 847.296875,
+    "scroll_y_after_submit": 193,
+    "first_price_visible_after_submit": true,
+    "horizontal_overflow": false,
+    "limitations": "Functional form-action measurement only; not a physical gesture count or matched competitor study. Three automation locator attempts made no UI change before native accessibility controls succeeded."
+  }
+}
