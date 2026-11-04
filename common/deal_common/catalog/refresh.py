@@ -18,6 +18,7 @@ from deal_common.parsers.bikecloset import offer_destination as bikecloset_desti
 from deal_common.parsers.bolton import BoltonParser
 from deal_common.parsers.bolton import offer_destination as bolton_destination
 from deal_common.parsers.grizzly import GrizzlyParser, sku_destination
+from deal_common.parsers.racycles import RacyclesShopifyParser
 from deal_common.parsers.rockler import RocklerParser
 from deal_common.parsers.rockler import offer_destination as rockler_destination
 from deal_common.parsers.shopify import ShopifyParser
@@ -101,6 +102,9 @@ async def refresh(catalog: Catalog, path: Path, *, max_pages: int = 30,
                 parser = TaylorParser()
             elif source.parser_type == 'grizzly':
                 parser = GrizzlyParser()
+            elif source.domain == 'racycles.com':
+                parser = RacyclesShopifyParser(size_option_names=catalog.size_option_names,
+                                              size_value_pattern=catalog.size_value_pattern)
             elif source.domain == 'beavertools.com':
                 parser = BeaverShopifyParser()
             else:

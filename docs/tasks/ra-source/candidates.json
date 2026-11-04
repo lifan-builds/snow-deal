@@ -1,0 +1,10 @@
+[
+  {
+    "catalog": "cycling",
+    "name": "RA Cycles",
+    "domain": "racycles.com",
+    "scrape_urls": [
+      "https://racycles.com/collections/bikes?currency=USD"
+    ]
+  }
+]

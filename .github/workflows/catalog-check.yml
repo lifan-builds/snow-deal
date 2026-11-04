@@ -11,6 +11,11 @@ on:
       - 'pyproject.toml'
       - '.github/workflows/catalog-*.yml'
   workflow_dispatch:
+    inputs:
+      candidate_admission:
+        description: Run the public RA Cycles candidate and merchant admission audit
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -18,6 +23,7 @@ permissions:
 jobs:
   offline:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -25,5 +31,14 @@ jobs:
           python-version: '3.12'
       - run: pip install -e '.[dev]'
       - run: python scripts/check.py -q
-      - run: ruff check common/deal_common/catalog catalogs/cycling/src catalogs/tools/src scripts/package_catalog.py scripts/restore_catalog.py scripts/verify_catalog_live.py scripts/audit_catalog.py scripts/audit_merchants.py scripts/benchmark.py common/deal_common/benchmark.py
+      - run: ruff check common/deal_common/catalog catalogs/cycling/src catalogs/tools/src scripts/probe_sources.py scripts/package_catalog.py scripts/restore_catalog.py scripts/verify_catalog_live.py scripts/audit_catalog.py scripts/audit_merchants.py scripts/benchmark.py common/deal_common/benchmark.py
       - run: node --check common/deal_common/catalog/static/catalog.js
+      - name: Audit isolated RA Cycles candidate
+        if: github.event_name == 'workflow_dispatch' && inputs.candidate_admission
+        run: python scripts/probe_sources.py docs/tasks/ra-source/candidates.json --output "$RUNNER_TEMP/source-admission" --max-pages 30 --audit-merchants
+      - uses: actions/upload-artifact@v4
+        if: always() && github.event_name == 'workflow_dispatch' && inputs.candidate_admission
+        with:
+          name: ra-source-admission
+          path: ${{ runner.temp }}/source-admission/
+          retention-days: 30

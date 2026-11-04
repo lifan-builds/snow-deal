@@ -21,7 +21,8 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # Shipping-aware retailers require paced product and evidence requests.
+    timeout-minutes: 45
     strategy:
       fail-fast: false
       matrix:

@@ -88,3 +88,11 @@ Beaver Industrial Supply retains the Shopify feed and explicit USD currency chec
 ## Bolton candidate contract
 
 Bolton remains disabled while its warehouse-relocation banner restricts purchases to LTL freight without product-specific eligibility. A promised past restoration date and optional freight-service controls do not establish eligibility. Reject the active nonempty banner before admitting or renewing stock. The candidate parser binds canonical slug, product ID, model, USD single-unit current/reference prices, new condition and stock. Bulk prices never replace quantity-one prices. Configured category counts, unique identities and page sequence must reconcile; repeated or missing listings are incomplete, not silently deduplicated coverage. Seven observed categories reconcile, but that is not full-retailer coverage.
+
+## RA Cycles variant stock
+
+RA keeps Shopify discovery and USD checks but requires the canonical product page and separate public product JSON as evidence. Reconcile every feed, ProductGroup, stock-map and endpoint variant ID; bind SKU, exact option values, price/reference and destination. The main selected purchase input, variant JSON, active stock message and visible money must agree. Its theme renders cents in a separate `sup` element; do not turn $2,799 with 99 cents into $279999. Dormant stock templates cannot establish availability.
+
+Positive quantity with available=true and virtual-warehouse=false is immediate stock. Virtual-warehouse delivery retains the stated delay as unknown. An available variant with zero quantity can expose an explicit Coming soon / reserve backorder panel; that remains unknown and carries the merchant notice. Explicit unavailable variants are excluded. Preserve applicable final-sale limitations. Missing or contradictory state makes the refresh incomplete, retaining earlier successful data and timestamps.
+
+An explicit Frameset tag precedes a broader Mountain Bikes discipline after accessory/condition exclusions. Numeric-s frame labels such as 50s are valid raw dimensions and remain distinct from 50cm; never infer equivalent geometry. Audits reuse the independently fetched exact product JSON and refetch the selected product page, preserving inconclusive results and the fifteen-minute observation window.

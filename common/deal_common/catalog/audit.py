@@ -27,6 +27,7 @@ from deal_common.parsers.bolton import offer_destination as bolton_destination
 from deal_common.parsers.grizzly import sku_destination, structured_products
 from deal_common.parsers.grizzly import text as decoded_text
 from deal_common.parsers.harvey import shipping_notice
+from deal_common.parsers.racycles import detail_data as racycles_data
 from deal_common.parsers.rockler import delivery_data, stock_url
 from deal_common.parsers.rockler import detail_data as rockler_data
 from deal_common.parsers.rockler import offer_destination as rockler_destination
@@ -193,10 +194,12 @@ async def audit_sample(cards: list[dict], allowed_domains: dict[str, str], *, de
                     raise TypeError("Malformed product")
                 row["response_sha256"] = hashlib.sha256(response.content).hexdigest()
                 row.update(validate_product(card, raw, currencies[origin]))
-                if parts.hostname == 'beavertools.com':
+                if parts.hostname in {'beavertools.com', 'racycles.com'}:
                     page = await fetch(offer['url'])
-                    product = beaver_data(page.text, offer['url'])
-                    detail = validate_beaver_product(card, product)
+                    if parts.hostname == 'beavertools.com':
+                        detail = validate_beaver_product(card, beaver_data(page.text, offer['url']))
+                    else:
+                        detail = validate_racycles_product(card, racycles_data(page.text, offer['url'], raw))
                     row.update(product_evidence_url=offer['url'],
                                product_response_sha256=hashlib.sha256(page.content).hexdigest())
                     if 'checks' not in row:
@@ -239,6 +242,27 @@ def validate_bikecloset_product(card, parent, variant):
                          'reference': bikecloset_money(variant['prices'], 'regular_price'),
                          'currency': variant['prices']['currency_code'], 'is_in_stock': variant['is_in_stock'],
                          'is_on_backorder': variant['is_on_backorder']}}
+
+
+def validate_racycles_product(card: dict, product: dict) -> dict:
+    expected = card['offer']
+    actual = product['variants'].get(expected['variant_key'])
+    if actual is None:
+        return {'checks': {'identity': False}, 'merchant': {'reason': 'Selected variant absent'}}
+    checks = {
+        'identity': product['name'] == card['name'] and product['selected_key'] == expected['variant_key'],
+        'destination': urlsplit(actual['url']).path == urlsplit(expected['url']).path,
+        'currency': product['currency'] == card.get('currency', 'USD'),
+        'price': actual['price'] == expected['current_price'],
+        'reference': actual['reference'] == expected['original_price'],
+        'options': actual['options'] == expected.get('options', ''),
+        'size': not expected.get('size') or actual['size'] == expected['size'],
+        'stock': actual['in_stock'],
+        'shipping_note': actual['shipping_note'] == expected.get('availability_note', ''),
+    }
+    return {'status': 'match' if all(checks.values()) else 'mismatch', 'checks': checks,
+            'merchant': {key: actual[key] for key in ('sku', 'price', 'reference', 'options', 'size',
+                        'qty', 'virtual_warehouse', 'shipping_note')}}
 
 
 def validate_beaver_product(card: dict, product: dict) -> dict:

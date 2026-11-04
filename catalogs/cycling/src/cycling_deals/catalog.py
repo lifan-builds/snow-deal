@@ -10,7 +10,7 @@ from deal_common.models import Product
 FRAME_SIZE_PATTERN = (
     r'(?!.*\b(?:foot|feet|ft|cable)\b)(?!\d+(?:\.\d+)?\s*[x×])'
     r'(?!.*\bwheel\b$)(?:'
-    r'(?:\d+(?:\.\d+)?\s*(?:cm|in|tt|\")?|S[1-6]|Size\s+\d+)'
+    r'(?:\d+(?:\.\d+)?\s*(?:cm|in|tt|s|\")?|S[1-6]|Size\s+\d+)'
     r'|(?:[2-6]?X{0,3}[SML]|SM|MD|LG|ML|XM|XMD|R|Regular|All)'
     r'|(?:(?:X{1,3}-)?(?:Small|Medium|Large))|One\s+Size(?:\s+Fits\s+Most)?'
     r')(?:[ /(#-].*)?'
@@ -39,7 +39,7 @@ def classify(product: Product) -> Classification | None:
     # A title containing "bike" alone could be a bike rack or a helmet.
     if re.search(r"\b(helmets?|jerseys?|shorts|gloves?|shoes?|racks?|bags?|wheels?|tires?|tyres?|tubes?|pedals?|saddles?|hangers?|forks?|batteries|chargers?|covers?|stands?|trainers?|parts?|accessor(?:y|ies)|maintenance|locks?|pumps?|goggles?|computers?|heart rate|lights?|cables?|brakes?|adaptors?|adapters?)\b", kind):
         return None
-    if re.search(r"\b(framesets?|frame sets?|frame[- ]only)\b", text) or kind in {
+    if "frameset" in tags or re.search(r"\b(framesets?|frame sets?|frame[- ]only)\b", text) or kind in {
             "frames", "mtb frames", "road frames", "gravel frames", "am/enduro frames", "trail/am frames", "e-bike frames"}:
         return Classification("Framesets")
     if kind == "e-commuter":

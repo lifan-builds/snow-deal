@@ -1,0 +1,13 @@
+# Beaver source admission — November 4, 2026 UTC
+
+The observed [sales-and-closeouts collection](https://beavertools.com/collections/sales-and-closeouts) exposes the existing Shopify feed and active USD currency. An initial generic feed traversal completed three pages and provisionally counted 157 listings above the $200 reference floor, with 15 at least 40% off. Those numbers overstated confirmed stock: the main purchase panel distinguishes In Stock, Usually Ships in 5-7 Days, and Call for availability while the feed can report available=true for all three.
+
+The dedicated adapter reconciles main purchase identity, exact single default variant, quantity one, USD structured price, visible sale/reference prices and SKU. It reads the public JSON literal without executing merchant JavaScript. Recommendations and quick-view labels cannot provide stock evidence. Explicit unavailable stock is excluded; delayed or call-for-availability offers retain the actual notice and cannot satisfy the confirmed-stock filter. Two abrasive packs referencing a sander are excluded as consumables.
+
+The full diagnostic cohort contained 194 product pages: 102 explicitly In Stock, 83 Usually Ships in 5-7 Days and nine Call for availability. All decoded product identities and prices agreed with the initial feed. This is diagnostic coverage, not an independent population-accuracy score. Two below-floor abrasive packs are then excluded.
+
+The subsequent fresh production-path candidate completed three feed pages and 192 product-page checks with zero errors. It admits 75 confirmed-stock listings above $200 reference, including seven deep deals. The independent top-ten plus seeded-twenty merchant sample matched 30/30; every qualifying deep offer was included. Each offer was checked against separate product JSON and its exact purchase page within the audit window. The sample establishes neither checkout success nor a historical street price. See the [candidate receipt](../../benchmarks/2026-11-04-beaver-candidate.json).
+
+The ordinary browser also confirmed the Powermatic 60HH purchase panel says Usually Ships in 5–7 days despite its enabled cart button and pickup widget. The generic shipping policy has machinery/brand exceptions; no free-delivery or delivered-total claim is made. Read the seller's current voltage, freight and returns requirements before buying.
+
+Task-owned public artifacts are under `.local/source-expansion/tools-next-20261104/followup/`. Preserve the initial feed-only snapshot and first failed parser attempt alongside the final candidate. Source configuration is local; production rollout remains separate.
