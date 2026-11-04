@@ -1,0 +1,5 @@
+# Admit evo's shipping-eligible complete bikes
+
+The existing Shopify decoder returns 70 discounted, reported-stock bike products from evo's complete 493-record bikes collection, but cycling classification rejects all of them because their exact retailer types end in `Completes` and their titles end in model years. Recognize the three observed complete-bike taxonomy labels without broadening arbitrary bike-title matching. Exclude the observed `badge:Ship to Store Only` tag before category admission, even when `Free Bike Ship` is also present. Existing blemished/used and variant-stock rules continue to apply.
+
+Change only cycling's category/source configuration and focused regression tests, then reuse the shared refresh, normalization, audit and packaging mechanisms. No new adapter, stock inference, shipping-price promise, or snow parser change is needed. Keep the already-green PRs #8 and #9 frozen. Add evo to configured sources only after complete currency-verified refresh, selected merchant audit and shipping-page evidence pass; retain the earlier zero-admission receipt as historical evidence of the classification gap.
