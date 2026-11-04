@@ -1,7 +1,8 @@
 """Variant offer facts; an unknown stock value is never a stock confirmation."""
-from dataclasses import dataclass
 import math
 import re
+from dataclasses import dataclass
+from decimal import Decimal
 
 
 def size_key(value: str | None) -> str:
@@ -13,9 +14,11 @@ def size_key(value: str | None) -> str:
 
 
 def discount(price: float, reference: float | None) -> float:
+    """Calculate from decimal price inputs; only presentation may round."""
     if reference is None or not all(math.isfinite(x) for x in (price, reference)) or not 0 < price < reference:
         return 0.0
-    return round(100 * (1 - price / reference), 1)
+    sale, base = Decimal(str(price)), Decimal(str(reference))
+    return float(100 * (base - sale) / base)
 
 
 @dataclass

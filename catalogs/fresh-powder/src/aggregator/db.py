@@ -12,6 +12,7 @@ from aggregator.config import env_flag, STORES, EQUIPMENT_CATEGORIES
 from aggregator.models import AggregatedDeal, model_year
 from aggregator.offers import SCHEMA as OFFER_SCHEMA, write_offers, selection_sql
 from aggregator.sizes import matches_length
+from deal_common.offers import discount
 
 DB_PATH = Path(os.environ.get("DATABASE_PATH", Path(__file__).resolve().parents[2] / "data" / "deals.db"))
 
@@ -399,6 +400,7 @@ async def query_deals(
     params = offer_params + params
     if count_only:
         async with _connect(db_path, read_only=_deal_db_read_only()) as db:
+            await db.create_function("price_discount", 2, discount, deterministic=True)
             await db.create_function("matches_length", 3, matches_length, deterministic=True)
             await db.create_function("model_year", 1, model_year, deterministic=True)
             cursor = await db.execute(
@@ -419,6 +421,7 @@ async def query_deals(
     order = sort_map.get(sort_by, "deals.discount_pct DESC")
 
     async with _connect(db_path, read_only=_deal_db_read_only()) as db:
+        await db.create_function("price_discount", 2, discount, deterministic=True)
         await db.create_function("matches_length", 3, matches_length, deterministic=True)
         await db.create_function("model_year", 1, model_year, deterministic=True)
         db.row_factory = aiosqlite.Row

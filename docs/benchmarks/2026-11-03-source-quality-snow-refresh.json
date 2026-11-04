@@ -1,0 +1,109 @@
+{
+  "checked_at": "2026-11-03T17:31:16.033210",
+  "configured_stores": 31,
+  "stores_with_deals": 30,
+  "total_deals": 13726,
+  "zero_count_stores": [
+    "MEC"
+  ],
+  "variant_offers": 26998,
+  "deals_with_variants": 8414,
+  "confirmed_size_deals": 8182,
+  "withheld_stores": [
+    "The House"
+  ],
+  "published_deals": 13548,
+  "workflow": 41678695345,
+  "head": "9b421b77d9c37b97b061f6937f7aa2b8933798f7",
+  "artifact_sha256": "6490cd8c37f18174cf90ec2f0b96cfebf909d5af12039f90f9f6f80ae28da2e8",
+  "artifact_name": "scrape-quality",
+  "scope": "Summary of workflow artifact, not an independent merchant audit. Traversal product counts can include repeated cumulative listing DOM rows.",
+  "publish_candidate_stores_with_deals": 29,
+  "ski_essentials": {
+    "summary": {
+      "store": "Ski Essentials",
+      "deals": 906,
+      "missing_category": 1,
+      "missing_image": 0,
+      "missing_sizes": 906,
+      "missing_lengths": 734,
+      "length_eligible": 734,
+      "variant_offers": 0,
+      "deals_with_variants": 0,
+      "confirmed_size_deals": 0
+    },
+    "outcome": {
+      "errors": 0,
+      "pages": 42,
+      "collections": [
+        {
+          "url": "https://www.skiessentials.com/collections/alpine-skis",
+          "pages": 24,
+          "products": 14389,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.skiessentials.com/collections/snowboards",
+          "pages": 5,
+          "products": 677,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.skiessentials.com/collections/ski-boots",
+          "pages": 7,
+          "products": 1304,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.skiessentials.com/collections/snowboard-boots",
+          "pages": 1,
+          "products": 39,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.skiessentials.com/collections/alpine-ski-bindings",
+          "pages": 3,
+          "products": 254,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.skiessentials.com/collections/snowboard-bindings",
+          "pages": 2,
+          "products": 126,
+          "status": "complete"
+        }
+      ]
+    }
+  },
+  "source_errors": {
+    "The House": {
+      "errors": 2,
+      "pages": 1,
+      "collections": [
+        {
+          "url": "https://www.the-house.com/search?pmid=on-sale-now&start=0&sz=240",
+          "pages": 1,
+          "products": 226,
+          "status": "selector_missing"
+        }
+      ],
+      "count_drop": {
+        "previous": 685,
+        "current": 178
+      }
+    },
+    "MEC": {
+      "errors": 1,
+      "pages": 0,
+      "collections": [
+        {
+          "url": "https://www.mec.ca/en/products/ski-and-snowsports/deals",
+          "pages": 0,
+          "products": 0,
+          "status": "http_error",
+          "http_status": 403
+        }
+      ]
+    }
+  }
+}

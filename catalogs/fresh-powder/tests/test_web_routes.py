@@ -261,6 +261,7 @@ def test_catalog_clothing_preference_counts_and_pagination(isolated_app, monkeyp
         deal = _make_deal(f'Item {category}')
         deal.category = category
         deal.discount_pct = 80
+        deal.current_price = deal.original_price * 0.2
         deals.append(deal)
     for deal in deals:
         deal.scraped_at = now

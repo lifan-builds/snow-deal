@@ -1,7 +1,8 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from deal_common.offers import VariantOffer
+
+from deal_common.offers import VariantOffer, discount
 
 
 @dataclass
@@ -20,11 +21,7 @@ class Product:
 
     @property
     def discount_pct(self) -> float:
-        if self.original_price is None or self.original_price <= 0:
-            return 0.0
-        if self.current_price >= self.original_price:
-            return 0.0
-        return round((1 - self.current_price / self.original_price) * 100, 1)
+        return discount(self.current_price, self.original_price)
 
     @property
     def savings(self) -> float:

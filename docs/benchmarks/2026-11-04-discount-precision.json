@@ -1,0 +1,111 @@
+{
+  "calculated_at": "2026-11-04T03:30:52.379749+00:00",
+  "scope": "Read-only recalculation of existing public snapshots at their original measurement time. No new merchant verification or production deployment. Prior evidence remains historical.",
+  "snapshots": [
+    {
+      "catalog": "cycling",
+      "snapshot_path": ".local/release/source-quality-41678692421/cycling/site/data/catalog.db",
+      "snapshot_sha256": "c19f469a533cd9ae9802906655656d35abba911bfdff454ebd80b675557cb3fa",
+      "evaluated_as_of": "2026-11-03T17:05:02.649518+00:00",
+      "rounded": {
+        "eligible_in_stock_listings": 1159,
+        "deep_deal_listings": 86,
+        "useful_retailers": [
+          "Bicycle Warehouse",
+          "Bike Mart",
+          "BikesOnline",
+          "Colorado Cyclist",
+          "Contender Bicycles",
+          "ERIK\u2019S Bike Shop",
+          "Gravity Coalition",
+          "Mike's Bikes",
+          "Planet Cyclery",
+          "Pro Bike Supply",
+          "The Path Bike Shop",
+          "Worldwide Cyclery"
+        ]
+      },
+      "price_derived": {
+        "eligible_in_stock_listings": 1159,
+        "deep_deal_listings": 86,
+        "useful_retailers": [
+          "Bicycle Warehouse",
+          "Bike Mart",
+          "BikesOnline",
+          "Colorado Cyclist",
+          "Contender Bicycles",
+          "ERIK\u2019S Bike Shop",
+          "Gravity Coalition",
+          "Mike's Bikes",
+          "Planet Cyclery",
+          "Pro Bike Supply",
+          "The Path Bike Shop",
+          "Worldwide Cyclery"
+        ]
+      },
+      "no_longer_at_least_40_percent": [],
+      "changed_selected_variant_count": 0
+    },
+    {
+      "catalog": "tools",
+      "snapshot_path": ".local/release/source-quality-41678692421/tools/site/data/catalog.db",
+      "snapshot_sha256": "45b0e45d249a3a88bfcfd8fe26341b0b880abc5b9fc4b6811b7863ed86e76bef",
+      "evaluated_as_of": "2026-11-03T17:15:23.915610+00:00",
+      "rounded": {
+        "eligible_in_stock_listings": 607,
+        "deep_deal_listings": 24,
+        "useful_retailers": [
+          "Fasteners Inc",
+          "OakTree Supply",
+          "Taylor Toolworks",
+          "Tool Nut",
+          "Woodcraft"
+        ]
+      },
+      "price_derived": {
+        "eligible_in_stock_listings": 607,
+        "deep_deal_listings": 24,
+        "useful_retailers": [
+          "Fasteners Inc",
+          "OakTree Supply",
+          "Taylor Toolworks",
+          "Tool Nut",
+          "Woodcraft"
+        ]
+      },
+      "no_longer_at_least_40_percent": [],
+      "changed_selected_variant_count": 0
+    },
+    {
+      "catalog": "cycling",
+      "snapshot_path": ".local/source-expansion/evo-review/admission-1/00-cycling.db",
+      "snapshot_sha256": "a03f6405f61e3309b08f8f163ef84f7011e956ad3257789fa523e94917f8d118",
+      "evaluated_as_of": "2026-11-03T17:13:07.247449+00:00",
+      "rounded": {
+        "eligible_in_stock_listings": 55,
+        "deep_deal_listings": 3,
+        "useful_retailers": [
+          "evo"
+        ]
+      },
+      "price_derived": {
+        "eligible_in_stock_listings": 55,
+        "deep_deal_listings": 2,
+        "useful_retailers": [
+          "evo"
+        ]
+      },
+      "no_longer_at_least_40_percent": [
+        {
+          "name": "Devinci Chainsaw A 29 Deore 12s Complete Mountain Bike 2025",
+          "store": "evo",
+          "url": "https://www.evo.com/products/289461-devinci-chainsaw-a-29-deore-12s-complete-mountain-bike-2025?currency=USD&variant=46417834705046",
+          "price": 2220.1,
+          "reference": 3699.0,
+          "discount": 39.98107596647743
+        }
+      ],
+      "changed_selected_variant_count": 0
+    }
+  ]
+}
