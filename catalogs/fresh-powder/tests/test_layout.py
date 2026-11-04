@@ -50,7 +50,7 @@ def test_download_compacts_only_temporary_snapshot_and_preserves_history(tmp_pat
                                         PRIMARY KEY (url, observed_at));
             CREATE TABLE offer_observations (variant_key TEXT, observed_at TEXT, price REAL,
                                              PRIMARY KEY (variant_key, observed_at));
-            CREATE INDEX idx_history_url ON price_history(url);
+            CREATE INDEX idx_history_url ON price_history(url, observed_at);
             CREATE TABLE temporary_padding (value BLOB);
         ''')
         conn.executemany('INSERT INTO deals(scraped_at) VALUES (?)',
@@ -91,13 +91,67 @@ def test_download_compacts_only_temporary_snapshot_and_preserves_history(tmp_pat
         assert conn.execute('PRAGMA freelist_count').fetchone()[0] == 0
         assert conn.execute('SELECT type, name, tbl_name, sql FROM main.sqlite_schema EXCEPT '
                             'SELECT type, name, tbl_name, sql FROM previous.sqlite_schema').fetchall() == []
-        assert conn.execute('SELECT type, name, tbl_name, sql FROM previous.sqlite_schema EXCEPT '
-                            'SELECT type, name, tbl_name, sql FROM main.sqlite_schema').fetchall() == []
+        removed_schema = conn.execute('SELECT type, name, tbl_name, sql FROM previous.sqlite_schema EXCEPT '
+                                       'SELECT type, name, tbl_name, sql FROM main.sqlite_schema').fetchall()
+        assert removed_schema == [('index', 'idx_history_url', 'price_history',
+                                   'CREATE INDEX idx_history_url ON price_history(url, observed_at)')]
+        indices = conn.execute('PRAGMA index_list(price_history)').fetchall()
+        assert any(row[1] == 'sqlite_autoindex_price_history_1' and row[3] == 'pk' for row in indices)
+        assert all(row[1] != 'idx_history_url' for row in indices)
+        query = 'SELECT price FROM price_history WHERE url=? AND observed_at<? ORDER BY observed_at DESC LIMIT 1'
+        parameters = ('https://merchant.example/ski', '2026-11-04T13:25:58.343623')
+        plan = conn.execute('EXPLAIN QUERY PLAN ' + query, parameters).fetchall()
+        assert any('USING INDEX sqlite_autoindex_price_history_1' in row[3] for row in plan)
+        assert conn.execute(query, parameters).fetchall() == [(499.95,)]
         for table in ('deals', 'price_history', 'offer_observations', 'sqlite_sequence'):
             assert conn.execute(f'SELECT COUNT(*) FROM main.{table}').fetchone() == conn.execute(
                 f'SELECT COUNT(*) FROM previous.{table}').fetchone()
             assert conn.execute(f'SELECT * FROM main.{table} EXCEPT SELECT * FROM previous.{table}').fetchall() == []
             assert conn.execute(f'SELECT * FROM previous.{table} EXCEPT SELECT * FROM main.{table}').fetchall() == []
+
+
+@pytest.mark.parametrize('index_sql', [
+    'CREATE INDEX idx_history_url ON price_history(url)',
+    'CREATE INDEX idx_history_url ON price_history(observed_at, url)',
+    'CREATE INDEX idx_history_url ON price_history(url, observed_at DESC)',
+    'CREATE INDEX idx_history_url ON price_history(url COLLATE NOCASE, observed_at)',
+    'CREATE INDEX idx_history_url ON price_history(url, observed_at) WHERE price>0',
+    'CREATE INDEX idx_history_url ON price_history(lower(url), observed_at)',
+    'CREATE UNIQUE INDEX idx_history_url ON price_history(url, observed_at)',
+])
+def test_compaction_preserves_unexpected_history_index_definitions(tmp_path, index_sql):
+    build = load_module('vercel_build_index_guard_test', ROOT / 'scripts/vercel_build.py')
+    path = tmp_path / 'snapshot.db'
+    with sqlite3.connect(path) as conn:
+        conn.executescript('''
+            CREATE TABLE deals (scraped_at TEXT);
+            INSERT INTO deals VALUES ('2026-11-04T13:25:58.343623');
+            CREATE TABLE price_history (url TEXT, observed_at TEXT, price REAL,
+                                        PRIMARY KEY(url, observed_at));
+            INSERT INTO price_history VALUES ('https://merchant.example/ski', '2026-11-02', 499.95);
+        ''')
+        conn.execute(index_sql)
+        schema = conn.execute('SELECT type, name, sql FROM sqlite_schema ORDER BY name').fetchall()
+        rows = conn.execute('SELECT * FROM price_history').fetchall()
+    assert build.compact_downloaded_db(path) == (1, '2026-11-04T13:25:58.343623')
+    with sqlite3.connect(path) as conn:
+        assert conn.execute('SELECT type, name, sql FROM sqlite_schema ORDER BY name').fetchall() == schema
+        assert conn.execute('SELECT * FROM price_history').fetchall() == rows
+
+
+def test_matching_named_index_without_a_primary_key_remains(tmp_path):
+    build = load_module('vercel_build_no_pk_test', ROOT / 'scripts/vercel_build.py')
+    path = tmp_path / 'snapshot.db'
+    with sqlite3.connect(path) as conn:
+        conn.executescript('''
+            CREATE TABLE deals (scraped_at TEXT);
+            INSERT INTO deals VALUES ('2026-11-04');
+            CREATE TABLE price_history (url TEXT, observed_at TEXT, price REAL);
+            CREATE INDEX idx_history_url ON price_history(url, observed_at);
+        ''')
+    build.compact_downloaded_db(path)
+    with sqlite3.connect(path) as conn:
+        assert conn.execute('PRAGMA index_list(price_history)').fetchall()[0][1] == 'idx_history_url'
 
 
 def test_compaction_failure_keeps_previous_bundle_and_removes_temporary_download(tmp_path, monkeypatch):

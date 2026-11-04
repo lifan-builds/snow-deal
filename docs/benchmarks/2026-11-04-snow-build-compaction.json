@@ -57,7 +57,7 @@
   "schema_identical": true,
   "source_sha256": "99d8a2eb50040453f1c136bfc1621b01426d8dd86a1385abe9c516f623a4d4c9",
   "compacted_sha256": "037e6b512266f2ab266eb1ddbe629665082887e4e4e6811e3ce2c71b97d93266",
-  "scope": "Isolated public snapshot compaction; provider preview verification pending",
+  "scope": "Isolated public snapshot compaction and verified successful provider preview; production verification pending",
   "failed_preview": "dpl_EupzpFW7qr3of72dmmZTvNGbNcjm",
   "failed_preview_bundle_mb": 230.75,
   "provider_limit_mb": 225,
@@ -134,5 +134,146 @@
         "added_to_download": 0
       }
     }
+  },
+  "provider_preview": {
+    "deployment": "dpl_ChdLfUgGZfuXuxQb48d1rNiWFQRT",
+    "head": "fe60d1b",
+    "status": "Ready",
+    "completed_at": "2026-11-04T17:17:33.414Z",
+    "reported_before_optimization_mb": 228.9,
+    "optimized_size_mb": null,
+    "compacted_db_bytes": 143446016,
+    "latest_data_at": "2026-11-04T13:25:58.343623",
+    "note": "Provider completed successfully after dependency optimization; exact optimized size not reported."
+  },
+  "guarded_duplicate_index_removal": {
+    "checked_at": "2026-11-04T17:23:04.525712+00:00",
+    "source_public_asset": "https://github.com/lifan-builds/snow-deal-data/releases/download/latest-data/deals.db",
+    "source_download_sha256": "99d8a2eb50040453f1c136bfc1621b01426d8dd86a1385abe9c516f623a4d4c9",
+    "precompaction_bytes": 153219072,
+    "vacuum_only_bytes": 143446016,
+    "after_bytes": 125919232,
+    "saved_bytes": 27299840,
+    "incremental_saved_bytes": 17526784,
+    "deal_count": 15342,
+    "latest": "2026-11-04T13:25:58.343623",
+    "integrity": [
+      [
+        "ok"
+      ]
+    ],
+    "tables": {
+      "deal_offers": {
+        "before_count": 28071,
+        "after_count": 28071,
+        "missing": 0,
+        "added": 0
+      },
+      "deal_reviews": {
+        "before_count": 107,
+        "after_count": 107,
+        "missing": 0,
+        "added": 0
+      },
+      "deals": {
+        "before_count": 15342,
+        "after_count": 15342,
+        "missing": 0,
+        "added": 0
+      },
+      "offer_observations": {
+        "before_count": 203174,
+        "after_count": 203174,
+        "missing": 0,
+        "added": 0
+      },
+      "price_history": {
+        "before_count": 164108,
+        "after_count": 164108,
+        "missing": 0,
+        "added": 0
+      },
+      "reviews": {
+        "before_count": 432,
+        "after_count": 432,
+        "missing": 0,
+        "added": 0
+      },
+      "scrape_runs": {
+        "before_count": 32,
+        "after_count": 32,
+        "missing": 0,
+        "added": 0
+      },
+      "sqlite_sequence": {
+        "before_count": 2,
+        "after_count": 2,
+        "missing": 0,
+        "added": 0
+      }
+    },
+    "schema_added": [],
+    "schema_removed": [
+      [
+        "index",
+        "idx_history_url",
+        "price_history",
+        "CREATE INDEX idx_history_url ON price_history(url, observed_at)"
+      ]
+    ],
+    "history_query_plans": {
+      "previous": [
+        [
+          5,
+          0,
+          51,
+          "SEARCH previous.price_history USING INDEX idx_history_url (url=? AND observed_at<?)"
+        ]
+      ],
+      "main": [
+        [
+          5,
+          0,
+          51,
+          "SEARCH main.price_history USING INDEX sqlite_autoindex_price_history_1 (url=? AND observed_at<?)"
+        ]
+      ]
+    },
+    "history_query_equal": true,
+    "remaining_history_indices": [
+      [
+        0,
+        "sqlite_autoindex_price_history_1",
+        1,
+        "pk",
+        0
+      ]
+    ],
+    "serving_queries": [
+      {
+        "filters": {
+          "min_discount": 40,
+          "min_reference": 1000
+        },
+        "returned": 60,
+        "total": 153,
+        "all_fields_equal": true,
+        "counts_equal": true
+      },
+      {
+        "filters": {
+          "store": "Ski Essentials",
+          "q": "XO H21",
+          "size": "178",
+          "min_discount": 80,
+          "max_price": 200
+        },
+        "returned": 1,
+        "total": 1,
+        "all_fields_equal": true,
+        "counts_equal": true
+      }
+    ],
+    "after_sha256": "e0fbb0d45d1468daefc4e04824de8daa1fd925b76571e5a1f5d4764ec91d2903"
   }
 }

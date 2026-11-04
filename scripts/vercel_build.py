@@ -55,6 +55,27 @@ def validate_sqlite_db(db_path: Path) -> tuple[int, str | None]:
     return int(count), latest
 
 
+def _drop_redundant_history_index(conn: sqlite3.Connection) -> bool:
+    indexes = conn.execute('PRAGMA index_list("price_history")').fetchall()
+    target = next((row for row in indexes if row[1] == "idx_history_url"), None)
+    if target is None or target[2:] != (0, "c", 0):
+        return False
+
+    def key_columns(name):
+        return conn.execute(
+            'SELECT cid, name, "desc", coll FROM pragma_index_xinfo(?) '
+            'WHERE "key"=1 ORDER BY seqno', (name,)
+        ).fetchall()
+
+    keys = key_columns(target[1])
+    if not keys or any(column[0] < 0 for column in keys):
+        return False
+    if not any(row[2:] == (1, "pk", 0) and key_columns(row[1]) == keys for row in indexes):
+        return False
+    conn.execute('DROP INDEX "idx_history_url"')
+    return True
+
+
 def compact_downloaded_db(db_path: Path) -> tuple[int, str | None]:
     """Repack the temporary build snapshot without removing observations."""
     before = validate_sqlite_db(db_path)
@@ -63,6 +84,10 @@ def compact_downloaded_db(db_path: Path) -> tuple[int, str | None]:
     original_bytes = db_path.stat().st_size
     conn = sqlite3.connect(db_path)
     try:
+        # Historical snapshots may contain the same B-tree twice. Keep the
+        # primary-key index and retain any unexpected named-index definition.
+        if _drop_redundant_history_index(conn):
+            log("Removed duplicate history index from downloaded DB; primary key retained")
         conn.execute("VACUUM")
     finally:
         conn.close()
