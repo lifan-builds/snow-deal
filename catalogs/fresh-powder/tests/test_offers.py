@@ -67,6 +67,7 @@ def test_size_selects_its_price_discount_and_url_before_count_and_sort(tmp_path)
     selected = query(path, size='180cm')[0]
     assert (selected.current_price, selected.original_price, selected.discount_pct) == (400,1000,60)
     assert selected.sizes == '180' and selected.offer_options == '180 / Blue'
+    assert selected.variant_key == '12'
     assert selected.url.endswith('/ski?currency=USD')
     assert selected.purchase_url.endswith('currency=USD&variant=12')
     assert query(path, size='180', min_discount=70) == []
@@ -118,6 +119,7 @@ def test_unknown_legacy_offers_remain_browseable_but_not_confirmed_size_matches(
                           'skis','160cm, 180cm',160,180,datetime.now(timezone.utc).replace(tzinfo=None))
     asyncio.run(upsert_deals([deal],path))
     assert query(path)[0].availability == 'unknown'
+    assert query(path)[0].variant_key is None
     assert query(path,size='160') == []
     assert query(path,size_min=165,size_max=175) == []
     assert query(path,size_min=180)[0].model_label == 'Model 2017'
@@ -193,6 +195,8 @@ def test_size_filter_full_page_partial_and_pagination_agree(tmp_path, monkeypatc
             assert response.status_code==200
             assert '$400.00' in response.text and '60% OFF' in response.text
             assert 'variant=12' in response.text and 'Reported in stock' in response.text
+            assert 'Variant 12 · 180 / Blue.' in response.text
+            assert 'Exact variant not supplied' not in response.text
             assert 'Save $600.00' in response.text and 'vs retailer reference' in response.text
             assert '$100.00' not in response.text
         assert client.get('/deals?size=175').status_code==200
