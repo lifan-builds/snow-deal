@@ -15,7 +15,6 @@ import tempfile
 from pathlib import Path
 from urllib.request import urlopen
 
-
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "catalogs" / "fresh-powder"
 STATIC_SRC = CATALOG / "src" / "aggregator" / "web" / "static"
@@ -56,6 +55,24 @@ def validate_sqlite_db(db_path: Path) -> tuple[int, str | None]:
     return int(count), latest
 
 
+def compact_downloaded_db(db_path: Path) -> tuple[int, str | None]:
+    """Repack the temporary build snapshot without removing observations."""
+    before = validate_sqlite_db(db_path)
+    if before[0] == 0:
+        raise RuntimeError("Refusing to deploy an empty deal snapshot")
+    original_bytes = db_path.stat().st_size
+    conn = sqlite3.connect(db_path)
+    try:
+        conn.execute("VACUUM")
+    finally:
+        conn.close()
+    after = validate_sqlite_db(db_path)
+    if after != before:
+        raise RuntimeError("Snapshot count or freshness changed during compaction")
+    log(f"Compacted downloaded DB from {original_bytes} to {db_path.stat().st_size} bytes")
+    return after
+
+
 def download_deals_db() -> None:
     if os.environ.get("VERCEL_SKIP_DB_DOWNLOAD", "").lower() in {"1", "true", "yes"}:
         count, latest = validate_sqlite_db(DB_DEST)
@@ -71,13 +88,13 @@ def download_deals_db() -> None:
 
     try:
         log(f"Downloading latest deals DB from {url}")
-        with urlopen(url, timeout=60) as response:
-            with tmp_path.open("wb") as out:
-                shutil.copyfileobj(response, out)
+        with urlopen(url, timeout=60) as response, tmp_path.open("wb") as out:
+            shutil.copyfileobj(response, out)
         # Migrate only the downloaded deal snapshot, never auth data.
         sys.path.insert(0, str(ROOT / "common"))
         sys.path.insert(0, str(ROOT / "catalogs/fresh-powder/src"))
         import asyncio
+
         from aggregator.db import init_db, repair_deal_categories
         from aggregator.reviews import compute_and_store_deal_reviews
         asyncio.run(init_db(tmp_path))
@@ -86,9 +103,9 @@ def download_deals_db() -> None:
         # Reconcile old snapshots with the current model-matching rules.
         matches = asyncio.run(compute_and_store_deal_reviews(tmp_path))
         log(f"Verified {matches} model review matches")
-        count, latest = validate_sqlite_db(tmp_path)
-        if count == 0:
-            raise RuntimeError("Refusing to deploy an empty deal snapshot")
+        # Repeated refreshes can leave partly filled pages even with a zero
+        # freelist. Compact only this downloaded copy, after build migrations.
+        count, latest = compact_downloaded_db(tmp_path)
         tmp_path.replace(DB_DEST)
         log(f"Prepared deals DB with {count} deals, latest={latest}")
     except Exception:

@@ -1,0 +1,138 @@
+{
+  "checked_at": "2026-11-04T17:11:09.473468+00:00",
+  "before_bytes": 153219072,
+  "after_bytes": 143446016,
+  "saved_bytes": 9773056,
+  "page_count": 35021,
+  "freelist_count": 0,
+  "integrity": [
+    [
+      "ok"
+    ]
+  ],
+  "tables": {
+    "deal_offers": {
+      "before_count": 28071,
+      "after_count": 28071,
+      "missing": 0,
+      "added": 0
+    },
+    "deal_reviews": {
+      "before_count": 107,
+      "after_count": 107,
+      "missing": 0,
+      "added": 0
+    },
+    "deals": {
+      "before_count": 15342,
+      "after_count": 15342,
+      "missing": 0,
+      "added": 0
+    },
+    "offer_observations": {
+      "before_count": 203174,
+      "after_count": 203174,
+      "missing": 0,
+      "added": 0
+    },
+    "price_history": {
+      "before_count": 164108,
+      "after_count": 164108,
+      "missing": 0,
+      "added": 0
+    },
+    "reviews": {
+      "before_count": 432,
+      "after_count": 432,
+      "missing": 0,
+      "added": 0
+    },
+    "scrape_runs": {
+      "before_count": 32,
+      "after_count": 32,
+      "missing": 0,
+      "added": 0
+    }
+  },
+  "schema_identical": true,
+  "source_sha256": "99d8a2eb50040453f1c136bfc1621b01426d8dd86a1385abe9c516f623a4d4c9",
+  "compacted_sha256": "037e6b512266f2ab266eb1ddbe629665082887e4e4e6811e3ce2c71b97d93266",
+  "scope": "Isolated public snapshot compaction; provider preview verification pending",
+  "failed_preview": "dpl_EupzpFW7qr3of72dmmZTvNGbNcjm",
+  "failed_preview_bundle_mb": 230.75,
+  "provider_limit_mb": 225,
+  "after_migration_build_check": {
+    "checked_at": "2026-11-04T17:13:53.305419+00:00",
+    "corrected_categories": 19,
+    "review_matches": 107,
+    "deal_count": 15342,
+    "latest": "2026-11-04T13:25:58.343623",
+    "before_bytes": 153219072,
+    "after_bytes": 143446016,
+    "integrity": [
+      [
+        "ok"
+      ]
+    ],
+    "tables": {
+      "deal_offers": {
+        "before_count": 28071,
+        "after_count": 28071,
+        "missing": 0,
+        "added": 0
+      },
+      "deal_reviews": {
+        "before_count": 107,
+        "after_count": 107,
+        "missing": 0,
+        "added": 0
+      },
+      "deals": {
+        "before_count": 15342,
+        "after_count": 15342,
+        "missing": 0,
+        "added": 0
+      },
+      "offer_observations": {
+        "before_count": 203174,
+        "after_count": 203174,
+        "missing": 0,
+        "added": 0
+      },
+      "price_history": {
+        "before_count": 164108,
+        "after_count": 164108,
+        "missing": 0,
+        "added": 0
+      },
+      "reviews": {
+        "before_count": 432,
+        "after_count": 432,
+        "missing": 0,
+        "added": 0
+      },
+      "scrape_runs": {
+        "before_count": 32,
+        "after_count": 32,
+        "missing": 0,
+        "added": 0
+      },
+      "sqlite_sequence": {
+        "before_count": 2,
+        "after_count": 2,
+        "missing": 0,
+        "added": 0
+      }
+    },
+    "history_versus_download": {
+      "price_history": {
+        "missing_from_download": 0,
+        "added_to_download": 0
+      },
+      "offer_observations": {
+        "missing_from_download": 0,
+        "added_to_download": 0
+      }
+    }
+  }
+}
