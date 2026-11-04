@@ -154,3 +154,30 @@ Repaired the Gmail OAuth rejection, completed the scoped verification-code looku
 ## Source and quality admission — 2026-11-03 UTC
 
 Fresh combined refreshes completed for 17 cycling and ten tools sources; both merchant audits matched 30/30. Local eligible/deep/useful-retailer counts are cycling 1,170/93/12 and tools 607/24/5. Ski Essentials now completes all six collections after a narrowly scoped newsletter dismissal (1,853 unique products, 899 discounts). Model/category regressions, bike accessory taxonomy, invalid frame dimensions and non-manufacturer vendor labels were corrected. Targeted rechecks preserved the eligible audited offer maps. Desktop/mobile inspection caught and fixed clipped square images. Benchmark comparisons now reject local layout and out-of-window speed evidence. All 489 tests and scoped checks pass. See `docs/SOURCE-QUALITY-RELEASE-PLAN.md` for the concrete unpublished release and retained admission evidence.
+
+
+## Variant shipping evidence — 2026-11-03 UTC
+
+On separate branch `codex/variant-shipping-evidence`, preserve Harvey ESD notices on their exact color variants and withhold confirmed-stock status. The independent product audit rejects the delayed black G-700Pro while white passes; UI cards and dated history retain the notice. A fresh Harvey-only refresh in a copied public snapshot changes one of 14 offers to unknown, preserving 607 eligible tools listings and all unrelated source records. 501 offline tests and scoped Ruff checks pass; desktop and mobile history layouts were inspected. See `docs/SHIPPING-EVIDENCE-FOLLOWUP.md` and its public receipt. This is local follow-up work, separate from the pending publication request for `35f2bfb`.
+
+
+## Preserve history across manufacturer-label cleanup — 2026-11-03 UTC
+
+Shared the existing fulfillment-label normalization between ingestion and history identity comparison. A prior In Stock / Out of Stock / ESD label now matches the current Unspecified manufacturer only when the source, product URL/name, variant ID/options and destination still match. Historical records remain unchanged. Nine regressions cover preservation of dates/prices/references/stock, read-only behavior, and rejection of real manufacturer, model, package or variant changes. All 510 offline tests and catalog Ruff checks pass. The inspected Harvey public snapshot contains one real observation day; this correction does not create or claim recovered history there. Follow-up remains local, separate from publication approval for `35f2bfb`.
+
+
+## Rockler public category feed discovered — 2026-11-03 UTC
+
+Observed the storefront's real category API and traversed all ten sale pages: 223 unique listings, 62 preliminary equipment discounts above the reference floor and seven nominal deep discounts. This supersedes the earlier empty text-search probe, which contained a merchandising redirect. Admission remains held: 227 advertised versus 223 returned records is unresolved, and sampled Axiom SKU 77007's structured InStock conflicts with a future manufacturer shipping date. Recorded public evidence and implementation gates in `docs/tasks/rockler-source/RESEARCH.md`. No retailer configuration, catalog snapshot or deployment changed.
+
+## Rockler decoder and delivery evidence — 2026-11-03 UTC
+
+Resolved the four-count discrepancy as inline banner slots: the banner-free traversal returns the same 223 unique products across ten complete pages. Located the public delivery endpoint; all seven nominal deep candidates have future manufacturer shipment estimates, while a sampled Bosch jigsaw is explicitly ready to ship. Added exact simple-SKU decoding, active shipping notices, opt-in bounded delivery requests and independent-fetch audit support. Full-price promotions skip stock requests; off-host evidence and redirects are rejected. The candidate refresh exhausted bounded retries on HTTP 429 after five product pages, so Rockler remains disabled with zero admitted inventory. No repeated live retry or production change followed. All 531 offline tests and scoped Ruff checks pass. Research and the dated admission receipt preserve the limitation. Work remains local on `codex/rockler-source`; the pending `35f2bfb` publication scope is unchanged.
+
+## Standing release authorization and approved rollout — 2026-11-03 UTC
+
+The user approved release `35f2bfb` and comparable future releases for these three sites without another publication confirmation. Continue tests, merchant audits and exact deployed-snapshot verification; this does not authorize unrelated account, spending or product changes. PR #7 passed CI and Vercel preview checks and merged as `9b421b7`. Fresh catalog run `41678692421` and full snow run `41678695345` are running with preserved history and no bootstrap. Their terminal deployment results still require verification.
+
+## Bike Closet source admission — 2026-11-03 UTC
+
+Added a public WooCommerce decoder with header/count reconciliation and exact parent/variant destinations. The completed candidate yields 19 in-stock deep listings after excluding a merchant SIZE L / variant XS conflict; six delayed variants remain unknown. All 19 separate merchant checks match, but their elapsed time exceeds the strict M3 measurement window. No accuracy-lead claim follows. TIME category labels, regional shipping restrictions, final-sale terms and frameset-photo caveats are preserved. 546 offline tests and scoped Ruff pass; mobile source preview has zero initial scroll to price and no horizontal overflow. See `docs/tasks/bike-closet-source/IMPLEMENTATION.md`. This follow-up is local and requires fresh runner-side checks before publishing under the new standing authorization.

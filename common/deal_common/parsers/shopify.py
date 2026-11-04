@@ -10,6 +10,7 @@ from urllib.parse import urlparse, parse_qsl, urlencode
 from deal_common.models import Product
 from deal_common.offers import VariantOffer
 from deal_common.parsers.base import BaseParser
+from deal_common.parsers.harvey import shipping_notice
 
 log = logging.getLogger(__name__)
 
@@ -119,14 +120,16 @@ class ShopifyParser(BaseParser):
                 variant_url = product_url.split('?')[0] + ('?' + urlencode(query) if query else '')
                 image = next((img.get('src') for img in images if variant_id is not None
                               and variant_id in (img.get('variant_ids') or [])), default_image)
+                notice = shipping_notice(item, candidate, product_url)
                 offers.append(VariantOffer(
                     variant_key=str(variant_id) if variant_id is not None else "options-" + hashlib.sha256(json.dumps([candidate.get(k) for k in ("sku", "option1", "option2", "option3")]).encode()).hexdigest()[:20],
                     url=variant_url, current_price=price, original_price=original,
                     size=' / '.join(sizes) or None,
                     options=' / '.join(str(candidate[k]) for k in ('option1', 'option2', 'option3')
                                        if k not in price_keys and candidate.get(k) and candidate[k] != 'Default Title'),
-                    availability='in_stock' if candidate.get('available') is True else 'unknown',
+                    availability='in_stock' if candidate.get('available') is True and not notice else 'unknown',
                     image_url=image,
+                    availability_note=notice,
                 ))
             if not offers:
                 continue

@@ -1,0 +1,219 @@
+{
+  "checked_at": "2026-11-03T05:35:25.275109+00:00",
+  "source": "Harvey Woodworking",
+  "refresh": [
+    {
+      "source": "Harvey Woodworking",
+      "status": "complete",
+      "errors": 0,
+      "pages": 1,
+      "collections": [
+        {
+          "url": "https://www.harveywoodworking.com/collections/all?currency=USD",
+          "pages": 1,
+          "products": 18,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "parsed_products": 18,
+      "accepted_products": 11
+    }
+  ],
+  "product": {
+    "name": "GYRO AIR G-700Pro Industrial Dust Processor",
+    "url": "https://www.harveywoodworking.com/products/gyro-air-g-700pro-industrial-dust-processor?currency=USD",
+    "brand": "Unspecified",
+    "source_category": "Dust Collector",
+    "category": "Workshop equipment",
+    "format": "Not specified",
+    "platform": "",
+    "offers": [
+      {
+        "variant_key": "47142200574170",
+        "url": "https://www.harveywoodworking.com/products/gyro-air-g-700pro-industrial-dust-processor?currency=USD&variant=47142200574170",
+        "current_price": 3299.0,
+        "original_price": 3999.0,
+        "size": null,
+        "options": "Lunar White",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/1781/9323/files/G-700PRO_Wpng.png?v=1784685361",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": ""
+      },
+      {
+        "variant_key": "47142200606938",
+        "url": "https://www.harveywoodworking.com/products/gyro-air-g-700pro-industrial-dust-processor?currency=USD&variant=47142200606938",
+        "current_price": 3299.0,
+        "original_price": 3999.0,
+        "size": null,
+        "options": "Nebula Black",
+        "availability": "unknown",
+        "image_url": "https://cdn.shopify.com/s/files/1/1781/9323/files/G-700PRO_BKpng.png?v=1784685359",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "Retailer shipping estimate: Nov.30(Black)"
+      }
+    ]
+  },
+  "default_selection": [
+    {
+      "variant_key": "47142200574170",
+      "url": "https://www.harveywoodworking.com/products/gyro-air-g-700pro-industrial-dust-processor?currency=USD&variant=47142200574170",
+      "current_price": 3299.0,
+      "original_price": 3999.0,
+      "size": null,
+      "options": "Lunar White",
+      "availability": "in_stock",
+      "image_url": "https://cdn.shopify.com/s/files/1/1781/9323/files/G-700PRO_Wpng.png?v=1784685361",
+      "reference_basis": "retailer_compare_at",
+      "availability_note": "",
+      "discount": 17.5,
+      "savings": 700.0
+    }
+  ],
+  "stock_only_selection": [
+    {
+      "variant_key": "47142200574170",
+      "url": "https://www.harveywoodworking.com/products/gyro-air-g-700pro-industrial-dust-processor?currency=USD&variant=47142200574170",
+      "current_price": 3299.0,
+      "original_price": 3999.0,
+      "size": null,
+      "options": "Lunar White",
+      "availability": "in_stock",
+      "image_url": "https://cdn.shopify.com/s/files/1/1781/9323/files/G-700PRO_Wpng.png?v=1784685361",
+      "reference_basis": "retailer_compare_at",
+      "availability_note": "",
+      "discount": 17.5,
+      "savings": 700.0
+    }
+  ],
+  "independent_audits": [
+    {
+      "name": "GYRO AIR G-700Pro Industrial Dust Processor",
+      "store": "Harvey Woodworking",
+      "offer": {
+        "variant_key": "47142200574170",
+        "url": "https://www.harveywoodworking.com/products/gyro-air-g-700pro-industrial-dust-processor?currency=USD&variant=47142200574170",
+        "current_price": 3299.0,
+        "original_price": 3999.0,
+        "size": null,
+        "options": "Lunar White",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/1781/9323/files/G-700PRO_Wpng.png?v=1784685361",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": ""
+      },
+      "checked_at": "2026-11-03T05:35:18.692218+00:00",
+      "evidence_url": "https://www.harveywoodworking.com/products/gyro-air-g-700pro-industrial-dust-processor.js?currency=USD",
+      "response_sha256": "4af700485f62289fbb87cf959baeb54e56e2cc4d0811af7fb0990178de9a6bc1",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "GYRO AIR G-700Pro Industrial Dust Processor",
+        "variant": "47142200574170",
+        "sku": "803517",
+        "price_minor": 329900,
+        "reference_minor": 399900,
+        "currency": "USD",
+        "options": "Lunar White",
+        "raw_options": [
+          "Lunar White"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Lunar White",
+              "Nebula Black"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      }
+    },
+    {
+      "name": "GYRO AIR G-700Pro Industrial Dust Processor",
+      "store": "Harvey Woodworking",
+      "offer": {
+        "variant_key": "47142200606938",
+        "url": "https://www.harveywoodworking.com/products/gyro-air-g-700pro-industrial-dust-processor?currency=USD&variant=47142200606938",
+        "current_price": 3299.0,
+        "original_price": 3999.0,
+        "size": null,
+        "options": "Nebula Black",
+        "availability": "unknown",
+        "image_url": "https://cdn.shopify.com/s/files/1/1781/9323/files/G-700PRO_BKpng.png?v=1784685359",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "Retailer shipping estimate: Nov.30(Black)"
+      },
+      "checked_at": "2026-11-03T05:35:23.148996+00:00",
+      "evidence_url": "https://www.harveywoodworking.com/products/gyro-air-g-700pro-industrial-dust-processor.js?currency=USD",
+      "response_sha256": "4af700485f62289fbb87cf959baeb54e56e2cc4d0811af7fb0990178de9a6bc1",
+      "status": "mismatch",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": false
+      },
+      "merchant": {
+        "title": "GYRO AIR G-700Pro Industrial Dust Processor",
+        "variant": "47142200606938",
+        "sku": "803518",
+        "price_minor": 329900,
+        "reference_minor": 399900,
+        "currency": "USD",
+        "options": "Nebula Black",
+        "raw_options": [
+          "Nebula Black"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Lunar White",
+              "Nebula Black"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": "Retailer shipping estimate: Nov.30(Black)"
+      }
+    }
+  ],
+  "other_sources_unchanged": true,
+  "before": {
+    "total_stock_eligible_products": 607,
+    "harvey_products": 11,
+    "harvey_stock_offers": 14,
+    "harvey_unknown_offers": 0,
+    "notices": []
+  },
+  "after": {
+    "total_stock_eligible_products": 607,
+    "harvey_products": 11,
+    "harvey_stock_offers": 13,
+    "harvey_unknown_offers": 1,
+    "notices": [
+      {
+        "name": "GYRO AIR G-700Pro Industrial Dust Processor",
+        "variant": "47142200606938",
+        "options": "Nebula Black",
+        "notice": "Retailer shipping estimate: Nov.30(Black)"
+      }
+    ]
+  },
+  "purpose": "Shipping-evidence regression; black mismatch is expected and not a production audit pass"
+}

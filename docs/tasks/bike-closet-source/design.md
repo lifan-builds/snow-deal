@@ -1,0 +1,7 @@
+# Bike Closet source admission
+
+Gap: Big Ring has no Bike Closet inventory despite observable deep frameset discounts. Public WooCommerce Store API parent records expose exact variant IDs and attribute terms; product pages show canonical identity, selected SKU/price, new-condition statements and shipping notices. Some pages exceed the inline variation threshold, so use the documented public variation endpoint, never cart actions or private REST credentials.
+
+Implementation boundary: a source decoder in common parsers, header-aware pagination validation in the existing shared HTTP pipeline, explicit refresh/offer-destination integration, and a separate-fetch merchant audit. Cycling configuration changes only after complete candidate refresh and audit. Reuse current price/size selection, history, shipping-note display and source snapshot failure handling. No global classifier relaxation or new UI is required.
+
+Require exact parent/variant/attribute destinations, USD minor-unit amounts, positive new-condition evidence and no backorders. Active shipping notices override stock flags; bind size/color only when explicit, otherwise apply conservatively. Preserve final-sale and misleading-photo caveats. Pagination must reconcile advertised totals and unique IDs. Reject missing variants or cross-product links. Validate fixtures, full offline checks, fresh candidate snapshot, separate merchant API checks, and anonymous browser selections. Publication remains separate from the pending 35f2bfb scope.

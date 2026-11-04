@@ -42,6 +42,7 @@
             {% if product.format %}<div class="tags"><span>{% if product.format == 'Not specified' %}Package not specified{% else %}{{ product.format }}{% endif %}</span>{% if product.platform %}<span>{{ product.platform }}</span>{% endif %}</div>{% endif %}
             <div class="prices"><strong>{{ offer.current_price|money }}</strong><span>USD</span></div><p class="reference"><s>{{ offer.original_price|money }}</s> retailer reference</p><p class="savings">Save {{ offer.savings|money }}</p>
             <p class="stock">{% if offer.availability == 'in_stock' %}<span class="stock-dot"></span>Reported in stock{% else %}Stock unconfirmed · check retailer{% endif %}{% if offer.size %} · {{ offer.size }}{% endif %}</p>
+            {% if offer.availability_note %}<p class="stock">{{ offer.availability_note }}</p>{% endif %}
             <a class="merchant" href="{{ offer.url }}" target="_blank" rel="noopener noreferrer">{{ product.store }} <span aria-hidden="true">↗</span></a><details class="offer-evidence"><summary>Price &amp; variant details</summary>
               <p>{{ offer.discount|round(1) }}% off = ({{ offer.original_price|money }} − {{ offer.current_price|money }}) ÷ {{ offer.original_price|money }} × 100.</p>
               <p>Reference: retailer compare-at price. Not a verified former selling price or all-time low.</p>

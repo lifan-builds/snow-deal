@@ -10,6 +10,16 @@ class BaseParser(ABC):
 
     requires_product_pages = False
 
+    def validate_listing_response(self, html: str, page_url: str, headers: dict[str, str]) -> None:
+        """Optional response metadata contract, before decoding or following pages."""
+
+    def get_product_evidence_url(self, html: str, page_url: str) -> str | None:
+        """Optional same-merchant, read-only evidence needed by a product page."""
+        return None
+
+    def parse_product_evidence(self, html: str, page_url: str, evidence: str) -> list[Product]:
+        raise NotImplementedError
+
     def parse_product_page(self, html: str, page_url: str) -> list[Product]:
         """Resolve discovery listings to authoritative offers when opted in."""
         raise NotImplementedError
