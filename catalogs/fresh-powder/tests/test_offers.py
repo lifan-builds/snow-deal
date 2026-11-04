@@ -205,3 +205,33 @@ def test_size_filter_full_page_partial_and_pagination_agree(tmp_path, monkeypatc
         assert 'No deals match' in client.get('/deals?year_from=2026').text
         assert '$400.00' in client.get('/?year_from=2025&size=180').text
         assert client.get('/?year_from=1800').status_code == 422
+
+
+def test_skiessentials_exact_options_survive_storage_and_filtering(tmp_path):
+    from deal_common.parsers.skiessentials import _product
+
+    fixture = Path(__file__).resolve().parents[3] / 'common/tests/fixtures/skiessentials-xo.json'
+    product = _product(json.loads(fixture.read_text()))
+    deals = _products_to_deals([product], 'Ski Essentials')
+    path = tmp_path / 'skiessentials.db'
+    asyncio.run(init_db(path))
+    asyncio.run(upsert_deals(deals, path))
+    assert query(path, size='172', count_only=True) == 0
+    selected = query(path, size='178', min_discount=80, max_price=200)[0]
+    assert selected.variant_key == '47335044710696'
+    assert selected.current_price == 199 and selected.original_price == 1250
+    assert selected.availability == 'in_stock' and selected.sizes == '178'
+    assert selected.purchase_url.endswith('?ski+size=178')
+    assert '?' not in selected.url
+    assert query(path, size='178', min_discount=85, count_only=True) == 0
+
+
+def test_skiessentials_uses_exact_offer_parser():
+    from aggregator.config import STORES
+    from aggregator.scraper import _get_parser
+    from deal_common.parsers.skiessentials import SkiEssentialsParser
+
+    source = next(s for s in STORES if s.name == 'Ski Essentials')
+    assert not source.use_browser
+    assert isinstance(_get_parser(source.parser_type), SkiEssentialsParser)
+    assert len(source.scrape_urls) == 6

@@ -291,7 +291,7 @@ STORES: list[StoreConfig] = [
     #     use_browser=True,
     # ),
 
-    # Headless Shopify (Hydrogen/Oxygen) — browser-based
+    # Headless storefront: public collection feed with SKU-specific sale prices
     StoreConfig(
         "Ski Essentials", "skiessentials.com",
         scrape_urls=[
@@ -303,7 +303,7 @@ STORES: list[StoreConfig] = [
             "https://www.skiessentials.com/collections/snowboard-bindings",
         ],
         parser_type="skiessentials",
-        use_browser=True,
+        use_browser=False,
     ),
 
     # New Shopify stores
