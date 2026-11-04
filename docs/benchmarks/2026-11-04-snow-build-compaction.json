@@ -275,5 +275,12 @@
       }
     ],
     "after_sha256": "e0fbb0d45d1468daefc4e04824de8daa1fd925b76571e5a1f5d4764ec91d2903"
+  },
+  "final_provider_preview": {
+    "deployment": "dpl_Fxu4UqA4YC84iVdziqT35isXrder",
+    "head": "d9ab2d1",
+    "status": "Ready",
+    "completed_at": "2026-11-04T17:25:49.671Z",
+    "database_bytes": 125919232
   }
 }

@@ -1,6 +1,6 @@
 # Beaver Industrial Supply and RA Cycles release
 
-Status: Beaver passed admission and is configured locally. RA Cycles remains disabled pending a complete, timely merchant audit. No publication yet.
+Status: Beaver and RA Cycles passed admission and are configured on the release branch. PR17 is awaiting final checks and production rollout.
 
 ## Scope
 
@@ -8,7 +8,7 @@ Add the verified sales-and-closeouts cohort to Bench Drop through the existing S
 
 Bolton's tested candidate adapter is included for future evaluation but remains unconfigured because its active warehouse restriction does not identify product-level freight eligibility. Do not count Bolton as a retailer gain.
 
-RA Cycles is also under admission review for Big Ring. Its normal bikes collection completed three feed pages and 144 product/evidence pairs. Exact stock checks yield 116 qualifying in-stock listings and 64 deep discounts; feed-only counts were provisional. Exact per-variant inventory distinguishes immediate stock from virtual-warehouse delivery. Preserve final-sale restrictions, give explicit Frameset taxonomy precedence, and retain numeric-s sizes as distinct literal labels. No RA activation occurs before a fresh complete detail-aware candidate and merchant audit.
+RA Cycles has passed admission for Big Ring. Its normal bikes collection completed three feed pages and 144 product/evidence pairs. Exact stock checks yield 116 qualifying in-stock listings and 64 deep discounts; feed-only counts were provisional. Exact per-variant inventory distinguishes immediate stock from virtual-warehouse delivery. Preserve final-sale restrictions, give explicit Frameset taxonomy precedence, and retain numeric-s sizes as distinct literal labels. No RA activation occurs before a fresh complete detail-aware candidate and merchant audit.
 
 The two source-specific paths add paced product/evidence requests. Increase the existing refresh job timeout from 30 to 45 minutes to accommodate that work; all completeness, audit, history and publication gates remain required.
 
@@ -43,3 +43,11 @@ PR17 preview failed because the latest public snow snapshot pushed the function 
 Provider preview `dpl_ChdLfUgGZfuXuxQb48d1rNiWFQRT` at `fe60d1b` reached Ready at 17:17:33 UTC. Its build log confirms the compacted 143,446,016-byte DB and unchanged latest observation, followed by successful dependency optimization/deployment. The full offline suite now passes 736 tests, including compaction failure atomicity. Production verification remains pending.
 
 The follow-up build optimization removes only the proven duplicate `idx_history_url` from the temporary copy. Exact PRAGMA key comparison protects unexpected definitions. The public build copy becomes 125,919,232 bytes (27,299,840 bytes saved overall), with every table row preserved and history queries using the equivalent primary-key index. Default and exact-size serving query results are identical. Provider verification of this final optimization remains pending.
+
+## RA admission passed and combined preview
+
+Runner `41874414409` at `3c3a34e` completed three feed pages and 144 HTML/JSON product pairs with zero errors, producing 116 confirmed-stock listings / 64 deep deals. Its independent 76-offer audit passed 76/76 with zero mismatch/inconclusive, including all 64 selected deep listings. The audit completed at 17:25:08 UTC inside its unchanged 15-minute window. Earlier expired local audits remain retained.
+
+Against baseline `41868782908`, the combined local preview has cycling 1,348 confirmed-stock listings / 166 deep deals / 15 useful retailers, and tools 458 / 31 / six. All 36 cycling and 20 tools baseline observation rows remain identical; original source timestamps are preserved. Percentage-first ordering, confirmed-stock filtering, rendered pages and distinct 50s versus 50cm frame selections pass. These are preview totals, not a production claim.
+
+Final snow optimization preview `dpl_Fxu4UqA4YC84iVdziqT35isXrder` reached Ready at 17:25:49 UTC. Its build preserved the latest snow timestamp and completed without the prior size failure.
