@@ -189,3 +189,9 @@ On separate branch `codex/audit-window`, enforce a 15-minute observation window 
 ## evo cycling admission — 2026-11-03 UTC
 
 Revisited the earlier zero-admission result and found that exact complete-bike retailer taxonomy was missing from classification. The complete 493-product feed now yields 55 eligible listings and three deep deals, excluding 14 store-only products and one blemished product. A fresh currency-verified refresh and 30/30 separate merchant sample passed within 163 seconds. Browser checks confirmed all three deep variants plus a contradictory shipping-tag exclusion; checkout shipping fees remain excluded from prices. Nine regressions bring the suite to 559 passing tests. See `docs/tasks/evo-cycling/IMPLEMENTATION.md`. The new nineteenth local source follows the frozen Bike Closet and audit-window releases.
+
+## Discount precision and rollout verification — November 4, 2026 UTC
+
+Shared discount calculations now preserve price precision for eligibility, variant selection and ordering. Snow derives percentages from prices even for read-only older snapshots. Fourteen regressions cover threshold boundaries, rounded ties and old-snapshot counts/pagination. All 573 offline tests and CI lint pass. See [implementation and correction receipt](docs/tasks/discount-precision/IMPLEMENTATION.md). Publication remains queued behind the tested source/audit releases under standing authorization.
+
+The PR #7 catalog and snow workflows succeeded; [rollout evidence](docs/benchmarks/2026-11-04-source-quality-rollout.json) records actual totals, retained source limitations, subsequent snow refreshes and the local TLS failure that prevented additional snow page checks. No all-competitor leadership claim is made.

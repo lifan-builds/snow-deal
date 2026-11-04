@@ -37,10 +37,13 @@ async def write_offers(db, deal):
 
 def selection_sql(*, size='', size_min=None, size_max=None, min_price=0, max_price=0,
                   min_reference=0, min_discount=0):
-    conditions = ['o.current_price >= 1', 'o.discount_pct > 0', 'o.discount_pct < 95']
+    # Old snapshots cache rounded percentages. Derive decisions from their prices
+    # without migrating the snapshot or altering historical observations.
+    pct = 'price_discount(o.current_price, o.original_price)'
+    conditions = ['o.current_price >= 1', f'{pct} > 0', f'{pct} < 95']
     params = []
     for sql, value in [('o.current_price >= ?', min_price), ('o.current_price <= ?', max_price),
-                       ('o.original_price >= ?', min_reference), ('o.discount_pct >= ?', min_discount)]:
+                       ('o.original_price >= ?', min_reference), (f'{pct} >= ?', min_discount)]:
         if value:
             conditions.append(sql)
             params.append(value)
@@ -54,13 +57,14 @@ def selection_sql(*, size='', size_min=None, size_max=None, min_price=0, max_pri
     fields = ['id', 'store', 'name', 'url', 'category', 'length_min', 'length_max', 'scraped_at',
               'brand', 'first_seen', 'currency', 'product_type', 'exclusion_reason']
     columns = ', '.join('d.' + field for field in fields)
-    for field in ['current_price', 'original_price', 'discount_pct', 'image_url']:
+    for field in ['current_price', 'original_price', 'image_url']:
         columns += f', CASE WHEN o.product_url IS NOT NULL THEN o.{field} ELSE d.{field} END AS {field}'
+    columns += f', CASE WHEN o.product_url IS NOT NULL THEN {pct} ELSE price_discount(d.current_price, d.original_price) END AS discount_pct'
     columns += ', CASE WHEN o.product_url IS NOT NULL THEN o.size ELSE d.sizes END AS sizes'
     columns += ", o.url AS offer_url, o.variant_key, o.options AS offer_options, COALESCE(o.availability, 'unknown') AS availability, COALESCE(o.reference_basis, 'retailer_reference') AS reference_basis"
     return f"""WITH ranked_offers AS (
         SELECT o.*, ROW_NUMBER() OVER (
-            PARTITION BY o.product_url ORDER BY o.discount_pct DESC, o.current_price, o.variant_key
+            PARTITION BY o.product_url ORDER BY {pct} DESC, o.current_price, o.variant_key
         ) AS priority
         FROM deal_offers o JOIN deals d ON d.url = o.product_url
         WHERE {' AND '.join(conditions)}

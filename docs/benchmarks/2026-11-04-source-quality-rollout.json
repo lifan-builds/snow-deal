@@ -1,0 +1,116 @@
+{
+  "recorded_at": "2026-11-04T03:55:12.556832+00:00",
+  "release_commit": "9b421b77d9c37b97b061f6937f7aa2b8933798f7",
+  "workflow": 41678692421,
+  "cycling": {
+    "status": "live_verified",
+    "snapshot_sha256": "f076fb44ff3ebe382d3259f9fa707753aa9d59011a87afe83cb9744f7e56573d",
+    "fresh_configured_sources": 17,
+    "eligible_listings": 1159,
+    "deep_deal_listings": 86,
+    "useful_retailers": 12,
+    "merchant_matches": 30,
+    "merchant_sample_size": 30,
+    "smoke_receipt": "cycling/live-smoke.json",
+    "mobile": {
+      "viewport": [
+        390,
+        844
+      ],
+      "url": "https://bigring.clifan.com/?store=Gravity%20Coalition",
+      "initial_price_bottom_px": 709.296875,
+      "scroll_y": 0,
+      "horizontal_overflow": false,
+      "first_three_images_loaded": true,
+      "image_object_fit": "contain",
+      "method": "CUA browser read after navigation at mobile viewport; override reset"
+    }
+  },
+  "tools": {
+    "status": "live_verified",
+    "snapshot_sha256": "5059457462e1f97db9240137e5b9d23314ef246f1d21981682fe1f9b0bab3658",
+    "fresh_configured_sources": 10,
+    "eligible_listings": 607,
+    "deep_deal_listings": 24,
+    "useful_retailers": 5,
+    "merchant_matches": 30,
+    "merchant_sample_size": 30,
+    "smoke_receipt": "tools/live-smoke.json",
+    "mobile": {
+      "viewport": [
+        390,
+        844
+      ],
+      "url": "https://benchdrop.clifan.com/?store=Taylor%20Toolworks",
+      "initial_price_bottom_px": 782.890625,
+      "scroll_y": 0,
+      "horizontal_overflow": false,
+      "image_loaded": true,
+      "image_object_fit": "contain",
+      "method": "CUA browser read after reloading at mobile viewport; override reset"
+    }
+  },
+  "snow": {
+    "status": "workflow_completed_success",
+    "workflow": 41678695345,
+    "head": "9b421b77d9c37b97b061f6937f7aa2b8933798f7",
+    "checked_at": "2026-11-03T17:31:16.033210",
+    "configured_stores": 31,
+    "published_deals": 13548,
+    "publish_candidate_stores_with_deals": 29,
+    "withheld_stores": [
+      "The House"
+    ],
+    "zero_count_stores": [
+      "MEC"
+    ],
+    "ski_essentials": {
+      "discounted_listings": 906,
+      "complete_collections": 6,
+      "pages": 42,
+      "errors": 0
+    },
+    "subsequent_successful_runs": [
+      41709494357,
+      41753534358
+    ],
+    "current_health_observed": {
+      "status": "ok",
+      "checked_at": "2026-11-04T01:51:23.735424",
+      "stores_with_deals": 30
+    },
+    "limitations": [
+      "Health verifies observation time, not an exact snow snapshot hash.",
+      "After successful health retrieval, independent page checks failed TLS negotiation from HTTP client and browser. No certificate validation bypass was attempted.",
+      "Ski Essentials listings do not establish confirmed size or stock."
+    ]
+  },
+  "pending_releases": [
+    {
+      "pr": 8,
+      "head": "cb8672e2ac03d1423c870fe183e07fe540dfb064",
+      "checks": "passed",
+      "state": "ready_for_merge_after_current_rollout"
+    },
+    {
+      "pr": 9,
+      "head": "2f0ade5",
+      "checks": "passed",
+      "base": "codex/bike-closet-source",
+      "state": "waiting_pr8"
+    },
+    {
+      "pr": 10,
+      "head": "2bd3e2d59c2bde0835ed493e30269d240cef6c25",
+      "state": "waiting_pr9"
+    }
+  ],
+  "limitations": [
+    "Counts are merchant listings, not unique models.",
+    "Merchant endpoint matches do not prove checkout or historical reference prices.",
+    "The current release uses the previous audit format; the timing fix is PR9.",
+    "All-competitor leadership remains unproven.",
+    "Snow storefront smoke could not be completed in the local environment after the health check due to TLS protocol failures; pipeline production timestamp verification succeeded."
+  ],
+  "catalog_workflow_status": "completed_success"
+}

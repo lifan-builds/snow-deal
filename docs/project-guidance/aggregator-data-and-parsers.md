@@ -10,6 +10,8 @@ Ski Essentials Show More can be covered by its newsletter dialog. Dismiss only t
 
 ## Data-quality invariants
 
+Percentage eligibility and ordering use `deal_common.offers.discount` on the selected variant's decimal prices. Round only in presentation. Snow registers this same calculation as `price_discount` on list and count connections so old cached rounded percentages cannot change thresholds, variant choice or pagination. Legacy product rows also derive their percentage from prices; this read-time correction never rewrites snapshots or history.
+
 1. Test categorization before scraping; miscategorized products pollute durable snapshots.
 2. Space-pad exclusion terms and prepend a space to the normalized name/URL before matching.
 3. Put ambiguous model names in brand-qualified multi-word mappings.

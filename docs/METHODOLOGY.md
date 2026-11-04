@@ -32,6 +32,8 @@ Fresh Powder currently sorts discounts first. This refactor corrected a hidden i
 7. **Measure useful finds.** Track the count of usable deeply discounted high-ticket offers, source freshness, false discounts, variant accuracy, and outbound interest. Raw product count alone is not success.
 8. **Expand only after the catalog works.** Add adapters and catalog rules, reuse shared ingestion, and preserve separate data and brand identities. Affiliate links can fund the service, but commissions do not change default ranking.
 
+Discount thresholds, variant selection, counts and ordering use the unrounded percentage calculated from the actual decimal prices. Round only for presentation. A 39.98% discount cannot qualify for a 40% minimum, even when its badge rounds to 40.0%. Cached percentages in older snapshots are not authoritative; calculate from the selected price and reference without rewriting historical observations.
+
 ## Category selection
 
 The user selected **premium cycling** and **workshop/power tools** for the next sites. Both now have working local storefronts with shared ingestion, persistence, querying, and presentation. See [Big Ring](../catalogs/cycling/README.md) and [Bench Drop](../catalogs/tools/README.md). Implementation alone does not prove repeat inventory quality or commercial demand.
