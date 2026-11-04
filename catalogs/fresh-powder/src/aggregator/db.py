@@ -452,6 +452,7 @@ async def query_deals(
         AggregatedDeal(
             first_seen=row["first_seen"], previous_price=row["previous_price"], currency=row["currency"],
             offer_url=row['offer_url'], offer_options=row['offer_options'],
+            variant_key=row['variant_key'],
             availability=row['availability'], reference_basis=row['reference_basis'],
             id=row["id"],
             store=row["store"],

@@ -49,6 +49,7 @@ class AggregatedDeal:
     offer_options: str | None = None
     availability: str = 'unknown'
     reference_basis: str = 'retailer_reference'
+    variant_key: str | None = None
 
     @property
     def purchase_url(self) -> str:

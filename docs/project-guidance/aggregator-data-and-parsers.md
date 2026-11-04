@@ -12,6 +12,8 @@ Ski Essentials Show More can be covered by its newsletter dialog. Dismiss only t
 
 Percentage eligibility and ordering use `deal_common.offers.discount` on the selected variant's decimal prices. Round only in presentation. Snow registers this same calculation as `price_discount` on list and count connections so old cached rounded percentages cannot change thresholds, variant choice or pagination. Legacy product rows also derive their percentage from prices; this read-time correction never rewrites snapshots or history.
 
+Selected snow offers carry the database's `variant_key` into `AggregatedDeal` alongside options, price and purchase URL. The disclosure must show that same identity; legacy rows keep `None` and the unknown-variant notice. Do not reconstruct a selected key from a URL or change stored history.
+
 1. Test categorization before scraping; miscategorized products pollute durable snapshots.
 2. Space-pad exclusion terms and prepend a space to the normalized name/URL before matching.
 3. Put ambiguous model names in brand-qualified multi-word mappings.
