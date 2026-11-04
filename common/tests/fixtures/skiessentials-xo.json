@@ -1,0 +1,91 @@
+{
+  "id": 8820888699176,
+  "handle": "2024-xo-h21-ski-skxo0187h21",
+  "title": "2024 XO H21 Ski",
+  "vendor": "XO Skis",
+  "product_type": "Alpine Ski > Ski > Alpine > Flat",
+  "tags": [
+    "ACTIVITY:Alpine Ski",
+    "Cat-Alpine",
+    "Cat-Alpine:Skis",
+    "Cat-AlpineSkis:Frontside",
+    "Cat-Outlet",
+    "FilterCategory:Ski",
+    "From-Salsify",
+    "LABEL:Anniversary Sale - 84% OFF :#ffffff:#B30000",
+    "lwh:71.0_8_8",
+    "MGT:Flat",
+    "NOT_A_PACKAGE",
+    "PROMO:$1051 OFF!:10:#b90000",
+    "Promoted Product",
+    "RETURN:SkiOrSnowboard",
+    "SEASON:Fall/Winter",
+    "year:2024"
+  ],
+  "images_info": [
+    {
+      "src": "https://cdn.shopify.com/s/files/1/0670/5135/6456/files/2024-xo-h21-ski-skxo0187h21-skxo0187h21.jpg?v=1769353690",
+      "width": 2048,
+      "alt": "2024 XO H21 Ski",
+      "id": 43069056680232,
+      "position": 1,
+      "height": 2048
+    }
+  ],
+  "metafields": [
+    {
+      "namespace": "custom",
+      "key": "online_variant_prices",
+      "value": "{\"SKXO0187H21|TEAL BLUE|166\":199,\"SKXO0187H21|TEAL BLUE|172\":199,\"SKXO0187H21|TEAL BLUE|178\":199}"
+    },
+    {
+      "namespace": "custom",
+      "key": "online_variant_lowest_price",
+      "value": "{\"amount\":199.0,\"currency_code\":\"USD\"}"
+    }
+  ],
+  "variants": [
+    {
+      "id": 47335044645160,
+      "sku": "SKXO0187H21|TEAL BLUE|166",
+      "merged_options": [
+        "ski_size:166"
+      ],
+      "available": true,
+      "inventory_quantity": 1,
+      "inventory_management": "shopify",
+      "inventory_policy": "deny",
+      "price_usd": "1250.0",
+      "compare_at_price_usd": "1250.0",
+      "image": "https://cdn.shopify.com/s/files/1/0670/5135/6456/files/2024-xo-h21-ski-skxo0187h21-skxo0187h21.jpg?v=1769353690"
+    },
+    {
+      "id": 47335044677928,
+      "sku": "SKXO0187H21|TEAL BLUE|172",
+      "merged_options": [
+        "ski_size:172"
+      ],
+      "available": false,
+      "inventory_quantity": 0,
+      "inventory_management": "shopify",
+      "inventory_policy": "deny",
+      "price_usd": "1250.0",
+      "compare_at_price_usd": "1250.0",
+      "image": "https://cdn.shopify.com/s/files/1/0670/5135/6456/files/2024-xo-h21-ski-skxo0187h21-skxo0187h21.jpg?v=1769353690"
+    },
+    {
+      "id": 47335044710696,
+      "sku": "SKXO0187H21|TEAL BLUE|178",
+      "merged_options": [
+        "ski_size:178"
+      ],
+      "available": true,
+      "inventory_quantity": 1,
+      "inventory_management": "shopify",
+      "inventory_policy": "deny",
+      "price_usd": "1250.0",
+      "compare_at_price_usd": "1250.0",
+      "image": "https://cdn.shopify.com/s/files/1/0670/5135/6456/files/2024-xo-h21-ski-skxo0187h21-skxo0187h21.jpg?v=1769353690"
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "date": "2026-11-04",
+  "method": "first-page-five-reference-fields-v1",
+  "limitations": [
+    "Rendered evidence disclosure, not merchant accuracy or verification of former selling price.",
+    "Snow used the provider-identified production deployment because the local custom-host TLS path still failed.",
+    "Unknown selected variants fail this strict disclosure metric even when the unknown status is honestly shown.",
+    "No competitor was remeasured in this pass."
+  ],
+  "sites": [
+    {
+      "catalog": "snow",
+      "url": "https://snow-deal-mzff11ssg-lifan-chens-projects.vercel.app/",
+      "observed_at": "2026-11-04T04:41:01.714704+00:00",
+      "sample_size": 60,
+      "passed": 35,
+      "missing": {
+        "numeric_reference": 0,
+        "reference_basis": 0,
+        "selected_variant": 25,
+        "observation_time": 0,
+        "limitations": 0
+      },
+      "sample": [
+        {
+          "name": "Ogasaka 00 - 01 Keos PG Skis (No Bindings / Flat) NEW !! 185,190cm",
+          "checks": {
+            "numeric_reference": true,
+            "reference_basis": true,
+            "selected_variant": false,
+            "observation_time": true,
+            "limitations": true
+          },
+          "evidence": "Price & variant details Discount compares this offer with the retailer\u2019s reference price. That reference is not an independently verified former selling price or an all-time low. Exact variant not supplied; confirm options and stock at the store. Shipping and tax excluded. Source checked Nov 04, 04:00 UTC; price and availability can change at checkout.",
+          "url": "https://www.coloradodiscountskis.com/store/Ogasaka_Keos_1pr_Skis.html"
+        },
+        {
+          "name": "Ogasaka 00 - 01 Unity USX Skis (No Bindings / Flat) NEW !! 185cm",
+          "checks": {
+            "numeric_reference": true,
+            "reference_basis": true,
+            "selected_variant": false,
+            "observation_time": true,
+            "limitations": true
+          },
+          "evidence": "Price & variant details Discount compares this offer with the retailer\u2019s reference price. That reference is not an independently verified former selling price or an all-time low. Exact variant not supplied; confirm options and stock at the store. Shipping and tax excluded. Source checked Nov 04, 04:00 UTC; price and availability can change at checkout.",
+          "url": "https://www.coloradodiscountskis.com/store/Ogasaka_Unity_USX_Skis.html"
+        }
+      ],
+      "missing_variant_cards": [
+        {
+          "name": "Ogasaka 00 - 01 Keos PG Skis (No Bindings / Flat) NEW !! 185,190cm",
+          "url": "https://www.coloradodiscountskis.com/store/Ogasaka_Keos_1pr_Skis.html"
+        },
+        {
+          "name": "Ogasaka 00 - 01 Unity USX Skis (No Bindings / Flat) NEW !! 185cm",
+          "url": "https://www.coloradodiscountskis.com/store/Ogasaka_Unity_USX_Skis.html"
+        },
+        {
+          "name": "Ogasaka 00 - 01 Unity C-VX Skis (No Bindings / Flat) NEW !! 185cm",
+          "url": "https://www.coloradodiscountskis.com/store/Ogasaka_Unity_CVX_Skis.html"
+        },
+        {
+          "name": "Ogasaka 00 - 01 Triun G Light Skis (No Bindings / Flat) NEW !! 180cm",
+          "url": "https://www.coloradodiscountskis.com/store/Ogasaka_Truin_Lt_Skis.html"
+        },
+        {
+          "name": "Ogasaka 00 - 01 FC White Skis (No Bindings / Flat) NEW !! 185cm",
+          "url": "https://www.coloradodiscountskis.com/store/Ogasaka_FC_White_Skis.html"
+        },
+        {
+          "name": "2024 XO H21 Ski",
+          "url": "https://www.skiessentials.com/products/2024-xo-h21-ski-skxo0187h21"
+        },
+        {
+          "name": "Fischer 2020 Fischer Rc4 Worldcup GS S15 Curv Booster Women's Ski",
+          "url": "https://www.skiessentials.com/products/2020-fischer-rc4-worldcup-gs-s15-curv-booster-women-s-ski"
+        },
+        {
+          "name": "2024 XO V7 Ski",
+          "url": "https://www.skiessentials.com/products/2024-xo-v7-ski-skxo0177v7"
+        },
+        {
+          "name": "Nordica 2023 Nordica Santa Ana Free 110 Women's Skis",
+          "url": "https://www.skiessentials.com/products/2023-nordica-santa-ana-free-110-women-s-skis"
+        },
+        {
+          "name": "Nordica One RTL Women's Ski Boots",
+          "url": "https://www.the-house.com/1114155.html?dwvar_1114155_color=blck"
+        },
+        {
+          "name": "Nordica 2023 Nordica Santa Ana 98 Women's Skis",
+          "url": "https://www.skiessentials.com/products/2023-nordica-santa-ana-98-women-s-skis"
+        },
+        {
+          "name": "Nordica 2023 Nordica Santa Ana 104 Free Women's Skis",
+          "url": "https://www.skiessentials.com/products/2023-nordica-santa-ana-104-free-women-s-skis"
+        },
+        {
+          "name": "2026 Rossignol Essential Skis",
+          "url": "https://www.skiessentials.com/products/2026-rossignol-essential-skis-rampw01"
+        },
+        {
+          "name": "Nordica 2023 Nordica Santa Ana 93 Women's Skis",
+          "url": "https://www.skiessentials.com/products/2023-nordica-santa-ana-93-women-s-skis"
+        },
+        {
+          "name": "Nordica La Nina Women's Ski Boots - Smoke, Size 4",
+          "url": "https://www.the-house.com/SS007928.html"
+        },
+        {
+          "name": "Nordica 2022 Nordica Santa Ana 93 Women's Skis",
+          "url": "https://www.skiessentials.com/products/2022-nordica-santa-ana-93-women-s-skis-0a131800"
+        },
+        {
+          "name": "Nordica 2024 Nordica Santa Ana 98 Ski",
+          "url": "https://www.skiessentials.com/products/2024-nordica-santa-ana-98-ski"
+        },
+        {
+          "name": "2024 Rossignol Experience 86 Basalt Open",
+          "url": "https://www.skiessentials.com/products/2024-rossignol-experience-86-basalt-open-ramfq04"
+        },
+        {
+          "name": "Rossignol Evo XT 65 Positrack Unisex Nordic Skis",
+          "url": "https://www.the-house.com/1116714.html"
+        },
+        {
+          "name": "Dalbello Sports Chakra Elevate 115 T.I. ID Ski Boot - 2023 - Women's",
+          "url": "https://www.backcountry.com/dalbello-sports-chakra-elevate-115-t.i.-id-ski-boot-womens"
+        },
+        {
+          "name": "Tyrolia Sx 4.5 Gw Ac Ski Binding",
+          "url": "https://www.backcountry.com/tyrolia-sx-4.5-gw-ac-ski-bindings-2021"
+        },
+        {
+          "name": "Look Team 4 Gripwalk 2022",
+          "url": "https://www.backcountry.com/look-team-4-gripwalk-2022"
+        },
+        {
+          "name": "Tyrolia Sx 7.5 Gw Ski Binding",
+          "url": "https://www.backcountry.com/tyrolia-sx-7.5-gw-ski-bindings-2021"
+        },
+        {
+          "name": "Dalbello Sports Lupo Ax 120 Ski Boot",
+          "url": "https://www.backcountry.com/dalbello-sports-lupo-ax-120-ski-boots-2021"
+        },
+        {
+          "name": "Marker 2021 Marker XComp 24 Bindings",
+          "url": "https://www.skiessentials.com/products/2021-marker-xcomp-24-bindings-0c016000001-black-red"
+        }
+      ]
+    },
+    {
+      "catalog": "cycling",
+      "url": "https://bigring.clifan.com/",
+      "observed_at": "2026-11-04T04:41:00.163401+00:00",
+      "sample_size": 24,
+      "passed": 24,
+      "missing": {
+        "numeric_reference": 0,
+        "reference_basis": 0,
+        "selected_variant": 0,
+        "observation_time": 0,
+        "limitations": 0
+      },
+      "sample": [
+        {
+          "name": "Vaast Bikes E/1 XT/SLX 27.5 E-Bike - Nostalgic Sea Blue-Ocean Frost",
+          "checks": {
+            "numeric_reference": true,
+            "reference_basis": true,
+            "selected_variant": true,
+            "observation_time": true,
+            "limitations": true
+          },
+          "evidence": "Price & variant details 80.5% off = ($7,699.99 \u2212 $1,499.99) \u00f7 $7,699.99 \u00d7 100. Reference: retailer compare-at price. Not a verified former selling price or all-time low. Variant 48408222335216 \u00b7 Nostalgic Sea Blue - Ocean Frost / Medium. 1 eligible variant; this card shows the deepest discount that matches your filters. Shipping and tax excluded. Price and stock may change at checkout. View this variant\u2019s observed prices \u2192",
+          "url": "https://coloradocyclist.com/products/vaast-bikes-e-1-xt-slx-27-5-e-bike-nostalgic-sea-blue-ocean-frost?currency=USD&variant=48408222335216"
+        },
+        {
+          "name": "Vaast Bikes E/1 Enviolo 27.5 E-Bike - Vibrant Berry Red-Black Cherry",
+          "checks": {
+            "numeric_reference": true,
+            "reference_basis": true,
+            "selected_variant": true,
+            "observation_time": true,
+            "limitations": true
+          },
+          "evidence": "Price & variant details 77.0% off = ($8,699.99 \u2212 $1,999.99) \u00f7 $8,699.99 \u00d7 100. Reference: retailer compare-at price. Not a verified former selling price or all-time low. Variant 48408222236912 \u00b7 Vibrant Berry Red - Black Cherry / Medium. 1 eligible variant; this card shows the deepest discount that matches your filters. Shipping and tax excluded. Price and stock may change at checkout. View this variant\u2019s observed prices \u2192",
+          "url": "https://coloradocyclist.com/products/vaast-bikes-e-1-enviolo-27-5-e-bike-vibrant-berry-red-black-cherry?currency=USD&variant=48408222236912"
+        }
+      ],
+      "missing_variant_cards": []
+    },
+    {
+      "catalog": "tools",
+      "url": "https://benchdrop.clifan.com/",
+      "observed_at": "2026-11-04T04:41:01.380501+00:00",
+      "sample_size": 24,
+      "passed": 24,
+      "missing": {
+        "numeric_reference": 0,
+        "reference_basis": 0,
+        "selected_variant": 0,
+        "observation_time": 0,
+        "limitations": 0
+      },
+      "sample": [
+        {
+          "name": "Axiom 2x2 CNC Table with Air-Cooled Spindle",
+          "checks": {
+            "numeric_reference": true,
+            "reference_basis": true,
+            "selected_variant": true,
+            "observation_time": true,
+            "limitations": true
+          },
+          "evidence": "Price & variant details 57.5% off = ($4,699 \u2212 $1,999) \u00f7 $4,699 \u00d7 100. Reference: retailer compare-at price. Not a verified former selling price or all-time low. Variant 47708931948761 \u00b7 Options not specified. 1 eligible variant; this card shows the deepest discount that matches your filters. Shipping and tax excluded. Price and stock may change at checkout. View this variant\u2019s observed prices \u2192",
+          "url": "https://www.oaktreesupply.com/products/axiom-2x2-cnc-table-with-spindle?currency=USD&variant=47708931948761"
+        },
+        {
+          "name": "DEWALT 20V MAX XR Brushless Cordless Router (Tool Only)",
+          "checks": {
+            "numeric_reference": true,
+            "reference_basis": true,
+            "selected_variant": true,
+            "observation_time": true,
+            "limitations": true
+          },
+          "evidence": "Price & variant details 52.2% off = ($249 \u2212 $119) \u00f7 $249 \u00d7 100. Reference: retailer compare-at price. Not a verified former selling price or all-time low. Variant 31231201247319 \u00b7 Options not specified. 1 eligible variant; this card shows the deepest discount that matches your filters. Shipping and tax excluded. Price and stock may change at checkout. View this variant\u2019s observed prices \u2192",
+          "url": "https://fastenersinc.myshopify.com/products/dcw600b-20v-max-compact-router-dewalt?currency=USD&variant=31231201247319"
+        }
+      ],
+      "missing_variant_cards": []
+    }
+  ]
+}
