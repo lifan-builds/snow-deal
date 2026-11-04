@@ -1,0 +1,830 @@
+{
+  "workflow": 41776930375,
+  "workflow_url": "https://github.com/lifan-builds/snow-deal/actions/runs/41776930375",
+  "conclusion": "success",
+  "commit": "ad80035129ce3103bbd154c3b67efe9b583e3d58",
+  "deployment": "https://snow-deal-4blja4hw0-lifan-chens-projects.vercel.app",
+  "deployment_id": "dpl_2ZekNtWWiz95Nwdm7FDpcsUsHhrR",
+  "scrape": {
+    "configured_stores": 1,
+    "stores_with_deals": 1,
+    "total_deals": 482,
+    "zero_count_stores": [],
+    "store_summaries": [
+      {
+        "store": "Ski Essentials",
+        "deals": 482,
+        "missing_category": 0,
+        "missing_image": 0,
+        "missing_sizes": 2,
+        "missing_lengths": 0,
+        "length_eligible": 313,
+        "variant_offers": 1250,
+        "deals_with_variants": 482,
+        "confirmed_size_deals": 480
+      }
+    ],
+    "missing_category": 0,
+    "missing_image": 0,
+    "missing_sizes": 2,
+    "missing_lengths": 0,
+    "length_eligible": 313,
+    "variant_offers": 1250,
+    "deals_with_variants": 482,
+    "confirmed_size_deals": 480,
+    "checked_at": "2026-11-04T05:08:09.610783",
+    "outcomes": {
+      "Ski Essentials": {
+        "errors": 0,
+        "pages": 48,
+        "collections": [
+          {
+            "url": "https://www.skiessentials.com/collections/alpine-skis",
+            "pages": 25,
+            "products": 282,
+            "status": "complete"
+          },
+          {
+            "url": "https://www.skiessentials.com/collections/snowboards",
+            "pages": 6,
+            "products": 61,
+            "status": "complete"
+          },
+          {
+            "url": "https://www.skiessentials.com/collections/ski-boots",
+            "pages": 8,
+            "products": 91,
+            "status": "complete"
+          },
+          {
+            "url": "https://www.skiessentials.com/collections/snowboard-boots",
+            "pages": 2,
+            "products": 28,
+            "status": "complete"
+          },
+          {
+            "url": "https://www.skiessentials.com/collections/alpine-ski-bindings",
+            "pages": 4,
+            "products": 27,
+            "status": "complete"
+          },
+          {
+            "url": "https://www.skiessentials.com/collections/snowboard-bindings",
+            "pages": 3,
+            "products": 40,
+            "status": "complete"
+          }
+        ]
+      }
+    },
+    "withheld_stores": [],
+    "published_deals": 482,
+    "publish_candidate_quality": {
+      "configured_stores": 1,
+      "stores_with_deals": 1,
+      "total_deals": 482,
+      "zero_count_stores": [],
+      "store_summaries": [
+        {
+          "store": "Ski Essentials",
+          "deals": 482,
+          "missing_category": 0,
+          "missing_image": 0,
+          "missing_sizes": 2,
+          "missing_lengths": 0,
+          "length_eligible": 313,
+          "variant_offers": 1250,
+          "deals_with_variants": 482,
+          "confirmed_size_deals": 480
+        }
+      ],
+      "missing_category": 0,
+      "missing_image": 0,
+      "missing_sizes": 2,
+      "missing_lengths": 0,
+      "length_eligible": 313,
+      "variant_offers": 1250,
+      "deals_with_variants": 482,
+      "confirmed_size_deals": 480
+    }
+  },
+  "production": {
+    "verified_at": "2026-11-04T05:09:29.235338+00:00",
+    "production_origin": "https://snow-deal-4blja4hw0-lifan-chens-projects.vercel.app",
+    "expected_checked_at": "2026-11-04T05:08:09.610783",
+    "checks": [
+      {
+        "route": "/",
+        "params": {
+          "store": "Ski Essentials",
+          "q": "XO H21",
+          "size": "178",
+          "min_discount": 80,
+          "max_price": 200
+        },
+        "count": 1
+      },
+      {
+        "route": "/",
+        "params": {
+          "store": "Ski Essentials",
+          "q": "XO H21",
+          "size": "172",
+          "min_discount": 80,
+          "max_price": 200
+        },
+        "count": 0
+      },
+      {
+        "route": "/deals",
+        "params": {
+          "store": "Ski Essentials",
+          "q": "XO H21",
+          "size": "178",
+          "min_discount": 80,
+          "max_price": 200
+        },
+        "count": 1
+      },
+      {
+        "route": "/deals",
+        "params": {
+          "store": "Ski Essentials",
+          "q": "XO H21",
+          "size": "172",
+          "min_discount": 80,
+          "max_price": 200
+        },
+        "count": 0
+      },
+      {
+        "route": "/",
+        "params": {
+          "store": "Ski Essentials",
+          "size": "178",
+          "min_discount": 40,
+          "max_price": 700
+        },
+        "count": 7,
+        "precision_and_order_verified": true
+      }
+    ],
+    "health": {
+      "status": "ok",
+      "last_attempt_at": "2026-11-04T05:08:09.610783",
+      "checked_at": "2026-11-04T05:08:09.610783",
+      "stores_with_deals": 30
+    },
+    "first_page_reference_evidence": {
+      "cards": 60,
+      "complete": 46,
+      "percent": 76.66666666666667,
+      "missing_by_store": {
+        "Colorado Discount Skis": 5,
+        "The House": 3,
+        "Backcountry": 5,
+        "The Circle Whistler": 1
+      },
+      "scope": "Five disclosure fields, not merchant accuracy or historical street-price verification"
+    }
+  },
+  "history_and_host": {
+    "snapshot_sha256": "94f9ee3a78a1a0bee6940f2e0bb802e052151a05a38f88d65714147ba1df389c",
+    "history": {
+      "price_history": {
+        "previous_rows": 150458,
+        "current_rows": 150940,
+        "missing_previous_rows": 0
+      },
+      "offer_observations": {
+        "previous_rows": 178039,
+        "current_rows": 179289,
+        "missing_previous_rows": 0
+      }
+    },
+    "custom_hostname": {
+      "local_result": "failed",
+      "error_type": "ConnectError",
+      "error": "[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1028)",
+      "runner_verification": "passed in workflow41776930375",
+      "certificate_checks": "not bypassed"
+    }
+  },
+  "postpublication_merchant_audit": {
+    "sampled_at": "2026-11-04T05:10:11.462963+00:00",
+    "population": 482,
+    "seed": 20261104,
+    "method": "published snapshot query; top ten selected discounts plus twenty seeded products; separate exact-option product HTML",
+    "checks": [
+      {
+        "url": "https://www.skiessentials.com/products/2024-xo-h21-ski-skxo0187h21?ski+size=166",
+        "variant_key": "47335044645160",
+        "price": 199.0,
+        "reference": 1250.0,
+        "size": "166",
+        "check_started_at": "2026-11-04T05:10:13.515185+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "47335044645160",
+        "checked_at": "2026-11-04T05:10:14.186092+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2020-fischer-rc4-worldcup-gs-s15-curv-booster-women-s-ski?ski+size=188",
+        "variant_key": "45097730441512",
+        "price": 199.0,
+        "reference": 1200.0,
+        "size": "188",
+        "check_started_at": "2026-11-04T05:10:16.191526+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "45097730441512",
+        "checked_at": "2026-11-04T05:10:16.610002+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2024-xo-v7-ski-skxo0177v7?ski+size=172",
+        "variant_key": "47335044251944",
+        "price": 199.0,
+        "reference": 1000.0,
+        "size": "172",
+        "check_started_at": "2026-11-04T05:10:18.615401+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "47335044251944",
+        "checked_at": "2026-11-04T05:10:19.039248+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2023-nordica-santa-ana-free-110-women-s-skis?ski+size=177",
+        "variant_key": "45097717039400",
+        "price": 169.95,
+        "reference": 799.99,
+        "size": "177",
+        "check_started_at": "2026-11-04T05:10:21.044630+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "45097717039400",
+        "checked_at": "2026-11-04T05:10:21.638420+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2023-nordica-santa-ana-104-free-women-s-skis?ski+size=179",
+        "variant_key": "44851518505256",
+        "price": 169.95,
+        "reference": 749.99,
+        "size": "179",
+        "check_started_at": "2026-11-04T05:10:23.643824+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "44851518505256",
+        "checked_at": "2026-11-04T05:10:24.050502+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2023-nordica-santa-ana-98-women-s-skis?ski+size=179",
+        "variant_key": "44851518701864",
+        "price": 169.95,
+        "reference": 749.99,
+        "size": "179",
+        "check_started_at": "2026-11-04T05:10:26.055755+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "44851518701864",
+        "checked_at": "2026-11-04T05:10:26.415222+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2026-rossignol-essential-skis-rampw01?ski+size=155",
+        "variant_key": "51331506995496",
+        "price": 199.0,
+        "reference": 819.95,
+        "size": "155",
+        "check_started_at": "2026-11-04T05:10:28.420578+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "51331506995496",
+        "checked_at": "2026-11-04T05:10:28.829596+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2023-nordica-santa-ana-93-women-s-skis?ski+size=179",
+        "variant_key": "44862952735016",
+        "price": 169.95,
+        "reference": 699.99,
+        "size": "179",
+        "check_started_at": "2026-11-04T05:10:30.835075+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "44862952735016",
+        "checked_at": "2026-11-04T05:10:31.330773+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2022-nordica-santa-ana-93-women-s-skis-0a131800?ski+size=179",
+        "variant_key": "52311381115176",
+        "price": 169.95,
+        "reference": 649.99,
+        "size": "179",
+        "check_started_at": "2026-11-04T05:10:33.336191+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "52311381115176",
+        "checked_at": "2026-11-04T05:10:33.750353+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2024-nordica-santa-ana-98-ski?ski+size=179",
+        "variant_key": "45419277484328",
+        "price": 199.0,
+        "reference": 749.99,
+        "size": "179",
+        "check_started_at": "2026-11-04T05:10:35.756408+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "45419277484328",
+        "checked_at": "2026-11-04T05:10:36.308908+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2026-union-ultra-women-s-snowboard-bindings-11020200?color=jess+kimura&binding+size=s",
+        "variant_key": "50772449755432",
+        "price": 209.95,
+        "reference": 329.95,
+        "size": "S",
+        "check_started_at": "2026-11-04T05:10:38.313022+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "50772449755432",
+        "checked_at": "2026-11-04T05:10:38.709310+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2026-k2-mindbender-96c-women-s-skis-ks250966?ski+size=148",
+        "variant_key": "50062122254632",
+        "price": 419.97,
+        "reference": 699.95,
+        "size": "148",
+        "check_started_at": "2026-11-04T05:10:40.714559+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "50062122254632",
+        "checked_at": "2026-11-04T05:10:41.181255+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2025-dalbello-cabrio-75-mv-women-s-ski-boot-d2406009?boot+size=22.5",
+        "variant_key": "52371737477416",
+        "price": 269.95,
+        "reference": 499.99,
+        "size": "22.5",
+        "check_started_at": "2026-11-04T05:10:43.181895+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "52371737477416",
+        "checked_at": "2026-11-04T05:10:43.624803+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2025-tecnica-mach1-95-mv-women-s-ski-boots-20159cg2?boot+size=26.5",
+        "variant_key": "49054347755816",
+        "price": 369.0,
+        "reference": 649.99,
+        "size": "26.5",
+        "check_started_at": "2026-11-04T05:10:45.630187+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "49054347755816",
+        "checked_at": "2026-11-04T05:10:46.043064+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2026-atomic-bent-110-skis-aa0030692?ski+size=164",
+        "variant_key": "50062114488616",
+        "price": 429.95,
+        "reference": 749.95,
+        "size": "164",
+        "check_started_at": "2026-11-04T05:10:48.048448+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "50062114488616",
+        "checked_at": "2026-11-04T05:10:48.456876+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2026-line-pandora-85-skis-ln250925?ski+size=147",
+        "variant_key": "50062119371048",
+        "price": 299.0,
+        "reference": 499.95,
+        "size": "147",
+        "check_started_at": "2026-11-04T05:10:50.462146+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "50062119371048",
+        "checked_at": "2026-11-04T05:10:50.811090+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2026-volkl-mantra-102-skis-v2510111?ski+size=170",
+        "variant_key": "50062123139368",
+        "price": 569.99,
+        "reference": 949.99,
+        "size": "170",
+        "check_started_at": "2026-11-04T05:10:52.816528+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "50062123139368",
+        "checked_at": "2026-11-04T05:10:53.295012+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2026-rossignol-pure-elite-120-gw-skis-boots-rbn2210?boot+size=23.5",
+        "variant_key": "51544764514600",
+        "price": 299.0,
+        "reference": 849.95,
+        "size": "23.5",
+        "check_started_at": "2026-11-04T05:10:55.300506+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "51544764514600",
+        "checked_at": "2026-11-04T05:10:55.706322+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2025-blizzard-anomaly-84-r-skis-w-tcp-10-bindings-8a426000?ski+size=176",
+        "variant_key": "51523106144552",
+        "price": 379.95,
+        "reference": 699.99,
+        "size": "176",
+        "check_started_at": "2026-11-04T05:10:57.709425+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "51523106144552",
+        "checked_at": "2026-11-04T05:10:58.157719+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2026-k2-contour-snowboard-boots-kb251300?color=light+grey&boot+size=6",
+        "variant_key": "50205829333288",
+        "price": 219.95,
+        "reference": 379.95,
+        "size": "6",
+        "check_started_at": "2026-11-04T05:11:00.163280+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "50205829333288",
+        "checked_at": "2026-11-04T05:11:00.611201+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2025-rossignol-rallybird-94-open-women-s-skis-ranml02?ski+size=156",
+        "variant_key": "49794825748776",
+        "price": 229.0,
+        "reference": 700.0,
+        "size": "156",
+        "check_started_at": "2026-11-04T05:11:02.616861+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "49794825748776",
+        "checked_at": "2026-11-04T05:11:03.045748+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2025-k2-anthem-115-boa-ski-boots-ks240091?boot+size=22.5",
+        "variant_key": "49012550238504",
+        "price": 539.97,
+        "reference": 899.95,
+        "size": "22.5",
+        "check_started_at": "2026-11-04T05:11:05.051635+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "49012550238504",
+        "checked_at": "2026-11-04T05:11:09.867541+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2026-jones-equinox-women-s-snowboard-boots-bnweqx26?color=deep+coral&binding+size=s",
+        "variant_key": "50205829169448",
+        "price": 229.0,
+        "reference": 299.95,
+        "size": "S",
+        "check_started_at": "2026-11-04T05:11:11.873084+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "50205829169448",
+        "checked_at": "2026-11-04T05:11:12.242276+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2024-rossignol-hero-athlete-mogul-accelere?ski+size=166",
+        "variant_key": "45595034517800",
+        "price": 449.95,
+        "reference": 749.95,
+        "size": "166",
+        "check_started_at": "2026-11-04T05:11:14.245998+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "45595034517800",
+        "checked_at": "2026-11-04T05:11:14.591761+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2026-volkl-mantra-m7-skis-v2510112?ski+size=163",
+        "variant_key": "50062124548392",
+        "price": 557.99,
+        "reference": 929.99,
+        "size": "163",
+        "check_started_at": "2026-11-04T05:11:16.597028+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "50062124548392",
+        "checked_at": "2026-11-04T05:11:17.032000+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2025-dps-wailer-100-skis-sw100?ski+size=184",
+        "variant_key": "48316653895976",
+        "price": 899.95,
+        "reference": 1299.95,
+        "size": "184",
+        "check_started_at": "2026-11-04T05:11:19.037420+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "48316653895976",
+        "checked_at": "2026-11-04T05:11:19.487308+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2026-k2-mindbender-90c-women-s-skis-ks250967?ski+size=166",
+        "variant_key": "50062116847912",
+        "price": 359.97,
+        "reference": 599.95,
+        "size": "166",
+        "check_started_at": "2026-11-04T05:11:21.489854+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "50062116847912",
+        "checked_at": "2026-11-04T05:11:21.925592+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2026-salomon-rumble-fish-women-s-snowboard-l47945400?board+size=144",
+        "variant_key": "50087526891816",
+        "price": 399.95,
+        "reference": 649.95,
+        "size": "144",
+        "check_started_at": "2026-11-04T05:11:23.931067+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "50087526891816",
+        "checked_at": "2026-11-04T05:11:24.858199+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2024-dynastar-e-pro-99-open-women-s-ski?ski+size=154",
+        "variant_key": "44862926782760",
+        "price": 349.0,
+        "reference": 799.95,
+        "size": "154",
+        "check_started_at": "2026-11-04T05:11:26.863748+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "44862926782760",
+        "checked_at": "2026-11-04T05:11:27.268112+00:00"
+      },
+      {
+        "url": "https://www.skiessentials.com/products/2026-arbor-gps-snowboard-12639?board+size=156",
+        "variant_key": "50087530070312",
+        "price": 369.95,
+        "reference": 629.95,
+        "size": "156",
+        "check_started_at": "2026-11-04T05:11:29.273683+00:00",
+        "checks": {
+          "identity": true,
+          "price": true,
+          "reference": true,
+          "currency": true,
+          "stock": true,
+          "options": true,
+          "destination_selection": true
+        },
+        "passed": true,
+        "actual_selected": "50087530070312",
+        "checked_at": "2026-11-04T05:11:29.774984+00:00"
+      }
+    ],
+    "complete": true,
+    "finished_at": "2026-11-04T05:11:29.775651+00:00",
+    "passed": true
+  },
+  "limitations": [
+    "Thirty sampled exact source offers do not establish population-wide accuracy or competitor superiority.",
+    "Reference prices are retailer comparisons, not verified historical street prices.",
+    "Fourteen of sixty first-page snow cards still lack selected variant evidence.",
+    "Custom hostname works on the GitHub runner but still fails TLS locally; provider production URL verified without bypass."
+  ]
+}
