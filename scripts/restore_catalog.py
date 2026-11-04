@@ -1,5 +1,6 @@
 """Restore an explicit public catalog snapshot; never silently discard its history."""
 import argparse
+import os
 import sqlite3
 import sys
 import tempfile
@@ -15,11 +16,14 @@ RELEASE_API = "https://api.github.com/repos/lifan-builds/snow-deal-data/releases
 MAX_BYTES = 100 * 1024 * 1024
 
 
-def restore(catalog: str, destination: Path, *, bootstrap=False, transport=None) -> str:
+def restore(catalog: str, destination: Path, *, bootstrap=False, transport=None,
+            github_token: str | None = None) -> str:
     if destination.exists():
         raise ValueError("Refusing to overwrite an existing snapshot")
     with httpx.Client(timeout=60, follow_redirects=True, transport=transport) as client:
-        response = client.get(RELEASE_API)
+        # Authenticate only this fixed metadata endpoint, never the asset/CDN request.
+        headers = {"Authorization": f"Bearer {github_token}"} if github_token else {}
+        response = client.get(RELEASE_API, headers=headers, follow_redirects=False)
         response.raise_for_status()
         assets = response.json().get("assets")
         if not isinstance(assets, list):
@@ -57,7 +61,8 @@ def main():
     parser.add_argument("--database", type=Path, required=True)
     parser.add_argument("--bootstrap", action="store_true")
     args = parser.parse_args()
-    print(restore(args.catalog, args.database, bootstrap=args.bootstrap))
+    print(restore(args.catalog, args.database, bootstrap=args.bootstrap,
+                  github_token=os.environ.get("GITHUB_TOKEN")))
 
 
 if __name__ == "__main__":
