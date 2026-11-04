@@ -14,3 +14,7 @@ Parallel release work remains authoritative: corrected cycling/tools workflow 41
 Probe 91868 and candidate 19490 both completed successfully. The independent sample passed 30/30 in 80 seconds; each exact offer also matches the later completed candidate. Reconciliation: 906 prior listings → 482 exact eligible products; 476 retained URLs, six additions, 424 configurable bundles excluded, six without a supported discounted available variant. One retained product changes price after exact-variant selection. No source URLs disappeared from the complete feed. The 605-test suite and exact CI lint pass.
 
 Corrected catalog workflow 41774045047 completed successfully for both catalogs. Big Ring has 19/19 fresh sources and exact hash 3a19461553893c7f9b3314ffc606d31e5f21d281a9202eca44dd6352cb5da1a6; Bench Drop has 10/10 and f26f493bc32eb16ba870a124a38a3401258c78b139e63792807cd21822df8bc2. Both passed 30/30 merchant checks. See the dated rollout receipt for history and source details.
+
+## Completed rollout
+
+PR #15 and workflow `41776930375` completed successfully. The provider production deployment and runner custom-host checks serve the expected timestamp. Full/partial exact-size checks pass, all previous history rows are retained, and the fresh postpublication source sample passes 30/30 within 15 minutes. See `docs/benchmarks/2026-11-04-skiessentials-rollout.json`. The source adapter task is complete; the broader competitive goal remains active.
