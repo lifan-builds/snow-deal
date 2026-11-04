@@ -82,16 +82,40 @@ def validate_product(card: dict, raw: dict, currency: str | None) -> dict:
 async def audit_sample(cards: list[dict], allowed_domains: dict[str, str], *, delay: float = 5.0,
                        transport=None) -> list[dict]:
     results = []
+    sampled_at = datetime.now(UTC)
+    expired = False
+
+    def within_window(now):
+        nonlocal expired
+        expired = expired or not 0 <= (now - sampled_at).total_seconds() <= 15 * 60
+        return not expired
+
+    def record(row):
+        finished_at = datetime.now(UTC)
+        timely = within_window(finished_at)
+        row.update(sampled_at=sampled_at.isoformat(), checked_at=finished_at.isoformat(),
+                   within_audit_window=timely)
+        if not timely:
+            row.update(status='inconclusive', reason='Outside the 15-minute audit observation window')
+        results.append(row)
     currencies = {}
     blocked = set()
     async with httpx.AsyncClient(headers=DEFAULT_HEADERS, timeout=20, transport=transport,
                                  follow_redirects=False) as client:
+        async def fetch(url):
+            if not within_window(datetime.now(UTC)):
+                raise TimeoutError('Audit observation window expired')
+            return await fetch_listing(client, url, delay)
+
         for card in cards:
             offer = card["offer"]
             parts = urlsplit(offer["url"])
             domain = allowed_domains.get(card["store"])
             row = {"name": card["name"], "store": card["store"], "offer": offer,
-                   "checked_at": datetime.now(UTC).isoformat()}
+                   "check_started_at": datetime.now(UTC).isoformat()}
+            if not within_window(datetime.now(UTC)):
+                record({**row, 'status': 'inconclusive', 'reason': 'Audit observation window expired'})
+                continue
             sku_product = sku_destination(offer["url"], offer["variant_key"])
             taylor_product = taylor_destination(offer['url'], offer['variant_key'])
             rockler_product = rockler_destination(offer['url'], offer['variant_key'])
@@ -99,7 +123,7 @@ async def audit_sample(cards: list[dict], allowed_domains: dict[str, str], *, de
             if (not domain or not safe_url(offer["url"], domain)
                     or (not (taylor_product or rockler_product or bikecloset_product) and ("/products/" not in parts.path
                         or (not sku_product and parse_qs(parts.query).get("variant") != [offer["variant_key"]])))):
-                results.append({**row, "status": "inconclusive", "reason": "Unsupported or unsafe product destination"})
+                record({**row, "status": "inconclusive", "reason": "Unsupported or unsafe product destination"})
                 continue
             origin = f"{parts.scheme}://{parts.netloc}"
             prefix = parts.path.split("/products/", 1)[0]
@@ -108,57 +132,59 @@ async def audit_sample(cards: list[dict], allowed_domains: dict[str, str], *, de
                                   urlencode({"currency": card.get("currency", "USD")}), ""))
             row["evidence_url"] = offer["url"] if sku_product or taylor_product or rockler_product else endpoint
             if origin in blocked:
-                results.append({**row, "status": "inconclusive", "reason": "Host blocked or rate-limited earlier in this audit"})
+                record({**row, "status": "inconclusive", "reason": "Host blocked or rate-limited earlier in this audit"})
                 continue
             try:
                 if bikecloset_product:
                     parent_id, variant_id = offer['variant_key'].split('|')[0].split(':')
                     row['evidence_url'] = BIKECLOSET_API + '/' + variant_id
-                    response = await fetch_listing(client, row['evidence_url'], delay)
+                    response = await fetch(row['evidence_url'])
                     parent_url = BIKECLOSET_API + '/' + parent_id
-                    parent = await fetch_listing(client, parent_url, delay)
+                    parent = await fetch(parent_url)
                     row.update(response_sha256=hashlib.sha256(response.content).hexdigest(),
                                parent_evidence_url=parent_url,
                                parent_response_sha256=hashlib.sha256(parent.content).hexdigest())
                     row.update(validate_bikecloset_product(card, parent.json(), response.json()))
-                    results.append(row)
+                    record(row)
                     continue
                 if rockler_product:
-                    response = await fetch_listing(client, offer['url'], delay)
+                    response = await fetch(offer['url'])
                     product = rockler_data(response.text, offer['url'])
                     evidence_url = stock_url(product)
-                    stock = await fetch_listing(client, evidence_url, delay)
+                    stock = await fetch(evidence_url)
                     row.update(response_sha256=hashlib.sha256(response.content).hexdigest(),
                                stock_evidence_url=evidence_url,
                                stock_response_sha256=hashlib.sha256(stock.content).hexdigest())
                     row.update(validate_rockler_product(card, product, delivery_data(stock.json())))
-                    results.append(row)
+                    record(row)
                     continue
                 if taylor_product:
-                    response = await fetch_listing(client, offer['url'], delay)
+                    response = await fetch(offer['url'])
                     row['response_sha256'] = hashlib.sha256(response.content).hexdigest()
                     row.update(validate_taylor_product(card, taylor_data(response.text, offer['url'])))
-                    results.append(row)
+                    record(row)
                     continue
                 if sku_product:
-                    response = await fetch_listing(client, offer["url"], delay)
+                    response = await fetch(offer["url"])
                     row["response_sha256"] = hashlib.sha256(response.content).hexdigest()
                     row.update(validate_sku_product(card, structured_products(response.text)))
-                    results.append(row)
+                    record(row)
                     continue
                 if origin not in currencies:
-                    response = await fetch_listing(client, currency_url, delay)
+                    response = await fetch(currency_url)
                     # Only the currency is retained from this new anonymous session.
                     currencies[origin] = response.json().get("currency")
                 if currencies[origin] != card.get("currency", "USD"):
-                    results.append({**row, "status": "inconclusive", "reason": "Presentment currency not confirmed"})
+                    record({**row, "status": "inconclusive", "reason": "Presentment currency not confirmed"})
                     continue
-                response = await fetch_listing(client, endpoint, delay)
+                response = await fetch(endpoint)
                 raw = response.json()
                 if not isinstance(raw, dict):
                     raise TypeError("Malformed product")
                 row["response_sha256"] = hashlib.sha256(response.content).hexdigest()
                 row.update(validate_product(card, raw, currencies[origin]))
+            except TimeoutError:
+                row.update(status='inconclusive', reason='Audit observation window expired')
             except httpx.HTTPStatusError as exc:
                 status = exc.response.status_code
                 if status in {403, 429}:
@@ -166,7 +192,7 @@ async def audit_sample(cards: list[dict], allowed_domains: dict[str, str], *, de
                 row.update(status="inconclusive", reason=f"HTTP {status}")
             except (httpx.HTTPError, ValueError, TypeError, AttributeError, KeyError):
                 row.update(status="inconclusive", reason="Response could not be verified")
-            results.append(row)
+            record(row)
     return results
 
 
