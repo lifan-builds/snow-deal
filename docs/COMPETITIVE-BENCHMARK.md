@@ -1,10 +1,10 @@
-# Competitive benchmark — updated 4 November 2026 UTC
+# Competitive benchmark — updated 5 November 2026 UTC
 
 ## Decision
 
 Win on **finding the deepest usable discount on expensive equipment**, with a trustworthy purchase link and little effort. A beautiful card with a wrong size or inflated reference is a failure. Percentage off remains the primary ranking key; cash savings break ties within the same currency. Revenue, imagery and reviews never move an inferior discount above a better eligible offer.
 
-We do **not yet have evidence that all three sites beat every competitor**. The [verified PR17 rollout](benchmarks/2026-11-04-pr17-rollout.json) serves 20 fresh cycling sources, of which 15 contribute a deal at least 40% off above the reference floor, and 11 fresh tools sources with six useful retailers. Big Ring has 1,347 qualifying in-stock listings / 166 deep deals; Bench Drop has 454 / 31. Both independent 30-offer merchant samples pass, with exact live snapshot hashes and prior-day history preserved. Competitors already offer broad coverage, product matching, price history and alerts. The registry includes 22 relevant services, not the entire internet. The [updated matrix](benchmarks/2026-11-04-pr17-matrix.md) still supports four strict leads among 260 comparisons; unknowns, incomparable measurements and parity block the broad claim. Earlier dated receipts remain historical evidence.
+We do **not yet have evidence that all three sites beat every competitor**. The [verified November 5 rollout](benchmarks/2026-11-05-tools-recall-rollout.json) serves 20 fresh cycling sources and 11 fresh tools sources. Big Ring has 1,375 qualifying in-stock listings / 180 deals at least 40% off from 16 useful retailers; Bench Drop has 514 / 32 from 6. Both current 30-offer merchant samples pass, exact live snapshot hashes match, and prior-day history is preserved. The tools classifier recovers 69 listings on the same retained population; cycling changes reflect inventory. Competitors already offer broad coverage, product matching, price history and alerts. The registry includes 22 relevant services, not the entire internet. The [updated matrix](benchmarks/2026-11-05-tools-recall-matrix.md) retains competitors' original dates; unknowns, incomparable measurements and parity block the broad claim. Earlier dated receipts remain historical evidence.
 
 ## The ten metrics
 
@@ -58,7 +58,7 @@ Retailer outlets (evo, Powder7, Jenson, BikesOnline, Mike's Bikes, Woodcraft, Ho
 
 ## Current scorecard
 
-`docs/benchmarks/2026-11-04-pr17-matrix.json` records the updated own-site coverage and merchant audits; Endless remains an unmeasured comparator. Earlier measurements retain their original dates and files. `scripts/benchmark.py` renders the site × ten-metric matrix and exits nonzero with `--require-lead` while any applicable rival or metric lacks comparable evidence. An unknown cell is an explicit work item, not an implied win. International sites and editorial sites remain visible as capability comparators, with US direct comparisons handled separately.
+`docs/benchmarks/2026-11-05-tools-recall-matrix.json` records the updated own-site coverage and merchant audits; Endless remains an unmeasured comparator. Earlier measurements retain their original dates and files. `scripts/benchmark.py` renders the site × ten-metric matrix and exits nonzero with `--require-lead` while any applicable rival or metric lacks comparable evidence. An unknown cell is an explicit work item, not an implied win. International sites and editorial sites remain visible as capability comparators, with US direct comparisons handled separately.
 
 The November 3 pass crawled Powder Deals and Velo Bargains, inspected public competitor APIs and measured production mobile performance. Its latest production receipt has Fresh Powder at 1,768 ms median LCP, Powder Deals at 2,500 ms and Ski Finder at 1,512 ms; this supersedes the older slower-than-Powder-Deals result. The tools sample and the new cycling sample each match 30/30 merchant endpoints. Competitor merchant samples, checkout/fit and condition audits remain incomplete. Fresh Powder still trails Ski Finder in that speed sample; Big Ring lacks eligible current speed evidence. No all-metrics lead is established.
 
