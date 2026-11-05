@@ -1,0 +1,11 @@
+# Consistent manufacturer filters without losing offer history
+
+Status: implementation under the active competitive-improvement goal and standing comparable-release approval.
+
+The live cycling and tools menus split the same manufacturer across retailer vendor spellings. Selecting one spelling hides otherwise eligible offers from other stores. Cycling examples include Santa Cruz / Santa Cruz Bikes / Santa Cruz Bicycles, BMC / BMC Bikes and Look / LOOK / Look Cycle. Tools exposes FLEX / Flex and Milwaukee / Milwaukee Tool. Fix evidence-backed exact aliases across the complete current snapshot, not by fuzzy similarity or removing generic suffixes globally.
+
+Use catalog-owned explicit alias tables and one common canonical-name function for ingestion, brand filtering/facets, card display and per-offer history identity matching. Old saved brand-filter URLs must select the canonical option and return the whole alias group. Unknown brands and deliberate subbrands stay distinct unless primary evidence supports the exact alias. Retailer-as-brand inference is separate and must not be guessed.
+
+Historical records and successful observation times must not be rewritten. Existing snapshots should gain correct filtering immediately after the code deploy; future ingestion must use the same mapping. Preserve every selected offer's current/reference prices, stock/notice, size/options, purchase URL, percentage-first order and unrestricted population. Historical brand spellings must not hide earlier same-product/same-variant observations or join genuinely different manufacturers.
+
+Acceptance: meaningful alias filtering/count/pagination, legacy URL, unknown/escaping, no input mutation and cross-day history regressions. Replay both explicit public snapshots to show complete alias-group unions, unchanged unrestricted selected offers and bytes/history/freshness. Independent review and full offline CI. Deploy both existing category projects with exact current public snapshots only after checks; verify fingerprints, aliases, pagination and history. This metadata correction does not justify new freshness, stock accuracy or all-competitor claims.

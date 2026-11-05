@@ -10,6 +10,7 @@ from fastapi.templating import Jinja2Templates
 
 from deal_common.catalog.definition import Catalog
 from deal_common.catalog.health import snapshot_health
+from deal_common.catalog.identity import manufacturer_name
 from deal_common.catalog.query import FRESHNESS_HOURS, is_fresh, query
 from deal_common.catalog.storage import read_offer_history, read_sources
 from deal_common.offers import size_key
@@ -53,11 +54,13 @@ def create_app(catalog: Catalog, database: Path, *, public_url: str | None = Non
               max_price: float = Query(0, ge=0, le=1000000),
               min_discount: float = Query(0, ge=0, le=100), stock: bool = False,
               page: int = Query(1, ge=1, le=100000)):
+        if brand and catalog.brand_aliases:
+            brand = manufacturer_name(brand, brand_aliases=catalog.brand_aliases)
         filters = {"q": q, "category": category, "brand": brand, "store": store, "size": size, "format": format,
                        "platform": platform, "min_reference": min_reference, "max_price": max_price,
                        "min_discount": min_discount, "stock": stock, "page": page}
         rows = sources()
-        result = query(rows, filters)
+        result = query(rows, filters, brand_aliases=catalog.brand_aliases)
         if size:
             requested_size_key = size_key(size)
             filters["size"] = next((label for label in result["facets"]["size"]
@@ -107,9 +110,11 @@ def create_app(catalog: Catalog, database: Path, *, public_url: str | None = Non
                 for offer in item["offers"]:
                     if offer["variant_key"] == variant:
                         observations = read_offer_history(database, catalog.slug, source, item, offer,
-                                                          now=datetime.now(UTC))
+                                                          now=datetime.now(UTC), brand_aliases=catalog.brand_aliases)
+                        display_item = {**item, "brand": manufacturer_name(
+                            item["brand"], brand_aliases=catalog.brand_aliases)} if catalog.brand_aliases else item
                         return templates.TemplateResponse(request=request, name="history.html", context={
-                            "catalog": catalog, "product": item, "offer": offer, "store": source,
+                            "catalog": catalog, "product": display_item, "offer": offer, "store": source,
                             "observations": observations})
         raise HTTPException(status_code=404, detail="This variant is not in the current snapshot")
 
