@@ -1,6 +1,6 @@
 # One menu entry per existing size match
 
-Status: in progress under the user's standing instruction to improve catalog UI/data quality and publish comparable verified releases.
+Status: released and verified (PR #26); authorized under the user's standing instruction to improve catalog UI/data quality and publish comparable verified releases.
 
 Big Ring's live frame-size menu repeats labels such as M, MD, MEDIUM and Medium even though the existing exact-size matcher treats them equivalently. This makes choosing a fit harder without offering a different result. Show one deterministic menu entry for each existing size_key equivalence group. Preserve the exact selected merchant size, price, reference, stock, options and URL on cards/history. Old URLs and saved searches must continue selecting the same population and show the matching menu option selected.
 

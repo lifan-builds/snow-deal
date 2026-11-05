@@ -21,3 +21,9 @@ Independent review, publication and live fingerprint/route verification remain w
 ## Independent review
 
 Review added a configured-source/unknown-stock regression and confirmed legacy URL selection plus unchanged fixture database bytes. Final validation: 47 focused runtime cases and 828 full offline tests pass, with eight existing warnings and no new lint findings. No runtime code changed during review. See review.md.
+
+## Verified production rollout
+
+PR #26 merged as e17613d after green CI and preview checks. Both existing Vercel catalog projects are Ready and their custom domains serve the expected bundles. All 20 cycling / 11 tools source rows and all 57 cycling / 32 tools history rows remain identical to the previously audited snapshot. No observation timestamp was renewed.
+
+Ten live route checks match the exact packaged app, including legacy Medium/MD, numeric 54CM, numeric-s 50s, compound S/M, tools model identifiers and unknown selections. A 390×844 browser check confirms one M option selected for the old Medium URL, 128 size choices plus All, no horizontal overflow, and the first card still showing the retailer's Medium variant at $1,499.99 against $7,699.99. The temporary viewport was restored. See [rollout receipt](../../benchmarks/2026-11-05-size-facet-rollout.json).
