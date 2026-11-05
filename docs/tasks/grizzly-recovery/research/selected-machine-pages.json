@@ -1,0 +1,90 @@
+[
+  {
+    "url": "https://www.grizzly.com/products/shop-fox-portable-sandblaster-20-gallon/m1115",
+    "status": 200,
+    "at": "2026-11-05T23:54:32.939697+00:00",
+    "sha256": "f8c221721eb1b4b8b50c2691c33ba13b2d4530ff70fafbc66ff2829ead9eb6e4",
+    "structured_products": [
+      {
+        "@type": "Product",
+        "@id": "https://www.grizzly.com/products/shop-fox-portable-sandblaster-20-gallon/m1115#main-product",
+        "name": "Portable Sandblaster 20 Gallon",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://cdn0.grizzly.com/m1115-ebf03ea3613576802791eea32d895112"
+        },
+        "url": "https://www.grizzly.com/products/shop-fox-portable-sandblaster-20-gallon/m1115",
+        "brand": {
+          "@type": "Brand",
+          "name": "Shop Fox"
+        },
+        "category": "Sandblasters > Sandblasters",
+        "mpn": "M1115",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.grizzly.com/products/shop-fox-portable-sandblaster-20-gallon/m1115",
+          "availability": "https://schema.org/InStock",
+          "itemCondition": "https://schema.org/NewCondition",
+          "price": 220.08,
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": 475,
+            "priceCurrency": "USD",
+            "priceType": "http://schema.org/StrikethroughPrice"
+          },
+          "priceValidUntil": "2026-12-31",
+          "seller": {
+            "@type": "Organization",
+            "name": "Grizzly Industrial"
+          }
+        },
+        "sku": "M1115"
+      }
+    ]
+  },
+  {
+    "url": "https://www.grizzly.com/products/shop-fox-sandblasting-cabinet/m1114",
+    "status": 200,
+    "at": "2026-11-05T23:54:35.217001+00:00",
+    "sha256": "44a296444daae7b36d8c485f9fa2133a1366f17f7b1a0f588967e85835bd0dbf",
+    "structured_products": [
+      {
+        "@type": "Product",
+        "@id": "https://www.grizzly.com/products/shop-fox-sandblasting-cabinet/m1114#main-product",
+        "name": "Sandblasting Cabinet",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://cdn0.grizzly.com/m1114-14ed4e8bd4d3fd5636cb32219c5941d7"
+        },
+        "url": "https://www.grizzly.com/products/shop-fox-sandblasting-cabinet/m1114",
+        "brand": {
+          "@type": "Brand",
+          "name": "Shop Fox"
+        },
+        "category": "Sandblasters > Sandblasters",
+        "mpn": "M1114",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.grizzly.com/products/shop-fox-sandblasting-cabinet/m1114",
+          "availability": "https://schema.org/InStock",
+          "itemCondition": "https://schema.org/NewCondition",
+          "price": 220.08,
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": 435,
+            "priceCurrency": "USD",
+            "priceType": "http://schema.org/StrikethroughPrice"
+          },
+          "priceValidUntil": "2026-12-31",
+          "seller": {
+            "@type": "Organization",
+            "name": "Grizzly Industrial"
+          }
+        },
+        "sku": "M1114"
+      }
+    ]
+  }
+]
