@@ -6,4 +6,4 @@ Scope is the snow snapshot admission guard and regression tests. The House exact
 
 Validation: scoped gate tests, meaningful temporary persistence regression, full offline suite, independent review and CI. After merge run a fresh snow refresh and verify the report, withheld-source ages when present and production snapshot timestamp. Roll back the code commit if complete sources regress; retain all previous source data and dated evidence. Publication is covered by the user's standing approval for comparable releases.
 
-Status: independent review passed; all 750 offline tests, exact CI lint, JavaScript syntax and compilation checks passed. Publication and production verification pending.
+Status: PR #19 merged as `2f471fd`; CI `41966779145` and targeted refresh/deployment `41966876680` passed. The provider endpoint and runner custom-domain check serve the new snapshot. All unselected deal/offer/run rows and prior history remain unchanged. The [rollout receipt](benchmarks/2026-11-05-snow-completeness-rollout.json) records exact hashes, checks and limitations.

@@ -1,0 +1,198 @@
+{
+  "release_pr": "https://github.com/lifan-builds/snow-deal/pull/19",
+  "commit": "0e9613b8cd28d2ea3d1e55a25b83db5441127d63",
+  "merge": "2f471fd4e1c7dc18b2c6d20e159d42bdc650ce8c",
+  "ci": {
+    "run": 41966779145,
+    "status": "success",
+    "offline_tests": 750
+  },
+  "refresh": {
+    "run": 41966876680,
+    "url": "https://github.com/lifan-builds/snow-deal/actions/runs/41966876680",
+    "status": "success",
+    "scope": "The House, existing production browser adapter",
+    "report": {
+      "configured_stores": 1,
+      "stores_with_deals": 1,
+      "total_deals": 690,
+      "zero_count_stores": [],
+      "store_summaries": [
+        {
+          "store": "The House",
+          "deals": 690,
+          "missing_category": 0,
+          "missing_image": 0,
+          "missing_sizes": 690,
+          "missing_lengths": 198,
+          "length_eligible": 198,
+          "variant_offers": 0,
+          "deals_with_variants": 0,
+          "confirmed_size_deals": 0
+        }
+      ],
+      "missing_category": 0,
+      "missing_image": 0,
+      "missing_sizes": 690,
+      "missing_lengths": 198,
+      "length_eligible": 198,
+      "variant_offers": 0,
+      "deals_with_variants": 0,
+      "confirmed_size_deals": 0,
+      "checked_at": "2026-11-05T04:19:09.542689",
+      "outcomes": {
+        "The House": {
+          "errors": 0,
+          "pages": 6,
+          "collections": [
+            {
+              "url": "https://www.the-house.com/search?pmid=on-sale-now&start=0&sz=240",
+              "pages": 6,
+              "products": 826,
+              "status": "complete"
+            }
+          ]
+        }
+      },
+      "withheld_stores": [],
+      "published_deals": 690,
+      "publish_candidate_quality": {
+        "configured_stores": 1,
+        "stores_with_deals": 1,
+        "total_deals": 690,
+        "zero_count_stores": [],
+        "store_summaries": [
+          {
+            "store": "The House",
+            "deals": 690,
+            "missing_category": 0,
+            "missing_image": 0,
+            "missing_sizes": 690,
+            "missing_lengths": 198,
+            "length_eligible": 198,
+            "variant_offers": 0,
+            "deals_with_variants": 0,
+            "confirmed_size_deals": 0
+          }
+        ],
+        "missing_category": 0,
+        "missing_image": 0,
+        "missing_sizes": 690,
+        "missing_lengths": 198,
+        "length_eligible": 198,
+        "variant_offers": 0,
+        "deals_with_variants": 0,
+        "confirmed_size_deals": 0
+      }
+    }
+  },
+  "history_verification": {
+    "checks": {
+      "unselected_deals": true,
+      "unselected_offers": true,
+      "unselected_runs": true,
+      "price_history": true,
+      "offer_observations": true
+    },
+    "before": {
+      "unselected_deals": {
+        "rows": 14533,
+        "sha256": "fb1043911b4664bd25a830a34df12fc0f46e042750c47fe5d2e9f03108dd25bb"
+      },
+      "unselected_offers": {
+        "rows": 27778,
+        "sha256": "20116fd7b7fec0f2bf3416ddb350cc74f25ecadde64c7ade52d828bd7e496f3a"
+      },
+      "price_history": {
+        "rows": 177163,
+        "sha256": "2d6ba8eb9161087c1abaccae990cfdc929f1b01607114045eafa067789d12e5a"
+      },
+      "offer_observations": {
+        "rows": 226720,
+        "sha256": "50dbbca65068098adcbd5ca31e68791baac3f2e92a149011343db8dfbf5776f5"
+      },
+      "unselected_runs": {
+        "rows": 31,
+        "sha256": "851b8000866a1dc626ff44624a0cf2ba97544ecb2499537c1fe9ad43af5911d7"
+      },
+      "house_run": [
+        [
+          "The House",
+          "2026-11-05T01:53:19.324705",
+          "ok",
+          690,
+          0,
+          6
+        ]
+      ],
+      "file_sha256": "40511d6e9d78e9c9a71b1b9e83ef34c25af9c1189f3dc7254134f3ecd7fdb095"
+    },
+    "after": {
+      "unselected_deals": {
+        "rows": 14533,
+        "sha256": "fb1043911b4664bd25a830a34df12fc0f46e042750c47fe5d2e9f03108dd25bb"
+      },
+      "unselected_offers": {
+        "rows": 27778,
+        "sha256": "20116fd7b7fec0f2bf3416ddb350cc74f25ecadde64c7ade52d828bd7e496f3a"
+      },
+      "price_history": {
+        "rows": 177853,
+        "sha256": "64c3a4adbf3d6a1d1d7ad76d6fc6570d5240e7615fffe0849da76235cd14c180"
+      },
+      "offer_observations": {
+        "rows": 226720,
+        "sha256": "50dbbca65068098adcbd5ca31e68791baac3f2e92a149011343db8dfbf5776f5"
+      },
+      "unselected_runs": {
+        "rows": 31,
+        "sha256": "851b8000866a1dc626ff44624a0cf2ba97544ecb2499537c1fe9ad43af5911d7"
+      },
+      "house_run": [
+        [
+          "The House",
+          "2026-11-05T04:19:09.542689",
+          "ok",
+          690,
+          0,
+          6
+        ]
+      ],
+      "file_sha256": "45f5369f3c6a6ac61daf555e55a63ab5f5008068a2bf3e629b8cf8d6c6faea16"
+    },
+    "note": "Task-owned public release artifacts; prior rows unchanged, no retrospective history repair."
+  },
+  "live": {
+    "observed_at": "2026-11-05T04:20:30.945810+00:00",
+    "deployment_url": "https://snow-deal-mofjdql7h-lifan-chens-projects.vercel.app",
+    "health": {
+      "status": "ok",
+      "last_attempt_at": "2026-11-05T04:19:09.542689",
+      "checked_at": "2026-11-05T04:19:09.542689",
+      "stores_with_deals": 30
+    }
+  },
+  "route_smoke": [
+    {
+      "path": "/",
+      "status": 200,
+      "cards": 60,
+      "first_name": "Nordica One RTL Women's Ski Boots",
+      "first_destination": "https://www.the-house.com/1114155.html?dwvar_1114155_color=blck"
+    },
+    {
+      "path": "/deals",
+      "status": 200,
+      "cards": 60,
+      "first_name": "Nordica One RTL Women's Ski Boots",
+      "first_destination": "https://www.the-house.com/1114155.html?dwvar_1114155_color=blck"
+    }
+  ],
+  "limitations": [
+    "Failed-source persistence is covered by temporary-DB CLI regressions, not by this successful-source live refresh.",
+    "Earlier partial Backcountry observations are not retrospectively repaired or validated.",
+    "The House exact-variant candidate remains inactive; the existing adapter still lacks exact selected variant offers.",
+    "Local custom-host TLS fails; the runner verified the custom hostname and the local provider deployment endpoint passed.",
+    "No competitor metric or strict-lead count is changed by this release."
+  ]
+}
