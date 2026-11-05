@@ -1,0 +1,1506 @@
+{
+  "method": "same retained public inputs through baseline/candidate classification; no timestamps renewed",
+  "baseline_commit": "437f42ca51564d5879074341d433f0bd125d4b01",
+  "raw_sources": [
+    {
+      "source": "gravity",
+      "input_sha256": "a169774ad1dc9a8c7c96e1937ff5b3fe8f7ac74e5ac5dc5998646585aa3fbcbd",
+      "all_raw_classification": {
+        "products": 397,
+        "before_classified": 101,
+        "after_classified": 98,
+        "additions": 0,
+        "removals": 3,
+        "reclassifications": 0,
+        "before_categories": {
+          "Mountain bikes": 38,
+          "Electric bikes": 21,
+          "Framesets": 9,
+          "Gravel bikes": 10,
+          "Other complete bikes": 21,
+          "Road bikes": 2
+        },
+        "after_categories": {
+          "Mountain bikes": 38,
+          "Electric bikes": 21,
+          "Framesets": 9,
+          "Gravel bikes": 10,
+          "Other complete bikes": 18,
+          "Road bikes": 2
+        },
+        "changes": [
+          {
+            "name": "4 Hour Bike Rental Package (Includes bike and helmet)",
+            "url": "https://gravitycoalition.com/products/bike-rental-package-includes-bike-and-helmet",
+            "source_type": "Bike",
+            "before": {
+              "category": "Other complete bikes",
+              "format": "",
+              "platform": ""
+            },
+            "after": null,
+            "reason": "Literal primary-title-or-taxonomy exclusion matched 'helmet'",
+            "offers": []
+          },
+          {
+            "name": "Dakine Cross-X Bike Glove - Men's",
+            "url": "https://gravitycoalition.com/products/dakine-cross-x-bike-glove-mens",
+            "source_type": "Bike",
+            "before": {
+              "category": "Other complete bikes",
+              "format": "",
+              "platform": ""
+            },
+            "after": null,
+            "reason": "Literal primary-title-or-taxonomy exclusion matched 'glove'",
+            "offers": []
+          },
+          {
+            "name": "Dakine Thrillium Bike Glove",
+            "url": "https://gravitycoalition.com/products/dakine-thrillium-bike-glove-restored",
+            "source_type": "Bike",
+            "before": {
+              "category": "Other complete bikes",
+              "format": "",
+              "platform": ""
+            },
+            "after": null,
+            "reason": "Literal primary-title-or-taxonomy exclusion matched 'glove'",
+            "offers": []
+          }
+        ]
+      },
+      "parsed_discounted_classification": {
+        "products": 224,
+        "before_classified": 44,
+        "after_classified": 43,
+        "additions": 0,
+        "removals": 1,
+        "reclassifications": 0,
+        "before_categories": {
+          "Electric bikes": 11,
+          "Mountain bikes": 17,
+          "Framesets": 7,
+          "Gravel bikes": 6,
+          "Road bikes": 1,
+          "Other complete bikes": 2
+        },
+        "after_categories": {
+          "Electric bikes": 11,
+          "Mountain bikes": 17,
+          "Framesets": 7,
+          "Gravel bikes": 6,
+          "Road bikes": 1,
+          "Other complete bikes": 1
+        },
+        "changes": [
+          {
+            "name": "Dakine Thrillium Bike Glove",
+            "url": "https://gravitycoalition.com/products/dakine-thrillium-bike-glove-restored?currency=USD",
+            "source_type": "Bike",
+            "before": {
+              "category": "Other complete bikes",
+              "format": "",
+              "platform": ""
+            },
+            "after": null,
+            "reason": "Literal primary-title-or-taxonomy exclusion matched 'glove'",
+            "offers": [
+              {
+                "variant_key": "68035130130676",
+                "url": "https://gravitycoalition.com/products/dakine-thrillium-bike-glove-restored?currency=USD&variant=68035130130676",
+                "current_price": 27.97,
+                "original_price": 50.0,
+                "size": "M",
+                "options": "BLACK / M",
+                "availability": "in_stock",
+                "discount": 44.06
+              },
+              {
+                "variant_key": "68035130163444",
+                "url": "https://gravitycoalition.com/products/dakine-thrillium-bike-glove-restored?currency=USD&variant=68035130163444",
+                "current_price": 27.97,
+                "original_price": 50.0,
+                "size": "L",
+                "options": "BLACK / L",
+                "availability": "in_stock",
+                "discount": 44.06
+              },
+              {
+                "variant_key": "68035130196212",
+                "url": "https://gravitycoalition.com/products/dakine-thrillium-bike-glove-restored?currency=USD&variant=68035130196212",
+                "current_price": 27.97,
+                "original_price": 50.0,
+                "size": "S",
+                "options": "BLACK / S",
+                "availability": "in_stock",
+                "discount": 44.06
+              },
+              {
+                "variant_key": "68035130228980",
+                "url": "https://gravitycoalition.com/products/dakine-thrillium-bike-glove-restored?currency=USD&variant=68035130228980",
+                "current_price": 27.97,
+                "original_price": 50.0,
+                "size": "XL",
+                "options": "BLACK / XL",
+                "availability": "in_stock",
+                "discount": 44.06
+              },
+              {
+                "variant_key": "68035130261748",
+                "url": "https://gravitycoalition.com/products/dakine-thrillium-bike-glove-restored?currency=USD&variant=68035130261748",
+                "current_price": 27.97,
+                "original_price": 50.0,
+                "size": "M",
+                "options": "Carson Storch / M",
+                "availability": "in_stock",
+                "discount": 44.06
+              }
+            ]
+          }
+        ]
+      },
+      "normalization_before": 44,
+      "normalization_after": 43,
+      "changed_feed_stock_cohorts": [
+        {
+          "reference_floor": 0,
+          "newly_eligible_feed_stock_listings": 0,
+          "reclassified_feed_stock_listings": 0,
+          "removed_feed_stock_listings": 1,
+          "newly_eligible_at_least40pct": 0,
+          "reclassified_at_least40pct": 0
+        },
+        {
+          "reference_floor": 1000,
+          "newly_eligible_feed_stock_listings": 0,
+          "reclassified_feed_stock_listings": 0,
+          "removed_feed_stock_listings": 0,
+          "newly_eligible_at_least40pct": 0,
+          "reclassified_at_least40pct": 0
+        }
+      ]
+    },
+    {
+      "source": "pbs",
+      "input_sha256": "b5f51140a09145b195fe3efa62dc427f1263fcedf2058faa942d5f6ef20afb0f",
+      "all_raw_classification": {
+        "products": 594,
+        "before_classified": 429,
+        "after_classified": 464,
+        "additions": 35,
+        "removals": 0,
+        "reclassifications": 3,
+        "before_categories": {
+          "Mountain bikes": 113,
+          "Framesets": 80,
+          "Electric bikes": 126,
+          "Road bikes": 36,
+          "Other complete bikes": 66,
+          "Gravel bikes": 8
+        },
+        "after_categories": {
+          "Mountain bikes": 112,
+          "Framesets": 118,
+          "Electric bikes": 124,
+          "Road bikes": 36,
+          "Other complete bikes": 66,
+          "Gravel bikes": 8
+        },
+        "changes": [
+          {
+            "name": "2024 Orbea ORCA OMR Racing Road Frame - 55cm, Wine Red-Titanium (Gloss)",
+            "url": "https://www.probikesupply.com/products/2024-orbea-orca-omr-racing-road-frame-55cm-wine-red-titanium-gloss",
+            "source_type": "Road Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "2024 Orbea ORCA OMR Racing Road Frame - 53cm, Wine Red-Titanium (Gloss)",
+            "url": "https://www.probikesupply.com/products/2024-orbea-orca-omr-racing-road-frame-53cm-wine-red-titanium-gloss",
+            "source_type": "Road Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "2024 Orbea ORCA AERO OMX REPLICA Racing Road Frame - , Lotto - Dstny",
+            "url": "https://www.probikesupply.com/products/2024-orbea-orca-aero-omx-replica-racing-road-frame-lotto-dstny",
+            "source_type": "Road Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "2024 Orbea ORCA AERO OMX REPLICA Racing Road Frame - 55cm, Lotto - Dstny",
+            "url": "https://www.probikesupply.com/products/2024-orbea-orca-aero-omx-replica-racing-road-frame-55cm-lotto-dstny",
+            "source_type": "Road Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Ripley AF - Frame",
+            "url": "https://www.probikesupply.com/products/2026-ibis-ripley-af-udh-aluminum-29-mountain-frame",
+            "source_type": "Mountain Frames",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Ripmo AF Frame",
+            "url": "https://www.probikesupply.com/products/2026-ibis-ripmo-af-udh-aluminum-29-mountain-frame",
+            "source_type": "Mountain Frames",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Ripley SL Frame",
+            "url": "https://www.probikesupply.com/products/ibis-ripley-sl-carbon-29-mountain-bike-frame",
+            "source_type": "Mountain Frames",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "2026 IBIS OSO HD Carbon E-Bike Frame - Kodiak Gold",
+            "url": "https://www.probikesupply.com/products/2026-ibis-oso-hd-carbon-e-bike-frame",
+            "source_type": "Mountain E-Bike Frame",
+            "before": {
+              "category": "Electric bikes",
+              "format": "",
+              "platform": ""
+            },
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "2026 IBIS OSO TR Carbon E-Bike Frame",
+            "url": "https://www.probikesupply.com/products/2026-ibis-oso-tr-carbon-e-bike-frame",
+            "source_type": "Mountain E-Bike Frame",
+            "before": {
+              "category": "Electric bikes",
+              "format": "",
+              "platform": ""
+            },
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Salsa Stormchaser Frame - Aluminum Black 49cm",
+            "url": "https://www.probikesupply.com/products/salsa-stormchaser-frame-aluminum-black-49cm",
+            "source_type": "All-Road Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Salsa Stormchaser Frame - Aluminum Black 52.5cm",
+            "url": "https://www.probikesupply.com/products/salsa-stormchaser-frame-aluminum-black-52-5cm",
+            "source_type": "All-Road Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "P.4 Frame",
+            "url": "https://www.probikesupply.com/products/2023-specialized-p-4-frm-frame-27-5-satin-rusted-red-white-sage",
+            "source_type": "Mountain Frames",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "LT Turq Series Frame",
+            "url": "https://www.probikesupply.com/products/2027-yeti-lt-turq-series-29-mountain-frame",
+            "source_type": "Mountain Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Ibis Ripmo V3 Carbon 29\" Mountain Frame",
+            "url": "https://www.probikesupply.com/products/ibis-ripmo-v3-carbon-29-mountain-frame",
+            "source_type": "Mountain Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "2025 Mondraker FOXY CARBON RR 29\" Enduro/Am Mountain Bike",
+            "url": "https://www.probikesupply.com/products/2025-mondraker-foxy-carbon-rr-29-enduro-am-mountain-frame",
+            "source_type": "Mountain Frame",
+            "before": {
+              "category": "Mountain bikes",
+              "format": "",
+              "platform": ""
+            },
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Mondraker ARID CARBON UNLIMITED 2026",
+            "url": "https://www.probikesupply.com/products/2026-mondraker-arid-carbon-unlimited",
+            "source_type": "Gravel Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Mondraker FOXY CARBON RR 2025",
+            "url": "https://www.probikesupply.com/products/2025-mondraker-foxy-carbon-rr",
+            "source_type": "Mountain Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Mondraker SUMMUM CARBON RR 2024",
+            "url": "https://www.probikesupply.com/products/2024-mondraker-summum-carbon-rr",
+            "source_type": "Mountain Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Mondraker SUPERFOXY CARBON RR 2023",
+            "url": "https://www.probikesupply.com/products/2023-mondraker-superfoxy-carbon-rr",
+            "source_type": "Mountain Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Radio Raceline Quartz Pro L Spectral space green 20.9\"",
+            "url": "https://www.probikesupply.com/products/radio-raceline-quartz-pro-l-spectral-space-green-20-9",
+            "source_type": "BMX Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Radio Raceline Terra Disc Pro XXXL Orbit Silver 22.25",
+            "url": "https://www.probikesupply.com/products/radio-raceline-terra-disc-pro-xxxl-orbit-silver-22-25",
+            "source_type": "BMX Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Radio Raceline Quartz Pro XL Spectral space green 21.25\"",
+            "url": "https://www.probikesupply.com/products/radio-raceline-quartz-pro-xl-spectral-space-green-21-25",
+            "source_type": "BMX Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Radio Raceline Quartz Cruiser L Metallic deep red 21.5",
+            "url": "https://www.probikesupply.com/products/radio-raceline-quartz-cruiser-l-metallic-deep-red-21-5",
+            "source_type": "BMX Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Radio Raceline Terra Disc Pro XXL Vampire red 21.75\"",
+            "url": "https://www.probikesupply.com/products/radio-raceline-terra-disc-pro-xxl-vampire-red-21-75",
+            "source_type": "BMX Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Radio Raceline Helium Pro XL Metallic caribic teal 21.25",
+            "url": "https://www.probikesupply.com/products/radio-raceline-helium-pro-xl-metallic-caribic-teal-21-25",
+            "source_type": "BMX Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Radio Raceline Quartz Pro XXXL Spectral space green 22.25",
+            "url": "https://www.probikesupply.com/products/radio-raceline-quartz-pro-xxxl-spectral-space-green-22-25",
+            "source_type": "BMX Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Radio Raceline Quartz Pro XXXL Black 22.25",
+            "url": "https://www.probikesupply.com/products/radio-raceline-quartz-pro-xxxl-black-22-25",
+            "source_type": "BMX Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Radio Raceline Quartz Pro Spectral space green 20.5",
+            "url": "https://www.probikesupply.com/products/radio-raceline-quartz-pro-spectral-space-green-20-5",
+            "source_type": "BMX Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Radio Raceline Terra Disc Pro XL Orbit Silver 21.25",
+            "url": "https://www.probikesupply.com/products/radio-raceline-terra-disc-pro-xl-orbit-silver-21-25",
+            "source_type": "BMX Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Radio Raceline Quartz Cruiser XL Metallic deep red 22",
+            "url": "https://www.probikesupply.com/products/radio-raceline-quartz-cruiser-xl-metallic-deep-red-22",
+            "source_type": "BMX Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Radio Raceline Quartz Cruiser L Black 21.5",
+            "url": "https://www.probikesupply.com/products/radio-raceline-quartz-cruiser-l-black-21-5",
+            "source_type": "BMX Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Radio Raceline Quartz Cruiser XL Black 22",
+            "url": "https://www.probikesupply.com/products/radio-raceline-quartz-cruiser-xl-black-22",
+            "source_type": "BMX Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Radio Raceline Terra Disc Pro XL Vampire red 21.25",
+            "url": "https://www.probikesupply.com/products/radio-raceline-terra-disc-pro-xl-vampire-red-21-25",
+            "source_type": "BMX Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Radio Raceline Quartz Pro XXL Spectral space green 21.75\"",
+            "url": "https://www.probikesupply.com/products/radio-raceline-quartz-pro-xxl-spectral-space-green-21-75",
+            "source_type": "BMX Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Radio Raceline Terra Disc Pro XXXL Vampire red 22.25",
+            "url": "https://www.probikesupply.com/products/radio-raceline-terra-disc-pro-xxxl-vampire-red-22-25",
+            "source_type": "BMX Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Salsa Blackthorn 145 C Frame - Carbon Black / Smoke Small",
+            "url": "https://www.probikesupply.com/products/salsa-blackthorn-145-c-frame-carbon-black-smoke-small",
+            "source_type": "Mountain Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Salsa Blackthorn 145 C Frame - Carbon Black / Smoke Large",
+            "url": "https://www.probikesupply.com/products/salsa-blackthorn-145-c-frame-carbon-black-smoke-large",
+            "source_type": "Mountain Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          },
+          {
+            "name": "Salsa Blackthorn 145 C Frame - Carbon Black / Smoke X-Large",
+            "url": "https://www.probikesupply.com/products/salsa-blackthorn-145-c-frame-carbon-black-smoke-x-large",
+            "source_type": "Mountain Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": []
+          }
+        ]
+      },
+      "parsed_discounted_classification": {
+        "products": 485,
+        "before_classified": 362,
+        "after_classified": 376,
+        "additions": 14,
+        "removals": 0,
+        "reclassifications": 1,
+        "before_categories": {
+          "Framesets": 70,
+          "Mountain bikes": 74,
+          "Electric bikes": 110,
+          "Road bikes": 35,
+          "Other complete bikes": 65,
+          "Gravel bikes": 8
+        },
+        "after_categories": {
+          "Framesets": 85,
+          "Mountain bikes": 73,
+          "Electric bikes": 110,
+          "Road bikes": 35,
+          "Other complete bikes": 65,
+          "Gravel bikes": 8
+        },
+        "changes": [
+          {
+            "name": "2024 Orbea ORCA OMR Racing Road Frame - 55cm, Wine Red-Titanium (Gloss)",
+            "url": "https://www.probikesupply.com/products/2024-orbea-orca-omr-racing-road-frame-55cm-wine-red-titanium-gloss?currency=USD",
+            "source_type": "Road Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": [
+              {
+                "variant_key": "41354014097463",
+                "url": "https://www.probikesupply.com/products/2024-orbea-orca-omr-racing-road-frame-55cm-wine-red-titanium-gloss?currency=USD&variant=41354014097463",
+                "current_price": 2549.0,
+                "original_price": 2999.0,
+                "size": null,
+                "options": "",
+                "availability": "in_stock",
+                "discount": 15.005001667222407
+              }
+            ]
+          },
+          {
+            "name": "2024 Orbea ORCA OMR Racing Road Frame - 53cm, Wine Red-Titanium (Gloss)",
+            "url": "https://www.probikesupply.com/products/2024-orbea-orca-omr-racing-road-frame-53cm-wine-red-titanium-gloss?currency=USD",
+            "source_type": "Road Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": [
+              {
+                "variant_key": "41354014031927",
+                "url": "https://www.probikesupply.com/products/2024-orbea-orca-omr-racing-road-frame-53cm-wine-red-titanium-gloss?currency=USD&variant=41354014031927",
+                "current_price": 2549.0,
+                "original_price": 2999.0,
+                "size": null,
+                "options": "",
+                "availability": "in_stock",
+                "discount": 15.005001667222407
+              }
+            ]
+          },
+          {
+            "name": "2024 Orbea ORCA AERO OMX REPLICA Racing Road Frame - , Lotto - Dstny",
+            "url": "https://www.probikesupply.com/products/2024-orbea-orca-aero-omx-replica-racing-road-frame-lotto-dstny?currency=USD",
+            "source_type": "Road Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": [
+              {
+                "variant_key": "41354015211575",
+                "url": "https://www.probikesupply.com/products/2024-orbea-orca-aero-omx-replica-racing-road-frame-lotto-dstny?currency=USD&variant=41354015211575",
+                "current_price": 3271.0,
+                "original_price": 3849.0,
+                "size": null,
+                "options": "",
+                "availability": "in_stock",
+                "discount": 15.016887503247597
+              }
+            ]
+          },
+          {
+            "name": "2024 Orbea ORCA AERO OMX REPLICA Racing Road Frame - 55cm, Lotto - Dstny",
+            "url": "https://www.probikesupply.com/products/2024-orbea-orca-aero-omx-replica-racing-road-frame-55cm-lotto-dstny?currency=USD",
+            "source_type": "Road Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": [
+              {
+                "variant_key": "41354015178807",
+                "url": "https://www.probikesupply.com/products/2024-orbea-orca-aero-omx-replica-racing-road-frame-55cm-lotto-dstny?currency=USD&variant=41354015178807",
+                "current_price": 3271.0,
+                "original_price": 3849.0,
+                "size": null,
+                "options": "",
+                "availability": "in_stock",
+                "discount": 15.016887503247597
+              }
+            ]
+          },
+          {
+            "name": "Salsa Stormchaser Frame - Aluminum Black 49cm",
+            "url": "https://www.probikesupply.com/products/salsa-stormchaser-frame-aluminum-black-49cm?currency=USD",
+            "source_type": "All-Road Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": [
+              {
+                "variant_key": "41409685946423",
+                "url": "https://www.probikesupply.com/products/salsa-stormchaser-frame-aluminum-black-49cm?currency=USD&variant=41409685946423",
+                "current_price": 1146.65,
+                "original_price": 1349.0,
+                "size": null,
+                "options": "",
+                "availability": "in_stock",
+                "discount": 15.0
+              }
+            ]
+          },
+          {
+            "name": "Salsa Stormchaser Frame - Aluminum Black 52.5cm",
+            "url": "https://www.probikesupply.com/products/salsa-stormchaser-frame-aluminum-black-52-5cm?currency=USD",
+            "source_type": "All-Road Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": [
+              {
+                "variant_key": "41409686110263",
+                "url": "https://www.probikesupply.com/products/salsa-stormchaser-frame-aluminum-black-52-5cm?currency=USD&variant=41409686110263",
+                "current_price": 1146.65,
+                "original_price": 1349.0,
+                "size": null,
+                "options": "",
+                "availability": "in_stock",
+                "discount": 15.0
+              }
+            ]
+          },
+          {
+            "name": "P.4 Frame",
+            "url": "https://www.probikesupply.com/products/2023-specialized-p-4-frm-frame-27-5-satin-rusted-red-white-sage?currency=USD",
+            "source_type": "Mountain Frames",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": [
+              {
+                "variant_key": "40436662632503",
+                "url": "https://www.probikesupply.com/products/2023-specialized-p-4-frm-frame-27-5-satin-rusted-red-white-sage?currency=USD&variant=40436662632503",
+                "current_price": 399.99,
+                "original_price": 699.99,
+                "size": null,
+                "options": "",
+                "availability": "in_stock",
+                "discount": 42.857755110787295
+              }
+            ]
+          },
+          {
+            "name": "2025 Mondraker FOXY CARBON RR 29\" Enduro/Am Mountain Bike",
+            "url": "https://www.probikesupply.com/products/2025-mondraker-foxy-carbon-rr-29-enduro-am-mountain-frame?currency=USD",
+            "source_type": "Mountain Frame",
+            "before": {
+              "category": "Mountain bikes",
+              "format": "",
+              "platform": ""
+            },
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": [
+              {
+                "variant_key": "41989451481143",
+                "url": "https://www.probikesupply.com/products/2025-mondraker-foxy-carbon-rr-29-enduro-am-mountain-frame?currency=USD&variant=41989451481143",
+                "current_price": 3999.0,
+                "original_price": 4999.0,
+                "size": "Medium",
+                "options": "Medium / Red/Black",
+                "availability": "in_stock",
+                "discount": 20.004000800160032
+              },
+              {
+                "variant_key": "41989451513911",
+                "url": "https://www.probikesupply.com/products/2025-mondraker-foxy-carbon-rr-29-enduro-am-mountain-frame?currency=USD&variant=41989451513911",
+                "current_price": 3999.0,
+                "original_price": 4999.0,
+                "size": "Large",
+                "options": "Large / Red/Black",
+                "availability": "in_stock",
+                "discount": 20.004000800160032
+              }
+            ]
+          },
+          {
+            "name": "Mondraker ARID CARBON UNLIMITED 2026",
+            "url": "https://www.probikesupply.com/products/2026-mondraker-arid-carbon-unlimited?currency=USD",
+            "source_type": "Gravel Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": [
+              {
+                "variant_key": "42443356635191",
+                "url": "https://www.probikesupply.com/products/2026-mondraker-arid-carbon-unlimited?currency=USD&variant=42443356635191",
+                "current_price": 2399.0,
+                "original_price": 2999.0,
+                "size": "Small",
+                "options": "Red/Black / Small",
+                "availability": "in_stock",
+                "discount": 20.006668889629875
+              },
+              {
+                "variant_key": "42443356667959",
+                "url": "https://www.probikesupply.com/products/2026-mondraker-arid-carbon-unlimited?currency=USD&variant=42443356667959",
+                "current_price": 2399.0,
+                "original_price": 2999.0,
+                "size": "X-Large",
+                "options": "Red/Black / X-Large",
+                "availability": "in_stock",
+                "discount": 20.006668889629875
+              }
+            ]
+          },
+          {
+            "name": "Mondraker FOXY CARBON RR 2025",
+            "url": "https://www.probikesupply.com/products/2025-mondraker-foxy-carbon-rr?currency=USD",
+            "source_type": "Mountain Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": [
+              {
+                "variant_key": "42443355553847",
+                "url": "https://www.probikesupply.com/products/2025-mondraker-foxy-carbon-rr?currency=USD&variant=42443355553847",
+                "current_price": 3999.0,
+                "original_price": 4999.0,
+                "size": "Medium",
+                "options": "Red/Black / Medium",
+                "availability": "in_stock",
+                "discount": 20.004000800160032
+              },
+              {
+                "variant_key": "42443355586615",
+                "url": "https://www.probikesupply.com/products/2025-mondraker-foxy-carbon-rr?currency=USD&variant=42443355586615",
+                "current_price": 3999.0,
+                "original_price": 4999.0,
+                "size": "Large",
+                "options": "Red/Black / Large",
+                "availability": "in_stock",
+                "discount": 20.004000800160032
+              }
+            ]
+          },
+          {
+            "name": "Mondraker SUMMUM CARBON RR 2024",
+            "url": "https://www.probikesupply.com/products/2024-mondraker-summum-carbon-rr?currency=USD",
+            "source_type": "Mountain Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": [
+              {
+                "variant_key": "42443354996791",
+                "url": "https://www.probikesupply.com/products/2024-mondraker-summum-carbon-rr?currency=USD&variant=42443354996791",
+                "current_price": 5039.0,
+                "original_price": 6299.0,
+                "size": "Small",
+                "options": "Blue/White / Small",
+                "availability": "in_stock",
+                "discount": 20.003175107159866
+              },
+              {
+                "variant_key": "42443355029559",
+                "url": "https://www.probikesupply.com/products/2024-mondraker-summum-carbon-rr?currency=USD&variant=42443355029559",
+                "current_price": 5039.0,
+                "original_price": 6299.0,
+                "size": "Medium",
+                "options": "Blue/White / Medium",
+                "availability": "in_stock",
+                "discount": 20.003175107159866
+              }
+            ]
+          },
+          {
+            "name": "Mondraker SUPERFOXY CARBON RR 2023",
+            "url": "https://www.probikesupply.com/products/2023-mondraker-superfoxy-carbon-rr?currency=USD",
+            "source_type": "Mountain Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": [
+              {
+                "variant_key": "42443355521079",
+                "url": "https://www.probikesupply.com/products/2023-mondraker-superfoxy-carbon-rr?currency=USD&variant=42443355521079",
+                "current_price": 4319.0,
+                "original_price": 5399.0,
+                "size": "Small",
+                "options": "Silver/Carbon/Yellow / Small",
+                "availability": "in_stock",
+                "discount": 20.003704389701795
+              }
+            ]
+          },
+          {
+            "name": "Salsa Blackthorn 145 C Frame - Carbon Black / Smoke Small",
+            "url": "https://www.probikesupply.com/products/salsa-blackthorn-145-c-frame-carbon-black-smoke-small?currency=USD",
+            "source_type": "Mountain Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": [
+              {
+                "variant_key": "41667906469943",
+                "url": "https://www.probikesupply.com/products/salsa-blackthorn-145-c-frame-carbon-black-smoke-small?currency=USD&variant=41667906469943",
+                "current_price": 2399.99,
+                "original_price": 3199.0,
+                "size": null,
+                "options": "",
+                "availability": "in_stock",
+                "discount": 24.976867771178494
+              }
+            ]
+          },
+          {
+            "name": "Salsa Blackthorn 145 C Frame - Carbon Black / Smoke Large",
+            "url": "https://www.probikesupply.com/products/salsa-blackthorn-145-c-frame-carbon-black-smoke-large?currency=USD",
+            "source_type": "Mountain Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": [
+              {
+                "variant_key": "41667907223607",
+                "url": "https://www.probikesupply.com/products/salsa-blackthorn-145-c-frame-carbon-black-smoke-large?currency=USD&variant=41667907223607",
+                "current_price": 2399.99,
+                "original_price": 3199.0,
+                "size": null,
+                "options": "",
+                "availability": "in_stock",
+                "discount": 24.976867771178494
+              }
+            ]
+          },
+          {
+            "name": "Salsa Blackthorn 145 C Frame - Carbon Black / Smoke X-Large",
+            "url": "https://www.probikesupply.com/products/salsa-blackthorn-145-c-frame-carbon-black-smoke-x-large?currency=USD",
+            "source_type": "Mountain Frame",
+            "before": null,
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": [
+              {
+                "variant_key": "41667907354679",
+                "url": "https://www.probikesupply.com/products/salsa-blackthorn-145-c-frame-carbon-black-smoke-x-large?currency=USD&variant=41667907354679",
+                "current_price": 2399.99,
+                "original_price": 3199.0,
+                "size": null,
+                "options": "",
+                "availability": "in_stock",
+                "discount": 24.976867771178494
+              }
+            ]
+          }
+        ]
+      },
+      "normalization_before": 362,
+      "normalization_after": 376,
+      "changed_feed_stock_cohorts": [
+        {
+          "reference_floor": 0,
+          "newly_eligible_feed_stock_listings": 14,
+          "reclassified_feed_stock_listings": 1,
+          "removed_feed_stock_listings": 0,
+          "newly_eligible_at_least40pct": 1,
+          "reclassified_at_least40pct": 0
+        },
+        {
+          "reference_floor": 1000,
+          "newly_eligible_feed_stock_listings": 13,
+          "reclassified_feed_stock_listings": 1,
+          "removed_feed_stock_listings": 0,
+          "newly_eligible_at_least40pct": 0,
+          "reclassified_at_least40pct": 0
+        }
+      ]
+    }
+  ],
+  "snapshots": [
+    {
+      "name": "latest-public",
+      "path": ".local/release/cycling-precision/before/cycling.db",
+      "sha256_before_after": "89992c13b73b36127f2cc744c084082e37aa821c6d1707d11d307c612fab7f79",
+      "sources": 20,
+      "reconstructable_fields": {
+        "products": 1512,
+        "before_classified": 1511,
+        "after_classified": 1510,
+        "additions": 0,
+        "removals": 1,
+        "reclassifications": 1,
+        "before_categories": {
+          "Other complete bikes": 346,
+          "Electric bikes": 373,
+          "Mountain bikes": 289,
+          "Road bikes": 153,
+          "Framesets": 247,
+          "Gravel bikes": 103
+        },
+        "after_categories": {
+          "Other complete bikes": 345,
+          "Electric bikes": 373,
+          "Mountain bikes": 288,
+          "Road bikes": 153,
+          "Framesets": 248,
+          "Gravel bikes": 103
+        },
+        "changes": [
+          {
+            "name": "Dakine Thrillium Bike Glove",
+            "url": "https://gravitycoalition.com/products/dakine-thrillium-bike-glove-restored?currency=USD",
+            "source_type": "Bike",
+            "before": {
+              "category": "Other complete bikes",
+              "format": "",
+              "platform": ""
+            },
+            "after": null,
+            "reason": "Literal primary-title-or-taxonomy exclusion matched 'glove'",
+            "offers": [
+              {
+                "variant_key": "68035130130676",
+                "url": "https://gravitycoalition.com/products/dakine-thrillium-bike-glove-restored?currency=USD&variant=68035130130676",
+                "current_price": 27.97,
+                "original_price": 50.0,
+                "size": "M",
+                "options": "BLACK / M",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/thrilliumgloveblack1.webp?v=1793904666",
+                "reference_basis": "retailer_compare_at",
+                "availability_note": ""
+              },
+              {
+                "variant_key": "68035130163444",
+                "url": "https://gravitycoalition.com/products/dakine-thrillium-bike-glove-restored?currency=USD&variant=68035130163444",
+                "current_price": 27.97,
+                "original_price": 50.0,
+                "size": "L",
+                "options": "BLACK / L",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/thrilliumgloveblack1.webp?v=1793904666",
+                "reference_basis": "retailer_compare_at",
+                "availability_note": ""
+              },
+              {
+                "variant_key": "68035130196212",
+                "url": "https://gravitycoalition.com/products/dakine-thrillium-bike-glove-restored?currency=USD&variant=68035130196212",
+                "current_price": 27.97,
+                "original_price": 50.0,
+                "size": "S",
+                "options": "BLACK / S",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/thrilliumgloveblack1.webp?v=1793904666",
+                "reference_basis": "retailer_compare_at",
+                "availability_note": ""
+              },
+              {
+                "variant_key": "68035130228980",
+                "url": "https://gravitycoalition.com/products/dakine-thrillium-bike-glove-restored?currency=USD&variant=68035130228980",
+                "current_price": 27.97,
+                "original_price": 50.0,
+                "size": "XL",
+                "options": "BLACK / XL",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/thrilliumgloveblack1.webp?v=1793904666",
+                "reference_basis": "retailer_compare_at",
+                "availability_note": ""
+              },
+              {
+                "variant_key": "68035130261748",
+                "url": "https://gravitycoalition.com/products/dakine-thrillium-bike-glove-restored?currency=USD&variant=68035130261748",
+                "current_price": 27.97,
+                "original_price": 50.0,
+                "size": "M",
+                "options": "Carson Storch / M",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/GL7303.jpg?v=1793234692",
+                "reference_basis": "retailer_compare_at",
+                "availability_note": ""
+              }
+            ],
+            "source": "Gravity Coalition",
+            "stored_category": "Other complete bikes",
+            "successful_at": "2026-11-05T19:12:55.241043+00:00",
+            "would_change_stored_category": true
+          },
+          {
+            "name": "2025 Mondraker FOXY CARBON RR 29\" Enduro/Am Mountain Bike",
+            "url": "https://www.probikesupply.com/products/2025-mondraker-foxy-carbon-rr-29-enduro-am-mountain-frame?currency=USD",
+            "source_type": "Mountain Frame",
+            "before": {
+              "category": "Mountain bikes",
+              "format": "",
+              "platform": ""
+            },
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": [
+              {
+                "variant_key": "41989451481143",
+                "url": "https://www.probikesupply.com/products/2025-mondraker-foxy-carbon-rr-29-enduro-am-mountain-frame?currency=USD&variant=41989451481143",
+                "current_price": 3999.0,
+                "original_price": 4999.0,
+                "size": "Medium",
+                "options": "Medium / Red/Black",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0892/2046/files/010.25US086_f353c384-b826-4863-b6af-a2509a0a1e36.jpg?v=1763234760",
+                "reference_basis": "retailer_compare_at",
+                "availability_note": ""
+              },
+              {
+                "variant_key": "41989451513911",
+                "url": "https://www.probikesupply.com/products/2025-mondraker-foxy-carbon-rr-29-enduro-am-mountain-frame?currency=USD&variant=41989451513911",
+                "current_price": 3999.0,
+                "original_price": 4999.0,
+                "size": "Large",
+                "options": "Large / Red/Black",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0892/2046/files/010.25US087_c945fa37-3559-4b7b-851f-3c546c875e02.jpg?v=1763234760",
+                "reference_basis": "retailer_compare_at",
+                "availability_note": ""
+              }
+            ],
+            "source": "Pro Bike Supply",
+            "stored_category": "Mountain bikes",
+            "successful_at": "2026-11-05T19:13:25.044494+00:00",
+            "would_change_stored_category": true
+          }
+        ]
+      },
+      "baseline_unclassifiable_without_original_tags": [
+        {
+          "source": "State Bicycle Co.",
+          "name": "6061 All-Road - Dune Tan (650b / 700c)",
+          "source_type": "6061 All Road",
+          "stored_category": "Gravel bikes"
+        }
+      ]
+    },
+    {
+      "name": "prior-verified",
+      "path": ".local/release/tools-recall/production-42089645493/cycling/site/data/catalog.db",
+      "sha256_before_after": "8c134ecb029bddaf6efa2002c9a702fae203d324c2eb54f37dd635409a306cbd",
+      "sources": 20,
+      "reconstructable_fields": {
+        "products": 1512,
+        "before_classified": 1511,
+        "after_classified": 1510,
+        "additions": 0,
+        "removals": 1,
+        "reclassifications": 1,
+        "before_categories": {
+          "Other complete bikes": 346,
+          "Electric bikes": 373,
+          "Mountain bikes": 289,
+          "Road bikes": 153,
+          "Framesets": 247,
+          "Gravel bikes": 103
+        },
+        "after_categories": {
+          "Other complete bikes": 345,
+          "Electric bikes": 373,
+          "Mountain bikes": 288,
+          "Road bikes": 153,
+          "Framesets": 248,
+          "Gravel bikes": 103
+        },
+        "changes": [
+          {
+            "name": "Dakine Thrillium Bike Glove",
+            "url": "https://gravitycoalition.com/products/dakine-thrillium-bike-glove-restored?currency=USD",
+            "source_type": "Bike",
+            "before": {
+              "category": "Other complete bikes",
+              "format": "",
+              "platform": ""
+            },
+            "after": null,
+            "reason": "Literal primary-title-or-taxonomy exclusion matched 'glove'",
+            "offers": [
+              {
+                "variant_key": "68035130130676",
+                "url": "https://gravitycoalition.com/products/dakine-thrillium-bike-glove-restored?currency=USD&variant=68035130130676",
+                "current_price": 27.97,
+                "original_price": 50.0,
+                "size": "M",
+                "options": "BLACK / M",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/thrilliumgloveblack1.webp?v=1793904666",
+                "reference_basis": "retailer_compare_at",
+                "availability_note": ""
+              },
+              {
+                "variant_key": "68035130163444",
+                "url": "https://gravitycoalition.com/products/dakine-thrillium-bike-glove-restored?currency=USD&variant=68035130163444",
+                "current_price": 27.97,
+                "original_price": 50.0,
+                "size": "L",
+                "options": "BLACK / L",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/thrilliumgloveblack1.webp?v=1793904666",
+                "reference_basis": "retailer_compare_at",
+                "availability_note": ""
+              },
+              {
+                "variant_key": "68035130196212",
+                "url": "https://gravitycoalition.com/products/dakine-thrillium-bike-glove-restored?currency=USD&variant=68035130196212",
+                "current_price": 27.97,
+                "original_price": 50.0,
+                "size": "S",
+                "options": "BLACK / S",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/thrilliumgloveblack1.webp?v=1793904666",
+                "reference_basis": "retailer_compare_at",
+                "availability_note": ""
+              },
+              {
+                "variant_key": "68035130228980",
+                "url": "https://gravitycoalition.com/products/dakine-thrillium-bike-glove-restored?currency=USD&variant=68035130228980",
+                "current_price": 27.97,
+                "original_price": 50.0,
+                "size": "XL",
+                "options": "BLACK / XL",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/thrilliumgloveblack1.webp?v=1793904666",
+                "reference_basis": "retailer_compare_at",
+                "availability_note": ""
+              },
+              {
+                "variant_key": "68035130261748",
+                "url": "https://gravitycoalition.com/products/dakine-thrillium-bike-glove-restored?currency=USD&variant=68035130261748",
+                "current_price": 27.97,
+                "original_price": 50.0,
+                "size": "M",
+                "options": "Carson Storch / M",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0970/5364/files/GL7303.jpg?v=1793234692",
+                "reference_basis": "retailer_compare_at",
+                "availability_note": ""
+              }
+            ],
+            "source": "Gravity Coalition",
+            "stored_category": "Other complete bikes",
+            "successful_at": "2026-11-05T19:12:55.241043+00:00",
+            "would_change_stored_category": true
+          },
+          {
+            "name": "2025 Mondraker FOXY CARBON RR 29\" Enduro/Am Mountain Bike",
+            "url": "https://www.probikesupply.com/products/2025-mondraker-foxy-carbon-rr-29-enduro-am-mountain-frame?currency=USD",
+            "source_type": "Mountain Frame",
+            "before": {
+              "category": "Mountain bikes",
+              "format": "",
+              "platform": ""
+            },
+            "after": {
+              "category": "Framesets",
+              "format": "",
+              "platform": ""
+            },
+            "reason": "Explicit bicycle-frame taxonomy precedes complete-bike fallback",
+            "offers": [
+              {
+                "variant_key": "41989451481143",
+                "url": "https://www.probikesupply.com/products/2025-mondraker-foxy-carbon-rr-29-enduro-am-mountain-frame?currency=USD&variant=41989451481143",
+                "current_price": 3999.0,
+                "original_price": 4999.0,
+                "size": "Medium",
+                "options": "Medium / Red/Black",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0892/2046/files/010.25US086_f353c384-b826-4863-b6af-a2509a0a1e36.jpg?v=1763234760",
+                "reference_basis": "retailer_compare_at",
+                "availability_note": ""
+              },
+              {
+                "variant_key": "41989451513911",
+                "url": "https://www.probikesupply.com/products/2025-mondraker-foxy-carbon-rr-29-enduro-am-mountain-frame?currency=USD&variant=41989451513911",
+                "current_price": 3999.0,
+                "original_price": 4999.0,
+                "size": "Large",
+                "options": "Large / Red/Black",
+                "availability": "in_stock",
+                "image_url": "https://cdn.shopify.com/s/files/1/0892/2046/files/010.25US087_c945fa37-3559-4b7b-851f-3c546c875e02.jpg?v=1763234760",
+                "reference_basis": "retailer_compare_at",
+                "availability_note": ""
+              }
+            ],
+            "source": "Pro Bike Supply",
+            "stored_category": "Mountain bikes",
+            "successful_at": "2026-11-05T19:13:25.044494+00:00",
+            "would_change_stored_category": true
+          }
+        ]
+      },
+      "baseline_unclassifiable_without_original_tags": [
+        {
+          "source": "State Bicycle Co.",
+          "name": "6061 All-Road - Dune Tan (650b / 700c)",
+          "source_type": "6061 All Road",
+          "stored_category": "Gravel bikes"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Feed stock is retailer-reported research evidence, not a fresh admitted source.",
+    "Normalized snapshots omit some original tags; snapshot replay compares the same reconstructable fields under both classifiers and does not infer missing tags.",
+    "The nondiscounted 4 Hour Bike Rental Package (Includes bike and helmet) is excluded by a literal helmet match because Includes is outside the supported with/w//including split; this is not semantic primary-apparel evidence and rental handling is outside this patch."
+  ]
+}

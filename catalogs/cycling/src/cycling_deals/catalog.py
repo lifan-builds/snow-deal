@@ -17,6 +17,12 @@ FRAME_SIZE_PATTERN = (
 )
 
 
+FRAME_TYPE_PATTERN = (
+    r'(?:(?:bike|bicycle|mtb|mountain|road|gravel|cyclocross|touring|all-road|fat bike|bmx|'
+    r'e-bike|mountain e-bike|gravel & cyclocross|am/enduro|trail/am) )?frames?'
+)
+
+
 def classify(product: Product) -> Classification | None:
     title = product.name.casefold()
     kind = (product.product_type or "").casefold()
@@ -28,7 +34,9 @@ def classify(product: Product) -> Classification | None:
         return None
     if re.search(r"\b(kids?|junior|youth|boys|girls|used|pre-owned|demo|display|consignment|refurbished|reconditioned|returned|unridden|blem(?:ish(?:ed)?)?|open.box|scratch|dent)\b", text):
         return None
-    if re.search(r"\b(socks?|pants?|bottles?|seat posts?|seatposts?|clamps?|goggles|jackets?|shirts?)\b", text):
+    primary_title = re.split(r"\s+(?:with\s+|w/\s*|including\s+)", title, maxsplit=1)[0]
+    if re.search(r"\b(socks?|pants?|bottles?|seat posts?|seatposts?|clamps?|goggles|jackets?|shirts?|gloves?|jerseys?|shorts|shoes?|helmets?)\b",
+                 f"{primary_title} {kind}"):
         return None
     # State's broad Bicycles type also includes tires; do not reject real fat-tire bikes.
     unbranded_title = title.replace(product.brand.casefold(), "") if product.brand else title
@@ -39,8 +47,8 @@ def classify(product: Product) -> Classification | None:
     # A title containing "bike" alone could be a bike rack or a helmet.
     if re.search(r"\b(helmets?|jerseys?|shorts|gloves?|shoes?|racks?|bags?|wheels?|tires?|tyres?|tubes?|pedals?|saddles?|hangers?|forks?|batteries|chargers?|covers?|stands?|trainers?|parts?|accessor(?:y|ies)|maintenance|locks?|pumps?|goggles?|computers?|heart rate|lights?|cables?|brakes?|adaptors?|adapters?)\b", kind):
         return None
-    if "frameset" in tags or re.search(r"\b(framesets?|frame sets?|frame[- ]only)\b", text) or kind in {
-            "frames", "mtb frames", "road frames", "gravel frames", "am/enduro frames", "trail/am frames", "e-bike frames"}:
+    if ("frameset" in tags or re.search(r"\b(framesets?|frame sets?|frame[- ]only)\b", text)
+            or re.fullmatch(FRAME_TYPE_PATTERN, kind)):
         return Classification("Framesets")
     if kind == "e-commuter":
         return Classification("Electric bikes")

@@ -118,3 +118,83 @@ def test_brand_and_frame_only_do_not_misclassify_bikes(name, kind, brand, expect
                       product_type=kind, brand=brand)
     result = classify(product)
     assert (result.category if result else None) == expected
+
+
+@pytest.mark.parametrize(('title', 'kind', 'expected'), [
+    ('Dakine Thrillium Bike Glove', 'Bike', None),
+    ('Trail Bike Gloves with Free Mountain Bike', 'Bike', None),
+    ('Road Bike Jersey', 'Bicycles', None),
+    ('Commuter Electric Bike with Gloves and Lights', 'Electric Bikes', 'Electric bikes'),
+    ('Road Bike w/ Rack and Jersey', 'Road Bikes', 'Road bikes'),
+    ('Road Bike w/Gloves', 'Road Bikes', 'Road bikes'),
+    ('Bike Gloves w/Road Bike', 'Bike', None),
+    ('Mountain Bike Including Gloves', 'Mountain Bikes', 'Mountain bikes'),
+    ('Road Bike with Carbon Frame', 'Road Bikes', 'Road bikes'),
+    ('Carbon Frame Mountain Bike', 'Mountain Bikes', 'Mountain bikes'),
+    ('Carbon Frameset with Fork', 'Frameset', 'Framesets'),
+    ('Road Bike with Used Light', 'Road Bikes', None),
+    ('Bike Glove', 'Mountain Frame', None),
+    ('Carbon Frameset', 'Frame Parts', None),
+    ('Mountain Bike', 'Bike Gloves', None),
+])
+def test_primary_apparel_and_included_accessories_respect_equipment_identity(title, kind, expected):
+    result = classify(Product(title, 'https://example.com/products/item', 500, 2000, product_type=kind))
+    assert (result.category if result else None) == expected
+
+
+@pytest.mark.parametrize('kind', [
+    'Mountain Frame', 'Mountain Frames', 'Road Frame', 'All-Road Frame',
+    'BMX Frame', 'Fat Bike Frame', 'Mountain E-Bike Frame', 'Gravel & Cyclocross Frames',
+])
+def test_explicit_observed_bicycle_frame_taxonomies_are_framesets(kind):
+    product = Product('2025 Mondraker FOXY CARBON RR 29 inch Enduro/Am Mountain Bike',
+                      'https://example.com/products/frame', 1950, 3800, product_type=kind)
+    assert classify(product).category == 'Framesets'
+
+
+@pytest.mark.parametrize('kind', ['Frame Parts', 'Bike Frame Pump', 'Suspension Forks', 'Picture Frame'])
+def test_frame_taxonomy_matching_does_not_override_accessories_or_unrelated_frames(kind):
+    product = Product('Component', 'https://example.com/products/component', 500, 1000, product_type=kind)
+    assert classify(product) is None
+
+
+def test_category_corrections_preserve_exact_offers_through_normalization_and_query():
+    from copy import deepcopy
+    from datetime import UTC, datetime
+
+    from cycling_deals.catalog import CATALOG
+    from deal_common.catalog.query import query
+    from deal_common.catalog.refresh import normalize
+    from deal_common.offers import VariantOffer
+
+    def item(handle, title, kind, key, price, reference, *, stock='in_stock'):
+        url = 'https://example.com/products/' + handle
+        return Product(title, url, price, reference, product_type=kind, brand='Manufacturer',
+                       offers=[VariantOffer(key, url + '?variant=' + key, price, reference,
+                                            size='MD', options='Medium / Blue', availability=stock)])
+
+    frame = item('frame', '2025 Mountain Bike', 'Mountain Frame', 'frame-md', 1950, 3800)
+    frame.offers.append(VariantOffer('delayed-xl', frame.url + '?variant=delayed-xl', 1500, 3800,
+                                    size='XL', options='Extra Large / Red', availability='unknown'))
+    bike = item('bike', 'Mountain Bike with Carbon Frame', 'Mountain Bikes', 'bike-md', 2000, 4000)
+    glove = item('glove', 'Dakine Thrillium Bike Glove', 'Bike', 'glove-md', 20, 50)
+    raw = [frame, bike, glove]
+    original = deepcopy(raw)
+    normalized = normalize(raw, CATALOG, 'example.com')
+    assert raw == original
+    assert [row['name'] for row in normalized] == [frame.name, bike.name]
+    assert [row['category'] for row in normalized] == ['Framesets', 'Mountain bikes']
+    source = {'name': 'Fixture', 'successful_at': datetime.now(UTC).isoformat(), 'products': normalized}
+    filters = {'min_reference': 0, 'max_price': 0, 'min_discount': 0, 'stock': True,
+               'category': 'Framesets', 'size': 'Medium', 'page': 1}
+    result = query([source], filters)
+    assert result['total'] == 1 and len(result['cards']) == 1
+    selected = result['cards'][0]
+    assert selected['name'] == frame.name
+    assert (selected['offer']['variant_key'], selected['offer']['size'], selected['offer']['options']) == (
+        'frame-md', 'MD', 'Medium / Blue')
+    assert (selected['offer']['current_price'], selected['offer']['original_price']) == (1950, 3800)
+    assert selected['offer']['url'] == frame.offers[0].url
+    assert selected['offer']['availability'] == 'in_stock'
+    assert query([source], {**filters, 'size': 'XL'})['total'] == 0
+    assert query([source], {**filters, 'category': '', 'size': ''})['total'] == 2

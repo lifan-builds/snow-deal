@@ -1,0 +1,15 @@
+{
+  "method": "read-only classifier comparison on every retained raw product, including excluded and full-price records; no renewed observations",
+  "sources": [
+    {
+      "source": "gravity",
+      "all_raw_products": 397,
+      "compact_wslash_review_delta": []
+    },
+    {
+      "source": "pbs",
+      "all_raw_products": 594,
+      "compact_wslash_review_delta": []
+    }
+  ]
+}
