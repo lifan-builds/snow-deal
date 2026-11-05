@@ -62,6 +62,11 @@ def query(sources: list[dict], filters: dict, *, now: datetime | None = None) ->
             best = min(eligible, key=lambda o: (-o["discount"], -o["savings"], o["current_price"], o["variant_key"]))
             cards.append({**product, "offer": best, "store": source["name"],
                           "observed_at": source["successful_at"], "matching_variants": len(eligible)})
+    # Keep one existing label for each match the current size_key already defines.
+    size_labels = {}
+    for label in sorted(facets["size"], key=lambda value: (len(value), value.casefold(), value)):
+        size_labels.setdefault(size_key(label), label)
+    facets["size"] = set(size_labels.values())
     cards.sort(key=lambda p: (-p["offer"]["discount"], -p["offer"]["savings"], p["name"], p["url"]))
     total = len(cards)
     pages = max(1, ceil(total / PAGE_SIZE))

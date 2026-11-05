@@ -11,3 +11,7 @@ Vercel functions treat deal data as read-only. The build downloads or uses an ex
 ## Compressed snow snapshot packaging
 
 See docs/project-guidance/web-auth-and-deployment.md for exact-byte gzip packaging, pre-import path initialization, atomic verified temporary reconstruction, explicit-path/local compatibility and history-preserving release checks. The source snapshot is unchanged; runtime has no network download or migration authority.
+
+## Shared catalog size facets
+
+See docs/project-guidance/web-auth-and-deployment.md for the existing-size-key facet grouping contract, stable original-label representatives, legacy/unknown request selection, raw offer/history preservation and required query/HTTP regression cases. This is presentation normalization, not expanded fit matching.

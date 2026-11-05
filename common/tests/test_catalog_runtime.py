@@ -336,3 +336,142 @@ def test_numeric_s_frame_size_stays_distinct_from_plain_numeric_size():
     assert result["total"] == 1 and result["cards"][0]["offer"]["variant_key"] == "1"
     result = query([source(normalized)], filters(size="50"), now=NOW)
     assert result["total"] == 1 and result["cards"][0]["offer"]["variant_key"] == "2"
+
+
+def test_size_facets_use_one_stable_existing_label_per_match_key():
+    from deal_common.offers import size_key
+
+    labels = ['MEDIUM', 'MD', 'Medium', 'm', ' M ', 'M', 'S', 'SM', 'Small', 's',
+              '50', '50cm', '50s', 'S/M', 'S/M/L', 'XS-M', 'XS/M', 'M18', 'm18']
+    rows = [source([product('First', [offer(f'a-{i}', size=label) for i, label in enumerate(labels[:9])])]),
+            {**source([product('Second', [offer(f'b-{i}', size=label)
+                                         for i, label in enumerate(labels[9:])])]), 'name': 'Other'}]
+    rows.append(source([product('Unknown', [offer('unknown', size='XL', stock='unknown')])]))
+    rows.append(source([product('Stale', [offer('stale', size='XXL')])], NOW - timedelta(hours=25)))
+    rows.append(source([product('Future', [offer('future', size='XXXL')])], NOW + timedelta(seconds=1)))
+    result = query(rows, filters(), now=NOW)
+    sizes = result['facets']['size']
+    assert sizes == ['50', '50s', 'M', 'M18', 'S', 'S/M', 'S/M/L', 'XS-M', 'XS/M']
+    assert len(sizes) == len({size_key(label) for label in sizes})
+    assert set(sizes) <= set(labels)
+    assert query(list(reversed(rows)), filters(), now=NOW)['facets']['size'] == sizes
+    assert query(rows, filters(size='50'), now=NOW)['cards'][0]['offer']['size'] in {'50', '50cm'}
+    assert query(rows, filters(size='50s'), now=NOW)['cards'][0]['offer']['size'] == '50s'
+    assert query(rows, filters(size='S/M'), now=NOW)['cards'][0]['offer']['size'] == 'S/M'
+    assert query(rows, filters(size='M18'), now=NOW)['cards'][0]['offer']['size'] in {'M18', 'm18'}
+
+
+def test_size_facet_simplification_keeps_raw_offer_population_order_and_pagination():
+    import json
+    from copy import deepcopy
+
+    aliases = ['M', 'MD', 'MEDIUM', 'Medium', 'm', ' M ']
+    products = [product(f'P{i:02}', [offer(f'{i}-small', 100, 2000, 'S'),
+                                   offer(f'{i}-medium', 500 + i, 2000, aliases[i % len(aliases)]),
+                                   offer(f'{i}-unknown', 50, 2000, 'M', 'unknown')])
+                for i in range(30)]
+    products.append(product('Compound', [offer('compound', 100, 2000, 'S/M/L')]))
+    rows = [source(products)]
+    original = deepcopy(rows)
+    expected = query(rows, filters(size='M'), now=NOW)
+    assert expected['total'] == 30 and expected['pages'] == 2
+    assert [card['name'] for card in expected['cards']] == [f'P{i:02}' for i in range(24)]
+    page_two = query(rows, {**filters(size='M'), 'page': 2}, now=NOW)
+    assert [card['name'] for card in page_two['cards']] == [f'P{i:02}' for i in range(24, 30)]
+    expected_cards = expected['cards'] + page_two['cards']
+    for i, card in enumerate(expected_cards):
+        raw = original[0]['products'][i]['offers'][1]
+        assert all(card['offer'][key] == value for key, value in raw.items())
+        assert card['matching_variants'] == 1
+    for alias in aliases:
+        for page in (1, 2):
+            actual = query(rows, {**filters(size=alias), 'page': page}, now=NOW)
+            reference = query(rows, {**filters(size='M'), 'page': page}, now=NOW)
+            assert json.dumps(actual['cards'], sort_keys=True) == json.dumps(reference['cards'], sort_keys=True)
+            assert (actual['total'], actual['page'], actual['pages']) == (30, page, 2)
+    assert rows == original
+
+
+@pytest.mark.parametrize('catalog', [CYCLING, TOOLS])
+def test_legacy_size_alias_selects_representative_and_links_without_changing_cards(tmp_path, catalog):
+    from datetime import UTC
+    from urllib.parse import parse_qs, urlsplit
+
+    from bs4 import BeautifulSoup
+
+    db = tmp_path / f'{catalog.slug}.db'
+    config = RetailerConfig('Fixture', 'example.com', ['https://example.com/collection'])
+    catalog = replace(catalog, sources=(config,))
+    items = [product(f'P{i:02}', [offer(f'{i}-medium', 500 + i, 2000, 'MD' if i % 2 else 'M')])
+             for i in range(27)]
+    for item in items:
+        item['category'] = catalog.categories[0]
+    observed_at = datetime.now(UTC).isoformat()
+    save_source(db, catalog.slug, config.name, observed_at, items, 'complete', {})
+    client = TestClient(create_app(catalog, db))
+    canonical = BeautifulSoup(client.get('/', params={'size': 'M'}).text, 'html.parser')
+    for alias in ('MD', 'MEDIUM', 'Medium', ' m '):
+        response = client.get('/', params={'size': alias})
+        assert response.status_code == 200
+        page = BeautifulSoup(response.text, 'html.parser')
+        assert [option.get_text() for option in page.select('select[name="size"] option[selected]')] == ['M']
+        assert [option.get_text() for option in page.select('select[name="size"] option')] == ['All ' + catalog.size_label.lower() + 's', 'M']
+        assert page.select_one('.filter-note strong').get_text() == 'M'
+        assert f'{catalog.size_label}: M' in page.select_one('.active-filters').get_text()
+        assert [str(card) for card in page.select('article')] == [str(card) for card in canonical.select('article')]
+        next_url = page.select_one('.pagination a')['href']
+        assert parse_qs(urlsplit(next_url).query)['size'] == ['M']
+        next_page = BeautifulSoup(client.get(next_url).text, 'html.parser')
+        assert len(next_page.select('article')) == 3
+        assert [option.get_text() for option in next_page.select('select[name="size"] option[selected]')] == ['M']
+    unknown = 'Unlisted <size>'
+    response = client.get('/', params={'size': unknown})
+    page = BeautifulSoup(response.text, 'html.parser')
+    assert [option.get_text() for option in page.select('select[name="size"] option[selected]')] == [unknown]
+    assert page.select('article') == []
+    assert 'No deals match' in page.get_text()
+    assert '<size>' not in response.text
+
+
+def test_size_representative_ignores_hidden_sources_and_unconfirmed_stock(tmp_path):
+    from datetime import UTC
+
+    from bs4 import BeautifulSoup
+
+    config = RetailerConfig('Visible', 'example.com', ['https://example.com/collection'])
+    catalog = replace(CYCLING, sources=(config,))
+    db = tmp_path / 'visible-sizes.db'
+    observed_at = datetime.now(UTC).isoformat()
+    save_source(db, catalog.slug, config.name, observed_at, [
+        product('Visible bike', [offer('visible', size='MD'),
+                                 offer('unconfirmed', size='XL', stock='unknown')]),
+    ], 'complete', {})
+    save_source(db, catalog.slug, 'Unconfigured', observed_at, [
+        product('Hidden bike', [offer('hidden-medium', size='M'), offer('hidden-small', size='XS')]),
+    ], 'complete', {})
+    original = db.read_bytes()
+    client = TestClient(create_app(catalog, db))
+    # A legacy saved-search URL must select the visible existing label, even
+    # though an unconfigured source has the shorter equivalent representative.
+    page = BeautifulSoup(client.get('/?size=Medium').text, 'html.parser')
+    assert [option.get_text() for option in page.select('select[name="size"] option')] == ['All frame sizes', 'MD']
+    assert [option.get_text() for option in page.select('select[name="size"] option[selected]')] == ['MD']
+    assert [card.select_one('h3').get_text() for card in page.select('article')] == ['Visible bike']
+    assert page.select_one('article a[href*="variant=visible"]') is not None
+    unconfirmed = BeautifulSoup(client.get('/?size=XL').text, 'html.parser')
+    assert unconfirmed.select('article') == []
+    assert [option.get_text() for option in unconfirmed.select('select[name="size"] option[selected]')] == ['XL']
+    assert db.read_bytes() == original
+
+
+@pytest.mark.parametrize(('labels', 'expected'), [
+    (['MD', 'Medium', 'MEDIUM'], ['MD']),
+    ([' S / M ', 'S/M'], ['S/M']),
+    (['50cm', '50 CM'], ['50cm']),
+    (['M18', 'M12', 'm18'], ['M12', 'M18']),
+])
+def test_size_facet_representatives_are_existing_labels_not_invented_canonical_values(labels, expected):
+    rows = [source([product(offers=[offer(str(i), size=label) for i, label in enumerate(labels)])])]
+    assert query(rows, filters(), now=NOW)['facets']['size'] == expected
+    rows[0]['products'][0]['offers'].reverse()
+    assert query(rows, filters(), now=NOW)['facets']['size'] == expected
