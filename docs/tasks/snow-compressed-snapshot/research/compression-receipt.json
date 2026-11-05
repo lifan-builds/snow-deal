@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-11-05T18:13:18.029307+00:00",
+  "prepared_bytes": 147640320,
+  "compressed_bytes": 18230396,
+  "compression_seconds": 2.3058825839980273,
+  "local_cold_materialization_seconds": 0.2883812080108328,
+  "local_verified_cache_seconds": 0.06608170800609514,
+  "source_and_restored_sha256": "68261da4c07b900c1a76e5818bcc83be0bc097d508f9cc3dda3031339d441df0",
+  "manifest": {
+    "version": 1,
+    "bytes": 147640320,
+    "sha256": "68261da4c07b900c1a76e5818bcc83be0bc097d508f9cc3dda3031339d441df0"
+  },
+  "snapshot_checked_at": "2026-11-05T13:40:12.920989",
+  "source_unchanged": true,
+  "roundtrip_exact": true,
+  "sqlite_integrity": "ok",
+  "scope": "Task-owned current public prepared snapshot; local timings are not deployed latency benchmarks"
+}

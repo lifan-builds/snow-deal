@@ -10,7 +10,8 @@
   },
   "functions": {
     "api/index.py": {
-      "excludeFiles": "{common/tests/**,catalogs/*/tests/**,catalogs/*/history/**,catalogs/*/tampermonkey/**,docs/**,.pytest_cache/**,**/__pycache__/**}"
+      "excludeFiles": "{catalogs/fresh-powder/data/deals.db,common/tests/**,catalogs/*/tests/**,catalogs/*/history/**,catalogs/*/tampermonkey/**,docs/**,.pytest_cache/**,**/__pycache__/**}",
+      "includeFiles": "{catalogs/fresh-powder/data/deals.db.gz,catalogs/fresh-powder/data/deals.db.manifest.json}"
     }
   },
   "rewrites": [
