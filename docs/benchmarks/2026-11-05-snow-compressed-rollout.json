@@ -368,7 +368,7 @@
     }
   ],
   "public_snapshot": "latest-data/deals.db at 2026-11-05T13:40:12.920989",
-  "scope": "Production health, eight rendered route/filter combinations and480selected-card observations match the prepared public snapshot. Local full-byte/row preservation verifies packaging contracts; no new merchant accuracy or competitor-lead claim. Gzip byte sizes may vary across build environments.",
+  "scope": "Production health, eight rendered route/filter combinations and 480 selected-card observations match the prepared public snapshot. Local full-byte/row preservation verifies packaging contracts; no new merchant accuracy or competitor-lead claim. Gzip byte sizes may vary across build environments.",
   "pr": 24,
   "merge": "2d975f05eb6105a0129d28ef80d7bf292830728c",
   "ci": 42085554291,
