@@ -235,3 +235,97 @@ def test_skiessentials_uses_exact_offer_parser():
     assert not source.use_browser
     assert isinstance(_get_parser(source.parser_type), SkiEssentialsParser)
     assert len(source.scrape_urls) == 6
+
+
+def test_equal_percentage_variant_prefers_cash_savings_before_price(tmp_path):
+    path, deals = setup_db(tmp_path, [
+        {'id': 1, 'price': '300', 'compare_at_price': '600', 'available': True, 'option1': '160'},
+        {'id': 2, 'price': '1000', 'compare_at_price': '2000', 'available': True, 'option1': '180'},
+    ])
+    assert (deals[0].current_price, deals[0].original_price, deals[0].sizes) == (1000, 2000, '180cm')
+    selected = query(path)[0]
+    assert (selected.variant_key, selected.current_price, selected.discount_pct) == ('2', 1000, 50)
+    assert selected.purchase_url.endswith('&variant=2')
+    budget = query(path, max_price=350)[0]
+    assert (budget.variant_key, budget.current_price, budget.sizes) == ('1', 300, '160')
+    assert budget.purchase_url.endswith('&variant=1')
+    assert query(path, min_reference=1000, count_only=True) == 1
+    assert query(path, min_reference=1000)[0].variant_key == '2'
+    assert query(path, size='160', min_reference=1000) == []
+
+
+def test_exact_percentage_stays_ahead_of_cash_savings_for_variants(tmp_path):
+    path, deals = setup_db(tmp_path, [
+        {'id': 1, 'price': '49.99', 'compare_at_price': '100', 'available': True, 'option1': '160'},
+        {'id': 2, 'price': '1000', 'compare_at_price': '2000', 'available': True, 'option1': '180'},
+    ])
+    assert deals[0].current_price == 49.99
+    selected = query(path)[0]
+    assert (selected.variant_key, selected.discount_pct) == ('1', 50.01)
+    assert selected.purchase_url.endswith('&variant=1')
+
+
+def test_default_cash_savings_order_precedes_images_with_stable_pagination(tmp_path):
+    path = tmp_path / 'savings-order.db'
+    asyncio.run(init_db(path))
+    deals = []
+    for handle, price, reference, image, legacy in [
+        ('small-variant', '300', '600', 'https://cdn.test/small.jpg', False),
+        ('large-variant', '1000', '2000', None, False),
+        ('small-legacy', '200', '400', 'https://cdn.test/legacy.jpg', True),
+        ('large-legacy', '750', '1500', None, True),
+        ('precise-variant', '49.99', '100', None, False),
+    ]:
+        item = products([
+            {'id': 1, 'price': price, 'compare_at_price': reference, 'available': True, 'option1': '180'},
+        ], handle=handle)[0]
+        item.image_url = image
+        for offer in item.offers:
+            offer.image_url = image
+        if legacy:
+            item.offers = []
+        deals.extend(_products_to_deals([item], 'Test'))
+    for deal in deals:
+        deal.scraped_at = deals[0].scraped_at
+    asyncio.run(upsert_deals(deals, path))
+    expected = ['precise-variant', 'large-variant', 'large-legacy', 'small-variant', 'small-legacy']
+    actual = [deal.url.split('/')[-1].split('?')[0] for deal in query(path)]
+    assert actual == expected
+    pages = [query(path, limit=2, offset=offset) for offset in (0, 2, 4)]
+    assert [deal.url for page in pages for deal in page] == [deal.url for deal in query(path)]
+    assert query(path, count_only=True) == 5
+    assert pages[0][1].purchase_url.endswith('&variant=1')
+    assert query(path, sort_by='price_low')[0].current_price == 49.99
+    assert query(path, sort_by='price_high')[0].current_price == 1000
+
+
+def test_default_savings_order_groups_currencies_after_exact_percentage(tmp_path):
+    path = tmp_path / 'currency-savings.db'
+    asyncio.run(init_db(path))
+    deals = []
+    for handle, price, reference, currency in [
+        ('cad-large', '10000', '20000', 'CAD'),
+        ('usd-small', '200', '400', 'USD'),
+        ('cad-small', '300', '600', 'CAD'),
+        ('usd-large', '1000', '2000', 'USD'),
+        ('cad-precise', '49.99', '100', 'CAD'),
+    ]:
+        item = products([
+            {'id': 1, 'price': price, 'compare_at_price': reference, 'available': True, 'option1': '180'},
+        ], handle=handle)[0]
+        deal = _products_to_deals([item], f'Test {currency}')[0]
+        deal.currency = currency
+        deals.append(deal)
+    for deal in deals:
+        deal.scraped_at = deals[0].scraped_at
+    asyncio.run(upsert_deals(deals, path))
+
+    def handles(**kwargs):
+        return [deal.url.split('/')[-1].split('?')[0] for deal in query(path, **kwargs)]
+
+    assert handles() == ['cad-precise', 'usd-large', 'usd-small', 'cad-large', 'cad-small']
+    assert handles(currency='CAD') == ['cad-precise', 'cad-large', 'cad-small']
+    assert handles(currency='USD') == ['usd-large', 'usd-small']
+    assert handles(sort_by='invalid') == handles()
+    assert query(path, currency='USD', count_only=True) == 2
+    assert query(path, currency='CAD', count_only=True) == 3

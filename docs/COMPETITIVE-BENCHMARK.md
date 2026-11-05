@@ -2,7 +2,7 @@
 
 ## Decision
 
-Win on **finding the deepest usable discount on expensive equipment**, with a trustworthy purchase link and little effort. A beautiful card with a wrong size or inflated reference is a failure. Percentage off remains the primary ranking key; cash savings break ties. Revenue, imagery and reviews never move an inferior discount above a better eligible offer.
+Win on **finding the deepest usable discount on expensive equipment**, with a trustworthy purchase link and little effort. A beautiful card with a wrong size or inflated reference is a failure. Percentage off remains the primary ranking key; cash savings break ties within the same currency. Revenue, imagery and reviews never move an inferior discount above a better eligible offer.
 
 We do **not yet have evidence that all three sites beat every competitor**. The [verified PR17 rollout](benchmarks/2026-11-04-pr17-rollout.json) serves 20 fresh cycling sources, of which 15 contribute a deal at least 40% off above the reference floor, and 11 fresh tools sources with six useful retailers. Big Ring has 1,347 qualifying in-stock listings / 166 deep deals; Bench Drop has 454 / 31. Both independent 30-offer merchant samples pass, with exact live snapshot hashes and prior-day history preserved. Competitors already offer broad coverage, product matching, price history and alerts. The registry includes 22 relevant services, not the entire internet. The [updated matrix](benchmarks/2026-11-04-pr17-matrix.md) still supports four strict leads among 260 comparisons; unknowns, incomparable measurements and parity block the broad claim. Earlier dated receipts remain historical evidence.
 

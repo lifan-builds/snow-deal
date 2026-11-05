@@ -159,7 +159,8 @@ def _products_to_deals(
             offers = [o for o in p.offers if o.current_price >= 1 and 0 < o.discount_pct < 95]
             if not offers:
                 continue
-            best = min(offers, key=lambda o: (-o.discount_pct, o.current_price, o.variant_key))
+            best = min(offers, key=lambda o: (
+                -o.discount_pct, -(o.original_price - o.current_price), o.current_price, o.variant_key))
             p = replace(p, current_price=best.current_price, original_price=best.original_price,
                         image_url=best.image_url, offers=offers,
                         sizes=list(dict.fromkeys(o.size for o in offers if o.size and

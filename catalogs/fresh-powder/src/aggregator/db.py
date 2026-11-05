@@ -411,14 +411,18 @@ async def query_deals(
         return row[0]
 
     sort_map = {
-        "discount_pct": "deals.discount_pct DESC, (deals.image_url IS NOT NULL AND deals.image_url != '') DESC, deals.id ASC",
+        "discount_pct": (
+            "deals.discount_pct DESC, CASE WHEN deals.currency = 'USD' THEN 0 ELSE 1 END, "
+            "deals.currency ASC, (deals.original_price - deals.current_price) DESC, "
+            "(deals.image_url IS NOT NULL AND deals.image_url != '') DESC, deals.id ASC"
+        ),
         "top_reviewed": "dr.score DESC NULLS LAST, deals.discount_pct DESC",
         "price_low": "deals.current_price ASC",
         "price_high": "deals.current_price DESC",
         "store": "deals.store ASC, deals.discount_pct DESC",
         "newest": "deals.first_seen DESC, deals.id DESC",
     }
-    order = sort_map.get(sort_by, "deals.discount_pct DESC")
+    order = sort_map.get(sort_by, sort_map["discount_pct"])
 
     async with _connect(db_path, read_only=_deal_db_read_only()) as db:
         await db.create_function("price_discount", 2, discount, deterministic=True)
