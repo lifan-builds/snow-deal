@@ -205,6 +205,120 @@ def test_report_lengths_only_apply_to_boards_and_skis():
     assert accepted == deals and not withheld
 
 
+@pytest.mark.parametrize(('result', 'previous'), [
+    ({'errors': 1, 'pages': 9}, {'Partial': 50}),
+    ({'errors': 1, 'pages': 9}, {}),
+    ({'errors': 0, 'collections': [{'status': 'selector_missing'}]}, {}),
+    ({'errors': 0, 'collections': [{}]}, {}),
+])
+def test_incomplete_source_is_withheld_without_a_count_collapse(result, previous):
+    deals = _products_to_deals([
+        Product('Atomic Skis', f'https://s.test/atomic-{index}', 300, 600)
+        for index in range(50)
+    ], 'Partial')
+    complete = _products_to_deals([
+        Product('Salomon Skis', 'https://complete.test/ski', 400, 800)
+    ], 'Complete')
+    outcomes = {'Partial': result, 'Complete': {
+        'errors': 0, 'collections': [{'status': 'complete'}],
+    }}
+    accepted, withheld = protect_partial_snapshots(deals + complete, previous, outcomes)
+    assert accepted == complete
+    assert withheld == ['Partial']
+    assert result['withheld_reasons'] == ['incomplete_refresh']
+    assert result['errors'] == 1
+    assert 'count_drop' not in result
+    assert outcomes['Complete']['errors'] == 0
+
+
+@pytest.mark.parametrize('minimum_stores', [1, 2])
+def test_refresh_does_not_persist_partial_source_or_renew_its_history(
+    monkeypatch, tmp_path, minimum_stores,
+):
+    import sqlite3
+    from dataclasses import replace
+    from datetime import UTC, datetime, timedelta
+    from functools import partial
+
+    import aggregator.cli as module
+    from click.testing import CliRunner
+    from deal_common.offers import VariantOffer
+
+    from aggregator import db
+
+    path = tmp_path / 'refresh.db'
+    old_time = datetime.now(UTC).replace(tzinfo=None) - timedelta(days=1)
+
+    def deal(store, price):
+        url = f'https://{store.lower()}.test/ski'
+        offer = VariantOffer('180', url + '?variant=180', price, 1000,
+                             size='180', options='180', availability='in_stock')
+        return _products_to_deals([
+            Product('Atomic Skis', url, price, 1000, offers=[offer])
+        ], store)[0]
+
+    old = [replace(deal(store, 500), scraped_at=old_time)
+           for store in ('Partial', 'Complete')]
+    asyncio.run(db.init_db(path))
+    asyncio.run(db.upsert_deals(old, path))
+
+    def source_rows(store):
+        url = f'https://{store.lower()}.test/ski'
+        with sqlite3.connect(path) as connection:
+            return {
+                'deals': connection.execute('SELECT * FROM deals WHERE url=?', (url,)).fetchall(),
+                'history': connection.execute(
+                    'SELECT * FROM price_history WHERE url=? ORDER BY observed_at', (url,),
+                ).fetchall(),
+                'offers': connection.execute(
+                    'SELECT * FROM deal_offers WHERE product_url=?', (url,),
+                ).fetchall(),
+                'observations': connection.execute(
+                    'SELECT * FROM offer_observations WHERE product_url=? ORDER BY observed_at', (url,),
+                ).fetchall(),
+            }
+
+    before = {store: source_rows(store) for store in ('Partial', 'Complete')}
+
+    async def scrape(**kwargs):
+        kwargs['outcomes'].update({
+            'Partial': {'errors': 0, 'pages': 9,
+                        'collections': [{'status': 'selector_missing'}]},
+            'Complete': {'errors': 0, 'pages': 1,
+                         'collections': [{'status': 'complete'}]},
+        })
+        return [deal('Partial', 200), deal('Complete', 300)]
+
+    async def no_reviews():
+        pass
+
+    monkeypatch.setattr(module, 'STORES', [StoreConfig(store, f'{store.lower()}.test')
+                                         for store in ('Partial', 'Complete')])
+    monkeypatch.setattr(module, 'init_db', partial(db.init_db, path))
+    monkeypatch.setattr(module, 'store_status', partial(db.store_status, db_path=path))
+    monkeypatch.setattr(module, 'scrape_all', scrape)
+    monkeypatch.setattr(module, 'upsert_deals', partial(db.upsert_deals, db_path=path))
+    monkeypatch.setattr(module, 'save_scrape_run', partial(db.save_scrape_run, db_path=path))
+    monkeypatch.setattr('aggregator.reviews.compute_and_store_deal_reviews', no_reviews)
+    report = tmp_path / 'receipt.json'
+    result = CliRunner().invoke(module.cli, [
+        'refresh', '--min-stores', str(minimum_stores), '--report', str(report),
+    ])
+    assert source_rows('Partial') == before['Partial']
+    receipt = json.loads(report.read_text())
+    assert receipt['withheld_stores'] == ['Partial']
+    assert receipt['publish_candidate_quality']['stores_with_deals'] == 1
+    if minimum_stores == 1:
+        assert result.exit_code == 0, result.output
+        assert source_rows('Complete') != before['Complete']
+        assert len(source_rows('Complete')['observations']) == 2
+        assert asyncio.run(db.refresh_status(path))[1]['status'] == 'partial'
+    else:
+        assert result.exit_code == 1, result.output
+        assert 'Too few reliable store snapshots' in result.output
+        assert source_rows('Complete') == before['Complete']
+
+
 def test_collection_errors_preserve_other_valid_products(monkeypatch):
     async def no_sleep(_): pass
     monkeypatch.setattr('aggregator.scraper.asyncio.sleep', no_sleep)

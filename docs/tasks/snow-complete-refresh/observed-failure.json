@@ -1,0 +1,57 @@
+{
+  "workflow_url": "https://github.com/lifan-builds/snow-deal/actions/runs/41948669174",
+  "commit": "f21bd5fd0cb9fb3f3052570ddd6aacbf65430b38",
+  "checked_at": "2026-11-05T01:53:19.324705",
+  "published_deals": 13055,
+  "scraped_deals": 13055,
+  "withheld_stores": [],
+  "backcountry": {
+    "errors": 1,
+    "pages": 83,
+    "collections": [
+      {
+        "url": "https://www.backcountry.com/rc/skis",
+        "pages": 10,
+        "products": 180,
+        "status": "complete"
+      },
+      {
+        "url": "https://www.backcountry.com/rc/snowboards",
+        "pages": 12,
+        "products": 217,
+        "status": "complete"
+      },
+      {
+        "url": "https://www.backcountry.com/rc/ski-snowboard-on-sale",
+        "pages": 43,
+        "products": 1383,
+        "status": "selector_missing"
+      },
+      {
+        "url": "https://www.backcountry.com/rc/outlet-ski-on-sale",
+        "pages": 10,
+        "products": 330,
+        "status": "complete"
+      },
+      {
+        "url": "https://www.backcountry.com/rc/outlet-snowboard-on-sale",
+        "pages": 8,
+        "products": 243,
+        "status": "complete"
+      }
+    ]
+  },
+  "backcountry_summary": {
+    "store": "Backcountry",
+    "deals": 1424,
+    "missing_category": 7,
+    "missing_image": 0,
+    "missing_sizes": 1424,
+    "missing_lengths": 321,
+    "length_eligible": 321,
+    "variant_offers": 0,
+    "deals_with_variants": 0,
+    "confirmed_size_deals": 0
+  },
+  "interpretation": "CLI accepted partial source into its persistence input because only count collapse withheld sources; individual historical records have not been inspected or rewritten."
+}

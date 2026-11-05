@@ -1,0 +1,5 @@
+# Small change boundary
+
+The gap lives in aggregator.scraper.protect_partial_snapshots, called before upsert_deals by CLI refresh. Extend that gate to withhold any source with explicit errors or a non-complete collection outcome as well as the existing collapse safeguard. Do not require synthetic missing metadata for callers which genuinely have no failed outcome; retain compatibility for known successful paths and verify browser/HTTP outcome conventions first. Unknown/error state must not be upgraded to complete. Preserve original outcome errors and reasons rather than replacing them with a count_drop reason. New sources have no previous baseline but must still be withheld on partial results.
+
+Files: catalogs/fresh-powder/src/aggregator/scraper.py, focused existing scraper/data-quality tests, and if needed a CLI persistence regression in its existing test module. No parser/HTTP edits, no catalog common changes, no ranking/schema/UI/history rewriting. Root owns release/task docs. Independent full checks and release review follow.
