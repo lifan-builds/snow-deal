@@ -23,3 +23,7 @@ Never run a live scrape, review fetch, browser session, auth sync, invite genera
 ## Snow admission before persistence
 
 The current workspace contract lives in `docs/project-guidance/aggregator-data-and-parsers.md`, under Snow source completeness before persistence. `protect_partial_snapshots(deals, previous, outcomes)` must exclude a source with nonzero errors or any non-complete collection status before upsert/history writes, even with healthy counts or no baseline. Preserve prior timestamps and the independent collapse guard. A temporary-DB CLI regression must prove that failed-source deals, offers and observations remain unchanged, complete sources advance only when the accepted-source minimum passes, and receipts report the withheld reason. Large partial counts cannot establish completeness.
+
+## Cash-savings tie contract
+
+See `docs/project-guidance/aggregator-data-and-parsers.md` under Snow default ranking ties. Exact percentage is primary; greater cash savings break same-currency ties during ingestion, variant selection and default card sorting. Mixed-currency ties group USD first, then actual currency code, before savings; no implicit currency conversion. Filters/count/pagination must retain the chosen variant identity.

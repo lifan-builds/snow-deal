@@ -64,7 +64,8 @@ def selection_sql(*, size='', size_min=None, size_max=None, min_price=0, max_pri
     columns += ", o.url AS offer_url, o.variant_key, o.options AS offer_options, COALESCE(o.availability, 'unknown') AS availability, COALESCE(o.reference_basis, 'retailer_reference') AS reference_basis"
     return f"""WITH ranked_offers AS (
         SELECT o.*, ROW_NUMBER() OVER (
-            PARTITION BY o.product_url ORDER BY {pct} DESC, o.current_price, o.variant_key
+            PARTITION BY o.product_url ORDER BY {pct} DESC,
+                (o.original_price - o.current_price) DESC, o.current_price, o.variant_key
         ) AS priority
         FROM deal_offers o JOIN deals d ON d.url = o.product_url
         WHERE {' AND '.join(conditions)}
