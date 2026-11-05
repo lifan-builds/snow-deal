@@ -1,0 +1,3040 @@
+{
+  "verified_at": "2026-11-05T21:30:56.969336+00:00",
+  "release": {
+    "headRefOid": "19a6b6f673c03fde62fc872c1484b35019a67c17",
+    "mergeCommit": {
+      "oid": "e906c16e827c3299ed7030d6835e6d98118dc323"
+    },
+    "mergedAt": "2026-11-05T21:25:19Z",
+    "number": 30,
+    "state": "MERGED",
+    "url": "https://github.com/lifan-builds/snow-deal/pull/30",
+    "offline_tests": 903
+  },
+  "checks": {
+    "headRefOid": "19a6b6f673c03fde62fc872c1484b35019a67c17",
+    "number": 30,
+    "statusCheckRollup": [
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-11-05T21:11:34Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/lifan-builds/snow-deal/actions/runs/42110280370/job/127535697906",
+        "name": "offline",
+        "startedAt": "2026-11-05T21:11:03Z",
+        "status": "COMPLETED",
+        "workflowName": "Cycling and tools checks"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-11-05T21:11:35Z",
+        "conclusion": "SKIPPED",
+        "detailsUrl": "https://github.com/lifan-builds/snow-deal/actions/runs/42110280370/job/127536008972",
+        "name": "snow-preview",
+        "startedAt": "2026-11-05T21:11:35Z",
+        "status": "COMPLETED",
+        "workflowName": "Cycling and tools checks"
+      },
+      {
+        "__typename": "StatusContext",
+        "context": "Vercel",
+        "startedAt": "2026-11-05T21:11:36Z",
+        "state": "SUCCESS",
+        "targetUrl": "https://vercel.com/lifan-chens-projects/snow-deal/7Q6HXNAdazRAgELQQiZcJehcCc7f"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-11-05T21:11:37Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://vercel.com/github",
+        "name": "Vercel Preview Comments",
+        "startedAt": "2026-11-05T21:11:37Z",
+        "status": "COMPLETED",
+        "workflowName": ""
+      }
+    ],
+    "url": "https://github.com/lifan-builds/snow-deal/pull/30"
+  },
+  "deployment": {
+    "id": "dpl_Edy2FvTke1TJ3fCdrCNXTEaCbGfH",
+    "url": "https://benchdrop-otofph27s-lifan-chens-projects.vercel.app",
+    "productionUrl": "https://benchdrop.clifan.com",
+    "inspectorUrl": "https://vercel.com/lifan-chens-projects/benchdrop/Edy2FvTke1TJ3fCdrCNXTEaCbGfH",
+    "readyState": "READY",
+    "target": "production",
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_Edy2FvTke1TJ3fCdrCNXTEaCbGfH",
+    "buildMachine": {
+      "cores": 2,
+      "memory": 8192,
+      "machine": "basic",
+      "selectionType": "fixed",
+      "selectionSource": "plan-default"
+    },
+    "deploymentProtection": [
+      "vercel_authentication"
+    ]
+  },
+  "source_outcomes": [
+    {
+      "source": "Beaver Industrial Supply",
+      "status": "complete",
+      "errors": 0,
+      "pages": 3,
+      "collections": [
+        {
+          "url": "https://beavertools.com/collections/sales-and-closeouts?currency=USD",
+          "pages": 3,
+          "products": 258,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "product_pages": 258,
+      "parsed_products": 258,
+      "accepted_products": 258
+    },
+    {
+      "source": "Tool Nut",
+      "status": "complete",
+      "errors": 0,
+      "pages": 26,
+      "collections": [
+        {
+          "url": "https://www.toolnut.com/collections/saws?currency=USD",
+          "pages": 2,
+          "products": 48,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://www.toolnut.com/collections/power-tools?currency=USD",
+          "pages": 17,
+          "products": 153,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://www.toolnut.com/collections/stationary-tools?currency=USD",
+          "pages": 7,
+          "products": 98,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "parsed_products": 299,
+      "accepted_products": 174
+    },
+    {
+      "source": "Woodcraft",
+      "status": "complete",
+      "errors": 0,
+      "pages": 7,
+      "collections": [
+        {
+          "url": "https://www.woodcraft.com/collections/clearance?currency=USD",
+          "pages": 1,
+          "products": 103,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://www.woodcraft.com/collections/power-tools?currency=USD",
+          "pages": 2,
+          "products": 8,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://www.woodcraft.com/collections/woodworking-machines?currency=USD",
+          "pages": 3,
+          "products": 78,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://www.woodcraft.com/collections/power-tool-deals?currency=USD",
+          "pages": 1,
+          "products": 82,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "parsed_products": 271,
+      "accepted_products": 77
+    },
+    {
+      "source": "Craft Supplies USA",
+      "status": "complete",
+      "errors": 0,
+      "pages": 1,
+      "collections": [
+        {
+          "url": "https://woodturnerscatalog.com/collections/wood-lathes?currency=USD",
+          "pages": 1,
+          "products": 1,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "parsed_products": 1,
+      "accepted_products": 1
+    },
+    {
+      "source": "Harvey Woodworking",
+      "status": "complete",
+      "errors": 0,
+      "pages": 1,
+      "collections": [
+        {
+          "url": "https://www.harveywoodworking.com/collections/all?currency=USD",
+          "pages": 1,
+          "products": 17,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "parsed_products": 17,
+      "accepted_products": 11
+    },
+    {
+      "source": "WEN",
+      "status": "complete",
+      "errors": 0,
+      "pages": 1,
+      "collections": [
+        {
+          "url": "https://wenproducts.com/collections/power-tools?currency=USD",
+          "pages": 1,
+          "products": 9,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "parsed_products": 9,
+      "accepted_products": 8
+    },
+    {
+      "source": "Factory Direct Supply",
+      "status": "complete",
+      "errors": 0,
+      "pages": 8,
+      "collections": [
+        {
+          "url": "https://factorydirectsupply.com/collections/power-tools?currency=USD",
+          "pages": 8,
+          "products": 17,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "parsed_products": 17,
+      "accepted_products": 6
+    },
+    {
+      "source": "Max Warehouse",
+      "status": "complete",
+      "errors": 0,
+      "pages": 6,
+      "collections": [
+        {
+          "url": "https://www.maxwarehouse.com/collections/power-tools?currency=USD",
+          "pages": 6,
+          "products": 235,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "parsed_products": 235,
+      "accepted_products": 43
+    },
+    {
+      "source": "OakTree Supply",
+      "status": "complete",
+      "errors": 0,
+      "pages": 5,
+      "collections": [
+        {
+          "url": "https://www.oaktreesupply.com/collections/clearance?currency=USD",
+          "pages": 1,
+          "products": 104,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://www.oaktreesupply.com/collections/jpw-overstock-items-2026?currency=USD",
+          "pages": 1,
+          "products": 23,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://www.oaktreesupply.com/collections/jet-and-powermatic-price-drops?currency=USD",
+          "pages": 1,
+          "products": 8,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://www.oaktreesupply.com/collections/scm-sale?currency=USD",
+          "pages": 1,
+          "products": 4,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://www.oaktreesupply.com/collections/sawstop?currency=USD",
+          "pages": 1,
+          "products": 40,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "parsed_products": 179,
+      "accepted_products": 72
+    },
+    {
+      "source": "Taylor Toolworks",
+      "status": "complete",
+      "errors": 0,
+      "pages": 1,
+      "collections": [
+        {
+          "url": "https://taytools.com/power-tools?ppg=65535&pn=1",
+          "pages": 1,
+          "products": 19,
+          "status": "complete"
+        }
+      ],
+      "product_pages": 180,
+      "parsed_products": 19,
+      "accepted_products": 1
+    },
+    {
+      "source": "Fasteners Inc",
+      "status": "complete",
+      "errors": 0,
+      "pages": 19,
+      "collections": [
+        {
+          "url": "https://fastenersinc.myshopify.com/collections/power-tools?currency=USD",
+          "pages": 8,
+          "products": 100,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://fastenersinc.myshopify.com/collections/power-tools-1?currency=USD",
+          "pages": 8,
+          "products": 78,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://fastenersinc.myshopify.com/collections/machine-tools?currency=USD",
+          "pages": 1,
+          "products": 2,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://fastenersinc.myshopify.com/collections/power-tool-closeouts?currency=USD",
+          "pages": 1,
+          "products": 2,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://fastenersinc.myshopify.com/collections/all-closeouts?currency=USD",
+          "pages": 1,
+          "products": 30,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "parsed_products": 212,
+      "accepted_products": 79
+    },
+    {
+      "source": "Baker's Gas",
+      "status": "complete",
+      "errors": 0,
+      "pages": 10,
+      "collections": [
+        {
+          "url": "https://bakersgas.com/collections/welding-machines-accessories?currency=USD",
+          "pages": 1,
+          "products": 32,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://bakersgas.com/collections/mig-welders?currency=USD",
+          "pages": 1,
+          "products": 51,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://bakersgas.com/collections/tig-welders?currency=USD",
+          "pages": 1,
+          "products": 58,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://bakersgas.com/collections/multiprocess-welders?currency=USD",
+          "pages": 1,
+          "products": 63,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://bakersgas.com/collections/best-selling-stick-welders?currency=USD",
+          "pages": 1,
+          "products": 45,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://bakersgas.com/collections/plasma-cutters?currency=USD",
+          "pages": 1,
+          "products": 34,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://bakersgas.com/collections/angle-grinders?currency=USD",
+          "pages": 1,
+          "products": 3,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://bakersgas.com/collections/bench-grinders?currency=USD",
+          "pages": 1,
+          "products": 0,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://bakersgas.com/collections/die-grinders?currency=USD",
+          "pages": 1,
+          "products": 2,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://bakersgas.com/collections/cordless-angle-grinders?currency=USD",
+          "pages": 1,
+          "products": 1,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "parsed_products": 289,
+      "accepted_products": 207
+    },
+    {
+      "source": "Cyberweld",
+      "status": "complete",
+      "errors": 0,
+      "pages": 2,
+      "collections": [
+        {
+          "url": "https://store.cyberweld.com/collections/welders-plasma-cutters?currency=USD",
+          "pages": 2,
+          "products": 307,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "parsed_products": 307,
+      "accepted_products": 215
+    }
+  ],
+  "inventory": {
+    "catalog": "tools",
+    "measured_at": "2026-11-05T21:23:37.378404+00:00",
+    "reference_floor": 200,
+    "scope": "snapshot-listed offers; not independent merchant verification or unique model count",
+    "eligible_in_stock_listings": 934,
+    "deep_deal_listings": 33,
+    "useful_retailers": [
+      "Beaver Industrial Supply",
+      "Cyberweld",
+      "Fasteners Inc",
+      "OakTree Supply",
+      "Taylor Toolworks",
+      "Tool Nut",
+      "Woodcraft"
+    ],
+    "checked_within_24h_percent": 100.0,
+    "exact_size_facets": [
+      "12 ft",
+      "15 ft",
+      "16 ft",
+      "20 ft",
+      "25 ft",
+      "50 ft",
+      "HW110S-36Pro",
+      "HW110S-52Pro",
+      "HW110TC-36Pro",
+      "HW110TC-52Pro"
+    ],
+    "top_offers": [
+      {
+        "name": "Kreg 20V Ionic Drive 1/2\" Compact Drill Kit KPTBDR050A",
+        "store": "Beaver Industrial Supply",
+        "url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-2-compact-drill-kit-kptbdr050a?currency=USD&variant=44153404686429",
+        "price": 99.0,
+        "reference": 228.99,
+        "discount": 56.766671033669596,
+        "size": null
+      },
+      {
+        "name": "DEWALT, DCS356D1, Oscillating Multi-Tool, 20V MAX Lithium Ion, Brushless, 3-Speed, Cordless, Kit",
+        "store": "Fasteners Inc",
+        "url": "https://fastenersinc.myshopify.com/products/dew-dcs356d1?currency=USD&variant=45174243688639",
+        "price": 119.0,
+        "reference": 259.0,
+        "discount": 54.054054054054056,
+        "size": null
+      },
+      {
+        "name": "DEWALT 20V MAX XR Brushless Cordless Router (Tool Only)",
+        "store": "Fasteners Inc",
+        "url": "https://fastenersinc.myshopify.com/products/dcw600b-20v-max-compact-router-dewalt?currency=USD&variant=31231201247319",
+        "price": 119.0,
+        "reference": 249.0,
+        "discount": 52.208835341365464,
+        "size": null
+      },
+      {
+        "name": "Kreg 20V Ionic Drive 1/4\" Compact Impact Driver Kit KPTBDV025A",
+        "store": "Beaver Industrial Supply",
+        "url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-4-compact-impact-driver-kit-kptbdv025a?currency=USD&variant=44153397182557",
+        "price": 119.0,
+        "reference": 248.99,
+        "discount": 52.20691594039921,
+        "size": null
+      },
+      {
+        "name": "Kreg 20V Ionic Drive 5\" Random Orbit Sander Kit KPTBRS500A",
+        "store": "Beaver Industrial Supply",
+        "url": "https://beavertools.com/products/kreg-20v-ionic-drive-5-random-orbit-sander-kit-kptbrs500a?currency=USD&variant=44153396428893",
+        "price": 119.0,
+        "reference": 248.99,
+        "discount": 52.20691594039921,
+        "size": null
+      },
+      {
+        "name": "Axiom Iconic-4 Series CNC Router 2' x 2'",
+        "store": "OakTree Supply",
+        "url": "https://www.oaktreesupply.com/products/axoiom-iconic-4-series-cnc-router-24-x-24?currency=USD&variant=37991680082119",
+        "price": 2999.0,
+        "reference": 6049.0,
+        "discount": 50.4215572821954,
+        "size": null
+      },
+      {
+        "name": "Iconic 24\" x 24\" for Axiom CNC Router",
+        "store": "Woodcraft",
+        "url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-24-for-axiom-cnc-router?currency=USD&variant=43403824922762",
+        "price": 2999.0,
+        "reference": 6049.0,
+        "discount": 50.4215572821954,
+        "size": null
+      },
+      {
+        "name": "DEWALT, DCS334B, Cordless Jig Saw, 20V, Brushless, 1 in Blade Stroke Length, 4-Position Orbital Action",
+        "store": "Fasteners Inc",
+        "url": "https://fastenersinc.myshopify.com/products/dcs334b-20v-max-xr-cordless-jig-saw-tool-only-dewalt?currency=USD&variant=31231188205655",
+        "price": 119.0,
+        "reference": 239.0,
+        "discount": 50.2092050209205,
+        "size": null
+      },
+      {
+        "name": "JET JAT-127, 3/4-in. Composite Impact Wrench (505127)",
+        "store": "Tool Nut",
+        "url": "https://www.toolnut.com/products/jet-505127-jat-127-composite-impact-wrench?currency=USD&variant=50177235976486",
+        "price": 299.99,
+        "reference": 580.99,
+        "discount": 48.36572058038865,
+        "size": null
+      },
+      {
+        "name": "Kreg 20V Ionic Drive Oscillating Multi-Tool Kit KPTBMT100A",
+        "store": "Beaver Industrial Supply",
+        "url": "https://beavertools.com/products/kreg-20v-ionic-drive-oscillating-multi-tool-kit-kptbmt100a?currency=USD&variant=44153393905757",
+        "price": 139.0,
+        "reference": 268.99,
+        "discount": 48.325216550801144,
+        "size": null
+      }
+    ]
+  },
+  "baseline_inventory": {
+    "catalog": "tools",
+    "measured_at": "2026-11-05T20:58:12.168902+00:00",
+    "reference_floor": 200,
+    "scope": "snapshot-listed offers; not independent merchant verification or unique model count",
+    "eligible_in_stock_listings": 514,
+    "deep_deal_listings": 32,
+    "useful_retailers": [
+      "Beaver Industrial Supply",
+      "Fasteners Inc",
+      "OakTree Supply",
+      "Taylor Toolworks",
+      "Tool Nut",
+      "Woodcraft"
+    ],
+    "checked_within_24h_percent": 100.0,
+    "exact_size_facets": [
+      "HW110S-36Pro",
+      "HW110S-52Pro",
+      "HW110TC-36Pro",
+      "HW110TC-52Pro"
+    ],
+    "top_offers": [
+      {
+        "name": "Kreg 20V Ionic Drive 1/2\" Compact Drill Kit KPTBDR050A",
+        "store": "Beaver Industrial Supply",
+        "url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-2-compact-drill-kit-kptbdr050a?currency=USD&variant=44153404686429",
+        "price": 99.0,
+        "reference": 228.99,
+        "discount": 56.766671033669596,
+        "size": null
+      },
+      {
+        "name": "DEWALT, DCS356D1, Oscillating Multi-Tool, 20V MAX Lithium Ion, Brushless, 3-Speed, Cordless, Kit",
+        "store": "Fasteners Inc",
+        "url": "https://fastenersinc.myshopify.com/products/dew-dcs356d1?currency=USD&variant=45174243688639",
+        "price": 119.0,
+        "reference": 259.0,
+        "discount": 54.054054054054056,
+        "size": null
+      },
+      {
+        "name": "DEWALT 20V MAX XR Brushless Cordless Router (Tool Only)",
+        "store": "Fasteners Inc",
+        "url": "https://fastenersinc.myshopify.com/products/dcw600b-20v-max-compact-router-dewalt?currency=USD&variant=31231201247319",
+        "price": 119.0,
+        "reference": 249.0,
+        "discount": 52.208835341365464,
+        "size": null
+      },
+      {
+        "name": "Kreg 20V Ionic Drive 1/4\" Compact Impact Driver Kit KPTBDV025A",
+        "store": "Beaver Industrial Supply",
+        "url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-4-compact-impact-driver-kit-kptbdv025a?currency=USD&variant=44153397182557",
+        "price": 119.0,
+        "reference": 248.99,
+        "discount": 52.20691594039921,
+        "size": null
+      },
+      {
+        "name": "Kreg 20V Ionic Drive 5\" Random Orbit Sander Kit KPTBRS500A",
+        "store": "Beaver Industrial Supply",
+        "url": "https://beavertools.com/products/kreg-20v-ionic-drive-5-random-orbit-sander-kit-kptbrs500a?currency=USD&variant=44153396428893",
+        "price": 119.0,
+        "reference": 248.99,
+        "discount": 52.20691594039921,
+        "size": null
+      },
+      {
+        "name": "Axiom Iconic-4 Series CNC Router 2' x 2'",
+        "store": "OakTree Supply",
+        "url": "https://www.oaktreesupply.com/products/axoiom-iconic-4-series-cnc-router-24-x-24?currency=USD&variant=37991680082119",
+        "price": 2999.0,
+        "reference": 6049.0,
+        "discount": 50.4215572821954,
+        "size": null
+      },
+      {
+        "name": "Iconic 24\" x 24\" for Axiom CNC Router",
+        "store": "Woodcraft",
+        "url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-24-for-axiom-cnc-router?currency=USD&variant=43403824922762",
+        "price": 2999.0,
+        "reference": 6049.0,
+        "discount": 50.4215572821954,
+        "size": null
+      },
+      {
+        "name": "DEWALT, DCS334B, Cordless Jig Saw, 20V, Brushless, 1 in Blade Stroke Length, 4-Position Orbital Action",
+        "store": "Fasteners Inc",
+        "url": "https://fastenersinc.myshopify.com/products/dcs334b-20v-max-xr-cordless-jig-saw-tool-only-dewalt?currency=USD&variant=31231188205655",
+        "price": 119.0,
+        "reference": 239.0,
+        "discount": 50.2092050209205,
+        "size": null
+      },
+      {
+        "name": "JET JAT-127, 3/4-in. Composite Impact Wrench (505127)",
+        "store": "Tool Nut",
+        "url": "https://www.toolnut.com/products/jet-505127-jat-127-composite-impact-wrench?currency=USD&variant=50177235976486",
+        "price": 299.99,
+        "reference": 580.99,
+        "discount": 48.36572058038865,
+        "size": null
+      },
+      {
+        "name": "Kreg 20V Ionic Drive Oscillating Multi-Tool Kit KPTBMT100A",
+        "store": "Beaver Industrial Supply",
+        "url": "https://beavertools.com/products/kreg-20v-ionic-drive-oscillating-multi-tool-kit-kptbmt100a?currency=USD&variant=44153393905757",
+        "price": 139.0,
+        "reference": 268.99,
+        "discount": 48.325216550801144,
+        "size": null
+      }
+    ]
+  },
+  "merchant_audit": {
+    "checked_at": "2026-11-05T21:24:55.182658+00:00",
+    "seed": 20261105,
+    "method": "top10-plus-seeded20-default-plus-all-new-or-reclassified-existing-source-in-stock-listings",
+    "selected": 31,
+    "passed": true,
+    "sample_size": 31,
+    "match": 31,
+    "mismatch": 0,
+    "inconclusive": 0,
+    "verified_match_percent": 100.0,
+    "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+    "results": [
+      {
+        "name": "Kreg 20V Ionic Drive 1/2\" Compact Drill Kit KPTBDR050A",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153404686429",
+          "url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-2-compact-drill-kit-kptbdr050a?currency=USD&variant=44153404686429",
+          "current_price": 99.0,
+          "original_price": 228.99,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/kreg_kptbdr050a_1.jpg?v=1769410568",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 56.766671033669596,
+          "savings": 129.99
+        },
+        "check_started_at": "2026-11-05T21:23:15.341130+00:00",
+        "evidence_url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-2-compact-drill-kit-kptbdr050a.js?currency=USD",
+        "response_sha256": "4a2cfec1c9fef875156b51fba92cf7e1b6ca8afa8c4299026145c646498b4d57",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "Kreg 20V Ionic Drive 1/2\" Compact Drill Kit KPTBDR050A",
+          "variant": "44153404686429",
+          "sku": "KJKPTBDR050A",
+          "price_minor": 9900,
+          "reference_minor": 22899,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-2-compact-drill-kit-kptbdr050a?currency=USD&variant=44153404686429",
+        "product_response_sha256": "1e9f798138258aba1d2fa76b9aa64a89ca2990bfc412aefd5551025ad249a6a0",
+        "purchase_panel": {
+          "sku": "KJKPTBDR050A",
+          "product_id": "8060910633053",
+          "variant_key": "44153404686429",
+          "price": 99.0,
+          "reference": 228.99,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:23:22.733361+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "DEWALT, DCS356D1, Oscillating Multi-Tool, 20V MAX Lithium Ion, Brushless, 3-Speed, Cordless, Kit",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "45174243688639",
+          "url": "https://fastenersinc.myshopify.com/products/dew-dcs356d1?currency=USD&variant=45174243688639",
+          "current_price": 119.0,
+          "original_price": 259.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/453290ccd053ebf5cc489669b86092d44582ff72-large.png?v=1790079732",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 54.054054054054056,
+          "savings": 140.0
+        },
+        "check_started_at": "2026-11-05T21:23:22.733382+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/dew-dcs356d1.js?currency=USD",
+        "response_sha256": "13201ca0e353623a7c968f8deeb4bbea6a2a2cebddb0a2c945d4878c41900d72",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DEWALT, DCS356D1, Oscillating Multi-Tool, 20V MAX Lithium Ion, Brushless, 3-Speed, Cordless, Kit",
+          "variant": "45174243688639",
+          "sku": "DEW-DCS356D1",
+          "price_minor": 11900,
+          "reference_minor": 25900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:23:27.042383+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "DEWALT 20V MAX XR Brushless Cordless Router (Tool Only)",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "31231201247319",
+          "url": "https://fastenersinc.myshopify.com/products/dcw600b-20v-max-compact-router-dewalt?currency=USD&variant=31231201247319",
+          "current_price": 119.0,
+          "original_price": 249.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/1c82af8b8d6d0cf2f34b8eea29e1d28f87bd16c4-large.png?v=1790078004",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 52.208835341365464,
+          "savings": 130.0
+        },
+        "check_started_at": "2026-11-05T21:23:27.042516+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/dcw600b-20v-max-compact-router-dewalt.js?currency=USD",
+        "response_sha256": "898903320f587fde506a5ec1fe82b4cf047a5037f0749b86255b6c8a38f4eeb0",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DEWALT 20V MAX XR Brushless Cordless Router (Tool Only)",
+          "variant": "31231201247319",
+          "sku": "DEW-DCW600B",
+          "price_minor": 11900,
+          "reference_minor": 24900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:23:29.171080+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Kreg 20V Ionic Drive 1/4\" Compact Impact Driver Kit KPTBDV025A",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153397182557",
+          "url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-4-compact-impact-driver-kit-kptbdv025a?currency=USD&variant=44153397182557",
+          "current_price": 119.0,
+          "original_price": 248.99,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/kreg_kptbdv025a_1.jpg?v=1769410521",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 52.20691594039921,
+          "savings": 129.99
+        },
+        "check_started_at": "2026-11-05T21:23:29.171131+00:00",
+        "evidence_url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-4-compact-impact-driver-kit-kptbdv025a.js?currency=USD",
+        "response_sha256": "dc524b636aafd2bc77696799251abcf55811622f35ebf7dabbfce899800c17c9",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "Kreg 20V Ionic Drive 1/4\" Compact Impact Driver Kit KPTBDV025A",
+          "variant": "44153397182557",
+          "sku": "KJKPTBDV025A",
+          "price_minor": 11900,
+          "reference_minor": 24899,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-4-compact-impact-driver-kit-kptbdv025a?currency=USD&variant=44153397182557",
+        "product_response_sha256": "8f65d12c35ef729d38ad05a56a8b075f8f557371eabc25cdc84e2857a7ee0e3e",
+        "purchase_panel": {
+          "sku": "KJKPTBDV025A",
+          "product_id": "8060903194717",
+          "variant_key": "44153397182557",
+          "price": 119.0,
+          "reference": 248.99,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:23:34.298632+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Kreg 20V Ionic Drive 5\" Random Orbit Sander Kit KPTBRS500A",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153396428893",
+          "url": "https://beavertools.com/products/kreg-20v-ionic-drive-5-random-orbit-sander-kit-kptbrs500a?currency=USD&variant=44153396428893",
+          "current_price": 119.0,
+          "original_price": 248.99,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/kreg_kptbrs500a_1.jpg?v=1769410520",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 52.20691594039921,
+          "savings": 129.99
+        },
+        "check_started_at": "2026-11-05T21:23:34.298652+00:00",
+        "evidence_url": "https://beavertools.com/products/kreg-20v-ionic-drive-5-random-orbit-sander-kit-kptbrs500a.js?currency=USD",
+        "response_sha256": "87bdf33a2f972fc415549597250cb191f2922de205273cb5296ce397e58c5192",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "Kreg 20V Ionic Drive 5\" Random Orbit Sander Kit KPTBRS500A",
+          "variant": "44153396428893",
+          "sku": "KJKPTBRS500A",
+          "price_minor": 11900,
+          "reference_minor": 24899,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/kreg-20v-ionic-drive-5-random-orbit-sander-kit-kptbrs500a?currency=USD&variant=44153396428893",
+        "product_response_sha256": "da0b0a94a684b74c899e068ed142fa60c939e77ecb9c72bedeb5d651f9145847",
+        "purchase_panel": {
+          "sku": "KJKPTBRS500A",
+          "product_id": "8060902441053",
+          "variant_key": "44153396428893",
+          "price": 119.0,
+          "reference": 248.99,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:23:39.175475+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Axiom Iconic-4 Series CNC Router 2' x 2'",
+        "store": "OakTree Supply",
+        "offer": {
+          "variant_key": "37991680082119",
+          "url": "https://www.oaktreesupply.com/products/axoiom-iconic-4-series-cnc-router-24-x-24?currency=USD&variant=37991680082119",
+          "current_price": 2999.0,
+          "original_price": 6049.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/products/Iconic-4.jpg?v=1676914267",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 50.4215572821954,
+          "savings": 3050.0
+        },
+        "check_started_at": "2026-11-05T21:23:39.175492+00:00",
+        "evidence_url": "https://www.oaktreesupply.com/products/axoiom-iconic-4-series-cnc-router-24-x-24.js?currency=USD",
+        "response_sha256": "f07a77a59e0307e5b6d384a0ba332ec04fca519b4fed6871a9297d7486a86700",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Axiom Iconic-4 Series CNC Router 2' x 2'",
+          "variant": "37991680082119",
+          "sku": "AX9-ICONIC4",
+          "price_minor": 299900,
+          "reference_minor": 604900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:23:43.563904+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Iconic 24\" x 24\" for Axiom CNC Router",
+        "store": "Woodcraft",
+        "offer": {
+          "variant_key": "43403824922762",
+          "url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-24-for-axiom-cnc-router?currency=USD&variant=43403824922762",
+          "current_price": 2999.0,
+          "original_price": 6049.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/172910_000_001.jpg?v=1720472421",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 50.4215572821954,
+          "savings": 3050.0
+        },
+        "check_started_at": "2026-11-05T21:23:43.564002+00:00",
+        "evidence_url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-24-for-axiom-cnc-router.js?currency=USD",
+        "response_sha256": "70a947ae04b90c1bfc26a6ab72a7d2fd9deceea5cffea990b1fa15ae9e64b02d",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Iconic 24\" x 24\" for Axiom CNC Router",
+          "variant": "43403824922762",
+          "sku": "172910",
+          "price_minor": 299900,
+          "reference_minor": 604900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:23:47.909263+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "DEWALT, DCS334B, Cordless Jig Saw, 20V, Brushless, 1 in Blade Stroke Length, 4-Position Orbital Action",
+        "store": "Fasteners Inc",
+        "offer": {
+          "variant_key": "31231188205655",
+          "url": "https://fastenersinc.myshopify.com/products/dcs334b-20v-max-xr-cordless-jig-saw-tool-only-dewalt?currency=USD&variant=31231188205655",
+          "current_price": 119.0,
+          "original_price": 239.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0026/8976/1392/files/473893353f01ef5298d20ee57c71d49d0d5d654e-large_2e145551-785e-4a6c-a184-39ece194d402.png?v=1773431552",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 50.2092050209205,
+          "savings": 120.0
+        },
+        "check_started_at": "2026-11-05T21:23:47.909305+00:00",
+        "evidence_url": "https://fastenersinc.myshopify.com/products/dcs334b-20v-max-xr-cordless-jig-saw-tool-only-dewalt.js?currency=USD",
+        "response_sha256": "41c2584cc85c27be814ea5282e9c97911bba22b4ad0472a7219836ae4701fdac",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "DEWALT, DCS334B, Cordless Jig Saw, 20V, Brushless, 1 in Blade Stroke Length, 4-Position Orbital Action",
+          "variant": "31231188205655",
+          "sku": "DEW-DCS334B",
+          "price_minor": 11900,
+          "reference_minor": 23900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:23:50.144455+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "JET JAT-127, 3/4-in. Composite Impact Wrench (505127)",
+        "store": "Tool Nut",
+        "offer": {
+          "variant_key": "50177235976486",
+          "url": "https://www.toolnut.com/products/jet-505127-jat-127-composite-impact-wrench?currency=USD&variant=50177235976486",
+          "current_price": 299.99,
+          "original_price": 580.99,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/505127_main.jpg?v=1778274029",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 48.36572058038865,
+          "savings": 281.0
+        },
+        "check_started_at": "2026-11-05T21:23:50.144538+00:00",
+        "evidence_url": "https://www.toolnut.com/products/jet-505127-jat-127-composite-impact-wrench.js?currency=USD",
+        "response_sha256": "809181c34868ee50941e0ca822e8053f47d5f3660da88a3048b4cf6ee9a8f8bd",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "JET JAT-127, 3/4-in. Composite Impact Wrench (505127)",
+          "variant": "50177235976486",
+          "sku": "505127",
+          "price_minor": 29999,
+          "reference_minor": 58099,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:23:54.486926+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Kreg 20V Ionic Drive Oscillating Multi-Tool Kit KPTBMT100A",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153393905757",
+          "url": "https://beavertools.com/products/kreg-20v-ionic-drive-oscillating-multi-tool-kit-kptbmt100a?currency=USD&variant=44153393905757",
+          "current_price": 139.0,
+          "original_price": 268.99,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/kreg_kptbmt100a_1.jpg?v=1769410505",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 48.325216550801144,
+          "savings": 129.99
+        },
+        "check_started_at": "2026-11-05T21:23:54.487028+00:00",
+        "evidence_url": "https://beavertools.com/products/kreg-20v-ionic-drive-oscillating-multi-tool-kit-kptbmt100a.js?currency=USD",
+        "response_sha256": "2aa02cba72134883c4f0d934a89e807338beb05682a92c0169a1d97c557b0b09",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "Kreg 20V Ionic Drive Oscillating Multi-Tool Kit KPTBMT100A",
+          "variant": "44153393905757",
+          "sku": "KJKPTBMT100A",
+          "price_minor": 13900,
+          "reference_minor": 26899,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/kreg-20v-ionic-drive-oscillating-multi-tool-kit-kptbmt100a?currency=USD&variant=44153393905757",
+        "product_response_sha256": "aad059b54d92fadf7df5fd176a926a6dcc11023a2a8341c2aa68d07404743287",
+        "purchase_panel": {
+          "sku": "KJKPTBMT100A",
+          "product_id": "8060899885149",
+          "variant_key": "44153393905757",
+          "price": 139.0,
+          "reference": 268.99,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:23:59.627269+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Miller Dynasty 800 Wireless Foot Control Complete - 951000264",
+        "store": "Baker's Gas",
+        "offer": {
+          "variant_key": "41486493319270",
+          "url": "https://bakersgas.com/products/miller-951000008?currency=USD&variant=41486493319270",
+          "current_price": 32086.0,
+          "original_price": 37058.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/files/Dynasty800TIGRunnerCompleteWirelessLit951000264.webp?v=1791548382",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 13.416806087754331,
+          "savings": 4972.0
+        },
+        "check_started_at": "2026-11-05T21:23:59.627286+00:00",
+        "evidence_url": "https://bakersgas.com/products/miller-951000008.js?currency=USD",
+        "response_sha256": "e8ad5e6d1ccbc2031ca1af094ba848c10c14beceb6d65952c26a70bf7f0b6bb4",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Miller Dynasty 800 Wireless Foot Control Complete - 951000264",
+          "variant": "41486493319270",
+          "sku": "MIL951000264",
+          "price_minor": 3208600,
+          "reference_minor": 3705800,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:24:04.017008+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Sawstop Industrial 5HP, 3ph, 230v Cabinet Saw with 52-in. Industrial T-Glide Rip Fence, Rails & Extension Table (ICS53230-TGI252)",
+        "store": "Tool Nut",
+        "offer": {
+          "variant_key": "51633305813286",
+          "url": "https://www.toolnut.com/products/sawstop-ics53230-tgi252-industrial-5hp-3ph-230v-cabinet-saw-with-52-industrial-t-glide-rip-fence-rails-extension-table?currency=USD&variant=51633305813286",
+          "current_price": 5440.0,
+          "original_price": 5940.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/sawstop_ics52_atg_864e9223-c234-4215-a594-63a201b6d2ce.jpg?v=1761768220",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 8.417508417508417,
+          "savings": 500.0
+        },
+        "check_started_at": "2026-11-05T21:24:04.017050+00:00",
+        "evidence_url": "https://www.toolnut.com/products/sawstop-ics53230-tgi252-industrial-5hp-3ph-230v-cabinet-saw-with-52-industrial-t-glide-rip-fence-rails-extension-table.js?currency=USD",
+        "response_sha256": "8cd53126dab085b7d87d20cd2c3488884425de1b6a36dcb5610909bf027e54c9",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Sawstop Industrial 5HP, 3ph, 230v Cabinet Saw with 52-in. Industrial T-Glide Rip Fence, Rails & Extension Table (ICS53230-TGI252)",
+          "variant": "51633305813286",
+          "sku": "ICS53230-TGI252",
+          "price_minor": 544000,
+          "reference_minor": 594000,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:24:06.217075+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "SCM Nova S 520 - Xylent 20\" Planer with Segmented Infeed Roller",
+        "store": "OakTree Supply",
+        "offer": {
+          "variant_key": "48783925543129",
+          "url": "https://www.oaktreesupply.com/products/scm-nova-s-520-xylent-20-planer-with-segmented-infeed-roller?currency=USD&variant=48783925543129",
+          "current_price": 15575.0,
+          "original_price": 17075.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/files/NovaS520-1_62b7840b-e2aa-4e2c-97e3-cb1446b5fe5b.jpg?v=1793807150",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 8.784773060029282,
+          "savings": 1500.0
+        },
+        "check_started_at": "2026-11-05T21:24:06.217166+00:00",
+        "evidence_url": "https://www.oaktreesupply.com/products/scm-nova-s-520-xylent-20-planer-with-segmented-infeed-roller.js?currency=USD",
+        "response_sha256": "8c5e05d9ecf45e79f183305fd8630fc2020d64d6c6c22cb151ed8ecd0d12498c",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "SCM Nova S 520 - Xylent 20\" Planer with Segmented Infeed Roller",
+          "variant": "48783925543129",
+          "sku": "NovaS520X-SIR",
+          "price_minor": 1557500,
+          "reference_minor": 1707500,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:24:08.434720+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Sawstop Industrial 3HP, 1ph, 230v Cabinet Saw with 52-in. Industrial T-Glide Rip Fence, Rails & Extension Table (ICS31230-TGI252)",
+        "store": "Tool Nut",
+        "offer": {
+          "variant_key": "51633304994086",
+          "url": "https://www.toolnut.com/products/sawstop-ics31230-tgi252-industrial-3hp-1ph-230v-cabinet-saw-with-52-industrial-t-glide-rip-fence-rails-extension-table?currency=USD&variant=51633304994086",
+          "current_price": 4772.0,
+          "original_price": 5272.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/sawstop_ics52_atg_fc666901-e111-4849-8524-babef0f8623e.jpg?v=1761768220",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 9.484066767830045,
+          "savings": 500.0
+        },
+        "check_started_at": "2026-11-05T21:24:08.434830+00:00",
+        "evidence_url": "https://www.toolnut.com/products/sawstop-ics31230-tgi252-industrial-3hp-1ph-230v-cabinet-saw-with-52-industrial-t-glide-rip-fence-rails-extension-table.js?currency=USD",
+        "response_sha256": "03e55f3778e581a5fbb8f88039eadd1c964d8ecf331dc0f21f2f76303de0dd35",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Sawstop Industrial 3HP, 1ph, 230v Cabinet Saw with 52-in. Industrial T-Glide Rip Fence, Rails & Extension Table (ICS31230-TGI252)",
+          "variant": "51633304994086",
+          "sku": "ICS31230-TGI252",
+          "price_minor": 477200,
+          "reference_minor": 527200,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:24:10.573331+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Miller Invision 450 MPa Plus System Dual (Push Only) - 951457",
+        "store": "Baker's Gas",
+        "offer": {
+          "variant_key": "28831086247989",
+          "url": "https://bakersgas.com/products/miller-951457?currency=USD&variant=28831086247989",
+          "current_price": 25515.0,
+          "original_price": 29468.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/products/ScreenShot2022-05-26at9.28.14AM.png?v=1658935649",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 13.414551377765711,
+          "savings": 3953.0
+        },
+        "check_started_at": "2026-11-05T21:24:10.573433+00:00",
+        "evidence_url": "https://bakersgas.com/products/miller-951457.js?currency=USD",
+        "response_sha256": "3862020fb04c0a256511982b94340849ce2b40343304ad997b46edbe67705e97",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Miller Invision 450 MPa Plus System Dual (Push Only) - 951457",
+          "variant": "28831086247989",
+          "sku": "MIL951457",
+          "price_minor": 2551500,
+          "reference_minor": 2946800,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:24:12.837564+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "SHARK HD510 CNC Machine",
+        "store": "Woodcraft",
+        "offer": {
+          "variant_key": "43403686838410",
+          "url": "https://www.woodcraft.com/products/next-wave-shark-hd510-cnc-machine?currency=USD&variant=43403686838410",
+          "current_price": 3399.99,
+          "original_price": 3999.99,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/167550_000_002.jpg?v=1767622951",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 15.00003750009375,
+          "savings": 600.0
+        },
+        "check_started_at": "2026-11-05T21:24:12.837615+00:00",
+        "evidence_url": "https://www.woodcraft.com/products/next-wave-shark-hd510-cnc-machine.js?currency=USD",
+        "response_sha256": "578120604c76d70eece69b396a2e2334dd35379457be918e3ed8548b4fbf80bf",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "SHARK HD510 CNC Machine",
+          "variant": "43403686838410",
+          "sku": "167550",
+          "price_minor": 339999,
+          "reference_minor": 399999,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:24:15.106197+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Metabo HPT 30 Ga. Corded 30 deg. Framing Nailer",
+        "store": "Max Warehouse",
+        "offer": {
+          "variant_key": "39551778291763",
+          "url": "https://www.maxwarehouse.com/products/metabo-hpt-30-ga-corded-30-deg-framing-nailer-1?currency=USD&variant=39551778291763",
+          "current_price": 340.41,
+          "original_price": 343.81,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/1405/6268/files/image_ecd45747-2ba3-4514-b05c-723eff61a565.jpg?v=1694595643",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 0.9889182978970943,
+          "savings": 3.4
+        },
+        "check_started_at": "2026-11-05T21:24:15.106280+00:00",
+        "evidence_url": "https://www.maxwarehouse.com/products/metabo-hpt-30-ga-corded-30-deg-framing-nailer-1.js?currency=USD",
+        "response_sha256": "5152650ac380559ef4131e44b287806eda7ced99f5176295f7823ba47a2b47fc",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Metabo HPT 30 Ga. Corded 30 deg. Framing Nailer",
+          "variant": "39551778291763",
+          "sku": "EJD-2799518",
+          "price_minor": 34041,
+          "reference_minor": 34381,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:24:19.465134+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Miller Dynasty 210 - 907816",
+        "store": "Baker's Gas",
+        "offer": {
+          "variant_key": "39711106629734",
+          "url": "https://bakersgas.com/products/miller-907816?currency=USD&variant=39711106629734",
+          "current_price": 7144.0,
+          "original_price": 8251.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/products/Dynasty210Lit.jpg?v=1677860727",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 13.416555569021936,
+          "savings": 1107.0
+        },
+        "check_started_at": "2026-11-05T21:24:19.465261+00:00",
+        "evidence_url": "https://bakersgas.com/products/miller-907816.js?currency=USD",
+        "response_sha256": "7593481ceac5e2b97242f7c5cccd2bde0a1b1bf63664e9fe911a06befd566c66",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Miller Dynasty 210 - 907816",
+          "variant": "39711106629734",
+          "sku": "MIL907816",
+          "price_minor": 714400,
+          "reference_minor": 825100,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:24:21.661687+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Miller Dynasty 210 TIGRunner 907816002",
+        "store": "Cyberweld",
+        "offer": {
+          "variant_key": "43706907459811",
+          "url": "https://store.cyberweld.com/products/miller-dynasty-210-tigrunner-907816002?currency=USD&variant=43706907459811",
+          "current_price": 9173.0,
+          "original_price": 10595.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-miller-dynasty-210-tigrunner-907816002-1205643008.jpg?v=1763457244",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 13.421425200566304,
+          "savings": 1422.0
+        },
+        "check_started_at": "2026-11-05T21:24:21.661751+00:00",
+        "evidence_url": "https://store.cyberweld.com/products/miller-dynasty-210-tigrunner-907816002.js?currency=USD",
+        "response_sha256": "11b60556f3a49a18f0dd90e1f6c9e7fe49ffd7a23b59fcb69bfe8a658c2ab1a7",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Miller Dynasty 210 TIGRunner 907816002",
+          "variant": "43706907459811",
+          "sku": "907816002",
+          "price_minor": 917300,
+          "reference_minor": 1059500,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:24:26.092615+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Axiom AR4Pro V6 2'x2' CNC Router",
+        "store": "OakTree Supply",
+        "offer": {
+          "variant_key": "31966616780918",
+          "url": "https://www.oaktreesupply.com/products/axiom-ar4pro-v5-2x2-cnc-router?currency=USD&variant=31966616780918",
+          "current_price": 4999.0,
+          "original_price": 9459.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/files/AR4ProV6main_4d61fd1e-1529-413c-95d0-cfddbfd9d660.jpg?v=1711135489",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 47.15086161327836,
+          "savings": 4460.0
+        },
+        "check_started_at": "2026-11-05T21:24:26.092706+00:00",
+        "evidence_url": "https://www.oaktreesupply.com/products/axiom-ar4pro-v5-2x2-cnc-router.js?currency=USD",
+        "response_sha256": "f885fbfb159c552ba6d62d8a6c4e8e45a5e1e33d23cfde9aea79db10b9a24486",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Axiom AR4Pro V6 2'x2' CNC Router",
+          "variant": "31966616780918",
+          "sku": "AX9-AR4PROV6",
+          "price_minor": 499900,
+          "reference_minor": 945900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:24:28.303762+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Powermatic 201 22\" Straight Knife Planer 7.5hp, 1ph, 230v",
+        "store": "OakTree Supply",
+        "offer": {
+          "variant_key": "19739805450358",
+          "url": "https://www.oaktreesupply.com/products/powermatic-201-22-straight-knife-planer?currency=USD&variant=19739805450358",
+          "current_price": 7999.0,
+          "original_price": 9899.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/products/1791268-2_892479d0-f3b1-4b89-8a1b-b83e3d710e4b.jpg?v=1653509083",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 19.193857965451055,
+          "savings": 1900.0
+        },
+        "check_started_at": "2026-11-05T21:24:28.303850+00:00",
+        "evidence_url": "https://www.oaktreesupply.com/products/powermatic-201-22-straight-knife-planer.js?currency=USD",
+        "response_sha256": "1cbdd40e789dffe47cf6adfddd740d61b29a54c4ecd4cff05b2a5b5d5c84b971",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Powermatic 201 22\" Straight Knife Planer 7.5hp, 1ph, 230v",
+          "variant": "19739805450358",
+          "sku": "PM9-1791261",
+          "price_minor": 799900,
+          "reference_minor": 989900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:24:30.411629+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Miller Dynasty 400 208-600 V, CE - 907858002",
+        "store": "Baker's Gas",
+        "offer": {
+          "variant_key": "41426487574630",
+          "url": "https://bakersgas.com/products/miller-dynasty-400-208-600-v-ce-907858002?currency=USD&variant=41426487574630",
+          "current_price": 16040.0,
+          "original_price": 18525.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/files/Dynasty400Lit_62fc61bb-3bc8-47b8-abb0-d16462f4ccf0.jpg?v=1715891786",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 13.414304993252362,
+          "savings": 2485.0
+        },
+        "check_started_at": "2026-11-05T21:24:30.411713+00:00",
+        "evidence_url": "https://bakersgas.com/products/miller-dynasty-400-208-600-v-ce-907858002.js?currency=USD",
+        "response_sha256": "1b433e38cd2cc328197ee1d6c264f00556b085bc6150c77ff4876f296a6a5a46",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Miller Dynasty 400 208-600 V, CE - 907858002",
+          "variant": "41426487574630",
+          "sku": "MIL907858002",
+          "price_minor": 1604000,
+          "reference_minor": 1852500,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:24:32.616711+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Miller Dynasty 800 TIGRunner 907951001",
+        "store": "Cyberweld",
+        "offer": {
+          "variant_key": "49610440802531",
+          "url": "https://store.cyberweld.com/products/miller-dynasty-800-tigrunner-907951001?currency=USD&variant=49610440802531",
+          "current_price": 30274.0,
+          "original_price": 34965.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-miller-dynasty-800-tigrunner-907951001-1255895328.jpg?v=1787772675",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 13.416273416273416,
+          "savings": 4691.0
+        },
+        "check_started_at": "2026-11-05T21:24:32.616785+00:00",
+        "evidence_url": "https://store.cyberweld.com/products/miller-dynasty-800-tigrunner-907951001.js?currency=USD",
+        "response_sha256": "2afeb33435d0ef7a1ee9eb15a329315e269cf030637431c8dd6f369e6a004c34",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Miller Dynasty 800 TIGRunner 907951001",
+          "variant": "49610440802531",
+          "sku": "907951001",
+          "price_minor": 3027400,
+          "reference_minor": 3496500,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:24:34.859809+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Professional Cabinet Saw - 1-3/4 HP - 110V 1 PH - 52\" Professional T-Glide Fence System",
+        "store": "Woodcraft",
+        "offer": {
+          "variant_key": "43404019990666",
+          "url": "https://www.woodcraft.com/products/sawstop-1-75-hp-professional-cabinet-saw-110v-1-phase-52-professional-t-glide-fence-system?currency=USD&variant=43404019990666",
+          "current_price": 3111.0,
+          "original_price": 3461.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/846920_000_001.jpg?v=1790191032",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 10.112684195319272,
+          "savings": 350.0
+        },
+        "check_started_at": "2026-11-05T21:24:34.859894+00:00",
+        "evidence_url": "https://www.woodcraft.com/products/sawstop-1-75-hp-professional-cabinet-saw-110v-1-phase-52-professional-t-glide-fence-system.js?currency=USD",
+        "response_sha256": "470abf640aababe50c1e3e7cce3cb6cdae641756488acdb5116fa1092170a299",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Professional Cabinet Saw - 1-3/4 HP - 110V 1 PH - 52\" Professional T-Glide Fence System",
+          "variant": "43404019990666",
+          "sku": "846920",
+          "price_minor": 311100,
+          "reference_minor": 346100,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:24:37.126513+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "SawStop Professional Table Saw 1.75HP, 110V, w/ 36\" Fence Assembly PCS175-TGP236",
+        "store": "Beaver Industrial Supply",
+        "offer": {
+          "variant_key": "44153878544477",
+          "url": "https://beavertools.com/products/pcs175-tgp236-sawstop-professional-table-saw-1-75hp-110v-w-36-fence-assembly?currency=USD&variant=44153878544477",
+          "current_price": 3005.0,
+          "original_price": 3355.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0717/1342/3453/files/pcs175-tgp36.png?v=1769412948",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 10.432190760059612,
+          "savings": 350.0
+        },
+        "check_started_at": "2026-11-05T21:24:37.126608+00:00",
+        "evidence_url": "https://beavertools.com/products/pcs175-tgp236-sawstop-professional-table-saw-1-75hp-110v-w-36-fence-assembly.js?currency=USD",
+        "response_sha256": "a5b932ff23aee43af0853b99b0e9b0ed189de2559440983ed59799ca56a84e99",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true,
+          "purchase_identity": true,
+          "purchase_destination": true,
+          "purchase_currency": true,
+          "purchase_price": true,
+          "purchase_reference": true,
+          "purchase_options": true,
+          "purchase_stock": true,
+          "purchase_shipping_note": true
+        },
+        "merchant": {
+          "title": "SawStop Professional Table Saw 1.75HP, 110V, w/ 36\" Fence Assembly PCS175-TGP236",
+          "variant": "44153878544477",
+          "sku": "SSPCS175-TGP236",
+          "price_minor": 300500,
+          "reference_minor": 335500,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "product_evidence_url": "https://beavertools.com/products/pcs175-tgp236-sawstop-professional-table-saw-1-75hp-110v-w-36-fence-assembly?currency=USD&variant=44153878544477",
+        "product_response_sha256": "aa756601d0b996079318d8cdcfdb38ae616f5c644eb5b68c53aa42e07fad71f2",
+        "purchase_panel": {
+          "sku": "SSPCS175-TGP236",
+          "product_id": "8061376397405",
+          "variant_key": "44153878544477",
+          "price": 3005.0,
+          "reference": 3355.0,
+          "currency": "USD",
+          "stock_label": "In Stock",
+          "shipping_note": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:24:42.228214+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Miller Dynasty 400 208-600 V, TIGRunner- 907950001",
+        "store": "Baker's Gas",
+        "offer": {
+          "variant_key": "47245221527654",
+          "url": "https://bakersgas.com/products/miller-dynasty-400-208-600-v-tigrunner-907950001?currency=USD&variant=47245221527654",
+          "current_price": 17798.0,
+          "original_price": 20555.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/files/Dynasty400TIGRunner.png?v=1716924934",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 13.412794940403794,
+          "savings": 2757.0
+        },
+        "check_started_at": "2026-11-05T21:24:42.228234+00:00",
+        "evidence_url": "https://bakersgas.com/products/miller-dynasty-400-208-600-v-tigrunner-907950001.js?currency=USD",
+        "response_sha256": "fb00b517c3f1527e06a8de6a055e3f5e3aeef1d300181800a200ed801846d654",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Miller Dynasty 400 208-600 V, TIGRunner- 907950001",
+          "variant": "47245221527654",
+          "sku": "MIL907950001",
+          "price_minor": 1779800,
+          "reference_minor": 2055500,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:24:44.467483+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "SawStop 5HP, 3ph, 230v Industrial Cabinet Saw w/52\" T-Glide Advance Fence, Rails & Extension Table",
+        "store": "OakTree Supply",
+        "offer": {
+          "variant_key": "47338351067353",
+          "url": "https://www.oaktreesupply.com/products/sawstop-5hp-3ph-230v-industrial-cabinet-saw-w-52-t-glide-advance-fence-rails-extension-table-old?currency=USD&variant=47338351067353",
+          "current_price": 5604.0,
+          "original_price": 6104.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0701/2751/files/ICS53230-ATGI52.jpg?v=1761836421",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 8.191349934469201,
+          "savings": 500.0
+        },
+        "check_started_at": "2026-11-05T21:24:44.467551+00:00",
+        "evidence_url": "https://www.oaktreesupply.com/products/sawstop-5hp-3ph-230v-industrial-cabinet-saw-w-52-t-glide-advance-fence-rails-extension-table-old.js?currency=USD",
+        "response_sha256": "7799158a433e7d455378398dfe96db030366eedba89d466a7e7c547221f69314",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "SawStop 5HP, 3ph, 230v Industrial Cabinet Saw w/52\" T-Glide Advance Fence, Rails & Extension Table",
+          "variant": "47338351067353",
+          "sku": "ICS53230-ATGI52",
+          "price_minor": 560400,
+          "reference_minor": 610400,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:24:46.653046+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Jet Tools JWSS-18B 18-in. Scroll Saw (727300B)",
+        "store": "Tool Nut",
+        "offer": {
+          "variant_key": "50176434635046",
+          "url": "https://www.toolnut.com/products/jet-tools-727300b-jwss-18b-18-inch-scroll-saw?currency=USD&variant=50176434635046",
+          "current_price": 699.99,
+          "original_price": 1026.99,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/727300b_alt1.jpg?v=1778192807",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 31.840621622411124,
+          "savings": 327.0
+        },
+        "check_started_at": "2026-11-05T21:24:46.653150+00:00",
+        "evidence_url": "https://www.toolnut.com/products/jet-tools-727300b-jwss-18b-18-inch-scroll-saw.js?currency=USD",
+        "response_sha256": "2ce7e79a1331a4e3a6e42bab8a9500ee3fcd60b6d94e601b18e207b96188d72e",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Jet Tools JWSS-18B 18-in. Scroll Saw (727300B)",
+          "variant": "50176434635046",
+          "sku": "727300B",
+          "price_minor": 69999,
+          "reference_minor": 102699,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:24:48.835472+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "JET EVBS-20, 20-in. Vertical Metalworking Bandsaw (891100)",
+        "store": "Tool Nut",
+        "offer": {
+          "variant_key": "50177044775206",
+          "url": "https://www.toolnut.com/products/jet-891100-evbs-20-20-inch-vertical-metalworking-bandsaw?currency=USD&variant=50177044775206",
+          "current_price": 13499.0,
+          "original_price": 16841.99,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/891100_main.jpg?v=1778264916",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 19.84913896754481,
+          "savings": 3342.99
+        },
+        "check_started_at": "2026-11-05T21:24:48.835526+00:00",
+        "evidence_url": "https://www.toolnut.com/products/jet-891100-evbs-20-20-inch-vertical-metalworking-bandsaw.js?currency=USD",
+        "response_sha256": "d615e91bf5708f8428df56d08d6d2a1b1ddd11629fb3b6ab9b780d0854ac01d1",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "JET EVBS-20, 20-in. Vertical Metalworking Bandsaw (891100)",
+          "variant": "50177044775206",
+          "sku": "891100-JPW",
+          "price_minor": 1349900,
+          "reference_minor": 1684199,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:24:50.942951+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Milwaukee M18 FUEL 6-1/2-in. Plunge Track Saw, Tool Only (2831-20)",
+        "store": "Tool Nut",
+        "offer": {
+          "variant_key": "53393067311398",
+          "url": "https://www.toolnut.com/products/milwaukee-2831-20-m18-fuel-6-1-2-plunge-track-saw?currency=USD&variant=53393067311398",
+          "current_price": 319.0,
+          "original_price": 429.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/2831-20-1.jpg?v=1778086921",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 25.641025641025642,
+          "savings": 110.0
+        },
+        "check_started_at": "2026-11-05T21:24:50.943035+00:00",
+        "evidence_url": "https://www.toolnut.com/products/milwaukee-2831-20-m18-fuel-6-1-2-plunge-track-saw.js?currency=USD",
+        "response_sha256": "02822a2dc0090689562ee1161ba9c5e48d8d50208cebb6b9e761e11fba6437ec",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Milwaukee M18 FUEL 6-1/2-in. Plunge Track Saw, Tool Only (2831-20)",
+          "variant": "53393067311398",
+          "sku": "2831-20",
+          "price_minor": 31900,
+          "reference_minor": 42900,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:24:53.052074+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Makita 18V LXT Lithium-Ion Cordless 2-1/2-in. Straight Finish Nailer, 16-Gauge w/ 18V LXT 5.0Ah Battery (XNB02Z-PROMO BL1850B)",
+        "store": "Tool Nut",
+        "offer": {
+          "variant_key": "54331992736038",
+          "url": "https://www.toolnut.com/products/makita-18v-lxt-lithium-ion-cordless-2-1-2-in-straight-finish-nailer-16-gauge-w-18v-lxt-5-0ah-battery-xnb02z-promo-bl1850b?currency=USD&variant=54331992736038",
+          "current_price": 378.0,
+          "original_price": 558.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/XNB02Z-PROMO-BL1850B-bundle.jpg?v=1793912222",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 32.25806451612903,
+          "savings": 180.0
+        },
+        "check_started_at": "2026-11-05T21:24:53.052155+00:00",
+        "evidence_url": "https://www.toolnut.com/products/makita-18v-lxt-lithium-ion-cordless-2-1-2-in-straight-finish-nailer-16-gauge-w-18v-lxt-5-0ah-battery-xnb02z-promo-bl1850b.js?currency=USD",
+        "response_sha256": "4713684af95abfe02acdb5a8687fd448312d4e4b7286cf746ce379691d87bac3",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Makita 18V LXT Lithium-Ion Cordless 2-1/2-in. Straight Finish Nailer, 16-Gauge w/ 18V LXT 5.0Ah Battery (XNB02Z-PROMO BL1850B)",
+          "variant": "54331992736038",
+          "sku": "XNB02Z-PROMO BL1850B",
+          "price_minor": 37800,
+          "reference_minor": 55800,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-05T21:23:15.297518+00:00",
+        "checked_at": "2026-11-05T21:24:55.181695+00:00",
+        "within_audit_window": true
+      }
+    ]
+  },
+  "standard_sample_size": 30,
+  "new_source_admission": "docs/tasks/welding-sources/research/admission.json",
+  "negative_stock_control": {
+    "purpose": "Negative stock control, excluded from positive admission accuracy denominator",
+    "passed": true,
+    "source_candidate_unknown": true,
+    "absent_stock_only": true,
+    "result": {
+      "name": "Hobart IronMan 240 MIG Welder - 500574",
+      "store": "Baker's Gas",
+      "offer": {
+        "variant_key": "32158328258662",
+        "url": "https://bakersgas.com/products/hobart-500574?currency=USD&variant=32158328258662",
+        "current_price": 2499.0,
+        "original_price": 2560.0,
+        "size": null,
+        "options": "",
+        "availability": "unknown",
+        "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/products/500574.jpg?v=1604339316",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "Retailer shipping notice: Machine is on backorder.",
+        "discount": 2.3828125,
+        "savings": 61.0
+      },
+      "check_started_at": "2026-11-05T21:06:36.736671+00:00",
+      "evidence_url": "https://bakersgas.com/products/hobart-500574.js?currency=USD",
+      "response_sha256": "468a2e3faad4b353034db2d8a712319cb8a392bae96213e03b9e4d9abd62d6fc",
+      "status": "mismatch",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": false
+      },
+      "merchant": {
+        "title": "Hobart IronMan 240 MIG Welder - 500574",
+        "variant": "32158328258662",
+        "sku": "HOB500574",
+        "price_minor": 249900,
+        "reference_minor": 256000,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": "Retailer shipping notice: Machine is on backorder."
+      },
+      "sampled_at": "2026-11-05T21:06:36.697307+00:00",
+      "checked_at": "2026-11-05T21:06:41.028679+00:00",
+      "within_audit_window": true
+    }
+  },
+  "candidate_comparison": {
+    "at": "2026-11-05T21:23:15.258903+00:00",
+    "before_stock_default": 514,
+    "after_stock_default": 934,
+    "after_deep": 33,
+    "useful_retailers": [
+      "Beaver Industrial Supply",
+      "Cyberweld",
+      "Fasteners Inc",
+      "OakTree Supply",
+      "Taylor Toolworks",
+      "Tool Nut",
+      "Woodcraft"
+    ],
+    "new_source_counts": {
+      "Baker's Gas": 204,
+      "Cyberweld": 215
+    },
+    "new_existing_stock": [
+      {
+        "name": "Makita 18V LXT Lithium-Ion Cordless 2-1/2-in. Straight Finish Nailer, 16-Gauge w/ 18V LXT 5.0Ah Battery (XNB02Z-PROMO BL1850B)",
+        "url": "https://www.toolnut.com/products/makita-18v-lxt-lithium-ion-cordless-2-1-2-in-straight-finish-nailer-16-gauge-w-18v-lxt-5-0ah-battery-xnb02z-promo-bl1850b?currency=USD",
+        "brand": "Makita",
+        "source_category": "Combo Kit",
+        "category": "Power tools",
+        "format": "Not specified",
+        "platform": "Makita LXT",
+        "offers": [
+          {
+            "variant_key": "54331992736038",
+            "url": "https://www.toolnut.com/products/makita-18v-lxt-lithium-ion-cordless-2-1-2-in-straight-finish-nailer-16-gauge-w-18v-lxt-5-0ah-battery-xnb02z-promo-bl1850b?currency=USD&variant=54331992736038",
+            "current_price": 378.0,
+            "original_price": 558.0,
+            "size": null,
+            "options": "",
+            "availability": "in_stock",
+            "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/XNB02Z-PROMO-BL1850B-bundle.jpg?v=1793912222",
+            "reference_basis": "retailer_compare_at",
+            "availability_note": ""
+          }
+        ],
+        "offer": {
+          "variant_key": "54331992736038",
+          "url": "https://www.toolnut.com/products/makita-18v-lxt-lithium-ion-cordless-2-1-2-in-straight-finish-nailer-16-gauge-w-18v-lxt-5-0ah-battery-xnb02z-promo-bl1850b?currency=USD&variant=54331992736038",
+          "current_price": 378.0,
+          "original_price": 558.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/XNB02Z-PROMO-BL1850B-bundle.jpg?v=1793912222",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 32.25806451612903,
+          "savings": 180.0
+        },
+        "store": "Tool Nut",
+        "observed_at": "2026-11-05T21:08:27.300597+00:00",
+        "matching_variants": 1
+      }
+    ],
+    "changed_existing_classification": [],
+    "audit_selected": 31,
+    "backorder_unknown_and_excluded": true,
+    "wire_feed_unit_excluded": true,
+    "existing_process_final_code_reconciliation": "No accepted existing product contains wire feed unit, the sole review correction."
+  },
+  "candidate_and_package_verification": {
+    "candidate_sha256": "0c67f991589eb7f38ac839162ca599608c240c54e89362652153f2b5c95f5936",
+    "packaged_file_sha256": "9c24dcad993e023e31e6659afbeae2553d61958db42b9c18af109ce166d02b5c",
+    "all_sources_complete": 13,
+    "merchant_sample": 31,
+    "prior_day_history_exact_retained": 21,
+    "same_day_replaced": 11,
+    "observations_before": 32,
+    "observations_after": 34,
+    "new_sources_audited_rows_and_timestamps_exact": true,
+    "packaged_sources_and_history_exact": true
+  },
+  "build": {
+    "catalog": "tools",
+    "brand": "Bench Drop",
+    "built_at": "2026-11-05T21:23:37.296764+00:00",
+    "snapshot_sha256": "3011dac6009e552392b116da21b7cccc7b18e47233ca1b1b35b679e4dd8647f0",
+    "public_url": "https://benchdrop.clifan.com",
+    "matching_deals": 1037,
+    "sources": [
+      {
+        "name": "Baker's Gas",
+        "observed_at": "2026-11-05T21:03:38.298684+00:00",
+        "listings": 207
+      },
+      {
+        "name": "Cyberweld",
+        "observed_at": "2026-11-05T20:58:34.219522+00:00",
+        "listings": 215
+      },
+      {
+        "name": "Beaver Industrial Supply",
+        "observed_at": "2026-11-05T20:56:42.873438+00:00",
+        "listings": 258
+      },
+      {
+        "name": "Tool Nut",
+        "observed_at": "2026-11-05T21:08:27.300597+00:00",
+        "listings": 174
+      },
+      {
+        "name": "Woodcraft",
+        "observed_at": "2026-11-05T21:10:27.002071+00:00",
+        "listings": 77
+      },
+      {
+        "name": "Craft Supplies USA",
+        "observed_at": "2026-11-05T21:10:59.329701+00:00",
+        "listings": 1
+      },
+      {
+        "name": "Harvey Woodworking",
+        "observed_at": "2026-11-05T21:11:04.065274+00:00",
+        "listings": 11
+      },
+      {
+        "name": "WEN",
+        "observed_at": "2026-11-05T21:11:08.786939+00:00",
+        "listings": 8
+      },
+      {
+        "name": "Factory Direct Supply",
+        "observed_at": "2026-11-05T21:11:13.877698+00:00",
+        "listings": 6
+      },
+      {
+        "name": "Max Warehouse",
+        "observed_at": "2026-11-05T21:11:49.842283+00:00",
+        "listings": 43
+      },
+      {
+        "name": "OakTree Supply",
+        "observed_at": "2026-11-05T21:12:18.038046+00:00",
+        "listings": 72
+      },
+      {
+        "name": "Taylor Toolworks",
+        "observed_at": "2026-11-05T21:12:41.206603+00:00",
+        "listings": 1
+      },
+      {
+        "name": "Fasteners Inc",
+        "observed_at": "2026-11-05T21:20:54.029029+00:00",
+        "listings": 79
+      }
+    ]
+  },
+  "package_row_verification": {
+    "metadata": {
+      "rows": 1,
+      "exact": true
+    },
+    "sources": {
+      "rows": 13,
+      "exact": true
+    },
+    "observations": {
+      "rows": 34,
+      "exact": true
+    }
+  },
+  "new_existing_package_evidence": {
+    "checked_at": "2026-11-05T21:25:09.407523+00:00",
+    "url": "https://www.toolnut.com/products/makita-18v-lxt-lithium-ion-cordless-2-1-2-in-straight-finish-nailer-16-gauge-w-18v-lxt-5-0ah-battery-xnb02z-promo-bl1850b?currency=USD&variant=54331992736038",
+    "status": 200,
+    "title": "Makita 18V LXT Lithium-Ion Cordless 2-1/2-in. Straight Finish Nailer, 16-Gauge w/ 18V LXT 5.0Ah Battery (XNB02Z-PROMO BL1850B)",
+    "canonical": "https://www.toolnut.com/products/makita-18v-lxt-lithium-ion-cordless-2-1-2-in-straight-finish-nailer-16-gauge-w-18v-lxt-5-0ah-battery-xnb02z-promo-bl1850b",
+    "sha256": "6962afc7257c7a1098e298c643a4ef5667d1d66a18308b0d8e1075ec9027041d",
+    "claim": "Exact product identity is an explicit nailer and battery package; merchant endpoint fields separately matched in combined audit. No additional gift or rebate subtracted."
+  },
+  "published_asset_verification": {
+    "checked_at": "2026-11-05T21:25:59.224170+00:00",
+    "candidate_sha256": "0c67f991589eb7f38ac839162ca599608c240c54e89362652153f2b5c95f5936",
+    "downloaded_public_asset_sha256": "0c67f991589eb7f38ac839162ca599608c240c54e89362652153f2b5c95f5936",
+    "matched": true
+  },
+  "live_verification": {
+    "catalog": "tools",
+    "checked_at": "2026-11-05T21:28:10.509790+00:00",
+    "site": "https://benchdrop.clifan.com",
+    "health": {
+      "catalog": "tools",
+      "snapshot_sha256": "3011dac6009e552392b116da21b7cccc7b18e47233ca1b1b35b679e4dd8647f0",
+      "fresh_sources": 13,
+      "configured_sources": 13,
+      "status": "ready"
+    },
+    "history": {
+      "before": 32,
+      "after": 34,
+      "prior_day_exact_retained": 21,
+      "same_day_replaced_with_current": 11
+    },
+    "routes": [
+      {
+        "params": {},
+        "cards": 24,
+        "total": "1037",
+        "matched": true,
+        "bundle_option": true
+      },
+      {
+        "params": {
+          "stock": "true"
+        },
+        "cards": 24,
+        "total": "934",
+        "matched": true,
+        "bundle_option": true
+      },
+      {
+        "params": {
+          "stock": "true",
+          "page": 2
+        },
+        "cards": 24,
+        "total": "934",
+        "matched": true,
+        "bundle_option": true
+      },
+      {
+        "params": {
+          "min_discount": 40,
+          "stock": "true"
+        },
+        "cards": 24,
+        "total": "33",
+        "matched": true,
+        "bundle_option": true
+      },
+      {
+        "params": {
+          "store": "Baker's Gas",
+          "stock": "true"
+        },
+        "cards": 24,
+        "total": "204",
+        "matched": true,
+        "bundle_option": true
+      },
+      {
+        "params": {
+          "store": "Cyberweld",
+          "stock": "true"
+        },
+        "cards": 24,
+        "total": "215",
+        "matched": true,
+        "bundle_option": true
+      },
+      {
+        "params": {
+          "store": "Cyberweld",
+          "q": "Typhoon 230",
+          "min_discount": 40,
+          "stock": "true"
+        },
+        "cards": 1,
+        "total": "1",
+        "matched": true,
+        "bundle_option": true
+      },
+      {
+        "params": {
+          "store": "Baker's Gas",
+          "q": "500574",
+          "stock": "false"
+        },
+        "cards": 2,
+        "total": "2",
+        "matched": true,
+        "bundle_option": true
+      },
+      {
+        "params": {
+          "store": "Baker's Gas",
+          "q": "500574",
+          "stock": "true"
+        },
+        "cards": 1,
+        "total": "1",
+        "matched": true,
+        "bundle_option": true
+      },
+      {
+        "params": {
+          "q": "WF5-023",
+          "min_reference": 0,
+          "stock": "false"
+        },
+        "cards": 0,
+        "total": "0",
+        "matched": true,
+        "bundle_option": true
+      },
+      {
+        "params": {
+          "q": "300786",
+          "min_reference": 0,
+          "stock": "false"
+        },
+        "cards": 0,
+        "total": "0",
+        "matched": true,
+        "bundle_option": true
+      },
+      {
+        "params": {
+          "brand": "Miller",
+          "stock": "true"
+        },
+        "cards": 24,
+        "total": "271",
+        "matched": true,
+        "bundle_option": true
+      },
+      {
+        "params": {
+          "category": "Workshop equipment",
+          "stock": "true"
+        },
+        "cards": 24,
+        "total": "737",
+        "matched": true,
+        "bundle_option": true
+      }
+    ],
+    "live_history_pages": [
+      {
+        "url": "/history?source=Baker%27s+Gas&product=https%3A%2F%2Fbakersgas.com%2Fproducts%2Fhobart-500574%3Fcurrency%3DUSD&variant=32158328258662",
+        "days": 1,
+        "matched": true
+      },
+      {
+        "url": "/history?source=Baker%27s+Gas&product=https%3A%2F%2Fbakersgas.com%2Fproducts%2Fhobart-500574001%3Fcurrency%3DUSD&variant=32158387109990",
+        "days": 1,
+        "matched": true
+      },
+      {
+        "url": "/history?source=Baker%27s+Gas&product=https%3A%2F%2Fbakersgas.com%2Fproducts%2Fhobart-500575%3Fcurrency%3DUSD&variant=32122687488102",
+        "days": 1,
+        "matched": true
+      },
+      {
+        "url": "/history?source=Baker%27s+Gas&product=https%3A%2F%2Fbakersgas.com%2Fproducts%2Fmiller-907709%3Fcurrency%3DUSD&variant=28831118557237",
+        "days": 1,
+        "matched": true
+      },
+      {
+        "url": "/history?source=Beaver+Industrial+Supply&product=https%3A%2F%2Fbeavertools.com%2Fproducts%2Far8prov6-axiom-ar8prov6-axion-autoroute-24-x-48-cnc-router%3Fcurrency%3DUSD&variant=44153004130397",
+        "days": 2,
+        "matched": true
+      },
+      {
+        "url": "/history?source=Beaver+Industrial+Supply&product=https%3A%2F%2Fbeavertools.com%2Fproducts%2Fkreg-20v-ionic-drive-1-2-compact-drill-kit-kptbdr050a%3Fcurrency%3DUSD&variant=44153404686429",
+        "days": 2,
+        "matched": true
+      },
+      {
+        "url": "/history?source=Cyberweld&product=https%3A%2F%2Fstore.cyberweld.com%2Fproducts%2Feverlast-typhoon-230-ac-dc-tig-welder%3Fcurrency%3DUSD&variant=45452973932771",
+        "days": 1,
+        "matched": true
+      },
+      {
+        "url": "/history?source=OakTree+Supply&product=https%3A%2F%2Fwww.oaktreesupply.com%2Fproducts%2Faxoiom-iconic-4-series-cnc-router-24-x-24%3Fcurrency%3DUSD&variant=37991680082119",
+        "days": 3,
+        "matched": true
+      }
+    ],
+    "card_observations": 196,
+    "passed": true
+  },
+  "other_catalog_health": {
+    "cycling": {
+      "checked_at": "2026-11-05T21:29:26.345428+00:00",
+      "health": {
+        "catalog": "cycling",
+        "snapshot_sha256": "041b512ebff1951c53ef1576b0f5e9b5cf8dbf8e955463c836883d4330330e08",
+        "fresh_sources": 20,
+        "configured_sources": 20,
+        "status": "ready"
+      },
+      "unchanged": true,
+      "previous_health": {
+        "catalog": "cycling",
+        "snapshot_sha256": "041b512ebff1951c53ef1576b0f5e9b5cf8dbf8e955463c836883d4330330e08",
+        "fresh_sources": 20,
+        "configured_sources": 20,
+        "status": "ready"
+      }
+    },
+    "snow": {
+      "checked_at": "2026-11-05T21:29:26.704313+00:00",
+      "health": {
+        "status": "ok",
+        "last_attempt_at": "2026-11-05T21:08:41.764621",
+        "checked_at": "2026-11-05T21:08:41.764621",
+        "stores_with_deals": 30
+      },
+      "unchanged": false,
+      "previous_health": {
+        "status": "ok",
+        "last_attempt_at": "2026-11-05T13:40:12.920989",
+        "checked_at": "2026-11-05T13:40:12.920989",
+        "stores_with_deals": 30
+      },
+      "independent_scheduled_refresh": {
+        "databaseId": 42105603209,
+        "event": "schedule",
+        "headSha": "b345d918fea2b0b1591c852193c46cc77a9a74bc",
+        "conclusion": "success",
+        "url": "https://github.com/lifan-builds/snow-deal/actions/runs/42105603209",
+        "createdAt": "2026-11-05T20:40:44Z",
+        "updatedAt": "2026-11-05T21:10:25Z"
+      },
+      "runner_verified_same_timestamp": true
+    }
+  },
+  "limitations": [
+    "Counts are merchant listings, not unique models; inventory changes can occur during fresh refreshes.",
+    "The combined fixed 30 sample, separate per-source 30 samples and additional changed-listing checks are not a population-wide accuracy claim. Overlap is not counted as independent additional evidence.",
+    "Only one new-source listing meets the 40 percent threshold. Its manufacturer advertises the same $2,250 price and $3,750 reference; no exclusive price advantage or historical-low claim.",
+    "Baker's adds breadth but no deep offer and does not increase useful-deep-retailer coverage.",
+    "Prior-day history is exact; same-day rows follow the existing latest-successful-daily policy.",
+    "Retailer reference prices are not independently verified historical selling prices. Shipping, taxes, rebates and cart promotions are excluded from direct-discount calculations.",
+    "No all-metric superiority established; competitors retain their original dated evidence."
+  ]
+}
