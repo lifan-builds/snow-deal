@@ -1,5 +1,6 @@
 import re
 from pathlib import Path
+from urllib.parse import urlsplit
 
 from deal_common.catalog.definition import Catalog, Classification
 from deal_common.config import RetailerConfig
@@ -49,11 +50,28 @@ def classify(product: Product) -> Classification | None:
     # Interpret only that exact segment in context; negative descendants remain.
     accessory_kind = re.sub(r"^(bikes and frames/bikes - electric/)electric mountain light weight(?=/|$)",
                             r"\1electric mountain", kind)
-    if re.search(r"\b(helmets?|jerseys?|shorts|gloves?|shoes?|racks?|bags?|wheels?|tires?|tyres?|tubes?|pedals?|saddles?|hangers?|forks?|batter(?:y|ies)|chargers?|covers?|stands?|trainers?|parts?|accessor(?:y|ies)|maintenance|locks?|pumps?|goggles?|computers?|heart rate|lights?|cables?|brakes?|adaptors?|adapters?)\b", accessory_kind):
+    accessory_pattern = r"\b(helmets?|jerseys?|shorts|gloves?|shoes?|racks?|bags?|wheels?|tires?|tyres?|tubes?|pedals?|saddles?|hangers?|forks?|batter(?:y|ies)|chargers?|covers?|stands?|trainers?|parts?|accessor(?:y|ies)|maintenance|locks?|pumps?|goggles?|computers?|heart rate|lights?|cables?|brakes?|adaptors?|adapters?)\b"
+    if re.search(accessory_pattern, accessory_kind):
         return None
     if ("frameset" in tags or re.search(r"\b(framesets?|frame sets?|frame[- ]only)\b", text)
             or re.fullmatch(FRAME_TYPE_PATTERN, kind)):
         return Classification("Framesets")
+    if kind == "sporting goods":
+        source = urlsplit(product.url)
+        if (source.scheme == "https" and source.netloc == "www.incycle.com"
+                and source.path.startswith("/products/")):
+            # Incycle's generic type needs explicit complete-bike taxonomy.
+            # An accessory primary cannot borrow a bicycle named in its suffix.
+            if re.search(accessory_pattern, primary_title):
+                return None
+            if "turbo & electric bike" in tags:
+                return Classification("Electric bikes")
+            if "bicycles" in tags:
+                for discipline, category in (("mountain", "Mountain bikes"), ("gravel", "Gravel bikes"),
+                                             ("road", "Road bikes"), ("active", "Other complete bikes")):
+                    if discipline in tags:
+                        return Classification(category)
+            return None
     if kind == "e-commuter":
         return Classification("Electric bikes")
     if kind in {"hardtail", "full suspension"}:
@@ -83,7 +101,10 @@ CATALOG = Catalog(
     headline="More bike.\nLess money.",
     description="Big discounts on complete bikes and framesets. The deepest percentage cuts come first, with the exact size and price attached.",
     categories=("Mountain bikes", "Road bikes", "Gravel bikes", "Electric bikes", "Framesets", "Other complete bikes"),
-    sources=(RetailerConfig(name="RA Cycles", domain="racycles.com",
+    sources=(RetailerConfig(name="Incycle Bicycles", domain="www.incycle.com",
+                            scrape_urls=["https://www.incycle.com/collections/sale-bicycles?currency=USD"],
+                            verify_shopify_currency=True),
+             RetailerConfig(name="RA Cycles", domain="racycles.com",
                             scrape_urls=["https://racycles.com/collections/bikes?currency=USD"],
                             verify_shopify_currency=True),
              RetailerConfig(name="evo", domain="www.evo.com",
@@ -189,5 +210,5 @@ CATALOG = Catalog(
         ('transition bikes', 'Transition'),
     ),
     assets=Path(__file__).parent / "static", art_label="01 / THE NEXT RIDE", theme_color="#163d32",
-    buying_note="Framesets are listed separately from complete bikes. Confirm geometry, components, assembly, shipping, and return terms with the retailer. Sizes are retailer labels, not a fit recommendation. Mike's Bikes advertises a $79 assembly charge added at checkout; its closeout sales are final. Check manufacturer shipping restrictions before buying.",
+    buying_note="Framesets are listed separately from complete bikes. Confirm geometry, components, assembly, shipping, and return terms with the retailer. Sizes are retailer labels, not a fit recommendation. Mike's Bikes advertises a $79 assembly charge added at checkout; its closeout sales are final. Incycle lists $75 bike and $30 frameset shipping within the contiguous US, with product-specific exceptions. Check manufacturer shipping restrictions before buying.",
 )

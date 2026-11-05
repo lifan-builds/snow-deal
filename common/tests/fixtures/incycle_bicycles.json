@@ -1,0 +1,411 @@
+{
+  "products": [
+    {
+      "id": 8011061100675,
+      "title": "2023 Specialized Sirrus 4.0",
+      "handle": "2023-specialized-sirrus-4-0",
+      "vendor": "SPECIALIZED",
+      "product_type": "Sporting Goods",
+      "tags": [
+        "0MAP",
+        "2026-MEMORIAL",
+        "700C",
+        "ACTIVE",
+        "Analog",
+        "BICYCLES",
+        "Default",
+        "EBAY-BIKES",
+        "JULY4-2026",
+        "NEW",
+        "OFFMAP",
+        "On Sale",
+        "ProductsUp Feed",
+        "sbc-springpromo-2026"
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Gloss Cactus Bloom / Satin Mystic Blue Reflective",
+            "Gloss Birch / Satin Taupe Relfective"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "XXS",
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 43524025319555,
+          "option1": "Gloss Cactus Bloom / Satin Mystic Blue Reflective",
+          "option2": "XXS",
+          "option3": null,
+          "available": true,
+          "price": "799.97",
+          "compare_at_price": "1599.99"
+        },
+        {
+          "id": 43524025286787,
+          "option1": "Gloss Birch / Satin Taupe Relfective",
+          "option2": "XXS",
+          "option3": null,
+          "available": false,
+          "price": "799.97",
+          "compare_at_price": "1599.99"
+        }
+      ]
+    },
+    {
+      "id": 7912592507011,
+      "title": "2023 Specialized Turbo Vado SL 4.0 Step-Through",
+      "handle": "2023-specialized-vado-sl-4-0-st",
+      "vendor": "SPECIALIZED",
+      "product_type": "Sporting Goods",
+      "tags": [
+        "0MAP",
+        "2026-MEMORIAL",
+        "ACTIVE",
+        "Analog",
+        "C2R",
+        "call2recycle",
+        "E-Bike-Active",
+        "JULY4-2026",
+        "NEW",
+        "OFFMAP",
+        "On Sale",
+        "ProductsUp Feed",
+        "TURBO & ELECTRIC BIKE"
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Cast Umber / Silver Reflective",
+            "Limestone / Black Reflective"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 43273651224707,
+          "option1": "Cast Umber / Silver Reflective",
+          "option2": "XL",
+          "option3": null,
+          "available": true,
+          "price": "2099.97",
+          "compare_at_price": "3499.99"
+        },
+        {
+          "id": 43273651257475,
+          "option1": "Limestone / Black Reflective",
+          "option2": "XL",
+          "option3": null,
+          "available": true,
+          "price": "2099.97",
+          "compare_at_price": "3499.99"
+        },
+        {
+          "id": 43273651028099,
+          "option1": "Cast Umber / Silver Reflective",
+          "option2": "S",
+          "option3": null,
+          "available": false,
+          "price": "2099.97",
+          "compare_at_price": "3500.00"
+        }
+      ]
+    },
+    {
+      "id": 6618759889027,
+      "title": "2022 Specialized Stumpjumper Expert  - SRAM GX Eagle, Fox Perormance Elite",
+      "handle": "specialized-stumpjumper-expert",
+      "vendor": "SPECIALIZED",
+      "product_type": "Sporting Goods",
+      "tags": [
+        "0MAP",
+        "Analog",
+        "BICYCLES",
+        "CARBON FULL SUSPENSION",
+        "EBAY-BIKES",
+        "MOUNTAIN",
+        "NEW",
+        "OFFMAP",
+        "On Sale",
+        "ProductsUp Feed",
+        "sbc-springpromo-2026",
+        "YGroup_199757"
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Gloss White Mountains / Gunmetal",
+            "Satin Doppio / Gloss Doppio / Satin Black"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 39447955406979,
+          "option1": "Satin Doppio / Gloss Doppio / Satin Black",
+          "option2": "S1",
+          "option3": null,
+          "available": true,
+          "price": "3059.97",
+          "compare_at_price": "6199.99"
+        },
+        {
+          "id": 39447955013763,
+          "option1": "Gloss White Mountains / Gunmetal",
+          "option2": "S1",
+          "option3": null,
+          "available": false,
+          "price": "3059.97",
+          "compare_at_price": "6199.99"
+        }
+      ]
+    },
+    {
+      "id": 8262815350915,
+      "title": "2025 Specialized S-Works Aethos - SRAM RED AXS",
+      "handle": "bike-1",
+      "vendor": "SPECIALIZED",
+      "product_type": "Sporting Goods",
+      "tags": [
+        "0MAP",
+        "2026-MEMORIAL",
+        "Analog",
+        "BICYCLES",
+        "CARBON",
+        "Default",
+        "EBAY-BIKES",
+        "NEW",
+        "OFFMAP",
+        "On Sale",
+        "ProductsUp Feed",
+        "ROAD",
+        "sbc-springpromo-2026"
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Satin Doppio / Gunmetal Dry Brushed / Gold Pearl"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "49",
+            "52",
+            "54",
+            "56",
+            "58",
+            "61"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 44252982542467,
+          "option1": "Satin Doppio / Gunmetal Dry Brushed / Gold Pearl",
+          "option2": "58",
+          "option3": null,
+          "available": true,
+          "price": "10499.97",
+          "compare_at_price": "11499.99"
+        },
+        {
+          "id": 44252982411395,
+          "option1": "Satin Doppio / Gunmetal Dry Brushed / Gold Pearl",
+          "option2": "49",
+          "option3": null,
+          "available": false,
+          "price": "10499.97",
+          "compare_at_price": "11499.99"
+        }
+      ]
+    },
+    {
+      "id": 6743947018371,
+      "title": "2022 Specialized S-Works Diverge - SRAM RED eTAP AXS / XX1 Eagle AXS",
+      "handle": "diverge-s-works",
+      "vendor": "SPECIALIZED",
+      "product_type": "Sporting Goods",
+      "tags": [
+        "0MAP",
+        "2026-MEMORIAL",
+        "Analog",
+        "BICYCLES",
+        "CARBON",
+        "EBAY-BIKES",
+        "GRAVEL",
+        "NEW",
+        "OFFMAP",
+        "On Sale",
+        "ProductsUp Feed",
+        "sbc-springpromo-2026"
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Gloss Light Silver / Dream Silver / Dusty Blue / Wild"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "49",
+            "52",
+            "54",
+            "56",
+            "58",
+            "61"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 39682533392515,
+          "option1": "Gloss Light Silver / Dream Silver / Dusty Blue / Wild",
+          "option2": "61",
+          "option3": null,
+          "available": true,
+          "price": "7649.97",
+          "compare_at_price": "12499.99"
+        },
+        {
+          "id": 39682533032067,
+          "option1": "Gloss Light Silver / Dream Silver / Dusty Blue / Wild",
+          "option2": "49",
+          "option3": null,
+          "available": false,
+          "price": "7649.97",
+          "compare_at_price": "12499.99"
+        }
+      ]
+    },
+    {
+      "id": 8561582997635,
+      "title": "2022 Pivot Shuttle SL Pro X01 - Large",
+      "handle": "2023-pivot-shuttle-sl-ride-x01",
+      "vendor": "PIVOT CYCLES",
+      "product_type": "Sporting Goods",
+      "tags": [
+        "Analog",
+        "CARBON FULL SUSPENSION",
+        "MOUNTAIN",
+        "NEW",
+        "On Sale",
+        "TURBO & ELECTRIC BIKE"
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 45172538933379,
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "available": true,
+          "price": "6335.97",
+          "compare_at_price": "10999.00"
+        }
+      ]
+    },
+    {
+      "id": 8114846761091,
+      "title": "2023 Scott Genius ST 900 Tuned HMX Frame & Fork",
+      "handle": "2023-scott-genius-st-900-tuned-hmx-frame-fork",
+      "vendor": "SCOTT",
+      "product_type": "Sporting Goods",
+      "tags": [
+        "2026-MEMORIAL",
+        "Default",
+        "FRAMESET",
+        "MOUNTAIN",
+        "Mountain Frame",
+        "NEW",
+        "On Sale",
+        "sbc-springpromo-2026"
+      ],
+      "options": [
+        {
+          "name": "Size",
+          "position": 1,
+          "values": [
+            "MD",
+            "LG",
+            "XL"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 43904355893379,
+          "option1": "XL",
+          "option2": null,
+          "option3": null,
+          "available": true,
+          "price": "3199.97",
+          "compare_at_price": "5699.99"
+        },
+        {
+          "id": 43904355827843,
+          "option1": "MD",
+          "option2": null,
+          "option3": null,
+          "available": false,
+          "price": "3199.97",
+          "compare_at_price": "5699.99"
+        }
+      ]
+    }
+  ]
+}

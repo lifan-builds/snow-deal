@@ -133,3 +133,7 @@ History compares canonical manufacturer labels but retains every other exact pro
 ## Lightweight electric-bike taxonomy
 
 Mike's Bikes' `BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT` segment describes complete e-bikes, not bike lights. For the cycling accessory check only, interpret that exact anchored parent/segment with a slash-or-end boundary. Keep the original merchant taxonomy for categorization, normalization and history; preserve negative descendants such as LIGHTS, BATTERIES or ACCESSORIES. Do not globally strip Light words or override condition, kids or shipping exclusions. Regressions must preserve exact selected size, variant, prices and destination and include misleading/extended/unrelated category paths.
+
+## Incycle complete-bike taxonomy
+
+Incycle's generic `Sporting Goods` type needs source-bound evidence: only exact HTTPS `www.incycle.com/products/` URLs may use `TURBO & ELECTRIC BIKE`, or `BICYCLES` with observed MOUNTAIN/GRAVEL/ROAD/ACTIVE tags, to establish a complete bike. Keep existing condition, shipping and accessory exclusions ahead of admission; keep the existing frameset branch before complete-bike classification. An accessory primary title cannot borrow positive bike tags. Preserve original offers and options: `Default Title` cannot imply a frame size from the product name. The current shipping policy separates bike and frameset fees; a generic free-shipping banner is not evidence of free bicycle shipping. See `docs/tasks/incycle-source/` for observed fixtures and admission receipts.

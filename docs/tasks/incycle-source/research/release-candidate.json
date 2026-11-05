@@ -1,0 +1,17 @@
+{
+  "at": "2026-11-05T23:19:03.180297+00:00",
+  "prior_sources_exact": 20,
+  "prior_history_rows_exact": 57,
+  "history_rows_after": 58,
+  "eligible_before": 1399,
+  "eligible_after": 1477,
+  "deep_after": 203,
+  "new_source_default": 78,
+  "new_source_deep": 13,
+  "new_source_all_floors": 86,
+  "fixed_audit_sample": 30,
+  "audit_selected": 114,
+  "note": "Only the accepted Incycle source is added, retaining its actual observation time. Existing20source observations/products and all57history rows remain exact.",
+  "passed": true,
+  "database_sha256": "2121c10a46a614c5ce48ed193b29cf96b31d5f7bc051674ad1c4e4e632719542"
+}

@@ -1,0 +1,338 @@
+{
+  "checked_at": "2026-11-05T22:56:35.607588+00:00",
+  "source_url": "https://www.incycle.com/collections/sale-bicycles/products.json?limit=250&page=1",
+  "first_page_products": 87,
+  "unvalidated_deep_candidates": [
+    {
+      "title": "2023 Specialized Sirrus 4.0",
+      "url": "https://www.incycle.com/products/2023-specialized-sirrus-4-0",
+      "kind": "Sporting Goods",
+      "tags": [
+        "0MAP",
+        "2026-MEMORIAL",
+        "700C",
+        "ACTIVE",
+        "Analog",
+        "BICYCLES",
+        "Default",
+        "EBAY-BIKES",
+        "JULY4-2026",
+        "NEW",
+        "OFFMAP",
+        "On Sale",
+        "ProductsUp Feed",
+        "sbc-springpromo-2026"
+      ],
+      "variant": {
+        "id": 43524025319555,
+        "price": "799.97",
+        "compare_at_price": "1599.99",
+        "title": "Gloss Cactus Bloom / Satin Mystic Blue Reflective / XXS",
+        "available": true
+      }
+    },
+    {
+      "title": "2023 Specialized Turbo Vado SL 4.0 Step-Through",
+      "url": "https://www.incycle.com/products/2023-specialized-vado-sl-4-0-st",
+      "kind": "Sporting Goods",
+      "tags": [
+        "0MAP",
+        "2026-MEMORIAL",
+        "ACTIVE",
+        "Analog",
+        "C2R",
+        "call2recycle",
+        "E-Bike-Active",
+        "JULY4-2026",
+        "NEW",
+        "OFFMAP",
+        "On Sale",
+        "ProductsUp Feed",
+        "TURBO & ELECTRIC BIKE"
+      ],
+      "variant": {
+        "id": 43273651224707,
+        "price": "2099.97",
+        "compare_at_price": "3499.99",
+        "title": "Cast Umber / Silver Reflective / XL",
+        "available": true
+      }
+    },
+    {
+      "title": "2023 Specialized Turbo Vado SL 4.0",
+      "url": "https://www.incycle.com/products/specialized-vado-sl-4-0",
+      "kind": "Sporting Goods",
+      "tags": [
+        "0MAP",
+        "2026-MEMORIAL",
+        "ACTIVE",
+        "Analog",
+        "C2R",
+        "call2recycle",
+        "E-Bike-Active",
+        "EBAY-BIKES",
+        "NEW",
+        "OFFMAP",
+        "On Sale",
+        "ProductsUp Feed",
+        "sbc-springpromo-2026",
+        "TURBO & ELECTRIC BIKE"
+      ],
+      "variant": {
+        "id": 39447949312131,
+        "price": "2099.97",
+        "compare_at_price": "3499.99",
+        "title": "Limestone / Black Reflective / XL",
+        "available": true
+      }
+    },
+    {
+      "title": "2022 Specialized Stumpjumper Expert  - SRAM GX Eagle, Fox Perormance Elite",
+      "url": "https://www.incycle.com/products/specialized-stumpjumper-expert",
+      "kind": "Sporting Goods",
+      "tags": [
+        "0MAP",
+        "Analog",
+        "BICYCLES",
+        "CARBON FULL SUSPENSION",
+        "EBAY-BIKES",
+        "MOUNTAIN",
+        "NEW",
+        "OFFMAP",
+        "On Sale",
+        "ProductsUp Feed",
+        "sbc-springpromo-2026",
+        "YGroup_199757"
+      ],
+      "variant": {
+        "id": 39447955406979,
+        "price": "3059.97",
+        "compare_at_price": "6199.99",
+        "title": "Satin Doppio / Gloss Doppio / Satin Black / S1",
+        "available": true
+      }
+    },
+    {
+      "title": "2022 Specialized Turbo Vado SL 4.0 Step-Through",
+      "url": "https://www.incycle.com/products/specialized-vado-sl-4-0-st",
+      "kind": "Sporting Goods",
+      "tags": [
+        "0MAP",
+        "2026-MEMORIAL",
+        "ACTIVE",
+        "Analog",
+        "C2R",
+        "call2recycle",
+        "E-Bike-Active",
+        "NEW",
+        "OFFMAP",
+        "On Sale",
+        "ProductsUp Feed",
+        "TURBO & ELECTRIC BIKE"
+      ],
+      "variant": {
+        "id": 39447976149123,
+        "price": "1999.97",
+        "compare_at_price": "3499.99",
+        "title": "Limestone / Black Reflective / XL",
+        "available": true
+      }
+    },
+    {
+      "title": "2023 Specialized Turbo Levo SL 2 Expert Carbon",
+      "url": "https://www.incycle.com/products/specialized-levo-sl-expert-carbon-2",
+      "kind": "Sporting Goods",
+      "tags": [
+        "0MAP",
+        "2026-MEMORIAL",
+        "Analog",
+        "C2R",
+        "call2recycle",
+        "EBAY-BIKES",
+        "JULY4-2026",
+        "MOUNTAIN",
+        "NEW",
+        "OFFMAP",
+        "On Sale",
+        "ProductsUp Feed",
+        "sbc-springpromo-2026",
+        "TURBO & ELECTRIC BIKE",
+        "YGroup_216819"
+      ],
+      "variant": {
+        "id": 43311597846659,
+        "price": "4999.97",
+        "compare_at_price": "9999.99",
+        "title": "Gloss Birch / Taupe / S6",
+        "available": true
+      }
+    },
+    {
+      "title": "2023 Specialized Turbo Levo SL 2 Comp Carbon",
+      "url": "https://www.incycle.com/products/2023-specialized-levo-sl-comp",
+      "kind": "Sporting Goods",
+      "tags": [
+        "0MAP",
+        "2026-MEMORIAL",
+        "Analog",
+        "C2R",
+        "call2recycle",
+        "E-Bike-Mountain",
+        "EBAY-BIKES",
+        "MOUNTAIN",
+        "OFFMAP",
+        "On Sale",
+        "ProductsUp Feed",
+        "sbc-springpromo-2026",
+        "TURBO & ELECTRIC BIKE",
+        "YGroup_216919"
+      ],
+      "variant": {
+        "id": 47231872991363,
+        "price": "4498.97",
+        "compare_at_price": "7999.99",
+        "title": "Satin Mystic Blue / Mystic Blue Metallic / Silver Dust / S6",
+        "available": true
+      }
+    },
+    {
+      "title": "2022 Pivot Shuttle SL Pro X01 - Large",
+      "url": "https://www.incycle.com/products/2023-pivot-shuttle-sl-ride-x01",
+      "kind": "Sporting Goods",
+      "tags": [
+        "Analog",
+        "CARBON FULL SUSPENSION",
+        "MOUNTAIN",
+        "NEW",
+        "On Sale",
+        "TURBO & ELECTRIC BIKE"
+      ],
+      "variant": {
+        "id": 45172538933379,
+        "price": "6335.97",
+        "compare_at_price": "10999.00",
+        "title": "Default Title",
+        "available": true
+      }
+    },
+    {
+      "title": "2016 Specialized SJ FSR Comp 29 (FRAMESET ONLY) Blk/RktRed LG",
+      "url": "https://www.incycle.com/products/2016-specialized-sj-fsr-comp-29-frameset-only-blk-rktred-lg",
+      "kind": "Sporting Goods",
+      "tags": [
+        "2026-MEMORIAL",
+        "Default",
+        "FRAMESET",
+        "Garage-Sale",
+        "MOUNTAIN",
+        "Mountain Frame",
+        "NEW",
+        "On Sale",
+        "sbc-springpromo-2026"
+      ],
+      "variant": {
+        "id": 43157994045571,
+        "price": "499.97",
+        "compare_at_price": "1133.99",
+        "title": "Default Title",
+        "available": true
+      }
+    },
+    {
+      "title": "2022 Specialized S-Works Stumpjumper Frameset  - FOX FLOAT DPS Factory",
+      "url": "https://www.incycle.com/products/stumpjumper-s-works-frameset",
+      "kind": "Sporting Goods",
+      "tags": [
+        "0MAP",
+        "2026-MEMORIAL",
+        "EBAY-BIKES",
+        "FRAMESET",
+        "MOUNTAIN",
+        "Mountain Frame",
+        "NEW",
+        "OFFMAP",
+        "On Sale",
+        "ProductsUp Feed",
+        "sbc-springpromo-2026",
+        "YGroup_199760"
+      ],
+      "variant": {
+        "id": 39657140912259,
+        "price": "1199.99",
+        "compare_at_price": "2999.99",
+        "title": "Satin Dusty Blue Pearl / Black / Carbon / S1",
+        "available": true
+      }
+    },
+    {
+      "title": "2022 Specialized Stumpjumper Frameset  - FOX FLOAT DPS Performance",
+      "url": "https://www.incycle.com/products/specialized-stumpjumper-frameset",
+      "kind": "Sporting Goods",
+      "tags": [
+        "0MAP",
+        "2026-MEMORIAL",
+        "EBAY-BIKES",
+        "FRAMESET",
+        "MOUNTAIN",
+        "Mountain Frame",
+        "NEW",
+        "OFFMAP",
+        "On Sale",
+        "ProductsUp Feed",
+        "sbc-springpromo-2026"
+      ],
+      "variant": {
+        "id": 39619142713475,
+        "price": "1079.99",
+        "compare_at_price": "2699.99",
+        "title": "Satin Copper / Black / S1",
+        "available": true
+      }
+    },
+    {
+      "title": "2023 Scott Genius ST 900 Tuned HMX Frame & Fork",
+      "url": "https://www.incycle.com/products/2023-scott-genius-st-900-tuned-hmx-frame-fork",
+      "kind": "Sporting Goods",
+      "tags": [
+        "2026-MEMORIAL",
+        "Default",
+        "FRAMESET",
+        "MOUNTAIN",
+        "Mountain Frame",
+        "NEW",
+        "On Sale",
+        "sbc-springpromo-2026"
+      ],
+      "variant": {
+        "id": 43904355893379,
+        "price": "3199.97",
+        "compare_at_price": "5699.99",
+        "title": "XL",
+        "available": true
+      }
+    },
+    {
+      "title": "2022 Pinarello Dogma F Disc Frameset Blk/Blk 54",
+      "url": "https://www.incycle.com/products/2022-pinarello-dogma-f-disc-frameset",
+      "kind": "Sporting Goods",
+      "tags": [
+        "2026-MEMORIAL",
+        "Default",
+        "FRAMESET",
+        "NEW",
+        "On Sale",
+        "ROAD",
+        "Road Frames",
+        "sbc-springpromo-2026"
+      ],
+      "variant": {
+        "id": 42711467589763,
+        "price": "3899.97",
+        "compare_at_price": "6949.99",
+        "title": "Blk/Blk / 54",
+        "available": true
+      }
+    }
+  ],
+  "limitations": "One feed page only; no category, condition, shipping, fulfillment or stock admission. Not a new source or inventory metric."
+}
