@@ -19,3 +19,7 @@ Every product path must preserve `image_url`, price, category, brand, and size/l
 Review matching is precomputed into `deal_reviews` after review ingestion. `query_deals()` left-joins those rows; never restore per-request fuzzy matching. `_extract_brand()` is shared by scraping and reviews. SQLite latest-per-store queries use grouped joins rather than correlated O(N²) subqueries.
 
 Never run a live scrape, review fetch, browser session, auth sync, invite generation, or production database operation as generic migration validation.
+
+## Snow admission before persistence
+
+The current workspace contract lives in `docs/project-guidance/aggregator-data-and-parsers.md`, under Snow source completeness before persistence. `protect_partial_snapshots(deals, previous, outcomes)` must exclude a source with nonzero errors or any non-complete collection status before upsert/history writes, even with healthy counts or no baseline. Preserve prior timestamps and the independent collapse guard. A temporary-DB CLI regression must prove that failed-source deals, offers and observations remain unchanged, complete sources advance only when the accepted-source minimum passes, and receipts report the withheld reason. Large partial counts cannot establish completeness.

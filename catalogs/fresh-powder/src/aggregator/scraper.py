@@ -406,17 +406,30 @@ async def scrape_all(
 
 
 def protect_partial_snapshots(deals: list[AggregatedDeal], previous: dict[str, int], outcomes: dict) -> tuple[list[AggregatedDeal], list[str]]:
-    """Don't replace a recent substantial snapshot with an unexplained collapse.
+    """Publish only complete sources, also guarding unexplained count collapses.
 
     Retained rows keep their original timestamps and expire through the normal
     72-hour freshness filter. The caller supplies only recent baselines, so a
     genuine sustained sell-through does not leave a source quarantined forever.
     """
     counts = Counter(d.store for d in deals)
-    withheld = [store for store, count in previous.items()
-                if count >= 20 and counts[store] < count * 0.3]
-    for store in withheld:
+    withheld = set()
+    for store, result in outcomes.items():
+        incomplete = any(collection.get("status") != "complete"
+                         for collection in result.get("collections", []))
+        if result.get("errors") or incomplete:
+            withheld.add(store)
+            result["withheld_reasons"] = ["incomplete_refresh"]
+            # Run-status reporting must not label a failed collection as okay
+            # just because its caller omitted the aggregate error counter.
+            if not result.get("errors"):
+                result["errors"] = 1
+    for store, count in previous.items():
+        if count < 20 or counts[store] >= count * 0.3:
+            continue
+        withheld.add(store)
         result = outcomes.setdefault(store, {"errors": 0, "pages": 0})
-        result["count_drop"] = {"previous": previous[store], "current": counts[store]}
+        result["count_drop"] = {"previous": count, "current": counts[store]}
         result["errors"] += 1
-    return [d for d in deals if d.store not in withheld], withheld
+        result.setdefault("withheld_reasons", []).append("count_drop")
+    return [d for d in deals if d.store not in withheld], sorted(withheld)
