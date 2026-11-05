@@ -1,0 +1,1423 @@
+{
+  "recorded_at": "2026-11-05T21:42:02.681356+00:00",
+  "method": "Explicit stored retailer vendor labels plus primary manufacturer identity pages and independent current merchant metadata. This maps manufacturer labels only; products, builds, model years, packages and variants are never merged.",
+  "groups": {
+    "cycling": [
+      {
+        "canonical": "BMC",
+        "labels": [
+          "BMC",
+          "BMC Bikes"
+        ],
+        "primary_identity_url": "https://mc.bmc-switzerland.com/collections/road-racing-bikes",
+        "evidence_note": "Manufacturer Teammachine range identifies BMC.",
+        "stored_examples": {
+          "BMC": {
+            "count": 13,
+            "examples": [
+              {
+                "store": "ERIK\u2019S Bike Shop",
+                "name": "BMC 257 AMP AL Speed Step Through Electric Bike",
+                "url": "https://www.eriksbikeshop.com/products/bmc-2024-257-amp-al-speed-step-through-electric-bike-pr5a26672?currency=USD"
+              },
+              {
+                "store": "ERIK\u2019S Bike Shop",
+                "name": "BMC 257 AMP AL Speed Electric Bike",
+                "url": "https://www.eriksbikeshop.com/products/bmc-2024-257-amp-al-speed-electric-bike-pr5a26673?currency=USD"
+              }
+            ]
+          },
+          "BMC Bikes": {
+            "count": 39,
+            "examples": [
+              {
+                "store": "Contender Bicycles",
+                "name": "BMC Teammachine R 01 Frameset 2026",
+                "url": "https://contenderbicycles.com/products/bmc-teammachine-r-01-frameset-2026?currency=USD"
+              },
+              {
+                "store": "Contender Bicycles",
+                "name": "BMC Teammachine SLR 01 Frameset 2026",
+                "url": "https://contenderbicycles.com/products/bmc-teammachine-slr-01-frameset-2026?currency=USD"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "canonical": "Cervelo",
+        "labels": [
+          "Cervelo",
+          "Cervelo Bikes"
+        ],
+        "primary_identity_url": "https://www.cervelo.com/en-US/bikes/caledonia",
+        "evidence_note": "Manufacturer road-bike page identifies Cervelo; accent spelling is not used to merge product identities.",
+        "stored_examples": {
+          "Cervelo": {
+            "count": 45,
+            "examples": [
+              {
+                "store": "Bike Mart",
+                "name": "P Ultegra Di2 Triathlon Road Bike",
+                "url": "https://www.bikemart.com/products/p-ultegra-di2-3?currency=USD"
+              },
+              {
+                "store": "Bike Mart",
+                "name": "P Rival AXS 1 Triathlon Road Bike",
+                "url": "https://www.bikemart.com/products/p-rival-axs-1?currency=USD"
+              }
+            ]
+          },
+          "Cervelo Bikes": {
+            "count": 5,
+            "examples": [
+              {
+                "store": "Contender Bicycles",
+                "name": "Cerv\u00e9lo R5 Red AXS",
+                "url": "https://contenderbicycles.com/products/cervelo-r5-red-axs?currency=USD"
+              },
+              {
+                "store": "Contender Bicycles",
+                "name": "Cerv\u00e9lo R5 Red XPLR AXS 1 2026",
+                "url": "https://contenderbicycles.com/products/cervelo-r5-red-xplr-axs-1-2026?currency=USD"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "canonical": "Colnago",
+        "labels": [
+          "Colnago",
+          "Colnago Bikes"
+        ],
+        "primary_identity_url": "https://www.colnago.com/en/products/v4-bike",
+        "evidence_note": "Manufacturer V4 page identifies Colnago.",
+        "stored_examples": {
+          "Colnago": {
+            "count": 15,
+            "examples": [
+              {
+                "store": "RA Cycles",
+                "name": "Colnago V5Rs Frameset",
+                "url": "https://racycles.com/products/colnago-v5rs-frameset?currency=USD"
+              },
+              {
+                "store": "RA Cycles",
+                "name": "Colnago V4Rs TDF Dura-Ace Di2 Bike",
+                "url": "https://racycles.com/products/colnago-v4rs-tdf-dura-ace-di2-bike?currency=USD"
+              }
+            ]
+          },
+          "Colnago Bikes": {
+            "count": 2,
+            "examples": [
+              {
+                "store": "Contender Bicycles",
+                "name": "Colnago C68 Gravel Frameset",
+                "url": "https://contenderbicycles.com/products/colnago-c68-gravel-bike?currency=USD"
+              },
+              {
+                "store": "Contender Bicycles",
+                "name": "Colnago V4Rs Disc Frameset",
+                "url": "https://contenderbicycles.com/products/colnago-v4rs-disc-frameset?currency=USD"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "canonical": "ENVE",
+        "labels": [
+          "ENVE",
+          "ENVE Bikes",
+          "ENVE Composites"
+        ],
+        "primary_identity_url": "https://enve.com/collections/bikes-1",
+        "evidence_note": "Manufacturer store title identifies ENVE Composites and lists Melee/Fray bikes.",
+        "stored_examples": {
+          "ENVE": {
+            "count": 2,
+            "examples": [
+              {
+                "store": "RA Cycles",
+                "name": "ENVE Melee Frameset - Total Energies",
+                "url": "https://racycles.com/products/enve-melee-frameset-total-energies-2024?currency=USD"
+              },
+              {
+                "store": "RA Cycles",
+                "name": "ENVE Melee Frameset",
+                "url": "https://racycles.com/products/enve-melee-frameset?currency=USD"
+              }
+            ]
+          },
+          "ENVE Bikes": {
+            "count": 1,
+            "examples": [
+              {
+                "store": "Contender Bicycles",
+                "name": "ENVE Melee Frameset",
+                "url": "https://contenderbicycles.com/products/enve-melee-frameset?currency=USD"
+              }
+            ]
+          },
+          "ENVE Composites": {
+            "count": 1,
+            "examples": [
+              {
+                "store": "Pro Bike Supply",
+                "name": "Melee V1 Frameset - CLOSEOUT",
+                "url": "https://www.probikesupply.com/products/enve-composites-melee-carbon-road-frame-fork?currency=USD"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "canonical": "Ibis",
+        "labels": [
+          "Ibis",
+          "ibis Cycles"
+        ],
+        "primary_identity_url": "https://www.ibiscycles.com/bikes/ripley",
+        "evidence_note": "Manufacturer Ripley page identifies Ibis Cycles.",
+        "stored_examples": {
+          "Ibis": {
+            "count": 4,
+            "examples": [
+              {
+                "store": "Fanatik Bike Co.",
+                "name": "Ripmo AF Deore Complete Bike - 2026",
+                "url": "https://www.fanatikbike.com/products/ibis-ripmo-af-deore-complete-bike-2026?currency=USD"
+              },
+              {
+                "store": "Fanatik Bike Co.",
+                "name": "Ripmo V3 Deore Complete Bike - 2025",
+                "url": "https://www.fanatikbike.com/products/ibis-ripmo-v3-deore-complete-bike-2025?currency=USD"
+              }
+            ]
+          },
+          "ibis Cycles": {
+            "count": 2,
+            "examples": [
+              {
+                "store": "The Path Bike Shop",
+                "name": "Ibis Ripley SL 90",
+                "url": "https://www.thepathbikeshop.com/products/ibis-ripley-sl-90?currency=USD"
+              },
+              {
+                "store": "The Path Bike Shop",
+                "name": "Ibis Oso Trail 90",
+                "url": "https://www.thepathbikeshop.com/products/ibis-oso-trail-90?currency=USD"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "canonical": "LOOK",
+        "labels": [
+          "LOOK",
+          "Look",
+          "Look Cycle"
+        ],
+        "primary_identity_url": "https://www.lookcycle.com/sk-en/products/bikes/road-bikes/altitude/785-huez",
+        "evidence_note": "Manufacturer 785 Huez page identifies LOOK Cycle.",
+        "stored_examples": {
+          "LOOK": {
+            "count": 4,
+            "examples": [
+              {
+                "store": "Bike Closet",
+                "name": "Look 765 GRAVEL RS Disc Frameset",
+                "url": "https://bikecloset.com/product/765-gravel/"
+              },
+              {
+                "store": "Bike Closet",
+                "name": "Look 795 BLADE 2 RS Disc Frameset",
+                "url": "https://bikecloset.com/product/795-blade-2-rs/"
+              }
+            ]
+          },
+          "Look": {
+            "count": 3,
+            "examples": [
+              {
+                "store": "RA Cycles",
+                "name": "Look 765 Gravel RS Disc Frameset",
+                "url": "https://racycles.com/products/look-765-gravel-rs-disc-frameset?currency=USD"
+              },
+              {
+                "store": "RA Cycles",
+                "name": "Look 785 Huez Disc Rival AXS Bike",
+                "url": "https://racycles.com/products/look-785-huez-disc-rival-axs-bike?currency=USD"
+              }
+            ]
+          },
+          "Look Cycle": {
+            "count": 1,
+            "examples": [
+              {
+                "store": "BikesOnline",
+                "name": "Look 785 Huez 2 Rival AXS Road Bike",
+                "url": "https://bikesonline.com/products/look-785-huez-2-rival-axs-road-bike?currency=USD"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "canonical": "Masi",
+        "labels": [
+          "Masi",
+          "Masi Bicycles"
+        ],
+        "primary_identity_url": "https://masibikes.com/products/giramondo-700c",
+        "evidence_note": "Manufacturer Giramondo page identifies Masi Bikes.",
+        "stored_examples": {
+          "Masi": {
+            "count": 1,
+            "examples": [
+              {
+                "store": "Contender Bicycles",
+                "name": "Masi Titanio Frameset",
+                "url": "https://contenderbicycles.com/products/masi-titanio-frameset?currency=USD"
+              }
+            ]
+          },
+          "Masi Bicycles": {
+            "count": 1,
+            "examples": [
+              {
+                "store": "BikesOnline",
+                "name": "Masi Giramondo 700c Adventure Bike",
+                "url": "https://bikesonline.com/products/masi-giramondo-700c-adventure-bike?currency=USD"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "canonical": "Mondraker",
+        "labels": [
+          "Mondraker",
+          "Mondraker Bikes"
+        ],
+        "primary_identity_url": "https://mondraker.com/index.php/se/es/raze-carbon-r",
+        "evidence_note": "Manufacturer Raze Carbon page identifies Mondraker.",
+        "stored_examples": {
+          "Mondraker": {
+            "count": 41,
+            "examples": [
+              {
+                "store": "Pro Bike Supply",
+                "name": "Mondraker CRAFTY CARBON RR S 2026",
+                "url": "https://www.probikesupply.com/products/2026-mondraker-crafty-carbon-rr-s?currency=USD"
+              },
+              {
+                "store": "Pro Bike Supply",
+                "name": "Mondraker FOXY CARBON RR AXS 2023",
+                "url": "https://www.probikesupply.com/products/2023-mondraker-foxy-carbon-rr-axs?currency=USD"
+              }
+            ]
+          },
+          "Mondraker Bikes": {
+            "count": 4,
+            "examples": [
+              {
+                "store": "Contender Bicycles",
+                "name": "Mondraker Raze Carbon RR 2023",
+                "url": "https://contenderbicycles.com/products/mondraker-raze-carbon-rr-2023?currency=USD"
+              },
+              {
+                "store": "Contender Bicycles",
+                "name": "Mondraker Raze Carbon R 2023",
+                "url": "https://contenderbicycles.com/products/mondraker-raze-carbon-r-2023?currency=USD"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "canonical": "OPEN",
+        "labels": [
+          "OPEN",
+          "OPEN Bikes"
+        ],
+        "primary_identity_url": "https://opencycle.com/up-upper-20",
+        "evidence_note": "Manufacturer UP 2.0 range identifies OPEN Cycle.",
+        "stored_examples": {
+          "OPEN": {
+            "count": 12,
+            "examples": [
+              {
+                "store": "RA Cycles",
+                "name": "OPEN WI.DE. Force AXS Bike - 700c w/ENVE Kit",
+                "url": "https://racycles.com/products/open-wide-force-axs-bike-700c-wenve-kit?currency=USD"
+              },
+              {
+                "store": "RA Cycles",
+                "name": "OPEN WI.DE. Force AXS Bike - 700c",
+                "url": "https://racycles.com/products/open-wide-force-axs-bike-700c?currency=USD"
+              }
+            ]
+          },
+          "OPEN Bikes": {
+            "count": 6,
+            "examples": [
+              {
+                "store": "Contender Bicycles",
+                "name": "OPEN UP 2.0 Frameset",
+                "url": "https://contenderbicycles.com/products/open-up-2-0-frameset?currency=USD"
+              },
+              {
+                "store": "Contender Bicycles",
+                "name": "OPEN UP Rapha Limited Edition Frameset",
+                "url": "https://contenderbicycles.com/products/open-up-rapha-frameset?currency=USD"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "canonical": "Orbea",
+        "labels": [
+          "Orbea",
+          "Orbea Bikes"
+        ],
+        "primary_identity_url": "https://www.orbea.com/content/01_Tech_WILD_EN.pdf",
+        "evidence_note": "Manufacturer WILD manual identifies ORBEA. Historical manual used only for manufacturer identity, not current model specification or availability.",
+        "stored_examples": {
+          "Orbea": {
+            "count": 142,
+            "examples": [
+              {
+                "store": "Colorado Cyclist",
+                "name": "Orbea Terra H30 1X 700c - Infinity Green-Ivory White - 2026",
+                "url": "https://coloradocyclist.com/products/orbea-terra-h30-1x-700c-infinity-green-ivory-white-2026?currency=USD"
+              },
+              {
+                "store": "Pro Bike Supply",
+                "name": "2024 Orbea ORCA OMR Racing Road Frame - 55cm, Wine Red-Titanium (Gloss)",
+                "url": "https://www.probikesupply.com/products/2024-orbea-orca-omr-racing-road-frame-55cm-wine-red-titanium-gloss?currency=USD"
+              }
+            ]
+          },
+          "Orbea Bikes": {
+            "count": 71,
+            "examples": [
+              {
+                "store": "Contender Bicycles",
+                "name": "Orbea WILD M-LTD 20mph",
+                "url": "https://contenderbicycles.com/products/orbea-wild-m-ltd-20mph?currency=USD"
+              },
+              {
+                "store": "Contender Bicycles",
+                "name": "Orbea Orca Aero M21eLTD 2026",
+                "url": "https://contenderbicycles.com/products/orbea-orca-aero-m21eltd-2026?currency=USD"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "canonical": "Pinarello",
+        "labels": [
+          "Pinarello",
+          "Pinarello Bikes"
+        ],
+        "primary_identity_url": "https://pinarello.com/europe/en",
+        "evidence_note": "Manufacturer range identifies Pinarello and Dogma X.",
+        "stored_examples": {
+          "Pinarello": {
+            "count": 24,
+            "examples": [
+              {
+                "store": "RA Cycles",
+                "name": "Pinarello Dogma F Dura-Ace Di2 Bike",
+                "url": "https://racycles.com/products/pinarello-dogma-f-dura-ace-di2-bike?currency=USD"
+              },
+              {
+                "store": "RA Cycles",
+                "name": "Pinarello Dogma X Dura-Ace Di2 Bike",
+                "url": "https://racycles.com/products/pinarello-dogma-x-dura-ace-di2-bike?currency=USD"
+              }
+            ]
+          },
+          "Pinarello Bikes": {
+            "count": 10,
+            "examples": [
+              {
+                "store": "Contender Bicycles",
+                "name": "Pinarello Dogma X Dura-Ace Di2 PM 2026",
+                "url": "https://contenderbicycles.com/products/pinarello-dogma-x-dura-ace-di2-pm-2026?currency=USD"
+              },
+              {
+                "store": "Contender Bicycles",
+                "name": "Pinarello X7 Disc Force AXS Most Ultrafast 2026",
+                "url": "https://contenderbicycles.com/products/pinarello-x7-disc-force-axs-most-ultrafast-2026?currency=USD"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "canonical": "Pivot",
+        "labels": [
+          "Pivot",
+          "Pivot Cycles"
+        ],
+        "primary_identity_url": "https://www.pivotcycles.com/en/products/shuttle-lt-team-xx-eagle-transmission",
+        "evidence_note": "Manufacturer Shuttle LT product identifies Pivot Cycles.",
+        "stored_examples": {
+          "Pivot": {
+            "count": 3,
+            "examples": [
+              {
+                "store": "RA Cycles",
+                "name": "Pivot Point Frame",
+                "url": "https://racycles.com/products/pivot-point-frame?currency=USD"
+              },
+              {
+                "store": "RA Cycles",
+                "name": "Pivot Trail 429 Pro X0 Eagle Transmission Enduro Bike w/Carbon Wheel Upgrade",
+                "url": "https://racycles.com/products/pivot-trail-429-pro-x0-eagle-transmission-enduro-bike-w-carbon-wheel-upgrade?currency=USD"
+              }
+            ]
+          },
+          "Pivot Cycles": {
+            "count": 13,
+            "examples": [
+              {
+                "store": "Mike's Bikes",
+                "name": "Shuttle LT Team XX Eagle Transmission",
+                "url": "https://mikesbikes.com/products/pivot-shuttle-lt-team-xx-eagle-transmission-2027?currency=USD"
+              },
+              {
+                "store": "Mike's Bikes",
+                "name": "Shuttle AM 2 Pro X0 Eagle Transmission With Range Extender",
+                "url": "https://mikesbikes.com/products/pivot-shuttle-am-pro-x0-eagle-transmission-with-range-extender?currency=USD"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "canonical": "Santa Cruz",
+        "labels": [
+          "Santa Cruz",
+          "Santa Cruz Bicycles",
+          "Santa Cruz Bikes"
+        ],
+        "primary_identity_url": "https://www.santacruzbicycles.com/en-es/collections/vala",
+        "evidence_note": "Manufacturer Vala range identifies Santa Cruz Bicycles.",
+        "stored_examples": {
+          "Santa Cruz": {
+            "count": 99,
+            "examples": [
+              {
+                "store": "Bike Mart",
+                "name": "Heckler 9 C XT 29 Electric Full Suspension Mountain Bike",
+                "url": "https://www.bikemart.com/products/santa-cruz-heckler-9-c-xt-29?currency=USD"
+              },
+              {
+                "store": "Bike Mart",
+                "name": "Santa Cruz Heckler SL CC XX AXS Reserve",
+                "url": "https://www.bikemart.com/products/santa-cruz-heckler-sl-cc-xx-axs-reserve?currency=USD"
+              }
+            ]
+          },
+          "Santa Cruz Bicycles": {
+            "count": 2,
+            "examples": [
+              {
+                "store": "Gravity Coalition",
+                "name": "Blur 90 Trail",
+                "url": "https://gravitycoalition.com/products/blur-90-trail?currency=USD"
+              },
+              {
+                "store": "Gravity Coalition",
+                "name": "Santa Cruz Hightower R Kit",
+                "url": "https://gravitycoalition.com/products/hightower-r?currency=USD"
+              }
+            ]
+          },
+          "Santa Cruz Bikes": {
+            "count": 15,
+            "examples": [
+              {
+                "store": "Contender Bicycles",
+                "name": "Santa Cruz Vala 1 C MX XT Di2",
+                "url": "https://contenderbicycles.com/products/santa-cruz-vala-1-c-mx-xt-di2?currency=USD"
+              },
+              {
+                "store": "Contender Bicycles",
+                "name": "Santa Cruz Stigmata 4 CC Frameset",
+                "url": "https://contenderbicycles.com/products/santa-cruz-stigmata-4-cc-frameset?currency=USD"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "canonical": "Scott",
+        "labels": [
+          "Scott",
+          "SCOTT Bikes"
+        ],
+        "primary_identity_url": "https://www.scott-sports.com/fr/fr/products/bike-bikes-road-lightweight-addict-rc",
+        "evidence_note": "Manufacturer Addict RC range identifies Scott.",
+        "stored_examples": {
+          "Scott": {
+            "count": 9,
+            "examples": [
+              {
+                "store": "RA Cycles",
+                "name": "Scott Spark RC Pro Bike",
+                "url": "https://racycles.com/products/scott-spark-rc-pro-bike-1?currency=USD"
+              },
+              {
+                "store": "RA Cycles",
+                "name": "Scott Addict Gravel 30 Bike",
+                "url": "https://racycles.com/products/scott-addict-gravel-30-bike-2?currency=USD"
+              }
+            ]
+          },
+          "SCOTT Bikes": {
+            "count": 26,
+            "examples": [
+              {
+                "store": "Contender Bicycles",
+                "name": "SCOTT Addict RC Ultimate HMX SL Frameset",
+                "url": "https://contenderbicycles.com/products/scott-addict-rc-ultimate-hmx-sl-frameset?currency=USD"
+              },
+              {
+                "store": "Contender Bicycles",
+                "name": "SCOTT Foil RC Ultimate HMX SL Frameset",
+                "url": "https://contenderbicycles.com/products/scott-foil-rc-ultimate-hmx-sl-frame-set?currency=USD"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "canonical": "Specialized",
+        "labels": [
+          "Specialized",
+          "Specialized Bikes"
+        ],
+        "primary_identity_url": "https://www.specialized.com/us/en/s-works-turbo-levo-4/p/4218698?color=5363216-4218698",
+        "evidence_note": "Manufacturer S-Works Turbo Levo product identifies Specialized. Distinct existing S-Works and Specialized Turbo facets are deliberately retained.",
+        "stored_examples": {
+          "Specialized": {
+            "count": 221,
+            "examples": [
+              {
+                "store": "Bicycle Warehouse",
+                "name": "Roll 3.0 Fitness Bike",
+                "url": "https://bicyclewarehouse.com/products/specialized-roll-3-0-fitness-road-bike?currency=USD"
+              },
+              {
+                "store": "Bicycle Warehouse",
+                "name": "Turbo Vado SL 2 4.0 (2026)",
+                "url": "https://bicyclewarehouse.com/products/specialized-turbo-vado-sl-2-4-e-bike-2026?currency=USD"
+              }
+            ]
+          },
+          "Specialized Bikes": {
+            "count": 1,
+            "examples": [
+              {
+                "store": "Contender Bicycles",
+                "name": "Specialized S-Works Turbo Levo 4 Carbon",
+                "url": "https://contenderbicycles.com/products/specialized-s-works-turbo-levo-4-carbon?currency=USD"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "canonical": "TIME",
+        "labels": [
+          "TIME",
+          "Time"
+        ],
+        "primary_identity_url": "https://www.timebicycles.com/en-us",
+        "evidence_note": "Manufacturer site identifies TIME and NXR, Fluidity and ADHX ranges.",
+        "stored_examples": {
+          "TIME": {
+            "count": 16,
+            "examples": [
+              {
+                "store": "Bike Closet",
+                "name": "Time ADH ALPE D\u2019HUEZ Carbon Disc Frameset",
+                "url": "https://bikecloset.com/product/time-adh-alpe-dhuez-carbon-disc-frameset/"
+              },
+              {
+                "store": "Bike Closet",
+                "name": "Time ADHX Carbon Disc Frameset Silver",
+                "url": "https://bikecloset.com/product/time-adhx-carbon-disc-frameset/"
+              }
+            ]
+          },
+          "Time": {
+            "count": 3,
+            "examples": [
+              {
+                "store": "RA Cycles",
+                "name": "Time NXR2 Instinct Black Label Frameset",
+                "url": "https://racycles.com/products/time-nxr2-instinct-black-label-frameset?currency=USD"
+              },
+              {
+                "store": "RA Cycles",
+                "name": "Time VRS Fluidity Di2 Frameset",
+                "url": "https://racycles.com/products/time-vrs-fluidity-di2-frameset?currency=USD"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "canonical": "Transition",
+        "labels": [
+          "Transition",
+          "Transition Bikes"
+        ],
+        "primary_identity_url": "https://www.transitionbikes.com/Bikes/Relay?trk=public_post_comment-text",
+        "evidence_note": "Manufacturer Relay page identifies Transition.",
+        "stored_examples": {
+          "Transition": {
+            "count": 9,
+            "examples": [
+              {
+                "store": "ERIK\u2019S Bike Shop",
+                "name": "Transition Smuggler Carbon Eagle 90 Full Suspension Mountain Bike",
+                "url": "https://www.eriksbikeshop.com/products/transition-2026-smuggler-carbon-eagle-90-full-suspension-mountain-bike-pr5a26713?currency=USD"
+              },
+              {
+                "store": "ERIK\u2019S Bike Shop",
+                "name": "Transition Sentinel Carbon Eagle 90 Full Suspension Mountain Bike",
+                "url": "https://www.eriksbikeshop.com/products/transition-sentinel-carbon-eagle-90-full-suspension-mountain-bike-pr5a27445?currency=USD"
+              }
+            ]
+          },
+          "Transition Bikes": {
+            "count": 42,
+            "examples": [
+              {
+                "store": "Pro Bike Supply",
+                "name": "Transition Relay Carbon GX Mechanical 2023",
+                "url": "https://www.probikesupply.com/products/transition-relay-carbon-gx-mechanical-2023?currency=USD"
+              },
+              {
+                "store": "Pro Bike Supply",
+                "name": "Transition Relay Carbon GX AXS 2023",
+                "url": "https://www.probikesupply.com/products/transition-relay-carbon-gx-axs-2023?currency=USD"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "tools": [
+      {
+        "canonical": "Axiom",
+        "labels": [
+          "Axiom",
+          "Axiom Precision"
+        ],
+        "primary_identity_url": null,
+        "evidence_note": "Manufacturer homepage returned403; exact AR8PROV6 machine identity is corroborated by the two independent selling retailers. Primary merchant checks retained separately.",
+        "stored_examples": {
+          "Axiom": {
+            "count": 10,
+            "examples": [
+              {
+                "store": "Beaver Industrial Supply",
+                "name": "Axiom AutoRoute 24\" x 48\" CNC Router AR8PROV6",
+                "url": "https://beavertools.com/products/ar8prov6-axiom-ar8prov6-axion-autoroute-24-x-48-cnc-router?currency=USD"
+              },
+              {
+                "store": "Beaver Industrial Supply",
+                "name": "Axiom Iconic Series 24x36 in CNC Router with 800W Spindle & DSP Controller ICONIC6",
+                "url": "https://beavertools.com/products/iconic6-axiom-iconic6-axiom-iconic-24-x-36-cnc-router?currency=USD"
+              }
+            ]
+          },
+          "Axiom Precision": {
+            "count": 6,
+            "examples": [
+              {
+                "store": "OakTree Supply",
+                "name": "Axiom AR8Pro V6 2'x4' CNC Router",
+                "url": "https://www.oaktreesupply.com/products/axiom-ar8pro-v5-2x4-cnc-router?currency=USD"
+              },
+              {
+                "store": "OakTree Supply",
+                "name": "Axiom Iconic-8 Series CNC Router 2' x 4'",
+                "url": "https://www.oaktreesupply.com/products/axiom-iconic-8-series-cnc-router-24-x-48?currency=USD"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "canonical": "FLEX",
+        "labels": [
+          "FLEX",
+          "Flex"
+        ],
+        "primary_identity_url": "https://www.flex-tools.com/en-gb/products/polishers/random-orbital-polisher/xce-10-8-125-230-bs",
+        "evidence_note": "Manufacturer XCE10-8 125 page identifies FLEX Power Tools; regional product electrical specifications are not equated.",
+        "stored_examples": {
+          "FLEX": {
+            "count": 6,
+            "examples": [
+              {
+                "store": "Fasteners Inc",
+                "name": "FLEX FX1271T-Z 24V 1/2in 2 Speed Hammer Drill With Turbo Mode (Bare Tool)",
+                "url": "https://fastenersinc.myshopify.com/products/flex-fx1271t-z-24v-1-2in-2-speed-hammer-drill-with-turbo-mode-bare-tool?currency=USD"
+              },
+              {
+                "store": "Fasteners Inc",
+                "name": "FLEX FX2481-2J 9 in Handheld Cut-Off Saw Stacked Lithium Kit",
+                "url": "https://fastenersinc.myshopify.com/products/flex-fx2481-2j-9-in-handheld-cut-off-saw-stacked-lithium-kit?currency=USD"
+              }
+            ]
+          },
+          "Flex": {
+            "count": 2,
+            "examples": [
+              {
+                "store": "Woodcraft",
+                "name": "Dual-Action Polisher - Flex Xce 10-8 125",
+                "url": "https://www.woodcraft.com/products/flex-germany-dual-action-polisher-flex-xce-10-8-125?currency=USD"
+              },
+              {
+                "store": "Woodcraft",
+                "name": "Flex Combo Kit With Stack Pack",
+                "url": "https://www.woodcraft.com/products/flex-combo-kit-with-stack-pack?currency=USD"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "canonical": "Milwaukee",
+        "labels": [
+          "Milwaukee",
+          "Milwaukee Tool"
+        ],
+        "primary_identity_url": "https://www.milwaukeetool.com/2739-21hd",
+        "evidence_note": "Manufacturer exact2739-21HD product identifies Milwaukee Tool.",
+        "stored_examples": {
+          "Milwaukee": {
+            "count": 35,
+            "examples": [
+              {
+                "store": "Baker's Gas",
+                "name": "Milwaukee Adjustable Power Point Cordless Tungsten Grinder, 15\u00b0 - 45\u00b0",
+                "url": "https://bakersgas.com/products/tsi-ts-ppe-adj-batt?currency=USD"
+              },
+              {
+                "store": "Max Warehouse",
+                "name": "Milwaukee  M18  18 volt Cordless  Oscillating Multi-Tool  Bare Tool  18000 opm",
+                "url": "https://www.maxwarehouse.com/products/milwaukee-m18-18-volt-cordless-oscillating-multi-tool-bare-tool-18000-opm?currency=USD"
+              }
+            ]
+          },
+          "Milwaukee Tool": {
+            "count": 1,
+            "examples": [
+              {
+                "store": "Fasteners Inc",
+                "name": "Milwaukee Tool 2739-21HD M18 FUEL 12\" Dual Bevel Sliding Compound Miter Saw",
+                "url": "https://fastenersinc.myshopify.com/products/milwaukee-2739-21hd-m18-fuel-12-in-dual-bevel-sliding-compound-miter-saw-kit?currency=USD"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "retained_distinctions": [
+    "S-Works",
+    "Specialized Turbo",
+    "SCOR",
+    "BMC",
+    "Metabo HPT",
+    "retailer-as-brand entries",
+    "Unspecified"
+  ],
+  "snapshot_files": {
+    "cycling": {
+      "sha256": "c8ae19cdaef4e10e904e9b2b435fb3366da7b40b052ee5c996b847f6998cbb19",
+      "sources": 20,
+      "products": 1524
+    },
+    "tools": {
+      "sha256": "0c67f991589eb7f38ac839162ca599608c240c54e89362652153f2b5c95f5936",
+      "sources": 13,
+      "products": 1152
+    }
+  },
+  "merchant_checks": [
+    {
+      "catalog": "cycling",
+      "canonical": "BMC",
+      "stored_label": "BMC",
+      "url": "https://www.eriksbikeshop.com/products/bmc-2024-257-amp-al-speed-step-through-electric-bike-pr5a26672.js?currency=USD",
+      "checked_at": "2026-11-05T21:42:02.813136+00:00",
+      "status": 200,
+      "sha256": "57241d2154dfec23f3bc6a18dd081b27afda34a959ea2119c9102f6296b31c22",
+      "title": "BMC 257 AMP AL Speed Step Through Electric Bike",
+      "vendor": "BMC",
+      "product_id": 9080549474518,
+      "handle": "bmc-2024-257-amp-al-speed-step-through-electric-bike-pr5a26672"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "BMC",
+      "stored_label": "BMC Bikes",
+      "url": "https://contenderbicycles.com/products/bmc-teammachine-r-01-frameset-2026.js?currency=USD",
+      "checked_at": "2026-11-05T21:42:05.100576+00:00",
+      "status": 200,
+      "sha256": "fda252f652878f1ed3aa34c55bf577084e43be7455e6c7cbc6824eac5def4c64",
+      "title": "BMC Teammachine R 01 Frameset 2026",
+      "vendor": "BMC Bikes",
+      "product_id": 15411686342901,
+      "handle": "bmc-teammachine-r-01-frameset-2026"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "Cervelo",
+      "stored_label": "Cervelo",
+      "url": "https://www.bikemart.com/products/p-ultegra-di2-3.js?currency=USD",
+      "checked_at": "2026-11-05T21:42:07.430293+00:00",
+      "status": 200,
+      "sha256": "ca8a5f8eb62bf40bf98bfd4871ba580bce0e5940963af9d81372564ad2942851",
+      "title": "P Ultegra Di2 Triathlon Road Bike",
+      "vendor": "Cervelo",
+      "product_id": 9151315149053,
+      "handle": "p-ultegra-di2-3"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "Cervelo",
+      "stored_label": "Cervelo Bikes",
+      "url": "https://contenderbicycles.com/products/cervelo-r5-red-axs.js?currency=USD",
+      "checked_at": "2026-11-05T21:42:09.758100+00:00",
+      "status": 200,
+      "sha256": "0717f1f4c8e34cfd87d9e0f2886a3f865c37052dba305ece75fec07eed00a2ff",
+      "title": "Cerv\u00e9lo R5 Red AXS",
+      "vendor": "Cervelo Bikes",
+      "product_id": 9340547072245,
+      "handle": "cervelo-r5-red-axs"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "Colnago",
+      "stored_label": "Colnago",
+      "url": "https://racycles.com/products/colnago-v5rs-frameset.js?currency=USD",
+      "checked_at": "2026-11-05T21:42:11.893801+00:00",
+      "status": 200,
+      "sha256": "41e5538498e84aee25d426386dd8394c4cfdb0a577549d672b9e3f1dcfc8f1f9",
+      "title": "Colnago V5Rs Frameset",
+      "vendor": "Colnago",
+      "product_id": 7862533750828,
+      "handle": "colnago-v5rs-frameset"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "Colnago",
+      "stored_label": "Colnago Bikes",
+      "url": "https://contenderbicycles.com/products/colnago-c68-gravel-bike.js?currency=USD",
+      "checked_at": "2026-11-05T21:42:14.231594+00:00",
+      "status": 200,
+      "sha256": "afcba1bde59132d1463215142fc343865798fba6a0d6b309bf87caaa1d30431e",
+      "title": "Colnago C68 Gravel Frameset",
+      "vendor": "Colnago Bikes",
+      "product_id": 9562479165685,
+      "handle": "colnago-c68-gravel-bike"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "ENVE",
+      "stored_label": "ENVE",
+      "url": "https://racycles.com/products/enve-melee-frameset-total-energies-2024.js?currency=USD",
+      "checked_at": "2026-11-05T21:42:16.438119+00:00",
+      "status": 200,
+      "sha256": "79a74e1e1b64e3d261aa9a86bcb5c9994317f73097c2277542451cb214b17fe6",
+      "title": "ENVE Melee Frameset - Total Energies",
+      "vendor": "ENVE",
+      "product_id": 7673250447404,
+      "handle": "enve-melee-frameset-total-energies-2024"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "ENVE",
+      "stored_label": "ENVE Bikes",
+      "url": "https://contenderbicycles.com/products/enve-melee-frameset.js?currency=USD",
+      "checked_at": "2026-11-05T21:42:18.634582+00:00",
+      "status": 200,
+      "sha256": "0a60683f69c317f5a31a642d825c7b1e74b5ae89ad25cbf44aa468aa25ad3281",
+      "title": "ENVE Melee Frameset",
+      "vendor": "ENVE Bikes",
+      "product_id": 7777568588021,
+      "handle": "enve-melee-frameset"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "ENVE",
+      "stored_label": "ENVE Composites",
+      "url": "https://www.probikesupply.com/products/enve-composites-melee-carbon-road-frame-fork.js?currency=USD",
+      "checked_at": "2026-11-05T21:42:20.776642+00:00",
+      "status": 200,
+      "sha256": "02e92e1ab0f914fe6108fcdb61d185f94b755e152bb4558a2ec82ba1b98371f3",
+      "title": "Melee V1 Frameset - CLOSEOUT",
+      "vendor": "ENVE Composites",
+      "product_id": 7226223132727,
+      "handle": "enve-composites-melee-carbon-road-frame-fork"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "Ibis",
+      "stored_label": "Ibis",
+      "url": "https://www.fanatikbike.com/products/ibis-ripmo-af-deore-complete-bike-2026.js?currency=USD",
+      "checked_at": "2026-11-05T21:42:23.031600+00:00",
+      "status": 200,
+      "sha256": "c0d859ba6bc19bd79d05ffbcb001a6df7a841cc234218d45d7535a3a73e6a651",
+      "title": "Ripmo AF Deore Complete Bike - 2026",
+      "vendor": "Ibis",
+      "product_id": 7174688440366,
+      "handle": "ibis-ripmo-af-deore-complete-bike-2026"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "Ibis",
+      "stored_label": "ibis Cycles",
+      "url": "https://www.thepathbikeshop.com/products/ibis-ripley-sl-90.js?currency=USD",
+      "checked_at": "2026-11-05T21:42:25.344775+00:00",
+      "status": 200,
+      "sha256": "32455b6a13eae8b78954c5ea73ba018f84c0007bd816416ae9263658dff8eca1",
+      "title": "Ibis Ripley SL 90",
+      "vendor": "ibis Cycles",
+      "product_id": 9299486179585,
+      "handle": "ibis-ripley-sl-90"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "LOOK",
+      "stored_label": "LOOK",
+      "url": "https://bikecloset.com/product/765-gravel/",
+      "checked_at": "2026-11-05T21:42:27.665019+00:00",
+      "status": 200,
+      "sha256": "28d82faaf568b7f712185c86ec829b2b17e49a7cf671450172d8cb1108402318",
+      "note": "Non-Shopify primary HTML retained; inspect manufacturer/title evidence separately.",
+      "title": "Look 765 GRAVEL RS Disc Frameset",
+      "manufacturer_evidence": "LOOK breadcrumb and Look title"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "LOOK",
+      "stored_label": "Look",
+      "url": "https://racycles.com/products/look-765-gravel-rs-disc-frameset.js?currency=USD",
+      "checked_at": "2026-11-05T21:42:32.205849+00:00",
+      "status": 200,
+      "sha256": "8b9040124831f9bc360a9ca549ad18e4597d1b8d6fb14a9ba2ad94dd5d4eb5b6",
+      "title": "Look 765 Gravel RS Disc Frameset",
+      "vendor": "Look",
+      "product_id": 7655881900076,
+      "handle": "look-765-gravel-rs-disc-frameset"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "LOOK",
+      "stored_label": "Look Cycle",
+      "url": "https://bikesonline.com/products/look-785-huez-2-rival-axs-road-bike.js?currency=USD",
+      "checked_at": "2026-11-05T21:42:34.474169+00:00",
+      "status": 200,
+      "sha256": "7bd6e3b0cba284dbc4bd6546f77a8c1a426d5c19e065e249040a98f83193a9e8",
+      "title": "Look 785 Huez 2 Rival AXS Road Bike",
+      "vendor": "Look Cycle",
+      "product_id": 10046319788324,
+      "handle": "look-785-huez-2-rival-axs-road-bike"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "Masi",
+      "stored_label": "Masi",
+      "url": "https://contenderbicycles.com/products/masi-titanio-frameset.js?currency=USD",
+      "checked_at": "2026-11-05T21:42:36.691914+00:00",
+      "status": 200,
+      "sha256": "e5f8d8d7604e52c42689268cb144666a59844a8cf2629b2f7f6928e2f305e604",
+      "title": "Masi Titanio Frameset",
+      "vendor": "Masi",
+      "product_id": 8967725121781,
+      "handle": "masi-titanio-frameset"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "Masi",
+      "stored_label": "Masi Bicycles",
+      "url": "https://bikesonline.com/products/masi-giramondo-700c-adventure-bike.js?currency=USD",
+      "checked_at": "2026-11-05T21:42:38.976333+00:00",
+      "status": 200,
+      "sha256": "80a5f4272812f4d1fa69fdec9cfdd622582fb4858ffda82d77557e2341d92e1b",
+      "title": "Masi Giramondo 700c Adventure Bike",
+      "vendor": "Masi Bicycles",
+      "product_id": 10056675852580,
+      "handle": "masi-giramondo-700c-adventure-bike"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "Mondraker",
+      "stored_label": "Mondraker",
+      "url": "https://www.probikesupply.com/products/2026-mondraker-crafty-carbon-rr-s.js?currency=USD",
+      "checked_at": "2026-11-05T21:42:41.186638+00:00",
+      "status": 200,
+      "sha256": "b8cb2aa4b99ce15267414543813aace71b2faa3da6cdbfc479a5c9e90768bcf5",
+      "title": "Mondraker CRAFTY CARBON RR S 2026",
+      "vendor": "Mondraker",
+      "product_id": 7524053811255,
+      "handle": "2026-mondraker-crafty-carbon-rr-s"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "Mondraker",
+      "stored_label": "Mondraker Bikes",
+      "url": "https://contenderbicycles.com/products/mondraker-raze-carbon-rr-2023.js?currency=USD",
+      "checked_at": "2026-11-05T21:42:43.394646+00:00",
+      "status": 200,
+      "sha256": "0d9bff314a13b8ac54568b86fb65d2e3c26069b134bbd87c751d715700a7f096",
+      "title": "Mondraker Raze Carbon RR 2023",
+      "vendor": "Mondraker Bikes",
+      "product_id": 8958346952949,
+      "handle": "mondraker-raze-carbon-rr-2023"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "OPEN",
+      "stored_label": "OPEN",
+      "url": "https://racycles.com/products/open-wide-force-axs-bike-700c-wenve-kit.js?currency=USD",
+      "checked_at": "2026-11-05T21:42:45.589706+00:00",
+      "status": 200,
+      "sha256": "ccdb72784ef88eefcfa5d60c1d6c7bdaa6721469a87b3be16e6e44165054cb3e",
+      "title": "OPEN WI.DE. Force AXS Bike - 700c w/ENVE Kit",
+      "vendor": "OPEN",
+      "product_id": 8467804258348,
+      "handle": "open-wide-force-axs-bike-700c-wenve-kit"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "OPEN",
+      "stored_label": "OPEN Bikes",
+      "url": "https://contenderbicycles.com/products/open-up-2-0-frameset.js?currency=USD",
+      "checked_at": "2026-11-05T21:42:47.780083+00:00",
+      "status": 200,
+      "sha256": "770b2a2d91d7ffec0156dae3119c2b028464a082da9aa2f3f5ab50b9bf1d1c52",
+      "title": "OPEN UP 2.0 Frameset",
+      "vendor": "OPEN Bikes",
+      "product_id": 9341211312373,
+      "handle": "open-up-2-0-frameset"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "Orbea",
+      "stored_label": "Orbea",
+      "url": "https://coloradocyclist.com/products/orbea-terra-h30-1x-700c-infinity-green-ivory-white-2026.js?currency=USD",
+      "checked_at": "2026-11-05T21:42:49.981448+00:00",
+      "status": 200,
+      "sha256": "eaa68f0747f9be9057a79afadc07a1c3b6d61edb6eac235063840b4432a16cc9",
+      "title": "Orbea Terra H30 1X 700c - Infinity Green-Ivory White - 2026",
+      "vendor": "Orbea",
+      "product_id": 9763918872816,
+      "handle": "orbea-terra-h30-1x-700c-infinity-green-ivory-white-2026"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "Orbea",
+      "stored_label": "Orbea Bikes",
+      "url": "https://contenderbicycles.com/products/orbea-wild-m-ltd-20mph.js?currency=USD",
+      "checked_at": "2026-11-05T21:42:52.299048+00:00",
+      "status": 200,
+      "sha256": "92dc606b9c70bee884d7ce361f37fd941e08dc227036841eeb3bb37cd74f477b",
+      "title": "Orbea WILD M-LTD 20mph",
+      "vendor": "Orbea Bikes",
+      "product_id": 9507685400821,
+      "handle": "orbea-wild-m-ltd-20mph"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "Pinarello",
+      "stored_label": "Pinarello",
+      "url": "https://racycles.com/products/pinarello-dogma-f-dura-ace-di2-bike.js?currency=USD",
+      "checked_at": "2026-11-05T21:42:54.422051+00:00",
+      "status": 200,
+      "sha256": "5e3cd90a4406d0d132491d4bf6b8d85e9c00c5905fc358878643f6dfae8c80ac",
+      "title": "Pinarello Dogma F Dura-Ace Di2 Bike",
+      "vendor": "Pinarello",
+      "product_id": 8171050926124,
+      "handle": "pinarello-dogma-f-dura-ace-di2-bike"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "Pinarello",
+      "stored_label": "Pinarello Bikes",
+      "url": "https://contenderbicycles.com/products/pinarello-dogma-x-dura-ace-di2-pm-2026.js?currency=USD",
+      "checked_at": "2026-11-05T21:42:56.666204+00:00",
+      "status": 200,
+      "sha256": "7e5d1b2aa7f0b34da9ca1872e4227329a4b64309f8a9dad9da3a15a05172c152",
+      "title": "Pinarello Dogma X Dura-Ace Di2 PM 2026",
+      "vendor": "Pinarello Bikes",
+      "product_id": 9513070919925,
+      "handle": "pinarello-dogma-x-dura-ace-di2-pm-2026"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "Pivot",
+      "stored_label": "Pivot",
+      "url": "https://racycles.com/products/pivot-point-frame.js?currency=USD",
+      "checked_at": "2026-11-05T21:42:58.778237+00:00",
+      "status": 200,
+      "sha256": "b862799d4228256f85d5af8505f0b7c098a320a9b32db69ab635867875cae445",
+      "title": "Pivot Point Frame",
+      "vendor": "Pivot",
+      "product_id": 7706924220460,
+      "handle": "pivot-point-frame"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "Pivot",
+      "stored_label": "Pivot Cycles",
+      "url": "https://mikesbikes.com/products/pivot-shuttle-lt-team-xx-eagle-transmission-2027.js?currency=USD",
+      "checked_at": "2026-11-05T21:43:00.894015+00:00",
+      "status": 200,
+      "sha256": "51e085e093e459cb48a17e949a24714b91932ec6943c37f5f89231b57fe278a9",
+      "title": "Shuttle LT Team XX Eagle Transmission",
+      "vendor": "Pivot Cycles",
+      "product_id": 7936887095365,
+      "handle": "pivot-shuttle-lt-team-xx-eagle-transmission-2027"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "Santa Cruz",
+      "stored_label": "Santa Cruz",
+      "url": "https://www.bikemart.com/products/santa-cruz-heckler-9-c-xt-29.js?currency=USD",
+      "checked_at": "2026-11-05T21:43:03.123242+00:00",
+      "status": 200,
+      "sha256": "18df93da0fcc3b28c2132466d3d948bceb26cfc6b2e548b41bdb5eb65a6602ed",
+      "title": "Heckler 9 C XT 29 Electric Full Suspension Mountain Bike",
+      "vendor": "Santa Cruz",
+      "product_id": 9151886491901,
+      "handle": "santa-cruz-heckler-9-c-xt-29"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "Santa Cruz",
+      "stored_label": "Santa Cruz Bicycles",
+      "url": "https://gravitycoalition.com/products/blur-90-trail.js?currency=USD",
+      "checked_at": "2026-11-05T21:43:05.433804+00:00",
+      "status": 200,
+      "sha256": "2ca5d2b1147cc7a5da32cde95b0aaaaddb0369205b2927f3c6a5e9f0caacefe2",
+      "title": "Blur 90 Trail",
+      "vendor": "Santa Cruz Bicycles",
+      "product_id": 15405615972596,
+      "handle": "blur-90-trail"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "Santa Cruz",
+      "stored_label": "Santa Cruz Bikes",
+      "url": "https://contenderbicycles.com/products/santa-cruz-vala-1-c-mx-xt-di2.js?currency=USD",
+      "checked_at": "2026-11-05T21:43:07.693015+00:00",
+      "status": 200,
+      "sha256": "73504d59e3a79fb28abcf8ea07d519092c52c9570270174aa2e370c1772fd4a5",
+      "title": "Santa Cruz Vala 1 C MX XT Di2",
+      "vendor": "Santa Cruz Bikes",
+      "product_id": 9329120542965,
+      "handle": "santa-cruz-vala-1-c-mx-xt-di2"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "Scott",
+      "stored_label": "Scott",
+      "url": "https://racycles.com/products/scott-spark-rc-pro-bike-1.js?currency=USD",
+      "checked_at": "2026-11-05T21:43:09.910409+00:00",
+      "status": 200,
+      "sha256": "157e144db536158d22a180dd8f30b984c2a01a6142c59c06d3c88267a5dcf196",
+      "title": "Scott Spark RC Pro Bike",
+      "vendor": "Scott",
+      "product_id": 8164179279916,
+      "handle": "scott-spark-rc-pro-bike-1"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "Scott",
+      "stored_label": "SCOTT Bikes",
+      "url": "https://contenderbicycles.com/products/scott-addict-rc-ultimate-hmx-sl-frameset.js?currency=USD",
+      "checked_at": "2026-11-05T21:43:12.226655+00:00",
+      "status": 200,
+      "sha256": "ae7cfd0038db28ed3367e4e086321ee62e07f96904683f97c3ea0ed1ceebbe80",
+      "title": "SCOTT Addict RC Ultimate HMX SL Frameset",
+      "vendor": "SCOTT Bikes",
+      "product_id": 9706596892917,
+      "handle": "scott-addict-rc-ultimate-hmx-sl-frameset"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "Specialized",
+      "stored_label": "Specialized",
+      "url": "https://bicyclewarehouse.com/products/specialized-roll-3-0-fitness-road-bike.js?currency=USD",
+      "checked_at": "2026-11-05T21:43:14.350739+00:00",
+      "status": 200,
+      "sha256": "914f7c4ef3d0a457a32d2ce2debb5f18602166675012f38731ff7c021a2c59b0",
+      "title": "Roll 3.0 Fitness Bike",
+      "vendor": "Specialized",
+      "product_id": 6869073789030,
+      "handle": "specialized-roll-3-0-fitness-road-bike"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "Specialized",
+      "stored_label": "Specialized Bikes",
+      "url": "https://contenderbicycles.com/products/specialized-s-works-turbo-levo-4-carbon.js?currency=USD",
+      "checked_at": "2026-11-05T21:43:16.730373+00:00",
+      "status": 200,
+      "sha256": "370a0aaeed567be1e36576507e6c7c71806ea924493f85df5fb46e5080b1bd37",
+      "title": "Specialized S-Works Turbo Levo 4 Carbon",
+      "vendor": "Specialized Bikes",
+      "product_id": 9078442000629,
+      "handle": "specialized-s-works-turbo-levo-4-carbon"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "TIME",
+      "stored_label": "TIME",
+      "url": "https://bikecloset.com/product/time-adh-alpe-dhuez-carbon-disc-frameset/",
+      "checked_at": "2026-11-05T21:43:18.923778+00:00",
+      "status": 200,
+      "sha256": "79229c220f347fb512fa2f4d528ccc27ab986b6f4b4dbab17ae61f03412356b9",
+      "note": "Non-Shopify primary HTML retained; inspect manufacturer/title evidence separately.",
+      "title": "Time ADH ALPE D\u2019HUEZ Carbon Disc Frameset",
+      "manufacturer_evidence": "Time Frames breadcrumb and TIME Alpe d\u2019Huez description"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "TIME",
+      "stored_label": "Time",
+      "url": "https://racycles.com/products/time-nxr2-instinct-black-label-frameset.js?currency=USD",
+      "checked_at": "2026-11-05T21:43:24.294469+00:00",
+      "status": 200,
+      "sha256": "0404a1e684bf13ff8834c7ea212c92a890b629b36e6e8585a68f4f40520d6806",
+      "title": "Time NXR2 Instinct Black Label Frameset",
+      "vendor": "Time",
+      "product_id": 7630582022188,
+      "handle": "time-nxr2-instinct-black-label-frameset"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "Transition",
+      "stored_label": "Transition",
+      "url": "https://www.eriksbikeshop.com/products/transition-2026-smuggler-carbon-eagle-90-full-suspension-mountain-bike-pr5a26713.js?currency=USD",
+      "checked_at": "2026-11-05T21:43:26.479986+00:00",
+      "status": 200,
+      "sha256": "b379917349fef603e7fba1412eb70b92884e4eb8fc308663dcd2396edf0aa33e",
+      "title": "Transition Smuggler Carbon Eagle 90 Full Suspension Mountain Bike",
+      "vendor": "Transition",
+      "product_id": 9086753669334,
+      "handle": "transition-2026-smuggler-carbon-eagle-90-full-suspension-mountain-bike-pr5a26713"
+    },
+    {
+      "catalog": "cycling",
+      "canonical": "Transition",
+      "stored_label": "Transition Bikes",
+      "url": "https://www.probikesupply.com/products/transition-relay-carbon-gx-mechanical-2023.js?currency=USD",
+      "checked_at": "2026-11-05T21:43:28.787381+00:00",
+      "status": 200,
+      "sha256": "08f6ea7ce4ddf119c351d7d38726bd7b6964db5f6b4133edfa62053aca9ac0e8",
+      "title": "Transition Relay Carbon GX Mechanical 2023",
+      "vendor": "Transition Bikes",
+      "product_id": 7526195232823,
+      "handle": "transition-relay-carbon-gx-mechanical-2023"
+    },
+    {
+      "catalog": "tools",
+      "canonical": "Axiom",
+      "stored_label": "Axiom",
+      "url": "https://beavertools.com/products/ar8prov6-axiom-ar8prov6-axion-autoroute-24-x-48-cnc-router.js?currency=USD",
+      "checked_at": "2026-11-05T21:43:31.066903+00:00",
+      "status": 200,
+      "sha256": "87cbce8f2de19bafcfbf3ba31b9268817e0b82fee7b00df1808188ae119d6abd",
+      "title": "Axiom AutoRoute 24\" x 48\" CNC Router AR8PROV6",
+      "vendor": "Axiom",
+      "product_id": 8060512043101,
+      "handle": "ar8prov6-axiom-ar8prov6-axion-autoroute-24-x-48-cnc-router"
+    },
+    {
+      "catalog": "tools",
+      "canonical": "Axiom",
+      "stored_label": "Axiom Precision",
+      "url": "https://www.oaktreesupply.com/products/axiom-ar8pro-v5-2x4-cnc-router.js?currency=USD",
+      "checked_at": "2026-11-05T21:43:33.500981+00:00",
+      "status": 200,
+      "sha256": "49833e5a6bcb3ed6756565081287187865e21d651ebd36169375286e9aa325d5",
+      "title": "Axiom AR8Pro V6 2'x4' CNC Router",
+      "vendor": "Axiom Precision",
+      "product_id": 4554899751030,
+      "handle": "axiom-ar8pro-v5-2x4-cnc-router"
+    },
+    {
+      "catalog": "tools",
+      "canonical": "FLEX",
+      "stored_label": "FLEX",
+      "url": "https://fastenersinc.myshopify.com/products/flex-fx1271t-z-24v-1-2in-2-speed-hammer-drill-with-turbo-mode-bare-tool.js?currency=USD",
+      "checked_at": "2026-11-05T21:43:35.753074+00:00",
+      "status": 200,
+      "sha256": "35327224b0c20fb0a8d12724378d072d9d2acc8640d3fb75505eaa099d02d9a2",
+      "title": "FLEX FX1271T-Z 24V 1/2in 2 Speed Hammer Drill With Turbo Mode (Bare Tool)",
+      "vendor": "FLEX",
+      "product_id": 8256679018687,
+      "handle": "flex-fx1271t-z-24v-1-2in-2-speed-hammer-drill-with-turbo-mode-bare-tool"
+    },
+    {
+      "catalog": "tools",
+      "canonical": "FLEX",
+      "stored_label": "Flex",
+      "url": "https://www.woodcraft.com/products/flex-germany-dual-action-polisher-flex-xce-10-8-125.js?currency=USD",
+      "checked_at": "2026-11-05T21:43:37.982402+00:00",
+      "status": 200,
+      "sha256": "20b9320e125c2ce414fde2bc351a23ce50e012547b9f7a29784287b68a33a452",
+      "title": "Dual-Action Polisher - Flex Xce 10-8 125",
+      "vendor": "Flex",
+      "product_id": 7763949060234,
+      "handle": "flex-germany-dual-action-polisher-flex-xce-10-8-125"
+    },
+    {
+      "catalog": "tools",
+      "canonical": "Milwaukee",
+      "stored_label": "Milwaukee",
+      "url": "https://bakersgas.com/products/tsi-ts-ppe-adj-batt.js?currency=USD",
+      "checked_at": "2026-11-05T21:43:40.323072+00:00",
+      "status": 200,
+      "sha256": "676230d867134733ad607f1099381b712d376c3ab359c622fe4e28a181a16545",
+      "title": "Milwaukee Adjustable Power Point Cordless Tungsten Grinder, 15\u00b0 - 45\u00b0",
+      "vendor": "Milwaukee",
+      "product_id": 4671192236134,
+      "handle": "tsi-ts-ppe-adj-batt"
+    },
+    {
+      "catalog": "tools",
+      "canonical": "Milwaukee",
+      "stored_label": "Milwaukee Tool",
+      "url": "https://fastenersinc.myshopify.com/products/milwaukee-2739-21hd-m18-fuel-12-in-dual-bevel-sliding-compound-miter-saw-kit.js?currency=USD",
+      "checked_at": "2026-11-05T21:43:42.629889+00:00",
+      "status": 200,
+      "sha256": "a87048e66d89feca1704306daa7cefac49e60ee607190f91d7d0269454c8bdf5",
+      "title": "Milwaukee Tool 2739-21HD M18 FUEL 12\" Dual Bevel Sliding Compound Miter Saw",
+      "vendor": "Milwaukee Tool",
+      "product_id": 8109770375359,
+      "handle": "milwaukee-2739-21hd-m18-fuel-12-in-dual-bevel-sliding-compound-miter-saw-kit"
+    }
+  ]
+}

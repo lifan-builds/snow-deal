@@ -41,7 +41,6 @@ def safe_url(value: str | None, domain: str | None = None) -> bool:
 
 def normalize(products, catalog: Catalog, domain: str, *, parser_type: str = "shopify") -> list[dict]:
     result = {}
-    brands = dict(catalog.brand_aliases)
     for product in products:
         classification = catalog.classify(product)
         if not classification or classification.category not in catalog.categories or not safe_url(product.url, domain):
@@ -71,9 +70,8 @@ def normalize(products, catalog: Catalog, domain: str, *, parser_type: str = "sh
             offers.append(data)
         if not offers:
             continue
-        original_brand = manufacturer_name(product.brand)
         row = {"name": product.name, "url": product.url,
-               "brand": brands.get(original_brand.casefold(), original_brand),
+               "brand": manufacturer_name(product.brand, brand_aliases=catalog.brand_aliases),
                "source_category": product.product_type,
                **asdict(classification), "offers": offers}
         result[product.url] = row

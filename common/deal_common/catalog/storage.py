@@ -77,10 +77,11 @@ def read_sources(path: Path, catalog: str) -> list[dict]:
 
 
 def read_offer_history(path: Path, catalog: str, source: str, product: dict, offer: dict,
-                       *, now, days: int = 45) -> list[dict]:
+                       *, now, days: int = 45, brand_aliases: tuple[tuple[str, str], ...] = ()) -> list[dict]:
     """One successful observation per UTC day, for the exact current identity only."""
     from datetime import datetime, timedelta
     cutoff = now - timedelta(days=days)
+    identity = (product["url"], product["name"], manufacturer_name(product["brand"], brand_aliases=brand_aliases))
     with database(path, catalog) as connection:
         rows = connection.execute("""
             SELECT observed_at, products FROM observations
@@ -93,8 +94,8 @@ def read_offer_history(path: Path, catalog: str, source: str, product: dict, off
         if stamp.tzinfo is None or not cutoff <= stamp <= now:
             continue
         for historical in json.loads(row["products"]):
-            if ((historical["url"], historical["name"], manufacturer_name(historical["brand"]))
-                    != (product["url"], product["name"], manufacturer_name(product["brand"]))):
+            if ((historical["url"], historical["name"],
+                 manufacturer_name(historical["brand"], brand_aliases=brand_aliases)) != identity):
                 continue
             for candidate in historical["offers"]:
                 if (candidate["variant_key"], candidate["options"], candidate["url"]) != (offer["variant_key"], offer["options"], offer["url"]):

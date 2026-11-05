@@ -2,6 +2,7 @@
 from datetime import UTC, datetime, timedelta
 from math import ceil
 
+from deal_common.catalog.identity import manufacturer_name
 from deal_common.offers import discount, size_key
 
 PAGE_SIZE = 24
@@ -18,8 +19,12 @@ def is_fresh(timestamp: str | None, now: datetime) -> bool:
         return False
 
 
-def query(sources: list[dict], filters: dict, *, now: datetime | None = None) -> dict:
+def query(sources: list[dict], filters: dict, *, now: datetime | None = None,
+          brand_aliases: tuple[tuple[str, str], ...] = ()) -> dict:
     now = now or datetime.now(UTC)
+    requested_brand = filters.get("brand")
+    if requested_brand and brand_aliases:
+        requested_brand = manufacturer_name(requested_brand, brand_aliases=brand_aliases)
     cards = []
     facets = {key: set() for key in ("brand", "store", "size", "platform")}
     fresh_sources = 0
@@ -28,20 +33,26 @@ def query(sources: list[dict], filters: dict, *, now: datetime | None = None) ->
             continue
         fresh_sources += 1
         for product in source["products"]:
-            facets["brand"].add(product["brand"])
+            brand = (manufacturer_name(product["brand"], brand_aliases=brand_aliases)
+                     if brand_aliases else product["brand"])
+            facets["brand"].add(brand)
             facets["store"].add(source["name"])
             if product["platform"]:
                 facets["platform"].add(product["platform"])
             for offer in product["offers"]:
                 if offer["size"] and offer["availability"] == "in_stock":
                     facets["size"].add(offer["size"])
+            if requested_brand and requested_brand != brand:
+                continue
             if any(filters.get(key) and filters[key] != product[key]
-                   for key in ("category", "brand", "format", "platform")):
+                   for key in ("category", "format", "platform")):
                 continue
             if filters.get("store") and filters["store"] != source["name"]:
                 continue
-            if filters.get("q") and filters["q"].casefold() not in (product["name"] + " " + product["brand"]).casefold():
-                continue
+            if filters.get("q"):
+                search_texts = (product["name"] + " " + product["brand"], product["name"] + " " + brand)
+                if not any(filters["q"].casefold() in text.casefold() for text in search_texts):
+                    continue
             eligible = []
             for offer in product["offers"]:
                 if filters.get("size") and (offer["availability"] != "in_stock"
@@ -60,7 +71,7 @@ def query(sources: list[dict], filters: dict, *, now: datetime | None = None) ->
             if not eligible:
                 continue
             best = min(eligible, key=lambda o: (-o["discount"], -o["savings"], o["current_price"], o["variant_key"]))
-            cards.append({**product, "offer": best, "store": source["name"],
+            cards.append({**product, "brand": brand, "offer": best, "store": source["name"],
                           "observed_at": source["successful_at"], "matching_variants": len(eligible)})
     # Keep one existing label for each match the current size_key already defines.
     size_labels = {}

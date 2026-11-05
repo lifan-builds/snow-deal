@@ -1,0 +1,213 @@
+{
+  "checked_at": "2026-11-05T21:46:45.069625+00:00",
+  "catalogs": {
+    "cycling": {
+      "snapshot_file_sha256": "c8ae19cdaef4e10e904e9b2b435fb3366da7b40b052ee5c996b847f6998cbb19",
+      "health": {
+        "catalog": "cycling",
+        "snapshot_sha256": "041b512ebff1951c53ef1576b0f5e9b5cf8dbf8e955463c836883d4330330e08",
+        "fresh_sources": 20,
+        "configured_sources": 20,
+        "status": "ready"
+      },
+      "brand_labels_before": 109,
+      "brand_labels_after": 89,
+      "group_counts": [
+        {
+          "canonical": "BMC",
+          "before": {
+            "BMC": 13,
+            "BMC Bikes": 39
+          },
+          "combined": 52
+        },
+        {
+          "canonical": "Cervelo",
+          "before": {
+            "Cervelo": 45,
+            "Cervelo Bikes": 5
+          },
+          "combined": 50
+        },
+        {
+          "canonical": "Colnago",
+          "before": {
+            "Colnago": 15,
+            "Colnago Bikes": 2
+          },
+          "combined": 17
+        },
+        {
+          "canonical": "ENVE",
+          "before": {
+            "ENVE": 2,
+            "ENVE Bikes": 1,
+            "ENVE Composites": 1
+          },
+          "combined": 4
+        },
+        {
+          "canonical": "Ibis",
+          "before": {
+            "Ibis": 4,
+            "ibis Cycles": 2
+          },
+          "combined": 6
+        },
+        {
+          "canonical": "LOOK",
+          "before": {
+            "LOOK": 4,
+            "Look": 3,
+            "Look Cycle": 1
+          },
+          "combined": 8
+        },
+        {
+          "canonical": "Masi",
+          "before": {
+            "Masi": 1,
+            "Masi Bicycles": 1
+          },
+          "combined": 2
+        },
+        {
+          "canonical": "Mondraker",
+          "before": {
+            "Mondraker": 41,
+            "Mondraker Bikes": 4
+          },
+          "combined": 45
+        },
+        {
+          "canonical": "OPEN",
+          "before": {
+            "OPEN": 12,
+            "OPEN Bikes": 6
+          },
+          "combined": 18
+        },
+        {
+          "canonical": "Orbea",
+          "before": {
+            "Orbea": 142,
+            "Orbea Bikes": 71
+          },
+          "combined": 213
+        },
+        {
+          "canonical": "Pinarello",
+          "before": {
+            "Pinarello": 24,
+            "Pinarello Bikes": 10
+          },
+          "combined": 34
+        },
+        {
+          "canonical": "Pivot",
+          "before": {
+            "Pivot": 3,
+            "Pivot Cycles": 13
+          },
+          "combined": 16
+        },
+        {
+          "canonical": "Santa Cruz",
+          "before": {
+            "Santa Cruz": 99,
+            "Santa Cruz Bicycles": 2,
+            "Santa Cruz Bikes": 15
+          },
+          "combined": 116
+        },
+        {
+          "canonical": "Scott",
+          "before": {
+            "Scott": 9,
+            "SCOTT Bikes": 26
+          },
+          "combined": 35
+        },
+        {
+          "canonical": "Specialized",
+          "before": {
+            "Specialized": 221,
+            "Specialized Bikes": 1
+          },
+          "combined": 222
+        },
+        {
+          "canonical": "TIME",
+          "before": {
+            "TIME": 16,
+            "Time": 3
+          },
+          "combined": 19
+        },
+        {
+          "canonical": "Transition",
+          "before": {
+            "Transition": 9,
+            "Transition Bikes": 42
+          },
+          "combined": 51
+        }
+      ],
+      "scenario_count": 8,
+      "selected_card_comparisons": 5571,
+      "alias_union_comparisons": 296,
+      "form_routes": 37,
+      "offer_histories_checked": 2609,
+      "historical_records_checked": 7167,
+      "observation_rows": 57,
+      "source_inputs_and_database_bytes_unchanged": true
+    },
+    "tools": {
+      "snapshot_file_sha256": "0c67f991589eb7f38ac839162ca599608c240c54e89362652153f2b5c95f5936",
+      "health": {
+        "catalog": "tools",
+        "snapshot_sha256": "3011dac6009e552392b116da21b7cccc7b18e47233ca1b1b35b679e4dd8647f0",
+        "fresh_sources": 13,
+        "configured_sources": 13,
+        "status": "ready"
+      },
+      "brand_labels_before": 50,
+      "brand_labels_after": 47,
+      "group_counts": [
+        {
+          "canonical": "Axiom",
+          "before": {
+            "Axiom": 10,
+            "Axiom Precision": 6
+          },
+          "combined": 16
+        },
+        {
+          "canonical": "FLEX",
+          "before": {
+            "FLEX": 6,
+            "Flex": 2
+          },
+          "combined": 8
+        },
+        {
+          "canonical": "Milwaukee",
+          "before": {
+            "Milwaukee": 35,
+            "Milwaukee Tool": 1
+          },
+          "combined": 36
+        }
+      ],
+      "scenario_count": 7,
+      "selected_card_comparisons": 3741,
+      "alias_union_comparisons": 42,
+      "form_routes": 6,
+      "offer_histories_checked": 60,
+      "historical_records_checked": 170,
+      "observation_rows": 34,
+      "source_inputs_and_database_bytes_unchanged": true
+    }
+  },
+  "passed": true
+}
