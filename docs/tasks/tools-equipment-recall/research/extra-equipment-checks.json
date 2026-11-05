@@ -1,0 +1,474 @@
+{
+  "scope": "Additional before/after classification changes beyond original48; exact public pages, not complete-source admission",
+  "started_at": "2026-11-05T08:00:47.262976+00:00",
+  "population": 15,
+  "checks": [
+    {
+      "name": "Jet Lathe with Newall DP700 DRO, Collet Closer and Taper Attachment, GH-1440-1 323385",
+      "url": "https://beavertools.com/products/323385-jet-gh-1440-1-lathe-with-newall-dp700-dro-collet-closer-and-taper-attachment?currency=USD&variant=44153322897501",
+      "started_at": "2026-11-05T08:00:49.332006+00:00",
+      "status": 200,
+      "decoded": {
+        "url": "https://beavertools.com/products/323385-jet-gh-1440-1-lathe-with-newall-dp700-dro-collet-closer-and-taper-attachment",
+        "name": "Jet Lathe with Newall DP700 DRO, Collet Closer and Taper Attachment, GH-1440-1 323385",
+        "sku": "JT323385",
+        "product_id": "8060829499485",
+        "variant_key": "44153322897501",
+        "price": 29599.0,
+        "reference": 36422.88,
+        "currency": "USD",
+        "in_stock": false,
+        "shipping_note": "Usually Ships in 5-7 Days",
+        "stock_label": "Usually Ships in 5-7 Days",
+        "available": true,
+        "sold_out": false,
+        "options": ""
+      },
+      "checks": {
+        "name": true,
+        "variant": true,
+        "current": true,
+        "reference": true,
+        "currency": true
+      },
+      "matched": true,
+      "checked_at": "2026-11-05T08:00:50.267298+00:00"
+    },
+    {
+      "name": "Jet Lathe with Newall DP700 DRO and Taper Attachment, GH-1440-1 323384",
+      "url": "https://beavertools.com/products/323384-jet-gh-1440-1-lathe-with-newall-dp700-dro-and-taper-attachment?currency=USD&variant=44153328861277",
+      "started_at": "2026-11-05T08:00:52.278055+00:00",
+      "status": 200,
+      "decoded": {
+        "url": "https://beavertools.com/products/323384-jet-gh-1440-1-lathe-with-newall-dp700-dro-and-taper-attachment",
+        "name": "Jet Lathe with Newall DP700 DRO and Taper Attachment, GH-1440-1 323384",
+        "sku": "JT323384",
+        "product_id": "8060835496029",
+        "variant_key": "44153328861277",
+        "price": 22999.0,
+        "reference": 30352.4,
+        "currency": "USD",
+        "in_stock": false,
+        "shipping_note": "Usually Ships in 5-7 Days",
+        "stock_label": "Usually Ships in 5-7 Days",
+        "available": true,
+        "sold_out": false,
+        "options": ""
+      },
+      "checks": {
+        "name": true,
+        "variant": true,
+        "current": true,
+        "reference": true,
+        "currency": true
+      },
+      "matched": true,
+      "checked_at": "2026-11-05T08:00:52.833014+00:00"
+    },
+    {
+      "name": "Jet Lathe with 300S DRO and Taper Attachment, GH-1880ZX 321597",
+      "url": "https://beavertools.com/products/321597-jet-gh-1880zx-lathe-with-300s-dro-and-taper-attachment?currency=USD&variant=44153327779933",
+      "started_at": "2026-11-05T08:00:54.843616+00:00",
+      "status": 200,
+      "decoded": {
+        "url": "https://beavertools.com/products/321597-jet-gh-1880zx-lathe-with-300s-dro-and-taper-attachment",
+        "name": "Jet Lathe with 300S DRO and Taper Attachment, GH-1880ZX 321597",
+        "sku": "JT321597",
+        "product_id": "8060834414685",
+        "variant_key": "44153327779933",
+        "price": 44124.0,
+        "reference": 54381.39,
+        "currency": "USD",
+        "in_stock": false,
+        "shipping_note": "Usually Ships in 5-7 Days",
+        "stock_label": "Usually Ships in 5-7 Days",
+        "available": true,
+        "sold_out": false,
+        "options": ""
+      },
+      "checks": {
+        "name": true,
+        "variant": true,
+        "current": true,
+        "reference": true,
+        "currency": true
+      },
+      "matched": true,
+      "checked_at": "2026-11-05T08:00:55.405432+00:00"
+    },
+    {
+      "name": "Jet Lathe with 2-axis ACU-RITE DRO 200S, Collet Closer and Taper Attachment Installed, GH-1880ZX 321595",
+      "url": "https://beavertools.com/products/321595-jet-gh-1880zx-lathe-with-2-axis-acu-rite-dro-200s-collet-closer-and-taper-attachment-installed?currency=USD&variant=44153320833117",
+      "started_at": "2026-11-05T08:00:57.416654+00:00",
+      "status": 200,
+      "decoded": {
+        "url": "https://beavertools.com/products/321595-jet-gh-1880zx-lathe-with-2-axis-acu-rite-dro-200s-collet-closer-and-taper-attachment-installed",
+        "name": "Jet Lathe with 2-axis ACU-RITE DRO 200S, Collet Closer and Taper Attachment Installed, GH-1880ZX 321595",
+        "sku": "JT321595",
+        "product_id": "8060827467869",
+        "variant_key": "44153320833117",
+        "price": 37524.0,
+        "reference": 48310.91,
+        "currency": "USD",
+        "in_stock": false,
+        "shipping_note": "Usually Ships in 5-7 Days",
+        "stock_label": "Usually Ships in 5-7 Days",
+        "available": true,
+        "sold_out": false,
+        "options": ""
+      },
+      "checks": {
+        "name": true,
+        "variant": true,
+        "current": true,
+        "reference": true,
+        "currency": true
+      },
+      "matched": true,
+      "checked_at": "2026-11-05T08:00:57.961468+00:00"
+    },
+    {
+      "name": "Jet Lathe with 2-axis ACU-RITE DRO 200S, Collet Closer and Taper Attachment Installed, GH-1880ZX 321493",
+      "url": "https://beavertools.com/products/321493-jet-gh-1880zx-lathe-with-2-axis-acu-rite-dro-200s-collet-closer-and-taper-attachment-installed?currency=USD&variant=44153320210525",
+      "started_at": "2026-11-05T08:00:59.971880+00:00",
+      "status": 200,
+      "decoded": {
+        "url": "https://beavertools.com/products/321493-jet-gh-1880zx-lathe-with-2-axis-acu-rite-dro-200s-collet-closer-and-taper-attachment-installed",
+        "name": "Jet Lathe with 2-axis ACU-RITE DRO 200S, Collet Closer and Taper Attachment Installed, GH-1880ZX 321493",
+        "sku": "JT321493",
+        "product_id": "8060826845277",
+        "variant_key": "44153320210525",
+        "price": 51879.0,
+        "reference": 61514.21,
+        "currency": "USD",
+        "in_stock": false,
+        "shipping_note": "Usually Ships in 5-7 Days",
+        "stock_label": "Usually Ships in 5-7 Days",
+        "available": true,
+        "sold_out": false,
+        "options": ""
+      },
+      "checks": {
+        "name": true,
+        "variant": true,
+        "current": true,
+        "reference": true,
+        "currency": true
+      },
+      "matched": true,
+      "checked_at": "2026-11-05T08:01:00.818963+00:00"
+    },
+    {
+      "name": "Jet Lathe with Newall DP500 DRO, Collet Closer, and Taper Attachment, GH-1440-1 323389",
+      "url": "https://beavertools.com/products/323389-jet-gh-1440-1-lathe-with-newall-dp500-dro-collet-closer-and-taper-attachment?currency=USD&variant=44153341411421",
+      "started_at": "2026-11-05T08:01:02.829710+00:00",
+      "status": 200,
+      "decoded": {
+        "url": "https://beavertools.com/products/323389-jet-gh-1440-1-lathe-with-newall-dp500-dro-collet-closer-and-taper-attachment",
+        "name": "Jet Lathe with Newall DP500 DRO, Collet Closer, and Taper Attachment, GH-1440-1 323389",
+        "sku": "JT323389",
+        "product_id": "8060848046173",
+        "variant_key": "44153341411421",
+        "price": 26299.0,
+        "reference": 33387.64,
+        "currency": "USD",
+        "in_stock": false,
+        "shipping_note": "Usually Ships in 5-7 Days",
+        "stock_label": "Usually Ships in 5-7 Days",
+        "available": true,
+        "sold_out": false,
+        "options": ""
+      },
+      "checks": {
+        "name": true,
+        "variant": true,
+        "current": true,
+        "reference": true,
+        "currency": true
+      },
+      "matched": true,
+      "checked_at": "2026-11-05T08:01:03.328565+00:00"
+    },
+    {
+      "name": "Jet Lathe With Taper Attachment and Collet Closer, GH-1440-1 323373",
+      "url": "https://beavertools.com/products/323373-jet-gh-1440-1-with-taper-attachment-and-collet-closer?currency=USD&variant=44153340592221",
+      "started_at": "2026-11-05T08:01:05.339253+00:00",
+      "status": 200,
+      "decoded": {
+        "url": "https://beavertools.com/products/323373-jet-gh-1440-1-with-taper-attachment-and-collet-closer",
+        "name": "Jet Lathe With Taper Attachment and Collet Closer, GH-1440-1 323373",
+        "sku": "JT323373",
+        "product_id": "8060847226973",
+        "variant_key": "44153340592221",
+        "price": 22449.0,
+        "reference": 29846.53,
+        "currency": "USD",
+        "in_stock": false,
+        "shipping_note": "Usually Ships in 5-7 Days",
+        "stock_label": "Usually Ships in 5-7 Days",
+        "available": true,
+        "sold_out": false,
+        "options": ""
+      },
+      "checks": {
+        "name": true,
+        "variant": true,
+        "current": true,
+        "reference": true,
+        "currency": true
+      },
+      "matched": true,
+      "checked_at": "2026-11-05T08:01:05.943696+00:00"
+    },
+    {
+      "name": "Jet Lathe with Taper Attachment Installed, GH-1880ZX-TAK 321486",
+      "url": "https://beavertools.com/products/321486-jet-gh-1880zx-tak-lathe-with-taper-attachment-installed?currency=USD&variant=44153319915613",
+      "started_at": "2026-11-05T08:01:07.954442+00:00",
+      "status": 200,
+      "decoded": {
+        "url": "https://beavertools.com/products/321486-jet-gh-1880zx-tak-lathe-with-taper-attachment-installed",
+        "name": "Jet Lathe with Taper Attachment Installed, GH-1880ZX-TAK 321486",
+        "sku": "JT321486",
+        "product_id": "8060826550365",
+        "variant_key": "44153319915613",
+        "price": 39229.0,
+        "reference": 49879.12,
+        "currency": "USD",
+        "in_stock": false,
+        "shipping_note": "Usually Ships in 5-7 Days",
+        "stock_label": "Usually Ships in 5-7 Days",
+        "available": true,
+        "sold_out": false,
+        "options": ""
+      },
+      "checks": {
+        "name": true,
+        "variant": true,
+        "current": true,
+        "reference": true,
+        "currency": true
+      },
+      "matched": true,
+      "checked_at": "2026-11-05T08:01:08.553484+00:00"
+    },
+    {
+      "name": "Jet Lathe With Newall DP700 With Taper Attachment and Collet Closer, GH-1880ZX 321578",
+      "url": "https://beavertools.com/products/321578-jet-gh-1880zx-with-newall-dp700-with-taper-attachment-and-collet-closer?currency=USD&variant=44153320243293",
+      "started_at": "2026-11-05T08:01:10.564188+00:00",
+      "status": 200,
+      "decoded": {
+        "url": "https://beavertools.com/products/321578-jet-gh-1880zx-with-newall-dp700-with-taper-attachment-and-collet-closer",
+        "name": "Jet Lathe With Newall DP700 With Taper Attachment and Collet Closer, GH-1880ZX 321578",
+        "sku": "JT321578",
+        "product_id": "8060826878045",
+        "variant_key": "44153320243293",
+        "price": 50724.0,
+        "reference": 60451.87,
+        "currency": "USD",
+        "in_stock": false,
+        "shipping_note": "Usually Ships in 5-7 Days",
+        "stock_label": "Usually Ships in 5-7 Days",
+        "available": true,
+        "sold_out": false,
+        "options": ""
+      },
+      "checks": {
+        "name": true,
+        "variant": true,
+        "current": true,
+        "reference": true,
+        "currency": true
+      },
+      "matched": true,
+      "checked_at": "2026-11-05T08:01:11.159158+00:00"
+    },
+    {
+      "name": "Jet Lathe with Newall DP500 DRO and Taper Attachment, GH-1440-1 323388",
+      "url": "https://beavertools.com/products/323388-jet-gh-1440-1-lathe-with-newall-dp500-dro-and-taper-attachment?currency=USD&variant=44153337315421",
+      "started_at": "2026-11-05T08:01:13.169915+00:00",
+      "status": 200,
+      "decoded": {
+        "url": "https://beavertools.com/products/323388-jet-gh-1440-1-lathe-with-newall-dp500-dro-and-taper-attachment",
+        "name": "Jet Lathe with Newall DP500 DRO and Taper Attachment, GH-1440-1 323388",
+        "sku": "JT323388",
+        "product_id": "8060844015709",
+        "variant_key": "44153337315421",
+        "price": 20469.0,
+        "reference": 28025.38,
+        "currency": "USD",
+        "in_stock": false,
+        "shipping_note": "Usually Ships in 5-7 Days",
+        "stock_label": "Usually Ships in 5-7 Days",
+        "available": true,
+        "sold_out": false,
+        "options": ""
+      },
+      "checks": {
+        "name": true,
+        "variant": true,
+        "current": true,
+        "reference": true,
+        "currency": true
+      },
+      "matched": true,
+      "checked_at": "2026-11-05T08:01:13.681587+00:00"
+    },
+    {
+      "name": "Jet Lathe with Acu-Rite 203 DRO and Taper Attachment, GH-1440-1 323375",
+      "url": "https://beavertools.com/products/323375-jet-gh-1440-1-lathe-with-acu-rite-203-dro-and-taper-attachment?currency=USD&variant=44153335775325",
+      "started_at": "2026-11-05T08:01:15.692130+00:00",
+      "status": 200,
+      "decoded": {
+        "url": "https://beavertools.com/products/323375-jet-gh-1440-1-lathe-with-acu-rite-203-dro-and-taper-attachment",
+        "name": "Jet Lathe with Acu-Rite 203 DRO and Taper Attachment, GH-1440-1 323375",
+        "sku": "JT323375",
+        "product_id": "8060842442845",
+        "variant_key": "44153335775325",
+        "price": 22999.0,
+        "reference": 30352.4,
+        "currency": "USD",
+        "in_stock": false,
+        "shipping_note": "Usually Ships in 5-7 Days",
+        "stock_label": "Usually Ships in 5-7 Days",
+        "available": true,
+        "sold_out": false,
+        "options": ""
+      },
+      "checks": {
+        "name": true,
+        "variant": true,
+        "current": true,
+        "reference": true,
+        "currency": true
+      },
+      "matched": true,
+      "checked_at": "2026-11-05T08:01:16.645468+00:00"
+    },
+    {
+      "name": "Kreg 20V Ionic Drive 1/2\" Compact Drill w/ Pocket-Hole Jig 520PRO KPTDR520B",
+      "url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-2-compact-drill-w-pocket-hole-jig-520pro-kptdr520b?currency=USD&variant=44153400852573",
+      "started_at": "2026-11-05T08:01:18.656228+00:00",
+      "status": 200,
+      "decoded": {
+        "url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-2-compact-drill-w-pocket-hole-jig-520pro-kptdr520b",
+        "name": "Kreg 20V Ionic Drive 1/2\" Compact Drill w/ Pocket-Hole Jig 520PRO KPTDR520B",
+        "sku": "KJKPTDR520B",
+        "product_id": "8060906864733",
+        "variant_key": "44153400852573",
+        "price": 198.0,
+        "reference": 327.99,
+        "currency": "USD",
+        "in_stock": true,
+        "shipping_note": "",
+        "stock_label": "In Stock",
+        "available": true,
+        "sold_out": false,
+        "options": ""
+      },
+      "checks": {
+        "name": true,
+        "variant": true,
+        "current": true,
+        "reference": true,
+        "currency": true
+      },
+      "matched": true,
+      "checked_at": "2026-11-05T08:01:19.312490+00:00"
+    },
+    {
+      "name": "Kreg 20V Ionic Drive 1/2\" Compact Drill w/ Pocket-Hole Jig 320 KPTDR320B",
+      "url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-2-compact-drill-w-pocket-hole-jig-320-kptdr320b?currency=USD&variant=44153400590429",
+      "started_at": "2026-11-05T08:01:21.323160+00:00",
+      "status": 200,
+      "decoded": {
+        "url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-2-compact-drill-w-pocket-hole-jig-320-kptdr320b",
+        "name": "Kreg 20V Ionic Drive 1/2\" Compact Drill w/ Pocket-Hole Jig 320 KPTDR320B",
+        "sku": "KJKPTDR320B",
+        "product_id": "8060906602589",
+        "variant_key": "44153400590429",
+        "price": 138.0,
+        "reference": 267.99,
+        "currency": "USD",
+        "in_stock": false,
+        "shipping_note": "Usually Ships in 5-7 Days",
+        "stock_label": "Usually Ships in 5-7 Days",
+        "available": true,
+        "sold_out": false,
+        "options": ""
+      },
+      "checks": {
+        "name": true,
+        "variant": true,
+        "current": true,
+        "reference": true,
+        "currency": true
+      },
+      "matched": true,
+      "checked_at": "2026-11-05T08:01:21.823000+00:00"
+    },
+    {
+      "name": "Kreg 20V Ionic Drive 1/2\" Compact Drill w/ Pocket-Hole Jig K4 KPTDRK4B",
+      "url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-2-compact-drill-w-pocket-hole-jig-k4-kptdrk4b?currency=USD&variant=44153392300125",
+      "started_at": "2026-11-05T08:01:23.833708+00:00",
+      "status": 200,
+      "decoded": {
+        "url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-2-compact-drill-w-pocket-hole-jig-k4-kptdrk4b",
+        "name": "Kreg 20V Ionic Drive 1/2\" Compact Drill w/ Pocket-Hole Jig K4 KPTDRK4B",
+        "sku": "KJKPTDRK4B",
+        "product_id": "8060898312285",
+        "variant_key": "44153392300125",
+        "price": 198.0,
+        "reference": 327.99,
+        "currency": "USD",
+        "in_stock": true,
+        "shipping_note": "",
+        "stock_label": "In Stock",
+        "available": true,
+        "sold_out": false,
+        "options": ""
+      },
+      "checks": {
+        "name": true,
+        "variant": true,
+        "current": true,
+        "reference": true,
+        "currency": true
+      },
+      "matched": true,
+      "checked_at": "2026-11-05T08:01:24.444996+00:00"
+    },
+    {
+      "name": "Kreg 20V Ionic Drive 1/2\" Compact Drill w/ Pocket-Hole Jig 720PRO KPTDR720B",
+      "url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-2-compact-drill-w-pocket-hole-jig-720pro-kptdr720b?currency=USD&variant=44153389416541",
+      "started_at": "2026-11-05T08:01:26.455647+00:00",
+      "status": 200,
+      "decoded": {
+        "url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-2-compact-drill-w-pocket-hole-jig-720pro-kptdr720b",
+        "name": "Kreg 20V Ionic Drive 1/2\" Compact Drill w/ Pocket-Hole Jig 720PRO KPTDR720B",
+        "sku": "KJKPTDR720B",
+        "product_id": "8060895559773",
+        "variant_key": "44153389416541",
+        "price": 248.0,
+        "reference": 377.99,
+        "currency": "USD",
+        "in_stock": true,
+        "shipping_note": "",
+        "stock_label": "In Stock",
+        "available": true,
+        "sold_out": false,
+        "options": ""
+      },
+      "checks": {
+        "name": true,
+        "variant": true,
+        "current": true,
+        "reference": true,
+        "currency": true
+      },
+      "matched": true,
+      "checked_at": "2026-11-05T08:01:27.022125+00:00"
+    }
+  ],
+  "complete": true,
+  "finished_at": "2026-11-05T08:01:27.022614+00:00"
+}

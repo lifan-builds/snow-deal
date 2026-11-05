@@ -1,0 +1,117 @@
+[
+  {
+    "url": "https://beavertools.com/products/1791331-powermatic-pm1250-micro-dust-afs?currency=USD&variant=44153694650461",
+    "name": "Powermatic PM1250 Micro Dust Air Filtration System 1791331",
+    "at": "2026-11-05T05:06:49.387518+00:00",
+    "status": 200,
+    "selects": [],
+    "decoded": {
+      "url": "https://beavertools.com/products/1791331-powermatic-pm1250-micro-dust-afs",
+      "name": "Powermatic PM1250 Micro Dust Air Filtration System 1791331",
+      "sku": "PM1791331",
+      "product_id": "8061197353053",
+      "variant_key": "44153694650461",
+      "price": 399.99,
+      "reference": 659.99,
+      "currency": "USD",
+      "in_stock": false,
+      "shipping_note": "Call for availability",
+      "stock_label": "Call for availability",
+      "available": true,
+      "sold_out": false,
+      "options": ""
+    }
+  },
+  {
+    "url": "https://beavertools.com/products/festool-rts-400-orbital-sander-ct-26-ei-hepa-dust-extractor-bundle-w-abrasives-filter-bags-rts-ct26?currency=USD&variant=67863854284893",
+    "name": "Festool RTS 400 Orbital Sander + CT 26 EI HEPA Dust Extractor Bundle w/ Abrasives & Filter Bags RTS+CT26",
+    "at": "2026-11-05T05:06:52.166769+00:00",
+    "status": 200,
+    "selects": [],
+    "decoded": {
+      "url": "https://beavertools.com/products/festool-rts-400-orbital-sander-ct-26-ei-hepa-dust-extractor-bundle-w-abrasives-filter-bags-rts-ct26",
+      "name": "Festool RTS 400 Orbital Sander + CT 26 EI HEPA Dust Extractor Bundle w/ Abrasives & Filter Bags RTS+CT26",
+      "sku": "FTRTS+CT26",
+      "product_id": "15482799849565",
+      "variant_key": "67863854284893",
+      "price": 1248.0,
+      "reference": 1385.0,
+      "currency": "USD",
+      "in_stock": true,
+      "shipping_note": "",
+      "stock_label": "In Stock",
+      "available": true,
+      "sold_out": false,
+      "options": ""
+    }
+  },
+  {
+    "url": "https://beavertools.com/products/fein-multimaster-amm-700-max-black-edition-18v-cordless-oscillating-multi-tool-bundle-with-6-piece-e-cut-blade-set?currency=USD&variant=67908668817501",
+    "name": "Fein MULTIMASTER AMM 700 MAX Black Edition 18V Cordless Oscillating Multi-Tool Bundle with 6-Piece E-Cut Blade Set 7129476109035222967010",
+    "at": "2026-11-05T05:06:55.082896+00:00",
+    "status": 200,
+    "selects": [],
+    "decoded": {
+      "url": "https://beavertools.com/products/fein-multimaster-amm-700-max-black-edition-18v-cordless-oscillating-multi-tool-bundle-with-6-piece-e-cut-blade-set",
+      "name": "Fein MULTIMASTER AMM 700 MAX Black Edition 18V Cordless Oscillating Multi-Tool Bundle with 6-Piece E-Cut Blade Set 7129476109035222967010",
+      "sku": "FE7129476109035222967010",
+      "product_id": "15497912713309",
+      "variant_key": "67908668817501",
+      "price": 329.95,
+      "reference": 369.9,
+      "currency": "USD",
+      "in_stock": true,
+      "shipping_note": "",
+      "stock_label": "In Stock",
+      "available": true,
+      "sold_out": false,
+      "options": ""
+    }
+  },
+  {
+    "url": "https://beavertools.com/products/gks18v-22n-bosch-18v-brushless-6-1-2-in-blade-right-circular-saw-bare-tool?currency=USD&variant=44153742819421",
+    "name": "Bosch 18V Brushless 6-1/2\" Blade Right Circular Saw (Bare) GKS18V-22N",
+    "at": "2026-11-05T05:06:57.836093+00:00",
+    "status": 200,
+    "selects": [],
+    "decoded": {
+      "url": "https://beavertools.com/products/gks18v-22n-bosch-18v-brushless-6-1-2-in-blade-right-circular-saw-bare-tool",
+      "name": "Bosch 18V Brushless 6-1/2\" Blade Right Circular Saw (Bare) GKS18V-22N",
+      "sku": "RBGKS18V-22N",
+      "product_id": "8061244899421",
+      "variant_key": "44153742819421",
+      "price": 189.0,
+      "reference": 245.0,
+      "currency": "USD",
+      "in_stock": true,
+      "shipping_note": "",
+      "stock_label": "In Stock",
+      "available": true,
+      "sold_out": false,
+      "options": ""
+    }
+  },
+  {
+    "url": "https://beavertools.com/products/fein-mccs14-14-slugger-metal-cutting-chop-saw-bundle-w-free-mcbl14-mild-steel-blade?currency=USD&variant=44512436813917",
+    "name": "Fein MCCS14 14\" Slugger Metal Cutting Chop Saw Bundle w/ Free MCBL14 Mild Steel Blade",
+    "at": "2026-11-05T05:07:00.541761+00:00",
+    "status": 200,
+    "selects": [],
+    "decoded": {
+      "url": "https://beavertools.com/products/fein-mccs14-14-slugger-metal-cutting-chop-saw-bundle-w-free-mcbl14-mild-steel-blade",
+      "name": "Fein MCCS14 14\" Slugger Metal Cutting Chop Saw Bundle w/ Free MCBL14 Mild Steel Blade",
+      "sku": "FE7290536112063502014600",
+      "product_id": "8150962634845",
+      "variant_key": "44512436813917",
+      "price": 584.93,
+      "reference": 779.9,
+      "currency": "USD",
+      "in_stock": true,
+      "shipping_note": "",
+      "stock_label": "In Stock",
+      "available": true,
+      "sold_out": false,
+      "options": ""
+    }
+  }
+]

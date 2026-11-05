@@ -106,3 +106,10 @@ Only accepted sources may renew deals, price history, selected offers or offer o
 ## Snow default ranking ties
 
 Exact percentage off remains first in `_products_to_deals`, `selection_sql` and default card ordering. On a percentage tie, choose greater cash savings for variants in the same source currency. Mixed-currency card results group USD first, then the actual currency code, before comparing savings within that group; do not compare nominal USD and CAD amounts or invent exchange rates. Only then apply image/stable-identity fallbacks. Explicit alternative sorts remain unchanged. Verify the same selected variant price, reference and purchase URL after size/budget filters, count and pagination; slightly higher exact percentages must still beat greater cash savings.
+
+
+## Tools primary equipment and included accessories
+
+In the tools classifier, an explicit included-accessory suffix (`with`, `w/`, `including`) does not make a complete primary tool into a replacement part. Keep full-title condition checks and retailer accessory taxonomy first, then establish equipment identity from the primary title. A broad retailer category or a tool named later in the suffix cannot turn a stand, bag, case, guard, fence, base or guide into equipment. Preserve the observed Fixed-Base Router machine descriptor and Blade Right Circular Saw orientation without admitting replacement parts or standalone blades.
+
+Keep explicit bare-tool and whole-tool kit metadata even when descriptive features intervene. An included blade/filter kit alone is not a whole-tool kit. Explicit fixed bundles expose Bundle; that label does not establish battery/charger contents or stock. Verify exact selected prices, variant links, unknown-stock exclusion and filtered counts through normalization/query. Before release, replay every affected captured feed and all existing public snapshot product classifications; review additions, removals and label changes, then use fresh source and merchant checks. Feed availability cannot override delayed purchase-panel stock.

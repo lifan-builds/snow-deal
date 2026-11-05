@@ -1,0 +1,134 @@
+{
+  "scope": "Additional visible purchase-page stock checks; money and variant checks are in the independent endpoint audit",
+  "population": 18,
+  "matched_titles": 18,
+  "explicit_in_stock": 18,
+  "results": [
+    {
+      "name": "Rupes IBRID Orbital Sander Delta HSS73 with Charger and Batteries In Systainer (HSS73/BETA)",
+      "url": "https://www.toolnut.com/products/rupes-hss73-beta-ibrid-orbital-sander-delta-hss73-charger-2-battery-pack-green-tech-filter-in-systainer?currency=USD&variant=50310212518182",
+      "checked_at": "2026-11-05T17:39:59.706323+00:00",
+      "stock_label": "In Stock - Ready to Ship",
+      "response_sha256": "001ef7851b535e436634419a6898905c4001cb14abcb563a474da2a038657588"
+    },
+    {
+      "name": "Rupes IBRID Orbital Sander 3-1/8-in. x 5-1/8-in. with Charger and Batteries In Systainer (HSE73/BETA)",
+      "url": "https://www.toolnut.com/products/rupes-hse73-beta-ibrid-orbital-sander-80x130-hse73-charger-2-battery-pack-green-tech-filter-in-systainer?currency=USD&variant=50310212387110",
+      "checked_at": "2026-11-05T17:40:02.008508+00:00",
+      "stock_label": "In Stock - Ready to Ship",
+      "response_sha256": "58622b0d09f42b48799bdfe824c2656f9fd2dc51de825af15720ace30aa5b671"
+    },
+    {
+      "name": "JET GH-1440-1 Lathe with Newall DP700 DRO, Collet Closer and Taper Attachment (323385)",
+      "url": "https://www.toolnut.com/products/jet-323385-lathe?currency=USD&variant=50177162150182",
+      "checked_at": "2026-11-05T17:40:04.307592+00:00",
+      "stock_label": "In Stock - Ships from Manufacturer",
+      "response_sha256": "6aca8c4c8da393af9cf445cf3db80fc1d4c361136d002fac6b91f05a47fab2c6"
+    },
+    {
+      "name": "JET GH-1440-1 Lathe with Newall DP700 DRO and Taper Attachment (323384)",
+      "url": "https://www.toolnut.com/products/jet-323384-lathe?currency=USD&variant=50177162084646",
+      "checked_at": "2026-11-05T17:40:06.612663+00:00",
+      "stock_label": "In Stock - Ships from Manufacturer",
+      "response_sha256": "27a5229a1fdc1f60ec9e342427ce6a53e867ea52efd4d9e6f6c06e2b4da97803"
+    },
+    {
+      "name": "JET GH-1440-1 Lathe with Acu-Rite 203 DRO, Collet Closer, and Taper Attachment (323377)",
+      "url": "https://www.toolnut.com/products/jet-323377-lathe?currency=USD&variant=50177161756966",
+      "checked_at": "2026-11-05T17:40:08.928981+00:00",
+      "stock_label": "In Stock - Ships from Manufacturer",
+      "response_sha256": "43642740da906049942a02e97a98a0d557d399ba5263873642e285db01f2c90e"
+    },
+    {
+      "name": "JET GH-1440-1 Lathe with Acu-Rite 203 DRO and Taper Attachment (323375)",
+      "url": "https://www.toolnut.com/products/jet-323375-lathe?currency=USD&variant=50177161625894",
+      "checked_at": "2026-11-05T17:40:11.228688+00:00",
+      "stock_label": "In Stock - Ships from Manufacturer",
+      "response_sha256": "19e0fca8a7ded50c5dbbe5877f765c0a1b1f43e46cbcc2c965d9434551b9e17c"
+    },
+    {
+      "name": "JET GH-1440-1 Lathe with Taper Attachment and Collet Closer (323373)",
+      "url": "https://www.toolnut.com/products/jet-323373-lathe?currency=USD&variant=50177161462054",
+      "checked_at": "2026-11-05T17:40:13.541209+00:00",
+      "stock_label": "In Stock - Ships from Manufacturer",
+      "response_sha256": "ae063295874a485ee800342ad916f18f8011f9f1eea93323ae19015b28d56c22"
+    },
+    {
+      "name": "JET GH-1440-1 Lathe with Taper Attachment (323371)",
+      "url": "https://www.toolnut.com/products/jet-323371-lathe?currency=USD&variant=50177161167142",
+      "checked_at": "2026-11-05T17:40:15.850208+00:00",
+      "stock_label": "In Stock - Ships from Manufacturer",
+      "response_sha256": "21b9cf70127db70ac733890700f2de4f5bc75acb477768ec755be2aa472b08de"
+    },
+    {
+      "name": "JET GH-1880ZX With Taper Attachment and Collet Closer (322486)",
+      "url": "https://www.toolnut.com/products/jet-322486-lathe?currency=USD&variant=50177160675622",
+      "checked_at": "2026-11-05T17:40:18.136093+00:00",
+      "stock_label": "In Stock - Ships from Manufacturer",
+      "response_sha256": "b6f8a127a201f519c21d77cd137c2c94d60251e354fdd5f1e5835b5b8a2cb1e4"
+    },
+    {
+      "name": "JET GH-1880ZX With ACU-RITE 303 DRO With Taper Attachment and Collet Closer (321599)",
+      "url": "https://www.toolnut.com/products/jet-321599-lathe?currency=USD&variant=50177155301670",
+      "checked_at": "2026-11-05T17:40:20.477424+00:00",
+      "stock_label": "In Stock - Ships from Manufacturer",
+      "response_sha256": "0f7897848d27f0e470b7b6ed48825ed5dc074a1ffac71c477cefd205310017aa"
+    },
+    {
+      "name": "JET GH-1880ZX With ACU-RITE 303 DRO With Taper Attachment (321597)",
+      "url": "https://www.toolnut.com/products/jet-321597-lathe?currency=USD&variant=50177153990950",
+      "checked_at": "2026-11-05T17:40:22.872380+00:00",
+      "stock_label": "In Stock - Ships from Manufacturer",
+      "response_sha256": "66659fd628d8807ae98501b1012bffc98c12a2896534031469b942c01dfb6220"
+    },
+    {
+      "name": "JET GH-1880ZX With Newall DP700 DRO With Taper Attachment (321571)",
+      "url": "https://www.toolnut.com/products/jet-321571-lathe?currency=USD&variant=50177152909606",
+      "checked_at": "2026-11-05T17:40:25.177666+00:00",
+      "stock_label": "In Stock - Ships from Manufacturer",
+      "response_sha256": "36a091abe94956b22b7f07df1da89cd26e37fb008a2269b141acc012ccd1475b"
+    },
+    {
+      "name": "JET GH-1880ZX With ACU-RITE 203 DRO With Taper Attachment (321560)",
+      "url": "https://www.toolnut.com/products/jet-321560-lathe?currency=USD&variant=50177152287014",
+      "checked_at": "2026-11-05T17:40:27.458945+00:00",
+      "stock_label": "In Stock - Ships from Manufacturer",
+      "response_sha256": "01b543694d356b694e6202b0bd97b69f76786a14f37976d6c5fd83db93368992"
+    },
+    {
+      "name": "JET GH-1880ZX With ACU-RITE 203 DRO With Taper Attachment and Collet Closer (321493)",
+      "url": "https://www.toolnut.com/products/jet-321493-lathe?currency=USD&variant=50177149272358",
+      "checked_at": "2026-11-05T17:40:29.745956+00:00",
+      "stock_label": "In Stock - Ships from Manufacturer",
+      "response_sha256": "b81f88d5384d0487f902b9829bace3294b6c010ab00f70c6d26220ff8c84025a"
+    },
+    {
+      "name": "JET GH-1880ZX With Taper Attachment (321486)",
+      "url": "https://www.toolnut.com/products/jet-321486-lathe?currency=USD&variant=50177148551462",
+      "checked_at": "2026-11-05T17:40:32.017877+00:00",
+      "stock_label": "In Stock - Ships from Manufacturer",
+      "response_sha256": "2e5a93af03db38597b8d789692713afdb582e5cc6d258c4177321dc779002414"
+    },
+    {
+      "name": "JET GH-1440-1 Lathe with Newall NMS300 DRO, Collet Closer, and Taper Attachment (323389)",
+      "url": "https://www.toolnut.com/products/jet-323389-jpw-lathe?currency=USD&variant=50177091567910",
+      "checked_at": "2026-11-05T17:40:34.404197+00:00",
+      "stock_label": "In Stock - Ships from Manufacturer",
+      "response_sha256": "91e7e71e5ca89c4c1de77bcacad8f088723d26bbf9c4663436c4baaafa3675f5"
+    },
+    {
+      "name": "JET GH-1440-1 Lathe with Newall NMS300 DRO and Taper Attachment (323388)",
+      "url": "https://www.toolnut.com/products/jet-323388-jpw-lathe?currency=USD&variant=50177091502374",
+      "checked_at": "2026-11-05T17:40:36.724402+00:00",
+      "stock_label": "In Stock - Ships from Manufacturer",
+      "response_sha256": "93e57c4e6eed68f0b042ea1586cb220ef8c2bbbb0136d5732ba96c7274807632"
+    },
+    {
+      "name": "Jet GH-1880ZX With Newall DP700 With Taper Attachment and Collet Closer (321578)",
+      "url": "https://www.toolnut.com/products/jet-321578-gh-1880zx-with-newall-dp700-with-taper-attachment-and-collet-closer?currency=USD&variant=50175995707686",
+      "checked_at": "2026-11-05T17:40:39.014698+00:00",
+      "stock_label": "In Stock - Ships from Manufacturer",
+      "response_sha256": "6cf2be1c70d6606e4b5e0885044afb75f8ec9fbf18658acf332c54534990d8bf"
+    }
+  ]
+}
