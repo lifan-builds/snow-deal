@@ -243,3 +243,5 @@ Live source research exposed complete tools and fixed packages excluded merely b
 ## Snow compressed snapshot repair — November 5, 2026 UTC
 
 The scheduled snow deployment and tools PR preview fail the enforced function-size cap despite prior lossless DB compaction. A separate packaging repair will compress the exact validated snapshot, reconstruct a verified read-only local copy before DB defaults load, and preserve all history. Current public data has 190,839 price-history rows and 250,212 offer observations; existing preparation preserves their complete row digests. See docs/SNOW-COMPRESSED-SNAPSHOT-RELEASE-PLAN.md. Tools PR23 remains preserved pending the repaired deployment gate.
+
+- PR24 merged as 2d975f0 after776tests, green CI and successful Git/runner previews. Production dpl_9PfzK8oeLLWXMHbR2SPvv2WucdJL is Ready, bundling147,640,320prepared bytes as18,279,304compressed bytes. The custom hostname passes HTTPS and serves the13:40snapshot; eight route/filter combinations and480selected-card observations match. The merged tools branch passes819tests. See docs/benchmarks/2026-11-05-snow-compressed-rollout.json.

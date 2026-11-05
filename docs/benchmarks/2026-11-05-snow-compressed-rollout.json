@@ -1,0 +1,433 @@
+{
+  "checked_at": "2026-11-05T18:53:52.065352+00:00",
+  "deployment_url": "https://snow-deal-8ojvb4523-lifan-chens-projects.vercel.app",
+  "health": {
+    "status": "ok",
+    "last_attempt_at": "2026-11-05T13:40:12.920989",
+    "checked_at": "2026-11-05T13:40:12.920989",
+    "stores_with_deals": 30
+  },
+  "checks": [
+    {
+      "route": "/",
+      "filters": {},
+      "cards": 60,
+      "ordered_identities_prices_and_selected_variant_match": true,
+      "first_rows": [
+        {
+          "name": "Ogasaka 00 - 01 Keos PG Skis (No Bindings / Flat) NEW !! 185,190cm",
+          "currency": "USD",
+          "discount": 94.001,
+          "savings": 940.01,
+          "url": "https://www.coloradodiscountskis.com/store/Ogasaka_Keos_1pr_Skis.html"
+        },
+        {
+          "name": "Ogasaka 00 - 01 Unity USX Skis (No Bindings / Flat) NEW !! 185cm",
+          "currency": "USD",
+          "discount": 94.001,
+          "savings": 940.01,
+          "url": "https://www.coloradodiscountskis.com/store/Ogasaka_Unity_USX_Skis.html"
+        },
+        {
+          "name": "Ogasaka 00 - 01 Unity C-VX Skis (No Bindings / Flat) NEW !! 185cm",
+          "currency": "USD",
+          "discount": 94.001,
+          "savings": 940.01,
+          "url": "https://www.coloradodiscountskis.com/store/Ogasaka_Unity_CVX_Skis.html"
+        },
+        {
+          "name": "Ogasaka 00 - 01 Triun G Light Skis (No Bindings / Flat) NEW !! 180cm",
+          "currency": "USD",
+          "discount": 91.501,
+          "savings": 915.01,
+          "url": "https://www.coloradodiscountskis.com/store/Ogasaka_Truin_Lt_Skis.html"
+        },
+        {
+          "name": "Ogasaka 00 - 01 FC White Skis (No Bindings / Flat) NEW !! 185cm",
+          "currency": "USD",
+          "discount": 90.001,
+          "savings": 900.01,
+          "url": "https://www.coloradodiscountskis.com/store/Ogasaka_FC_White_Skis.html"
+        }
+      ]
+    },
+    {
+      "route": "/deals",
+      "filters": {},
+      "cards": 60,
+      "ordered_identities_prices_and_selected_variant_match": true,
+      "first_rows": [
+        {
+          "name": "Ogasaka 00 - 01 Keos PG Skis (No Bindings / Flat) NEW !! 185,190cm",
+          "currency": "USD",
+          "discount": 94.001,
+          "savings": 940.01,
+          "url": "https://www.coloradodiscountskis.com/store/Ogasaka_Keos_1pr_Skis.html"
+        },
+        {
+          "name": "Ogasaka 00 - 01 Unity USX Skis (No Bindings / Flat) NEW !! 185cm",
+          "currency": "USD",
+          "discount": 94.001,
+          "savings": 940.01,
+          "url": "https://www.coloradodiscountskis.com/store/Ogasaka_Unity_USX_Skis.html"
+        },
+        {
+          "name": "Ogasaka 00 - 01 Unity C-VX Skis (No Bindings / Flat) NEW !! 185cm",
+          "currency": "USD",
+          "discount": 94.001,
+          "savings": 940.01,
+          "url": "https://www.coloradodiscountskis.com/store/Ogasaka_Unity_CVX_Skis.html"
+        },
+        {
+          "name": "Ogasaka 00 - 01 Triun G Light Skis (No Bindings / Flat) NEW !! 180cm",
+          "currency": "USD",
+          "discount": 91.501,
+          "savings": 915.01,
+          "url": "https://www.coloradodiscountskis.com/store/Ogasaka_Truin_Lt_Skis.html"
+        },
+        {
+          "name": "Ogasaka 00 - 01 FC White Skis (No Bindings / Flat) NEW !! 185cm",
+          "currency": "USD",
+          "discount": 90.001,
+          "savings": 900.01,
+          "url": "https://www.coloradodiscountskis.com/store/Ogasaka_FC_White_Skis.html"
+        }
+      ]
+    },
+    {
+      "route": "/",
+      "filters": {
+        "currency": "USD"
+      },
+      "cards": 60,
+      "ordered_identities_prices_and_selected_variant_match": true,
+      "first_rows": [
+        {
+          "name": "Ogasaka 00 - 01 Keos PG Skis (No Bindings / Flat) NEW !! 185,190cm",
+          "currency": "USD",
+          "discount": 94.001,
+          "savings": 940.01,
+          "url": "https://www.coloradodiscountskis.com/store/Ogasaka_Keos_1pr_Skis.html"
+        },
+        {
+          "name": "Ogasaka 00 - 01 Unity USX Skis (No Bindings / Flat) NEW !! 185cm",
+          "currency": "USD",
+          "discount": 94.001,
+          "savings": 940.01,
+          "url": "https://www.coloradodiscountskis.com/store/Ogasaka_Unity_USX_Skis.html"
+        },
+        {
+          "name": "Ogasaka 00 - 01 Unity C-VX Skis (No Bindings / Flat) NEW !! 185cm",
+          "currency": "USD",
+          "discount": 94.001,
+          "savings": 940.01,
+          "url": "https://www.coloradodiscountskis.com/store/Ogasaka_Unity_CVX_Skis.html"
+        },
+        {
+          "name": "Ogasaka 00 - 01 Triun G Light Skis (No Bindings / Flat) NEW !! 180cm",
+          "currency": "USD",
+          "discount": 91.501,
+          "savings": 915.01,
+          "url": "https://www.coloradodiscountskis.com/store/Ogasaka_Truin_Lt_Skis.html"
+        },
+        {
+          "name": "Ogasaka 00 - 01 FC White Skis (No Bindings / Flat) NEW !! 185cm",
+          "currency": "USD",
+          "discount": 90.001,
+          "savings": 900.01,
+          "url": "https://www.coloradodiscountskis.com/store/Ogasaka_FC_White_Skis.html"
+        }
+      ]
+    },
+    {
+      "route": "/deals",
+      "filters": {
+        "currency": "USD"
+      },
+      "cards": 60,
+      "ordered_identities_prices_and_selected_variant_match": true,
+      "first_rows": [
+        {
+          "name": "Ogasaka 00 - 01 Keos PG Skis (No Bindings / Flat) NEW !! 185,190cm",
+          "currency": "USD",
+          "discount": 94.001,
+          "savings": 940.01,
+          "url": "https://www.coloradodiscountskis.com/store/Ogasaka_Keos_1pr_Skis.html"
+        },
+        {
+          "name": "Ogasaka 00 - 01 Unity USX Skis (No Bindings / Flat) NEW !! 185cm",
+          "currency": "USD",
+          "discount": 94.001,
+          "savings": 940.01,
+          "url": "https://www.coloradodiscountskis.com/store/Ogasaka_Unity_USX_Skis.html"
+        },
+        {
+          "name": "Ogasaka 00 - 01 Unity C-VX Skis (No Bindings / Flat) NEW !! 185cm",
+          "currency": "USD",
+          "discount": 94.001,
+          "savings": 940.01,
+          "url": "https://www.coloradodiscountskis.com/store/Ogasaka_Unity_CVX_Skis.html"
+        },
+        {
+          "name": "Ogasaka 00 - 01 Triun G Light Skis (No Bindings / Flat) NEW !! 180cm",
+          "currency": "USD",
+          "discount": 91.501,
+          "savings": 915.01,
+          "url": "https://www.coloradodiscountskis.com/store/Ogasaka_Truin_Lt_Skis.html"
+        },
+        {
+          "name": "Ogasaka 00 - 01 FC White Skis (No Bindings / Flat) NEW !! 185cm",
+          "currency": "USD",
+          "discount": 90.001,
+          "savings": 900.01,
+          "url": "https://www.coloradodiscountskis.com/store/Ogasaka_FC_White_Skis.html"
+        }
+      ]
+    },
+    {
+      "route": "/",
+      "filters": {
+        "currency": "CAD"
+      },
+      "cards": 60,
+      "ordered_identities_prices_and_selected_variant_match": true,
+      "first_rows": [
+        {
+          "name": "Jackson Mips Helmet 2025",
+          "currency": "CAD",
+          "discount": 69.9988888477351,
+          "savings": 188.99,
+          "url": "https://www.thecirclewhistler.com/jackson-mips-helmet.html"
+        },
+        {
+          "name": "Anon Rodan MIPS Helmet 2023 (Adult)",
+          "currency": "CAD",
+          "discount": 69.99872334992979,
+          "savings": 164.49,
+          "url": "https://www.thecirclewhistler.com/anon-rodan-mips-helmet.html"
+        },
+        {
+          "name": "Head Adrenalin 14 MN Long Ski Bindings 2023",
+          "currency": "CAD",
+          "discount": 59.99919998399968,
+          "savings": 299.99,
+          "url": "https://www.corbetts.com/2023-head-adrenalin-14-mn-long-ski-bindings/"
+        },
+        {
+          "name": "Head Adrenalin 14 MN Short Ski Bindings 2023",
+          "currency": "CAD",
+          "discount": 59.99919998399968,
+          "savings": 299.99,
+          "url": "https://www.corbetts.com/2023-head-adrenalin-14-mn-short-ski-bindings/"
+        },
+        {
+          "name": "YES 420 148 Snowboard Demo",
+          "currency": "CAD",
+          "discount": 55.88646223987058,
+          "savings": 380.00000000000006,
+          "url": "https://sacredride.ca/product/23-24-yes-420-snowboard/"
+        }
+      ]
+    },
+    {
+      "route": "/deals",
+      "filters": {
+        "currency": "CAD"
+      },
+      "cards": 60,
+      "ordered_identities_prices_and_selected_variant_match": true,
+      "first_rows": [
+        {
+          "name": "Jackson Mips Helmet 2025",
+          "currency": "CAD",
+          "discount": 69.9988888477351,
+          "savings": 188.99,
+          "url": "https://www.thecirclewhistler.com/jackson-mips-helmet.html"
+        },
+        {
+          "name": "Anon Rodan MIPS Helmet 2023 (Adult)",
+          "currency": "CAD",
+          "discount": 69.99872334992979,
+          "savings": 164.49,
+          "url": "https://www.thecirclewhistler.com/anon-rodan-mips-helmet.html"
+        },
+        {
+          "name": "Head Adrenalin 14 MN Long Ski Bindings 2023",
+          "currency": "CAD",
+          "discount": 59.99919998399968,
+          "savings": 299.99,
+          "url": "https://www.corbetts.com/2023-head-adrenalin-14-mn-long-ski-bindings/"
+        },
+        {
+          "name": "Head Adrenalin 14 MN Short Ski Bindings 2023",
+          "currency": "CAD",
+          "discount": 59.99919998399968,
+          "savings": 299.99,
+          "url": "https://www.corbetts.com/2023-head-adrenalin-14-mn-short-ski-bindings/"
+        },
+        {
+          "name": "YES 420 148 Snowboard Demo",
+          "currency": "CAD",
+          "discount": 55.88646223987058,
+          "savings": 380.00000000000006,
+          "url": "https://sacredride.ca/product/23-24-yes-420-snowboard/"
+        }
+      ]
+    },
+    {
+      "route": "/",
+      "filters": {
+        "currency": "USD",
+        "offset": 60
+      },
+      "cards": 60,
+      "ordered_identities_prices_and_selected_variant_match": true,
+      "first_rows": [
+        {
+          "name": "Dalbello Lupo AX 100 GW Ski Boot",
+          "currency": "USD",
+          "discount": 69.23846153846154,
+          "savings": 450.05,
+          "url": "https://www.aspenskiandboard.com/products/dalbello-lupo-ax-100-gw-ski-boot-2022?variant=39835704262761"
+        },
+        {
+          "name": "2022 Nordica Santa Ana 84 Women's Skis",
+          "currency": "USD",
+          "discount": 69.09943817160313,
+          "savings": 380.04,
+          "url": "https://www.skiessentials.com/products/2022-nordica-santa-ana-84-women-s-skis-0a132200?ski+size=172"
+        },
+        {
+          "name": "K2 FL3X Method W Ski Boots - Women's 2025",
+          "currency": "USD",
+          "discount": 68.998899889989,
+          "savings": 344.96,
+          "url": "https://www.evo.com/products/252828-k2-fl3x-method-w-ski-boots-women-s-2025?variant=46078443716758"
+        },
+        {
+          "name": "Rossignol Experience W 82 TI Skis - Women's 2025",
+          "currency": "USD",
+          "discount": 68.89,
+          "savings": 620.01,
+          "url": "https://www.evo.com/products/269664-rossignol-experience-w-82-ti-skis-women-s-2025?variant=46153097281686"
+        },
+        {
+          "name": "2024 Head Kore 99 Ski",
+          "currency": "USD",
+          "discount": 68.8360450563204,
+          "savings": 550.0,
+          "url": "https://www.skiessentials.com/products/2024-head-kore-99-ski-315433?ski+size=156"
+        }
+      ]
+    },
+    {
+      "route": "/deals",
+      "filters": {
+        "currency": "USD",
+        "offset": 60
+      },
+      "cards": 60,
+      "ordered_identities_prices_and_selected_variant_match": true,
+      "first_rows": [
+        {
+          "name": "Dalbello Lupo AX 100 GW Ski Boot",
+          "currency": "USD",
+          "discount": 69.23846153846154,
+          "savings": 450.05,
+          "url": "https://www.aspenskiandboard.com/products/dalbello-lupo-ax-100-gw-ski-boot-2022?variant=39835704262761"
+        },
+        {
+          "name": "2022 Nordica Santa Ana 84 Women's Skis",
+          "currency": "USD",
+          "discount": 69.09943817160313,
+          "savings": 380.04,
+          "url": "https://www.skiessentials.com/products/2022-nordica-santa-ana-84-women-s-skis-0a132200?ski+size=172"
+        },
+        {
+          "name": "K2 FL3X Method W Ski Boots - Women's 2025",
+          "currency": "USD",
+          "discount": 68.998899889989,
+          "savings": 344.96,
+          "url": "https://www.evo.com/products/252828-k2-fl3x-method-w-ski-boots-women-s-2025?variant=46078443716758"
+        },
+        {
+          "name": "Rossignol Experience W 82 TI Skis - Women's 2025",
+          "currency": "USD",
+          "discount": 68.89,
+          "savings": 620.01,
+          "url": "https://www.evo.com/products/269664-rossignol-experience-w-82-ti-skis-women-s-2025?variant=46153097281686"
+        },
+        {
+          "name": "2024 Head Kore 99 Ski",
+          "currency": "USD",
+          "discount": 68.8360450563204,
+          "savings": 550.0,
+          "url": "https://www.skiessentials.com/products/2024-head-kore-99-ski-315433?ski+size=156"
+        }
+      ]
+    }
+  ],
+  "public_snapshot": "latest-data/deals.db at 2026-11-05T13:40:12.920989",
+  "scope": "Production health, eight rendered route/filter combinations and480selected-card observations match the prepared public snapshot. Local full-byte/row preservation verifies packaging contracts; no new merchant accuracy or competitor-lead claim. Gzip byte sizes may vary across build environments.",
+  "pr": 24,
+  "merge": "2d975f05eb6105a0129d28ef80d7bf292830728c",
+  "ci": 42085554291,
+  "manual_preview_workflow": 42086884408,
+  "deployment_id": "dpl_9PfzK8oeLLWXMHbR2SPvv2WucdJL",
+  "deployment_state": "READY",
+  "production_built_at": "2026-11-05T18:53:00.046Z",
+  "custom_host_health": {
+    "status": "ok",
+    "last_attempt_at": "2026-11-05T13:40:12.920989",
+    "checked_at": "2026-11-05T13:40:12.920989",
+    "stores_with_deals": 30
+  },
+  "custom_host_https_verified": true,
+  "prepared_bytes": 147640320,
+  "provider_compressed_bytes": 18279304,
+  "local_roundtrip": {
+    "checked_at": "2026-11-05T18:13:18.029307+00:00",
+    "prepared_bytes": 147640320,
+    "compressed_bytes": 18230396,
+    "compression_seconds": 2.3058825839980273,
+    "local_cold_materialization_seconds": 0.2883812080108328,
+    "local_verified_cache_seconds": 0.06608170800609514,
+    "source_and_restored_sha256": "68261da4c07b900c1a76e5818bcc83be0bc097d508f9cc3dda3031339d441df0",
+    "manifest": {
+      "version": 1,
+      "bytes": 147640320,
+      "sha256": "68261da4c07b900c1a76e5818bcc83be0bc097d508f9cc3dda3031339d441df0"
+    },
+    "snapshot_checked_at": "2026-11-05T13:40:12.920989",
+    "source_unchanged": true,
+    "roundtrip_exact": true,
+    "sqlite_integrity": "ok",
+    "scope": "Task-owned current public prepared snapshot; local timings are not deployed latency benchmarks"
+  },
+  "retained_rows": {
+    "deal_offers": {
+      "count": 27734,
+      "rows_sha256": "b67fc50dec1a2ab35085556522f06ba5b4477eec92219a2b348f6bd4b64d22f5"
+    },
+    "offer_observations": {
+      "count": 250212,
+      "rows_sha256": "6f2ccc3ad1170e239563df3f5d5b6c75fdbd0693232699f99ac3789afb1cfb93"
+    },
+    "price_history": {
+      "count": 190839,
+      "rows_sha256": "fb4ab52149755c1e55f93a43463f2632fbe83b6695526793235c718778c4c30c"
+    },
+    "scrape_runs": {
+      "count": 32,
+      "rows_sha256": "cba2534a982a56c59ad78e330f5bc9d50d4cf97e291904eacf45a98eb7f0e589"
+    },
+    "reviews": {
+      "count": 432,
+      "rows_sha256": "756d5e164b647fc047a2f4b21b89096801d6ad94481cca54b9355d62930319da"
+    },
+    "deal_reviews": {
+      "count": 107,
+      "rows_sha256": "d5af0e178efbd396287ff6a4e63b42da09265dfdf605af2999e72227b4f9aae0"
+    }
+  }
+}
