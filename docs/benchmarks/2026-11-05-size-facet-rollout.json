@@ -1,0 +1,417 @@
+{
+  "verified_at": "2026-11-05T19:48:49.664138+00:00",
+  "release": {
+    "mergeCommit": {
+      "oid": "e17613d5de66f3a43aa33a2da5eb63876507f026"
+    },
+    "mergedAt": "2026-11-05T19:45:18Z",
+    "state": "MERGED",
+    "url": "https://github.com/lifan-builds/snow-deal/pull/26",
+    "head": "b0b2ded2c8314f2be6c396cc0f442a72ed0e59ab",
+    "ci_run": 42096680922,
+    "offline_tests": 828
+  },
+  "source_evidence": "docs/benchmarks/2026-11-05-tools-recall-rollout.json",
+  "offline_replay": "docs/tasks/size-facet-labels/research/public-snapshot-replay.json",
+  "scope": "Presentation-only size facet deduplication using existing size_key equivalence; no new merchant observations or changed inventory",
+  "packaging": {
+    "cycling": {
+      "build": {
+        "catalog": "cycling",
+        "brand": "Big Ring",
+        "built_at": "2026-11-05T19:41:47.494912+00:00",
+        "snapshot_sha256": "a7f9b1d9abd5f50919c22cdf74566922d40e8629d3c49542db6da97d5f9b10d2",
+        "public_url": "https://bigring.clifan.com",
+        "matching_deals": 1402,
+        "sources": [
+          {
+            "name": "RA Cycles",
+            "observed_at": "2026-11-05T19:00:52.628062+00:00",
+            "listings": 144
+          },
+          {
+            "name": "evo",
+            "observed_at": "2026-11-05T19:09:39.224992+00:00",
+            "listings": 55
+          },
+          {
+            "name": "Bike Closet",
+            "observed_at": "2026-11-05T19:09:47.547529+00:00",
+            "listings": 20
+          },
+          {
+            "name": "Gravity Coalition",
+            "observed_at": "2026-11-05T19:12:55.241043+00:00",
+            "listings": 44
+          },
+          {
+            "name": "Bicycle Warehouse",
+            "observed_at": "2026-11-05T19:13:04.549812+00:00",
+            "listings": 76
+          },
+          {
+            "name": "BikesOnline",
+            "observed_at": "2026-11-05T19:13:08.706162+00:00",
+            "listings": 72
+          },
+          {
+            "name": "Mike's Bikes",
+            "observed_at": "2026-11-05T19:13:13.122726+00:00",
+            "listings": 153
+          },
+          {
+            "name": "ERIK\u2019S Bike Shop",
+            "observed_at": "2026-11-05T19:13:17.494733+00:00",
+            "listings": 120
+          },
+          {
+            "name": "Pro Bike Supply",
+            "observed_at": "2026-11-05T19:13:25.044494+00:00",
+            "listings": 363
+          },
+          {
+            "name": "Contender Bicycles",
+            "observed_at": "2026-11-05T19:13:36.251477+00:00",
+            "listings": 184
+          },
+          {
+            "name": "Cambria Bike",
+            "observed_at": "2026-11-05T19:13:44.784875+00:00",
+            "listings": 24
+          },
+          {
+            "name": "INTENSE",
+            "observed_at": "2026-11-05T19:14:03.384460+00:00",
+            "listings": 4
+          },
+          {
+            "name": "Bike Mart",
+            "observed_at": "2026-11-05T19:14:06.853315+00:00",
+            "listings": 96
+          },
+          {
+            "name": "First Stop Board Barn",
+            "observed_at": "2026-11-05T19:14:18.810079+00:00",
+            "listings": 1
+          },
+          {
+            "name": "Colorado Cyclist",
+            "observed_at": "2026-11-05T19:14:22.369541+00:00",
+            "listings": 61
+          },
+          {
+            "name": "Planet Cyclery",
+            "observed_at": "2026-11-05T19:14:30.047296+00:00",
+            "listings": 32
+          },
+          {
+            "name": "Worldwide Cyclery",
+            "observed_at": "2026-11-05T19:14:37.732768+00:00",
+            "listings": 4
+          },
+          {
+            "name": "State Bicycle Co.",
+            "observed_at": "2026-11-05T19:14:47.939177+00:00",
+            "listings": 1
+          },
+          {
+            "name": "The Path Bike Shop",
+            "observed_at": "2026-11-05T19:14:51.827849+00:00",
+            "listings": 34
+          },
+          {
+            "name": "Fanatik Bike Co.",
+            "observed_at": "2026-11-05T19:14:55.780751+00:00",
+            "listings": 24
+          }
+        ]
+      },
+      "all_source_rows_and_timestamps_identical": true,
+      "all_history_rows_identical": true,
+      "rows": {
+        "sources": 20,
+        "observations": 57
+      },
+      "input_file_sha256": "8c134ecb029bddaf6efa2002c9a702fae203d324c2eb54f37dd635409a306cbd",
+      "packaged_file_sha256": "0bee7c8d962e9c0a8306e375d1ad1cda04eee6b79425e9a742b6570f4038cb9f"
+    },
+    "tools": {
+      "build": {
+        "catalog": "tools",
+        "brand": "Bench Drop",
+        "built_at": "2026-11-05T19:41:47.646363+00:00",
+        "snapshot_sha256": "7fb2b5d9446f50dc68fb2856703bccc0a1a6dcd877bd76303430e8a716ffd69b",
+        "public_url": "https://benchdrop.clifan.com",
+        "matching_deals": 617,
+        "sources": [
+          {
+            "name": "Beaver Industrial Supply",
+            "observed_at": "2026-11-05T19:00:53.909709+00:00",
+            "listings": 259
+          },
+          {
+            "name": "Tool Nut",
+            "observed_at": "2026-11-05T19:10:44.636644+00:00",
+            "listings": 173
+          },
+          {
+            "name": "Woodcraft",
+            "observed_at": "2026-11-05T19:12:18.180657+00:00",
+            "listings": 77
+          },
+          {
+            "name": "Craft Supplies USA",
+            "observed_at": "2026-11-05T19:12:42.855992+00:00",
+            "listings": 1
+          },
+          {
+            "name": "Harvey Woodworking",
+            "observed_at": "2026-11-05T19:12:46.429665+00:00",
+            "listings": 11
+          },
+          {
+            "name": "WEN",
+            "observed_at": "2026-11-05T19:12:50.086728+00:00",
+            "listings": 8
+          },
+          {
+            "name": "Factory Direct Supply",
+            "observed_at": "2026-11-05T19:12:53.976488+00:00",
+            "listings": 6
+          },
+          {
+            "name": "Max Warehouse",
+            "observed_at": "2026-11-05T19:13:21.642996+00:00",
+            "listings": 43
+          },
+          {
+            "name": "OakTree Supply",
+            "observed_at": "2026-11-05T19:13:43.937692+00:00",
+            "listings": 72
+          },
+          {
+            "name": "Taylor Toolworks",
+            "observed_at": "2026-11-05T19:14:01.852930+00:00",
+            "listings": 1
+          },
+          {
+            "name": "Fasteners Inc",
+            "observed_at": "2026-11-05T19:20:43.145675+00:00",
+            "listings": 79
+          }
+        ]
+      },
+      "all_source_rows_and_timestamps_identical": true,
+      "all_history_rows_identical": true,
+      "rows": {
+        "sources": 11,
+        "observations": 32
+      },
+      "input_file_sha256": "9d027e78072eac01b003efb7b54da6b9d6dfc21b4f49d37d7b743e66b8e5035c",
+      "packaged_file_sha256": "d5c606baaf980ed14fdb19559e2198a9f2f2789d9706876d447079e520e28dad"
+    }
+  },
+  "code_sha256": {
+    "cycling": {
+      "catalog/query.py": "641473c3af503de3ad8fb871ce04f654ba2e3f8d98042c7ecc5c48369ca7f697",
+      "catalog/web.py": "e9dd44e1f5ade71f34b313576068d7d86def757b3c52a22abe4611ea60575d8c"
+    },
+    "tools": {
+      "catalog/query.py": "641473c3af503de3ad8fb871ce04f654ba2e3f8d98042c7ecc5c48369ca7f697",
+      "catalog/web.py": "e9dd44e1f5ade71f34b313576068d7d86def757b3c52a22abe4611ea60575d8c"
+    }
+  },
+  "live": {
+    "cycling": {
+      "checked_at": "2026-11-05T19:47:17.596573+00:00",
+      "site": "https://bigring.clifan.com",
+      "health": {
+        "catalog": "cycling",
+        "snapshot_sha256": "a7f9b1d9abd5f50919c22cdf74566922d40e8629d3c49542db6da97d5f9b10d2",
+        "fresh_sources": 20,
+        "configured_sources": 20,
+        "status": "ready"
+      },
+      "routes": [
+        {
+          "params": {},
+          "size_options": 128,
+          "selected": [],
+          "cards": 24,
+          "total": "1402",
+          "matched": true
+        },
+        {
+          "params": {
+            "size": "Medium",
+            "stock": "true"
+          },
+          "size_options": 128,
+          "selected": [
+            "M"
+          ],
+          "cards": 24,
+          "total": "376",
+          "matched": true
+        },
+        {
+          "params": {
+            "size": "MD",
+            "page": 2,
+            "stock": "true"
+          },
+          "size_options": 128,
+          "selected": [
+            "M"
+          ],
+          "cards": 24,
+          "total": "376",
+          "matched": true
+        },
+        {
+          "params": {
+            "size": "54CM",
+            "stock": "true"
+          },
+          "size_options": 128,
+          "selected": [
+            "54"
+          ],
+          "cards": 24,
+          "total": "89",
+          "matched": true
+        },
+        {
+          "params": {
+            "size": "50s",
+            "stock": "true"
+          },
+          "size_options": 128,
+          "selected": [
+            "50s"
+          ],
+          "cards": 2,
+          "total": "2",
+          "matched": true
+        },
+        {
+          "params": {
+            "size": "S/M",
+            "stock": "true"
+          },
+          "size_options": 128,
+          "selected": [
+            "S/M"
+          ],
+          "cards": 3,
+          "total": "3",
+          "matched": true
+        },
+        {
+          "params": {
+            "size": "not-a-real-size",
+            "stock": "true"
+          },
+          "size_options": 129,
+          "selected": [
+            "not-a-real-size"
+          ],
+          "cards": 0,
+          "total": "0",
+          "matched": true
+        }
+      ],
+      "matched_card_observations": 101
+    },
+    "tools": {
+      "checked_at": "2026-11-05T19:47:19.041529+00:00",
+      "site": "https://benchdrop.clifan.com",
+      "health": {
+        "catalog": "tools",
+        "snapshot_sha256": "7fb2b5d9446f50dc68fb2856703bccc0a1a6dcd877bd76303430e8a716ffd69b",
+        "fresh_sources": 11,
+        "configured_sources": 11,
+        "status": "ready"
+      },
+      "routes": [
+        {
+          "params": {},
+          "size_options": 4,
+          "selected": [],
+          "cards": 24,
+          "total": "617",
+          "matched": true
+        },
+        {
+          "params": {
+            "size": "HW110S-36Pro",
+            "stock": "true"
+          },
+          "size_options": 4,
+          "selected": [
+            "HW110S-36Pro"
+          ],
+          "cards": 1,
+          "total": "1",
+          "matched": true
+        },
+        {
+          "params": {
+            "size": "not-a-real-size",
+            "stock": "true"
+          },
+          "size_options": 5,
+          "selected": [
+            "not-a-real-size"
+          ],
+          "cards": 0,
+          "total": "0",
+          "matched": true
+        }
+      ],
+      "matched_card_observations": 25
+    }
+  },
+  "deployments": {
+    "cycling": {
+      "id": "dpl_9LwH4oAa9eysxSjq75zaACzFJzHS",
+      "url": "https://bigring-6kty1133a-lifan-chens-projects.vercel.app",
+      "productionUrl": "https://bigring.clifan.com",
+      "readyState": "READY",
+      "target": "production"
+    },
+    "tools": {
+      "id": "dpl_3whs5xbxpv2aU2WQtUea8aFtRkTu",
+      "url": "https://benchdrop-3u7krrcko-lifan-chens-projects.vercel.app",
+      "productionUrl": "https://benchdrop.clifan.com",
+      "readyState": "READY",
+      "target": "production"
+    }
+  },
+  "browser": {
+    "url": "https://bigring.clifan.com/?size=Medium&stock=true",
+    "viewport": [
+      390,
+      844
+    ],
+    "selected_menu_label": "M",
+    "matching_M_alias_menu_entries": [
+      "M"
+    ],
+    "menu_options_including_all": 129,
+    "first_card_raw_size": "Nostalgic Sea Blue - Ocean Frost / Medium",
+    "first_card_current_price": 1499.99,
+    "first_card_retailer_reference": 7699.99,
+    "horizontal_overflow": false,
+    "viewport_restored": [
+      1280,
+      720
+    ]
+  },
+  "limitations": [
+    "No size-matching expansion or fit recommendation. Compound and numeric-s labels stay distinct.",
+    "Live inventory and historical timestamps are unchanged; the existing dated merchant audit is not renewed.",
+    "Native browser paint instrumentation is unavailable; no new LCP or competitive speed claim.",
+    "The competitive goal remains open; this release simplifies our menu but does not establish a new comparative lead."
+  ]
+}
