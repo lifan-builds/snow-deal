@@ -1,0 +1,4 @@
+1. Root verifies current raw feed/merchant identity and shipping evidence; records all rejected lightweight-bike cases and distinguishes refresh changes.
+2. Required implementer fixes the exact taxonomy ambiguity and adds meaningful positive/negative regressions. Preserve all input objects and raw offer fields; run focused/full checks.
+3. Root replays feed and public snapshot, runs fresh isolated source plus fixed/all-recovered merchant audit, and checks shipping caveats. Required independent reviewer checks full diff and evidence.
+4. Publish after CI/preview, refresh/audit the complete cycling catalog with prior history restored, verify unchanged prior observations, package and deploy existing Big Ring. Verify exact recovered cards/filter/size routes/history; record measured gains and limitations.

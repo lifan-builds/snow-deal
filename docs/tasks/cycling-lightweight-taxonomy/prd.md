@@ -1,0 +1,9 @@
+# Recover lightweight electric bikes excluded as lights
+
+Status: implementation under the active competitive goal and standing comparable-release authorization.
+
+Competitor-led inspection found a currently in-stock Mike's Bikes Heckler SL CC X0 Transmission Reserve advertised near62% off but missing from Big Ring. The live collection contains it: the cycling classifier rejects the word LIGHT inside its hierarchical ELECTRIC MOUNTAIN LIGHT WEIGHT category as an accessory. The same feed shows thirteen otherwise eligible complete e-bike listings with this exact category branch.
+
+Correct the category interpretation while retaining accessory, condition, kids and shipping gates. Do not globally whitelist Light or bypass negative descendant taxonomy. Preserve merchant product/variant identity, USD price/reference, size, stock, options, purchase URL and percentage-first ranking. Use raw merchant taxonomy as evidence, not model-name inference. Verify explicit shipping/checkout caveats for recovered items, including Mike's Bikes' advertised assembly charge; disclose relevant limitations without claiming checkout totals or historical street-price savings.
+
+Acceptance: regression demonstrates old failure; counterexamples preserve actual lights/accessories, demo/kids/no-ship exclusions and unrelated taxonomy. Replay the complete captured feed and every existing public cycling product to explain all changes. Fresh isolated source traversal and fixed merchant sample plus all recovered/deep listings must pass. Release under normal CI/independent-review/history preservation gates; deploy a fresh audited snapshot and verify exact recovered live cards. Inventory changes from refresh are separate from classifier-only gains.

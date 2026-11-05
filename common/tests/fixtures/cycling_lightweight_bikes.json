@@ -1,0 +1,263 @@
+{
+  "products": [
+    {
+      "id": 6905292587077,
+      "title": "Heckler SL CC X0 Transmission Reserve",
+      "handle": "santa-cruz-heckler-sl-cc-x0-transmission-reserve-2024",
+      "vendor": "Santa Cruz",
+      "product_type": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/HECKLER SL",
+      "tags": [
+        "2023DBIKE",
+        "arf1000",
+        "bikes",
+        "closeout",
+        "closeout_scb_eol",
+        "ebike",
+        "ebikeshipping",
+        "eol_fix",
+        "hsaeligible",
+        "Mountain Bikes",
+        "my24",
+        "Sale",
+        "Vendor_Santa Cruz"
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Gloss Magenta",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "Large",
+            "X-Large",
+            "XX-Large"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 40617095299141,
+          "option1": "Gloss Magenta",
+          "option2": "Large",
+          "option3": null,
+          "price": "7999.95",
+          "compare_at_price": "11699.99",
+          "available": false
+        },
+        {
+          "id": 44587831984197,
+          "option1": "Gloss Magenta",
+          "option2": "X-Large",
+          "option3": null,
+          "price": "4499.77",
+          "compare_at_price": "11699.99",
+          "available": false
+        },
+        {
+          "id": 44649480618053,
+          "option1": "Silver",
+          "option2": "XX-Large",
+          "option3": null,
+          "price": "4499.77",
+          "compare_at_price": "11699.99",
+          "available": false
+        },
+        {
+          "id": 44649480650821,
+          "option1": "Gloss Magenta",
+          "option2": "XX-Large",
+          "option3": null,
+          "price": "4499.77",
+          "compare_at_price": "11699.99",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 8129284309061,
+      "title": "Habit Neo 1",
+      "handle": "cannondale-habit-neo-1-2026",
+      "vendor": "Cannondale",
+      "product_type": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/HABIT NEO",
+      "tags": [
+        "arf1000",
+        "bikes",
+        "closeout",
+        "closeout_cannondale_eol",
+        "ebike",
+        "Electric Bikes",
+        "hsaeligible",
+        "Sale",
+        "Vendor_Cannondale"
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Silver"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "Small",
+            "Medium",
+            "Large",
+            "X-Large"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 45163833589829,
+          "option1": "Silver",
+          "option2": "Small",
+          "option3": null,
+          "price": "6600.77",
+          "compare_at_price": "11998.99",
+          "available": true
+        },
+        {
+          "id": 45163833622597,
+          "option1": "Silver",
+          "option2": "Medium",
+          "option3": null,
+          "price": "6600.77",
+          "compare_at_price": "11998.99",
+          "available": false
+        },
+        {
+          "id": 45163833655365,
+          "option1": "Silver",
+          "option2": "Large",
+          "option3": null,
+          "price": "6600.77",
+          "compare_at_price": "11998.99",
+          "available": true
+        },
+        {
+          "id": 45163833688133,
+          "option1": "Silver",
+          "option2": "X-Large",
+          "option3": null,
+          "price": "6600.77",
+          "compare_at_price": "11998.99",
+          "available": false
+        }
+      ]
+    },
+    {
+      "id": 6892156715077,
+      "title": "Shuttle SL Pro X0 Transmission",
+      "handle": "pivot-shuttle-sl-pro-x0-transmission",
+      "vendor": "Pivot Cycles",
+      "product_type": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/SHUTTLE SL",
+      "tags": [
+        "bikes",
+        "ebike",
+        "ebikeshipping",
+        "extra15",
+        "hsaeligible",
+        "map",
+        "Mountain Bikes",
+        "Sale",
+        "Vendor_Pivot Cycles"
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Black Lime",
+            "Desert Sage Green",
+            "Blue Denim",
+            "Aspen White"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "Large",
+            "X-Large",
+            "Small",
+            "Medium"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 40677027184709,
+          "option1": "Black Lime",
+          "option2": "Large",
+          "option3": null,
+          "price": "7999.95",
+          "compare_at_price": "11000.00",
+          "available": true
+        },
+        {
+          "id": 40569514590277,
+          "option1": "Desert Sage Green",
+          "option2": "X-Large",
+          "option3": null,
+          "price": "7999.95",
+          "compare_at_price": "11000.00",
+          "available": false
+        },
+        {
+          "id": 40569514426437,
+          "option1": "Blue Denim",
+          "option2": "Large",
+          "option3": null,
+          "price": "7999.95",
+          "compare_at_price": "11000.00",
+          "available": true
+        },
+        {
+          "id": 42269721165893,
+          "option1": "Aspen White",
+          "option2": "Small",
+          "option3": null,
+          "price": "11000.00",
+          "compare_at_price": "11000.00",
+          "available": false
+        },
+        {
+          "id": 42269721198661,
+          "option1": "Aspen White",
+          "option2": "Medium",
+          "option3": null,
+          "price": "11000.00",
+          "compare_at_price": "11000.00",
+          "available": false
+        },
+        {
+          "id": 42269721231429,
+          "option1": "Aspen White",
+          "option2": "Large",
+          "option3": null,
+          "price": "11000.00",
+          "compare_at_price": "11000.00",
+          "available": false
+        },
+        {
+          "id": 42269721264197,
+          "option1": "Aspen White",
+          "option2": "X-Large",
+          "option3": null,
+          "price": "11000.00",
+          "compare_at_price": "11000.00",
+          "available": false
+        }
+      ]
+    }
+  ]
+}

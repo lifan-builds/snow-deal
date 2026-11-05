@@ -36,3 +36,5 @@ See `docs/project-guidance/aggregator-data-and-parsers.md` under Tools primary e
 Current shared catalog welding classification, negative stock precedence and history contracts are in `docs/project-guidance/aggregator-data-and-parsers.md`, under "Welding equipment and shipping notices". Read that section before changing the source-scoped availability dispatcher or tools machine/component classifier.
 
 See `docs/project-guidance/aggregator-data-and-parsers.md` under Shared manufacturer aliases for the catalog-owned exact mapping contract. Ingestion, query/forms and history use the same identity helper; raw snapshots, fingerprints, variant guards and observation times remain unchanged. Preserve unknowns and intentional subbrands, and replay complete alias groups before release.
+
+See `docs/project-guidance/aggregator-data-and-parsers.md` under Lightweight electric-bike taxonomy before changing accessory-keyword handling of hierarchical categories. Exact positive segments cannot hide negative descendants or rewrite merchant evidence.
