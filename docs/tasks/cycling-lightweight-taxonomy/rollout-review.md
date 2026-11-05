@@ -1,0 +1,13 @@
+# Independent rollout evidence review
+
+Reviewed the documentation-only receipt branch against the explicit public task artifacts. Runtime remains unchanged from the independently reviewed 952-test release in merged PR #34; no full Python rerun was needed.
+
+Fixed one documentation metadata mismatch: the new matrix's Fresh Powder M6 note described the November 5 disclosure recheck but still linked the November 4 preview receipt. Its date, production URL and evidence now reference the actual recheck. The value remains 46/60 (76.6667%); every competitor row and its original measurement date is exactly unchanged. Matrix rendering and evaluation still give **four strict leads across 260 comparisons**, with unknowns, parity and incomplete Powder Deals research unscored.
+
+The rollout's embedded source outcomes, inventory, final audit, candidate verification, published-asset verification and live verification exactly match their separate task artifacts. All twenty sources are complete with zero errors. The 39/39 isolated and 45/45 final merchant results have matching fields and finish within their fifteen-minute windows. The final audit includes each recovered selected offer; the fixed thirty-offer sample remains distinct from fifteen targeted additions.
+
+Controlled replay remains thirteen recovered stock listings, eleven deep, with 153 previous normalized records and 1,524 published classifications unchanged. Final refreshed inventory is **1,399 qualifying in-stock listings, 190 deep deals and sixteen useful retailers**. The documents distinguish that inventory from the classifier-only effect; they do not attribute the full refresh change to the fix.
+
+History and publication receipts consistently retain all **37 prior-day rows** and **57 total daily observations**, following the existing same-day policy. The redownloaded public asset SHA exactly matches the candidate, and the Ready production deployment serves the recorded raw snapshot fingerprint. All **23 routes / 197 selected-card comparisons / 17 history pages** are reported successful. Root's separately timestamped native browser observation agrees with the recovered Heckler's exact variant, options, price/reference, destination and $79 assembly disclosure; this review did not repeat browser or checkout actions.
+
+JSON consistency assertions, matrix rendering/evaluation, scoped public-document credential-signature checks and whitespace validation pass. No unresolved documentation blocker remains. No network, credential access, database reads, runtime changes, commit, push or deployment occurred in this final review. Broader competitive superiority, historical street prices, checkout availability and population-wide accuracy remain unproven as stated in the receipt.

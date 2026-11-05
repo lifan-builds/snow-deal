@@ -1,6 +1,6 @@
 # Recover lightweight electric bikes excluded as lights
 
-Status: implementation under the active competitive goal and standing comparable-release authorization.
+Status: implemented, independently reviewed, merged and verified in production under standing comparable-release authorization. The broader competitive goal remains active; see the dated rollout receipt and matrix.
 
 Competitor-led inspection found a currently in-stock Mike's Bikes Heckler SL CC X0 Transmission Reserve advertised near62% off but missing from Big Ring. The live collection contains it: the cycling classifier rejects the word LIGHT inside its hierarchical ELECTRIC MOUNTAIN LIGHT WEIGHT category as an accessory. The same feed shows thirteen otherwise eligible complete e-bike listings with this exact category branch.
 
