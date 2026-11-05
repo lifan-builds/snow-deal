@@ -45,7 +45,11 @@ def classify(product: Product) -> Classification | None:
         return None
     # Only a positive retailer bike taxonomy or an unambiguous product name qualifies.
     # A title containing "bike" alone could be a bike rack or a helmet.
-    if re.search(r"\b(helmets?|jerseys?|shorts|gloves?|shoes?|racks?|bags?|wheels?|tires?|tyres?|tubes?|pedals?|saddles?|hangers?|forks?|batteries|chargers?|covers?|stands?|trainers?|parts?|accessor(?:y|ies)|maintenance|locks?|pumps?|goggles?|computers?|heart rate|lights?|cables?|brakes?|adaptors?|adapters?)\b", kind):
+    # Mike's complete-bike branch uses LIGHT WEIGHT as a weight descriptor.
+    # Interpret only that exact segment in context; negative descendants remain.
+    accessory_kind = re.sub(r"^(bikes and frames/bikes - electric/)electric mountain light weight(?=/|$)",
+                            r"\1electric mountain", kind)
+    if re.search(r"\b(helmets?|jerseys?|shorts|gloves?|shoes?|racks?|bags?|wheels?|tires?|tyres?|tubes?|pedals?|saddles?|hangers?|forks?|batter(?:y|ies)|chargers?|covers?|stands?|trainers?|parts?|accessor(?:y|ies)|maintenance|locks?|pumps?|goggles?|computers?|heart rate|lights?|cables?|brakes?|adaptors?|adapters?)\b", accessory_kind):
         return None
     if ("frameset" in tags or re.search(r"\b(framesets?|frame sets?|frame[- ]only)\b", text)
             or re.fullmatch(FRAME_TYPE_PATTERN, kind)):
@@ -185,5 +189,5 @@ CATALOG = Catalog(
         ('transition bikes', 'Transition'),
     ),
     assets=Path(__file__).parent / "static", art_label="01 / THE NEXT RIDE", theme_color="#163d32",
-    buying_note="Framesets are listed separately from complete bikes. Confirm geometry, components, assembly, shipping, and return terms with the retailer. Sizes are retailer labels, not a fit recommendation.",
+    buying_note="Framesets are listed separately from complete bikes. Confirm geometry, components, assembly, shipping, and return terms with the retailer. Sizes are retailer labels, not a fit recommendation. Mike's Bikes advertises a $79 assembly charge added at checkout; its closeout sales are final. Check manufacturer shipping restrictions before buying.",
 )

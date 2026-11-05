@@ -1,0 +1,5 @@
+# Boundary
+
+The defect lives in catalogs/cycling/src/cycling_deals/catalog.py: the broad accessory-kind regex matches LIGHT inside an explicitly positive hierarchical lightweight electric-mountain-bike segment. Interpret only the observed complete segment in its bike taxonomy context for the accessory check; keep the original merchant category and every other negative/positive classification rule. Do not strip arbitrary Light words or make a general accessory override. The retained feed is .local/source-expansion/cycling-recall-20261105/current-collection.json.gz; exact product JSON for the competitor lead is heckler.json.gz. Both are public task-owned evidence.
+
+Expected production files: cycling classifier and, if supported by merchant evidence, existing catalog buying-note text. Focused catalog tests/fixtures belong in common/tests following existing cycling taxonomy tests. No common parser, source, schema, brand, money, size or UI architecture change is required. Root owns evidence, all-snapshot replay and release; implementer owns classifier/regressions. Checkout caveats are explicit copy, not guessed fees added to product prices.

@@ -1,0 +1,472 @@
+{
+  "checked_at": "2026-11-05T22:06:42.182429+00:00",
+  "raw_feed_sha256": "f38786d214b480f79ac774bf4b0248a8ba1b2067b8fb32c3c8aefead6ce56b59",
+  "parsed_products": 171,
+  "accepted_before": 153,
+  "accepted_after": 166,
+  "existing_normalized_products_unchanged": 153,
+  "new_listings": 13,
+  "new_stock_above_floor": 13,
+  "new_deep": 11,
+  "existing_public_products_classification_unchanged": 1524,
+  "public_snapshot_file_unchanged": "c8ae19cdaef4e10e904e9b2b435fb3366da7b40b052ee5c996b847f6998cbb19",
+  "added": [
+    {
+      "name": "Shuttle SL Pro X0 Transmission",
+      "url": "https://mikesbikes.com/products/pivot-shuttle-sl-pro-x0-transmission?currency=USD",
+      "brand": "Pivot",
+      "source_category": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/SHUTTLE SL",
+      "category": "Electric bikes",
+      "format": "",
+      "platform": "",
+      "offers": [
+        {
+          "variant_key": "40677027184709",
+          "url": "https://mikesbikes.com/products/pivot-shuttle-sl-pro-x0-transmission?currency=USD&variant=40677027184709",
+          "current_price": 7999.95,
+          "original_price": 11000.0,
+          "size": "Large",
+          "options": "Black Lime / Large",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Pivot-Shuttle-SL-Pro_Desert_Black_Lime.jpg?v=1747271026",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": ""
+        },
+        {
+          "variant_key": "40569514426437",
+          "url": "https://mikesbikes.com/products/pivot-shuttle-sl-pro-x0-transmission?currency=USD&variant=40569514426437",
+          "current_price": 7999.95,
+          "original_price": 11000.0,
+          "size": "Large",
+          "options": "Blue Denim / Large",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Pivot-Shuttle-SL-Pro_Denim_Blue.jpg?v=1747271027",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": ""
+        }
+      ]
+    },
+    {
+      "name": "Habit Neo 1",
+      "url": "https://mikesbikes.com/products/cannondale-habit-neo-1-2026?currency=USD",
+      "brand": "Cannondale",
+      "source_category": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/HABIT NEO",
+      "category": "Electric bikes",
+      "format": "",
+      "platform": "",
+      "offers": [
+        {
+          "variant_key": "45163833589829",
+          "url": "https://mikesbikes.com/products/cannondale-habit-neo-1-2026?currency=USD&variant=45163833589829",
+          "current_price": 6600.77,
+          "original_price": 11998.99,
+          "size": "Small",
+          "options": "Silver / Small",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Habit-Neo-1_Silver-01.jpg?v=1781636097",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": ""
+        },
+        {
+          "variant_key": "45163833655365",
+          "url": "https://mikesbikes.com/products/cannondale-habit-neo-1-2026?currency=USD&variant=45163833655365",
+          "current_price": 6600.77,
+          "original_price": 11998.99,
+          "size": "Large",
+          "options": "Silver / Large",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Habit-Neo-1_Silver-01.jpg?v=1781636097",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": ""
+        }
+      ]
+    },
+    {
+      "name": "Shuttle SL Ride SLX/XT",
+      "url": "https://mikesbikes.com/products/pivot-shuttle-sl-ride-slx-xt?currency=USD",
+      "brand": "Pivot",
+      "source_category": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/SHUTTLE SL",
+      "category": "Electric bikes",
+      "format": "",
+      "platform": "",
+      "offers": [
+        {
+          "variant_key": "40469266006085",
+          "url": "https://mikesbikes.com/products/pivot-shuttle-sl-ride-slx-xt?currency=USD&variant=40469266006085",
+          "current_price": 6499.95,
+          "original_price": 9000.0,
+          "size": "X-Large",
+          "options": "Blue Denim / X-Large",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Pivot-Shuttle-SL-Ride-SLX-XT-AL-Float-X_Blue_Denim.jpg?v=1747271081",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": ""
+        },
+        {
+          "variant_key": "40638153490501",
+          "url": "https://mikesbikes.com/products/pivot-shuttle-sl-ride-slx-xt?currency=USD&variant=40638153490501",
+          "current_price": 6499.95,
+          "original_price": 9000.0,
+          "size": "Large",
+          "options": "Black Lime / Large",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Pivot-Shuttle-SL-Ride-SLX-XT-AL-Float-X_Black_Lime.jpg?v=1747271082",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": ""
+        }
+      ]
+    },
+    {
+      "name": "Heckler SL CC X0 AXS Reserve",
+      "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-cc-x0-axs-reserve?currency=USD",
+      "brand": "Santa Cruz",
+      "source_category": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/HECKLER SL",
+      "category": "Electric bikes",
+      "format": "",
+      "platform": "",
+      "offers": [
+        {
+          "variant_key": "41813859631173",
+          "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-cc-x0-axs-reserve?currency=USD&variant=41813859631173",
+          "current_price": 4999.77,
+          "original_price": 11699.0,
+          "size": "XX-Large",
+          "options": "Matte Dark Blue / XX-Large",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Heckler-SL-CC-X0-AXS-Reserve_Matte-Dark-Blue.jpg?v=1747271141",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": ""
+        }
+      ]
+    },
+    {
+      "name": "Heckler SL C 90",
+      "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-90?currency=USD",
+      "brand": "Santa Cruz",
+      "source_category": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/HECKLER SL",
+      "category": "Electric bikes",
+      "format": "",
+      "platform": "",
+      "offers": [
+        {
+          "variant_key": "42575101296709",
+          "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-90?currency=USD&variant=42575101296709",
+          "current_price": 4999.77,
+          "original_price": 8699.0,
+          "size": "X-Large",
+          "options": "Gloss Mustard Yellow / X-Large",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/MY26_HecklerSL_C_90_GlossMustardYellow.jpg?v=1776793719",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": ""
+        },
+        {
+          "variant_key": "42575101362245",
+          "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-90?currency=USD&variant=42575101362245",
+          "current_price": 4999.77,
+          "original_price": 8699.0,
+          "size": "XX-Large",
+          "options": "Gloss Mustard Yellow / XX-Large",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/MY26_HecklerSL_C_90_GlossMustardYellow.jpg?v=1776793719",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": ""
+        }
+      ]
+    },
+    {
+      "name": "Habit Neo 2",
+      "url": "https://mikesbikes.com/products/cannondale-habit-neo-2-2026?currency=USD",
+      "brand": "Cannondale",
+      "source_category": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/HABIT NEO",
+      "category": "Electric bikes",
+      "format": "",
+      "platform": "",
+      "offers": [
+        {
+          "variant_key": "45163834343493",
+          "url": "https://mikesbikes.com/products/cannondale-habit-neo-2-2026?currency=USD&variant=45163834343493",
+          "current_price": 4950.77,
+          "original_price": 8998.99,
+          "size": "Medium",
+          "options": "Tiger Eye / Medium",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Habit-Neo-2_Tiger-Eye_01.jpg?v=1781637174",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": ""
+        },
+        {
+          "variant_key": "45163834376261",
+          "url": "https://mikesbikes.com/products/cannondale-habit-neo-2-2026?currency=USD&variant=45163834376261",
+          "current_price": 4950.77,
+          "original_price": 8998.99,
+          "size": "Large",
+          "options": "Tiger Eye / Large",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Habit-Neo-2_Tiger-Eye_01.jpg?v=1781637174",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": ""
+        },
+        {
+          "variant_key": "45163834409029",
+          "url": "https://mikesbikes.com/products/cannondale-habit-neo-2-2026?currency=USD&variant=45163834409029",
+          "current_price": 4950.77,
+          "original_price": 8998.99,
+          "size": "X-Large",
+          "options": "Tiger Eye / X-Large",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Habit-Neo-2_Tiger-Eye_01.jpg?v=1781637174",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": ""
+        }
+      ]
+    },
+    {
+      "name": "Heckler SL CC X0 Transmission Reserve",
+      "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-cc-x0-transmission-reserve-2024?currency=USD",
+      "brand": "Santa Cruz",
+      "source_category": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/HECKLER SL",
+      "category": "Electric bikes",
+      "format": "",
+      "platform": "",
+      "offers": [
+        {
+          "variant_key": "44649480650821",
+          "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-cc-x0-transmission-reserve-2024?currency=USD&variant=44649480650821",
+          "current_price": 4499.77,
+          "original_price": 11699.99,
+          "size": "XX-Large",
+          "options": "Gloss Magenta / XX-Large",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Santa-Cruz-Heckler-SL-CC-X0-AXS-Reserve_Gloss_Magenta.png?v=1747270972",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": ""
+        }
+      ]
+    },
+    {
+      "name": "Heckler SL C GX Transmission",
+      "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-gx-transmission-2024?currency=USD",
+      "brand": "Santa Cruz",
+      "source_category": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/HECKLER SL",
+      "category": "Electric bikes",
+      "format": "",
+      "platform": "",
+      "offers": [
+        {
+          "variant_key": "44649480486981",
+          "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-gx-transmission-2024?currency=USD&variant=44649480486981",
+          "current_price": 4499.77,
+          "original_price": 9699.99,
+          "size": "XX-Large",
+          "options": "Magenta / XX-Large",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Santa-Cruz-Heckler-SL-C-GX-AXS_Gloss_Magenta.png?v=1747270931",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": ""
+        }
+      ]
+    },
+    {
+      "name": "Heckler SL C 70",
+      "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-70?currency=USD",
+      "brand": "Santa Cruz",
+      "source_category": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/HECKLER SL",
+      "category": "Electric bikes",
+      "format": "",
+      "platform": "",
+      "offers": [
+        {
+          "variant_key": "42575098380357",
+          "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-70?currency=USD&variant=42575098380357",
+          "current_price": 3999.77,
+          "original_price": 7299.0,
+          "size": "X-Large",
+          "options": "Matte Dark Blue / X-Large",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Heckler-SL-C-70_Matte-Dark-Blue.jpg?v=1773287452",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": ""
+        },
+        {
+          "variant_key": "42575098445893",
+          "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-70?currency=USD&variant=42575098445893",
+          "current_price": 3999.77,
+          "original_price": 7299.0,
+          "size": "XX-Large",
+          "options": "Matte Dark Blue / XX-Large",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Heckler-SL-C-70_Matte-Dark-Blue.jpg?v=1773287452",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": ""
+        }
+      ]
+    },
+    {
+      "name": "Habit Neo 3",
+      "url": "https://mikesbikes.com/products/cannondale-habit-neo-3-2026?currency=USD",
+      "brand": "Cannondale",
+      "source_category": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/HABIT NEO",
+      "category": "Electric bikes",
+      "format": "",
+      "platform": "",
+      "offers": [
+        {
+          "variant_key": "45163835883589",
+          "url": "https://mikesbikes.com/products/cannondale-habit-neo-3-2026?currency=USD&variant=45163835883589",
+          "current_price": 3850.77,
+          "original_price": 6998.99,
+          "size": "X-Large",
+          "options": "Storm Cloud / X-Large",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Habit-Neo-3_Storm-Cloud_01.jpg?v=1781642978",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": ""
+        },
+        {
+          "variant_key": "45163835654213",
+          "url": "https://mikesbikes.com/products/cannondale-habit-neo-3-2026?currency=USD&variant=45163835654213",
+          "current_price": 3850.77,
+          "original_price": 6998.99,
+          "size": "Small",
+          "options": "Black / Small",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Habit-Neo-3_Black.jpg?v=1781642978",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": ""
+        },
+        {
+          "variant_key": "45163835686981",
+          "url": "https://mikesbikes.com/products/cannondale-habit-neo-3-2026?currency=USD&variant=45163835686981",
+          "current_price": 3850.77,
+          "original_price": 6998.99,
+          "size": "Medium",
+          "options": "Black / Medium",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Habit-Neo-3_Black.jpg?v=1781642978",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": ""
+        },
+        {
+          "variant_key": "45163835719749",
+          "url": "https://mikesbikes.com/products/cannondale-habit-neo-3-2026?currency=USD&variant=45163835719749",
+          "current_price": 3850.77,
+          "original_price": 6998.99,
+          "size": "Large",
+          "options": "Black / Large",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Habit-Neo-3_Black.jpg?v=1781642978",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": ""
+        },
+        {
+          "variant_key": "45163835752517",
+          "url": "https://mikesbikes.com/products/cannondale-habit-neo-3-2026?currency=USD&variant=45163835752517",
+          "current_price": 3850.77,
+          "original_price": 6998.99,
+          "size": "X-Large",
+          "options": "Black / X-Large",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Habit-Neo-3_Black.jpg?v=1781642978",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": ""
+        }
+      ]
+    },
+    {
+      "name": "Heckler SL C S",
+      "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-s?currency=USD",
+      "brand": "Santa Cruz",
+      "source_category": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/HECKLER SL",
+      "category": "Electric bikes",
+      "format": "",
+      "platform": "",
+      "offers": [
+        {
+          "variant_key": "41813857501253",
+          "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-s?currency=USD&variant=41813857501253",
+          "current_price": 3499.77,
+          "original_price": 7399.0,
+          "size": "XX-Large",
+          "options": "Gloss Mustard Yellow / XX-Large",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Heckler-SL-C-S_Gloss-Mustard-Yellow.jpg?v=1721070862",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": ""
+        }
+      ]
+    },
+    {
+      "name": "Heckler SL C S",
+      "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-s-2024?currency=USD",
+      "brand": "Santa Cruz",
+      "source_category": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/HECKLER SL",
+      "category": "Electric bikes",
+      "format": "",
+      "platform": "",
+      "offers": [
+        {
+          "variant_key": "44649505128517",
+          "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-s-2024?currency=USD&variant=44649505128517",
+          "current_price": 3499.77,
+          "original_price": 8699.99,
+          "size": "XX-Large",
+          "options": "Matte Silver / XX-Large",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Santa-Cruz-Heckler-SL-C-S_Matte_Silver.png?v=1747271140",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": ""
+        },
+        {
+          "variant_key": "40617095069765",
+          "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-s-2024?currency=USD&variant=40617095069765",
+          "current_price": 3499.77,
+          "original_price": 8699.99,
+          "size": "XX-Large",
+          "options": "Gloss Magenta / XX-Large",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Santa-Cruz-Heckler-SL-C-S_Gloss_Magenta.png?v=1747271140",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": ""
+        }
+      ]
+    },
+    {
+      "name": "Heckler SL C R",
+      "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-r-2024?currency=USD",
+      "brand": "Santa Cruz",
+      "source_category": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/HECKLER SL",
+      "category": "Electric bikes",
+      "format": "",
+      "platform": "",
+      "offers": [
+        {
+          "variant_key": "40615074889797",
+          "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-r-2024?currency=USD&variant=40615074889797",
+          "current_price": 2999.77,
+          "original_price": 7299.99,
+          "size": "XX-Large",
+          "options": "Gloss Magenta / XX-Large",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Santa-Cruz-Heckler-SL-C-R_Gloss_Magenta.png?v=1747271140",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": ""
+        },
+        {
+          "variant_key": "44649480454213",
+          "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-r-2024?currency=USD&variant=44649480454213",
+          "current_price": 2999.77,
+          "original_price": 7299.99,
+          "size": "XX-Large",
+          "options": "Silver / XX-Large",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Heckler-SL-C-R_Silver.jpg?v=1771360845",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": ""
+        }
+      ]
+    }
+  ],
+  "passed": true,
+  "limitation": "Controlled retained-feed comparison isolates classifier effect. Merchant stock is source-reported; final fresh audited rollout remains separate."
+}

@@ -1,0 +1,538 @@
+{
+  "checked_at": "2026-11-05T22:00:31.137739+00:00",
+  "discovery": "MTB Price Agent featured a current Mike\u2019s Bikes Heckler SL offer absent from our snapshot; current merchant collection confirms thirteen complete lightweight electric-bike listings rejected by the generic accessory LIGHT matcher.",
+  "competitor_url": "https://mtbprice.com/",
+  "collection_url": "https://mikesbikes.com/collections/clearance-and-sale-bikes/products.json?currency=USD&limit=250&page=1",
+  "collection_sha256": "f38786d214b480f79ac774bf4b0248a8ba1b2067b8fb32c3c8aefead6ce56b59",
+  "raw_products": 174,
+  "items": [
+    {
+      "name": "Shuttle SL Pro X0 Transmission",
+      "handle": "pivot-shuttle-sl-pro-x0-transmission",
+      "url": "https://mikesbikes.com/products/pivot-shuttle-sl-pro-x0-transmission?currency=USD",
+      "product_type": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/SHUTTLE SL",
+      "tags": [
+        "bikes",
+        "ebike",
+        "ebikeshipping",
+        "extra15",
+        "hsaeligible",
+        "map",
+        "Mountain Bikes",
+        "Sale",
+        "Vendor_Pivot Cycles"
+      ],
+      "stock_variants": [
+        {
+          "id": 40677027184709,
+          "options": "Black Lime / Large",
+          "price": "7999.95",
+          "reference": "11000.00"
+        },
+        {
+          "id": 40569514426437,
+          "options": "Blue Denim / Large",
+          "price": "7999.95",
+          "reference": "11000.00"
+        }
+      ],
+      "merchant_html_sha256": "38b93cb6c6392df5db2eb4620813970fc8a2d11e6062320332692c68ee0bbcd1",
+      "checked_at": "2026-11-05T22:00:31.959632+00:00",
+      "merchant_disclosures": {
+        "assembly_charge_usd": 79,
+        "added_at_checkout": true,
+        "manufacturer_shipping_restrictions_disclosed": true,
+        "closeout_final_sale": false
+      }
+    },
+    {
+      "name": "Habit Neo 1",
+      "handle": "cannondale-habit-neo-1-2026",
+      "url": "https://mikesbikes.com/products/cannondale-habit-neo-1-2026?currency=USD",
+      "product_type": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/HABIT NEO",
+      "tags": [
+        "arf1000",
+        "bikes",
+        "closeout",
+        "closeout_cannondale_eol",
+        "ebike",
+        "Electric Bikes",
+        "hsaeligible",
+        "Sale",
+        "Vendor_Cannondale"
+      ],
+      "stock_variants": [
+        {
+          "id": 45163833589829,
+          "options": "Silver / Small",
+          "price": "6600.77",
+          "reference": "11998.99"
+        },
+        {
+          "id": 45163833655365,
+          "options": "Silver / Large",
+          "price": "6600.77",
+          "reference": "11998.99"
+        }
+      ],
+      "merchant_html_sha256": "4f0ffedaa2a98ff58806357bfac8aaa4a9e81441c50fe54743502aa5accb29f9",
+      "checked_at": "2026-11-05T22:00:34.445730+00:00",
+      "merchant_disclosures": {
+        "assembly_charge_usd": 79,
+        "added_at_checkout": true,
+        "manufacturer_shipping_restrictions_disclosed": true,
+        "closeout_final_sale": true
+      }
+    },
+    {
+      "name": "Shuttle SL Ride SLX/XT",
+      "handle": "pivot-shuttle-sl-ride-slx-xt",
+      "url": "https://mikesbikes.com/products/pivot-shuttle-sl-ride-slx-xt?currency=USD",
+      "product_type": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/SHUTTLE SL",
+      "tags": [
+        "bikes",
+        "ebike",
+        "ebikeshipping",
+        "hsaeligible",
+        "map",
+        "Mountain Bikes",
+        "my23",
+        "Sale",
+        "Vendor_Pivot Cycles"
+      ],
+      "stock_variants": [
+        {
+          "id": 40469266006085,
+          "options": "Blue Denim / X-Large",
+          "price": "6499.95",
+          "reference": "9000.00"
+        },
+        {
+          "id": 40638153490501,
+          "options": "Black Lime / Large",
+          "price": "6499.95",
+          "reference": "9000.00"
+        }
+      ],
+      "merchant_html_sha256": "1570deff9055043047faafd115194d345631647e77926ec326e6f5cd876628d7",
+      "checked_at": "2026-11-05T22:00:36.875480+00:00",
+      "merchant_disclosures": {
+        "assembly_charge_usd": 79,
+        "added_at_checkout": true,
+        "manufacturer_shipping_restrictions_disclosed": true,
+        "closeout_final_sale": false
+      }
+    },
+    {
+      "name": "Heckler SL CC X0 AXS Reserve",
+      "handle": "santa-cruz-heckler-sl-cc-x0-axs-reserve",
+      "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-cc-x0-axs-reserve?currency=USD",
+      "product_type": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/HECKLER SL",
+      "tags": [
+        "arf1000",
+        "bikes",
+        "closeout",
+        "closeout_scb_eol",
+        "ebikeshipping",
+        "hsaeligible",
+        "Mountain Bikes",
+        "MY25",
+        "Sale",
+        "Vendor_Santa Cruz"
+      ],
+      "stock_variants": [
+        {
+          "id": 41813859631173,
+          "options": "Matte Dark Blue / XX-Large",
+          "price": "4999.77",
+          "reference": "11699.00"
+        }
+      ],
+      "merchant_html_sha256": "acff12565b78e938e91ed8a3d3936c407af2c813a25a61b914e5d744dc585251",
+      "checked_at": "2026-11-05T22:00:39.258920+00:00",
+      "merchant_disclosures": {
+        "assembly_charge_usd": 79,
+        "added_at_checkout": true,
+        "manufacturer_shipping_restrictions_disclosed": true,
+        "closeout_final_sale": true
+      }
+    },
+    {
+      "name": "Heckler SL C 90",
+      "handle": "santa-cruz-heckler-sl-c-90",
+      "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-90?currency=USD",
+      "product_type": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/HECKLER SL",
+      "tags": [
+        "bikes",
+        "closeout",
+        "closeout_scb_eol",
+        "ebike",
+        "ebikeshipping",
+        "eol_fix",
+        "hsaeligible",
+        "Mountain Bikes",
+        "my26",
+        "Sale",
+        "Vendor_Santa Cruz"
+      ],
+      "stock_variants": [
+        {
+          "id": 42575101296709,
+          "options": "Gloss Mustard Yellow / X-Large",
+          "price": "4999.77",
+          "reference": "8699.00"
+        },
+        {
+          "id": 42575101362245,
+          "options": "Gloss Mustard Yellow / XX-Large",
+          "price": "4999.77",
+          "reference": "8699.00"
+        }
+      ],
+      "merchant_html_sha256": "93a8749cf8233c0fabba3c16626c9497b603c4e5d576c4a572640d489a5c49fb",
+      "checked_at": "2026-11-05T22:00:41.612083+00:00",
+      "merchant_disclosures": {
+        "assembly_charge_usd": 79,
+        "added_at_checkout": true,
+        "manufacturer_shipping_restrictions_disclosed": true,
+        "closeout_final_sale": true
+      }
+    },
+    {
+      "name": "Habit Neo 2",
+      "handle": "cannondale-habit-neo-2-2026",
+      "url": "https://mikesbikes.com/products/cannondale-habit-neo-2-2026?currency=USD",
+      "product_type": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/HABIT NEO",
+      "tags": [
+        "arf1000",
+        "bikes",
+        "closeout",
+        "closeout_cannondale_eol",
+        "ebike",
+        "Electric Bikes",
+        "hsaeligible",
+        "Sale",
+        "Vendor_Cannondale"
+      ],
+      "stock_variants": [
+        {
+          "id": 45163834343493,
+          "options": "Tiger Eye / Medium",
+          "price": "4950.77",
+          "reference": "8998.99"
+        },
+        {
+          "id": 45163834376261,
+          "options": "Tiger Eye / Large",
+          "price": "4950.77",
+          "reference": "8998.99"
+        },
+        {
+          "id": 45163834409029,
+          "options": "Tiger Eye / X-Large",
+          "price": "4950.77",
+          "reference": "8998.99"
+        }
+      ],
+      "merchant_html_sha256": "2ebadf8283eb60ff5fe0a7cdf04be692e4b7c7d0234e3217cc1e6a2d2837c9aa",
+      "checked_at": "2026-11-05T22:00:43.973155+00:00",
+      "merchant_disclosures": {
+        "assembly_charge_usd": 79,
+        "added_at_checkout": true,
+        "manufacturer_shipping_restrictions_disclosed": true,
+        "closeout_final_sale": true
+      }
+    },
+    {
+      "name": "Heckler SL CC X0 Transmission Reserve",
+      "handle": "santa-cruz-heckler-sl-cc-x0-transmission-reserve-2024",
+      "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-cc-x0-transmission-reserve-2024?currency=USD",
+      "product_type": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/HECKLER SL",
+      "tags": [
+        "2023DBIKE",
+        "arf1000",
+        "bikes",
+        "closeout",
+        "closeout_scb_eol",
+        "ebike",
+        "ebikeshipping",
+        "eol_fix",
+        "hsaeligible",
+        "Mountain Bikes",
+        "my24",
+        "Sale",
+        "Vendor_Santa Cruz"
+      ],
+      "stock_variants": [
+        {
+          "id": 44649480650821,
+          "options": "Gloss Magenta / XX-Large",
+          "price": "4499.77",
+          "reference": "11699.99"
+        }
+      ],
+      "merchant_html_sha256": "93b249090a25cc725f69e3511fbb19956aa99242a5a87fcd4d65475179ae3fbd",
+      "checked_at": "2026-11-05T22:00:46.327471+00:00",
+      "merchant_disclosures": {
+        "assembly_charge_usd": 79,
+        "added_at_checkout": true,
+        "manufacturer_shipping_restrictions_disclosed": true,
+        "closeout_final_sale": true
+      }
+    },
+    {
+      "name": "Heckler SL C GX Transmission",
+      "handle": "santa-cruz-heckler-sl-c-gx-transmission-2024",
+      "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-gx-transmission-2024?currency=USD",
+      "product_type": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/HECKLER SL",
+      "tags": [
+        "arf1000",
+        "bikes",
+        "closeout",
+        "closeout_scb_eol",
+        "ebike",
+        "ebikeshipping",
+        "hsaeligible",
+        "Mountain Bikes",
+        "my24",
+        "Sale",
+        "Vendor_Santa Cruz"
+      ],
+      "stock_variants": [
+        {
+          "id": 44649480486981,
+          "options": "Magenta / XX-Large",
+          "price": "4499.77",
+          "reference": "9699.99"
+        }
+      ],
+      "merchant_html_sha256": "fa5d1896643863bf19cf0ada9846703f5e53d16c0313cdb6a8613b7813216da8",
+      "checked_at": "2026-11-05T22:00:48.664896+00:00",
+      "merchant_disclosures": {
+        "assembly_charge_usd": 79,
+        "added_at_checkout": true,
+        "manufacturer_shipping_restrictions_disclosed": true,
+        "closeout_final_sale": true
+      }
+    },
+    {
+      "name": "Heckler SL C 70",
+      "handle": "santa-cruz-heckler-sl-c-70",
+      "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-70?currency=USD",
+      "product_type": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/HECKLER SL",
+      "tags": [
+        "bikes",
+        "closeout",
+        "closeout_scb_eol",
+        "ebike",
+        "ebikeshipping",
+        "eol_fix",
+        "hsaeligible",
+        "Mountain Bikes",
+        "my26",
+        "Sale",
+        "Vendor_Santa Cruz"
+      ],
+      "stock_variants": [
+        {
+          "id": 42575098380357,
+          "options": "Matte Dark Blue / X-Large",
+          "price": "3999.77",
+          "reference": "7299.00"
+        },
+        {
+          "id": 42575098445893,
+          "options": "Matte Dark Blue / XX-Large",
+          "price": "3999.77",
+          "reference": "7299.00"
+        }
+      ],
+      "merchant_html_sha256": "22d6c98461d8be401a381e896faaca05535d9c21ddd55d9137365c4ac4565271",
+      "checked_at": "2026-11-05T22:00:51.080434+00:00",
+      "merchant_disclosures": {
+        "assembly_charge_usd": 79,
+        "added_at_checkout": true,
+        "manufacturer_shipping_restrictions_disclosed": true,
+        "closeout_final_sale": true
+      }
+    },
+    {
+      "name": "Habit Neo 3",
+      "handle": "cannondale-habit-neo-3-2026",
+      "url": "https://mikesbikes.com/products/cannondale-habit-neo-3-2026?currency=USD",
+      "product_type": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/HABIT NEO",
+      "tags": [
+        "arf1000",
+        "bikes",
+        "closeout",
+        "closeout_cannondale_eol",
+        "ebike",
+        "Electric Bikes",
+        "hsaeligible",
+        "Sale",
+        "Vendor_Cannondale"
+      ],
+      "stock_variants": [
+        {
+          "id": 45163835883589,
+          "options": "Storm Cloud / X-Large",
+          "price": "3850.77",
+          "reference": "6998.99"
+        },
+        {
+          "id": 45163835654213,
+          "options": "Black / Small",
+          "price": "3850.77",
+          "reference": "6998.99"
+        },
+        {
+          "id": 45163835686981,
+          "options": "Black / Medium",
+          "price": "3850.77",
+          "reference": "6998.99"
+        },
+        {
+          "id": 45163835719749,
+          "options": "Black / Large",
+          "price": "3850.77",
+          "reference": "6998.99"
+        },
+        {
+          "id": 45163835752517,
+          "options": "Black / X-Large",
+          "price": "3850.77",
+          "reference": "6998.99"
+        }
+      ],
+      "merchant_html_sha256": "994015367eff48e0048360cf45c28372f64dfa62e1d1575dbcc1840c3b2af06a",
+      "checked_at": "2026-11-05T22:00:53.422739+00:00",
+      "merchant_disclosures": {
+        "assembly_charge_usd": 79,
+        "added_at_checkout": true,
+        "manufacturer_shipping_restrictions_disclosed": true,
+        "closeout_final_sale": true
+      }
+    },
+    {
+      "name": "Heckler SL C S",
+      "handle": "santa-cruz-heckler-sl-c-s",
+      "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-s?currency=USD",
+      "product_type": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/HECKLER SL",
+      "tags": [
+        "arf1000",
+        "bikes",
+        "closeout",
+        "closeout_scb_eol",
+        "ebikeshipping",
+        "eol_fix",
+        "hsaeligible",
+        "Mountain Bikes",
+        "MY25",
+        "Sale",
+        "Vendor_Santa Cruz"
+      ],
+      "stock_variants": [
+        {
+          "id": 41813857501253,
+          "options": "Gloss Mustard Yellow / XX-Large",
+          "price": "3499.77",
+          "reference": "7399.00"
+        }
+      ],
+      "merchant_html_sha256": "bf51de5a13657c50f460bba46162e1f334106ebdd32ecd9cf663a3359671b518",
+      "checked_at": "2026-11-05T22:00:55.993016+00:00",
+      "merchant_disclosures": {
+        "assembly_charge_usd": 79,
+        "added_at_checkout": true,
+        "manufacturer_shipping_restrictions_disclosed": true,
+        "closeout_final_sale": true
+      }
+    },
+    {
+      "name": "Heckler SL C S",
+      "handle": "santa-cruz-heckler-sl-c-s-2024",
+      "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-s-2024?currency=USD",
+      "product_type": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/HECKLER SL",
+      "tags": [
+        "2023DBIKE",
+        "arf1000",
+        "bikes",
+        "closeout",
+        "closeout_scb_eol",
+        "ebike",
+        "ebikeshipping",
+        "eol_fix",
+        "hsaeligible",
+        "Mountain Bikes",
+        "my24",
+        "Sale",
+        "Vendor_Santa Cruz"
+      ],
+      "stock_variants": [
+        {
+          "id": 44649505128517,
+          "options": "Matte Silver / XX-Large",
+          "price": "3499.77",
+          "reference": "8699.99"
+        },
+        {
+          "id": 40617095069765,
+          "options": "Gloss Magenta / XX-Large",
+          "price": "3499.77",
+          "reference": "8699.99"
+        }
+      ],
+      "merchant_html_sha256": "4d28c99f3f1ef43085ef672d3298ba05cc4b41627540a7136d71177a1f5f61d6",
+      "checked_at": "2026-11-05T22:00:58.280557+00:00",
+      "merchant_disclosures": {
+        "assembly_charge_usd": 79,
+        "added_at_checkout": true,
+        "manufacturer_shipping_restrictions_disclosed": true,
+        "closeout_final_sale": true
+      }
+    },
+    {
+      "name": "Heckler SL C R",
+      "handle": "santa-cruz-heckler-sl-c-r-2024",
+      "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-r-2024?currency=USD",
+      "product_type": "BIKES AND FRAMES/BIKES - ELECTRIC/ELECTRIC MOUNTAIN LIGHT WEIGHT/HECKLER SL",
+      "tags": [
+        "arf1000",
+        "bikes",
+        "closeout",
+        "closeout_scb_eol",
+        "ebike",
+        "ebikeshipping",
+        "eol_fix",
+        "hsaeligible",
+        "Mountain Bikes",
+        "my24",
+        "Sale",
+        "Vendor_Santa Cruz"
+      ],
+      "stock_variants": [
+        {
+          "id": 40615074889797,
+          "options": "Gloss Magenta / XX-Large",
+          "price": "2999.77",
+          "reference": "7299.99"
+        },
+        {
+          "id": 44649480454213,
+          "options": "Silver / XX-Large",
+          "price": "2999.77",
+          "reference": "7299.99"
+        }
+      ],
+      "merchant_html_sha256": "30bcb50cfed6eb26559a31589aa03438c1d667d43a4ca42bb18f916fd564828c",
+      "checked_at": "2026-11-05T22:01:00.865217+00:00",
+      "merchant_disclosures": {
+        "assembly_charge_usd": 79,
+        "added_at_checkout": true,
+        "manufacturer_shipping_restrictions_disclosed": true,
+        "closeout_final_sale": true
+      }
+    }
+  ],
+  "limitations": "Public product-feed stock is not checkout verification. Displayed compare-at is retailer reference, not historical street price. Merchant shipping copy is generic and retains manufacturer restrictions; explicit blocked-shipping tags remain exclusions. No cart action performed."
+}
