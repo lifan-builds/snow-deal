@@ -45,3 +45,9 @@ The first production-path candidate refresh stopped on HTTP 429 after five produ
 Local implementation adds the Rockler decoder, opt-in shared delivery fetch and independent-fetch audit support. Full live traversal and a passing audit of the confirmed-stock cohort remain required before catalog configuration changes. The saved discovery and delivery probes do not substitute for those gates. No additional confirmed deep deals or useful retailers are claimed.
 
 See [follow-up admission receipt](../../benchmarks/2026-11-03-rockler-admission.json) for reconciled counts, all eight delivery samples and the failed candidate refresh. Offline verification: 531 tests pass, including 21 Rockler cases; scoped Ruff and diff checks pass. This work is local on `codex/rockler-source`, separate from the pending publication scope for `35f2bfb`.
+
+## November 5 recheck
+
+A bounded feed recheck completed nine banner-free pages with 215 unique products. Current classification identifies 62 preliminary equipment discounts above the $200 reference floor and six nominal deep discounts. All six were already present in the earlier candidate set; SKU 77007 is no longer in this sale traversal. These counts do not establish stock or source admission.
+
+The first exact detail check stopped on an identity contradiction: the Axiom AR8 Elite page has the expected title and heading, but its canonical destination points to an unrelated Kutzall rotary-tool accessory. The existing decoder correctly rejects it. No delivery request or retry followed, and the other five deep candidates were not checked. November 3 shipping observations remain dated evidence. Rockler stays inactive; no parser or production configuration changed. See [recheck receipt](../../benchmarks/2026-11-05-rockler-recheck.json).

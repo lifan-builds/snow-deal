@@ -1,0 +1,101 @@
+{
+  "checked_at": "2026-11-05T19:06:59.825584+00:00",
+  "scope": "Bounded discovery recheck, not complete-source admission or merchant-accuracy benchmark",
+  "admitted": false,
+  "feed": {
+    "pages": 9,
+    "products": 215,
+    "complete": true,
+    "errors": null,
+    "request_url": "https://rn129l.a.searchspring.io/api/search/category.json?siteId=rn129l&resultsFormat=json&disableInlineBanners=true&bgfilter.ss_category=Power+Tools&page=1&filter.ss_morewaystoshop=Clearance&filter.ss_morewaystoshop=Flash+Sale&filter.ss_morewaystoshop=Sale&filter.ss_morewaystoshop=Free+Gift"
+  },
+  "preliminary_equipment_discounts": 62,
+  "preliminary_deep_candidates": [
+    {
+      "sku": "67483",
+      "uid": "44028",
+      "name": "Axiom AR8 Elite CNC Router",
+      "url": "/axiom-ar8-elite-cnc-router",
+      "type_id": "simple",
+      "price": "6999",
+      "regular_price": "14299",
+      "category": "Workshop equipment",
+      "discount": 51.05
+    },
+    {
+      "sku": "77556",
+      "uid": "53412",
+      "name": "Powermatic ArmorGlide PM1800B-3T Bandsaw, 5HP, 3PH, 230V",
+      "url": "/powermatic-armorglide-pm1800b-3t-bandsaw-5hp-3ph-230v",
+      "type_id": "simple",
+      "price": "4999",
+      "regular_price": "8359",
+      "category": "Workshop equipment",
+      "discount": 40.2
+    },
+    {
+      "sku": "64846",
+      "uid": "44015",
+      "name": "Axiom AR16 Elite CNC Router",
+      "url": "/axiom-ar16-elite-cncrouter",
+      "type_id": "simple",
+      "price": "8999",
+      "regular_price": "19299",
+      "category": "Workshop equipment",
+      "discount": 53.37
+    },
+    {
+      "sku": "64433",
+      "uid": "44012",
+      "name": "Axiom Iconic 8 CNC Router",
+      "url": "/axiom-iconic-8-cnc-router",
+      "type_id": "simple",
+      "price": "2999",
+      "regular_price": "7149",
+      "category": "Workshop equipment",
+      "discount": 58.05
+    },
+    {
+      "sku": "64513",
+      "uid": "44013",
+      "name": "Axiom Iconic 6 CNC Router",
+      "url": "/axiom-iconic-6-cncrouter",
+      "type_id": "simple",
+      "price": "2499",
+      "regular_price": "6599",
+      "category": "Workshop equipment",
+      "discount": 62.13
+    },
+    {
+      "sku": "63241",
+      "uid": "44009",
+      "name": "Axiom Iconic 4 CNC Router",
+      "url": "/axiom-iconic-4-cnc-router",
+      "type_id": "simple",
+      "price": "1999",
+      "regular_price": "6049",
+      "category": "Workshop equipment",
+      "discount": 66.95
+    }
+  ],
+  "new_deep_skus": [],
+  "no_longer_listed_deep_skus": [
+    "77007"
+  ],
+  "detail_check": {
+    "checked_at": "2026-11-05T19:11:39.368930+00:00",
+    "url": "https://www.rockler.com/axiom-ar8-elite-cnc-router",
+    "title": "Axiom AR8 Elite CNC Router - Rockler",
+    "heading": "Axiom AR8 Elite CNC Router",
+    "canonical": "https://www.rockler.com/kutzall-4-piece-burr-kits-for-rotary-tools-1-8-shaft",
+    "result": "Rockler canonical identity mismatch",
+    "delivery_requests": 0,
+    "retry_requests": 0
+  },
+  "limitations": [
+    "Feed classifications are provisional and cannot establish confirmed stock.",
+    "The November 3 delayed-delivery evidence is not restamped as current.",
+    "One contradictory detail stopped the probe; the remaining five were not checked.",
+    "No parser, configuration, request budget or production snapshot changed."
+  ]
+}
