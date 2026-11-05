@@ -1,0 +1,783 @@
+{
+  "recorded_at": "2026-11-05T21:54:04.587638+00:00",
+  "release": {
+    "headRefOid": "54ae8ad1335c1f8bb33d96526f2030d9b61fa61e",
+    "mergeCommit": {
+      "oid": "bf75a412774054af90f0ac8cf28e91ca6a3f71c3"
+    },
+    "mergedAt": "2026-11-05T21:51:23Z",
+    "number": 32,
+    "state": "MERGED",
+    "url": "https://github.com/lifan-builds/snow-deal/pull/32"
+  },
+  "checks": {
+    "offline_tests": 928,
+    "local_existing_warnings": 8,
+    "ci_warnings": 9,
+    "ci_run": 42116209302,
+    "ci_and_preview_passed": true,
+    "independent_review": "docs/tasks/manufacturer-filters/review-status.md"
+  },
+  "scope": "Exact manufacturer aliases across ingestion, filtering, cards, legacy URLs and history. No product or variant merge; no new source, refresh, public-asset upload or observation restamping.",
+  "evidence": "docs/tasks/manufacturer-filters/research/aliases.json",
+  "replay": {
+    "checked_at": "2026-11-05T21:46:45.069625+00:00",
+    "catalogs": {
+      "cycling": {
+        "snapshot_file_sha256": "c8ae19cdaef4e10e904e9b2b435fb3366da7b40b052ee5c996b847f6998cbb19",
+        "health": {
+          "catalog": "cycling",
+          "snapshot_sha256": "041b512ebff1951c53ef1576b0f5e9b5cf8dbf8e955463c836883d4330330e08",
+          "fresh_sources": 20,
+          "configured_sources": 20,
+          "status": "ready"
+        },
+        "brand_labels_before": 109,
+        "brand_labels_after": 89,
+        "group_counts": [
+          {
+            "canonical": "BMC",
+            "before": {
+              "BMC": 13,
+              "BMC Bikes": 39
+            },
+            "combined": 52
+          },
+          {
+            "canonical": "Cervelo",
+            "before": {
+              "Cervelo": 45,
+              "Cervelo Bikes": 5
+            },
+            "combined": 50
+          },
+          {
+            "canonical": "Colnago",
+            "before": {
+              "Colnago": 15,
+              "Colnago Bikes": 2
+            },
+            "combined": 17
+          },
+          {
+            "canonical": "ENVE",
+            "before": {
+              "ENVE": 2,
+              "ENVE Bikes": 1,
+              "ENVE Composites": 1
+            },
+            "combined": 4
+          },
+          {
+            "canonical": "Ibis",
+            "before": {
+              "Ibis": 4,
+              "ibis Cycles": 2
+            },
+            "combined": 6
+          },
+          {
+            "canonical": "LOOK",
+            "before": {
+              "LOOK": 4,
+              "Look": 3,
+              "Look Cycle": 1
+            },
+            "combined": 8
+          },
+          {
+            "canonical": "Masi",
+            "before": {
+              "Masi": 1,
+              "Masi Bicycles": 1
+            },
+            "combined": 2
+          },
+          {
+            "canonical": "Mondraker",
+            "before": {
+              "Mondraker": 41,
+              "Mondraker Bikes": 4
+            },
+            "combined": 45
+          },
+          {
+            "canonical": "OPEN",
+            "before": {
+              "OPEN": 12,
+              "OPEN Bikes": 6
+            },
+            "combined": 18
+          },
+          {
+            "canonical": "Orbea",
+            "before": {
+              "Orbea": 142,
+              "Orbea Bikes": 71
+            },
+            "combined": 213
+          },
+          {
+            "canonical": "Pinarello",
+            "before": {
+              "Pinarello": 24,
+              "Pinarello Bikes": 10
+            },
+            "combined": 34
+          },
+          {
+            "canonical": "Pivot",
+            "before": {
+              "Pivot": 3,
+              "Pivot Cycles": 13
+            },
+            "combined": 16
+          },
+          {
+            "canonical": "Santa Cruz",
+            "before": {
+              "Santa Cruz": 99,
+              "Santa Cruz Bicycles": 2,
+              "Santa Cruz Bikes": 15
+            },
+            "combined": 116
+          },
+          {
+            "canonical": "Scott",
+            "before": {
+              "Scott": 9,
+              "SCOTT Bikes": 26
+            },
+            "combined": 35
+          },
+          {
+            "canonical": "Specialized",
+            "before": {
+              "Specialized": 221,
+              "Specialized Bikes": 1
+            },
+            "combined": 222
+          },
+          {
+            "canonical": "TIME",
+            "before": {
+              "TIME": 16,
+              "Time": 3
+            },
+            "combined": 19
+          },
+          {
+            "canonical": "Transition",
+            "before": {
+              "Transition": 9,
+              "Transition Bikes": 42
+            },
+            "combined": 51
+          }
+        ],
+        "scenario_count": 8,
+        "selected_card_comparisons": 5571,
+        "alias_union_comparisons": 296,
+        "form_routes": 37,
+        "offer_histories_checked": 2609,
+        "historical_records_checked": 7167,
+        "observation_rows": 57,
+        "source_inputs_and_database_bytes_unchanged": true
+      },
+      "tools": {
+        "snapshot_file_sha256": "0c67f991589eb7f38ac839162ca599608c240c54e89362652153f2b5c95f5936",
+        "health": {
+          "catalog": "tools",
+          "snapshot_sha256": "3011dac6009e552392b116da21b7cccc7b18e47233ca1b1b35b679e4dd8647f0",
+          "fresh_sources": 13,
+          "configured_sources": 13,
+          "status": "ready"
+        },
+        "brand_labels_before": 50,
+        "brand_labels_after": 47,
+        "group_counts": [
+          {
+            "canonical": "Axiom",
+            "before": {
+              "Axiom": 10,
+              "Axiom Precision": 6
+            },
+            "combined": 16
+          },
+          {
+            "canonical": "FLEX",
+            "before": {
+              "FLEX": 6,
+              "Flex": 2
+            },
+            "combined": 8
+          },
+          {
+            "canonical": "Milwaukee",
+            "before": {
+              "Milwaukee": 35,
+              "Milwaukee Tool": 1
+            },
+            "combined": 36
+          }
+        ],
+        "scenario_count": 7,
+        "selected_card_comparisons": 3741,
+        "alias_union_comparisons": 42,
+        "form_routes": 6,
+        "offer_histories_checked": 60,
+        "historical_records_checked": 170,
+        "observation_rows": 34,
+        "source_inputs_and_database_bytes_unchanged": true
+      }
+    },
+    "passed": true
+  },
+  "live_verification": {
+    "checked_at": "2026-11-05T21:53:05.845248+00:00",
+    "live": true,
+    "catalogs": {
+      "cycling": {
+        "site": "https://bigring.clifan.com",
+        "health": {
+          "catalog": "cycling",
+          "snapshot_sha256": "041b512ebff1951c53ef1576b0f5e9b5cf8dbf8e955463c836883d4330330e08",
+          "fresh_sources": 20,
+          "configured_sources": 20,
+          "status": "ready"
+        },
+        "source_rows_unchanged": true,
+        "observation_rows_exact_preserved": 57,
+        "input_file_sha256": "c8ae19cdaef4e10e904e9b2b435fb3366da7b40b052ee5c996b847f6998cbb19",
+        "packaged_file_sha256": "246accca10ee42286375d458e794f997bfafc539f0b0eb6e7f74663b12e74093",
+        "routes": [
+          {
+            "params": {},
+            "cards": 24,
+            "total": "1414",
+            "matched": true
+          },
+          {
+            "params": {
+              "stock": "true"
+            },
+            "cards": 24,
+            "total": "1387",
+            "matched": true
+          },
+          {
+            "params": {
+              "stock": "true",
+              "min_discount": 40
+            },
+            "cards": 24,
+            "total": "179",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "BMC",
+              "min_reference": 0
+            },
+            "cards": 24,
+            "total": "52",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "BMC Bikes",
+              "min_reference": 0
+            },
+            "cards": 24,
+            "total": "52",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Cervelo",
+              "min_reference": 0
+            },
+            "cards": 24,
+            "total": "50",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Cervelo Bikes",
+              "min_reference": 0
+            },
+            "cards": 24,
+            "total": "50",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Colnago",
+              "min_reference": 0
+            },
+            "cards": 17,
+            "total": "17",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Colnago Bikes",
+              "min_reference": 0
+            },
+            "cards": 17,
+            "total": "17",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "ENVE",
+              "min_reference": 0
+            },
+            "cards": 4,
+            "total": "4",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "ENVE Bikes",
+              "min_reference": 0
+            },
+            "cards": 4,
+            "total": "4",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "ENVE Composites",
+              "min_reference": 0
+            },
+            "cards": 4,
+            "total": "4",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Ibis",
+              "min_reference": 0
+            },
+            "cards": 6,
+            "total": "6",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "ibis Cycles",
+              "min_reference": 0
+            },
+            "cards": 6,
+            "total": "6",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "LOOK",
+              "min_reference": 0
+            },
+            "cards": 8,
+            "total": "8",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Look",
+              "min_reference": 0
+            },
+            "cards": 8,
+            "total": "8",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Look Cycle",
+              "min_reference": 0
+            },
+            "cards": 8,
+            "total": "8",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Masi",
+              "min_reference": 0
+            },
+            "cards": 2,
+            "total": "2",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Masi Bicycles",
+              "min_reference": 0
+            },
+            "cards": 2,
+            "total": "2",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Mondraker",
+              "min_reference": 0
+            },
+            "cards": 24,
+            "total": "45",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Mondraker Bikes",
+              "min_reference": 0
+            },
+            "cards": 24,
+            "total": "45",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "OPEN",
+              "min_reference": 0
+            },
+            "cards": 18,
+            "total": "18",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "OPEN Bikes",
+              "min_reference": 0
+            },
+            "cards": 18,
+            "total": "18",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Orbea",
+              "min_reference": 0
+            },
+            "cards": 24,
+            "total": "213",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Orbea Bikes",
+              "min_reference": 0
+            },
+            "cards": 24,
+            "total": "213",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Orbea Bikes",
+              "min_reference": 0,
+              "page": 2
+            },
+            "cards": 24,
+            "total": "213",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Pinarello",
+              "min_reference": 0
+            },
+            "cards": 24,
+            "total": "34",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Pinarello Bikes",
+              "min_reference": 0
+            },
+            "cards": 24,
+            "total": "34",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Pivot",
+              "min_reference": 0
+            },
+            "cards": 16,
+            "total": "16",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Pivot Cycles",
+              "min_reference": 0
+            },
+            "cards": 16,
+            "total": "16",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Santa Cruz",
+              "min_reference": 0
+            },
+            "cards": 24,
+            "total": "116",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Santa Cruz Bicycles",
+              "min_reference": 0
+            },
+            "cards": 24,
+            "total": "116",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Santa Cruz Bikes",
+              "min_reference": 0
+            },
+            "cards": 24,
+            "total": "116",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Santa Cruz Bikes",
+              "min_reference": 0,
+              "page": 2
+            },
+            "cards": 24,
+            "total": "116",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Scott",
+              "min_reference": 0
+            },
+            "cards": 24,
+            "total": "35",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "SCOTT Bikes",
+              "min_reference": 0
+            },
+            "cards": 24,
+            "total": "35",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Specialized",
+              "min_reference": 0
+            },
+            "cards": 24,
+            "total": "222",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Specialized Bikes",
+              "min_reference": 0
+            },
+            "cards": 24,
+            "total": "222",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Specialized Bikes",
+              "min_reference": 0,
+              "page": 2
+            },
+            "cards": 24,
+            "total": "222",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "TIME",
+              "min_reference": 0
+            },
+            "cards": 19,
+            "total": "19",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Time",
+              "min_reference": 0
+            },
+            "cards": 19,
+            "total": "19",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Transition",
+              "min_reference": 0
+            },
+            "cards": 24,
+            "total": "51",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Transition Bikes",
+              "min_reference": 0
+            },
+            "cards": 24,
+            "total": "51",
+            "matched": true
+          }
+        ],
+        "history_pages": 21,
+        "card_comparisons": 792
+      },
+      "tools": {
+        "site": "https://benchdrop.clifan.com",
+        "health": {
+          "catalog": "tools",
+          "snapshot_sha256": "3011dac6009e552392b116da21b7cccc7b18e47233ca1b1b35b679e4dd8647f0",
+          "fresh_sources": 13,
+          "configured_sources": 13,
+          "status": "ready"
+        },
+        "source_rows_unchanged": true,
+        "observation_rows_exact_preserved": 34,
+        "input_file_sha256": "0c67f991589eb7f38ac839162ca599608c240c54e89362652153f2b5c95f5936",
+        "packaged_file_sha256": "9c24dcad993e023e31e6659afbeae2553d61958db42b9c18af109ce166d02b5c",
+        "routes": [
+          {
+            "params": {},
+            "cards": 24,
+            "total": "1037",
+            "matched": true
+          },
+          {
+            "params": {
+              "stock": "true"
+            },
+            "cards": 24,
+            "total": "934",
+            "matched": true
+          },
+          {
+            "params": {
+              "stock": "true",
+              "min_discount": 40
+            },
+            "cards": 24,
+            "total": "33",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Axiom",
+              "min_reference": 0
+            },
+            "cards": 16,
+            "total": "16",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Axiom Precision",
+              "min_reference": 0
+            },
+            "cards": 16,
+            "total": "16",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "FLEX",
+              "min_reference": 0
+            },
+            "cards": 8,
+            "total": "8",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Flex",
+              "min_reference": 0
+            },
+            "cards": 8,
+            "total": "8",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Milwaukee",
+              "min_reference": 0
+            },
+            "cards": 24,
+            "total": "36",
+            "matched": true
+          },
+          {
+            "params": {
+              "brand": "Milwaukee Tool",
+              "min_reference": 0
+            },
+            "cards": 24,
+            "total": "36",
+            "matched": true
+          }
+        ],
+        "history_pages": 4,
+        "card_comparisons": 168
+      }
+    },
+    "passed": true
+  },
+  "deployments": {
+    "cycling": {
+      "id": "dpl_BHh3G9ePBq9D2eAaVGmjM6AoAPWE",
+      "url": "https://bigring-fgrxftnrr-lifan-chens-projects.vercel.app",
+      "status": "Ready",
+      "previous_id": "dpl_3HVfhkPAhKxGXuZrXSUMYX9Kzppb",
+      "code_commit": "54ae8ad1335c1f8bb33d96526f2030d9b61fa61e"
+    },
+    "tools": {
+      "id": "dpl_HEVoHUjQEc1Q9UrmFB43RtJtcSAn",
+      "url": "https://benchdrop-l82m4yyhf-lifan-chens-projects.vercel.app",
+      "status": "Ready",
+      "previous_id": "dpl_Edy2FvTke1TJ3fCdrCNXTEaCbGfH",
+      "code_commit": "54ae8ad1335c1f8bb33d96526f2030d9b61fa61e"
+    }
+  },
+  "snow_health": {
+    "status": "ok",
+    "last_attempt_at": "2026-11-05T21:08:41.764621",
+    "checked_at": "2026-11-05T21:08:41.764621",
+    "stores_with_deals": 30
+  },
+  "competitive_limit": "No new competitive measurement or lead is claimed. Latest matrix remains 4 strict leads across 260 comparisons; unknown cells remain unknown.",
+  "browser_verification": {
+    "surface": "Native in-app browser",
+    "checks": [
+      {
+        "url": "https://bigring.clifan.com/?brand=Santa+Cruz+Bikes&min_reference=0",
+        "selected": "Santa Cruz",
+        "matching_deals": 116,
+        "pages": 5
+      },
+      {
+        "url": "https://benchdrop.clifan.com/?brand=Milwaukee+Tool&min_reference=0",
+        "selected": "Milwaukee",
+        "matching_deals": 36,
+        "pages": 2
+      }
+    ],
+    "passed": true
+  }
+}

@@ -19,3 +19,7 @@ Verify production health, canonical/legacy brand routes, multi-page results, exa
 ## Recovery
 
 If code checks fail, do not deploy. If a post-deploy route or fingerprint differs, retain the failed receipt and restore the previous verified deployment through the existing Vercel project. Keep public snapshots and stored historical records untouched. Investigate the discrepancy before retrying. The prior deployments are recorded in the local pre-release inspect receipts and the dated rollout record.
+
+## Verified result
+
+PR #32 merged after 928 passing CI tests and a successful preview. Both production deployments are Ready; 52 filter routes and 25 history pages match the packaged data. All raw fingerprints and 91 observation rows remain intact. See `docs/benchmarks/2026-11-05-manufacturer-filters-rollout.json` for deployment IDs, route results and evidence limits.

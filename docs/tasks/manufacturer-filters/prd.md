@@ -1,6 +1,6 @@
 # Consistent manufacturer filters without losing offer history
 
-Status: implementation under the active competitive-improvement goal and standing comparable-release approval.
+Status: released and verified under standing comparable-release approval. PR #32 merged; both category sites pass live verification. The broader competitive-improvement goal remains active.
 
 The live cycling and tools menus split the same manufacturer across retailer vendor spellings. Selecting one spelling hides otherwise eligible offers from other stores. Cycling examples include Santa Cruz / Santa Cruz Bikes / Santa Cruz Bicycles, BMC / BMC Bikes and Look / LOOK / Look Cycle. Tools exposes FLEX / Flex and Milwaukee / Milwaukee Tool. Fix evidence-backed exact aliases across the complete current snapshot, not by fuzzy similarity or removing generic suffixes globally.
 
