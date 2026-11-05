@@ -32,3 +32,5 @@ See `docs/project-guidance/aggregator-data-and-parsers.md` under Snow default ra
 ## Tools primary equipment recall
 
 See `docs/project-guidance/aggregator-data-and-parsers.md` under Tools primary equipment and included accessories. Preserve full-title condition and existing accessory-taxonomy gates; an included blade/filter does not define the primary item. Require actual equipment identity before accepting an included-accessory suffix, preserve explicit whole-tool package labels and exact offers, and reconcile all existing public snapshot classifications plus changed feeds before release. Do not broaden taxonomy precedence from a single mislabeled merchant row.
+
+Current shared catalog welding classification, negative stock precedence and history contracts are in `docs/project-guidance/aggregator-data-and-parsers.md`, under "Welding equipment and shipping notices". Read that section before changing the source-scoped availability dispatcher or tools machine/component classifier.

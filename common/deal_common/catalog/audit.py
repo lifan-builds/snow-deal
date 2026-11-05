@@ -15,6 +15,7 @@ import httpx
 
 from deal_common.catalog.refresh import safe_url
 from deal_common.http import DEFAULT_HEADERS, fetch_listing
+from deal_common.parsers.availability import shipping_notice
 from deal_common.parsers.beaver import detail_data as beaver_data
 from deal_common.parsers.bikecloset import API as BIKECLOSET_API
 from deal_common.parsers.bikecloset import decode_offer as bikecloset_offer
@@ -26,7 +27,6 @@ from deal_common.parsers.bolton import detail_data as bolton_data
 from deal_common.parsers.bolton import offer_destination as bolton_destination
 from deal_common.parsers.grizzly import sku_destination, structured_products
 from deal_common.parsers.grizzly import text as decoded_text
-from deal_common.parsers.harvey import shipping_notice
 from deal_common.parsers.racycles import detail_data as racycles_data
 from deal_common.parsers.rockler import delivery_data, stock_url
 from deal_common.parsers.rockler import detail_data as rockler_data

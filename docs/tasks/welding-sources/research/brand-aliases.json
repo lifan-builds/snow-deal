@@ -1,0 +1,80 @@
+[
+  {
+    "part": "907757",
+    "canonical_brand": "Miller",
+    "retailer_evidence": [
+      {
+        "retailer": "Bakers",
+        "name": "Miller Multimatic 220 AC/DC Multiprocess Welder - 907757",
+        "vendor": "Miller Electric",
+        "url": "https://bakersgas.com/products/miller-907757"
+      },
+      {
+        "retailer": "Bakers",
+        "name": "Miller Multimatic 220 AC/DC Multiprocess Welder w/ Wireless Pedal - 907757002",
+        "vendor": "Miller Electric",
+        "url": "https://bakersgas.com/products/miller-907757002"
+      },
+      {
+        "retailer": "Cyberweld",
+        "name": "Miller Multimatic 220 AC/DC Multi-Process Welder 907757",
+        "vendor": "Miller",
+        "url": "https://store.cyberweld.com/products/miller-multimatic-220-ac-dc-multi-process-welder-907757"
+      },
+      {
+        "retailer": "Cyberweld",
+        "name": "Miller Multimatic 220 AC/DC w/Wireless Foot Control 907757002",
+        "vendor": "Miller",
+        "url": "https://store.cyberweld.com/products/miller-multimatic-220-ac-dc-w-wireless-foot-control-907757002"
+      }
+    ]
+  },
+  {
+    "part": "K4876-1",
+    "canonical_brand": "Lincoln",
+    "retailer_evidence": [
+      {
+        "retailer": "Bakers",
+        "name": "Lincoln POWER MIG 215 MPi Multi-Process Welder - K4876-1",
+        "vendor": "Lincoln Electric",
+        "url": "https://bakersgas.com/products/lincoln-k4876-1"
+      },
+      {
+        "retailer": "Cyberweld",
+        "name": "Lincoln Power MIG 215 MPi Multi-Process Welder K4876-1",
+        "vendor": "Lincoln",
+        "url": "https://store.cyberweld.com/products/lincoln-power-mig-215-mpi-multi-process-welder-k4876-1"
+      }
+    ]
+  },
+  {
+    "part": "500574",
+    "canonical_brand": "Hobart",
+    "retailer_evidence": [
+      {
+        "retailer": "Bakers",
+        "name": "Hobart IronMan 240 MIG Welder - 500574",
+        "vendor": "Hobart Welding Products",
+        "url": "https://bakersgas.com/products/hobart-500574"
+      },
+      {
+        "retailer": "Bakers",
+        "name": "Hobart IronMan 240 MIG Welder w/ SpoolRunner 200 - 500574001",
+        "vendor": "Hobart Welding Products",
+        "url": "https://bakersgas.com/products/hobart-500574001"
+      },
+      {
+        "retailer": "Cyberweld",
+        "name": "Hobart IronMan 240 MIG Welder 500574",
+        "vendor": "Hobart",
+        "url": "https://store.cyberweld.com/products/hobart-ironman-240-mig-welder-500574"
+      },
+      {
+        "retailer": "Cyberweld",
+        "name": "Hobart IronMan 240 w/SpoolRunner 200 500574001",
+        "vendor": "Hobart",
+        "url": "https://store.cyberweld.com/products/hobart-ironman-240-w-spoolrunner-200-500574001"
+      }
+    ]
+  }
+]

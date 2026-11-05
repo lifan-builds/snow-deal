@@ -1,0 +1,17 @@
+{
+  "title": "Hobart IronMan 240 MIG Welder - 500574",
+  "handle": "hobart-500574",
+  "vendor": "Hobart Welding Products",
+  "product_type": "MIG Welding Machine",
+  "body_html": "<p>*Machine is on backorder. For ETA or other options please email us.&nbsp;</p>",
+  "tags": ["Mig Welder", "MIG Welding Machine"],
+  "options": [{"name": "Title"}],
+  "variants": [{
+    "id": 32158328258662,
+    "option1": "Default Title",
+    "sku": "HOB500574",
+    "price": "2499.00",
+    "compare_at_price": "2560.00",
+    "available": true
+  }]
+}

@@ -83,6 +83,8 @@ def test_brand_aliases_merge_only_explicit_manufacturer_names():
     from deal_common.offers import VariantOffer
     from tool_deals.catalog import CATALOG
     for brand, expected in [("Sawstop", "SawStop"), ("Jet Tools", "JET"), ("Kreg Tool", "Kreg"),
+                            ("Miller Electric", "Miller"), ("Lincoln Electric", "Lincoln"),
+                            ("Hobart Welding Products", "Hobart"),
                             ("Different Tools", "Different Tools"), ("In Stock", "Unspecified"),
                             ("ESD：Nov.30（Black）", "Unspecified")]:
         product = Product("Table Saw", "https://example.com/products/saw", 200, 500, brand=brand,
@@ -190,3 +192,90 @@ def test_fixed_bundle_normalization_preserves_exact_offer_and_format():
     assert (card['offer']['current_price'], card['offer']['original_price']) == (1248, 1385)
     assert card['offer']['availability'] == 'in_stock'
     assert query([source], {**filters, 'format': 'Kit'})['total'] == 0
+
+
+@pytest.mark.parametrize(('name', 'kind', 'tags', 'form'), [
+    ('Hobart IronMan 240 MIG Welder - 500574', 'MIG Welding Machine', (), 'Not specified'),
+    ('Fronius Ignis 150 Battery Stick Welder', 'Battery Powered Welder', (), 'Not specified'),
+    ('Engine Driven Welder / Generator', 'Welder / Generator', (), 'Not specified'),
+    ('Plasma Cutting Machine', 'Plasma Cutting Machine', (), 'Not specified'),
+    ('Miller Dynasty 300 Wireless Foot Control Complete 951937', 'Welders', ('TIG Welder',), 'Not specified'),
+    ('Miller Deltaweld 350 w/ArcConnect', 'Welders', ('MIG Welder',), 'Not specified'),
+    ('Miller XMT 400 MIGRunner w/Intellx Wire Feeder', 'Welders', ('MIG Welder',), 'Not specified'),
+    ('TIG Welding Machine with Cold Wire Feed Unit', 'TIG Welding Machine', (), 'Not specified'),
+    ('Lincoln SP140-T Wire Feeder Welder K5261-1', 'Welders', ('MIG Welder',), 'Not specified'),
+    ('Lincoln SP-140T Wire Feeder Welder - K5261-1', 'MIG Welding Machine', ('Wire Feeder',), 'Not specified'),
+    ('ESAB Renegade VOLT EMP 200i Spool Gun Package Battery-Powered Welder', 'Welders',
+     ('Multiprocess Welder',), 'Not specified'),
+    ('Everlast Cyclone 200ES with SM3035N Spoolgun Bundle', 'Welders', ('MIG Welder',), 'Not specified'),
+    ('Everlast Typhoon 230 AC/DC TIG Cooler, Cart, Wireless Bundle', 'Welders', ('TIG Welder',), 'Bundle'),
+    ('Hypertherm Powermax45 SYNC Plasma Cutter (No Torch)', 'Welders', ('Plasma Cutter',), 'Not specified'),
+    ("Baker's Thunderbolt 160/210 Essentials Bundle", "Baker's Bundle",
+     ('Brand_Miller Electric', 'Miller Stick Machine', 'Miller Welding Machine'), 'Bundle'),
+])
+def test_complete_welding_equipment_and_fixed_packages(name, kind, tags, form):
+    product = Product(name, 'https://example.com/products/machine', 1500, 2500,
+                      product_type=kind, tags=tags)
+    actual = classify(product)
+    assert actual is not None
+    assert (actual.category, actual.format, actual.platform) == ('Workshop equipment', form, '')
+
+
+@pytest.mark.parametrize(('name', 'kind', 'tags'), [
+    ('Miller XR-Pistol-Pro Gun', 'Welders', ('Spool Guns & Wire Feeders',)),
+    ('Miller XR-AlumaPro W 25 ft', 'Welders', ('Spool Guns & Wire Feeders',)),
+    ('Miller ArcReach Smart Feeder', 'Welders', ('Wire Feeders',)),
+    ('Miller ArcReach 16 Wire Feeder w/Shop Cart', 'Welders', ('Wire Feeder',)),
+    ('Spool Gun with MIG Welder', 'Welders', ('MIG Welder',)),
+    ('Wire Feeder for MIG Welder', 'Welders', ('MIG Welder',)),
+    ('CK Worldwide Cold Wire Feed Unit Model #5 - WF5-023', 'TIG Welding Machine', ()),
+    ('TIG Welder Wire Feed Unit', 'Welders', ('TIG Welder',)),
+    ('TIG Welder Foot Control', 'Welders', ('TIG Welder',)),
+    ('Wireless Foot Control for TIG Welder', 'Welders', ('TIG Welder',)),
+    ('Plasma Cutter Torch', 'Welders', ('Plasma Cutter',)),
+    ('MIG Welder Cart', 'Welders', ('MIG Welder',)),
+    ('MIG Gun Liner', 'MIG Gun Liner', ()),
+    ('Dynasty 300', 'Welders', ()),
+    ('TIG Welding Machine', 'Machine Accessories', ('TIG Welder',)),
+    ('Refurbished TIG Welding Machine', 'TIG Welding Machine', ()),
+    ('TIG Welding Machine with used Foot Control', 'TIG Welding Machine', ()),
+    ('TIG Welding Machine', 'TIG Welding Machine', ('open_box',)),
+    ('TIG Welding Machine', 'TIG Welding Machine', ('Wire Feeder', 'TIG Welder')),
+    ('Machine Essentials Bundle', "Baker's Bundle", ('Brand_Miller Electric', 'For Miller Welding Machine')),
+    ('Machine Essentials Bundle', "Baker's Bundle", ('Other Welding Machine',)),
+    ('Machine Essentials Bundle', "Baker's Bundle", ('Miller Welding Machine',)),
+])
+def test_welding_components_generic_taxonomy_and_condition_stay_excluded(name, kind, tags):
+    assert classify(Product(name, 'https://example.com/products/component', 1500, 2500,
+                            product_type=kind, tags=tags)) is None
+
+
+def test_welding_brand_filter_keeps_each_retailers_exact_selected_offer():
+    from datetime import UTC, datetime
+
+    from deal_common.catalog.query import query
+    from deal_common.catalog.refresh import normalize
+    from deal_common.offers import VariantOffer
+    from tool_deals.catalog import CATALOG
+
+    sources = []
+    for store, domain, brand, key, price in [
+        ('Bakers', 'bakersgas.com', 'Miller Electric', '123', 1800),
+        ('Cyberweld', 'store.cyberweld.com', 'Miller', '456', 1700),
+    ]:
+        url = 'https://' + domain + '/products/welder'
+        product = Product('Miller TIG Welding Machine', url, price, 3000, brand=brand,
+                          product_type='TIG Welding Machine', offers=[VariantOffer(
+                              variant_key=key, url=url + '?variant=' + key,
+                              current_price=price, original_price=3000, availability='in_stock')])
+        sources.append({'name': store, 'successful_at': datetime.now(UTC).isoformat(),
+                        'products': normalize([product], CATALOG, domain)})
+        assert product.brand == brand
+    result = query(sources, {'min_reference': 200, 'min_discount': 0, 'max_price': 0,
+                             'brand': 'Miller', 'stock': True, 'page': 1})
+    assert result['facets']['brand'] == ['Miller']
+    assert result['total'] == 2
+    assert [(c['store'], c['offer']['variant_key'], c['offer']['current_price'])
+            for c in result['cards']] == [('Cyberweld', '456', 1700), ('Bakers', '123', 1800)]
+    assert result['cards'][0]['offer']['url'] == 'https://store.cyberweld.com/products/welder?variant=456'
+    assert result['cards'][1]['offer']['url'] == 'https://bakersgas.com/products/welder?variant=123'

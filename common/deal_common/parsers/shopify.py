@@ -1,16 +1,16 @@
 from __future__ import annotations
 
-import json
 import hashlib
+import json
 import logging
 import math
 import re
-from urllib.parse import urlparse, parse_qsl, urlencode
+from urllib.parse import parse_qsl, urlencode, urlparse
 
 from deal_common.models import Product
 from deal_common.offers import VariantOffer
+from deal_common.parsers.availability import shipping_notice
 from deal_common.parsers.base import BaseParser
-from deal_common.parsers.harvey import shipping_notice
 
 log = logging.getLogger(__name__)
 
