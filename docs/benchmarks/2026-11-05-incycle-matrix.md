@@ -33,4 +33,3 @@ Numbers are meaningful only with the cohort/method/evidence in the JSON. See COM
 
 Verified strict leads: 4 / 260 comparisons.
 Parity is not a strict win. Unmeasured or incomparable evidence blocks an all-metrics lead claim.
-
