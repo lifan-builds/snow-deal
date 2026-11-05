@@ -18,35 +18,47 @@ def classify(product: Product) -> Classification | None:
         return None
     if re.search(r"\b(used|pre-owned|refurbished|reconditioned|recon|renewed|open.box|scratch|dent|demo|showroom|display model)\b", text):
         return None
-    if re.search(r"\b(accessories|parts|rests?|jigs?(?!\s+saws?\b)|templates?|blades|bits|cutters|knives|clamps|vises|guides|gauges|books|casters|storage|staples|sawhorses|abrasives|sanding paper|batteries and chargers|apparel|fasteners|hand tools|turning tools)\b", kind):
+    if re.search(r"\b(accessories|parts|rests?|jigs?(?!\s+saws?\b)|templates?|blades|bits|cutters|knives|clamps|vises|guides|gauges|books|casters|storage|staples|sawhorses|abrasives|sanding paper|batteries and chargers|apparel|fasteners|hand tools|turning tools|consumables?)\b", kind):
+        return None
+    # Explicitly included accessories do not replace the identity of the primary tool.
+    primary_title = re.split(r"\s+(?:with|w/|including)\s+", title, maxsplit=1)[0]
+    primary_text = f"{primary_title} {kind}"
+    if primary_title != title and re.fullmatch(r"bundle|package|tool set|tool kit", primary_title):
+        return None
+    accessory_head = re.sub(r"\bfixed[- ]base(?=\s+router\b)", "", primary_title)
+    if primary_title != title and re.search(
+            r"\b(stands?|bags?|cases?|guards?|fences?|bases?|guides?)\b", accessory_head):
         return None
     # Replacement parts and consumables do not become machines because their title names one.
-    if re.search(r"\b(?:abrasives|sanding (?:discs|belts|sheets))\s+for\b", title):
+    if re.search(r"\b(?:abrasives|sanding (?:discs|belts|sheets))\s+for\b", primary_title):
         return None
-    if re.search(r"\b(?:drill|driver|router) bits?\b", title):
+    if re.search(r"\b(?:drill|driver|router) bits?\b", primary_title):
         return None
-    if re.search(r"\b(replacement|adapte?r|adaptor|attachment|blade(?!\s+stroke\b)|bit set|insert|filter|hose|cover|chuck|sandpaper|stand only|tool bag|rests?|jigs?(?!\s+saw\b)|templates?|stop collar|drilling guide)\b", title):
+    if re.search(r"\b(replacement|adapte?r|adaptor|attachment|blades?(?!\s+(?:stroke|right\s+circular\s+saw)\b)|bit set|insert|filters?|hose|cover|chuck|sandpaper|stand only|tool bag|rests?|jigs?(?!\s+saw\b)|templates?|stop collar|drilling guide)\b", primary_title):
         return None
-    if re.search(r"\b(cutter sets?|shaper cutters?|depth stops?|drill guides?|sharpening station|saw indicator|clamp kit|stand kit|vac switch|tool cabinet|machine cabinet|outfeed table|work station|pole saw|staples|how to|driver kit for|hole saw|casters?|systainer|sawhorse|router table system)\b", title):
+    if re.search(r"\b(cutter sets?|shaper cutters?|depth stops?|drill guides?|sharpening station|saw indicator|clamp kit|stand kit|vac switch|tool cabinet|machine cabinet|outfeed table|work station|pole saw|staples|how to|driver kit for|hole saw|casters?|systainer|sawhorse|router table system)\b", primary_title):
         return None
-    if re.search(r"\b(?:planer|jointer)\s*(?:&\s*(?:planer|jointer))?\s+knives\b", title):
+    if re.search(r"\b(?:planer|jointer)\s*(?:&\s*(?:planer|jointer))?\s+knives\b", primary_title):
         return None
-    if (re.search(r"\b(band saw|bandsaw)\b", text) and re.search(r"\b(cordless|portable|20v|m18|m12)\b", text)
-            or re.search(r"\b(hand|handheld|cordless) planer\b", text)
-            or (re.search(r"\bplaner\b", text) and re.search(r"\bcordless\b", title))):
+    if (re.search(r"\b(band saw|bandsaw)\b", primary_text) and re.search(r"\b(cordless|portable|20v|m18|m12)\b", primary_text)
+            or re.search(r"\b(hand|handheld|cordless) planer\b", primary_text)
+            or (re.search(r"\bplaner\b", primary_text) and re.search(r"\bcordless\b", primary_title))):
         category = "Power tools"
-    elif re.search(r"\b(table saw|band saw|bandsaw|drill press|lathes?|planer|jointer|dust collector|dust extractor|dust processor|air compressor|benchtop|stationary|cabinet saw|cnc (?:machine|router|mill)|milling machine|mortiser|mortising machine|wide[- ]belt sander|industrial.*(?:sander|buffer|finishing machine)|scroll saw|shaper)\b", text):
+    elif re.search(r"\b(table saw|band saw|bandsaw|drill press|lathes?|planer|jointer|dust collector|dust extractor|dust processor|air compressor|benchtop|stationary|cabinet saw|cnc (?:machine|router|mill)|milling machine|mortiser|mortising machine|wide[- ]belt sander|industrial.*(?:sander|buffer|finishing machine)|scroll saw|shaper)\b", primary_text):
         category = "Workshop equipment"
-    elif re.search(r"\b(combo|combination)\b.*\bkit\b|\b\d+[- ]tool\b.*\bkit\b", title):
+    elif re.search(r"\b(combo|combination)\b.*\bkit\b|\b\d+[- ]tool\b.*\bkit\b", primary_title):
         category = "Combo kits"
-    elif (re.search(r"\b(drill|driver|impact wrench|saw|jigsaws?|oscillating (?:multi[- ]?)?tools?|grinder|sander|router|nailer|stapler|polisher|rotary hammer|demolition hammer|vacuum|vac)\b", text)
-          or (re.search(r"\bratchets?\b", text) and re.search(r"\b(cordless|pneumatic|electric)\b", text))):
+    elif (re.search(r"\b(drill|driver|impact wrench|saw|jigsaws?|oscillating (?:multi[- ]?)?tools?|grinder|sander|router|nailer|stapler|polisher|rotary hammer|demolition hammer|vacuum|vac)\b", primary_text)
+          or (re.search(r"\bratchets?\b", primary_text) and re.search(r"\b(cordless|pneumatic|electric)\b", primary_text))):
         category = "Power tools"
     else:
         return None
-    if re.search(r"\b(bare tool|tool.only)\b", title):
+    if re.search(r"\bbundle\b", primary_title):
+        form = "Bundle"
+    elif re.search(r"\b(bare tool|tool.only)\b", title):
         form = "Bare tool"
-    elif re.search(r"\bkit\b", title):
+    elif (re.search(r"\bkit\b", primary_title)
+          or re.search(r"\b(?:batter(?:y|ies)\s+(?:and|&|\+)\s+chargers?|\d+(?:\.\d+)?\s*ah)\s+kit\b", title)):
         form = "Kit"
     else:
         form = "Not specified"
@@ -115,7 +127,7 @@ CATALOG = Catalog(
                             verify_shopify_currency=True)),
     classify=classify, default_reference=200,
     assets=Path(__file__).parent / "static", art_label="02 / THE NEXT PROJECT", theme_color="#282922", mark="↘",
-    formats=("Bare tool", "Kit", "Not specified"),
+    formats=("Bare tool", "Kit", "Bundle", "Not specified"),
     brand_aliases=(("sawstop", "SawStop"), ("jet", "JET"), ("jet tools", "JET"),
                    ("kreg tool", "Kreg"), ("kreg", "Kreg"), ("dewalt", "DeWalt")),
     coverage_note="Grizzly Industrial is currently excluded: its storefront refused our refresh request on November 3, 2026. Its offers are hidden until we can complete a fresh check.",

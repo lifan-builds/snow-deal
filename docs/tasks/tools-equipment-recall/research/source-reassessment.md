@@ -1,0 +1,11 @@
+# Source reassessment — 5 November 2026 UTC
+
+The current priority remains tools deep-discount breadth, with six useful retailers in the latest downloaded public snapshot. The snapshot audit at 05:10 UTC reports 455 qualifying in-stock listings and 32 at least 40% off; these are source-reported values, not a new merchant audit.
+
+Fresh bounded discovery found no admitted new source in this pass. Klingspor's normal public closeouts request returned HTTP403 at 05:01 UTC and was not retried. Oliver's www homepage redirected to its ordinary apex domain, which returned HTTP200 and explicit MSRP/current prices on expensive machinery; the inspected featured examples are roughly 11–13% below MSRP, not proof of qualified deep coverage or full-source completeness. Toolbarn's public homepage now redirects to SouthernCarlson's business-account surface; no account action was taken. Earlier industrialtool/Highland/Toolorbit outcomes remain in their dated receipts and were not treated as new leads.
+
+HardHat's current public homepage returned HTTP200 and displays 423 broad deals, with Amazon destinations on the inspected surface. This is not a measured qualifying M1 count, stock audit or new competitive-lead claim. Its prior registry observation retains its date.
+
+The classification investigation then traversed the existing public Woodcraft power-tools, OakTree JPW-overstock and Beaver sales/closeouts feeds to their terminal pages with unique product IDs. Only Beaver supplied rejected filter/blade-related candidates above the reference floor: 51, including two blade-consumable packs, one air-filtration unit, and 48 apparent complete tools/fixed packages. This is a research whitelist, not admission. Five separate product pages agree on exact IDs and money; four complete tools/packages report In Stock, while PM1250 says Call for availability. All-new-package checks and a complete production-path refresh remain separate evidence.
+
+Sources: https://www.woodworkingshop.com/closeouts/ ; https://olivermachinery.net/ ; https://www.toolbarn.com/ ; https://hardhatdeals.com/ . Task-owned captures: .local/source-expansion/tools-next-20261105/ and .local/source-expansion/tools-recall-20261105/ .

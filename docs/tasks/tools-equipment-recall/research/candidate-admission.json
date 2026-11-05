@@ -1,0 +1,383 @@
+{
+  "scope": "Fresh full-source local candidate and all new/reclassified in-stock offer audit; not yet production",
+  "candidate_sha256": "832a557bb415b524a4fc99d9742b93065026f7d6a865c5dba1c9981ba73ab0ef",
+  "source_checks": [
+    {
+      "source": "Beaver Industrial Supply",
+      "status": "complete",
+      "errors": 0,
+      "pages": 3,
+      "collections": [
+        {
+          "url": "https://beavertools.com/collections/sales-and-closeouts?currency=USD",
+          "pages": 3,
+          "products": 255,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "product_pages": 255,
+      "parsed_products": 255,
+      "accepted_products": 255
+    },
+    {
+      "source": "Tool Nut",
+      "status": "complete",
+      "errors": 0,
+      "pages": 26,
+      "collections": [
+        {
+          "url": "https://www.toolnut.com/collections/saws?currency=USD",
+          "pages": 2,
+          "products": 48,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://www.toolnut.com/collections/power-tools?currency=USD",
+          "pages": 17,
+          "products": 151,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://www.toolnut.com/collections/stationary-tools?currency=USD",
+          "pages": 7,
+          "products": 98,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "parsed_products": 297,
+      "accepted_products": 173
+    },
+    {
+      "source": "Woodcraft",
+      "status": "complete",
+      "errors": 0,
+      "pages": 7,
+      "collections": [
+        {
+          "url": "https://www.woodcraft.com/collections/clearance?currency=USD",
+          "pages": 1,
+          "products": 104,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://www.woodcraft.com/collections/power-tools?currency=USD",
+          "pages": 2,
+          "products": 8,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://www.woodcraft.com/collections/woodworking-machines?currency=USD",
+          "pages": 3,
+          "products": 78,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://www.woodcraft.com/collections/power-tool-deals?currency=USD",
+          "pages": 1,
+          "products": 82,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "parsed_products": 272,
+      "accepted_products": 77
+    },
+    {
+      "source": "Craft Supplies USA",
+      "status": "complete",
+      "errors": 0,
+      "pages": 1,
+      "collections": [
+        {
+          "url": "https://woodturnerscatalog.com/collections/wood-lathes?currency=USD",
+          "pages": 1,
+          "products": 1,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "parsed_products": 1,
+      "accepted_products": 1
+    },
+    {
+      "source": "Harvey Woodworking",
+      "status": "complete",
+      "errors": 0,
+      "pages": 1,
+      "collections": [
+        {
+          "url": "https://www.harveywoodworking.com/collections/all?currency=USD",
+          "pages": 1,
+          "products": 17,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "parsed_products": 17,
+      "accepted_products": 11
+    },
+    {
+      "source": "WEN",
+      "status": "complete",
+      "errors": 0,
+      "pages": 1,
+      "collections": [
+        {
+          "url": "https://wenproducts.com/collections/power-tools?currency=USD",
+          "pages": 1,
+          "products": 9,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "parsed_products": 9,
+      "accepted_products": 8
+    },
+    {
+      "source": "Factory Direct Supply",
+      "status": "complete",
+      "errors": 0,
+      "pages": 8,
+      "collections": [
+        {
+          "url": "https://factorydirectsupply.com/collections/power-tools?currency=USD",
+          "pages": 8,
+          "products": 17,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "parsed_products": 17,
+      "accepted_products": 6
+    },
+    {
+      "source": "Max Warehouse",
+      "status": "complete",
+      "errors": 0,
+      "pages": 6,
+      "collections": [
+        {
+          "url": "https://www.maxwarehouse.com/collections/power-tools?currency=USD",
+          "pages": 6,
+          "products": 236,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "parsed_products": 236,
+      "accepted_products": 43
+    },
+    {
+      "source": "OakTree Supply",
+      "status": "complete",
+      "errors": 0,
+      "pages": 5,
+      "collections": [
+        {
+          "url": "https://www.oaktreesupply.com/collections/clearance?currency=USD",
+          "pages": 1,
+          "products": 104,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://www.oaktreesupply.com/collections/jpw-overstock-items-2026?currency=USD",
+          "pages": 1,
+          "products": 25,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://www.oaktreesupply.com/collections/jet-and-powermatic-price-drops?currency=USD",
+          "pages": 1,
+          "products": 8,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://www.oaktreesupply.com/collections/scm-sale?currency=USD",
+          "pages": 1,
+          "products": 4,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://www.oaktreesupply.com/collections/sawstop?currency=USD",
+          "pages": 1,
+          "products": 40,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "parsed_products": 181,
+      "accepted_products": 74
+    },
+    {
+      "source": "Taylor Toolworks",
+      "status": "complete",
+      "errors": 0,
+      "pages": 1,
+      "collections": [
+        {
+          "url": "https://taytools.com/power-tools?ppg=65535&pn=1",
+          "pages": 1,
+          "products": 19,
+          "status": "complete"
+        }
+      ],
+      "product_pages": 180,
+      "parsed_products": 19,
+      "accepted_products": 1
+    },
+    {
+      "source": "Fasteners Inc",
+      "status": "complete",
+      "errors": 0,
+      "pages": 19,
+      "collections": [
+        {
+          "url": "https://fastenersinc.myshopify.com/collections/power-tools?currency=USD",
+          "pages": 8,
+          "products": 100,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://fastenersinc.myshopify.com/collections/power-tools-1?currency=USD",
+          "pages": 8,
+          "products": 78,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://fastenersinc.myshopify.com/collections/machine-tools?currency=USD",
+          "pages": 1,
+          "products": 2,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://fastenersinc.myshopify.com/collections/power-tool-closeouts?currency=USD",
+          "pages": 1,
+          "products": 2,
+          "status": "complete",
+          "observed_currency": "USD"
+        },
+        {
+          "url": "https://fastenersinc.myshopify.com/collections/all-closeouts?currency=USD",
+          "pages": 1,
+          "products": 30,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "parsed_products": 212,
+      "accepted_products": 79
+    }
+  ],
+  "comparison": {
+    "at": "2026-11-05T17:36:45.992132+00:00",
+    "before_stock": 455,
+    "after_stock": 515,
+    "after_deep": 34,
+    "after_useful_retailers": [
+      "Beaver Industrial Supply",
+      "Fasteners Inc",
+      "OakTree Supply",
+      "Taylor Toolworks",
+      "Tool Nut",
+      "Woodcraft"
+    ],
+    "fixed_audit_sample": 30,
+    "audit_selected": 95,
+    "note": "Counts also include actual inventory changes; retained-feed classifier reconciliation isolates code effect."
+  },
+  "new_stock_by_retailer": {
+    "Tool Nut": 18,
+    "Beaver Industrial Supply": 51
+  },
+  "research_cohort": {
+    "products": 63,
+    "stock": {
+      "in_stock": 51,
+      "unknown": 12
+    },
+    "bundle_count": 47,
+    "deep_in_stock": 0
+  },
+  "history": {
+    "before": 21,
+    "after": 32,
+    "exact_retained": 21
+  },
+  "merchant_audit": {
+    "checked_at": "2026-11-05T17:43:16.687274+00:00",
+    "seed": 20261105,
+    "method": "top10-plus-seeded20-plus-all-new-or-reclassified-in-stock-listings",
+    "population": 515,
+    "fixed_sample": 30,
+    "selected": 95,
+    "passed": true,
+    "sample_size": 95,
+    "match": 95,
+    "mismatch": 0,
+    "inconclusive": 0,
+    "verified_match_percent": 100.0,
+    "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation"
+  },
+  "controlled_candidate_comparison": {
+    "scope": "Counterfactual old classifier on the complete candidate currently retained products; cannot recover products dropped by new classifier; no renewed merchant evidence",
+    "old_stock_on_retained_population": 446,
+    "new_stock": 515,
+    "newly_eligible_in_stock": 69,
+    "by_retailer": {
+      "Tool Nut": 18,
+      "Beaver Industrial Supply": 51
+    },
+    "newly_eligible_deep": [
+      {
+        "name": "Rupes IBRID Orbital Sander 3-1/8-in. x 5-1/8-in. with Charger and Batteries In Systainer (HSE73/BETA)",
+        "store": "Tool Nut",
+        "offer": {
+          "variant_key": "50310212387110",
+          "url": "https://www.toolnut.com/products/rupes-hse73-beta-ibrid-orbital-sander-80x130-hse73-charger-2-battery-pack-green-tech-filter-in-systainer?currency=USD&variant=50310212387110",
+          "current_price": 291.06,
+          "original_price": 542.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/hse73-beta.jpg?v=1778481818",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 46.298892988929886,
+          "savings": 250.94
+        }
+      },
+      {
+        "name": "Rupes IBRID Orbital Sander Delta HSS73 with Charger and Batteries In Systainer (HSS73/BETA)",
+        "store": "Tool Nut",
+        "offer": {
+          "variant_key": "50310212518182",
+          "url": "https://www.toolnut.com/products/rupes-hss73-beta-ibrid-orbital-sander-delta-hss73-charger-2-battery-pack-green-tech-filter-in-systainer?currency=USD&variant=50310212518182",
+          "current_price": 291.06,
+          "original_price": 541.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0933/1582/5958/files/hss73-beta.jpg?v=1778481694",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "discount": 46.199630314232905,
+          "savings": 249.94
+        }
+      }
+    ]
+  }
+}
