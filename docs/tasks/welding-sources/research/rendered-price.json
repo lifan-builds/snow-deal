@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-11-05T20:52:50.012128+00:00",
+  "method": "Native in-app browser rendered accessibility state; no cart or account action",
+  "url": "https://store.cyberweld.com/products/everlast-typhoon-230-ac-dc-tig-welder?currency=USD&variant=45452973932771",
+  "name": "Everlast Typhoon 230 AC/DC TIG Welder",
+  "code": "TYP-230",
+  "variant": "45452973932771",
+  "displayed_price": 2250,
+  "displayed_reference": 3750,
+  "reference_label": "Mfg Industrial Price",
+  "displayed_savings": 1500,
+  "add_button_enabled": true,
+  "package_summary": "The page lists the power source with pedal, torches and welding leads; it is a complete equipment package rather than a standalone component.",
+  "limitations": "No checkout was attempted. The industrial reference is retailer-reported and not a verified former selling price. Stock still requires the separate admission audit."
+}

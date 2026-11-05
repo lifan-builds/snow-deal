@@ -1,0 +1,27 @@
+[
+  {
+    "catalog": "tools",
+    "name": "Baker's Gas",
+    "domain": "bakersgas.com",
+    "scrape_urls": [
+      "https://bakersgas.com/collections/welding-machines-accessories?currency=USD",
+      "https://bakersgas.com/collections/mig-welders?currency=USD",
+      "https://bakersgas.com/collections/tig-welders?currency=USD",
+      "https://bakersgas.com/collections/multiprocess-welders?currency=USD",
+      "https://bakersgas.com/collections/best-selling-stick-welders?currency=USD",
+      "https://bakersgas.com/collections/plasma-cutters?currency=USD",
+      "https://bakersgas.com/collections/angle-grinders?currency=USD",
+      "https://bakersgas.com/collections/bench-grinders?currency=USD",
+      "https://bakersgas.com/collections/die-grinders?currency=USD",
+      "https://bakersgas.com/collections/cordless-angle-grinders?currency=USD"
+    ]
+  },
+  {
+    "catalog": "tools",
+    "name": "Cyberweld",
+    "domain": "store.cyberweld.com",
+    "scrape_urls": [
+      "https://store.cyberweld.com/collections/welders-plasma-cutters?currency=USD"
+    ]
+  }
+]

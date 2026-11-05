@@ -10,9 +10,10 @@ def classify(product: Product) -> Classification | None:
     title = product.name.casefold()
     kind = (product.product_type or "").casefold()
     text = f"{title} {kind}"
+    tags = {tag.casefold().strip().replace("_", " ") for tag in product.tags}
     if re.search(r"\b(?:pepper|salt|coffee|spice|meat|food) (?:ball )?grinders?\b", text):
         return None
-    if {tag.casefold().strip().replace("_", " ") for tag in product.tags} & {
+    if tags & {
             "used", "pre-owned", "refurbished", "reconditioned", "open box", "pickup only", "in store only",
             "demo", "showroom", "display model"}:
         return None
@@ -20,9 +21,22 @@ def classify(product: Product) -> Classification | None:
         return None
     if re.search(r"\b(accessories|parts|rests?|jigs?(?!\s+saws?\b)|templates?|blades|bits|cutters|knives|clamps|vises|guides|gauges|books|casters|storage|staples|sawhorses|abrasives|sanding paper|batteries and chargers|apparel|fasteners|hand tools|turning tools|consumables?)\b", kind):
         return None
+    # Cyberweld's broad Welders type also contains standalone guns and feeders.
     # Explicitly included accessories do not replace the identity of the primary tool.
-    primary_title = re.split(r"\s+(?:with|w/|including)\s+", title, maxsplit=1)[0]
+    primary_title = re.split(r"\s+(?:(?:with|including)\s+|w/\s*)", title, maxsplit=1)[0]
     primary_text = f"{primary_title} {kind}"
+    if ("spool guns & wire feeders" in tags
+            or (tags & {"wire feeders", "wire feeder"}
+                and not re.search(r"\bwire feeder welder\b", primary_title))):
+        return None
+    component = r"(?:spool\s*guns?|mig guns?|wire feed(?:ers?| units?)|tig torch(?:es)?|plasma torch(?:es)?)"
+    machine = r"(?:welders?|welding machines?|plasma cutters?)"
+    if (re.search(r"\b" + component + r"\s+for\b", primary_title)
+            or re.search(r"\b" + machine + r"\s+(?:foot controls?|carts?|guns?|torch(?:es)?|wire feed(?:ers?| units?))\b", primary_title)
+            or re.search(r"^(?:wireless\s+)?foot controls?\b", primary_title)
+            or (re.search(r"\b" + component + r"\b", primary_title)
+                and not re.search(r"\b" + machine + r"\b", primary_title))):
+        return None
     if primary_title != title and re.fullmatch(r"bundle|package|tool set|tool kit", primary_title):
         return None
     accessory_head = re.sub(r"\bfixed[- ]base(?=\s+router\b)", "", primary_title)
@@ -40,7 +54,19 @@ def classify(product: Product) -> Classification | None:
         return None
     if re.search(r"\b(?:planer|jointer)\s*(?:&\s*(?:planer|jointer))?\s+knives\b", primary_title):
         return None
-    if (re.search(r"\b(band saw|bandsaw)\b", primary_text) and re.search(r"\b(cordless|portable|20v|m18|m12)\b", primary_text)
+    # An explicit fixed bundle can carry a manufacturer-prefixed machine tag.
+    # Bind its entire prefix to declared Brand_ evidence, not compatibility text.
+    manufacturers = {tag.removeprefix("brand ") for tag in tags if tag.startswith("brand ")}
+    bundle_machine = (re.search(r"\bbundle\b", primary_title) and any(
+        match and any(brand == match[1] or brand.startswith(match[1] + " ") for brand in manufacturers)
+        for tag in tags if (match := re.fullmatch(r"(.+) (?:welding|stick) machine", tag))))
+    welding = (re.fullmatch(r"(?:(?:mig|tig|stick|multiprocess) welding machines?|welding machines?|"
+                            r"plasma cutting machines?|welder\s*/\s*generator|battery powered welder)", kind)
+               or tags & {"multiprocess welder", "mig welder", "tig welder", "stick welder", "plasma cutter"}
+               or bundle_machine)
+    if welding:
+        category = "Workshop equipment"
+    elif (re.search(r"\b(band saw|bandsaw)\b", primary_text) and re.search(r"\b(cordless|portable|20v|m18|m12)\b", primary_text)
             or re.search(r"\b(hand|handheld|cordless) planer\b", primary_text)
             or (re.search(r"\bplaner\b", primary_text) and re.search(r"\bcordless\b", primary_title))):
         category = "Power tools"
@@ -79,7 +105,22 @@ CATALOG = Catalog(
     headline="Build more.\nSpend less.",
     description="Deep cuts on power tools, serious kits, and workshop equipment. Ranked by percentage off, with the package details kept in view.",
     categories=("Power tools", "Combo kits", "Workshop equipment"),
-    sources=(RetailerConfig(name="Beaver Industrial Supply", domain="beavertools.com",
+    sources=(RetailerConfig(name="Baker's Gas", domain='bakersgas.com',
+                            scrape_urls=['https://bakersgas.com/collections/welding-machines-accessories?currency=USD',
+                                         'https://bakersgas.com/collections/mig-welders?currency=USD',
+                                         'https://bakersgas.com/collections/tig-welders?currency=USD',
+                                         'https://bakersgas.com/collections/multiprocess-welders?currency=USD',
+                                         'https://bakersgas.com/collections/best-selling-stick-welders?currency=USD',
+                                         'https://bakersgas.com/collections/plasma-cutters?currency=USD',
+                                         'https://bakersgas.com/collections/angle-grinders?currency=USD',
+                                         'https://bakersgas.com/collections/bench-grinders?currency=USD',
+                                         'https://bakersgas.com/collections/die-grinders?currency=USD',
+                                         'https://bakersgas.com/collections/cordless-angle-grinders?currency=USD'],
+                            verify_shopify_currency=True),
+             RetailerConfig(name='Cyberweld', domain='store.cyberweld.com',
+                            scrape_urls=['https://store.cyberweld.com/collections/welders-plasma-cutters?currency=USD'],
+                            verify_shopify_currency=True),
+             RetailerConfig(name="Beaver Industrial Supply", domain="beavertools.com",
                             scrape_urls=["https://beavertools.com/collections/sales-and-closeouts?currency=USD"],
                             verify_shopify_currency=True),
              RetailerConfig(name="Tool Nut", domain="www.toolnut.com",
@@ -129,7 +170,9 @@ CATALOG = Catalog(
     assets=Path(__file__).parent / "static", art_label="02 / THE NEXT PROJECT", theme_color="#282922", mark="↘",
     formats=("Bare tool", "Kit", "Bundle", "Not specified"),
     brand_aliases=(("sawstop", "SawStop"), ("jet", "JET"), ("jet tools", "JET"),
-                   ("kreg tool", "Kreg"), ("kreg", "Kreg"), ("dewalt", "DeWalt")),
+                   ("kreg tool", "Kreg"), ("kreg", "Kreg"), ("dewalt", "DeWalt"),
+                   ("miller electric", "Miller"), ("lincoln electric", "Lincoln"),
+                   ("hobart welding products", "Hobart")),
     coverage_note="Grizzly Industrial is currently excluded: its storefront refused our refresh request on November 3, 2026. Its offers are hidden until we can complete a fresh check.",
     buying_note="A bare tool does not include a battery or charger. A kit label does not guarantee particular contents. Confirm the package, battery compatibility, shipping, and return policy on the retailer page. Check required voltage and phase for workshop machines. Clearance may be final sale.",
 )

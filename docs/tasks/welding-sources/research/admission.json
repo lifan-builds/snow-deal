@@ -1,0 +1,3614 @@
+{
+  "recorded_at": "2026-11-05T21:07:10.579444+00:00",
+  "sources": [
+    {
+      "candidate": {
+        "catalog": "tools",
+        "name": "Baker's Gas",
+        "domain": "bakersgas.com",
+        "scrape_urls": [
+          "https://bakersgas.com/collections/welding-machines-accessories?currency=USD",
+          "https://bakersgas.com/collections/mig-welders?currency=USD",
+          "https://bakersgas.com/collections/tig-welders?currency=USD",
+          "https://bakersgas.com/collections/multiprocess-welders?currency=USD",
+          "https://bakersgas.com/collections/best-selling-stick-welders?currency=USD",
+          "https://bakersgas.com/collections/plasma-cutters?currency=USD",
+          "https://bakersgas.com/collections/angle-grinders?currency=USD",
+          "https://bakersgas.com/collections/bench-grinders?currency=USD",
+          "https://bakersgas.com/collections/die-grinders?currency=USD",
+          "https://bakersgas.com/collections/cordless-angle-grinders?currency=USD"
+        ]
+      },
+      "checked_at": "2026-11-05T21:04:23.419210+00:00",
+      "snapshot": "00-tools.db",
+      "refresh": {
+        "source": "Baker's Gas",
+        "status": "complete",
+        "errors": 0,
+        "pages": 10,
+        "collections": [
+          {
+            "url": "https://bakersgas.com/collections/welding-machines-accessories?currency=USD",
+            "pages": 1,
+            "products": 32,
+            "status": "complete",
+            "observed_currency": "USD"
+          },
+          {
+            "url": "https://bakersgas.com/collections/mig-welders?currency=USD",
+            "pages": 1,
+            "products": 51,
+            "status": "complete",
+            "observed_currency": "USD"
+          },
+          {
+            "url": "https://bakersgas.com/collections/tig-welders?currency=USD",
+            "pages": 1,
+            "products": 58,
+            "status": "complete",
+            "observed_currency": "USD"
+          },
+          {
+            "url": "https://bakersgas.com/collections/multiprocess-welders?currency=USD",
+            "pages": 1,
+            "products": 63,
+            "status": "complete",
+            "observed_currency": "USD"
+          },
+          {
+            "url": "https://bakersgas.com/collections/best-selling-stick-welders?currency=USD",
+            "pages": 1,
+            "products": 45,
+            "status": "complete",
+            "observed_currency": "USD"
+          },
+          {
+            "url": "https://bakersgas.com/collections/plasma-cutters?currency=USD",
+            "pages": 1,
+            "products": 34,
+            "status": "complete",
+            "observed_currency": "USD"
+          },
+          {
+            "url": "https://bakersgas.com/collections/angle-grinders?currency=USD",
+            "pages": 1,
+            "products": 3,
+            "status": "complete",
+            "observed_currency": "USD"
+          },
+          {
+            "url": "https://bakersgas.com/collections/bench-grinders?currency=USD",
+            "pages": 1,
+            "products": 0,
+            "status": "complete",
+            "observed_currency": "USD"
+          },
+          {
+            "url": "https://bakersgas.com/collections/die-grinders?currency=USD",
+            "pages": 1,
+            "products": 2,
+            "status": "complete",
+            "observed_currency": "USD"
+          },
+          {
+            "url": "https://bakersgas.com/collections/cordless-angle-grinders?currency=USD",
+            "pages": 1,
+            "products": 1,
+            "status": "complete",
+            "observed_currency": "USD"
+          }
+        ],
+        "parsed_products": 289,
+        "accepted_products": 207
+      },
+      "eligible_listings": 204,
+      "deep_listings": 0,
+      "disposition": "merchant-audited-needs-review",
+      "merchant_audit": {
+        "receipt": "00-tools-merchant-audit.json",
+        "passed": true,
+        "sample_size": 30
+      },
+      "merchant_audit_detail": {
+        "source": "Baker's Gas",
+        "date": "2026-11-05T21:05:29.195771+00:00",
+        "seed": 20261105,
+        "method": "top10-plus-seeded20-plus-all-deep-listings-v1",
+        "population": 204,
+        "fixed_sample_size": 30,
+        "deep_selected_listings": 0,
+        "selected_offers": 30,
+        "refresh_complete": true,
+        "passed": true,
+        "sample_size": 30,
+        "match": 30,
+        "mismatch": 0,
+        "inconclusive": 0,
+        "verified_match_percent": 100.0,
+        "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+        "results": [
+          {
+            "name": "Hobart AirForce 27i Plasma Cutter - 500575",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "32122687488102",
+              "url": "https://bakersgas.com/products/hobart-500575?currency=USD&variant=32122687488102",
+              "current_price": 1499.0,
+              "original_price": 2498.04,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/products/airforce-27i.jpg?v=1602273331",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 39.99295447630943,
+              "savings": 999.04
+            },
+            "check_started_at": "2026-11-05T21:04:23.444386+00:00",
+            "evidence_url": "https://bakersgas.com/products/hobart-500575.js?currency=USD",
+            "response_sha256": "bc153a2b8e9391fd5c93c64e980705e4c6508f36ece2d7cfd9a0e00305e10133",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Hobart AirForce 27i Plasma Cutter - 500575",
+              "variant": "32122687488102",
+              "sku": "HOB500575",
+              "price_minor": 149900,
+              "reference_minor": 249804,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:04:27.714392+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "ESAB Renegade ES 300i Stick Welder - 0445100881",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "28853012398133",
+              "url": "https://bakersgas.com/products/esabrenegadees300istickwelder-0445100881?currency=USD&variant=28853012398133",
+              "current_price": 4530.0,
+              "original_price": 7305.02,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/products/ESA0445100881.jpg?v=1571718999",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 37.987849451473096,
+              "savings": 2775.02
+            },
+            "check_started_at": "2026-11-05T21:04:27.714471+00:00",
+            "evidence_url": "https://bakersgas.com/products/esabrenegadees300istickwelder-0445100881.js?currency=USD",
+            "response_sha256": "c2a034728f4be5500b5c9d838e5dfb2538314b401e45b0230ab0f9594b16c7f5",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "ESAB Renegade ES 300i Stick Welder - 0445100881",
+              "variant": "28853012398133",
+              "sku": "ESA0445100881",
+              "price_minor": 453000,
+              "reference_minor": 730502,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:04:29.858122+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "ESAB Rebel 205ic AC/DC Water Cooled Multiprocess Welder - 0700303000",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "42708611661926",
+              "url": "https://bakersgas.com/products/esab-rebel-205ic-ac-dc-water-cooled-multiprocess-welder-0700303000?currency=USD&variant=42708611661926",
+              "current_price": 5067.0,
+              "original_price": 8170.14,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/files/145453.jpg?v=1791926414",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 37.98147889754643,
+              "savings": 3103.14
+            },
+            "check_started_at": "2026-11-05T21:04:29.858225+00:00",
+            "evidence_url": "https://bakersgas.com/products/esab-rebel-205ic-ac-dc-water-cooled-multiprocess-welder-0700303000.js?currency=USD",
+            "response_sha256": "cf6377904a1b7b6dddd30b959e3eec7e3b0f29ca5a113748040630ebb01683ff",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "ESAB Rebel 205ic AC/DC Water Cooled Multiprocess Welder - 0700303000",
+              "variant": "42708611661926",
+              "sku": "ESA0700303000",
+              "price_minor": 506700,
+              "reference_minor": 817014,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:04:31.963294+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "ESAB Rogue EMP PRO 210 Multiprocess 200A Welder - 0700301085",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "39448338825318",
+              "url": "https://bakersgas.com/products/esab-0700301085?currency=USD&variant=39448338825318",
+              "current_price": 1979.0,
+              "original_price": 3178.61,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/files/ESAB_Rogue_EMP_210_PRO_withTorchandAccessories_Right_3QTR_hi.png?v=1750429427",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 37.740081356316125,
+              "savings": 1199.61
+            },
+            "check_started_at": "2026-11-05T21:04:31.963353+00:00",
+            "evidence_url": "https://bakersgas.com/products/esab-0700301085.js?currency=USD",
+            "response_sha256": "9e87a5a2897a01002c32c899cac9efcb99733ebd1b08adbaebfe7f6505f5e94f",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "ESAB Rogue EMP PRO 210 Multiprocess 200A Welder - 0700301085",
+              "variant": "39448338825318",
+              "sku": "ESA0700301085",
+              "price_minor": 197900,
+              "reference_minor": 317861,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:04:34.082637+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "ESAB Renegade ET 300iP - 0445100921",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "39839119966310",
+              "url": "https://bakersgas.com/products/esab-0445100921?currency=USD&variant=39839119966310",
+              "current_price": 7200.0,
+              "original_price": 11377.6,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/products/ESABRenegadeET300iP.jpg?v=1662993267",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 36.71776121501898,
+              "savings": 4177.6
+            },
+            "check_started_at": "2026-11-05T21:04:34.082666+00:00",
+            "evidence_url": "https://bakersgas.com/products/esab-0445100921.js?currency=USD",
+            "response_sha256": "bf04ffa8c7bb27d77a99cbd0bf24c1db80e5edea9a22a39b68e8827e8ba31f9b",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "ESAB Renegade ET 300iP - 0445100921",
+              "variant": "39839119966310",
+              "sku": "ESA0445100921",
+              "price_minor": 720000,
+              "reference_minor": 1137760,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:04:36.187114+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "ESAB Rebel 205ic AC/DC Multiprocess Welder - 0558102553",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "28853008498741",
+              "url": "https://bakersgas.com/products/esab-0558102553?currency=USD&variant=28853008498741",
+              "current_price": 3999.0,
+              "original_price": 6265.74,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/products/0558102553-completepackage.jpg?v=1585746840",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 36.17673251682962,
+              "savings": 2266.74
+            },
+            "check_started_at": "2026-11-05T21:04:36.187160+00:00",
+            "evidence_url": "https://bakersgas.com/products/esab-0558102553.js?currency=USD",
+            "response_sha256": "6d9c45efaa65ed1c83b05305df6ac2e980152f9bcaba4a0f683dca6ff31e3202",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "ESAB Rebel 205ic AC/DC Multiprocess Welder - 0558102553",
+              "variant": "28853008498741",
+              "sku": "ESA0558102553",
+              "price_minor": 399900,
+              "reference_minor": 626574,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:04:38.293107+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "ESAB Rebel EMP 215ic Multiprocess Welder, 3 in 1 Pkg - 0558102240",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "28853010530357",
+              "url": "https://bakersgas.com/products/esab-0558102240?currency=USD&variant=28853010530357",
+              "current_price": 2836.0,
+              "original_price": 4426.55,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/products/ESArebel-3.jpg?v=1674578505",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 35.932046401825346,
+              "savings": 1590.55
+            },
+            "check_started_at": "2026-11-05T21:04:38.293197+00:00",
+            "evidence_url": "https://bakersgas.com/products/esab-0558102240.js?currency=USD",
+            "response_sha256": "cd82fdf138b3dca2a1301d33f26fea7db237bbf3e59edf175ec2e63bfdff05eb",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "ESAB Rebel EMP 215ic Multiprocess Welder, 3 in 1 Pkg - 0558102240",
+              "variant": "28853010530357",
+              "sku": "ESA0558102240",
+              "price_minor": 283600,
+              "reference_minor": 442655,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:04:40.406047+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "ESAB Rebel EMP 235ic Multiprocess Welder 3-in-1 Pkg - 0558012702",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "28853010694197",
+              "url": "https://bakersgas.com/products/esab-0558012702?currency=USD&variant=28853010694197",
+              "current_price": 3410.0,
+              "original_price": 5322.41,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/products/abt_8831116856046285727MTc4MTMx.jpg-l.jpg?v=1674578521",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 35.9312792513166,
+              "savings": 1912.41
+            },
+            "check_started_at": "2026-11-05T21:04:40.406104+00:00",
+            "evidence_url": "https://bakersgas.com/products/esab-0558012702.js?currency=USD",
+            "response_sha256": "7653cfc7e9ba1312df05d96d5afa74a0be11f2d17bbe24c4f4a1b44ff5690819",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "ESAB Rebel EMP 235ic Multiprocess Welder 3-in-1 Pkg - 0558012702",
+              "variant": "28853010694197",
+              "sku": "ESA0558012702",
+              "price_minor": 341000,
+              "reference_minor": 532241,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:04:42.515020+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "ESAB Rebel EMP 235ic Multiprocess Welder w/ Single Cylinder Cart - 0558012704",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "28853010726965",
+              "url": "https://bakersgas.com/products/esab-0558012704?currency=USD&variant=28853010726965",
+              "current_price": 3971.0,
+              "original_price": 6197.54,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/products/ESA0558012704.jpg?v=1575044681",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 35.926190068962846,
+              "savings": 2226.54
+            },
+            "check_started_at": "2026-11-05T21:04:42.515093+00:00",
+            "evidence_url": "https://bakersgas.com/products/esab-0558012704.js?currency=USD",
+            "response_sha256": "cc509b076c7b4a04618b1caf675b62f16d5743ca110bbbc5ddb95c78bb4390d6",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "ESAB Rebel EMP 235ic Multiprocess Welder w/ Single Cylinder Cart - 0558012704",
+              "variant": "28853010726965",
+              "sku": "ESA0558012704",
+              "price_minor": 397100,
+              "reference_minor": 619754,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:04:44.612001+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "ESAB Ruffian 150 Engine Drive Welder - 0707070150",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "39926185721958",
+              "url": "https://bakersgas.com/products/esab-0707070150?currency=USD&variant=39926185721958",
+              "current_price": 2875.0,
+              "original_price": 4486.94,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/products/ESAB_Ruffian_150EDW_3QTR_right_hi.jpg?v=1674781020",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 35.92515166238015,
+              "savings": 1611.94
+            },
+            "check_started_at": "2026-11-05T21:04:44.612084+00:00",
+            "evidence_url": "https://bakersgas.com/products/esab-0707070150.js?currency=USD",
+            "response_sha256": "0ed51c72f63cb4c96675855f0242f1859811be50efb6ca2560cf16d3722ca7fc",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "ESAB Ruffian 150 Engine Drive Welder - 0707070150",
+              "variant": "39926185721958",
+              "sku": "ESA0707070150",
+              "price_minor": 287500,
+              "reference_minor": 448694,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:04:46.758924+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Hobart Multi-Handler 200 Multiprocess Welder - 500578",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "32234137452646",
+              "url": "https://bakersgas.com/products/hobart-500578?currency=USD&variant=32234137452646",
+              "current_price": 1645.0,
+              "original_price": 1812.42,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/products/dd2402c5-c61a-4ee3-bf90-6dceaa59dcf4.png?v=1607731048",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 9.2373732357842,
+              "savings": 167.42
+            },
+            "check_started_at": "2026-11-05T21:04:46.758999+00:00",
+            "evidence_url": "https://bakersgas.com/products/hobart-500578.js?currency=USD",
+            "response_sha256": "910c27062f6553823dc6e59a4ddd58afac6c5e09b1f9515ee4640c2d9af36fc0",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Hobart Multi-Handler 200 Multiprocess Welder - 500578",
+              "variant": "32234137452646",
+              "sku": "HOB500578",
+              "price_minor": 164500,
+              "reference_minor": 181242,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:04:48.951446+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Miller Maxstar 210 DX TIG Welder - 907684",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "28831102763061",
+              "url": "https://bakersgas.com/products/millermaxstar210dxtigwelder-907684?currency=USD&variant=28831102763061",
+              "current_price": 5746.0,
+              "original_price": 6637.0,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/products/MIL907684-2.jpg?v=1674571011",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 13.4247400934157,
+              "savings": 891.0
+            },
+            "check_started_at": "2026-11-05T21:04:48.951469+00:00",
+            "evidence_url": "https://bakersgas.com/products/millermaxstar210dxtigwelder-907684.js?currency=USD",
+            "response_sha256": "24c2647693464a596c2ac347ebfcd0c48e56bec112411778ff161b116a538330",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Miller Maxstar 210 DX TIG Welder - 907684",
+              "variant": "28831102763061",
+              "sku": "MIL907684",
+              "price_minor": 574600,
+              "reference_minor": 663700,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:04:51.153665+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Lincoln Ranger Air 330MPX Welder/Generator - K5239-1",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "42356836040806",
+              "url": "https://bakersgas.com/products/link5239-1?currency=USD&variant=42356836040806",
+              "current_price": 16648.0,
+              "original_price": 18203.0,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/files/K5239-1_RangerAir330MPX_018.jpg?v=1791926200",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 8.542547931659616,
+              "savings": 1555.0
+            },
+            "check_started_at": "2026-11-05T21:04:51.153742+00:00",
+            "evidence_url": "https://bakersgas.com/products/link5239-1.js?currency=USD",
+            "response_sha256": "3c9f22b6b46022d5e591e4a4e79919f889992f898d655a491574a7fd1a01b756",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Lincoln Ranger Air 330MPX Welder/Generator - K5239-1",
+              "variant": "42356836040806",
+              "sku": "LINK5239-1",
+              "price_minor": 1664800,
+              "reference_minor": 1820300,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:04:53.248698+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Miller Continuum 500 MIGRunner Package - 951853001",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "31477346041958",
+              "url": "https://bakersgas.com/products/miller-951853001?currency=USD&variant=31477346041958",
+              "current_price": 25746.0,
+              "original_price": 29152.0,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/products/Continuum-500-System-with-Cart-and-Gun.jpg?v=1583181769",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 11.683589462129529,
+              "savings": 3406.0
+            },
+            "check_started_at": "2026-11-05T21:04:53.248750+00:00",
+            "evidence_url": "https://bakersgas.com/products/miller-951853001.js?currency=USD",
+            "response_sha256": "10e6939680e2dba97ba90126bc5fe1963db2219173370879bc136a12a428b56c",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Miller Continuum 500 MIGRunner Package - 951853001",
+              "variant": "31477346041958",
+              "sku": "MIL951853001",
+              "price_minor": 2574600,
+              "reference_minor": 2915200,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:04:55.350676+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Fronius Ignis 180XT TIG/Stick Welder - 49,0400,0005",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "28853091434549",
+              "url": "https://bakersgas.com/products/fronius-4904000005?currency=USD&variant=28853091434549",
+              "current_price": 2680.0,
+              "original_price": 2750.0,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/files/PW_Ignis_180_TIG.png?v=1712331013",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 2.5454545454545454,
+              "savings": 70.0
+            },
+            "check_started_at": "2026-11-05T21:04:55.350726+00:00",
+            "evidence_url": "https://bakersgas.com/products/fronius-4904000005.js?currency=USD",
+            "response_sha256": "4fbd8cd6dab6d6d75a7e0e8a6e1a4ffd35ee19c8377f91c0992032fb00753ab6",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Fronius Ignis 180XT TIG/Stick Welder - 49,0400,0005",
+              "variant": "28853091434549",
+              "sku": "FRO4904000005",
+              "price_minor": 268000,
+              "reference_minor": 275000,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:04:57.473912+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Miller Dynasty 800 208-600 V, TIGRunner - 907859001",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "41486488404070",
+              "url": "https://bakersgas.com/products/miller-907859001?currency=USD&variant=41486488404070",
+              "current_price": 29827.0,
+              "original_price": 34448.0,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/files/Dynasty800TIGRunner.png?v=1716928739",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 13.414421737111008,
+              "savings": 4621.0
+            },
+            "check_started_at": "2026-11-05T21:04:57.474000+00:00",
+            "evidence_url": "https://bakersgas.com/products/miller-907859001.js?currency=USD",
+            "response_sha256": "877ddf27a7d9767e4f5c3a82b01b29c890d8107359596fe7ff637a07609f2a67",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Miller Dynasty 800 208-600 V, TIGRunner - 907859001",
+              "variant": "41486488404070",
+              "sku": "MIL907859001",
+              "price_minor": 2982700,
+              "reference_minor": 3444800,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:04:59.581433+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Miller Millermatic 355 Pulse Capable MIG Welder with EZ-Latch Cart- 951926",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "39534568865894",
+              "url": "https://bakersgas.com/products/miller-951926?currency=USD&variant=39534568865894",
+              "current_price": 9281.0,
+              "original_price": 10718.9,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/products/Millermatic355onCartPackageCOMINGSOON.jpg?v=1648668500",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 13.41462276912743,
+              "savings": 1437.9
+            },
+            "check_started_at": "2026-11-05T21:04:59.581457+00:00",
+            "evidence_url": "https://bakersgas.com/products/miller-951926.js?currency=USD",
+            "response_sha256": "5cfb8ba1360042a8b9b18bf4cdc468c57ddc37c1fadf54e18fa6c23d62bc6bed",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Miller Millermatic 355 Pulse Capable MIG Welder with EZ-Latch Cart- 951926",
+              "variant": "39534568865894",
+              "sku": "MIL951926",
+              "price_minor": 928100,
+              "reference_minor": 1071890,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:05:01.690249+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Miller Dynasty 300 AC/DC Multiprocess Wireless Air Cooled and ArcReach SuiteCase 12 - 951000099",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "39711172984934",
+              "url": "https://bakersgas.com/products/miller-dynasty-300-ac-dc-multiprocess-wireless-air-cooled-and-arcreach-suitecase-12-951000099?currency=USD&variant=39711172984934",
+              "current_price": 19473.0,
+              "original_price": 22489.0,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/products/Dynasty300MultiprocesswithArcReachSuitCase12FingertipControl951938.png?v=1657121418",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 13.411000933789852,
+              "savings": 3016.0
+            },
+            "check_started_at": "2026-11-05T21:05:01.690293+00:00",
+            "evidence_url": "https://bakersgas.com/products/miller-dynasty-300-ac-dc-multiprocess-wireless-air-cooled-and-arcreach-suitecase-12-951000099.js?currency=USD",
+            "response_sha256": "1dc43a7a371795702f7168ae2c7a156e16e6d1da0c8fe46f82599a7453877330",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Miller Dynasty 300 AC/DC Multiprocess Wireless Air Cooled and ArcReach SuiteCase 12 - 951000099",
+              "variant": "39711172984934",
+              "sku": "MIL951000099",
+              "price_minor": 1947300,
+              "reference_minor": 2248900,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:05:03.816388+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Miller Millermatic 252 High Output MIG Welder, High Voltage Package - 907322",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "28831044239413",
+              "url": "https://bakersgas.com/products/miller-907322?currency=USD&variant=28831044239413",
+              "current_price": 4839.0,
+              "original_price": 6132.3,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/products/Millermatic252_7c8787b9-8fad-48f2-9101-434de8b3ed17.jpg?v=1611063402",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 21.0899662443129,
+              "savings": 1293.3
+            },
+            "check_started_at": "2026-11-05T21:05:03.816462+00:00",
+            "evidence_url": "https://bakersgas.com/products/miller-907322.js?currency=USD",
+            "response_sha256": "c57824f59ae151c3a04685a418fb530a47da2e72006f27e2660e9295ea726ffc",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Miller Millermatic 252 High Output MIG Welder, High Voltage Package - 907322",
+              "variant": "28831044239413",
+              "sku": "MIL907322",
+              "price_minor": 483900,
+              "reference_minor": 613230,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:05:05.924934+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Miller Dynasty 800 TIG Welder- 907859",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "41486472970342",
+              "url": "https://bakersgas.com/products/miller-907859?currency=USD&variant=41486472970342",
+              "current_price": 25194.01,
+              "original_price": 29175.0,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/files/Dynasty800LFLit.jpg?v=1716927793",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 13.645209940017137,
+              "savings": 3980.99
+            },
+            "check_started_at": "2026-11-05T21:05:05.925043+00:00",
+            "evidence_url": "https://bakersgas.com/products/miller-907859.js?currency=USD",
+            "response_sha256": "7983ff9f99ce60d316f0b0c804d0b2fbba8ffb71ef7395050928dc046ecee028",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Miller Dynasty 800 TIG Welder- 907859",
+              "variant": "41486472970342",
+              "sku": "MIL907859",
+              "price_minor": 2519401,
+              "reference_minor": 2917500,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:05:08.039478+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Miller Millermatic 255 Pulsed MIG Welder - 907734",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "28831155650613",
+              "url": "https://bakersgas.com/products/miller-907734?currency=USD&variant=28831155650613",
+              "current_price": 4191.0,
+              "original_price": 5311.26,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/products/907734_mdx.jpg?v=1574871090",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 21.092170219495937,
+              "savings": 1120.26
+            },
+            "check_started_at": "2026-11-05T21:05:08.039573+00:00",
+            "evidence_url": "https://bakersgas.com/products/miller-907734.js?currency=USD",
+            "response_sha256": "cde4dd6a255edde58ef671ac5cddf84659dbeefdc90bd0a6f6a9dd58b7c9cd02",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Miller Millermatic 255 Pulsed MIG Welder - 907734",
+              "variant": "28831155650613",
+              "sku": "MIL907734",
+              "price_minor": 419100,
+              "reference_minor": 531126,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:05:10.163242+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Miller Alumapower 450 Mpa 230/460V - 907483",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "28831065014325",
+              "url": "https://bakersgas.com/products/milleralumapower450mpa230-460v-907483?currency=USD&variant=28831065014325",
+              "current_price": 9116.0,
+              "original_price": 10528.0,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/products/MIL907483.jpg?v=1571718832",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 13.411854103343465,
+              "savings": 1412.0
+            },
+            "check_started_at": "2026-11-05T21:05:10.163269+00:00",
+            "evidence_url": "https://bakersgas.com/products/milleralumapower450mpa230-460v-907483.js?currency=USD",
+            "response_sha256": "1b5cd9a9988f1714f2d0dc2304c7bc7297f3327cbe68a73d7c1656db91004937",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Miller Alumapower 450 Mpa 230/460V - 907483",
+              "variant": "28831065014325",
+              "sku": "MIL907483",
+              "price_minor": 911600,
+              "reference_minor": 1052800,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:05:12.265834+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Thermal Dynamics Cutmaster 102 Plasma System 100 Amp 20ft - 1-1330-1",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "28855205691445",
+              "url": "https://bakersgas.com/products/thermaldynamicscutmaster102plasmasystem100amp20ft-1-1330-1?currency=USD&variant=28855205691445",
+              "current_price": 5590.71,
+              "original_price": 7529.58,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/products/V430139-en_WW-MainView-01.jpg?v=1571719457",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 25.75004183500275,
+              "savings": 1938.87
+            },
+            "check_started_at": "2026-11-05T21:05:12.265856+00:00",
+            "evidence_url": "https://bakersgas.com/products/thermaldynamicscutmaster102plasmasystem100amp20ft-1-1330-1.js?currency=USD",
+            "response_sha256": "078fbec83f10ffb74211e676b7d25c82a527931d3c4ec4d3d0f3c28762bbaf87",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Thermal Dynamics Cutmaster 102 Plasma System 100 Amp 20ft - 1-1330-1",
+              "variant": "28855205691445",
+              "sku": "THE1-1330-1",
+              "price_minor": 559071,
+              "reference_minor": 752958,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:05:14.383100+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Miller Syncrowave 212 AC/DC Air Cooled TIG Welder - 907911",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "42708550516838",
+              "url": "https://bakersgas.com/products/miller-907911?currency=USD&variant=42708550516838",
+              "current_price": 2799.0,
+              "original_price": 3546.0,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/files/ScreenShot2025-04-30at3.05.33PM.png?v=1791926374",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 21.065989847715738,
+              "savings": 747.0
+            },
+            "check_started_at": "2026-11-05T21:05:14.383155+00:00",
+            "evidence_url": "https://bakersgas.com/products/miller-907911.js?currency=USD",
+            "response_sha256": "68724fbb8b211a2cddeffb8c54bb1874ff253e21072ebec5d0b6bacc629cc0d4",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Miller Syncrowave 212 AC/DC Air Cooled TIG Welder - 907911",
+              "variant": "42708550516838",
+              "sku": "MIL907911",
+              "price_minor": 279900,
+              "reference_minor": 354600,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:05:16.495861+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Miller CST 282 Stick/TIG Welder 208-575V, Tweco - 907770",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "32292391125094",
+              "url": "https://bakersgas.com/products/miller-907770?currency=USD&variant=32292391125094",
+              "current_price": 4906.0,
+              "original_price": 5667.0,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/products/CST282Tweco907770.jpg?v=1611679546",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 13.428621845773778,
+              "savings": 761.0
+            },
+            "check_started_at": "2026-11-05T21:05:16.495939+00:00",
+            "evidence_url": "https://bakersgas.com/products/miller-907770.js?currency=USD",
+            "response_sha256": "805b163ed73083f10d4f6e5664daef50dea5e4dc4ea350706b30f4954c0ca303",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Miller CST 282 Stick/TIG Welder 208-575V, Tweco - 907770",
+              "variant": "32292391125094",
+              "sku": "MIL907770",
+              "price_minor": 490600,
+              "reference_minor": 566700,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:05:18.619199+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Miller Alumapower 350 Mpa 208-575 Auto-Line W/Aux Pwr - 907420001",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "28831064981557",
+              "url": "https://bakersgas.com/products/miller-907420001?currency=USD&variant=28831064981557",
+              "current_price": 8773.0,
+              "original_price": 9933.0,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/products/MIL907420001.jpg?v=1571718832",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 11.67824423638377,
+              "savings": 1160.0
+            },
+            "check_started_at": "2026-11-05T21:05:18.619281+00:00",
+            "evidence_url": "https://bakersgas.com/products/miller-907420001.js?currency=USD",
+            "response_sha256": "1277deafc96c7e304212be20e91c1f85b9cab80471a96c558df92e69318a5579",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Miller Alumapower 350 Mpa 208-575 Auto-Line W/Aux Pwr - 907420001",
+              "variant": "28831064981557",
+              "sku": "MIL907420001",
+              "price_minor": 877300,
+              "reference_minor": 993300,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:05:20.734907+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Dewalt 1-1/2\" Die Grinder, No Lock-On - DWE4887N",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "31427604840550",
+              "url": "https://bakersgas.com/products/dewalt-dwe4887n?currency=USD&variant=31427604840550",
+              "current_price": 253.88,
+              "original_price": 305.92,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/products/DWE4887N.jpg?v=1581951975",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 17.010983263598327,
+              "savings": 52.04
+            },
+            "check_started_at": "2026-11-05T21:05:20.734960+00:00",
+            "evidence_url": "https://bakersgas.com/products/dewalt-dwe4887n.js?currency=USD",
+            "response_sha256": "ffb524377f4fbb6892795e5544be46917ba1c2856b7f2dba850cb26a52ea9701",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Dewalt 1-1/2\" Die Grinder, No Lock-On - DWE4887N",
+              "variant": "31427604840550",
+              "sku": "NAS115-DWE4887N",
+              "price_minor": 25388,
+              "reference_minor": 30592,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:05:22.846976+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Miller Multimatic 220 AC/DC Multiprocess Welder w/ Wireless Pedal - 907757002",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "41768126480486",
+              "url": "https://bakersgas.com/products/miller-907757002?currency=USD&variant=41768126480486",
+              "current_price": 4425.0,
+              "original_price": 5607.46,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/files/Multimatic_220_AC-DC_All_Accessories_Wireless_Foot_Control_907757002.webp?v=1789498703",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 21.087265892222145,
+              "savings": 1182.46
+            },
+            "check_started_at": "2026-11-05T21:05:22.847036+00:00",
+            "evidence_url": "https://bakersgas.com/products/miller-907757002.js?currency=USD",
+            "response_sha256": "5e0aa57f0b7bd721ae3fe4e789ea2099bdd75f1ed1a1152f0d94d9fa4c9f1984",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Miller Multimatic 220 AC/DC Multiprocess Welder w/ Wireless Pedal - 907757002",
+              "variant": "41768126480486",
+              "sku": "MIL907757002",
+              "price_minor": 442500,
+              "reference_minor": 560746,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:05:24.970734+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Miller Maxstar 210 TIG/Stick DC Welding Power Source - 907683",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "28831102206005",
+              "url": "https://bakersgas.com/products/miller-907683?currency=USD&variant=28831102206005",
+              "current_price": 5020.0,
+              "original_price": 5798.0,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/products/MIL907683-25.png?v=1571718841",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 13.418420144877544,
+              "savings": 778.0
+            },
+            "check_started_at": "2026-11-05T21:05:24.970830+00:00",
+            "evidence_url": "https://bakersgas.com/products/miller-907683.js?currency=USD",
+            "response_sha256": "13011b5f767474060e79fa17e0daaa2d8168d430cf36cc4a9593bcbc50c39b48",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Miller Maxstar 210 TIG/Stick DC Welding Power Source - 907683",
+              "variant": "28831102206005",
+              "sku": "MIL907683",
+              "price_minor": 502000,
+              "reference_minor": 579800,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:05:27.083410+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Miller Millermatic 355 Pulse Capable MIG Welder - 907808",
+            "store": "Baker's Gas",
+            "offer": {
+              "variant_key": "39581669523558",
+              "url": "https://bakersgas.com/products/miller-907808?currency=USD&variant=39581669523558",
+              "current_price": 8538.0,
+              "original_price": 9860.56,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/products/Millermatic355COMINGSOON.jpg?v=1648666736",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 13.412625652092782,
+              "savings": 1322.56
+            },
+            "check_started_at": "2026-11-05T21:05:27.083480+00:00",
+            "evidence_url": "https://bakersgas.com/products/miller-907808.js?currency=USD",
+            "response_sha256": "16678319a93ff2501e9c7665f8ecfc870861ffc12e8e489a9a6de02c58d3b3d9",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Miller Millermatic 355 Pulse Capable MIG Welder - 907808",
+              "variant": "39581669523558",
+              "sku": "MIL907808",
+              "price_minor": 853800,
+              "reference_minor": 986056,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T21:04:23.427150+00:00",
+            "checked_at": "2026-11-05T21:05:29.195404+00:00",
+            "within_audit_window": true
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "catalog": "tools",
+        "name": "Cyberweld",
+        "domain": "store.cyberweld.com",
+        "scrape_urls": [
+          "https://store.cyberweld.com/collections/welders-plasma-cutters?currency=USD"
+        ]
+      },
+      "checked_at": "2026-11-05T20:58:43.839380+00:00",
+      "snapshot": "01-tools.db",
+      "refresh": {
+        "source": "Cyberweld",
+        "status": "complete",
+        "errors": 0,
+        "pages": 2,
+        "collections": [
+          {
+            "url": "https://store.cyberweld.com/collections/welders-plasma-cutters?currency=USD",
+            "pages": 2,
+            "products": 307,
+            "status": "complete",
+            "observed_currency": "USD"
+          }
+        ],
+        "parsed_products": 307,
+        "accepted_products": 215
+      },
+      "eligible_listings": 215,
+      "deep_listings": 1,
+      "disposition": "merchant-audited-needs-review",
+      "merchant_audit": {
+        "receipt": "01-tools-merchant-audit.json",
+        "passed": true,
+        "sample_size": 30
+      },
+      "merchant_audit_detail": {
+        "source": "Cyberweld",
+        "date": "2026-11-05T20:59:49.880599+00:00",
+        "seed": 20261105,
+        "method": "top10-plus-seeded20-plus-all-deep-listings-v1",
+        "population": 215,
+        "fixed_sample_size": 30,
+        "deep_selected_listings": 1,
+        "selected_offers": 30,
+        "refresh_complete": true,
+        "passed": true,
+        "sample_size": 30,
+        "match": 30,
+        "mismatch": 0,
+        "inconclusive": 0,
+        "verified_match_percent": 100.0,
+        "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+        "results": [
+          {
+            "name": "Everlast Typhoon 230 AC/DC TIG Welder",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "45452973932771",
+              "url": "https://store.cyberweld.com/products/everlast-typhoon-230-ac-dc-tig-welder?currency=USD&variant=45452973932771",
+              "current_price": 2250.0,
+              "original_price": 3750.0,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-everlast-typhoon-230-ac-dc-tig-welder-1205645455.jpg?v=1763563207",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 40.0,
+              "savings": 1500.0
+            },
+            "check_started_at": "2026-11-05T20:58:43.863155+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/everlast-typhoon-230-ac-dc-tig-welder.js?currency=USD",
+            "response_sha256": "eeae2982fab203a3f9098905b40efa0f7422bfe3b386150f17a2b426159242e6",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Everlast Typhoon 230 AC/DC TIG Welder",
+              "variant": "45452973932771",
+              "sku": "TYP-230",
+              "price_minor": 225000,
+              "reference_minor": 375000,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:58:48.166475+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "ESAB Renegade ES 300i Stick Welder 0445100881",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "45853031268579",
+              "url": "https://store.cyberweld.com/products/esab-renegade-es-300i-stick-welder-0445100881?currency=USD&variant=45853031268579",
+              "current_price": 4530.0,
+              "original_price": 7305.02,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-esab-renegade-es-300i-stick-welder-0445100881-1205644637.jpg?v=1763422210",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 37.987849451473096,
+              "savings": 2775.02
+            },
+            "check_started_at": "2026-11-05T20:58:48.166569+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/esab-renegade-es-300i-stick-welder-0445100881.js?currency=USD",
+            "response_sha256": "b3016a85becee48a7c5de60e7086fda99a3bc75cca63906ea31122464726fbf9",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "ESAB Renegade ES 300i Stick Welder 0445100881",
+              "variant": "45853031268579",
+              "sku": "0445100881",
+              "price_minor": 453000,
+              "reference_minor": 730502,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:58:50.387067+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "ESAB Rebel EMP 205ic AC/DC Water Cooled Package 0700303000",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "46737713168611",
+              "url": "https://store.cyberweld.com/products/esab-emp-205ic-ac-dc-water-cooled-package-0700303000?currency=USD&variant=46737713168611",
+              "current_price": 5067.0,
+              "original_price": 8170.14,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-esab-emp-205ic-ac-dc-water-cooled-package-0700303000-1205643685.jpg?v=1763456414",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 37.98147889754643,
+              "savings": 3103.14
+            },
+            "check_started_at": "2026-11-05T20:58:50.387190+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/esab-emp-205ic-ac-dc-water-cooled-package-0700303000.js?currency=USD",
+            "response_sha256": "d8c52af117ee061286789757f2f230bea72ac9ac00ae1d3082f0eb1a9c0cd816",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "ESAB Rebel EMP 205ic AC/DC Water Cooled Package 0700303000",
+              "variant": "46737713168611",
+              "sku": "0700303000",
+              "price_minor": 506700,
+              "reference_minor": 817014,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:58:52.569935+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "ESAB Rogue EMP 210 PRO Multi-Process Welder 0700301085",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "45691287929059",
+              "url": "https://store.cyberweld.com/products/esab-rogue-emp-210-pro-multi-process-welder-0700301085?currency=USD&variant=45691287929059",
+              "current_price": 1979.0,
+              "original_price": 3178.61,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-esab-rogue-emp-210-pro-multi-process-welder-0700301085-1205645149.jpg?v=1763455806",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 37.740081356316125,
+              "savings": 1199.61
+            },
+            "check_started_at": "2026-11-05T20:58:52.569964+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/esab-rogue-emp-210-pro-multi-process-welder-0700301085.js?currency=USD",
+            "response_sha256": "2736be532acc16ee29c095c8838bb4089308711bc69560b6e378b10d3b7b22b7",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "ESAB Rogue EMP 210 PRO Multi-Process Welder 0700301085",
+              "variant": "45691287929059",
+              "sku": "0700301085",
+              "price_minor": 197900,
+              "reference_minor": 317861,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:58:54.677886+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "ESAB Rebel EMP 205ic AC/DC Multiprocess Welder 0558102553",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "43706898055395",
+              "url": "https://store.cyberweld.com/products/esab-rebel-emp-205ic-ac-dc-multiprocess-welder-0558102553?currency=USD&variant=43706898055395",
+              "current_price": 3999.0,
+              "original_price": 6265.74,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-esab-rebel-emp-205ic-ac-dc-multiprocess-welder-0558102553-1205643202.jpg?v=1763457377",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 36.17673251682962,
+              "savings": 2266.74
+            },
+            "check_started_at": "2026-11-05T20:58:54.678002+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/esab-rebel-emp-205ic-ac-dc-multiprocess-welder-0558102553.js?currency=USD",
+            "response_sha256": "447012d65878fc7d897728e6fb6c747acaf4c1765b542452ef1cc787681030dc",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "ESAB Rebel EMP 205ic AC/DC Multiprocess Welder 0558102553",
+              "variant": "43706898055395",
+              "sku": "0558102553",
+              "price_minor": 399900,
+              "reference_minor": 626574,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:58:56.787794+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "ESAB Rebel EMP 215ic Multiprocess Welder 0558102240",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "43706898252003",
+              "url": "https://store.cyberweld.com/products/esab-rebel-emp-215ic-multiprocess-welder-0558102240?currency=USD&variant=43706898252003",
+              "current_price": 2836.0,
+              "original_price": 4426.55,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-esab-rebel-emp-215ic-multiprocess-welder-0558102240-1205643200.jpg?v=1763461447",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 35.932046401825346,
+              "savings": 1590.55
+            },
+            "check_started_at": "2026-11-05T20:58:56.787916+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/esab-rebel-emp-215ic-multiprocess-welder-0558102240.js?currency=USD",
+            "response_sha256": "db915f37f6a0409c4d9f6e6624d1cc4b2e126baa2b9509926e0e864f96c4729d",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "ESAB Rebel EMP 215ic Multiprocess Welder 0558102240",
+              "variant": "43706898252003",
+              "sku": "0558102240",
+              "price_minor": 283600,
+              "reference_minor": 442655,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:58:58.916584+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "ESAB Rebel EMP 235ic Multiprocess Welder 0558012702",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "43848567488739",
+              "url": "https://store.cyberweld.com/products/esab-rebel-emp-235ic-multiprocess-welder-0558012702?currency=USD&variant=43848567488739",
+              "current_price": 3410.0,
+              "original_price": 5322.41,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-esab-rebel-emp-235ic-multiprocess-welder-0558012702-1205643198.jpg?v=1763457015",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 35.9312792513166,
+              "savings": 1912.41
+            },
+            "check_started_at": "2026-11-05T20:58:58.916612+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/esab-rebel-emp-235ic-multiprocess-welder-0558012702.js?currency=USD",
+            "response_sha256": "e6b0751b136add1103f9f7a58e90a3964a88e5805afce7098570954c43eb5ad7",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "ESAB Rebel EMP 235ic Multiprocess Welder 0558012702",
+              "variant": "43848567488739",
+              "sku": "0558012702",
+              "price_minor": 341000,
+              "reference_minor": 532241,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:59:01.070942+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "ESAB Rebel EMP 235ic Multiprocess Welder w/Cart 0558012704",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "43850484252899",
+              "url": "https://store.cyberweld.com/products/esab-rebel-emp-235ic-multiprocess-welder-w-cart-0558012704?currency=USD&variant=43850484252899",
+              "current_price": 3971.0,
+              "original_price": 6197.54,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-esab-rebel-emp-235ic-multiprocess-welder-w-cart-0558012704-1205647929.jpg?v=1763430252",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 35.926190068962846,
+              "savings": 2226.54
+            },
+            "check_started_at": "2026-11-05T20:59:01.070966+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/esab-rebel-emp-235ic-multiprocess-welder-w-cart-0558012704.js?currency=USD",
+            "response_sha256": "264d855cbbf7eeec0d50b83416531000cd6c863b8fdd0935c23adf67bd0ea8bc",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "ESAB Rebel EMP 235ic Multiprocess Welder w/Cart 0558012704",
+              "variant": "43850484252899",
+              "sku": "0558012704",
+              "price_minor": 397100,
+              "reference_minor": 619754,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:59:03.172219+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "ESAB Renegade VOLT EMP 200i Multiprocess Battery-Powered Welder 0448756880",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "49549914013923",
+              "url": "https://store.cyberweld.com/products/esab-renegade-volt-emp-200i-battery-powered-welder-0448756880?currency=USD&variant=49549914013923",
+              "current_price": 4191.0,
+              "original_price": 6540.86,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-esab-renegade-volt-emp-200i-multiprocess-battery-powered-welder-0448756880-1254584364.jpg?v=1787002271",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 35.9258568445128,
+              "savings": 2349.86
+            },
+            "check_started_at": "2026-11-05T20:59:03.172298+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/esab-renegade-volt-emp-200i-battery-powered-welder-0448756880.js?currency=USD",
+            "response_sha256": "ba2418d471939a3a9361a6ac9f2bd1060db711a58a3f06c278bf1324ac93bebf",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "ESAB Renegade VOLT EMP 200i Multiprocess Battery-Powered Welder 0448756880",
+              "variant": "49549914013923",
+              "sku": "0448756880",
+              "price_minor": 419100,
+              "reference_minor": 654086,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:59:05.269913+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "ESAB Rebel EMP 285ic Multiprocess Welder 0558102554",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "43840911442147",
+              "url": "https://store.cyberweld.com/products/esab-rebel-emp-285ic-multiprocess-welder-0558102554?currency=USD&variant=43840911442147",
+              "current_price": 4392.0,
+              "original_price": 6853.92,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-esab-rebel-emp-285ic-multiprocess-welder-0558102554-1205647936.jpg?v=1763430008",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 35.91988234470201,
+              "savings": 2461.92
+            },
+            "check_started_at": "2026-11-05T20:59:05.270000+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/esab-rebel-emp-285ic-multiprocess-welder-0558102554.js?currency=USD",
+            "response_sha256": "aee7d44d746986e780adcd21d0745b47ee696b66d90cdc1f4d94f35e919f386e",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "ESAB Rebel EMP 285ic Multiprocess Welder 0558102554",
+              "variant": "43840911442147",
+              "sku": "0558102554",
+              "price_minor": 439200,
+              "reference_minor": 685392,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:59:07.394309+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Hobart AirForce 27i Plasma Cutter 500575",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "43708065317091",
+              "url": "https://store.cyberweld.com/products/hobart-airforce-27i-plasma-cutter-500575?currency=USD&variant=43708065317091",
+              "current_price": 1565.0,
+              "original_price": 2086.0,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-hobart-airforce-27i-plasma-cutter-500575-1255672228.jpg?v=1787607612",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 24.976030680728666,
+              "savings": 521.0
+            },
+            "check_started_at": "2026-11-05T20:59:07.394387+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/hobart-airforce-27i-plasma-cutter-500575.js?currency=USD",
+            "response_sha256": "2b8a5009079ab68be05fdc4764c6ea370cc11a41a765ee2aec48ddb557b9cb9e",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Hobart AirForce 27i Plasma Cutter 500575",
+              "variant": "43708065317091",
+              "sku": "500575",
+              "price_minor": 156500,
+              "reference_minor": 208600,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:59:09.525340+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Thermal Dynamics Cutmaster 82 Plasma Cutter w/50 ft. Torch 1-1131-1",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "43706906214627",
+              "url": "https://store.cyberweld.com/products/thermal-dynamics-cutmaster-82-plasma-cutter-w-50-ft-torch-1-1131-1?currency=USD&variant=43706906214627",
+              "current_price": 3602.0,
+              "original_price": 5290.39,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/products/welders-thermal-dynamics-cutmaster-82-plasma-cutter-w-50-ft-torch-1-1131-1-1205648316.jpg?v=1763532250",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 31.914282311890048,
+              "savings": 1688.39
+            },
+            "check_started_at": "2026-11-05T20:59:09.525458+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/thermal-dynamics-cutmaster-82-plasma-cutter-w-50-ft-torch-1-1131-1.js?currency=USD",
+            "response_sha256": "71bd513f18b7d9e5ff9050df0ffe5d37dc4524e51a1475de094cf362bfa066fc",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Thermal Dynamics Cutmaster 82 Plasma Cutter w/50 ft. Torch 1-1131-1",
+              "variant": "43706906214627",
+              "sku": "1-1131-1",
+              "price_minor": 360200,
+              "reference_minor": 529039,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:59:11.647359+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Miller XMT 450 CC/CV ArcReach with Aux. Power 907481004",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "43706903331043",
+              "url": "https://store.cyberweld.com/products/miller-xmt-450-cc-cv-arcreach-with-aux-power-907481004?currency=USD&variant=43706903331043",
+              "current_price": 10060.0,
+              "original_price": 11619.0,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-miller-xmt-450-cc-cv-arcreach-with-aux-power-907481004-1205642189.jpg?v=1763529360",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 13.417677941303038,
+              "savings": 1559.0
+            },
+            "check_started_at": "2026-11-05T20:59:11.647381+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/miller-xmt-450-cc-cv-arcreach-with-aux-power-907481004.js?currency=USD",
+            "response_sha256": "d93f3147c8e9e8ef0fe5c5a2f99371d5063754aa2e08bbecf78a7094092f7bf9",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Miller XMT 450 CC/CV ArcReach with Aux. Power 907481004",
+              "variant": "43706903331043",
+              "sku": "907481004",
+              "price_minor": 1006000,
+              "reference_minor": 1161900,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:59:13.790509+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Thermal Dynamics Cutmaster 50+ Plasma Cutter 1-5000-1",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "45687919575267",
+              "url": "https://store.cyberweld.com/products/thermal-dynamics-cutmaster-50-plasma-cutter-1-5000-1?currency=USD&variant=45687919575267",
+              "current_price": 2700.0,
+              "original_price": 3967.53,
+              "size": "16 ft",
+              "options": "16 ft",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-thermal-dynamics-cutmaster-50-plasma-cutter-1-5000-1-16-ft-1205643168.jpg?v=1763455813",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 31.94758451731934,
+              "savings": 1267.53
+            },
+            "check_started_at": "2026-11-05T20:59:13.790622+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/thermal-dynamics-cutmaster-50-plasma-cutter-1-5000-1.js?currency=USD",
+            "response_sha256": "81675ba9b9eba77f85510eb190d8bd672f703b3d11c77c4ea89864150b407065",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Thermal Dynamics Cutmaster 50+ Plasma Cutter 1-5000-1",
+              "variant": "45687919575267",
+              "sku": "1-5000-1",
+              "price_minor": 270000,
+              "reference_minor": 396753,
+              "currency": "USD",
+              "options": "16 ft",
+              "raw_options": [
+                "16 ft"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Length",
+                  "position": 1,
+                  "values": [
+                    "16 ft"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:59:15.907356+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Hypertherm Powermax30 AIR Plasma Cutter w/75 Degree Handheld Torch 088096",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "45017385435363",
+              "url": "https://store.cyberweld.com/products/hypertherm-powermax30-air-plasma-cutter-w-75-degree-handheld-torch-088096?currency=USD&variant=45017385435363",
+              "current_price": 2340.0,
+              "original_price": 2390.0,
+              "size": "15 ft",
+              "options": "15 ft",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-hypertherm-powermax30-air-plasma-cutter-w-75-degree-handheld-torch-088096-15-ft-1205646090.jpg?v=1763556133",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 2.092050209205021,
+              "savings": 50.0
+            },
+            "check_started_at": "2026-11-05T20:59:15.907435+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/hypertherm-powermax30-air-plasma-cutter-w-75-degree-handheld-torch-088096.js?currency=USD",
+            "response_sha256": "7b267529a153ddef6560b48de16d94ad15fe7baac29595f00db97e0aae04491a",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Hypertherm Powermax30 AIR Plasma Cutter w/75 Degree Handheld Torch 088096",
+              "variant": "45017385435363",
+              "sku": "088096",
+              "price_minor": 234000,
+              "reference_minor": 239000,
+              "currency": "USD",
+              "options": "15 ft",
+              "raw_options": [
+                "15 ft"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Length",
+                  "position": 1,
+                  "values": [
+                    "15 ft"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:59:18.020876+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Miller Syncrowave 400 Complete w/Wired Foot Control 951000004",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "44017335533795",
+              "url": "https://store.cyberweld.com/products/miller-syncrowave-400-complete-w-wired-foot-control-951000004?currency=USD&variant=44017335533795",
+              "current_price": 17869.0,
+              "original_price": 20638.0,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-miller-syncrowave-400-complete-w-wired-foot-control-951000004-1205642985.jpg?v=1763428699",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 13.416997771101851,
+              "savings": 2769.0
+            },
+            "check_started_at": "2026-11-05T20:59:18.020989+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/miller-syncrowave-400-complete-w-wired-foot-control-951000004.js?currency=USD",
+            "response_sha256": "909360a7f9f297ea3ff7abb68791aee0e0683cb88dd7972cef376f3ac14f10d6",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Miller Syncrowave 400 Complete w/Wired Foot Control 951000004",
+              "variant": "44017335533795",
+              "sku": "951000004",
+              "price_minor": 1786900,
+              "reference_minor": 2063800,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:59:20.136787+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Everlast PowerPro 256D TIG/Stick Welder, Plasma Cutter",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "45417519218915",
+              "url": "https://store.cyberweld.com/products/everlast-powerpro-256d-tig-stick-welder-plasma-cutter?currency=USD&variant=45417519218915",
+              "current_price": 2199.0,
+              "original_price": 2950.0,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-everlast-powerpro-256d-tig-stick-welder-plasma-cutter-1205645812.jpg?v=1763562976",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 25.45762711864407,
+              "savings": 751.0
+            },
+            "check_started_at": "2026-11-05T20:59:20.136875+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/everlast-powerpro-256d-tig-stick-welder-plasma-cutter.js?currency=USD",
+            "response_sha256": "62932e444de1da12c0dfd94554c8c3c95377f1716afdf998703a6e6035f69ca9",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Everlast PowerPro 256D TIG/Stick Welder, Plasma Cutter",
+              "variant": "45417519218915",
+              "sku": "PP-256D",
+              "price_minor": 219900,
+              "reference_minor": 295000,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:59:22.330889+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Miller Maxstar 161 STH TIG/Stick Package w/Remote Control 907711001",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "43706887078115",
+              "url": "https://store.cyberweld.com/products/miller-maxstar-161-sth-tig-stick-package-w-remote-control-907711001?currency=USD&variant=43706887078115",
+              "current_price": 3469.0,
+              "original_price": 4398.0,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-miller-maxstar-161-sth-tig-stick-package-w-remote-control-907711001-1205643046.jpg?v=1763432176",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 21.12323783537972,
+              "savings": 929.0
+            },
+            "check_started_at": "2026-11-05T20:59:22.330915+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/miller-maxstar-161-sth-tig-stick-package-w-remote-control-907711001.js?currency=USD",
+            "response_sha256": "187a1033afd6e5ecaab12eba24ca46a284e41026aa766d13bfbc63ae940812b7",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Miller Maxstar 161 STH TIG/Stick Package w/Remote Control 907711001",
+              "variant": "43706887078115",
+              "sku": "907711001",
+              "price_minor": 346900,
+              "reference_minor": 439800,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:59:24.451742+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Miller Syncrowave 400 TIGRunner 907783001",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "47746273673443",
+              "url": "https://store.cyberweld.com/products/miller-syncrowave-400-tigrunner-907783001?currency=USD&variant=47746273673443",
+              "current_price": 16542.0,
+              "original_price": 19105.0,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-miller-syncrowave-400-tigrunner-907783001-1211858295.jpg?v=1766073243",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 13.415336299398064,
+              "savings": 2563.0
+            },
+            "check_started_at": "2026-11-05T20:59:24.451798+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/miller-syncrowave-400-tigrunner-907783001.js?currency=USD",
+            "response_sha256": "5beef755fd88be7d0b1fc8ae62d0185b30db42c9e369e28f3d03cb1e05ad1f6c",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Miller Syncrowave 400 TIGRunner 907783001",
+              "variant": "47746273673443",
+              "sku": "907783001",
+              "price_minor": 1654200,
+              "reference_minor": 1910500,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:59:26.642791+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Miller XMT 400 ArcReach 6-Pack Rack Fused 460/575 907883",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "45524612645091",
+              "url": "https://store.cyberweld.com/products/miller-xmt-400-arcreach-6-pack-rack-fused-460-575-907883?currency=USD&variant=45524612645091",
+              "current_price": 58510.0,
+              "original_price": 67575.0,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-miller-xmt-400-arcreach-6-pack-rack-fused-460-575-907883-1205642857.jpg?v=1763562733",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 13.414724380318164,
+              "savings": 9065.0
+            },
+            "check_started_at": "2026-11-05T20:59:26.642914+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/miller-xmt-400-arcreach-6-pack-rack-fused-460-575-907883.js?currency=USD",
+            "response_sha256": "86f604f7f92091e7f9baad11b3c338cab5b4822bb2f20a1724cc231cae9d1695",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Miller XMT 400 ArcReach 6-Pack Rack Fused 460/575 907883",
+              "variant": "45524612645091",
+              "sku": "907883",
+              "price_minor": 5851000,
+              "reference_minor": 6757500,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:59:28.745035+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Hypertherm Powermax45 SYNC Plasma Cutter 480V (No Torch) 088573",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "44981397520611",
+              "url": "https://store.cyberweld.com/products/hypertherm-powermax45-sync-plasma-cutter-460v-no-torch-088573?currency=USD&variant=44981397520611",
+              "current_price": 2557.0,
+              "original_price": 2600.0,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-hypertherm-powermax45-sync-plasma-cutter-480v-no-torch-088573-1205646508.jpg?v=1763558287",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 1.6538461538461537,
+              "savings": 43.0
+            },
+            "check_started_at": "2026-11-05T20:59:28.745131+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/hypertherm-powermax45-sync-plasma-cutter-460v-no-torch-088573.js?currency=USD",
+            "response_sha256": "bc39797eac06dcccbb1b5303da2e94d7118510a6e3a6b327508883614e5c2180",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Hypertherm Powermax45 SYNC Plasma Cutter 480V (No Torch) 088573",
+              "variant": "44981397520611",
+              "sku": "088573",
+              "price_minor": 255700,
+              "reference_minor": 260000,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:59:30.868924+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Miller Maxstar 161 STL TIG/Stick Welder Package 907710001",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "43706869776611",
+              "url": "https://store.cyberweld.com/products/miller-maxstar-161-stl-tig-stick-welder-package-907710001?currency=USD&variant=43706869776611",
+              "current_price": 2479.0,
+              "original_price": 3141.0,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-miller-maxstar-161-stl-tig-stick-welder-package-907710001-1230351937.jpg?v=1774900509",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 21.07609041706463,
+              "savings": 662.0
+            },
+            "check_started_at": "2026-11-05T20:59:30.868946+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/miller-maxstar-161-stl-tig-stick-welder-package-907710001.js?currency=USD",
+            "response_sha256": "15e7ce22d4771fd3e54ba422f09c1fe35b91a35ae76d18ba8130bc01d3f46784",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Miller Maxstar 161 STL TIG/Stick Welder Package 907710001",
+              "variant": "43706869776611",
+              "sku": "907710001",
+              "price_minor": 247900,
+              "reference_minor": 314100,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:59:32.970556+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Miller Deltaweld 350 MIGRunner w/Intellx Feeder 951000138",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "46802235621603",
+              "url": "https://store.cyberweld.com/products/miller-deltaweld-350-migrunner-w-intellx-feeder-951000138?currency=USD&variant=46802235621603",
+              "current_price": 12131.0,
+              "original_price": 14011.0,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-miller-deltaweld-350-migrunner-w-intellx-feeder-951000138-1205643452.jpg?v=1763574016",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 13.418028691742203,
+              "savings": 1880.0
+            },
+            "check_started_at": "2026-11-05T20:59:32.970610+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/miller-deltaweld-350-migrunner-w-intellx-feeder-951000138.js?currency=USD",
+            "response_sha256": "96365baf83412c18ceef7aff2ad1631628e4890de393975e728e0b6e588e74ba",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Miller Deltaweld 350 MIGRunner w/Intellx Feeder 951000138",
+              "variant": "46802235621603",
+              "sku": "951000138",
+              "price_minor": 1213100,
+              "reference_minor": 1401100,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:59:35.084278+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Miller XMT 400 MIGRunner w/Intellx Elite Wire Feeder 951972",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "47203250634979",
+              "url": "https://store.cyberweld.com/products/miller-xmt-400-migrunner-w-intellx-elite-wire-feeder-951972?currency=USD&variant=47203250634979",
+              "current_price": 17977.0,
+              "original_price": 20762.0,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-miller-xmt-400-migrunner-w-intellx-elite-wire-feeder-951972-1205642370.jpg?v=1763417641",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 13.41392929390232,
+              "savings": 2785.0
+            },
+            "check_started_at": "2026-11-05T20:59:35.084350+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/miller-xmt-400-migrunner-w-intellx-elite-wire-feeder-951972.js?currency=USD",
+            "response_sha256": "e78fba992d2e9a87f3431b5dc5309a8b4be5cb19c4962f4d294afc1777a4fdd0",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Miller XMT 400 MIGRunner w/Intellx Elite Wire Feeder 951972",
+              "variant": "47203250634979",
+              "sku": "951972",
+              "price_minor": 1797700,
+              "reference_minor": 2076200,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:59:37.203270+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Millermatic 255 MIG Welder (208-240V) 907734",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "43706878984419",
+              "url": "https://store.cyberweld.com/products/millermatic-255-mig-welder-907734?currency=USD&variant=43706878984419",
+              "current_price": 4191.0,
+              "original_price": 5311.26,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-millermatic-255-mig-welder-907734-1205643350.jpg?v=1763460964",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 21.092170219495937,
+              "savings": 1120.26
+            },
+            "check_started_at": "2026-11-05T20:59:37.203336+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/millermatic-255-mig-welder-907734.js?currency=USD",
+            "response_sha256": "987761263fd8b8fb312f95136c7106c8a36160e143c43c93634b69a3cd3ef3d3",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Millermatic 255 MIG Welder (208-240V) 907734",
+              "variant": "43706878984419",
+              "sku": "907734",
+              "price_minor": 419100,
+              "reference_minor": 531126,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:59:39.319396+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Millermatic 355 w/EZ-Latch Running Gear 951926",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "43706901561571",
+              "url": "https://store.cyberweld.com/products/millermatic-355-w-ez-latch-running-gear-951926?currency=USD&variant=43706901561571",
+              "current_price": 9281.0,
+              "original_price": 10465.71,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-millermatic-355-w-ez-latch-running-gear-951926-1205643289.jpg?v=1763523002",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 11.319920005427248,
+              "savings": 1184.71
+            },
+            "check_started_at": "2026-11-05T20:59:39.319474+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/millermatic-355-w-ez-latch-running-gear-951926.js?currency=USD",
+            "response_sha256": "0422b33c05776d40a732621790ded19baaf6792a247d6acc333f3fb6cf2384f3",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Millermatic 355 w/EZ-Latch Running Gear 951926",
+              "variant": "43706901561571",
+              "sku": "951926",
+              "price_minor": 928100,
+              "reference_minor": 1046571,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:59:41.428864+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Miller Maxstar 280 TIG Welder With CPS 907538",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "43706904576227",
+              "url": "https://store.cyberweld.com/products/miller-maxstar-280-tig-welder-with-cps-907538?currency=USD&variant=43706904576227",
+              "current_price": 8036.0,
+              "original_price": 9281.0,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-miller-maxstar-280-tigrunner-907538002-1205642921.jpg?v=1763529120",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 13.414502747548756,
+              "savings": 1245.0
+            },
+            "check_started_at": "2026-11-05T20:59:41.428896+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/miller-maxstar-280-tig-welder-with-cps-907538.js?currency=USD",
+            "response_sha256": "d3a8c3e58dd17e8b94fb8f647c081e626c512ef20b0d9d4a0ce5757a45db8366",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Miller Maxstar 280 TIG Welder With CPS 907538",
+              "variant": "43706904576227",
+              "sku": "907538",
+              "price_minor": 803600,
+              "reference_minor": 928100,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:59:43.550201+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Thermal Dynamics Cutmaster 70+ Plasma Cutter 1-7000-1",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "45688020336867",
+              "url": "https://store.cyberweld.com/products/thermal-dynamics-cutmaster-70-plasma-cutter-1-7000-1?currency=USD&variant=45688020336867",
+              "current_price": 3819.0,
+              "original_price": 5609.23,
+              "size": "16 ft",
+              "options": "16 ft",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-thermal-dynamics-cutmaster-70-plasma-cutter-1-7000-1-16-ft-1205643166.jpg?v=1763455934",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 31.91578879810598,
+              "savings": 1790.23
+            },
+            "check_started_at": "2026-11-05T20:59:43.550318+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/thermal-dynamics-cutmaster-70-plasma-cutter-1-7000-1.js?currency=USD",
+            "response_sha256": "08aef5666ece3ebd943b88ad063b7bc96bf307c43ea9dee3a4e9ca27b1d3fd99",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Thermal Dynamics Cutmaster 70+ Plasma Cutter 1-7000-1",
+              "variant": "45688020336867",
+              "sku": "1-7000-1",
+              "price_minor": 381900,
+              "reference_minor": 560923,
+              "currency": "USD",
+              "options": "16 ft",
+              "raw_options": [
+                "16 ft"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Length",
+                  "position": 1,
+                  "values": [
+                    "16 ft"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:59:45.662600+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Miller Deltaweld 350 w/ArcConnect,  14-Pin and Insight 907747003",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "47262836359395",
+              "url": "https://store.cyberweld.com/products/miller-deltaweld-350-w-arcconnect-14-pin-and-insight-907747003?currency=USD&variant=47262836359395",
+              "current_price": 8231.0,
+              "original_price": 9506.0,
+              "size": null,
+              "options": "",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-miller-deltaweld-350-w-14-pin-and-arcconnect-907747001-1205642124.jpg?v=1763432409",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 13.412581527456343,
+              "savings": 1275.0
+            },
+            "check_started_at": "2026-11-05T20:59:45.662636+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/miller-deltaweld-350-w-arcconnect-14-pin-and-insight-907747003.js?currency=USD",
+            "response_sha256": "2f48b70aef0bd668a0dc506625f15dadbedea4cdac998288b24abe51c6187112",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Miller Deltaweld 350 w/ArcConnect,  14-Pin and Insight 907747003",
+              "variant": "47262836359395",
+              "sku": "907747003",
+              "price_minor": 823100,
+              "reference_minor": 950600,
+              "currency": "USD",
+              "options": "",
+              "raw_options": [
+                "Default Title"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Title",
+                  "position": 1,
+                  "values": [
+                    "Default Title"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:59:47.765309+00:00",
+            "within_audit_window": true
+          },
+          {
+            "name": "Hypertherm Powermax45 SYNC Plasma Cutter w/CPC, 180 Degree Machine Torch & Remote",
+            "store": "Cyberweld",
+            "offer": {
+              "variant_key": "44980012843235",
+              "url": "https://store.cyberweld.com/products/hypertherm-powermax45-sync-plasma-cutter-w-cpc-180-degree-machine-torch-remote?currency=USD&variant=44980012843235",
+              "current_price": 3443.0,
+              "original_price": 3550.0,
+              "size": "25 ft",
+              "options": "25 ft",
+              "availability": "in_stock",
+              "image_url": "https://cdn.shopify.com/s/files/1/0608/3864/1891/files/welders-hypertherm-powermax45-sync-plasma-cutter-w-cpc-180-degree-machine-torch-remote-25-ft-1205646538.jpg?v=1763558299",
+              "reference_basis": "retailer_compare_at",
+              "availability_note": "",
+              "discount": 3.0140845070422535,
+              "savings": 107.0
+            },
+            "check_started_at": "2026-11-05T20:59:47.765434+00:00",
+            "evidence_url": "https://store.cyberweld.com/products/hypertherm-powermax45-sync-plasma-cutter-w-cpc-180-degree-machine-torch-remote.js?currency=USD",
+            "response_sha256": "aece2283b55b9798a1418d03325b840caf9b97ac8f323f0deff64de91cc3c009",
+            "status": "match",
+            "checks": {
+              "identity": true,
+              "currency": true,
+              "price": true,
+              "reference": true,
+              "options": true,
+              "stock": true
+            },
+            "merchant": {
+              "title": "Hypertherm Powermax45 SYNC Plasma Cutter w/CPC, 180 Degree Machine Torch & Remote",
+              "variant": "44980012843235",
+              "sku": "088582",
+              "price_minor": 344300,
+              "reference_minor": 355000,
+              "currency": "USD",
+              "options": "25 ft",
+              "raw_options": [
+                "25 ft"
+              ],
+              "option_definitions": [
+                {
+                  "name": "Length",
+                  "position": 1,
+                  "values": [
+                    "25 ft"
+                  ]
+                }
+              ],
+              "available": true,
+              "shipping_notice": ""
+            },
+            "sampled_at": "2026-11-05T20:58:43.847080+00:00",
+            "checked_at": "2026-11-05T20:59:49.879795+00:00",
+            "within_audit_window": true
+          }
+        ]
+      }
+    }
+  ],
+  "negative_stock_control": {
+    "purpose": "Negative stock control, excluded from positive admission accuracy denominator",
+    "passed": true,
+    "source_candidate_unknown": true,
+    "absent_stock_only": true,
+    "result": {
+      "name": "Hobart IronMan 240 MIG Welder - 500574",
+      "store": "Baker's Gas",
+      "offer": {
+        "variant_key": "32158328258662",
+        "url": "https://bakersgas.com/products/hobart-500574?currency=USD&variant=32158328258662",
+        "current_price": 2499.0,
+        "original_price": 2560.0,
+        "size": null,
+        "options": "",
+        "availability": "unknown",
+        "image_url": "https://cdn.shopify.com/s/files/1/0252/1176/4789/products/500574.jpg?v=1604339316",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "Retailer shipping notice: Machine is on backorder.",
+        "discount": 2.3828125,
+        "savings": 61.0
+      },
+      "check_started_at": "2026-11-05T21:06:36.736671+00:00",
+      "evidence_url": "https://bakersgas.com/products/hobart-500574.js?currency=USD",
+      "response_sha256": "468a2e3faad4b353034db2d8a712319cb8a392bae96213e03b9e4d9abd62d6fc",
+      "status": "mismatch",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": false
+      },
+      "merchant": {
+        "title": "Hobart IronMan 240 MIG Welder - 500574",
+        "variant": "32158328258662",
+        "sku": "HOB500574",
+        "price_minor": 249900,
+        "reference_minor": 256000,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": "Retailer shipping notice: Machine is on backorder."
+      },
+      "sampled_at": "2026-11-05T21:06:36.697307+00:00",
+      "checked_at": "2026-11-05T21:06:41.028679+00:00",
+      "within_audit_window": true
+    }
+  },
+  "limits": "Two separate fixed30 samples plus every deep listing, not complete inventory accuracy. Initial Baker checkpoint admission superseded after standalone feed-unit review fix; original evidence retained locally."
+}

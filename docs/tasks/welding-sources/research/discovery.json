@@ -1,0 +1,385 @@
+{
+  "scope": "Public discovery only; no source admitted or fresh stock claim.",
+  "feeds": [
+    {
+      "source": "bakers-angle",
+      "domain": "bakersgas.com",
+      "collection": "/collections/angle-grinders",
+      "pages": [
+        {
+          "url": "https://bakersgas.com/collections/angle-grinders/products.json?limit=250&page=1&currency=USD",
+          "at": "2026-11-05T20:46:40.856545+00:00",
+          "status": 200,
+          "count": 34,
+          "sha256": "74a0b5a107178611dd83c0d5af76db813a4d669570812ad6537f4d58024a3d76"
+        }
+      ],
+      "complete": true,
+      "currency_check": {
+        "status": 200,
+        "at": "2026-11-05T20:46:38.660294+00:00",
+        "currency": "USD"
+      },
+      "products": 34,
+      "types": {
+        "Angle Grinders": 34
+      }
+    },
+    {
+      "source": "bakers-bench",
+      "domain": "bakersgas.com",
+      "collection": "/collections/bench-grinders",
+      "pages": [
+        {
+          "url": "https://bakersgas.com/collections/bench-grinders/products.json?limit=250&page=1&currency=USD",
+          "at": "2026-11-05T20:46:45.158680+00:00",
+          "status": 200,
+          "count": 3,
+          "sha256": "4ab9b42c6b7be207b0ff72460c473d8250106ada112b725161049ab238017835"
+        }
+      ],
+      "complete": true,
+      "currency_check": {
+        "status": 200,
+        "at": "2026-11-05T20:46:43.041532+00:00",
+        "currency": "USD"
+      },
+      "products": 3,
+      "types": {
+        "Bench Grinder": 3
+      }
+    },
+    {
+      "source": "bakers-cordless-angle",
+      "domain": "bakersgas.com",
+      "collection": "/collections/cordless-angle-grinders",
+      "pages": [
+        {
+          "url": "https://bakersgas.com/collections/cordless-angle-grinders/products.json?limit=250&page=1&currency=USD",
+          "at": "2026-11-05T20:46:53.906191+00:00",
+          "status": 200,
+          "count": 2,
+          "sha256": "a05176f113afdb3ff58472be664c8e703dd1b7307a5fd9a5ebd40a547c4e88c4"
+        }
+      ],
+      "complete": true,
+      "currency_check": {
+        "status": 200,
+        "at": "2026-11-05T20:46:51.786550+00:00",
+        "currency": "USD"
+      },
+      "products": 2,
+      "types": {
+        "Tungsten Electrode Grinder": 1,
+        "": 1
+      }
+    },
+    {
+      "source": "bakers-die",
+      "domain": "bakersgas.com",
+      "collection": "/collections/die-grinders",
+      "pages": [
+        {
+          "url": "https://bakersgas.com/collections/die-grinders/products.json?limit=250&page=1&currency=USD",
+          "at": "2026-11-05T20:46:49.601628+00:00",
+          "status": 200,
+          "count": 4,
+          "sha256": "3c09754bae9a20eb392154ef3a668eb0db765fdf017fff5f88e49bccd20e8643"
+        }
+      ],
+      "complete": true,
+      "currency_check": {
+        "status": 200,
+        "at": "2026-11-05T20:46:47.385004+00:00",
+        "currency": "USD"
+      },
+      "products": 4,
+      "types": {
+        "Die Grinder": 4
+      }
+    },
+    {
+      "source": "bakers",
+      "domain": "bakersgas.com",
+      "collection": "/collections/bakers-sale",
+      "pages": [
+        {
+          "url": "https://bakersgas.com/collections/bakers-sale/products.json?limit=250&page=1&currency=USD",
+          "at": "2026-11-05T20:38:11.134740+00:00",
+          "status": 200,
+          "count": 41,
+          "sha256": "068ed7c6c23599d4f55871e91a40a890fc60b0976d52ececb7d155fb713ac5a8"
+        }
+      ],
+      "complete": true,
+      "currency_check": {
+        "status": 200,
+        "at": "2026-11-05T20:38:08.848250+00:00",
+        "currency": "USD"
+      },
+      "products": 41,
+      "types": {
+        "Welding Cap": 1,
+        "Respirator": 1,
+        "Gloves": 13,
+        "Outside Lens": 1,
+        "Cup": 1,
+        "Carbon Arc Rod": 1,
+        "Handle": 1,
+        "Welding Helmet": 1,
+        "Face Mask": 1,
+        "Helmet Shell": 1,
+        "": 7,
+        "Band Saw": 1,
+        "Hard Hat Adapter": 1,
+        "Cable": 1,
+        "Head Gear": 1,
+        "Plasma Electrode": 1,
+        "Safety Glasses": 1,
+        "MIG Gun": 1,
+        "Oxy/Fuel Kit": 1,
+        "Fire Extinguisher": 1,
+        "Saw Blade": 1,
+        "Welding Shirt": 1,
+        "Helmet": 1
+      }
+    },
+    {
+      "source": "bakers-machines",
+      "domain": "bakersgas.com",
+      "collection": "/collections/welding-machines-accessories",
+      "pages": [
+        {
+          "url": "https://bakersgas.com/collections/welding-machines-accessories/products.json?limit=250&page=1&currency=USD",
+          "at": "2026-11-05T20:39:04.455520+00:00",
+          "status": 200,
+          "count": 61,
+          "sha256": "6929368cd5d6c78fb8b578b96c42db1ea69622e89630250b8866d0e2d979dc37"
+        }
+      ],
+      "complete": true,
+      "currency_check": {
+        "status": 200,
+        "at": "2026-11-05T20:39:02.187437+00:00",
+        "currency": "USD"
+      },
+      "products": 61,
+      "types": {
+        "Multiprocess Welding Machine": 28,
+        "MIG Welding Machine": 16,
+        "Welder / Generator": 7,
+        "TIG Welding Machine": 3,
+        "Battery Charger": 1,
+        "Stick Welding Machine": 2,
+        "MIG Gun Liner": 2,
+        "MIG Gun": 1,
+        "Consumable": 1
+      }
+    },
+    {
+      "source": "bakers-mig",
+      "domain": "bakersgas.com",
+      "collection": "/collections/mig-welders",
+      "pages": [
+        {
+          "url": "https://bakersgas.com/collections/mig-welders/products.json?limit=250&page=1&currency=USD",
+          "at": "2026-11-05T20:42:39.626626+00:00",
+          "status": 200,
+          "count": 64,
+          "sha256": "811ee1fd2b6214d3397715123f995189158e6940cd52b44c0310b3043d4f3bf2"
+        }
+      ],
+      "complete": true,
+      "currency_check": {
+        "status": 200,
+        "at": "2026-11-05T20:42:37.430653+00:00",
+        "currency": "USD"
+      },
+      "products": 64,
+      "types": {
+        "MIG Welding Machine": 64
+      }
+    },
+    {
+      "source": "bakers-multi",
+      "domain": "bakersgas.com",
+      "collection": "/collections/multiprocess-welders",
+      "pages": [
+        {
+          "url": "https://bakersgas.com/collections/multiprocess-welders/products.json?limit=250&page=1&currency=USD",
+          "at": "2026-11-05T20:42:48.633135+00:00",
+          "status": 200,
+          "count": 98,
+          "sha256": "6609636394986922d6b6a2146c540eb09b92f334f67fff6c6eb658a62e1ba59f"
+        }
+      ],
+      "complete": true,
+      "currency_check": {
+        "status": 200,
+        "at": "2026-11-05T20:42:46.325982+00:00",
+        "currency": "USD"
+      },
+      "products": 98,
+      "types": {
+        "Multiprocess Welding Machine": 98
+      }
+    },
+    {
+      "source": "bakers-plasma",
+      "domain": "bakersgas.com",
+      "collection": "/collections/plasma-cutters",
+      "pages": [
+        {
+          "url": "https://bakersgas.com/collections/plasma-cutters/products.json?limit=250&page=1&currency=USD",
+          "at": "2026-11-05T20:42:57.799055+00:00",
+          "status": 200,
+          "count": 122,
+          "sha256": "9ac9dc7a2d5d04d60a74d5de1dc44f84264d6b38c3abbb7b07a6673538e93e8d"
+        }
+      ],
+      "complete": true,
+      "currency_check": {
+        "status": 200,
+        "at": "2026-11-05T20:42:55.340356+00:00",
+        "currency": "USD"
+      },
+      "products": 122,
+      "types": {
+        "Plasma Cutting Machine": 122
+      }
+    },
+    {
+      "source": "bakers-stick",
+      "domain": "bakersgas.com",
+      "collection": "/collections/best-selling-stick-welders",
+      "pages": [
+        {
+          "url": "https://bakersgas.com/collections/best-selling-stick-welders/products.json?limit=250&page=1&currency=USD",
+          "at": "2026-11-05T20:42:53.133157+00:00",
+          "status": 200,
+          "count": 48,
+          "sha256": "fb2d1329832f728db1b04c0649214fdc5dc6e6de003a03ed26700991a3c25246"
+        }
+      ],
+      "complete": true,
+      "currency_check": {
+        "status": 200,
+        "at": "2026-11-05T20:42:50.903175+00:00",
+        "currency": "USD"
+      },
+      "products": 48,
+      "types": {
+        "Stick Welding Machine": 6,
+        "TIG Welding Machine": 29,
+        "Multiprocess Welding Machine": 11,
+        "Battery Powered Welder": 1,
+        "Baker's Bundle": 1
+      }
+    },
+    {
+      "source": "bakers-tig",
+      "domain": "bakersgas.com",
+      "collection": "/collections/tig-welders",
+      "pages": [
+        {
+          "url": "https://bakersgas.com/collections/tig-welders/products.json?limit=250&page=1&currency=USD",
+          "at": "2026-11-05T20:42:44.110494+00:00",
+          "status": 200,
+          "count": 81,
+          "sha256": "2dad4ffc4a77046608ec3aad8dd149849e41ea81d6270d32b268a65fc629fb59"
+        }
+      ],
+      "complete": true,
+      "currency_check": {
+        "status": 200,
+        "at": "2026-11-05T20:42:41.844049+00:00",
+        "currency": "USD"
+      },
+      "products": 81,
+      "types": {
+        "TIG Welding Machine": 67,
+        "Stick Welding Machine": 3,
+        "Multiprocess Welding Machine": 11
+      }
+    },
+    {
+      "source": "cyberweld",
+      "domain": "store.cyberweld.com",
+      "collection": "/collections/specials",
+      "pages": [
+        {
+          "url": "https://store.cyberweld.com/collections/specials/products.json?limit=250&page=1&currency=USD",
+          "at": "2026-11-05T20:38:11.083043+00:00",
+          "status": 200,
+          "count": 7,
+          "sha256": "38166afd0c83041228644d888f6d96a28bb1f86c98f8bddd2024bc1c1f8b58aa"
+        }
+      ],
+      "complete": true,
+      "currency_check": {
+        "status": 200,
+        "at": "2026-11-05T20:38:08.849652+00:00",
+        "currency": "USD"
+      },
+      "products": 7,
+      "types": {
+        "Welders": 5,
+        "Welding Helmets": 1,
+        "Hand Tools": 1
+      }
+    },
+    {
+      "source": "cyberweld-machines",
+      "domain": "store.cyberweld.com",
+      "collection": "/collections/welders-plasma-cutters",
+      "pages": [
+        {
+          "url": "https://store.cyberweld.com/collections/welders-plasma-cutters/products.json?limit=250&page=1&currency=USD",
+          "at": "2026-11-05T20:39:04.755355+00:00",
+          "status": 200,
+          "count": 250,
+          "sha256": "224aef3cedfc72fc5f7921b52e5db2aa081093803be787c079dc18255285e568"
+        },
+        {
+          "url": "https://store.cyberweld.com/collections/welders-plasma-cutters/products.json?limit=250&page=2&currency=USD",
+          "at": "2026-11-05T20:39:07.468854+00:00",
+          "status": 200,
+          "count": 169,
+          "sha256": "861b90e1d98d63bd6f67dd1a5a93417d90ff726776d18e686fdf4c6ccaaf0e0b"
+        }
+      ],
+      "complete": true,
+      "currency_check": {
+        "status": 200,
+        "at": "2026-11-05T20:39:02.212743+00:00",
+        "currency": "USD"
+      },
+      "products": 419,
+      "types": {
+        "Welders": 395,
+        "Welding Machines": 1,
+        "Machine Accessories": 22,
+        "Welding Machine Accessories": 1
+      }
+    }
+  ],
+  "observed_backorder": {
+    "url": "https://bakersgas.com/products/hobart-500574",
+    "title": "Hobart IronMan 240 MIG Welder - 500574",
+    "feed_available": true,
+    "description_summary": "Machine explicitly on backorder; ETA requires contacting retailer."
+  },
+  "candidate_deep": {
+    "url": "https://store.cyberweld.com/products/everlast-typhoon-230-ac-dc-tig-welder",
+    "current": 2250,
+    "reference": 3750,
+    "basis": "Merchant industrial reference price, not independently verified former price",
+    "direct_discount_percent": 40
+  },
+  "cautions": [
+    "Cyberweld Welders type includes standalone guns/feeders.",
+    "Rebates and cart-only promotions are separate from direct display price.",
+    "Bakers broad collections contain no >=40percent eligible preliminary machine."
+  ],
+  "bakers_total_with_observed_grinder_collections": 414
+}
