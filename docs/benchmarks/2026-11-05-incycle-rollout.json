@@ -1,0 +1,741 @@
+{
+  "verified_at": "2026-11-05T23:33:55.147129+00:00",
+  "release": {
+    "headRefOid": "579c1b6f4102b78cba7e4ed8f3556d0a43c07e8e",
+    "mergeCommit": {
+      "oid": "fba6ac81bfc9bda23674f424c060f2413a1bc57c"
+    },
+    "mergedAt": "2026-11-05T23:29:32Z",
+    "number": 36,
+    "state": "MERGED",
+    "url": "https://github.com/lifan-builds/snow-deal/pull/36",
+    "offline_tests": 993,
+    "ci_run": 42129454115
+  },
+  "deployment": {
+    "id": "dpl_E3NFKzduvjjsUC4yMz7Gv28rNv6z",
+    "url": "https://bigring-fw9wdjsf6-lifan-chens-projects.vercel.app",
+    "productionUrl": "https://bigring.clifan.com",
+    "readyState": "READY",
+    "target": "production"
+  },
+  "previous_deployment_id": "dpl_C9qTaPJnQQp8SVtqgWK5egCcHfH5",
+  "inventory": {
+    "qualifying_in_stock_listings": 1477,
+    "deep_listings": 203,
+    "useful_retailers": [
+      "Bicycle Warehouse",
+      "Bike Closet",
+      "Bike Mart",
+      "BikesOnline",
+      "Colorado Cyclist",
+      "Contender Bicycles",
+      "ERIK\u2019S Bike Shop",
+      "Fanatik Bike Co.",
+      "Gravity Coalition",
+      "Incycle Bicycles",
+      "Mike's Bikes",
+      "Planet Cyclery",
+      "Pro Bike Supply",
+      "RA Cycles",
+      "The Path Bike Shop",
+      "Worldwide Cyclery",
+      "evo"
+    ],
+    "configured_fresh_sources": 21,
+    "reference_floor_usd": 1000,
+    "deep_threshold_percent": 40,
+    "scope": "Source-reported listings, not unique models or independent historical selling prices.",
+    "measured_at": "2026-11-05T23:31:56.729750+00:00",
+    "checked_within_24h_percent": 100.0,
+    "p95_observation_age_hours": 1.4204777233333334,
+    "dead_offer_removal_delay": "unmeasured",
+    "cross_retailer_unique_models": "unmeasured"
+  },
+  "source_gain": {
+    "qualifying_in_stock": 78,
+    "deep_listings": 13,
+    "all_floor_in_stock": 86
+  },
+  "candidate": {
+    "at": "2026-11-05T23:19:03.180297+00:00",
+    "prior_sources_exact": 20,
+    "prior_history_rows_exact": 57,
+    "history_rows_after": 58,
+    "eligible_before": 1399,
+    "eligible_after": 1477,
+    "deep_after": 203,
+    "new_source_default": 78,
+    "new_source_deep": 13,
+    "new_source_all_floors": 86,
+    "fixed_audit_sample": 30,
+    "audit_selected": 114,
+    "note": "Only the accepted Incycle source is added, retaining its actual observation time. Existing20source observations/products and all57history rows remain exact.",
+    "passed": true,
+    "database_sha256": "2121c10a46a614c5ce48ed193b29cf96b31d5f7bc051674ad1c4e4e632719542"
+  },
+  "merchant_audit": {
+    "sample_size": 114,
+    "match": 114,
+    "passed": true,
+    "fixed_sample_size": 30,
+    "additional_targeted": 84,
+    "fixed_sample": [
+      {
+        "store": "RA Cycles",
+        "url": "https://racycles.com/products/guru-crono-frameset-1?currency=USD&variant=43512640798764",
+        "variant": "43512640798764",
+        "status": "match",
+        "checked_at": "2026-11-05T23:19:10.574820+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "Colorado Cyclist",
+        "url": "https://coloradocyclist.com/products/vaast-bikes-e-1-xt-slx-27-5-e-bike-nostalgic-sea-blue-ocean-frost?currency=USD&variant=48408222335216",
+        "variant": "48408222335216",
+        "status": "match",
+        "checked_at": "2026-11-05T23:19:14.938958+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "Bike Closet",
+        "url": "https://bikecloset.com/product/time-frame-fluidity-translink-disc-v15-white-size-l-max-25mm/?attribute_pa_color=v15-gloss-white&attribute_pa_size=l",
+        "variant": "1802090:1802091|attribute_pa_color=v15-gloss-white&attribute_pa_size=l",
+        "status": "match",
+        "checked_at": "2026-11-05T23:19:22.128593+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "Colorado Cyclist",
+        "url": "https://coloradocyclist.com/products/vaast-bikes-e-1-enviolo-27-5-e-bike-vibrant-berry-red-black-cherry?currency=USD&variant=48408222236912",
+        "variant": "48408222236912",
+        "status": "match",
+        "checked_at": "2026-11-05T23:19:24.332648+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "RA Cycles",
+        "url": "https://racycles.com/products/de-rosa-king-3-limited-frameset?currency=USD&variant=43510741336108",
+        "variant": "43510741336108",
+        "status": "match",
+        "checked_at": "2026-11-05T23:19:28.918898+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "Bike Closet",
+        "url": "https://bikecloset.com/product/time-scylon-rim-brake-gloss-carbon-matte-grey-xl/?attribute_pa_color=v11-gloss-carbon&attribute_pa_size=xl",
+        "variant": "1802095:1802096|attribute_pa_color=v11-gloss-carbon&attribute_pa_size=xl",
+        "status": "match",
+        "checked_at": "2026-11-05T23:19:36.218613+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "Bike Closet",
+        "url": "https://bikecloset.com/product/time-scylon-rim-brake-gloss-white-carbon-xl/?attribute_pa_color=v15-gloss-white&attribute_pa_size=xl",
+        "variant": "1802125:1802126|attribute_pa_color=v15-gloss-white&attribute_pa_size=xl",
+        "status": "match",
+        "checked_at": "2026-11-05T23:19:43.563724+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "RA Cycles",
+        "url": "https://racycles.com/products/kestrel-talon-sl-frameset?currency=USD&variant=43637142356012",
+        "variant": "43637142356012",
+        "status": "match",
+        "checked_at": "2026-11-05T23:19:48.142389+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "Bike Closet",
+        "url": "https://bikecloset.com/product/765-gravel/?attribute_pa_color=metallic-hope-green-satin&attribute_pa_size=xs",
+        "variant": "1775295:1775296|attribute_pa_color=metallic-hope-green-satin&attribute_pa_size=xs",
+        "status": "match",
+        "checked_at": "2026-11-05T23:19:55.463164+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "RA Cycles",
+        "url": "https://racycles.com/products/de-rosa-king-3-rs-frameset?currency=USD&variant=43510738780204",
+        "variant": "43510738780204",
+        "status": "match",
+        "checked_at": "2026-11-05T23:20:00.129451+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "Colorado Cyclist",
+        "url": "https://coloradocyclist.com/products/commencal-tempo-29-ride-dark-slate?currency=USD&variant=49818382467312",
+        "variant": "49818382467312",
+        "status": "match",
+        "checked_at": "2026-11-05T23:20:02.382462+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "The Path Bike Shop",
+        "url": "https://www.thepathbikeshop.com/products/copy-of-pivot-firebird-team-v5-xx-axs-w-mixed-carbon-wheels-fox-podium-fork-white-gold-large?currency=USD&variant=47015266844929",
+        "variant": "47015266844929",
+        "status": "match",
+        "checked_at": "2026-11-05T23:20:06.777998+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "Contender Bicycles",
+        "url": "https://contenderbicycles.com/products/bmc-teammachine-slr-01-three?currency=USD&variant=48586301669621",
+        "variant": "48586301669621",
+        "status": "match",
+        "checked_at": "2026-11-05T23:20:11.189518+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "Pro Bike Supply",
+        "url": "https://www.probikesupply.com/products/transition-sentinel-alloy-eagle-90-2025?currency=USD&variant=42446963769399",
+        "variant": "42446963769399",
+        "status": "match",
+        "checked_at": "2026-11-05T23:20:15.700061+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "BikesOnline",
+        "url": "https://bikesonline.com/products/polygon-heist-x7-hybrid-bike-new?currency=USD&variant=51982380564772",
+        "variant": "51982380564772",
+        "status": "match",
+        "checked_at": "2026-11-05T23:20:20.212338+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "Mike's Bikes",
+        "url": "https://mikesbikes.com/products/santa-cruz-heckler-sl-c-gx-transmission-2024?currency=USD&variant=44649480486981",
+        "variant": "44649480486981",
+        "status": "match",
+        "checked_at": "2026-11-05T23:20:24.718473+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "Pro Bike Supply",
+        "url": "https://www.probikesupply.com/products/transition-spur-deore-2025?currency=USD&variant=42446969241655",
+        "variant": "42446969241655",
+        "status": "match",
+        "checked_at": "2026-11-05T23:20:27.024165+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "RA Cycles",
+        "url": "https://racycles.com/products/cipollini-mcm-all-road-frameset?currency=USD&variant=43510102818860",
+        "variant": "43510102818860",
+        "status": "match",
+        "checked_at": "2026-11-05T23:20:31.654905+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "Contender Bicycles",
+        "url": "https://contenderbicycles.com/products/orbea-kemen-mid-10-20mph-2023?currency=USD&variant=45703125172469",
+        "variant": "45703125172469",
+        "status": "match",
+        "checked_at": "2026-11-05T23:20:33.879983+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "Mike's Bikes",
+        "url": "https://mikesbikes.com/products/santa-cruz-vala-c-gx-axs-2026?currency=USD&variant=43054257340485",
+        "variant": "43054257340485",
+        "status": "match",
+        "checked_at": "2026-11-05T23:20:36.128581+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "Gravity Coalition",
+        "url": "https://gravitycoalition.com/products/hightower-r?currency=USD&variant=67659384783092",
+        "variant": "67659384783092",
+        "status": "match",
+        "checked_at": "2026-11-05T23:20:40.544047+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "Contender Bicycles",
+        "url": "https://contenderbicycles.com/products/orbea-kemen-mid-suv-10-20mph-2023?currency=USD&variant=46922516922613",
+        "variant": "46922516922613",
+        "status": "match",
+        "checked_at": "2026-11-05T23:20:42.751661+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "RA Cycles",
+        "url": "https://racycles.com/products/pinarello-nytro-grinta-apex-bike?currency=USD&variant=43588697456684",
+        "variant": "43588697456684",
+        "status": "match",
+        "checked_at": "2026-11-05T23:20:47.377682+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "Pro Bike Supply",
+        "url": "https://www.probikesupply.com/products/2024-orbea-kemen-mid-suv-10-28mph-trekking-urban-e-bikes-small-urban-green-gloss-black-matte?currency=USD&variant=41354013835319",
+        "variant": "41354013835319",
+        "status": "match",
+        "checked_at": "2026-11-05T23:20:49.605739+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "Incycle Bicycles",
+        "url": "https://www.incycle.com/products/2023-scott-genius-st-900-tuned-hmx-frame-fork?currency=USD&variant=43904355893379",
+        "variant": "43904355893379",
+        "status": "match",
+        "checked_at": "2026-11-05T23:20:54.146844+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "Contender Bicycles",
+        "url": "https://contenderbicycles.com/products/orbea-orca-aero-m30ltd-2026?currency=USD&variant=46903922327797",
+        "variant": "46903922327797",
+        "status": "match",
+        "checked_at": "2026-11-05T23:20:56.399387+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "Bicycle Warehouse",
+        "url": "https://bicyclewarehouse.com/products/specialized-turbo-vado-sl-4-0-step-through-electric-bike-2023?currency=USD&variant=40441860980838",
+        "variant": "40441860980838",
+        "status": "match",
+        "checked_at": "2026-11-05T23:21:01.099022+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "Gravity Coalition",
+        "url": "https://gravitycoalition.com/products/stumpjumper-15-evo-alloy-frameset?currency=USD&variant=49395019383028",
+        "variant": "49395019383028",
+        "status": "match",
+        "checked_at": "2026-11-05T23:21:03.428299+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "ERIK\u2019S Bike Shop",
+        "url": "https://www.eriksbikeshop.com/products/specialized-turbo-como-5-0-igh-electric-bike-pr5a26384?currency=USD&variant=47343183069398",
+        "variant": "47343183069398",
+        "status": "match",
+        "checked_at": "2026-11-05T23:21:07.729370+00:00",
+        "within_audit_window": true
+      },
+      {
+        "store": "Incycle Bicycles",
+        "url": "https://www.incycle.com/products/2026-specialized-tarmac-sl8-pro-shimano-ultegra-di2?currency=USD&variant=45690615103619",
+        "variant": "45690615103619",
+        "status": "match",
+        "checked_at": "2026-11-05T23:21:09.914518+00:00",
+        "within_audit_window": true
+      }
+    ],
+    "evidence": "docs/tasks/incycle-source/research/release-merchant-audit.json",
+    "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation"
+  },
+  "published_asset": {
+    "checked_at": "2026-11-05T23:30:22.001964+00:00",
+    "expected_sha256": "2121c10a46a614c5ce48ed193b29cf96b31d5f7bc051674ad1c4e4e632719542",
+    "downloaded_sha256": "2121c10a46a614c5ce48ed193b29cf96b31d5f7bc051674ad1c4e4e632719542",
+    "passed": true
+  },
+  "package": {
+    "catalog": "cycling",
+    "brand": "Big Ring",
+    "built_at": "2026-11-05T23:27:33.010180+00:00",
+    "snapshot_sha256": "3285fc2db19db3a7bb741d37291af5140da727a23bc1080851d4ee1de1c70d9d",
+    "public_url": "https://bigring.clifan.com",
+    "matching_deals": 1504,
+    "sources": [
+      {
+        "name": "Incycle Bicycles",
+        "observed_at": "2026-11-05T23:14:21.690525+00:00",
+        "listings": 86
+      },
+      {
+        "name": "RA Cycles",
+        "observed_at": "2026-11-05T22:06:43.009946+00:00",
+        "listings": 144
+      },
+      {
+        "name": "evo",
+        "observed_at": "2026-11-05T22:17:54.807577+00:00",
+        "listings": 55
+      },
+      {
+        "name": "Bike Closet",
+        "observed_at": "2026-11-05T22:18:05.218434+00:00",
+        "listings": 20
+      },
+      {
+        "name": "Gravity Coalition",
+        "observed_at": "2026-11-05T22:21:50.240171+00:00",
+        "listings": 43
+      },
+      {
+        "name": "Bicycle Warehouse",
+        "observed_at": "2026-11-05T22:22:02.275510+00:00",
+        "listings": 76
+      },
+      {
+        "name": "BikesOnline",
+        "observed_at": "2026-11-05T22:22:07.845789+00:00",
+        "listings": 72
+      },
+      {
+        "name": "Mike's Bikes",
+        "observed_at": "2026-11-05T22:22:13.625276+00:00",
+        "listings": 166
+      },
+      {
+        "name": "ERIK\u2019S Bike Shop",
+        "observed_at": "2026-11-05T22:22:19.417012+00:00",
+        "listings": 120
+      },
+      {
+        "name": "Pro Bike Supply",
+        "observed_at": "2026-11-05T22:22:29.046117+00:00",
+        "listings": 376
+      },
+      {
+        "name": "Contender Bicycles",
+        "observed_at": "2026-11-05T22:22:44.810879+00:00",
+        "listings": 184
+      },
+      {
+        "name": "Cambria Bike",
+        "observed_at": "2026-11-05T22:22:55.545910+00:00",
+        "listings": 24
+      },
+      {
+        "name": "INTENSE",
+        "observed_at": "2026-11-05T22:23:19.613478+00:00",
+        "listings": 4
+      },
+      {
+        "name": "Bike Mart",
+        "observed_at": "2026-11-05T22:23:24.222017+00:00",
+        "listings": 95
+      },
+      {
+        "name": "First Stop Board Barn",
+        "observed_at": "2026-11-05T22:23:39.659903+00:00",
+        "listings": 1
+      },
+      {
+        "name": "Colorado Cyclist",
+        "observed_at": "2026-11-05T22:23:44.396098+00:00",
+        "listings": 61
+      },
+      {
+        "name": "Planet Cyclery",
+        "observed_at": "2026-11-05T22:23:53.867008+00:00",
+        "listings": 32
+      },
+      {
+        "name": "Worldwide Cyclery",
+        "observed_at": "2026-11-05T22:24:03.654820+00:00",
+        "listings": 4
+      },
+      {
+        "name": "State Bicycle Co.",
+        "observed_at": "2026-11-05T22:24:17.039190+00:00",
+        "listings": 1
+      },
+      {
+        "name": "The Path Bike Shop",
+        "observed_at": "2026-11-05T22:24:22.285991+00:00",
+        "listings": 34
+      },
+      {
+        "name": "Fanatik Bike Co.",
+        "observed_at": "2026-11-05T22:24:27.344581+00:00",
+        "listings": 24
+      }
+    ]
+  },
+  "package_equivalence": {
+    "release_head": "579c1b6f4102b78cba7e4ed8f3556d0a43c07e8e",
+    "identical_runtime_data_files": 46,
+    "passed": true,
+    "tested_package": ".local/release/incycle/site",
+    "committed_package": ".local/release/incycle/site-committed"
+  },
+  "live_verification": {
+    "checked_at": "2026-11-05T23:31:56.729750+00:00",
+    "site": "https://bigring.clifan.com",
+    "health": {
+      "catalog": "cycling",
+      "snapshot_sha256": "3285fc2db19db3a7bb741d37291af5140da727a23bc1080851d4ee1de1c70d9d",
+      "fresh_sources": 21,
+      "configured_sources": 21,
+      "status": "ready"
+    },
+    "routes": [
+      {
+        "params": {},
+        "cards": 24,
+        "total": "1504",
+        "matched": true
+      },
+      {
+        "params": {
+          "stock": "true"
+        },
+        "cards": 24,
+        "total": "1477",
+        "matched": true
+      },
+      {
+        "params": {
+          "stock": "true",
+          "min_discount": 40
+        },
+        "cards": 24,
+        "total": "203",
+        "matched": true
+      },
+      {
+        "params": {
+          "stock": "true",
+          "category": "Electric bikes"
+        },
+        "cards": 24,
+        "total": "421",
+        "matched": true
+      },
+      {
+        "params": {
+          "store": "Incycle Bicycles",
+          "stock": "true",
+          "size": "XXS"
+        },
+        "cards": 1,
+        "total": "1",
+        "matched": true
+      },
+      {
+        "params": {
+          "store": "Incycle Bicycles",
+          "stock": "true",
+          "q": "Pivot Shuttle SL",
+          "size": "Large"
+        },
+        "cards": 0,
+        "total": "0",
+        "matched": true
+      },
+      {
+        "params": {
+          "store": "Incycle Bicycles",
+          "stock": "true",
+          "min_reference": 0,
+          "page": 1
+        },
+        "cards": 24,
+        "total": "86",
+        "matched": true
+      },
+      {
+        "params": {
+          "store": "Incycle Bicycles",
+          "stock": "true",
+          "min_reference": 0,
+          "page": 2
+        },
+        "cards": 24,
+        "total": "86",
+        "matched": true
+      },
+      {
+        "params": {
+          "store": "Incycle Bicycles",
+          "stock": "true",
+          "min_reference": 0,
+          "page": 3
+        },
+        "cards": 24,
+        "total": "86",
+        "matched": true
+      },
+      {
+        "params": {
+          "store": "Incycle Bicycles",
+          "stock": "true",
+          "min_reference": 0,
+          "page": 4
+        },
+        "cards": 14,
+        "total": "86",
+        "matched": true
+      },
+      {
+        "params": {
+          "store": "Incycle Bicycles",
+          "stock": "true",
+          "q": "2022 Specialized Stumpjumper Frameset  - FOX FLOAT DPS Performance"
+        },
+        "cards": 1,
+        "total": "1",
+        "matched": true
+      },
+      {
+        "params": {
+          "store": "Incycle Bicycles",
+          "stock": "true",
+          "q": "2022 Specialized S-Works Stumpjumper Frameset  - FOX FLOAT DPS Factory"
+        },
+        "cards": 1,
+        "total": "1",
+        "matched": true
+      },
+      {
+        "params": {
+          "store": "Incycle Bicycles",
+          "stock": "true",
+          "q": "2016 Specialized SJ FSR Comp 29 (FRAMESET ONLY) Blk/RktRed LG"
+        },
+        "cards": 1,
+        "total": "1",
+        "matched": true
+      },
+      {
+        "params": {
+          "store": "Incycle Bicycles",
+          "stock": "true",
+          "q": "2022 Specialized Stumpjumper Expert  - SRAM GX Eagle, Fox Perormance Elite"
+        },
+        "cards": 1,
+        "total": "1",
+        "matched": true
+      },
+      {
+        "params": {
+          "store": "Incycle Bicycles",
+          "stock": "true",
+          "q": "2023 Specialized Sirrus 4.0"
+        },
+        "cards": 1,
+        "total": "1",
+        "matched": true
+      },
+      {
+        "params": {
+          "store": "Incycle Bicycles",
+          "stock": "true",
+          "q": "2023 Specialized Turbo Levo SL 2 Expert Carbon"
+        },
+        "cards": 1,
+        "total": "1",
+        "matched": true
+      },
+      {
+        "params": {
+          "store": "Incycle Bicycles",
+          "stock": "true",
+          "q": "2022 Pinarello Dogma F Disc Frameset Blk/Blk 54"
+        },
+        "cards": 1,
+        "total": "1",
+        "matched": true
+      },
+      {
+        "params": {
+          "store": "Incycle Bicycles",
+          "stock": "true",
+          "q": "2023 Scott Genius ST 900 Tuned HMX Frame & Fork"
+        },
+        "cards": 1,
+        "total": "1",
+        "matched": true
+      },
+      {
+        "params": {
+          "store": "Incycle Bicycles",
+          "stock": "true",
+          "q": "2023 Specialized Turbo Levo SL 2 Comp Carbon"
+        },
+        "cards": 1,
+        "total": "1",
+        "matched": true
+      },
+      {
+        "params": {
+          "store": "Incycle Bicycles",
+          "stock": "true",
+          "q": "2022 Specialized Turbo Vado SL 4.0 Step-Through"
+        },
+        "cards": 1,
+        "total": "1",
+        "matched": true
+      },
+      {
+        "params": {
+          "store": "Incycle Bicycles",
+          "stock": "true",
+          "q": "2022 Pivot Shuttle SL Pro X01 - Large"
+        },
+        "cards": 1,
+        "total": "1",
+        "matched": true
+      },
+      {
+        "params": {
+          "store": "Incycle Bicycles",
+          "stock": "true",
+          "q": "2023 Specialized Turbo Vado SL 4.0"
+        },
+        "cards": 2,
+        "total": "2",
+        "matched": true
+      },
+      {
+        "params": {
+          "store": "Incycle Bicycles",
+          "stock": "true",
+          "q": "2023 Specialized Turbo Vado SL 4.0 Step-Through"
+        },
+        "cards": 1,
+        "total": "1",
+        "matched": true
+      }
+    ],
+    "selected_card_comparisons": 197,
+    "history_pages": 18,
+    "all_new_selected_destinations_visible": 86,
+    "unknown_size_excluded": true,
+    "shipping_fee_note_verified": true,
+    "other_health": {
+      "tools": {
+        "catalog": "tools",
+        "snapshot_sha256": "3011dac6009e552392b116da21b7cccc7b18e47233ca1b1b35b679e4dd8647f0",
+        "fresh_sources": 13,
+        "configured_sources": 13,
+        "status": "ready"
+      },
+      "snow": {
+        "status": "ok",
+        "last_attempt_at": "2026-11-05T21:08:41.764621",
+        "checked_at": "2026-11-05T21:08:41.764621",
+        "stores_with_deals": 30
+      }
+    },
+    "passed": true
+  },
+  "native_browser_check": {
+    "checked_at": "2026-11-05T23:32:03.812433+00:00",
+    "method": "Native in-app browser rendered accessibility observation; no purchase or cart action",
+    "url": "https://bigring.clifan.com/?store=Incycle+Bicycles&stock=true&q=Sirrus&size=XXS",
+    "selected_store": "Incycle Bicycles",
+    "selected_size": "XXS",
+    "matching_deals": 1,
+    "fresh_sources_label": "21 of 21 sources with recent data",
+    "name": "2023 Specialized Sirrus 4.0",
+    "variant": "43524025319555",
+    "options": "Gloss Cactus Bloom / Satin Mystic Blue Reflective / XXS",
+    "current_usd": 799.97,
+    "retailer_reference_usd": 1599.99,
+    "stock": "Reported in stock",
+    "observed_source_time": "Nov 05, 23:14 UTC",
+    "shipping_note_visible": true,
+    "passed": true
+  },
+  "limitations": [
+    "No checkout or historical street-price validation.",
+    "Existing source observation timestamps were preserved; only Incycle was newly observed.",
+    "Circle parser remains inactive: fresh collection/detail completeness failed on a repeated HTTP404.",
+    "Broader competitive superiority remains unproven; comparator measurements are unchanged."
+  ]
+}
