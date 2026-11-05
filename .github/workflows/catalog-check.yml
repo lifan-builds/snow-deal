@@ -16,6 +16,10 @@ on:
         description: Run the public RA Cycles candidate and merchant admission audit
         type: boolean
         default: false
+      snow_preview:
+        description: Deploy a nonproduction Fresh Powder preview after offline checks
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -42,3 +46,45 @@ jobs:
           name: ra-source-admission
           path: ${{ runner.temp }}/source-admission/
           retention-days: 30
+
+  snow-preview:
+    if: github.event_name == 'workflow_dispatch' && inputs.snow_preview
+    needs: offline
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --global vercel@65.9.0
+      - name: Deploy requested snow preview
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          for key in VERCEL_PROJECT_ID VERCEL_ORG_ID VERCEL_TOKEN; do
+            if [ -z "${!key}" ]; then echo "::error::Missing configuration: $key"; exit 1; fi
+          done
+          # Bind the shared deployment secrets to the existing snow project.
+          if [ "$VERCEL_PROJECT_ID" != 'prj_ldWgEpa4q55ZYSwxpypQ1IjlmI8N' ]; then
+            echo "::error::Configured Vercel project is not Fresh Powder"; exit 1
+          fi
+          vercel deploy --yes --target=preview --token "$VERCEL_TOKEN" --meta "githubCommitSha=$GITHUB_SHA" > "$RUNNER_TEMP/snow-preview-url.txt"
+          node <<'NODE'
+          const fs = require('node:fs');
+          const path = require('node:path');
+          const value = fs.readFileSync(path.join(process.env.RUNNER_TEMP, 'snow-preview-url.txt'), 'utf8').trim();
+          const url = new URL(value);
+          if (url.protocol !== 'https:' || !url.hostname.endsWith('.vercel.app') ||
+              url.username || url.password || url.port || url.pathname !== '/' || url.search || url.hash) {
+            throw new Error('Deployment did not return a public Vercel preview URL');
+          }
+          const summary = ['### Fresh Powder preview', '', `[Open preview](${url.href})`, '', `Commit: ${process.env.GITHUB_SHA}`, ''].join('\n');
+          fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, summary);
+          console.log(`Snow preview: ${url.href}`);
+          NODE

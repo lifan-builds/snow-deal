@@ -15,3 +15,11 @@ Twenty new snapshot cases pass, covering deterministic bytes, complete deal/offe
 Full offline suite: 774 passed with eight existing warning emissions. New helper, entrypoint and snapshot tests pass scoped Ruff; scripts/vercel_build.py retains its single pre-existing BLE001 finding at the build command's top-level error-reporting boundary. Changed Python compiles and scoped/full whitespace checks pass. No type-checker is configured.
 
 The independent reviewer now owns code/test/config corrective edits. Root owns the explicitly downloaded real snapshot round-trip, bundle headroom measurement, preview/production gates and publication. This implementer used temporary fixtures only and performed no network, commit or push actions. Tools PR23 remains separate.
+
+## Opt-in preview validation workflow
+
+The existing catalog-check workflow now has a snow_preview boolean input, default false. A separate job requires both workflow_dispatch and that explicit input, and depends on successful offline checks. Pull requests, ordinary checks and default manual runs cannot reach its deployment steps; the existing RA candidate option is preserved.
+
+The requested preview job checks out the selected branch, uses Node 22 and pinned Vercel CLI 65.9.0, and uses only the existing project/org/token secret names. It validates the configured project against the confirmed existing Fresh Powder project ID before invoking a nonproduction deployment. It does not use a production flag or set aliases. The deployment carries the checked-out commit SHA as metadata. Only a validated HTTPS Vercel deployment URL, with no credentials, query, fragment or extra path, is written to the job summary and normal log; secret values are never printed.
+
+Offline verification parsed the workflow with the system YAML parser and checked the manual boolean guard, default, dependency, RA preservation, Node/CLI pins and absence of production/alias commands. Shell and embedded JavaScript syntax checks passed. Six synthetic URL cases verified safe summary output, and the correct/wrong synthetic project-ID cases verified the target guard without printing configuration values. No workflow run, CLI installation, network, secret inspection, commit or push was performed by the implementer. Root owns reconciliation of earlier ambiguous requests and any later explicit workflow dispatch.
