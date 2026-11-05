@@ -1,0 +1,143 @@
+{
+  "scope": "Bounded primary product evidence and raw feed classification research; not stock admission",
+  "known_apparel_error": {
+    "store": "Gravity Coalition",
+    "name": "Dakine Thrillium Bike Glove",
+    "url": "https://gravitycoalition.com/products/dakine-thrillium-bike-glove-restored",
+    "page_checked_at": "2026-11-05T19:37:55.683356+00:00",
+    "status": 200,
+    "retailer_type": "Bike",
+    "current_category": "Other complete bikes",
+    "price": 27.97,
+    "reference": 50,
+    "description_summary": "Wearable glove with leather palm, stretch shell and slip-on cuff; not a bicycle.",
+    "outside_default_reference_floor": true
+  },
+  "frame_error": {
+    "store": "Pro Bike Supply",
+    "name": "2025 Mondraker FOXY CARBON RR 29 inch Enduro/Am Mountain Bike",
+    "url": "https://www.probikesupply.com/products/2025-mondraker-foxy-carbon-rr-29-enduro-am-mountain-frame",
+    "page_checked_at": "2026-11-05T19:37:58.348397+00:00",
+    "status": 200,
+    "sku": "010.25US086",
+    "retailer_type": "Mountain Frame",
+    "current_category": "Mountain bikes",
+    "specification_sections": [
+      "Frame",
+      "Sizes",
+      "Rear Shock",
+      "Shock Settings",
+      "Headset",
+      "Stem"
+    ],
+    "package_evidence": "Retailer frame taxonomy and frame-focused component table agree; exact model SKU is also identified as a frame by another retailer. No complete fork/wheel/drivetrain build is represented in these specs.",
+    "corroborating_primary_listing": "https://dunbarcycles.com/collections/bikes-mountain-bikes-mtb-frames-enduro/products/2025-mondraker-foxy-carbon-rr-frame",
+    "corroborating_sku": "MO-010-25US086"
+  },
+  "gravity_capture_reconciliation": {
+    "scope": "Retained raw feed classification research, not source admission or renewed prices/stock",
+    "collections": [
+      {
+        "capture": "gravity-0-1.json.gz",
+        "products": 219,
+        "terminal_by_existing_parser_contract": true
+      },
+      {
+        "capture": "gravity-1-1.json.gz",
+        "products": 195,
+        "terminal_by_existing_parser_contract": true
+      }
+    ],
+    "overlap": 17,
+    "unique_products": 397,
+    "duplicate_identity_money_stock_options_tags_types_unchanged": true,
+    "ignored_fields_for_duplicate_comparison": [
+      "updated_at",
+      "variants[].updated_at"
+    ],
+    "initial_probe_error": "Raw object equality stopped on per-request updated_at differences; original captures preserved and no Gravity refetch occurred."
+  },
+  "pbs_collection_capture": [
+    {
+      "source": "Pro Bike Supply",
+      "collections": [
+        {
+          "pages": [
+            {
+              "url": "https://www.probikesupply.com/collections/on-sale-bikes-frames/products.json?limit=250&page=1&currency=USD",
+              "checked_at": "2026-11-05T19:56:08.530542+00:00",
+              "products": 250
+            },
+            {
+              "url": "https://www.probikesupply.com/collections/on-sale-bikes-frames/products.json?limit=250&page=2&currency=USD",
+              "checked_at": "2026-11-05T19:56:11.209021+00:00",
+              "products": 250
+            },
+            {
+              "url": "https://www.probikesupply.com/collections/on-sale-bikes-frames/products.json?limit=250&page=3&currency=USD",
+              "checked_at": "2026-11-05T19:56:14.003818+00:00",
+              "products": 94
+            }
+          ],
+          "complete": true,
+          "unique_products": 594
+        }
+      ],
+      "unique_products": 594,
+      "types": {
+        "Hydraulic Brake/Shift Lever, Drop Bar": 3,
+        "Suspension Fork": 32,
+        "Dropper Seatpost": 3,
+        "Mountain Bike": 107,
+        "Gravel Frame": 5,
+        "Road Frame": 6,
+        "Urban E-Bike": 72,
+        "Road Bike": 25,
+        "Mountain E-Bike": 29,
+        "All-Road Bike": 11,
+        "Fitness / Commuter": 8,
+        "Road Frames": 9,
+        "Touring Bike": 19,
+        "Fat Bike": 6,
+        "Touring Frames": 12,
+        "Fat Bike Frame": 7,
+        "E-Mountain": 18,
+        "Trail": 7,
+        "Gravel & Cyclocross": 2,
+        "Mountain Frames": 11,
+        "Enduro": 2,
+        "Mountain E-Bike Frame": 2,
+        "Cross Country (XC)": 5,
+        "Mountain Wheels": 1,
+        "All-Road Ebike": 16,
+        "E-Bikes": 8,
+        "All-Road Frame": 13,
+        "Bicycle": 32,
+        "E-City / Active": 19,
+        "E-Bike Frames": 2,
+        "Endurance Road": 1,
+        "Batteries": 1,
+        "bike": 3,
+        "E-Gravel": 1,
+        "E-Road": 2,
+        "Performance Road": 1,
+        "Gravel & Cyclocross Frames": 1,
+        "Framesets": 6,
+        "City Bike": 2,
+        "Mountain Bikes": 5,
+        "Mountain Frame": 20,
+        "Crankset": 1,
+        "Suspension Forks": 1,
+        "": 1,
+        "Cyclocross Frames": 2,
+        "E-Mountain Bike": 15,
+        "Frameset": 7,
+        "Gravel Bike": 8,
+        "BMX Frame": 16,
+        "Rear Derailleur": 1,
+        "Cyclocross Bicycles": 4,
+        "Groupsets": 3
+      }
+    }
+  ]
+}

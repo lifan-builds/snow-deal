@@ -1,0 +1,403 @@
+{
+  "scope": "Separate primary purchase-page category/package evidence for every changed discounted PBS record in retained-feed replay. Not a fresh stock or price audit, not a unique-model count.",
+  "checked_pages": 15,
+  "all_canonical_paths_and_titles_match": true,
+  "duplicate_identity_limitation": "Two FOXY listing paths expose SKU010.25US086. Counts remain merchant listing counts, not unique models; do not infer distinct inventory or collapse size variants from SKU alone.",
+  "pages": [
+    {
+      "name": "2024 Orbea ORCA OMR Racing Road Frame - 55cm, Wine Red-Titanium (Gloss)",
+      "url": "https://www.probikesupply.com/products/2024-orbea-orca-omr-racing-road-frame-55cm-wine-red-titanium-gloss",
+      "checked_at": "2026-11-05T20:09:29.356658+00:00",
+      "status": 200,
+      "source_type": "Road Frame",
+      "sha256": "127bb6892ce4a380cc0d05bfadcc30b4e2c3138e37078f318b94e1b0b75d7adf",
+      "h1": [
+        "2024 Orbea ORCA OMR Racing Road Frame - 55cm, Wine Red-Titanium (Gloss)"
+      ],
+      "canonical": [
+        "https://www.probikesupply.com/products/2024-orbea-orca-omr-racing-road-frame-55cm-wine-red-titanium-gloss"
+      ],
+      "structured": [
+        {
+          "name": "2024 Orbea ORCA OMR Racing Road Frame - 55cm, Wine Red-Titanium (Gloss)",
+          "sku": "R90055CB",
+          "url": null
+        }
+      ],
+      "spec_labels": [],
+      "package_review": "Framesets",
+      "basis_summary": "Frame, fork, headset, stem and axles; no complete drivetrain or wheel build."
+    },
+    {
+      "name": "2024 Orbea ORCA OMR Racing Road Frame - 53cm, Wine Red-Titanium (Gloss)",
+      "url": "https://www.probikesupply.com/products/2024-orbea-orca-omr-racing-road-frame-53cm-wine-red-titanium-gloss",
+      "checked_at": "2026-11-05T20:09:31.780113+00:00",
+      "status": 200,
+      "source_type": "Road Frame",
+      "sha256": "cbeb3db2459343cbd40fb2fc128f6f6573f867b2a3362589fa941802ea286cee",
+      "h1": [
+        "2024 Orbea ORCA OMR Racing Road Frame - 53cm, Wine Red-Titanium (Gloss)"
+      ],
+      "canonical": [
+        "https://www.probikesupply.com/products/2024-orbea-orca-omr-racing-road-frame-53cm-wine-red-titanium-gloss"
+      ],
+      "structured": [
+        {
+          "name": "2024 Orbea ORCA OMR Racing Road Frame - 53cm, Wine Red-Titanium (Gloss)",
+          "sku": "R90053CB",
+          "url": null
+        }
+      ],
+      "spec_labels": [],
+      "package_review": "Framesets",
+      "basis_summary": "Frame, fork, headset, stem and axles; no complete drivetrain or wheel build."
+    },
+    {
+      "name": "2024 Orbea ORCA AERO OMX REPLICA Racing Road Frame - , Lotto - Dstny",
+      "url": "https://www.probikesupply.com/products/2024-orbea-orca-aero-omx-replica-racing-road-frame-lotto-dstny",
+      "checked_at": "2026-11-05T20:09:34.151418+00:00",
+      "status": 200,
+      "source_type": "Road Frame",
+      "sha256": "918196683991a271f4620317daa3a55e59d9759cbe1a1e9676306e81d181915d",
+      "h1": [
+        "2024 Orbea ORCA AERO OMX REPLICA Racing Road Frame - , Lotto - Dstny"
+      ],
+      "canonical": [
+        "https://www.probikesupply.com/products/2024-orbea-orca-aero-omx-replica-racing-road-frame-lotto-dstny"
+      ],
+      "structured": [
+        {
+          "name": "2024 Orbea ORCA AERO OMX REPLICA Racing Road Frame - , Lotto - Dstny",
+          "sku": "R91355UJ",
+          "url": null
+        }
+      ],
+      "spec_labels": [],
+      "package_review": "Framesets",
+      "basis_summary": "Frame/fork package with seatpost and storage accessories; no complete drivetrain or wheel build."
+    },
+    {
+      "name": "2024 Orbea ORCA AERO OMX REPLICA Racing Road Frame - 55cm, Lotto - Dstny",
+      "url": "https://www.probikesupply.com/products/2024-orbea-orca-aero-omx-replica-racing-road-frame-55cm-lotto-dstny",
+      "checked_at": "2026-11-05T20:09:36.523648+00:00",
+      "status": 200,
+      "source_type": "Road Frame",
+      "sha256": "b67571b3757f201cded0185cc79ced59fe50d8f959f70023d0f502a38234c27d",
+      "h1": [
+        "2024 Orbea ORCA AERO OMX REPLICA Racing Road Frame - 55cm, Lotto - Dstny"
+      ],
+      "canonical": [
+        "https://www.probikesupply.com/products/2024-orbea-orca-aero-omx-replica-racing-road-frame-55cm-lotto-dstny"
+      ],
+      "structured": [
+        {
+          "name": "2024 Orbea ORCA AERO OMX REPLICA Racing Road Frame - 55cm, Lotto - Dstny",
+          "sku": "R91355UJ",
+          "url": null
+        }
+      ],
+      "spec_labels": [],
+      "package_review": "Framesets",
+      "basis_summary": "Frame/fork package with seatpost and storage accessories; no complete drivetrain or wheel build."
+    },
+    {
+      "name": "Salsa Stormchaser Frame - Aluminum Black 49cm",
+      "url": "https://www.probikesupply.com/products/salsa-stormchaser-frame-aluminum-black-49cm",
+      "checked_at": "2026-11-05T20:09:38.896279+00:00",
+      "status": 200,
+      "source_type": "All-Road Frame",
+      "sha256": "365b060792ef564cde4dc8b4e7e356baff183ccc32ee44a748d51fb2f5f75adb",
+      "h1": [
+        "Salsa Stormchaser Frame - Aluminum Black 49cm"
+      ],
+      "canonical": [
+        "https://www.probikesupply.com/products/salsa-stormchaser-frame-aluminum-black-49cm"
+      ],
+      "structured": [
+        {
+          "name": "Salsa Stormchaser Frame - Aluminum Black 49cm",
+          "sku": "06-002796",
+          "url": null
+        }
+      ],
+      "spec_labels": [
+        "Color",
+        "Mfg Size",
+        "Rear Axle",
+        "Platform",
+        "TT (Effective)",
+        "Brake Type",
+        "Wheel Size",
+        "Fork Type",
+        "Fork Material",
+        "Frame Material",
+        "Frame Type",
+        "Defined Color",
+        "Front Axle"
+      ],
+      "package_review": "Framesets",
+      "basis_summary": "Explicit frame title and frame/fork specification with dropout plates."
+    },
+    {
+      "name": "Salsa Stormchaser Frame - Aluminum Black 52.5cm",
+      "url": "https://www.probikesupply.com/products/salsa-stormchaser-frame-aluminum-black-52-5cm",
+      "checked_at": "2026-11-05T20:09:41.236674+00:00",
+      "status": 200,
+      "source_type": "All-Road Frame",
+      "sha256": "0a5d7527214f9c728fa2bbe0e68186d529091820793bc94160acddc9f0c2aff6",
+      "h1": [
+        "Salsa Stormchaser Frame - Aluminum Black 52.5cm"
+      ],
+      "canonical": [
+        "https://www.probikesupply.com/products/salsa-stormchaser-frame-aluminum-black-52-5cm"
+      ],
+      "structured": [
+        {
+          "name": "Salsa Stormchaser Frame - Aluminum Black 52.5cm",
+          "sku": "06-002796",
+          "url": null
+        }
+      ],
+      "spec_labels": [
+        "Color",
+        "Mfg Size",
+        "Rear Axle",
+        "Platform",
+        "TT (Effective)",
+        "Brake Type",
+        "Wheel Size",
+        "Fork Type",
+        "Fork Material",
+        "Frame Material",
+        "Frame Type",
+        "Defined Color",
+        "Front Axle"
+      ],
+      "package_review": "Framesets",
+      "basis_summary": "Explicit frame title and frame/fork specification with dropout plates."
+    },
+    {
+      "name": "P.4 Frame",
+      "url": "https://www.probikesupply.com/products/2023-specialized-p-4-frm-frame-27-5-satin-rusted-red-white-sage",
+      "checked_at": "2026-11-05T20:09:43.596612+00:00",
+      "status": 200,
+      "source_type": "Mountain Frames",
+      "sha256": "c9928e841448b20c7e723f10a579f8ac5f467bf492247f8cf181a00909117a3d",
+      "h1": [
+        "P.4 Frame"
+      ],
+      "canonical": [
+        "https://www.probikesupply.com/products/2023-specialized-p-4-frm-frame-27-5-satin-rusted-red-white-sage"
+      ],
+      "structured": [
+        {
+          "name": "P.4 Frame",
+          "sku": "71923-5027",
+          "url": null
+        }
+      ],
+      "spec_labels": [],
+      "package_review": "Framesets",
+      "basis_summary": "Explicit frame title; description identifies the standalone P-series alloy frame."
+    },
+    {
+      "name": "2025 Mondraker FOXY CARBON RR 29\" Enduro/Am Mountain Bike",
+      "url": "https://www.probikesupply.com/products/2025-mondraker-foxy-carbon-rr-29-enduro-am-mountain-frame",
+      "checked_at": "2026-11-05T20:09:45.971268+00:00",
+      "status": 200,
+      "source_type": "Mountain Frame",
+      "sha256": "ba575e6efef56c78685d7b27ea0d2a1c14def090736806b0b5df09791e619a8b",
+      "h1": [
+        "2025 Mondraker FOXY CARBON RR 29\" Enduro/Am Mountain Bike"
+      ],
+      "canonical": [
+        "https://www.probikesupply.com/products/2025-mondraker-foxy-carbon-rr-29-enduro-am-mountain-frame"
+      ],
+      "structured": [
+        {
+          "name": "2025 Mondraker FOXY CARBON RR 29\" Enduro/Am Mountain Bike",
+          "sku": "010.25US086",
+          "url": null
+        }
+      ],
+      "spec_labels": [
+        "Frame",
+        "Sizes",
+        "Rear Shock",
+        "Shock Settings",
+        "Headset",
+        "Stem"
+      ],
+      "package_review": "Framesets",
+      "basis_summary": "Frame, rear shock, headset and stem table; source frame taxonomy agrees despite loose Bike title."
+    },
+    {
+      "name": "Mondraker ARID CARBON UNLIMITED 2026",
+      "url": "https://www.probikesupply.com/products/2026-mondraker-arid-carbon-unlimited",
+      "checked_at": "2026-11-05T20:09:48.356827+00:00",
+      "status": 200,
+      "source_type": "Gravel Frame",
+      "sha256": "6e31e1a68e73d5f352ec091f62fe49ddb7093fc83e1981c5d3831eb17d754535",
+      "h1": [
+        "Mondraker ARID CARBON UNLIMITED 2026"
+      ],
+      "canonical": [
+        "https://www.probikesupply.com/products/2026-mondraker-arid-carbon-unlimited"
+      ],
+      "structured": [
+        {
+          "name": "Mondraker ARID CARBON UNLIMITED 2026",
+          "sku": "010.26US161",
+          "url": null
+        }
+      ],
+      "spec_labels": [],
+      "package_review": "Framesets",
+      "basis_summary": "Frame specification only, matching explicit Gravel Frame taxonomy."
+    },
+    {
+      "name": "Mondraker FOXY CARBON RR 2025",
+      "url": "https://www.probikesupply.com/products/2025-mondraker-foxy-carbon-rr",
+      "checked_at": "2026-11-05T20:09:50.801332+00:00",
+      "status": 200,
+      "source_type": "Mountain Frame",
+      "sha256": "9a4ebe1b23ccdfc7f98bd7c1cb69bd5b1f8ce7fae31d99c912cf6e31d8b4f283",
+      "h1": [
+        "Mondraker FOXY CARBON RR 2025"
+      ],
+      "canonical": [
+        "https://www.probikesupply.com/products/2025-mondraker-foxy-carbon-rr"
+      ],
+      "structured": [
+        {
+          "name": "Mondraker FOXY CARBON RR 2025",
+          "sku": "010.25US086",
+          "url": null
+        }
+      ],
+      "spec_labels": [],
+      "package_review": "Framesets",
+      "basis_summary": "Frame and rear-shock specification, matching explicit Mountain Frame taxonomy."
+    },
+    {
+      "name": "Mondraker SUMMUM CARBON RR 2024",
+      "url": "https://www.probikesupply.com/products/2024-mondraker-summum-carbon-rr",
+      "checked_at": "2026-11-05T20:09:53.145225+00:00",
+      "status": 200,
+      "source_type": "Mountain Frame",
+      "sha256": "fe22d26a58c8b2a66ce242caf1b330c886a4ac8d7d90d043f37eab92514c3476",
+      "h1": [
+        "Mondraker SUMMUM CARBON RR 2024"
+      ],
+      "canonical": [
+        "https://www.probikesupply.com/products/2024-mondraker-summum-carbon-rr"
+      ],
+      "structured": [
+        {
+          "name": "Mondraker SUMMUM CARBON RR 2024",
+          "sku": "010.24US213",
+          "url": null
+        }
+      ],
+      "spec_labels": [],
+      "package_review": "Framesets",
+      "basis_summary": "Frame and rear-shock specification, matching explicit Mountain Frame taxonomy."
+    },
+    {
+      "name": "Mondraker SUPERFOXY CARBON RR 2023",
+      "url": "https://www.probikesupply.com/products/2023-mondraker-superfoxy-carbon-rr",
+      "checked_at": "2026-11-05T20:09:55.523509+00:00",
+      "status": 200,
+      "source_type": "Mountain Frame",
+      "sha256": "66032363ac68abdedf017ae4bf3729b8a7d27e93c7fafdd7721c9c502c8eeb0c",
+      "h1": [
+        "Mondraker SUPERFOXY CARBON RR 2023"
+      ],
+      "canonical": [
+        "https://www.probikesupply.com/products/2023-mondraker-superfoxy-carbon-rr"
+      ],
+      "structured": [
+        {
+          "name": "Mondraker SUPERFOXY CARBON RR 2023",
+          "sku": "010.23US149",
+          "url": null
+        }
+      ],
+      "spec_labels": [],
+      "package_review": "Framesets",
+      "basis_summary": "Frame and rear-shock specification, matching explicit Mountain Frame taxonomy."
+    },
+    {
+      "name": "Salsa Blackthorn 145 C Frame - Carbon Black / Smoke Small",
+      "url": "https://www.probikesupply.com/products/salsa-blackthorn-145-c-frame-carbon-black-smoke-small",
+      "checked_at": "2026-11-05T20:09:57.899770+00:00",
+      "status": 200,
+      "source_type": "Mountain Frame",
+      "sha256": "9c907757d1ec22a648b77698692772ee1ceb9c89b81cef9bf2095620417b5024",
+      "h1": [
+        "Salsa Blackthorn 145 C Frame - Carbon Black / Smoke Small"
+      ],
+      "canonical": [
+        "https://www.probikesupply.com/products/salsa-blackthorn-145-c-frame-carbon-black-smoke-small"
+      ],
+      "structured": [
+        {
+          "name": "Salsa Blackthorn 145 C Frame - Carbon Black / Smoke Small",
+          "sku": "06-003617",
+          "url": null
+        }
+      ],
+      "spec_labels": [],
+      "package_review": "Framesets",
+      "basis_summary": "Explicit frame title and Fork Type Not Included specification."
+    },
+    {
+      "name": "Salsa Blackthorn 145 C Frame - Carbon Black / Smoke Large",
+      "url": "https://www.probikesupply.com/products/salsa-blackthorn-145-c-frame-carbon-black-smoke-large",
+      "checked_at": "2026-11-05T20:10:00.324873+00:00",
+      "status": 200,
+      "source_type": "Mountain Frame",
+      "sha256": "cb5f5ec65168b4ee2bb2003b5c161306617af2cea2fff674126e0596d2a3fc6a",
+      "h1": [
+        "Salsa Blackthorn 145 C Frame - Carbon Black / Smoke Large"
+      ],
+      "canonical": [
+        "https://www.probikesupply.com/products/salsa-blackthorn-145-c-frame-carbon-black-smoke-large"
+      ],
+      "structured": [
+        {
+          "name": "Salsa Blackthorn 145 C Frame - Carbon Black / Smoke Large",
+          "sku": "06-003617",
+          "url": null
+        }
+      ],
+      "spec_labels": [],
+      "package_review": "Framesets",
+      "basis_summary": "Explicit frame title and Fork Type Not Included specification."
+    },
+    {
+      "name": "Salsa Blackthorn 145 C Frame - Carbon Black / Smoke X-Large",
+      "url": "https://www.probikesupply.com/products/salsa-blackthorn-145-c-frame-carbon-black-smoke-x-large",
+      "checked_at": "2026-11-05T20:10:02.699484+00:00",
+      "status": 200,
+      "source_type": "Mountain Frame",
+      "sha256": "b510ce831248fa461f4658bb21ff294b96f8e4ad0de905b19aa4c46a223964a5",
+      "h1": [
+        "Salsa Blackthorn 145 C Frame - Carbon Black / Smoke X-Large"
+      ],
+      "canonical": [
+        "https://www.probikesupply.com/products/salsa-blackthorn-145-c-frame-carbon-black-smoke-x-large"
+      ],
+      "structured": [
+        {
+          "name": "Salsa Blackthorn 145 C Frame - Carbon Black / Smoke X-Large",
+          "sku": "06-003617",
+          "url": null
+        }
+      ],
+      "spec_labels": [],
+      "package_review": "Framesets",
+      "basis_summary": "Explicit frame title and Fork Type Not Included specification."
+    }
+  ]
+}
