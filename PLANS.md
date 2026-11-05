@@ -234,3 +234,7 @@ Scheduled snow run `41948669174` completed deployment but reported incomplete Ba
 ## Snow cash-savings ties — November 5, 2026 UTC
 
 Default snow ranking now keeps exact percentage first and uses cash savings to break same-currency ties in ingestion, selected offers and cards. Mixed-currency ties group USD first, then actual currency code, without nominal-money comparison or conversion. Four regressions cover eligibility, metadata, pagination, near-percentage differences and explicit alternative sorts; independent isolated release validation passes 754 tests. The House candidate remains separate. PR #21 merged as `895fd0b` after passing CI. Production verification passed eight full/partial route/filter combinations and 480 rendered card observations against the exact public snapshot. See [rollout receipt](docs/benchmarks/2026-11-05-snow-ranking-rollout.json). No freshness or competitor-lead claim changes.
+
+## Snow compressed snapshot repair — November 5, 2026 UTC
+
+The scheduled snow deployment and tools PR preview fail the enforced function-size cap despite prior lossless DB compaction. A separate packaging repair will compress the exact validated snapshot, reconstruct a verified read-only local copy before DB defaults load, and preserve all history. Current public data has 190,839 price-history rows and 250,212 offer observations; existing preparation preserves their complete row digests. See docs/SNOW-COMPRESSED-SNAPSHOT-RELEASE-PLAN.md. Tools PR23 remains preserved pending the repaired deployment gate.

@@ -142,6 +142,14 @@ def main() -> int:
     try:
         copy_static_assets()
         download_deals_db()
+        # Import only the stdlib-only packaging helper; it never opens auth data.
+        source_path = str(ROOT / "catalogs/fresh-powder/src")
+        if source_path not in sys.path:
+            sys.path.insert(0, source_path)
+        from aggregator.bundled_snapshot import write_snapshot_bundle
+        identity = write_snapshot_bundle(DB_DEST)
+        archive_bytes = DB_DEST.with_name(DB_DEST.name + '.gz').stat().st_size
+        log(f"Bundled exact snapshot: {identity['bytes']} bytes -> {archive_bytes} compressed bytes")
     except Exception as exc:
         print(f"[vercel_build] ERROR: {exc}", file=sys.stderr, flush=True)
         return 1

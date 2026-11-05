@@ -1,0 +1,14 @@
+{
+  "bytes": 179462144,
+  "sha256": "9769fad5e91676c73b8655b8b5b284bd7b2e8a566bb9565167cc9f9efd392133",
+  "tables": {
+    "deals": 15374,
+    "deal_offers": 27734,
+    "offer_observations": 250212,
+    "price_history": 190839,
+    "scrape_runs": 32,
+    "reviews": 432,
+    "deal_reviews": 107
+  },
+  "checked_at": "2026-11-05T13:40:12.920989"
+}

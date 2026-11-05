@@ -1,0 +1,32 @@
+{
+  "source_bytes": 179462144,
+  "prepared_bytes": 147640320,
+  "prepared_sha256": "68261da4c07b900c1a76e5818bcc83be0bc097d508f9cc3dda3031339d441df0",
+  "prior_data_exact_retained": {
+    "deal_offers": {
+      "count": 27734,
+      "rows_sha256": "b67fc50dec1a2ab35085556522f06ba5b4477eec92219a2b348f6bd4b64d22f5"
+    },
+    "offer_observations": {
+      "count": 250212,
+      "rows_sha256": "6f2ccc3ad1170e239563df3f5d5b6c75fdbd0693232699f99ac3789afb1cfb93"
+    },
+    "price_history": {
+      "count": 190839,
+      "rows_sha256": "fb4ab52149755c1e55f93a43463f2632fbe83b6695526793235c718778c4c30c"
+    },
+    "scrape_runs": {
+      "count": 32,
+      "rows_sha256": "cba2534a982a56c59ad78e330f5bc9d50d4cf97e291904eacf45a98eb7f0e589"
+    },
+    "reviews": {
+      "count": 432,
+      "rows_sha256": "756d5e164b647fc047a2f4b21b89096801d6ad94481cca54b9355d62930319da"
+    },
+    "deal_reviews": {
+      "count": 107,
+      "rows_sha256": "d5af0e178efbd396287ff6a4e63b42da09265dfdf605af2999e72227b4f9aae0"
+    }
+  },
+  "scope": "Existing build migration/review reconciliation/compaction on an explicitly downloaded public snapshot; no release asset changed"
+}
