@@ -13,3 +13,11 @@ Under standing release approval, push the reviewed code, wait for CI and preview
 ## Recovery
 
 Retain pre-release asset and deployment identity. If final checks fail, do not publish. If production differs from the audited package, preserve failure evidence and restore the preceding verified Big Ring deployment and public cycling asset as necessary. Do not delete history, restamp old data, weaken stock/identity gates or activate held sources.
+
+## Verified rollout — November 5, 2026 UTC
+
+PR #34 merged as `f3c066495f49ae02766ebc408c1f8e418827ee0f`; CI run 42119004426 passed 952 tests. Independent review tightened the singular Battery accessory exclusion before the final full refresh. All twenty sources completed, 45/45 final merchant checks matched within the audit window, and all thirteen recovered listings remain available (eleven at least 40% off). The separate Mike's Bikes admission matched 39/39.
+
+The redownloaded public cycling asset matches the candidate byte for byte. Existing Big Ring deployment `dpl_C9qTaPJnQQp8SVtqgWK5egCcHfH5` is Ready and serves fingerprint `a78d1b1da305fc410dd1a322de7cbbc799c8a9760f96a64109409f321080e3fd`. All 37 prior-day observations are exact; all 57 observation rows survive packaging. Verification matches 23 live routes, 197 selected cards and 17 history pages. Fresh Powder and Bench Drop retain their preceding health values. Production inventory is 1,399 qualifying in-stock listings and 190 deep discounts from sixteen useful retailers. Retained-feed classifier effects are distinct from refresh inventory changes. See [the full receipt](benchmarks/2026-11-05-cycling-lightweight-rollout.json).
+
+Rollback artifacts remain local under `.local/release/cycling-lightweight/before/`; the previous deployment is `dpl_BHh3G9ePBq9D2eAaVGmjM6AoAPWE`. No rollback was required.
