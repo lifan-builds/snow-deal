@@ -1,6 +1,6 @@
 # Keep cycling equipment categories accurate
 
-Status: in progress under the standing instruction to improve data quality and publish comparable audited releases.
+Status: released and verified on November 5, 2026 UTC under standing authorization. PR #28 merged; all acceptance gates pass. See [rollout receipt](../../benchmarks/2026-11-05-cycling-category-rollout.json).
 
 Two verified gaps: a Dakine bike glove with generic Bike taxonomy is admitted as a complete bicycle; explicit singular/plural frame taxonomies are incompletely recognized, so a Mondraker frame is labeled a complete bike and other legitimate frames are dropped. Reject apparel when it is the primary product even under a broad bike taxonomy. Recognize explicit bicycle-frame taxonomy consistently before complete-bike fallback. Preserve existing condition, accessory taxonomy, shipping and stock gates.
 
