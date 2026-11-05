@@ -1,0 +1,7 @@
+# Boundary and design
+
+The behavior lives in common/deal_common/catalog/query.py, which collects raw size strings into facets, and web.py/templates/index.html, which select form options by raw equality. Reuse the existing common.deal_common.offers.size_key exactly; do not modify its contract. Group size facet labels by that key and choose a stable representative independent of feed order. Prefer a short existing representative (for example M) rather than inventing a fit or measurement. Preserve all raw offer fields.
+
+Keep the facets mapping as lists of strings to avoid an unnecessary public shape change. Resolve an incoming alias to its facet representative for form selection, active filter display and generated links while retaining identical query semantics. An unknown incoming label must remain visible and selected. A small web-context normalization after query is preferable to adding multiple independent normalization expressions in Jinja.
+
+Expected source files: shared query.py for facet deduplication, web.py for selected-label continuity (template only if actually needed), common/tests/test_catalog_runtime.py for meaningful query/HTTP regressions. Docs and public evidence belong in this task directory. No storage or parser migration. Existing source snapshots are explicitly downloaded public artifacts from workflow 42089645493; replay is read-only and does not renew freshness.

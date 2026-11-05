@@ -13,3 +13,33 @@ Catalog history restoration authenticates only its fixed GitHub release-metadata
 The snow build may compact its newly downloaded temporary SQLite snapshot after migrations and review reconciliation. Validate integrity, listing count and freshness before and after `VACUUM`, then atomically replace the build destination. Compaction must preserve all current and historical rows. The sole permitted schema change is dropping `idx_history_url` when PRAGMA metadata proves it is an ordinary nonunique, nonpartial index with exactly the same columns, order and collation as the retained primary-key index; unexpected definitions remain untouched. It is not retention cleanup. The explicit skip-download path must remain byte-preserving, and operational/auth databases are outside this build step.
 
 The snow build packages the validated database as deterministic gzip plus an original-byte-count/SHA256 manifest. Include these artifacts explicitly and exclude the uncompressed build copy from the function. Preserve the source DB bytes. At application initialization, before importing consumers of DB_PATH, materialize only the packaged snapshot into a digest-named temporary file, verify bytes/hash, then atomically publish the local copy. Serialize extraction per digest and recheck the cache under the lock to limit temporary storage to one large copy; remove only that digest's abandoned extraction temporaries under the lock. Selecting compressed runtime data must force read-only DB access even outside Vercel. Concurrent initializers must not expose partial databases; corrupt streams/caches fail or rebuild without serving bad data. Explicit DATABASE_PATH wins, and local uncompressed development remains supported. This is local reconstruction, not permission for runtime downloads, migrations, history cleanup or auth-data access. Verify actual platform deployment headroom and exact current/historical rows after compression.
+
+## Shared catalog size facets
+
+### Scope / trigger
+
+Cycling and tools size menus must not repeat labels which the existing `size_key` matcher already treats as equivalent. This is presentation only; it does not infer fit or expand size equivalence. Fresh Powder uses a separate web app.
+
+### Signatures
+
+`query(sources, filters, *, now=None)` retains `facets["size"]: list[str]`; `GET /?size=<label>` continues accepting original retailer labels and existing saved-search URLs.
+
+### Contracts
+
+Group only existing fresh, reported-in-stock facet labels by `size_key`. Select an existing label deterministically by length, case-folded spelling, then original spelling. After querying, resolve a known incoming alias to its representative for form selection, filter display and generated links. Preserve raw selected offer size/options/stock/price/reference/URL and all persisted observations.
+
+### Validation and error behavior
+
+Unknown requested labels remain selected, escaped and visible with the existing empty result. Unknown-stock, stale and future source labels cannot introduce facet entries. Compound labels and numeric-s sizes remain distinct unless `size_key` already equates them.
+
+### Good / base / bad cases
+
+M/MD/Medium collapse to one existing menu label and match the same offers. A unique model-size identifier stays unchanged. M/L must not become M; 50s must not become 50; a shorter menu must never discard matching offers.
+
+### Required tests
+
+Assert source-order-independent representatives, legacy and unknown selected form state, generated pagination links, escaped unknown values, preserved raw offers, ordering/counts/pagination, and fresh/stock facet membership. Replay explicit public snapshots read-only when assessing a release.
+
+### Wrong versus correct
+
+Wrong: rewrite stored merchant sizes to simplify the menu or deduplicate cards using display labels. Correct: deduplicate facet strings using existing matching semantics, while cards and history retain the exact merchant variant.

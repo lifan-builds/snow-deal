@@ -12,6 +12,7 @@ from deal_common.catalog.definition import Catalog
 from deal_common.catalog.health import snapshot_health
 from deal_common.catalog.query import FRESHNESS_HOURS, is_fresh, query
 from deal_common.catalog.storage import read_offer_history, read_sources
+from deal_common.offers import size_key
 
 ASSETS = Path(__file__).parent
 
@@ -57,6 +58,10 @@ def create_app(catalog: Catalog, database: Path, *, public_url: str | None = Non
                        "min_discount": min_discount, "stock": stock, "page": page}
         rows = sources()
         result = query(rows, filters)
+        if size:
+            requested_size_key = size_key(size)
+            filters["size"] = next((label for label in result["facets"]["size"]
+                                    if size_key(label) == requested_size_key), size)
         for card in result["cards"]:
             card["history_url"] = "/history?" + urlencode({"source": card["store"], "product": card["url"],
                                                         "variant": card["offer"]["variant_key"]})
