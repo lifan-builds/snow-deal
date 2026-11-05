@@ -1,0 +1,528 @@
+[
+  {
+    "name": "2023 Specialized Sirrus 4.0",
+    "variant_id": 43524025319555,
+    "url": "https://www.incycle.com/products/2023-specialized-sirrus-4-0",
+    "html": {
+      "url": "https://www.incycle.com/products/2023-specialized-sirrus-4-0?currency=USD&variant=43524025319555",
+      "at": "2026-11-05T23:07:12.749338+00:00",
+      "sha256": "1f03811d1f23204c73ec8a895df10513fec8d920ee40e889370b5ea452c6f5d9"
+    },
+    "main_title": "2023 Specialized Sirrus 4.0",
+    "selected_ids": [
+      "43524025319555"
+    ],
+    "price_text": [
+      "$799.97",
+      "$1,599.99",
+      "/ per"
+    ],
+    "ship_to_home_visible": true,
+    "stock_text": [
+      "Low Stock - Only"
+    ],
+    "restriction_terms": [],
+    "json": {
+      "url": "https://www.incycle.com/products/2023-specialized-sirrus-4-0.js?currency=USD",
+      "at": "2026-11-05T23:07:14.918227+00:00",
+      "sha256": "f81407fb533a53ba68df44ea9ae7c9106196fd75dc1feb6a4aebac1d42988867"
+    },
+    "endpoint": {
+      "price": 799.97,
+      "reference": 1599.99,
+      "available": true,
+      "options": [
+        "Gloss Cactus Bloom / Satin Mystic Blue Reflective",
+        "XXS"
+      ],
+      "requires_shipping": true,
+      "sku": "90923-5300"
+    },
+    "money_stock_match": true
+  },
+  {
+    "name": "2023 Specialized Turbo Vado SL 4.0 Step-Through",
+    "variant_id": 43273651224707,
+    "url": "https://www.incycle.com/products/2023-specialized-vado-sl-4-0-st",
+    "html": {
+      "url": "https://www.incycle.com/products/2023-specialized-vado-sl-4-0-st?currency=USD&variant=43273651224707",
+      "at": "2026-11-05T23:07:17.196463+00:00",
+      "sha256": "74ad6fc1f261032b50039618309c0b038b9a88bc97a58e6b94d01c55f5263d61"
+    },
+    "main_title": "2023 Specialized Turbo Vado SL 4.0 Step-Through",
+    "selected_ids": [
+      "43273651224707"
+    ],
+    "price_text": [
+      "$2,099.97",
+      "$3,499.99",
+      "/ per"
+    ],
+    "ship_to_home_visible": true,
+    "stock_text": [
+      "Low Stock - Only"
+    ],
+    "restriction_terms": [],
+    "json": {
+      "url": "https://www.incycle.com/products/2023-specialized-vado-sl-4-0-st.js?currency=USD",
+      "at": "2026-11-05T23:07:19.358994+00:00",
+      "sha256": "fb43eeec504351d6448cf40a42c3da4ebe380b209afeff1475b21ac1f553891b"
+    },
+    "endpoint": {
+      "price": 2099.97,
+      "reference": 3499.99,
+      "available": true,
+      "options": [
+        "Cast Umber / Silver Reflective",
+        "XL"
+      ],
+      "requires_shipping": true,
+      "sku": "93923-5005"
+    },
+    "money_stock_match": true
+  },
+  {
+    "name": "2023 Specialized Turbo Vado SL 4.0",
+    "variant_id": 39447949312131,
+    "url": "https://www.incycle.com/products/specialized-vado-sl-4-0",
+    "html": {
+      "url": "https://www.incycle.com/products/specialized-vado-sl-4-0?currency=USD&variant=39447949312131",
+      "at": "2026-11-05T23:07:21.634756+00:00",
+      "sha256": "88460d1bcab6df18fd46dc438c7ba314e371fe353bfaf7e068fac7455c7870f1"
+    },
+    "main_title": "2023 Specialized Turbo Vado SL 4.0",
+    "selected_ids": [
+      "39447949312131"
+    ],
+    "price_text": [
+      "$2,099.97",
+      "$3,499.99",
+      "/ per"
+    ],
+    "ship_to_home_visible": true,
+    "stock_text": [
+      "Low Stock - Only"
+    ],
+    "restriction_terms": [],
+    "json": {
+      "url": "https://www.incycle.com/products/specialized-vado-sl-4-0.js?currency=USD",
+      "at": "2026-11-05T23:07:23.825137+00:00",
+      "sha256": "71862cda52484a63161273dab8cfe28c807df11dc516d4433f656da7d238558d"
+    },
+    "endpoint": {
+      "price": 2099.97,
+      "reference": 3499.99,
+      "available": true,
+      "options": [
+        "Limestone / Black Reflective",
+        "XL"
+      ],
+      "requires_shipping": true,
+      "sku": "93922-5005"
+    },
+    "money_stock_match": true
+  },
+  {
+    "name": "2022 Specialized Stumpjumper Expert  - SRAM GX Eagle, Fox Perormance Elite",
+    "variant_id": 39447955406979,
+    "url": "https://www.incycle.com/products/specialized-stumpjumper-expert",
+    "html": {
+      "url": "https://www.incycle.com/products/specialized-stumpjumper-expert?currency=USD&variant=39447955406979",
+      "at": "2026-11-05T23:07:26.116942+00:00",
+      "sha256": "bba2ef6478bb995bf6781195038b4457717074f34136756affb2f30d2a6396a0"
+    },
+    "main_title": "2022 Specialized Stumpjumper Expert  - SRAM GX Eagle, Fox Perormance Elite",
+    "selected_ids": [
+      "39447955406979"
+    ],
+    "price_text": [
+      "$3,059.97",
+      "$6,199.99",
+      "/ per"
+    ],
+    "ship_to_home_visible": true,
+    "stock_text": [
+      "Low Stock - Only"
+    ],
+    "restriction_terms": [],
+    "json": {
+      "url": "https://www.incycle.com/products/specialized-stumpjumper-expert.js?currency=USD",
+      "at": "2026-11-05T23:07:28.322968+00:00",
+      "sha256": "c1062a1e1557a03a16106f7bff5f8a4b212e0546569c3f8f2b002852b6f10ef2"
+    },
+    "endpoint": {
+      "price": 3059.97,
+      "reference": 6199.99,
+      "available": true,
+      "options": [
+        "Satin Doppio / Gloss Doppio / Satin Black",
+        "S1"
+      ],
+      "requires_shipping": true,
+      "sku": "93322-3101"
+    },
+    "money_stock_match": true
+  },
+  {
+    "name": "2022 Specialized Turbo Vado SL 4.0 Step-Through",
+    "variant_id": 39447976149123,
+    "url": "https://www.incycle.com/products/specialized-vado-sl-4-0-st",
+    "html": {
+      "url": "https://www.incycle.com/products/specialized-vado-sl-4-0-st?currency=USD&variant=39447976149123",
+      "at": "2026-11-05T23:07:30.925050+00:00",
+      "sha256": "ecddac5ccd441078b6f206ad445d9c554493675021c98fe38da0348b399f32ab"
+    },
+    "main_title": "2022 Specialized Turbo Vado SL 4.0 Step-Through",
+    "selected_ids": [
+      "39447976149123"
+    ],
+    "price_text": [
+      "$1,999.97",
+      "$3,499.99",
+      "/ per"
+    ],
+    "ship_to_home_visible": true,
+    "stock_text": [
+      "Low Stock - Only"
+    ],
+    "restriction_terms": [],
+    "json": {
+      "url": "https://www.incycle.com/products/specialized-vado-sl-4-0-st.js?currency=USD",
+      "at": "2026-11-05T23:07:33.076801+00:00",
+      "sha256": "3a1a3c36adba75f114c62c2c3b6c00fd24440c154968b173c732aacf5fc91791"
+    },
+    "endpoint": {
+      "price": 1999.97,
+      "reference": 3499.99,
+      "available": true,
+      "options": [
+        "Limestone / Black Reflective",
+        "XL"
+      ],
+      "requires_shipping": true,
+      "sku": "93921-5005"
+    },
+    "money_stock_match": true
+  },
+  {
+    "name": "2023 Specialized Turbo Levo SL 2 Expert Carbon",
+    "variant_id": 43311597846659,
+    "url": "https://www.incycle.com/products/specialized-levo-sl-expert-carbon-2",
+    "html": {
+      "url": "https://www.incycle.com/products/specialized-levo-sl-expert-carbon-2?currency=USD&variant=43311597846659",
+      "at": "2026-11-05T23:07:35.398088+00:00",
+      "sha256": "85b37fd829b1a6249c0be9707c583d054960282292a44a752092ebff234e65fe"
+    },
+    "main_title": "2023 Specialized Turbo Levo SL 2 Expert Carbon",
+    "selected_ids": [
+      "43311597846659"
+    ],
+    "price_text": [
+      "$4,999.97",
+      "$9,999.99",
+      "/ per"
+    ],
+    "ship_to_home_visible": true,
+    "stock_text": [
+      "Low Stock - Only"
+    ],
+    "restriction_terms": [],
+    "json": {
+      "url": "https://www.incycle.com/products/specialized-levo-sl-expert-carbon-2.js?currency=USD",
+      "at": "2026-11-05T23:07:37.615616+00:00",
+      "sha256": "e945ddf1204685f0d97dbec3464970d4d9311b143fcf6e56722fd025343485b5"
+    },
+    "endpoint": {
+      "price": 4999.97,
+      "reference": 9999.99,
+      "available": true,
+      "options": [
+        "Gloss Birch / Taupe",
+        "S6"
+      ],
+      "requires_shipping": true,
+      "sku": "96823-3006"
+    },
+    "money_stock_match": true
+  },
+  {
+    "name": "2023 Specialized Turbo Levo SL 2 Comp Carbon",
+    "variant_id": 47231872991363,
+    "url": "https://www.incycle.com/products/2023-specialized-levo-sl-comp",
+    "html": {
+      "url": "https://www.incycle.com/products/2023-specialized-levo-sl-comp?currency=USD&variant=47231872991363",
+      "at": "2026-11-05T23:07:39.934352+00:00",
+      "sha256": "6caf3220e3d75a28ec6536e988109edf90338b2f23307b341ac7074031ab4d80"
+    },
+    "main_title": "2023 Specialized Turbo Levo SL 2 Comp Carbon",
+    "selected_ids": [
+      "47231872991363"
+    ],
+    "price_text": [
+      "$4,498.97",
+      "$7,999.99",
+      "/ per"
+    ],
+    "ship_to_home_visible": true,
+    "stock_text": [
+      "Low Stock - Only"
+    ],
+    "restriction_terms": [],
+    "json": {
+      "url": "https://www.incycle.com/products/2023-specialized-levo-sl-comp.js?currency=USD",
+      "at": "2026-11-05T23:07:42.102695+00:00",
+      "sha256": "e4d6d118dc77c1a4b46dfe3304273b6ce7e8abb1d9b81434c566272dc80d85fc"
+    },
+    "endpoint": {
+      "price": 4498.97,
+      "reference": 7999.99,
+      "available": true,
+      "options": [
+        "Satin Mystic Blue / Mystic Blue Metallic / Silver Dust",
+        "S6"
+      ],
+      "requires_shipping": true,
+      "sku": "96823-5106"
+    },
+    "money_stock_match": true
+  },
+  {
+    "name": "2022 Pivot Shuttle SL Pro X01 - Large",
+    "variant_id": 45172538933379,
+    "url": "https://www.incycle.com/products/2023-pivot-shuttle-sl-ride-x01",
+    "html": {
+      "url": "https://www.incycle.com/products/2023-pivot-shuttle-sl-ride-x01?currency=USD&variant=45172538933379",
+      "at": "2026-11-05T23:07:44.343700+00:00",
+      "sha256": "a83855023058f2374324fca02053168729c5825f1f7a403cf5fa99dece455831"
+    },
+    "main_title": "2022 Pivot Shuttle SL Pro X01 - Large",
+    "selected_ids": [
+      "45172538933379"
+    ],
+    "price_text": [
+      "$6,335.97",
+      "$10,999.00",
+      "/ per"
+    ],
+    "ship_to_home_visible": true,
+    "stock_text": [],
+    "restriction_terms": [],
+    "json": {
+      "url": "https://www.incycle.com/products/2023-pivot-shuttle-sl-ride-x01.js?currency=USD",
+      "at": "2026-11-05T23:07:46.526835+00:00",
+      "sha256": "6ef5e60c0b2002b9a1a7243589825bf21e17fe33dcefe1b14a680eedfbe20150"
+    },
+    "endpoint": {
+      "price": 6335.97,
+      "reference": 10999.0,
+      "available": true,
+      "options": [
+        "Default Title"
+      ],
+      "requires_shipping": true,
+      "sku": "00SSLV129AXOA--BLDLGDRPCNSA1"
+    },
+    "money_stock_match": true
+  },
+  {
+    "name": "2016 Specialized SJ FSR Comp 29 (FRAMESET ONLY) Blk/RktRed LG",
+    "variant_id": 43157994045571,
+    "url": "https://www.incycle.com/products/2016-specialized-sj-fsr-comp-29-frameset-only-blk-rktred-lg",
+    "html": {
+      "url": "https://www.incycle.com/products/2016-specialized-sj-fsr-comp-29-frameset-only-blk-rktred-lg?currency=USD&variant=43157994045571",
+      "at": "2026-11-05T23:07:48.869550+00:00",
+      "sha256": "b3a0d2c817949cff9775707457109c484b424a3730ce4b4075ad1ff2dafac6b3"
+    },
+    "main_title": "2016 Specialized SJ FSR Comp 29 (FRAMESET ONLY) Blk/RktRed LG",
+    "selected_ids": [
+      "43157994045571"
+    ],
+    "price_text": [
+      "$499.97",
+      "$1,133.99",
+      "/ per"
+    ],
+    "ship_to_home_visible": false,
+    "stock_text": [],
+    "restriction_terms": [],
+    "json": {
+      "url": "https://www.incycle.com/products/2016-specialized-sj-fsr-comp-29-frameset-only-blk-rktred-lg.js?currency=USD",
+      "at": "2026-11-05T23:07:51.029314+00:00",
+      "sha256": "a154e26bffdf6263e047ec0ceebc3648f0e5f91276a4e71676ee651b2ebf39ff"
+    },
+    "endpoint": {
+      "price": 499.97,
+      "reference": 1133.99,
+      "available": true,
+      "options": [
+        "Default Title"
+      ],
+      "requires_shipping": true,
+      "sku": "F93316-6204"
+    },
+    "money_stock_match": true
+  },
+  {
+    "name": "2022 Specialized S-Works Stumpjumper Frameset  - FOX FLOAT DPS Factory",
+    "variant_id": 39657140912259,
+    "url": "https://www.incycle.com/products/stumpjumper-s-works-frameset",
+    "html": {
+      "url": "https://www.incycle.com/products/stumpjumper-s-works-frameset?currency=USD&variant=39657140912259",
+      "at": "2026-11-05T23:07:53.373217+00:00",
+      "sha256": "7bcfb94a4b2a0216dcdd25ee10cdbbc9ebd2a510b9af3ca5dec5038aab2911ca"
+    },
+    "main_title": "2022 Specialized S-Works Stumpjumper Frameset  - FOX FLOAT DPS Factory",
+    "selected_ids": [
+      "39657140912259"
+    ],
+    "price_text": [
+      "$1,199.99",
+      "$2,999.99",
+      "/ per"
+    ],
+    "ship_to_home_visible": false,
+    "stock_text": [
+      "Low Stock - Only"
+    ],
+    "restriction_terms": [],
+    "json": {
+      "url": "https://www.incycle.com/products/stumpjumper-s-works-frameset.js?currency=USD",
+      "at": "2026-11-05T23:07:55.554263+00:00",
+      "sha256": "2ca2ce9adb20603a64e6a42d22df62bd4ada3911c0fc0357cfe408d014003a0f"
+    },
+    "endpoint": {
+      "price": 1199.99,
+      "reference": 2999.99,
+      "available": true,
+      "options": [
+        "Satin Dusty Blue Pearl / Black / Carbon",
+        "S1"
+      ],
+      "requires_shipping": true,
+      "sku": "73322-0101"
+    },
+    "money_stock_match": true
+  },
+  {
+    "name": "2022 Specialized Stumpjumper Frameset  - FOX FLOAT DPS Performance",
+    "variant_id": 39619142713475,
+    "url": "https://www.incycle.com/products/specialized-stumpjumper-frameset",
+    "html": {
+      "url": "https://www.incycle.com/products/specialized-stumpjumper-frameset?currency=USD&variant=39619142713475",
+      "at": "2026-11-05T23:07:57.828633+00:00",
+      "sha256": "0a5c3421101af14b526c00a9c0eb13142496927a3d5f0bda1a2b99cb69aa2146"
+    },
+    "main_title": "2022 Specialized Stumpjumper Frameset  - FOX FLOAT DPS Performance",
+    "selected_ids": [
+      "39619142713475"
+    ],
+    "price_text": [
+      "$1,079.99",
+      "$2,699.99",
+      "/ per"
+    ],
+    "ship_to_home_visible": false,
+    "stock_text": [
+      "Low Stock - Only"
+    ],
+    "restriction_terms": [],
+    "json": {
+      "url": "https://www.incycle.com/products/specialized-stumpjumper-frameset.js?currency=USD",
+      "at": "2026-11-05T23:07:59.979287+00:00",
+      "sha256": "7edbe159af54ab08cfe08e70a4af98e6c4e56a47aff18a819f5918f8456c66cd"
+    },
+    "endpoint": {
+      "price": 1079.99,
+      "reference": 2699.99,
+      "available": true,
+      "options": [
+        "Satin Copper / Black",
+        "S1"
+      ],
+      "requires_shipping": true,
+      "sku": "73322-7001"
+    },
+    "money_stock_match": true
+  },
+  {
+    "name": "2023 Scott Genius ST 900 Tuned HMX Frame & Fork",
+    "variant_id": 43904355893379,
+    "url": "https://www.incycle.com/products/2023-scott-genius-st-900-tuned-hmx-frame-fork",
+    "html": {
+      "url": "https://www.incycle.com/products/2023-scott-genius-st-900-tuned-hmx-frame-fork?currency=USD&variant=43904355893379",
+      "at": "2026-11-05T23:08:02.318196+00:00",
+      "sha256": "3f3b48b8d175a260ec2b2c80d65818eb6fe2d73d71a59c577b9e3f0bed4affcd"
+    },
+    "main_title": "2023 Scott Genius ST 900 Tuned HMX Frame & Fork",
+    "selected_ids": [
+      "43904355893379"
+    ],
+    "price_text": [
+      "$3,199.97",
+      "$5,699.99",
+      "/ per"
+    ],
+    "ship_to_home_visible": false,
+    "stock_text": [
+      "Low Stock - Only"
+    ],
+    "restriction_terms": [],
+    "json": {
+      "url": "https://www.incycle.com/products/2023-scott-genius-st-900-tuned-hmx-frame-fork.js?currency=USD",
+      "at": "2026-11-05T23:08:04.457130+00:00",
+      "sha256": "2bd57e03908026fc64535c98732bd74aac782337b8addba819ba88f8dd464a52"
+    },
+    "endpoint": {
+      "price": 3199.97,
+      "reference": 5699.99,
+      "available": true,
+      "options": [
+        "XL"
+      ],
+      "requires_shipping": true,
+      "sku": "292051-012"
+    },
+    "money_stock_match": true
+  },
+  {
+    "name": "2022 Pinarello Dogma F Disc Frameset Blk/Blk 54",
+    "variant_id": 42711467589763,
+    "url": "https://www.incycle.com/products/2022-pinarello-dogma-f-disc-frameset",
+    "html": {
+      "url": "https://www.incycle.com/products/2022-pinarello-dogma-f-disc-frameset?currency=USD&variant=42711467589763",
+      "at": "2026-11-05T23:08:06.726508+00:00",
+      "sha256": "d6cdf7e92f13e52eb3b14da45f061860e9bb12cfd85b0647270864acab65d411"
+    },
+    "main_title": "2022 Pinarello Dogma F Disc Frameset Blk/Blk 54",
+    "selected_ids": [
+      "42711467589763"
+    ],
+    "price_text": [
+      "$3,899.97",
+      "$6,949.99",
+      "/ per"
+    ],
+    "ship_to_home_visible": false,
+    "stock_text": [
+      "Low Stock - Only"
+    ],
+    "restriction_terms": [],
+    "json": {
+      "url": "https://www.incycle.com/products/2022-pinarello-dogma-f-disc-frameset.js?currency=USD",
+      "at": "2026-11-05T23:08:08.874482+00:00",
+      "sha256": "da02380b4342eef738ce4fab75e7569bd94a94c10f777d144aea00f3cf8b0918"
+    },
+    "endpoint": {
+      "price": 3899.97,
+      "reference": 6949.99,
+      "available": true,
+      "options": [
+        "Blk/Blk",
+        "54"
+      ],
+      "requires_shipping": true,
+      "sku": "PI-22-FDSC-54-BOBB"
+    },
+    "money_stock_match": true
+  }
+]

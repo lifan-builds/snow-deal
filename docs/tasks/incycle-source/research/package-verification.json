@@ -1,0 +1,1037 @@
+{
+  "checked_at": "2026-11-05T23:22:32.109075+00:00",
+  "passed": true,
+  "health": {
+    "catalog": "cycling",
+    "snapshot_sha256": "3285fc2db19db3a7bb741d37291af5140da727a23bc1080851d4ee1de1c70d9d",
+    "fresh_sources": 21,
+    "configured_sources": 21,
+    "status": "ready"
+  },
+  "packaged_file_sha256": "424d5c0f9f51f90865ccee4d7544e6a70d7c0f78cd3043e2b036df9b124f92b5",
+  "history_rows": 58,
+  "routes": [
+    {
+      "params": {},
+      "cards": 24,
+      "total": "1504",
+      "passed": true
+    },
+    {
+      "params": {
+        "stock": "true"
+      },
+      "cards": 24,
+      "total": "1477",
+      "passed": true
+    },
+    {
+      "params": {
+        "stock": "true",
+        "min_discount": 40
+      },
+      "cards": 24,
+      "total": "203",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true"
+      },
+      "cards": 24,
+      "total": "78",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "page": 2
+      },
+      "cards": 24,
+      "total": "78",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "size": "XXS"
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "category": "Electric bikes"
+      },
+      "cards": 24,
+      "total": "36",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "Pivot Shuttle SL",
+        "size": "Large"
+      },
+      "cards": 0,
+      "total": "0",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2022 Specialized Stumpjumper Frameset  - FOX FLOAT DPS Performance",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2022 Specialized S-Works Stumpjumper Frameset  - FOX FLOAT DPS Factory",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2016 Specialized SJ FSR Comp 29 (FRAMESET ONLY) Blk/RktRed LG",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2022 Specialized Stumpjumper Expert  - SRAM GX Eagle, Fox Perormance Elite",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2023 Specialized P.4 Frame",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2023 Specialized Sirrus 4.0",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2023 Specialized Turbo Levo SL 2 Expert Carbon",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2022 Pinarello Dogma F Disc Frameset Blk/Blk 54",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2023 Scott Genius ST 900 Tuned HMX Frame & Fork",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2023 Specialized Turbo Levo SL 2 Comp Carbon",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2022 Specialized Turbo Vado SL 4.0 Step-Through",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2022 Pivot Shuttle SL Pro X01 - Large",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2023 Specialized Turbo Vado SL 4.0",
+        "min_reference": 0
+      },
+      "cards": 2,
+      "total": "2",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2023 Specialized Turbo Vado SL 4.0 Step-Through",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2022 Specialized S-Works Diverge - SRAM RED eTAP AXS / XX1 Eagle AXS",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized Turbo Kenevo SL 2 Comp",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2025 Specialized Sirrus X 3.0 Step-Through",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized Crux Frameset - FACT 10r Carbon",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized S-Works Crux Frameset - FACT 12r Carbon",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized Crux Pro - SRAM Force XPLR AXS",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2025 Specialized S-Works Crux - SRAM RED XPLR",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized S-Works Crux - SRAM RED XPLR",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2025 Specialized S-Works Crux LTD - SRAM RED XPLR",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2023 Specialized Roll 3.0",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "[Pro Build] 2025 Specialized Tarmac SL8 S-Works Campagnolo Super Record Wireless",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized Turbo Levo 4 Comp",
+        "min_reference": 0
+      },
+      "cards": 2,
+      "total": "2",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized Turbo Levo SL 2 Comp",
+        "min_reference": 0
+      },
+      "cards": 2,
+      "total": "2",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2025 Specialized Sirrus X 2.0 Step-Through",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2024 Specialized S-Works Aethos Frameset - FACT 12r Carbon",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized S-Works Turbo Levo R",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2025 Specialized Sirrus X 1.0",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized S-Works Epic 8 EVO  - Shimano XTR Di2, FOX Factory",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2025 Specialized S-Works Turbo Levo SL 2 Frameset",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2025 Specialized S-Works Epic World Cup Frame  - RockShox SIDLuxe WCID Ultimate",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2025 Specialized Sirrus X 3.0",
+        "min_reference": 0
+      },
+      "cards": 2,
+      "total": "2",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized Tarmac SL8 Frameset - FACT 10r Carbon",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized Tarmac SL8 Comp - Shimano 105 Di2",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized S-Works Tarmac SL8 Frameset - FACT 12r Carbon",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2025 Specialized Stumpjumper 15 Expert  - SRAM GX AXS, FOX Performance Elite",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2025 Specialized Turbo Creo 2 Comp - SRAM Apex / X1 Eagle AXS",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2025 Specialized Stumpjumper 15 Pro  - SRAM X0 AXS, FOX Factory",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized Tarmac SL8 Pro - Shimano Ultegra Di2",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2025 Specialized Turbo Creo 2 Expert - SRAM Rival / GX Eagle AXS",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2025 Specialized Turbo Levo SL 2 Expert",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2025 Specialized Turbo Kenevo SL 2 Ohlins Coil",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2025 Specialized Stumpjumper 15 Alloy Frameset  - FOX FLOAT GENIE Performance",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized Sirrus X 3.0 Step-Through",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized S-Works Turbo Levo 4 Frameset",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2025 Specialized Turbo Vado SL 2 6.0 Carbon",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2025 Specialized S-Works Tarmac SL8 Frameset - FACT 12r Carbon",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized Turbo Levo R Comp",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized Turbo Levo R Expert",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized Turbo Levo 4 Pro",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized Stumpjumper 15 EVO Expert  - Shimano XT Di2, FOX Performance Elite",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2025 Specialized Turbo Levo SL 2 Comp",
+        "min_reference": 0
+      },
+      "cards": 2,
+      "total": "2",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2025 Specialized Turbo Levo SL 2 Pro",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized Turbo Creo 2 Comp E5 - SRAM Apex Eagle",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized Turbo Levo 4 Expert",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2025 Specialized Rockhopper Expert",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2025 Specialized Allez Sprint Comp - Shimano 105",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized Sirrus X 2.0 Step-Through",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2025 Specialized Allez Sport - Shimano Tiagra",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2025 Specialized Turbo Levo SL 2 \u00d6hlins Coil",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized S-Works Turbo Creo 2 - SRAM RED / XX1 Eagle AXS",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized Roll 3.0",
+        "min_reference": 0
+      },
+      "cards": 2,
+      "total": "2",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized Roll 3.0 Low Entry",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized Turbo Creo 2 Expert - Shimano GRX Di2",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized Epic 8 Pro  - SRAM X0 AXS, RockShox Ultimate Flight Attendant",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2025 Specialized S-Works Aethos - SRAM RED AXS",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized S-Works Stumpjumper 15 EVO Frameset  - FOX FLOAT X GENIE Factory",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized Roubaix SL8 Sport - Shimano 105",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized Turbo Levo 4 Comp Alloy",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized Turbo Levo SL 2 Comp Alloy",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2025 Specialized S-Works Turbo Creo 2 - SRAM RED / XX1 Eagle AXS",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized Turbo Levo SL 2 Expert Di2",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2027 Specialized Levo 4 EVO Comp",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2025 Specialized Turbo Levo SL 2 Comp Alloy",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized S-Works Stumpjumper 15 EVO  - Shimano XTR Di2, FOX Factory",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2027 Specialized Levo 4 EVO Pro",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized S-Works Turbo Levo 4",
+        "min_reference": 0
+      },
+      "cards": 3,
+      "total": "3",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized S-Works Turbo Levo 4",
+        "min_reference": 0
+      },
+      "cards": 3,
+      "total": "3",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized S-Works Turbo Levo SL 2 Di2",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2025 Specialized S-Works Stumpjumper 15 Frameset  - FOX FLOAT GENIE Factory",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2025 Specialized Turbo Kenevo SL 2 Expert",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized S-Works Turbo Kenevo SL 2 Frameset",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Incycle Bicycles",
+        "stock": "true",
+        "q": "2026 Specialized Aethos 2 Expert - Shimano Ultegra Di2",
+        "min_reference": 0
+      },
+      "cards": 1,
+      "total": "1",
+      "passed": true
+    }
+  ],
+  "history_routes": 110,
+  "all_new_offer_destinations_visible": 86,
+  "unrelated_circle_code_excluded": true
+}

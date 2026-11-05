@@ -1,0 +1,3 @@
+1. Implement narrow inactive source-taxonomy support and observed regression fixtures; test generic/foreign-host/accessory/frameset/condition/shipping/unknown-size controls and unrelated-source preservation. Run focused/full offline checks and scoped lint.
+2. Root runs unchanged probe_sources --audit-merchants in an explicit new temporary output, retains incomplete/rejected evidence, checks primary page fulfillment and validates all eligible category output. No activation on partial/unknown evidence.
+3. Required independent check agent reviews the full scope and fixes findings. Enable only after evidence passes, then publish tested change under standing approval with fresh history-preserving BigRing snapshot, audit, live fingerprint/routes and receipt.

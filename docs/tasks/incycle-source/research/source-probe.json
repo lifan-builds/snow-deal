@@ -1,0 +1,39 @@
+[
+  {
+    "candidate": {
+      "catalog": "cycling",
+      "name": "Incycle Bicycles",
+      "domain": "www.incycle.com",
+      "scrape_urls": [
+        "https://www.incycle.com/collections/sale-bicycles?currency=USD"
+      ]
+    },
+    "checked_at": "2026-11-05T23:14:26.914988+00:00",
+    "snapshot": "00-cycling.db",
+    "refresh": {
+      "source": "Incycle Bicycles",
+      "status": "complete",
+      "errors": 0,
+      "pages": 1,
+      "collections": [
+        {
+          "url": "https://www.incycle.com/collections/sale-bicycles?currency=USD",
+          "pages": 1,
+          "products": 86,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "parsed_products": 86,
+      "accepted_products": 86
+    },
+    "eligible_listings": 78,
+    "deep_listings": 13,
+    "disposition": "merchant-audited-needs-review",
+    "merchant_audit": {
+      "receipt": "00-cycling-merchant-audit.json",
+      "passed": true,
+      "sample_size": 33
+    }
+  }
+]

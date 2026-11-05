@@ -1,0 +1,2285 @@
+{
+  "source": "Incycle Bicycles",
+  "date": "2026-11-05T23:15:39.388919+00:00",
+  "seed": 20261105,
+  "method": "top10-plus-seeded20-plus-all-deep-listings-v1",
+  "population": 78,
+  "fixed_sample_size": 30,
+  "deep_selected_listings": 13,
+  "selected_offers": 33,
+  "refresh_complete": true,
+  "passed": true,
+  "sample_size": 33,
+  "match": 33,
+  "mismatch": 0,
+  "inconclusive": 0,
+  "verified_match_percent": 100.0,
+  "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+  "results": [
+    {
+      "name": "2022 Specialized Stumpjumper Frameset  - FOX FLOAT DPS Performance",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "39619142713475",
+        "url": "https://www.incycle.com/products/specialized-stumpjumper-frameset?currency=USD&variant=39619142713475",
+        "current_price": 1079.99,
+        "original_price": 2699.99,
+        "size": "S1",
+        "options": "Satin Copper / Black / S1",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/73322-70_SJ-FRM-COP-BLK_HERO.jpg?v=1755826587",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 60.00022222304527,
+        "savings": 1620.0
+      },
+      "check_started_at": "2026-11-05T23:14:26.934225+00:00",
+      "evidence_url": "https://www.incycle.com/products/specialized-stumpjumper-frameset.js?currency=USD",
+      "response_sha256": "7edbe159af54ab08cfe08e70a4af98e6c4e56a47aff18a819f5918f8456c66cd",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2022 Specialized Stumpjumper Frameset  - FOX FLOAT DPS Performance",
+        "variant": "39619142713475",
+        "sku": "73322-7001",
+        "price_minor": 107999,
+        "reference_minor": 269999,
+        "currency": "USD",
+        "options": "Satin Copper / Black / S1",
+        "raw_options": [
+          "Satin Copper / Black",
+          "S1"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Satin Copper / Black"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S1",
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:14:31.226516+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2022 Specialized S-Works Stumpjumper Frameset  - FOX FLOAT DPS Factory",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "39657140912259",
+        "url": "https://www.incycle.com/products/stumpjumper-s-works-frameset?currency=USD&variant=39657140912259",
+        "current_price": 1199.99,
+        "original_price": 2999.99,
+        "size": "S1",
+        "options": "Satin Dusty Blue Pearl / Black / Carbon / S1",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/73322-01_SJ-SW-FRM-DSTBLU-BLK-CARB_HERO.jpg?v=1755826565",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 60.000200000666666,
+        "savings": 1800.0
+      },
+      "check_started_at": "2026-11-05T23:14:31.226578+00:00",
+      "evidence_url": "https://www.incycle.com/products/stumpjumper-s-works-frameset.js?currency=USD",
+      "response_sha256": "2ca2ce9adb20603a64e6a42d22df62bd4ada3911c0fc0357cfe408d014003a0f",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2022 Specialized S-Works Stumpjumper Frameset  - FOX FLOAT DPS Factory",
+        "variant": "39657140912259",
+        "sku": "73322-0101",
+        "price_minor": 119999,
+        "reference_minor": 299999,
+        "currency": "USD",
+        "options": "Satin Dusty Blue Pearl / Black / Carbon / S1",
+        "raw_options": [
+          "Satin Dusty Blue Pearl / Black / Carbon",
+          "S1"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Satin Dusty Blue Pearl / Black / Carbon"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S1",
+              "S2",
+              "S4",
+              "S5",
+              "S6"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:14:33.350936+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2016 Specialized SJ FSR Comp 29 (FRAMESET ONLY) Blk/RktRed LG",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "43157994045571",
+        "url": "https://www.incycle.com/products/2016-specialized-sj-fsr-comp-29-frameset-only-blk-rktred-lg?currency=USD&variant=43157994045571",
+        "current_price": 499.97,
+        "original_price": 1133.99,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/F93316-6204.jpg?v=1687304391",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 55.91054594837697,
+        "savings": 634.02
+      },
+      "check_started_at": "2026-11-05T23:14:33.351002+00:00",
+      "evidence_url": "https://www.incycle.com/products/2016-specialized-sj-fsr-comp-29-frameset-only-blk-rktred-lg.js?currency=USD",
+      "response_sha256": "a154e26bffdf6263e047ec0ceebc3648f0e5f91276a4e71676ee651b2ebf39ff",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2016 Specialized SJ FSR Comp 29 (FRAMESET ONLY) Blk/RktRed LG",
+        "variant": "43157994045571",
+        "sku": "F93316-6204",
+        "price_minor": 49997,
+        "reference_minor": 113399,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:14:35.541822+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2022 Specialized Stumpjumper Expert  - SRAM GX Eagle, Fox Perormance Elite",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "39447955406979",
+        "url": "https://www.incycle.com/products/specialized-stumpjumper-expert?currency=USD&variant=39447955406979",
+        "current_price": 3059.97,
+        "original_price": 6199.99,
+        "size": "S1",
+        "options": "Satin Doppio / Gloss Doppio / Satin Black / S1",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/93322-31_SJ-EXPERT-DOP-DOP-BLK_HERO.jpg?v=1755826653",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 50.6455655573638,
+        "savings": 3140.02
+      },
+      "check_started_at": "2026-11-05T23:14:35.541914+00:00",
+      "evidence_url": "https://www.incycle.com/products/specialized-stumpjumper-expert.js?currency=USD",
+      "response_sha256": "c1062a1e1557a03a16106f7bff5f8a4b212e0546569c3f8f2b002852b6f10ef2",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2022 Specialized Stumpjumper Expert  - SRAM GX Eagle, Fox Perormance Elite",
+        "variant": "39447955406979",
+        "sku": "93322-3101",
+        "price_minor": 305997,
+        "reference_minor": 619999,
+        "currency": "USD",
+        "options": "Satin Doppio / Gloss Doppio / Satin Black / S1",
+        "raw_options": [
+          "Satin Doppio / Gloss Doppio / Satin Black",
+          "S1"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Gloss White Mountains / Gunmetal",
+              "Satin Doppio / Gloss Doppio / Satin Black"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S1",
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:14:37.648426+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2023 Specialized Sirrus 4.0",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "43524025319555",
+        "url": "https://www.incycle.com/products/2023-specialized-sirrus-4-0?currency=USD&variant=43524025319555",
+        "current_price": 799.97,
+        "original_price": 1599.99,
+        "size": "XXS",
+        "options": "Gloss Cactus Bloom / Satin Mystic Blue Reflective / XXS",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/90923-51_SIRRUS-40-CCTSBLM-MYSBLU_HERO.jpg?v=1755825444",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 50.001562509765684,
+        "savings": 800.02
+      },
+      "check_started_at": "2026-11-05T23:14:37.648446+00:00",
+      "evidence_url": "https://www.incycle.com/products/2023-specialized-sirrus-4-0.js?currency=USD",
+      "response_sha256": "f81407fb533a53ba68df44ea9ae7c9106196fd75dc1feb6a4aebac1d42988867",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2023 Specialized Sirrus 4.0",
+        "variant": "43524025319555",
+        "sku": "90923-5300",
+        "price_minor": 79997,
+        "reference_minor": 159999,
+        "currency": "USD",
+        "options": "Gloss Cactus Bloom / Satin Mystic Blue Reflective / XXS",
+        "raw_options": [
+          "Gloss Cactus Bloom / Satin Mystic Blue Reflective",
+          "XXS"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Gloss Cactus Bloom / Satin Mystic Blue Reflective",
+              "Gloss Birch / Satin Taupe Relfective"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "XXS",
+              "XS",
+              "S",
+              "M",
+              "L",
+              "XL"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:14:39.775976+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2023 Specialized Turbo Levo SL 2 Expert Carbon",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "43311597846659",
+        "url": "https://www.incycle.com/products/specialized-levo-sl-expert-carbon-2?currency=USD&variant=43311597846659",
+        "current_price": 4999.97,
+        "original_price": 9999.99,
+        "size": "S6",
+        "options": "Gloss Birch / Taupe / S6",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/96823-30_LEVO-SL-EXPERT-CARBON-BRCH-TPE_HERO.jpg?v=1764302089",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 50.00025000025,
+        "savings": 5000.02
+      },
+      "check_started_at": "2026-11-05T23:14:39.775992+00:00",
+      "evidence_url": "https://www.incycle.com/products/specialized-levo-sl-expert-carbon-2.js?currency=USD",
+      "response_sha256": "e945ddf1204685f0d97dbec3464970d4d9311b143fcf6e56722fd025343485b5",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2023 Specialized Turbo Levo SL 2 Expert Carbon",
+        "variant": "43311597846659",
+        "sku": "96823-3006",
+        "price_minor": 499997,
+        "reference_minor": 999999,
+        "currency": "USD",
+        "options": "Gloss Birch / Taupe / S6",
+        "raw_options": [
+          "Gloss Birch / Taupe",
+          "S6"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Gloss Birch / Taupe",
+              "Satin Harvest Gold / Harvest Gold Metallic / Obsidian / Silver Dust",
+              "Gloss Smoke / Gloss Black / Satin Flo Red / Silver Dust"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S1",
+              "S2",
+              "S3",
+              "S5",
+              "S4",
+              "S6"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:14:41.881174+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2022 Pinarello Dogma F Disc Frameset Blk/Blk 54",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "42711467589763",
+        "url": "https://www.incycle.com/products/2022-pinarello-dogma-f-disc-frameset?currency=USD&variant=42711467589763",
+        "current_price": 3899.97,
+        "original_price": 6949.99,
+        "size": "54",
+        "options": "Blk/Blk / 54",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/PI-22-FDSC-43-BOBB.jpg?v=1742247883",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 43.88524300034964,
+        "savings": 3050.02
+      },
+      "check_started_at": "2026-11-05T23:14:41.881188+00:00",
+      "evidence_url": "https://www.incycle.com/products/2022-pinarello-dogma-f-disc-frameset.js?currency=USD",
+      "response_sha256": "da02380b4342eef738ce4fab75e7569bd94a94c10f777d144aea00f3cf8b0918",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2022 Pinarello Dogma F Disc Frameset Blk/Blk 54",
+        "variant": "42711467589763",
+        "sku": "PI-22-FDSC-54-BOBB",
+        "price_minor": 389997,
+        "reference_minor": 694999,
+        "currency": "USD",
+        "options": "Blk/Blk / 54",
+        "raw_options": [
+          "Blk/Blk",
+          "54"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Eruption Red",
+              "Blk/Blk",
+              "Plutonium Flash"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "55",
+              "57",
+              "59.5",
+              "53",
+              "62",
+              "43",
+              "46",
+              "50",
+              "51",
+              "54",
+              "56"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:14:43.981443+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2023 Scott Genius ST 900 Tuned HMX Frame & Fork",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "43904355893379",
+        "url": "https://www.incycle.com/products/2023-scott-genius-st-900-tuned-hmx-frame-fork?currency=USD&variant=43904355893379",
+        "current_price": 3199.97,
+        "original_price": 5699.99,
+        "size": "XL",
+        "options": "XL",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/292051.jpg?v=1712098239",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 43.860076947503416,
+        "savings": 2500.02
+      },
+      "check_started_at": "2026-11-05T23:14:43.981506+00:00",
+      "evidence_url": "https://www.incycle.com/products/2023-scott-genius-st-900-tuned-hmx-frame-fork.js?currency=USD",
+      "response_sha256": "2bd57e03908026fc64535c98732bd74aac782337b8addba819ba88f8dd464a52",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2023 Scott Genius ST 900 Tuned HMX Frame & Fork",
+        "variant": "43904355893379",
+        "sku": "292051-012",
+        "price_minor": 319997,
+        "reference_minor": 569999,
+        "currency": "USD",
+        "options": "XL",
+        "raw_options": [
+          "XL"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "MD",
+              "LG",
+              "XL"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:14:46.098876+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2023 Specialized Turbo Levo SL 2 Comp Carbon",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "47231872991363",
+        "url": "https://www.incycle.com/products/2023-specialized-levo-sl-comp?currency=USD&variant=47231872991363",
+        "current_price": 4498.97,
+        "original_price": 7999.99,
+        "size": "S6",
+        "options": "Satin Mystic Blue / Mystic Blue Metallic / Silver Dust / S6",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/96823-51_LEVO-SL-COMP-CARBON-MYSBLU-MYSBLUMET-SILDST_HERO.jpg?v=1780343574",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 43.76280470350588,
+        "savings": 3501.02
+      },
+      "check_started_at": "2026-11-05T23:14:46.098926+00:00",
+      "evidence_url": "https://www.incycle.com/products/2023-specialized-levo-sl-comp.js?currency=USD",
+      "response_sha256": "e4d6d118dc77c1a4b46dfe3304273b6ce7e8abb1d9b81434c566272dc80d85fc",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2023 Specialized Turbo Levo SL 2 Comp Carbon",
+        "variant": "47231872991363",
+        "sku": "96823-5106",
+        "price_minor": 449897,
+        "reference_minor": 799999,
+        "currency": "USD",
+        "options": "Satin Mystic Blue / Mystic Blue Metallic / Silver Dust / S6",
+        "raw_options": [
+          "Satin Mystic Blue / Mystic Blue Metallic / Silver Dust",
+          "S6"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Satin Mystic Blue / Mystic Blue Metallic / Silver Dust",
+              "Gloss Blaze / Black / Silverdust",
+              "Satin Doppio / Sand / Silver Dust"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S1",
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:14:48.208148+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2022 Specialized Turbo Vado SL 4.0 Step-Through",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "39447976149123",
+        "url": "https://www.incycle.com/products/specialized-vado-sl-4-0-st?currency=USD&variant=39447976149123",
+        "current_price": 1999.97,
+        "original_price": 3499.99,
+        "size": "XL",
+        "options": "Limestone / Black Reflective / XL",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/93921-50_VADO-SL-40-ST-LMSTN-BLKREFL_HERO.jpg?v=1755814339",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 42.85783673667639,
+        "savings": 1500.02
+      },
+      "check_started_at": "2026-11-05T23:14:48.208241+00:00",
+      "evidence_url": "https://www.incycle.com/products/specialized-vado-sl-4-0-st.js?currency=USD",
+      "response_sha256": "3a1a3c36adba75f114c62c2c3b6c00fd24440c154968b173c732aacf5fc91791",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2022 Specialized Turbo Vado SL 4.0 Step-Through",
+        "variant": "39447976149123",
+        "sku": "93921-5005",
+        "price_minor": 199997,
+        "reference_minor": 349999,
+        "currency": "USD",
+        "options": "Limestone / Black Reflective / XL",
+        "raw_options": [
+          "Limestone / Black Reflective",
+          "XL"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Limestone / Black Reflective",
+              "Cast Umber / Silver Reflective"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S",
+              "M",
+              "L",
+              "XL"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:14:50.313088+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2025 Specialized Turbo Kenevo SL 2 Ohlins Coil",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "44779533172867",
+        "url": "https://www.incycle.com/products/2025-specialized-turbo-kenevo-sl-2-ohlins-coil?currency=USD&variant=44779533172867",
+        "current_price": 7999.99,
+        "original_price": 9999.99,
+        "size": "S2",
+        "options": "Charcoal Tint /  Cool Grey Strata / Burnt Gold Metallic / S2",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/98025-00_KENEVO-SL-OHLINS-COIL-UL-CHARTNT-CLGRY-BNTGLDMET_HERO-PDP.jpg?v=1755822167",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 20.00002000002,
+        "savings": 2000.0
+      },
+      "check_started_at": "2026-11-05T23:14:50.313181+00:00",
+      "evidence_url": "https://www.incycle.com/products/2025-specialized-turbo-kenevo-sl-2-ohlins-coil.js?currency=USD",
+      "response_sha256": "1d79235051640c4bc0579cfbe30b5a152a56b9d3385473b92b6b1ff548c06ead",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2025 Specialized Turbo Kenevo SL 2 Ohlins Coil",
+        "variant": "44779533172867",
+        "sku": "98025-0002U",
+        "price_minor": 799999,
+        "reference_minor": 999999,
+        "currency": "USD",
+        "options": "Charcoal Tint /  Cool Grey Strata / Burnt Gold Metallic / S2",
+        "raw_options": [
+          "Charcoal Tint /  Cool Grey Strata / Burnt Gold Metallic",
+          "S2"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Charcoal Tint /  Cool Grey Strata / Burnt Gold Metallic"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S2",
+              "S3",
+              "S4",
+              "S5"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:14:52.412352+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2025 Specialized Turbo Levo SL 2 Expert",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "44781250642051",
+        "url": "https://www.incycle.com/products/2025-specialized-turbo-levo-sl-expert?currency=USD&variant=44781250642051",
+        "current_price": 7199.99,
+        "original_price": 8999.99,
+        "size": "S5",
+        "options": "Satin Champagne / Cool Grey / Metallic Obsidian / S5",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/96825-31_LEVO-SL-EXPERT-CARBON-UL-CHAM-CLGRY-METOBSD_HERO-PDP.jpg?v=1755822069",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 20.000022222246912,
+        "savings": 1800.0
+      },
+      "check_started_at": "2026-11-05T23:14:52.412445+00:00",
+      "evidence_url": "https://www.incycle.com/products/2025-specialized-turbo-levo-sl-expert.js?currency=USD",
+      "response_sha256": "02470f79792fe0a1c9505ca9a2fd94bf29d128f7ca11a05606dc4f89f76bae7a",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2025 Specialized Turbo Levo SL 2 Expert",
+        "variant": "44781250642051",
+        "sku": "96825-3105U",
+        "price_minor": 719999,
+        "reference_minor": 899999,
+        "currency": "USD",
+        "options": "Satin Champagne / Cool Grey / Metallic Obsidian / S5",
+        "raw_options": [
+          "Satin Champagne / Cool Grey / Metallic Obsidian",
+          "S5"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Satin Champagne / Cool Grey / Metallic Obsidian",
+              "Carbon / Obsidian / Bronze"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S1",
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:14:54.545015+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2025 Specialized Stumpjumper 15 Pro  - SRAM X0 AXS, FOX Factory",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "44549931040899",
+        "url": "https://www.incycle.com/products/2025-specialized-stumpjumper-15-pro?currency=USD&variant=44549931040899",
+        "current_price": 6399.99,
+        "original_price": 7999.99,
+        "size": "S6",
+        "options": "Satin Green Tint / Gunmetal / Satin Metallic Sulphur / S6",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/93325-10_SJ-15-PRO-GRNTNT-GUN-METSLPHR_HERO-PDP.jpg?v=1755830039",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 20.00002500003125,
+        "savings": 1600.0
+      },
+      "check_started_at": "2026-11-05T23:14:54.545103+00:00",
+      "evidence_url": "https://www.incycle.com/products/2025-specialized-stumpjumper-15-pro.js?currency=USD",
+      "response_sha256": "29b5cc4174cb2b075f6a919681e06e9d29aeb2ef9f02c3e2dc40334f03d09fd2",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2025 Specialized Stumpjumper 15 Pro  - SRAM X0 AXS, FOX Factory",
+        "variant": "44549931040899",
+        "sku": "93325-1006",
+        "price_minor": 639999,
+        "reference_minor": 799999,
+        "currency": "USD",
+        "options": "Satin Green Tint / Gunmetal / Satin Metallic Sulphur / S6",
+        "raw_options": [
+          "Satin Green Tint / Gunmetal / Satin Metallic Sulphur",
+          "S6"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Satin Green Tint / Gunmetal / Satin Metallic Sulphur"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S1",
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:14:56.736808+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2026 Specialized Turbo Levo SL 2 Comp Alloy",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "45607582466179",
+        "url": "https://www.incycle.com/products/2026-specialized-turbo-levo-sl-2-comp-alloy?currency=USD&variant=45607582466179",
+        "current_price": 6599.99,
+        "original_price": 7099.99,
+        "size": "S6",
+        "options": "Oak Green / Sandstone Metallic / S6",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/96826-50_LEVO-SL-COMP-ALLOY-OAKGRN-SNDSTNMET_HERO-PDP.jpg?v=1760065557",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 7.042263439807662,
+        "savings": 500.0
+      },
+      "check_started_at": "2026-11-05T23:14:56.736900+00:00",
+      "evidence_url": "https://www.incycle.com/products/2026-specialized-turbo-levo-sl-2-comp-alloy.js?currency=USD",
+      "response_sha256": "2c48b4a5c4d6325de23956861443aa261b00fd1a4e7dffd8c1095e3c854e2510",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2026 Specialized Turbo Levo SL 2 Comp Alloy",
+        "variant": "45607582466179",
+        "sku": "96826-5006",
+        "price_minor": 659999,
+        "reference_minor": 709999,
+        "currency": "USD",
+        "options": "Oak Green / Sandstone Metallic / S6",
+        "raw_options": [
+          "Oak Green / Sandstone Metallic",
+          "S6"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Oak Green / Sandstone Metallic",
+              "Orange Zest / Metallic Deep Marine"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S1",
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:14:58.922080+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2025 Specialized Turbo Levo SL 2 Pro",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "44780026003587",
+        "url": "https://www.incycle.com/products/2025-specialized-turbo-levo-sl-pro?currency=USD&variant=44780026003587",
+        "current_price": 8799.99,
+        "original_price": 9999.99,
+        "size": "S4",
+        "options": "Orange Tint / Cool Grey Impasto / Copper / S4",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/96825-10_LEVO-SL-PRO-CARBON-UL-ORGTNT-CLGRY-COP_HERO-PDP.jpg?v=1755822481",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 12.000012000012,
+        "savings": 1200.0
+      },
+      "check_started_at": "2026-11-05T23:14:58.922170+00:00",
+      "evidence_url": "https://www.incycle.com/products/2025-specialized-turbo-levo-sl-pro.js?currency=USD",
+      "response_sha256": "ef20de396f238ee04d30b8879e4d1403a717d59a7fd4de5451155c4c96026ff4",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2025 Specialized Turbo Levo SL 2 Pro",
+        "variant": "44780026003587",
+        "sku": "96825-1004U",
+        "price_minor": 879999,
+        "reference_minor": 999999,
+        "currency": "USD",
+        "options": "Orange Tint / Cool Grey Impasto / Copper / S4",
+        "raw_options": [
+          "Orange Tint / Cool Grey Impasto / Copper",
+          "S4"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Orange Tint / Cool Grey Impasto / Copper"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S1",
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:15:01.062179+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2026 Specialized Turbo Levo 4 Comp",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "45273517686915",
+        "url": "https://www.incycle.com/products/2026-specialized-levo-4-comp?currency=USD&variant=45273517686915",
+        "current_price": 5999.99,
+        "original_price": 7999.99,
+        "size": "S6",
+        "options": "Satin Champagne / Metallic Obsidian / S6",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/95224-56_LEVO-COMP-CARBON-G4-CHAM-METOBSD_HERO-PDP.jpg?v=1760065347",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 25.00003125003906,
+        "savings": 2000.0
+      },
+      "check_started_at": "2026-11-05T23:15:01.062270+00:00",
+      "evidence_url": "https://www.incycle.com/products/2026-specialized-levo-4-comp.js?currency=USD",
+      "response_sha256": "fffa153d4475b02d5cc2471c15c400e4f6f90aab0aa68345bd8f8e6bee649546",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2026 Specialized Turbo Levo 4 Comp",
+        "variant": "45273517686915",
+        "sku": "95224-5606",
+        "price_minor": 599999,
+        "reference_minor": 799999,
+        "currency": "USD",
+        "options": "Satin Champagne / Metallic Obsidian / S6",
+        "raw_options": [
+          "Satin Champagne / Metallic Obsidian",
+          "S6"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Satin Champagne / Metallic Obsidian",
+              "Gloss Orange Tint Over Silver Dust / Dark Navy"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:15:03.206300+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2025 Specialized S-Works Aethos - SRAM RED AXS",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "44252982542467",
+        "url": "https://www.incycle.com/products/bike-1?currency=USD&variant=44252982542467",
+        "current_price": 10499.97,
+        "original_price": 11499.99,
+        "size": "58",
+        "options": "Satin Doppio / Gunmetal Dry Brushed / Gold Pearl / 58",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/97225-00_AETHOS-SW-ETAP-DOP-BRSH-GLDPRL_HERO-PDP.jpg?v=1760078818",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 8.695833648550998,
+        "savings": 1000.02
+      },
+      "check_started_at": "2026-11-05T23:15:03.206339+00:00",
+      "evidence_url": "https://www.incycle.com/products/bike-1.js?currency=USD",
+      "response_sha256": "5881bdf4bab3593bfe34839777eeb2e48b97dcbd146bef43d7c016c1e16ec2e0",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2025 Specialized S-Works Aethos - SRAM RED AXS",
+        "variant": "44252982542467",
+        "sku": "97225-0058",
+        "price_minor": 1049997,
+        "reference_minor": 1149999,
+        "currency": "USD",
+        "options": "Satin Doppio / Gunmetal Dry Brushed / Gold Pearl / 58",
+        "raw_options": [
+          "Satin Doppio / Gunmetal Dry Brushed / Gold Pearl",
+          "58"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Satin Doppio / Gunmetal Dry Brushed / Gold Pearl"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "49",
+              "52",
+              "54",
+              "56",
+              "58",
+              "61"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:15:05.346410+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2025 Specialized Turbo Creo 2 Comp - SRAM Apex / X1 Eagle AXS",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "44944325705859",
+        "url": "https://www.incycle.com/products/specialized-turbo-creo-2-comp?currency=USD&variant=44944325705859",
+        "current_price": 5599.99,
+        "original_price": 6999.99,
+        "size": "49",
+        "options": "Cypress Metallic / Black Liquid Metal / 49",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/98125-50_CREO-SL-COMP-CARBON-UL-CYPRMET-BLKLQDMET_HERO-PDP.jpg?v=1755816016",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 20.00002857146939,
+        "savings": 1400.0
+      },
+      "check_started_at": "2026-11-05T23:15:05.346478+00:00",
+      "evidence_url": "https://www.incycle.com/products/specialized-turbo-creo-2-comp.js?currency=USD",
+      "response_sha256": "b8b776382d10fc3cecb541b52e1f683ff503ff65975fe09a4187db3a7b0f001c",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2025 Specialized Turbo Creo 2 Comp - SRAM Apex / X1 Eagle AXS",
+        "variant": "44944325705859",
+        "sku": "98125-5049U",
+        "price_minor": 559999,
+        "reference_minor": 699999,
+        "currency": "USD",
+        "options": "Cypress Metallic / Black Liquid Metal / 49",
+        "raw_options": [
+          "Cypress Metallic / Black Liquid Metal",
+          "49"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Cypress Metallic / Black Liquid Metal",
+              "Metallic Deep Lake / Deep Lake"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "49",
+              "52",
+              "54",
+              "56",
+              "58",
+              "61"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:15:07.443713+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2025 Specialized Stumpjumper 15 Alloy Frameset  - FOX FLOAT GENIE Performance",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "44549932646531",
+        "url": "https://www.incycle.com/products/2025-specialized-stumpjumper-15-alloy-frame?currency=USD&variant=44549932646531",
+        "current_price": 1699.99,
+        "original_price": 2099.99,
+        "size": "S6",
+        "options": "Satin Obsidian / Silver Dust / S6",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/73325-70_SJ-15-ALLOY-FRM-OBSD-SILDST_HERO-PDP.jpg?v=1755829770",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 19.047709750998813,
+        "savings": 400.0
+      },
+      "check_started_at": "2026-11-05T23:15:07.443766+00:00",
+      "evidence_url": "https://www.incycle.com/products/2025-specialized-stumpjumper-15-alloy-frame.js?currency=USD",
+      "response_sha256": "2d43081aeb83f6595440c4a33f6f5db872c95d24daeb2cbb71a295529ac01069",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2025 Specialized Stumpjumper 15 Alloy Frameset  - FOX FLOAT GENIE Performance",
+        "variant": "44549932646531",
+        "sku": "73325-7006",
+        "price_minor": 169999,
+        "reference_minor": 209999,
+        "currency": "USD",
+        "options": "Satin Obsidian / Silver Dust / S6",
+        "raw_options": [
+          "Satin Obsidian / Silver Dust",
+          "S6"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Satin Obsidian / Silver Dust"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S1",
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:15:09.589704+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2026 Specialized S-Works Turbo Levo 4",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "45607585022083",
+        "url": "https://www.incycle.com/products/2026-specialized-s-works-turbo-levo-4?currency=USD&variant=45607585022083",
+        "current_price": 10999.99,
+        "original_price": 11499.99,
+        "size": "S3",
+        "options": "Gloss Laurel Green / Burnt Gold / Chrome / S3",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/95226-06_LEVO-SW-CARBON-G4-LRLGRNMET-BNTGLDMET-CHRM_HERO-PDP.jpg?v=1763549720",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 4.347829867678146,
+        "savings": 500.0
+      },
+      "check_started_at": "2026-11-05T23:15:09.589766+00:00",
+      "evidence_url": "https://www.incycle.com/products/2026-specialized-s-works-turbo-levo-4.js?currency=USD",
+      "response_sha256": "8e16daf0d37ec3e3865c6fca1bb2d791fd950af367aadb5ddda7c691845669df",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2026 Specialized S-Works Turbo Levo 4",
+        "variant": "45607585022083",
+        "sku": "95226-0603",
+        "price_minor": 1099999,
+        "reference_minor": 1149999,
+        "currency": "USD",
+        "options": "Gloss Laurel Green / Burnt Gold / Chrome / S3",
+        "raw_options": [
+          "Gloss Laurel Green / Burnt Gold / Chrome",
+          "S3"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Gloss Laurel Green / Burnt Gold / Chrome"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:15:11.690128+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2026 Specialized Tarmac SL8 Frameset - FACT 10r Carbon",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "45754619658371",
+        "url": "https://www.incycle.com/products/2026-specialized-tarmac-sl8-frameset?currency=USD&variant=45754619658371",
+        "current_price": 2799.99,
+        "original_price": 3499.99,
+        "size": "54",
+        "options": "Gloss Silver Dust / Shadow Silver Dry Impasto / Photon Orange Tint Over Silver Dust / 54",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/74926-10_TARMAC-SL8-FRMSET-SILDST-SHDWSIL-PTNORGTNT_HERO-PDP.jpg?v=1760462277",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 20.00005714302041,
+        "savings": 700.0
+      },
+      "check_started_at": "2026-11-05T23:15:11.690170+00:00",
+      "evidence_url": "https://www.incycle.com/products/2026-specialized-tarmac-sl8-frameset.js?currency=USD",
+      "response_sha256": "e43ad5f84289627afd7094e75c5efd59670fe59fc89c884b2724364839e56950",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2026 Specialized Tarmac SL8 Frameset - FACT 10r Carbon",
+        "variant": "45754619658371",
+        "sku": "74926-1054",
+        "price_minor": 279999,
+        "reference_minor": 349999,
+        "currency": "USD",
+        "options": "Gloss Silver Dust / Shadow Silver Dry Impasto / Photon Orange Tint Over Silver Dust / 54",
+        "raw_options": [
+          "Gloss Silver Dust / Shadow Silver Dry Impasto / Photon Orange Tint Over Silver Dust",
+          "54"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Satin Carbon / 100% Cqv Reflex Super Red Pearl Front Edge Fade / Metallic White Silver",
+              "Gloss Silver Dust / Shadow Silver Dry Impasto / Photon Orange Tint Over Silver Dust"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "49",
+              "52",
+              "54",
+              "56",
+              "58",
+              "61"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:15:13.816667+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2027 Specialized Levo 4 EVO Comp",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "46937188925571",
+        "url": "https://www.incycle.com/products/levo-comp-evo-g4-4294787?currency=USD&variant=46937188925571",
+        "current_price": 7999.99,
+        "original_price": 8499.99,
+        "size": "S2",
+        "options": "Gloss Warm Smoke / Pistachio / S2",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/95227-50_LEVO-COMP-EVO-G4-WRMSMKMET-PST-BRSHCP_HERO-PDP.jpg?v=1775736037",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 5.882359861599837,
+        "savings": 500.0
+      },
+      "check_started_at": "2026-11-05T23:15:13.816759+00:00",
+      "evidence_url": "https://www.incycle.com/products/levo-comp-evo-g4-4294787.js?currency=USD",
+      "response_sha256": "673db3193e376e36aaf75e9da396d0230de53e02e75dabdc094e4ce64d278bb2",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2027 Specialized Levo 4 EVO Comp",
+        "variant": "46937188925571",
+        "sku": "95227-5002",
+        "price_minor": 799999,
+        "reference_minor": 849999,
+        "currency": "USD",
+        "options": "Gloss Warm Smoke / Pistachio / S2",
+        "raw_options": [
+          "Gloss Warm Smoke / Pistachio",
+          "S2"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Gloss Warm Smoke / Pistachio",
+              "Satin Agave Grey / Desert Metallic"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:15:15.918114+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2026 Specialized Tarmac SL8 Pro - Shimano Ultegra Di2",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "45690615103619",
+        "url": "https://www.incycle.com/products/2026-specialized-tarmac-sl8-pro-shimano-ultegra-di2?currency=USD&variant=45690615103619",
+        "current_price": 6799.99,
+        "original_price": 8499.99,
+        "size": "54",
+        "options": "Gloss Red Sky / Chrome / 54",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/94926-13_TARMAC-SL8-PRO-DI2-REDSKY-CHRM_HERO-PDP.jpg?v=1760057928",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 20.000023529439446,
+        "savings": 1700.0
+      },
+      "check_started_at": "2026-11-05T23:15:15.918179+00:00",
+      "evidence_url": "https://www.incycle.com/products/2026-specialized-tarmac-sl8-pro-shimano-ultegra-di2.js?currency=USD",
+      "response_sha256": "5cefc227efbe9abc1164558728412072d0f536f906b4b3fbfba18c46d98725cf",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2026 Specialized Tarmac SL8 Pro - Shimano Ultegra Di2",
+        "variant": "45690615103619",
+        "sku": "94926-1354",
+        "price_minor": 679999,
+        "reference_minor": 849999,
+        "currency": "USD",
+        "options": "Gloss Red Sky / Chrome / 54",
+        "raw_options": [
+          "Gloss Red Sky / Chrome",
+          "54"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Gloss Red Sky / Chrome",
+              "Gloss Dolomite Metallic / Nebula Metallic"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "44",
+              "49",
+              "52",
+              "54",
+              "56",
+              "58",
+              "61"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:15:18.015885+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2026 Specialized Turbo Levo 4 Pro",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "45273528729731",
+        "url": "https://www.incycle.com/products/2026-specialized-levo-4-pro?currency=USD&variant=45273528729731",
+        "current_price": 8499.99,
+        "original_price": 9999.99,
+        "size": "S5",
+        "options": "Gloss Metallic Obsidian / Burnt Gold Metallic / S5",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/95224-13_LEVO-PRO-CARBON-G4-METOBSD-BNTGLDMET_HERO-PDP.jpg?v=1760065922",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 15.000015000015,
+        "savings": 1500.0
+      },
+      "check_started_at": "2026-11-05T23:15:18.015969+00:00",
+      "evidence_url": "https://www.incycle.com/products/2026-specialized-levo-4-pro.js?currency=USD",
+      "response_sha256": "225181f3d4708794fd1bf4512136539df99b017b7eaf45313516334d2f18778d",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2026 Specialized Turbo Levo 4 Pro",
+        "variant": "45273528729731",
+        "sku": "95224-1305",
+        "price_minor": 849999,
+        "reference_minor": 999999,
+        "currency": "USD",
+        "options": "Gloss Metallic Obsidian / Burnt Gold Metallic / S5",
+        "raw_options": [
+          "Gloss Metallic Obsidian / Burnt Gold Metallic",
+          "S5"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Gloss Metallic Obsidian / Burnt Gold Metallic",
+              "Gloss Blue Onyx / Dark Navy / Birch"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:15:20.142467+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2026 Specialized S-Works Tarmac SL8 Frameset - FACT 12r Carbon",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "45506835546243",
+        "url": "https://www.incycle.com/products/2026-specialized-s-works-tarmac-sl8-frameset?currency=USD&variant=45506835546243",
+        "current_price": 4559.99,
+        "original_price": 5699.99,
+        "size": "54",
+        "options": "Gloss Carbon / Bordeaux Metallic + Nebula Directional Brush / Pearl Over White / 54",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/74926-06_TARMAC-SL8-SW-FRMSET-CARB-NBLMET-MGNGLDCMLN_HERO-PDP.jpg?v=1763549633",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 20.000035087780855,
+        "savings": 1140.0
+      },
+      "check_started_at": "2026-11-05T23:15:20.142517+00:00",
+      "evidence_url": "https://www.incycle.com/products/2026-specialized-s-works-tarmac-sl8-frameset.js?currency=USD",
+      "response_sha256": "462b69d870968f45ab4142a5139ffda1e21ba6c0f2b19825dbe3dec7f22c471d",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2026 Specialized S-Works Tarmac SL8 Frameset - FACT 12r Carbon",
+        "variant": "45506835546243",
+        "sku": "74926-0654",
+        "price_minor": 455999,
+        "reference_minor": 569999,
+        "currency": "USD",
+        "options": "Gloss Carbon / Bordeaux Metallic + Nebula Directional Brush / Pearl Over White / 54",
+        "raw_options": [
+          "Gloss Carbon / Bordeaux Metallic + Nebula Directional Brush / Pearl Over White",
+          "54"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Rtp Raw Carbon / Gloss Premium Fjord",
+              "Gloss Metallic White Silver / Pearl / Black",
+              "Gloss Dolomite Metallic / Directional Brush / Oasis Tint Over Liquid Metal",
+              "Satin Carbon / Cyan To Blue Viavi Pearl Front Edge Fade / Metallic White Silver",
+              "Gloss Carbon / Bordeaux Metallic + Nebula Directional Brush / Pearl Over White",
+              "Gloss Dolomite Metallic / Directional Brush / Blue Majesty Metallic"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "44",
+              "49",
+              "52",
+              "54",
+              "56",
+              "58",
+              "61"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:15:22.264569+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2026 Specialized Turbo Creo 2 Expert - Shimano GRX Di2",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "45690614251651",
+        "url": "https://www.incycle.com/products/2026-specialized-turbo-creo-2-expert-shimano-grx-di2?currency=USD&variant=45690614251651",
+        "current_price": 8549.99,
+        "original_price": 9499.99,
+        "size": "56",
+        "options": "Satin Nebula Metallic / Bordeaux Metallic Dry Impasto / Desert Metallic / 56",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/98126-30_CREO-SL-EXPERT-CARBON-NBLMET-BDXMET-DSRTMET_HERO-PDP.jpg?v=1760066922",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 10.00001052632687,
+        "savings": 950.0
+      },
+      "check_started_at": "2026-11-05T23:15:22.264625+00:00",
+      "evidence_url": "https://www.incycle.com/products/2026-specialized-turbo-creo-2-expert-shimano-grx-di2.js?currency=USD",
+      "response_sha256": "1091dc5babc651e3abae9d92b440ddd194dffe7df279508713c911bbb3029e56",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2026 Specialized Turbo Creo 2 Expert - Shimano GRX Di2",
+        "variant": "45690614251651",
+        "sku": "98126-3056",
+        "price_minor": 854999,
+        "reference_minor": 949999,
+        "currency": "USD",
+        "options": "Satin Nebula Metallic / Bordeaux Metallic Dry Impasto / Desert Metallic / 56",
+        "raw_options": [
+          "Satin Nebula Metallic / Bordeaux Metallic Dry Impasto / Desert Metallic",
+          "56"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Satin Nebula Metallic / Bordeaux Metallic Dry Impasto / Desert Metallic",
+              "Gloss Fjord Metallic / Birch"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "49",
+              "52",
+              "54",
+              "56",
+              "58",
+              "61"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:15:24.378315+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2025 Specialized Turbo Levo SL 2 \u00d6hlins Coil",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "44780024758403",
+        "url": "https://www.incycle.com/products/2025-specialized-turbo-levo-sl-ohlins?currency=USD&variant=44780024758403",
+        "current_price": 7999.99,
+        "original_price": 8999.99,
+        "size": "S3",
+        "options": "Solidity / Maroon / Burnt Gold Metallic / S3",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/96825-00_LEVO-SL-OHLINS-COIL-UL-SLDMET-MRN-BNTGLDMET_HERO-PDP.jpg?v=1755822194",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 11.11112345680384,
+        "savings": 1000.0
+      },
+      "check_started_at": "2026-11-05T23:15:24.378406+00:00",
+      "evidence_url": "https://www.incycle.com/products/2025-specialized-turbo-levo-sl-ohlins.js?currency=USD",
+      "response_sha256": "2a15afc3ca05a1fbd3fb250418447cb0137293c14367ba5b538be0a7f91fe3a4",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2025 Specialized Turbo Levo SL 2 \u00d6hlins Coil",
+        "variant": "44780024758403",
+        "sku": "96825-0003U",
+        "price_minor": 799999,
+        "reference_minor": 899999,
+        "currency": "USD",
+        "options": "Solidity / Maroon / Burnt Gold Metallic / S3",
+        "raw_options": [
+          "Solidity / Maroon / Burnt Gold Metallic",
+          "S3"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Solidity / Maroon / Burnt Gold Metallic"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:15:26.485172+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2025 Specialized Stumpjumper 15 Expert  - SRAM GX AXS, FOX Performance Elite",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "44549931597955",
+        "url": "https://www.incycle.com/products/2025-specialized-stumpjumper-15-expert?currency=USD&variant=44549931597955",
+        "current_price": 4799.99,
+        "original_price": 5999.99,
+        "size": "S6",
+        "options": "Satin Electric Green / Satin Forest Green / S6",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/93325-30_SJ-15-EXPERT-EGRN-FSTGRN_HERO-PDP.jpg?v=1755829823",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 20.00003333338889,
+        "savings": 1200.0
+      },
+      "check_started_at": "2026-11-05T23:15:26.485272+00:00",
+      "evidence_url": "https://www.incycle.com/products/2025-specialized-stumpjumper-15-expert.js?currency=USD",
+      "response_sha256": "bc6dc30b62a27837e937de841ccd89f6defd4d934cbad48b92b7f6cfe93f186c",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2025 Specialized Stumpjumper 15 Expert  - SRAM GX AXS, FOX Performance Elite",
+        "variant": "44549931597955",
+        "sku": "93325-3006",
+        "price_minor": 479999,
+        "reference_minor": 599999,
+        "currency": "USD",
+        "options": "Satin Electric Green / Satin Forest Green / S6",
+        "raw_options": [
+          "Satin Electric Green / Satin Forest Green",
+          "S6"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Satin Electric Green / Satin Forest Green",
+              "Gloss Gunmetal / White Mountains"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S1",
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:15:28.717886+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2026 Specialized Turbo Levo 4 Comp Alloy",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "45369057443971",
+        "url": "https://www.incycle.com/products/lv-cmp-ally-4?currency=USD&variant=45369057443971",
+        "current_price": 6199.99,
+        "original_price": 6699.99,
+        "size": "S4",
+        "options": "Satin Gunmetal / Obsidian / S4",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/95226-52_LEVO-COMP-ALLOY-G4-GUN-OBSD_HERO-PDP.jpg?v=1760058343",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 7.462697705518964,
+        "savings": 500.0
+      },
+      "check_started_at": "2026-11-05T23:15:28.717975+00:00",
+      "evidence_url": "https://www.incycle.com/products/lv-cmp-ally-4.js?currency=USD",
+      "response_sha256": "a38c57e1c5f9b39297a13117115d2d2151954705cbef0cfb9d6ffd8705d1960c",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2026 Specialized Turbo Levo 4 Comp Alloy",
+        "variant": "45369057443971",
+        "sku": "95226-5204",
+        "price_minor": 619999,
+        "reference_minor": 669999,
+        "currency": "USD",
+        "options": "Satin Gunmetal / Obsidian / S4",
+        "raw_options": [
+          "Satin Gunmetal / Obsidian",
+          "S4"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Gloss Deep Lake Metallic / Dune White",
+              "Satin Dusky Pink / Cypress Metallic",
+              "Satin Gunmetal / Obsidian"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S1",
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:15:30.933321+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2024 Specialized S-Works Aethos Frameset - FACT 12r Carbon",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "43082018455683",
+        "url": "https://www.incycle.com/products/2023-specialized-aethos-s-works-frameset?currency=USD&variant=43082018455683",
+        "current_price": 3899.97,
+        "original_price": 4999.99,
+        "size": "56",
+        "options": "Satin 100% Red Ghost Pearl Organic Color Run Over Desert Rose / Taupe / 56",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/77223-05_AETHOS-SW-FRMSET-REDGSTPRL-DSRTRS-TPE_HERO.jpg?v=1755827842",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 22.000444000888002,
+        "savings": 1100.02
+      },
+      "check_started_at": "2026-11-05T23:15:30.933343+00:00",
+      "evidence_url": "https://www.incycle.com/products/2023-specialized-aethos-s-works-frameset.js?currency=USD",
+      "response_sha256": "65a29b35c3b7e027d573c9c73bd4eb1e42eae92f36a54105ee2c50bf283324c4",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2024 Specialized S-Works Aethos Frameset - FACT 12r Carbon",
+        "variant": "43082018455683",
+        "sku": "77223-0556",
+        "price_minor": 389997,
+        "reference_minor": 499999,
+        "currency": "USD",
+        "options": "Satin 100% Red Ghost Pearl Organic Color Run Over Desert Rose / Taupe / 56",
+        "raw_options": [
+          "Satin 100% Red Ghost Pearl Organic Color Run Over Desert Rose / Taupe",
+          "56"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Gloss Birch / Abalone-lapis Organic Color Run / Dune",
+              "Satin Silver Pearl - Black Pearl Organic Color Run / Brushed Liquid Silver",
+              "Satin Oil Granite Over Metallic Deep Lake / White Sage",
+              "Satin 100% Red Ghost Pearl Organic Color Run Over Desert Rose / Taupe",
+              "Satin 25% Violet Ghost Pearl Over Carbon / Brushed Chrome"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "49",
+              "52",
+              "54",
+              "56",
+              "58",
+              "61"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:15:33.054342+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2022 Pivot Shuttle SL Pro X01 - Large",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "45172538933379",
+        "url": "https://www.incycle.com/products/2023-pivot-shuttle-sl-ride-x01?currency=USD&variant=45172538933379",
+        "current_price": 6335.97,
+        "original_price": 10999.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/DSC02332.jpg?v=1792020038",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 42.39503591235567,
+        "savings": 4663.03
+      },
+      "check_started_at": "2026-11-05T23:15:33.054399+00:00",
+      "evidence_url": "https://www.incycle.com/products/2023-pivot-shuttle-sl-ride-x01.js?currency=USD",
+      "response_sha256": "6ef5e60c0b2002b9a1a7243589825bf21e17fe33dcefe1b14a680eedfbe20150",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2022 Pivot Shuttle SL Pro X01 - Large",
+        "variant": "45172538933379",
+        "sku": "00SSLV129AXOA--BLDLGDRPCNSA1",
+        "price_minor": 633597,
+        "reference_minor": 1099900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:15:35.166511+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2023 Specialized Turbo Vado SL 4.0",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "39447949312131",
+        "url": "https://www.incycle.com/products/specialized-vado-sl-4-0?currency=USD&variant=39447949312131",
+        "current_price": 2099.97,
+        "original_price": 3499.99,
+        "size": "XL",
+        "options": "Limestone / Black Reflective / XL",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/93922-50_VADO-SL-40-LMSTN-BLKREFL_HERO.jpg?v=1755813814",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 40.0006857162449,
+        "savings": 1400.02
+      },
+      "check_started_at": "2026-11-05T23:15:35.166614+00:00",
+      "evidence_url": "https://www.incycle.com/products/specialized-vado-sl-4-0.js?currency=USD",
+      "response_sha256": "71862cda52484a63161273dab8cfe28c807df11dc516d4433f656da7d238558d",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2023 Specialized Turbo Vado SL 4.0",
+        "variant": "39447949312131",
+        "sku": "93922-5005",
+        "price_minor": 209997,
+        "reference_minor": 349999,
+        "currency": "USD",
+        "options": "Limestone / Black Reflective / XL",
+        "raw_options": [
+          "Limestone / Black Reflective",
+          "XL"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Limestone / Black Reflective",
+              "Smoke / Black Reflective"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S",
+              "M",
+              "L",
+              "XL"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:15:37.268319+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2023 Specialized Turbo Vado SL 4.0 Step-Through",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "43273651224707",
+        "url": "https://www.incycle.com/products/2023-specialized-vado-sl-4-0-st?currency=USD&variant=43273651224707",
+        "current_price": 2099.97,
+        "original_price": 3499.99,
+        "size": "XL",
+        "options": "Cast Umber / Silver Reflective / XL",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/93921-51_VADO-SL-40-ST-CSTUMBR-SILREFL_HERO_771b2d64-2d12-4270-8cf0-d388ea651fa5.jpg?v=1755813399",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 40.0006857162449,
+        "savings": 1400.02
+      },
+      "check_started_at": "2026-11-05T23:15:37.268376+00:00",
+      "evidence_url": "https://www.incycle.com/products/2023-specialized-vado-sl-4-0-st.js?currency=USD",
+      "response_sha256": "fb43eeec504351d6448cf40a42c3da4ebe380b209afeff1475b21ac1f553891b",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2023 Specialized Turbo Vado SL 4.0 Step-Through",
+        "variant": "43273651224707",
+        "sku": "93923-5005",
+        "price_minor": 209997,
+        "reference_minor": 349999,
+        "currency": "USD",
+        "options": "Cast Umber / Silver Reflective / XL",
+        "raw_options": [
+          "Cast Umber / Silver Reflective",
+          "XL"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Cast Umber / Silver Reflective",
+              "Limestone / Black Reflective"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S",
+              "M",
+              "L",
+              "XL"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-05T23:14:26.918343+00:00",
+      "checked_at": "2026-11-05T23:15:39.387999+00:00",
+      "within_audit_window": true
+    }
+  ]
+}

@@ -1,0 +1,860 @@
+[
+  {
+    "url": "https://www.incycle.com/products/specialized-stumpjumper-frameset?currency=USD&variant=39619142713475",
+    "name": "2022 Specialized Stumpjumper Frameset  - FOX FLOAT DPS Performance",
+    "at": "2026-11-05T23:17:15.487211+00:00",
+    "sha256": "efee95a364563cd58343cd39fa70b96257daed7eb215eeb633de19b831f2b033",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": false,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/stumpjumper-s-works-frameset?currency=USD&variant=39657140912259",
+    "name": "2022 Specialized S-Works Stumpjumper Frameset  - FOX FLOAT DPS Factory",
+    "at": "2026-11-05T23:17:17.854791+00:00",
+    "sha256": "e7f1cfef4461bbdc23716195823aec3238654165b061c4a5c30edfb20affb7d7",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": false,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/2016-specialized-sj-fsr-comp-29-frameset-only-blk-rktred-lg?currency=USD&variant=43157994045571",
+    "name": "2016 Specialized SJ FSR Comp 29 (FRAMESET ONLY) Blk/RktRed LG",
+    "at": "2026-11-05T23:17:20.146527+00:00",
+    "sha256": "a38bade9b999e89295708794798b9be2f2b7f167f2532a18e00d6c9b52713da3",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": false,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/specialized-stumpjumper-expert?currency=USD&variant=39447955406979",
+    "name": "2022 Specialized Stumpjumper Expert  - SRAM GX Eagle, Fox Perormance Elite",
+    "at": "2026-11-05T23:17:22.577972+00:00",
+    "sha256": "a7418f2ed061561dff5305ccc46e4bda79fc99f8c9131aa3edbd691df71282f5",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": true,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/2023-specialized-sirrus-4-0?currency=USD&variant=43524025319555",
+    "name": "2023 Specialized Sirrus 4.0",
+    "at": "2026-11-05T23:17:25.028217+00:00",
+    "sha256": "b1585fcfdd528f182bfb34eb4b6539ba169a6ae1d8821f83771d105fab09ac4e",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": true,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/specialized-levo-sl-expert-carbon-2?currency=USD&variant=43311597846659",
+    "name": "2023 Specialized Turbo Levo SL 2 Expert Carbon",
+    "at": "2026-11-05T23:17:27.346159+00:00",
+    "sha256": "894cea7b30ac2f6f2d2cc5db8ef076bc5288c16b4b9f6a1527a58a9530018190",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": true,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/2022-pinarello-dogma-f-disc-frameset?currency=USD&variant=42711467589763",
+    "name": "2022 Pinarello Dogma F Disc Frameset Blk/Blk 54",
+    "at": "2026-11-05T23:17:29.634855+00:00",
+    "sha256": "042b9a5a30deb739dd5791c78537e2f33011f60d11a1cedb31631ee22f4936f9",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": false,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/2023-scott-genius-st-900-tuned-hmx-frame-fork?currency=USD&variant=43904355893379",
+    "name": "2023 Scott Genius ST 900 Tuned HMX Frame & Fork",
+    "at": "2026-11-05T23:17:32.040833+00:00",
+    "sha256": "9e5070a92e6cf9499796f1289204858a4b54451d2653d2ea6a28930ae8caae96",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": false,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/2023-specialized-levo-sl-comp?currency=USD&variant=47231872991363",
+    "name": "2023 Specialized Turbo Levo SL 2 Comp Carbon",
+    "at": "2026-11-05T23:17:34.461154+00:00",
+    "sha256": "774bc7059d35d87cd593a67886bcb69787eb060d61c06dc1613a9e267c37e2b2",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": true,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/specialized-vado-sl-4-0-st?currency=USD&variant=39447976149123",
+    "name": "2022 Specialized Turbo Vado SL 4.0 Step-Through",
+    "at": "2026-11-05T23:17:36.791027+00:00",
+    "sha256": "e3e088ebba3b360d583c9ac06e8812557b5b342f38a8781bc9a27d364f5729ca",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": true,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/2025-specialized-turbo-kenevo-sl-2-ohlins-coil?currency=USD&variant=44779533172867",
+    "name": "2025 Specialized Turbo Kenevo SL 2 Ohlins Coil",
+    "at": "2026-11-05T23:17:39.140693+00:00",
+    "sha256": "9083d3d1a937560f66f23b9c29cace1c2f8f6412d6fdcfab17a5e4dd68f4f399",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": true,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/2025-specialized-turbo-levo-sl-expert?currency=USD&variant=44781250642051",
+    "name": "2025 Specialized Turbo Levo SL 2 Expert",
+    "at": "2026-11-05T23:17:41.467836+00:00",
+    "sha256": "efdb3cba9d3184b553caa4ff151da56ba8bc9473faf35c2d271910cf454df9fe",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": true,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/2025-specialized-stumpjumper-15-pro?currency=USD&variant=44549931040899",
+    "name": "2025 Specialized Stumpjumper 15 Pro  - SRAM X0 AXS, FOX Factory",
+    "at": "2026-11-05T23:17:43.784988+00:00",
+    "sha256": "8c6e29ae729b5abe15370257684c76cd70b06d773f095e9ca72204ff2bb4257a",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": true,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/2026-specialized-turbo-levo-sl-2-comp-alloy?currency=USD&variant=45607582466179",
+    "name": "2026 Specialized Turbo Levo SL 2 Comp Alloy",
+    "at": "2026-11-05T23:17:46.165742+00:00",
+    "sha256": "8396394031cc501718c9544d7831a3d76f3d0ea428f21c1ab7072b92b3b7ff70",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": true,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/2025-specialized-turbo-levo-sl-pro?currency=USD&variant=44780026003587",
+    "name": "2025 Specialized Turbo Levo SL 2 Pro",
+    "at": "2026-11-05T23:17:48.486546+00:00",
+    "sha256": "8d174db9c59de1f05985ca6803ec24452e37dc3de238ca375f6716bd523a353c",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": true,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/2026-specialized-levo-4-comp?currency=USD&variant=45273517686915",
+    "name": "2026 Specialized Turbo Levo 4 Comp",
+    "at": "2026-11-05T23:17:50.894215+00:00",
+    "sha256": "2e9bc29769d92dfc30c725e1b3f5da99ec9533b0be9b3fe109d36338fbc3d836",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": true,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/bike-1?currency=USD&variant=44252982542467",
+    "name": "2025 Specialized S-Works Aethos - SRAM RED AXS",
+    "at": "2026-11-05T23:17:53.183800+00:00",
+    "sha256": "2ea4554042eb3976636bdbd07b5c6fba84dca6c2974cebcc59415c71a139985a",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": true,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/specialized-turbo-creo-2-comp?currency=USD&variant=44944325705859",
+    "name": "2025 Specialized Turbo Creo 2 Comp - SRAM Apex / X1 Eagle AXS",
+    "at": "2026-11-05T23:17:55.596209+00:00",
+    "sha256": "9d94fbac47e2c33c5035264e190aa6c5939981524c4aa42a08dbedb3a6fe2e88",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": true,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/2025-specialized-stumpjumper-15-alloy-frame?currency=USD&variant=44549932646531",
+    "name": "2025 Specialized Stumpjumper 15 Alloy Frameset  - FOX FLOAT GENIE Performance",
+    "at": "2026-11-05T23:17:57.918624+00:00",
+    "sha256": "588872957326937c81e99c74bba23536de54a10bb676d92d9194cec7b86d007d",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": false,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/2026-specialized-s-works-turbo-levo-4?currency=USD&variant=45607585022083",
+    "name": "2026 Specialized S-Works Turbo Levo 4",
+    "at": "2026-11-05T23:18:00.361909+00:00",
+    "sha256": "bd7e53e29da166c404bf956966e1b7608bbc3f73568a582f18b0ae6395e56414",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": true,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/2026-specialized-tarmac-sl8-frameset?currency=USD&variant=45754619658371",
+    "name": "2026 Specialized Tarmac SL8 Frameset - FACT 10r Carbon",
+    "at": "2026-11-05T23:18:02.647762+00:00",
+    "sha256": "532d0eb191bb8037bbcdaf768badc4f909e9352fc51526055add59292c92ade9",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": false,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/levo-comp-evo-g4-4294787?currency=USD&variant=46937188925571",
+    "name": "2027 Specialized Levo 4 EVO Comp",
+    "at": "2026-11-05T23:18:05.160054+00:00",
+    "sha256": "7e49f86c4d2a8445a94f64d9b3ca9a581f243c12182790b6dca62e12471f0e24",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": true,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/2026-specialized-tarmac-sl8-pro-shimano-ultegra-di2?currency=USD&variant=45690615103619",
+    "name": "2026 Specialized Tarmac SL8 Pro - Shimano Ultegra Di2",
+    "at": "2026-11-05T23:18:07.450047+00:00",
+    "sha256": "c2276d6d1aba003ccd531af81af9e71741eeea251e92a6e6c618fe24bad0602f",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": true,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/2026-specialized-levo-4-pro?currency=USD&variant=45273528729731",
+    "name": "2026 Specialized Turbo Levo 4 Pro",
+    "at": "2026-11-05T23:18:09.776994+00:00",
+    "sha256": "6b77df847cb8a591f0c185f3a29f90aa30d900bdc62579e86f81c81ec75c64b4",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": true,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/2026-specialized-s-works-tarmac-sl8-frameset?currency=USD&variant=45506835546243",
+    "name": "2026 Specialized S-Works Tarmac SL8 Frameset - FACT 12r Carbon",
+    "at": "2026-11-05T23:18:12.109120+00:00",
+    "sha256": "eda34a7b5e5f2228519a6fd427619f2ec51d8f00f40a752a0f1e0c58c483ed51",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": false,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/2026-specialized-turbo-creo-2-expert-shimano-grx-di2?currency=USD&variant=45690614251651",
+    "name": "2026 Specialized Turbo Creo 2 Expert - Shimano GRX Di2",
+    "at": "2026-11-05T23:18:14.465952+00:00",
+    "sha256": "873cf9de44f214fc1c4c1ccbebbe63129ee030bafcea2d96cb3ee52b099e28c9",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": true,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/2025-specialized-turbo-levo-sl-ohlins?currency=USD&variant=44780024758403",
+    "name": "2025 Specialized Turbo Levo SL 2 \u00d6hlins Coil",
+    "at": "2026-11-05T23:18:16.745183+00:00",
+    "sha256": "4e305257e958ef2d4aa3b7bb5ce3098f0dd7365b65148f4df15e8d1d734fc439",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": true,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/2025-specialized-stumpjumper-15-expert?currency=USD&variant=44549931597955",
+    "name": "2025 Specialized Stumpjumper 15 Expert  - SRAM GX AXS, FOX Performance Elite",
+    "at": "2026-11-05T23:18:19.035117+00:00",
+    "sha256": "212a7ca2cc3496753779f2c2aed3b180c170798f2397c59e6a79ab0373b38dc0",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": true,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/lv-cmp-ally-4?currency=USD&variant=45369057443971",
+    "name": "2026 Specialized Turbo Levo 4 Comp Alloy",
+    "at": "2026-11-05T23:18:21.338578+00:00",
+    "sha256": "4adc20a964ddf4b1b1b6722af244b4e459716321eafa3cd2700d5b8370f5dae7",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": true,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/2023-specialized-aethos-s-works-frameset?currency=USD&variant=43082018455683",
+    "name": "2024 Specialized S-Works Aethos Frameset - FACT 12r Carbon",
+    "at": "2026-11-05T23:18:23.626606+00:00",
+    "sha256": "709830606b832d4fb299bc726270492faa7f9d716f00f232468e87e93cff2935",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": false,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/2023-pivot-shuttle-sl-ride-x01?currency=USD&variant=45172538933379",
+    "name": "2022 Pivot Shuttle SL Pro X01 - Large",
+    "at": "2026-11-05T23:18:25.883767+00:00",
+    "sha256": "62e9ac2d3bae4e9995f1179b11a7b7fd81a7827968019a31d5ec1172c467cd68",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": true,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/specialized-vado-sl-4-0?currency=USD&variant=39447949312131",
+    "name": "2023 Specialized Turbo Vado SL 4.0",
+    "at": "2026-11-05T23:18:28.177507+00:00",
+    "sha256": "24c720074aed0fcb13ca344179c0aefc61c89f2281f6db8f63517d32a7b0d3ed",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": true,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "url": "https://www.incycle.com/products/2023-specialized-vado-sl-4-0-st?currency=USD&variant=43273651224707",
+    "name": "2023 Specialized Turbo Vado SL 4.0 Step-Through",
+    "at": "2026-11-05T23:18:30.609691+00:00",
+    "sha256": "0b977d9ba5b1daefbabe0503e90e3962aeaf0ce2e6932310095d7a27cbb0de58",
+    "checks": {
+      "title": true,
+      "selected_id": true,
+      "price": true,
+      "reference": true,
+      "add_enabled": true,
+      "no_restriction_terms": true,
+      "sale_price_bound": true,
+      "reference_bound": true,
+      "explicit_usd": true
+    },
+    "passed": true,
+    "ship_to_home_visible": true,
+    "restriction_terms": [],
+    "buttons": [
+      {
+        "text": "Add to cart",
+        "disabled": false
+      }
+    ]
+  }
+]
