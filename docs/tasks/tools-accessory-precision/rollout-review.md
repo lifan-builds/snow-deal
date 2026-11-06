@@ -1,0 +1,13 @@
+# Final tools precision receipt review
+
+The documentation and explicit public receipts are consistent. One minor freshness reporting gap was resolved by root: dead-offer removal delay is now explicitly unmeasured, alongside the percentage and p95 age. No remaining material receipt issue was found.
+
+The thirty production display records and thirty merchant results form the same exact store/destination/variant set. Displayed USD current/reference, option/variant and stock text agree with the audited offers. Every check passes its sample's forward fifteen-minute audit window; checks are between 16.75 seconds before and 200.78 seconds after their associated rendered-page capture, also within the benchmark's fifteen-minute proximity requirement. The separate **143/143 prepublication** audit retains its targeted scope and does not enlarge M3's fixed thirty-offer sample.
+
+The controlled replay, prepared verification, metadata exception, public-asset, package-equivalence and live sections exactly match their local receipts. Six below-floor manual/component exclusions leave **934 qualifying stock listings / 33 deep listings / seven useful retailers** unchanged. Optional all-floor stock results change **1,039 to 1,033**. The one persisted Milwaukee manufacturer alias change is distinguished from unchanged survivor offer fields.
+
+All **34 prior observations** remain preserved, with **36 total** after the two fresh source observations; other eleven source rows keep their original times. Package/source/history equality and Circle exclusion are recorded. The initial stale canonical asset download is retained as failure evidence; provider and subsequent canonical hashes agree with the prepared asset before deployment. Live verification reports **13 fresh sources, 234 selected-card comparisons, all 116 targeted destinations, six removed false positives and nine history pages**.
+
+All **24 non-Bench-Drop matrix rows** and their measurement dates remain exactly unchanged. Rendering and evaluation still produce **four strict leads / 260 comparisons**. Category precision remains unmeasured, and neither six known corrections nor sampled 100% matches establish population-wide accuracy, checkout availability, historical lows or competitive leadership.
+
+Artifact/JSON consistency, matrix rendering/evaluation, relative evidence links, scoped credential-signature checks and whitespace validation pass. Runtime is unchanged from PR #39's 1,037-test release, so the suite was not repeated. Only this note was written; no code, network, credentials, database reads, commit or deployment actions occurred. Root planning edits and Circle work were preserved.
