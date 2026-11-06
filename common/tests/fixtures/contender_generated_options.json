@@ -1,0 +1,370 @@
+{
+  "products": [
+    {
+      "id": 9341211312373,
+      "title": "OPEN UP 2.0 Frameset",
+      "handle": "open-up-2-0-frameset",
+      "vendor": "OPEN Bikes",
+      "product_type": "BIKES",
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Farn",
+            "Sand",
+            "Raw Ready to Paint"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "L #MWS Options 2",
+            "XS #MWS Options 2",
+            "XS #MWS Options 1",
+            "M #MWS Options 1",
+            "M #MWS Options 2",
+            "M #MWS Options 3",
+            "L #MWS Options 1",
+            "L #MWS Options 3",
+            "S #MWS Options 1"
+          ]
+        }
+      ],
+      "tags": [
+        "customize",
+        "HSA/FSA",
+        "in-stock",
+        "NOT-on-sale",
+        "On Sale",
+        "published to site",
+        "WorkMate Serial Numbers"
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/OPEN_UP_2.0_Frame_Farn_Contender_Bicycles_2.jpg?v=1772840351",
+          "variant_ids": [
+            47023173730549,
+            47023173763317,
+            47023173796085,
+            47023173828853,
+            47023173861621,
+            48535911006453,
+            67896806899957
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 47495133987061,
+          "title": "Raw Ready to Paint / M",
+          "option1": "Raw Ready to Paint",
+          "option2": "M",
+          "option3": null,
+          "price": "4200.00",
+          "compare_at_price": "4200.00",
+          "available": true
+        },
+        {
+          "id": 67738217840885,
+          "title": "Raw Ready to Paint / M #MWS Options 1",
+          "option1": "Raw Ready to Paint",
+          "option2": "M #MWS Options 1",
+          "option3": null,
+          "price": "4200.00",
+          "compare_at_price": "4500.00",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 9319669596405,
+      "title": "Santa Cruz Stigmata 4 CC Frameset",
+      "handle": "santa-cruz-stigmata-4-cc-frameset",
+      "vendor": "Santa Cruz Bikes",
+      "product_type": "BIKES",
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "British Racing Green",
+            "Matte Carbon"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "S #MWS Options 7",
+            "XS #MWS Options 5"
+          ]
+        }
+      ],
+      "tags": [
+        "customize",
+        "HSA/FSA",
+        "no-stock",
+        "On Sale",
+        "published to site",
+        "WorkMate Serial Numbers"
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/Santa_Cruz_Stigmata_4_CC_Frameset_Brittish_Racing_Green_Contender_Bicycles.jpg?v=1756490879",
+          "variant_ids": [
+            46988618301685,
+            46988618334453,
+            46988618367221,
+            47652505780469,
+            47655892680949,
+            67967680479477,
+            67967684641013
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 47652505780469,
+          "title": "British Racing Green / XS",
+          "option1": "British Racing Green",
+          "option2": "XS",
+          "option3": null,
+          "price": "2399.00",
+          "compare_at_price": "2799.00",
+          "available": true
+        },
+        {
+          "id": 46988618367221,
+          "title": "British Racing Green / S",
+          "option1": "British Racing Green",
+          "option2": "S",
+          "option3": null,
+          "price": "2399.00",
+          "compare_at_price": "2799.00",
+          "available": true
+        },
+        {
+          "id": 67967680479477,
+          "title": "British Racing Green / S #MWS Options 7",
+          "option1": "British Racing Green",
+          "option2": "S #MWS Options 7",
+          "option3": null,
+          "price": "2399.00",
+          "compare_at_price": "2799.00",
+          "available": true
+        },
+        {
+          "id": 67967684641013,
+          "title": "British Racing Green / XS #MWS Options 5",
+          "option1": "British Racing Green",
+          "option2": "XS #MWS Options 5",
+          "option3": null,
+          "price": "2399.00",
+          "compare_at_price": "2799.00",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 7859986989301,
+      "title": "OPEN UP Rapha Limited Edition Frameset",
+      "handle": "open-up-rapha-frameset",
+      "vendor": "OPEN Bikes",
+      "product_type": "BIKES",
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Rapha Limited Edition"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XL #MWS Options 9"
+          ]
+        }
+      ],
+      "tags": [
+        "contact-for-current-price",
+        "customize",
+        "HSA/FSA",
+        "in-stock",
+        "On Sale",
+        "published to site",
+        "SLC-Available",
+        "WorkMate Serial Numbers"
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0483/9040/6312/products/bike-prodduct-image_900px_fab7e73b-9aa5-4cec-a61d-f6f57a942c3b.jpg?v=1663793879",
+          "variant_ids": [
+            43266977005813,
+            43266977038581,
+            43266977071349,
+            43266977104117,
+            48504718950645
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 43266977104117,
+          "title": "Rapha Limited Edition / XL",
+          "option1": "Rapha Limited Edition",
+          "option2": "XL",
+          "option3": null,
+          "price": "1799.00",
+          "compare_at_price": "3400.00",
+          "available": true
+        },
+        {
+          "id": 48504718950645,
+          "title": "Rapha Limited Edition / XL #MWS Options 9",
+          "option1": "Rapha Limited Edition",
+          "option2": "XL #MWS Options 9",
+          "option3": null,
+          "price": "1799.00",
+          "compare_at_price": "3400.00",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 6100580991144,
+      "title": "OPEN UPPER Frameset",
+      "handle": "open-upper-frameset",
+      "vendor": "OPEN Bikes",
+      "product_type": "BIKES",
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Black",
+            "Ready To Paint"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "M #MWS Options 11",
+            "S #MWS Options 5",
+            "S #MWS Options 13",
+            "S #MWS Options 14",
+            "S #MWS Options 15",
+            "S #MWS Options 6"
+          ]
+        }
+      ],
+      "tags": [
+        "customize",
+        "HSA/FSA",
+        "no-stock",
+        "On Sale",
+        "published to site",
+        "SLC-Available",
+        "WorkMate Serial Numbers"
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/upper-black.jpg?v=1685747093",
+          "variant_ids": [
+            37271992664232,
+            37271992762536,
+            47721638363381,
+            47721638396149,
+            67593172910325,
+            67613903159541,
+            67622909182197
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 37271992664232,
+          "title": "Black / S",
+          "option1": "Black",
+          "option2": "S",
+          "option3": null,
+          "price": "1995.99",
+          "compare_at_price": "4500.00",
+          "available": false
+        },
+        {
+          "id": 37271992533160,
+          "title": "Ready To Paint / S",
+          "option1": "Ready To Paint",
+          "option2": "S",
+          "option3": null,
+          "price": "1895.99",
+          "compare_at_price": "4500.00",
+          "available": true
+        },
+        {
+          "id": 37271992697000,
+          "title": "Ready To Paint / M",
+          "option1": "Ready To Paint",
+          "option2": "M",
+          "option3": null,
+          "price": "1895.99",
+          "compare_at_price": "4500.00",
+          "available": true
+        },
+        {
+          "id": 48790444245237,
+          "title": "Ready To Paint / M #MWS Options 11",
+          "option1": "Ready To Paint",
+          "option2": "M #MWS Options 11",
+          "option3": null,
+          "price": "1895.99",
+          "compare_at_price": "4500.00",
+          "available": true
+        },
+        {
+          "id": 48896550568181,
+          "title": "Ready To Paint / S #MWS Options 5",
+          "option1": "Ready To Paint",
+          "option2": "S #MWS Options 5",
+          "option3": null,
+          "price": "1895.99",
+          "compare_at_price": "4500.00",
+          "available": true
+        },
+        {
+          "id": 67593172910325,
+          "title": "Black / S #MWS Options 13",
+          "option1": "Black",
+          "option2": "S #MWS Options 13",
+          "option3": null,
+          "price": "1995.99",
+          "compare_at_price": "4500.00",
+          "available": true
+        }
+      ]
+    }
+  ]
+}

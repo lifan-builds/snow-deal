@@ -1,0 +1,9 @@
+# Contender generated options
+
+Status: in_progress. Standing user instruction authorizes improvement and comparable reviewed releases. Trellis identity is uninitialized; task artifacts carry the continuation state.
+
+Contender generated #MWS Options variants currently become independent discounted/in-stock offers. Native merchant UI removes these from shopper size choices: the observed OPEN UP 2.0 generated link leaves no size selected and Add to Bag disabled. Its ordinary Medium link selects Medium and exposes required cockpit configuration. Product.js reports a higher reference for the generated variant than its otherwise matching base, and a separate OPEN UPPER generated Black/S remains available while its base is sold out. These are not safe aliases.
+
+Exclude exactly marked generated variants on the observed Contender host at Shopify ingestion, before ranking, sizes and product aggregation. Keep ordinary variants exact, including their own price/reference/stock and destination; never transfer generated stock/reference to a base. Merchant audit must not certify old marked offers merely because the public endpoint repeats the generated object. No source count or competitive lead claim follows.
+
+Acceptance: generated-only products disappear; ordinary valid offers survive byte-equivalent fields; sold-out bases stay absent; generated high discounts cannot affect selection/counts/size filters; unrelated hosts and ordinary MWS words retain behavior; audit rejects marked old offers but accepts legitimate ordinary ones. Offline full suite and CI pass. Refresh only Contender against a restored public snapshot, audit surviving affected offers, preserve other source rows and all existing history, then publish and verify Big Ring only under standing approval.

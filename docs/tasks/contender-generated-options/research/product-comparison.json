@@ -1,0 +1,198 @@
+[
+  {
+    "url": "https://contenderbicycles.com/products/open-up-2-0-frameset.js?currency=USD",
+    "status": 200,
+    "checked_at": "2026-11-06T01:29:57.245163+00:00",
+    "sha256": "770b2a2d91d7ffec0156dae3119c2b028464a082da9aa2f3f5ab50b9bf1d1c52",
+    "target": {
+      "id": 67738217840885,
+      "title": "Raw Ready to Paint / M #MWS Options 1",
+      "option1": "Raw Ready to Paint",
+      "option2": "M #MWS Options 1",
+      "option3": null,
+      "price": 420000,
+      "compare_at_price": 450000,
+      "available": true
+    },
+    "base_variants": [
+      {
+        "id": 47495133987061,
+        "title": "Raw Ready to Paint / M",
+        "option1": "Raw Ready to Paint",
+        "option2": "M",
+        "option3": null,
+        "price": 420000,
+        "compare_at_price": 420000,
+        "available": true
+      }
+    ]
+  },
+  {
+    "url": "https://contenderbicycles.com/products/santa-cruz-stigmata-4-cc-frameset.js?currency=USD",
+    "status": 200,
+    "checked_at": "2026-11-06T01:29:59.446850+00:00",
+    "sha256": "8a50886a0d3971e604629cc3056fb4ab1e1d5daec54aa204fd8685f60c0f29bb",
+    "target": {
+      "id": 67967680479477,
+      "title": "British Racing Green / S #MWS Options 7",
+      "option1": "British Racing Green",
+      "option2": "S #MWS Options 7",
+      "option3": null,
+      "price": 239900,
+      "compare_at_price": 279900,
+      "available": true
+    },
+    "base_variants": [
+      {
+        "id": 46988618367221,
+        "title": "British Racing Green / S",
+        "option1": "British Racing Green",
+        "option2": "S",
+        "option3": null,
+        "price": 239900,
+        "compare_at_price": 279900,
+        "available": true
+      }
+    ]
+  },
+  {
+    "url": "https://contenderbicycles.com/products/santa-cruz-stigmata-4-cc-frameset.js?currency=USD",
+    "status": 200,
+    "checked_at": "2026-11-06T01:30:01.580710+00:00",
+    "sha256": "8a50886a0d3971e604629cc3056fb4ab1e1d5daec54aa204fd8685f60c0f29bb",
+    "target": {
+      "id": 67967684641013,
+      "title": "British Racing Green / XS #MWS Options 5",
+      "option1": "British Racing Green",
+      "option2": "XS #MWS Options 5",
+      "option3": null,
+      "price": 239900,
+      "compare_at_price": 279900,
+      "available": true
+    },
+    "base_variants": [
+      {
+        "id": 47652505780469,
+        "title": "British Racing Green / XS",
+        "option1": "British Racing Green",
+        "option2": "XS",
+        "option3": null,
+        "price": 239900,
+        "compare_at_price": 279900,
+        "available": true
+      }
+    ]
+  },
+  {
+    "url": "https://contenderbicycles.com/products/open-up-rapha-frameset.js?currency=USD",
+    "status": 200,
+    "checked_at": "2026-11-06T01:30:03.703369+00:00",
+    "sha256": "19b2025da178e05d02e4a102d8a1504b5e437a698acf3497f9a278109d1ecae0",
+    "target": {
+      "id": 48504718950645,
+      "title": "Rapha Limited Edition / XL #MWS Options 9",
+      "option1": "Rapha Limited Edition",
+      "option2": "XL #MWS Options 9",
+      "option3": null,
+      "price": 179900,
+      "compare_at_price": 340000,
+      "available": true
+    },
+    "base_variants": [
+      {
+        "id": 43266977104117,
+        "title": "Rapha Limited Edition / XL",
+        "option1": "Rapha Limited Edition",
+        "option2": "XL",
+        "option3": null,
+        "price": 179900,
+        "compare_at_price": 340000,
+        "available": true
+      }
+    ]
+  },
+  {
+    "url": "https://contenderbicycles.com/products/open-upper-frameset.js?currency=USD",
+    "status": 200,
+    "checked_at": "2026-11-06T01:30:05.834840+00:00",
+    "sha256": "26e833f6a781882281c454753452a4d23c1ea7ff91fb5436cbb6428afafd3645",
+    "target": {
+      "id": 48790444245237,
+      "title": "Ready To Paint / M #MWS Options 11",
+      "option1": "Ready To Paint",
+      "option2": "M #MWS Options 11",
+      "option3": null,
+      "price": 189599,
+      "compare_at_price": 450000,
+      "available": true
+    },
+    "base_variants": [
+      {
+        "id": 37271992697000,
+        "title": "Ready To Paint / M",
+        "option1": "Ready To Paint",
+        "option2": "M",
+        "option3": null,
+        "price": 189599,
+        "compare_at_price": 450000,
+        "available": true
+      }
+    ]
+  },
+  {
+    "url": "https://contenderbicycles.com/products/open-upper-frameset.js?currency=USD",
+    "status": 200,
+    "checked_at": "2026-11-06T01:30:07.933720+00:00",
+    "sha256": "26e833f6a781882281c454753452a4d23c1ea7ff91fb5436cbb6428afafd3645",
+    "target": {
+      "id": 48896550568181,
+      "title": "Ready To Paint / S #MWS Options 5",
+      "option1": "Ready To Paint",
+      "option2": "S #MWS Options 5",
+      "option3": null,
+      "price": 189599,
+      "compare_at_price": 450000,
+      "available": true
+    },
+    "base_variants": [
+      {
+        "id": 37271992533160,
+        "title": "Ready To Paint / S",
+        "option1": "Ready To Paint",
+        "option2": "S",
+        "option3": null,
+        "price": 189599,
+        "compare_at_price": 450000,
+        "available": true
+      }
+    ]
+  },
+  {
+    "url": "https://contenderbicycles.com/products/open-upper-frameset.js?currency=USD",
+    "status": 200,
+    "checked_at": "2026-11-06T01:30:10.057832+00:00",
+    "sha256": "26e833f6a781882281c454753452a4d23c1ea7ff91fb5436cbb6428afafd3645",
+    "target": {
+      "id": 67593172910325,
+      "title": "Black / S #MWS Options 13",
+      "option1": "Black",
+      "option2": "S #MWS Options 13",
+      "option3": null,
+      "price": 199599,
+      "compare_at_price": 450000,
+      "available": true
+    },
+    "base_variants": [
+      {
+        "id": 37271992664232,
+        "title": "Black / S",
+        "option1": "Black",
+        "option2": "S",
+        "option3": null,
+        "price": 199599,
+        "compare_at_price": 450000,
+        "available": false
+      }
+    ]
+  }
+]

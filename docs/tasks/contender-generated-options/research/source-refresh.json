@@ -1,0 +1,15 @@
+{
+  "errors": 0,
+  "pages": 2,
+  "collections": [
+    {
+      "url": "https://contenderbicycles.com/collections/sale?currency=USD",
+      "pages": 2,
+      "products": 392,
+      "status": "complete",
+      "observed_currency": "USD"
+    }
+  ],
+  "parsed_products": 392,
+  "accepted_products": 182
+}

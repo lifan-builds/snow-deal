@@ -1,0 +1,128 @@
+{
+  "baseline_commit": "d4f7653ad2114ac9de2f5b9aedb45ac3e5b5f549",
+  "baseline_file_sha256": "2121c10a46a614c5ce48ed193b29cf96b31d5f7bc051674ad1c4e4e632719542",
+  "prepared_file_sha256": "63a0758cd736435780ceaec334a1cae2aedf91b384ead457e540746eb2f689ba",
+  "production_before": {
+    "catalog": "cycling",
+    "snapshot_sha256": "3285fc2db19db3a7bb741d37291af5140da727a23bc1080851d4ee1de1c70d9d",
+    "fresh_sources": 21,
+    "configured_sources": 21,
+    "status": "ready"
+  },
+  "prepared_build": {
+    "catalog": "cycling",
+    "brand": "Big Ring",
+    "built_at": "2026-11-06T01:36:59.433330+00:00",
+    "snapshot_sha256": "ee3995e39b2a759c029685976100f7ef4145e1af21df4407c5f43c5b57a665ba",
+    "public_url": "https://bigring.clifan.com",
+    "matching_deals": 1502,
+    "sources": [
+      {
+        "name": "Incycle Bicycles",
+        "observed_at": "2026-11-05T23:14:21.690525+00:00",
+        "listings": 86
+      },
+      {
+        "name": "RA Cycles",
+        "observed_at": "2026-11-05T22:06:43.009946+00:00",
+        "listings": 144
+      },
+      {
+        "name": "evo",
+        "observed_at": "2026-11-05T22:17:54.807577+00:00",
+        "listings": 55
+      },
+      {
+        "name": "Bike Closet",
+        "observed_at": "2026-11-05T22:18:05.218434+00:00",
+        "listings": 20
+      },
+      {
+        "name": "Gravity Coalition",
+        "observed_at": "2026-11-05T22:21:50.240171+00:00",
+        "listings": 43
+      },
+      {
+        "name": "Bicycle Warehouse",
+        "observed_at": "2026-11-05T22:22:02.275510+00:00",
+        "listings": 76
+      },
+      {
+        "name": "BikesOnline",
+        "observed_at": "2026-11-05T22:22:07.845789+00:00",
+        "listings": 72
+      },
+      {
+        "name": "Mike's Bikes",
+        "observed_at": "2026-11-05T22:22:13.625276+00:00",
+        "listings": 166
+      },
+      {
+        "name": "ERIK\u2019S Bike Shop",
+        "observed_at": "2026-11-05T22:22:19.417012+00:00",
+        "listings": 120
+      },
+      {
+        "name": "Pro Bike Supply",
+        "observed_at": "2026-11-05T22:22:29.046117+00:00",
+        "listings": 376
+      },
+      {
+        "name": "Contender Bicycles",
+        "observed_at": "2026-11-06T01:32:26.781135+00:00",
+        "listings": 182
+      },
+      {
+        "name": "Cambria Bike",
+        "observed_at": "2026-11-05T22:22:55.545910+00:00",
+        "listings": 24
+      },
+      {
+        "name": "INTENSE",
+        "observed_at": "2026-11-05T22:23:19.613478+00:00",
+        "listings": 4
+      },
+      {
+        "name": "Bike Mart",
+        "observed_at": "2026-11-05T22:23:24.222017+00:00",
+        "listings": 95
+      },
+      {
+        "name": "First Stop Board Barn",
+        "observed_at": "2026-11-05T22:23:39.659903+00:00",
+        "listings": 1
+      },
+      {
+        "name": "Colorado Cyclist",
+        "observed_at": "2026-11-05T22:23:44.396098+00:00",
+        "listings": 61
+      },
+      {
+        "name": "Planet Cyclery",
+        "observed_at": "2026-11-05T22:23:53.867008+00:00",
+        "listings": 32
+      },
+      {
+        "name": "Worldwide Cyclery",
+        "observed_at": "2026-11-05T22:24:03.654820+00:00",
+        "listings": 4
+      },
+      {
+        "name": "State Bicycle Co.",
+        "observed_at": "2026-11-05T22:24:17.039190+00:00",
+        "listings": 1
+      },
+      {
+        "name": "The Path Bike Shop",
+        "observed_at": "2026-11-05T22:24:22.285991+00:00",
+        "listings": 34
+      },
+      {
+        "name": "Fanatik Bike Co.",
+        "observed_at": "2026-11-05T22:24:27.344581+00:00",
+        "listings": 24
+      }
+    ]
+  },
+  "scope": "Only Contender source data replaced from captured complete USD collection, no history rewrite; all20other source rows unchanged."
+}

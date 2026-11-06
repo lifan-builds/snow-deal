@@ -31,6 +31,7 @@ from deal_common.parsers.racycles import detail_data as racycles_data
 from deal_common.parsers.rockler import delivery_data, stock_url
 from deal_common.parsers.rockler import detail_data as rockler_data
 from deal_common.parsers.rockler import offer_destination as rockler_destination
+from deal_common.parsers.shopify import is_contender_generated_variant
 from deal_common.parsers.taylor import detail_data as taylor_data
 from deal_common.parsers.taylor import offer_destination as taylor_destination
 
@@ -75,6 +76,8 @@ def validate_product(card: dict, raw: dict, currency: str | None) -> dict:
         "options": actual_options == expected_options,
         "stock": actual.get("available") is True and not notice,
     }
+    if is_contender_generated_variant(actual, offer["url"]):
+        checks["ordinary_variant"] = False
     return {"status": "match" if all(checks.values()) else "mismatch", "checks": checks,
             "merchant": {"title": raw.get("title"), "variant": str(actual["id"]), "sku": actual.get("sku"),
                          "price_minor": actual.get("price"), "reference_minor": actual.get("compare_at_price"),
