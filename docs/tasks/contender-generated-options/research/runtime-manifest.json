@@ -1,0 +1,179 @@
+{
+  "matched_clean_staged_tree": true,
+  "file_counts": {
+    "deal_common": 37,
+    "cycling_deals": 5
+  },
+  "files": [
+    {
+      "path": "deal_common/config.py",
+      "sha256": "4a5e70e3bbc8fd7512ed1eeba01f7d0dae028bcd1aa35bcfeab69f1163681beb"
+    },
+    {
+      "path": "deal_common/benchmark.py",
+      "sha256": "756865d90165a6deb15807284de29e7b29c43d435eea30a2dbf552370f1626a8"
+    },
+    {
+      "path": "deal_common/models.py",
+      "sha256": "8ca8fbd614a00bd7ed16be5ccee5462aba514ed81cf043fa0c605e6e78cf35e6"
+    },
+    {
+      "path": "deal_common/__init__.py",
+      "sha256": "57168582c518bf17e0ef5635145044e1af858e088e15defe6516e2293ecc49c0"
+    },
+    {
+      "path": "deal_common/offers.py",
+      "sha256": "753e1f0c582271e0d46ca655970140785d93a84e125915dc7d2fadf5ea1cef5e"
+    },
+    {
+      "path": "deal_common/http.py",
+      "sha256": "67b2cfeb6ab00e8ba0be05155c90a521e12cbacd15a8f60657e91d734f46971d"
+    },
+    {
+      "path": "deal_common/rate_limit.py",
+      "sha256": "e2d6b72ccddeec5607970b8a530b37e784ab4cfe85ab5ca74b39efa09e479af3"
+    },
+    {
+      "path": "deal_common/parsers/beaver.py",
+      "sha256": "725d62ff112e7f4cdf9c75b888995f249d20014dcb2cb5fa458e7a7c86b5c6b5"
+    },
+    {
+      "path": "deal_common/parsers/shopify.py",
+      "sha256": "6bbede2701e3fc1007fc706064d2f5142bdf1370b263a1e8afe0952430b3b6e8"
+    },
+    {
+      "path": "deal_common/parsers/taylor.py",
+      "sha256": "aba75fe1b546eee50f8131bd2f48b70f03273efd009e080cbbbeadc3a9b9d4f1"
+    },
+    {
+      "path": "deal_common/parsers/rockler.py",
+      "sha256": "8870bdac795f83345ad7539b43db7b5be8fb00e3823aa266a84f8e687e51d601"
+    },
+    {
+      "path": "deal_common/parsers/__init__.py",
+      "sha256": "a110adb4fc281dbabdc17515ac039d945e7db167558c485695e693a4eb4bcfcb"
+    },
+    {
+      "path": "deal_common/parsers/harvey.py",
+      "sha256": "dbc763002dc314f96fd2b3bb127eba58de0e41c630e9bd9d3260ee400f960b85"
+    },
+    {
+      "path": "deal_common/parsers/common.py",
+      "sha256": "30a356007c34c5ca14ba50219fb8bb216db40450ed8d521cac77b38c571129f5"
+    },
+    {
+      "path": "deal_common/parsers/grizzly.py",
+      "sha256": "10a58014d77eb68478baaf6ab47d23364bb2dd5d741e0ba3d3d66c395089c072"
+    },
+    {
+      "path": "deal_common/parsers/racycles.py",
+      "sha256": "a8e3fc7e89e85a2c44eae69b05b4527b4b9ea9b5debc17b14cf128f6c3f68652"
+    },
+    {
+      "path": "deal_common/parsers/availability.py",
+      "sha256": "12be88fdf3135aae470720f5b2202a8a1a6fd3e84c1f8a0a946f7c4e50ed24a3"
+    },
+    {
+      "path": "deal_common/parsers/bolton.py",
+      "sha256": "b8128180d58d86b43acabc7b685dca76eeebd962246eb2c41484905d8a01e547"
+    },
+    {
+      "path": "deal_common/parsers/base.py",
+      "sha256": "0047fbdb87073d8d5c79825b5abfcb260ce78a14f75ec006302fd82283c92adf"
+    },
+    {
+      "path": "deal_common/parsers/skiessentials.py",
+      "sha256": "63bd8ef43e7da9199af67e650dd52df27576dff951cd6a7f660a4135bd828027"
+    },
+    {
+      "path": "deal_common/parsers/bikecloset.py",
+      "sha256": "4a1e1eb583ca7c44a99a96c95ee828179fcf933efedc1516ba9ed90b509e562c"
+    },
+    {
+      "path": "deal_common/catalog/web.py",
+      "sha256": "88c92f8817686ad53068a188e6e178deb63e30e58442e089ec631cf31244b9dd"
+    },
+    {
+      "path": "deal_common/catalog/audit.py",
+      "sha256": "989dc1caf4393fd5ddb470308b3fabb91279f0ef2b1e7ab3ac5ef1f5ded1f3e0"
+    },
+    {
+      "path": "deal_common/catalog/query.py",
+      "sha256": "94723201cf216e44e65e7f964555d15598826ccfab84125b109b9e5034540cab"
+    },
+    {
+      "path": "deal_common/catalog/health.py",
+      "sha256": "4349e98701bbc89ea3b9615373a6d4def12a063525abe56560d95d38ad682915"
+    },
+    {
+      "path": "deal_common/catalog/__init__.py",
+      "sha256": "d9a95ae22028c252337da097803c62ced3091fc367b8ce368d0efc5856a71d26"
+    },
+    {
+      "path": "deal_common/catalog/cli.py",
+      "sha256": "b1b0ec9d2e91c468f842ae06cff82fd2bb2a0e0a824eadd6fd22181e6c35fc15"
+    },
+    {
+      "path": "deal_common/catalog/refresh.py",
+      "sha256": "87bfb3e6081182235dfbb75aee076a6d1a961f802e5f974e27e0fe9308654918"
+    },
+    {
+      "path": "deal_common/catalog/storage.py",
+      "sha256": "984eba0d708067b1ee46999aeecd8c50727a0d2a5c62262a9de99ffe7d9b43fd"
+    },
+    {
+      "path": "deal_common/catalog/definition.py",
+      "sha256": "1d574f34e820b5cd84140826f8bcc14a5459fc80c875e3fbdb2aadb8337c9986"
+    },
+    {
+      "path": "deal_common/catalog/identity.py",
+      "sha256": "3e407168f75ee305229d18cea122ff7204af8d22b194ef38a39ac63e8316abf1"
+    },
+    {
+      "path": "deal_common/catalog/static/catalog.css",
+      "sha256": "16e41709e9b879d1434540364e954ba5a241c5c5f2b3f165da0d66f9606a56fd"
+    },
+    {
+      "path": "deal_common/catalog/static/catalog.js",
+      "sha256": "4d5cc1fd15cd71304f0ebd7d27861c29caf3e997590c1677efdbe6fbce318c6f"
+    },
+    {
+      "path": "deal_common/catalog/templates/index.html",
+      "sha256": "d17c477bb8859004f1cd075165ae6b8614077670df3378ef535d45f9748f780b"
+    },
+    {
+      "path": "deal_common/catalog/templates/base.html",
+      "sha256": "b78108e953e933011a91178f23567c0d015ab26753ec153ac3b597ad66023a2f"
+    },
+    {
+      "path": "deal_common/catalog/templates/history.html",
+      "sha256": "77e65196bcb4d616dde3de0e9d4b0f5568fa1fbd2143c0b6d6fe8171d93eba5a"
+    },
+    {
+      "path": "deal_common/catalog/templates/sources.html",
+      "sha256": "8774464e1904695d4a128c1cd39d62291a6416b972c861faf4eaf12dc40527e3"
+    },
+    {
+      "path": "cycling_deals/catalog.py",
+      "sha256": "5c3c85cb2cfc80a17fffbdbd64d03eecf534a82b17a92470fc52fa785dcc0ce4"
+    },
+    {
+      "path": "cycling_deals/__init__.py",
+      "sha256": "75a0a592832a48d2e4f085f3f1b385ca153056128534702751a43c44d0a862bd"
+    },
+    {
+      "path": "cycling_deals/cli.py",
+      "sha256": "af026512745777129883912e25303361d2f4d6a3676934f24cc5a31c2308528a"
+    },
+    {
+      "path": "cycling_deals/static/hero.svg",
+      "sha256": "fa7e034229fbb4980b9a176602978e6c29a2349a202c96844eb7fb80cd042590"
+    },
+    {
+      "path": "cycling_deals/static/brand.css",
+      "sha256": "4101f46c0ebdfe0cbc5f95935f4ac1c940c98520dc7970c40e763b498f56cc88"
+    }
+  ],
+  "matched_merged_commit": "7f2ad68e464a64b44317c275a43eefc6cce7c3c4",
+  "baseline_still_current": true
+}

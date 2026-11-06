@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-11-06T01:49:43.399287+00:00",
+  "asset_id": 715528298,
+  "expected_sha256": "63a0758cd736435780ceaec334a1cae2aedf91b384ead457e540746eb2f689ba",
+  "expected_size": 10309632,
+  "provider_sha256": "63a0758cd736435780ceaec334a1cae2aedf91b384ead457e540746eb2f689ba",
+  "provider_size": 10309632,
+  "initial_canonical_restore": "rejected byte length mismatch; no destination created",
+  "canonical_pending": false,
+  "canonical_sha256": "63a0758cd736435780ceaec334a1cae2aedf91b384ead457e540746eb2f689ba",
+  "canonical_verified_at": "2026-11-06T01:50:13.219285+00:00",
+  "passed": true
+}

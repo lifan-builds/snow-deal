@@ -1,6 +1,6 @@
 # Contender generated options
 
-Status: in_progress. Standing user instruction authorizes improvement and comparable reviewed releases. Trellis identity is uninitialized; task artifacts carry the continuation state.
+Status: completed; production rollout verified. Standing user instruction authorizes improvement and comparable reviewed releases. Trellis identity is uninitialized; task artifacts carry the continuation state.
 
 Contender generated #MWS Options variants currently become independent discounted/in-stock offers. Native merchant UI removes these from shopper size choices: the observed OPEN UP 2.0 generated link leaves no size selected and Add to Bag disabled. Its ordinary Medium link selects Medium and exposes required cockpit configuration. Product.js reports a higher reference for the generated variant than its otherwise matching base, and a separate OPEN UPPER generated Black/S remains available while its base is sold out. These are not safe aliases.
 

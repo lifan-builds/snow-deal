@@ -1,0 +1,230 @@
+{
+  "checked_at": "2026-11-06T01:50:56.398174+00:00",
+  "live": true,
+  "site": "https://bigring.clifan.com",
+  "health": {
+    "catalog": "cycling",
+    "snapshot_sha256": "ee3995e39b2a759c029685976100f7ef4145e1af21df4407c5f43c5b57a665ba",
+    "fresh_sources": 21,
+    "configured_sources": 21,
+    "status": "ready"
+  },
+  "routes": [
+    {
+      "params": {},
+      "count": 24,
+      "total": "1502",
+      "passed": true
+    },
+    {
+      "params": {
+        "stock": "true"
+      },
+      "count": 24,
+      "total": "1475",
+      "passed": true
+    },
+    {
+      "params": {
+        "stock": "true",
+        "min_discount": 40
+      },
+      "count": 24,
+      "total": "203",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Contender Bicycles",
+        "size": "M",
+        "stock": "true"
+      },
+      "count": 24,
+      "total": "59",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Contender Bicycles",
+        "size": "S",
+        "stock": "true"
+      },
+      "count": 24,
+      "total": "41",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Contender Bicycles",
+        "stock": "true",
+        "page": 1
+      },
+      "count": 24,
+      "total": "182",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Contender Bicycles",
+        "stock": "true",
+        "page": 2
+      },
+      "count": 24,
+      "total": "182",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Contender Bicycles",
+        "stock": "true",
+        "page": 3
+      },
+      "count": 24,
+      "total": "182",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Contender Bicycles",
+        "stock": "true",
+        "page": 4
+      },
+      "count": 24,
+      "total": "182",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Contender Bicycles",
+        "stock": "true",
+        "page": 5
+      },
+      "count": 24,
+      "total": "182",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Contender Bicycles",
+        "stock": "true",
+        "page": 6
+      },
+      "count": 24,
+      "total": "182",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Contender Bicycles",
+        "stock": "true",
+        "page": 7
+      },
+      "count": 24,
+      "total": "182",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Contender Bicycles",
+        "stock": "true",
+        "page": 8
+      },
+      "count": 14,
+      "total": "182",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Contender Bicycles",
+        "size": "M #MWS Options 1"
+      },
+      "count": 0,
+      "total": "0",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Contender Bicycles",
+        "size": "S #MWS Options 7"
+      },
+      "count": 0,
+      "total": "0",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Contender Bicycles",
+        "size": "XS #MWS Options 5"
+      },
+      "count": 0,
+      "total": "0",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Contender Bicycles",
+        "size": "XL #MWS Options 9"
+      },
+      "count": 0,
+      "total": "0",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Contender Bicycles",
+        "size": "M #MWS Options 11"
+      },
+      "count": 0,
+      "total": "0",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Contender Bicycles",
+        "size": "S #MWS Options 5"
+      },
+      "count": 0,
+      "total": "0",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Contender Bicycles",
+        "size": "S #MWS Options 13"
+      },
+      "count": 0,
+      "total": "0",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Contender Bicycles",
+        "q": "OPEN UP 2.0 Frameset"
+      },
+      "count": 0,
+      "total": "0",
+      "passed": true
+    }
+  ],
+  "card_comparisons": 302,
+  "targeted_destinations": 182,
+  "generated_sizes_absent": true,
+  "history_pages": 10,
+  "passed": true
+}
