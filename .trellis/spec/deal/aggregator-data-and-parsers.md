@@ -38,3 +38,9 @@ Current shared catalog welding classification, negative stock precedence and his
 See `docs/project-guidance/aggregator-data-and-parsers.md` under Shared manufacturer aliases for the catalog-owned exact mapping contract. Ingestion, query/forms and history use the same identity helper; raw snapshots, fingerprints, variant guards and observation times remain unchanged. Preserve unknowns and intentional subbrands, and replay complete alias groups before release.
 
 See `docs/project-guidance/aggregator-data-and-parsers.md` under Lightweight electric-bike taxonomy before changing accessory-keyword handling of hierarchical categories. Exact positive segments cannot hide negative descendants or rewrite merchant evidence.
+
+## Manual tools and powered-tool accessories
+
+A retailer's generic driver/saw/oscillating-tool wording does not establish a complete powered tool. Max Warehouse's exact Oscillating Tool Access taxonomy describes accessories; sanding pads and nutsetters remain components even with motor-speed or compatibility text. Point Driver, Hacksaw and Nut Driver identities require explicit powered-machine evidence on the primary product, before compatibility or included-accessory clauses. Power in Power Nut Driver is not such evidence. Preserve actual complete powered tools with included pads/bits and keep existing condition/accessory guards first.
+
+Test the observed merchant types and exact offers, positive complete kits, and misleading compatibility before/after the primary identity. Replay the whole affected feed, review every changed classification, retain survivor prices/options/destinations and historical rows, then refresh/audit only the affected existing sources. A below-default-floor exclusion improves unrestricted browsing; it is not additional deep coverage or proof of a competitive metric lead. See `docs/tasks/tools-accessory-precision/`.

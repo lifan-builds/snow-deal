@@ -1,0 +1,7 @@
+# Primary identity evidence
+
+Five product.js endpoints and five corresponding HTML product pages were fetched with ordinary headers and two-second pacing on November 6 UTC. Their hashes, actual timestamps and original locations are retained in capture-receipt.json; only factual product fields are copied into products.json.
+
+The two Irwin descriptions identify lobular nutsetters; Rockwell describes pads attached to an oscillating tool. Stanley model20-807 is a manual Mini Hacksaw ([manufacturer](https://www.stanleytools.ca/product/20-807/mini-hacksaw)). Fletcher model07-500 uses spring-adjusted firing power and a hand trigger ([manufacturer sheet](https://www.fletcher-terry.com/application/files/7417/7159/4409/FT-2014-0126_PointsDrivers_SellSheet_FINAL_1-27-26Web.pdf)). Neither is evidence of an electric/pneumatic powered machine. Existing reference prices are retailer comparisons, not independent historical prices. The source floor currently hides these items by default, but does not make their classification correct.
+
+The sixth observed product is the [FLEX FAM10301-4 nut-driver set](https://www.flexpowertools.com/4-pc-impact-magnetic-nut-driver-set-fam10301-4/). Manufacturer specifications describe four hex-shank bits. The exact Fasteners product endpoint also reports Nut Setters; see fasteners-receipt.json and fasteners-product.json. This is another below-floor false positive, not new deep equipment coverage.

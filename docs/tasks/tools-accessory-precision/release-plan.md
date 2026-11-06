@@ -1,0 +1,11 @@
+# Tools precision release
+
+Scope: reviewed tools classifier and regressions, equipment-identity contract, and two fresh existing-source observations. Max Warehouse loses five false positives and Fasteners Inc loses one. The complete captured-feed replay preserves every surviving normalized field. Compared with the prior public asset, one surviving Fasteners manufacturer label changes from Milwaukee Tool to the already-established Milwaukee alias; all offer facts remain identical. Other eleven source rows and all 34 prior observations are preserved, with two new daily observations added.
+
+Prepared inventory: 934 qualifying in-stock listings and 33 deep deals remain unchanged; unrestricted in-stock results fall from 1,039 to 1,033. The fixed top-ten plus seeded-twenty audit and all 116 surviving selected offers at the affected retailers produce 143 distinct checks, all matching within the existing 15-minute window. This sample does not establish checkout availability, historical selling prices or population-wide 99% accuracy.
+
+Publish the scoped PR under standing approval, require CI and preview success, then merge. Package the exact committed runtime with the prepared public snapshot, verify unrestricted/default/source/search/history routes, upload only tools.db to the existing public data release and deploy only the existing Bench Drop project at benchdrop.clifan.com. Verify production fingerprint and the same exact rendered routes/destinations/history before recording completion. Circle remains inactive and excluded from the clean runtime package.
+
+Recovery: keep the downloaded baseline tools.db (SHA256 0c67f991589eb7f38ac839162ca599608c240c54e89362652153f2b5c95f5936) and prior main commit325d70a9e225ec6f46f2d5ce24f6a6f1bf57ce32. If deployment or semantic verification fails, do not describe the release as complete; restore that public asset and deploy its matching previous runtime to the same existing project. Do not discard history or advance failed observation times.
+
+Current status: local refresh, controlled replay and merchant audit passed. Final clean-package verification, PR CI/merge and production rollout remain pending at this plan's creation. The final dated rollout receipt is authoritative for completion.

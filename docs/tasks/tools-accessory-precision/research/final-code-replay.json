@@ -1,0 +1,35 @@
+{
+  "classifier_sha256": "6da59931696ef9943fd4c46aba60c5e9cf17e87f79a6c7f9aacfabc29d81ed45",
+  "source_observation_times": {
+    "Fasteners Inc": "2026-11-06T00:14:24.160424+00:00",
+    "Max Warehouse": "2026-11-06T00:13:55.938654+00:00"
+  },
+  "replay": [
+    {
+      "source": "Max Warehouse",
+      "old": 43,
+      "new": 38,
+      "removed": [
+        "https://www.maxwarehouse.com/products/fletcher-frame-master-point-driver-5-8?currency=USD",
+        "https://www.maxwarehouse.com/products/irwin-1837533-1-4-x-1-7-8-impact-nutsetter?currency=USD",
+        "https://www.maxwarehouse.com/products/irwin-1837536-5-16-x-1-7-8-impact-nutsetter?currency=USD",
+        "https://www.maxwarehouse.com/products/oscillat-sanding-pad-2pk?currency=USD",
+        "https://www.maxwarehouse.com/products/saw-minihack8-3-4stanly-pack-of-6?currency=USD"
+      ],
+      "all_survivor_fields_equal": true,
+      "prepared_matches_final_code": true
+    },
+    {
+      "source": "Fasteners Inc",
+      "old": 79,
+      "new": 78,
+      "removed": [
+        "https://fastenersinc.myshopify.com/products/flex-fam10301-4?currency=USD"
+      ],
+      "all_survivor_fields_equal": true,
+      "prepared_matches_final_code": true
+    }
+  ],
+  "observations_rewritten": false,
+  "passed": true
+}

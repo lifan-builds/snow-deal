@@ -289,3 +289,7 @@ Added source-bound complete-bike classification and 41 regressions. The complete
 ## Grizzly runner admission — November 5, 2026
 
 Added an explicit Grizzly choice to the existing read-only candidate workflow while preserving the RA default. Clean-tree tests: 993 passing; independent shell/allowlist review, Ruff and JavaScript checks pass. The actual GitHub runner returned HTTP 403 on its first collection request; retained the incomplete-source and unstarted-audit receipts. Local 26-page success does not override that failure. Grizzly remains excluded, classifier expansion is deferred, and no inventory gain is claimed. See `docs/tasks/grizzly-recovery/runner-result.md`.
+
+## Tools accessory precision — November 6, 2026 UTC
+
+Exclude six confirmed manual tools or components from optional unrestricted Bench Drop browsing. Complete captured-feed replay preserves all surviving offer fields; the two affected sources refreshed completely, other eleven source rows and all34 historical observations remain intact. Audit143/143 and clean1037 tests pass. Default934 qualifying listings/33deep remain unchanged. Scoped release and production verification are tracked in `docs/tasks/tools-accessory-precision/`.

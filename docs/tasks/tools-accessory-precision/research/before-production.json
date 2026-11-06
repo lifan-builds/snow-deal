@@ -1,0 +1,77 @@
+{
+  "health": {
+    "catalog": "tools",
+    "snapshot_sha256": "3011dac6009e552392b116da21b7cccc7b18e47233ca1b1b35b679e4dd8647f0",
+    "fresh_sources": 13,
+    "configured_sources": 13,
+    "status": "ready"
+  },
+  "false_positives": [
+    {
+      "url": "https://benchdrop.clifan.com/?store=Max+Warehouse&min_reference=0&q=Fletcher-Terry+FrameMaster+Flat+3%2F8+in.+W+Point+Driver+1+pk",
+      "checked_at": "2026-11-06T00:12:31.686944+00:00",
+      "name": "Fletcher-Terry FrameMaster Flat 3/8 in. W Point Driver 1 pk",
+      "cards": [
+        "\u221217.8 % Power tools Fletcher-Terry Fletcher-Terry FrameMaster Flat 3/8 in. W Point Driver 1 pk Standard listing Package not specified $98.43 USD $119.75 retailer reference Save $21.32 Reported in stock Max Warehouse \u2197 Price & variant details 17.8% off = ($119.75 \u2212 $98.43) \u00f7 $119.75 \u00d7 100. Reference: retailer compare-at price. Not a verified former selling price or all-time low. Variant 33430664966 \u00b7 Options not specified. 1 eligible variant; this card shows the deepest discount that matches your filters. Shipping and tax excluded. Price and stock may change at checkout. View this variant\u2019s observed prices \u2192 Checked Nov 05, 21:11 UTC"
+      ],
+      "destinations": [
+        "https://www.maxwarehouse.com/products/fletcher-frame-master-point-driver-5-8?currency=USD&variant=33430664966"
+      ]
+    },
+    {
+      "url": "https://benchdrop.clifan.com/?store=Max+Warehouse&min_reference=0&q=Saw+Minihack8-3%2F4%22Stanly+%28Pack+Of+6%29",
+      "checked_at": "2026-11-06T00:12:32.040296+00:00",
+      "name": "Saw Minihack8-3/4\"Stanly (Pack Of 6)",
+      "cards": [
+        "\u22121.0 % Power tools STANLEY Saw Minihack8-3/4\"Stanly (Pack Of 6) Standard listing Package not specified $31.67 USD $31.99 retailer reference Save $0.32 Reported in stock Max Warehouse \u2197 Price & variant details 1.0% off = ($31.99 \u2212 $31.67) \u00f7 $31.99 \u00d7 100. Reference: retailer compare-at price. Not a verified former selling price or all-time low. Variant 32574141595699 \u00b7 Options not specified. 1 eligible variant; this card shows the deepest discount that matches your filters. Shipping and tax excluded. Price and stock may change at checkout. View this variant\u2019s observed prices \u2192 Checked Nov 05, 21:11 UTC"
+      ],
+      "destinations": [
+        "https://www.maxwarehouse.com/products/saw-minihack8-3-4stanly-pack-of-6?currency=USD&variant=32574141595699"
+      ]
+    },
+    {
+      "url": "https://benchdrop.clifan.com/?store=Max+Warehouse&min_reference=0&q=Irwin+Impact+Performance+Series+5%2F16+in.+Metric+Lobular+Power+Nut+Driver+1-7%2F8+in.+L+1+pc",
+      "checked_at": "2026-11-06T00:12:32.404025+00:00",
+      "name": "Irwin Impact Performance Series 5/16 in. Metric Lobular Power Nut Driver 1-7/8 in. L 1 pc",
+      "cards": [
+        "\u221215.0 % Power tools IRWIN Irwin Impact Performance Series 5/16 in. Metric Lobular Power Nut Driver 1-7/8 in. L 1 pc Standard listing Package not specified $5.09 USD $5.99 retailer reference Save $0.90 Reported in stock Max Warehouse \u2197 Price & variant details 15.0% off = ($5.99 \u2212 $5.09) \u00f7 $5.99 \u00d7 100. Reference: retailer compare-at price. Not a verified former selling price or all-time low. Variant 35019588486 \u00b7 Options not specified. 1 eligible variant; this card shows the deepest discount that matches your filters. Shipping and tax excluded. Price and stock may change at checkout. View this variant\u2019s observed prices \u2192 Checked Nov 05, 21:11 UTC"
+      ],
+      "destinations": [
+        "https://www.maxwarehouse.com/products/irwin-1837536-5-16-x-1-7-8-impact-nutsetter?currency=USD&variant=35019588486"
+      ]
+    },
+    {
+      "url": "https://benchdrop.clifan.com/?store=Max+Warehouse&min_reference=0&q=Irwin+Impact+Performance+1%2F4+in.+SAE+Lobular+Power+Nut+Driver+1-7%2F8+in.+L+1+pc",
+      "checked_at": "2026-11-06T00:12:32.765954+00:00",
+      "name": "Irwin Impact Performance 1/4 in. SAE Lobular Power Nut Driver 1-7/8 in. L 1 pc",
+      "cards": [
+        "\u22125.8 % Power tools IRWIN Irwin Impact Performance 1/4 in. SAE Lobular Power Nut Driver 1-7/8 in. L 1 pc Standard listing Package not specified $4.70 USD $4.99 retailer reference Save $0.29 Reported in stock Max Warehouse \u2197 Price & variant details 5.8% off = ($4.99 \u2212 $4.70) \u00f7 $4.99 \u00d7 100. Reference: retailer compare-at price. Not a verified former selling price or all-time low. Variant 35021224646 \u00b7 Options not specified. 1 eligible variant; this card shows the deepest discount that matches your filters. Shipping and tax excluded. Price and stock may change at checkout. View this variant\u2019s observed prices \u2192 Checked Nov 05, 21:11 UTC"
+      ],
+      "destinations": [
+        "https://www.maxwarehouse.com/products/irwin-1837533-1-4-x-1-7-8-impact-nutsetter?currency=USD&variant=35021224646"
+      ]
+    },
+    {
+      "url": "https://benchdrop.clifan.com/?store=Max+Warehouse&min_reference=0&q=Rockwell+Metal+Sanding+Pad+1+in.+20000+rpm+2+pc",
+      "checked_at": "2026-11-06T00:12:33.131744+00:00",
+      "name": "Rockwell Metal Sanding Pad 1 in. 20000 rpm 2 pc",
+      "cards": [
+        "\u22121.0 % Power tools Rockwell Rockwell Metal Sanding Pad 1 in. 20000 rpm 2 pc Standard listing Package not specified $14.29 USD $14.43 retailer reference Save $0.14 Reported in stock Max Warehouse \u2197 Price & variant details 1.0% off = ($14.43 \u2212 $14.29) \u00f7 $14.43 \u00d7 100. Reference: retailer compare-at price. Not a verified former selling price or all-time low. Variant 52328609542 \u00b7 Options not specified. 1 eligible variant; this card shows the deepest discount that matches your filters. Shipping and tax excluded. Price and stock may change at checkout. View this variant\u2019s observed prices \u2192 Checked Nov 05, 21:11 UTC"
+      ],
+      "destinations": [
+        "https://www.maxwarehouse.com/products/oscillat-sanding-pad-2pk?currency=USD&variant=52328609542"
+      ]
+    },
+    {
+      "url": "https://benchdrop.clifan.com/?store=Fasteners+Inc&min_reference=0&q=FLEX+FAM10301-4+2-9%2F16+in+4-Piece+Impact+Magnetic+Nut+Driver+Set",
+      "checked_at": "2026-11-06T00:17:20.866779+00:00",
+      "name": "FLEX FAM10301-4 2-9/16 in 4-Piece Impact Magnetic Nut Driver Set",
+      "cards": [
+        "\u221246.9 % Power tools FLEX FLEX FAM10301-4 2-9/16 in 4-Piece Impact Magnetic Nut Driver Set Standard listing Package not specified $8.49 USD $15.99 retailer reference Save $7.50 Reported in stock Fasteners Inc \u2197 Price & variant details 46.9% off = ($15.99 \u2212 $8.49) \u00f7 $15.99 \u00d7 100. Reference: retailer compare-at price. Not a verified former selling price or all-time low. Variant 67525098832063 \u00b7 Options not specified. 1 eligible variant; this card shows the deepest discount that matches your filters. Shipping and tax excluded. Price and stock may change at checkout. View this variant\u2019s observed prices \u2192 Checked Nov 05, 21:20 UTC"
+      ],
+      "destinations": [
+        "https://fastenersinc.myshopify.com/products/flex-fam10301-4?currency=USD&variant=67525098832063"
+      ]
+    }
+  ]
+}
