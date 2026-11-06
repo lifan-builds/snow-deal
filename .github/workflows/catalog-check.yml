@@ -13,9 +13,16 @@ on:
   workflow_dispatch:
     inputs:
       candidate_admission:
-        description: Run the public RA Cycles candidate and merchant admission audit
+        description: Run the selected public candidate and merchant admission audit
         type: boolean
         default: false
+      candidate_source:
+        description: Retailer to audit when candidate admission is enabled
+        type: choice
+        options:
+          - ra-cycles
+          - grizzly
+        default: ra-cycles
       snow_preview:
         description: Deploy a nonproduction Fresh Powder preview after offline checks
         type: boolean
@@ -37,13 +44,32 @@ jobs:
       - run: python scripts/check.py -q
       - run: ruff check common/deal_common/catalog catalogs/cycling/src catalogs/tools/src scripts/probe_sources.py scripts/package_catalog.py scripts/restore_catalog.py scripts/verify_catalog_live.py scripts/audit_catalog.py scripts/audit_merchants.py scripts/benchmark.py common/deal_common/benchmark.py
       - run: node --check common/deal_common/catalog/static/catalog.js
-      - name: Audit isolated RA Cycles candidate
+      - name: Audit isolated retailer candidate
+        id: candidate
         if: github.event_name == 'workflow_dispatch' && inputs.candidate_admission
-        run: python scripts/probe_sources.py docs/tasks/ra-source/candidates.json --output "$RUNNER_TEMP/source-admission" --max-pages 30 --audit-merchants
+        env:
+          CANDIDATE_SOURCE: ${{ inputs.candidate_source || 'ra-cycles' }}
+        run: |
+          case "$CANDIDATE_SOURCE" in
+            ra-cycles)
+              manifest='docs/tasks/ra-source/candidates.json'
+              artifact='ra-source-admission'
+              ;;
+            grizzly)
+              manifest='docs/tasks/grizzly-recovery/candidates.json'
+              artifact='grizzly-source-admission'
+              ;;
+            *)
+              echo '::error::Unsupported candidate source'
+              exit 1
+              ;;
+          esac
+          printf 'artifact=%s\n' "$artifact" >> "$GITHUB_OUTPUT"
+          python scripts/probe_sources.py "$manifest" --output "$RUNNER_TEMP/source-admission" --max-pages 30 --audit-merchants
       - uses: actions/upload-artifact@v4
-        if: always() && github.event_name == 'workflow_dispatch' && inputs.candidate_admission
+        if: always() && github.event_name == 'workflow_dispatch' && inputs.candidate_admission && steps.candidate.outputs.artifact != ''
         with:
-          name: ra-source-admission
+          name: ${{ steps.candidate.outputs.artifact }}
           path: ${{ runner.temp }}/source-admission/
           retention-days: 30
 

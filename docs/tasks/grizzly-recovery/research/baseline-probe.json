@@ -1,0 +1,39 @@
+[
+  {
+    "candidate": {
+      "catalog": "tools",
+      "name": "Grizzly Industrial",
+      "domain": "www.grizzly.com",
+      "parser_type": "grizzly",
+      "scrape_urls": [
+        "https://www.grizzly.com/outlet-specials/shop-all"
+      ]
+    },
+    "checked_at": "2026-11-05T23:46:45.054267+00:00",
+    "snapshot": "00-tools.db",
+    "refresh": {
+      "source": "Grizzly Industrial",
+      "status": "complete",
+      "errors": 0,
+      "pages": 26,
+      "collections": [
+        {
+          "url": "https://www.grizzly.com/outlet-specials/shop-all",
+          "pages": 26,
+          "products": 1295,
+          "status": "complete"
+        }
+      ],
+      "parsed_products": 1295,
+      "accepted_products": 43
+    },
+    "eligible_listings": 26,
+    "deep_listings": 2,
+    "disposition": "merchant-audited-needs-review",
+    "merchant_audit": {
+      "receipt": "00-tools-merchant-audit.json",
+      "passed": true,
+      "sample_size": 26
+    }
+  }
+]

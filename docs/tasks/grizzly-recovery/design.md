@@ -1,0 +1,7 @@
+# Boundary
+
+Reuse the existing Grizzly exact-SKU parser and common source probe/auditor. Do not replace the source transport or weaken completeness, stock or currency gates. The original failure was on the production runner, so expose Grizzly as an explicit allowlisted candidate in the existing read-only `catalog-check.yml` manual workflow. Preserve the current boolean input and RA Cycles default/artifact name. Pass the choice through an environment variable and a quoted shell case; do not interpolate arbitrary manifest paths or shell text. Candidate jobs have read-only repository permissions and never deploy or update public data.
+
+The prospective classifier change belongs in the tools catalog and must follow captured product evidence. Generic broad categories must not admit equipment accessories. Prefer exact observed machine taxonomy with a primary machine title and explicit accessory guards; bind retailer-specific meanings to Grizzly if they cannot be shown safe for existing sources. Preserve condition/shipping gates and all original offer fields. No inference of battery compatibility or checkout totals.
+
+Expected changes: existing manual-check workflow, explicit candidate manifest, tools classifier/tests only after full discovery identifies legitimate misses, source config/coverage note only after complete runner admission. Root owns live captures, public snapshot/runner/rollout actions. Implementer/check agents own assigned code/tests and review; inactive Circle work is unrelated and must be preserved.

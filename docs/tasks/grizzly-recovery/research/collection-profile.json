@@ -1,0 +1,647 @@
+{
+  "started_at": "2026-11-05T23:51:17.338923+00:00",
+  "finished_at": "2026-11-05T23:52:37.134325+00:00",
+  "pages": [
+    {
+      "url": "https://www.grizzly.com/outlet-specials/shop-all",
+      "status": 200,
+      "at": "2026-11-05T23:51:20.335306+00:00",
+      "sha256": "8f0b2ed8357b128b211054975b369bf15ee429a734a78801f5fefd9069af07e6",
+      "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/source-expansion/tools-research-20261105/grizzly-profile/pages/01.html.gz",
+      "raw_products": 50,
+      "parsed_products": 50
+    },
+    {
+      "url": "https://www.grizzly.com/outlet-specials/shop-all?cp=2",
+      "status": 200,
+      "at": "2026-11-05T23:51:23.457682+00:00",
+      "sha256": "9cc9f164eac78032f4fe2ddec0ef268ce03237ecb89896b293167d564c4e78f8",
+      "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/source-expansion/tools-research-20261105/grizzly-profile/pages/02.html.gz",
+      "raw_products": 50,
+      "parsed_products": 50
+    },
+    {
+      "url": "https://www.grizzly.com/outlet-specials/shop-all?cp=3",
+      "status": 200,
+      "at": "2026-11-05T23:51:26.388790+00:00",
+      "sha256": "f823fc301819be59553eea463c08dbc46af67b245d0c26d31b050d56ae6fb7de",
+      "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/source-expansion/tools-research-20261105/grizzly-profile/pages/03.html.gz",
+      "raw_products": 50,
+      "parsed_products": 50
+    },
+    {
+      "url": "https://www.grizzly.com/outlet-specials/shop-all?cp=4",
+      "status": 200,
+      "at": "2026-11-05T23:51:29.389526+00:00",
+      "sha256": "1f11a2257ffcdd11477625b6242eaa2576cac7a5bd5b8bbb28ecc5eaa74b97f7",
+      "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/source-expansion/tools-research-20261105/grizzly-profile/pages/04.html.gz",
+      "raw_products": 50,
+      "parsed_products": 50
+    },
+    {
+      "url": "https://www.grizzly.com/outlet-specials/shop-all?cp=5",
+      "status": 200,
+      "at": "2026-11-05T23:51:32.370338+00:00",
+      "sha256": "a781f6d17ad1ff47e9ee38dcac78ee62683316f406b500b85bf77bce6e35b561",
+      "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/source-expansion/tools-research-20261105/grizzly-profile/pages/05.html.gz",
+      "raw_products": 50,
+      "parsed_products": 50
+    },
+    {
+      "url": "https://www.grizzly.com/outlet-specials/shop-all?cp=6",
+      "status": 200,
+      "at": "2026-11-05T23:51:35.261207+00:00",
+      "sha256": "324c161836035a81234fa9f9f4700fdaaf97c485725f596034d58e3aac00cdf7",
+      "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/source-expansion/tools-research-20261105/grizzly-profile/pages/06.html.gz",
+      "raw_products": 50,
+      "parsed_products": 50
+    },
+    {
+      "url": "https://www.grizzly.com/outlet-specials/shop-all?cp=7",
+      "status": 200,
+      "at": "2026-11-05T23:51:38.347829+00:00",
+      "sha256": "5bc2d5f246ba13c0838bcb20c197f157da9a09db066d8d6444c81da968f22a98",
+      "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/source-expansion/tools-research-20261105/grizzly-profile/pages/07.html.gz",
+      "raw_products": 50,
+      "parsed_products": 50
+    },
+    {
+      "url": "https://www.grizzly.com/outlet-specials/shop-all?cp=8",
+      "status": 200,
+      "at": "2026-11-05T23:51:41.515631+00:00",
+      "sha256": "32453496fd63e7cd1bd1707f812bdb141d53d195c91d71ca111288f4dd1063ad",
+      "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/source-expansion/tools-research-20261105/grizzly-profile/pages/08.html.gz",
+      "raw_products": 50,
+      "parsed_products": 50
+    },
+    {
+      "url": "https://www.grizzly.com/outlet-specials/shop-all?cp=9",
+      "status": 200,
+      "at": "2026-11-05T23:51:44.625562+00:00",
+      "sha256": "099248c0895522cd5df91e3153c6098befc54f08e1f98a34c3bfc6cb5a789087",
+      "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/source-expansion/tools-research-20261105/grizzly-profile/pages/09.html.gz",
+      "raw_products": 50,
+      "parsed_products": 50
+    },
+    {
+      "url": "https://www.grizzly.com/outlet-specials/shop-all?cp=10",
+      "status": 200,
+      "at": "2026-11-05T23:51:47.656839+00:00",
+      "sha256": "2995e6e2449b705da1a26b16b752ffc0e259a3616206ff2cea1a84c63d16e2fc",
+      "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/source-expansion/tools-research-20261105/grizzly-profile/pages/10.html.gz",
+      "raw_products": 50,
+      "parsed_products": 50
+    },
+    {
+      "url": "https://www.grizzly.com/outlet-specials/shop-all?cp=11",
+      "status": 200,
+      "at": "2026-11-05T23:51:50.702295+00:00",
+      "sha256": "7b5601673f0dfcc19f41553ea9c1155a6871e01d980d88186a49ee2af5f5cdde",
+      "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/source-expansion/tools-research-20261105/grizzly-profile/pages/11.html.gz",
+      "raw_products": 50,
+      "parsed_products": 50
+    },
+    {
+      "url": "https://www.grizzly.com/outlet-specials/shop-all?cp=12",
+      "status": 200,
+      "at": "2026-11-05T23:51:53.666215+00:00",
+      "sha256": "b5902e1fe1bc053e3ef976cde9820ffcb5e5db50290db59ff4c32d03772bd6d3",
+      "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/source-expansion/tools-research-20261105/grizzly-profile/pages/12.html.gz",
+      "raw_products": 50,
+      "parsed_products": 50
+    },
+    {
+      "url": "https://www.grizzly.com/outlet-specials/shop-all?cp=13",
+      "status": 200,
+      "at": "2026-11-05T23:51:56.743892+00:00",
+      "sha256": "6feee439c8f14b1cb9a75e950fcac12319c1cd827171581609833497725edd9d",
+      "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/source-expansion/tools-research-20261105/grizzly-profile/pages/13.html.gz",
+      "raw_products": 50,
+      "parsed_products": 50
+    },
+    {
+      "url": "https://www.grizzly.com/outlet-specials/shop-all?cp=14",
+      "status": 200,
+      "at": "2026-11-05T23:51:59.991149+00:00",
+      "sha256": "3be0851ea4bfc57277f71fecee59a964e69c22a1f6afa36b3f2f065a0d683242",
+      "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/source-expansion/tools-research-20261105/grizzly-profile/pages/14.html.gz",
+      "raw_products": 50,
+      "parsed_products": 50
+    },
+    {
+      "url": "https://www.grizzly.com/outlet-specials/shop-all?cp=15",
+      "status": 200,
+      "at": "2026-11-05T23:52:02.831137+00:00",
+      "sha256": "2f9024b235b0bc51271af27d70ffe7a2471d85531575028dd4dbb6396abf1a0f",
+      "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/source-expansion/tools-research-20261105/grizzly-profile/pages/15.html.gz",
+      "raw_products": 50,
+      "parsed_products": 50
+    },
+    {
+      "url": "https://www.grizzly.com/outlet-specials/shop-all?cp=16",
+      "status": 200,
+      "at": "2026-11-05T23:52:05.905237+00:00",
+      "sha256": "16edb822c886f58bfd028ad40907d76379ddde43ddfe8cd518592549407fe4cc",
+      "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/source-expansion/tools-research-20261105/grizzly-profile/pages/16.html.gz",
+      "raw_products": 50,
+      "parsed_products": 50
+    },
+    {
+      "url": "https://www.grizzly.com/outlet-specials/shop-all?cp=17",
+      "status": 200,
+      "at": "2026-11-05T23:52:08.907790+00:00",
+      "sha256": "84ef3662745639af698496ddf5b7f03519b6ae56d10da5b33d6251c6ca2ce380",
+      "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/source-expansion/tools-research-20261105/grizzly-profile/pages/17.html.gz",
+      "raw_products": 50,
+      "parsed_products": 50
+    },
+    {
+      "url": "https://www.grizzly.com/outlet-specials/shop-all?cp=18",
+      "status": 200,
+      "at": "2026-11-05T23:52:11.736169+00:00",
+      "sha256": "4b086f4ae58086d5fa84ed9208dc9fe4182cd504183945f0d15da105ee69e7ff",
+      "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/source-expansion/tools-research-20261105/grizzly-profile/pages/18.html.gz",
+      "raw_products": 50,
+      "parsed_products": 50
+    },
+    {
+      "url": "https://www.grizzly.com/outlet-specials/shop-all?cp=19",
+      "status": 200,
+      "at": "2026-11-05T23:52:14.917948+00:00",
+      "sha256": "4f9662262d96fa79b3b2adbe7ff7af9aade4daeb482736367a470172f8b3e665",
+      "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/source-expansion/tools-research-20261105/grizzly-profile/pages/19.html.gz",
+      "raw_products": 50,
+      "parsed_products": 50
+    },
+    {
+      "url": "https://www.grizzly.com/outlet-specials/shop-all?cp=20",
+      "status": 200,
+      "at": "2026-11-05T23:52:18.271127+00:00",
+      "sha256": "4fb64f0d173b552d209bc4bf17489d7e0fd451d2f6c13d6fe797f0336c1d0f95",
+      "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/source-expansion/tools-research-20261105/grizzly-profile/pages/20.html.gz",
+      "raw_products": 50,
+      "parsed_products": 50
+    },
+    {
+      "url": "https://www.grizzly.com/outlet-specials/shop-all?cp=21",
+      "status": 200,
+      "at": "2026-11-05T23:52:21.370700+00:00",
+      "sha256": "93f3d05066598385c69c1ad79f148de1914c674ee651491d426c9b46dc7ef7cd",
+      "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/source-expansion/tools-research-20261105/grizzly-profile/pages/21.html.gz",
+      "raw_products": 50,
+      "parsed_products": 50
+    },
+    {
+      "url": "https://www.grizzly.com/outlet-specials/shop-all?cp=22",
+      "status": 200,
+      "at": "2026-11-05T23:52:24.387050+00:00",
+      "sha256": "be67baaf423543d7dd62dae3c4870e3da0427c1921cdcf63c5ef40d111e0a6d9",
+      "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/source-expansion/tools-research-20261105/grizzly-profile/pages/22.html.gz",
+      "raw_products": 50,
+      "parsed_products": 50
+    },
+    {
+      "url": "https://www.grizzly.com/outlet-specials/shop-all?cp=23",
+      "status": 200,
+      "at": "2026-11-05T23:52:27.418110+00:00",
+      "sha256": "f6823c341238ee8e9eb692eec19f922d8a3dfc929df84bb4abe30995a79a8aed",
+      "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/source-expansion/tools-research-20261105/grizzly-profile/pages/23.html.gz",
+      "raw_products": 50,
+      "parsed_products": 50
+    },
+    {
+      "url": "https://www.grizzly.com/outlet-specials/shop-all?cp=24",
+      "status": 200,
+      "at": "2026-11-05T23:52:30.691418+00:00",
+      "sha256": "dfad4fcb588a8a1a2b63a83d060466f134cee47425def5f20988241461296a6b",
+      "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/source-expansion/tools-research-20261105/grizzly-profile/pages/24.html.gz",
+      "raw_products": 50,
+      "parsed_products": 50
+    },
+    {
+      "url": "https://www.grizzly.com/outlet-specials/shop-all?cp=25",
+      "status": 200,
+      "at": "2026-11-05T23:52:33.723038+00:00",
+      "sha256": "55625f965331bc644e0b4a828a6a345690259f3adc69c4dbc88840d5c9f9430e",
+      "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/source-expansion/tools-research-20261105/grizzly-profile/pages/25.html.gz",
+      "raw_products": 50,
+      "parsed_products": 50
+    },
+    {
+      "url": "https://www.grizzly.com/outlet-specials/shop-all?cp=26",
+      "status": 200,
+      "at": "2026-11-05T23:52:36.748823+00:00",
+      "sha256": "db60417940b6141eb8b32f928ee3ba77df207dd8bc7dead627be6a616bd12b4c",
+      "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/source-expansion/tools-research-20261105/grizzly-profile/pages/26.html.gz",
+      "raw_products": 50,
+      "parsed_products": 45
+    }
+  ],
+  "distinct_raw_identities": 1300,
+  "parsed_products": 1295,
+  "baseline_accepted": 43,
+  "rejected_deep": [
+    {
+      "name": "Portable Sandblaster 20 Gallon",
+      "url": "https://www.grizzly.com/products/shop-fox-portable-sandblaster-20-gallon/m1115",
+      "category": "Sandblasters",
+      "price": 220.08,
+      "reference": 475.0,
+      "discount": 53.66736842105263
+    },
+    {
+      "name": "Sandblasting Cabinet",
+      "url": "https://www.grizzly.com/products/shop-fox-sandblasting-cabinet/m1114",
+      "category": "Sandblasters",
+      "price": 220.08,
+      "reference": 435.0,
+      "discount": 49.40689655172414
+    },
+    {
+      "name": "Replacement Filter for G0852",
+      "url": "https://www.grizzly.com/products/grizzly-replacement-filter-for-g0852/t30321",
+      "category": "Dust Collectors > Dust Collection Accessories > Wood Bags and Filters",
+      "price": 82.34,
+      "reference": 207.0,
+      "discount": 60.22222222222222
+    },
+    {
+      "name": "Quick Change Collet Set for M1036 Mill",
+      "url": "https://www.grizzly.com/products/shop-fox-quick-change-collet-set-for-m1036-mill/m1037",
+      "category": "Metal Lathes > Metal Lathe Accessories > Lathe Tooling > Lathe Tooling Collets",
+      "price": 85.86,
+      "reference": 315.0,
+      "discount": 72.74285714285715
+    },
+    {
+      "name": "2-1/2\" Crown Moulding - 1\" Bore",
+      "url": "https://www.grizzly.com/products/grizzly-2-1-2-crown-moulding-1-bore/c2210",
+      "category": "Shaper Cutters > Face Moulding Cutters",
+      "price": 95.36,
+      "reference": 205.0,
+      "discount": 53.482926829268294
+    },
+    {
+      "name": "8-1/4\" D1-6 Back Plate",
+      "url": "https://www.grizzly.com/products/south-bend-8-1-4-d1-6-back-plate/sb1434",
+      "category": "Metal Lathes > Metal Lathe Accessories > Backplates",
+      "price": 98.04,
+      "reference": 205.0,
+      "discount": 52.17560975609756
+    },
+    {
+      "name": "Face Plate for 10K Lathe",
+      "url": "https://www.grizzly.com/products/south-bend-face-plate-for-10k-lathe/sb1452",
+      "category": "Machine Accessories > Face Plates",
+      "price": 99.64,
+      "reference": 210.0,
+      "discount": 52.55238095238095
+    },
+    {
+      "name": "Carbide Inserts CCGT for Steel and Cast-Iron, pk. of 10",
+      "url": "https://www.grizzly.com/products/grizzly-carbide-inserts-ccgt-for-steel-and-cast-iron-pk.-of-10/t10246",
+      "category": "Metal Lathes > Metal Lathe Accessories > Lathe Tooling > Lathe Tooling Inserts",
+      "price": 101.76,
+      "reference": 210.0,
+      "discount": 51.542857142857144
+    },
+    {
+      "name": "43\" x 60\" A/O Sanding Belt 40-X Grit, 5 pk.",
+      "url": "https://www.grizzly.com/products/grizzly-43-x-60-a-o-sanding-belt-40-x-grit-5-pk./h7905",
+      "category": "Abrasives & Sanding > Sanding Belts",
+      "price": 101.84,
+      "reference": 209.0,
+      "discount": 51.27272727272727
+    },
+    {
+      "name": "Planer Wings for W1864",
+      "url": "https://www.grizzly.com/products/shop-fox-planer-wings-for-w1864/d4910",
+      "category": "Jointers & Planers > Planers > Planer Accessories",
+      "price": 111.67,
+      "reference": 329.95,
+      "discount": 66.15547810274283
+    },
+    {
+      "name": "12-1/2\" D1-8 Back Plate",
+      "url": "https://www.grizzly.com/products/south-bend-12-1-2-d1-8-back-plate/sb1404",
+      "category": "Metal Lathes > Metal Lathe Accessories > Backplates",
+      "price": 123.84,
+      "reference": 215.0,
+      "discount": 42.4
+    },
+    {
+      "name": "Follow Rest for SB1007",
+      "url": "https://www.grizzly.com/products/south-bend-follow-rest-for-sb1007/sb1482",
+      "category": "Metal Lathes > Metal Lathe Accessories",
+      "price": 125.34,
+      "reference": 317.95,
+      "discount": 60.578707343922
+    },
+    {
+      "name": "Auxiliary Dust Table for G0563/4",
+      "url": "https://www.grizzly.com/products/grizzly-auxiliary-dust-table-for-g0563-4/t10116",
+      "category": "Power Tools > Sanders",
+      "price": 125.76,
+      "reference": 240.0,
+      "discount": 47.6
+    },
+    {
+      "name": "170-Pc. Bulk Drill Bit Organizer",
+      "url": "https://www.grizzly.com/products/grizzly-170-pc.-bulk-drill-bit-organizer/h8182",
+      "category": "Drilling & Tapping > Drill Bits",
+      "price": 129.58,
+      "reference": 230.95,
+      "discount": 43.89261744966443
+    },
+    {
+      "name": "20\" Best Planer Knives-Set of 3",
+      "url": "https://www.grizzly.com/products/grizzly-20-best-planer-knives-set-of-3/t10154",
+      "category": "Jointers & Planers > Jointer & Planer Accessories > Jointer & Planer Knives",
+      "price": 132.96,
+      "reference": 245.0,
+      "discount": 45.73061224489796
+    },
+    {
+      "name": "3-1/8\" Face Mill Cutter",
+      "url": "https://www.grizzly.com/products/grizzly-3-1-8-face-mill-cutter/h8322",
+      "category": "Mills & Drills > Milling Machines > Milling Accessories > Face Mills",
+      "price": 135.07,
+      "reference": 235.0,
+      "discount": 42.52340425531915
+    },
+    {
+      "name": "Replacement Filter for G0849",
+      "url": "https://www.grizzly.com/products/grizzly-replacement-filter-for-g0849/t28919",
+      "category": "Dust Collectors > Dust Collection Accessories > Wood Bags and Filters",
+      "price": 136.78,
+      "reference": 285.0,
+      "discount": 52.00701754385965
+    },
+    {
+      "name": "1/2\" Bead Forming Mandrel Set for G0816",
+      "url": "https://www.grizzly.com/products/grizzly-1-2-bead-forming-mandrel-set-for-g0816/t27613",
+      "category": "Sheet Metal Machines > Sheet Metal Machine Accessories",
+      "price": 141.24,
+      "reference": 285.0,
+      "discount": 50.44210526315789
+    },
+    {
+      "name": "Carbide Insert MTTL for H8314, 10 pk.",
+      "url": "https://www.grizzly.com/products/grizzly-carbide-insert-mttl-for-h8314-10-pk./t27355",
+      "category": "Metal Lathes > Metal Lathe Accessories > Lathe Tooling > Lathe Tooling Inserts",
+      "price": 141.96,
+      "reference": 285.0,
+      "discount": 50.189473684210526
+    },
+    {
+      "name": "HEPA Filter Kit for G0703P Dust Collector",
+      "url": "https://www.grizzly.com/products/grizzly-hepa-filter-kit-for-g0703p-dust-collector/t10879",
+      "category": "Dust Collectors > Dust Collection Accessories > HEPA Filter Kits",
+      "price": 143.48,
+      "reference": 559.95,
+      "discount": 74.37628359674972
+    },
+    {
+      "name": "Adjustable Height Workbench With Manual Crank",
+      "url": "https://www.grizzly.com/products/grizzly-adjustable-height-workbench-with-manual-crank/t33252",
+      "category": "Contractor, Home & Shop > Workbenches",
+      "price": 149.91,
+      "reference": 550.0,
+      "discount": 72.74363636363637
+    },
+    {
+      "name": "20\" Best Planer Knives-Set of 4",
+      "url": "https://www.grizzly.com/products/grizzly-20-best-planer-knives-set-of-4/t10155",
+      "category": "Jointers & Planers > Jointer & Planer Accessories > Jointer & Planer Knives",
+      "price": 160.56,
+      "reference": 315.0,
+      "discount": 49.02857142857143
+    },
+    {
+      "name": "43\" x 75\" A/O Sanding Belt 60 Grit, 3 pk.",
+      "url": "https://www.grizzly.com/products/grizzly-43-x-75-a-o-sanding-belt-60-grit-3-pk./h9122",
+      "category": "Abrasives & Sanding > Sanding Belts",
+      "price": 175.66,
+      "reference": 305.0,
+      "discount": 42.40655737704918
+    },
+    {
+      "name": "Platform Truck",
+      "url": "https://www.grizzly.com/products/shop-fox-platform-truck/d3240",
+      "category": "Contractor, Home & Shop > Material Handling > Carts & Dollies",
+      "price": 190.16,
+      "reference": 330.0,
+      "discount": 42.375757575757575
+    },
+    {
+      "name": "Carbide Inserts GMM2020 for Stainless, pk. of 10",
+      "url": "https://www.grizzly.com/products/grizzly-carbide-inserts-gmm2020-for-stainless-pk.-of-10/t10237",
+      "category": "Metal Lathes > Metal Lathe Accessories > Lathe Tooling > Lathe Tooling Inserts",
+      "price": 212.86,
+      "reference": 410.0,
+      "discount": 48.082926829268295
+    },
+    {
+      "name": "5\" 3 Jaw Chuck D1-3",
+      "url": "https://www.grizzly.com/products/south-bend-5-3-jaw-chuck-d1-3/sb1352",
+      "category": "Metal Lathes > Metal Lathe Accessories > Metal Chucks",
+      "price": 215.46,
+      "reference": 572.0,
+      "discount": 62.33216783216783
+    },
+    {
+      "name": "HEPA Filter Kit for G0703/G0777 Dust Collector",
+      "url": "https://www.grizzly.com/products/grizzly-hepa-filter-kit-for-g0703-g0777-dust-collector/t10878",
+      "category": "Dust Collectors > Dust Collection Accessories > HEPA Filter Kits",
+      "price": 222.78,
+      "reference": 559.95,
+      "discount": 60.2143048486472
+    },
+    {
+      "name": "Carbide Tipped Stile & Rail Set - Roman Ogee, 4\" Dia.",
+      "url": "https://www.grizzly.com/products/grizzly-carbide-tipped-stile-rail-set-roman-ogee-4-dia./c2174z",
+      "category": "Shaper Cutters > Stile & Rail Cutters",
+      "price": 237.46,
+      "reference": 450.0,
+      "discount": 47.23111111111111
+    },
+    {
+      "name": "Carbide Tipped Stile & Rail Set - Quarter Bead, 4\" Dia.",
+      "url": "https://www.grizzly.com/products/grizzly-carbide-tipped-stile-rail-set-quarter-bead-4-dia./c2175z",
+      "category": "Shaper Cutters > Stile & Rail Cutters",
+      "price": 241.36,
+      "reference": 450.0,
+      "discount": 46.364444444444445
+    },
+    {
+      "name": "2\" x 6-1/2\" Square Tube Die for T30860",
+      "url": "https://www.grizzly.com/products/grizzly-2-x-6-1-2-square-tube-die-for-t30860/t30877",
+      "category": "Sheet Metal Machines > Sheet Metal Machine Accessories",
+      "price": 250.06,
+      "reference": 500.0,
+      "discount": 49.988
+    },
+    {
+      "name": "12\" Swing Bed Extension for W1866",
+      "url": "https://www.grizzly.com/products/shop-fox-12-swing-bed-extension-for-w1866/d4906",
+      "category": "Wood Lathes > Wood Lathe Accessories",
+      "price": 255.94,
+      "reference": 960.0,
+      "discount": 73.33958333333334
+    },
+    {
+      "name": "Material Clamp for T10464",
+      "url": "https://www.grizzly.com/products/grizzly-material-clamp-for-t10464/t24653",
+      "category": "Woodworking Machines-Misc > Panel Crafters",
+      "price": 274.34,
+      "reference": 570.0,
+      "discount": 51.87017543859649
+    },
+    {
+      "name": "Electronic Height Adjustable Workbench Frame",
+      "url": "https://www.grizzly.com/products/grizzly-electronic-height-adjustable-workbench-frame/t31850",
+      "category": "Contractor, Home & Shop > Miscellaneous Contractor, Home & Shop",
+      "price": 287.18,
+      "reference": 599.0,
+      "discount": 52.0567612687813
+    },
+    {
+      "name": "6\" High Precision 4 Jaw Scroll Chuck",
+      "url": "https://www.grizzly.com/products/south-bend-6-high-precision-4-jaw-scroll-chuck/sb1313",
+      "category": "Metal Lathes > Metal Lathe Accessories > Metal Chucks",
+      "price": 305.24,
+      "reference": 530.0,
+      "discount": 42.40754716981132
+    },
+    {
+      "name": "20\" Bed Extension for W1866",
+      "url": "https://www.grizzly.com/products/shop-fox-20-bed-extension-for-w1866/d4905",
+      "category": "Cutting Tools > Woodruff Keyseats",
+      "price": 319.94,
+      "reference": 1000.0,
+      "discount": 68.006
+    },
+    {
+      "name": "48mm x 6mm Boring Head for G0718",
+      "url": "https://www.grizzly.com/products/grizzly-48mm-x-6mm-boring-head-for-g0718/t23281",
+      "category": "Mills & Drills > Milling Machines > Milling Accessories > Boring Heads",
+      "price": 340.56,
+      "reference": 695.0,
+      "discount": 50.99856115107914
+    },
+    {
+      "name": "52mm x 5.5mm Boring Head for G0718",
+      "url": "https://www.grizzly.com/products/grizzly-52mm-x-5.5mm-boring-head-for-g0718/t23282",
+      "category": "Mills & Drills > Milling Machines > Milling Accessories > Boring Heads",
+      "price": 381.46,
+      "reference": 695.0,
+      "discount": 45.1136690647482
+    },
+    {
+      "name": "Steady Rest for SB1008 and SB1009",
+      "url": "https://www.grizzly.com/products/south-bend-steady-rest-for-sb1008-and-sb1009/sb1475",
+      "category": "Metal Lathes > Metal Lathe Accessories",
+      "price": 504.54,
+      "reference": 1425.0,
+      "discount": 64.59368421052632
+    },
+    {
+      "name": "Corner Clamping Attachment",
+      "url": "https://www.grizzly.com/products/grizzly-corner-clamping-attachment/t28990",
+      "category": "Welding & Plasma > Welding Tables > Welding Table Accessories",
+      "price": 520.56,
+      "reference": 975.0,
+      "discount": 46.60923076923077
+    },
+    {
+      "name": "Water Chiller for G0874",
+      "url": "https://www.grizzly.com/products/grizzly-water-chiller-for-g0874/t30339",
+      "category": "CNC > CNC Lasers > CNC Laser Accessories",
+      "price": 742.87,
+      "reference": 1330.0,
+      "discount": 44.145112781954886
+    },
+    {
+      "name": "39\" x 31\" Welding Tabletop",
+      "url": "https://www.grizzly.com/products/grizzly-39-x-31-welding-tabletop/t28980",
+      "category": "Welding & Plasma > Welding Tables",
+      "price": 1072.78,
+      "reference": 2095.0,
+      "discount": 48.79331742243437
+    },
+    {
+      "name": "Auxiliary Table with Dust Downdraft",
+      "url": "https://www.grizzly.com/products/woodstock-auxiliary-table-with-dust-downdraft/d3741",
+      "category": "Machine Accessories > Sanding Attachments",
+      "price": 35.98,
+      "reference": 270.5,
+      "discount": 86.69870609981515
+    },
+    {
+      "name": "M18\u2122 1/4\" Recon BL Hex Impact Driver",
+      "url": "https://www.grizzly.com/products/milwaukee-m18-1-4-recon-bl-hex-impact-driver/t32196r",
+      "category": "Power Tools > Impact Drivers",
+      "price": 68.73,
+      "reference": 267.95,
+      "discount": 74.34969210673633
+    },
+    {
+      "name": "16-Pc. Carbide Forstner Bit Set, 1/4\" - 2-1/8\"",
+      "url": "https://www.grizzly.com/products/roman-carbide-16-pc.-carbide-forstner-bit-set-1-4-2-1-8/dc1917",
+      "category": "Wood Drill Presses > Wood Drill Press Accessories > Forstner Bits",
+      "price": 81.58,
+      "reference": 214.0,
+      "discount": 61.87850467289719
+    },
+    {
+      "name": "8\" 3-Jaw Chuck",
+      "url": "https://www.grizzly.com/products/steelex-8-3-jaw-chuck/m1060",
+      "category": "Metal Lathes > Metal Lathe Accessories > Metal Chucks",
+      "price": 103.56,
+      "reference": 265.0,
+      "discount": 60.92075471698113
+    },
+    {
+      "name": "Handrail Set #2 (DC2217 & DC2218)",
+      "url": "https://www.grizzly.com/products/roman-carbide-handrail-set-2-dc2217-dc2218/dc2219",
+      "category": "Shaper Cutters > Handrail Cutters",
+      "price": 146.76,
+      "reference": 435.0,
+      "discount": 66.26206896551724
+    },
+    {
+      "name": "2-1/2\" Crown Moulding 3-1/2\" Dia. 1\" Bore",
+      "url": "https://www.grizzly.com/products/roman-carbide-2-1-2-crown-moulding-3-1-2-dia.-1-bore/dc2209",
+      "category": "Shaper Cutters > Face Moulding Cutters",
+      "price": 148.24,
+      "reference": 525.0,
+      "discount": 71.76380952380953
+    },
+    {
+      "name": "3\" Crown Moulding 3-1/2\" Dia. 1\" Bore",
+      "url": "https://www.grizzly.com/products/roman-carbide-3-crown-moulding-3-1-2-dia.-1-bore/dc2208",
+      "category": "Shaper Cutters > Face Moulding Cutters",
+      "price": 157.44,
+      "reference": 557.0,
+      "discount": 71.73429084380611
+    },
+    {
+      "name": "50 BMG 8 Groove 1:15 Twist Chrome Moly, 36\" Finished, 2.00\" Straight Barrel",
+      "url": "https://www.grizzly.com/products/bartlein-barrels-50-bmg-8-groove-1-15-twist-chrome-moly-36-finished-2.00-straight-barrel/t10562",
+      "category": "Gunsmithing > Rifle Barrels",
+      "price": 715.58,
+      "reference": 1299.0,
+      "discount": 44.913010007698226
+    },
+    {
+      "name": "Benchtop Retrofit Kit with Servo Controls and Hardware",
+      "url": "https://www.grizzly.com/products/flashcut-benchtop-retrofit-kit-with-servo-controls-and-hardware/t24253",
+      "category": "CNC > CNC Mills > CNC Mill Accessories",
+      "price": 3599.98,
+      "reference": 7815.0,
+      "discount": 53.93499680102367
+    }
+  ],
+  "passed": true,
+  "scope": "Local public capture only; not proof of GitHub runner access. Rejected candidates include legitimate accessories and condition exclusions, not all classification misses."
+}

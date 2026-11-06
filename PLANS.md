@@ -285,3 +285,7 @@ Lightweight-bike rollout verified: [PR #34](https://github.com/lifan-builds/snow
 ### Incycle candidate — November 5
 
 Added source-bound complete-bike classification and 41 regressions. The complete candidate contributes 78 qualifying in-stock listings and 13 deep deals; 33 merchant endpoint checks and 33 selected-page checks pass. The final 114-offer audit passes, all prior source/history rows are preserved, and the isolated release passes 993 tests. PR #36 is merged and production is verified: 21 fresh sources, 1,477 qualifying listings and 203 deep deals. All 86 new destinations appear in live checks; 197 rendered card comparisons and 18 history pages match. See `docs/benchmarks/2026-11-05-incycle-rollout.json`. Task: `docs/tasks/incycle-source/`.
+
+## Grizzly runner admission — November 5, 2026
+
+Added an explicit Grizzly choice to the existing read-only candidate workflow while preserving the RA default. Clean-tree tests: 993 passing; independent shell/allowlist review, Ruff and JavaScript checks pass. The actual GitHub runner returned HTTP 403 on its first collection request; retained the incomplete-source and unstarted-audit receipts. Local 26-page success does not override that failure. Grizzly remains excluded, classifier expansion is deferred, and no inventory gain is claimed. See `docs/tasks/grizzly-recovery/runner-result.md`.
