@@ -1,0 +1,16 @@
+{
+  "asset": {
+    "digest": "sha256:9b8f8734381ec5978cc711c07601ed1aaa45ce37475b51b39a3df14708c63d04",
+    "id": 715616448,
+    "name": "cycling.db",
+    "size": 10637312,
+    "state": "uploaded",
+    "updated_at": "2026-11-06T02:26:56Z"
+  },
+  "files": {
+    "cycling.db": "9b8f8734381ec5978cc711c07601ed1aaa45ce37475b51b39a3df14708c63d04",
+    "published-restore.db": "9b8f8734381ec5978cc711c07601ed1aaa45ce37475b51b39a3df14708c63d04"
+  },
+  "size_and_digest_match": true,
+  "canonical_restore": "passed_first_attempt"
+}

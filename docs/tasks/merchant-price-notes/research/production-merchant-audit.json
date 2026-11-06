@@ -1,0 +1,2070 @@
+{
+  "checked_at": "2026-11-06T02:30:52.612321+00:00",
+  "first_display_at": "2026-11-06T02:28:34.737878+00:00",
+  "seed": 20261106,
+  "sample_size": 30,
+  "match": 30,
+  "mismatch": 0,
+  "inconclusive": 0,
+  "verified_match_percent": 100.0,
+  "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+  "results": [
+    {
+      "name": "Guru Crono Frameset",
+      "store": "RA Cycles",
+      "offer": {
+        "variant_key": "43512640798764",
+        "url": "https://racycles.com/products/guru-crono-frameset-1?currency=USD&variant=43512640798764",
+        "current_price": 650.0,
+        "original_price": 3895.0,
+        "size": "51cm",
+        "options": "Black / 51cm",
+        "availability": "in_stock",
+        "image_url": null,
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "This item is \"Final Sale\" and cannot be returned or exchanged",
+        "discount": 83.31193838254173,
+        "savings": 3245.0
+      },
+      "check_started_at": "2026-11-06T02:28:42.243460+00:00",
+      "evidence_url": "https://racycles.com/products/guru-crono-frameset-1.js?currency=USD",
+      "response_sha256": "443dbc0833363863d14feedc05c9c6332ad003a0d0ac997eecb3aea4abf10253",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true,
+        "purchase_identity": true,
+        "purchase_destination": true,
+        "purchase_currency": true,
+        "purchase_price": true,
+        "purchase_reference": true,
+        "purchase_options": true,
+        "purchase_size": true,
+        "purchase_stock": true,
+        "purchase_shipping_note": true
+      },
+      "merchant": {
+        "title": "Guru Crono Frameset",
+        "variant": "43512640798764",
+        "sku": "10037124",
+        "price_minor": 65000,
+        "reference_minor": 389500,
+        "currency": "USD",
+        "options": "Black / 51cm",
+        "raw_options": [
+          "Black",
+          "51cm"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Black"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "51cm",
+              "55cm"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "product_evidence_url": "https://racycles.com/products/guru-crono-frameset-1?currency=USD&variant=43512640798764",
+      "product_response_sha256": "74e8f4410f915e3f56f921b53e71c0f501b39433adfd279a1a883dbf725dfa40",
+      "purchase_panel": {
+        "sku": "10037124",
+        "price": 650.0,
+        "reference": 3895.0,
+        "options": "Black / 51cm",
+        "size": "51cm",
+        "qty": 1,
+        "virtual_warehouse": false,
+        "shipping_note": "This item is \"Final Sale\" and cannot be returned or exchanged"
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:28:49.109885+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Vaast Bikes E/1 XT/SLX 27.5 E-Bike - Nostalgic Sea Blue-Ocean Frost",
+      "store": "Colorado Cyclist",
+      "offer": {
+        "variant_key": "48408222335216",
+        "url": "https://coloradocyclist.com/products/vaast-bikes-e-1-xt-slx-27-5-e-bike-nostalgic-sea-blue-ocean-frost?currency=USD&variant=48408222335216",
+        "current_price": 1499.99,
+        "original_price": 7699.99,
+        "size": "Medium",
+        "options": "Nostalgic Sea Blue - Ocean Frost / Medium",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0761/3592/3952/files/VaastBikesE1XTSLX27.5E-Bike-NostalgicSeaBlue-OceanFrost_653758ef-151f-403f-a1ce-418046e5c846.jpg?v=1765222053",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 80.51958509037024,
+        "savings": 6200.0
+      },
+      "check_started_at": "2026-11-06T02:28:49.109905+00:00",
+      "evidence_url": "https://coloradocyclist.com/products/vaast-bikes-e-1-xt-slx-27-5-e-bike-nostalgic-sea-blue-ocean-frost.js?currency=USD",
+      "response_sha256": "f98606d31831b63ddac51bbb06505dfb2568078dd02bece0ee04994685abc512",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Vaast Bikes E/1 XT/SLX 27.5 E-Bike - Nostalgic Sea Blue-Ocean Frost",
+        "variant": "48408222335216",
+        "sku": "GM111324-02",
+        "price_minor": 149999,
+        "reference_minor": 769999,
+        "currency": "USD",
+        "options": "Nostalgic Sea Blue - Ocean Frost / Medium",
+        "raw_options": [
+          "Nostalgic Sea Blue - Ocean Frost",
+          "Medium"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Nostalgic Sea Blue - Ocean Frost"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "Small",
+              "Medium",
+              "Large"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:28:53.556895+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Time FRAME FLUIDITY TRANSLINK DISC V15 WHITE SIZE L (Max 25mm)",
+      "store": "Bike Closet",
+      "offer": {
+        "variant_key": "1802090:1802091|attribute_pa_color=v15-gloss-white&attribute_pa_size=l",
+        "url": "https://bikecloset.com/product/time-frame-fluidity-translink-disc-v15-white-size-l-max-25mm/?attribute_pa_color=v15-gloss-white&attribute_pa_size=l",
+        "current_price": 799.0,
+        "original_price": 4000.0,
+        "size": "L",
+        "options": "Color: v15 Gloss White / Size: L",
+        "availability": "in_stock",
+        "image_url": "https://bikecloset.com/wp-content/uploads/2026/10/Gemini_Generated_Image_upa137upa137upa1-620x463.jpg",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "Cannot ship to Hawaii Or Alaska. \u00b7 Final sale.",
+        "discount": 80.025,
+        "savings": 3201.0
+      },
+      "check_started_at": "2026-11-06T02:28:53.556932+00:00",
+      "evidence_url": "https://bikecloset.com/wp-json/wc/store/v1/products/1802091",
+      "response_sha256": "cc8ab09627a77180783edc37855793fe140ed3d96887d89debbc789a8583f7ad",
+      "parent_evidence_url": "https://bikecloset.com/wp-json/wc/store/v1/products/1802090",
+      "parent_response_sha256": "fd829b1d636b9b44fd58a119cf582fc10bb019d8f971876cdc54dbceea8779d9",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "condition": true,
+        "stock": true,
+        "destination": true,
+        "options": true,
+        "shipping_note": true
+      },
+      "merchant": {
+        "parent_id": 1802090,
+        "variant_id": 1802091,
+        "sku": "",
+        "brand": "TIME",
+        "price": 799.0,
+        "reference": 4000.0,
+        "currency": "USD",
+        "is_in_stock": true,
+        "is_on_backorder": false
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:29:00.952953+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Vaast Bikes E/1 Enviolo 27.5 E-Bike - Vibrant Berry Red-Black Cherry",
+      "store": "Colorado Cyclist",
+      "offer": {
+        "variant_key": "48408222236912",
+        "url": "https://coloradocyclist.com/products/vaast-bikes-e-1-enviolo-27-5-e-bike-vibrant-berry-red-black-cherry?currency=USD&variant=48408222236912",
+        "current_price": 1999.99,
+        "original_price": 8699.99,
+        "size": "Medium",
+        "options": "Vibrant Berry Red - Black Cherry / Medium",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0761/3592/3952/files/VaastBikesE1Enviolo27.5E-Bike-VibrantBerryRed-BlackCherry_4fce3f0d-9e0e-4fb1-b9c3-fc008cd9d985.jpg?v=1765222053",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 77.01158277193421,
+        "savings": 6700.0
+      },
+      "check_started_at": "2026-11-06T02:29:00.952982+00:00",
+      "evidence_url": "https://coloradocyclist.com/products/vaast-bikes-e-1-enviolo-27-5-e-bike-vibrant-berry-red-black-cherry.js?currency=USD",
+      "response_sha256": "6cc1aa574d9ab4baf1b88c9a557d12d8b207986f23befe0a51ca9727fddd2e22",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Vaast Bikes E/1 Enviolo 27.5 E-Bike - Vibrant Berry Red-Black Cherry",
+        "variant": "48408222236912",
+        "sku": "GM111324-05",
+        "price_minor": 199999,
+        "reference_minor": 869999,
+        "currency": "USD",
+        "options": "Vibrant Berry Red - Black Cherry / Medium",
+        "raw_options": [
+          "Vibrant Berry Red - Black Cherry",
+          "Medium"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Vibrant Berry Red - Black Cherry"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "Small",
+              "Medium",
+              "Large"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:29:03.216403+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "De Rosa King 3 Limited Frameset",
+      "store": "RA Cycles",
+      "offer": {
+        "variant_key": "43510741336108",
+        "url": "https://racycles.com/products/de-rosa-king-3-limited-frameset?currency=USD&variant=43510741336108",
+        "current_price": 1299.99,
+        "original_price": 5399.0,
+        "size": "67cm",
+        "options": "Limited Pearl White / 67cm",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/de-rosa-king-3-limited-frameset-6907579.jpg?v=1771301171",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "This item is \"Final Sale\" and cannot be returned or exchanged",
+        "discount": 75.921652157807,
+        "savings": 4099.01
+      },
+      "check_started_at": "2026-11-06T02:29:03.216462+00:00",
+      "evidence_url": "https://racycles.com/products/de-rosa-king-3-limited-frameset.js?currency=USD",
+      "response_sha256": "6ae2e536d7c0fff8af241a2e29078903e43edb4e92af826363086654f3603bdf",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true,
+        "purchase_identity": true,
+        "purchase_destination": true,
+        "purchase_currency": true,
+        "purchase_price": true,
+        "purchase_reference": true,
+        "purchase_options": true,
+        "purchase_size": true,
+        "purchase_stock": true,
+        "purchase_shipping_note": true
+      },
+      "merchant": {
+        "title": "De Rosa King 3 Limited Frameset",
+        "variant": "43510741336108",
+        "sku": "10005021",
+        "price_minor": 129999,
+        "reference_minor": 539900,
+        "currency": "USD",
+        "options": "Limited Pearl White / 67cm",
+        "raw_options": [
+          "Limited Pearl White",
+          "67cm"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Limited Pearl White"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "66cm",
+              "67cm"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "product_evidence_url": "https://racycles.com/products/de-rosa-king-3-limited-frameset?currency=USD&variant=43510741336108",
+      "product_response_sha256": "5f253c6b32ab09631cee7da446ffec0058e4ecaa8d03094bae1eb8b19d010c77",
+      "purchase_panel": {
+        "sku": "10005021",
+        "price": 1299.99,
+        "reference": 5399.0,
+        "options": "Limited Pearl White / 67cm",
+        "size": "67cm",
+        "qty": 1,
+        "virtual_warehouse": false,
+        "shipping_note": "This item is \"Final Sale\" and cannot be returned or exchanged"
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:29:08.074137+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Time SCYLON RIM BRAKE GLOSS CARBON / MATTE GREY XL (25mm Max)",
+      "store": "Bike Closet",
+      "offer": {
+        "variant_key": "1802095:1802096|attribute_pa_color=v11-gloss-carbon&attribute_pa_size=xl",
+        "url": "https://bikecloset.com/product/time-scylon-rim-brake-gloss-carbon-matte-grey-xl/?attribute_pa_color=v11-gloss-carbon&attribute_pa_size=xl",
+        "current_price": 999.0,
+        "original_price": 4000.0,
+        "size": "XL",
+        "options": "Color: V11 Gloss Carbon / Size: XL",
+        "availability": "in_stock",
+        "image_url": "https://bikecloset.com/wp-content/uploads/2026/10/SCYLON_V11GlossCarbon_Rim_Frame-620x413.png",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "Cannot ship to Hawaii Or Alaska. \u00b7 Final sale.",
+        "discount": 75.025,
+        "savings": 3001.0
+      },
+      "check_started_at": "2026-11-06T02:29:08.074159+00:00",
+      "evidence_url": "https://bikecloset.com/wp-json/wc/store/v1/products/1802096",
+      "response_sha256": "95416788b13f29ad0447da70fe1e31d8afaa9740bafcc225a75c9b3412b6d399",
+      "parent_evidence_url": "https://bikecloset.com/wp-json/wc/store/v1/products/1802095",
+      "parent_response_sha256": "ed5648e1910206479fb1595763fc4f07724ec2bf5d4c7ae589ee649f89945f6d",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "condition": true,
+        "stock": true,
+        "destination": true,
+        "options": true,
+        "shipping_note": true
+      },
+      "merchant": {
+        "parent_id": 1802095,
+        "variant_id": 1802096,
+        "sku": "",
+        "brand": "TIME",
+        "price": 999.0,
+        "reference": 4000.0,
+        "currency": "USD",
+        "is_in_stock": true,
+        "is_on_backorder": false
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:29:15.647343+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Time SCYLON RIM BRAKE GLOSS WHITE / CARBON XL (25mm Max)",
+      "store": "Bike Closet",
+      "offer": {
+        "variant_key": "1802125:1802126|attribute_pa_color=v15-gloss-white&attribute_pa_size=xl",
+        "url": "https://bikecloset.com/product/time-scylon-rim-brake-gloss-white-carbon-xl/?attribute_pa_color=v15-gloss-white&attribute_pa_size=xl",
+        "current_price": 999.0,
+        "original_price": 4000.0,
+        "size": "XL",
+        "options": "Color: v15 Gloss White / Size: XL",
+        "availability": "in_stock",
+        "image_url": "https://bikecloset.com/wp-content/uploads/2026/10/SCYLON_V15GlossWhite_Rim_Frame-620x413.png",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "Cannot ship to Hawaii Or Alaska. \u00b7 Final sale.",
+        "discount": 75.025,
+        "savings": 3001.0
+      },
+      "check_started_at": "2026-11-06T02:29:15.647398+00:00",
+      "evidence_url": "https://bikecloset.com/wp-json/wc/store/v1/products/1802126",
+      "response_sha256": "07a370a2f18a1ed0d75cb5d7aebddd259c108986cf7e0ab734d219afcecd4d23",
+      "parent_evidence_url": "https://bikecloset.com/wp-json/wc/store/v1/products/1802125",
+      "parent_response_sha256": "9b0e808e0db52bbf350aa857b02ae22891d6c11f096f38f0f51a5d80f4a1acc7",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "condition": true,
+        "stock": true,
+        "destination": true,
+        "options": true,
+        "shipping_note": true
+      },
+      "merchant": {
+        "parent_id": 1802125,
+        "variant_id": 1802126,
+        "sku": "",
+        "brand": "TIME",
+        "price": 999.0,
+        "reference": 4000.0,
+        "currency": "USD",
+        "is_in_stock": true,
+        "is_on_backorder": false
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:29:22.620621+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Kestrel Talon SL Frameset",
+      "store": "RA Cycles",
+      "offer": {
+        "variant_key": "43637142356012",
+        "url": "https://racycles.com/products/kestrel-talon-sl-frameset?currency=USD&variant=43637142356012",
+        "current_price": 550.0,
+        "original_price": 2199.0,
+        "size": "48cm",
+        "options": "48cm / Red Platinum",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/kestrel-talon-sl-frameset-2404128.jpg?v=1771294448",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "This item is \"Final Sale\" and cannot be returned or exchanged",
+        "discount": 74.98863119599818,
+        "savings": 1649.0
+      },
+      "check_started_at": "2026-11-06T02:29:22.620694+00:00",
+      "evidence_url": "https://racycles.com/products/kestrel-talon-sl-frameset.js?currency=USD",
+      "response_sha256": "133ea17c153e529216e9888ca499c70416d34d62a371460f6edfff81b219c66b",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true,
+        "purchase_identity": true,
+        "purchase_destination": true,
+        "purchase_currency": true,
+        "purchase_price": true,
+        "purchase_reference": true,
+        "purchase_options": true,
+        "purchase_size": true,
+        "purchase_stock": true,
+        "purchase_shipping_note": true
+      },
+      "merchant": {
+        "title": "Kestrel Talon SL Frameset",
+        "variant": "43637142356012",
+        "sku": "10005468",
+        "price_minor": 55000,
+        "reference_minor": 219900,
+        "currency": "USD",
+        "options": "48cm / Red Platinum",
+        "raw_options": [
+          "48cm",
+          "Red Platinum"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "48cm",
+              "55cm",
+              "57cm",
+              "60cm"
+            ]
+          },
+          {
+            "name": "Color",
+            "position": 2,
+            "values": [
+              "Red Platinum",
+              "Red / White / Blue"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "product_evidence_url": "https://racycles.com/products/kestrel-talon-sl-frameset?currency=USD&variant=43637142356012",
+      "product_response_sha256": "aa88b7979972d9ccd71c8db1cde365f765d9cc8953c43e8920319df73fd99564",
+      "purchase_panel": {
+        "sku": "10005468",
+        "price": 550.0,
+        "reference": 2199.0,
+        "options": "48cm / Red Platinum",
+        "size": "48cm",
+        "qty": 1,
+        "virtual_warehouse": false,
+        "shipping_note": "This item is \"Final Sale\" and cannot be returned or exchanged"
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:29:27.327617+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Look 765 GRAVEL RS Disc Frameset",
+      "store": "Bike Closet",
+      "offer": {
+        "variant_key": "1775295:1775296|attribute_pa_color=metallic-hope-green-satin&attribute_pa_size=xs",
+        "url": "https://bikecloset.com/product/765-gravel/?attribute_pa_color=metallic-hope-green-satin&attribute_pa_size=xs",
+        "current_price": 899.0,
+        "original_price": 3500.0,
+        "size": "XS",
+        "options": "Color: METALLIC HOPE GREEN SATIN / Size: XS / SKU 3611720206459",
+        "availability": "in_stock",
+        "image_url": "https://bikecloset.com/wp-content/uploads/2026/04/765-GRAVEL-RS-HOPE-GREEN-MAT-FULCRUM-F1-620x413.jpg",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "Cannot ship to Hawaii Or Alaska. \u00b7 Final sale.",
+        "discount": 74.31428571428572,
+        "savings": 2601.0
+      },
+      "check_started_at": "2026-11-06T02:29:27.327640+00:00",
+      "evidence_url": "https://bikecloset.com/wp-json/wc/store/v1/products/1775296",
+      "response_sha256": "7063bf7ec4fe707afdfefe4593a6fa9419697bf03a7927898263ca315230bfb9",
+      "parent_evidence_url": "https://bikecloset.com/wp-json/wc/store/v1/products/1775295",
+      "parent_response_sha256": "81c318fa7dc37423f2492ef41471a28928b91cbc7225b40ae21e487699f4c73b",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "condition": true,
+        "stock": true,
+        "destination": true,
+        "options": true,
+        "shipping_note": true
+      },
+      "merchant": {
+        "parent_id": 1775295,
+        "variant_id": 1775296,
+        "sku": "3611720206459",
+        "brand": "LOOK",
+        "price": 899.0,
+        "reference": 3500.0,
+        "currency": "USD",
+        "is_in_stock": true,
+        "is_on_backorder": false
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:29:34.663917+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "De Rosa King 3 RS Frameset",
+      "store": "RA Cycles",
+      "offer": {
+        "variant_key": "43510738780204",
+        "url": "https://racycles.com/products/de-rosa-king-3-rs-frameset?currency=USD&variant=43510738780204",
+        "current_price": 1499.99,
+        "original_price": 5799.0,
+        "size": "66cm",
+        "options": "Black / Orange / 66cm",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/de-rosa-king-3-rs-frameset-3826049.jpg?v=1771301173",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "This item is \"Final Sale\" and cannot be returned or exchanged",
+        "discount": 74.13364373167788,
+        "savings": 4299.01
+      },
+      "check_started_at": "2026-11-06T02:29:34.663938+00:00",
+      "evidence_url": "https://racycles.com/products/de-rosa-king-3-rs-frameset.js?currency=USD",
+      "response_sha256": "7463df4ae2a924c65197ad7148e498174f94f3ed47bb1eb64e34329ffd669f83",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true,
+        "purchase_identity": true,
+        "purchase_destination": true,
+        "purchase_currency": true,
+        "purchase_price": true,
+        "purchase_reference": true,
+        "purchase_options": true,
+        "purchase_size": true,
+        "purchase_stock": true,
+        "purchase_shipping_note": true
+      },
+      "merchant": {
+        "title": "De Rosa King 3 RS Frameset",
+        "variant": "43510738780204",
+        "sku": "10026149",
+        "price_minor": 149999,
+        "reference_minor": 579900,
+        "currency": "USD",
+        "options": "Black / Orange / 66cm",
+        "raw_options": [
+          "Black / Orange",
+          "66cm"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Black / Orange",
+              "Black / Red"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "66cm",
+              "67cm",
+              "69cm"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "product_evidence_url": "https://racycles.com/products/de-rosa-king-3-rs-frameset?currency=USD&variant=43510738780204",
+      "product_response_sha256": "7bac266a16457898bb0aa35a9d5bcd37bb15129108107c9994e2f3f395b36eb5",
+      "purchase_panel": {
+        "sku": "10026149",
+        "price": 1499.99,
+        "reference": 5799.0,
+        "options": "Black / Orange / 66cm",
+        "size": "66cm",
+        "qty": 1,
+        "virtual_warehouse": false,
+        "shipping_note": "This item is \"Final Sale\" and cannot be returned or exchanged"
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:29:39.226895+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Kuota K-Factor Frameset",
+      "store": "RA Cycles",
+      "offer": {
+        "variant_key": "43513362153516",
+        "url": "https://racycles.com/products/kuota-k-factor-frameset?currency=USD&variant=43513362153516",
+        "current_price": 695.0,
+        "original_price": 1649.99,
+        "size": "XL",
+        "options": "White / XL",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/kuota-k-factor-frameset-6625823.jpg?v=1771300166",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "This item is \"Final Sale\" and cannot be returned or exchanged",
+        "discount": 57.87853259716726,
+        "savings": 954.99
+      },
+      "check_started_at": "2026-11-06T02:29:39.226916+00:00",
+      "evidence_url": "https://racycles.com/products/kuota-k-factor-frameset.js?currency=USD",
+      "response_sha256": "b64198f8ba69551b32c5cf9a4d3958c9441e332066b4af8daaa584a67278e4e6",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true,
+        "purchase_identity": true,
+        "purchase_destination": true,
+        "purchase_currency": true,
+        "purchase_price": true,
+        "purchase_reference": true,
+        "purchase_options": true,
+        "purchase_size": true,
+        "purchase_stock": true,
+        "purchase_shipping_note": true
+      },
+      "merchant": {
+        "title": "Kuota K-Factor Frameset",
+        "variant": "43513362153516",
+        "sku": "10025359",
+        "price_minor": 69500,
+        "reference_minor": 164999,
+        "currency": "USD",
+        "options": "White / XL",
+        "raw_options": [
+          "White",
+          "XL"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "White"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "L",
+              "XL"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "product_evidence_url": "https://racycles.com/products/kuota-k-factor-frameset?currency=USD&variant=43513362153516",
+      "product_response_sha256": "56cf8acc412c425dc4718978fcf0faf98734fe5a4d116c79e87bef4bd172ac05",
+      "purchase_panel": {
+        "sku": "10025359",
+        "price": 695.0,
+        "reference": 1649.99,
+        "options": "White / XL",
+        "size": "XL",
+        "qty": 2,
+        "virtual_warehouse": false,
+        "shipping_note": "This item is \"Final Sale\" and cannot be returned or exchanged"
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:29:43.696112+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2024 Remedy 27.5 C Full Suspension Mountain Frameset",
+      "store": "Bike Mart",
+      "offer": {
+        "variant_key": "46906865385725",
+        "url": "https://www.bikemart.com/products/2024-remedy-27-5-c-full-suspension-mountain-frameset?currency=USD&variant=46906865385725",
+        "current_price": 1679.93,
+        "original_price": 3799.99,
+        "size": "L",
+        "options": "Matte Trek Black / L",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0705/8928/4605/files/Remedy275CFrameset_22_35214_A_Primary.jpg?v=1764008467",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 55.79119945052487,
+        "savings": 2120.06
+      },
+      "check_started_at": "2026-11-06T02:29:43.696134+00:00",
+      "evidence_url": "https://www.bikemart.com/products/2024-remedy-27-5-c-full-suspension-mountain-frameset.js?currency=USD",
+      "response_sha256": "6b522190207a47d69b9fc465591e63c30c7cb0fa77ca2ae18c6b0476105b367f",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2024 Remedy 27.5 C Full Suspension Mountain Frameset",
+        "variant": "46906865385725",
+        "sku": "TRE331383872",
+        "price_minor": 167993,
+        "reference_minor": 379999,
+        "currency": "USD",
+        "options": "Matte Trek Black / L",
+        "raw_options": [
+          "Matte Trek Black",
+          "L"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Matte Trek Black"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S",
+              "M",
+              "ML",
+              "L",
+              "XL"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:29:48.104160+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Polygon Siskiu T8 - Mountain Bike",
+      "store": "BikesOnline",
+      "offer": {
+        "variant_key": "50279447494948",
+        "url": "https://bikesonline.com/products/2024-polygon-siskiu-t8-dual-suspension-mountain-bike?currency=USD&variant=50279447494948",
+        "current_price": 1999.99,
+        "original_price": 2399.99,
+        "size": "XL",
+        "options": "Black/Purple / 29 / XL",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0847/4066/9732/files/2022_SISKIU_T8_4a06f803-898e-4a2f-b6be-ffcdea1f029a-656437.jpg?v=1736924517",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 16.666736111400464,
+        "savings": 400.0
+      },
+      "check_started_at": "2026-11-06T02:29:48.104219+00:00",
+      "evidence_url": "https://bikesonline.com/products/2024-polygon-siskiu-t8-dual-suspension-mountain-bike.js?currency=USD",
+      "response_sha256": "f6ff56ed05d40feb9435390f5865623bbcf34c4a7185051f33658fba5ca63b0e",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Polygon Siskiu T8 - Mountain Bike",
+        "variant": "50279447494948",
+        "sku": "AITPX29ST8L2G1",
+        "price_minor": 199999,
+        "reference_minor": 239999,
+        "currency": "USD",
+        "options": "Black/Purple / 29 / XL",
+        "raw_options": [
+          "Black/Purple",
+          "29",
+          "XL"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Black/Purple"
+            ]
+          },
+          {
+            "name": "Wheel Size",
+            "position": 2,
+            "values": [
+              "29"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 3,
+            "values": [
+              "XL"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:29:52.391629+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Niner ORE 9 RDO - Apex 1 XPLR - Magnetic Grey",
+      "store": "Colorado Cyclist",
+      "offer": {
+        "variant_key": "49510209945840",
+        "url": "https://coloradocyclist.com/products/niner-ore-9-rdo-apex-1-xplr-magnetic-grey?currency=USD&variant=49510209945840",
+        "current_price": 3199.99,
+        "original_price": 3799.99,
+        "size": "53cm (21\")",
+        "options": "Magnetic Grey / 53cm (21\")",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0761/3592/3952/files/2026-01-08_11h29_32.png?v=1775652804",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 15.789515235566409,
+        "savings": 600.0
+      },
+      "check_started_at": "2026-11-06T02:29:52.391668+00:00",
+      "evidence_url": "https://coloradocyclist.com/products/niner-ore-9-rdo-apex-1-xplr-magnetic-grey.js?currency=USD",
+      "response_sha256": "5d638dd1638b3267c58d98aa00d9d7673935e79e8fc09b4a1eeb8dfe0e5c7936",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Niner ORE 9 RDO - Apex 1 XPLR - Magnetic Grey",
+        "variant": "49510209945840",
+        "sku": "GM010126-47",
+        "price_minor": 319999,
+        "reference_minor": 379999,
+        "currency": "USD",
+        "options": "Magnetic Grey / 53cm (21\")",
+        "raw_options": [
+          "Magnetic Grey",
+          "53cm (21\")"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Magnetic Grey"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "47cm (18.5\")",
+              "50cm (19.75\")",
+              "53cm (21\")",
+              "56cm (22\")",
+              "59cm (23\")",
+              "62cm (24.5\")"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:29:54.613215+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "BMC 257 AMP AL Speed Step Through Electric Bike",
+      "store": "ERIK\u2019S Bike Shop",
+      "offer": {
+        "variant_key": "47214364000470",
+        "url": "https://www.eriksbikeshop.com/products/bmc-2024-257-amp-al-speed-step-through-electric-bike-pr5a26672?currency=USD&variant=47214364000470",
+        "current_price": 2199.99,
+        "original_price": 4999.0,
+        "size": "S",
+        "options": "Powder Anthracite / S",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0697/5252/0918/files/257-amp-al-speed-step-through-electric-bike_pr5a26672_f791.jpg?v=1756454630",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 55.99139827965593,
+        "savings": 2799.01
+      },
+      "check_started_at": "2026-11-06T02:29:54.613286+00:00",
+      "evidence_url": "https://www.eriksbikeshop.com/products/bmc-2024-257-amp-al-speed-step-through-electric-bike-pr5a26672.js?currency=USD",
+      "response_sha256": "57241d2154dfec23f3bc6a18dd081b27afda34a959ea2119c9102f6296b31c22",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "BMC 257 AMP AL Speed Step Through Electric Bike",
+        "variant": "47214364000470",
+        "sku": "EK5A95452",
+        "price_minor": 219999,
+        "reference_minor": 499900,
+        "currency": "USD",
+        "options": "Powder Anthracite / S",
+        "raw_options": [
+          "Powder Anthracite",
+          "S"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Powder Anthracite"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "M",
+              "S"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:29:59.090118+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Aethos Expert Di2 (2026)",
+      "store": "Bicycle Warehouse",
+      "offer": {
+        "variant_key": "43354538049638",
+        "url": "https://bicyclewarehouse.com/products/aethos-expert-di2-2026?currency=USD&variant=43354538049638",
+        "current_price": 6499.99,
+        "original_price": 6600.0,
+        "size": "61",
+        "options": "61",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0286/1214/files/97226-31_AETHOS-EXPERT-DI2-DLMMET-SHDWSIL-BLUPRL_HERO-PDP.webp?v=1772153330",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 1.5153030303030304,
+        "savings": 100.01
+      },
+      "check_started_at": "2026-11-06T02:29:59.090205+00:00",
+      "evidence_url": "https://bicyclewarehouse.com/products/aethos-expert-di2-2026.js?currency=USD",
+      "response_sha256": "88938e5cdfe2ba0839739b1a8c42f9f387c6f22f11e6dc0c7910e97d53ec221c",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Aethos Expert Di2 (2026)",
+        "variant": "43354538049638",
+        "sku": "97226-3161",
+        "price_minor": 649999,
+        "reference_minor": 660000,
+        "currency": "USD",
+        "options": "61",
+        "raw_options": [
+          "61"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "49",
+              "52",
+              "54",
+              "56",
+              "58",
+              "61"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:30:03.702025+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "3T RaceMax Integrale WPNT GRX Di2 Bike",
+      "store": "RA Cycles",
+      "offer": {
+        "variant_key": "44045840908332",
+        "url": "https://racycles.com/products/3t-racemax-integrale-wpnt-grx-di2-bike?currency=USD&variant=44045840908332",
+        "current_price": 5599.0,
+        "original_price": 6999.0,
+        "size": "48cm",
+        "options": "Camo / 48cm",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0608/7684/9196/files/3t-racemax-integrale-wpnt-grx-di2-bike-6451846.jpg?v=1771294035",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 20.002857551078726,
+        "savings": 1400.0
+      },
+      "check_started_at": "2026-11-06T02:30:03.702104+00:00",
+      "evidence_url": "https://racycles.com/products/3t-racemax-integrale-wpnt-grx-di2-bike.js?currency=USD",
+      "response_sha256": "05e746989e799ad8341664845118c67c20a878cb2f409e4f6b45888793d50f7c",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true,
+        "purchase_identity": true,
+        "purchase_destination": true,
+        "purchase_currency": true,
+        "purchase_price": true,
+        "purchase_reference": true,
+        "purchase_options": true,
+        "purchase_size": true,
+        "purchase_stock": true,
+        "purchase_shipping_note": true
+      },
+      "merchant": {
+        "title": "3T RaceMax Integrale WPNT GRX Di2 Bike",
+        "variant": "44045840908332",
+        "sku": "9496FDDI87L",
+        "price_minor": 559900,
+        "reference_minor": 699900,
+        "currency": "USD",
+        "options": "Camo / 48cm",
+        "raw_options": [
+          "Camo",
+          "48cm"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Mare",
+              "Avorio",
+              "Camo",
+              "Indaco",
+              "Malva"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "48cm",
+              "51cm",
+              "54cm",
+              "56cm",
+              "58cm",
+              "61cm"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "product_evidence_url": "https://racycles.com/products/3t-racemax-integrale-wpnt-grx-di2-bike?currency=USD&variant=44045840908332",
+      "product_response_sha256": "7d773a6f910d32df8a97764d89a70e83909be1a9fce1c1bceed74c8f9f0a002f",
+      "purchase_panel": {
+        "sku": "9496FDDI87L",
+        "price": 5599.0,
+        "reference": 6999.0,
+        "options": "Camo / 48cm",
+        "size": "48cm",
+        "qty": 1,
+        "virtual_warehouse": false,
+        "shipping_note": ""
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:30:08.364356+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "2026 Specialized Crux Pro - SRAM Force XPLR AXS",
+      "store": "Incycle Bicycles",
+      "offer": {
+        "variant_key": "45421242122371",
+        "url": "https://www.incycle.com/products/2026-specialized-crux-pro-sram-force-xplr-axs?currency=USD&variant=45421242122371",
+        "current_price": 5949.99,
+        "original_price": 7999.99,
+        "size": "52",
+        "options": "Nebula Metallic / Shadow Silver / Laurel Green / Smoke / 52",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0335/2166/4131/files/91426-10_CRUX-PRO-NBLMET-SHDWSIL-SMK_HERO-PDP.jpg?v=1760058208",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 25.62503203129004,
+        "savings": 2050.0
+      },
+      "check_started_at": "2026-11-06T02:30:08.364377+00:00",
+      "evidence_url": "https://www.incycle.com/products/2026-specialized-crux-pro-sram-force-xplr-axs.js?currency=USD",
+      "response_sha256": "b5a9dd0ebdbae844d18aba6787bbb8cf57a1e46c9c560ff3b4054c6d404c1c53",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "2026 Specialized Crux Pro - SRAM Force XPLR AXS",
+        "variant": "45421242122371",
+        "sku": "91426-1052",
+        "price_minor": 594999,
+        "reference_minor": 799999,
+        "currency": "USD",
+        "options": "Nebula Metallic / Shadow Silver / Laurel Green / Smoke / 52",
+        "raw_options": [
+          "Nebula Metallic / Shadow Silver / Laurel Green / Smoke",
+          "52"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Nebula Metallic / Shadow Silver / Laurel Green / Smoke"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "49",
+              "52",
+              "54",
+              "56",
+              "58",
+              "61"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:30:12.779945+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Blur 4 CC XX SL AXS Reserve TR",
+      "store": "Mike's Bikes",
+      "offer": {
+        "variant_key": "41813852160069",
+        "url": "https://mikesbikes.com/products/santa-cruz-blur-4-cc-xx-sl-axs-reserve-tr?currency=USD&variant=41813852160069",
+        "current_price": 8749.0,
+        "original_price": 11698.99,
+        "size": "Large",
+        "options": "Gloss Dark Teal / Large",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0016/3856/3907/files/Blur-4-CC-XX-AXS-Reserve-TR_Gloss-Dark-Teal.jpg?v=1747270882",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 25.215766489243943,
+        "savings": 2949.99
+      },
+      "check_started_at": "2026-11-06T02:30:12.780007+00:00",
+      "evidence_url": "https://mikesbikes.com/products/santa-cruz-blur-4-cc-xx-sl-axs-reserve-tr.js?currency=USD",
+      "response_sha256": "e183ea6bc5838661bed83e72b50896e77d965c5c4e27f6a93c705a94d7043df8",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Blur 4 CC XX SL AXS Reserve TR",
+        "variant": "41813852160069",
+        "sku": "58-25245-370-4-834-141802",
+        "price_minor": 874900,
+        "reference_minor": 1169899,
+        "currency": "USD",
+        "options": "Gloss Dark Teal / Large",
+        "raw_options": [
+          "Gloss Dark Teal",
+          "Large"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Gloss Dark Teal",
+              "Matte Carbon"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "Small",
+              "Medium",
+              "Large",
+              "X-Large"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:30:17.110642+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Bronson Carbon CC Frameset - 2025",
+      "store": "Fanatik Bike Co.",
+      "offer": {
+        "variant_key": "41501910794286",
+        "url": "https://www.fanatikbike.com/products/santa-cruz-bronson-carbon-cc-frameset-2025?currency=USD&variant=41501910794286",
+        "current_price": 3449.95,
+        "original_price": 4049.0,
+        "size": "MD",
+        "options": "Kalimotxo / MD",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0904/4132/files/Santa_Cruz_0002_MY25_Bronson_CC_FactoryFLoatX_FrameOnly_Kalimotxo_jpeg.jpg?v=1755976637",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 14.795011113855272,
+        "savings": 599.05
+      },
+      "check_started_at": "2026-11-06T02:30:17.110725+00:00",
+      "evidence_url": "https://www.fanatikbike.com/products/santa-cruz-bronson-carbon-cc-frameset-2025.js?currency=USD",
+      "response_sha256": "00d38a1b3aa23481ab894c9d45519353872944693e27461b9022ee5bd5a28170",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Bronson Carbon CC Frameset - 2025",
+        "variant": "41501910794286",
+        "sku": "68-25314-3-868-7499",
+        "price_minor": 344995,
+        "reference_minor": 404900,
+        "currency": "USD",
+        "options": "Kalimotxo / MD",
+        "raw_options": [
+          "Kalimotxo",
+          "MD"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Kalimotxo",
+              "Root Beer"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "SM",
+              "MD",
+              "LG",
+              "XL",
+              "XXL"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:30:21.394947+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "6061 All-Road - Dune Tan (650b / 700c)",
+      "store": "State Bicycle Co.",
+      "offer": {
+        "variant_key": "40314075775063",
+        "url": "https://www.statebicycle.com/products/6061-black-label-all-road-dune-tan-650b-700c?currency=USD&variant=40314075775063",
+        "current_price": 1195.0,
+        "original_price": 1399.99,
+        "size": "Medium - 54cm - ( Riders 5'9\" - 6'1\")",
+        "options": "Medium - 54cm - ( Riders 5'9\" - 6'1\") / 650b",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0232/3305/files/6061BlackLabelAll-Road-DuneTan-1.jpg?v=1698785242",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 14.642247444624605,
+        "savings": 204.99
+      },
+      "check_started_at": "2026-11-06T02:30:21.395015+00:00",
+      "evidence_url": "https://www.statebicycle.com/products/6061-black-label-all-road-dune-tan-650b-700c.js?currency=USD",
+      "response_sha256": "9d1b082c4e5f70e6886668985c301a142a9d3c65d0c3232573fea301bb313eb5",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "6061 All-Road - Dune Tan (650b / 700c)",
+        "variant": "40314075775063",
+        "sku": "796201650303",
+        "price_minor": 119500,
+        "reference_minor": 139999,
+        "currency": "USD",
+        "options": "Medium - 54cm - ( Riders 5'9\" - 6'1\") / 650b",
+        "raw_options": [
+          "Medium - 54cm - ( Riders 5'9\" - 6'1\")",
+          "650b"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "X-Small - 48cm - ( Riders 5'3\" - 5'7\")",
+              "Small - 51cm - ( Riders 5'6\" - 5'10\")",
+              "Medium - 54cm - ( Riders 5'9\" - 6'1\")",
+              "Large - 58cm - (Riders 6'0\" - 6'3\")"
+            ]
+          },
+          {
+            "name": "Wheel Size",
+            "position": 2,
+            "values": [
+              "650b",
+              "700c"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:30:25.843440+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Ecoco",
+      "store": "Bicycle Warehouse",
+      "offer": {
+        "variant_key": "45489400086630",
+        "url": "https://bicyclewarehouse.com/products/ecoco-37?currency=USD&variant=45489400086630",
+        "current_price": 2199.0,
+        "original_price": 2999.0,
+        "size": "SM",
+        "options": "SM",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0286/1214/files/2k26_ecoco-1_1d58b3c3-7e71-4d4a-bec2-1e0cf1c08728.jpg?v=1776279661",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 26.675558519506502,
+        "savings": 800.0
+      },
+      "check_started_at": "2026-11-06T02:30:25.843507+00:00",
+      "evidence_url": "https://bicyclewarehouse.com/products/ecoco-37.js?currency=USD",
+      "response_sha256": "8feedd8228e8bf726fdb7bb418de8e22fbba8840fa4c4091025fc2eacd04947f",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Ecoco",
+        "variant": "45489400086630",
+        "sku": "B37ECOTNEP5NAIN01",
+        "price_minor": 219900,
+        "reference_minor": 299900,
+        "currency": "USD",
+        "options": "SM",
+        "raw_options": [
+          "SM"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "SM",
+              "MD",
+              "LG"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:30:28.171468+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Turbo Vado SL 2 6.0 EQ Carbon (2025)",
+      "store": "Bicycle Warehouse",
+      "offer": {
+        "variant_key": "42606012596326",
+        "url": "https://bicyclewarehouse.com/products/specialized-turbo-vado-sl-2-6-0-eq-carbon-2025?currency=USD&variant=42606012596326",
+        "current_price": 5799.99,
+        "original_price": 7000.0,
+        "size": "S",
+        "options": "Black / S",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0286/1214/files/93924-13_VADO-SL-60-CARBON-EQ-G2-CARB-BLK-OBSD_HERO-PDP.jpg?v=1772139897",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 17.143,
+        "savings": 1200.01
+      },
+      "check_started_at": "2026-11-06T02:30:28.171546+00:00",
+      "evidence_url": "https://bicyclewarehouse.com/products/specialized-turbo-vado-sl-2-6-0-eq-carbon-2025.js?currency=USD",
+      "response_sha256": "930b24ab8110b7bac317eaf5ea2d28a4602b6bfc99b4a01db9cddbdbe23de59c",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Turbo Vado SL 2 6.0 EQ Carbon (2025)",
+        "variant": "42606012596326",
+        "sku": "93924-1302",
+        "price_minor": 579999,
+        "reference_minor": 700000,
+        "currency": "USD",
+        "options": "Black / S",
+        "raw_options": [
+          "Black",
+          "S"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Black",
+              "Red"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S",
+              "M",
+              "L",
+              "XL"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:30:30.444008+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Superior XF 999 TR - Carbon Mountain Bike",
+      "store": "BikesOnline",
+      "offer": {
+        "variant_key": "50309919015204",
+        "url": "https://bikesonline.com/products/superior-xf-999-tr-carbon-trail-bike?currency=USD&variant=50309919015204",
+        "current_price": 2799.99,
+        "original_price": 4899.99,
+        "size": "XL",
+        "options": "XL",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0847/4066/9732/files/xf-999-tr-matte-black-olive-metallic_jpg.jpg?v=1726301670",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 42.85723032087821,
+        "savings": 2100.0
+      },
+      "check_started_at": "2026-11-06T02:30:30.444093+00:00",
+      "evidence_url": "https://bikesonline.com/products/superior-xf-999-tr-carbon-trail-bike.js?currency=USD",
+      "response_sha256": "d11331aab2631e9cc8e739ab35ca2bcab6e2bf0e667d7a11329230b57f611c02",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Superior XF 999 TR - Carbon Mountain Bike",
+        "variant": "50309919015204",
+        "sku": "801.2023.29147",
+        "price_minor": 279999,
+        "reference_minor": 489999,
+        "currency": "USD",
+        "options": "XL",
+        "raw_options": [
+          "XL"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "S",
+              "M",
+              "XL"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:30:32.727037+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "SCOTT Addict Gravel RC",
+      "store": "Contender Bicycles",
+      "offer": {
+        "variant_key": "47408998121717",
+        "url": "https://contenderbicycles.com/products/scott-addict-gravel-rc?currency=USD&variant=47408998121717",
+        "current_price": 7349.99,
+        "original_price": 9799.99,
+        "size": "XS",
+        "options": "Carbon Black / XS",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/SCOTT_Addict_Gravel_RC_Contender_Bicycles.jpg?v=1765833914",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "price_note": "",
+        "discount": 25.000025510230113,
+        "savings": 2450.0
+      },
+      "check_started_at": "2026-11-06T02:30:32.727065+00:00",
+      "evidence_url": "https://contenderbicycles.com/products/scott-addict-gravel-rc.js?currency=USD",
+      "response_sha256": "0148ddcc63aaae6f6fd4b4ccdddc9623806e79fa212ca9db2148ff8e048b901a",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "SCOTT Addict Gravel RC",
+        "variant": "47408998121717",
+        "sku": "4253633020004",
+        "price_minor": 734999,
+        "reference_minor": 979999,
+        "currency": "USD",
+        "options": "Carbon Black / XS",
+        "raw_options": [
+          "Carbon Black",
+          "XS"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Carbon Black"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "XS",
+              "S",
+              "M",
+              "L",
+              "XL"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:30:37.065792+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Specialized Turbo Vado SL 2 6.0 Carbon Electric Bike",
+      "store": "ERIK\u2019S Bike Shop",
+      "offer": {
+        "variant_key": "47520731529430",
+        "url": "https://www.eriksbikeshop.com/products/specialized-turbo-vado-sl-2-6-0-carbon-electric-bike-pr5a24591?currency=USD&variant=47520731529430",
+        "current_price": 5399.99,
+        "original_price": 6399.99,
+        "size": "L",
+        "options": "Satin Black Micro Speckle / Obsidian Frost / L",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0697/5252/0918/files/specialized-vado-sl-2-6-0-carbon-electric-bike_satin-black-micro-speckle--obsidian-frost_pr5a24591_3782.jpg?v=1764066960",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 15.625024414100647,
+        "savings": 1000.0
+      },
+      "check_started_at": "2026-11-06T02:30:37.065934+00:00",
+      "evidence_url": "https://www.eriksbikeshop.com/products/specialized-turbo-vado-sl-2-6-0-carbon-electric-bike-pr5a24591.js?currency=USD",
+      "response_sha256": "146b419052fee5f05dc6a65ff99e530cb8fcaf92bfd41b1657e33b3447170875",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Specialized Turbo Vado SL 2 6.0 Carbon Electric Bike",
+        "variant": "47520731529430",
+        "sku": "EK5A85457",
+        "price_minor": 539999,
+        "reference_minor": 639999,
+        "currency": "USD",
+        "options": "Satin Black Micro Speckle / Obsidian Frost / L",
+        "raw_options": [
+          "Satin Black Micro Speckle / Obsidian Frost",
+          "L"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Satin Red Sky / Red Onyx Grost",
+              "Satin Black Micro Speckle / Obsidian Frost",
+              "SATIN BLACK MICRO SPECKLE / OBSIDIAN FROST"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "L",
+              "M"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:30:39.349687+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "BMC Fourstroke 01 ONE 2024",
+      "store": "Contender Bicycles",
+      "offer": {
+        "variant_key": "47029254619381",
+        "url": "https://contenderbicycles.com/products/bmc-fourstroke-01-one-2024?currency=USD&variant=47029254619381",
+        "current_price": 4995.0,
+        "original_price": 10999.0,
+        "size": "XL",
+        "options": "Flashfire Orange / Black / XL",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/BMCFOURSTROKE01ONEBLK_ORNG2024.jpg?v=1757448867",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "price_note": "",
+        "discount": 54.586780616419674,
+        "savings": 6004.0
+      },
+      "check_started_at": "2026-11-06T02:30:39.349728+00:00",
+      "evidence_url": "https://contenderbicycles.com/products/bmc-fourstroke-01-one-2024.js?currency=USD",
+      "response_sha256": "152c61816ae4e9dd0e16807df5fb5e1ca859a085ed0733999b86a8f730012e7c",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "BMC Fourstroke 01 ONE 2024",
+        "variant": "47029254619381",
+        "sku": "210000137498",
+        "price_minor": 499500,
+        "reference_minor": 1099900,
+        "currency": "USD",
+        "options": "Flashfire Orange / Black / XL",
+        "raw_options": [
+          "Flashfire Orange / Black",
+          "XL"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Flashfire Orange / Black"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "M",
+              "L",
+              "XL"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:30:41.622338+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Orbea Kemen SUV 10 28mph 2023",
+      "store": "Contender Bicycles",
+      "offer": {
+        "variant_key": "45716431274229",
+        "url": "https://contenderbicycles.com/products/orbea-kemen-suv-10-28mph-2023?currency=USD&variant=45716431274229",
+        "current_price": 4172.96,
+        "original_price": 5563.95,
+        "size": "S",
+        "options": "Mango (Gloss) - Black (Matt) / S",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/bike-p_nm_nroduct-image_900px.jpg?v=1721780027",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "price_note": "",
+        "discount": 25.000044932107585,
+        "savings": 1390.99
+      },
+      "check_started_at": "2026-11-06T02:30:41.622372+00:00",
+      "evidence_url": "https://contenderbicycles.com/products/orbea-kemen-suv-10-28mph-2023.js?currency=USD",
+      "response_sha256": "b77b9c89d4864f360ab2e351d45fd80e7dcf1911ab87271d9bd60f90260c40b8",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Orbea Kemen SUV 10 28mph 2023",
+        "variant": "45716431274229",
+        "sku": "210000154688",
+        "price_minor": 417296,
+        "reference_minor": 556395,
+        "currency": "USD",
+        "options": "Mango (Gloss) - Black (Matt) / S",
+        "raw_options": [
+          "Mango (Gloss) - Black (Matt)",
+          "S"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Metallic Night Black (Matt-Gloss)",
+              "Urban Green (Gloss) - Black (Matt)",
+              "Mango (Gloss) - Black (Matt)"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "S",
+              "M",
+              "L"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:30:43.753472+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "TRACER 279 FRAMESET",
+      "store": "INTENSE",
+      "offer": {
+        "variant_key": "45139831390231",
+        "url": "https://intensecycles.com/products/tracer-279-frameset?currency=USD&variant=45139831390231",
+        "current_price": 1999.0,
+        "original_price": 2999.0,
+        "size": "SM",
+        "options": "Red / RockShox Vivid Ultimate / SM",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/2426/4557/files/Tracer279-red.png?v=1779085019",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 33.344448149383126,
+        "savings": 1000.0
+      },
+      "check_started_at": "2026-11-06T02:30:43.753553+00:00",
+      "evidence_url": "https://intensecycles.com/products/tracer-279-frameset.js?currency=USD",
+      "response_sha256": "3e65720841b773144438baa76a493283fa21027c04662fba094c5d3904387896",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "TRACER 279 FRAMESET",
+        "variant": "45139831390231",
+        "sku": "26ETCP7FRMS-RED-USA-NA/00.4118.374.291",
+        "price_minor": 199900,
+        "reference_minor": 299900,
+        "currency": "USD",
+        "options": "Red / RockShox Vivid Ultimate / SM",
+        "raw_options": [
+          "Red",
+          "RockShox Vivid Ultimate",
+          "SM"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Red",
+              "Blue"
+            ]
+          },
+          {
+            "name": "SHOCK (170mm)",
+            "position": 2,
+            "values": [
+              "RockShox Vivid Ultimate",
+              "FOX Float Factory X2"
+            ]
+          },
+          {
+            "name": "SIZE",
+            "position": 3,
+            "values": [
+              "SM",
+              "MD",
+              "LG",
+              "XL"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:30:48.065326+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Surly Disc Trucker Bike - 26\" Steel Pea Lime Soup 54cm",
+      "store": "Pro Bike Supply",
+      "offer": {
+        "variant_key": "41695641993271",
+        "url": "https://www.probikesupply.com/products/surly-disc-trucker-bike-26-steel-pea-lime-soup-54cm?currency=USD&variant=41695641993271",
+        "current_price": 1784.15,
+        "original_price": 2099.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0892/2046/files/BK1754_b70ecf06-5472-40d0-9cec-58b0337eea95.jpg?v=1749171146",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "discount": 15.0,
+        "savings": 314.85
+      },
+      "check_started_at": "2026-11-06T02:30:48.065411+00:00",
+      "evidence_url": "https://www.probikesupply.com/products/surly-disc-trucker-bike-26-steel-pea-lime-soup-54cm.js?currency=USD",
+      "response_sha256": "9d831bb93da8c8e8e3bab28ffd908a2bc44245d0efd66c3df17731c9d83b81ab",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Surly Disc Trucker Bike - 26\" Steel Pea Lime Soup 54cm",
+        "variant": "41695641993271",
+        "sku": "BK1755",
+        "price_minor": 178415,
+        "reference_minor": 209900,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T02:28:42.214622+00:00",
+      "checked_at": "2026-11-06T02:30:52.611107+00:00",
+      "within_audit_window": true
+    }
+  ],
+  "within_display_window": true,
+  "passed": true
+}

@@ -1,8 +1,8 @@
 # Merchant price notes
 
-Status: in_progress under the standing instruction to improve and publish comparable reviewed releases.
+Status: complete. PR #45 merged and Big Ring production passed the audited rollout on November 6, 2026 UTC. The broader competitive improvement goal remains active.
 
-Contender's exact contact-for-current-price tag applies to 27 accepted products. The earlier 01:32 UTC capture contained 28 raw tagged products, including one fully unavailable BMC; the fresh 02:08 UTC capture contains 27 raw tagged products and the same 27 accepted products. The observed ordinary OPEN UP Rapha XL purchase panel displays USD1,799/reference3,400, selects XL and Frame Only, and enables Add to Bag while saying Contact us for current price. That evidence does not establish quote-only inventory or invalid posted price. Our cards currently omit the caveat.
+Contender's exact contact-for-current-price tag applies to 27 accepted products. The earlier 01:32 UTC capture contained 28 raw tagged products, including one fully unavailable BMC; the fresh 02:08 UTC capture contains 27 raw tagged products and the same 27 accepted products. The observed ordinary OPEN UP Rapha XL purchase panel displays USD1,799/reference3,400, selects XL and Frame Only, and enables Add to Bag while saying Contact us for current price. That evidence does not establish quote-only inventory or invalid posted price. Before this correction, our cards omitted the caveat.
 
 Carry the source-bound merchant price note on each exact offer and show it next to the listed price, in price details, and alongside the relevant dated history observation. Keep price, reference, stock, fit, identity, discount order, counts and destination unchanged. Do not mark stock unknown or exclude offers merely due to this tag. Old snapshots without the optional note remain readable; never apply today's note to an older observation. An independent product audit must detect omitted or changed current notes while retaining normal price/stock checks.
 
