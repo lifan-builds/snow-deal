@@ -1,0 +1,49 @@
+{
+  "at": "2026-11-06T05:48:04.336979+00:00",
+  "snapshot_sha256": "6f6f76ffff004c5be6fe35764bec6e7eb156c0637ead28d98144892a41ee15fa",
+  "cases": [
+    {
+      "filters": {
+        "include_clothing": true
+      },
+      "circle_grouped_count": 111,
+      "circle_visible_count": 111,
+      "all_retailers": 30,
+      "grouped_seconds": 0.2459
+    },
+    {
+      "filters": {
+        "include_clothing": false
+      },
+      "circle_grouped_count": 53,
+      "circle_visible_count": 53,
+      "all_retailers": 30,
+      "grouped_seconds": 0.2307
+    },
+    {
+      "filters": {
+        "include_clothing": true,
+        "size": "XL"
+      },
+      "circle_grouped_count": 9,
+      "circle_visible_count": 9,
+      "all_retailers": 14,
+      "grouped_seconds": 0.1204
+    },
+    {
+      "filters": {
+        "include_clothing": true,
+        "currency": "CAD",
+        "min_discount": 40,
+        "min_reference": 500
+      },
+      "circle_grouped_count": 25,
+      "circle_visible_count": 25,
+      "all_retailers": 7,
+      "grouped_seconds": 0.1322
+    }
+  ],
+  "operational_circle_ingested_count": 115,
+  "scope": "Explicit task-owned public candidate, verified read-only. Not a production or current merchant-stock claim.",
+  "bytes_unchanged": true
+}

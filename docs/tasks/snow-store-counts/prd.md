@@ -1,0 +1,5 @@
+# Snow retailer filter counts
+
+The user authorized continuing UI/data-quality improvements. Circle admission exposed a concrete discrepancy: the selector says115 while the all-items query displays111 because retained source taxonomy excludes four products; equipment-only view displays53. Retailer dropdown counts must reflect the actual selectable deal population for current filters, before pagination, while allowing a shopper to choose another retailer. Operational store-health counters must retain their existing source-ingestion meaning.
+
+Reuse exact-variant selection and the normal exclusion/freshness/price/size/clothing rules. Ignore only the current retailer selection when computing the retailer facet. No retailer should advertise deals that are excluded, stale, future-dated or incompatible with exact size. Keep unknown chosen retailer visible. Do not change ranking, ingestion, snapshots, history, category/brand facet semantics or other catalogs. Tests must demonstrate disagreement before the fix and agreement after it.

@@ -153,6 +153,14 @@ async def _fetch_deals(
     return deals, has_more, deal_count
 
 
+async def _store_filter_context(*, store: str | None, **filters) -> dict:
+    counts = await query_deals(store=store, count_by_store=True, **filters)
+    stores = [s.name for s in STORES]
+    if store and store not in stores:
+        stores.append(store)
+    return {'stores': stores, 'store_counts': counts, 'current_store': store}
+
+
 @router.get("/", response_class=HTMLResponse)
 async def index(
     request: Request,
@@ -192,8 +200,14 @@ async def index(
     brands = await get_brands()
     length_count = await count_with_length()
     category_counts = await get_category_counts()
-    store_statuses = await store_status()
-    store_counts = {s["store"]: s["deal_count"] for s in store_statuses}
+    store_context = await _store_filter_context(
+        category=category, store=store, brand=brand, min_discount=min_discount,
+        min_price=min_price, max_price=max_price, min_reference=min_reference,
+        size=size, year_from=year_from, sort_by=sort,
+        tax_free_only=tax_free == '1', tax_free_stores=TAX_FREE_STORES,
+        q=q, size_min=size_min, size_max=size_max, reviewed_only=reviewed == '1',
+        currency=currency, include_clothing=include_clothing,
+    )
 
     return templates.TemplateResponse(
         request=request, name="index.html",
@@ -201,17 +215,15 @@ async def index(
             "deals": deals,
             "deal_count": deal_count,
             "categories": list(dict.fromkeys(cat for cat, _ in CATEGORY_RULES if cat != "boots")),
-            "stores": [s.name for s in STORES],
+            **store_context,
             "brands": brands,
             "tax_free_stores": TAX_FREE_STORES,
             "cad_stores": CAD_STORES,
             "category_counts": category_counts,
-            "store_counts": store_counts,
             "current_currency": currency,
             "current_include_clothing": include_clothing or bool(category and category not in EQUIPMENT_CATEGORIES),
             "equipment_categories": EQUIPMENT_CATEGORIES,
             "current_category": category,
-            "current_store": store,
             "current_brand": brand,
             "current_min_discount": min_discount,
             "current_min_price": min_price,
@@ -311,9 +323,18 @@ async def deals_fragment(
     )
 
     template = "partials/more_cards.html" if is_load_more else "partials/deal_cards.html"
+    store_context = {} if is_load_more else await _store_filter_context(
+        category=category, store=store, brand=brand, min_discount=min_discount,
+        min_price=min_price, max_price=max_price, min_reference=min_reference,
+        size=size, year_from=year_from, sort_by=sort,
+        tax_free_only=tax_free == '1', tax_free_stores=TAX_FREE_STORES,
+        q=q, size_min=size_min, size_max=size_max, reviewed_only=reviewed == '1',
+        currency=currency, include_clothing=include_clothing,
+    )
     return templates.TemplateResponse(
         request=request, name=template,
         context={"deals": deals, "deal_count": deal_count,
+                 **store_context, "store_counts_oob": not is_load_more,
                  "tax_free_stores": TAX_FREE_STORES, "cad_stores": CAD_STORES,
                  "has_more": has_more, **pagination_context(request, offset),
                  "current_currency": currency, "current_q": q, "current_min_discount": min_discount,

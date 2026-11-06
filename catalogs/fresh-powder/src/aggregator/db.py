@@ -325,11 +325,15 @@ async def query_deals(
     size_max: int | None = None,
     reviewed_only: bool = False,
     count_only: bool = False,
+    count_by_store: bool = False,
     include_clothing: bool = True,
     currency: str | None = None,
     db_path: Path = DB_PATH,
-) -> list[AggregatedDeal] | int:
-    """Query deals with optional filters. If count_only=True, returns int."""
+) -> list[AggregatedDeal] | int | dict[str, int]:
+    """Query visible deals, or count them before pagination.
+
+    count_by_store returns retailer facet counts, ignoring only the store filter.
+    """
     clauses: list[str] = [
         "deals.exclusion_reason IS NULL",
         "deals.discount_pct >= ?",
@@ -370,7 +374,7 @@ async def query_deals(
     if category:
         clauses.append("deals.category = ?")
         params.append(category)
-    if store:
+    if store and not count_by_store:
         clauses.append("deals.store = ?")
         params.append(store)
     if brand:
@@ -398,17 +402,19 @@ async def query_deals(
                                             min_price=min_price, max_price=max_price,
                                             min_reference=min_reference, min_discount=min_discount)
     params = offer_params + params
-    if count_only:
+    if count_only or count_by_store:
         async with _connect(db_path, read_only=_deal_db_read_only()) as db:
             await db.create_function("price_discount", 2, discount, deterministic=True)
             await db.create_function("matches_length", 3, matches_length, deterministic=True)
             await db.create_function("model_year", 1, model_year, deterministic=True)
+            columns = 'deals.store, COUNT(*)' if count_by_store else 'COUNT(*)'
+            grouping = ' GROUP BY deals.store ORDER BY deals.store' if count_by_store else ''
             cursor = await db.execute(
-                selection + f"SELECT COUNT(*) FROM effective deals {latest_join} LEFT JOIN deal_reviews dr ON deals.id = dr.deal_id WHERE {where}",
+                selection + f"SELECT {columns} FROM effective deals {latest_join} LEFT JOIN deal_reviews dr ON deals.id = dr.deal_id WHERE {where}{grouping}",
                 params,
             )
-            row = await cursor.fetchone()
-        return row[0]
+            rows = await cursor.fetchall()
+        return {row[0]: row[1] for row in rows} if count_by_store else rows[0][0]
 
     sort_map = {
         "discount_pct": (
