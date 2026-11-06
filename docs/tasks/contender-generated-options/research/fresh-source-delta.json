@@ -1,0 +1,29 @@
+[
+  {
+    "url": "https://contenderbicycles.com/products/bmc-fourstroke-r-01-one-2026?currency=USD",
+    "before": {
+      "name": "BMC Fourstroke R 01 ONE 2026",
+      "url": "https://contenderbicycles.com/products/bmc-fourstroke-r-01-one-2026?currency=USD",
+      "brand": "BMC",
+      "source_category": "BIKES",
+      "category": "Other complete bikes",
+      "format": "",
+      "platform": "",
+      "offers": [
+        {
+          "variant_key": "47432877080821",
+          "url": "https://contenderbicycles.com/products/bmc-fourstroke-r-01-one-2026?currency=USD&variant=47432877080821",
+          "current_price": 9500.0,
+          "original_price": 13499.0,
+          "size": "L",
+          "options": "Carbon / Firestorm / L",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/BMC_Fourstroke_R_01_ONE_Side_Contender_Bicycles.jpg?v=1780370123",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": ""
+        }
+      ]
+    },
+    "current_old_parser": null
+  }
+]

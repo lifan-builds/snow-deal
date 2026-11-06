@@ -1,0 +1,23 @@
+[
+  {
+    "url": "https://contenderbicycles.com/collections/sale?currency=USD",
+    "status": 200,
+    "at": "2026-11-06T01:32:29.635717+00:00",
+    "sha256": "69a78ff8a52fb4284b3405bc7b129e3b330dff8ff8cf40823fdb7959cbab7ca8",
+    "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/release/contender-generated-options/capture/000.gz"
+  },
+  {
+    "url": "https://contenderbicycles.com/collections/sale/products.json?limit=250&page=1&currency=USD",
+    "status": 200,
+    "at": "2026-11-06T01:32:32.742132+00:00",
+    "sha256": "ada2748a01e743d0b1f88ddeda10d0e24bb7401f7569f3bc31ec5c570e5cfbd4",
+    "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/release/contender-generated-options/capture/001.gz"
+  },
+  {
+    "url": "https://contenderbicycles.com/collections/sale/products.json?limit=250&page=2&currency=USD",
+    "status": 200,
+    "at": "2026-11-06T01:32:37.531655+00:00",
+    "sha256": "303f875f88cd8f65a94b5c19f7b1f7f65a16bca4389aa1b1b815218d5ca31234",
+    "file": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/release/contender-generated-options/capture/002.gz"
+  }
+]

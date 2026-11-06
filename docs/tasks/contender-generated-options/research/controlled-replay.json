@@ -1,0 +1,132 @@
+{
+  "at": "2026-11-06T01:35:45.424412+00:00",
+  "observed_at": "2026-11-06T01:32:26.781135+00:00",
+  "raw_pages": 2,
+  "old_parser_products": 183,
+  "new_parser_products": 182,
+  "removed_offers": [
+    {
+      "name": "OPEN UP 2.0 Frameset",
+      "url": "https://contenderbicycles.com/products/open-up-2-0-frameset?currency=USD",
+      "offer": {
+        "variant_key": "67738217840885",
+        "url": "https://contenderbicycles.com/products/open-up-2-0-frameset?currency=USD&variant=67738217840885",
+        "current_price": 4200.0,
+        "original_price": 4500.0,
+        "size": "M #MWS Options 1",
+        "options": "Raw Ready to Paint / M #MWS Options 1",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/OPEN_UP_2.0_Frameset_Raw_Ready_to_Paint_Contender_Bicycles_2.jpg?v=1772840370",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": ""
+      }
+    },
+    {
+      "name": "Santa Cruz Stigmata 4 CC Frameset",
+      "url": "https://contenderbicycles.com/products/santa-cruz-stigmata-4-cc-frameset?currency=USD",
+      "offer": {
+        "variant_key": "67967680479477",
+        "url": "https://contenderbicycles.com/products/santa-cruz-stigmata-4-cc-frameset?currency=USD&variant=67967680479477",
+        "current_price": 2399.0,
+        "original_price": 2799.0,
+        "size": "S #MWS Options 7",
+        "options": "British Racing Green / S #MWS Options 7",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/Santa_Cruz_Stigmata_4_CC_Frameset_Brittish_Racing_Green_Contender_Bicycles.jpg?v=1756490879",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": ""
+      }
+    },
+    {
+      "name": "Santa Cruz Stigmata 4 CC Frameset",
+      "url": "https://contenderbicycles.com/products/santa-cruz-stigmata-4-cc-frameset?currency=USD",
+      "offer": {
+        "variant_key": "67967684641013",
+        "url": "https://contenderbicycles.com/products/santa-cruz-stigmata-4-cc-frameset?currency=USD&variant=67967684641013",
+        "current_price": 2399.0,
+        "original_price": 2799.0,
+        "size": "XS #MWS Options 5",
+        "options": "British Racing Green / XS #MWS Options 5",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/Santa_Cruz_Stigmata_4_CC_Frameset_Brittish_Racing_Green_Contender_Bicycles.jpg?v=1756490879",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": ""
+      }
+    },
+    {
+      "name": "OPEN UP Rapha Limited Edition Frameset",
+      "url": "https://contenderbicycles.com/products/open-up-rapha-frameset?currency=USD",
+      "offer": {
+        "variant_key": "48504718950645",
+        "url": "https://contenderbicycles.com/products/open-up-rapha-frameset?currency=USD&variant=48504718950645",
+        "current_price": 1799.0,
+        "original_price": 3400.0,
+        "size": "XL #MWS Options 9",
+        "options": "Rapha Limited Edition / XL #MWS Options 9",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/products/bike-prodduct-image_900px_fab7e73b-9aa5-4cec-a61d-f6f57a942c3b.jpg?v=1663793879",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": ""
+      }
+    },
+    {
+      "name": "OPEN UPPER Frameset",
+      "url": "https://contenderbicycles.com/products/open-upper-frameset?currency=USD",
+      "offer": {
+        "variant_key": "48790444245237",
+        "url": "https://contenderbicycles.com/products/open-upper-frameset?currency=USD&variant=48790444245237",
+        "current_price": 1895.99,
+        "original_price": 4500.0,
+        "size": "M #MWS Options 11",
+        "options": "Ready To Paint / M #MWS Options 11",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/upper-r2p-3.jpg?v=1685747112",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": ""
+      }
+    },
+    {
+      "name": "OPEN UPPER Frameset",
+      "url": "https://contenderbicycles.com/products/open-upper-frameset?currency=USD",
+      "offer": {
+        "variant_key": "48896550568181",
+        "url": "https://contenderbicycles.com/products/open-upper-frameset?currency=USD&variant=48896550568181",
+        "current_price": 1895.99,
+        "original_price": 4500.0,
+        "size": "S #MWS Options 5",
+        "options": "Ready To Paint / S #MWS Options 5",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/upper-r2p-3.jpg?v=1685747112",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": ""
+      }
+    },
+    {
+      "name": "OPEN UPPER Frameset",
+      "url": "https://contenderbicycles.com/products/open-upper-frameset?currency=USD",
+      "offer": {
+        "variant_key": "67593172910325",
+        "url": "https://contenderbicycles.com/products/open-upper-frameset?currency=USD&variant=67593172910325",
+        "current_price": 1995.99,
+        "original_price": 4500.0,
+        "size": "S #MWS Options 13",
+        "options": "Black / S #MWS Options 13",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0483/9040/6312/files/upper-black.jpg?v=1685747093",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": ""
+      }
+    }
+  ],
+  "surviving_offers_unchanged": 524,
+  "other_sources_unchanged": 20,
+  "history_before": 58,
+  "history_after": 59,
+  "all_prior_history_preserved": true,
+  "default_in_stock": 1475,
+  "deep_in_stock": 203,
+  "targeted_selected_offers": 182,
+  "standard_sample": 30,
+  "distinct_audit_offers": 209,
+  "passed": true
+}

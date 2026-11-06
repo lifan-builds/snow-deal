@@ -14,6 +14,18 @@ from deal_common.parsers.base import BaseParser
 
 log = logging.getLogger(__name__)
 
+
+def is_contender_generated_variant(variant: dict, url: str) -> bool:
+    """Exclude observed generated choices without aliasing their prices or stock."""
+    if urlparse(url).hostname not in {"contenderbicycles.com", "www.contenderbicycles.com"}:
+        return False
+    values = [variant.get(key) for key in ("title", "option1", "option2", "option3")]
+    if isinstance(variant.get("options"), list):
+        values.extend(variant["options"])
+    return any(isinstance(value, str) and re.search(r"(?<!\w)#MWS Options [0-9]+(?!\w)", value)
+               for value in values)
+
+
 def _products_json(body: str) -> list[dict]:
     """A malformed feed is a connection failure, not an empty collection."""
     data = json.loads(body)
@@ -95,7 +107,8 @@ class ShopifyParser(BaseParser):
                           if isinstance(option, dict) and re.search(r"\b(msrp|retail|price)\b", str(option.get('name', '')), re.I)}
             offers = []
             for index, candidate in enumerate(variants):
-                if not isinstance(candidate, dict) or candidate.get("available") is False:
+                if (not isinstance(candidate, dict) or candidate.get("available") is False
+                        or is_contender_generated_variant(candidate, product_url)):
                     continue
                 try:
                     price = float(candidate.get("price") or 0)

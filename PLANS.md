@@ -301,3 +301,10 @@ Fixed restoration accepting an older valid database despite newer release metada
 ## Cycling reference comparison — November 6, 2026 UTC
 
 Completed a 340-listing Velo Bargains traversal across all fifteen observed pages. Nine expensive bike/frameset candidates remain after explicit exclusions; merchant availability and fulfillment remain unverified. A paired native-browser first-page census measures complete reference disclosures at 24/24 for Big Ring and 0/24 for Velo Bargains, whose required reference basis is absent. Other accuracy/history cells remain unmeasured. The new matrix records five strict leads across 260 comparisons, preserving all unrelated dates. See `docs/tasks/velo-benchmark/` and `docs/benchmarks/2026-11-06-cycling-reference-audit.json`. This is evidence publication only, with no runtime changes or manual data rollout.
+
+## Contender generated-option correctness — November 6, 2026 UTC
+
+- Native merchant selection and independent product endpoints showed that generated `#MWS Options` records cannot safely stand in for ordinary bike sizes: one carries a different reference price and another reports stock while its base is unavailable. Exclude marked Contender variants before offer construction and reject them in merchant audits; never strip markers or transfer facts to a base.
+- Full captured collection replay removes exactly seven generated offers, preserving all 524 ordinary offers. Twenty other sources and all 58 prior history rows remain unchanged; one genuine source observation is added. A separate BMC listing left the fresh sale feed independently of the parser correction.
+- Local clean-runtime verification passes for 302 rendered cards, all 182 surviving Contender destinations and ten history pages. Default in-stock listings are 1,475; deep listings remain 203. This is a correctness improvement, not a new competitive metric lead.
+- Task and rollout gates: `docs/tasks/contender-generated-options/`. Independent review, full checks, merchant audit and production release are tracked there.

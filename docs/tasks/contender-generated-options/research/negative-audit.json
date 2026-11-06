@@ -1,0 +1,380 @@
+[
+  {
+    "name": "OPEN UP 2.0 Frameset",
+    "variant": "67738217840885",
+    "status": "mismatch",
+    "checks": {
+      "identity": true,
+      "currency": true,
+      "price": true,
+      "reference": true,
+      "options": true,
+      "stock": true,
+      "ordinary_variant": false
+    },
+    "merchant": {
+      "title": "OPEN UP 2.0 Frameset",
+      "variant": "67738217840885",
+      "sku": "210000165744",
+      "price_minor": 420000,
+      "reference_minor": 450000,
+      "currency": "USD",
+      "options": "Raw Ready to Paint / M #MWS Options 1",
+      "raw_options": [
+        "Raw Ready to Paint",
+        "M #MWS Options 1"
+      ],
+      "option_definitions": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Farn",
+            "Sand",
+            "Raw Ready to Paint"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "L #MWS Options 2",
+            "XS #MWS Options 2",
+            "XS #MWS Options 1",
+            "M #MWS Options 1",
+            "M #MWS Options 2",
+            "M #MWS Options 3",
+            "L #MWS Options 1",
+            "L #MWS Options 3",
+            "S #MWS Options 1"
+          ]
+        }
+      ],
+      "available": true,
+      "shipping_notice": ""
+    }
+  },
+  {
+    "name": "Santa Cruz Stigmata 4 CC Frameset",
+    "variant": "67967680479477",
+    "status": "mismatch",
+    "checks": {
+      "identity": true,
+      "currency": true,
+      "price": true,
+      "reference": true,
+      "options": true,
+      "stock": true,
+      "ordinary_variant": false
+    },
+    "merchant": {
+      "title": "Santa Cruz Stigmata 4 CC Frameset",
+      "variant": "67967680479477",
+      "sku": "68-26290-2-910-0000",
+      "price_minor": 239900,
+      "reference_minor": 279900,
+      "currency": "USD",
+      "options": "British Racing Green / S #MWS Options 7",
+      "raw_options": [
+        "British Racing Green",
+        "S #MWS Options 7"
+      ],
+      "option_definitions": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "British Racing Green",
+            "Matte Carbon"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "S #MWS Options 7",
+            "XS #MWS Options 5"
+          ]
+        }
+      ],
+      "available": true,
+      "shipping_notice": ""
+    }
+  },
+  {
+    "name": "Santa Cruz Stigmata 4 CC Frameset",
+    "variant": "67967684641013",
+    "status": "mismatch",
+    "checks": {
+      "identity": true,
+      "currency": true,
+      "price": true,
+      "reference": true,
+      "options": true,
+      "stock": true,
+      "ordinary_variant": false
+    },
+    "merchant": {
+      "title": "Santa Cruz Stigmata 4 CC Frameset",
+      "variant": "67967684641013",
+      "sku": "68-26290-1-910-0000",
+      "price_minor": 239900,
+      "reference_minor": 279900,
+      "currency": "USD",
+      "options": "British Racing Green / XS #MWS Options 5",
+      "raw_options": [
+        "British Racing Green",
+        "XS #MWS Options 5"
+      ],
+      "option_definitions": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "British Racing Green",
+            "Matte Carbon"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "S #MWS Options 7",
+            "XS #MWS Options 5"
+          ]
+        }
+      ],
+      "available": true,
+      "shipping_notice": ""
+    }
+  },
+  {
+    "name": "OPEN UP Rapha Limited Edition Frameset",
+    "variant": "48504718950645",
+    "status": "mismatch",
+    "checks": {
+      "identity": true,
+      "currency": true,
+      "price": true,
+      "reference": true,
+      "options": true,
+      "stock": true,
+      "ordinary_variant": false
+    },
+    "merchant": {
+      "title": "OPEN UP Rapha Limited Edition Frameset",
+      "variant": "48504718950645",
+      "sku": "210000137179",
+      "price_minor": 179900,
+      "reference_minor": 340000,
+      "currency": "USD",
+      "options": "Rapha Limited Edition / XL #MWS Options 9",
+      "raw_options": [
+        "Rapha Limited Edition",
+        "XL #MWS Options 9"
+      ],
+      "option_definitions": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Rapha Limited Edition"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XL #MWS Options 9"
+          ]
+        }
+      ],
+      "available": true,
+      "shipping_notice": ""
+    }
+  },
+  {
+    "name": "OPEN UPPER Frameset",
+    "variant": "48790444245237",
+    "status": "mismatch",
+    "checks": {
+      "identity": true,
+      "currency": true,
+      "price": true,
+      "reference": true,
+      "options": true,
+      "stock": true,
+      "ordinary_variant": false
+    },
+    "merchant": {
+      "title": "OPEN UPPER Frameset",
+      "variant": "48790444245237",
+      "sku": "OPENUPPERXMRTP",
+      "price_minor": 189599,
+      "reference_minor": 450000,
+      "currency": "USD",
+      "options": "Ready To Paint / M #MWS Options 11",
+      "raw_options": [
+        "Ready To Paint",
+        "M #MWS Options 11"
+      ],
+      "option_definitions": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Black",
+            "Ready To Paint"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "M #MWS Options 11",
+            "S #MWS Options 5",
+            "S #MWS Options 13",
+            "S #MWS Options 14",
+            "S #MWS Options 15",
+            "S #MWS Options 6"
+          ]
+        }
+      ],
+      "available": true,
+      "shipping_notice": ""
+    }
+  },
+  {
+    "name": "OPEN UPPER Frameset",
+    "variant": "48896550568181",
+    "status": "mismatch",
+    "checks": {
+      "identity": true,
+      "currency": true,
+      "price": true,
+      "reference": true,
+      "options": true,
+      "stock": true,
+      "ordinary_variant": false
+    },
+    "merchant": {
+      "title": "OPEN UPPER Frameset",
+      "variant": "48896550568181",
+      "sku": "210000106322",
+      "price_minor": 189599,
+      "reference_minor": 450000,
+      "currency": "USD",
+      "options": "Ready To Paint / S #MWS Options 5",
+      "raw_options": [
+        "Ready To Paint",
+        "S #MWS Options 5"
+      ],
+      "option_definitions": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Black",
+            "Ready To Paint"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "M #MWS Options 11",
+            "S #MWS Options 5",
+            "S #MWS Options 13",
+            "S #MWS Options 14",
+            "S #MWS Options 15",
+            "S #MWS Options 6"
+          ]
+        }
+      ],
+      "available": true,
+      "shipping_notice": ""
+    }
+  },
+  {
+    "name": "OPEN UPPER Frameset",
+    "variant": "67593172910325",
+    "status": "mismatch",
+    "checks": {
+      "identity": true,
+      "currency": true,
+      "price": true,
+      "reference": true,
+      "options": true,
+      "stock": true,
+      "ordinary_variant": false
+    },
+    "merchant": {
+      "title": "OPEN UPPER Frameset",
+      "variant": "67593172910325",
+      "sku": "210000083486",
+      "price_minor": 199599,
+      "reference_minor": 450000,
+      "currency": "USD",
+      "options": "Black / S #MWS Options 13",
+      "raw_options": [
+        "Black",
+        "S #MWS Options 13"
+      ],
+      "option_definitions": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Black",
+            "Ready To Paint"
+          ]
+        },
+        {
+          "name": "Size",
+          "position": 2,
+          "values": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "M #MWS Options 11",
+            "S #MWS Options 5",
+            "S #MWS Options 13",
+            "S #MWS Options 14",
+            "S #MWS Options 15",
+            "S #MWS Options 6"
+          ]
+        }
+      ],
+      "available": true,
+      "shipping_notice": ""
+    }
+  }
+]
