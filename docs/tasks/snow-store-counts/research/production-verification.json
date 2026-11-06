@@ -1,0 +1,130 @@
+{
+  "pr": "https://github.com/lifan-builds/snow-deal/pull/49",
+  "merged_commit": "28fe5bb9e2fffa674fecc97fde7345bd12f9eac8",
+  "merged_at": "2026-11-06T07:00:20Z",
+  "deployment_status": "Vercel commit status success; exact public behavior verified",
+  "checks": "1521 safe offline tests; CI automatic final head and preview success",
+  "http_verification": {
+    "at": "2026-11-06T07:02:11.789148+00:00",
+    "cases": [
+      {
+        "scope": "equipment",
+        "fragment": false,
+        "selected_store": "The Circle Whistler",
+        "count": 53,
+        "all_retailer_labels_match": true
+      },
+      {
+        "scope": "equipment",
+        "fragment": true,
+        "selected_store": "The Circle Whistler",
+        "count": 53,
+        "all_retailer_labels_match": true
+      },
+      {
+        "scope": "all-items",
+        "fragment": false,
+        "selected_store": "The Circle Whistler",
+        "count": 111,
+        "all_retailer_labels_match": true
+      },
+      {
+        "scope": "all-items",
+        "fragment": true,
+        "selected_store": "The Circle Whistler",
+        "count": 111,
+        "all_retailer_labels_match": true
+      },
+      {
+        "scope": "exact-XL",
+        "fragment": false,
+        "selected_store": "The Circle Whistler",
+        "count": 9,
+        "all_retailer_labels_match": true
+      },
+      {
+        "scope": "exact-XL",
+        "fragment": true,
+        "selected_store": "The Circle Whistler",
+        "count": 9,
+        "all_retailer_labels_match": true
+      },
+      {
+        "scope": "deep-CAD",
+        "fragment": false,
+        "selected_store": "The Circle Whistler",
+        "count": 25,
+        "all_retailer_labels_match": true
+      },
+      {
+        "scope": "deep-CAD",
+        "fragment": true,
+        "selected_store": "The Circle Whistler",
+        "count": 25,
+        "all_retailer_labels_match": true
+      },
+      {
+        "scope": "unknown",
+        "fragment": false,
+        "selected_store": "Unknown retailer",
+        "count": 0,
+        "all_retailer_labels_match": true
+      },
+      {
+        "scope": "unknown",
+        "fragment": true,
+        "selected_store": "Unknown retailer",
+        "count": 0,
+        "all_retailer_labels_match": true
+      }
+    ],
+    "passed": true
+  },
+  "native_verification": {
+    "at": "2026-11-06T07:03:49.464250+00:00",
+    "sequence": [
+      "Circle XL9",
+      "clear size:Circle111",
+      "disable clothing:Circle53"
+    ],
+    "selected_retailer_preserved": true
+  },
+  "health_unchanged": {
+    "at": "2026-11-06T07:03:47.619872+00:00",
+    "sites": [
+      {
+        "site": "https://freshpowder.clifan.com",
+        "status": 200,
+        "body": {
+          "status": "ok",
+          "last_attempt_at": "2026-11-06T06:24:43.262706",
+          "checked_at": "2026-11-06T06:24:43.262706",
+          "stores_with_deals": 30
+        }
+      },
+      {
+        "site": "https://bigring.clifan.com",
+        "status": 200,
+        "body": {
+          "catalog": "cycling",
+          "snapshot_sha256": "5253fbcfe4098f914d7308bcb460104c3b82dc5243fa5543692094a749ef15e1",
+          "fresh_sources": 21,
+          "configured_sources": 21,
+          "status": "ready"
+        }
+      },
+      {
+        "site": "https://benchdrop.clifan.com",
+        "status": 200,
+        "body": {
+          "catalog": "tools",
+          "snapshot_sha256": "0883ddcc9499491dccfceb723551fcdb72a03c5f932d15deb340e53de657e751",
+          "fresh_sources": 13,
+          "configured_sources": 13,
+          "status": "ready"
+        }
+      }
+    ]
+  },
+  "data_refresh_performed": false
+}

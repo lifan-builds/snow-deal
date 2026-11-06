@@ -1,0 +1,28 @@
+{
+  "at": "2026-11-06T06:37:46.483786+00:00",
+  "before_sha256": "4d1a203d90c613bf50eaf296d04ca3bfef620295b928526854f78e4bc9bb351f",
+  "after_sha256": "da8b167a24b8c41b06b04f1617e98816e6467ddd8249115342d44804a97cbf1a",
+  "checks": {
+    "deals": {
+      "old_rows": 15250,
+      "new_rows": 15250,
+      "unselected_exact": true
+    },
+    "deal_offers": {
+      "old_rows": 27844,
+      "new_rows": 27844,
+      "unselected_exact": true
+    },
+    "price_history": {
+      "old_rows": 217626,
+      "new_rows": 217741,
+      "all_prior_preserved": true
+    },
+    "offer_observations": {
+      "old_rows": 301732,
+      "new_rows": 301945,
+      "all_prior_preserved": true
+    }
+  },
+  "passed": true
+}

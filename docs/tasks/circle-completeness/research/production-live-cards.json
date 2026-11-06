@@ -1,0 +1,32 @@
+{
+  "at": "2026-11-06T06:37:47.067562+00:00",
+  "site": "https://freshpowder.clifan.com",
+  "snapshot": "Public asset 716152772, SHA256 da8b167a24b8c41b06b04f1617e98816e6467ddd8249115342d44804a97cbf1a",
+  "scopes": [
+    {
+      "scope": "equipment",
+      "cards": 53,
+      "pages": 1,
+      "exact_price_reference_size_stock_link_and_variant": true
+    },
+    {
+      "scope": "all-items",
+      "cards": 111,
+      "pages": 2,
+      "exact_price_reference_size_stock_link_and_variant": true
+    },
+    {
+      "scope": "exact-XL",
+      "cards": 9,
+      "pages": 1,
+      "exact_price_reference_size_stock_link_and_variant": true
+    },
+    {
+      "scope": "unknown-size",
+      "cards": 0,
+      "pages": 1,
+      "exact_price_reference_size_stock_link_and_variant": true
+    }
+  ],
+  "passed": true
+}

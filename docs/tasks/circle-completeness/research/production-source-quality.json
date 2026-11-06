@@ -1,0 +1,81 @@
+{
+  "configured_stores": 1,
+  "stores_with_deals": 1,
+  "total_deals": 115,
+  "zero_count_stores": [],
+  "store_summaries": [
+    {
+      "store": "The Circle Whistler",
+      "deals": 115,
+      "missing_category": 6,
+      "missing_image": 2,
+      "missing_sizes": 7,
+      "missing_lengths": 0,
+      "length_eligible": 14,
+      "variant_offers": 213,
+      "deals_with_variants": 115,
+      "confirmed_size_deals": 108
+    }
+  ],
+  "missing_category": 6,
+  "missing_image": 2,
+  "missing_sizes": 7,
+  "missing_lengths": 0,
+  "length_eligible": 14,
+  "variant_offers": 213,
+  "deals_with_variants": 115,
+  "confirmed_size_deals": 108,
+  "checked_at": "2026-11-06T06:24:43.262706",
+  "outcomes": {
+    "The Circle Whistler": {
+      "errors": 0,
+      "pages": 36,
+      "collections": [
+        {
+          "url": "https://www.thecirclewhistler.com/sale/",
+          "pages": 18,
+          "products": 391,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/snow/",
+          "pages": 18,
+          "products": 15,
+          "status": "complete"
+        }
+      ],
+      "product_pages": 406,
+      "evidence_requests": 406
+    }
+  },
+  "withheld_stores": [],
+  "published_deals": 115,
+  "publish_candidate_quality": {
+    "configured_stores": 1,
+    "stores_with_deals": 1,
+    "total_deals": 115,
+    "zero_count_stores": [],
+    "store_summaries": [
+      {
+        "store": "The Circle Whistler",
+        "deals": 115,
+        "missing_category": 6,
+        "missing_image": 2,
+        "missing_sizes": 7,
+        "missing_lengths": 0,
+        "length_eligible": 14,
+        "variant_offers": 213,
+        "deals_with_variants": 115,
+        "confirmed_size_deals": 108
+      }
+    ],
+    "missing_category": 6,
+    "missing_image": 2,
+    "missing_sizes": 7,
+    "missing_lengths": 0,
+    "length_eligible": 14,
+    "variant_offers": 213,
+    "deals_with_variants": 115,
+    "confirmed_size_deals": 108
+  }
+}

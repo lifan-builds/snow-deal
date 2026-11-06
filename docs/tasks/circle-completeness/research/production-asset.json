@@ -1,0 +1,13 @@
+{
+  "assets": [
+    {
+      "browser_download_url": "https://github.com/lifan-builds/snow-deal-data/releases/download/latest-data/deals.db",
+      "digest": "sha256:da8b167a24b8c41b06b04f1617e98816e6467ddd8249115342d44804a97cbf1a",
+      "id": 716152772,
+      "name": "deals.db",
+      "size": 206700544,
+      "updated_at": "2026-11-06T06:24:57Z"
+    }
+  ],
+  "body": "Validated snapshot from run 42169798783"
+}
