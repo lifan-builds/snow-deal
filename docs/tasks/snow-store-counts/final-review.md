@@ -17,3 +17,11 @@ Verification performed independently:
 - Type checking: no type checker is configured in the project or CI.
 
 No operational data, credentials, merchant endpoints, deployment state, commits or publication were accessed or changed. Native browser re-verification of the outerHTML correction and release verification remain with the parent session; this review does not claim those outcomes.
+
+## Incremental CI path review
+
+Reviewed the later single-line addition of `catalogs/fresh-powder/**` to `.github/workflows/catalog-check.yml` after the branch was rebased onto the runtime release. No findings. A snow-only source, nested template or test change now matches the pull-request path filter and reaches the existing full offline job; the existing catalog/script/workflow paths remain present.
+
+Parsed the before/after YAML with Ruby's standard-library safe loader and compared the complete structures: the added snow glob is the only configuration change, with no job, permission, condition, input or command changes. Representative snow DB, route, nested partial and regression-test paths match the added glob. `git diff --check` passes. No full test rerun was needed for this trigger-only change.
+
+The parent's subsequent native results and combined **1521-test** run are recorded in `native-verification.md`; they supersede the earlier pending-native note above. This incremental review did not repeat that browser run or test suite and does not claim CI or publication completion.

@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - 'common/**'
+      - 'catalogs/fresh-powder/**'
       - 'catalogs/cycling/**'
       - 'catalogs/tools/**'
       - 'scripts/check.py'
