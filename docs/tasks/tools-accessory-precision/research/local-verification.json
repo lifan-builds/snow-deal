@@ -1,0 +1,198 @@
+{
+  "checked_at": "2026-11-06T00:24:19.051800+00:00",
+  "live": false,
+  "site": "https://benchdrop.clifan.com",
+  "health": {
+    "catalog": "tools",
+    "snapshot_sha256": "0883ddcc9499491dccfceb723551fcdb72a03c5f932d15deb340e53de657e751",
+    "fresh_sources": 13,
+    "configured_sources": 13,
+    "status": "ready"
+  },
+  "routes": [
+    {
+      "params": {},
+      "count": 24,
+      "total": "1037",
+      "passed": true
+    },
+    {
+      "params": {
+        "stock": "true"
+      },
+      "count": 24,
+      "total": "934",
+      "passed": true
+    },
+    {
+      "params": {
+        "stock": "true",
+        "min_discount": 40
+      },
+      "count": 24,
+      "total": "33",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "stock": "true",
+        "format": "Kit"
+      },
+      "count": 24,
+      "total": "65",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "q": "Impact Driver",
+        "stock": "true"
+      },
+      "count": 21,
+      "total": "21",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Max Warehouse",
+        "stock": "true",
+        "page": 1
+      },
+      "count": 24,
+      "total": "38",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Max Warehouse",
+        "stock": "true",
+        "page": 2
+      },
+      "count": 14,
+      "total": "38",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Fasteners Inc",
+        "stock": "true",
+        "page": 1
+      },
+      "count": 24,
+      "total": "78",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Fasteners Inc",
+        "stock": "true",
+        "page": 2
+      },
+      "count": 24,
+      "total": "78",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Fasteners Inc",
+        "stock": "true",
+        "page": 3
+      },
+      "count": 24,
+      "total": "78",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Fasteners Inc",
+        "stock": "true",
+        "page": 4
+      },
+      "count": 6,
+      "total": "78",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Max Warehouse",
+        "q": "Fletcher-Terry FrameMaster Flat 3/8 in. W Point Driver 1 pk"
+      },
+      "count": 0,
+      "total": "0",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Max Warehouse",
+        "q": "Saw Minihack8-3/4\"Stanly (Pack Of 6)"
+      },
+      "count": 0,
+      "total": "0",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Max Warehouse",
+        "q": "Irwin Impact Performance Series 5/16 in. Metric Lobular Power Nut Driver 1-7/8 in. L 1 pc"
+      },
+      "count": 0,
+      "total": "0",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Max Warehouse",
+        "q": "Irwin Impact Performance 1/4 in. SAE Lobular Power Nut Driver 1-7/8 in. L 1 pc"
+      },
+      "count": 0,
+      "total": "0",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Max Warehouse",
+        "q": "Rockwell Metal Sanding Pad 1 in. 20000 rpm 2 pc"
+      },
+      "count": 0,
+      "total": "0",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Fasteners Inc",
+        "q": "FLEX FAM10301-4 2-9/16 in 4-Piece Impact Magnetic Nut Driver Set"
+      },
+      "count": 0,
+      "total": "0",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Fasteners Inc",
+        "q": "Milwaukee Tool 2739-21HD M18 FUEL 12\" Dual Bevel Sliding Compound Miter Saw"
+      },
+      "count": 1,
+      "total": "1",
+      "passed": true
+    }
+  ],
+  "selected_card_comparisons": 234,
+  "all_targeted_destinations": 116,
+  "excluded_false_positives": 6,
+  "history_pages": 9,
+  "passed": true
+}

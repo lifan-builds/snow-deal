@@ -19,12 +19,26 @@ def classify(product: Product) -> Classification | None:
         return None
     if re.search(r"\b(used|pre-owned|refurbished|reconditioned|recon|renewed|open.box|scratch|dent|demo|showroom|display model)\b", text):
         return None
-    if re.search(r"\b(accessories|parts|rests?|jigs?(?!\s+saws?\b)|templates?|blades|bits|cutters|knives|clamps|vises|guides|gauges|books|casters|storage|staples|sawhorses|abrasives|sanding paper|batteries and chargers|apparel|fasteners|hand tools|turning tools|consumables?)\b", kind):
+    if (kind == "oscillating tool access"
+            or re.search(r"\b(accessories|parts|rests?|jigs?(?!\s+saws?\b)|templates?|blades|bits|cutters|knives|clamps|vises|guides|gauges|books|casters|storage|staples|sawhorses|abrasives|sanding paper|batteries and chargers|apparel|fasteners|hand tools|turning tools|consumables?)\b", kind)):
         return None
     # Cyberweld's broad Welders type also contains standalone guns and feeders.
     # Explicitly included accessories do not replace the identity of the primary tool.
     primary_title = re.split(r"\s+(?:(?:with|including)\s+|w/\s*)", title, maxsplit=1)[0]
     primary_text = f"{primary_title} {kind}"
+    manual_pattern = r"(?:point drivers?|hack ?saws?|nut drivers?)"
+    manual_name = re.search(r"\b" + manual_pattern + r"\b", primary_title)
+    manual_identity = re.fullmatch(manual_pattern, kind) or manual_name
+    # Power Nut Driver is a bit description. Require a real powered descriptor
+    # on the primary identity, before compatibility text or included accessories.
+    compatibility = re.search(r"\b(?:for|compatible|fits?)\b", primary_title)
+    identity_title = primary_title[:compatibility.start()] if compatibility else primary_title
+    powered = bool(re.search(r"\b(?:electric|corded|cordless|pneumatic|powered)\b", identity_title)
+                   and not re.search(r"\b(?:manual(?:ly)?|non[- ]?powered|unpowered|hand[- ](?:powered|operated))\b",
+                                     identity_title))
+    if manual_identity and (not powered or (compatibility and manual_name
+                                           and compatibility.start() < manual_name.start())):
+        return None
     if ("spool guns & wire feeders" in tags
             or (tags & {"wire feeders", "wire feeder"}
                 and not re.search(r"\bwire feeder welder\b", primary_title))):
@@ -44,6 +58,8 @@ def classify(product: Product) -> Classification | None:
             r"\b(stands?|bags?|cases?|guards?|fences?|bases?|guides?)\b", accessory_head):
         return None
     # Replacement parts and consumables do not become machines because their title names one.
+    if re.search(r"\b(?:nut[- ]?setters?|sanding pads?)\b", primary_title):
+        return None
     if re.search(r"\b(?:abrasives|sanding (?:discs|belts|sheets))\s+for\b", primary_title):
         return None
     if re.search(r"\b(?:drill|driver|router) bits?\b", primary_title):
@@ -74,7 +90,8 @@ def classify(product: Product) -> Classification | None:
         category = "Workshop equipment"
     elif re.search(r"\b(combo|combination)\b.*\bkit\b|\b\d+[- ]tool\b.*\bkit\b", primary_title):
         category = "Combo kits"
-    elif (re.search(r"\b(drill|driver|impact wrench|saw|jigsaws?|oscillating (?:multi[- ]?)?tools?|grinder|sander|router|nailer|stapler|polisher|rotary hammer|demolition hammer|vacuum|vac)\b", primary_text)
+    elif ((manual_identity and powered)
+          or re.search(r"\b(drill|driver|impact wrench|saw|jigsaws?|oscillating (?:multi[- ]?)?tools?|grinder|sander|router|nailer|stapler|polisher|rotary hammer|demolition hammer|vacuum|vac)\b", primary_text)
           or (re.search(r"\bratchets?\b", primary_text) and re.search(r"\b(cordless|pneumatic|electric)\b", primary_text))):
         category = "Power tools"
     else:

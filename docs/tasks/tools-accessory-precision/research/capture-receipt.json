@@ -1,0 +1,72 @@
+[
+  {
+    "url": "https://www.maxwarehouse.com/products/fletcher-frame-master-point-driver-5-8.js?currency=USD",
+    "status": 200,
+    "at": "2026-11-06T00:07:30.685312+00:00",
+    "sha256": "449f9364bd36e1eebc2f0b1c2dec71d507ea07b8909c7b9979bbd36cdf8d53cc",
+    "file": ".local/source-expansion/tools-precision-20261106/merchant-evidence/00-product.gz"
+  },
+  {
+    "url": "https://www.maxwarehouse.com/products/fletcher-frame-master-point-driver-5-8?currency=USD",
+    "status": 200,
+    "at": "2026-11-06T00:07:33.485630+00:00",
+    "sha256": "9e8e1976cf1f856d048636ada1b81301cfdf373a0a5db15e79197331debe76a8",
+    "file": ".local/source-expansion/tools-precision-20261106/merchant-evidence/00-page.gz"
+  },
+  {
+    "url": "https://www.maxwarehouse.com/products/saw-minihack8-3-4stanly-pack-of-6.js?currency=USD",
+    "status": 200,
+    "at": "2026-11-06T00:07:35.722840+00:00",
+    "sha256": "1c619a86413b17e2110a1e1a24d7d041d8492fe100aba575f4d8ababf10ce34f",
+    "file": ".local/source-expansion/tools-precision-20261106/merchant-evidence/01-product.gz"
+  },
+  {
+    "url": "https://www.maxwarehouse.com/products/saw-minihack8-3-4stanly-pack-of-6?currency=USD",
+    "status": 200,
+    "at": "2026-11-06T00:07:38.361599+00:00",
+    "sha256": "f9bbbf458d749f020ba4a0e9c7f260d71077757c0f4e0efa5897232c6c66078e",
+    "file": ".local/source-expansion/tools-precision-20261106/merchant-evidence/01-page.gz"
+  },
+  {
+    "url": "https://www.maxwarehouse.com/products/irwin-1837536-5-16-x-1-7-8-impact-nutsetter.js?currency=USD",
+    "status": 200,
+    "at": "2026-11-06T00:07:40.644714+00:00",
+    "sha256": "b3a2a122c52702cd7b7d1d773d7a317fef276748f2cde40d64bdaad656e11f8f",
+    "file": ".local/source-expansion/tools-precision-20261106/merchant-evidence/02-product.gz"
+  },
+  {
+    "url": "https://www.maxwarehouse.com/products/irwin-1837536-5-16-x-1-7-8-impact-nutsetter?currency=USD",
+    "status": 200,
+    "at": "2026-11-06T00:07:43.316222+00:00",
+    "sha256": "3a1ecc2e6f03b43a4fb179ce01e8dfffe2f5f97967be879cf0be0b970ef69e13",
+    "file": ".local/source-expansion/tools-precision-20261106/merchant-evidence/02-page.gz"
+  },
+  {
+    "url": "https://www.maxwarehouse.com/products/irwin-1837533-1-4-x-1-7-8-impact-nutsetter.js?currency=USD",
+    "status": 200,
+    "at": "2026-11-06T00:07:45.524235+00:00",
+    "sha256": "c517631803c92c36f73c1087d26dd8914cb9a0efd7084f70327b99263520fd55",
+    "file": ".local/source-expansion/tools-precision-20261106/merchant-evidence/03-product.gz"
+  },
+  {
+    "url": "https://www.maxwarehouse.com/products/irwin-1837533-1-4-x-1-7-8-impact-nutsetter?currency=USD",
+    "status": 200,
+    "at": "2026-11-06T00:07:48.144948+00:00",
+    "sha256": "6583bb0aba25f9cf582af091f88aa556935ca6c349d79df5d6f5a4cbc386fc7d",
+    "file": ".local/source-expansion/tools-precision-20261106/merchant-evidence/03-page.gz"
+  },
+  {
+    "url": "https://www.maxwarehouse.com/products/oscillat-sanding-pad-2pk.js?currency=USD",
+    "status": 200,
+    "at": "2026-11-06T00:07:50.380835+00:00",
+    "sha256": "bcb0d6f6bb7eef32841db60c2bf5a3ad4c5fd0eac5d710ed48dad8642c18ea97",
+    "file": ".local/source-expansion/tools-precision-20261106/merchant-evidence/04-product.gz"
+  },
+  {
+    "url": "https://www.maxwarehouse.com/products/oscillat-sanding-pad-2pk?currency=USD",
+    "status": 200,
+    "at": "2026-11-06T00:07:53.074162+00:00",
+    "sha256": "10ccbed9aa733b481a7aa7ea7f03175757ec1352233032aefd54ebc4da1810bd",
+    "file": ".local/source-expansion/tools-precision-20261106/merchant-evidence/04-page.gz"
+  }
+]

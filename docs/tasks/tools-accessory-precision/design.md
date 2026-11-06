@@ -1,0 +1,7 @@
+# Change boundary
+
+The behavior belongs in catalogs/tools/src/tool_deals/catalog.py before generic saw/driver/oscillating-tool keyword admission. Reuse existing primary-title extraction so included accessories do not change complete-tool identity. Recognize observed accessory taxonomy and explicit sanding-pad/nutsetter identity. Treat ambiguous manual-tool categories conservatively while preserving genuine explicit electric/corded/cordless/pneumatic machine cases; the word Power in Power Nut Driver describes a bit and is not a motor. Compatibility text must not turn an accessory into equipment. Do not globally exclude pad, driver, saw or all unknown taxonomies.
+
+Implementation ownership: tools classifier and realistic regressions in catalogs/tools/tests/test_tools.py plus a compact fixture if useful. No common parser/schema changes are expected. Root owns captured primary evidence, controlled replay across all thirteen existing sources, refresh/audit, deployment and receipts. Review root replay for exact losses and unchanged survivor fields; review excluded titles without assuming all keyword suspects are errors. Source access/stock/history gates stay unchanged.
+
+The affected source scope is Max Warehouse and Fasteners Inc. Full-feed replay must account for exactly the six evidenced exclusions and preserve survivors byte-for-byte. Full-source fresh refreshes are separate observations; do not rewrite previous snapshots or observation timestamps to attribute ordinary inventory changes to classification.

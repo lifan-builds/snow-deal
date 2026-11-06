@@ -1,0 +1,64 @@
+[
+  {
+    "source": "Max Warehouse",
+    "status": "complete",
+    "errors": 0,
+    "pages": 6,
+    "collections": [
+      {
+        "url": "https://www.maxwarehouse.com/collections/power-tools?currency=USD",
+        "pages": 6,
+        "products": 236,
+        "status": "complete",
+        "observed_currency": "USD"
+      }
+    ],
+    "parsed_products": 236,
+    "accepted_products": 38
+  },
+  {
+    "source": "Fasteners Inc",
+    "status": "complete",
+    "errors": 0,
+    "pages": 19,
+    "collections": [
+      {
+        "url": "https://fastenersinc.myshopify.com/collections/power-tools?currency=USD",
+        "pages": 8,
+        "products": 100,
+        "status": "complete",
+        "observed_currency": "USD"
+      },
+      {
+        "url": "https://fastenersinc.myshopify.com/collections/power-tools-1?currency=USD",
+        "pages": 8,
+        "products": 78,
+        "status": "complete",
+        "observed_currency": "USD"
+      },
+      {
+        "url": "https://fastenersinc.myshopify.com/collections/machine-tools?currency=USD",
+        "pages": 1,
+        "products": 2,
+        "status": "complete",
+        "observed_currency": "USD"
+      },
+      {
+        "url": "https://fastenersinc.myshopify.com/collections/power-tool-closeouts?currency=USD",
+        "pages": 1,
+        "products": 2,
+        "status": "complete",
+        "observed_currency": "USD"
+      },
+      {
+        "url": "https://fastenersinc.myshopify.com/collections/all-closeouts?currency=USD",
+        "pages": 1,
+        "products": 31,
+        "status": "complete",
+        "observed_currency": "USD"
+      }
+    ],
+    "parsed_products": 213,
+    "accepted_products": 78
+  }
+]

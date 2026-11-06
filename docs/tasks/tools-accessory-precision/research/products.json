@@ -1,0 +1,110 @@
+[
+  {
+    "url": "https://www.maxwarehouse.com/products/fletcher-frame-master-point-driver-5-8?currency=USD",
+    "title": "Fletcher-Terry FrameMaster Flat 3/8 in. W Point Driver 1 pk",
+    "product_type": "Point Driver",
+    "vendor": "Fletcher-Terry",
+    "tags": [
+      "tier-discount-12"
+    ],
+    "variants": [
+      {
+        "id": 33430664966,
+        "title": "Default Title",
+        "sku": "ACE-1013200",
+        "available": true,
+        "price": 9843,
+        "compare_at_price": 11975,
+        "options": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  {
+    "url": "https://www.maxwarehouse.com/products/saw-minihack8-3-4stanly-pack-of-6?currency=USD",
+    "title": "Saw Minihack8-3/4\"Stanly (Pack Of 6)",
+    "product_type": "Hacksaw",
+    "vendor": "STANLEY",
+    "tags": [],
+    "variants": [
+      {
+        "id": 32574141595699,
+        "title": "Default Title",
+        "sku": "ACE-23479",
+        "available": true,
+        "price": 3167,
+        "compare_at_price": 3199,
+        "options": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  {
+    "url": "https://www.maxwarehouse.com/products/irwin-1837536-5-16-x-1-7-8-impact-nutsetter?currency=USD",
+    "title": "Irwin Impact Performance Series 5/16 in. Metric Lobular Power Nut Driver 1-7/8 in. L 1 pc",
+    "product_type": "Nut Driver",
+    "vendor": "IRWIN",
+    "tags": [
+      "tier-discount-11"
+    ],
+    "variants": [
+      {
+        "id": 35019588486,
+        "title": "Default Title",
+        "sku": "JEN-2616-0648",
+        "available": true,
+        "price": 509,
+        "compare_at_price": 599,
+        "options": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  {
+    "url": "https://www.maxwarehouse.com/products/irwin-1837533-1-4-x-1-7-8-impact-nutsetter?currency=USD",
+    "title": "Irwin Impact Performance 1/4 in. SAE Lobular Power Nut Driver 1-7/8 in. L 1 pc",
+    "product_type": "Nut Driver",
+    "vendor": "IRWIN",
+    "tags": [
+      "tier-discount-11"
+    ],
+    "variants": [
+      {
+        "id": 35021224646,
+        "title": "Default Title",
+        "sku": "JEN-2616-0630",
+        "available": true,
+        "price": 470,
+        "compare_at_price": 499,
+        "options": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  {
+    "url": "https://www.maxwarehouse.com/products/oscillat-sanding-pad-2pk?currency=USD",
+    "title": "Rockwell Metal Sanding Pad 1 in. 20000 rpm 2 pc",
+    "product_type": "Oscillating Tool Access",
+    "vendor": "Rockwell",
+    "tags": [
+      "tier-discount-11"
+    ],
+    "variants": [
+      {
+        "id": 52328609542,
+        "title": "Default Title",
+        "sku": "ACE-2617819",
+        "available": true,
+        "price": 1429,
+        "compare_at_price": 1443,
+        "options": [
+          "Default Title"
+        ]
+      }
+    ]
+  }
+]
