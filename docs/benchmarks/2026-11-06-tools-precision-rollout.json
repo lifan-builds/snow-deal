@@ -1,0 +1,379 @@
+{
+  "verified_at": "2026-11-06T00:37:31.469574+00:00",
+  "release": {
+    "headRefOid": "cb443e4e2d2d542e706a5f48c1e998d0b0ddeeac",
+    "mergeCommit": {
+      "oid": "379f154cc3b6ce98ef8876267e2de04c0cf6021e"
+    },
+    "mergedAt": "2026-11-06T00:27:14Z",
+    "number": 39,
+    "state": "MERGED",
+    "url": "https://github.com/lifan-builds/snow-deal/pull/39",
+    "ci_run": 42136768213,
+    "clean_tests": 1037,
+    "new_regression_cases": 44
+  },
+  "deployment": {
+    "id": "dpl_2t8oiPDG1ogQbCjvyQynr2f6LKeZ",
+    "url": "https://benchdrop-pf7xx3vq3-lifan-chens-projects.vercel.app",
+    "productionUrl": "https://benchdrop.clifan.com",
+    "readyState": "READY",
+    "target": "production"
+  },
+  "inventory": {
+    "qualifying_in_stock_listings": 934,
+    "deep_listings": 33,
+    "useful_retailers": [
+      "Beaver Industrial Supply",
+      "Cyberweld",
+      "Fasteners Inc",
+      "OakTree Supply",
+      "Taylor Toolworks",
+      "Tool Nut",
+      "Woodcraft"
+    ],
+    "fresh_sources": 13,
+    "reference_floor_usd": 200,
+    "deep_threshold_percent": 40,
+    "unrestricted_in_stock": 1033,
+    "previous_unrestricted_in_stock": 1039,
+    "checked_within_24h_percent": 100.0,
+    "p95_observation_age_hours": 3.578356406388889,
+    "measured_at": "2026-11-06T00:31:24.956501+00:00",
+    "scope": "Source-reported selected merchant listings, not deduplicated models or verified historical selling prices.",
+    "dead_offer_removal_delay": "unmeasured"
+  },
+  "controlled_replay": {
+    "classifier_sha256": "6da59931696ef9943fd4c46aba60c5e9cf17e87f79a6c7f9aacfabc29d81ed45",
+    "source_observation_times": {
+      "Fasteners Inc": "2026-11-06T00:14:24.160424+00:00",
+      "Max Warehouse": "2026-11-06T00:13:55.938654+00:00"
+    },
+    "replay": [
+      {
+        "source": "Max Warehouse",
+        "old": 43,
+        "new": 38,
+        "removed": [
+          "https://www.maxwarehouse.com/products/fletcher-frame-master-point-driver-5-8?currency=USD",
+          "https://www.maxwarehouse.com/products/irwin-1837533-1-4-x-1-7-8-impact-nutsetter?currency=USD",
+          "https://www.maxwarehouse.com/products/irwin-1837536-5-16-x-1-7-8-impact-nutsetter?currency=USD",
+          "https://www.maxwarehouse.com/products/oscillat-sanding-pad-2pk?currency=USD",
+          "https://www.maxwarehouse.com/products/saw-minihack8-3-4stanly-pack-of-6?currency=USD"
+        ],
+        "all_survivor_fields_equal": true,
+        "prepared_matches_final_code": true
+      },
+      {
+        "source": "Fasteners Inc",
+        "old": 79,
+        "new": 78,
+        "removed": [
+          "https://fastenersinc.myshopify.com/products/flex-fam10301-4?currency=USD"
+        ],
+        "all_survivor_fields_equal": true,
+        "prepared_matches_final_code": true
+      }
+    ],
+    "observations_rewritten": false,
+    "passed": true
+  },
+  "prepared_verification": {
+    "checked_at": "2026-11-06T00:15:50.401417+00:00",
+    "source_replay": [
+      {
+        "source": "Max Warehouse",
+        "old_source_products": 43,
+        "new_source_products": 38,
+        "removed": [
+          "https://www.maxwarehouse.com/products/fletcher-frame-master-point-driver-5-8?currency=USD",
+          "https://www.maxwarehouse.com/products/irwin-1837533-1-4-x-1-7-8-impact-nutsetter?currency=USD",
+          "https://www.maxwarehouse.com/products/irwin-1837536-5-16-x-1-7-8-impact-nutsetter?currency=USD",
+          "https://www.maxwarehouse.com/products/oscillat-sanding-pad-2pk?currency=USD",
+          "https://www.maxwarehouse.com/products/saw-minihack8-3-4stanly-pack-of-6?currency=USD"
+        ],
+        "survivors_identical": true
+      },
+      {
+        "source": "Fasteners Inc",
+        "old_source_products": 79,
+        "new_source_products": 78,
+        "removed": [
+          "https://fastenersinc.myshopify.com/products/flex-fam10301-4?currency=USD"
+        ],
+        "survivors_identical": true
+      }
+    ],
+    "survivors_identical": true,
+    "all_other_sources_identical": true,
+    "prior_history_rows": 34,
+    "new_history_rows": 36,
+    "prior_history_preserved": true,
+    "default_qualifying": 934,
+    "deep": 33,
+    "all_floor_in_stock": 1033,
+    "fixed_sample": 30,
+    "targeted_source_sample": 116,
+    "selected_audit_offers": 143,
+    "passed": true
+  },
+  "fresh_source_metadata_change": {
+    "name": "Milwaukee Tool 2739-21HD M18 FUEL 12\" Dual Bevel Sliding Compound Miter Saw",
+    "url": "https://fastenersinc.myshopify.com/products/milwaukee-2739-21hd-m18-fuel-12-in-dual-bevel-sliding-compound-miter-saw-kit?currency=USD",
+    "differences": {
+      "brand": {
+        "before": "Milwaukee Tool",
+        "after": "Milwaukee"
+      }
+    }
+  },
+  "public_asset": {
+    "asset": "tools.db",
+    "expected": "abf7a8f5f4971d1bfc9025cfb52933a30b8f45eb1de7a7fb2843982c12389a3b",
+    "provider_download_sha256": "abf7a8f5f4971d1bfc9025cfb52933a30b8f45eb1de7a7fb2843982c12389a3b",
+    "canonical_download_sha256": "abf7a8f5f4971d1bfc9025cfb52933a30b8f45eb1de7a7fb2843982c12389a3b",
+    "canonical_attempts": [
+      {
+        "at": "initial-after-upload",
+        "path": "published/tools.db",
+        "sha256": "0c67f991589eb7f38ac839162ca599608c240c54e89362652153f2b5c95f5936"
+      },
+      {
+        "at": "2026-11-06T00:29:34.290784+00:00",
+        "path": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/source-expansion/tools-precision-20261106/public-retry-1/tools.db",
+        "sha256": "abf7a8f5f4971d1bfc9025cfb52933a30b8f45eb1de7a7fb2843982c12389a3b"
+      }
+    ],
+    "passed": true
+  },
+  "package_equivalence": {
+    "release_commit": "cb443e4e2d2d542e706a5f48c1e998d0b0ddeeac",
+    "tracked_runtime_files_equal": 44,
+    "circle_excluded": true,
+    "packaged_source_and_history_rows_exact": true,
+    "prepared_asset_sha256": "abf7a8f5f4971d1bfc9025cfb52933a30b8f45eb1de7a7fb2843982c12389a3b",
+    "package_sha256": "436e54b28caaf634c17790e022f3387b16832410f90aae4c3f46128cef0f9967",
+    "passed": true
+  },
+  "live_verification": {
+    "checked_at": "2026-11-06T00:31:24.956501+00:00",
+    "live": true,
+    "site": "https://benchdrop.clifan.com",
+    "health": {
+      "catalog": "tools",
+      "snapshot_sha256": "0883ddcc9499491dccfceb723551fcdb72a03c5f932d15deb340e53de657e751",
+      "fresh_sources": 13,
+      "configured_sources": 13,
+      "status": "ready"
+    },
+    "routes": [
+      {
+        "params": {},
+        "count": 24,
+        "total": "1037",
+        "passed": true
+      },
+      {
+        "params": {
+          "stock": "true"
+        },
+        "count": 24,
+        "total": "934",
+        "passed": true
+      },
+      {
+        "params": {
+          "stock": "true",
+          "min_discount": 40
+        },
+        "count": 24,
+        "total": "33",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "stock": "true",
+          "format": "Kit"
+        },
+        "count": 24,
+        "total": "65",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "q": "Impact Driver",
+          "stock": "true"
+        },
+        "count": 21,
+        "total": "21",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Max Warehouse",
+          "stock": "true",
+          "page": 1
+        },
+        "count": 24,
+        "total": "38",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Max Warehouse",
+          "stock": "true",
+          "page": 2
+        },
+        "count": 14,
+        "total": "38",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Fasteners Inc",
+          "stock": "true",
+          "page": 1
+        },
+        "count": 24,
+        "total": "78",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Fasteners Inc",
+          "stock": "true",
+          "page": 2
+        },
+        "count": 24,
+        "total": "78",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Fasteners Inc",
+          "stock": "true",
+          "page": 3
+        },
+        "count": 24,
+        "total": "78",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Fasteners Inc",
+          "stock": "true",
+          "page": 4
+        },
+        "count": 6,
+        "total": "78",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Max Warehouse",
+          "q": "Fletcher-Terry FrameMaster Flat 3/8 in. W Point Driver 1 pk"
+        },
+        "count": 0,
+        "total": "0",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Max Warehouse",
+          "q": "Saw Minihack8-3/4\"Stanly (Pack Of 6)"
+        },
+        "count": 0,
+        "total": "0",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Max Warehouse",
+          "q": "Irwin Impact Performance Series 5/16 in. Metric Lobular Power Nut Driver 1-7/8 in. L 1 pc"
+        },
+        "count": 0,
+        "total": "0",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Max Warehouse",
+          "q": "Irwin Impact Performance 1/4 in. SAE Lobular Power Nut Driver 1-7/8 in. L 1 pc"
+        },
+        "count": 0,
+        "total": "0",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Max Warehouse",
+          "q": "Rockwell Metal Sanding Pad 1 in. 20000 rpm 2 pc"
+        },
+        "count": 0,
+        "total": "0",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Fasteners Inc",
+          "q": "FLEX FAM10301-4 2-9/16 in 4-Piece Impact Magnetic Nut Driver Set"
+        },
+        "count": 0,
+        "total": "0",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Fasteners Inc",
+          "q": "Milwaukee Tool 2739-21HD M18 FUEL 12\" Dual Bevel Sliding Compound Miter Saw"
+        },
+        "count": 1,
+        "total": "1",
+        "passed": true
+      }
+    ],
+    "selected_card_comparisons": 234,
+    "all_targeted_destinations": 116,
+    "excluded_false_positives": 6,
+    "history_pages": 9,
+    "passed": true
+  },
+  "merchant_audit": {
+    "fixed_sample_size": 30,
+    "match": 30,
+    "seed": 20261106,
+    "displayed_within_15_minutes": true,
+    "production_audit": "docs/tasks/tools-accessory-precision/research/production-merchant-audit.json",
+    "production_display": "docs/tasks/tools-accessory-precision/research/production-sample-display.json",
+    "prepublication_full_audit": {
+      "selected_offers": 143,
+      "match": 143,
+      "affected_source_survivors": 116,
+      "evidence": "docs/tasks/tools-accessory-precision/research/merchant-audit.json"
+    },
+    "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation"
+  },
+  "limitations": [
+    "Six exclusions are below the default reference floor; no deep-deal growth or metric lead is attributed to them.",
+    "Fixed 30/30 is not proof of 99 percent population accuracy. Targeted checks do not enlarge the random sample.",
+    "No checkout, landed total or historical street-price verification.",
+    "Other retailers retain their original successful observation times.",
+    "Initial canonical asset download returned old bytes; retained failure evidence, then verified provider and subsequent canonical downloads before deployment.",
+    "Dead-offer removal delay is unmeasured; freshness percentage and p95 age do not establish that delay."
+  ]
+}
