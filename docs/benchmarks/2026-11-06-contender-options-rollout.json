@@ -1,0 +1,334 @@
+{
+  "catalog": "cycling",
+  "site": "https://bigring.clifan.com",
+  "status": "complete",
+  "recorded_at": "2026-11-06T01:54:01.800174+00:00",
+  "pull_request": "https://github.com/lifan-builds/snow-deal/pull/43",
+  "head": "d38b781d072cbb8ba3f42f0a79eca861d962f39e",
+  "merge": "7f2ad68e464a64b44317c275a43eefc6cce7c3c4",
+  "merged_at": "2026-11-06T01:48:28Z",
+  "ci": {
+    "run": 42146106040,
+    "tests": 1133,
+    "warnings": 9,
+    "conclusion": "success",
+    "lint": "passed",
+    "preview": "passed"
+  },
+  "source_change": {
+    "name": "Contender Bicycles",
+    "observed_at": "2026-11-06T01:32:26.781135+00:00",
+    "pages": 2,
+    "raw_variants_examined": 3726,
+    "old_parsed": 393,
+    "new_parsed": 392,
+    "old_accepted": 183,
+    "new_accepted": 182,
+    "excluded_generated_offers": 7,
+    "ordinary_offers_preserved_exactly": 524,
+    "separate_fresh_feed_removal": "BMC Fourstroke R 01 ONE 2026 no longer in complete sale collection",
+    "other_source_rows_unchanged": 20
+  },
+  "inventory": {
+    "in_stock_default": 1475,
+    "deep_in_stock_default": 203,
+    "fresh_sources": 21,
+    "configured_sources": 21
+  },
+  "history": {
+    "before": 58,
+    "after": 59,
+    "all_prior_rows_exact": true
+  },
+  "asset": {
+    "checked_at": "2026-11-06T01:49:43.399287+00:00",
+    "asset_id": 715528298,
+    "expected_sha256": "63a0758cd736435780ceaec334a1cae2aedf91b384ead457e540746eb2f689ba",
+    "expected_size": 10309632,
+    "provider_sha256": "63a0758cd736435780ceaec334a1cae2aedf91b384ead457e540746eb2f689ba",
+    "provider_size": 10309632,
+    "initial_canonical_restore": "rejected byte length mismatch; no destination created",
+    "canonical_pending": false,
+    "canonical_sha256": "63a0758cd736435780ceaec334a1cae2aedf91b384ead457e540746eb2f689ba",
+    "canonical_verified_at": "2026-11-06T01:50:13.219285+00:00",
+    "passed": true,
+    "initial_failure_limit": "Failed temporary bytes were cleaned; exact identity of mismatched content was not established. Cache propagation is only a possible explanation."
+  },
+  "deployment": {
+    "id": "dpl_3bxWtToYWMuwtA4UzjwmC1Ptp9BL",
+    "url": "https://bigring-jzzylmjak-lifan-chens-projects.vercel.app",
+    "productionUrl": "https://bigring.clifan.com",
+    "readyState": "READY",
+    "target": "production"
+  },
+  "runtime": {
+    "tracked_files_match_merged_commit": 42,
+    "inactive_circle_excluded": true
+  },
+  "production_health": {
+    "catalog": "cycling",
+    "snapshot_sha256": "ee3995e39b2a759c029685976100f7ef4145e1af21df4407c5f43c5b57a665ba",
+    "fresh_sources": 21,
+    "configured_sources": 21,
+    "status": "ready"
+  },
+  "live_semantic_verification": {
+    "checked_at": "2026-11-06T01:50:56.398174+00:00",
+    "live": true,
+    "site": "https://bigring.clifan.com",
+    "health": {
+      "catalog": "cycling",
+      "snapshot_sha256": "ee3995e39b2a759c029685976100f7ef4145e1af21df4407c5f43c5b57a665ba",
+      "fresh_sources": 21,
+      "configured_sources": 21,
+      "status": "ready"
+    },
+    "routes": [
+      {
+        "params": {},
+        "count": 24,
+        "total": "1502",
+        "passed": true
+      },
+      {
+        "params": {
+          "stock": "true"
+        },
+        "count": 24,
+        "total": "1475",
+        "passed": true
+      },
+      {
+        "params": {
+          "stock": "true",
+          "min_discount": 40
+        },
+        "count": 24,
+        "total": "203",
+        "passed": true
+      },
+      {
+        "params": {
+          "store": "Contender Bicycles",
+          "size": "M",
+          "stock": "true"
+        },
+        "count": 24,
+        "total": "59",
+        "passed": true
+      },
+      {
+        "params": {
+          "store": "Contender Bicycles",
+          "size": "S",
+          "stock": "true"
+        },
+        "count": 24,
+        "total": "41",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Contender Bicycles",
+          "stock": "true",
+          "page": 1
+        },
+        "count": 24,
+        "total": "182",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Contender Bicycles",
+          "stock": "true",
+          "page": 2
+        },
+        "count": 24,
+        "total": "182",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Contender Bicycles",
+          "stock": "true",
+          "page": 3
+        },
+        "count": 24,
+        "total": "182",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Contender Bicycles",
+          "stock": "true",
+          "page": 4
+        },
+        "count": 24,
+        "total": "182",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Contender Bicycles",
+          "stock": "true",
+          "page": 5
+        },
+        "count": 24,
+        "total": "182",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Contender Bicycles",
+          "stock": "true",
+          "page": 6
+        },
+        "count": 24,
+        "total": "182",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Contender Bicycles",
+          "stock": "true",
+          "page": 7
+        },
+        "count": 24,
+        "total": "182",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Contender Bicycles",
+          "stock": "true",
+          "page": 8
+        },
+        "count": 14,
+        "total": "182",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Contender Bicycles",
+          "size": "M #MWS Options 1"
+        },
+        "count": 0,
+        "total": "0",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Contender Bicycles",
+          "size": "S #MWS Options 7"
+        },
+        "count": 0,
+        "total": "0",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Contender Bicycles",
+          "size": "XS #MWS Options 5"
+        },
+        "count": 0,
+        "total": "0",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Contender Bicycles",
+          "size": "XL #MWS Options 9"
+        },
+        "count": 0,
+        "total": "0",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Contender Bicycles",
+          "size": "M #MWS Options 11"
+        },
+        "count": 0,
+        "total": "0",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Contender Bicycles",
+          "size": "S #MWS Options 5"
+        },
+        "count": 0,
+        "total": "0",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Contender Bicycles",
+          "size": "S #MWS Options 13"
+        },
+        "count": 0,
+        "total": "0",
+        "passed": true
+      },
+      {
+        "params": {
+          "min_reference": 0,
+          "store": "Contender Bicycles",
+          "q": "OPEN UP 2.0 Frameset"
+        },
+        "count": 0,
+        "total": "0",
+        "passed": true
+      }
+    ],
+    "card_comparisons": 302,
+    "targeted_destinations": 182,
+    "generated_sizes_absent": true,
+    "history_pages": 10,
+    "passed": true
+  },
+  "prepublication_merchant_audit": {
+    "sample": 209,
+    "match": 209,
+    "mismatch": 0,
+    "inconclusive": 0,
+    "affected_source_sample": 182,
+    "fixed_standard_sample": 30,
+    "overlap": 3,
+    "all_within_15_minutes": true
+  },
+  "limitations": [
+    "No checkout purchase performed",
+    "Retailer reference is not independently verified historical selling price",
+    "No additional competitive metric lead claimed",
+    "Generated historical observations retained unchanged"
+  ],
+  "production_merchant_audit": {
+    "checked_at": "2026-11-06T01:53:22.705976+00:00",
+    "first_display_at": "2026-11-06T01:51:05.607786+00:00",
+    "seed": 20261106,
+    "sample_size": 30,
+    "match": 30,
+    "mismatch": 0,
+    "inconclusive": 0,
+    "verified_match_percent": 100.0,
+    "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+    "within_display_window": true,
+    "passed": true
+  }
+}
