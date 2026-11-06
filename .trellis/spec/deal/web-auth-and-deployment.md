@@ -15,3 +15,9 @@ See docs/project-guidance/web-auth-and-deployment.md for exact-byte gzip packagi
 ## Shared catalog size facets
 
 See docs/project-guidance/web-auth-and-deployment.md for the existing-size-key facet grouping contract, stable original-label representatives, legacy/unknown request selection, raw offer/history preservation and required query/HTTP regression cases. This is presentation normalization, not expanded fit matching.
+
+## Catalog release asset integrity
+
+`scripts/restore_catalog.py` requires unique selected asset metadata: uploaded state, positive integer size (excluding bool) within the existing 100 MiB budget, and strict `sha256:` plus 64 hexadecimal characters. Reject missing/malformed metadata before destination setup or download, including bootstrap requests. Only an explicitly absent asset in well-formed metadata can authorize first-run bootstrap.
+
+See docs/project-guidance/web-auth-and-deployment.md for incremental streaming length/hash verification before SQLite, exact successful snapshot/history bytes, temporary cleanup and atomic placement. Preserve fixed download URLs, metadata-only authentication, overwrite refusal and SQLite/catalog checks. Integrity failures cannot become bootstrap or trigger automatic retries; valid stale/same-sized changed SQLite must fail against the pinned metadata.

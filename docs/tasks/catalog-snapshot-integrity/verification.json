@@ -1,0 +1,18 @@
+{
+  "verified_at": "2026-11-06T00:52:45.802593+00:00",
+  "script_sha256": "04cd373b76eb6a807708adf65adcba943cfa1821f560c170f756b209c0ceadb8",
+  "clean_tree": {
+    "tree": "47d81aa1565b68c5914452d129ccba323a497af2",
+    "circle_excluded": true
+  },
+  "clean_tests": 1109,
+  "shared_tests": 1202,
+  "inactive_circle_tests_excluded": 93,
+  "focused_restore_tests": 79,
+  "existing_warnings": 8,
+  "retained_stale_reproduction": "research/fixed-reproduction.json",
+  "live_restores": "research/live-verification.json",
+  "public_assets_mutated": false,
+  "manual_refresh_or_deploy": false,
+  "publication": "Prepublication verification receipt; GitHub PR and merge state establish publication separately."
+}

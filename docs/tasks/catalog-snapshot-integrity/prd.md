@@ -1,0 +1,9 @@
+# Catalog snapshot integrity
+
+The previous production rollout demonstrated that restore_catalog accepted older, valid SQLite bytes while GitHub metadata already described the replacement asset. This can discard recent history on the next publication.
+
+Require the restored bytes to match the selected public release asset's positive integer size and supported SHA-256 digest, within the existing 100 MiB download budget. Missing/malformed metadata, incomplete asset state, mismatched/truncated/oversized bytes or wrong digest must fail without creating the destination, including when bootstrap is requested. Preserve successful byte identity and all history, fixed URL construction, metadata-only authentication, explicit missing-asset bootstrap, existing overwrite refusal, SQLite integrity and catalog checks.
+
+Boundary: scripts/restore_catalog.py and common/tests/test_catalog_restore.py implement and verify the behavior. docs/project-guidance/web-auth-and-deployment.md plus its Trellis mirror capture the contract. Root owns task/research/status docs. No runtime rendering, source/parser/ranking/schema changes, cloud upload, source refresh or deployment is required. No generic downloader abstraction or automatic retry; a mismatch fails explicitly and a later invocation may retry after publication settles. Both live catalog assets expose valid size/digest today. This verifies the pinned metadata's byte identity, not a promise that no publisher can replace an asset after metadata is read.
+
+Acceptance: matching current bytes restore exactly; valid stale SQLite including same-length changes rejected; missing/null/malformed digest and sizes rejected before asset request; all existing auth/bootstrap/catalog safeguards hold; offline suite and CI pass; read-only fresh restores of both public assets match captured current metadata. Publish reviewed code under existing standing approval. No new competitive score is claimed.

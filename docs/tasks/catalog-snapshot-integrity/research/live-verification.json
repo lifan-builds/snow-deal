@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-11-06T00:52:45.802593+00:00",
+  "metadata_before": [
+    {
+      "digest": "sha256:2121c10a46a614c5ce48ed193b29cf96b31d5f7bc051674ad1c4e4e632719542",
+      "name": "cycling.db",
+      "size": 10182656,
+      "state": "uploaded",
+      "updated_at": "2026-11-05T23:30:04Z"
+    },
+    {
+      "digest": "sha256:abf7a8f5f4971d1bfc9025cfb52933a30b8f45eb1de7a7fb2843982c12389a3b",
+      "name": "tools.db",
+      "size": 3239936,
+      "state": "uploaded",
+      "updated_at": "2026-11-06T00:27:44Z"
+    }
+  ],
+  "metadata_after_unchanged": true,
+  "restores": [
+    {
+      "catalog": "cycling",
+      "bytes": 10182656,
+      "sha256": "2121c10a46a614c5ce48ed193b29cf96b31d5f7bc051674ad1c4e4e632719542",
+      "sources": 21,
+      "history_rows": 58,
+      "result": "restored",
+      "read_only_checks_preserve_bytes": true
+    },
+    {
+      "catalog": "tools",
+      "bytes": 3239936,
+      "sha256": "abf7a8f5f4971d1bfc9025cfb52933a30b8f45eb1de7a7fb2843982c12389a3b",
+      "sources": 13,
+      "history_rows": 36,
+      "result": "restored",
+      "read_only_checks_preserve_bytes": true
+    }
+  ],
+  "restore_script_sha256": "04cd373b76eb6a807708adf65adcba943cfa1821f560c170f756b209c0ceadb8",
+  "passed": true,
+  "scope": "Read-only validation of explicitly downloaded public snapshots. No source refresh, upload, or deployment."
+}
