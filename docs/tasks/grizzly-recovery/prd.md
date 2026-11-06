@@ -1,6 +1,6 @@
 # Grizzly access recovery and equipment recall
 
-Status: research/admission in progress. Grizzly remains quarantined in production.
+Status: runner admission failed with HTTP 403 on November 5; Grizzly remains excluded. Workflow-only release completed review. Classifier research is deferred.
 
 The November 3 production runner could not access Grizzly (HTTP403), so it was removed rather than serving stale offers. A November 5 local public request returns200 and the unchanged parser traverses26pages, producing43accepted products and26 qualifying in-stock listings, including2deep deals. All26 merchant checks pass locally. The public web-search fetch still receives403; local access alone does not prove scheduled-runner availability.
 

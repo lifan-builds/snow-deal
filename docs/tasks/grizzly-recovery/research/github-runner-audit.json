@@ -1,0 +1,20 @@
+{
+  "source": "Grizzly Industrial",
+  "date": "2026-11-05T23:57:54.698498+00:00",
+  "seed": 20261105,
+  "method": "top10-plus-seeded20-plus-all-deep-listings-v1",
+  "population": 0,
+  "fixed_sample_size": 0,
+  "deep_selected_listings": 0,
+  "selected_offers": 0,
+  "refresh_complete": false,
+  "passed": false,
+  "sample_size": 0,
+  "match": 0,
+  "mismatch": 0,
+  "inconclusive": 0,
+  "verified_match_percent": null,
+  "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+  "results": [],
+  "reason": "Source refresh incomplete; merchant audit was not started"
+}
