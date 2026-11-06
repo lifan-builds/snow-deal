@@ -1,0 +1,39 @@
+[
+  {
+    "candidate": {
+      "catalog": "tools",
+      "name": "Sawtooth Supplies",
+      "domain": "sawtoothsupplies.com",
+      "scrape_urls": [
+        "https://sawtoothsupplies.com/collections/maksiwa?currency=USD"
+      ]
+    },
+    "checked_at": "2026-11-06T03:32:22.465168+00:00",
+    "snapshot": "00-tools.db",
+    "refresh": {
+      "source": "Sawtooth Supplies",
+      "status": "complete",
+      "errors": 0,
+      "pages": 1,
+      "collections": [
+        {
+          "url": "https://sawtoothsupplies.com/collections/maksiwa?currency=USD",
+          "pages": 1,
+          "products": 8,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "parsed_products": 8,
+      "accepted_products": 2
+    },
+    "eligible_listings": 2,
+    "deep_listings": 0,
+    "disposition": "merchant-audited-needs-review",
+    "merchant_audit": {
+      "receipt": "00-tools-merchant-audit.json",
+      "passed": true,
+      "sample_size": 2
+    }
+  }
+]

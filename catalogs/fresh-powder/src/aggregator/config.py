@@ -94,13 +94,13 @@ STORES: list[StoreConfig] = [
         parser_type="shopify",
     ),
     StoreConfig(
-        "The Circle Whistler", "thecirclewhistler.com",
+        "The Circle Whistler", "www.thecirclewhistler.com",
         scrape_urls=[
             "https://www.thecirclewhistler.com/sale/",
             "https://www.thecirclewhistler.com/snow/",
         ],
         parser_type="thecircle",
-        use_browser=True,
+        use_browser=False,
         tax_free=True, currency="CAD",
     ),
     StoreConfig(

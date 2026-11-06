@@ -1,0 +1,62 @@
+{
+  "id": 68415862,
+  "vid": 115900092,
+  "image": "https://cdn.shoplightspeed.com/shops/628048/files/72708060/50x50x2/union-ultra-mens-snowboard-binding-2026.jpg",
+  "image_id": 72708060,
+  "brand": {
+    "id": 1165528,
+    "image": "https://cdn.shoplightspeed.com/assets/blank.gif?2026-09-24",
+    "url": "https://www.thecirclewhistler.com/brands/union/",
+    "title": "Union"
+  },
+  "sku": "11020100",
+  "url": "https://www.thecirclewhistler.com/ultra-mens-snowboard-binding-68415862.html",
+  "title": "Ultra Mens Snowboard Binding 2026",
+  "variant": "\"Color: Black\",\"Size: S\"",
+  "stock": {
+    "available": true,
+    "on_stock": true,
+    "track": true,
+    "allow_outofstock_sale": false,
+    "level": 1,
+    "minimum": 1,
+    "maximum": 1,
+    "delivery": false
+  },
+  "images": [
+    "https://cdn.shoplightspeed.com/shops/628048/files/72708060/50x50x2/union-ultra-mens-snowboard-binding-2026-0.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/72708059/50x50x2/union-ultra-mens-snowboard-binding-2026-1.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/72708062/50x50x2/union-ultra-mens-snowboard-binding-2026-2.jpg"
+  ],
+  "price": {
+    "price": 239.99,
+    "price_old": 399.99,
+    "price_money_with_currency": "C$239.99 CAD",
+    "price_old_money_with_currency": "C$399.99 CAD"
+  },
+  "variants": {
+    "115900092": {
+      "id": 115900092,
+      "sku": "11020100",
+      "url": "https://www.thecirclewhistler.com/ultra-mens-snowboard-binding-68415862.html?id=115900092",
+      "title": "\"Color: Black\",\"Size: S\"",
+      "image": 72708060,
+      "stock": {
+        "available": true,
+        "on_stock": true,
+        "track": true,
+        "level": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 239.99,
+        "price_old": 399.99,
+        "price_money_with_currency": "C$239.99 CAD",
+        "price_old_money_with_currency": "C$399.99 CAD"
+      }
+    }
+  }
+}

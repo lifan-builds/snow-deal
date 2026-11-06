@@ -1,0 +1,36 @@
+{
+  "merchant_facts": [
+    {
+      "url": "https://www.thecirclewhistler.com/unido-lila-unicorn-snowsuit.ajax",
+      "at": "2026-11-05T22:54:11.480317+00:00",
+      "sha256": "7e014deb3f42e775fc6023b87272c0c446b0eeab398168405af1da2df2b2d2fb",
+      "id": 64344283,
+      "brand": {
+        "id": 2689109,
+        "image": "https://cdn.shoplightspeed.com/shops/628048/files/69991579/50x50x2/weedo.jpg",
+        "url": "https://www.thecirclewhistler.com/brands/weedo/",
+        "title": "Weedo"
+      },
+      "title": "UniDo Lilac Unicorn Snowsuit 2026 XL",
+      "description": "Designed for skiing, snowboarding and all-day play in the snow, this fun one-piece snowsuit has a playful unicorn inspired design. XL should fit approximately ages 10\u201312 years, for a child around 140\u2013152 cm (4'7\"\u20135'0\") tall"
+    },
+    {
+      "url": "https://www.thecirclewhistler.com/short-sleeve-top-knit.ajax",
+      "at": "2026-11-06T03:02:38.409462+00:00",
+      "sha256": "839dc25d3bb1401f5abb2379eec920424c49c3c8b15a3a93fd39dfc7bc46bcf7",
+      "id": 69090216,
+      "brand": {
+        "id": 2212719,
+        "image": "https://cdn.shoplightspeed.com/assets/blank.gif?2026-09-24",
+        "url": "https://www.thecirclewhistler.com/brands/miles/",
+        "title": "Miles"
+      },
+      "title": "Short Sleeve Top Knit",
+      "description": "Miles the Label Short Sleeve Top Knit"
+    }
+  ],
+  "primary_manufacturer_size_chart": "https://milesthelabel.com/en-us/pages/size-chart",
+  "chart_read_at": "2026-11-06",
+  "chart_facts": "Miles The Label explicitly labels sizes2-14 as Kids; numeric sizes alone remain ambiguous for other brands. Merchant brand2212719 /brands/miles/ has an exact Miles the Label description on Short Sleeve Top Knit.",
+  "other_evidence": "Exact merchant size labels include12-18M,8-9Y,4T and110/116 (5-6Y). Retain every raw option, never derive stock/price from age classification."
+}

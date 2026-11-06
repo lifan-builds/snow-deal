@@ -1,0 +1,54 @@
+{
+  "method": "Read-only exact merchant product HTML for three non-default in-stock variants, compared with separately captured public AJAX facts. No cart actions.",
+  "checks": [
+    {
+      "at": "2026-11-05T22:51:34.642750+00:00",
+      "url": "https://www.thecirclewhistler.com/mens-tm-2-xlt-x-helgason-snowboard-boot.html?id=115633113",
+      "response_sha256": "3b9c94b6bde7f2935518322fc0999e770d4b16e6ceb3e819ee6ba1733ce22f32",
+      "product_id": "68658722",
+      "expected_variant": "115633113",
+      "actual_variant": "115633113",
+      "name": "Mens TM-2 XLT x Helgason Snowboard Boot",
+      "options": {
+        "matrix[color]": "Black / White",
+        "matrix[size]": "8"
+      },
+      "price_label": "C$317.99",
+      "reference_label": "C$529.99",
+      "form_action": "https://www.thecirclewhistler.com/cart/add/115633113/"
+    },
+    {
+      "at": "2026-11-05T22:51:37.086386+00:00",
+      "url": "https://www.thecirclewhistler.com/stance-wmns-all-mountain-bahama-snowboard-socks.html?id=34606556",
+      "response_sha256": "c89d1b88937aea8e072a6d546c1fd1b7cbd0c19984d1b81e6a7664a529a4ea48",
+      "product_id": "20862092",
+      "expected_variant": "34606556",
+      "actual_variant": "34606556",
+      "name": "Women's Stance All Mountain Bahama  Snowboard Socks",
+      "options": {
+        "matrix[color]": "Multi",
+        "matrix[size]": "M"
+      },
+      "price_label": "C$24.99",
+      "reference_label": "C$49.99",
+      "form_action": "https://www.thecirclewhistler.com/cart/add/34606556/"
+    },
+    {
+      "at": "2026-11-05T22:51:39.606150+00:00",
+      "url": "https://www.thecirclewhistler.com/layover-20-pants.html?id=71619583",
+      "response_sha256": "53e7f200ba6678a2713803dcf8e158c7c4976229898037cf65b64bdf346559c5",
+      "product_id": "43578349",
+      "expected_variant": "71619583",
+      "actual_variant": "71619583",
+      "name": "Layover 2.0 Pants",
+      "options": {
+        "matrix[color]": "Black",
+        "matrix[size]": "30"
+      },
+      "price_label": "C$90.99",
+      "reference_label": "C$129.99",
+      "form_action": "https://www.thecirclewhistler.com/cart/add/71619583/"
+    }
+  ],
+  "limitations": "Research samples only; not complete-source admission, checkout, historical price validation or competitive accuracy."
+}

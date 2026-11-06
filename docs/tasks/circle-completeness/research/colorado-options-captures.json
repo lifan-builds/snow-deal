@@ -1,0 +1,37 @@
+[
+  {
+    "product": "https://www.coloradodiscountskis.com/store/Atomic_2026_Redster_Q9_Revo_I12GW.html",
+    "at": "2026-11-06T02:43:18.470914+00:00",
+    "status": 200,
+    "sha256": "abac793452b20a14500de79e4f1967ec8b14a9d91f8ce63e56891581ef26fa1e",
+    "file": "options-0.txt.gz"
+  },
+  {
+    "product": "https://www.coloradodiscountskis.com/store/Atomic_26_Redster_G9_RSM_RSVK_176.html",
+    "at": "2026-11-06T02:43:19.697946+00:00",
+    "status": 200,
+    "sha256": "499679c371c0d9599d2c5f771e0817a41bfcc3b7bd801719c701323649fe4963",
+    "file": "options-1.txt.gz"
+  },
+  {
+    "product": "https://www.coloradodiscountskis.com/store/Atomic_2026_Redster_FIS_BlkHelmet.html",
+    "at": "2026-11-06T02:43:20.819365+00:00",
+    "status": 200,
+    "sha256": "3ad2d772105839cdef680f369665689d1c71c9c862969d8b735d3bd25b4e9e01",
+    "file": "options-2.txt.gz"
+  },
+  {
+    "product": "https://www.coloradodiscountskis.com/store/Ogasaka_Keos_1pr_Skis.html",
+    "at": "2026-11-06T02:43:21.927624+00:00",
+    "status": 200,
+    "sha256": "d9e0dfa86f133c4583ebafaa22e45271fe91a0fe24e9477ed446deae64b5f08b",
+    "file": "options-3.txt.gz"
+  },
+  {
+    "product": "https://www.coloradodiscountskis.com/store/Ogasaka_Unity_USX_Skis.html",
+    "at": "2026-11-06T02:43:23.036207+00:00",
+    "status": 200,
+    "sha256": "b6963ab60a6855a9ca29b1ff9f1b8b81c987a3d59a1283f6deb565f390ee3e04",
+    "file": "options-4.txt.gz"
+  }
+]

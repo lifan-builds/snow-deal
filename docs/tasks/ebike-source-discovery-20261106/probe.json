@@ -1,0 +1,76 @@
+[
+  {
+    "candidate": {
+      "catalog": "cycling",
+      "name": "Aventon",
+      "domain": "www.aventon.com",
+      "scrape_urls": [
+        "https://www.aventon.com/collections/sale?currency=USD"
+      ]
+    },
+    "checked_at": "2026-11-06T03:33:50.020134+00:00",
+    "snapshot": "00-cycling.db",
+    "refresh": {
+      "source": "Aventon",
+      "status": "complete",
+      "errors": 0,
+      "pages": 1,
+      "collections": [
+        {
+          "url": "https://www.aventon.com/collections/sale?currency=USD",
+          "pages": 1,
+          "products": 5,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "parsed_products": 5,
+      "accepted_products": 5
+    },
+    "eligible_listings": 5,
+    "deep_listings": 0,
+    "disposition": "merchant-audited-needs-review",
+    "merchant_audit": {
+      "receipt": "00-cycling-merchant-audit.json",
+      "passed": true,
+      "sample_size": 5
+    }
+  },
+  {
+    "candidate": {
+      "catalog": "cycling",
+      "name": "Velotric",
+      "domain": "www.velotricbike.com",
+      "scrape_urls": [
+        "https://www.velotricbike.com/collections/ebikes-on-sale?currency=USD"
+      ]
+    },
+    "checked_at": "2026-11-06T03:34:08.867093+00:00",
+    "snapshot": "01-cycling.db",
+    "refresh": {
+      "source": "Velotric",
+      "status": "complete",
+      "errors": 0,
+      "pages": 1,
+      "collections": [
+        {
+          "url": "https://www.velotricbike.com/collections/ebikes-on-sale?currency=USD",
+          "pages": 1,
+          "products": 11,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "parsed_products": 11,
+      "accepted_products": 8
+    },
+    "eligible_listings": 8,
+    "deep_listings": 0,
+    "disposition": "merchant-audited-needs-review",
+    "merchant_audit": {
+      "receipt": "01-cycling-merchant-audit.json",
+      "passed": true,
+      "sample_size": 8
+    }
+  }
+]

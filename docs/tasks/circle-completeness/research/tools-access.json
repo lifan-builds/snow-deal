@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-06",
+  "requests": [
+    {
+      "url": "https://www.cpopowertools.com/clearance?pmax=150.00&pmin=0.00",
+      "final_url": "https://www.cpopowertools.com/clearance?pmax=150.00&pmin=0.00",
+      "at": "2026-11-06T02:38:50.068545+00:00",
+      "status": 503,
+      "bytes": 2367,
+      "sha256": "56c58fb039bae2d615d125063635323a27a16bf5efe76dd86c1d681a2f91db98"
+    },
+    {
+      "url": "https://www.cpooutlets.com/on-sale_power-tools",
+      "final_url": "https://www.cpooutlets.com/on-sale_power-tools",
+      "at": "2026-11-06T02:38:50.346489+00:00",
+      "status": 503,
+      "bytes": 2392,
+      "sha256": "e1f447392d20b04f9cad4d30a9c56b66d763082d1fd0f0b37586c45c28bc6a74"
+    },
+    {
+      "url": "https://www.jbtools.com/clearance/",
+      "final_url": "https://www.jbtools.com/clearance/",
+      "at": "2026-11-06T02:39:20.006996+00:00",
+      "status": 403,
+      "bytes": 5425,
+      "sha256": "42923ea635ea1dfbda1381eb9829cbc80d738c94e2c9d2a3014154a05c135826",
+      "title": "Just a moment...",
+      "cards": 0
+    },
+    {
+      "url": "https://www.harborfreight.com/clearance?vm=r",
+      "final_url": "https://www.harborfreight.com/clearance?vm=r",
+      "at": "2026-11-06T02:39:20.169627+00:00",
+      "status": 403,
+      "bytes": 5645,
+      "sha256": "97f1b14a5c68b0eab1ce06da63b3aa43bc56b47aac917a089e0a4553419331e0",
+      "title": "Access to this page has been denied",
+      "cards": 0
+    }
+  ],
+  "admitted_sources": 0,
+  "scope": "Public ordinary GETs; no access-control bypass or retries after rejection. Search-index availability is not live ingestion availability."
+}

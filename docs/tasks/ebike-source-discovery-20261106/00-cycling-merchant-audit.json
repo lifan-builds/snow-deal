@@ -1,0 +1,355 @@
+{
+  "source": "Aventon",
+  "date": "2026-11-06T03:34:03.079712+00:00",
+  "seed": 20261106,
+  "method": "top10-plus-seeded20-plus-all-deep-listings-v1",
+  "population": 5,
+  "fixed_sample_size": 5,
+  "deep_selected_listings": 0,
+  "selected_offers": 5,
+  "refresh_complete": true,
+  "passed": true,
+  "sample_size": 5,
+  "match": 5,
+  "mismatch": 0,
+  "inconclusive": 0,
+  "verified_match_percent": 100.0,
+  "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+  "results": [
+    {
+      "name": "Aventure 3 Ebike",
+      "store": "Aventon",
+      "offer": {
+        "variant_key": "44285586997443",
+        "url": "https://www.aventon.com/products/aventure-3-ebike?currency=USD&variant=44285586997443",
+        "current_price": 1799.0,
+        "original_price": 1999.0,
+        "size": "Regular",
+        "options": "Regular / Stealth",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/1520/2468/files/01_Aventure-3_Stealth_Side_1.jpg?v=1746639478",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "price_note": "",
+        "discount": 10.005002501250626,
+        "savings": 200.0
+      },
+      "check_started_at": "2026-11-06T03:33:50.046723+00:00",
+      "evidence_url": "https://www.aventon.com/products/aventure-3-ebike.js?currency=USD",
+      "response_sha256": "2ac6fa29d8ac53a7dc84a8618b67eabab26eedf23913156f687f4378adc03dbf",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Aventure 3 Ebike",
+        "variant": "44285586997443",
+        "sku": "1E037-0084402",
+        "price_minor": 179900,
+        "reference_minor": 199900,
+        "currency": "USD",
+        "options": "Regular / Stealth",
+        "raw_options": [
+          "Regular",
+          "Stealth"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "Regular",
+              "Large"
+            ]
+          },
+          {
+            "name": "Color",
+            "position": 2,
+            "values": [
+              "Stealth",
+              "Matcha"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T03:33:50.020363+00:00",
+      "checked_at": "2026-11-06T03:33:54.335467+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Aventure 3 Step-Through Ebike",
+      "store": "Aventon",
+      "offer": {
+        "variant_key": "44285587161283",
+        "url": "https://www.aventon.com/products/aventure-3-step-through-ebike?currency=USD&variant=44285587161283",
+        "current_price": 1799.0,
+        "original_price": 1999.0,
+        "size": "Regular",
+        "options": "Regular / Cobalt Blue",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/1520/2468/files/01_Aventure-3_Cobalt-Blue_Side_1.jpg?v=1746639853",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "price_note": "",
+        "discount": 10.005002501250626,
+        "savings": 200.0
+      },
+      "check_started_at": "2026-11-06T03:33:54.335529+00:00",
+      "evidence_url": "https://www.aventon.com/products/aventure-3-step-through-ebike.js?currency=USD",
+      "response_sha256": "ea6c75828a46380792377bee1df16612cb5a18c472d47d9463eb20f19d1965d2",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Aventure 3 Step-Through Ebike",
+        "variant": "44285587161283",
+        "sku": "1E037-0084001",
+        "price_minor": 179900,
+        "reference_minor": 199900,
+        "currency": "USD",
+        "options": "Regular / Cobalt Blue",
+        "raw_options": [
+          "Regular",
+          "Cobalt Blue"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "Regular",
+              "Large"
+            ]
+          },
+          {
+            "name": "Color",
+            "position": 2,
+            "values": [
+              "Cobalt Blue",
+              "Java"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T03:33:50.020363+00:00",
+      "checked_at": "2026-11-06T03:33:56.518744+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Aventure M Ebike",
+      "store": "Aventon",
+      "offer": {
+        "variant_key": "44347513700547",
+        "url": "https://www.aventon.com/products/aventure-m-ebike?currency=USD&variant=44347513700547",
+        "current_price": 2699.0,
+        "original_price": 2899.0,
+        "size": "Regular",
+        "options": "Regular / Camouflage",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/1520/2468/files/01_AventureM_Camouflage_Side_1_83862d85-6894-4107-b6cf-8f823a834c6f.jpg?v=1775169633",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "price_note": "",
+        "discount": 6.89893066574681,
+        "savings": 200.0
+      },
+      "check_started_at": "2026-11-06T03:33:56.518759+00:00",
+      "evidence_url": "https://www.aventon.com/products/aventure-m-ebike.js?currency=USD",
+      "response_sha256": "9a39707d1726173ac0a49e6819a292d0cc6f7de7d5c0880ba50003c1e3cb1787",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Aventure M Ebike",
+        "variant": "44347513700547",
+        "sku": "1E037-0074303",
+        "price_minor": 269900,
+        "reference_minor": 289900,
+        "currency": "USD",
+        "options": "Regular / Camouflage",
+        "raw_options": [
+          "Regular",
+          "Camouflage"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "Regular",
+              "Large"
+            ]
+          },
+          {
+            "name": "Color",
+            "position": 2,
+            "values": [
+              "Camouflage",
+              "Pacific",
+              "Basalt"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T03:33:50.020363+00:00",
+      "checked_at": "2026-11-06T03:33:58.735484+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Abound SR Ebike",
+      "store": "Aventon",
+      "offer": {
+        "variant_key": "43919137538243",
+        "url": "https://www.aventon.com/products/abound-sr-ebike?currency=USD&variant=43919137538243",
+        "current_price": 1799.0,
+        "original_price": 1899.0,
+        "size": "One Size",
+        "options": "One Size / Cobalt",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/1520/2468/files/01_Abound-SR_Cobalt-Blue_Side_1-bike.jpg?v=1756958415",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "price_note": "",
+        "discount": 5.265929436545551,
+        "savings": 100.0
+      },
+      "check_started_at": "2026-11-06T03:33:58.735539+00:00",
+      "evidence_url": "https://www.aventon.com/products/abound-sr-ebike.js?currency=USD",
+      "response_sha256": "7b5143dca729fd5e587581b44796343908945115fa4d210b2e43a12d134f4a18",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Abound SR Ebike",
+        "variant": "43919137538243",
+        "sku": "1E054-0023803",
+        "price_minor": 179900,
+        "reference_minor": 189900,
+        "currency": "USD",
+        "options": "One Size / Cobalt",
+        "raw_options": [
+          "One Size",
+          "Cobalt"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "One Size"
+            ]
+          },
+          {
+            "name": "Color",
+            "position": 2,
+            "values": [
+              "Cobalt",
+              "Stealth",
+              "Haze"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T03:33:50.020363+00:00",
+      "checked_at": "2026-11-06T03:34:00.949973+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Abound LR Ebike",
+      "store": "Aventon",
+      "offer": {
+        "variant_key": "44189242818755",
+        "url": "https://www.aventon.com/products/abound-lr-ebike?currency=USD&variant=44189242818755",
+        "current_price": 1899.0,
+        "original_price": 1999.0,
+        "size": "One Size",
+        "options": "One Size / Sage",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/1520/2468/files/01_Abound-LR_Sage_Side_1-bike.jpg?v=1737999583",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "price_note": "",
+        "discount": 5.002501250625313,
+        "savings": 100.0
+      },
+      "check_started_at": "2026-11-06T03:34:00.950028+00:00",
+      "evidence_url": "https://www.aventon.com/products/abound-lr-ebike.js?currency=USD",
+      "response_sha256": "81b93cd6211be4d0e795cb561693f66c44ac6316500c1999c056ec0126b5b0df",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Abound LR Ebike",
+        "variant": "44189242818755",
+        "sku": "1E054-0033801",
+        "price_minor": 189900,
+        "reference_minor": 199900,
+        "currency": "USD",
+        "options": "One Size / Sage",
+        "raw_options": [
+          "One Size",
+          "Sage"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "One Size"
+            ]
+          },
+          {
+            "name": "Color",
+            "position": 2,
+            "values": [
+              "Sage",
+              "Matte Stealth"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T03:33:50.020363+00:00",
+      "checked_at": "2026-11-06T03:34:03.079162+00:00",
+      "within_audit_window": true
+    }
+  ]
+}

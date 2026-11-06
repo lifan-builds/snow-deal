@@ -1,0 +1,56 @@
+{
+  "started_at": "2026-11-05T22:53:45.359873+00:00",
+  "finished_at": "2026-11-05T23:01:11.968874+00:00",
+  "source": {
+    "name": "The Circle Whistler",
+    "domain": "www.thecirclewhistler.com",
+    "scrape_urls": [
+      "https://www.thecirclewhistler.com/sale/",
+      "https://www.thecirclewhistler.com/snow/"
+    ],
+    "parser_type": "thecircle",
+    "use_browser": false,
+    "currency": "CAD",
+    "shopify_products_limit": 250,
+    "verify_shopify_currency": false,
+    "affiliate_network": null,
+    "affiliate_merchant_id": null,
+    "tax_free": true
+  },
+  "outcome": {
+    "errors": 2,
+    "pages": 16,
+    "collections": [
+      {
+        "url": "https://www.thecirclewhistler.com/sale/",
+        "pages": 1,
+        "products": 0,
+        "status": "parse_error"
+      },
+      {
+        "url": "https://www.thecirclewhistler.com/snow/",
+        "pages": 15,
+        "products": 60,
+        "status": "parse_error"
+      }
+    ],
+    "product_pages": 80,
+    "evidence_requests": 80
+  },
+  "request_count": 176,
+  "parsed_products": 60,
+  "passed": false,
+  "disposition": "Failed admission retained. No activation. Replay identified absent reference on full-price unavailable siblings and product-gallery fallback with no variant image; reviewer coordinating narrow fixes.",
+  "failed_products": [
+    {
+      "url": "https://www.thecirclewhistler.com/toddler-handle-it-rain-boot-pink.html",
+      "reason": "Full-price sibling reference is explicitly false; parser rejected absent reference",
+      "html_capture_sha256": "a19c55c2f6b9c0789820faaf05e8c426e36012d5fc5b4b790389f2f8e7b7d2e9"
+    },
+    {
+      "url": "https://www.thecirclewhistler.com/1995-kelly-air-ltd-snowboard.html",
+      "reason": "Variant images absent while selected product gallery fallback is present",
+      "html_capture_sha256": "63f0b1d311e82145006936fcc00bc1479e9d8888952d12dea3c0e53d023a3983"
+    }
+  ]
+}

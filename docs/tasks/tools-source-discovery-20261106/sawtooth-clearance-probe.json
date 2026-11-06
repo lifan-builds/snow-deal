@@ -1,0 +1,39 @@
+[
+  {
+    "candidate": {
+      "catalog": "tools",
+      "name": "Sawtooth Supplies clearance",
+      "domain": "sawtoothsupplies.com",
+      "scrape_urls": [
+        "https://sawtoothsupplies.com/collections/jpw-powermatic-clearance?currency=USD"
+      ]
+    },
+    "checked_at": "2026-11-06T03:46:32.736455+00:00",
+    "snapshot": "00-tools.db",
+    "refresh": {
+      "source": "Sawtooth Supplies clearance",
+      "status": "complete",
+      "errors": 0,
+      "pages": 1,
+      "collections": [
+        {
+          "url": "https://sawtoothsupplies.com/collections/jpw-powermatic-clearance?currency=USD",
+          "pages": 1,
+          "products": 3,
+          "status": "complete",
+          "observed_currency": "USD"
+        }
+      ],
+      "parsed_products": 3,
+      "accepted_products": 3
+    },
+    "eligible_listings": 3,
+    "deep_listings": 0,
+    "disposition": "merchant-audited-needs-review",
+    "merchant_audit": {
+      "receipt": "00-tools-merchant-audit.json",
+      "passed": true,
+      "sample_size": 3
+    }
+  }
+]

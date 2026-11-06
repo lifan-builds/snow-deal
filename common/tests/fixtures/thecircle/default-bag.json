@@ -1,0 +1,101 @@
+{
+  "id": 68802776,
+  "title": "Girls Pink Sequin Bow Bag",
+  "url": "https://www.thecirclewhistler.com/pink-sequin-bow-bag.html",
+  "vid": 115847130,
+  "variant": "",
+  "sku": "280212",
+  "price": {
+    "price": 40,
+    "price_money": "C$40.00",
+    "price_money_with_currency": "C$40.00 CAD",
+    "price_money_without_currency": "40.00",
+    "price_excl": 40,
+    "price_excl_money": "C$40.00",
+    "price_excl_money_with_currency": "C$40.00 CAD",
+    "price_excl_money_without_currency": "40.00",
+    "price_incl": 40,
+    "price_incl_money": "C$40.00",
+    "price_incl_money_with_currency": "C$40.00 CAD",
+    "price_incl_money_without_currency": "40.00",
+    "price_old": 67.99,
+    "price_old_money": "C$67.99",
+    "price_old_money_with_currency": "C$67.99 CAD",
+    "price_old_money_without_currency": "67.99",
+    "price_old_excl": 67.99,
+    "price_old_excl_money": "C$67.99",
+    "price_old_excl_money_with_currency": "C$67.99 CAD",
+    "price_old_excl_money_without_currency": "67.99",
+    "price_old_incl": 67.99,
+    "price_old_incl_money": "C$67.99",
+    "price_old_incl_money_with_currency": "C$67.99 CAD",
+    "price_old_incl_money_without_currency": "67.99"
+  },
+  "stock": {
+    "available": true,
+    "on_stock": true,
+    "track": true,
+    "allow_outofstock_sale": false,
+    "level": 3,
+    "minimum": 1,
+    "maximum": 3,
+    "delivery": false
+  },
+  "image_id": 73379495,
+  "image": "https://cdn.shoplightspeed.com/shops/628048/files/73379495/50x50x2/meri-meri-girls-pink-sequin-bow-bag.jpg",
+  "images": [
+    "https://cdn.shoplightspeed.com/shops/628048/files/73379495/50x50x2/meri-meri-girls-pink-sequin-bow-bag-0.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/73379501/50x50x2/meri-meri-girls-pink-sequin-bow-bag-1.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/73379502/50x50x2/meri-meri-girls-pink-sequin-bow-bag-2.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/73379503/50x50x2/meri-meri-girls-pink-sequin-bow-bag-3.jpg"
+  ],
+  "brand": {
+    "title": "Meri Meri"
+  },
+  "variants": {
+    "115847130": {
+      "id": 115847130,
+      "title": "Default",
+      "default": true,
+      "url": "https://www.thecirclewhistler.com/pink-sequin-bow-bag.html?id=115847130",
+      "sku": "280212",
+      "price": {
+        "price": 40,
+        "price_money": "C$40.00",
+        "price_money_with_currency": "C$40.00 CAD",
+        "price_money_without_currency": "40.00",
+        "price_excl": 40,
+        "price_excl_money": "C$40.00",
+        "price_excl_money_with_currency": "C$40.00 CAD",
+        "price_excl_money_without_currency": "40.00",
+        "price_incl": 40,
+        "price_incl_money": "C$40.00",
+        "price_incl_money_with_currency": "C$40.00 CAD",
+        "price_incl_money_without_currency": "40.00",
+        "price_old": 67.99,
+        "price_old_money": "C$67.99",
+        "price_old_money_with_currency": "C$67.99 CAD",
+        "price_old_money_without_currency": "67.99",
+        "price_old_excl": 67.99,
+        "price_old_excl_money": "C$67.99",
+        "price_old_excl_money_with_currency": "C$67.99 CAD",
+        "price_old_excl_money_without_currency": "67.99",
+        "price_old_incl": 67.99,
+        "price_old_incl_money": "C$67.99",
+        "price_old_incl_money_with_currency": "C$67.99 CAD",
+        "price_old_incl_money_without_currency": "67.99"
+      },
+      "stock": {
+        "available": true,
+        "on_stock": true,
+        "track": true,
+        "level": 3,
+        "minimum": 1,
+        "maximum": 3,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "image": 73379495
+    }
+  }
+}

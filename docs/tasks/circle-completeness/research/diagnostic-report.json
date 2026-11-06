@@ -1,0 +1,110 @@
+{
+  "status": "diagnosis_complete",
+  "started_at": "2026-11-06T02:48:26.926642+00:00",
+  "recorded_at": "2026-11-06T03:13:18.056593+00:00",
+  "scope": "Diagnostic traversal only. Retained successful bodies keep original timestamps; HTTP404 and parser failures remain unresolved. Not a complete production snapshot or source admission.",
+  "parser_sha256": "158247ca9e4ef7163bee8fae9867780603100ace4a59cfc113d3a907df829504",
+  "collections": [
+    {
+      "url": "https://www.thecirclewhistler.com/sale/",
+      "pages": 18,
+      "families": 390,
+      "terminal": true
+    },
+    {
+      "url": "https://www.thecirclewhistler.com/snow/",
+      "pages": 18,
+      "families": 77,
+      "terminal": true
+    }
+  ],
+  "discounted_families": 405,
+  "processed_families": 405,
+  "parsed_families": 393,
+  "offers": 1014,
+  "failures": [
+    {
+      "url": "https://www.thecirclewhistler.com/authentic-chino-loose-pant-68489662.html",
+      "stage": "parse",
+      "kind": "JSONDecodeError",
+      "error": "Expecting ',' delimiter: line 1 column 38 (char 37)"
+    },
+    {
+      "url": "https://www.thecirclewhistler.com/kader-pants.html",
+      "stage": "parse",
+      "kind": "JSONDecodeError",
+      "error": "Expecting ',' delimiter: line 1 column 27 (char 26)"
+    },
+    {
+      "url": "https://www.thecirclewhistler.com/thatll-do-stretch-short-sleeve-shirt.html",
+      "stage": "parse",
+      "kind": "ValueError",
+      "error": "Circle missing or conflicting product identity"
+    },
+    {
+      "url": "https://www.thecirclewhistler.com/coast-hoodie.html",
+      "stage": "parse",
+      "kind": "ValueError",
+      "error": "Circle missing or conflicting product identity"
+    },
+    {
+      "url": "https://www.thecirclewhistler.com/skate-loose-chinos.html",
+      "stage": "parse",
+      "kind": "ValueError",
+      "error": "Circle missing or conflicting product identity"
+    },
+    {
+      "url": "https://www.thecirclewhistler.com/pink-sequin-bow-bag.html",
+      "stage": "parse",
+      "kind": "ValueError",
+      "error": "Circle missing option label/value"
+    },
+    {
+      "url": "https://www.thecirclewhistler.com/cm002-lo-shoes.html",
+      "stage": "parse",
+      "kind": "ValueError",
+      "error": "Circle missing or conflicting product identity"
+    },
+    {
+      "url": "https://www.thecirclewhistler.com/quilted-pant-rc748laur.html",
+      "stage": "parse",
+      "kind": "ValueError",
+      "error": "Circle missing or conflicting product identity"
+    },
+    {
+      "url": "https://www.thecirclewhistler.com/transit-fleece-pant-64397027.html",
+      "stage": "parse",
+      "kind": "ValueError",
+      "error": "Circle missing or conflicting product identity"
+    },
+    {
+      "url": "https://www.thecirclewhistler.com/manic-elastic-waist-boardshorts.html",
+      "stage": "parse",
+      "kind": "ValueError",
+      "error": "Circle missing or conflicting product identity"
+    },
+    {
+      "url": "https://www.thecirclewhistler.com/vm003-suede-hi.html",
+      "stage": "parse",
+      "kind": "ValueError",
+      "error": "Circle missing or conflicting product identity"
+    },
+    {
+      "url": "https://www.thecirclewhistler.com/unisex-puffy-slide.html",
+      "stage": "parse",
+      "kind": "ValueError",
+      "error": "Circle missing or conflicting product identity"
+    }
+  ],
+  "requests": 836,
+  "live_requests": 616,
+  "replayed_requests": 220,
+  "source_activated": false,
+  "failure_groups": {
+    "quoted_inch_csv": 2,
+    "selected_soldout_button_identity": 9,
+    "single_default_option": 1
+  },
+  "current_http_failures": 0,
+  "historical_rodan_url_rediscovered": false
+}

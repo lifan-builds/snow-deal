@@ -1,0 +1,19 @@
+{
+  "scope": "Local retained-data preview only; no public deployment or renewed freshness",
+  "url": "http://127.0.0.1:8777/",
+  "source_accepted": 115,
+  "equipment_default_results": 53,
+  "clothing_opt_in_results": 111,
+  "exact_XL_results": 9,
+  "verified_card": {
+    "name": "Jackson Mips Helmet 2025",
+    "variant": "100724076",
+    "options": "Color: Matte Black / Size: XL",
+    "current_CAD": 81,
+    "reference_CAD": 269.99,
+    "reported_stock": "in stock",
+    "source_checked": "2026-11-05T22:53 UTC"
+  },
+  "visual_check": "Two-column cards readable with correct CAD labels, reference disclaimer and selected variant in disclosure. Four of115 ingested rows retain prior source taxonomy and are excluded as non-snow during persistence; query result count is111. These are not missing purchasable offers.",
+  "history": "Preview builder independently preserved every prior history row and unaffected retailer row."
+}

@@ -1,0 +1,38 @@
+{
+  "at": "2026-11-06T04:00:24.831400+00:00",
+  "sites": [
+    {
+      "site": "https://freshpowder.clifan.com",
+      "status": 200,
+      "body": {
+        "status": "ok",
+        "last_attempt_at": "2026-11-06T02:00:49.117884",
+        "checked_at": "2026-11-06T02:00:49.117884",
+        "stores_with_deals": 30
+      }
+    },
+    {
+      "site": "https://bigring.clifan.com",
+      "status": 200,
+      "body": {
+        "catalog": "cycling",
+        "snapshot_sha256": "5253fbcfe4098f914d7308bcb460104c3b82dc5243fa5543692094a749ef15e1",
+        "fresh_sources": 21,
+        "configured_sources": 21,
+        "status": "ready"
+      }
+    },
+    {
+      "site": "https://benchdrop.clifan.com",
+      "status": 200,
+      "body": {
+        "catalog": "tools",
+        "snapshot_sha256": "0883ddcc9499491dccfceb723551fcdb72a03c5f932d15deb340e53de657e751",
+        "fresh_sources": 13,
+        "configured_sources": 13,
+        "status": "ready"
+      }
+    }
+  ],
+  "note": "HTTPX uses verified CA trust. First system-Python attempt failed local issuer validation; no TLS bypass used."
+}

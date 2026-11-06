@@ -1,0 +1,91 @@
+{
+  "id": 60540290,
+  "vid": 100724076,
+  "image": "https://cdn.shoplightspeed.com/shops/628048/files/59676659/50x50x2/giro-jackson-mips-helmet-2025.jpg",
+  "image_id": 59676659,
+  "brand": {
+    "id": 3494862,
+    "image": "https://cdn.shoplightspeed.com/shops/628048/files/74309186/50x50x2/giro.jpg",
+    "url": "https://www.thecirclewhistler.com/brands/giro/",
+    "title": "Giro"
+  },
+  "sku": "GR-7109606",
+  "url": "https://www.thecirclewhistler.com/jackson-mips-helmet.html",
+  "title": "Jackson Mips Helmet 2025",
+  "variant": "\"Color: Matte Black\",\"Size: XL\"",
+  "stock": {
+    "available": true,
+    "on_stock": true,
+    "track": true,
+    "allow_outofstock_sale": false,
+    "level": 2,
+    "minimum": 1,
+    "maximum": 2,
+    "delivery": false
+  },
+  "images": [
+    "https://cdn.shoplightspeed.com/shops/628048/files/59676659/50x50x2/giro-jackson-mips-helmet-2025-0.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/59676655/50x50x2/giro-jackson-mips-helmet-2025-1.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/59676656/50x50x2/giro-jackson-mips-helmet-2025-2.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/59676657/50x50x2/giro-jackson-mips-helmet-2025-3.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/73695534/50x50x2/giro-jackson-mips-helmet-2025-4.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/73695536/50x50x2/giro-jackson-mips-helmet-2025-5.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/73695537/50x50x2/giro-jackson-mips-helmet-2025-6.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/73695538/50x50x2/giro-jackson-mips-helmet-2025-7.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/73695539/50x50x2/giro-jackson-mips-helmet-2025-8.jpg"
+  ],
+  "price": {
+    "price": 81,
+    "price_old": 269.99,
+    "price_money_with_currency": "C$81.00 CAD",
+    "price_old_money_with_currency": "C$269.99 CAD"
+  },
+  "variants": {
+    "100724075": {
+      "id": 100724075,
+      "sku": "GR-7109605",
+      "url": "https://www.thecirclewhistler.com/jackson-mips-helmet.html?id=100724075",
+      "title": "\"Color: Matte Black\",\"Size: L\"",
+      "image": 59676659,
+      "stock": {
+        "available": false,
+        "on_stock": false,
+        "track": true,
+        "level": 0,
+        "minimum": 1,
+        "maximum": 10000,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 81,
+        "price_old": 269.99,
+        "price_money_with_currency": "C$81.00 CAD",
+        "price_old_money_with_currency": "C$269.99 CAD"
+      }
+    },
+    "100724076": {
+      "id": 100724076,
+      "sku": "GR-7109606",
+      "url": "https://www.thecirclewhistler.com/jackson-mips-helmet.html?id=100724076",
+      "title": "\"Color: Matte Black\",\"Size: XL\"",
+      "image": 59676659,
+      "stock": {
+        "available": true,
+        "on_stock": true,
+        "track": true,
+        "level": 2,
+        "minimum": 1,
+        "maximum": 2,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 81,
+        "price_old": 269.99,
+        "price_money_with_currency": "C$81.00 CAD",
+        "price_old_money_with_currency": "C$269.99 CAD"
+      }
+    }
+  }
+}

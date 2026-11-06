@@ -1,0 +1,318 @@
+{
+  "method": "Configured public collection traversal with 2s pacing; replay retained pages after a discovered collection-title discrepancy and fetch remaining pages. Not a parser or merchant audit.",
+  "initial_attempt": {
+    "started_at": "2026-11-05T22:42:13.806814+00:00",
+    "scope": "Raw public configured collections; no parser admission or production change",
+    "passed": false,
+    "error": "ValueError: Conflicting repeated collection product",
+    "finished_at": "2026-11-05T22:43:39.166140+00:00"
+  },
+  "completed_at": "2026-11-05T22:45:13.093458+00:00",
+  "collections": [
+    {
+      "name": "sale",
+      "pages": [
+        {
+          "url": "https://www.thecirclewhistler.com/sale/",
+          "sha256": "e44e5837399590a01420f85aa60a3733f089547f1e3cab4b889e0fb9f0682fab",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/sale/page2.html",
+          "sha256": "b1434a23e3f70b661286b2928741d3db5a6bdc42cfc31514fd288ea5d90602a9",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/sale/page3.html",
+          "sha256": "dc1a476c73a1c09dc06fb7ab7458290518d6d223c10e7094aac74f14def4ac2f",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/sale/page4.html",
+          "sha256": "e95c3f8b79916e40267f9c0bb943031681567f236fdca100456d82bce269cd78",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/sale/page5.html",
+          "sha256": "254b380d24bd6985d698b5daa99abdf601c9135d0b748157396de9e8fbc636d9",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/sale/page6.html",
+          "sha256": "ff638d385cd63d0ac5700fe9df67409fb53378069086e77951feaf48bc7b30ed",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/sale/page7.html",
+          "sha256": "54ef23714b34990531110fb14260285b59e63b6387f51ff48797d7344b88909f",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/sale/page8.html",
+          "sha256": "1e903b876adc79bc58b3dec32749c817b02f9f3b3efebc84d67b35b01e0dff94",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/sale/page9.html",
+          "sha256": "a7521c0b6a2f2df142a9423f29e2f28cfb29ad6e15b50f76766855d7aee10dcf",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/sale/page10.html",
+          "sha256": "c28a67f2f303f53ec28a7dbb7a81f424730029ea4775eaeac3fa732419aa1b60",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/sale/page11.html",
+          "sha256": "bb430aa5e7d8aa7888dfd5c084a674822c14c38df2c8896efabc41a37a0c6764",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/sale/page12.html",
+          "sha256": "3b0f8198fe0c6695ac094cd19d861871b0af47ec57591b552762c04b6595c977",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/sale/page13.html",
+          "sha256": "9d3ffbd5ef6928ba7148f2e7ce33e9d8794752e0909cdedf50b4b1d64f1174da",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/sale/page14.html",
+          "sha256": "e399b1d132886f89c8112fa10ad4acaea4cc1d4a0932ebbbf863e2f3e8d3ccef",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/sale/page15.html",
+          "sha256": "89e68d44b3764e98e0c767105a47c762e03e8c3d77f76fd3176486b23d5c930f",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/sale/page16.html",
+          "sha256": "61c2f79166bfdd4abaa0f3a44cb8bf1cb00b8ac15a0fb684f23951a0c8315070",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/sale/page17.html",
+          "sha256": "6e2ac8f2093fdcce7ae4c255b035e1895905e2fe422248dda990ca3f084f800c",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/sale/page18.html",
+          "sha256": "7c98cf4281ebe65801b14ff444b5f4f075b3e93ea6a3d4a86816753bf180b2d9",
+          "cards": 5,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        }
+      ],
+      "raw_products": 413,
+      "complete": true
+    },
+    {
+      "name": "snow",
+      "pages": [
+        {
+          "url": "https://www.thecirclewhistler.com/snow/",
+          "sha256": "6e8c5f78fdf2c025393722402f8fe1938736f8a72ea94336b9b7d927e4460ec9",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/snow/page2.html",
+          "sha256": "5ac76141c84a58667b509ca4e774838b42179c5ba0409a3e625b5871ce8e094d",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/snow/page3.html",
+          "sha256": "4cde375c404133abf931be0c66b8333c7beeabcd8bba57379bed5e01302ee0e6",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/snow/page4.html",
+          "sha256": "a7682b9071e620b4d7acf7f7458beeef2786d1edd268bcea8dbad6d99cf95312",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/snow/page5.html",
+          "sha256": "7a06172d9a350900fdf862cf24bb869f58016e1170d591139fd1d3c2a5e618ec",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/snow/page6.html",
+          "sha256": "2e21a6066cdca9b0b2acc95f8dae7ac2fb585c3a1312c643e487928d0b4fb8bd",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/snow/page7.html",
+          "sha256": "819e05c02c57c94e8c73ea96a50d6e1e7dd7f06fc2774e42b7976dc9c79ae791",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/snow/page8.html",
+          "sha256": "242026b951dd4caeb93806858ea988a9e3412f9f7487f94a7dd01796c7af4502",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/snow/page9.html",
+          "sha256": "7af28df3805ddbc14df4e22e757a2176a8834dd0be5bf544def6e048d7412531",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/snow/page10.html",
+          "sha256": "c51eed6442d9ff25ff3621f34d3b0c23fa2e3a1f9d467632f6de980740311feb",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/snow/page11.html",
+          "sha256": "643865383e2f61d0e7d41cff5d3cbacd137bc56ed2b62cb16d021a450c2b6839",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/snow/page12.html",
+          "sha256": "c3ff8c50cdbbb9ea9873732cd2b91f6127fcbcea04977cfd7489e3e9c8109995",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/snow/page13.html",
+          "sha256": "72bb953f571f3e63884890bb2f5c86f9aec59f3092d5b6e5918a1ea6b4d4d8b5",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/snow/page14.html",
+          "sha256": "55e25780a87d390f04ecb415635d1c1655c29326c2487ce912b3205c65225e6e",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/snow/page15.html",
+          "sha256": "06253247b658c5161ba0dee3c8c59f13b5fb8a8784826918259985c198abb54b",
+          "cards": 24,
+          "retained_capture": true,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/snow/page16.html",
+          "sha256": "fb9f487cd89a3add989ff6495fa917facc02f06520e3d8473918a283d9af4905",
+          "cards": 24,
+          "retained_capture": false,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/snow/page17.html",
+          "sha256": "22b6d019b6189dfdc0400ab8329bd7b5a6a88f68a5079da5b3727f28b8208e95",
+          "cards": 24,
+          "retained_capture": false,
+          "advertised_terminal_page": 18
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/snow/page18.html",
+          "sha256": "57f5514b332292b35026b61714ef6436d7cf8f7707bd4ad72ef7905d2b88041b",
+          "cards": 16,
+          "retained_capture": false,
+          "advertised_terminal_page": 18
+        }
+      ],
+      "raw_products": 424,
+      "complete": true
+    }
+  ],
+  "distinct_product_families": 771,
+  "discounted_families": 406,
+  "discounted_adult_named_categories": 142,
+  "discovery_label_differences": [
+    {
+      "first": {
+        "id": "59549501",
+        "url": "https://www.thecirclewhistler.com/anon-rodan-mips-helmet.html",
+        "name": "Rodan MIPS Helmet 2023 (Adult)",
+        "price": 70.5,
+        "reference": 234.99,
+        "category": "helmets",
+        "exclusion": null
+      },
+      "later": {
+        "id": "59549501",
+        "url": "https://www.thecirclewhistler.com/anon-rodan-mips-helmet.html",
+        "name": "Adult Rodan MIPS Helmet",
+        "price": 70.5,
+        "reference": 234.99,
+        "category": "helmets",
+        "exclusion": null
+      }
+    }
+  ],
+  "detail_identity_resolution": {
+    "url": "https://www.thecirclewhistler.com/anon-rodan-mips-helmet.html",
+    "product_id": "59549501",
+    "html_and_ajax_title": "Adult Rodan MIPS Helmet",
+    "html_capture_sha256": "0d3518e10dbf0055218bc412499f7855b5e87d701fae4b8e49bea77527477f0c",
+    "ajax_capture_sha256": "4db45c59bc64d867d8e2967a49590538fa80c1d6e34952209f61a8bab51830cd"
+  },
+  "passed": true,
+  "limitations": [
+    "771 families are not eligible inventory; 406 discounts include children and non-snow products.",
+    "Existing browser numbered-link fallback can traverse this pagination; no existing source truncation claim.",
+    "Exact variants, condition and price/stock admission remain separate.",
+    "Raw source CAD prices do not establish historical selling prices."
+  ]
+}

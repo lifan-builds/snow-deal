@@ -1,0 +1,299 @@
+{
+  "scope": "Admission eligibility concerns in393parsed-family diagnostic subset. Do not activate until full corrected source checked. Numeric sizes alone do not establish child/adult status. Not a production metric.",
+  "rows": [
+    {
+      "name": "Knit Pant",
+      "url": "https://www.thecirclewhistler.com/knit-pant-68407461.html",
+      "brand": "Rylee + Cru",
+      "sizes": [
+        "12-18M",
+        "18-24M",
+        "3-6M",
+        "6-12M"
+      ],
+      "current_category": "pants",
+      "reason": "explicit_age_sizes"
+    },
+    {
+      "name": "Karli Set",
+      "url": "https://www.thecirclewhistler.com/karli-set.html",
+      "brand": "Rylee + Cru",
+      "sizes": [
+        "18-24M",
+        "2-3Y"
+      ],
+      "current_category": null,
+      "reason": "explicit_age_sizes"
+    },
+    {
+      "name": "Basic Legging",
+      "url": "https://www.thecirclewhistler.com/basic-legging.html",
+      "brand": "Rylee + Cru",
+      "sizes": [
+        "8-9Y"
+      ],
+      "current_category": "layers",
+      "reason": "explicit_age_sizes"
+    },
+    {
+      "name": "Heart Knit Pants",
+      "url": "https://www.thecirclewhistler.com/heart-knit-pants.html",
+      "brand": "Quincy Mae",
+      "sizes": [
+        "6-12M"
+      ],
+      "current_category": "pants",
+      "reason": "explicit_age_sizes"
+    },
+    {
+      "name": "Ribbed Long Sleeve",
+      "url": "https://www.thecirclewhistler.com/ribbed-long-sleeve.html",
+      "brand": "Rylee + Cru",
+      "sizes": [
+        "10Y",
+        "12Y",
+        "14Y"
+      ],
+      "current_category": "layers",
+      "reason": "explicit_age_sizes"
+    },
+    {
+      "name": "Racer Sweatshirt",
+      "url": "https://www.thecirclewhistler.com/racer-sweatshirt.html",
+      "brand": "Rylee + Cru",
+      "sizes": [
+        "4-5Y",
+        "8-9Y"
+      ],
+      "current_category": "layers",
+      "reason": "explicit_age_sizes"
+    },
+    {
+      "name": "Waffle Top Pant Set",
+      "url": "https://www.thecirclewhistler.com/waffle-top-pant-set-69659140.html",
+      "brand": "Quincy Mae",
+      "sizes": [
+        "12-18M",
+        "18-24M",
+        "2-3Y",
+        "4-5Y"
+      ],
+      "current_category": "pants",
+      "reason": "explicit_age_sizes"
+    },
+    {
+      "name": "Basics Knit Short",
+      "url": "https://www.thecirclewhistler.com/basics-knit-short-pink-girls-miles-the-label.html",
+      "brand": "Miles",
+      "sizes": [
+        "2",
+        "4",
+        "6"
+      ],
+      "current_category": null,
+      "reason": "manufacturer_childrens_size_chart"
+    },
+    {
+      "name": "Shearling Zip Jacket",
+      "url": "https://www.thecirclewhistler.com/shearling-zip-jacket.html",
+      "brand": "Quincy Mae",
+      "sizes": [
+        "18-24M",
+        "2-3Y",
+        "4-5Y"
+      ],
+      "current_category": "jackets",
+      "reason": "explicit_age_sizes"
+    },
+    {
+      "name": "Get Wild Hacci Pullover",
+      "url": "https://www.thecirclewhistler.com/get-wild-hacci-pullover.html",
+      "brand": "Feather For Arrow",
+      "sizes": [
+        "4T"
+      ],
+      "current_category": "layers",
+      "reason": "explicit_age_sizes"
+    },
+    {
+      "name": "Faux Shearling Jacket / Fleece",
+      "url": "https://www.thecirclewhistler.com/shearling-jacket.html",
+      "brand": "Rylee + Cru",
+      "sizes": [
+        "10-12Y",
+        "12-18m",
+        "2-3Y"
+      ],
+      "current_category": "jackets",
+      "reason": "explicit_age_sizes"
+    },
+    {
+      "name": "Relaxed Sweatshirt 'Coastal'",
+      "url": "https://www.thecirclewhistler.com/relaxed-sweatshirt-69426154.html",
+      "brand": "Rylee + Cru",
+      "sizes": [
+        "6-7Y"
+      ],
+      "current_category": "layers",
+      "reason": "explicit_age_sizes"
+    },
+    {
+      "name": "Zip Raglan Hoodie",
+      "url": "https://www.thecirclewhistler.com/zip-raglan-hoodie.html",
+      "brand": "Rylee + Cru",
+      "sizes": [
+        "10-11Y",
+        "2-3Y",
+        "4-5Y",
+        "6-7Y"
+      ],
+      "current_category": "layers",
+      "reason": "explicit_age_sizes"
+    },
+    {
+      "name": "Shortie Short",
+      "url": "https://www.thecirclewhistler.com/shortie-short.html",
+      "brand": "Rylee + Cru",
+      "sizes": [
+        "10-11Y",
+        "6-7Y"
+      ],
+      "current_category": null,
+      "reason": "explicit_age_sizes"
+    },
+    {
+      "name": "Freestyle Sweatpant in Marine",
+      "url": "https://www.thecirclewhistler.com/freestyle-sweatpant-69422017.html",
+      "brand": "Rylee + Cru",
+      "sizes": [
+        "6-7Y"
+      ],
+      "current_category": "pants",
+      "reason": "explicit_age_sizes"
+    },
+    {
+      "name": "Heart Knit Sweater",
+      "url": "https://www.thecirclewhistler.com/heart-knit-sweater.html",
+      "brand": "Quincy Mae",
+      "sizes": [
+        "12-18M",
+        "18-24M",
+        "4-5Y"
+      ],
+      "current_category": "layers",
+      "reason": "explicit_age_sizes"
+    },
+    {
+      "name": "Merry in Chenil Sweatshirt",
+      "url": "https://www.thecirclewhistler.com/merry-in-chenil-sweatshirt.html",
+      "brand": "Petit Lem",
+      "sizes": [
+        "10",
+        "12",
+        "12M",
+        "18M",
+        "2",
+        "24M",
+        "3",
+        "4",
+        "5"
+      ],
+      "current_category": "layers",
+      "reason": "explicit_age_sizes"
+    },
+    {
+      "name": "Jacquard Knit Set",
+      "url": "https://www.thecirclewhistler.com/jacquard-knit-set.html",
+      "brand": "Rylee + Cru",
+      "sizes": [
+        "4-5Y"
+      ],
+      "current_category": null,
+      "reason": "explicit_age_sizes"
+    },
+    {
+      "name": "Hadley Skater Hoodie",
+      "url": "https://www.thecirclewhistler.com/hadley-skater-hoodie.html",
+      "brand": "Feather For Arrow",
+      "sizes": [
+        "2-3Y",
+        "8-9Y"
+      ],
+      "current_category": "layers",
+      "reason": "explicit_age_sizes"
+    },
+    {
+      "name": "Remi Short",
+      "url": "https://www.thecirclewhistler.com/remi-short-69823529.html",
+      "brand": "Rylee + Cru",
+      "sizes": [
+        "4-5Y",
+        "6-7Y"
+      ],
+      "current_category": null,
+      "reason": "explicit_age_sizes"
+    },
+    {
+      "name": "Checkerboard Sweatshirt",
+      "url": "https://www.thecirclewhistler.com/checkerboard-sweatshirt.html",
+      "brand": "Miles",
+      "sizes": [
+        "2",
+        "4",
+        "7"
+      ],
+      "current_category": "layers",
+      "reason": "manufacturer_childrens_size_chart"
+    },
+    {
+      "name": "Long Sleeve Hooded Sweatshirt Knit",
+      "url": "https://www.thecirclewhistler.com/long-sleeve-hooded-sweatshirt-knit.html",
+      "brand": "Miles",
+      "sizes": [
+        "10"
+      ],
+      "current_category": "layers",
+      "reason": "manufacturer_childrens_size_chart"
+    },
+    {
+      "name": "Basics Crewneck Knit Sweatshirt",
+      "url": "https://www.thecirclewhistler.com/basics-crewneck-knit-sweatshirt.html",
+      "brand": "Miles",
+      "sizes": [
+        "2",
+        "3",
+        "4",
+        "6",
+        "8"
+      ],
+      "current_category": "layers",
+      "reason": "manufacturer_childrens_size_chart"
+    },
+    {
+      "name": "Snap Pullover",
+      "url": "https://www.thecirclewhistler.com/snap-pullover.html",
+      "brand": "Rylee + Cru",
+      "sizes": [
+        "12-18M",
+        "18-24M",
+        "3-6M",
+        "6-12M"
+      ],
+      "current_category": "layers",
+      "reason": "explicit_age_sizes"
+    },
+    {
+      "name": "Ava Hacci Set",
+      "url": "https://www.thecirclewhistler.com/ava-hacci-set.html",
+      "brand": "Feather For Arrow",
+      "sizes": [
+        "12-18M",
+        "6-18M"
+      ],
+      "current_category": null,
+      "reason": "explicit_age_sizes"
+    }
+  ],
+  "primary_manufacturer_chart": "https://milesthelabel.com/en-us/pages/size-chart",
+  "manufacturer_evidence": "Official chart identifies sizes2-14 as Kids. Source brand binding and full survivor review still required."
+}

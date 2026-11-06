@@ -1,0 +1,101 @@
+{
+  "id": 63996458,
+  "title": "Get Wild Hacci Pullover",
+  "url": "https://www.thecirclewhistler.com/get-wild-hacci-pullover.html",
+  "vid": 107072687,
+  "variant": "\"Color: Stone\",\"Size: 4T\"",
+  "sku": "",
+  "price": {
+    "price": 24.49,
+    "price_money": "C$24.49",
+    "price_money_with_currency": "C$24.49 CAD",
+    "price_money_without_currency": "24.49",
+    "price_excl": 24.49,
+    "price_excl_money": "C$24.49",
+    "price_excl_money_with_currency": "C$24.49 CAD",
+    "price_excl_money_without_currency": "24.49",
+    "price_incl": 24.49,
+    "price_incl_money": "C$24.49",
+    "price_incl_money_with_currency": "C$24.49 CAD",
+    "price_incl_money_without_currency": "24.49",
+    "price_old": 48.99,
+    "price_old_money": "C$48.99",
+    "price_old_money_with_currency": "C$48.99 CAD",
+    "price_old_money_without_currency": "48.99",
+    "price_old_excl": 48.99,
+    "price_old_excl_money": "C$48.99",
+    "price_old_excl_money_with_currency": "C$48.99 CAD",
+    "price_old_excl_money_without_currency": "48.99",
+    "price_old_incl": 48.99,
+    "price_old_incl_money": "C$48.99",
+    "price_old_incl_money_with_currency": "C$48.99 CAD",
+    "price_old_incl_money_without_currency": "48.99"
+  },
+  "stock": {
+    "available": true,
+    "on_stock": true,
+    "track": true,
+    "allow_outofstock_sale": false,
+    "level": 1,
+    "minimum": 1,
+    "maximum": 1,
+    "delivery": false
+  },
+  "image_id": 65214478,
+  "image": "https://cdn.shoplightspeed.com/shops/628048/files/65214478/50x50x2/feather-for-arrow-get-wild-hacci-pullover.jpg",
+  "images": [
+    "https://cdn.shoplightspeed.com/shops/628048/files/65214478/50x50x2/feather-for-arrow-get-wild-hacci-pullover-0.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/65214479/50x50x2/feather-for-arrow-get-wild-hacci-pullover-1.jpg"
+  ],
+  "brand": {
+    "id": 3655902,
+    "url": "https://www.thecirclewhistler.com/brands/feather-for-arrow/",
+    "title": "Feather For Arrow"
+  },
+  "variants": {
+    "107072687": {
+      "id": 107072687,
+      "title": "\"Color: Stone\",\"Size: 4T\"",
+      "default": true,
+      "url": "https://www.thecirclewhistler.com/get-wild-hacci-pullover.html?id=107072687",
+      "sku": "",
+      "price": {
+        "price": 24.49,
+        "price_money": "C$24.49",
+        "price_money_with_currency": "C$24.49 CAD",
+        "price_money_without_currency": "24.49",
+        "price_excl": 24.49,
+        "price_excl_money": "C$24.49",
+        "price_excl_money_with_currency": "C$24.49 CAD",
+        "price_excl_money_without_currency": "24.49",
+        "price_incl": 24.49,
+        "price_incl_money": "C$24.49",
+        "price_incl_money_with_currency": "C$24.49 CAD",
+        "price_incl_money_without_currency": "24.49",
+        "price_old": 48.99,
+        "price_old_money": "C$48.99",
+        "price_old_money_with_currency": "C$48.99 CAD",
+        "price_old_money_without_currency": "48.99",
+        "price_old_excl": 48.99,
+        "price_old_excl_money": "C$48.99",
+        "price_old_excl_money_with_currency": "C$48.99 CAD",
+        "price_old_excl_money_without_currency": "48.99",
+        "price_old_incl": 48.99,
+        "price_old_incl_money": "C$48.99",
+        "price_old_incl_money_with_currency": "C$48.99 CAD",
+        "price_old_incl_money_without_currency": "48.99"
+      },
+      "stock": {
+        "available": true,
+        "on_stock": true,
+        "track": true,
+        "level": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "image": 65214478
+    }
+  }
+}

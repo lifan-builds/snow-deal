@@ -1,0 +1,61 @@
+{
+  "id": 68738114,
+  "vid": 115755764,
+  "image": "https://cdn.shoplightspeed.com/shops/628048/files/78065634/50x50x2/modest-team-xl-goggles-schmobb-collab.jpg",
+  "image_id": 78065634,
+  "brand": {
+    "id": 1165585,
+    "image": "https://cdn.shoplightspeed.com/assets/blank.gif?2026-09-24",
+    "url": "https://www.thecirclewhistler.com/brands/modest/",
+    "title": "Modest"
+  },
+  "sku": "MOD25XLSHM",
+  "url": "https://www.thecirclewhistler.com/team-xl-goggles.html",
+  "title": "Team XL Goggles Schmobb Collab.",
+  "variant": "Color : Shmobb Collab.",
+  "stock": {
+    "available": true,
+    "on_stock": true,
+    "track": true,
+    "allow_outofstock_sale": false,
+    "level": 1,
+    "minimum": 1,
+    "maximum": 1,
+    "delivery": false
+  },
+  "images": [
+    "https://cdn.shoplightspeed.com/shops/628048/files/78065634/50x50x2/modest-team-xl-goggles-schmobb-collab-0.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/77540116/50x50x2/modest-team-xl-goggles-schmobb-collab-1.jpg"
+  ],
+  "price": {
+    "price": 83.99,
+    "price_old": 119.99,
+    "price_money_with_currency": "C$83.99 CAD",
+    "price_old_money_with_currency": "C$119.99 CAD"
+  },
+  "variants": {
+    "115755764": {
+      "id": 115755764,
+      "sku": "MOD25XLSHM",
+      "url": "https://www.thecirclewhistler.com/team-xl-goggles.html?id=115755764",
+      "title": "Color : Shmobb Collab.",
+      "image": 78065634,
+      "stock": {
+        "available": true,
+        "on_stock": true,
+        "track": true,
+        "level": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 83.99,
+        "price_old": 119.99,
+        "price_money_with_currency": "C$83.99 CAD",
+        "price_old_money_with_currency": "C$119.99 CAD"
+      }
+    }
+  }
+}

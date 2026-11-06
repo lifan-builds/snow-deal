@@ -1,0 +1,185 @@
+{
+  "id": 68455911,
+  "vid": 115366104,
+  "image": "https://cdn.shoplightspeed.com/shops/628048/files/72893842/50x50x2/capita-aeronaut-snowboard-2026.jpg",
+  "image_id": 72893842,
+  "brand": {
+    "id": 1165160,
+    "image": "https://cdn.shoplightspeed.com/shops/628048/files/66816672/50x50x2/capita.jpg",
+    "url": "https://www.thecirclewhistler.com/brands/capita/",
+    "title": "Capita"
+  },
+  "sku": "21030200",
+  "url": "https://www.thecirclewhistler.com/aeronaut-snowboard-2026.html",
+  "title": "Aeronaut Snowboard 2026",
+  "variant": "Size : 160W",
+  "stock": {
+    "available": true,
+    "on_stock": true,
+    "track": true,
+    "allow_outofstock_sale": false,
+    "level": 1,
+    "minimum": 1,
+    "maximum": 1,
+    "delivery": false
+  },
+  "images": [
+    "https://cdn.shoplightspeed.com/shops/628048/files/72893842/50x50x2/capita-aeronaut-snowboard-2026-0.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/72781035/50x50x2/capita-aeronaut-snowboard-2026-1.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/72781039/50x50x2/capita-aeronaut-snowboard-2026-2.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/72781040/50x50x2/capita-aeronaut-snowboard-2026-3.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/72893841/50x50x2/capita-aeronaut-snowboard-2026-4.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/72781044/50x50x2/capita-aeronaut-snowboard-2026-5.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/72893840/50x50x2/capita-aeronaut-snowboard-2026-6.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/72781041/50x50x2/capita-aeronaut-snowboard-2026-7.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/72781042/50x50x2/capita-aeronaut-snowboard-2026-8.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/72781043/50x50x2/capita-aeronaut-snowboard-2026-9.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/72781047/50x50x2/capita-aeronaut-snowboard-2026-10.jpg"
+  ],
+  "price": {
+    "price": 539.99,
+    "price_old": 899.99,
+    "price_money_with_currency": "C$539.99 CAD",
+    "price_old_money_with_currency": "C$899.99 CAD"
+  },
+  "variants": {
+    "115255972": {
+      "id": 115255972,
+      "sku": "21030100",
+      "url": "https://www.thecirclewhistler.com/aeronaut-snowboard-2026.html?id=115255972",
+      "title": "Size : 153",
+      "image": 72781040,
+      "stock": {
+        "available": false,
+        "on_stock": false,
+        "track": true,
+        "level": 0,
+        "minimum": 1,
+        "maximum": 10000,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 539.99,
+        "price_old": 899.99,
+        "price_money_with_currency": "C$539.99 CAD",
+        "price_old_money_with_currency": "C$899.99 CAD"
+      }
+    },
+    "115255973": {
+      "id": 115255973,
+      "sku": "21030100",
+      "url": "https://www.thecirclewhistler.com/aeronaut-snowboard-2026.html?id=115255973",
+      "title": "Size : 155",
+      "image": 72781039,
+      "stock": {
+        "available": false,
+        "on_stock": false,
+        "track": true,
+        "level": 0,
+        "minimum": 1,
+        "maximum": 10000,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 539.99,
+        "price_old": 899.99,
+        "price_money_with_currency": "C$539.99 CAD",
+        "price_old_money_with_currency": "C$899.99 CAD"
+      }
+    },
+    "115255974": {
+      "id": 115255974,
+      "sku": "21030100",
+      "url": "https://www.thecirclewhistler.com/aeronaut-snowboard-2026.html?id=115255974",
+      "title": "Size : 157",
+      "image": 72781035,
+      "stock": {
+        "available": false,
+        "on_stock": false,
+        "track": true,
+        "level": 0,
+        "minimum": 1,
+        "maximum": 10000,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 539.99,
+        "price_old": 899.99,
+        "price_money_with_currency": "C$539.99 CAD",
+        "price_old_money_with_currency": "C$899.99 CAD"
+      }
+    },
+    "115366101": {
+      "id": 115366101,
+      "sku": "21030100",
+      "url": "https://www.thecirclewhistler.com/aeronaut-snowboard-2026.html?id=115366101",
+      "title": "Size : 159",
+      "image": 72893841,
+      "stock": {
+        "available": false,
+        "on_stock": false,
+        "track": true,
+        "level": 0,
+        "minimum": 1,
+        "maximum": 10000,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 539.99,
+        "price_old": 899.99,
+        "price_money_with_currency": "C$539.99 CAD",
+        "price_old_money_with_currency": "C$899.99 CAD"
+      }
+    },
+    "115366104": {
+      "id": 115366104,
+      "sku": "21030200",
+      "url": "https://www.thecirclewhistler.com/aeronaut-snowboard-2026.html?id=115366104",
+      "title": "Size : 160W",
+      "image": 72893842,
+      "stock": {
+        "available": true,
+        "on_stock": true,
+        "track": true,
+        "level": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 539.99,
+        "price_old": 899.99,
+        "price_money_with_currency": "C$539.99 CAD",
+        "price_old_money_with_currency": "C$899.99 CAD"
+      }
+    },
+    "115366109": {
+      "id": 115366109,
+      "sku": "21030200",
+      "url": "https://www.thecirclewhistler.com/aeronaut-snowboard-2026.html?id=115366109",
+      "title": "Size : 162W",
+      "image": 72893840,
+      "stock": {
+        "available": false,
+        "on_stock": false,
+        "track": true,
+        "level": 0,
+        "minimum": 1,
+        "maximum": 10000,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 539.99,
+        "price_old": 899.99,
+        "price_money_with_currency": "C$539.99 CAD",
+        "price_old_money_with_currency": "C$899.99 CAD"
+      }
+    }
+  }
+}
