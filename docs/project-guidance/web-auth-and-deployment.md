@@ -43,3 +43,9 @@ Assert source-order-independent representatives, legacy and unknown selected for
 ### Wrong versus correct
 
 Wrong: rewrite stored merchant sizes to simplify the menu or deduplicate cards using display labels. Correct: deduplicate facet strings using existing matching semantics, while cards and history retain the exact merchant variant.
+
+## Catalog release asset integrity
+
+`scripts/restore_catalog.py` pins the selected release asset's metadata before downloading. Require a unique named asset with `state: uploaded`, an integer size (never bool) greater than zero and at most the existing 100 MiB `MAX_BYTES`, and a `sha256:` digest followed by exactly 64 hexadecimal characters. Missing, malformed or unsupported metadata fails before destination setup or the asset request, including with `--bootstrap`. Only an explicitly absent asset in well-formed metadata permits the existing first-run bootstrap.
+
+Count bytes and update SHA-256 incrementally while streaming; stop on excess expected length or budget. Require exact final metadata length and digest before SQLite integrity/catalog/history checks. A valid old SQLite file, including a same-sized changed file, is not the pinned asset. Fail without placing a destination and clean temporary bytes on every mismatch; never silently bootstrap, retry or discard history. Successful restoration preserves the entire snapshot byte-for-byte before atomic placement. Retain fixed URL construction, metadata-only authentication and refusal to overwrite an existing destination. This verifies the metadata read for this invocation; it cannot promise that a publisher will never replace an asset afterward.

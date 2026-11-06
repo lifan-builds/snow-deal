@@ -1,6 +1,8 @@
 """Restore an explicit public catalog snapshot; never silently discard its history."""
 import argparse
+import hashlib
 import os
+import re
 import sqlite3
 import sys
 import tempfile
@@ -25,27 +27,51 @@ def restore(catalog: str, destination: Path, *, bootstrap=False, transport=None,
         headers = {"Authorization": f"Bearer {github_token}"} if github_token else {}
         response = client.get(RELEASE_API, headers=headers, follow_redirects=False)
         response.raise_for_status()
-        assets = response.json().get("assets")
-        if not isinstance(assets, list):
-            raise ValueError("Malformed release metadata")  # noqa: TRY004 - invalid remote response, not caller type
-        asset = next((a for a in assets if a.get("name") == f"{catalog}.db"), None)
-        if asset is None:
+        metadata = response.json()
+        if not isinstance(metadata, dict):
+            raise ValueError("Malformed release metadata")  # noqa: TRY004 - invalid remote response
+        assets = metadata.get("assets")
+        if (not isinstance(assets, list) or any(not isinstance(a, dict)
+                or not isinstance(a.get("name"), str) or not a["name"] for a in assets)):
+            raise ValueError("Malformed release metadata")
+        matches = [a for a in assets if a["name"] == f"{catalog}.db"]
+        if not matches:
             if bootstrap:
                 return "explicit-bootstrap"
             raise ValueError("Previous snapshot missing; explicit first-run bootstrap required")
+        if len(matches) != 1:
+            raise ValueError("Ambiguous snapshot asset metadata")
+        asset = matches[0]
+        expected_size, digest = asset.get("size"), asset.get("digest")
+        if asset.get("state") != "uploaded":
+            raise ValueError("Snapshot asset is not uploaded")
+        if (not isinstance(expected_size, int) or isinstance(expected_size, bool)
+                or not 0 < expected_size <= MAX_BYTES):
+            raise ValueError("Invalid snapshot asset size")
+        if not isinstance(digest, str) or not re.fullmatch(r"sha256:[0-9a-fA-F]{64}", digest):
+            raise ValueError("Missing or unsupported snapshot SHA-256 metadata")
+        expected_digest = digest.removeprefix("sha256:").lower()
         # Construct the known repository destination, never follow a metadata-supplied URL.
         url = f"https://github.com/lifan-builds/snow-deal-data/releases/download/latest-data/{catalog}.db"
         destination.parent.mkdir(parents=True, exist_ok=True)
         with tempfile.TemporaryDirectory(dir=destination.parent) as temp:
             candidate = Path(temp) / "snapshot.db"
             total = 0
+            actual_digest = hashlib.sha256()
             with client.stream("GET", url) as response, candidate.open("wb") as output:
                 response.raise_for_status()
                 for chunk in response.iter_bytes():
                     total += len(chunk)
                     if total > MAX_BYTES:
                         raise ValueError("Snapshot exceeds download budget")
+                    if total > expected_size:
+                        raise ValueError("Snapshot byte length does not match release asset metadata")
+                    actual_digest.update(chunk)
                     output.write(chunk)
+            if total != expected_size:
+                raise ValueError("Snapshot byte length does not match release asset metadata")
+            if actual_digest.hexdigest() != expected_digest:
+                raise ValueError("Snapshot SHA-256 does not match release asset metadata")
             with sqlite3.connect(candidate.resolve().as_uri() + "?mode=ro", uri=True) as db:
                 if db.execute("PRAGMA quick_check").fetchone()[0] != "ok":
                     raise ValueError("Snapshot failed integrity check")

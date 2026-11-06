@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-11-06T00:47:27.403136+00:00",
+  "baseline_commit": "d337115143af42cbd9df8d65873601903870b76f",
+  "metadata": {
+    "digest": "sha256:abf7a8f5f4971d1bfc9025cfb52933a30b8f45eb1de7a7fb2843982c12389a3b",
+    "name": "tools.db",
+    "size": 3239936,
+    "state": "uploaded",
+    "updated_at": "2026-11-06T00:27:44Z"
+  },
+  "returned_bytes": 3145728,
+  "returned_sha256": "0c67f991589eb7f38ac839162ca599608c240c54e89362652153f2b5c95f5936",
+  "baseline_result": "restored",
+  "baseline_accepted_stale_valid_database": true,
+  "scope": "Replay of retained public release bytes through mocked HTTP; no network or publication."
+}
