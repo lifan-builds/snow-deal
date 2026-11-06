@@ -1,0 +1,3 @@
+# Boundary
+
+Read existing snow STORES.use_browser as source of truth and actual workflow stores input. Add a small deterministic runtime requirement decision used before Playwright installation; retain conservative true for empty/full or unknown selection, false only for entirely known HTTP stores. Keep current input parsing/CLI validation, same packageversions, security, jobtimeout, schedules, source-count/history/publication gates. A tiny Python helper with meaningful offline tests is preferred to hard-coded Circle-name workflow logic. No network/browser/credential/database operations in validation.
