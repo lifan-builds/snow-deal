@@ -1,0 +1,106 @@
+{
+  "id": 57121688,
+  "vid": 94619673,
+  "image": "https://cdn.shoplightspeed.com/shops/628048/files/54568425/50x50x2/burton-1995-kelly-air-ltd-snowboard.jpg",
+  "image_id": 54568425,
+  "sku": "",
+  "url": "https://www.thecirclewhistler.com/1995-kelly-air-ltd-snowboard.html",
+  "title": "1995 Kelly Air LTD Snowboard",
+  "variant": "Size : 148",
+  "stock": {
+    "available": true,
+    "on_stock": true,
+    "track": true,
+    "allow_outofstock_sale": false,
+    "level": 1,
+    "minimum": 1,
+    "maximum": 1,
+    "delivery": false
+  },
+  "images": [
+    "https://cdn.shoplightspeed.com/shops/628048/files/54568425/50x50x2/burton-1995-kelly-air-ltd-snowboard-0.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/54568429/50x50x2/burton-1995-kelly-air-ltd-snowboard-1.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/54568432/50x50x2/burton-1995-kelly-air-ltd-snowboard-2.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/54568435/50x50x2/burton-1995-kelly-air-ltd-snowboard-3.jpg"
+  ],
+  "brand": {
+    "title": "Burton"
+  },
+  "price": {
+    "price": 485.99,
+    "price_old": 809.99,
+    "price_money_with_currency": "C$485.99 CAD",
+    "price_old_money_with_currency": "C$809.99 CAD"
+  },
+  "variants": {
+    "94619673": {
+      "id": 94619673,
+      "sku": "",
+      "url": "https://www.thecirclewhistler.com/1995-kelly-air-ltd-snowboard.html?id=94619673",
+      "title": "Size : 148",
+      "image": null,
+      "stock": {
+        "available": true,
+        "on_stock": true,
+        "track": true,
+        "level": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 485.99,
+        "price_old": 809.99,
+        "price_money_with_currency": "C$485.99 CAD",
+        "price_old_money_with_currency": "C$809.99 CAD"
+      }
+    },
+    "94619666": {
+      "id": 94619666,
+      "sku": "",
+      "url": "https://www.thecirclewhistler.com/1995-kelly-air-ltd-snowboard.html?id=94619666",
+      "title": "Size : 158",
+      "image": null,
+      "stock": {
+        "available": false,
+        "on_stock": false,
+        "track": true,
+        "level": 0,
+        "minimum": 1,
+        "maximum": 10000,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 485.99,
+        "price_old": 809.99,
+        "price_money_with_currency": "C$485.99 CAD",
+        "price_old_money_with_currency": "C$809.99 CAD"
+      }
+    },
+    "94619651": {
+      "id": 94619651,
+      "sku": "",
+      "url": "https://www.thecirclewhistler.com/1995-kelly-air-ltd-snowboard.html?id=94619651",
+      "title": "Size : 168",
+      "image": null,
+      "stock": {
+        "available": false,
+        "on_stock": false,
+        "track": true,
+        "level": 0,
+        "minimum": 1,
+        "maximum": 10000,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 485.99,
+        "price_old": 809.99,
+        "price_money_with_currency": "C$485.99 CAD",
+        "price_old_money_with_currency": "C$809.99 CAD"
+      }
+    }
+  }
+}

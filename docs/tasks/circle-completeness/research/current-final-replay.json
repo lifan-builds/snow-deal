@@ -1,0 +1,31 @@
+{
+  "recorded_at": "2026-11-06T04:10:14.405280+00:00",
+  "complete": true,
+  "outcome": {
+    "errors": 0,
+    "pages": 36,
+    "collections": [
+      {
+        "url": "https://www.thecirclewhistler.com/sale/",
+        "pages": 18,
+        "products": 391,
+        "status": "complete"
+      },
+      {
+        "url": "https://www.thecirclewhistler.com/snow/",
+        "pages": 18,
+        "products": 15,
+        "status": "complete"
+      }
+    ],
+    "product_pages": 406,
+    "evidence_requests": 406
+  },
+  "parser_sha256": "08069d99db46af8aee4c467093bc02aa55ffe46ca041e5e365a0ef477f825014",
+  "products": 406,
+  "offers": 1047,
+  "requests": 848,
+  "observation_start": "2026-11-06T03:28:37.853038+00:00",
+  "observation_end": "2026-11-06T04:09:16.945431+00:00",
+  "scope": "Offline production fetcher replay. Original response timestamps retained. Not fresh source admission."
+}

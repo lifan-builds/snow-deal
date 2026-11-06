@@ -1,0 +1,3 @@
+{"file": "docs/project-guidance/aggregator-data-and-parsers.md", "reason": "Exact variant, stock, currency, bounded source completeness and preservation contracts"}
+{"file": "docs/project-guidance/verification.md", "reason": "Offline tests, independent merchant sampling and audit timing"}
+{"file": "docs/tasks/circle-exact-offers/research/discovery.md", "reason": "Verified public merchant schema and primary API documentation"}

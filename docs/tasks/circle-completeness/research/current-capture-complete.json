@@ -1,0 +1,30 @@
+{
+  "status": "diagnosis_complete",
+  "started_at": "2026-11-06T04:01:39.486808+00:00",
+  "recorded_at": "2026-11-06T04:09:18.122723+00:00",
+  "scope": "Current source consistency recheck after observed interleaved-page duplicate. Collection pages discovered first; only November6 03:28+ successful detail bodies reused with original timestamps. Failures remain unresolved. Final reviewed production-fetcher replay and merchant audit required; no source activation.",
+  "parser_sha256": "c68199e014729ee00d97e331c86d4f651efa3fc8a14f86d0cfc7b05074b7d19b",
+  "collections": [
+    {
+      "url": "https://www.thecirclewhistler.com/sale/",
+      "pages": 18,
+      "families": 391,
+      "terminal": true
+    },
+    {
+      "url": "https://www.thecirclewhistler.com/snow/",
+      "pages": 18,
+      "families": 77,
+      "terminal": true
+    }
+  ],
+  "discounted_families": 406,
+  "processed_families": 406,
+  "parsed_families": 406,
+  "offers": 1047,
+  "failures": [],
+  "requests": 848,
+  "live_requests": 183,
+  "replayed_requests": 665,
+  "source_activated": false
+}

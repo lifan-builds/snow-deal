@@ -1,0 +1,33 @@
+{
+  "status": "incomplete",
+  "started_at": "2026-11-06T03:44:21.709986+00:00",
+  "parser_sha256": "c68199e014729ee00d97e331c86d4f651efa3fc8a14f86d0cfc7b05074b7d19b",
+  "scope": "Resumed current public source capture after process interruption; 336 original timestamped/hash-checked responses retained and missing endpoints freshly fetched. Structural parser only; final age-metadata replay, review and merchant audit required. No activation or DB.",
+  "complete": false,
+  "products": 186,
+  "offers": 450,
+  "finished_at": "2026-11-06T03:47:01.489368+00:00",
+  "outcome": {
+    "errors": 1,
+    "pages": 25,
+    "collections": [
+      {
+        "url": "https://www.thecirclewhistler.com/sale/",
+        "pages": 7,
+        "products": 138,
+        "status": "parse_error"
+      },
+      {
+        "url": "https://www.thecirclewhistler.com/snow/",
+        "pages": 18,
+        "products": 48,
+        "status": "complete"
+      }
+    ],
+    "product_pages": 186,
+    "evidence_requests": 186
+  },
+  "requests": 397,
+  "observation_start": "2026-11-06T03:28:35.254519+00:00",
+  "observation_end": "2026-11-06T03:47:01.380325+00:00"
+}

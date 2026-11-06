@@ -1,0 +1,120 @@
+[
+  {
+    "name": "Basic Legging",
+    "url": "https://www.thecirclewhistler.com/basic-legging.html",
+    "id": 69422074,
+    "sizes": [
+      "6-7Y",
+      "8-9Y",
+      "10-11Y"
+    ],
+    "brand": {
+      "id": 1521016,
+      "url": "https://www.thecirclewhistler.com/brands/rylee-cru/",
+      "title": "Rylee + Cru"
+    },
+    "description": "",
+    "expected": "Includes children sizing",
+    "source_sha256": "3fac5c160997c4c568861f50f3c1774efc19c2879d6a5656ff833c286b295fee"
+  },
+  {
+    "name": "Get Wild Hacci Pullover",
+    "url": "https://www.thecirclewhistler.com/get-wild-hacci-pullover.html",
+    "id": 63996458,
+    "sizes": [
+      "4T"
+    ],
+    "brand": {
+      "id": 3655902,
+      "url": "https://www.thecirclewhistler.com/brands/feather-for-arrow/",
+      "title": "Feather For Arrow"
+    },
+    "description": "",
+    "expected": "Includes children sizing",
+    "source_sha256": "358d5a8b8682013e75890c3c1cc8dff097655e3f8276a49587f4cb40b0b7648d"
+  },
+  {
+    "name": "Merry in Chenil Sweatshirt",
+    "url": "https://www.thecirclewhistler.com/merry-in-chenil-sweatshirt.html",
+    "id": 68519698,
+    "sizes": [
+      "12M",
+      "18M",
+      "24M",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "10",
+      "12"
+    ],
+    "brand": {
+      "id": 1343984,
+      "url": "https://www.thecirclewhistler.com/brands/petit-lem/",
+      "title": "Petit Lem"
+    },
+    "description": "",
+    "expected": "Includes children sizing",
+    "source_sha256": "5692839f4cc78847b57c30dbb513c15cefb33b38ffeab84950e4bb33e2f71c21"
+  },
+  {
+    "name": "Basics Crewneck Knit Sweatshirt",
+    "url": "https://www.thecirclewhistler.com/basics-crewneck-knit-sweatshirt.html",
+    "id": 69048087,
+    "sizes": [
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "10"
+    ],
+    "brand": {
+      "id": 2212719,
+      "url": "https://www.thecirclewhistler.com/brands/miles/",
+      "title": "Miles"
+    },
+    "description": "",
+    "expected": "Includes children sizing",
+    "source_sha256": "60c6808f8b060e1b73b29a3e1c95fce347714764f2a84a2a9faa0631dead001b"
+  },
+  {
+    "name": "UniDo Lilac Unicorn Snowsuit 2026 XL",
+    "url": "https://www.thecirclewhistler.com/unido-lila-unicorn-snowsuit.html",
+    "id": 64344283,
+    "sizes": [
+      "XL (140-152)",
+      "L (128-140)"
+    ],
+    "brand": {
+      "id": 2689109,
+      "url": "https://www.thecirclewhistler.com/brands/weedo/",
+      "title": "Weedo"
+    },
+    "description": "XL should fit approximately ages 10–12 years, for a child",
+    "expected": "Includes children sizing",
+    "source_sha256": "7e014deb3f42e775fc6023b87272c0c446b0eeab398168405af1da2df2b2d2fb"
+  },
+  {
+    "name": "Elephant Man Rain Jacket in Orange",
+    "url": "https://www.thecirclewhistler.com/gosoaky-elephant-man-rain-jacket.html",
+    "id": 61934383,
+    "sizes": [
+      "110/116 (5-6Y)",
+      "122/128 (7-8Y)",
+      "98/104 (3-4Y)",
+      "110/116 (5-6Y)"
+    ],
+    "brand": {
+      "id": 1165353,
+      "url": "https://www.thecirclewhistler.com/brands/gosoaky/",
+      "title": "Gosoaky"
+    },
+    "description": "",
+    "expected": "Includes children sizing",
+    "source_sha256": "bf52302aed1e66121041ffd6ad93588c4362222529c78a816f788062ee6917b1"
+  }
+]

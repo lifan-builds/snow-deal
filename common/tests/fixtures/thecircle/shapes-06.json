@@ -1,0 +1,531 @@
+{
+  "id": 43578349,
+  "vid": 71619556,
+  "image": "https://cdn.shoplightspeed.com/shops/628048/files/37905967/50x50x2/roark-layover-20-pants.jpg",
+  "image_id": 37905967,
+  "brand": {
+    "id": 1165267,
+    "image": "https://cdn.shoplightspeed.com/shops/628048/files/66740089/50x50x2/roark.jpg",
+    "url": "https://www.thecirclewhistler.com/brands/roark/",
+    "title": "Roark"
+  },
+  "sku": "",
+  "url": "https://www.thecirclewhistler.com/layover-20-pants.html",
+  "title": "Layover 2.0 Pants",
+  "variant": "\"Color: Black\",\"Size: 34\"",
+  "stock": {
+    "available": true,
+    "on_stock": true,
+    "track": true,
+    "allow_outofstock_sale": false,
+    "level": 2,
+    "minimum": 1,
+    "maximum": 2,
+    "delivery": false
+  },
+  "images": [
+    "https://cdn.shoplightspeed.com/shops/628048/files/37905967/50x50x2/roark-layover-20-pants-0.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/37905942/50x50x2/roark-layover-20-pants-1.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/37905977/50x50x2/roark-layover-20-pants-2.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/37905957/50x50x2/roark-layover-20-pants-3.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/46978207/50x50x2/roark-layover-20-pants-4.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/37905981/50x50x2/roark-layover-20-pants-5.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/43674684/50x50x2/roark-layover-20-pants-6.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/43674689/50x50x2/roark-layover-20-pants-7.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/47824968/50x50x2/roark-layover-20-pants-8.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/47824994/50x50x2/roark-layover-20-pants-9.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/52864801/50x50x2/roark-layover-20-pants-10.jpg",
+    "https://cdn.shoplightspeed.com/shops/628048/files/52864806/50x50x2/roark-layover-20-pants-11.jpg"
+  ],
+  "price": {
+    "price": 90.99,
+    "price_old": 129.99,
+    "price_money_with_currency": "C$90.99 CAD",
+    "price_old_money_with_currency": "C$129.99 CAD"
+  },
+  "variants": {
+    "79984536": {
+      "id": 79984536,
+      "sku": "",
+      "url": "https://www.thecirclewhistler.com/layover-20-pants.html?id=79984536",
+      "title": "\"Color: Black\",\"Size: 28\"",
+      "image": 37905967,
+      "stock": {
+        "available": false,
+        "on_stock": false,
+        "track": true,
+        "level": 0,
+        "minimum": 1,
+        "maximum": 10000,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 90.99,
+        "price_old": 129.99,
+        "price_money_with_currency": "C$90.99 CAD",
+        "price_old_money_with_currency": "C$129.99 CAD"
+      }
+    },
+    "71619583": {
+      "id": 71619583,
+      "sku": "",
+      "url": "https://www.thecirclewhistler.com/layover-20-pants.html?id=71619583",
+      "title": "\"Color: Black\",\"Size: 30\"",
+      "image": 37905967,
+      "stock": {
+        "available": true,
+        "on_stock": true,
+        "track": true,
+        "level": 5,
+        "minimum": 1,
+        "maximum": 5,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 90.99,
+        "price_old": 129.99,
+        "price_money_with_currency": "C$90.99 CAD",
+        "price_old_money_with_currency": "C$129.99 CAD"
+      }
+    },
+    "71619571": {
+      "id": 71619571,
+      "sku": "",
+      "url": "https://www.thecirclewhistler.com/layover-20-pants.html?id=71619571",
+      "title": "\"Color: Black\",\"Size: 31\"",
+      "image": 37905967,
+      "stock": {
+        "available": true,
+        "on_stock": true,
+        "track": true,
+        "level": 3,
+        "minimum": 1,
+        "maximum": 3,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 90.99,
+        "price_old": 129.99,
+        "price_money_with_currency": "C$90.99 CAD",
+        "price_old_money_with_currency": "C$129.99 CAD"
+      }
+    },
+    "71619578": {
+      "id": 71619578,
+      "sku": "",
+      "url": "https://www.thecirclewhistler.com/layover-20-pants.html?id=71619578",
+      "title": "\"Color: Black\",\"Size: 32\"",
+      "image": 37905967,
+      "stock": {
+        "available": false,
+        "on_stock": false,
+        "track": true,
+        "level": 0,
+        "minimum": 1,
+        "maximum": 10000,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 90.99,
+        "price_old": 129.99,
+        "price_money_with_currency": "C$90.99 CAD",
+        "price_old_money_with_currency": "C$129.99 CAD"
+      }
+    },
+    "71619563": {
+      "id": 71619563,
+      "sku": "",
+      "url": "https://www.thecirclewhistler.com/layover-20-pants.html?id=71619563",
+      "title": "\"Color: Black\",\"Size: 33\"",
+      "image": 37905967,
+      "stock": {
+        "available": false,
+        "on_stock": false,
+        "track": true,
+        "level": 0,
+        "minimum": 1,
+        "maximum": 10000,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 90.99,
+        "price_old": 129.99,
+        "price_money_with_currency": "C$90.99 CAD",
+        "price_old_money_with_currency": "C$129.99 CAD"
+      }
+    },
+    "71619556": {
+      "id": 71619556,
+      "sku": "",
+      "url": "https://www.thecirclewhistler.com/layover-20-pants.html?id=71619556",
+      "title": "\"Color: Black\",\"Size: 34\"",
+      "image": 37905967,
+      "stock": {
+        "available": true,
+        "on_stock": true,
+        "track": true,
+        "level": 2,
+        "minimum": 1,
+        "maximum": 2,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 90.99,
+        "price_old": 129.99,
+        "price_money_with_currency": "C$90.99 CAD",
+        "price_old_money_with_currency": "C$129.99 CAD"
+      }
+    },
+    "79984543": {
+      "id": 79984543,
+      "sku": "",
+      "url": "https://www.thecirclewhistler.com/layover-20-pants.html?id=79984543",
+      "title": "\"Color: Camo\",\"Size: 28\"",
+      "image": 46978207,
+      "stock": {
+        "available": false,
+        "on_stock": false,
+        "track": true,
+        "level": 0,
+        "minimum": 1,
+        "maximum": 10000,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 90.99,
+        "price_old": 129.99,
+        "price_money_with_currency": "C$90.99 CAD",
+        "price_old_money_with_currency": "C$129.99 CAD"
+      }
+    },
+    "84777428": {
+      "id": 84777428,
+      "sku": "",
+      "url": "https://www.thecirclewhistler.com/layover-20-pants.html?id=84777428",
+      "title": "\"Color: Camo 2\",\"Size: 30\"",
+      "image": 43674684,
+      "stock": {
+        "available": true,
+        "on_stock": true,
+        "track": true,
+        "level": 3,
+        "minimum": 1,
+        "maximum": 3,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 90.99,
+        "price_old": 129.99,
+        "price_money_with_currency": "C$90.99 CAD",
+        "price_old_money_with_currency": "C$129.99 CAD"
+      }
+    },
+    "93924600": {
+      "id": 93924600,
+      "sku": "",
+      "url": "https://www.thecirclewhistler.com/layover-20-pants.html?id=93924600",
+      "title": "\"Color: Camo 2\",\"Size: 31\"",
+      "image": null,
+      "stock": {
+        "available": false,
+        "on_stock": false,
+        "track": true,
+        "level": 0,
+        "minimum": 1,
+        "maximum": 10000,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 90.99,
+        "price_old": 129.99,
+        "price_money_with_currency": "C$90.99 CAD",
+        "price_old_money_with_currency": "C$129.99 CAD"
+      }
+    },
+    "84777429": {
+      "id": 84777429,
+      "sku": "",
+      "url": "https://www.thecirclewhistler.com/layover-20-pants.html?id=84777429",
+      "title": "\"Color: Camo 2\",\"Size: 32\"",
+      "image": 43674684,
+      "stock": {
+        "available": true,
+        "on_stock": true,
+        "track": true,
+        "level": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 90.99,
+        "price_old": 129.99,
+        "price_money_with_currency": "C$90.99 CAD",
+        "price_old_money_with_currency": "C$129.99 CAD"
+      }
+    },
+    "93924601": {
+      "id": 93924601,
+      "sku": "",
+      "url": "https://www.thecirclewhistler.com/layover-20-pants.html?id=93924601",
+      "title": "\"Color: Camo 2\",\"Size: 33\"",
+      "image": null,
+      "stock": {
+        "available": false,
+        "on_stock": false,
+        "track": true,
+        "level": 0,
+        "minimum": 1,
+        "maximum": 10000,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 90.99,
+        "price_old": 129.99,
+        "price_money_with_currency": "C$90.99 CAD",
+        "price_old_money_with_currency": "C$129.99 CAD"
+      }
+    },
+    "88504510": {
+      "id": 88504510,
+      "sku": "",
+      "url": "https://www.thecirclewhistler.com/layover-20-pants.html?id=88504510",
+      "title": "\"Color: Camo 2\",\"Size: 38\"",
+      "image": 43674684,
+      "stock": {
+        "available": true,
+        "on_stock": true,
+        "track": true,
+        "level": 2,
+        "minimum": 1,
+        "maximum": 2,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 90.99,
+        "price_old": 129.99,
+        "price_money_with_currency": "C$90.99 CAD",
+        "price_old_money_with_currency": "C$129.99 CAD"
+      }
+    },
+    "85922325": {
+      "id": 85922325,
+      "sku": "",
+      "url": "https://www.thecirclewhistler.com/layover-20-pants.html?id=85922325",
+      "title": "\"Color: Blue\",\"Size: 30\"",
+      "image": 47824968,
+      "stock": {
+        "available": true,
+        "on_stock": true,
+        "track": true,
+        "level": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 90.99,
+        "price_old": 129.99,
+        "price_money_with_currency": "C$90.99 CAD",
+        "price_old_money_with_currency": "C$129.99 CAD"
+      }
+    },
+    "92474216": {
+      "id": 92474216,
+      "sku": "",
+      "url": "https://www.thecirclewhistler.com/layover-20-pants.html?id=92474216",
+      "title": "\"Color: Dark Sky\",\"Size: 31\"",
+      "image": null,
+      "stock": {
+        "available": true,
+        "on_stock": true,
+        "track": true,
+        "level": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 90.99,
+        "price_old": 129.99,
+        "price_money_with_currency": "C$90.99 CAD",
+        "price_old_money_with_currency": "C$129.99 CAD"
+      }
+    },
+    "92474223": {
+      "id": 92474223,
+      "sku": "",
+      "url": "https://www.thecirclewhistler.com/layover-20-pants.html?id=92474223",
+      "title": "\"Color: Dark Sky\",\"Size: 33\"",
+      "image": null,
+      "stock": {
+        "available": true,
+        "on_stock": true,
+        "track": true,
+        "level": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 90.99,
+        "price_old": 129.99,
+        "price_money_with_currency": "C$90.99 CAD",
+        "price_old_money_with_currency": "C$129.99 CAD"
+      }
+    },
+    "92474225": {
+      "id": 92474225,
+      "sku": "",
+      "url": "https://www.thecirclewhistler.com/layover-20-pants.html?id=92474225",
+      "title": "\"Color: Dark Sky\",\"Size: 34\"",
+      "image": null,
+      "stock": {
+        "available": false,
+        "on_stock": false,
+        "track": true,
+        "level": 0,
+        "minimum": 1,
+        "maximum": 10000,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 90.99,
+        "price_old": 129.99,
+        "price_money_with_currency": "C$90.99 CAD",
+        "price_old_money_with_currency": "C$129.99 CAD"
+      }
+    },
+    "93924567": {
+      "id": 93924567,
+      "sku": "",
+      "url": "https://www.thecirclewhistler.com/layover-20-pants.html?id=93924567",
+      "title": "\"Color: Dark Khaki\",\"Size: 32\"",
+      "image": null,
+      "stock": {
+        "available": true,
+        "on_stock": true,
+        "track": true,
+        "level": 2,
+        "minimum": 1,
+        "maximum": 2,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 90.99,
+        "price_old": 129.99,
+        "price_money_with_currency": "C$90.99 CAD",
+        "price_old_money_with_currency": "C$129.99 CAD"
+      }
+    },
+    "93924569": {
+      "id": 93924569,
+      "sku": "",
+      "url": "https://www.thecirclewhistler.com/layover-20-pants.html?id=93924569",
+      "title": "\"Color: Dark Khaki\",\"Size: 34\"",
+      "image": null,
+      "stock": {
+        "available": false,
+        "on_stock": false,
+        "track": true,
+        "level": 0,
+        "minimum": 1,
+        "maximum": 10000,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 90.99,
+        "price_old": 129.99,
+        "price_money_with_currency": "C$90.99 CAD",
+        "price_old_money_with_currency": "C$129.99 CAD"
+      }
+    },
+    "93924572": {
+      "id": 93924572,
+      "sku": "",
+      "url": "https://www.thecirclewhistler.com/layover-20-pants.html?id=93924572",
+      "title": "\"Color: Military\",\"Size: 28\"",
+      "image": null,
+      "stock": {
+        "available": true,
+        "on_stock": true,
+        "track": true,
+        "level": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 90.99,
+        "price_old": 129.99,
+        "price_money_with_currency": "C$90.99 CAD",
+        "price_old_money_with_currency": "C$129.99 CAD"
+      }
+    },
+    "93924574": {
+      "id": 93924574,
+      "sku": "",
+      "url": "https://www.thecirclewhistler.com/layover-20-pants.html?id=93924574",
+      "title": "\"Color: Military\",\"Size: 32\"",
+      "image": null,
+      "stock": {
+        "available": false,
+        "on_stock": false,
+        "track": true,
+        "level": 0,
+        "minimum": 1,
+        "maximum": 10000,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 90.99,
+        "price_old": 129.99,
+        "price_money_with_currency": "C$90.99 CAD",
+        "price_old_money_with_currency": "C$129.99 CAD"
+      }
+    },
+    "93924576": {
+      "id": 93924576,
+      "sku": "",
+      "url": "https://www.thecirclewhistler.com/layover-20-pants.html?id=93924576",
+      "title": "\"Color: Military\",\"Size: 34\"",
+      "image": null,
+      "stock": {
+        "available": false,
+        "on_stock": false,
+        "track": true,
+        "level": 0,
+        "minimum": 1,
+        "maximum": 10000,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 90.99,
+        "price_old": 129.99,
+        "price_money_with_currency": "C$90.99 CAD",
+        "price_old_money_with_currency": "C$129.99 CAD"
+      }
+    }
+  }
+}

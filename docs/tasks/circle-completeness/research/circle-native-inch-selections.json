@@ -1,0 +1,23 @@
+{
+  "family_url": "https://www.thecirclewhistler.com/authentic-chino-loose-pant-68489662.html",
+  "method": "Native IAB selectOption; read-only DOM after each navigation; no cart action",
+  "observations": [
+    {
+      "selected_size": "23\"",
+      "url": "https://www.thecirclewhistler.com/authentic-chino-loose-pant-68489662.html?id=115322194&quantity=1",
+      "form_action": "https://www.thecirclewhistler.com/cart/add/115322194/",
+      "hidden_size": "Size: 23"
+    },
+    {
+      "selected_size": "24\"",
+      "url": "https://www.thecirclewhistler.com/authentic-chino-loose-pant-68489662.html?id=115322196&quantity=1",
+      "form_action": "https://www.thecirclewhistler.com/cart/add/115322196/",
+      "hidden_size": "Size: 24",
+      "price_cad": 39.99,
+      "reference_cad": 79.99
+    }
+  ],
+  "scope": "Exact selected sizes and variant destinations observed. Not checkout or historical reference verification.",
+  "recorded_at": "2026-11-06T03:05:33.066957+00:00",
+  "observation_window": "Current native browser session; per-navigation timestamps were not captured"
+}

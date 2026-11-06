@@ -1,0 +1,63 @@
+{
+  "recorded_at": "2026-11-06T03:08:45.270284+00:00",
+  "asset_id": 715556814,
+  "asset_size": 206483456,
+  "asset_sha256": "4d1a203d90c613bf50eaf296d04ca3bfef620295b928526854f78e4bc9bb351f",
+  "asset_updated_at": "2026-11-06T02:01:19Z",
+  "source": "The Circle Whistler",
+  "products": 235,
+  "exact_offers": 0,
+  "timestamps": [
+    "2026-10-31T04:04:42.556647",
+    "2026-11-01T12:10:57.308123",
+    "2026-11-01T22:20:58.725456",
+    "2026-11-02T14:05:46.268350",
+    "2026-11-03T21:11:52.374081",
+    "2026-11-05T01:43:39.274163"
+  ],
+  "with_images": 235,
+  "categories": {
+    "snowboards": 14,
+    "jackets": 18,
+    "pants": 25,
+    "accessories": 12,
+    "unclassified": 88,
+    "helmets": 2,
+    "layers": 29,
+    "bindings": 16,
+    "gloves": 7,
+    "goggles": 4,
+    "snowboard boots": 18,
+    "winter boots": 2
+  },
+  "scope": "Verified byte-identical public asset downloaded into this task. Source-scoped read-only baseline.",
+  "rows_within_24_hours": 0,
+  "freshness_evaluated_at": "2026-11-06T03:09:04.336074+00:00",
+  "rows_by_scrape_timestamp": [
+    {
+      "scraped_at": "2026-10-31T04:04:42.556647",
+      "rows": 34
+    },
+    {
+      "scraped_at": "2026-11-01T12:10:57.308123",
+      "rows": 6
+    },
+    {
+      "scraped_at": "2026-11-01T22:20:58.725456",
+      "rows": 39
+    },
+    {
+      "scraped_at": "2026-11-02T14:05:46.268350",
+      "rows": 1
+    },
+    {
+      "scraped_at": "2026-11-03T21:11:52.374081",
+      "rows": 2
+    },
+    {
+      "scraped_at": "2026-11-05T01:43:39.274163",
+      "rows": 153
+    }
+  ],
+  "latest_batch_rows": 153
+}

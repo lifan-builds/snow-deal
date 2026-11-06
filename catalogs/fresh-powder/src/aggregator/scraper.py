@@ -50,7 +50,7 @@ _PARSER_REGISTRY: dict[str, tuple[str, str]] = {
     "skiessentials":    ("deal_common.parsers.skiessentials", "SkiEssentialsParser"),
     "bluezone":         ("snow_deals.parsers.bluezone", "BlueZoneParser"),
     "alpineshopvt":     ("aggregator.parsers.alpineshopvt", "AlpineShopVTParser"),
-    "thecircle":        ("aggregator.parsers.thecircle", "TheCircleParser"),
+    "thecircle":        ("deal_common.parsers.thecircle", "TheCircleParser"),
     "coloradodiscount": ("aggregator.parsers.coloradodiscount", "ColoradoDiscountParser"),
     "sacredride":       ("aggregator.parsers.sacredride", "SacredRideParser"),
 }

@@ -1,0 +1,129 @@
+{
+  "id": 68416944,
+  "vid": 115187954,
+  "image": "https://cdn.shoplightspeed.com/shops/628048/files/72710521/50x50x2/howl-sexton-mitt-2026.jpg",
+  "image_id": 72710521,
+  "brand": {
+    "id": 1165345,
+    "image": "https://cdn.shoplightspeed.com/shops/628048/files/66892907/50x50x2/howl.jpg",
+    "url": "https://www.thecirclewhistler.com/brands/howl/",
+    "title": "Howl"
+  },
+  "sku": "H-25001-BLK-MD",
+  "url": "https://www.thecirclewhistler.com/sexton-mitt-2026.html",
+  "title": "Sexton Mitt 2026",
+  "variant": "\"Color: Black\",\"Size: M\"",
+  "stock": {
+    "available": true,
+    "on_stock": true,
+    "track": true,
+    "allow_outofstock_sale": false,
+    "level": 1,
+    "minimum": 1,
+    "maximum": 1,
+    "delivery": false
+  },
+  "images": [
+    "https://cdn.shoplightspeed.com/shops/628048/files/72710521/50x50x2/howl-sexton-mitt-2026-0.jpg"
+  ],
+  "price": {
+    "price": 101.49,
+    "price_old": 144.99,
+    "price_money_with_currency": "C$101.49 CAD",
+    "price_old_money_with_currency": "C$144.99 CAD"
+  },
+  "variants": {
+    "115187952": {
+      "id": 115187952,
+      "sku": "H-25001-BLK-SM",
+      "url": "https://www.thecirclewhistler.com/sexton-mitt-2026.html?id=115187952",
+      "title": "\"Color: Black\",\"Size: S\"",
+      "image": 72710521,
+      "stock": {
+        "available": false,
+        "on_stock": false,
+        "track": true,
+        "level": 0,
+        "minimum": 1,
+        "maximum": 10000,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 101.49,
+        "price_old": 144.99,
+        "price_money_with_currency": "C$101.49 CAD",
+        "price_old_money_with_currency": "C$144.99 CAD"
+      }
+    },
+    "115187954": {
+      "id": 115187954,
+      "sku": "H-25001-BLK-MD",
+      "url": "https://www.thecirclewhistler.com/sexton-mitt-2026.html?id=115187954",
+      "title": "\"Color: Black\",\"Size: M\"",
+      "image": 72710521,
+      "stock": {
+        "available": true,
+        "on_stock": true,
+        "track": true,
+        "level": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 101.49,
+        "price_old": 144.99,
+        "price_money_with_currency": "C$101.49 CAD",
+        "price_old_money_with_currency": "C$144.99 CAD"
+      }
+    },
+    "115187955": {
+      "id": 115187955,
+      "sku": "H-25001-BLK-LG",
+      "url": "https://www.thecirclewhistler.com/sexton-mitt-2026.html?id=115187955",
+      "title": "\"Color: Black\",\"Size: L\"",
+      "image": 72710521,
+      "stock": {
+        "available": false,
+        "on_stock": false,
+        "track": true,
+        "level": 0,
+        "minimum": 1,
+        "maximum": 10000,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 101.49,
+        "price_old": 144.99,
+        "price_money_with_currency": "C$101.49 CAD",
+        "price_old_money_with_currency": "C$144.99 CAD"
+      }
+    },
+    "115187956": {
+      "id": 115187956,
+      "sku": "H-25001-BLK-XL",
+      "url": "https://www.thecirclewhistler.com/sexton-mitt-2026.html?id=115187956",
+      "title": "\"Color: Black\",\"Size: XL\"",
+      "image": 72710521,
+      "stock": {
+        "available": false,
+        "on_stock": false,
+        "track": true,
+        "level": 0,
+        "minimum": 1,
+        "maximum": 10000,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 101.49,
+        "price_old": 144.99,
+        "price_money_with_currency": "C$101.49 CAD",
+        "price_old_money_with_currency": "C$144.99 CAD"
+      }
+    }
+  }
+}

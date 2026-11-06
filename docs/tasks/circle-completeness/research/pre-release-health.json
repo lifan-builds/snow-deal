@@ -1,0 +1,17 @@
+{
+  "at": "2026-11-06T04:00:08.792928+00:00",
+  "sites": [
+    {
+      "site": "https://freshpowder.clifan.com",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "site": "https://bigring.clifan.com",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "site": "https://benchdrop.clifan.com",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    }
+  ]
+}

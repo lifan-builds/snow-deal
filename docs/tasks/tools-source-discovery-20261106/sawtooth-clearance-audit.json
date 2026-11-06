@@ -1,0 +1,191 @@
+{
+  "source": "Sawtooth Supplies clearance",
+  "date": "2026-11-06T03:46:41.263419+00:00",
+  "seed": 20261106,
+  "method": "top10-plus-seeded20-plus-all-deep-listings-v1",
+  "population": 3,
+  "fixed_sample_size": 3,
+  "deep_selected_listings": 0,
+  "selected_offers": 3,
+  "refresh_complete": true,
+  "passed": true,
+  "sample_size": 3,
+  "match": 3,
+  "mismatch": 0,
+  "inconclusive": 0,
+  "verified_match_percent": 100.0,
+  "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+  "results": [
+    {
+      "name": "JET 20\" Geared Head Drill Press with Power Downfeed - 230V | GHD-20PF",
+      "store": "Sawtooth Supplies clearance",
+      "offer": {
+        "variant_key": "50798287290673",
+        "url": "https://sawtoothsupplies.com/products/20-geared-head-drill-press-with-power-downfeed-230v-ghd-20pf?currency=USD&variant=50798287290673",
+        "current_price": 5299.0,
+        "original_price": 7336.0,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0880/7917/1889/files/20-geared-head-drill-press-with-power-downfeed-230v-ghd-20pf-275263.jpg?v=1741773153",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "price_note": "",
+        "discount": 27.767175572519083,
+        "savings": 2037.0
+      },
+      "check_started_at": "2026-11-06T03:46:32.750930+00:00",
+      "evidence_url": "https://sawtoothsupplies.com/products/20-geared-head-drill-press-with-power-downfeed-230v-ghd-20pf.js?currency=USD",
+      "response_sha256": "fd2b15a24db4096440366cbdb0f9db96fdffd6bf753feed3068fcefafc5e09ed",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "JET 20\" Geared Head Drill Press with Power Downfeed - 230V | GHD-20PF",
+        "variant": "50798287290673",
+        "sku": "JT9-354024",
+        "price_minor": 529900,
+        "reference_minor": 733600,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T03:46:32.736504+00:00",
+      "checked_at": "2026-11-06T03:46:37.004620+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "JET VBS-1408, 14\" Vertical Bandsaw",
+      "store": "Sawtooth Supplies clearance",
+      "offer": {
+        "variant_key": "50798281457969",
+        "url": "https://sawtoothsupplies.com/products/vbs-1408-14-vertical-bandsaw?currency=USD&variant=50798281457969",
+        "current_price": 6249.0,
+        "original_price": 7417.14,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0880/7917/1889/files/vbs-1408-14-vertical-bandsaw-984916.jpg?v=1741771560",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "price_note": "",
+        "discount": 15.749197129891035,
+        "savings": 1168.14
+      },
+      "check_started_at": "2026-11-06T03:46:37.004636+00:00",
+      "evidence_url": "https://sawtoothsupplies.com/products/vbs-1408-14-vertical-bandsaw.js?currency=USD",
+      "response_sha256": "31fd7f175209dabb0f96ca02d1720ed36471498c57618666f63aae5aab882768",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "JET VBS-1408, 14\" Vertical Bandsaw",
+        "variant": "50798281457969",
+        "sku": "JT9-414483",
+        "price_minor": 624900,
+        "reference_minor": 741714,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T03:46:32.736504+00:00",
+      "checked_at": "2026-11-06T03:46:39.144582+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "JET 20\" Planer 5HP 1Ph, Helical Head, JWP-208HH | 708544",
+      "store": "Sawtooth Supplies clearance",
+      "offer": {
+        "variant_key": "50796717932849",
+        "url": "https://sawtoothsupplies.com/products/20-planer-5hp-1ph-helical-head-jwp-208hh-708544?currency=USD&variant=50796717932849",
+        "current_price": 5149.99,
+        "original_price": 5897.13,
+        "size": null,
+        "options": "",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0880/7917/1889/files/20-planer-5hp-1ph-helical-head-jwp-208hh-708544-planer-jet-419584.jpg?v=1741746931",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "price_note": "",
+        "discount": 12.669552816369997,
+        "savings": 747.14
+      },
+      "check_started_at": "2026-11-06T03:46:39.144599+00:00",
+      "evidence_url": "https://sawtoothsupplies.com/products/20-planer-5hp-1ph-helical-head-jwp-208hh-708544.js?currency=USD",
+      "response_sha256": "67f8b892c766c69e8bd61f66cd3e44ae2dd5828d5478f7e8c83aef1bbf0526a7",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "JET 20\" Planer 5HP 1Ph, Helical Head, JWP-208HH | 708544",
+        "variant": "50796717932849",
+        "sku": "708544",
+        "price_minor": 514999,
+        "reference_minor": 589713,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T03:46:32.736504+00:00",
+      "checked_at": "2026-11-06T03:46:41.263272+00:00",
+      "within_audit_window": true
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "path": "common/tests/fixtures/thecircle/jackson.html",
+    "before": "3fb8f54980e4b37ab0352ff119328eb076951aa22a1ff7247c38114fc6a1e5fb",
+    "after": "5a021ae65262ae0b27fe798dfc399ce03316502e1314c78c4096d991b5236ffc",
+    "change": "Remove duplicate final newline only; DOM content and captured fields unchanged."
+  },
+  {
+    "path": "common/tests/fixtures/thecircle/shapes-05.html",
+    "before": "5d941b3eb783540299d3cd22ce2ab8dc5749b72a103b3b191a2d15946b3f50da",
+    "after": "e18f490a2d9b5708794cf4e398631c281b944e4174d8d3db924ad35674afd378",
+    "change": "Remove duplicate final newline only; DOM content and captured fields unchanged."
+  },
+  {
+    "path": "common/tests/fixtures/thecircle/kelly.html",
+    "before": "a96314af1611399f70d61ad8636b9447926387f018365aa6d3e0edf84db30ec1",
+    "after": "807072f8864e4fcd801f0b1aa65dcb518991971c807316b354a3d0324a18f4e3",
+    "change": "Remove duplicate final newline only; DOM content and captured fields unchanged."
+  },
+  {
+    "path": "common/tests/fixtures/thecircle/shapes-04.html",
+    "before": "a20a5a81f51b8847da76cc6181e3118059186fcd0f32c6457118aebef4073c46",
+    "after": "23808a3624a6ffbae58d514002303fc75851cd9d6843a3adb52f01682152ddec",
+    "change": "Remove duplicate final newline only; DOM content and captured fields unchanged."
+  },
+  {
+    "path": "common/tests/fixtures/thecircle/kader-inch.html",
+    "before": "8ebedc454a6a492a2e08c582353d8e65f73e4acc3d0734d59a4cce935b65d6ae",
+    "after": "9682c9d660f2db961ff5194be2f05a539974db0322c008ab2fd56f488cbb15c8",
+    "change": "Remove duplicate final newline only; DOM content and captured fields unchanged."
+  },
+  {
+    "path": "common/tests/fixtures/thecircle/rodan.html",
+    "before": "376328108ebfd859b96686d14b4751328035df5e91cbb6cf616cfb4701c1aa8f",
+    "after": "10230f4f1912f9f74539fc5ca9c969e21ea2deb24a4a31737e668d6b698ede93",
+    "change": "Remove duplicate final newline only; DOM content and captured fields unchanged."
+  },
+  {
+    "path": "common/tests/fixtures/thecircle/shapes-03.html",
+    "before": "b1a281f543855d01c7b63dc8cdfd8030a8c021f180011289de18f84a56ed853c",
+    "after": "505f4254b55303f7e025990807c4701fafb7dc0f3b0692619c2c48be2ed2fa84",
+    "change": "Remove duplicate final newline only; DOM content and captured fields unchanged."
+  },
+  {
+    "path": "common/tests/fixtures/thecircle/shapes-02.html",
+    "before": "7abcbf415c32ff578b7ab4ef4041d42e1cf3a422f0b8b09766a4c389c7c8fff9",
+    "after": "f00d46a6464a0fb0055a9eabefd6ec7b6407f5e4c67af94b8e12bda86a1afda0",
+    "change": "Remove duplicate final newline only; DOM content and captured fields unchanged."
+  },
+  {
+    "path": "common/tests/fixtures/thecircle/shapes-01.html",
+    "before": "61d86b89e17fa835bccb768fda54b3841bda3ff7d249f340487141cf5da5d859",
+    "after": "7862b88cdbbfbd4cd92b7f7b91b78f63ac283323ee45f5e575b53d96bf51b612",
+    "change": "Remove duplicate final newline only; DOM content and captured fields unchanged."
+  },
+  {
+    "path": "common/tests/fixtures/thecircle/chino-inch.html",
+    "before": "59981ce1908e585a76696f28b90bb80494d322e5e1923c436b19c96684b95991",
+    "after": "e2e5de5f17b370a4c0ce6527700fb6c5d5fbcc773043ef5f20bcca50a86bd870",
+    "change": "Remove duplicate final newline only; DOM content and captured fields unchanged."
+  },
+  {
+    "path": "common/tests/fixtures/thecircle/rainboot.html",
+    "before": "e4f1cb7693acaea28e12f3583c7b356e4ad1799e3d67214f3cc07ad27bdeb4fd",
+    "after": "259129b61bba76a100374309f6955c75e1a3163737678baefc8a7ffc6d545527",
+    "change": "Remove duplicate final newline only; DOM content and captured fields unchanged."
+  },
+  {
+    "path": "common/tests/fixtures/thecircle/shapes-00.html",
+    "before": "6d354aba8a4e1358e13d80ccd1d3ec425660abd6ff1babc13240c2365585e4ee",
+    "after": "975d2acbb1c64532e712e8e8fe82e366eca4c146aff7ba4368c47cbaea61ba29",
+    "change": "Remove duplicate final newline only; DOM content and captured fields unchanged."
+  },
+  {
+    "path": "common/tests/fixtures/thecircle/shapes-07.html",
+    "before": "5d80ccaf5dfe7069ced936cef30a84650bdecc0519fd986e5626da6fd2ed95dc",
+    "after": "1d4df536aa8f383f01ede9c5d84a70a02919b849ee66b909cebd114a33577b50",
+    "change": "Remove duplicate final newline only; DOM content and captured fields unchanged."
+  },
+  {
+    "path": "common/tests/fixtures/thecircle/shapes-06.html",
+    "before": "3c97925072869fdba0b7f9754dfd1635d7a853836414001c8614deda33b7e1ff",
+    "after": "870a2bde8b3aa8deb27002fc364393d3e86fd803bbfda4e95cc44a740b1d17d2",
+    "change": "Remove duplicate final newline only; DOM content and captured fields unchanged."
+  }
+]

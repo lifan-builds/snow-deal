@@ -1,0 +1,85 @@
+{
+  "recorded_at": "2026-11-06T03:53:40.554476+00:00",
+  "status": "isolated_code_review_passed",
+  "parser_sha256": "08069d99db46af8aee4c467093bc02aa55ffe46ca041e5e365a0ef477f825014",
+  "full_tests": 1451,
+  "focused_circle_tests": 291,
+  "audit_offline_controls": 29,
+  "existing_warnings": 8,
+  "lint": "exact CI and Circle parser/tests plus task audit passed",
+  "syntax": "JavaScript and affected Python compilation passed",
+  "typecheck": "No type checker configured",
+  "production_fetcher_replay": {
+    "recorded_at": "2026-11-06T03:52:16.136850+00:00",
+    "complete": true,
+    "outcome": {
+      "errors": 0,
+      "pages": 36,
+      "collections": [
+        {
+          "url": "https://www.thecirclewhistler.com/sale/",
+          "pages": 18,
+          "products": 390,
+          "status": "complete"
+        },
+        {
+          "url": "https://www.thecirclewhistler.com/snow/",
+          "pages": 18,
+          "products": 15,
+          "status": "complete"
+        }
+      ],
+      "product_pages": 405,
+      "evidence_requests": 405
+    },
+    "parser_sha256": "08069d99db46af8aee4c467093bc02aa55ffe46ca041e5e365a0ef477f825014",
+    "products": 405,
+    "offers": 1042,
+    "requests": 846,
+    "observation_start": "2026-11-05T22:53:50.435649+00:00",
+    "observation_end": "2026-11-06T03:13:54.431467+00:00",
+    "scope": "Offline production fetcher replay. Original response timestamps retained. Not fresh source admission."
+  },
+  "retained_replay_summary": {
+    "pairs": 518,
+    "before": {
+      "pass": 504,
+      "error": 14
+    },
+    "after": {
+      "pass": 518
+    },
+    "unchanged_passes": 413,
+    "prior_passes_with_all_offer_facts_exact": 504,
+    "new_passes": [
+      "https://www.thecirclewhistler.com/authentic-chino-loose-pant-68489662.html",
+      "https://www.thecirclewhistler.com/kader-pants.html",
+      "https://www.thecirclewhistler.com/thatll-do-stretch-short-sleeve-shirt.html",
+      "https://www.thecirclewhistler.com/coast-hoodie.html",
+      "https://www.thecirclewhistler.com/skate-loose-chinos.html",
+      "https://www.thecirclewhistler.com/pink-sequin-bow-bag.html",
+      "https://www.thecirclewhistler.com/cm002-lo-shoes.html",
+      "https://www.thecirclewhistler.com/quilted-pant-rc748laur.html",
+      "https://www.thecirclewhistler.com/transit-fleece-pant-64397027.html",
+      "https://www.thecirclewhistler.com/manic-elastic-waist-boardshorts.html",
+      "https://www.thecirclewhistler.com/vm003-suede-hi.html",
+      "https://www.thecirclewhistler.com/unisex-puffy-slide.html",
+      "https://www.thecirclewhistler.com/authentic-chino-loose-pant-68489662.html?id=115322194&quantity=1",
+      "https://www.thecirclewhistler.com/authentic-chino-loose-pant-68489662.html?id=115322196&quantity=1"
+    ],
+    "regressions": [],
+    "remaining_errors": [],
+    "unpaired_html": 0,
+    "unpaired_ajax": 0,
+    "http_errors": 1,
+    "option_format_changes": 30,
+    "option_format_errors": 0,
+    "contextual_defaults": 1
+  },
+  "source_activated": false,
+  "main_parser_unchanged": true,
+  "original_93_test_file_unchanged": true,
+  "patch_sha256": "60016ad0e2ab790ecdce46ca6d5acd82b34f5b16fdba5b34f7f72f845eaf0495",
+  "patch_files": 63,
+  "scope": "Final isolated parser/fixture/contract and independent selected-HTML verifier review. Current fresh-source admission, timed merchant audit, configuration activation and publication remain root-owned gates."
+}

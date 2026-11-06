@@ -1,0 +1,83 @@
+{
+  "id": 20862092,
+  "vid": 34606547,
+  "image": "https://cdn.shoplightspeed.com/shops/628048/files/15487464/50x50x2/stance-womens-stance-all-mountain-bahama-snowboard.jpg",
+  "image_id": 15487464,
+  "brand": {
+    "id": 1165233,
+    "image": "https://cdn.shoplightspeed.com/shops/628048/files/66739817/50x50x2/stance.jpg",
+    "url": "https://www.thecirclewhistler.com/brands/stance/",
+    "title": "Stance"
+  },
+  "sku": "P-84520",
+  "url": "https://www.thecirclewhistler.com/stance-wmns-all-mountain-bahama-snowboard-socks.html",
+  "title": "Women's Stance All Mountain Bahama  Snowboard Socks",
+  "variant": "\"Color: Multi\",\"Size: S\"",
+  "stock": {
+    "available": true,
+    "on_stock": true,
+    "track": true,
+    "allow_outofstock_sale": false,
+    "level": 11,
+    "minimum": 1,
+    "maximum": 11,
+    "delivery": false
+  },
+  "images": [
+    "https://cdn.shoplightspeed.com/shops/628048/files/15487464/50x50x2/stance-womens-stance-all-mountain-bahama-snowboard.jpg"
+  ],
+  "price": {
+    "price": 24.99,
+    "price_old": 49.99,
+    "price_money_with_currency": "C$24.99 CAD",
+    "price_old_money_with_currency": "C$49.99 CAD"
+  },
+  "variants": {
+    "34606547": {
+      "id": 34606547,
+      "sku": "P-84520",
+      "url": "https://www.thecirclewhistler.com/stance-wmns-all-mountain-bahama-snowboard-socks.html?id=34606547",
+      "title": "\"Color: Multi\",\"Size: S\"",
+      "image": 15487464,
+      "stock": {
+        "available": true,
+        "on_stock": true,
+        "track": true,
+        "level": 11,
+        "minimum": 1,
+        "maximum": 11,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 24.99,
+        "price_old": 49.99,
+        "price_money_with_currency": "C$24.99 CAD",
+        "price_old_money_with_currency": "C$49.99 CAD"
+      }
+    },
+    "34606556": {
+      "id": 34606556,
+      "sku": "P-84521",
+      "url": "https://www.thecirclewhistler.com/stance-wmns-all-mountain-bahama-snowboard-socks.html?id=34606556",
+      "title": "\"Color: Multi\",\"Size: M\"",
+      "image": 15487464,
+      "stock": {
+        "available": true,
+        "on_stock": true,
+        "track": true,
+        "level": 26,
+        "minimum": 1,
+        "maximum": 26,
+        "delivery": false,
+        "allow_backorders": false
+      },
+      "price": {
+        "price": 24.99,
+        "price_old": 49.99,
+        "price_money_with_currency": "C$24.99 CAD",
+        "price_old_money_with_currency": "C$49.99 CAD"
+      }
+    }
+  }
+}

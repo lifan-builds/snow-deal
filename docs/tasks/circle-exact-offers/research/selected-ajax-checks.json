@@ -1,0 +1,44 @@
+[
+  {
+    "url": "https://www.thecirclewhistler.com/mens-tm-2-xlt-x-helgason-snowboard-boot.ajax?id=115633113",
+    "at": "2026-11-05T23:06:28.937416+00:00",
+    "sha256": "72ebd75ab0ad0f30e088281548828a3376eec77dad7a296a2bf320d597972d10",
+    "checks": {
+      "product": true,
+      "variant": true,
+      "price": true,
+      "reference": true
+    },
+    "passed": true,
+    "selected_variant": 115633113,
+    "variant_label": "\"Color: Black / White\",\"Size: 8\""
+  },
+  {
+    "url": "https://www.thecirclewhistler.com/stance-wmns-all-mountain-bahama-snowboard-socks.ajax?id=34606556",
+    "at": "2026-11-05T23:06:31.230463+00:00",
+    "sha256": "fb91834b4d0d7b0e326006372534dacb8dca434080419912ac8fe4f9b5f6fef7",
+    "checks": {
+      "product": true,
+      "variant": true,
+      "price": true,
+      "reference": true
+    },
+    "passed": true,
+    "selected_variant": 34606556,
+    "variant_label": "\"Color: Multi\",\"Size: M\""
+  },
+  {
+    "url": "https://www.thecirclewhistler.com/layover-20-pants.ajax?id=71619583",
+    "at": "2026-11-05T23:06:33.423651+00:00",
+    "sha256": "2f06fb59ee680db0e82e4ac2686f9511ce1ff79b98ba60167ff924952321d890",
+    "checks": {
+      "product": true,
+      "variant": true,
+      "price": true,
+      "reference": true
+    },
+    "passed": true,
+    "selected_variant": 71619583,
+    "variant_label": "\"Color: Black\",\"Size: 30\""
+  }
+]

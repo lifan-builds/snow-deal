@@ -1,0 +1,11 @@
+{
+  "source_report": "/Users/lfan/.codex/worktrees/deal-aggregator-release/fresh-powder/.local/source-expansion/circle-completeness-20261106/current-final-replay/report.json",
+  "source_parser_sha256": "08069d99db46af8aee4c467093bc02aa55ffe46ca041e5e365a0ef477f825014",
+  "accepted": 115,
+  "offers": 213,
+  "observed_at": "2026-11-06T03:28:37.853038",
+  "all_other_source_deal_offer_rows_exact": true,
+  "all_prior_history_rows_preserved": true,
+  "sha256": "6f6f76ffff004c5be6fe35764bec6e7eb156c0637ead28d98144892a41ee15fa",
+  "scope": "Local preview only. Original earliest source observation retained; no public upload."
+}

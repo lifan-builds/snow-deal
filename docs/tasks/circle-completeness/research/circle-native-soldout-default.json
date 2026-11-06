@@ -1,0 +1,22 @@
+{
+  "recorded_at": "2026-11-06T03:07:18.122923+00:00",
+  "family": "https://www.thecirclewhistler.com/thatll-do-stretch-short-sleeve-shirt.html",
+  "native_navigation": {
+    "url": "https://www.thecirclewhistler.com/thatll-do-stretch-short-sleeve-shirt.html?id=96386692",
+    "form_action": "https://www.thecirclewhistler.com/cart/add/96386692/",
+    "selected_color": "Black",
+    "selected_size": "L",
+    "availability": "http://schema.org/InStock",
+    "button": "ADD TO CART"
+  },
+  "retained_raw_family_html": {
+    "at": "2026-11-06T02:57:53.893305+00:00",
+    "sha256": "3df10bf7691b7ffb345205517bd66b965641a7385a7cebcf9da34cd6022edf64",
+    "selected_variant": "96386689",
+    "selected_color": "Black",
+    "selected_size": "S",
+    "availability": "http://schema.org/OutOfStock",
+    "quantity_input_id": "qty_58161738"
+  },
+  "scope": "Different HTTP/browser selected states, not proof of stock change; no cart request or purchase."
+}

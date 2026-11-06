@@ -1,0 +1,555 @@
+{
+  "source": "Velotric",
+  "date": "2026-11-06T03:34:27.932401+00:00",
+  "seed": 20261106,
+  "method": "top10-plus-seeded20-plus-all-deep-listings-v1",
+  "population": 8,
+  "fixed_sample_size": 8,
+  "deep_selected_listings": 0,
+  "selected_offers": 8,
+  "refresh_complete": true,
+  "passed": true,
+  "sample_size": 8,
+  "match": 8,
+  "mismatch": 0,
+  "inconclusive": 0,
+  "verified_match_percent": 100.0,
+  "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+  "results": [
+    {
+      "name": "Velotric Discover 2 Ebike",
+      "store": "Velotric",
+      "offer": {
+        "variant_key": "42376523055287",
+        "url": "https://www.velotricbike.com/products/velotric-discover-2?currency=USD&variant=42376523055287",
+        "current_price": 1499.0,
+        "original_price": 1999.0,
+        "size": "Large",
+        "options": "Large / Cherry Crimson",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0599/2094/1239/files/Discover_2-Cherry_Crimson_right_side_1_1_1.png?v=1781150053",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "price_note": "",
+        "discount": 25.012506253126563,
+        "savings": 500.0
+      },
+      "check_started_at": "2026-11-06T03:34:08.884111+00:00",
+      "evidence_url": "https://www.velotricbike.com/products/velotric-discover-2.js?currency=USD",
+      "response_sha256": "bd22d8cf26f7ac0ca62668a4526f323106bf177a5f263f62acb7c87a800e6771",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Velotric Discover 2 Ebike",
+        "variant": "42376523055287",
+        "sku": "VD050006B",
+        "price_minor": 149900,
+        "reference_minor": 199900,
+        "currency": "USD",
+        "options": "Large / Cherry Crimson",
+        "raw_options": [
+          "Large",
+          "Cherry Crimson"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "Large",
+              "Regular"
+            ]
+          },
+          {
+            "name": "Color",
+            "position": 2,
+            "values": [
+              "Cherry Crimson",
+              "Pine Green",
+              "Mint",
+              "Stone Gray"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T03:34:08.867226+00:00",
+      "checked_at": "2026-11-06T03:34:13.126379+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Velotric Fold 1 Plus Ebike",
+      "store": "Velotric",
+      "offer": {
+        "variant_key": "51783863501172",
+        "url": "https://www.velotricbike.com/products/velotric-fold-1-plus?currency=USD&variant=51783863501172",
+        "current_price": 1199.0,
+        "original_price": 1499.0,
+        "size": null,
+        "options": "Stone Gray",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0599/2094/1239/files/F1__Stone_Gray_1.png?v=1755245570",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "price_note": "",
+        "discount": 20.0133422281521,
+        "savings": 300.0
+      },
+      "check_started_at": "2026-11-06T03:34:13.126408+00:00",
+      "evidence_url": "https://www.velotricbike.com/products/velotric-fold-1-plus.js?currency=USD",
+      "response_sha256": "ab7e92a10ae37242079f3b7addca46d5a51d63443aeeb97719b004f145a92068",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Velotric Fold 1 Plus Ebike",
+        "variant": "51783863501172",
+        "sku": "VF030001B",
+        "price_minor": 119900,
+        "reference_minor": 149900,
+        "currency": "USD",
+        "options": "Stone Gray",
+        "raw_options": [
+          "Stone Gray"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Mango",
+              "Stone Gray",
+              "Violet Haze",
+              "Electric Blue",
+              "Pearl White"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T03:34:08.867226+00:00",
+      "checked_at": "2026-11-06T03:34:15.269361+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Velotric T1 ST Plus Ebike",
+      "store": "Velotric",
+      "offer": {
+        "variant_key": "41729524039863",
+        "url": "https://www.velotricbike.com/products/velotric-t1st-ebike?currency=USD&variant=41729524039863",
+        "current_price": 1399.0,
+        "original_price": 1649.0,
+        "size": "Regular",
+        "options": "Regular / Lava",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0599/2094/1239/files/T1ST_plus_lava_right_side_1_1_1.png?v=1764064119",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "price_note": "",
+        "discount": 15.160703456640388,
+        "savings": 250.0
+      },
+      "check_started_at": "2026-11-06T03:34:15.269391+00:00",
+      "evidence_url": "https://www.velotricbike.com/products/velotric-t1st-ebike.js?currency=USD",
+      "response_sha256": "9e696a96a84bb1cdb2ef07faea9febe6838dbfde3f86dd8f5b6e7749c0b00856",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Velotric T1 ST Plus Ebike",
+        "variant": "41729524039863",
+        "sku": "VT020004E",
+        "price_minor": 139900,
+        "reference_minor": 164900,
+        "currency": "USD",
+        "options": "Regular / Lava",
+        "raw_options": [
+          "Regular",
+          "Lava"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "Regular"
+            ]
+          },
+          {
+            "name": "Color",
+            "position": 2,
+            "values": [
+              "Lava"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T03:34:08.867226+00:00",
+      "checked_at": "2026-11-06T03:34:17.372006+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Velotric Fold 1 Ebike",
+      "store": "Velotric",
+      "offer": {
+        "variant_key": "42388154024119",
+        "url": "https://www.velotricbike.com/products/velotric-fold-1?currency=USD&variant=42388154024119",
+        "current_price": 1299.0,
+        "original_price": 1499.0,
+        "size": null,
+        "options": "Electric Blue",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0599/2094/1239/files/F1_ElectricBlue_rightside1_1.png?v=1713178049",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "price_note": "",
+        "discount": 13.3422281521014,
+        "savings": 200.0
+      },
+      "check_started_at": "2026-11-06T03:34:17.372036+00:00",
+      "evidence_url": "https://www.velotricbike.com/products/velotric-fold-1.js?currency=USD",
+      "response_sha256": "b23f2a1fdfd3db3429eab7f5aae76747bf486f0e4f7a7fa55e7e50a5d45c3626",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Velotric Fold 1 Ebike",
+        "variant": "42388154024119",
+        "sku": "VF010003E",
+        "price_minor": 129900,
+        "reference_minor": 149900,
+        "currency": "USD",
+        "options": "Electric Blue",
+        "raw_options": [
+          "Electric Blue"
+        ],
+        "option_definitions": [
+          {
+            "name": "Color",
+            "position": 1,
+            "values": [
+              "Electric Blue"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T03:34:08.867226+00:00",
+      "checked_at": "2026-11-06T03:34:19.501897+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Velotric Discover 3 Ebike",
+      "store": "Velotric",
+      "offer": {
+        "variant_key": "53887293587828",
+        "url": "https://www.velotricbike.com/products/velotric-discover-3-commuter-ebike?currency=USD&variant=53887293587828",
+        "current_price": 1899.0,
+        "original_price": 1999.0,
+        "size": "Large",
+        "options": "Large / Cherry Crimson",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0599/2094/1239/files/D3_Cherry_Crimson_right_side_1_1.png?v=1776676294",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "price_note": "",
+        "discount": 5.002501250625313,
+        "savings": 100.0
+      },
+      "check_started_at": "2026-11-06T03:34:19.501935+00:00",
+      "evidence_url": "https://www.velotricbike.com/products/velotric-discover-3-commuter-ebike.js?currency=USD",
+      "response_sha256": "a47e5d9f7036f5a60cff4a1e3a0563df7414b978a4bd569807d89f0e58529263",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Velotric Discover 3 Ebike",
+        "variant": "53887293587828",
+        "sku": "VD300006A",
+        "price_minor": 189900,
+        "reference_minor": 199900,
+        "currency": "USD",
+        "options": "Large / Cherry Crimson",
+        "raw_options": [
+          "Large",
+          "Cherry Crimson"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "Large",
+              "Regular"
+            ]
+          },
+          {
+            "name": "Color",
+            "position": 2,
+            "values": [
+              "Cherry Crimson",
+              "Emerald Green",
+              "Stone Gray",
+              "Lemans Blue",
+              "Mint"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T03:34:08.867226+00:00",
+      "checked_at": "2026-11-06T03:34:21.598206+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Velotric GoMad Ebike",
+      "store": "Velotric",
+      "offer": {
+        "variant_key": "54216418951540",
+        "url": "https://www.velotricbike.com/products/velotric-gomad-utility-ebike?currency=USD&variant=54216418951540",
+        "current_price": 1899.0,
+        "original_price": 1999.0,
+        "size": null,
+        "options": "GoMad Only / Dark Amber",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0599/2094/1239/files/GoMad_Dark_Amber_right_side_1_1_1.png?v=1775118888",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "price_note": "",
+        "discount": 5.002501250625313,
+        "savings": 100.0
+      },
+      "check_started_at": "2026-11-06T03:34:21.598260+00:00",
+      "evidence_url": "https://www.velotricbike.com/products/velotric-gomad-utility-ebike.js?currency=USD",
+      "response_sha256": "f001e7a5119d0e8e7caa166ac3cad566e0d8a274f5e3d33799b7c5ccda6f3d1b",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Velotric GoMad Ebike",
+        "variant": "54216418951540",
+        "sku": "VGM10001A",
+        "price_minor": 189900,
+        "reference_minor": 199900,
+        "currency": "USD",
+        "options": "GoMad Only / Dark Amber",
+        "raw_options": [
+          "GoMad Only",
+          "Dark Amber"
+        ],
+        "option_definitions": [
+          {
+            "name": "Package",
+            "position": 1,
+            "values": [
+              "GoMad + Young Passenger Kit",
+              "GoMad Only",
+              "GoMad + Passenger Kit"
+            ]
+          },
+          {
+            "name": "Color",
+            "position": 2,
+            "values": [
+              "Dark Amber",
+              "Obsidian",
+              "Sage"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T03:34:08.867226+00:00",
+      "checked_at": "2026-11-06T03:34:23.708838+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Velotric Discover M Ebike",
+      "store": "Velotric",
+      "offer": {
+        "variant_key": "53888174391668",
+        "url": "https://www.velotricbike.com/products/velotric-discover-m-mid-drive-ebike?currency=USD&variant=53888174391668",
+        "current_price": 2399.0,
+        "original_price": 2499.0,
+        "size": "Large",
+        "options": "Large / Platinum Silver",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0599/2094/1239/files/DM_Platinum_Sliver_right_side_1_1_1.png?v=1775015119",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "price_note": "",
+        "discount": 4.001600640256102,
+        "savings": 100.0
+      },
+      "check_started_at": "2026-11-06T03:34:23.708873+00:00",
+      "evidence_url": "https://www.velotricbike.com/products/velotric-discover-m-mid-drive-ebike.js?currency=USD",
+      "response_sha256": "5a285bc4baf12122f172228ef5e2522afbe51d6f944b6a4b8d473c69f0ab7b0e",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Velotric Discover M Ebike",
+        "variant": "53888174391668",
+        "sku": "VDM10004A",
+        "price_minor": 239900,
+        "reference_minor": 249900,
+        "currency": "USD",
+        "options": "Large / Platinum Silver",
+        "raw_options": [
+          "Large",
+          "Platinum Silver"
+        ],
+        "option_definitions": [
+          {
+            "name": "Size",
+            "position": 1,
+            "values": [
+              "Large",
+              "Regular"
+            ]
+          },
+          {
+            "name": "Color",
+            "position": 2,
+            "values": [
+              "Platinum Silver",
+              "Olivine Green"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T03:34:08.867226+00:00",
+      "checked_at": "2026-11-06T03:34:25.834304+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Velotric Tempo Ebike",
+      "store": "Velotric",
+      "offer": {
+        "variant_key": "54073883918708",
+        "url": "https://www.velotricbike.com/products/velotric-tempo-city-ebike?currency=USD&variant=54073883918708",
+        "current_price": 1449.0,
+        "original_price": 1499.0,
+        "size": "Regular",
+        "options": "Mid-Step / Regular / Sunset Tangerine",
+        "availability": "in_stock",
+        "image_url": "https://cdn.shopify.com/s/files/1/0599/2094/1239/files/Tempo_MS_Sunset_Tangerine_right_side_1_1.png?v=1776582779",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "",
+        "price_note": "",
+        "discount": 3.33555703802535,
+        "savings": 50.0
+      },
+      "check_started_at": "2026-11-06T03:34:25.834364+00:00",
+      "evidence_url": "https://www.velotricbike.com/products/velotric-tempo-city-ebike.js?currency=USD",
+      "response_sha256": "b8f4f852ab733f7f496d5ea25b791c7b91486fb5fd849ad3d76f8ab349bbceba",
+      "status": "match",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": true
+      },
+      "merchant": {
+        "title": "Velotric Tempo Ebike",
+        "variant": "54073883918708",
+        "sku": "VT200001A",
+        "price_minor": 144900,
+        "reference_minor": 149900,
+        "currency": "USD",
+        "options": "Mid-Step / Regular / Sunset Tangerine",
+        "raw_options": [
+          "Mid-Step",
+          "Regular",
+          "Sunset Tangerine"
+        ],
+        "option_definitions": [
+          {
+            "name": "Style",
+            "position": 1,
+            "values": [
+              "Mid-Step",
+              "High-Step"
+            ]
+          },
+          {
+            "name": "Size",
+            "position": 2,
+            "values": [
+              "Large",
+              "Regular"
+            ]
+          },
+          {
+            "name": "Color",
+            "position": 3,
+            "values": [
+              "Forest Evergreen",
+              "Sunset Tangerine",
+              "Lightning Silver"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": ""
+      },
+      "sampled_at": "2026-11-06T03:34:08.867226+00:00",
+      "checked_at": "2026-11-06T03:34:27.931737+00:00",
+      "within_audit_window": true
+    }
+  ]
+}
