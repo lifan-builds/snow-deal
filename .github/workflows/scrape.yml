@@ -44,7 +44,13 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: mkdir -p catalogs/fresh-powder/data && gh release download latest-data --repo lifan-builds/snow-deal-data --pattern deals.db --dir catalogs/fresh-powder/data
+      - name: Determine scraper runtime
+        id: scraper-runtime
+        env:
+          REFRESH_STORES: ${{ inputs.stores }}
+        run: python scripts/snow_refresh_runtime.py
       - name: Install Playwright Chromium
+        if: steps.scraper-runtime.outputs.browser_required == 'true'
         run: playwright install chromium --with-deps
       - name: Run scraper
         env:

@@ -8,6 +8,8 @@ Invite gating is controlled by `PUBLIC_MODE`; JWT cookies require `SECRET_KEY`. 
 
 Vercel functions treat deal data as read-only. The build downloads or uses an existing SQLite snapshot, copies static assets, and bundles the database; fresh scrape data requires a deployment. Do not invoke Vercel, Render hooks, GitHub release upload, schema migration, or cloud synchronization during routine validation.
 
+The snow refresh workflow may skip Chromium installation only when an explicit comma-separated retailer selection consists entirely of configured stores with `use_browser=False`. Read that flag from the store registry; retain browser setup for full/scheduled refreshes, browser or mixed selections, and unknown or malformed input. Pass the workflow input through an environment variable, preserve exact retailer names and the existing scraper CLI validation, and consume the helper's boolean step output. This changes dependency setup only, not source completeness, publication or history checks.
+
 ## Compressed snow snapshot packaging
 
 See docs/project-guidance/web-auth-and-deployment.md for exact-byte gzip packaging, pre-import path initialization, atomic verified temporary reconstruction, explicit-path/local compatibility and history-preserving release checks. The source snapshot is unchanged; runtime has no network download or migration authority.
