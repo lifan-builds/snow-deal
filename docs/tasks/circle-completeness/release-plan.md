@@ -1,6 +1,6 @@
 # Circle exact-offer recovery release
 
-Standing user approval covers this comparable, reviewed source-quality release. Baseline main:1e39de22a425fa6bb389c558ad7d688d228639a9. No publication has occurred for this task.
+Standing user approval covers this comparable, reviewed source-quality release. Baseline main:1e39de22a425fa6bb389c558ad7d688d228639a9. Production is verified in the dated result below; the original scope and gates are retained as the execution record.
 
 ## Result and scope
 
@@ -24,3 +24,13 @@ Before deployment, any failed gate leaves the existing site intact. For a deploy
 ## Current prepublication evidence
 
 Final reviewed parser `08069d99` completes406families and1047offers across36current collection pages without errors. Captures span03:28:37–04:09:16UTC on6November; original response times survived session recovery unchanged. The raw selected-source audit passes51/51 within126seconds. The candidate ingests115rows/213offers and preserves every other retailer row and prior history row. Its normal persisted query displays111listings; four prior source-backed non-snow exclusions are retained. A second audit binds the fixed sample and all25source-local CAD500-reference/40percent offers to the actual111-listing query population. The final displayed audit passes49/49 within121seconds; source admission gates now pass. These CAD figures do not increase USD competitive inventory.
+
+## Verified production result — 6 November 2026 UTC
+
+[PR #47](https://github.com/lifan-builds/snow-deal/pull/47) merged as `3043f75`. Targeted refresh [42169798783](https://github.com/lifan-builds/snow-deal/actions/runs/42169798783) succeeded with 36 complete pages, 406 product/evidence pairs and zero errors. It published 115 ingestion rows with 213 exact offers. Public asset 716152772 is 206,700,544 bytes and SHA-256 `da8b167a24b8c41b06b04f1617e98816e6467ddd8249115342d44804a97cbf1a`; downloaded bytes match GitHub's digest. Live health serves the expected 06:24:43 UTC source check.
+
+All 15,250 unselected retailer rows and 27,844 unselected offer rows remain exact. All 217,626 prior price-history rows and 301,732 prior offer observations survive. The public query and rendered cards agree across 53 equipment, 111 all-items (two pages), 9 exact XL and zero unknown-size results, including each selected price, reference, options, stock, purchase URL and variant disclosure. Big Ring and Bench Drop retain their prior verified fingerprints and 21/21 and 13/13 fresh sources.
+
+The follow-up production merchant audit passes 49/49 in 120 seconds (06:56:51–06:58:51 UTC), covering the fixed top-ten/seeded-twenty sample and all 25 source-local CAD $500-reference/40-percent offers from the actual 111-listing population. The earlier attempt expired during a workstation pause after 25 matches; its 24 inconclusive results remain recorded and were not combined or restamped. These are CAD source-quality results, not additional USD competitive leads or verified historical street prices. The benchmark remains five strict leads across 260 comparisons; saturation is not established.
+
+A separate reviewed follow-up fixes retailer facet counts that still report ingestion totals. The workflow-only dependency fix is already merged as PR #48 (`b9cfa3f`); its conditional skip will be verified on the next necessary HTTP-only refresh, without an extra merchant scrape for testing.

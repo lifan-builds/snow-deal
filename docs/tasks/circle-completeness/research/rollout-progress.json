@@ -1,0 +1,28 @@
+{
+  "pr": "https://github.com/lifan-builds/snow-deal/pull/47",
+  "release_commit": "6624283182d3c9fab2e2541fe269407d65cb9000",
+  "merged_commit": "3043f75f18e5ac1c87798a7ddb5d3528765910aa",
+  "merged_at": "2026-11-06T05:40:10Z",
+  "checks": "GitHub offline and Vercel preview success; optional snow-preview skipped",
+  "targeted_workflow": "https://github.com/lifan-builds/snow-deal/actions/runs/42169798783",
+  "scope": "The Circle Whistler only; refresh_reviews=false",
+  "status": "Production rollout verified",
+  "production_asset": 716152772,
+  "production_sha256": "da8b167a24b8c41b06b04f1617e98816e6467ddd8249115342d44804a97cbf1a",
+  "source_rows": 115,
+  "exact_offers": 213,
+  "visible_all_items": 111,
+  "visible_equipment": 53,
+  "exact_XL": 9,
+  "merchant_audit": {
+    "matches": 49,
+    "sample": 49,
+    "population": 111,
+    "deep_cad_count": 25,
+    "sampled_at": "2026-11-06T06:56:51.562902+00:00",
+    "finished_at": "2026-11-06T06:58:51.733629+00:00",
+    "expired_first_attempt_retained": true
+  },
+  "other_source_rows_preserved": true,
+  "all_prior_history_preserved": true
+}

@@ -326,3 +326,11 @@ Completed reviewed adapter support for quoted-inch options, sold-out defaults, s
 ## Targeted snow refresh runtime — November 6, 2026 UTC
 
 Circle's HTTP-only refresh spent over nine minutes installing browser dependencies. The workflow now derives browser needs from the configured retailers and skips Chromium only for explicit known HTTP-only selections. Full, mixed, browser and unknown selections remain conservative. Independent review, 1505 offline tests and pinned lint/syntax checks pass. This does not change source/publication/history gates; the active Circle scrape continues unchanged. See `docs/tasks/targeted-refresh-browser/` for release and validation boundaries.
+
+## Circle production verification — November 6, 2026 UTC
+
+PR #47 and targeted run 42169798783 are complete. Circle now has 115 fresh ingestion rows and 213 exact offers; the public query shows 111 eligible all-items listings, 53 equipment and 9 XL. Byte-verified asset 716152772 preserves every other source row and all prior price/offer history. All 173 rendered selected-card comparisons across equipment/all-items/XL match, and the production merchant audit passes 49/49 within 120 seconds. An earlier audit expired during a workstation pause and is retained as inconclusive. Other catalog health/fingerprints are unchanged. See `docs/tasks/circle-completeness/research/rollout-progress.json`. CAD inventory is not a USD benchmark gain; five strict leads across 260 comparisons remain. Retailer facet-count correction is tracked separately in PR #49.
+
+## Snow retailer counts — November 6, 2026 UTC
+
+PR #49 merged as `28fe5bb` and is live. Retailer labels now count the same eligible selected offers as the results. Native testing caught and fixed an htmx option-update bug that silently changed the chosen retailer; production retains Circle through XL, clothing and equipment updates. Ten HTTP checks match all retailer labels; 1,521 combined offline tests and final CI/preview pass. The release also makes snow-only pull requests trigger existing offline CI. Snapshot history and all three health bodies remain unchanged. See `docs/tasks/snow-store-counts/research/production-verification.json`.
