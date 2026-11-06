@@ -1,0 +1,35 @@
+[
+  {
+    "path": "catalogs/fresh-powder/src/aggregator/db.py",
+    "baseline_findings": 4,
+    "current_findings": 4,
+    "new_findings": 0,
+    "existing_codes": [
+      "BLE001",
+      "I001",
+      "S110"
+    ]
+  },
+  {
+    "path": "catalogs/fresh-powder/src/aggregator/web/routes.py",
+    "baseline_findings": 4,
+    "current_findings": 4,
+    "new_findings": 0,
+    "existing_codes": [
+      "BLE001",
+      "I001",
+      "UP017"
+    ]
+  },
+  {
+    "path": "catalogs/fresh-powder/tests/test_web_routes.py",
+    "baseline_findings": 5,
+    "current_findings": 4,
+    "new_findings": 0,
+    "existing_codes": [
+      "I001",
+      "SIM117",
+      "UP017"
+    ]
+  }
+]

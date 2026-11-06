@@ -1,0 +1,1 @@
+<option value="">All stores</option>{% for s in stores %}<option value="{{ s }}" {% if s == current_store %}selected{% endif %}>{{ s }} ({{ store_counts.get(s, 0) }})</option>{% endfor %}

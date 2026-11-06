@@ -6,15 +6,16 @@ import asyncio
 from datetime import datetime
 from functools import partial
 
-import pytest
-from fastapi.testclient import TestClient
-
 import aggregator.auth_db as auth_db_module
 import aggregator.db as db_module
 import aggregator.web.app as app_module
 import aggregator.web.routes as routes_module
+import pytest
 from aggregator.models import AggregatedDeal
 from aggregator.web import admin_routes, event_routes, invite_routes
+from bs4 import BeautifulSoup
+from deal_common.offers import VariantOffer
+from fastapi.testclient import TestClient
 
 
 def _make_deal(name: str = "Atomic Bent 100", store: str = "Evo") -> AggregatedDeal:
@@ -340,6 +341,8 @@ def test_full_page_pagination_and_currency_match_results(isolated_app, monkeypat
 
     async def fake_query(**kwargs):
         observed.append(kwargs)
+        if kwargs.get('count_by_store'):
+            return {'Evo': 125}
         if kwargs.get('count_only'):
             return 125
         start = kwargs.get('offset', 0)
@@ -397,3 +400,73 @@ def test_signup_html_errors_and_removal_failure_are_recoverable(isolated_app, mo
         assert failed.status_code == 503
         assert 'We could not remove your signup' in failed.text
         assert failed.headers['cache-control'] == 'no-store'
+
+
+def test_retailer_counts_follow_filters_and_refresh_with_htmx(isolated_app, monkeypatch):
+    monkeypatch.setenv('PUBLIC_MODE', '1')
+    monkeypatch.setenv('ADMIN_KEY', 'offline-only-test-admin')
+    now = datetime.now()
+    evo = _make_deal('Atomic Evo Skis', 'Evo')
+    competing = _make_deal('Atomic Competing Skis', 'Backcountry')
+    jacket = _make_deal('Atomic Shell Jacket', 'Evo')
+    jacket.category = 'jackets'
+    children = _make_deal('Atomic Kids Skis', 'Evo')
+    for deal in [evo, competing, jacket, children]:
+        deal.scraped_at = now
+    evo.offers = [
+        VariantOffer(variant_key='m', size='M', options='M', current_price=200,
+                     original_price=1000, availability='in_stock', url=evo.url + '?variant=m'),
+        VariantOffer(variant_key='s', size='S', options='S', current_price=800,
+                     original_price=1000, availability='in_stock', url=evo.url + '?variant=s'),
+    ]
+    competing.offers = [
+        VariantOffer(variant_key='s', size='S', options='S', current_price=300,
+                     original_price=1000, availability='in_stock', url=competing.url + '?variant=s'),
+    ]
+
+    def options(response):
+        soup = BeautifulSoup(response.text, 'html.parser')
+        select = soup.select_one('select[name=store]')
+        assert select is not None
+        return select, {o['value']: o.get_text() for o in select.select('option[value]')}
+
+    with TestClient(app_module.create_app()) as client:
+        asyncio.run(db_module.upsert_deals([evo, competing, jacket, children], isolated_app))
+        response = client.get('/?store=Evo')
+        assert response.status_code == 200
+        select, labels = options(response)
+        assert labels['Evo'] == 'Evo (1)'
+        assert labels['Backcountry'] == 'Backcountry (1)'
+        assert select.select_one('option[selected]')['value'] == 'Evo'
+        _, labels = options(client.get('/?store=Evo&include_clothing=1'))
+        assert labels['Evo'] == 'Evo (2)'
+
+        filters = {'store': 'Evo', 'size': 'S', 'min_discount': 40}
+        for route in ['/', '/deals']:
+            response = client.get(route, params=filters, headers={'HX-Request': 'true'})
+            select, labels = options(response)
+            assert labels['Evo'] == 'Evo (0)'
+            assert labels['Backcountry'] == 'Backcountry (1)'
+            assert select.select_one('option[selected]')['value'] == 'Evo'
+            if route == '/deals':
+                # Rebuild the select as a whole: inserting selected options one
+                # by one can leave the browser's live selection on another store.
+                assert select['hx-swap-oob'] == 'outerHTML:#store-filter'
+                assert select['id'] == 'store-filter'
+                assert 'hidden' not in select.attrs
+        more = client.get('/deals', params={**filters, 'offset': 48})
+        assert BeautifulSoup(more.text, 'html.parser').select_one('select[name=store]') is None
+        assert 'outerHTML:#store-filter' not in more.text
+
+        unknown = '<img src=x onerror=alert(1)>'
+        response = client.get('/', params={'store': unknown})
+        select, labels = options(response)
+        assert labels[unknown] == unknown + ' (0)'
+        assert select.select_one('option[selected]')['value'] == unknown
+        assert select.select_one('img') is None
+        fragment = client.get('/deals', params={'store': unknown})
+        select, labels = options(fragment)
+        assert labels[unknown] == unknown + ' (0)'
+        assert select.select_one('option[selected]')['value'] == unknown
+        assert select['hx-swap-oob'] == 'outerHTML:#store-filter'
+        assert select.select_one('img') is None
