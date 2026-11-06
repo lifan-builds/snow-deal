@@ -63,8 +63,8 @@ normalization and query. Raw Product/offer objects remain unchanged.
 
 ## Handoff and limits
 
-Final runtime classifier SHA256:
-`73b7dd15e29493b93e9518a24c22a27969ee6764e242b7b0eabfee7f112e8db6`.
+Final reviewed runtime classifier SHA256:
+`6da59931696ef9943fd4c46aba60c5e9cf17e87f79a6c7f9aacfabc29d81ed45`.
 No further runtime/test edits are planned without coordination. Root owns exact
 all-source/raw-feed reconciliation, fresh bounded Max/Fasteners refreshes,
 merchant/global audits, independent review and publication. All six observed
@@ -75,3 +75,7 @@ No source configuration, common parser, schema, stock policy, history, freshness
 money or ranking behavior was changed. The implementer used only versioned public
 research and temporary/offline tests, made no live requests or operational DB
 reads and did not commit, push or deploy. Circle/root work is preserved.
+
+## Reviewed release verification
+
+The independent review added the explicit manual/non-powered contradiction guard and corrected the sixth fixture’s normalization host. Final results: 44 new tests, 185 focused tools tests and 1,130 shared tests pass. The exact isolated release excludes the 93 inactive Circle tests and passes 1,037 tests. The final captured-feed replay matches the prepared snapshot; all 143 merchant checks pass. Earlier counts above describe the implementation stages, not the final release.
