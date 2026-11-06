@@ -21,3 +21,7 @@ See docs/project-guidance/web-auth-and-deployment.md for the existing-size-key f
 `scripts/restore_catalog.py` requires unique selected asset metadata: uploaded state, positive integer size (excluding bool) within the existing 100 MiB budget, and strict `sha256:` plus 64 hexadecimal characters. Reject missing/malformed metadata before destination setup or download, including bootstrap requests. Only an explicitly absent asset in well-formed metadata can authorize first-run bootstrap.
 
 See docs/project-guidance/web-auth-and-deployment.md for incremental streaming length/hash verification before SQLite, exact successful snapshot/history bytes, temporary cleanup and atomic placement. Preserve fixed download URLs, metadata-only authentication, overwrite refusal and SQLite/catalog checks. Integrity failures cannot become bootstrap or trigger automatic retries; valid stale/same-sized changed SQLite must fail against the pinned metadata.
+
+## Merchant pricing caveats
+
+See docs/project-guidance/web-auth-and-deployment.md under Merchant pricing caveats. Show the selected offer's optional escaped price note beside its listed price/details and each observation's own note in its dated price cell. Legacy absence stays blank and means only unrecorded; never backfill today's or another variant's note. Reuse existing styles and preserve stock, calculations, fit, ranking/counts, schema and daily history retention.

@@ -103,5 +103,6 @@ def read_offer_history(path: Path, catalog: str, source: str, product: dict, off
                 daily[stamp.astimezone(UTC).date().isoformat()] = {
                     "observed_at": row["observed_at"], "price": candidate["current_price"],
                     "reference": candidate["original_price"], "availability": candidate["availability"],
-                    "availability_note": candidate.get("availability_note", "")}
+                    "availability_note": candidate.get("availability_note", ""),
+                    "price_note": candidate.get("price_note", "")}
     return list(reversed(daily.values()))

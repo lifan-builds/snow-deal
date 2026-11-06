@@ -1,0 +1,26 @@
+{
+  "at": "2026-11-06T02:11:42.488304+00:00",
+  "observed_at": "2026-11-06T02:08:29.187546+00:00",
+  "raw_pages": 2,
+  "raw_tagged_products": 27,
+  "accepted_products": 182,
+  "noted_products": 27,
+  "ordinary_offer_facts_unchanged": 524,
+  "noted_offers": 57,
+  "other_sources_unchanged": 20,
+  "history_before": 59,
+  "history_after": 59,
+  "preserved_earlier_day_and_other_source_history": 58,
+  "replaced_same_day_observations": [
+    {
+      "source": "Contender Bicycles",
+      "observed_at": "2026-11-06T01:32:26.781135+00:00"
+    }
+  ],
+  "default_in_stock": 1475,
+  "deep_in_stock": 203,
+  "targeted_noted_in_stock_variants": 57,
+  "standard_sample": 30,
+  "distinct_audit_offers": 87,
+  "passed": true
+}

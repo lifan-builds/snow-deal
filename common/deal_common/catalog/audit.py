@@ -31,7 +31,7 @@ from deal_common.parsers.racycles import detail_data as racycles_data
 from deal_common.parsers.rockler import delivery_data, stock_url
 from deal_common.parsers.rockler import detail_data as rockler_data
 from deal_common.parsers.rockler import offer_destination as rockler_destination
-from deal_common.parsers.shopify import is_contender_generated_variant
+from deal_common.parsers.shopify import is_contender_generated_variant, pricing_notice
 from deal_common.parsers.taylor import detail_data as taylor_data
 from deal_common.parsers.taylor import offer_destination as taylor_destination
 
@@ -68,6 +68,7 @@ def validate_product(card: dict, raw: dict, currency: str | None) -> dict:
     actual_options = " / ".join(str(v) for i, v in enumerate(raw_options)
                                 if i not in price_positions and v != "Default Title")
     notice = shipping_notice(raw, actual, offer["url"])
+    price_note = pricing_notice(raw, offer["url"])
     checks = {
         "identity": str(raw.get("title", "")).strip() == card["name"].strip(),
         "currency": currency == card.get("currency", "USD"),
@@ -78,12 +79,15 @@ def validate_product(card: dict, raw: dict, currency: str | None) -> dict:
     }
     if is_contender_generated_variant(actual, offer["url"]):
         checks["ordinary_variant"] = False
+    if price_note or offer.get("price_note", ""):
+        checks["price_note"] = price_note == offer.get("price_note", "")
     return {"status": "match" if all(checks.values()) else "mismatch", "checks": checks,
             "merchant": {"title": raw.get("title"), "variant": str(actual["id"]), "sku": actual.get("sku"),
                          "price_minor": actual.get("price"), "reference_minor": actual.get("compare_at_price"),
                          "currency": currency, "options": actual_options, "raw_options": raw_options,
                          "option_definitions": option_definitions, "available": actual.get("available"),
-                         "shipping_notice": notice}}
+                         "shipping_notice": notice,
+                         **({"price_note": price_note} if price_note or offer.get("price_note", "") else {})}}
 
 
 async def audit_sample(cards: list[dict], allowed_domains: dict[str, str], *, delay: float = 5.0,

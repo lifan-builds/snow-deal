@@ -8,9 +8,9 @@
 {% if offer.availability_note %}<p>{{ offer.availability_note }}</p>{% endif %}
 <p><strong>{{ observations|length }} observed day{{ 's' if observations|length != 1 else '' }}</strong> in the last 45 days. One successful observation per UTC day. Gaps mean we have no observation, not that the price was unchanged.</p>
 {% if observations|length < 30 %}<p class="history-note">Still collecting history. We do not have 30 observed days for this variant.</p>{% endif %}
-<p>These are prices we observed, not proof of completed sales or an all-time low. The reference column is the retailer’s compare-at price. Shipping and tax are excluded.</p>
+<p>These are prices we observed, not proof of completed sales or an all-time low. The reference column is the retailer’s compare-at price. Shipping and tax are excluded. Retailer pricing notes appear only when recorded.</p>
 {% if observations %}<div class="history-table"><table><caption>Price observations for this exact variant</caption><thead><tr><th scope="col">Checked (UTC)</th><th scope="col">Price</th><th scope="col">Retailer reference</th><th scope="col">Stock report</th></tr></thead><tbody>
-{% for row in observations %}<tr><td><time datetime="{{ row.observed_at }}">{{ row.observed_at|date }}</time></td><td>{{ row.price|money }}</td><td>{{ row.reference|money }}</td><td>{{ 'In stock' if row.availability == 'in_stock' else 'Unknown' if row.availability == 'unknown' else 'Unavailable' }}{% if row.availability_note %}<br>{{ row.availability_note }}{% endif %}</td></tr>{% endfor %}
+{% for row in observations %}<tr><td><time datetime="{{ row.observed_at }}">{{ row.observed_at|date }}</time></td><td>{{ row.price|money }}{% if row.price_note %}<br><span class="price-note">{{ row.price_note }}</span>{% endif %}</td><td>{{ row.reference|money }}</td><td>{{ 'In stock' if row.availability == 'in_stock' else 'Unknown' if row.availability == 'unknown' else 'Unavailable' }}{% if row.availability_note %}<br>{{ row.availability_note }}{% endif %}</td></tr>{% endfor %}
 </tbody></table></div>{% else %}<p>No matching observations were recorded in this window.</p>{% endif %}
 <a class="primary-button" href="{{ offer.url }}" target="_blank" rel="noopener noreferrer">Check current price at {{ store }} ↗</a>
 </section>
