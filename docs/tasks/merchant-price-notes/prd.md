@@ -1,0 +1,9 @@
+# Merchant price notes
+
+Status: in_progress under the standing instruction to improve and publish comparable reviewed releases.
+
+Contender's exact contact-for-current-price tag applies to 27 accepted products. The earlier 01:32 UTC capture contained 28 raw tagged products, including one fully unavailable BMC; the fresh 02:08 UTC capture contains 27 raw tagged products and the same 27 accepted products. The observed ordinary OPEN UP Rapha XL purchase panel displays USD1,799/reference3,400, selects XL and Frame Only, and enables Add to Bag while saying Contact us for current price. That evidence does not establish quote-only inventory or invalid posted price. Our cards currently omit the caveat.
+
+Carry the source-bound merchant price note on each exact offer and show it next to the listed price, in price details, and alongside the relevant dated history observation. Keep price, reference, stock, fit, identity, discount order, counts and destination unchanged. Do not mark stock unknown or exclude offers merely due to this tag. Old snapshots without the optional note remain readable; never apply today's note to an older observation. An independent product audit must detect omitted or changed current notes while retaining normal price/stock checks.
+
+Acceptance: exact source/tag only; list/string tags from feed/product.js; lookalike hosts/unrelated tags negative; no price/stock/ranking/count change; escaped card/history note belongs to selected variant; historical absence remains absent; source and independent audit agree. Full offline/CI, raw replay and merchant audits pass. Fresh capture only Contender, preserve other source rows and earlier-day history, apply the existing latest-successful-observation-per-UTC-day retention rule, then deploy only Big Ring and verify real desktop/mobile cards and history. No new competitive metric claim.

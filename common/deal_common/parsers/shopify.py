@@ -26,6 +26,19 @@ def is_contender_generated_variant(variant: dict, url: str) -> bool:
                for value in values)
 
 
+def pricing_notice(item: dict, url: str) -> str:
+    """Retain the observed merchant caveat without changing price or stock."""
+    if urlparse(url).hostname not in {"contenderbicycles.com", "www.contenderbicycles.com"}:
+        return ""
+    tags = item.get("tags") or []
+    if isinstance(tags, str):
+        tags = tags.split(",")
+    if isinstance(tags, list) and any(isinstance(tag, str) and tag.strip() == "contact-for-current-price"
+                                      for tag in tags):
+        return "Retailer asks you to contact them for current pricing."
+    return ""
+
+
 def _products_json(body: str) -> list[dict]:
     """A malformed feed is a connection failure, not an empty collection."""
     data = json.loads(body)
@@ -143,6 +156,7 @@ class ShopifyParser(BaseParser):
                     availability='in_stock' if candidate.get('available') is True and not notice else 'unknown',
                     image_url=image,
                     availability_note=notice,
+                    price_note=pricing_notice(item, product_url),
                 ))
             if not offers:
                 continue

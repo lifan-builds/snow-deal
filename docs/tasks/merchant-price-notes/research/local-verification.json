@@ -1,0 +1,153 @@
+{
+  "checked_at": "2026-11-06T02:23:52.365457+00:00",
+  "live": false,
+  "site": "https://bigring.clifan.com",
+  "health": {
+    "catalog": "cycling",
+    "snapshot_sha256": "5253fbcfe4098f914d7308bcb460104c3b82dc5243fa5543692094a749ef15e1",
+    "fresh_sources": 21,
+    "configured_sources": 21,
+    "status": "ready"
+  },
+  "routes": [
+    {
+      "params": {},
+      "count": 24,
+      "total": "1502",
+      "passed": true
+    },
+    {
+      "params": {
+        "stock": "true"
+      },
+      "count": 24,
+      "total": "1475",
+      "passed": true
+    },
+    {
+      "params": {
+        "stock": "true",
+        "min_discount": 40
+      },
+      "count": 24,
+      "total": "203",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Contender Bicycles",
+        "size": "XL",
+        "stock": "true"
+      },
+      "count": 24,
+      "total": "43",
+      "passed": true
+    },
+    {
+      "params": {
+        "store": "Contender Bicycles",
+        "q": "OPEN UP Rapha",
+        "stock": "true"
+      },
+      "count": 1,
+      "total": "1",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Contender Bicycles",
+        "stock": "true",
+        "page": 1
+      },
+      "count": 24,
+      "total": "182",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Contender Bicycles",
+        "stock": "true",
+        "page": 2
+      },
+      "count": 24,
+      "total": "182",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Contender Bicycles",
+        "stock": "true",
+        "page": 3
+      },
+      "count": 24,
+      "total": "182",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Contender Bicycles",
+        "stock": "true",
+        "page": 4
+      },
+      "count": 24,
+      "total": "182",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Contender Bicycles",
+        "stock": "true",
+        "page": 5
+      },
+      "count": 24,
+      "total": "182",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Contender Bicycles",
+        "stock": "true",
+        "page": 6
+      },
+      "count": 24,
+      "total": "182",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Contender Bicycles",
+        "stock": "true",
+        "page": 7
+      },
+      "count": 24,
+      "total": "182",
+      "passed": true
+    },
+    {
+      "params": {
+        "min_reference": 0,
+        "store": "Contender Bicycles",
+        "stock": "true",
+        "page": 8
+      },
+      "count": 14,
+      "total": "182",
+      "passed": true
+    }
+  ],
+  "card_comparisons": 279,
+  "targeted_destinations": 182,
+  "noted_destinations": 29,
+  "history_pages": 38,
+  "current_annotated_rows": 29,
+  "older_rows_without_backfilled_note": 86,
+  "source_page_matches": true,
+  "passed": true
+}

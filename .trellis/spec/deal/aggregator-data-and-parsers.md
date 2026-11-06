@@ -48,3 +48,9 @@ Test the observed merchant types and exact offers, positive complete kits, and m
 ## Contender generated options
 
 See `docs/project-guidance/aggregator-data-and-parsers.md` under Contender generated options. The exact-host Shopify predicate excludes bounded `#MWS Options <digits>` variant title/option markers before offer construction and is reused by independent audit rejection. No marker stripping, ID merging, base inference or price/reference/stock transfer is permitted; ordinary hosts/words/variants and all surviving exact offer fields remain unchanged. Test generated-only, inflated-reference, sold-out/unknown bases, query rank/count/size/pagination and old-audit controls. Replace current source rows only after complete source/audit gates and retain all history unchanged.
+
+## Merchant price notes
+
+See `docs/project-guidance/aggregator-data-and-parsers.md` under Merchant price notes. Optional `VariantOffer.price_note=''` carries the source-bound exact Contender contact-for-current-price tag as the fixed factual note. Do not exclude, change stock or infer alternate money from it. Independent audit compares separately decoded current and stored notes without changing both-empty legacy audit shapes. History reads each historical candidate's own optional note with an empty default; never backfill from the current offer or change identity/schema/daily retention.
+
+Explain a normalized listing's disappearance only after checking raw product membership and exact variant prices/stock; absence from normalized results alone does not prove removal from the raw feed.

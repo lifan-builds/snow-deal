@@ -1,0 +1,40 @@
+{
+  "source_capture": ".local/release/contender-generated-options/capture",
+  "handle": "bmc-fourstroke-r-01-one-2026",
+  "name": "BMC Fourstroke R 01 ONE 2026",
+  "present_in_raw_feed": true,
+  "variants": [
+    {
+      "id": 47432877015285,
+      "title": "Carbon / Firestorm / S",
+      "price": "9500.00",
+      "compare_at_price": "13499.00",
+      "available": false
+    },
+    {
+      "id": 47432877048053,
+      "title": "Carbon / Firestorm / M",
+      "price": "9500.00",
+      "compare_at_price": "13499.00",
+      "available": false
+    },
+    {
+      "id": 47432877080821,
+      "title": "Carbon / Firestorm / L",
+      "price": "9500.00",
+      "compare_at_price": "13499.00",
+      "available": false
+    },
+    {
+      "id": 47432877113589,
+      "title": "Carbon / Firestorm / XL",
+      "price": "9500.00",
+      "compare_at_price": "13499.00",
+      "available": false
+    }
+  ],
+  "previously_accepted_variant": "47432877080821",
+  "correction": "Large changed from reported in_stock to unavailable; all four current variants unavailable. Existing parser correctly excludes it independently of generated-variant guard.",
+  "source_observed_at": "2026-11-06T01:32:26.781135+00:00",
+  "later_capture_note": "At 02:08:29 UTC the fresh raw collection no longer contains this unavailable product; prior receipt correction concerns the earlier 01:32 capture only."
+}

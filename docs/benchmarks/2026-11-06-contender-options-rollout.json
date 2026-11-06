@@ -26,8 +26,9 @@
     "new_accepted": 182,
     "excluded_generated_offers": 7,
     "ordinary_offers_preserved_exactly": 524,
-    "separate_fresh_feed_removal": "BMC Fourstroke R 01 ONE 2026 no longer in complete sale collection",
-    "other_source_rows_unchanged": 20
+    "separate_fresh_feed_removal": "BMC Fourstroke R 01 ONE 2026 remains in raw sale feed; all four variants unavailable, including previously accepted Large. Existing stock rule excludes it.",
+    "other_source_rows_unchanged": 20,
+    "explanation_correction": "The original receipt incorrectly described absence from the raw collection. See docs/tasks/merchant-price-notes/research/bmc-stock-correction.json for exact captured variant evidence; inventory counts and deployed data are unchanged."
   },
   "inventory": {
     "in_stock_default": 1475,

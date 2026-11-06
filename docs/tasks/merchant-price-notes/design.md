@@ -1,0 +1,9 @@
+# Boundary
+
+Add optional price_note with empty default to shared VariantOffer; define a small source-specific pricing_notice(item, url) alongside existing Shopify parsing utilities (reuse existing module if appropriate, no new configurable policy system). Exact Contender apex/www and exact contact-for-current-price tag emit fixed factual text: Retailer asks you to contact them for current pricing. Do not infer a quote-only restriction or a lower negotiated price.
+
+Shopify ingestion binds the note to every affected offer. Catalog product.js audit compares separately decoded note with the stored selected offer and fails a disagreement; ordinary audits retain existing checks/result shape. Catalog history projects the note from each historical candidate with an empty legacy default, never from the current offer. Shared cycling/tools card and history templates show the note with the corresponding price; use existing styles or a minimal common CSS addition only if useful. Fresh Powder has its separate UI and no affected source; no speculative snow redesign or global availability changes.
+
+Expected files: common/deal_common/offers.py, parsers/shopify.py (or a narrowly scoped existing utility), catalog/audit.py, catalog/storage.py, catalog/templates/index.html and history.html, optional existing CSS, focused tests/fixtures, mirrored parser/web contracts. Root owns research, release docs and live capture/replay/rollout. Inactive Circle stays untouched. No schema migration: offers are JSON and the new field is optional.
+
+History: replace the same-day Contender observation with the newly captured observation according to existing daily retention; preserve every other source and all earlier-day rows. Retain the prior published snapshot locally for evidence and recovery; do not backfill price notes into old rows.

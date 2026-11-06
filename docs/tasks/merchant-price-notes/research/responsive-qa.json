@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-11-06T02:23:00+00:00",
+  "environment": "local packaged runtime",
+  "browser": "native IAB",
+  "widths": [
+    390,
+    1280
+  ],
+  "document_overflow": false,
+  "product": "OPEN UP Rapha Limited Edition Frameset",
+  "variant": "43266977104117",
+  "price": 1799,
+  "reference": 3400,
+  "discount_percent": 47.1,
+  "card_note_visible": true,
+  "expanded_details_note_visible": true,
+  "history_current_note_only": true,
+  "older_history_rows_without_note": 3,
+  "history_explains_recorded_notes": true,
+  "screenshots_visually_reviewed": true,
+  "viewport_reset": true,
+  "checkout_tested": false
+}

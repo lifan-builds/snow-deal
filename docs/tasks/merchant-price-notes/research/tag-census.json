@@ -1,0 +1,147 @@
+{
+  "source_capture": ".local/release/contender-generated-options/capture",
+  "raw_tagged": 28,
+  "accepted_tagged": 27,
+  "rows": [
+    {
+      "handle": "bmc-teammachine-r-01-frameset-2026",
+      "name": "BMC Teammachine R 01 Frameset 2026",
+      "accepted": true
+    },
+    {
+      "handle": "bmc-twostroke-01-one",
+      "name": "BMC Twostroke 01 One",
+      "accepted": true
+    },
+    {
+      "handle": "bmc-fourstroke-r-01-one",
+      "name": "BMC Fourstroke R 01 ONE",
+      "accepted": true
+    },
+    {
+      "handle": "bmc-urs-01-lt-one-2026",
+      "name": "BMC URS 01 LT ONE 2026",
+      "accepted": true
+    },
+    {
+      "handle": "bmc-roadmachine-01-two-2026",
+      "name": "BMC Roadmachine 01 TWO 2026",
+      "accepted": true
+    },
+    {
+      "handle": "bmc-urs-01-one-2026",
+      "name": "BMC URS 01 ONE 2026",
+      "accepted": true
+    },
+    {
+      "handle": "bmc-urs-01-two-2026",
+      "name": "BMC URS 01 TWO 2026",
+      "accepted": true
+    },
+    {
+      "handle": "bmc-urs-two-2026",
+      "name": "BMC URS TWO 2026",
+      "accepted": true
+    },
+    {
+      "handle": "bmc-kaius-01-three-2026",
+      "name": "BMC Kaius 01 THREE 2026",
+      "accepted": true
+    },
+    {
+      "handle": "bmc-kaius-01-two-2026",
+      "name": "BMC Kaius 01 TWO 2026",
+      "accepted": true
+    },
+    {
+      "handle": "bmc-kaius-01-four-2026",
+      "name": "BMC Kaius 01 FOUR 2026",
+      "accepted": true
+    },
+    {
+      "handle": "bmc-fourstroke-r-01-one-2026",
+      "name": "BMC Fourstroke R 01 ONE 2026",
+      "accepted": false
+    },
+    {
+      "handle": "bmc-urs-01-lt-one-2024",
+      "name": "BMC URS 01 LT ONE 2024",
+      "accepted": true
+    },
+    {
+      "handle": "bmc-teammachine-slr-two-2026",
+      "name": "BMC Teammachine SLR TWO 2026",
+      "accepted": true
+    },
+    {
+      "handle": "bmc-roadmachine-one-2026",
+      "name": "BMC Roadmachine ONE 2026",
+      "accepted": true
+    },
+    {
+      "handle": "orbea-vibe-mid-h30-eq-20mph-2022",
+      "name": "Orbea Vibe MID H30 EQ 20mph 2022",
+      "accepted": true
+    },
+    {
+      "handle": "scott-lumen-920",
+      "name": "SCOTT Lumen 920",
+      "accepted": true
+    },
+    {
+      "handle": "bmc-teammachine-slr-01-frameset-di-2026",
+      "name": "BMC Teammachine SLR 01 Frameset DI 2026",
+      "accepted": true
+    },
+    {
+      "handle": "bmc-fourstroke-amp-lt-three-2024",
+      "name": "BMC Fourstroke AMP LT THREE 2024",
+      "accepted": true
+    },
+    {
+      "handle": "bmc-roadmachine-al-x-one",
+      "name": "BMC Roadmachine AL X ONE",
+      "accepted": true
+    },
+    {
+      "handle": "masi-titanio-frameset",
+      "name": "Masi Titanio Frameset",
+      "accepted": true
+    },
+    {
+      "handle": "orbea-vibe-mid-h30-20mph-2022",
+      "name": "Orbea Vibe MID H30 20mph 2022",
+      "accepted": true
+    },
+    {
+      "handle": "orbea-diem-20-28mph-2025",
+      "name": "Orbea Diem 20 28MPH 2025",
+      "accepted": true
+    },
+    {
+      "handle": "bmc-urs-01-four-2024",
+      "name": "BMC URS 01 FOUR 2024",
+      "accepted": true
+    },
+    {
+      "handle": "scott-lumen-eride-900-tr",
+      "name": "SCOTT Lumen eRide 900 TR",
+      "accepted": true
+    },
+    {
+      "handle": "otso-voytek-gx-axs",
+      "name": "Otso Voytek GX AXS Build",
+      "accepted": true
+    },
+    {
+      "handle": "open-up-rapha-frameset",
+      "name": "OPEN UP Rapha Limited Edition Frameset",
+      "accepted": true
+    },
+    {
+      "handle": "enve-melee-frameset",
+      "name": "ENVE Melee Frameset",
+      "accepted": true
+    }
+  ]
+}

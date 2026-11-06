@@ -8,7 +8,7 @@ None. No runtime, test or contract correction was necessary. Review completed af
 
 No introduced correctness or scope issue found. Broader Shopify lint still reports the same four baseline findings: one TRY004 and three FURB167 uses of `re.I`. Their diagnostic codes, messages and source lines match HEAD exactly; unrelated cleanup is outside this guard's scope. The eight full-suite warnings are existing warnings.
 
-The completed 209-offer live merchant audit passes the prepublication gate. Publication and production rollout remain pending. The BMC Fourstroke's disappearance from the fresh sale feed is separate from the seven controlled generated-variant exclusions. No inventory gain, unique-model count, checkout validation or competitive lead is claimed.
+The completed 209-offer live merchant audit passes the prepublication gate. Publication and production rollout remain pending. The BMC Fourstroke's exclusion after every size became unavailable is separate from the seven controlled generated-variant exclusions. No inventory gain, unique-model count, checkout validation or competitive lead is claimed.
 
 ## Review scope and behavior
 

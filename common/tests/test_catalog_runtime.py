@@ -255,7 +255,7 @@ def test_history_survives_fulfillment_label_cleanup_without_rewriting_evidence(t
     history = read_offer_history(db, "cycling", "BikesOnline", current, current["offers"][0], now=NOW)
     assert len(history) == 2
     assert history[1] == {"observed_at": previous_time, "price": 1200,
-                          "reference": 2000, "availability": "unknown", "availability_note": ""}
+                          "reference": 2000, "availability": "unknown", "availability_note": "", "price_note": ""}
     assert history[0]["price"] == 1100
     assert db.read_bytes() == original_bytes
 

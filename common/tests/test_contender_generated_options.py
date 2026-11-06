@@ -11,7 +11,11 @@ from cycling_deals.catalog import CATALOG
 from deal_common.catalog.audit import validate_product
 from deal_common.catalog.query import query
 from deal_common.catalog.refresh import normalize
-from deal_common.parsers.shopify import ShopifyParser, is_contender_generated_variant
+from deal_common.parsers.shopify import (
+    ShopifyParser,
+    is_contender_generated_variant,
+    pricing_notice,
+)
 
 ORIGIN = 'https://contenderbicycles.com'
 MARKED = {'67738217840885', '67967680479477', '67967684641013', '48504718950645',
@@ -44,6 +48,7 @@ def old_card(item, variant, origin=ORIGIN):
         'variant_key': str(variant['id']), 'url': url + '?currency=USD&variant=' + str(variant['id']),
         'current_price': float(variant['price']), 'original_price': float(variant['compare_at_price']),
         'options': ' / '.join(variant[key] for key in ('option1', 'option2', 'option3') if variant.get(key)),
+        'price_note': pricing_notice(item, url),
     }}
 
 
@@ -182,7 +187,7 @@ def test_independent_audit_rejects_marked_old_offer_even_when_every_endpoint_fac
 
 
 def test_ordinary_audit_results_and_other_hosts_keep_their_previous_fact_checks():
-    item = next(p for p in payload()['products'] if p['handle'] == 'open-up-rapha-frameset')
+    item = next(p for p in payload()['products'] if p['handle'] == 'santa-cruz-stigmata-4-cc-frameset')
     ordinary = next(v for v in item['variants'] if str(v['id']) not in MARKED)
     marked = next(v for v in item['variants'] if str(v['id']) in MARKED)
     expected_checks = {'identity', 'currency', 'price', 'reference', 'options', 'stock'}
