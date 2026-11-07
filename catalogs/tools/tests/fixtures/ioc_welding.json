@@ -1,0 +1,543 @@
+{
+  "products": [
+    {
+      "id": 8552088174879,
+      "title": "ESAB Rebel EMP 205ic AC/DC Multi-Process Welder (0558102553)",
+      "handle": "esab-rebel-emp-205ic-ac-dc-multi-process-welder-0558102553",
+      "vendor": "ESAB",
+      "product_type": "Welding",
+      "tags": [
+        "Brand",
+        "Brand/ESAB",
+        "Brand/ESAB/ESAB Welders",
+        "Equipment",
+        "Equipment/Welding",
+        "Equipment/Welding/MIG Welders",
+        "Equipment/Welding/Multi Process",
+        "Equipment/Welding/Stick Welders",
+        "Equipment/Welding/TIG Welders"
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 46439776813343,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "IESB20170015",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "4195.00",
+          "grams": 38555,
+          "compare_at_price": "7015.13",
+          "position": 1,
+          "product_id": 8552088174879,
+          "created_at": "2023-08-24T16:24:20-04:00",
+          "updated_at": "2026-11-06T15:59:27-05:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 42656538820895,
+          "created_at": "2023-08-24T16:24:24-04:00",
+          "position": 1,
+          "updated_at": "2025-10-10T10:41:00-04:00",
+          "product_id": 8552088174879,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/0558102553_esab_rebel_emp205ic_acdc_pkg_hi.jpg?v=1760107260",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "id": 42656538886431,
+          "created_at": "2023-08-24T16:24:24-04:00",
+          "position": 2,
+          "updated_at": "2025-10-10T10:41:00-04:00",
+          "product_id": 8552088174879,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/placeholder.jpg?v=1760107260",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "id": 42656538788127,
+          "created_at": "2023-08-24T16:24:24-04:00",
+          "position": 3,
+          "updated_at": "2025-10-10T10:41:00-04:00",
+          "product_id": 8552088174879,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/placeholder_w_accys.jpg?v=1760107260",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "id": 42656538984735,
+          "created_at": "2023-08-24T16:24:24-04:00",
+          "position": 4,
+          "updated_at": "2025-10-10T10:41:00-04:00",
+          "product_id": 8552088174879,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/spec.jpg?v=1760107260",
+          "width": 920,
+          "height": 811
+        }
+      ]
+    },
+    {
+      "id": 9574296125727,
+      "title": "ESAB Rustler EM 280 PRO MIG Welder (0700401201)",
+      "handle": "esab-rustler-em-280-pro-mig-welder-0700401201",
+      "vendor": "ESAB",
+      "product_type": "Welding",
+      "tags": [
+        "Brand",
+        "Brand/ESAB",
+        "Brand/ESAB/ESAB Welders",
+        "Equipment",
+        "Equipment/Welding",
+        "Equipment/Welding/MIG Welders"
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 49581664534815,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "IESB20240029",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "3329.00",
+          "grams": 83915,
+          "compare_at_price": "5751.01",
+          "position": 1,
+          "product_id": 9574296125727,
+          "created_at": "2024-10-30T13:57:15-04:00",
+          "updated_at": "2026-11-06T15:59:27-05:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 62965621162271,
+          "created_at": "2025-06-26T10:45:51-04:00",
+          "position": 1,
+          "updated_at": "2025-11-25T13:25:44-05:00",
+          "product_id": 9574296125727,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/Rustler_Main.jpg?v=1764095144",
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "id": 58272118276383,
+          "created_at": "2024-10-30T13:58:51-04:00",
+          "position": 2,
+          "updated_at": "2025-06-26T10:46:33-04:00",
+          "product_id": 9574296125727,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/0700401201GunHolder.jpg?v=1750949193",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "id": 62965625159967,
+          "created_at": "2025-06-26T10:46:21-04:00",
+          "position": 3,
+          "updated_at": "2025-06-26T10:46:33-04:00",
+          "product_id": 9574296125727,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/Rustler_Display.jpg?v=1750949193",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "id": 58272118210847,
+          "created_at": "2024-10-30T13:58:51-04:00",
+          "position": 4,
+          "updated_at": "2025-06-26T10:46:33-04:00",
+          "product_id": 9574296125727,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/0700401201CylinderRack.jpg?v=1750949193",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "id": 58272118374687,
+          "created_at": "2024-10-30T13:58:51-04:00",
+          "position": 5,
+          "updated_at": "2025-06-26T10:46:33-04:00",
+          "product_id": 9574296125727,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/0700401201DriveSystem.jpg?v=1750949193",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "id": 8552063795487,
+      "title": "Miller Maxstar 161 S Stick Welder (907709)",
+      "handle": "miller-maxstar-161-s-stick-welder-907709",
+      "vendor": "Miller",
+      "product_type": "Welding",
+      "tags": [
+        "Brand",
+        "Brand/Miller",
+        "Equipment",
+        "Equipment/Welding",
+        "Equipment/Welding/Stick Welders"
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 46439754301727,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "IMIL20160028",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "1549.00",
+          "grams": 11340,
+          "compare_at_price": "1966.00",
+          "position": 1,
+          "product_id": 8552063795487,
+          "created_at": "2023-08-24T16:21:00-04:00",
+          "updated_at": "2026-11-06T15:59:27-05:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 65899461673247,
+          "created_at": "2026-04-01T08:10:25-04:00",
+          "position": 1,
+          "updated_at": "2026-04-01T08:10:32-04:00",
+          "product_id": 8552063795487,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907709_REBATE_2dac361b-1955-457b-bfbf-5edddaf1bce6.jpg?v=1775045432",
+          "width": 1100,
+          "height": 1100
+        },
+        {
+          "id": 42656478396703,
+          "created_at": "2023-08-24T16:21:02-04:00",
+          "position": 2,
+          "updated_at": "2026-04-01T08:10:32-04:00",
+          "product_id": 8552063795487,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907709_1.jpg?v=1775045432",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "id": 42656478069023,
+          "created_at": "2023-08-24T16:21:02-04:00",
+          "position": 3,
+          "updated_at": "2026-04-01T08:10:32-04:00",
+          "product_id": 8552063795487,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907709_front.jpg?v=1775045432",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "id": 8574324637983,
+      "title": "Miller Bobcat 230 Kohler Welder/Generator (907824)",
+      "handle": "miller-bobcat-230-kohler-welder-generator-907824",
+      "vendor": "Miller",
+      "product_type": "Welding",
+      "tags": [
+        "Brand",
+        "Brand/Miller",
+        "Brand/Miller/Miller Engine Drives",
+        "Equipment",
+        "Equipment/Welding",
+        "Equipment/Welding/Engine Drives"
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 46558258626847,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "IMIL20230042",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "6990.00",
+          "grams": 190509,
+          "compare_at_price": "8861.00",
+          "position": 1,
+          "product_id": 8574324637983,
+          "created_at": "2023-08-31T11:25:53-04:00",
+          "updated_at": "2026-11-06T15:59:27-05:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 65899483463967,
+          "created_at": "2026-04-01T08:15:07-04:00",
+          "position": 1,
+          "updated_at": "2026-04-01T08:15:19-04:00",
+          "product_id": 8574324637983,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907824_REBATE_41e9e2e6-7571-472e-9422-cd1a24a479b2.jpg?v=1775045719",
+          "width": 1100,
+          "height": 1100
+        },
+        {
+          "id": 42740265419039,
+          "created_at": "2023-08-31T11:25:59-04:00",
+          "position": 2,
+          "updated_at": "2026-04-01T08:15:19-04:00",
+          "product_id": 8574324637983,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907824Main.jpg?v=1775045719",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "id": 42740265615647,
+          "created_at": "2023-08-31T11:25:59-04:00",
+          "position": 3,
+          "updated_at": "2026-04-01T08:15:19-04:00",
+          "product_id": 8574324637983,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907824Bobcat230FrontOpenDoors.jpg?v=1775045719",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "id": 42740265320735,
+          "created_at": "2023-08-31T11:25:59-04:00",
+          "position": 4,
+          "updated_at": "2026-04-01T08:15:19-04:00",
+          "product_id": 8574324637983,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907824Bobcat230Front.jpg?v=1775045719",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "id": 42740265550111,
+          "created_at": "2023-08-31T11:25:59-04:00",
+          "position": 5,
+          "updated_at": "2026-04-01T08:15:19-04:00",
+          "product_id": 8574324637983,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907824Bobcat230SideLeft.jpg?v=1775045719",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "id": 42740265287967,
+          "created_at": "2023-08-31T11:25:59-04:00",
+          "position": 6,
+          "updated_at": "2026-04-01T08:15:19-04:00",
+          "product_id": 8574324637983,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907824Bobcat230SideRight.jpg?v=1775045719",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "id": 42740265484575,
+          "created_at": "2023-08-31T11:25:59-04:00",
+          "position": 7,
+          "updated_at": "2026-04-01T08:15:19-04:00",
+          "product_id": 8574324637983,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907824Bobcat230TopMaintencePanelOpenKohler.jpg?v=1775045719",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "id": 8551918600479,
+      "title": "Miller Spectrum 375 X-Treme Plasma Cutter (907529)",
+      "handle": "miller-spectrum-375-x-treme-plasma-cutter-907529",
+      "vendor": "Miller",
+      "product_type": "Cutting",
+      "tags": [
+        "Brand",
+        "Brand/Miller",
+        "Brand/Miller/Miller Plasma Cutters",
+        "Equipment",
+        "Equipment/Cutting & Plasma",
+        "Equipment/Cutting & Plasma/Plasma Cutters"
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 46439617298719,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "IMIL00000081",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "1940.00",
+          "grams": 15876,
+          "compare_at_price": "2458.95",
+          "position": 1,
+          "product_id": 8551918600479,
+          "created_at": "2023-08-24T16:02:16-04:00",
+          "updated_at": "2026-11-06T15:59:41-05:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 66608644358431,
+          "created_at": "2026-07-01T09:22:44-04:00",
+          "position": 1,
+          "updated_at": "2026-07-01T09:22:46-04:00",
+          "product_id": 8551918600479,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/Spectrum375X-TREMEwX-CASE907529REBATE_535a93a1-fc43-4d10-91f6-256919f73849.jpg?v=1782912166",
+          "width": 350,
+          "height": 350
+        },
+        {
+          "id": 42656188596511,
+          "created_at": "2023-08-24T16:02:19-04:00",
+          "position": 2,
+          "updated_at": "2024-08-26T12:40:50-04:00",
+          "product_id": 8551918600479,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907529_case.jpg?v=1724690450",
+          "width": 1600,
+          "height": 1600
+        },
+        {
+          "id": 42656188629279,
+          "created_at": "2023-08-24T16:02:19-04:00",
+          "position": 3,
+          "updated_at": "2024-04-01T12:18:30-04:00",
+          "product_id": 8551918600479,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907529.jpg?v=1711988310",
+          "width": 1600,
+          "height": 1600
+        }
+      ]
+    },
+    {
+      "id": 8551930298655,
+      "title": "Thermal Dynamics Plasma Interface Cable 25 Ft (9-8312)",
+      "handle": "thermal-dynamics-plasma-interface-cable-25-ft-9-8312",
+      "vendor": "Thermal Dynamics",
+      "product_type": "Parts & Accessories",
+      "tags": [
+        "Brand",
+        "Brand/Thermal Dynamics",
+        "Consumables",
+        "Discontinued",
+        "Equipment",
+        "Equipment/Cutting & Plasma",
+        "Equipment/Cutting & Plasma/Plasma Cutters",
+        "Equipment/Cutting & Plasma/Plasma Cutters/Plasma Accessories"
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 46439626932511,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "ITHE00000035",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "435.00",
+          "grams": 1134,
+          "compare_at_price": "544.00",
+          "position": 1,
+          "product_id": 8551930298655,
+          "created_at": "2023-08-24T16:03:42-04:00",
+          "updated_at": "2026-11-06T15:59:41-05:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 42656213238047,
+          "created_at": "2023-08-24T16:03:44-04:00",
+          "position": 1,
+          "updated_at": "2023-08-24T16:03:45-04:00",
+          "product_id": 8551930298655,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/thd9-8312_2.jpg?v=1692907425",
+          "width": 300,
+          "height": 300
+        }
+      ]
+    }
+  ]
+}

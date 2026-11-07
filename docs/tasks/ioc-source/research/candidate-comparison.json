@@ -1,0 +1,263 @@
+{
+  "at": "2026-11-07T03:04:05.529437+00:00",
+  "before": {
+    "catalog": "tools",
+    "measured_at": "2026-11-07T03:04:05.529442+00:00",
+    "reference_floor": 200,
+    "scope": "snapshot-listed offers; not independent merchant verification or unique model count",
+    "eligible_in_stock_listings": 934,
+    "deep_deal_listings": 32,
+    "useful_retailers": [
+      "Beaver Industrial Supply",
+      "Cyberweld",
+      "Fasteners Inc",
+      "OakTree Supply",
+      "Taylor Toolworks",
+      "Tool Nut",
+      "Woodcraft"
+    ],
+    "checked_within_24h_percent": 100.0,
+    "exact_size_facets": [
+      "12 ft",
+      "15 ft",
+      "16 ft",
+      "20 ft",
+      "25 ft",
+      "50 ft",
+      "HW110S-36Pro",
+      "HW110S-52Pro",
+      "HW110TC-36Pro",
+      "HW110TC-52Pro"
+    ],
+    "top_offers": [
+      {
+        "name": "Kreg 20V Ionic Drive 1/2\" Compact Drill Kit KPTBDR050A",
+        "store": "Beaver Industrial Supply",
+        "url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-2-compact-drill-kit-kptbdr050a?currency=USD&variant=44153404686429",
+        "price": 99.0,
+        "reference": 228.99,
+        "discount": 56.766671033669596,
+        "size": null
+      },
+      {
+        "name": "DEWALT, DCS356D1, Oscillating Multi-Tool, 20V MAX Lithium Ion, Brushless, 3-Speed, Cordless, Kit",
+        "store": "Fasteners Inc",
+        "url": "https://fastenersinc.myshopify.com/products/dew-dcs356d1?currency=USD&variant=45174243688639",
+        "price": 119.0,
+        "reference": 259.0,
+        "discount": 54.054054054054056,
+        "size": null
+      },
+      {
+        "name": "DEWALT 20V MAX XR Brushless Cordless Router (Tool Only)",
+        "store": "Fasteners Inc",
+        "url": "https://fastenersinc.myshopify.com/products/dcw600b-20v-max-compact-router-dewalt?currency=USD&variant=31231201247319",
+        "price": 119.0,
+        "reference": 249.0,
+        "discount": 52.208835341365464,
+        "size": null
+      },
+      {
+        "name": "Kreg 20V Ionic Drive 1/4\" Compact Impact Driver Kit KPTBDV025A",
+        "store": "Beaver Industrial Supply",
+        "url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-4-compact-impact-driver-kit-kptbdv025a?currency=USD&variant=44153397182557",
+        "price": 119.0,
+        "reference": 248.99,
+        "discount": 52.20691594039921,
+        "size": null
+      },
+      {
+        "name": "Kreg 20V Ionic Drive 5\" Random Orbit Sander Kit KPTBRS500A",
+        "store": "Beaver Industrial Supply",
+        "url": "https://beavertools.com/products/kreg-20v-ionic-drive-5-random-orbit-sander-kit-kptbrs500a?currency=USD&variant=44153396428893",
+        "price": 119.0,
+        "reference": 248.99,
+        "discount": 52.20691594039921,
+        "size": null
+      },
+      {
+        "name": "Axiom Iconic-4 Series CNC Router 2' x 2'",
+        "store": "OakTree Supply",
+        "url": "https://www.oaktreesupply.com/products/axoiom-iconic-4-series-cnc-router-24-x-24?currency=USD&variant=37991680082119",
+        "price": 2999.0,
+        "reference": 6049.0,
+        "discount": 50.4215572821954,
+        "size": null
+      },
+      {
+        "name": "Iconic 24\" x 24\" for Axiom CNC Router",
+        "store": "Woodcraft",
+        "url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-24-for-axiom-cnc-router?currency=USD&variant=43403824922762",
+        "price": 2999.0,
+        "reference": 6049.0,
+        "discount": 50.4215572821954,
+        "size": null
+      },
+      {
+        "name": "DEWALT, DCS334B, Cordless Jig Saw, 20V, Brushless, 1 in Blade Stroke Length, 4-Position Orbital Action",
+        "store": "Fasteners Inc",
+        "url": "https://fastenersinc.myshopify.com/products/dcs334b-20v-max-xr-cordless-jig-saw-tool-only-dewalt?currency=USD&variant=31231188205655",
+        "price": 119.0,
+        "reference": 239.0,
+        "discount": 50.2092050209205,
+        "size": null
+      },
+      {
+        "name": "JET JAT-127, 3/4-in. Composite Impact Wrench (505127)",
+        "store": "Tool Nut",
+        "url": "https://www.toolnut.com/products/jet-505127-jat-127-composite-impact-wrench?currency=USD&variant=50177235976486",
+        "price": 299.99,
+        "reference": 580.99,
+        "discount": 48.36572058038865,
+        "size": null
+      },
+      {
+        "name": "Kreg 20V Ionic Drive Oscillating Multi-Tool Kit KPTBMT100A",
+        "store": "Beaver Industrial Supply",
+        "url": "https://beavertools.com/products/kreg-20v-ionic-drive-oscillating-multi-tool-kit-kptbmt100a?currency=USD&variant=44153393905757",
+        "price": 139.0,
+        "reference": 268.99,
+        "discount": 48.325216550801144,
+        "size": null
+      }
+    ]
+  },
+  "after": {
+    "catalog": "tools",
+    "measured_at": "2026-11-07T03:04:05.650107+00:00",
+    "reference_floor": 200,
+    "scope": "snapshot-listed offers; not independent merchant verification or unique model count",
+    "eligible_in_stock_listings": 1123,
+    "deep_deal_listings": 34,
+    "useful_retailers": [
+      "Beaver Industrial Supply",
+      "Cyberweld",
+      "Fasteners Inc",
+      "OakTree Supply",
+      "Taylor Toolworks",
+      "Tool Nut",
+      "Welding Supplies from IOC",
+      "Woodcraft"
+    ],
+    "checked_within_24h_percent": 100.0,
+    "exact_size_facets": [
+      "12 ft",
+      "15 ft",
+      "16 ft",
+      "20 ft",
+      "25 ft",
+      "50 ft",
+      "HW110S-36Pro",
+      "HW110S-52Pro",
+      "HW110TC-36Pro",
+      "HW110TC-52Pro"
+    ],
+    "top_offers": [
+      {
+        "name": "Kreg 20V Ionic Drive 1/2\" Compact Drill Kit KPTBDR050A",
+        "store": "Beaver Industrial Supply",
+        "url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-2-compact-drill-kit-kptbdr050a?currency=USD&variant=44153404686429",
+        "price": 99.0,
+        "reference": 228.99,
+        "discount": 56.766671033669596,
+        "size": null
+      },
+      {
+        "name": "DEWALT, DCS356D1, Oscillating Multi-Tool, 20V MAX Lithium Ion, Brushless, 3-Speed, Cordless, Kit",
+        "store": "Fasteners Inc",
+        "url": "https://fastenersinc.myshopify.com/products/dew-dcs356d1?currency=USD&variant=45174243688639",
+        "price": 119.0,
+        "reference": 259.0,
+        "discount": 54.054054054054056,
+        "size": null
+      },
+      {
+        "name": "DEWALT 20V MAX XR Brushless Cordless Router (Tool Only)",
+        "store": "Fasteners Inc",
+        "url": "https://fastenersinc.myshopify.com/products/dcw600b-20v-max-compact-router-dewalt?currency=USD&variant=31231201247319",
+        "price": 119.0,
+        "reference": 249.0,
+        "discount": 52.208835341365464,
+        "size": null
+      },
+      {
+        "name": "Kreg 20V Ionic Drive 1/4\" Compact Impact Driver Kit KPTBDV025A",
+        "store": "Beaver Industrial Supply",
+        "url": "https://beavertools.com/products/kreg-20v-ionic-drive-1-4-compact-impact-driver-kit-kptbdv025a?currency=USD&variant=44153397182557",
+        "price": 119.0,
+        "reference": 248.99,
+        "discount": 52.20691594039921,
+        "size": null
+      },
+      {
+        "name": "Kreg 20V Ionic Drive 5\" Random Orbit Sander Kit KPTBRS500A",
+        "store": "Beaver Industrial Supply",
+        "url": "https://beavertools.com/products/kreg-20v-ionic-drive-5-random-orbit-sander-kit-kptbrs500a?currency=USD&variant=44153396428893",
+        "price": 119.0,
+        "reference": 248.99,
+        "discount": 52.20691594039921,
+        "size": null
+      },
+      {
+        "name": "Axiom Iconic-4 Series CNC Router 2' x 2'",
+        "store": "OakTree Supply",
+        "url": "https://www.oaktreesupply.com/products/axoiom-iconic-4-series-cnc-router-24-x-24?currency=USD&variant=37991680082119",
+        "price": 2999.0,
+        "reference": 6049.0,
+        "discount": 50.4215572821954,
+        "size": null
+      },
+      {
+        "name": "Iconic 24\" x 24\" for Axiom CNC Router",
+        "store": "Woodcraft",
+        "url": "https://www.woodcraft.com/products/axiom-precision-iconic-24-x-24-for-axiom-cnc-router?currency=USD&variant=43403824922762",
+        "price": 2999.0,
+        "reference": 6049.0,
+        "discount": 50.4215572821954,
+        "size": null
+      },
+      {
+        "name": "DEWALT, DCS334B, Cordless Jig Saw, 20V, Brushless, 1 in Blade Stroke Length, 4-Position Orbital Action",
+        "store": "Fasteners Inc",
+        "url": "https://fastenersinc.myshopify.com/products/dcs334b-20v-max-xr-cordless-jig-saw-tool-only-dewalt?currency=USD&variant=31231188205655",
+        "price": 119.0,
+        "reference": 239.0,
+        "discount": 50.2092050209205,
+        "size": null
+      },
+      {
+        "name": "JET JAT-127, 3/4-in. Composite Impact Wrench (505127)",
+        "store": "Tool Nut",
+        "url": "https://www.toolnut.com/products/jet-505127-jat-127-composite-impact-wrench?currency=USD&variant=50177235976486",
+        "price": 299.99,
+        "reference": 580.99,
+        "discount": 48.36572058038865,
+        "size": null
+      },
+      {
+        "name": "Kreg 20V Ionic Drive Oscillating Multi-Tool Kit KPTBMT100A",
+        "store": "Beaver Industrial Supply",
+        "url": "https://beavertools.com/products/kreg-20v-ionic-drive-oscillating-multi-tool-kit-kptbmt100a?currency=USD&variant=44153393905757",
+        "price": 139.0,
+        "reference": 268.99,
+        "discount": 48.325216550801144,
+        "size": null
+      }
+    ]
+  },
+  "unchanged_existing_sources": 13,
+  "prior_observations_exact": 47,
+  "observations_after": 48,
+  "new_source_observation": "2026-11-07T03:02:18.675516+00:00",
+  "made_to_order_unknown": 6,
+  "health": {
+    "catalog": "tools",
+    "snapshot_sha256": "e21e5a3d7609d8d3a99049b3fb8b1e561d7478ea0f1063bda6e28625fa06d5b9",
+    "fresh_sources": 14,
+    "configured_sources": 14,
+    "status": "ready"
+  },
+  "fixed_sample": 30,
+  "all_deep": 34,
+  "selected_merchant_audit": 52
+}

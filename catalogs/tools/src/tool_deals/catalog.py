@@ -1,5 +1,6 @@
 import re
 from pathlib import Path
+from urllib.parse import urlsplit
 
 from deal_common.catalog.definition import Catalog, Classification
 from deal_common.config import RetailerConfig
@@ -76,10 +77,26 @@ def classify(product: Product) -> Classification | None:
     bundle_machine = (re.search(r"\bbundle\b", primary_title) and any(
         match and any(brand == match[1] or brand.startswith(match[1] + " ") for brand in manufacturers)
         for tag in tags if (match := re.fullmatch(r"(.+) (?:welding|stick) machine", tag))))
+    # IOC's broad Welding/Cutting types need its exact equipment taxonomy.
+    try:
+        source = urlsplit(product.url)
+    except ValueError:
+        return None
+    ioc = (source.scheme == "https" and source.netloc == "www.weldingsuppliesfromioc.com"
+           and source.path.startswith("/products/"))
+    if ioc and any(re.search(r"(?:^|/)[^/]*\b(?:accessories|parts|consumables)\b", tag)
+                   for tag in tags):
+        return None
+    ioc_machine = ioc and (
+        kind == "welding" and tags & {
+            "equipment/welding/mig welders", "equipment/welding/tig welders",
+            "equipment/welding/stick welders", "equipment/welding/multi process",
+            "equipment/welding/engine drives"}
+        or kind in {"cutting", "welding"} and "equipment/cutting & plasma/plasma cutters" in tags)
     welding = (re.fullmatch(r"(?:(?:mig|tig|stick|multiprocess) welding machines?|welding machines?|"
                             r"plasma cutting machines?|welder\s*/\s*generator|battery powered welder)", kind)
                or tags & {"multiprocess welder", "mig welder", "tig welder", "stick welder", "plasma cutter"}
-               or bundle_machine)
+               or bundle_machine or ioc_machine)
     if welding:
         category = "Workshop equipment"
     elif (re.search(r"\b(band saw|bandsaw)\b", primary_text) and re.search(r"\b(cordless|portable|20v|m18|m12)\b", primary_text)
@@ -122,7 +139,11 @@ CATALOG = Catalog(
     headline="Build more.\nSpend less.",
     description="Deep cuts on power tools, serious kits, and workshop equipment. Ranked by percentage off, with the package details kept in view.",
     categories=("Power tools", "Combo kits", "Workshop equipment"),
-    sources=(RetailerConfig(name="Baker's Gas", domain='bakersgas.com',
+    sources=(RetailerConfig(name="Welding Supplies from IOC", domain="www.weldingsuppliesfromioc.com",
+                            scrape_urls=["https://www.weldingsuppliesfromioc.com/collections/all-welders?currency=USD",
+                                         "https://www.weldingsuppliesfromioc.com/collections/plasma-cutters?currency=USD"],
+                            verify_shopify_currency=True),
+             RetailerConfig(name="Baker's Gas", domain='bakersgas.com',
                             scrape_urls=['https://bakersgas.com/collections/welding-machines-accessories?currency=USD',
                                          'https://bakersgas.com/collections/mig-welders?currency=USD',
                                          'https://bakersgas.com/collections/tig-welders?currency=USD',

@@ -1,0 +1,7 @@
+{
+  "candidate_sha256": "28e201f6eea36b483cfbf75989c9bd26b0c7722981b52d02d55b08f617900ede",
+  "package_sha256": "27a973d5a06c38a40a98f55106570e40880dbd5ce5136d2245e042dffba07e72",
+  "source_rows_equal": 14,
+  "history_rows_equal": 48,
+  "passed": true
+}

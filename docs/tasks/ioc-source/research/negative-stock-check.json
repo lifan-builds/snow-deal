@@ -1,0 +1,344 @@
+{
+  "checked_at": "2026-11-07T03:03:58.073617+00:00",
+  "method": "all-observed-made-to-order-product-endpoint-negative-stock-check",
+  "expected_stock_rejections": 6,
+  "passed": true,
+  "sample_size": 6,
+  "match": 0,
+  "mismatch": 6,
+  "inconclusive": 0,
+  "verified_match_percent": 0.0,
+  "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+  "results": [
+    {
+      "name": "Miller Big Blue 400 Pro Kubota Welder/Generator (907732)",
+      "store": "Welding Supplies from IOC",
+      "offer": {
+        "variant_key": "46439773503775",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-big-blue-400-pro-kubota-welder-generator-907732?currency=USD&variant=46439773503775",
+        "current_price": 26332.0,
+        "original_price": 30410.0,
+        "size": null,
+        "options": "",
+        "availability": "unknown",
+        "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907733_1.jpg?v=1692908636",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "Retailer shipping notice: These generators are Made-to-Order from Miller.  Please allow 1-2 weeks for your order to ship.",
+        "price_note": ""
+      },
+      "check_started_at": "2026-11-07T03:03:42.986947+00:00",
+      "evidence_url": "https://www.weldingsuppliesfromioc.com/products/miller-big-blue-400-pro-kubota-welder-generator-907732.js?currency=USD",
+      "response_sha256": "3aefafaf13b841f23ee9749d07d94fa321f95b69e56c91c3d9b8de3971b5d9bb",
+      "status": "mismatch",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": false
+      },
+      "merchant": {
+        "title": "Miller Big Blue 400 Pro Kubota Welder/Generator (907732)",
+        "variant": "46439773503775",
+        "sku": "IMIL20180018",
+        "price_minor": 2633200,
+        "reference_minor": 3041000,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": "Retailer shipping notice: These generators are Made-to-Order from Miller.  Please allow 1-2 weeks for your order to ship."
+      },
+      "sampled_at": "2026-11-07T03:03:42.942206+00:00",
+      "checked_at": "2026-11-07T03:03:47.381452+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Miller Big Blue 600 Air Pak Welder/Generator w/ArcReach (907750)",
+      "store": "Welding Supplies from IOC",
+      "offer": {
+        "variant_key": "46439771930911",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-big-blue-600-air-pak-welder-generator-w-arcreach-907750?currency=USD&variant=46439771930911",
+        "current_price": 68357.0,
+        "original_price": 78948.0,
+        "size": null,
+        "options": "",
+        "availability": "unknown",
+        "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907750.jpg?v=1692908623",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "Retailer shipping notice: These generators are Made-to-Order from Miller Electric.  Please allow 2-3 weeks for shipment.",
+        "price_note": ""
+      },
+      "check_started_at": "2026-11-07T03:03:47.381499+00:00",
+      "evidence_url": "https://www.weldingsuppliesfromioc.com/products/miller-big-blue-600-air-pak-welder-generator-w-arcreach-907750.js?currency=USD",
+      "response_sha256": "5fc2b14d5a84d7080ffaa6a07ba2cf1ae532a52ab89058e6b4442977cd539cd1",
+      "status": "mismatch",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": false
+      },
+      "merchant": {
+        "title": "Miller Big Blue 600 Air Pak Welder/Generator w/ArcReach (907750)",
+        "variant": "46439771930911",
+        "sku": "IMIL20180062",
+        "price_minor": 6835700,
+        "reference_minor": 7894800,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": "Retailer shipping notice: These generators are Made-to-Order from Miller Electric.  Please allow 2-3 weeks for shipment."
+      },
+      "sampled_at": "2026-11-07T03:03:42.942206+00:00",
+      "checked_at": "2026-11-07T03:03:49.518954+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Lincoln Cross Country 300 Kubota CC/CV Welder Generator (K4166-1)",
+      "store": "Welding Supplies from IOC",
+      "offer": {
+        "variant_key": "46439785529631",
+        "url": "https://www.weldingsuppliesfromioc.com/products/lincoln-cross-country-300-kubota-cc-cv-welder-generator-k4166-1?currency=USD&variant=46439785529631",
+        "current_price": 29795.0,
+        "original_price": 30963.0,
+        "size": null,
+        "options": "",
+        "availability": "unknown",
+        "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/k4166-1_hero.jpg?v=1717071427",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "Retailer shipping notice: These machines are typically Made-to-Order from Lincoln.  Please allow 4-6 weeks for shipping.",
+        "price_note": ""
+      },
+      "check_started_at": "2026-11-07T03:03:49.518976+00:00",
+      "evidence_url": "https://www.weldingsuppliesfromioc.com/products/lincoln-cross-country-300-kubota-cc-cv-welder-generator-k4166-1.js?currency=USD",
+      "response_sha256": "62efef67f036bc99e4f015e4add19cc09f8de684c745dca96320308b7bf48eb0",
+      "status": "mismatch",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": false
+      },
+      "merchant": {
+        "title": "Lincoln Cross Country 300 Kubota CC/CV Welder Generator (K4166-1)",
+        "variant": "46439785529631",
+        "sku": "ILIN20190015",
+        "price_minor": 2979500,
+        "reference_minor": 3096300,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": "Retailer shipping notice: These machines are typically Made-to-Order from Lincoln.  Please allow 4-6 weeks for shipping."
+      },
+      "sampled_at": "2026-11-07T03:03:42.942206+00:00",
+      "checked_at": "2026-11-07T03:03:51.659610+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Miller Big Blue 800 Duo Pro Welder/Generator w/ArcReach (907751)",
+      "store": "Welding Supplies from IOC",
+      "offer": {
+        "variant_key": "46439778615583",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-big-blue-800-duo-pro-welder-generator-w-arcreach-907751?currency=USD&variant=46439778615583",
+        "current_price": 55072.0,
+        "original_price": 63605.0,
+        "size": null,
+        "options": "",
+        "availability": "unknown",
+        "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907751.jpg?v=1692908683",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "Retailer shipping notice: These generators are Made-to-Order from Miller Electric. Please allow 2-3 weeks for shipment.",
+        "price_note": ""
+      },
+      "check_started_at": "2026-11-07T03:03:51.659649+00:00",
+      "evidence_url": "https://www.weldingsuppliesfromioc.com/products/miller-big-blue-800-duo-pro-welder-generator-w-arcreach-907751.js?currency=USD",
+      "response_sha256": "ad7f86073b77782d202679e5b215aefb6333336d4f73ea5e02037dbc9b3ea3ae",
+      "status": "mismatch",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": false
+      },
+      "merchant": {
+        "title": "Miller Big Blue 800 Duo Pro Welder/Generator w/ArcReach (907751)",
+        "variant": "46439778615583",
+        "sku": "IMIL20180063",
+        "price_minor": 5507200,
+        "reference_minor": 6360500,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": "Retailer shipping notice: These generators are Made-to-Order from Miller Electric. Please allow 2-3 weeks for shipment."
+      },
+      "sampled_at": "2026-11-07T03:03:42.942206+00:00",
+      "checked_at": "2026-11-07T03:03:53.822914+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Miller Big Blue 800 Duo Air Pak Welder/Generator w/ArcReach (907752)",
+      "store": "Welding Supplies from IOC",
+      "offer": {
+        "variant_key": "46439771734303",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-big-blue-800-duo-air-pak-welder-generator-w-arcreach-907752?currency=USD&variant=46439771734303",
+        "current_price": 72069.0,
+        "original_price": 83234.0,
+        "size": null,
+        "options": "",
+        "availability": "unknown",
+        "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907752.jpg?v=1692908621",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "Retailer shipping notice: These generators are Made-to-Order from Miller Electric.  Please allow 2-3 weeks for shipment.",
+        "price_note": ""
+      },
+      "check_started_at": "2026-11-07T03:03:53.822948+00:00",
+      "evidence_url": "https://www.weldingsuppliesfromioc.com/products/miller-big-blue-800-duo-air-pak-welder-generator-w-arcreach-907752.js?currency=USD",
+      "response_sha256": "a3104b2e19d77586625f2e2a8514ffd48a68e40ff71944e9f083aebd3ff141e8",
+      "status": "mismatch",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": false
+      },
+      "merchant": {
+        "title": "Miller Big Blue 800 Duo Air Pak Welder/Generator w/ArcReach (907752)",
+        "variant": "46439771734303",
+        "sku": "IMIL20180064",
+        "price_minor": 7206900,
+        "reference_minor": 8323400,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": "Retailer shipping notice: These generators are Made-to-Order from Miller Electric.  Please allow 2-3 weeks for shipment."
+      },
+      "sampled_at": "2026-11-07T03:03:42.942206+00:00",
+      "checked_at": "2026-11-07T03:03:55.949312+00:00",
+      "within_audit_window": true
+    },
+    {
+      "name": "Miller AlumaPower 450 MPa MIG Welder with Feeder, 25-ft XR Gun, MIG Kit, and Cart (951840)",
+      "store": "Welding Supplies from IOC",
+      "offer": {
+        "variant_key": "46439693975839",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-alumapower-450-mpa-mig-welder-with-feeder-25-ft-xr-gun-mig-kit-and-cart-951840?currency=USD&variant=46439693975839",
+        "current_price": 21348.0,
+        "original_price": 24655.0,
+        "size": null,
+        "options": "",
+        "availability": "unknown",
+        "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/951840.jpg?v=1692907967",
+        "reference_basis": "retailer_compare_at",
+        "availability_note": "Retailer shipping notice: These packages are made-to-order from Miller.  Please expect a 2-3 week lead time.",
+        "price_note": ""
+      },
+      "check_started_at": "2026-11-07T03:03:55.949328+00:00",
+      "evidence_url": "https://www.weldingsuppliesfromioc.com/products/miller-alumapower-450-mpa-mig-welder-with-feeder-25-ft-xr-gun-mig-kit-and-cart-951840.js?currency=USD",
+      "response_sha256": "36bd81ca72fe6d6c56f7ef98f20b1764936bb3dbec61599b325eb943937987c5",
+      "status": "mismatch",
+      "checks": {
+        "identity": true,
+        "currency": true,
+        "price": true,
+        "reference": true,
+        "options": true,
+        "stock": false
+      },
+      "merchant": {
+        "title": "Miller AlumaPower 450 MPa MIG Welder with Feeder, 25-ft XR Gun, MIG Kit, and Cart (951840)",
+        "variant": "46439693975839",
+        "sku": "IMIL20130031",
+        "price_minor": 2134800,
+        "reference_minor": 2465500,
+        "currency": "USD",
+        "options": "",
+        "raw_options": [
+          "Default Title"
+        ],
+        "option_definitions": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "available": true,
+        "shipping_notice": "Retailer shipping notice: These packages are made-to-order from Miller.  Please expect a 2-3 week lead time."
+      },
+      "sampled_at": "2026-11-07T03:03:42.942206+00:00",
+      "checked_at": "2026-11-07T03:03:58.073447+00:00",
+      "within_audit_window": true
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "url": "https://www.weldingsuppliesfromioc.com/products/esab-rebel-emp-205ic-ac-dc-multi-process-welder-0558102553?variant=46439776813343",
+    "at": "2026-11-06T21:00:37.872305+00:00",
+    "http": 200,
+    "sha256": "193112cedf2bc8593d8396cd13bafd5cb24691fc3d4d783154c523f2a09bd95e",
+    "title": "ESAB Rebel EMP 205ic AC/DC Multi-Process Welder (0558102553)",
+    "variants": [
+      {
+        "id": 46439776813343,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "IESB20170015",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "4195.00",
+        "grams": 38555,
+        "compare_at_price": "7015.13",
+        "position": 1,
+        "product_id": 8552088174879,
+        "created_at": "2023-08-24T16:24:20-04:00",
+        "updated_at": "2026-11-06T15:59:27-05:00"
+      }
+    ]
+  },
+  {
+    "url": "https://www.weldingsuppliesfromioc.com/products/esab-rustler-em-280-pro-mig-welder-0700401201?variant=49581664534815",
+    "at": "2026-11-06T21:00:40.629992+00:00",
+    "http": 200,
+    "sha256": "46a85f715d2bcbb25d1209350159c0679c17071ec77ffe2d4fd30225b5072070",
+    "title": "ESAB Rustler EM 280 PRO MIG Welder (0700401201)",
+    "variants": [
+      {
+        "id": 49581664534815,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "IESB20240029",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "3329.00",
+        "grams": 83915,
+        "compare_at_price": "5751.01",
+        "position": 1,
+        "product_id": 9574296125727,
+        "created_at": "2024-10-30T13:57:15-04:00",
+        "updated_at": "2026-11-06T15:59:27-05:00"
+      }
+    ]
+  }
+]

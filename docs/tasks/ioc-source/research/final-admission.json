@@ -1,0 +1,1787 @@
+{
+  "report": [
+    {
+      "candidate": {
+        "catalog": "tools",
+        "name": "Welding Supplies from IOC",
+        "domain": "www.weldingsuppliesfromioc.com",
+        "scrape_urls": [
+          "https://www.weldingsuppliesfromioc.com/collections/all-welders?currency=USD",
+          "https://www.weldingsuppliesfromioc.com/collections/plasma-cutters?currency=USD"
+        ]
+      },
+      "checked_at": "2026-11-07T03:02:28.980834+00:00",
+      "snapshot": "00-tools.db",
+      "refresh": {
+        "source": "Welding Supplies from IOC",
+        "status": "complete",
+        "errors": 0,
+        "pages": 2,
+        "collections": [
+          {
+            "url": "https://www.weldingsuppliesfromioc.com/collections/all-welders?currency=USD",
+            "pages": 1,
+            "products": 158,
+            "status": "complete",
+            "observed_currency": "USD"
+          },
+          {
+            "url": "https://www.weldingsuppliesfromioc.com/collections/plasma-cutters?currency=USD",
+            "pages": 1,
+            "products": 39,
+            "status": "complete",
+            "observed_currency": "USD"
+          }
+        ],
+        "parsed_products": 197,
+        "accepted_products": 195
+      },
+      "eligible_listings": 189,
+      "deep_listings": 2,
+      "disposition": "merchant-audited-needs-review",
+      "merchant_audit": {
+        "receipt": "00-tools-merchant-audit.json",
+        "passed": true,
+        "sample_size": 30
+      }
+    }
+  ],
+  "merchant_audit": {
+    "source": "Welding Supplies from IOC",
+    "date": "2026-11-07T03:03:35.491013+00:00",
+    "seed": 20261102,
+    "method": "top10-plus-seeded20-plus-all-deep-listings-v1",
+    "population": 189,
+    "fixed_sample_size": 30,
+    "deep_selected_listings": 2,
+    "selected_offers": 30,
+    "refresh_complete": true,
+    "passed": true,
+    "sample_size": 30,
+    "match": 30,
+    "mismatch": 0,
+    "inconclusive": 0,
+    "verified_match_percent": 100.0,
+    "scope": "Anonymous merchant product endpoint and currency; not checkout or historical-reference validation",
+    "results": [
+      {
+        "name": "ESAB Rustler EM 280 PRO MIG Welder (0700401201)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "49581664534815",
+          "url": "https://www.weldingsuppliesfromioc.com/products/esab-rustler-em-280-pro-mig-welder-0700401201?currency=USD&variant=49581664534815",
+          "current_price": 3329.0,
+          "original_price": 5751.01,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/Rustler_Main.jpg?v=1764095144",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 42.11451553727085,
+          "savings": 2422.01
+        },
+        "check_started_at": "2026-11-07T03:02:29.001393+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/esab-rustler-em-280-pro-mig-welder-0700401201.js?currency=USD",
+        "response_sha256": "a354d7e8744cf03db7c37120c044f52342d92ee317016e8778062e95f46dd0cb",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "ESAB Rustler EM 280 PRO MIG Welder (0700401201)",
+          "variant": "49581664534815",
+          "sku": "IESB20240029",
+          "price_minor": 332900,
+          "reference_minor": 575101,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:02:33.445273+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "ESAB Rebel EMP 205ic AC/DC Multi-Process Welder (0558102553)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "46439776813343",
+          "url": "https://www.weldingsuppliesfromioc.com/products/esab-rebel-emp-205ic-ac-dc-multi-process-welder-0558102553?currency=USD&variant=46439776813343",
+          "current_price": 4195.0,
+          "original_price": 7015.13,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/0558102553_esab_rebel_emp205ic_acdc_pkg_hi.jpg?v=1760107260",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 40.20068052908499,
+          "savings": 2820.13
+        },
+        "check_started_at": "2026-11-07T03:02:33.445310+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/esab-rebel-emp-205ic-ac-dc-multi-process-welder-0558102553.js?currency=USD",
+        "response_sha256": "ed59b2251c384e7a040a1c1871ef09e57e68b729bc89467ced53efced7a04c13",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "ESAB Rebel EMP 205ic AC/DC Multi-Process Welder (0558102553)",
+          "variant": "46439776813343",
+          "sku": "IESB20170015",
+          "price_minor": 419500,
+          "reference_minor": 701513,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:02:35.591854+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Thermal Dynamics Cutmaster 30+ Plasma Cutter 120/240V (1-3000-1)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "46439829209375",
+          "url": "https://www.weldingsuppliesfromioc.com/products/thermal-dynamics-cutmaster-30-plasma-cutter-120-240v-1-3000-1?currency=USD&variant=46439829209375",
+          "current_price": 1450.0,
+          "original_price": 2356.99,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/1-3000-1_main.jpg?v=1692909113",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 38.48085906176946,
+          "savings": 906.99
+        },
+        "check_started_at": "2026-11-07T03:02:35.591901+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/thermal-dynamics-cutmaster-30-plasma-cutter-120-240v-1-3000-1.js?currency=USD",
+        "response_sha256": "c45a88886b112d7f838e9db2df08e98bc5ab225db1e949a57808fd5f58c26c61",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Thermal Dynamics Cutmaster 30+ Plasma Cutter 120/240V (1-3000-1)",
+          "variant": "46439829209375",
+          "sku": "IESB20220018",
+          "price_minor": 145000,
+          "reference_minor": 235699,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:02:37.729440+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Esab Warrior 400i MV CC/CV Multi Process Welder 3PH (0465885880)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "50793352593695",
+          "url": "https://www.weldingsuppliesfromioc.com/products/esab-warrior-400i-mv-cc-cv-multi-process-welder-3ph-0465885880?currency=USD&variant=50793352593695",
+          "current_price": 5795.0,
+          "original_price": 9294.74,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/Warrior400iPowerSource.jpg?v=1743707203",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 37.65290906469681,
+          "savings": 3499.74
+        },
+        "check_started_at": "2026-11-07T03:02:37.729478+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/esab-warrior-400i-mv-cc-cv-multi-process-welder-3ph-0465885880.js?currency=USD",
+        "response_sha256": "71ddf80410190e102438bd44e210201464db15b815a99535414a6e4d39ea0990",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Esab Warrior 400i MV CC/CV Multi Process Welder 3PH (0465885880)",
+          "variant": "50793352593695",
+          "sku": "IESB20250004",
+          "price_minor": 579500,
+          "reference_minor": 929474,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:02:39.891835+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Thermal Dynamics Cutmaster 82 Plasma Cutter (1-1130-1)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "46439622246687",
+          "url": "https://www.weldingsuppliesfromioc.com/products/thermal-dynamics-cutmaster-82-plasma-cutter-1-1130-1?currency=USD&variant=46439622246687",
+          "current_price": 2995.0,
+          "original_price": 4763.54,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/82_main.jpg?v=1724690611",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 37.12659072874375,
+          "savings": 1768.54
+        },
+        "check_started_at": "2026-11-07T03:02:39.891908+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/thermal-dynamics-cutmaster-82-plasma-cutter-1-1130-1.js?currency=USD",
+        "response_sha256": "3c9ba483afdb00b15fcd597e7bf0c2d4322f5e2b64cce555c403fdf0b1f9f1ee",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Thermal Dynamics Cutmaster 82 Plasma Cutter (1-1130-1)",
+          "variant": "46439622246687",
+          "sku": "ITHE00000031",
+          "price_minor": 299500,
+          "reference_minor": 476354,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:02:42.025202+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Esab Warrior 400i MV CC/CV Multi Process Welder Fully Loaded 3PH (0558102696)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "50793760391455",
+          "url": "https://www.weldingsuppliesfromioc.com/products/esab-warrior-400i-mv-cc-cv-multi-process-welder-fully-loaded-3ph-0558102696?currency=USD&variant=50793760391455",
+          "current_price": 8995.0,
+          "original_price": 14059.34,
+          "size": null,
+          "options": "No Cable",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/Warrior_400i_Fully_Loaded_Placeholder.jpg?v=1743707203",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 36.02117880355692,
+          "savings": 5064.34
+        },
+        "check_started_at": "2026-11-07T03:02:42.025229+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/esab-warrior-400i-mv-cc-cv-multi-process-welder-fully-loaded-3ph-0558102696.js?currency=USD",
+        "response_sha256": "8733d5cbd284febb4c36cddd11f2d144cf86c42abda87937af2ca5b228208c8c",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Esab Warrior 400i MV CC/CV Multi Process Welder Fully Loaded 3PH (0558102696)",
+          "variant": "50793760391455",
+          "sku": "IESB20250009",
+          "price_minor": 899500,
+          "reference_minor": 1405934,
+          "currency": "USD",
+          "options": "No Cable",
+          "raw_options": [
+            "No Cable"
+          ],
+          "option_definitions": [
+            {
+              "name": "Optional Interconnection Cable",
+              "position": 1,
+              "values": [
+                "No Cable",
+                "6.5 ft (0446160880)",
+                "16.5 ft (0446160881)",
+                "49.2 ft (0446160883)",
+                "82 ft (0446160884)"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:02:44.127934+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "ESAB Rogue ET 230iP AC/DC Water Cooled Tig Welder Pkg (0705002027)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "52954300711199",
+          "url": "https://www.weldingsuppliesfromioc.com/products/esab-rogue-et-230ip-ac-dc-water-cooled-tig-welder-pkg-0705002027?currency=USD&variant=52954300711199",
+          "current_price": 3799.0,
+          "original_price": 5928.51,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/230_with_cooler.jpg?v=1792437322",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 35.91981796437891,
+          "savings": 2129.51
+        },
+        "check_started_at": "2026-11-07T03:02:44.127985+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/esab-rogue-et-230ip-ac-dc-water-cooled-tig-welder-pkg-0705002027.js?currency=USD",
+        "response_sha256": "4d7d97040ab08833161cda64e8ac740795baef6a2465ab39b21ac86d440b09fc",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "ESAB Rogue ET 230iP AC/DC Water Cooled Tig Welder Pkg (0705002027)",
+          "variant": "52954300711199",
+          "sku": "IESB20260003",
+          "price_minor": 379900,
+          "reference_minor": 592851,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:02:46.244824+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Esab Warrior 500i CC/CV Multi Process Welder 460V 3PH (0465350881)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "50795971608863",
+          "url": "https://www.weldingsuppliesfromioc.com/products/esab-warrior-500i-cc-cv-multi-process-welder-460v-3ph-0465350881?currency=USD&variant=50795971608863",
+          "current_price": 5795.0,
+          "original_price": 8998.38,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/Warrior500iMain.jpg?v=1743782748",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 35.599519024535525,
+          "savings": 3203.38
+        },
+        "check_started_at": "2026-11-07T03:02:46.244853+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/esab-warrior-500i-cc-cv-multi-process-welder-460v-3ph-0465350881.js?currency=USD",
+        "response_sha256": "f9c71d2bfa505fc01462749fb0da6a6db5126b1d83344594f59cdae3706a4be6",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Esab Warrior 500i CC/CV Multi Process Welder 460V 3PH (0465350881)",
+          "variant": "50795971608863",
+          "sku": "IESB20250010",
+          "price_minor": 579500,
+          "reference_minor": 899838,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:02:48.366519+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Esab Warrior 500i CC/CV Multi Process Welder Fully Loaded 460V 3PH (0558102697)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "50795985436959",
+          "url": "https://www.weldingsuppliesfromioc.com/products/esab-warrior-500i-cc-cv-multi-process-welder-fully-loaded-460v-3ph-0558102697?currency=USD&variant=50795985436959",
+          "current_price": 9795.0,
+          "original_price": 15013.0,
+          "size": null,
+          "options": "No Cable",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/Warrior500iwFeederCart.jpg?v=1743783660",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 34.75654432824885,
+          "savings": 5218.0
+        },
+        "check_started_at": "2026-11-07T03:02:48.366558+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/esab-warrior-500i-cc-cv-multi-process-welder-fully-loaded-460v-3ph-0558102697.js?currency=USD",
+        "response_sha256": "4e5704f6945427a669d71bef651bb0a9907e10ed69f4888ea525c32fadb25e13",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Esab Warrior 500i CC/CV Multi Process Welder Fully Loaded 460V 3PH (0558102697)",
+          "variant": "50795985436959",
+          "sku": "IESB20250011",
+          "price_minor": 979500,
+          "reference_minor": 1501300,
+          "currency": "USD",
+          "options": "No Cable",
+          "raw_options": [
+            "No Cable"
+          ],
+          "option_definitions": [
+            {
+              "name": "Optional Interconnection Cable",
+              "position": 1,
+              "values": [
+                "No Cable",
+                "6.5 ft (0446160880)",
+                "16.5 ft (0446160881)",
+                "49.2 ft (0446160883)",
+                "82 ft (0446160884)"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:02:50.525439+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "ESAB Rebel EMP 235ic MIG/Stick/TIG Welder (0558012702)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "46439755546911",
+          "url": "https://www.weldingsuppliesfromioc.com/products/esab-rebel-emp-235ic-mig-tig-stick-welder-0558012702?currency=USD&variant=46439755546911",
+          "current_price": 3410.0,
+          "original_price": 5172.41,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/0558012702_rebel235_emp_accpkg_final.jpg?v=1692908478",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 34.07328498707566,
+          "savings": 1762.41
+        },
+        "check_started_at": "2026-11-07T03:02:50.525531+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/esab-rebel-emp-235ic-mig-tig-stick-welder-0558012702.js?currency=USD",
+        "response_sha256": "9077dfd2e6e65d21d1958e6689b5f6c86d1063765d69dfdb303c3979e7fc2f3b",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "ESAB Rebel EMP 235ic MIG/Stick/TIG Welder (0558012702)",
+          "variant": "46439755546911",
+          "sku": "IESB20160017",
+          "price_minor": 341000,
+          "reference_minor": 517241,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:02:52.745950+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Miller Syncrowave 400 AC/DC TIG and Stick Welder (907783)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "46439806763295",
+          "url": "https://www.weldingsuppliesfromioc.com/products/miller-syncrowave-400-ac-dc-tig-and-stick-welder-907783?currency=USD&variant=46439806763295",
+          "current_price": 11808.0,
+          "original_price": 13637.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907783_1.jpg?v=1692908931",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 13.412040771430666,
+          "savings": 1829.0
+        },
+        "check_started_at": "2026-11-07T03:02:52.746015+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/miller-syncrowave-400-ac-dc-tig-and-stick-welder-907783.js?currency=USD",
+        "response_sha256": "b817285a3b728179e44240e0bddc2794280df4112f3306a16baedb8cd31c0c2b",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Miller Syncrowave 400 AC/DC TIG and Stick Welder (907783)",
+          "variant": "46439806763295",
+          "sku": "IMIL20200030",
+          "price_minor": 1180800,
+          "reference_minor": 1363700,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:02:54.964383+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Hobart AirForce 40i Plasma Cutter with 12ft Torch (500576)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "46439701807391",
+          "url": "https://www.weldingsuppliesfromioc.com/products/hobart-airforce-40i-plasma-cutter-with-12ft-torch-500576?currency=USD&variant=46439701807391",
+          "current_price": 2095.0,
+          "original_price": 2572.98,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/500576_main.jpg?v=1692908041",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 18.57690304627319,
+          "savings": 477.98
+        },
+        "check_started_at": "2026-11-07T03:02:54.964450+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/hobart-airforce-40i-plasma-cutter-with-12ft-torch-500576.js?currency=USD",
+        "response_sha256": "9e61ce4be92e26459f4ebd5eaf42718b8a6680a6a9e5d96cc8252d1cec0ee5b7",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Hobart AirForce 40i Plasma Cutter with 12ft Torch (500576)",
+          "variant": "46439701807391",
+          "sku": "IHOB20140011",
+          "price_minor": 209500,
+          "reference_minor": 257298,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:02:57.102688+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Miller Millermatic 211 PRO MIG Welder (907839)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "51018940219679",
+          "url": "https://www.weldingsuppliesfromioc.com/products/miller-millermatic-211-pro-mig-welder-907839?currency=USD&variant=51018940219679",
+          "current_price": 1699.0,
+          "original_price": 2153.66,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/millermatic-211-pro-welder.jpg?v=1758896159",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 21.111038882646287,
+          "savings": 454.66
+        },
+        "check_started_at": "2026-11-07T03:02:57.102733+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/miller-millermatic-211-pro-mig-welder-907839.js?currency=USD",
+        "response_sha256": "3c26dd53f38e540e1a11019d99e2991942dc5b2d62b800da732e6b784af508f3",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Miller Millermatic 211 PRO MIG Welder (907839)",
+          "variant": "51018940219679",
+          "sku": "IMIL20250059",
+          "price_minor": 169900,
+          "reference_minor": 215366,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:02:59.212443+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Miller Trailblazer 330 Kubota Diesel Welder/Generator w/Excel Power (907849001)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "47387488125215",
+          "url": "https://www.weldingsuppliesfromioc.com/products/miller-trailblazer-330-kubota-diesel-welder-generator-w-excel-power-907849001?currency=USD&variant=47387488125215",
+          "current_price": 21283.0,
+          "original_price": 24580.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907849001Trailblazer330DieselExcelPowerLitSplashScreen.jpg?v=1724699375",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 13.413344182262001,
+          "savings": 3297.0
+        },
+        "check_started_at": "2026-11-07T03:02:59.212490+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/miller-trailblazer-330-kubota-diesel-welder-generator-w-excel-power-907849001.js?currency=USD",
+        "response_sha256": "315c915fd9e6c3e39245a0a6c575439e1c67d7f4cb70ad868205ce12f37801d2",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Miller Trailblazer 330 Kubota Diesel Welder/Generator w/Excel Power (907849001)",
+          "variant": "47387488125215",
+          "sku": "IMIL20230080",
+          "price_minor": 2128300,
+          "reference_minor": 2458000,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:03:01.348706+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Miller Trailblazer 330 Welder/Generator w/Excel Power (Carburetor) (907831001)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "47039307186463",
+          "url": "https://www.weldingsuppliesfromioc.com/products/miller-trailblazer-330-welder-generator-w-excel-power-carburetor-907831001?currency=USD&variant=47039307186463",
+          "current_price": 10387.0,
+          "original_price": 13166.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907831001_REBATE_1d243703-3b33-4de1-9424-327b684fa20b.jpg?v=1775046525",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 21.107397842928755,
+          "savings": 2779.0
+        },
+        "check_started_at": "2026-11-07T03:03:01.348769+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/miller-trailblazer-330-welder-generator-w-excel-power-carburetor-907831001.js?currency=USD",
+        "response_sha256": "2abcae7a8563be90c17e0ec528b6972568458e469c89bd797954acbb65f194b6",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Miller Trailblazer 330 Welder/Generator w/Excel Power (Carburetor) (907831001)",
+          "variant": "47039307186463",
+          "sku": "IMIL20230057",
+          "price_minor": 1038700,
+          "reference_minor": 1316600,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:03:03.468693+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Lincoln Maverick 260X Diesel Welder Generator (K5272-1)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "48961504379167",
+          "url": "https://www.weldingsuppliesfromioc.com/products/lincoln-maverick-260x-diesel-welder-generator-k5272-1?currency=USD&variant=48961504379167",
+          "current_price": 17795.0,
+          "original_price": 18206.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/K5272-1.jpg?v=1721395425",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 2.2574975282873777,
+          "savings": 411.0
+        },
+        "check_started_at": "2026-11-07T03:03:03.468737+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/lincoln-maverick-260x-diesel-welder-generator-k5272-1.js?currency=USD",
+        "response_sha256": "d328836c2a71edb9d0301538cc9d5bb37be642e711892d2ccf5931ec50925d51",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Lincoln Maverick 260X Diesel Welder Generator (K5272-1)",
+          "variant": "48961504379167",
+          "sku": "ILIN20240016",
+          "price_minor": 1779500,
+          "reference_minor": 1820600,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:03:05.610625+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Hypertherm Powermax 45 SYNC Plasma Cutter with 20ft Hand Torch (088560)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "48434991104287",
+          "url": "https://www.weldingsuppliesfromioc.com/products/hypertherm-powermax45-sync-plasma-cutter-with-20ft-hand-torch-088560?currency=USD&variant=48434991104287",
+          "current_price": 2795.0,
+          "original_price": 2900.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/088560_Powermax45SYNCcsa.jpg?v=1757944824",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 3.6206896551724137,
+          "savings": 105.0
+        },
+        "check_started_at": "2026-11-07T03:03:05.610695+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/hypertherm-powermax45-sync-plasma-cutter-with-20ft-hand-torch-088560.js?currency=USD",
+        "response_sha256": "0996f265979cb44ba5676755c17121f3bab2eb36b700112f39dc44cb3a6b9296",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Hypertherm Powermax 45 SYNC Plasma Cutter with 20ft Hand Torch (088560)",
+          "variant": "48434991104287",
+          "sku": "IHYP20240113",
+          "price_minor": 279500,
+          "reference_minor": 290000,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:03:07.751714+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Miller Millermatic 255 MIG/Pulsed MIG Welder- 208/240V with Running Gear (951766)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "46439778386207",
+          "url": "https://www.weldingsuppliesfromioc.com/products/miller-millermatic-255-mig-welder-with-running-gear-951766?currency=USD&variant=46439778386207",
+          "current_price": 4934.0,
+          "original_price": 6254.37,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/Millermatic255onCart951766REBATE.jpg?v=1782912019",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 21.11115907757296,
+          "savings": 1320.37
+        },
+        "check_started_at": "2026-11-07T03:03:07.751786+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/miller-millermatic-255-mig-welder-with-running-gear-951766.js?currency=USD",
+        "response_sha256": "5fa9087cbab35b50e1c7a47372b0e598e19927c93185a7f07d27c54feb5aa18f",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Miller Millermatic 255 MIG/Pulsed MIG Welder- 208/240V with Running Gear (951766)",
+          "variant": "46439778386207",
+          "sku": "IMIL20180099",
+          "price_minor": 493400,
+          "reference_minor": 625437,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:03:09.851885+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "ESAB Rogue ET 230iP AC/DC Tig Welder (0705002026)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "52953702007071",
+          "url": "https://www.weldingsuppliesfromioc.com/products/esab-rogue-et-230ip-ac-dc-tig-welder-0705002026?currency=USD&variant=52953702007071",
+          "current_price": 2599.0,
+          "original_price": 2974.29,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/Rogue230Placeholder.jpg?v=1790776504",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 12.617801223149055,
+          "savings": 375.29
+        },
+        "check_started_at": "2026-11-07T03:03:09.851929+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/esab-rogue-et-230ip-ac-dc-tig-welder-0705002026.js?currency=USD",
+        "response_sha256": "6864e4753cb6fa59cd222ca1cb6256a5d57ff52b59cc0c3e18b1e3e9c8c1e777",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "ESAB Rogue ET 230iP AC/DC Tig Welder (0705002026)",
+          "variant": "52953702007071",
+          "sku": "IESB20260002",
+          "price_minor": 259900,
+          "reference_minor": 297429,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:03:11.973796+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Miller XMT 400 ArcReach Multiprocess Welder 6-Pack Fused 460/575V (907883)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "49350959989023",
+          "url": "https://www.weldingsuppliesfromioc.com/products/miller-xmt-400-arcreach-multiprocess-welder-6-pack-fused-460-575v-907883?currency=USD&variant=49350959989023",
+          "current_price": 58510.0,
+          "original_price": 67575.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907883_XMT_400_ArcReach_6-pack_Rack.jpg?v=1726592207",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 13.414724380318164,
+          "savings": 9065.0
+        },
+        "check_started_at": "2026-11-07T03:03:11.973847+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/miller-xmt-400-arcreach-multiprocess-welder-6-pack-fused-460-575v-907883.js?currency=USD",
+        "response_sha256": "f38a80f3a56ed0073cef578f2a8ed7cc12e55a66294b18243346c8c1cabef22d",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Miller XMT 400 ArcReach Multiprocess Welder 6-Pack Fused 460/575V (907883)",
+          "variant": "49350959989023",
+          "sku": "IMIL20240052",
+          "price_minor": 5851000,
+          "reference_minor": 6757500,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:03:14.102276+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Miller Big Blue 400 Pro ArcReach Kubota Welder/Generator w/WIC (907732013)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "46439803224351",
+          "url": "https://www.weldingsuppliesfromioc.com/products/miller-big-blue-400-pro-arcreach-kubota-welder-generator-w-wic-907732013?currency=USD&variant=46439803224351",
+          "current_price": 28340.0,
+          "original_price": 32731.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907732013.jpg?v=1692908893",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 13.415416577556446,
+          "savings": 4391.0
+        },
+        "check_started_at": "2026-11-07T03:03:14.102320+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/miller-big-blue-400-pro-arcreach-kubota-welder-generator-w-wic-907732013.js?currency=USD",
+        "response_sha256": "42edaf236149c02f2b00b098dd6c8a34d8bf8fe22c77ebd9d990746e31cbabab",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Miller Big Blue 400 Pro ArcReach Kubota Welder/Generator w/WIC (907732013)",
+          "variant": "46439803224351",
+          "sku": "IMIL20200039",
+          "price_minor": 2834000,
+          "reference_minor": 3273100,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:03:16.233146+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Miller Millermatic 255 Auto-Line MIG/Pulsed MIG Welder w/Running Gear  208-575V (951000271)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "52682206544159",
+          "url": "https://www.weldingsuppliesfromioc.com/products/miller-millermatic-255-auto-line-mig-pulsed-mig-welder-w-running-gear-208-575v-951000271?currency=USD&variant=52682206544159",
+          "current_price": 5134.0,
+          "original_price": 6507.89,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/951000271_Millermatic_255_Auto-Line_on_Cart_Package.jpg?v=1784131064",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 21.111143550367323,
+          "savings": 1373.89
+        },
+        "check_started_at": "2026-11-07T03:03:16.233205+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/miller-millermatic-255-auto-line-mig-pulsed-mig-welder-w-running-gear-208-575v-951000271.js?currency=USD",
+        "response_sha256": "e9f1373076238a8e1a535af62ab17e74db258422c8dd2873f269ce8eaec36dfd",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Miller Millermatic 255 Auto-Line MIG/Pulsed MIG Welder w/Running Gear  208-575V (951000271)",
+          "variant": "52682206544159",
+          "sku": "IMIL20260012",
+          "price_minor": 513400,
+          "reference_minor": 650789,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:03:18.422613+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Miller Spectrum 875 Auto-Line Plasma Cutter with 50 ft. Torch (907851001)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "46439638270239",
+          "url": "https://www.weldingsuppliesfromioc.com/products/miller-spectrum-875-auto-line-plasma-cutter-with-50-ft-torch-907851001?currency=USD&variant=46439638270239",
+          "current_price": 4354.0,
+          "original_price": 5519.15,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/Spectrum875Auto-LineXT60M907851REBATE_193ec44f-5d45-4e52-931d-d002addd7e11.jpg?v=1782912383",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 21.111040649375358,
+          "savings": 1165.15
+        },
+        "check_started_at": "2026-11-07T03:03:18.422653+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/miller-spectrum-875-auto-line-plasma-cutter-with-50-ft-torch-907851001.js?currency=USD",
+        "response_sha256": "4c8691cb7a185fae40951eea8927283e455385c2547dd958da676b67addb82ff",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Miller Spectrum 875 Auto-Line Plasma Cutter with 50 ft. Torch (907851001)",
+          "variant": "46439638270239",
+          "sku": "IMIL20250103",
+          "price_minor": 435400,
+          "reference_minor": 551915,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:03:20.645701+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Miller Trailblazer 330 EFI Welder/Generator w/Excel Power, WIC, and Battery Charge (907832004)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "47100665200927",
+          "url": "https://www.weldingsuppliesfromioc.com/products/miller-trailblazer-330-efi-welder-generator-w-excel-power-wic-and-battery-charge-907832004?currency=USD&variant=47100665200927",
+          "current_price": 12704.0,
+          "original_price": 16102.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907832004_REBATE_a4bdbe22-d333-4654-a4da-3a6e5bea87cc.jpg?v=1775046785",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 21.102968575332255,
+          "savings": 3398.0
+        },
+        "check_started_at": "2026-11-07T03:03:20.645721+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/miller-trailblazer-330-efi-welder-generator-w-excel-power-wic-and-battery-charge-907832004.js?currency=USD",
+        "response_sha256": "c78128e127fac41eb0a44ebc0324315cec7136546203986164b992293a8e7c5e",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Miller Trailblazer 330 EFI Welder/Generator w/Excel Power, WIC, and Battery Charge (907832004)",
+          "variant": "47100665200927",
+          "sku": "IMIL20230062",
+          "price_minor": 1270400,
+          "reference_minor": 1610200,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:03:22.781797+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Miller Multimatic 255 Pulsed Multiprocess Welder (208-575V) (907728)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "46439783530783",
+          "url": "https://www.weldingsuppliesfromioc.com/products/miller-multimatic-255-pulsed-multiprocess-welder-208-575v-907728?currency=USD&variant=46439783530783",
+          "current_price": 4777.0,
+          "original_price": 6053.07,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/Multimatic255907728REBATE.jpg?v=1782911895",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 21.081368627820265,
+          "savings": 1276.07
+        },
+        "check_started_at": "2026-11-07T03:03:22.781878+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/miller-multimatic-255-pulsed-multiprocess-welder-208-575v-907728.js?currency=USD",
+        "response_sha256": "599d21e5b6d335b03a52d8a8c74dda52d9a8469779d494b450edfe7b85fc3c72",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Miller Multimatic 255 Pulsed Multiprocess Welder (208-575V) (907728)",
+          "variant": "46439783530783",
+          "sku": "IMIL20190038",
+          "price_minor": 477700,
+          "reference_minor": 605307,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:03:24.887858+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Miller Big Blue 400 PipePro Mitsubishi Welder/Generator w/WIC (907805001)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "46439803715871",
+          "url": "https://www.weldingsuppliesfromioc.com/products/miller-big-blue-400-pipepro-mitsubishi-welder-generator-w-wic-907805001?currency=USD&variant=46439803715871",
+          "current_price": 31493.0,
+          "original_price": 36370.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907805001.jpg?v=1692908896",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 13.409403354412978,
+          "savings": 4877.0
+        },
+        "check_started_at": "2026-11-07T03:03:24.887928+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/miller-big-blue-400-pipepro-mitsubishi-welder-generator-w-wic-907805001.js?currency=USD",
+        "response_sha256": "6b30566bc55de1562cc1ddd042e5ee532319253b2265c9ee7455ab88e32badb0",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Miller Big Blue 400 PipePro Mitsubishi Welder/Generator w/WIC (907805001)",
+          "variant": "46439803715871",
+          "sku": "IMIL20200043",
+          "price_minor": 3149300,
+          "reference_minor": 3637000,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:03:27.008778+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Miller Trailblazer 330 EFI Welder/Generator (907832)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "47047243006239",
+          "url": "https://www.weldingsuppliesfromioc.com/products/miller-trailblazer-330-efi-welder-generator-907832?currency=USD&variant=47047243006239",
+          "current_price": 10895.0,
+          "original_price": 13810.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907832_REBATE_9864031b-e7db-43cb-ae4a-11f23aa1214f.jpg?v=1775045835",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 21.10789283128168,
+          "savings": 2915.0
+        },
+        "check_started_at": "2026-11-07T03:03:27.008798+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/miller-trailblazer-330-efi-welder-generator-907832.js?currency=USD",
+        "response_sha256": "fbe4731e787bb5ff9f67fe5d2f4c6be7f9e4e6c7194563c3d5c092b7168f4b46",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Miller Trailblazer 330 EFI Welder/Generator (907832)",
+          "variant": "47047243006239",
+          "sku": "IMIL20230058",
+          "price_minor": 1089500,
+          "reference_minor": 1381000,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:03:29.149924+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Lincoln Ranger Air 330 MPX Engine Driven Welder (K5239-1)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "50410098557215",
+          "url": "https://www.weldingsuppliesfromioc.com/products/lincoln-ranger-air-330-mpx-engine-driven-welder-k5239-1?currency=USD&variant=50410098557215",
+          "current_price": 17995.0,
+          "original_price": 18203.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/K5239-1_cover_promo.jpg?v=1770918527",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 1.1426687908586497,
+          "savings": 208.0
+        },
+        "check_started_at": "2026-11-07T03:03:29.149998+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/lincoln-ranger-air-330-mpx-engine-driven-welder-k5239-1.js?currency=USD",
+        "response_sha256": "d62ed8d3c9f82fd5e82e33db6ee993edd1b8944249e779e2ad5e11169dfee38c",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Lincoln Ranger Air 330 MPX Engine Driven Welder (K5239-1)",
+          "variant": "50410098557215",
+          "sku": "ILIN20250001",
+          "price_minor": 1799500,
+          "reference_minor": 1820300,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:03:31.259129+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Miller Syncrowave 300 AC/DC TIG and Stick Welder Complete Pkg w/Foot Control (951000003)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "46439829045535",
+          "url": "https://www.weldingsuppliesfromioc.com/products/miller-syncrowave-300-ac-dc-tig-and-stick-welder-complete-pkg-w-foot-control-951000003?currency=USD&variant=46439829045535",
+          "current_price": 12862.0,
+          "original_price": 14854.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/951829_1_54467d94-7897-44d6-a9a0-5b6a184206f3.jpg?v=1692909113",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 13.410529150397199,
+          "savings": 1992.0
+        },
+        "check_started_at": "2026-11-07T03:03:31.259207+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/miller-syncrowave-300-ac-dc-tig-and-stick-welder-complete-pkg-w-foot-control-951000003.js?currency=USD",
+        "response_sha256": "76bb92bebea001c6d4a51842935c49078f249fdd8c4c4ee4f7ab45fcb21ccd25",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Miller Syncrowave 300 AC/DC TIG and Stick Welder Complete Pkg w/Foot Control (951000003)",
+          "variant": "46439829045535",
+          "sku": "IMIL20200002",
+          "price_minor": 1286200,
+          "reference_minor": 1485400,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:03:33.380675+00:00",
+        "within_audit_window": true
+      },
+      {
+        "name": "Miller Millermatic 255 MIG/Pulsed MIG Welder Fully Loaded (907734)",
+        "store": "Welding Supplies from IOC",
+        "offer": {
+          "variant_key": "46439778582815",
+          "url": "https://www.weldingsuppliesfromioc.com/products/miller-millermatic-255-mig-pulsed-mig-welder-fully-loaded-907734?currency=USD&variant=46439778582815",
+          "current_price": 7295.0,
+          "original_price": 7795.0,
+          "size": null,
+          "options": "",
+          "availability": "in_stock",
+          "image_url": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/miller-255-multimatic-fully-loaded.jpg?v=1775045613",
+          "reference_basis": "retailer_compare_at",
+          "availability_note": "",
+          "price_note": "",
+          "discount": 6.414368184733804,
+          "savings": 500.0
+        },
+        "check_started_at": "2026-11-07T03:03:33.380714+00:00",
+        "evidence_url": "https://www.weldingsuppliesfromioc.com/products/miller-millermatic-255-mig-pulsed-mig-welder-fully-loaded-907734.js?currency=USD",
+        "response_sha256": "f8c25b69da183b9ebffd1fd9d7598ee1a8ffe91186969c97ef9dad16f075f76b",
+        "status": "match",
+        "checks": {
+          "identity": true,
+          "currency": true,
+          "price": true,
+          "reference": true,
+          "options": true,
+          "stock": true
+        },
+        "merchant": {
+          "title": "Miller Millermatic 255 MIG/Pulsed MIG Welder Fully Loaded (907734)",
+          "variant": "46439778582815",
+          "sku": "IMIL20180102",
+          "price_minor": 729500,
+          "reference_minor": 779500,
+          "currency": "USD",
+          "options": "",
+          "raw_options": [
+            "Default Title"
+          ],
+          "option_definitions": [
+            {
+              "name": "Title",
+              "position": 1,
+              "values": [
+                "Default Title"
+              ]
+            }
+          ],
+          "available": true,
+          "shipping_notice": ""
+        },
+        "sampled_at": "2026-11-07T03:02:28.986355+00:00",
+        "checked_at": "2026-11-07T03:03:35.490468+00:00",
+        "within_audit_window": true
+      }
+    ]
+  }
+}

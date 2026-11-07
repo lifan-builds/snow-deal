@@ -1,0 +1,15 @@
+{
+  "at": "2026-11-07T03:06:43.163988+00:00",
+  "scope": "Independent read-only source/history/identity table equality of explicit task-owned candidate and preflight standalone package.",
+  "candidate_sha256": "28e201f6eea36b483cfbf75989c9bd26b0c7722981b52d02d55b08f617900ede",
+  "package_sha256": "27a973d5a06c38a40a98f55106570e40880dbd5ce5136d2245e042dffba07e72",
+  "tables_exact": [
+    "metadata",
+    "sources",
+    "observations"
+  ],
+  "source_rows": 14,
+  "history_rows": 48,
+  "bytes_unchanged": true,
+  "passed": true
+}

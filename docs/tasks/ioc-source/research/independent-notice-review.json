@@ -1,0 +1,79 @@
+{
+  "scope": "Retained initial public feed. Captured description contradicts available=true; pre-stock-correction observations remain dated evidence. No fresh endpoint claim.",
+  "input": ".local/source-expansion/ioc-20261106-raw/all-welders.json",
+  "sha256": "bdcdd511419a330136d7acfc02836e8a67357eec7bdc8cecc448e7a0a3e249e7",
+  "rows": [
+    {
+      "name": "Miller Big Blue 400 Pro Kubota Welder/Generator (907732)",
+      "handle": "miller-big-blue-400-pro-kubota-welder-generator-907732",
+      "sentence": "These generators are Made-to-Order from Miller.  Please allow 1-2 weeks for your order to ship.",
+      "offers": [
+        {
+          "variant_key": "46439773503775",
+          "availability": "in_stock",
+          "url": "https://www.weldingsuppliesfromioc.com/products/miller-big-blue-400-pro-kubota-welder-generator-907732?currency=USD&variant=46439773503775"
+        }
+      ]
+    },
+    {
+      "name": "Miller Big Blue 600 Air Pak Welder/Generator w/ArcReach (907750)",
+      "handle": "miller-big-blue-600-air-pak-welder-generator-w-arcreach-907750",
+      "sentence": "These generators are Made-to-Order from Miller Electric.  Please allow 2-3 weeks for shipment.",
+      "offers": [
+        {
+          "variant_key": "46439771930911",
+          "availability": "in_stock",
+          "url": "https://www.weldingsuppliesfromioc.com/products/miller-big-blue-600-air-pak-welder-generator-w-arcreach-907750?currency=USD&variant=46439771930911"
+        }
+      ]
+    },
+    {
+      "name": "Lincoln Cross Country 300 Kubota CC/CV Welder Generator (K4166-1)",
+      "handle": "lincoln-cross-country-300-kubota-cc-cv-welder-generator-k4166-1",
+      "sentence": "These machines are typically Made-to-Order from Lincoln.  Please allow 4-6 weeks for shipping.",
+      "offers": [
+        {
+          "variant_key": "46439785529631",
+          "availability": "in_stock",
+          "url": "https://www.weldingsuppliesfromioc.com/products/lincoln-cross-country-300-kubota-cc-cv-welder-generator-k4166-1?currency=USD&variant=46439785529631"
+        }
+      ]
+    },
+    {
+      "name": "Miller Big Blue 800 Duo Pro Welder/Generator w/ArcReach (907751)",
+      "handle": "miller-big-blue-800-duo-pro-welder-generator-w-arcreach-907751",
+      "sentence": "These generators are Made-to-Order from Miller Electric. Please allow 2-3 weeks for shipment.",
+      "offers": [
+        {
+          "variant_key": "46439778615583",
+          "availability": "in_stock",
+          "url": "https://www.weldingsuppliesfromioc.com/products/miller-big-blue-800-duo-pro-welder-generator-w-arcreach-907751?currency=USD&variant=46439778615583"
+        }
+      ]
+    },
+    {
+      "name": "Miller Big Blue 800 Duo Air Pak Welder/Generator w/ArcReach (907752)",
+      "handle": "miller-big-blue-800-duo-air-pak-welder-generator-w-arcreach-907752",
+      "sentence": "These generators are Made-to-Order from Miller Electric.  Please allow 2-3 weeks for shipment.",
+      "offers": [
+        {
+          "variant_key": "46439771734303",
+          "availability": "in_stock",
+          "url": "https://www.weldingsuppliesfromioc.com/products/miller-big-blue-800-duo-air-pak-welder-generator-w-arcreach-907752?currency=USD&variant=46439771734303"
+        }
+      ]
+    },
+    {
+      "name": "Miller AlumaPower 450 MPa MIG Welder with Feeder, 25-ft XR Gun, MIG Kit, and Cart (951840)",
+      "handle": "miller-alumapower-450-mpa-mig-welder-with-feeder-25-ft-xr-gun-mig-kit-and-cart-951840",
+      "sentence": "These packages are made-to-order from Miller.  Please expect a 2-3 week lead time.",
+      "offers": [
+        {
+          "variant_key": "46439693975839",
+          "availability": "in_stock",
+          "url": "https://www.weldingsuppliesfromioc.com/products/miller-alumapower-450-mpa-mig-welder-with-feeder-25-ft-xr-gun-mig-kit-and-cart-951840?currency=USD&variant=46439693975839"
+        }
+      ]
+    }
+  ]
+}
