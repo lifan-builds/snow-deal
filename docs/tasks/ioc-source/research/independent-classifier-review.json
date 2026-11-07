@@ -1,0 +1,2185 @@
+[
+  {
+    "collection": "all-welders",
+    "raw": 198,
+    "parsed": 158,
+    "changed": 157,
+    "excluded": [
+      "Refurbished Lincoln Aspect 230 AC/DC TIG Welder (U4340-1)"
+    ],
+    "suspicious": [],
+    "dispositions": [
+      {
+        "name": "Miller Millermatic 211 PRO MIG Welder (907839)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-millermatic-211-pro-mig-welder-907839?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Millermatic 252 MIG Welder Complete Package (907321)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-millermatic-252-mig-welder-complete-package-907321?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Multimatic 220 AC/DC Multiprocess Welder (907757)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-multimatic-220-ac-dc-multiprocess-welder?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "ESAB Rebel EMP 215ic MIG/Stick/TIG Welder (0558102240)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/esab-rebel-emp-215ic-mig-stick-tig-welder-0558102240?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Maxstar 161 S Stick Welder (907709)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-maxstar-161-s-stick-welder-907709?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Blue Star 185 Welder/Generator with GFCI Receptacles (907664)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-blue-star-185-welder-generator-with-gfci-receptacles-907664?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Maxstar 161 STL TIG and Stick Welder (907710)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-maxstar-161-stl-tig-and-stick-welder-907710?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "ESAB Rebel EMP 215ic Welder with Spoolgun and Foot Control (0558102240)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/esab-rebel-emp-215ic-welder-with-spoolgun-and-foot-control-0558102240?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "ESAB Rebel EMP 205ic AC/DC Multi-Process Welder (0558102553)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/esab-rebel-emp-205ic-ac-dc-multi-process-welder-0558102553?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "ESAB Rebel EMP 215ic MIG/Stick/TIG Welder with Foot Control (0558102240)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/esab-rebel-emp-215ic-mig-stick-tig-welder-with-foot-control-0558102240?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Maxstar 161 STL TIG and Stick Welder with X-Case (907710001)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-maxstar-161-stl-tig-and-stick-welder-with-x-case-907710001?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Multimatic 255 Pulsed Multiprocess Welder w/Running Gear and TIG Kit (951768)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-multimatic-255-pulsed-multiprocess-welder-w-running-gear-and-tig-kit-951768?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Millermatic 252 MIG Welder With 30A Spool Gun (951960)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-millermatic-252-mig-welder-with-30a-spool-gun-951960?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Maxstar 161 STL TIG and Stick Welder with Fingertip Control (907710002)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-maxstar-161-stl-tig-and-stick-welder-with-fingertip-control-907710002?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Maxstar 210 STR DC Stick/TIG Welder (907682)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-maxstar-210-str-dc-stick-tig-welder-907682?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Multimatic 235 Multiprocess Welder w/Dual Cylinder Cart and TIG Kit (951847)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-multimatic-235-multiprocess-welder-w-dual-cylinder-cart-and-tig-kit-951847?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "ESAB Rebel EMP 215ic MIG/Stick/TIG Welder with Spoolgun (0558102240)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/esab-rebel-emp-215ic-mig-stick-tig-welder-with-spoolgun-0558102240?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Bobcat 3 Phase Kohler Welder/Generator (907842)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-bobcat-3-phase-kohler-welder-generator-907842?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Lincoln Bulldog 5500 AC Welder Generator (K2708-2)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/lincoln-bulldog-5500-ac-welder-generator-k2708-2?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Multimatic 235 Multiprocess Welder (907780)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-multimatic-235-multiprocess-welder-907780?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Millermatic 142 MIG Welder (907838)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-millermatic-142-mig-welder-907839?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Multimatic 235 Multiprocess Welder w/Running Gear (951846)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-multimatic-235-multiprocess-welder-w-running-gear-951846?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Dynasty 210 TIG Welder Auto Line 120-480V (907816)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-dynasty-210-tig-welder-auto-line-120-480v-907816?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Millermatic 252 MIG Welder (230/460/575 V) (907322)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-millermatic-252-mig-welder-230-460-575-v-907322?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Multimatic 255 Pulsed Multiprocess Welder w/Running Gear (208-575V) (951767)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-multimatic-255-pulsed-multiprocess-welder-w-running-gear-208-575v-951767?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Bobcat 230 Kohler Welder/Generator (907824)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-bobcat-230-kohler-welder-generator-907824?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Bobcat 265 Kohler Welder/Generator (907826)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-bobcat-265-kohler-welder-generator-907826?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Dynasty 300 TIG Welder with CPS (907818)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-dynasty-300-tig-welder-with-cps-907818?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Maxstar 161 STH TIG and Stick Welder (907711)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-maxstar-161-sth-tig-and-stick-welder-907711?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Multimatic 255 Pulsed Multiprocess Welder (208-575V) (907728)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-multimatic-255-pulsed-multiprocess-welder-208-575v-907728?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Dynasty 210 TIG Welder Auto-Line 120-480V with CPS (907816001)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-dynasty-210-tig-welder-auto-line-120-480v-with-cps-907816001?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Bobcat 200 Air Pak Welder Generator (907771)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-bobcat-200-air-pak-welder-generator-907771?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Millermatic 142 MIG Welder w/Cart (951000072)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-millermatic-142-mig-welder-w-cart-951000073?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Maxstar 210 DX DC Stick/TIG Welder (907684)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-maxstar-210-dx-dc-stick-tig-welder-907684?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Maxstar 210 DC Stick/TIG Welder (907683)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-maxstar-210-dc-stick-tig-welder-907683?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "CK Worldwide MT200-AC/DC Tig Welder",
+        "url": "https://www.weldingsuppliesfromioc.com/products/ck-worldwide-mt200-ac-dc-tig-welder?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Lincoln Power MIG 211i Mig Welder w/Spoolgun (K6080-1)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/lincoln-power-mig-211i-mig-welder-w-spoolgun-k6080-1?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Lincoln Flextec 500X Pulsed MIG Multi Process Welder (K3607-1)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/lincoln-flextec-500x-pulsed-mig-multi-process-welder-k3607-1?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Multimatic 220 AC/DC Multiprocess Welder w/Dual Cylinder Cart (951000070)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-multimatic-220-ac-dc-multiprocess-welder-w-dual-cylinder-cart-951000070?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Bobcat 265 Welder/Generator w/ArcReach (907826001)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-bobcat-265-welder-generator-w-arcreach-907826001?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "ESAB Rogue EM 210 PRO MIG Only Welder (0700301084)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/esab-rogue-em-210-pro-mig-only-welder-0700301084?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "ESAB Ruffian ES 150G Welder Generator (0707070150)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/esab-ruffian-es-150g-welder-generator-0707070150?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Big Blue 400 Pro Kubota Welder/Generator (907732)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-big-blue-400-pro-kubota-welder-generator-907732?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Dynasty 400 TIG Welder (208-600V) (907950)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-dynasty-400-tig-welder-208-600v-907950?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Trailblazer 330 EFI Welder/Generator w/Excel Power (907832001)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-trailblazer-330-efi-welder-generator-w-excel-power-907832001?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Dynasty 300 CV Multiprocess Welder w/CPS (907819)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-dynasty-300-cv-multiprocess-welder-w-cps-907819?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Lincoln Outback 185 Engine Welder Generator w/ Cover (K2706-2, K2804-1)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/lincoln-outback-185-engine-welder-generator-cover-2706-2-2804-1?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Bobcat 200 Air Pak Diesel Welder Generator (907760)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-bobcat-200-air-diesel-pak-welder-generator-907760?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Lincoln Bulldog 5500 Welder Generator w/ Cover (K2708-2 & K2804-1)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/lincoln-bulldog-5500-welder-generator-cover-k2708-2-k2804-1?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Trailblazer 330 EFI Welder/Generator w/Excel Power, WIC, and Battery Charge (907832004)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-trailblazer-330-efi-welder-generator-w-excel-power-wic-and-battery-charge-907832004?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Trailblazer 330 Kohler Welder/Generator (Carburetor) (907831)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-trailblazer-330-kohler-welder-generator-carburetor-907831?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Bobcat 265 Welder/Generator w/Battery Charge/Crank Assist (907826002)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-bobcat-265-welder-generator-w-battery-charge-crank-assist-907826002?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Lincoln Flextec 350XP Multi Process Welder (Tweco) (K4272-2)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/lincoln-flextec-350xp-multi-process-welder-tweco-k4272-2?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Multimatic 220 AC/DC Welder w/Dual Cart and Wireless Foot Control (951000104)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-multimatic-220-ac-dc-welder-w-dual-cart-and-wireless-foot-control-951000104?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Syncrowave 300 AC/DC TIG and Stick Welder Complete Pkg w/Wireless Foot Control (951872)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-syncrowave-300-ac-dc-tig-and-stick-welder-complete-pkg-w-wireless-foot-control-951872?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Big Blue 400 Pro ArcReach Kubota Welder/Generator (907732001)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-big-blue-400-pro-arcreach-kubota-welder-generator-907732001?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Big Blue 600 Air Pak Welder/Generator w/ArcReach (907750)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-big-blue-600-air-pak-welder-generator-w-arcreach-907750?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Multimatic 220 AC/DC Welder w/Wireless Foot Control (907757002)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-multimatic-220-ac-dc-welder-w-wireless-foot-control-907757002?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Trailblazer 330 EFI Welder/Generator (907832)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-trailblazer-330-efi-welder-generator-907832?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Millermatic 355 Pulsed MIG Welder (907808)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-millermatic-355-pulsed-mig-welder-907808?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Syncrowave 300 AC/DC TIG and Stick Welder (907782)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-syncrowave-300-ac-dc-tig-and-stick-welder-907782?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Refurbished Lincoln Aspect 230 AC/DC TIG Welder (U4340-1)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/refurbished-lincoln-aspect-230-ac-dc-tig-welder-u4340-1?currency=USD",
+        "before": null,
+        "after": null,
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Trailblazer 330 EFI Welder/Generator w/Excel Power, and Battery Charge (907832003)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-trailblazer-330-efi-welder-generator-w-excel-power-and-battery-charge-907832003?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Trailblazer 330 EFI Welder/Generator w/Excel Power and WIC (907832002)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-trailblazer-330-efi-welder-generator-w-excel-power-and-wic-907832002?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Big Blue 400 Pro ArcReach Mitsubishi Welder/Generator (907733001)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-big-blue-400-pro-arcreach-mitsubishi-welder-generator-907733001?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Big Blue 400 Pro Mitsubishi Welder/Generator (907733)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-big-blue-400-pro-mitsubishi-welder-generator-907733?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Lincoln Ranger Air 260 MPX Engine Driven Welder (K5238-1)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/lincoln-ranger-air-260-mpx-engine-driven-welder-k5238-1?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Lincoln Outback 145 Engine Welder Generator w/ Cover (K2707-2 & K2804-1)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/lincoln-outback-145-engine-welder-generator-cover-2707-2-2804-1?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Invision 450 MPa MIG Welder (230/460 V) with Auxiliary Power (907485)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-invision-450-mpa-mig-welder-230-460-v-with-auxiliary-power-907485?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "ESAB Rogue ES 151iP PRO DC Stick/TIG Welder (0705002021)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/esab-rogue-es-151ip-pro-dc-stick-tig-welder-0705002021?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Syncrowave 400 AC/DC TIG and Stick Welder Complete w/Wireless Foot Control (951873)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-syncrowave-400-ac-dc-tig-and-stick-welder-complete-w-wireless-foot-control-951873?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Invision 450 MPa MIG Welder with Feeder, Accessory Package, and Cart (951499)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-invision-450-mpa-mig-welder-with-feeder-accessory-package-and-cart-951499?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Bobcat 265 Liquid Propane (LP) Welder/Generator (907827)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-bobcat-265-liquid-propane-lp-welder-generator-907827?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Big Blue 400 Pro ArcReach Kubota Welder/Generator w/WIC (907732013)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-big-blue-400-pro-arcreach-kubota-welder-generator-w-wic-907732013?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Lincoln Cross Country 300 Kubota CC/CV Welder Generator (K4166-1)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/lincoln-cross-country-300-kubota-cc-cv-welder-generator-k4166-1?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Big Blue 800 Duo Pro Welder/Generator w/ArcReach (907751)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-big-blue-800-duo-pro-welder-generator-w-arcreach-907751?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Lincoln Air Vantage 566X Hydraulic Welder/Generator (K3242-3)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/lincoln-air-vantage-566x-hydraulic-welder-generator-k3242-3?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Lincoln Power Wave 300C Advanced AC/DC Multi Process Welder (K4488-1)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/lincoln-power-wave-300c-advanced-ac-dc-multi-process-welder-k4488-1?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Big Blue 800 Duo Air Pak Welder/Generator w/ArcReach (907752)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-big-blue-800-duo-air-pak-welder-generator-w-arcreach-907752?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Maxstar 400 DC TIG Welder (907873)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-maxstar-400-dc-tig-welder-907873?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Dynasty 800 TIG Welder and Water-Cooled Package with Wireless Foot Control (951000264)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-dynasty-800-tig-welder-and-water-cooled-package-with-wireless-foot-control-951000264?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "ESAB HandyArc 1/8 Stick Welder (0700734012)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/esab-handyarc-1-8-stick-welder-0700734012?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Bobcat 265 Vanguard Welder/Generator (907848)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-bobcat-265-vanguard-welder-generator-907848?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Syncrowave 400 AC/DC TIG and Stick Welder (907783)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-syncrowave-400-ac-dc-tig-and-stick-welder-907783?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Maxstar 400 DC TIG Welder Complete w/Wireless Foot Control (951000265)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-maxstar-400-dc-tig-welder-complete-w-wireless-foot-control-951000265?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller XMT 400 ArcReach Multiprocess Welder (907865)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-xmt-400-arcreach-multiprocess-welder-907865?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Bobcat 230 Vanguard Welder/Generator (907847)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-bobcat-230-vanguard-welder-generator-907847?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Trailblazer 330 Air Pak Welder/Generator w/Polarity Reverse, WIC, Cooler/Separator (907836003)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-trailblazer-330-air-pak-welder-generator-w-polarity-reverse-wic-cooler-separator-907836003?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Trailblazer 330 Air Pak Welder/Generator (907836)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-trailblazer-330-air-pak-welder-generator-907836?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Bobcat 265 Air Pak Kohler Welder/Generator (907876)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-bobcat-265-air-pak-kohler-welder-generator-907876?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Trailblazer 330 Kubota Diesel Welder/Generator w/Excel Power and WIC (907849002)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-trailblazer-330-kubota-diesel-welder-generator-w-excel-power-and-wic-907849002?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Trailblazer 330 Kubota Diesel Welder/Generator (907849)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-trailblazer-330-kubota-diesel-welder-generator-907849?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Trailblazer 330 EFI Welder/Generator w/Excel Power, WIC, and Polarity Reversing (907832006)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-trailblazer-330-efi-welder-generator-w-excel-power-wic-and-polarity-reversing-907832006?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Dynasty 300 CV Multiprocess Welder w/CPS TIGRunner (907819001)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-dynasty-300-cv-multiprocess-welder-w-cps-tigrunner-907819001?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Big Blue 400 PipePro Mitsubishi Stainless Welder/Generator w/WIC (907805)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-big-blue-400-pipepro-mitsubishi-stainless-welder-generator-w-wic-907805?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Big Blue 600 Pro Kubota Welder/Generator (907737)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-big-blue-600-pro-kubota-welder-generator-907737?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller XMT 450 CC/CV ArcReach Multiprocess Welder (907481003)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-xmt-450-cc-cv-arcreach-multiprocess-welder-907481003?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller SubArc DC 650 Digital Submerged Arc Welder (907622)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-subarc-dc-650-digital-submerged-arc-welder-907622?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Dynasty 800 TIG Welder (907951)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-dynasty-800-tig-welder-907951?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller AlumaPower 450 MPa MIG Welder with Feeder, 25-ft XR Gun, MIG Kit, and Cart (951840)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-alumapower-450-mpa-mig-welder-with-feeder-25-ft-xr-gun-mig-kit-and-cart-951840?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Esab Warrior 500i CC/CV Multi Process Welder Fully Loaded 460V 3PH (0558102697)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/esab-warrior-500i-cc-cv-multi-process-welder-fully-loaded-460v-3ph-0558102697?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Esab Warrior 500i CC/CV Multi Process Welder 460V 3PH (0465350881)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/esab-warrior-500i-cc-cv-multi-process-welder-460v-3ph-0465350881?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Esab Warrior 400i MV CC/CV Multi Process Welder Fully Loaded 3PH (0558102696)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/esab-warrior-400i-mv-cc-cv-multi-process-welder-fully-loaded-3ph-0558102696?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Esab Warrior 400i MV CC/CV Multi Process Welder 3PH (0465885880)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/esab-warrior-400i-mv-cc-cv-multi-process-welder-3ph-0465885880?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Lincoln Ranger Air 330 MPX Engine Driven Welder (K5239-1)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/lincoln-ranger-air-330-mpx-engine-driven-welder-k5239-1?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller XMT 400 ArcReach Multiprocess Welder 6-Pack Fused 460/575V (907883)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-xmt-400-arcreach-multiprocess-welder-6-pack-fused-460-575v-907883?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller XMT 400 ArcReach Multiprocess Welder 4-Pack Fused 460/575V (907882)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-xmt-400-arcreach-multiprocess-welder-4-pack-fused-460-575v-907882?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller XMT 400 ArcReach Multiprocess Welder MIG/Flux-Cored System (951000113)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-xmt-400-arcreach-multiprocess-welder-mig-flux-cored-system-951000113?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller XMT 400 ArcReach Multiprocess Welder RMD/Pulse System (951000112)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-xmt-400-arcreach-multiprocess-welder-rmd-pulse-system-951000112?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller XMT 400 ArcReach Multiprocess Welder w/Stick/Tig Remote (951000114)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-xmt-400-arcreach-multiprocess-welder-w-stick-tig-remote-951000114?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Lincoln Maverick 260X Diesel Welder Generator (K5272-1)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/lincoln-maverick-260x-diesel-welder-generator-k5272-1?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Trailblazer 330 Air Pak Welder/Generator w/Cooler/Separator (907836002)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-trailblazer-330-air-pak-welder-generator-w-cooler-separator-907836002?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Trailblazer 330 Kubota Diesel Welder/Generator w/Excel Power and Battery Charge (907849003)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-trailblazer-330-kubota-diesel-welder-generator-w-excel-power-and-battery-charge-907849003?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Trailblazer 330 Kubota Diesel Welder/Generator w/Excel Power (907849001)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-trailblazer-330-kubota-diesel-welder-generator-w-excel-power-907849001?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Syncrowave 400 AC/DC TIG and Stick Welder Complete w/Wired Foot Control (951000004)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-syncrowave-400-ac-dc-tig-and-stick-welder-complete-w-wired-foot-control-951000004?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Syncrowave 300 AC/DC TIG and Stick Welder Complete Pkg w/Foot Control (951000003)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-syncrowave-300-ac-dc-tig-and-stick-welder-complete-pkg-w-foot-control-951000003?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Syncrowave 400 AC/DC TIG and Stick Welder Tigrunner Pkg (907783001)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-syncrowave-400-ac-dc-tig-and-stick-welder-tigrunner-pkg-907783001?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Dynasty 300 CV Multiprocess Welder Fully Loaded Wireless Pkg (951000100)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-dynasty-300-cv-multiprocess-welder-fully-loaded-wireless-pkg-951000100?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Lincoln Dual Maverick 200/200X Diesel Welder Generator (K4382-1)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/lincoln-dual-maverick-200-200x-diesel-welder-generator-k4382-1?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Big Blue 400 PipePro Mitsubishi Welder/Generator w/WIC (907805001)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-big-blue-400-pipepro-mitsubishi-welder-generator-w-wic-907805001?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller XMT 400 ArcReach Welder w/Dinse Connectors (907865004)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-xmt-400-arcreach-welder-w-dinse-connectors-907865004?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Big Blue 500 Pro Kubota Welder/Generator (907736)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-big-blue-500-pro-kubota-welder-generator-907736?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Lincoln Power Wave 300C Standard Multi Process Welder (K4487-1)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/lincoln-power-wave-300c-standard-multi-process-welder-k4487-1?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller XMT 450 CC/CV ArcReach Welder w/Aux Power (907481004)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-xmt-450-cc-cv-arcreach-welder-w-aux-power-907481004?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Subarc AC/DC 1000 Digital Submerged Arc Welder (907620)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-subarc-ac-dc-1000-digital-submerged-arc-welder-907620?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Subarc DC 1000 Digital Submerged Arc Welder (907624)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-subarc-dc-1000-digital-submerged-arc-welder-907624?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Trailblazer 330 Welder/Generator w/Excel Power (Carburetor) (907831001)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-trailblazer-330-welder-generator-w-excel-power-carburetor-907831001?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Maxstar 280 DC Stick/TIG Welder 208-575V (907552)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-maxstar-280-dc-stick-tig-welder-208-575v-907552?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Maxstar 280 DX DC Stick/TIG Welder 208-575V (907553)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-maxstar-280-dx-dc-stick-tig-welder-208-575v-907553?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Millermatic 211 PRO MIG Welder with Running Gear (951000073)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-millermatic-211-pro-mig-welder-with-running-gear-951000073?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Millermatic 211 PRO MIG Welder, and Accessories (907839)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-millermatic-211-pro-mig-welder-and-accessories-907839?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Millermatic 211 PRO MIG Welder, Spoolmate 150, and Accessories (907839)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-millermatic-211-mig-welder-spoolmate-150-and-accessories-907839?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Syncrowave 212 AC/DC TIG Welder w/Wireless Foot Control (907939)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-syncrowave-212-ac-dc-tig-welder-w-wireless-foot-control-907939?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Multimatic 215 PRO Multiprocess Welder (907840)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-multimatic-215-pro-multiprocess-welder-907840?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Multimatic 215 PRO Multiprocess Welder w/Running Gear (951000074)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-multimatic-215-pro-multiprocess-welder-w-running-gear-951000074?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Multimatic 215 PRO Multiprocess Welder w/TIG Kit (951000213)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-multimatic-215-pro-multiprocess-welder-w-tig-kit-951000213?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Multimatic 215 PRO Multiprocess Welder Complete Package (907840)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-multimatic-215-pro-multiprocess-welder-complete-package-907840?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "ESAB Rogue EMP PRO 210 Multi Process Welder (0700301085)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/esab-rogue-emp-pro-210-multi-process-welder-0700301085?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "ESAB Rebel EMP 235ic MIG/Stick/TIG Welder (0558012702)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/esab-rebel-emp-235ic-mig-tig-stick-welder-0558012702?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "ESAB Rogue ES 201iP PRO DC Stick/TIG Welder (0705002022)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/esab-rogue-es-201ip-pro-dc-stick-tig-welder-0705002022?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "ESAB Ruffian EMP 270G Welder Generator (0707070270)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/esab-ruffian-emp-270g-welder-generator-0707070270?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller XMT 400 Multiprocess Welder w/Dinse Connectors (907881)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-xmt-400-multiprocess-welder-w-dinse-connectors-907881?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "ESAB Rustler EM 280 PRO MIG Welder (0700401201)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/esab-rustler-em-280-pro-mig-welder-0700401201?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Millermatic 255 Auto-Line MIG/Pulsed MIG Welder  208-575V (907964)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-millermatic-255-auto-line-mig-pulsed-mig-welder-208-575v-907964?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Millermatic 255 Auto-Line MIG/Pulsed MIG Welder w/Running Gear  208-575V (951000271)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-millermatic-255-auto-line-mig-pulsed-mig-welder-w-running-gear-208-575v-951000271?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Syncrowave 212 AC/DC TIG Welder w/Spoolmate 150 (951000200)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-syncrowave-212-ac-dc-tig-welder-w-spoolmate-150-951000200?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Maxstar 161 STH TIG and Stick Welder with Fingertip Control (907711001)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-maxstar-161-sth-tig-and-stick-welder-with-fingertip-control-907711001?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Syncrowave 212 AC/DC TIG Welder Water Cooled Pkg w/Wireless Foot Ctrl (951000254)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-syncrowave-212-ac-dc-tig-welder-water-cooled-pkg-w-wireless-foot-ctrl-951000254?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Thunderbolt 210 DC Stick Welder (907909)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-thunderbolt-210-dc-stick-welder-907909?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Syncrowave 212 AC/DC TIG Welder (907911)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-syncrowave-212-ac-dc-tig-welder-907911?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "ESAB Renegade VOLT EMP 200i Multiprocess Battery Powered Welder (0448756880)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/esab-renegade-volt-emp-200i-multiprocess-battery-powered-welder-0448756880?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "ESAB Rogue ET 230iP AC/DC Tig Welder (0705002026)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/esab-rogue-et-230ip-ac-dc-tig-welder-0705002026?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "ESAB Rogue ET 230iP AC/DC Water Cooled Tig Welder Pkg (0705002027)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/esab-rogue-et-230ip-ac-dc-water-cooled-tig-welder-pkg-0705002027?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Hobart Handler 210i MIG Welder 120/240V (500588)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/hobart-handler-210i-mig-welder-120-240v-500588?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Millermatic 255 MIG/Pulsed MIG Welder Fully Loaded (907734)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-millermatic-255-mig-pulsed-mig-welder-fully-loaded-907734?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Millermatic 255 MIG/Pulsed MIG Welder- 208/240V (907734)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-millermatic-255-mig-welder-907734?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Millermatic 255 MIG/Pulsed MIG Welder- 208/240V with Running Gear (951766)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-millermatic-255-mig-welder-with-running-gear-951766?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Maxstar 161 S Stick Welder with X-Case (907709001)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-maxstar-161-s-stick-welder-with-x-case-907709001?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      }
+    ]
+  },
+  {
+    "collection": "plasma-cutters",
+    "raw": 78,
+    "parsed": 39,
+    "changed": 38,
+    "excluded": [
+      "Thermal Dynamics Plasma Interface Cable 25 Ft (9-8312)"
+    ],
+    "suspicious": [],
+    "dispositions": [
+      {
+        "name": "Hypertherm Powermax 45 SYNC Plasma Cutter with 20ft Hand Torch (088560)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/hypertherm-powermax45-sync-plasma-cutter-with-20ft-hand-torch-088560?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Spectrum 375 X-Treme Plasma Cutter (907529)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-spectrum-375-x-treme-plasma-cutter-907529?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Spectrum 625 X-Treme Plasma Cutter with 20 ft. Torch (907579001)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-spectrum-625-x-treme-plasma-cutter-with-20-ft-torch-907579001?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Hypertherm Powermax30 Air \"Building America\" w/15' Torch Pkg (088096)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/hypertherm-powermax30-air-building-america-with-15-foot-leads-088096?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Thermal Dynamics Cutmaster 102 Plasma Cutter (1-1330-1)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/thermal-dynamics-cutmaster-102-plasma-cutter-1-1330-1?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Spectrum 625 X-Treme Plasma Cutter with 20 ft. Torch (907579001), Consumables and Roller Guide",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-spectrum-625-x-treme-plasma-cutter-with-20-ft-torch-907579001-consumables-and-roller-guide?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Hobart AirForce 27i Plasma Cutter with 12ft Torch (500575)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/hobart-airforce-27i-plasma-cutter-with-12ft-torch-500575?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Spectrum 375 X-Treme Plasma Cutter + Accessories (907529)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-spectrum-375-x-treme-plasma-cutter-and-accessories-907529?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Spectrum 625 X-Treme Plasma Cutter with 20 ft. Torch (907579001), Consumables and Air Filter",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-spectrum-625-x-treme-plasma-cutter-with-20-ft-torch-907579001-consumables-and-air-filter?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Thermal Dynamics Cutmaster 152 Plasma Cutter (1-1730-1)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/thermal-dynamics-cutmaster-152-plasma-cutter-1-1730-1?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Hobart AirForce 12ci Plasma Cutter with Air Compressor (500564)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/hobart-airforce-12ci-plasma-cutter-with-air-compressor-500564?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Spectrum 625 X-Treme Plasma Cutter with 12 ft. Torch and Accessories (907579)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-spectrum-625-x-treme-plasma-cutter-with-12-ft-torch-and-accessories-907579?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Spectrum 625 X-Treme Plasma Cutter with 12 ft. Torch (907579), Consumables and Roller Guide",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-spectrum-625-x-treme-plasma-cutter-with-12-ft-torch-907579-consumables-and-roller-guide?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Spectrum 625 X-Treme Plasma Cutter with 12 ft. Torch (907579), Consumables and Air Filter",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-spectrum-625-x-treme-plasma-cutter-with-12-ft-torch-907579-consumables-and-air-filter?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Hypertherm Powermax 125 w/CPC 25ft Hand Torch Pkg (059536)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/hypertherm-powermax-125-w-cpc-25ft-hand-torch-pkg-059536?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Hypertherm Powermax 125 w/CPC 50ft Mech and 25ft 85\u00b0 Hand Torch Pkg (059541)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/hypertherm-powermax-125-w-cpc-50ft-mech-and-25ft-85-hand-torch-pkg-059541?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Hypertherm Powermax 125 w/CPC 50ft Mechanized Torch Pkg (059540)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/hypertherm-powermax-125-w-cpc-50ft-mechanized-torch-pkg-059540?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Hypertherm Powermax 125 w/CPC 25ft Mechanized Torch Pkg (059539)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/hypertherm-powermax-125-w-cpc-25ft-mechanized-torch-pkg-059539?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Thermal Dynamics Cutmaster 30+ Plasma Cutter 120/240V (1-3000-1)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/thermal-dynamics-cutmaster-30-plasma-cutter-120-240v-1-3000-1?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Hypertherm Powermax 125 w/CPC 50ft Hand Torch Pkg (059537)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/hypertherm-powermax-125-w-cpc-50ft-hand-torch-pkg-059537?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Hypertherm Powermax 125 w/CPC 25ft 85\u00b0 and 15\u00b0 Hand Torches (059538)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/hypertherm-powermax-125-w-cpc-25ft-85-and-15-hand-torches-059538?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Hypertherm Powermax 125 w/CPC 50ft 85\u00b0 and 15\u00b0 Hand Torches (059569)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/hypertherm-powermax-125-w-cpc-50ft-85-and-15-hand-torches-059569?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Spectrum 625 X-Treme Plasma Cutter with 12 ft. Torch (907579)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-spectrum-625-x-treme-plasma-cutter-with-12-ft-torch-907579?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Hobart AirForce 40i Plasma Cutter with 12ft Torch (500576)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/hobart-airforce-40i-plasma-cutter-with-12ft-torch-500576?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Hypertherm Powermax 45 SYNC Plasma Cutter with 50ft Hand Torch (088561)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/hypertherm-powermax45-sync-plasma-cutter-with-50ft-hand-torch-088561?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Hypertherm Powermax 45 SYNC Plasma Cutter with 20ft 75\u00b0 and 15\u00b0 Hand Torches (088564)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/hypertherm-powermax45-sync-plasma-cutter-with-20ft-75-and-15-hand-torches-088564?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Hypertherm Powermax 45 SYNC Plasma Cutter w/CPC 25ft Mechanized Torch (088580)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/hypertherm-powermax45-sync-plasma-cutter-w-cpc-25ft-mechanized-torch-088580?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Hypertherm Powermax 45 SYNC Plasma Cutter with 50ft Mechanized Torch (088581)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/hypertherm-powermax45-sync-plasma-cutter-with-50ft-mechanized-torch-088581?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Thermal Dynamics Cutmaster 70+ Plasma Cutter 120/240V (1-7000-1)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/thermal-dynamics-cutmaster-70-plasma-cutter-120-240v-1-7000-1?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Hypertherm Powermax 30 XP with 15ft Machine Torch (088178)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/hypertherm-powermax-30-xp-with-15ft-machine-torch-088178?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Thermal Dynamics Cutmaster 50+ Plasma Cutter 120/240V (1-5000-1)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/thermal-dynamics-cutmaster-50-plasma-cutter-1-5000-1?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Hypertherm Powermax30 Air w/15' Torch (088096)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/hypertherm-powermax30-air-w-15-torch-088096?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Spectrum 875 Plasma Cutter with 20 ft. Torch (907850)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-spectrum-875-plasma-cutter-with-20-ft-torch-907850?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Spectrum 875 Plasma Cutter with 50 ft. Torch (907850001)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-spectrum-875-plasma-cutter-with-50-ft-torch-907850001?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Spectrum 875 Auto-Line Plasma Cutter with 20 ft. Torch (907851)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-spectrum-875-auto-line-plasma-cutter-with-20-ft-torch-907851?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Miller Spectrum 875 Auto-Line Plasma Cutter with 50 ft. Torch (907851001)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/miller-spectrum-875-auto-line-plasma-cutter-with-50-ft-torch-907851001?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Thermal Dynamics Plasma Interface Cable 25 Ft (9-8312)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/thermal-dynamics-plasma-interface-cable-25-ft-9-8312?currency=USD",
+        "before": null,
+        "after": null,
+        "product_unchanged": true
+      },
+      {
+        "name": "Hypertherm Powermax33 XP with 15ft Hand Torch (088592)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/hypertherm-powermax-33-xp-with-15ft-hand-torch-088592?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      },
+      {
+        "name": "Thermal Dynamics Cutmaster 82 Plasma Cutter (1-1130-1)",
+        "url": "https://www.weldingsuppliesfromioc.com/products/thermal-dynamics-cutmaster-82-plasma-cutter-1-1130-1?currency=USD",
+        "before": null,
+        "after": {
+          "category": "Workshop equipment",
+          "format": "Not specified",
+          "platform": ""
+        },
+        "product_unchanged": true
+      }
+    ]
+  }
+]

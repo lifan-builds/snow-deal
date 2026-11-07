@@ -1,0 +1,495 @@
+{
+  "products": [
+    {
+      "id": 8552084504863,
+      "title": "Miller Big Blue 400 Pro Kubota Welder/Generator (907732)",
+      "handle": "miller-big-blue-400-pro-kubota-welder-generator-907732",
+      "vendor": "Miller",
+      "product_type": "Welding",
+      "tags": [
+        "Brand",
+        "Brand/Miller",
+        "Brand/Miller/Miller Engine Drives",
+        "Category_Miller Industrial Equipment",
+        "Equipment",
+        "Equipment/Welding",
+        "Equipment/Welding/Engine Drives"
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 46439773503775,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "IMIL20180018",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "26332.00",
+          "grams": 430913,
+          "compare_at_price": "30410.00",
+          "position": 1,
+          "product_id": 8552084504863,
+          "created_at": "2023-08-24T16:23:51-04:00",
+          "updated_at": "2026-11-06T15:59:27-05:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 42656530989343,
+          "created_at": "2023-08-24T16:23:54-04:00",
+          "position": 1,
+          "updated_at": "2023-08-24T16:23:56-04:00",
+          "product_id": 8552084504863,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907733_1.jpg?v=1692908636",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "id": 42656530891039,
+          "created_at": "2023-08-24T16:23:54-04:00",
+          "position": 2,
+          "updated_at": "2024-08-26T14:02:32-04:00",
+          "product_id": 8552084504863,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907774_features.jpg?v=1724695352",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "body_html": "<p>These generators are Made-to-Order from Miller.  Please allow 1-2 weeks for your order to ship.</p>"
+    },
+    {
+      "id": 8552082964767,
+      "title": "Miller Big Blue 600 Air Pak Welder/Generator w/ArcReach (907750)",
+      "handle": "miller-big-blue-600-air-pak-welder-generator-w-arcreach-907750",
+      "vendor": "Miller",
+      "product_type": "Welding",
+      "tags": [
+        "Brand",
+        "Brand/Miller",
+        "Brand/Miller/Miller Engine Drives",
+        "Category_Miller Industrial Equipment",
+        "Equipment",
+        "Equipment/Welding",
+        "Equipment/Welding/Engine Drives"
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 46439771930911,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "IMIL20180062",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "68357.00",
+          "grams": 925328,
+          "compare_at_price": "78948.00",
+          "position": 1,
+          "product_id": 8552082964767,
+          "created_at": "2023-08-24T16:23:38-04:00",
+          "updated_at": "2026-11-06T15:59:27-05:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 42656527778079,
+          "created_at": "2023-08-24T16:23:41-04:00",
+          "position": 1,
+          "updated_at": "2023-08-24T16:23:43-04:00",
+          "product_id": 8552082964767,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907750.jpg?v=1692908623",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "id": 42656527614239,
+          "created_at": "2023-08-24T16:23:41-04:00",
+          "position": 2,
+          "updated_at": "2024-08-26T14:01:19-04:00",
+          "product_id": 8552082964767,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907750_front.jpg?v=1724695279",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "body_html": "<p>These generators are Made-to-Order from Miller Electric.  Please allow 2-3 weeks for shipment.</p>"
+    },
+    {
+      "id": 8552097120543,
+      "title": "Lincoln Cross Country 300 Kubota CC/CV Welder Generator (K4166-1)",
+      "handle": "lincoln-cross-country-300-kubota-cc-cv-welder-generator-k4166-1",
+      "vendor": "Lincoln",
+      "product_type": "Welding",
+      "tags": [
+        "Brand",
+        "Brand/Lincoln",
+        "Brand/Lincoln/Lincoln Engine Drives",
+        "Equipment",
+        "Equipment/Welding",
+        "Equipment/Welding/Engine Drives"
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 46439785529631,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "ILIN20190015",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "29795.00",
+          "grams": 469468,
+          "compare_at_price": "30963.00",
+          "position": 1,
+          "product_id": 8552097120543,
+          "created_at": "2023-08-24T16:25:32-04:00",
+          "updated_at": "2026-11-06T15:59:27-05:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 42656562020639,
+          "created_at": "2023-08-24T16:25:37-04:00",
+          "position": 1,
+          "updated_at": "2024-05-30T08:17:07-04:00",
+          "product_id": 8552097120543,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/k4166-1_hero.jpg?v=1717071427",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "id": 42656561889567,
+          "created_at": "2023-08-24T16:25:37-04:00",
+          "position": 2,
+          "updated_at": "2024-08-26T14:13:20-04:00",
+          "product_id": 8552097120543,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/industrial_engine_drive_comparison_4_1_1.jpg?v=1724696000",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "id": 42656562184479,
+          "created_at": "2023-08-24T16:25:37-04:00",
+          "position": 3,
+          "updated_at": "2024-08-26T14:13:22-04:00",
+          "product_id": 8552097120543,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/cc_comparison_1_1.jpg?v=1724696002",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "id": 42656562086175,
+          "created_at": "2023-08-24T16:25:37-04:00",
+          "position": 4,
+          "updated_at": "2024-08-26T14:13:24-04:00",
+          "product_id": 8552097120543,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/k4166_side_open.jpg?v=1724696004",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "id": 42656561824031,
+          "created_at": "2023-08-24T16:25:37-04:00",
+          "position": 5,
+          "updated_at": "2024-08-26T14:13:26-04:00",
+          "product_id": 8552097120543,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/k4166_controls.jpg?v=1724696006",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "body_html": "<p>These machines are typically Made-to-Order from Lincoln.  Please allow 4-6 weeks for shipping.</p>"
+    },
+    {
+      "id": 8552090304799,
+      "title": "Miller Big Blue 800 Duo Pro Welder/Generator w/ArcReach (907751)",
+      "handle": "miller-big-blue-800-duo-pro-welder-generator-w-arcreach-907751",
+      "vendor": "Miller",
+      "product_type": "Welding",
+      "tags": [
+        "Brand",
+        "Brand/Miller",
+        "Brand/Miller/Miller Engine Drives",
+        "Category_Miller Industrial Equipment",
+        "Equipment",
+        "Equipment/Welding",
+        "Equipment/Welding/Engine Drives"
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 46439778615583,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "IMIL20180063",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "55072.00",
+          "grams": 847764,
+          "compare_at_price": "63605.00",
+          "position": 1,
+          "product_id": 8552090304799,
+          "created_at": "2023-08-24T16:24:37-04:00",
+          "updated_at": "2026-11-06T15:59:27-05:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 42656544784671,
+          "created_at": "2023-08-24T16:24:41-04:00",
+          "position": 1,
+          "updated_at": "2023-08-24T16:24:43-04:00",
+          "product_id": 8552090304799,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907751.jpg?v=1692908683",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "id": 42656544817439,
+          "created_at": "2023-08-24T16:24:41-04:00",
+          "position": 2,
+          "updated_at": "2024-08-26T14:07:46-04:00",
+          "product_id": 8552090304799,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907751_front.jpg?v=1724695666",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "id": 42656544850207,
+          "created_at": "2023-08-24T16:24:41-04:00",
+          "position": 3,
+          "updated_at": "2024-08-26T14:07:47-04:00",
+          "product_id": 8552090304799,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/big_blue_vandalism_lockout_kit_1.jpg?v=1724695667",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "body_html": "<p>These generators are Made-to-Order from Miller Electric. Please allow 2-3 weeks for shipment.</p>"
+    },
+    {
+      "id": 8552082440479,
+      "title": "Miller Big Blue 800 Duo Air Pak Welder/Generator w/ArcReach (907752)",
+      "handle": "miller-big-blue-800-duo-air-pak-welder-generator-w-arcreach-907752",
+      "vendor": "Miller",
+      "product_type": "Welding",
+      "tags": [
+        "Brand",
+        "Brand/Miller",
+        "Brand/Miller/Miller Engine Drives",
+        "Category_Miller Industrial Equipment",
+        "Equipment",
+        "Equipment/Welding",
+        "Equipment/Welding/Engine Drives"
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 46439771734303,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "IMIL20180064",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "72069.00",
+          "grams": 950276,
+          "compare_at_price": "83234.00",
+          "position": 1,
+          "product_id": 8552082440479,
+          "created_at": "2023-08-24T16:23:34-04:00",
+          "updated_at": "2026-11-06T15:59:27-05:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 42656527089951,
+          "created_at": "2023-08-24T16:23:39-04:00",
+          "position": 1,
+          "updated_at": "2023-08-24T16:23:41-04:00",
+          "product_id": 8552082440479,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907752.jpg?v=1692908621",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "id": 42656527057183,
+          "created_at": "2023-08-24T16:23:39-04:00",
+          "position": 2,
+          "updated_at": "2024-08-26T14:00:57-04:00",
+          "product_id": 8552082440479,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/907752_front.jpg?v=1724695257",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "id": 42656526958879,
+          "created_at": "2023-08-24T16:23:39-04:00",
+          "position": 3,
+          "updated_at": "2024-08-26T14:00:59-04:00",
+          "product_id": 8552082440479,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/big_blue_vandalism_lockout_kit.jpg?v=1724695259",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "body_html": "<p>These generators are Made-to-Order from Miller Electric.  Please allow 2-3 weeks for shipment.</p>"
+    },
+    {
+      "id": 8551999832351,
+      "title": "Miller AlumaPower 450 MPa MIG Welder with Feeder, 25-ft XR Gun, MIG Kit, and Cart (951840)",
+      "handle": "miller-alumapower-450-mpa-mig-welder-with-feeder-25-ft-xr-gun-mig-kit-and-cart-951840",
+      "vendor": "Miller",
+      "product_type": "Welding",
+      "tags": [
+        "Brand",
+        "Brand/Miller",
+        "Brand/Miller/Miller MIG Welders",
+        "Category_Miller Industrial Equipment",
+        "Equipment",
+        "Equipment/Welding",
+        "Equipment/Welding/MIG Welders"
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 46439693975839,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "IMIL20130031",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "21348.00",
+          "grams": 142882,
+          "compare_at_price": "24655.00",
+          "position": 1,
+          "product_id": 8551999832351,
+          "created_at": "2023-08-24T16:12:42-04:00",
+          "updated_at": "2026-11-06T15:59:27-05:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 42656329466143,
+          "created_at": "2023-08-24T16:12:45-04:00",
+          "position": 1,
+          "updated_at": "2023-08-24T16:12:47-04:00",
+          "product_id": 8551999832351,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/951840.jpg?v=1692907967",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "id": 42656329335071,
+          "created_at": "2023-08-24T16:12:45-04:00",
+          "position": 2,
+          "updated_at": "2024-08-26T13:09:35-04:00",
+          "product_id": 8551999832351,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/951459_cart.jpg?v=1724692175",
+          "width": 921,
+          "height": 921
+        },
+        {
+          "id": 42656329367839,
+          "created_at": "2023-08-24T16:12:45-04:00",
+          "position": 3,
+          "updated_at": "2024-08-26T13:09:36-04:00",
+          "product_id": 8551999832351,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0682/1865/0911/files/951459_hose.jpg?v=1724692176",
+          "width": 1600,
+          "height": 1600
+        }
+      ],
+      "body_html": "<p>These packages are made-to-order from Miller.  Please expect a 2-3 week lead time.</p>"
+    }
+  ]
+}

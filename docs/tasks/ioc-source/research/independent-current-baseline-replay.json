@@ -1,0 +1,81 @@
+{
+  "source_snapshot": ".local/source-expansion/ioc-20261106-ops/baseline-tools-current.db",
+  "sha256": "6cf7c109cb9a39ac21ce9b9e9ab15a4357e3fc208c7ebe3b69153dc8b7681a83",
+  "scope": "Normalized public rows reconstruct Product from retained name/url/source_category/brand. Raw tags and rejected products are absent: this checks existing normalized classifications only and does not establish absent/rejected raw products. Snapshot read-only and byte-preserved.",
+  "semantic_health": {
+    "catalog": "tools",
+    "snapshot_sha256": "328ed6ff1110876e2c61e4a3148bd0658a79146bbcc7649cb0bdb2292038b5ad",
+    "fresh_sources": 13,
+    "configured_sources": 13,
+    "status": "ready"
+  },
+  "sources": [
+    {
+      "source": "Baker's Gas",
+      "products": 207,
+      "differences": []
+    },
+    {
+      "source": "Beaver Industrial Supply",
+      "products": 260,
+      "differences": []
+    },
+    {
+      "source": "Craft Supplies USA",
+      "products": 2,
+      "differences": []
+    },
+    {
+      "source": "Cyberweld",
+      "products": 215,
+      "differences": []
+    },
+    {
+      "source": "Factory Direct Supply",
+      "products": 6,
+      "differences": []
+    },
+    {
+      "source": "Fasteners Inc",
+      "products": 81,
+      "differences": []
+    },
+    {
+      "source": "Harvey Woodworking",
+      "products": 11,
+      "differences": []
+    },
+    {
+      "source": "Max Warehouse",
+      "products": 38,
+      "differences": []
+    },
+    {
+      "source": "OakTree Supply",
+      "products": 72,
+      "differences": []
+    },
+    {
+      "source": "Taylor Toolworks",
+      "products": 1,
+      "differences": []
+    },
+    {
+      "source": "Tool Nut",
+      "products": 171,
+      "differences": []
+    },
+    {
+      "source": "WEN",
+      "products": 8,
+      "differences": []
+    },
+    {
+      "source": "Woodcraft",
+      "products": 78,
+      "differences": []
+    }
+  ],
+  "total_products": 1150,
+  "changed": 0
+}

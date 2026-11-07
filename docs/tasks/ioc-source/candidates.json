@@ -1,0 +1,11 @@
+[
+  {
+    "catalog": "tools",
+    "name": "Welding Supplies from IOC",
+    "domain": "www.weldingsuppliesfromioc.com",
+    "scrape_urls": [
+      "https://www.weldingsuppliesfromioc.com/collections/all-welders?currency=USD",
+      "https://www.weldingsuppliesfromioc.com/collections/plasma-cutters?currency=USD"
+    ]
+  }
+]
