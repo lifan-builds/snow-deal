@@ -338,3 +338,7 @@ PR #49 merged as `28fe5bb` and is live. Retailer labels now count the same eligi
 ## IOC workshop source — November 7, 2026
 
 Prepared source-bound machine taxonomy and shipping-notice correction for Welding Supplies from IOC. The fresh complete two-collection admission passes30/30 checks with189 in-stock qualifying listings and two deep deals. Six explicit made-to-order machines remain unknown stock; separately fetched endpoints confirm the stock-only rejection and exact remaining offer fields. Full safe suite1,584 passes after source activation. The candidate preserves13 existing source rows and47 dated observations exactly, adding one real IOC observation. Candidate inventory is1,123 qualifying in-stock listings,34 deep deals and eight useful retailers across14 sources; the latest baseline had934/32/seven. Combined catalog audit, publication and live verification are tracked in [the release plan](docs/tasks/ioc-source/release-plan.md). No all-metric competitive lead is claimed.
+
+## IOC runner HTTP 403 quarantine — November 9, 2026 UTC
+
+Scheduled GitHub Actions runs (`42347745752` through `42521756319`) received HTTP 403 (`currency_check_failed`) from `www.weldingsuppliesfromioc.com` on both collections while all 13 other tools retailers completed and passed 30/30 merchant audits. Quarantined Welding Supplies from IOC from the active tools source roster and updated `coverage_note` while retaining the IOC machine taxonomy, made-to-order stock decoder, and regression suite.
