@@ -342,3 +342,7 @@ Prepared source-bound machine taxonomy and shipping-notice correction for Weldin
 ## IOC runner HTTP 403 quarantine — November 9, 2026 UTC
 
 Scheduled GitHub Actions runs (`42347745752` through `42521756319`) received HTTP 403 (`currency_check_failed`) from `www.weldingsuppliesfromioc.com` on both collections while all 13 other tools retailers completed and passed 30/30 merchant audits. Quarantined Welding Supplies from IOC from the active tools source roster and updated `coverage_note` while retaining the IOC machine taxonomy, made-to-order stock decoder, and regression suite.
+
+## IOC release reconciliation — November11,2026UTC
+
+Recovered the completed November7 deployment receipt: exact asset/fingerprint,26 live routes,483 card comparisons,15 history pages and all47 prior observations preserved. The interrupted separate production merchant audit has no completion receipt. Preserved the later IOC HTTP403 quarantine rather than restoring stale coverage. As of November11, successful scheduled run43060072401 matched live Bench Drop exactly:13 fresh sources,968 qualifying stock listings,33 deep deals and seven useful retailers, with30/30 prepublication merchant checks. All three sites were healthy at that check. [Dated reconciliation](docs/benchmarks/2026-11-11-ioc-release-reconciliation.json) distinguishes the initial release from current inventory and the unresolved runner-access gap.
